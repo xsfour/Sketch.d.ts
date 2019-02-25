@@ -1,9 +1,9 @@
 {
-  "name": "@andrewstart/sketch.d.ts",
+  "name": "@swaylq/sketch.d.ts",
   "version": "0.0.5",
   "productName": "Sketch.d.ts",
   "description": "TypeScript declaration files for Sketch",
-  "homepage": "https://github.com/andrewstart/Sketch.d.ts#readme",
+  "homepage": "https://github.com/swaylq/Sketch.d.ts#readme",
   "files": [
     "index.d.ts",
     "types/*.d.ts"
@@ -15,10 +15,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/andrewstart/sketch.d.ts.git"
+    "url": "https://github.com/swaylq/sketch.d.ts.git"
   },
   "bugs": {
-    "url": "https://github.com/andrewstart/Sketch.d.ts/issues"
+    "url": "https://github.com/swaylq/Sketch.d.ts/issues"
   },
   "skpm": {
     "name": "Generate Sketch.d.ts",
