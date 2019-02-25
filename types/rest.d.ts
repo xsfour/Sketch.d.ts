@@ -195,6 +195,8 @@ declare class NSNib {}
 declare class NSNumber extends Number {}
 declare class NSNumberFormatter {}
 declare class NSObject {
+    static alloc<T extends NSObject>(): T;
+    static new<T extends NSObject>(): T;
     class(): any;
     className(): NSString;
     isKindOfClass<T extends NSObject>(arg: { new(): T }): this is T;
@@ -219,6 +221,8 @@ declare class NSSplitView {}
 declare class NSStackView {}
 declare class NSStoryboard {}
 declare class NSString extends String {
+    static alloc(): NSString;
+    static new(): NSString;
     static stringWithContentsOfFile_encoding_error(...args: any[]): any;
     static stringWithFormat(...args: any[]): any;
 }
