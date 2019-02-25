@@ -226,6 +226,7 @@ declare class NSString extends String {
     static new(): NSString;
     static stringWithContentsOfFile_encoding_error(...args: any[]): any;
     static stringWithFormat(...args: any[]): any;
+    initWithData_encoding(...args: any[]): any;
 }
 declare class NSTableCellView {}
 declare class NSTableView {}
