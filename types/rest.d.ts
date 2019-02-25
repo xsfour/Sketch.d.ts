@@ -199,6 +199,7 @@ declare class NSObject {
     static new<T extends NSObject>(): T;
     class(): any;
     className(): NSString;
+    immutableModelObject: any;
     isKindOfClass<T extends NSObject>(arg: { new(): T }): this is T;
 }
 declare class NSOperation {}
