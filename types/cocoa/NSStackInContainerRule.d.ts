@@ -1,0 +1,29 @@
+/// <reference no-default-lib="true" />
+
+declare namespace cocoa {
+  export interface NSStackInContainerRule<T = any> extends cocoa.NSObject, cocoa.NSLayoutRuleProtocol {
+    dealloc<R = void>(): R;
+    initWithOrientation_stackedRects_containingRect_spacing<R = unknown, P0 = number, P1 = unknown, P2 = unknown, P3 = number>(_initWithOrientation: P0, _stackedRects: P1, _containingRect: P2, _spacing: P3): R;
+    containingRect<R = cocoa.NSLayoutRect>(): R;
+    spacing<R = number>(): R;
+    orientation<R = number>(): R;
+    stackedRects<R = cocoa.NSArray>(): R;
+    ruleDescription<R = cocoa.NSString>(): R;
+    description<R = cocoa.NSString>(): R;
+    identifier<R = cocoa.NSString>(): R;
+    hash<R = number>(): R;
+    debugDescription<R = cocoa.NSString>(): R;
+    superclass<R = unknown>(): R;
+  }
+  namespace classes {
+    export interface NSStackInContainerRule<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSLayoutRuleProtocol {
+      alloc<R = NSStackInContainerRule>(): R;
+      new: <R = NSStackInContainerRule>() => R;
+      verticalStackWithRects_inContainer_spacing<R = unknown, P0 = unknown, P1 = unknown, P2 = number>(_verticalStackWithRects: P0, _inContainer: P1, _spacing: P2): R;
+      horizontalStackWithRects_inContainer_spacing<R = unknown, P0 = unknown, P1 = unknown, P2 = number>(_horizontalStackWithRects: P0, _inContainer: P1, _spacing: P2): R;
+      stackWithOrientation_stackedRects_inContainer_spacing<R = unknown, P0 = number, P1 = unknown, P2 = unknown, P3 = number>(_stackWithOrientation: P0, _stackedRects: P1, _inContainer: P2, _spacing: P3): R;
+    }
+  }
+}
+
+declare const NSStackInContainerRule: cocoa.classes.NSStackInContainerRule;

@@ -1,0 +1,109 @@
+/// <reference no-default-lib="true" />
+
+declare namespace cocoa {
+  export interface NSAlert<T = any> extends cocoa.NSObject, cocoa.NSTouchBarProviderProtocol {
+    _setSuppressionButton<R = void, P0 = unknown>(__setSuppressionButton: P0): R;
+    _suppressionButton<R = unknown>(): R;
+    _setDidDismissSelector<R = void, P0 = string>(__setDidDismissSelector: P0): R;
+    _setDidEndSelector<R = void, P0 = string>(__setDidEndSelector: P0): R;
+    _setModalDelegate<R = void, P0 = unknown>(__setModalDelegate: P0): R;
+    _helpButton<R = unknown>(): R;
+    _imageView<R = unknown>(): R;
+    _informationField<R = unknown>(): R;
+    _messageField<R = unknown>(): R;
+    _third<R = unknown>(): R;
+    _second<R = unknown>(): R;
+    _first<R = unknown>(): R;
+    _thirdButtonExists<R = boolean>(): R;
+    _secondButtonExists<R = boolean>(): R;
+    _firstButtonExists<R = boolean>(): R;
+    buildAlertStyle_title_formattedMessage_first_second_third_oldStyle<R = unknown, P0 = number, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown, P5 = unknown, P6 = boolean>(_buildAlertStyle: P0, _title: P1, _formattedMessage: P2, _first: P3, _second: P4, _third: P5, _oldStyle: P6): R;
+    _constraintsForExplicitFrameSize_forView<R = unknown, P0 = cocoa.CGSize, P1 = unknown>(__constraintsForExplicitFrameSize: P0, _forView: P1): R;
+    _constraintForExplicitFrameHeight_forView_strength<R = unknown, P0 = cocoa.CGSize, P1 = unknown, P2 = number>(__constraintForExplicitFrameHeight: P0, _forView: P1, _strength: P2): R;
+    _constraintsForExplicitFrameSize_forView_strength<R = unknown, P0 = cocoa.CGSize, P1 = unknown, P2 = number>(__constraintsForExplicitFrameSize: P0, _forView: P1, _strength: P2): R;
+    startSpeaking<R = void, P0 = unknown>(_startSpeaking: P0): R;
+    startTimerForSpeaking<R = void>(): R;
+    stopTimerForSpeaking<R = void>(): R;
+    windowDidBecomeKey<R = void, P0 = unknown>(_windowDidBecomeKey: P0): R;
+    setTitle_andMessage<R = unknown, P0 = unknown, P1 = unknown>(_setTitle: P0, _andMessage: P1): R;
+    messageWidthForMessage<R = number, P0 = unknown>(_messageWidthForMessage: P0): R;
+    placeButtons_firstWidth_secondWidth_thirdWidth<R = void, P0 = number, P1 = number, P2 = number, P3 = number>(_placeButtons: P0, _firstWidth: P1, _secondWidth: P2, _thirdWidth: P3): R;
+    _interceptKeyEquivalent<R = boolean, P0 = unknown>(__interceptKeyEquivalent: P0): R;
+    _setDontSaveButton<R = void, P0 = unknown>(__setDontSaveButton: P0): R;
+    _dontSaveButton<R = unknown>(): R;
+    buttonPressed<R = void, P0 = unknown>(_buttonPressed: P0): R;
+    _screenForMaxHeight<R = unknown>(): R;
+    beginSheetModalForWindow_completionHandler<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(_beginSheetModalForWindow: P0, _completionHandler: P1): R;
+    runModal<R = number>(): R;
+    prepare<R = void>(): R;
+    layout<R = void>(): R;
+    _dontWarnAgain<R = boolean>(): R;
+    _setDontWarnMessage<R = void, P0 = unknown>(__setDontWarnMessage: P0): R;
+    _showsDontWarnAgain<R = boolean>(): R;
+    addButtonWithTitle<R = unknown, P0 = unknown>(_addButtonWithTitle: P0): R;
+    dealloc<R = void>(): R;
+    _clearTargetAndReleaseButton<R = void, P0 = unknown>(__clearTargetAndReleaseButton: P0): R;
+    _removeTouchBar<R = void>(): R;
+    windowClosing<R = void, P0 = unknown>(_windowClosing: P0): R;
+    _alertTouchBar<R = unknown>(): R;
+    didEndSheet_returnCode_contextInfo<R = void, P0 = unknown, P1 = number, P2 = void>(_didEndSheet: P0, _returnCode: P1, _contextInfo: P2): R;
+    didEndAlert_returnCode_contextInfo<R = void, P0 = unknown, P1 = number, P2 = void>(_didEndAlert: P0, _returnCode: P1, _contextInfo: P2): R;
+    beginSheetModalForWindow_modalDelegate_didEndSelector_contextInfo<R = void, P0 = unknown, P1 = unknown, P2 = string, P3 = void>(_beginSheetModalForWindow: P0, _modalDelegate: P1, _didEndSelector: P2, _contextInfo: P3): R;
+    buildAlertStyle_title_message_first_second_third_oldStyle_args<R = unknown, P0 = number, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown, P5 = unknown, P6 = boolean, P7 = cocoa.__va_list_tag>(_buildAlertStyle: P0, _title: P1, _message: P2, _first: P3, _second: P4, _third: P5, _oldStyle: P6, _args: P7): R;
+    _panel<R = cocoa.NSWindow>(): R;
+    set_panel<R = void, P0 = cocoa.NSWindow>(_v: P0): R;
+    accessoryView<R = cocoa.NSView>(): R;
+    setAccessoryView<R = void, P0 = cocoa.NSView>(_v: P0): R;
+    suppressionButton<R = cocoa.NSButton>(): R;
+    showsSuppressionButton<R = boolean>(): R;
+    setShowsSuppressionButton<R = void, P0 = boolean>(_v: P0): R;
+    window<R = cocoa.NSWindow>(): R;
+    delegate<R = cocoa.NSAlertDelegate>(): R;
+    setDelegate<R = void, P0 = cocoa.NSAlertDelegate>(_v: P0): R;
+    alertStyle<R = number>(): R;
+    setAlertStyle<R = void, P0 = number>(_v: P0): R;
+    helpAnchor<R = cocoa.NSString>(): R;
+    setHelpAnchor<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    showsHelp<R = boolean>(): R;
+    setShowsHelp<R = void, P0 = boolean>(_v: P0): R;
+    buttons<R = cocoa.NSArray>(): R;
+    icon<R = cocoa.NSImage>(): R;
+    setIcon<R = void, P0 = cocoa.NSImage>(_v: P0): R;
+    informativeText<R = cocoa.NSString>(): R;
+    setInformativeText<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    messageText<R = cocoa.NSString>(): R;
+    setMessageText<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    attributedInformativeText<R = cocoa.NSAttributedString>(): R;
+    setAttributedInformativeText<R = void, P0 = cocoa.NSAttributedString>(_v: P0): R;
+    attributedMessageText<R = cocoa.NSAttributedString>(): R;
+    setAttributedMessageText<R = void, P0 = cocoa.NSAttributedString>(_v: P0): R;
+    touchBar<R = cocoa.NSTouchBar>(): R;
+    debugDescription<R = cocoa.NSString>(): R;
+    description<R = cocoa.NSString>(): R;
+    hash<R = number>(): R;
+    superclass<R = unknown>(): R;
+    // + NSAlert(Chocolat):
+    
+  }
+  namespace classes {
+    export interface NSAlert<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSTouchBarProviderProtocol {
+      alloc<R = NSAlert>(): R;
+      new: <R = NSAlert>() => R;
+      _stopTimerForSpeakingForAlert<R = void, P0 = unknown>(__stopTimerForSpeakingForAlert: P0): R;
+      _startTimerForSpeakingWithTitle_andText_forAlert<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(__startTimerForSpeakingWithTitle: P0, _andText: P1, _forAlert: P2): R;
+      stopAllTimersForSpeaking<R = void>(): R;
+      _dontShowMessageAgainTitle<R = unknown>(): R;
+      _dontSaveButtonTitle<R = unknown>(): R;
+      alertWithError<R = unknown, P0 = unknown>(_alertWithError: P0): R;
+      alertWithMessageText_defaultButton_alternateButton_otherButton_informativeTextWithFormat<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown>(_alertWithMessageText: P0, _defaultButton: P1, _alternateButton: P2, _otherButton: P3, _informativeTextWithFormat: P4): R;
+      // + NSAlert(Chocolat):
+      runSheetWithMessage_info<R = void, P0 = unknown, P1 = unknown>(_runSheetWithMessage: P0, _info: P1): R;
+      runModalSessionWithMessage_info_buttons<R = number, P0 = unknown, P1 = unknown, P2 = unknown>(_runModalSessionWithMessage: P0, _info: P1, _buttons: P2): R;
+      runModalWithMessage_info_buttons<R = number, P0 = unknown, P1 = unknown, P2 = unknown>(_runModalWithMessage: P0, _info: P1, _buttons: P2): R;
+      runModalWithMessage_info<R = number, P0 = unknown, P1 = unknown>(_runModalWithMessage: P0, _info: P1): R;
+      alertWithMessage_info_buttons<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_alertWithMessage: P0, _info: P1, _buttons: P2): R;
+    }
+  }
+}
+
+declare const NSAlert: cocoa.classes.NSAlert;

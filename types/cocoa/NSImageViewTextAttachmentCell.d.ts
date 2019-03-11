@@ -1,0 +1,13 @@
+/// <reference no-default-lib="true" />
+
+declare namespace cocoa {
+  export interface NSImageViewTextAttachmentCell<T = any> extends cocoa.NSViewTextAttachmentCell {}
+  namespace classes {
+    export interface NSImageViewTextAttachmentCell<T = any> extends cocoa.classes.NSViewTextAttachmentCell {
+      alloc<R = NSImageViewTextAttachmentCell>(): R;
+      new: <R = NSImageViewTextAttachmentCell>() => R;
+    }
+  }
+}
+
+declare const NSImageViewTextAttachmentCell: cocoa.classes.NSImageViewTextAttachmentCell;

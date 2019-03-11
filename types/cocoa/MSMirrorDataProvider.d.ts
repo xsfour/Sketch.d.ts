@@ -1,0 +1,57 @@
+/// <reference no-default-lib="true" />
+
+declare namespace cocoa {
+  export interface MSMirrorDataProvider<T = any> extends cocoa.NSObject, cocoa.SMKMirrorDataSourceProtocol {
+    cxx_destruct<R = void>(): R;
+    currentArtboard<R = unknown>(): R;
+    lookupUpdateTypeWithHandler<R = void, P0 = cocoa.CDUnknownBlockType>(_lookupUpdateTypeWithHandler: P0): R;
+    treeDiff_containsFlowLayerChangesInNewDocument<R = boolean, P0 = unknown, P1 = unknown>(_treeDiff: P0, _containsFlowLayerChangesInNewDocument: P1): R;
+    sendVisualUpdateForNewDocument<R = void, P0 = unknown>(_sendVisualUpdateForNewDocument: P0): R;
+    invalidateRootLayer_inCanvasRect<R = void, P0 = unknown, P1 = cocoa.CGRect>(_invalidateRootLayer: P0, _inCanvasRect: P1): R;
+    sendUpdate<R = void>(): R;
+    updateIfNeeded<R = void>(): R;
+    setNeedsUpdateMetadata<R = void>(): R;
+    setNeedsUpdate<R = void>(): R;
+    createManifestContent<R = unknown>(): R;
+    documentDidResignCurrentNotification<R = void, P0 = unknown>(_documentDidResignCurrentNotification: P0): R;
+    documentDidBecomeCurrentNotification<R = void, P0 = unknown>(_documentDidBecomeCurrentNotification: P0): R;
+    mirrorConnectionsDidChangeNotification<R = void, P0 = unknown>(_mirrorConnectionsDidChangeNotification: P0): R;
+    currentArtboardDidChange<R = void>(): R;
+    setDocumentData<R = void, P0 = unknown>(_setDocumentData: P0): R;
+    observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
+    imageData_dataByInsertingBackgroundColor<R = unknown, P0 = unknown, P1 = unknown>(_imageData: P0, _dataByInsertingBackgroundColor: P1): R;
+    dealloc<R = void>(): R;
+    needsUpdateMetadata<R = boolean>(): R;
+    setNeedsUpdateMetadata<R = void, P0 = boolean>(_v: P0): R;
+    updateTimer<R = cocoa.NSTimer>(): R;
+    setUpdateTimer<R = void, P0 = cocoa.NSTimer>(_v: P0): R;
+    isAlreadyComparing<R = boolean>(): R;
+    setIsAlreadyComparing<R = void, P0 = boolean>(_v: P0): R;
+    mirrorQueue<R = cocoa.OS_dispatch_queue>(): R;
+    setMirrorQueue<R = void, P0 = cocoa.OS_dispatch_queue>(_v: P0): R;
+    manifestContent<R = cocoa.NSDictionary>(): R;
+    setManifestContent<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
+    requiresImmediateUpdate<R = boolean>(): R;
+    setRequiresImmediateUpdate<R = void, P0 = boolean>(_v: P0): R;
+    documentData<R = cocoa.MSImmutableDocumentData>(): R;
+    document<R = cocoa.MSDocument>(): R;
+    setDocument<R = void, P0 = cocoa.MSDocument>(_v: P0): R;
+    connectionController<R = cocoa.SMKMirrorController>(): R;
+    setConnectionController<R = void, P0 = cocoa.SMKMirrorController>(_v: P0): R;
+    hasConnectedClients<R = boolean>(): R;
+    currentArtboardID<R = cocoa.NSString>(): R;
+    setCurrentArtboardID<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    debugDescription<R = cocoa.NSString>(): R;
+    description<R = cocoa.NSString>(): R;
+    hash<R = number>(): R;
+    superclass<R = unknown>(): R;
+  }
+  namespace classes {
+    export interface MSMirrorDataProvider<T = any> extends cocoa.classes.NSObject, cocoa.classes.SMKMirrorDataSourceProtocol {
+      alloc<R = MSMirrorDataProvider>(): R;
+      new: <R = MSMirrorDataProvider>() => R;
+    }
+  }
+}
+
+declare const MSMirrorDataProvider: cocoa.classes.MSMirrorDataProvider;

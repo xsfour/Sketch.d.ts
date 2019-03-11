@@ -1,0 +1,31 @@
+/// <reference no-default-lib="true" />
+
+declare namespace cocoa {
+  export interface NSDocumentTitlebarPopoverViewController<T = any> extends cocoa.NSViewController, cocoa.NSRemoteViewDelegateProtocol {
+    observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
+    _enqueueOperationWithBlock<R = void, P0 = cocoa.CDUnknownBlockType>(__enqueueOperationWithBlock: P0): R;
+    _whenDocumentOperationCompletesPerformBlock<R = void, P0 = cocoa.CDUnknownBlockType>(__whenDocumentOperationCompletesPerformBlock: P0): R;
+    _didFinishOperation<R = void>(): R;
+    _willStartOperation<R = void>(): R;
+    invalidate<R = void>(): R;
+    prepareViewThenContinue<R = void, P0 = cocoa.CDUnknownBlockType>(_prepareViewThenContinue: P0): R;
+    _setupBridge<R = boolean>(): R;
+    initWithDocument<R = unknown, P0 = unknown>(_initWithDocument: P0): R;
+    invalidationHandler<R = cocoa.CDUnknownBlockType>(): R;
+    setInvalidationHandler<R = void, P0 = cocoa.CDUnknownBlockType>(_v: P0): R;
+    operationWaiter<R = cocoa.CDUnknownBlockType>(): R;
+    setOperationWaiter<R = void, P0 = cocoa.CDUnknownBlockType>(_v: P0): R;
+    shouldRetainExportedObject<R = boolean>(): R;
+  }
+  namespace classes {
+    export interface NSDocumentTitlebarPopoverViewController<T = any> extends cocoa.classes.NSViewController, cocoa.classes.NSRemoteViewDelegateProtocol {
+      alloc<R = NSDocumentTitlebarPopoverViewController>(): R;
+      new: <R = NSDocumentTitlebarPopoverViewController>() => R;
+      warmup<R = void>(): R;
+      _sharedXPCListenerClass<R = unknown>(): R;
+      _remoteViewClass<R = unknown>(): R;
+    }
+  }
+}
+
+declare const NSDocumentTitlebarPopoverViewController: cocoa.classes.NSDocumentTitlebarPopoverViewController;

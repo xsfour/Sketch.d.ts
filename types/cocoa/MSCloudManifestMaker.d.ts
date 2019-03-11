@@ -1,0 +1,19 @@
+/// <reference no-default-lib="true" />
+
+declare namespace cocoa {
+  export interface MSCloudManifestMaker<T = any> extends cocoa.MSManifestMaker {
+    fileMetadataForRequest_id_manifestScale<R = unknown, P0 = unknown, P1 = unknown, P2 = number>(_fileMetadataForRequest: P0, _id: P1, _manifestScale: P2): R;
+    organizationID<R = cocoa.NSString>(): R;
+    setOrganizationID<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    imageFileProviderBlock<R = cocoa.CDUnknownBlockType>(): R;
+    setImageFileProviderBlock<R = void, P0 = cocoa.CDUnknownBlockType>(_v: P0): R;
+  }
+  namespace classes {
+    export interface MSCloudManifestMaker<T = any> extends cocoa.classes.MSManifestMaker {
+      alloc<R = MSCloudManifestMaker>(): R;
+      new: <R = MSCloudManifestMaker>() => R;
+    }
+  }
+}
+
+declare const MSCloudManifestMaker: cocoa.classes.MSCloudManifestMaker;

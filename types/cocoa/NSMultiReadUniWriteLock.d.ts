@@ -1,0 +1,25 @@
+/// <reference no-default-lib="true" />
+
+declare namespace cocoa {
+  export interface NSMultiReadUniWriteLock<T = any> extends cocoa.NSObject, cocoa.NSLockingProtocol {
+    name<R = unknown>(): R;
+    setName<R = void, P0 = unknown>(_setName: P0): R;
+    description<R = unknown>(): R;
+    lockForWritingBeforeDate<R = boolean, P0 = unknown>(_lockForWritingBeforeDate: P0): R;
+    tryLockForWriting<R = boolean>(): R;
+    lockForWriting<R = void>(): R;
+    lockForReadingBeforeDate<R = boolean, P0 = unknown>(_lockForReadingBeforeDate: P0): R;
+    tryLockForReading<R = boolean>(): R;
+    lockForReading<R = void>(): R;
+    dealloc<R = void>(): R;
+  }
+  namespace classes {
+    export interface NSMultiReadUniWriteLock<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSLockingProtocol {
+      alloc<R = NSMultiReadUniWriteLock>(): R;
+      new: <R = NSMultiReadUniWriteLock>() => R;
+      allocWithZone<R = unknown, P0 = cocoa._NSZone>(_allocWithZone: P0): R;
+    }
+  }
+}
+
+declare const NSMultiReadUniWriteLock: cocoa.classes.NSMultiReadUniWriteLock;

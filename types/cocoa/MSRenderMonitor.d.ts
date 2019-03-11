@@ -1,0 +1,30 @@
+/// <reference no-default-lib="true" />
+
+declare namespace cocoa {
+  export interface MSRenderMonitor<T = any> extends cocoa.NSObject {
+    cxx_destruct<R = void>(): R;
+    timeIntervalBetweenStartEvent_endEvent<R = number, P0 = number, P1 = number>(_timeIntervalBetweenStartEvent: P0, _endEvent: P1): R;
+    timestampForEvent<R = number, P0 = number>(_timestampForEvent: P0): R;
+    registerHook_forEvent<R = void, P0 = cocoa.CDUnknownBlockType, P1 = number>(_registerHook: P0, _forEvent: P1): R;
+    recordEvent_timestamp<R = void, P0 = number, P1 = number>(_recordEvent: P0, _timestamp: P1): R;
+    recordEvent<R = void, P0 = number>(_recordEvent: P0): R;
+    hooks<R = cocoa.NSMutableArray>(): R;
+    setHooks<R = void, P0 = cocoa.NSMutableArray>(_v: P0): R;
+    timestamps<R = unknown>(): R;
+    setTimestamps<R = void, P0 = unknown>(_v: P0): R;
+    shouldForceFullRedraw<R = boolean>(): R;
+    setShouldForceFullRedraw<R = void, P0 = boolean>(_v: P0): R;
+    shouldClearAllCaches<R = boolean>(): R;
+    setShouldClearAllCaches<R = void, P0 = boolean>(_v: P0): R;
+    shouldRemoveWhenDone<R = boolean>(): R;
+    setShouldRemoveWhenDone<R = void, P0 = boolean>(_v: P0): R;
+  }
+  namespace classes {
+    export interface MSRenderMonitor<T = any> extends cocoa.classes.NSObject {
+      alloc<R = MSRenderMonitor>(): R;
+      new: <R = MSRenderMonitor>() => R;
+    }
+  }
+}
+
+declare const MSRenderMonitor: cocoa.classes.MSRenderMonitor;

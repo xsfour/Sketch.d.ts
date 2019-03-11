@@ -1,0 +1,21 @@
+/// <reference no-default-lib="true" />
+
+declare namespace cocoa {
+  export interface _NSZeroData<T = any> extends cocoa.NSData {
+    _providesConcreteBacking<R = boolean>(): R;
+    _dispatchData<R = unknown>(): R;
+    initWithBytes_length_copy_deallocator<R = unknown, P0 = void, P1 = number, P2 = boolean, P3 = cocoa.CDUnknownBlockType>(_initWithBytes: P0, _length: P1, _copy: P2, _deallocator: P3): R;
+    retainCount<R = number>(): R;
+    release<R = void>(): R;
+    retain<R = unknown>(): R;
+    copyWithZone<R = unknown, P0 = cocoa._NSZone>(_copyWithZone: P0): R;
+    _isCompact<R = boolean>(): R;
+    bytes<R = void>(): R;
+    length<R = number>(): R;
+  }
+  namespace classes {
+    export interface _NSZeroData<T = any> extends cocoa.classes.NSData {
+      data<R = unknown>(): R;
+    }
+  }
+}

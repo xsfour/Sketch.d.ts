@@ -1,0 +1,37 @@
+/// <reference no-default-lib="true" />
+
+declare namespace cocoa {
+  export interface _NSBrowserTableColumnViewController<T = any> extends cocoa.NSBrowserColumnViewController, cocoa.NSTableViewDataSourceProtocol, cocoa.NSTableViewDelegateProtocol {
+    _autoExpandItemUnderCursor<R = boolean>(): R;
+    _expandItemUnderMouse<R = void, P0 = unknown>(__expandItemUnderMouse: P0): R;
+    _cancelExpandItemUnderMouse<R = void>(): R;
+    _autoExpandFlashOnce<R = void>(): R;
+    _startAutoExpandingItemFlash<R = void>(): R;
+    _stopAutoExpandingFlash<R = void>(): R;
+    synchSelectionCache<R = void>(): R;
+    setSelectionIndexes<R = void, P0 = unknown>(_setSelectionIndexes: P0): R;
+    selectionIndexes<R = unknown>(): R;
+    firstValidRowIndex<R = number>(): R;
+    numberOfRows<R = number>(): R;
+    setAllowsTypeSelect<R = void, P0 = boolean>(_setAllowsTypeSelect: P0): R;
+    allowsTypeSelect<R = boolean>(): R;
+    setDrawsBackground<R = void, P0 = boolean>(_setDrawsBackground: P0): R;
+    drawsBackground<R = boolean>(): R;
+    setAllowsEmptySelection<R = void, P0 = boolean>(_setAllowsEmptySelection: P0): R;
+    allowsEmptySelection<R = boolean>(): R;
+    setAllowsMultipleSelection<R = void, P0 = boolean>(_setAllowsMultipleSelection: P0): R;
+    allowsMultipleSelection<R = boolean>(): R;
+    tableView<R = unknown>(): R;
+    selectedItems<R = unknown>(): R;
+    debugDescription<R = cocoa.NSString>(): R;
+    description<R = cocoa.NSString>(): R;
+    hash<R = number>(): R;
+    superclass<R = unknown>(): R;
+  }
+  namespace classes {
+    export interface _NSBrowserTableColumnViewController<T = any> extends cocoa.classes.NSBrowserColumnViewController, cocoa.classes.NSTableViewDataSourceProtocol, cocoa.classes.NSTableViewDelegateProtocol {
+      alloc<R = _NSBrowserTableColumnViewController>(): R;
+      new: <R = _NSBrowserTableColumnViewController>() => R;
+    }
+  }
+}

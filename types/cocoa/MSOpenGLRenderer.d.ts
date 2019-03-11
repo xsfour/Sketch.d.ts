@@ -1,0 +1,32 @@
+/// <reference no-default-lib="true" />
+
+declare namespace cocoa {
+  export interface MSOpenGLRenderer<T = any> extends cocoa.NSObject, cocoa.MSGPURendererProtocol {
+    cxx_destruct<R = void>(): R;
+    _endDrawCall<R = void>(): R;
+    _beginDrawCall<R = void>(): R;
+    _renderingOffscreen<R = boolean>(): R;
+    initWithCompletionHandler<R = unknown, P0 = cocoa.CDUnknownBlockType>(_initWithCompletionHandler: P0): R;
+    offscreenBuffer<R = cocoa.MSOpenGLOffscreenBuffer>(): R;
+    setOffscreenBuffer<R = void, P0 = cocoa.MSOpenGLOffscreenBuffer>(_v: P0): R;
+    drawableHeight<R = number>(): R;
+    setDrawableHeight<R = void, P0 = number>(_v: P0): R;
+    drawableWidth<R = number>(): R;
+    setDrawableWidth<R = void, P0 = number>(_v: P0): R;
+    hasScissorRect<R = boolean>(): R;
+    setHasScissorRect<R = void, P0 = boolean>(_v: P0): R;
+    scissorRect<R = unknown>(): R;
+    setScissorRect<R = void, P0 = unknown>(_v: P0): R;
+    openGLLayer<R = cocoa.MSOpenGLLayer>(): R;
+    setOpenGLLayer<R = void, P0 = cocoa.MSOpenGLLayer>(_v: P0): R;
+  }
+  namespace classes {
+    export interface MSOpenGLRenderer<T = any> extends cocoa.classes.NSObject, cocoa.classes.MSGPURendererProtocol {
+      alloc<R = MSOpenGLRenderer>(): R;
+      new: <R = MSOpenGLRenderer>() => R;
+      createWithCompletionHandler<R = unknown, P0 = cocoa.CDUnknownBlockType>(_createWithCompletionHandler: P0): R;
+    }
+  }
+}
+
+declare const MSOpenGLRenderer: cocoa.classes.MSOpenGLRenderer;

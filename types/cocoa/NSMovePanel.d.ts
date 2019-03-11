@@ -1,0 +1,65 @@
+/// <reference no-default-lib="true" />
+
+declare namespace cocoa {
+  export interface NSMovePanel<T = any> extends cocoa.NSPanel {
+    _setAlertInformativeMessage<R = void, P0 = unknown>(__setAlertInformativeMessage: P0): R;
+    _setAlertMessage<R = void, P0 = unknown>(__setAlertMessage: P0): R;
+    _useAlertStyle<R = boolean>(): R;
+    _setUseAlertStyle<R = void, P0 = boolean>(__setUseAlertStyle: P0): R;
+    _initContentView<R = void>(): R;
+    setContentView<R = void, P0 = unknown>(_setContentView: P0): R;
+    _layoutAndResizeMovePanelIfNecessary<R = void>(): R;
+    _adjustMinContentSizeForMinFrameSize<R = cocoa.CGSize>(): R;
+    _computeMinSizeForSimpleMovePanel<R = cocoa.CGSize>(): R;
+    newDocument<R = void, P0 = unknown>(_newDocument: P0): R;
+    ok<R = void, P0 = unknown>(_ok: P0): R;
+    dismissWindow<R = void, P0 = number>(_dismissWindow: P0): R;
+    _didPresentErrorWithRecovery_contextInfo<R = void, P0 = boolean, P1 = void>(__didPresentErrorWithRecovery: P0, _contextInfo: P1): R;
+    _okForMoveMode<R = void, P0 = cocoa.CDUnknownBlockType>(__okForMoveMode: P0): R;
+    _sendToDelegateValidateFilenameOrURL_error<R = boolean, P0 = unknown, P1 = unknown>(__sendToDelegateValidateFilenameOrURL: P0, _error: P1): R;
+    _refreshDelegateOptions<R = void>(): R;
+    _didEndSheet_returnCode_contextInfo<R = void, P0 = unknown, P1 = number, P2 = void>(__didEndSheet: P0, _returnCode: P1, _contextInfo: P2): R;
+    _completeMoveForReturnCode<R = void, P0 = number>(__completeMoveForReturnCode: P0): R;
+    _closeAndCallCompletionHandlerWithReturnCode<R = void, P0 = number>(__closeAndCallCompletionHandlerWithReturnCode: P0): R;
+    _removeExtraRetainIfNeeded<R = void>(): R;
+    beginWithCompletionHandler<R = void, P0 = cocoa.CDUnknownBlockType>(_beginWithCompletionHandler: P0): R;
+    beginSheetModalForWindow_completionHandler<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(_beginSheetModalForWindow: P0, _completionHandler: P1): R;
+    _isModalWindowOrSheetRunning<R = boolean>(): R;
+    setMovePopupFieldLabel<R = void, P0 = unknown>(_setMovePopupFieldLabel: P0): R;
+    movePopupFieldLabel<R = unknown>(): R;
+    setTitle<R = void, P0 = unknown>(_setTitle: P0): R;
+    title<R = unknown>(): R;
+    setDirectoryURL<R = void, P0 = unknown>(_setDirectoryURL: P0): R;
+    directoryURL<R = unknown>(): R;
+    _updateOkButtonEnabledState<R = void>(): R;
+    finderLocationPopUpOtherLocation<R = void, P0 = unknown>(_finderLocationPopUpOtherLocation: P0): R;
+    finderLocationPopUpMenuOptions<R = number, P0 = unknown>(_finderLocationPopUpMenuOptions: P0): R;
+    finderLocationPopUpRequestRecentPlaces<R = unknown, P0 = unknown>(_finderLocationPopUpRequestRecentPlaces: P0): R;
+    finderLocationPopUp_didChangeToDirectoryURL<R = void, P0 = unknown, P1 = unknown>(_finderLocationPopUp: P0, _didChangeToDirectoryURL: P1): R;
+    _configureMovePopUp<R = void>(): R;
+    _hostAppAuditToken<R = unknown>(): R;
+    _ubiquityContainerURLs<R = unknown>(): R;
+    fileName<R = cocoa.NSString>(): R;
+    setFileName<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    delegate<R = cocoa.NSMovePanelDelegate>(): R;
+    setDelegate<R = void, P0 = cocoa.NSMovePanelDelegate>(_v: P0): R;
+    prompt<R = cocoa.NSString>(): R;
+    setPrompt<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    finalURL<R = cocoa.NSURL>(): R;
+    URL<R = cocoa.NSURL>(): R;
+    setURL<R = void, P0 = cocoa.NSURL>(_v: P0): R;
+    initialURL<R = cocoa.NSURL>(): R;
+    setInitialURL<R = void, P0 = cocoa.NSURL>(_v: P0): R;
+  }
+  namespace classes {
+    export interface NSMovePanel<T = any> extends cocoa.classes.NSPanel {
+      alloc<R = NSMovePanel>(): R;
+      new: <R = NSMovePanel>() => R;
+      _minContentRectSize<R = cocoa.CGSize>(): R;
+      movePanel<R = unknown>(): R;
+      newRemoteMovePanel<R = unknown>(): R;
+    }
+  }
+}
+
+declare const NSMovePanel: cocoa.classes.NSMovePanel;

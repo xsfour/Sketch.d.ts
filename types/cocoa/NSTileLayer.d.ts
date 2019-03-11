@@ -1,0 +1,24 @@
+/// <reference no-default-lib="true" />
+
+declare namespace cocoa {
+  export interface NSTileLayer<T = any> extends cocoa.CALayer {
+    NS_hasPrefetchedContents<R = boolean>(): R;
+    setNeedsDisplayInRect<R = void, P0 = cocoa.CGRect>(_setNeedsDisplayInRect: P0): R;
+    setBounds<R = void, P0 = cocoa.CGRect>(_setBounds: P0): R;
+    drawInContext<R = void, P0 = cocoa.CGContext>(_drawInContext: P0): R;
+    display<R = void>(): R;
+    NS_contentsAligningEnabled<R = boolean>(): R;
+    setNeedsLayout<R = void>(): R;
+    NS_setVisibleTile<R = void, P0 = boolean>(_NS_setVisibleTile: P0): R;
+    NS_setPurged<R = void, P0 = boolean>(_NS_setPurged: P0): R;
+    NS_isPurged<R = boolean>(): R;
+    visibleTileStateChanged<R = void>(): R;
+    NS_isVisibleTile<R = boolean>(): R;
+    init<R = unknown>(): R;
+  }
+  namespace classes {
+    export interface NSTileLayer<T = any> extends cocoa.classes.CALayer {  }
+  }
+}
+
+declare const NSTileLayer: cocoa.classes.NSTileLayer;

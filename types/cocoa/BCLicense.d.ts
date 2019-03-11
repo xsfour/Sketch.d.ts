@@ -1,0 +1,58 @@
+/// <reference no-default-lib="true" />
+
+declare namespace cocoa {
+  export interface BCLicense<T = any> extends cocoa.NSObject {
+    cxx_destruct<R = void>(): R;
+    variants<R = unknown>(): R;
+    updatesHaveExpired<R = boolean>(): R;
+    updateExpirationDate<R = unknown>(): R;
+    validateDate<R = void>(): R;
+    log<R = void>(): R;
+    status<R = unknown>(): R;
+    licenseID<R = unknown>(): R;
+    purchaseIsExpiring<R = boolean>(): R;
+    expiryDate<R = unknown>(): R;
+    remainingDays<R = number>(): R;
+    type<R = number>(): R;
+    deviceID<R = unknown>(): R;
+    email<R = unknown>(): R;
+    isValid<R = boolean>(): R;
+    isAppNameValid<R = boolean>(): R;
+    isExpired<R = boolean>(): R;
+    isDeviceValid<R = boolean>(): R;
+    isSignatureValid<R = boolean>(): R;
+    validateSignature<R = void>(): R;
+    payloadHash<R = unknown>(): R;
+    saveToURL_error<R = boolean, P0 = unknown, P1 = unknown>(_saveToURL: P0, _error: P1): R;
+    isAboutToExpire<R = boolean>(): R;
+    shouldTryToRequestNewTrialLicense<R = boolean>(): R;
+    initWithURL_applicationID_publicCertificate<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_initWithURL: P0, _applicationID: P1, _publicCertificate: P2): R;
+    initWithJSONData_applicationID_publicCertificate<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_initWithJSONData: P0, _applicationID: P1, _publicCertificate: P2): R;
+    networkDate<R = cocoa.NSDate>(): R;
+    setNetworkDate<R = void, P0 = cocoa.NSDate>(_v: P0): R;
+    referenceDate<R = cocoa.NSDate>(): R;
+    setReferenceDate<R = void, P0 = cocoa.NSDate>(_v: P0): R;
+    referenceTime<R = number>(): R;
+    setReferenceTime<R = void, P0 = number>(_v: P0): R;
+    signatureStatus<R = number>(): R;
+    setSignatureStatus<R = void, P0 = number>(_v: P0): R;
+    publicCertificate<R = cocoa.NSString>(): R;
+    setPublicCertificate<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    metadata<R = cocoa.NSDictionary>(): R;
+    setMetadata<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
+    payload<R = cocoa.NSDictionary>(): R;
+    setPayload<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
+    applicationID<R = cocoa.NSString>(): R;
+    setApplicationID<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    currentDate<R = cocoa.NSDate>(): R;
+    systemStartupTime<R = number>(): R;
+  }
+  namespace classes {
+    export interface BCLicense<T = any> extends cocoa.classes.NSObject {
+      alloc<R = BCLicense>(): R;
+      new: <R = BCLicense>() => R;
+    }
+  }
+}
+
+declare const BCLicense: cocoa.classes.BCLicense;

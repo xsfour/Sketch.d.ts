@@ -1,0 +1,39 @@
+/// <reference no-default-lib="true" />
+
+declare namespace cocoa {
+  export interface NSPersistentUIWindowRestoration<T = any> extends cocoa.NSObject, cocoa.NSKeyedUnarchiverDelegateProtocol {
+    dealloc<R = void>(): R;
+    unpinRestoredWindowFromTalagentWindow<R = void>(): R;
+    pinRestoredWindowToTalagentWindow<R = void>(): R;
+    disposeTalagentWindowIfUnused<R = void>(): R;
+    acquireTalagentWindow<R = number>(): R;
+    talagentWindow<R = number>(): R;
+    closeWindowCoder<R = void>(): R;
+    windowCoder<R = unknown>(): R;
+    isFinishedRestoring<R = boolean>(): R;
+    isGlobal<R = boolean>(): R;
+    finishRestoringWithWindow<R = void, P0 = unknown>(_finishRestoringWithWindow: P0): R;
+    recordForPersistentID<R = unknown, P0 = unknown>(_recordForPersistentID: P0): R;
+    setRecord_forPersistentID<R = void, P0 = unknown, P1 = unknown>(_setRecord: P0, _forPersistentID: P1): R;
+    initWithWindowID<R = unknown, P0 = number>(_initWithWindowID: P0): R;
+    lastMinuteWindowData<R = cocoa.NSData>(): R;
+    setLastMinuteWindowData<R = void, P0 = cocoa.NSData>(_v: P0): R;
+    restoredWindow<R = cocoa.NSWindow>(): R;
+    talagentWindowDictionary<R = cocoa.NSDictionary>(): R;
+    setTalagentWindowDictionary<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
+    windowID<R = number>(): R;
+    debugDescription<R = cocoa.NSString>(): R;
+    description<R = cocoa.NSString>(): R;
+    hash<R = number>(): R;
+    superclass<R = unknown>(): R;
+  }
+  namespace classes {
+    export interface NSPersistentUIWindowRestoration<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSKeyedUnarchiverDelegateProtocol {
+      alloc<R = NSPersistentUIWindowRestoration>(): R;
+      new: <R = NSPersistentUIWindowRestoration>() => R;
+      bulkDisposeTalagentWindowsIfUnused_withFade<R = void, P0 = unknown, P1 = boolean>(_bulkDisposeTalagentWindowsIfUnused: P0, _withFade: P1): R;
+    }
+  }
+}
+
+declare const NSPersistentUIWindowRestoration: cocoa.classes.NSPersistentUIWindowRestoration;

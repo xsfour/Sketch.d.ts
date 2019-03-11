@@ -1,0 +1,35 @@
+/// <reference no-default-lib="true" />
+
+declare namespace cocoa {
+  export interface MSPluginManagerWithActions<T = any> extends cocoa.MSPluginManager, cocoa.MSActionObserverProtocol {
+    pluginAndCommandIdentifiersForPlugins<R = unknown, P0 = unknown>(_pluginAndCommandIdentifiersForPlugins: P0): R;
+    sendCommandActionWithID_toPlugins_withIdentifiers_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown>(_sendCommandActionWithID: P0, _toPlugins: P1, _withIdentifiers: P2, _context: P3): R;
+    pluginsToSendStartupMessageToWithOldPlugins_andNewPlugins<R = unknown, P0 = unknown, P1 = unknown>(_pluginsToSendStartupMessageToWithOldPlugins: P0, _andNewPlugins: P1): R;
+    pluginsToSendShutdownMessageToWithOldPlugins_andNewPlugins<R = unknown, P0 = unknown, P1 = unknown>(_pluginsToSendShutdownMessageToWithOldPlugins: P0, _andNewPlugins: P1): R;
+    enabledPluginsWithPlugins<R = unknown, P0 = unknown>(_enabledPluginsWithPlugins: P0): R;
+    sendToCommandActionsForPlugin_withID_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(_sendToCommandActionsForPlugin: P0, _withID: P1, _context: P2): R;
+    sendToInterestedCommandsActionWithID_context<R = void, P0 = unknown, P1 = unknown>(_sendToInterestedCommandsActionWithID: P0, _context: P1): R;
+    contextForActionWithID_context<R = unknown, P0 = unknown, P1 = unknown>(_contextForActionWithID: P0, _context: P1): R;
+    buildHandlerIndex<R = void>(): R;
+    applicationWillTerminate<R = void, P0 = unknown>(_applicationWillTerminate: P0): R;
+    setPlugins<R = void, P0 = unknown>(_setPlugins: P0): R;
+    wilcardsEnabled<R = boolean>(): R;
+    setWilcardsEnabled<R = void, P0 = boolean>(_v: P0): R;
+    commandsWithHandler<R = cocoa.NSDictionary>(): R;
+    setCommandsWithHandler<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
+    dataManager<R = cocoa.MSDataSupplierManager>(): R;
+    setDataManager<R = void, P0 = cocoa.MSDataSupplierManager>(_v: P0): R;
+    debugDescription<R = cocoa.NSString>(): R;
+    description<R = cocoa.NSString>(): R;
+    hash<R = number>(): R;
+    superclass<R = unknown>(): R;
+  }
+  namespace classes {
+    export interface MSPluginManagerWithActions<T = any> extends cocoa.classes.MSPluginManager, cocoa.classes.MSActionObserverProtocol {
+      alloc<R = MSPluginManagerWithActions>(): R;
+      new: <R = MSPluginManagerWithActions>() => R;
+    }
+  }
+}
+
+declare const MSPluginManagerWithActions: cocoa.classes.MSPluginManagerWithActions;
