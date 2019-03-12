@@ -1,60 +1,31 @@
 /// <reference types="node" />
 /// <reference path="./cocoa.d.ts" />
 
-import { EventEmitter } from "events";
-
 declare module "sketch-module-web-view" {
+  import { EventEmitter } from "events";
+
+  type EventMethod<
+    EventListeners extends { [name: string]: (...args: any[]) => void },
+    R
+  > = <T extends string | symbol>(
+    event: T,
+    ...listeners: Array<
+      T extends keyof EventListeners
+        ? EventListeners[T]
+        : (...args: any) => void
+    >
+  ) => R;
+
   abstract class CommonEventEmitter<
     EventListeners extends { [name: string]: (...args: any[]) => void }
   > extends EventEmitter {
-    addListener<T extends string | symbol>(
-      event: T,
-      ...listeners: Array<
-        T extends keyof EventListeners ? EventListeners[T] : (...args: any) => void
-      >
-    ): this;
-    on<T extends string | symbol>(
-      event: T,
-      ...listeners: Array<
-        T extends keyof EventListeners ? EventListeners[T] : (...args: any) => void
-      >
-    ): this;
-    once<T extends string | symbol>(
-      event: T,
-      ...listeners: Array<
-        T extends keyof EventListeners ? EventListeners[T] : (...args: any) => void
-      >
-    ): this;
-    prependListener<T extends string | symbol>(
-      event: T,
-      ...listeners: Array<
-        T extends keyof EventListeners ? EventListeners[T] : (...args: any) => void
-      >
-    ): this;
-    prependOnceListener<T extends string | symbol>(
-      event: T,
-      ...listeners: Array<
-        T extends keyof EventListeners ? EventListeners[T] : (...args: any) => void
-      >
-    ): this;
-    prependOnceListener<T extends string | symbol>(
-      event: T,
-      ...listeners: Array<
-        T extends keyof EventListeners ? EventListeners[T] : (...args: any) => void
-      >
-    ): this;
-    off<T extends string | symbol>(
-      event: T,
-      ...listeners: Array<
-        T extends keyof EventListeners ? EventListeners[T] : (...args: any) => void
-      >
-    ): this;
-    removeListener<T extends string | symbol>(
-      event: T,
-      ...listeners: Array<
-        T extends keyof EventListeners ? EventListeners[T] : (...args: any) => void
-      >
-    ): this;
+    addListener: EventMethod<EventListeners, this>;
+    on: EventMethod<EventListeners, this>;
+    once: EventMethod<EventListeners, this>;
+    prependListener: EventMethod<EventListeners, this>;
+    prependOnceListener: EventMethod<EventListeners, this>;
+    off: EventMethod<EventListeners, this>;
+    removeListener: EventMethod<EventListeners, this>;
     emit<T extends string | symbol>(
       event: T,
       ...args: T extends keyof EventListeners
@@ -111,8 +82,20 @@ declare module "sketch-module-web-view" {
     /**
      * Evaluates `code` in page.
      * @returns The result of the executed code.
+     * @throws NSException | NSError
      */
-    executeJavaScript<T = unknown>(code: string): T;
+    executeJavaScript<T = unknown>(code: string): Promise<T>;
+
+    /**
+     * Evaluates `code` in page.
+     * Not like `executeJavaScript(code: string)`, the result or error should be handled by the `callback`
+     * @param code
+     * @param callback
+     */
+    executeJavaScript<T = unknown>(
+      code: string,
+      callback: (...args: any[]) => void
+    ): Promise<void>;
 
     /** Executes the editing command `undo` in web page. */
     undo(): void;
@@ -153,7 +136,7 @@ declare module "sketch-module-web-view" {
       [E in Events]: E extends "did-fail-load"
         ? (error: cocoa.NSException) => void
         : E extends "will-navigate" | "did-navigate-in-page"
-        ? (event: cocoa.NSEvent, url: string) => void
+        ? (event: {}, url: string) => void
         : () => void
     };
   }
@@ -541,4 +524,35 @@ declare module "sketch-module-web-view" {
   }
 
   export = BrowserWindow;
+}
+
+declare module "sketch-module-web-view/remote" {
+  import BrowserWindow = require("sketch-module-web-view");
+
+  /**
+   * Wrapper for BrowserWindow.getById
+   * @param id
+   */
+  export function getWebview(id: string): BrowserWindow;
+
+  export function isWebviewPresent(id: string): boolean;
+
+  /**
+   * Evaluates `code` in page.
+   * @param code
+   * @param callback
+   */
+  export function sendToWebview<T = unknown>(id: string): Promise<T>;
+
+  /**
+   * Evaluates `code` in page.
+   * Not like `sendToWebview(evalString: string)`, the result or error should be handled by the `callback`
+   * @param code
+   * @param callback
+   */
+  export function sendToWebview(
+    id: string,
+    evalString: string,
+    callback: (...args: any[]) => void
+  ): Promise<void>;
 }
