@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSRuleEditorViewSliceRow<T = any> extends cocoa.NSRuleEditorViewSlice {
+  export interface NSRuleEditorViewSliceRow<T = any> extends NSRuleEditorViewSlice {
     _subtractButton<R = unknown>(): R;
     _addButton<R = unknown>(): R;
     isEditable<R = boolean>(): R;
@@ -43,7 +43,7 @@ declare namespace cocoa {
     _interviewHorizontalPadding<R = number>(): R;
   }
   namespace classes {
-    export interface NSRuleEditorViewSliceRow<T = any> extends cocoa.classes.NSRuleEditorViewSlice {
+    export interface NSRuleEditorViewSliceRow<T = any> extends NSRuleEditorViewSlice {
       alloc<R = NSRuleEditorViewSliceRow>(): R;
       new: <R = NSRuleEditorViewSliceRow>() => R;
     }

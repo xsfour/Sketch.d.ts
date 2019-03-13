@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSModePickerView<T = any> extends cocoa.NSView {
+  export interface MSModePickerView<T = any> extends NSView {
     cxx_destruct<R = void>(): R;
     buttons<R = unknown>(): R;
     deselectAllButtons<R = void>(): R;
@@ -13,27 +13,27 @@ declare namespace cocoa {
     addTrackingAreaForButton<R = void, P0 = unknown>(_addTrackingAreaForButton: P0): R;
     buttonAction<R = void, P0 = unknown>(_buttonAction: P0): R;
     awakeFromNib<R = void>(): R;
-    labelField<R = cocoa.NSTextField>(): R;
-    setLabelField<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    button6<R = cocoa.NSButton>(): R;
-    setButton6<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    button5<R = cocoa.NSButton>(): R;
-    setButton5<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    button4<R = cocoa.NSButton>(): R;
-    setButton4<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    button3<R = cocoa.NSButton>(): R;
-    setButton3<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    button2<R = cocoa.NSButton>(): R;
-    setButton2<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    button1<R = cocoa.NSButton>(): R;
-    setButton1<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    delegate<R = cocoa.MSModeModePickerDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.MSModeModePickerDelegate>(_v: P0): R;
+    labelField<R = NSTextField>(): R;
+    setLabelField<R = void, P0 = NSTextField>(_v: P0): R;
+    button6<R = NSButton>(): R;
+    setButton6<R = void, P0 = NSButton>(_v: P0): R;
+    button5<R = NSButton>(): R;
+    setButton5<R = void, P0 = NSButton>(_v: P0): R;
+    button4<R = NSButton>(): R;
+    setButton4<R = void, P0 = NSButton>(_v: P0): R;
+    button3<R = NSButton>(): R;
+    setButton3<R = void, P0 = NSButton>(_v: P0): R;
+    button2<R = NSButton>(): R;
+    setButton2<R = void, P0 = NSButton>(_v: P0): R;
+    button1<R = NSButton>(): R;
+    setButton1<R = void, P0 = NSButton>(_v: P0): R;
+    delegate<R = MSModeModePickerDelegate>(): R;
+    setDelegate<R = void, P0 = MSModeModePickerDelegate>(_v: P0): R;
     pickerMode<R = number>(): R;
     setPickerMode<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface MSModePickerView<T = any> extends cocoa.classes.NSView {
+    export interface MSModePickerView<T = any> extends NSView {
       alloc<R = MSModePickerView>(): R;
       new: <R = MSModePickerView>() => R;
     }

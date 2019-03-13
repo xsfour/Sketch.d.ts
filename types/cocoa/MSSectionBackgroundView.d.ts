@@ -1,14 +1,14 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSectionBackgroundView<T = any> extends cocoa.NSView {
+  export interface MSSectionBackgroundView<T = any> extends NSView {
     isFlipped<R = boolean>(): R;
     drawWhiteHeader<R = void>(): R;
     stackSubviews<R = void>(): R;
     recalculateHeight<R = void>(): R;
   }
   namespace classes {
-    export interface MSSectionBackgroundView<T = any> extends cocoa.classes.NSView {
+    export interface MSSectionBackgroundView<T = any> extends NSView {
       alloc<R = MSSectionBackgroundView>(): R;
       new: <R = MSSectionBackgroundView>() => R;
       requiredHeightForViews<R = number, P0 = unknown>(_requiredHeightForViews: P0): R;

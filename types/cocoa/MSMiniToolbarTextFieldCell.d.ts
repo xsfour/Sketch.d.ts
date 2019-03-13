@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSMiniToolbarTextFieldCell<T = any> extends cocoa.NSTextFieldCell {}
+  export interface MSMiniToolbarTextFieldCell<T = any> extends NSTextFieldCell {}
   namespace classes {
-    export interface MSMiniToolbarTextFieldCell<T = any> extends cocoa.classes.NSTextFieldCell {
+    export interface MSMiniToolbarTextFieldCell<T = any> extends NSTextFieldCell {
       alloc<R = MSMiniToolbarTextFieldCell>(): R;
       new: <R = MSMiniToolbarTextFieldCell>() => R;
     }

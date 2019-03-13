@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSMultipleColorsPlaceholder<T = any> extends cocoa.NSObject {}
+  export interface MSMultipleColorsPlaceholder<T = any> extends NSObject {}
   namespace classes {
-    export interface MSMultipleColorsPlaceholder<T = any> extends cocoa.classes.NSObject {
+    export interface MSMultipleColorsPlaceholder<T = any> extends NSObject {
       alloc<R = MSMultipleColorsPlaceholder>(): R;
       new: <R = MSMultipleColorsPlaceholder>() => R;
       placeholderColor<R = unknown>(): R;

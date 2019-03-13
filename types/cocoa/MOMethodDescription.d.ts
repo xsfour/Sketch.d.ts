@@ -1,15 +1,15 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MOMethodDescription<T = any> extends cocoa.NSObject {
+  export interface MOMethodDescription<T = any> extends NSObject {
     selector<R = string>(): R;
-    typeEncoding<R = cocoa.NSString>(): R;
+    typeEncoding<R = NSString>(): R;
   }
   namespace classes {
-    export interface MOMethodDescription<T = any> extends cocoa.classes.NSObject {
+    export interface MOMethodDescription<T = any> extends NSObject {
       alloc<R = MOMethodDescription>(): R;
       new: <R = MOMethodDescription>() => R;
-      methodWithSelector_typeEncoding<R = cocoa.MOMethodDescription, P0 = string, P1 = cocoa.NSString>(_methodWithSelector: P0, _typeEncoding: P1): R;
+      methodWithSelector_typeEncoding<R = MOMethodDescription, P0 = string, P1 = NSString>(_methodWithSelector: P0, _typeEncoding: P1): R;
     }
   }
 }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSBindingInfo<T = any> extends cocoa.NSObject, cocoa.NSCodingProtocol {
+  export interface _NSBindingInfo<T = any> extends NSObject, NSCodingProtocol {
     description<R = unknown>(): R;
     observingBinder<R = unknown>(): R;
     setObservingBinder<R = void, P0 = unknown>(_setObservingBinder: P0): R;
@@ -32,12 +32,12 @@ declare namespace cocoa {
     key<R = unknown>(): R;
     binding<R = unknown>(): R;
     dealloc<R = void>(): R;
-    copyWithZone<R = unknown, P0 = cocoa._NSZone>(_copyWithZone: P0): R;
+    copyWithZone<R = unknown, P0 = _NSZone>(_copyWithZone: P0): R;
     initWithController_retainController_key_valueTransformerName_binding<R = unknown, P0 = unknown, P1 = boolean, P2 = unknown, P3 = unknown, P4 = unknown>(_initWithController: P0, _retainController: P1, _key: P2, _valueTransformerName: P3, _binding: P4): R;
     initWithController_retainController_key_valueTransformer_binding<R = unknown, P0 = unknown, P1 = boolean, P2 = unknown, P3 = unknown, P4 = unknown>(_initWithController: P0, _retainController: P1, _key: P2, _valueTransformer: P3, _binding: P4): R;
   }
   namespace classes {
-    export interface _NSBindingInfo<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCodingProtocol {
+    export interface _NSBindingInfo<T = any> extends NSObject, NSCodingProtocol {
       alloc<R = _NSBindingInfo>(): R;
       new: <R = _NSBindingInfo>() => R;
     }

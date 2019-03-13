@@ -1,10 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarCustomizationPreviewMiniControlStripSectionLayoutDelegateProtocol<T = any> extends cocoa.NSTouchBarCustomizationPreviewSectionLayoutDelegateProtocol {}
+  export interface NSTouchBarCustomizationPreviewMiniControlStripSectionLayoutDelegateProtocol<T = any> extends NSTouchBarCustomizationPreviewSectionLayoutDelegateProtocol {}
   namespace classes {
-    export interface NSTouchBarCustomizationPreviewMiniControlStripSectionLayoutDelegateProtocol<T = any> extends cocoa.classes.NSTouchBarCustomizationPreviewSectionLayoutDelegateProtocol {  }
+    export interface NSTouchBarCustomizationPreviewMiniControlStripSectionLayoutDelegateProtocol<T = any> extends NSTouchBarCustomizationPreviewSectionLayoutDelegateProtocol {  }
   }
 }
-
-declare const NSTouchBarCustomizationPreviewMiniControlStripSectionLayoutDelegateProtocol: cocoa.classes.NSTouchBarCustomizationPreviewMiniControlStripSectionLayoutDelegateProtocol;

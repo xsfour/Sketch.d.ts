@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColoredPencil<T = any> extends cocoa.NSObject {
+  export interface NSColoredPencil<T = any> extends NSObject {
     debugDescription<R = unknown>(): R;
     dealloc<R = void>(): R;
     initWithName_color_image<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_initWithName: P0, _color: P1, _image: P2): R;
@@ -33,12 +33,12 @@ declare namespace cocoa {
     accessibilityRoleAttribute<R = unknown>(): R;
     accessibilityAttributeNames<R = unknown>(): R;
     accessibilityIsIgnored<R = boolean>(): R;
-    color<R = cocoa.NSColor>(): R;
-    name<R = cocoa.NSString>(): R;
-    image<R = cocoa.NSImage>(): R;
+    color<R = NSColor>(): R;
+    name<R = NSString>(): R;
+    image<R = NSImage>(): R;
   }
   namespace classes {
-    export interface NSColoredPencil<T = any> extends cocoa.classes.NSObject {
+    export interface NSColoredPencil<T = any> extends NSObject {
       alloc<R = NSColoredPencil>(): R;
       new: <R = NSColoredPencil>() => R;
     }

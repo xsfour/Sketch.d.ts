@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarItemTree<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol {
+  export interface NSTouchBarItemTree<T = any> extends NSObject, NSCopyingProtocol {
     debugDescription<R = unknown>(): R;
     parentItemNodeForNode<R = unknown, P0 = unknown>(_parentItemNodeForNode: P0): R;
     parentNodeForNode<R = unknown, P0 = unknown>(_parentNodeForNode: P0): R;
@@ -17,7 +17,7 @@ declare namespace cocoa {
     customization_nodeCanBeRemoved<R = boolean, P0 = unknown>(_customization_nodeCanBeRemoved: P0): R;
     positionForInsertingItemWithIdentifier_toBeAfterNode<R = unknown, P0 = unknown, P1 = unknown>(_positionForInsertingItemWithIdentifier: P0, _toBeAfterNode: P1): R;
     positionForInsertingItemFromTouchBar_toBeAfterNode<R = unknown, P0 = unknown, P1 = unknown>(_positionForInsertingItemFromTouchBar: P0, _toBeAfterNode: P1): R;
-    positionForInsertingItemWithPredicate_toBeAfterNode<R = unknown, P0 = cocoa.CDUnknownBlockType, P1 = unknown>(_positionForInsertingItemWithPredicate: P0, _toBeAfterNode: P1): R;
+    positionForInsertingItemWithPredicate_toBeAfterNode<R = unknown, P0 = CDUnknownBlockType, P1 = unknown>(_positionForInsertingItemWithPredicate: P0, _toBeAfterNode: P1): R;
     positionForMovingNode_toBeAfterNode<R = unknown, P0 = unknown, P1 = unknown>(_positionForMovingNode: P0, _toBeAfterNode: P1): R;
     positionOfNode<R = unknown, P0 = unknown>(_positionOfNode: P0): R;
     treeByRemovingItemIdentifier<R = unknown, P0 = unknown>(_treeByRemovingItemIdentifier: P0): R;
@@ -32,15 +32,15 @@ declare namespace cocoa {
     persistBarNode_toDomain<R = boolean, P0 = unknown, P1 = unknown>(_persistBarNode: P0, _toDomain: P1): R;
     persistBar_toDomain<R = boolean, P0 = unknown, P1 = unknown>(_persistBar: P0, _toDomain: P1): R;
     persistTreeToDomain<R = void, P0 = unknown>(_persistTreeToDomain: P0): R;
-    centeredRootNode<R = cocoa.NSTouchBarItemTreeNode>(): R;
-    rootNode<R = cocoa.NSTouchBarItemTreeBarProviderNode>(): R;
-    prioritizedLeafNodes<R = cocoa.NSArray>(): R;
-    centeredLeafNodes<R = cocoa.NSArray>(): R;
-    layoutOrderedLeafNodes<R = cocoa.NSArray>(): R;
-    leafNodes<R = cocoa.NSArray>(): R;
+    centeredRootNode<R = NSTouchBarItemTreeNode>(): R;
+    rootNode<R = NSTouchBarItemTreeBarProviderNode>(): R;
+    prioritizedLeafNodes<R = NSArray>(): R;
+    centeredLeafNodes<R = NSArray>(): R;
+    layoutOrderedLeafNodes<R = NSArray>(): R;
+    leafNodes<R = NSArray>(): R;
   }
   namespace classes {
-    export interface NSTouchBarItemTree<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol {
+    export interface NSTouchBarItemTree<T = any> extends NSObject, NSCopyingProtocol {
       alloc<R = NSTouchBarItemTree>(): R;
       new: <R = NSTouchBarItemTree>() => R;
       itemTreeWithDefaultPresetTouchBars<R = unknown, P0 = unknown>(_itemTreeWithDefaultPresetTouchBars: P0): R;

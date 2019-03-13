@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSObject<T = any> extends cocoa.NSObjectProtocol {
+  export interface NSObject<T = any> extends NSObjectProtocol {
     init<R = this>(): R;
     // + NSObject(DefaultObservationImplementations,KVOKeyPathSupport,NSAccessibilityInternal,NSAccessibilityNotifications,NSAccessibilityOverriddenAttributes,NSAccessibilityOverriddenAttributesArchiving,NSAccessibilityOverridingAttributes,NSAccessibilitySectionHelper,NSAccessibilityTemporaryChildren,NSAccessibilityUIElementSpecifier,NSAccessibilityUseConvenienceAPI,NSArchiverCallBack,NSClassDescriptionPrimitives,NSComparisonMethods,NSDOAdditions,NSDelayedPerforming,NSDeprecatedKeyValueCoding,NSDeprecatedKeyValueObservingCustomization,NSDiscardableContentProxy,NSDistantObjectAdditions,NSIBObjectDataAXExtras,NSKeyValueBindingCreation,NSKeyValueCoding,NSKeyValueCodingPrivate,NSKeyValueObserverNotification,NSKeyValueObserverNotifying,NSKeyValueObserverRegistration,NSKeyValueObserving,NSKeyValueObservingCustomization,NSKeyValueObservingPrivate,NSKeyedArchiverObjectSubstitution,NSKeyedUnarchiverObjectSubstitution,NSNibAwaking,NSObject,NSObjectAccessibilityAttributeAccessAdditions,NSObjectPortCoding,NSPlaceholders,NSRemoteUIElementAccessibility,NSScriptAppleEventConversion,NSScriptClassDescription,NSScriptKeyValueCoding,NSScriptKeyValueCodingInternal,NSScriptKeyValueCodingPrivate,NSScriptLegacyPropertyListParsing,NSScriptObjectSpecifierBackstop,NSScripting,NSScriptingInternal,NSScriptingInternalCommandHandling,NSScriptingInternalCounting,NSScriptingInternalDeleting,NSScriptingInternalExisting,NSScriptingInternalSetting,NSSetVersionHacks,NSThreadPerformAdditions,NSUnpublishedEOF,NSUserInterfaceItemIdentification,_NSBinderKeyValueCodingAdditions,_NSBindingAdaptorAccess,_NSBindingCreationDelegateRegistration,_NSBindingCreationSupport,_NSTiledLayer,BCJSONDecoding,Chocolat,ImmutableObjectSupport,MSBaseArchiver,MSCoding,MSKeyedArchiverHelper,MSKeyedUnarchiver,MSShareableObjectReferenceExtention,ModelCopying,ModelDefaultValueSupport,ModelParentSupport,ModelSupport,NSObjectAddObservers,SVG,SharedObjectIDMigration,TreeAsDictionarySupport,TreeTraversal):
     _receiveBox<R = void, P0 = unknown>(__receiveBox: P0): R;
@@ -13,8 +13,8 @@ declare namespace cocoa {
     _destroyObserverList<R = void>(): R;
     _observerStorageOfSize<R = void, P0 = number>(__observerStorageOfSize: P0): R;
     _observerStorage<R = unknown>(): R;
-    addObservationTransformer<R = unknown, P0 = cocoa.CDUnknownBlockType>(_addObservationTransformer: P0): R;
-    addObserverBlock<R = unknown, P0 = cocoa.CDUnknownBlockType>(_addObserverBlock: P0): R;
+    addObservationTransformer<R = unknown, P0 = CDUnknownBlockType>(_addObservationTransformer: P0): R;
+    addObserverBlock<R = unknown, P0 = CDUnknownBlockType>(_addObserverBlock: P0): R;
     addChainedObservers<R = unknown, P0 = unknown>(_addChainedObservers: P0): R;
     finishObserving<R = void>(): R;
     _overrideUseFastBlockObservers<R = boolean>(): R;
@@ -37,7 +37,7 @@ declare namespace cocoa {
     accessibilityEncodeOverriddenAttributes<R = void, P0 = unknown>(_accessibilityEncodeOverriddenAttributes: P0): R;
     _accessibilitySetOverrideValue_forAttribute<R = boolean, P0 = unknown, P1 = unknown>(__accessibilitySetOverrideValue: P0, _forAttribute: P1): R;
     accessibilitySetOverrideValue_forAttribute<R = boolean, P0 = unknown, P1 = unknown>(_accessibilitySetOverrideValue: P0, _forAttribute: P1): R;
-    accessibilityReplaceRange_withText<R = boolean, P0 = cocoa._NSRange, P1 = unknown>(_accessibilityReplaceRange: P0, _withText: P1): R;
+    accessibilityReplaceRange_withText<R = boolean, P0 = _NSRange, P1 = unknown>(_accessibilityReplaceRange: P0, _withText: P1): R;
     accessibilityVisibleArea<R = number>(): R;
     _shouldSearchChildrenForSection<R = boolean>(): R;
     _isAccessibilityCandidateForSection<R = boolean, P0 = unknown>(__isAccessibilityCandidateForSection: P0): R;
@@ -70,7 +70,7 @@ declare namespace cocoa {
     isNotEqualTo<R = boolean, P0 = unknown>(_isNotEqualTo: P0): R;
     isEqualTo<R = boolean, P0 = unknown>(_isEqualTo: P0): R;
     _conformsToProtocolNamed<R = boolean, P0 = string>(__conformsToProtocolNamed: P0): R;
-    methodDescriptionForSelector<R = cocoa.objc_method_description, P0 = string>(_methodDescriptionForSelector: P0): R;
+    methodDescriptionForSelector<R = objc_method_description, P0 = string>(_methodDescriptionForSelector: P0): R;
     performSelector_withObject_afterDelay_inModes<R = void, P0 = string, P1 = unknown, P2 = number, P3 = unknown>(_performSelector: P0, _withObject: P1, _afterDelay: P2, _inModes: P3): R;
     performSelector_object_afterDelay<R = void, P0 = string, P1 = unknown, P2 = number>(_performSelector: P0, _object: P1, _afterDelay: P2): R;
     performSelector_withObject_afterDelay<R = void, P0 = string, P1 = unknown, P2 = number>(_performSelector: P0, _withObject: P1, _afterDelay: P2): R;
@@ -131,9 +131,9 @@ declare namespace cocoa {
     observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
     _pendingChangeNotificationsArrayForKey_create<R = unknown, P0 = unknown, P1 = boolean>(__pendingChangeNotificationsArrayForKey: P0, _create: P1): R;
     _implicitObservationInfo<R = unknown>(): R;
-    _changeValueForKey_usingBlock<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(__changeValueForKey: P0, _usingBlock: P1): R;
-    _changeValueForKey_key_key_usingBlock<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = cocoa.CDUnknownBlockType>(__changeValueForKey: P0, _key: P1, _key1: P2, _usingBlock: P3): R;
-    _changeValueForKeys_count_maybeOldValuesDict_maybeNewValuesDict_usingBlock<R = void, P0 = unknown, P1 = number, P2 = unknown, P3 = unknown, P4 = cocoa.CDUnknownBlockType>(__changeValueForKeys: P0, _count: P1, _maybeOldValuesDict: P2, _maybeNewValuesDict: P3, _usingBlock: P4): R;
+    _changeValueForKey_usingBlock<R = void, P0 = unknown, P1 = CDUnknownBlockType>(__changeValueForKey: P0, _usingBlock: P1): R;
+    _changeValueForKey_key_key_usingBlock<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = CDUnknownBlockType>(__changeValueForKey: P0, _key: P1, _key1: P2, _usingBlock: P3): R;
+    _changeValueForKeys_count_maybeOldValuesDict_maybeNewValuesDict_usingBlock<R = void, P0 = unknown, P1 = number, P2 = unknown, P3 = unknown, P4 = CDUnknownBlockType>(__changeValueForKeys: P0, _count: P1, _maybeOldValuesDict: P2, _maybeNewValuesDict: P3, _usingBlock: P4): R;
     _notifyObserversOfChangeFromValuesForKeys_toValuesForKeys<R = void, P0 = unknown, P1 = unknown>(__notifyObserversOfChangeFromValuesForKeys: P0, _toValuesForKeys: P1): R;
     _didChangeValuesForKeys<R = void, P0 = unknown>(__didChangeValuesForKeys: P0): R;
     _willChangeValuesForKeys<R = void, P0 = unknown>(__willChangeValuesForKeys: P0): R;
@@ -280,26 +280,26 @@ declare namespace cocoa {
     safeCastToClass<R = unknown, P0 = unknown>(_safeCastToClass: P0): R;
     updateSharedStyleIDFromMigration<R = void, P0 = unknown>(_updateSharedStyleIDFromMigration: P0): R;
     treeAsDictionary<R = unknown>(): R;
-    mapTreeWithLeafTransformBlock<R = unknown, P0 = cocoa.CDUnknownBlockType>(_mapTreeWithLeafTransformBlock: P0): R;
-    toManyRelationshipKeys<R = cocoa.NSArray>(): R;
-    toOneRelationshipKeys<R = cocoa.NSArray>(): R;
-    attributeKeys<R = cocoa.NSArray>(): R;
-    classDescription<R = cocoa.NSClassDescription>(): R;
+    mapTreeWithLeafTransformBlock<R = unknown, P0 = CDUnknownBlockType>(_mapTreeWithLeafTransformBlock: P0): R;
+    toManyRelationshipKeys<R = NSArray>(): R;
+    toOneRelationshipKeys<R = NSArray>(): R;
+    attributeKeys<R = NSArray>(): R;
+    classDescription<R = NSClassDescription>(): R;
     autoContentAccessingProxy<R = unknown>(): R;
-    exposedBindings<R = cocoa.NSArray>(): R;
+    exposedBindings<R = NSArray>(): R;
     observationInfo<R = void>(): R;
     setObservationInfo<R = void, P0 = void>(_v: P0): R;
     classForKeyedArchiver<R = unknown>(): R;
-    className<R = cocoa.NSString>(): R;
+    className<R = NSString>(): R;
     classCode<R = number>(): R;
-    scriptingProperties<R = cocoa.NSDictionary>(): R;
-    setScriptingProperties<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
-    archiveReferenceIdentifier_bc<R = cocoa.NSString>(): R;
+    scriptingProperties<R = NSDictionary>(): R;
+    setScriptingProperties<R = void, P0 = NSDictionary>(_v: P0): R;
+    archiveReferenceIdentifier_bc<R = NSString>(): R;
   }
   namespace classes {
-    export interface NSObject<T = any> extends cocoa.classes.NSObjectProtocol {
+    export interface NSObject<T = any> extends NSObjectProtocol {
       // + NSObject(DefaultObservationImplementations,KVOKeyPathSupport,NSAccessibilityInternal,NSAccessibilityNotifications,NSAccessibilityOverriddenAttributes,NSAccessibilityOverriddenAttributesArchiving,NSAccessibilityOverridingAttributes,NSAccessibilitySectionHelper,NSAccessibilityTemporaryChildren,NSAccessibilityUIElementSpecifier,NSAccessibilityUseConvenienceAPI,NSArchiverCallBack,NSClassDescriptionPrimitives,NSComparisonMethods,NSDOAdditions,NSDelayedPerforming,NSDeprecatedKeyValueCoding,NSDeprecatedKeyValueObservingCustomization,NSDiscardableContentProxy,NSDistantObjectAdditions,NSIBObjectDataAXExtras,NSKeyValueBindingCreation,NSKeyValueCoding,NSKeyValueCodingPrivate,NSKeyValueObserverNotification,NSKeyValueObserverNotifying,NSKeyValueObserverRegistration,NSKeyValueObserving,NSKeyValueObservingCustomization,NSKeyValueObservingPrivate,NSKeyedArchiverObjectSubstitution,NSKeyedUnarchiverObjectSubstitution,NSNibAwaking,NSObject,NSObjectAccessibilityAttributeAccessAdditions,NSObjectPortCoding,NSPlaceholders,NSRemoteUIElementAccessibility,NSScriptAppleEventConversion,NSScriptClassDescription,NSScriptKeyValueCoding,NSScriptKeyValueCodingInternal,NSScriptKeyValueCodingPrivate,NSScriptLegacyPropertyListParsing,NSScriptObjectSpecifierBackstop,NSScripting,NSScriptingInternal,NSScriptingInternalCommandHandling,NSScriptingInternalCounting,NSScriptingInternalDeleting,NSScriptingInternalExisting,NSScriptingInternalSetting,NSSetVersionHacks,NSThreadPerformAdditions,NSUnpublishedEOF,NSUserInterfaceItemIdentification,_NSBinderKeyValueCodingAdditions,_NSBindingAdaptorAccess,_NSBindingCreationDelegateRegistration,_NSBindingCreationSupport,_NSTiledLayer,BCJSONDecoding,Chocolat,ImmutableObjectSupport,MSBaseArchiver,MSCoding,MSKeyedArchiverHelper,MSKeyedUnarchiver,MSShareableObjectReferenceExtention,ModelCopying,ModelDefaultValueSupport,ModelParentSupport,ModelSupport,NSObjectAddObservers,SVG,SharedObjectIDMigration,TreeAsDictionarySupport,TreeTraversal):
-      instanceMethodDescriptionForSelector<R = cocoa.objc_method_description, P0 = string>(_instanceMethodDescriptionForSelector: P0): R;
+      instanceMethodDescriptionForSelector<R = objc_method_description, P0 = string>(_instanceMethodDescriptionForSelector: P0): R;
       cancelPreviousPerformRequestsWithTarget<R = void, P0 = unknown>(_cancelPreviousPerformRequestsWithTarget: P0): R;
       cancelPreviousPerformRequestsWithTarget_selector_object<R = void, P0 = unknown, P1 = string, P2 = unknown>(_cancelPreviousPerformRequestsWithTarget: P0, _selector: P1, _object: P2): R;
       useStoredAccessor<R = boolean>(): R;

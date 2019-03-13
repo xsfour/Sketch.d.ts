@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSBuiltinAppearance<T = any> extends cocoa.NSAppearance {
+  export interface NSBuiltinAppearance<T = any> extends NSAppearance {
     name<R = unknown>(): R;
     initWithBundleResourceName_publicName<R = unknown, P0 = unknown, P1 = unknown>(_initWithBundleResourceName: P0, _publicName: P1): R;
   }
   namespace classes {
-    export interface NSBuiltinAppearance<T = any> extends cocoa.classes.NSAppearance {
+    export interface NSBuiltinAppearance<T = any> extends NSAppearance {
       alloc<R = NSBuiltinAppearance>(): R;
       new: <R = NSBuiltinAppearance>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableRowViewSpringAnimation<T = any> extends cocoa.NSSpringAnimation {
+  export interface NSTableRowViewSpringAnimation<T = any> extends NSSpringAnimation {
     endPercentage<R = number>(): R;
     setEndPercentage<R = void, P0 = number>(_v: P0): R;
     startPercentage<R = number>(): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     percentage<R = number>(): R;
   }
   namespace classes {
-    export interface NSTableRowViewSpringAnimation<T = any> extends cocoa.classes.NSSpringAnimation {
+    export interface NSTableRowViewSpringAnimation<T = any> extends NSSpringAnimation {
       alloc<R = NSTableRowViewSpringAnimation>(): R;
       new: <R = NSTableRowViewSpringAnimation>() => R;
     }

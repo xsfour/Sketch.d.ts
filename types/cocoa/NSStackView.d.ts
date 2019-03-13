@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSStackView<T = any> extends cocoa.NSView {
+  export interface NSStackView<T = any> extends NSView {
     setArrangedSubviews<R = void, P0 = unknown>(_setArrangedSubviews: P0): R;
     insertArrangedSubview_atIndex<R = void, P0 = unknown, P1 = number>(_insertArrangedSubview: P0, _atIndex: P1): R;
     removeArrangedSubview<R = void, P0 = unknown>(_removeArrangedSubview: P0): R;
@@ -22,7 +22,7 @@ declare namespace cocoa {
     _removesDetachedViewsFromSubviews<R = boolean>(): R;
     _checkForDroppedViews<R = void>(): R;
     _hasActiveClippingOfLastView<R = boolean>(): R;
-    _deferringDetachAndReattachNotifications<R = void, P0 = cocoa.CDUnknownBlockType>(__deferringDetachAndReattachNotifications: P0): R;
+    _deferringDetachAndReattachNotifications<R = void, P0 = CDUnknownBlockType>(__deferringDetachAndReattachNotifications: P0): R;
     _didReattachViews<R = void, P0 = unknown>(__didReattachViews: P0): R;
     _willReattachViews<R = void, P0 = unknown>(__willReattachViews: P0): R;
     _didDetachViews<R = void, P0 = unknown>(__didDetachViews: P0): R;
@@ -44,7 +44,7 @@ declare namespace cocoa {
     _needsSecondUpdateConstraintsPassForAutomaticDetaching<R = boolean>(): R;
     _firstAndLastViewsAreFlushToEdges<R = boolean>(): R;
     _effectiveStackingAxisHuggingPriority<R = number>(): R;
-    enumerateViewsIncludingDetached_usingBlock<R = void, P0 = boolean, P1 = cocoa.CDUnknownBlockType>(_enumerateViewsIncludingDetached: P0, _usingBlock: P1): R;
+    enumerateViewsIncludingDetached_usingBlock<R = void, P0 = boolean, P1 = CDUnknownBlockType>(_enumerateViewsIncludingDetached: P0, _usingBlock: P1): R;
     setUserInterfaceLayoutDirection<R = void, P0 = number>(_setUserInterfaceLayoutDirection: P0): R;
     _idealSizeLayoutDimensionCreateIfNecessary<R = unknown>(): R;
     _allAttachedViewsAreCentered<R = boolean>(): R;
@@ -73,7 +73,7 @@ declare namespace cocoa {
     _setCustomSpacing_afterView_animated<R = void, P0 = number, P1 = unknown, P2 = boolean>(__setCustomSpacing: P0, _afterView: P1, _animated: P2): R;
     setHasEqualSpacing<R = void, P0 = boolean>(_setHasEqualSpacing: P0): R;
     hasEqualSpacing<R = boolean>(): R;
-    _setEdgeInsets_animated<R = void, P0 = cocoa.NSEdgeInsets, P1 = boolean>(__setEdgeInsets: P0, _animated: P1): R;
+    _setEdgeInsets_animated<R = void, P0 = NSEdgeInsets, P1 = boolean>(__setEdgeInsets: P0, _animated: P1): R;
     _setSpacing_animated<R = void, P0 = number, P1 = boolean>(__setSpacing: P0, _animated: P1): R;
     setTransverseAlignmentPriority<R = void, P0 = number>(_setTransverseAlignmentPriority: P0): R;
     transverseAlignmentPriority<R = number>(): R;
@@ -98,27 +98,27 @@ declare namespace cocoa {
     _addSubviewsAndPreserveAndPreserveAncestorConstraints<R = void, P0 = unknown>(__addSubviewsAndPreserveAndPreserveAncestorConstraints: P0): R;
     _stackViewDecodedWantingFlatHierarchy<R = boolean>(): R;
     _stackViewFinishedDecoding<R = boolean>(): R;
-    arrangedSubviews<R = cocoa.NSArray>(): R;
+    arrangedSubviews<R = NSArray>(): R;
     detachesHiddenViews<R = boolean>(): R;
     setDetachesHiddenViews<R = void, P0 = boolean>(_v: P0): R;
-    detachedViews<R = cocoa.NSArray>(): R;
+    detachedViews<R = NSArray>(): R;
     distribution<R = number>(): R;
     setDistribution<R = void, P0 = number>(_v: P0): R;
-    edgeInsets<R = cocoa.NSEdgeInsets>(): R;
-    setEdgeInsets<R = void, P0 = cocoa.NSEdgeInsets>(_v: P0): R;
+    edgeInsets<R = NSEdgeInsets>(): R;
+    setEdgeInsets<R = void, P0 = NSEdgeInsets>(_v: P0): R;
     spacing<R = number>(): R;
     setSpacing<R = void, P0 = number>(_v: P0): R;
     alignment<R = number>(): R;
     setAlignment<R = void, P0 = number>(_v: P0): R;
     orientation<R = number>(): R;
     setOrientation<R = void, P0 = number>(_v: P0): R;
-    delegate<R = cocoa.NSStackViewDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSStackViewDelegate>(_v: P0): R;
+    delegate<R = NSStackViewDelegate>(): R;
+    setDelegate<R = void, P0 = NSStackViewDelegate>(_v: P0): R;
     baselineRelativeArrangement<R = boolean>(): R;
     setBaselineRelativeArrangement<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface NSStackView<T = any> extends cocoa.classes.NSView {
+    export interface NSStackView<T = any> extends NSView {
       alloc<R = NSStackView>(): R;
       new: <R = NSStackView>() => R;
       keyPathsForValuesAffectingArrangedSubviews<R = unknown>(): R;

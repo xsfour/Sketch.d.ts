@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableUpdateDeleteItem<T = any> extends cocoa.NSTableUpdateItem2 {
+  export interface NSTableUpdateDeleteItem<T = any> extends NSTableUpdateItem2 {
     dealloc<R = void>(): R;
-    viewToDelete<R = cocoa.NSTableRowView>(): R;
-    setViewToDelete<R = void, P0 = cocoa.NSTableRowView>(_v: P0): R;
+    viewToDelete<R = NSTableRowView>(): R;
+    setViewToDelete<R = void, P0 = NSTableRowView>(_v: P0): R;
   }
   namespace classes {
-    export interface NSTableUpdateDeleteItem<T = any> extends cocoa.classes.NSTableUpdateItem2 {
+    export interface NSTableUpdateDeleteItem<T = any> extends NSTableUpdateItem2 {
       alloc<R = NSTableUpdateDeleteItem>(): R;
       new: <R = NSTableUpdateDeleteItem>() => R;
     }

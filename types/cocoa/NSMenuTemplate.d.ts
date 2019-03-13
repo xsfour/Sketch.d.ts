@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMenuTemplate<T = any> extends cocoa.NSObject, cocoa.NSCodingProtocol {
+  export interface NSMenuTemplate<T = any> extends NSObject, NSCodingProtocol {
     numberOfItems<R = number>(): R;
     _setOwnedByPopUp<R = void, P0 = unknown>(__setOwnedByPopUp: P0): R;
     _isEnabled<R = boolean>(): R;
@@ -18,7 +18,7 @@ declare namespace cocoa {
     _setMenuClassName<R = void, P0 = unknown>(__setMenuClassName: P0): R;
   }
   namespace classes {
-    export interface NSMenuTemplate<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCodingProtocol {
+    export interface NSMenuTemplate<T = any> extends NSObject, NSCodingProtocol {
       alloc<R = NSMenuTemplate>(): R;
       new: <R = NSMenuTemplate>() => R;
       initialize<R = void>(): R;

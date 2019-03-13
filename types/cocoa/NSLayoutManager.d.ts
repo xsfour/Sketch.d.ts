@@ -10,7 +10,7 @@ declare namespace cocoa {
     spellCheckerDidChangeLanguage<R = void, P0 = unknown>(_spellCheckerDidChangeLanguage: P0): R;
     spellCheckerDidUnlearnWord<R = void, P0 = unknown>(_spellCheckerDidUnlearnWord: P0): R;
     spellCheckerDidLearnWord<R = void, P0 = unknown>(_spellCheckerDidLearnWord: P0): R;
-    showPackedGlyphs_length_glyphRange_atPoint_font_color_printingAdjustment<R = void, P0 = string, P1 = number, P2 = cocoa._NSRange, P3 = cocoa.CGPoint, P4 = unknown, P5 = unknown, P6 = cocoa.CGSize>(_showPackedGlyphs: P0, _length: P1, _glyphRange: P2, _atPoint: P3, _font: P4, _color: P5, _printingAdjustment: P6): R;
+    showPackedGlyphs_length_glyphRange_atPoint_font_color_printingAdjustment<R = void, P0 = string, P1 = number, P2 = _NSRange, P3 = CGPoint, P4 = unknown, P5 = unknown, P6 = CGSize>(_showPackedGlyphs: P0, _length: P1, _glyphRange: P2, _atPoint: P3, _font: P4, _color: P5, _printingAdjustment: P6): R;
     layoutManagerOwnsFirstResponderInWindow<R = boolean, P0 = unknown>(_layoutManagerOwnsFirstResponderInWindow: P0): R;
     rulerAccessoryViewForTextView_paragraphStyle_ruler_enabled<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = boolean>(_rulerAccessoryViewForTextView: P0, _paragraphStyle: P1, _ruler: P2, _enabled: P3): R;
     _rulerAccViewDecimalTabWell<R = unknown>(): R;
@@ -25,9 +25,9 @@ declare namespace cocoa {
     _doUserSetListMarkerFormat_options<R = void, P0 = unknown, P1 = number>(__doUserSetListMarkerFormat: P0, _options: P1): R;
     _doUserSetListMarkerFormat_options_startingItemNumber<R = void, P0 = unknown, P1 = number, P2 = number>(__doUserSetListMarkerFormat: P0, _options: P1, _startingItemNumber: P2): R;
     _doUserSetListMarkerFormat_options_startingItemNumber_forceStartingItemNumber<R = void, P0 = unknown, P1 = number, P2 = number, P3 = boolean>(__doUserSetListMarkerFormat: P0, _options: P1, _startingItemNumber: P2, _forceStartingItemNumber: P3): R;
-    _markerLevelForRange<R = number, P0 = cocoa._NSRange>(__markerLevelForRange: P0): R;
-    _doUserSetListMarkerFormat_options_startingItemNumber_inRange_level<R = void, P0 = unknown, P1 = number, P2 = number, P3 = cocoa._NSRange, P4 = number>(__doUserSetListMarkerFormat: P0, _options: P1, _startingItemNumber: P2, _inRange: P3, _level: P4): R;
-    _doUserRemoveMarkerFormatInRange<R = void, P0 = cocoa._NSRange>(__doUserRemoveMarkerFormatInRange: P0): R;
+    _markerLevelForRange<R = number, P0 = _NSRange>(__markerLevelForRange: P0): R;
+    _doUserSetListMarkerFormat_options_startingItemNumber_inRange_level<R = void, P0 = unknown, P1 = number, P2 = number, P3 = _NSRange, P4 = number>(__doUserSetListMarkerFormat: P0, _options: P1, _startingItemNumber: P2, _inRange: P3, _level: P4): R;
+    _doUserRemoveMarkerFormatInRange<R = void, P0 = _NSRange>(__doUserRemoveMarkerFormatInRange: P0): R;
     _doUserSetAttributes<R = void, P0 = unknown>(__doUserSetAttributes: P0): R;
     _doUserSetAttributes_removeAttributes<R = void, P0 = unknown, P1 = unknown>(__doUserSetAttributes: P0, _removeAttributes: P1): R;
     _doUserParagraphStyleLineHeightMultiple_min_max_lineSpacing_paragraphSpacingBefore_after_isFinal<R = void, P0 = number, P1 = number, P2 = number, P3 = number, P4 = number, P5 = number, P6 = boolean>(__doUserParagraphStyleLineHeightMultiple: P0, _min: P1, _max: P2, _lineSpacing: P3, _paragraphSpacingBefore: P4, _after: P5, _isFinal: P6): R;

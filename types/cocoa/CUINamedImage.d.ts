@@ -3,7 +3,7 @@
 declare namespace cocoa {
   export interface CUINamedImage<T = any> {
     // + CUINamedImage(NSAlignmentRect):
-    NS_alignmentRect<R = cocoa.CGRect>(): R;
+    NS_alignmentRect<R = CGRect>(): R;
   }
   namespace classes {
     export interface CUINamedImage<T = any> {

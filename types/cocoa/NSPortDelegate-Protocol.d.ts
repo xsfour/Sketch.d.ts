@@ -1,12 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPortDelegateProtocol<T = any> extends cocoa.NSObjectProtocol {
-    handlePortMessage<R = void, P0 = cocoa.NSPortMessage>(_handlePortMessage: P0): R;
+  export interface NSPortDelegateProtocol<T = any> extends NSObjectProtocol {
+    handlePortMessage<R = void, P0 = NSPortMessage>(_handlePortMessage: P0): R;
   }
   namespace classes {
-    export interface NSPortDelegateProtocol<T = any> extends cocoa.classes.NSObjectProtocol {  }
+    export interface NSPortDelegateProtocol<T = any> extends NSObjectProtocol {  }
   }
 }
-
-declare const NSPortDelegateProtocol: cocoa.classes.NSPortDelegateProtocol;

@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDockMiniContentView<T = any> extends cocoa.NSView {}
+  export interface NSDockMiniContentView<T = any> extends NSView {}
   namespace classes {
-    export interface NSDockMiniContentView<T = any> extends cocoa.classes.NSView {
+    export interface NSDockMiniContentView<T = any> extends NSView {
       alloc<R = NSDockMiniContentView>(): R;
       new: <R = NSDockMiniContentView>() => R;
     }

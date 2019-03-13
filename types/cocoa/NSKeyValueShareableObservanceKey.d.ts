@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSKeyValueShareableObservanceKey<T = any> extends cocoa.NSKeyValueObservance {}
+  export interface NSKeyValueShareableObservanceKey<T = any> extends NSKeyValueObservance {}
   namespace classes {
-    export interface NSKeyValueShareableObservanceKey<T = any> extends cocoa.classes.NSKeyValueObservance {
+    export interface NSKeyValueShareableObservanceKey<T = any> extends NSKeyValueObservance {
       alloc<R = NSKeyValueShareableObservanceKey>(): R;
       new: <R = NSKeyValueShareableObservanceKey>() => R;
     }

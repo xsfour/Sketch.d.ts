@@ -1,12 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSStylePartPreviewButtonDelegateProtocol<T = any> extends cocoa.NSObjectProtocol {
-    stylePartPreviewButtonPreviewColorSpace<R = cocoa.NSColorSpace, P0 = cocoa.MSStylePartPreviewButton>(_stylePartPreviewButtonPreviewColorSpace: P0): R;
+  export interface MSStylePartPreviewButtonDelegateProtocol<T = any> extends NSObjectProtocol {
+    stylePartPreviewButtonPreviewColorSpace<R = NSColorSpace, P0 = MSStylePartPreviewButton>(_stylePartPreviewButtonPreviewColorSpace: P0): R;
   }
   namespace classes {
-    export interface MSStylePartPreviewButtonDelegateProtocol<T = any> extends cocoa.classes.NSObjectProtocol {  }
+    export interface MSStylePartPreviewButtonDelegateProtocol<T = any> extends NSObjectProtocol {  }
   }
 }
-
-declare const MSStylePartPreviewButtonDelegateProtocol: cocoa.classes.MSStylePartPreviewButtonDelegateProtocol;

@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutableSimpleGrid<T = any> extends cocoa._MSImmutableSimpleGrid {}
+  export interface MSImmutableSimpleGrid<T = any> extends _MSImmutableSimpleGrid {}
   namespace classes {
-    export interface MSImmutableSimpleGrid<T = any> extends cocoa.classes._MSImmutableSimpleGrid {
+    export interface MSImmutableSimpleGrid<T = any> extends _MSImmutableSimpleGrid {
       alloc<R = MSImmutableSimpleGrid>(): R;
       new: <R = MSImmutableSimpleGrid>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInsertImageAction<T = any> extends cocoa.MSBaseInsertAction {
+  export interface MSInsertImageAction<T = any> extends MSBaseInsertAction {
     tooltip<R = unknown>(): R;
     label<R = unknown>(): R;
     groupForInserting<R = unknown>(): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     insertImage<R = void, P0 = unknown>(_insertImage: P0): R;
   }
   namespace classes {
-    export interface MSInsertImageAction<T = any> extends cocoa.classes.MSBaseInsertAction {
+    export interface MSInsertImageAction<T = any> extends MSBaseInsertAction {
       alloc<R = MSInsertImageAction>(): R;
       new: <R = MSInsertImageAction>() => R;
     }

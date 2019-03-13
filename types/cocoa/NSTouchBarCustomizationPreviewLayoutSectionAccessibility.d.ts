@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarCustomizationPreviewLayoutSectionAccessibility<T = any> extends cocoa.NSCollectionViewSectionAccessibility {
+  export interface NSTouchBarCustomizationPreviewLayoutSectionAccessibility<T = any> extends NSCollectionViewSectionAccessibility {
     accessibilityIsHiddenAttributeSettable<R = boolean>(): R;
     accessibilityHiddenAttribute<R = unknown>(): R;
     isAccessibilityHidden<R = boolean>(): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     sectionLayout<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSTouchBarCustomizationPreviewLayoutSectionAccessibility<T = any> extends cocoa.classes.NSCollectionViewSectionAccessibility {
+    export interface NSTouchBarCustomizationPreviewLayoutSectionAccessibility<T = any> extends NSCollectionViewSectionAccessibility {
       alloc<R = NSTouchBarCustomizationPreviewLayoutSectionAccessibility>(): R;
       new: <R = NSTouchBarCustomizationPreviewLayoutSectionAccessibility>() => R;
     }

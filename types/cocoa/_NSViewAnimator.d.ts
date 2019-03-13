@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSViewAnimator<T = any> extends cocoa._NSObjectAnimator {
+  export interface _NSViewAnimator<T = any> extends _NSObjectAnimator {
     setValue_forKeyPath<R = void, P0 = unknown, P1 = unknown>(_setValue: P0, _forKeyPath: P1): R;
     subviews<R = unknown>(): R;
     superview<R = unknown>(): R;
@@ -10,14 +10,14 @@ declare namespace cocoa {
     removeFromSuperview<R = void>(): R;
     addSubview_positioned_relativeTo<R = void, P0 = unknown, P1 = number, P2 = unknown>(_addSubview: P0, _positioned: P1, _relativeTo: P2): R;
     addSubview<R = void, P0 = unknown>(_addSubview: P0): R;
-    setFrame<R = void, P0 = cocoa.CGRect>(_setFrame: P0): R;
-    frameSize<R = cocoa.CGSize>(): R;
-    frameOrigin<R = cocoa.CGPoint>(): R;
-    frame<R = cocoa.CGRect>(): R;
-    setBounds<R = void, P0 = cocoa.CGRect>(_setBounds: P0): R;
-    bounds<R = cocoa.CGRect>(): R;
-    setFrameSize<R = void, P0 = cocoa.CGSize>(_setFrameSize: P0): R;
-    setFrameOrigin<R = void, P0 = cocoa.CGPoint>(_setFrameOrigin: P0): R;
+    setFrame<R = void, P0 = CGRect>(_setFrame: P0): R;
+    frameSize<R = CGSize>(): R;
+    frameOrigin<R = CGPoint>(): R;
+    frame<R = CGRect>(): R;
+    setBounds<R = void, P0 = CGRect>(_setBounds: P0): R;
+    bounds<R = CGRect>(): R;
+    setFrameSize<R = void, P0 = CGSize>(_setFrameSize: P0): R;
+    setFrameOrigin<R = void, P0 = CGPoint>(_setFrameOrigin: P0): R;
     _useCoreAnimationFrameOriginChanges<R = boolean>(): R;
     _useCoreAnimationFrameChanges<R = boolean>(): R;
     _isLayerBackedAtNotTheRootLayer<R = boolean>(): R;
@@ -27,14 +27,14 @@ declare namespace cocoa {
     setFrameCenterRotation<R = void, P0 = number>(_setFrameCenterRotation: P0): R;
     setContentFilters<R = void, P0 = unknown>(_setContentFilters: P0): R;
     setCompositingFilter<R = void, P0 = unknown>(_setCompositingFilter: P0): R;
-    setBoundsSize<R = void, P0 = cocoa.CGSize>(_setBoundsSize: P0): R;
-    setBoundsOrigin<R = void, P0 = cocoa.CGPoint>(_setBoundsOrigin: P0): R;
+    setBoundsSize<R = void, P0 = CGSize>(_setBoundsSize: P0): R;
+    setBoundsOrigin<R = void, P0 = CGPoint>(_setBoundsOrigin: P0): R;
     setBackgroundFilters<R = void, P0 = unknown>(_setBackgroundFilters: P0): R;
     setAlphaValue<R = void, P0 = number>(_setAlphaValue: P0): R;
     _shouldDoLayerAnimation<R = boolean>(): R;
     _shouldDoAnimation<R = boolean>(): R;
   }
   namespace classes {
-    export interface _NSViewAnimator<T = any> extends cocoa.classes._NSObjectAnimator {  }
+    export interface _NSViewAnimator<T = any> extends _NSObjectAnimator {  }
   }
 }

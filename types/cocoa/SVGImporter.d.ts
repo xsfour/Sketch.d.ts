@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface SVGImporter<T = any> extends cocoa.NSObject {
+  export interface SVGImporter<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     styleAttributesForElement_defaults<R = unknown, P0 = unknown, P1 = unknown>(_styleAttributesForElement: P0, _defaults: P1): R;
     registerStylesheet<R = void, P0 = unknown>(_registerStylesheet: P0): R;
@@ -18,22 +18,22 @@ declare namespace cocoa {
     initWithXMLString<R = unknown, P0 = unknown>(_initWithXMLString: P0): R;
     initWithData<R = unknown, P0 = unknown>(_initWithData: P0): R;
     initWithURL<R = unknown, P0 = unknown>(_initWithURL: P0): R;
-    svgNamespacePrefix<R = cocoa.NSString>(): R;
-    setSvgNamespacePrefix<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    svgNamespacePrefix<R = NSString>(): R;
+    setSvgNamespacePrefix<R = void, P0 = NSString>(_v: P0): R;
     drawableElementCount<R = number>(): R;
     setDrawableElementCount<R = void, P0 = number>(_v: P0): R;
-    url<R = cocoa.NSURL>(): R;
-    setUrl<R = void, P0 = cocoa.NSURL>(_v: P0): R;
-    styles<R = cocoa.NSDictionary>(): R;
-    setStyles<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
-    references<R = cocoa.NSMutableDictionary>(): R;
-    setReferences<R = void, P0 = cocoa.NSMutableDictionary>(_v: P0): R;
-    source<R = cocoa.NSString>(): R;
-    setSource<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    root<R = cocoa.SVGRootElement>(): R;
-    setRoot<R = void, P0 = cocoa.SVGRootElement>(_v: P0): R;
-    elementClasses<R = cocoa.NSDictionary>(): R;
-    setElementClasses<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
+    url<R = NSURL>(): R;
+    setUrl<R = void, P0 = NSURL>(_v: P0): R;
+    styles<R = NSDictionary>(): R;
+    setStyles<R = void, P0 = NSDictionary>(_v: P0): R;
+    references<R = NSMutableDictionary>(): R;
+    setReferences<R = void, P0 = NSMutableDictionary>(_v: P0): R;
+    source<R = NSString>(): R;
+    setSource<R = void, P0 = NSString>(_v: P0): R;
+    root<R = SVGRootElement>(): R;
+    setRoot<R = void, P0 = SVGRootElement>(_v: P0): R;
+    elementClasses<R = NSDictionary>(): R;
+    setElementClasses<R = void, P0 = NSDictionary>(_v: P0): R;
     defaultElementClass<R = unknown>(): R;
     setDefaultElementClass<R = void, P0 = unknown>(_v: P0): R;
     scaleValue<R = number>(): R;
@@ -42,7 +42,7 @@ declare namespace cocoa {
     documentWidth<R = number>(): R;
   }
   namespace classes {
-    export interface SVGImporter<T = any> extends cocoa.classes.NSObject {
+    export interface SVGImporter<T = any> extends NSObject {
       alloc<R = SVGImporter>(): R;
       new: <R = SVGImporter>() => R;
     }

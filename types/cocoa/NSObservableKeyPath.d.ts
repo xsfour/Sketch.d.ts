@@ -1,17 +1,17 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSObservableKeyPath<T = any> extends cocoa.NSBoundKeyPath, cocoa.NSObservableProtocol {
+  export interface NSObservableKeyPath<T = any> extends NSBoundKeyPath, NSObservableProtocol {
     _wantsChanges<R = boolean>(): R;
     addObserver<R = unknown, P0 = unknown>(_addObserver: P0): R;
-    changes<R = cocoa.NSObservable>(): R;
-    description<R = cocoa.NSString>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
+    changes<R = NSObservable>(): R;
+    description<R = NSString>(): R;
+    debugDescription<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSObservableKeyPath<T = any> extends cocoa.classes.NSBoundKeyPath, cocoa.classes.NSObservableProtocol {
+    export interface NSObservableKeyPath<T = any> extends NSBoundKeyPath, NSObservableProtocol {
       alloc<R = NSObservableKeyPath>(): R;
       new: <R = NSObservableKeyPath>() => R;
     }

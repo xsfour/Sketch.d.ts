@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAutoLocale<T = any> extends cocoa.NSLocale {
+  export interface NSAutoLocale<T = any> extends NSLocale {
     classForCoder<R = unknown>(): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
-    copyWithZone<R = unknown, P0 = cocoa._NSZone>(_copyWithZone: P0): R;
+    copyWithZone<R = unknown, P0 = _NSZone>(_copyWithZone: P0): R;
     description<R = unknown>(): R;
     _setNullLocale<R = void>(): R;
     _nullLocale<R = number>(): R;
@@ -19,7 +19,7 @@ declare namespace cocoa {
     _update<R = void, P0 = unknown>(__update: P0): R;
   }
   namespace classes {
-    export interface NSAutoLocale<T = any> extends cocoa.classes.NSLocale {
+    export interface NSAutoLocale<T = any> extends NSLocale {
       supportsSecureCoding<R = boolean>(): R;
     }
   }

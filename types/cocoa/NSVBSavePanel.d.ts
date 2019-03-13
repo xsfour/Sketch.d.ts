@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSVBSavePanel<T = any> extends cocoa.NSPanel, cocoa.NSOpenAndSavePanelRemoteViewExportedToServiceProtocolProtocol {
+  export interface NSVBSavePanel<T = any> extends NSPanel, NSOpenAndSavePanelRemoteViewExportedToServiceProtocolProtocol {
     _startServiceFailedAlert<R = boolean>(): R;
     setCanDownloadUbiquitousContents<R = void, P0 = boolean>(_setCanDownloadUbiquitousContents: P0): R;
     canDownloadUbiquitousContents<R = boolean>(): R;
@@ -30,9 +30,9 @@ declare namespace cocoa {
     directory<R = unknown>(): R;
     filename<R = unknown>(): R;
     runModal<R = number>(): R;
-    beginWithCompletionHandler<R = void, P0 = cocoa.CDUnknownBlockType>(_beginWithCompletionHandler: P0): R;
-    beginSheetModalForWindow_completionHandler<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(_beginSheetModalForWindow: P0, _completionHandler: P1): R;
-    commonPrep_runningAsASheet_hostWindow_runningAsASheet<R = void, P0 = cocoa.CDUnknownBlockType, P1 = boolean, P2 = boolean>(_commonPrep: P0, _runningAsASheet: P1, _hostWindow_runningAsASheet: P2): R;
+    beginWithCompletionHandler<R = void, P0 = CDUnknownBlockType>(_beginWithCompletionHandler: P0): R;
+    beginSheetModalForWindow_completionHandler<R = void, P0 = unknown, P1 = CDUnknownBlockType>(_beginSheetModalForWindow: P0, _completionHandler: P1): R;
+    commonPrep_runningAsASheet_hostWindow_runningAsASheet<R = void, P0 = CDUnknownBlockType, P1 = boolean, P2 = boolean>(_commonPrep: P0, _runningAsASheet: P1, _hostWindow_runningAsASheet: P2): R;
     _setAccessoryViewDisclosedVBKVO<R = void, P0 = boolean>(__setAccessoryViewDisclosedVBKVO: P0): R;
     _setAccessoryViewDisclosed<R = void, P0 = boolean>(__setAccessoryViewDisclosed: P0): R;
     _resetPrivateState<R = void>(): R;
@@ -83,7 +83,7 @@ declare namespace cocoa {
     _supportedDelegateMethods<R = unknown>(): R;
     setDelegate<R = void, P0 = unknown>(_setDelegate: P0): R;
     delegate<R = unknown>(): R;
-    accessoryDidChangeConstraints<R = void, P0 = cocoa.CGSize>(_accessoryDidChangeConstraints: P0): R;
+    accessoryDidChangeConstraints<R = void, P0 = CGSize>(_accessoryDidChangeConstraints: P0): R;
     accessoryWindowOfViewWillUpdateConstraintsIfNeeded<R = void, P0 = unknown>(_accessoryWindowOfViewWillUpdateConstraintsIfNeeded: P0): R;
     setAccessoryView<R = void, P0 = unknown>(_setAccessoryView: P0): R;
     accessoryView<R = unknown>(): R;
@@ -172,14 +172,14 @@ declare namespace cocoa {
     _floatForKey<R = number, P0 = unknown>(__floatForKey: P0): R;
     _boolForKey<R = boolean, P0 = unknown>(__boolForKey: P0): R;
     _setBool_forKey<R = void, P0 = boolean, P1 = unknown>(__setBool: P0, _forKey: P1): R;
-    lastReportedAccessorySize<R = cocoa.CGSize>(): R;
-    setLastReportedAccessorySize<R = void, P0 = cocoa.CGSize>(_v: P0): R;
+    lastReportedAccessorySize<R = CGSize>(): R;
+    setLastReportedAccessorySize<R = void, P0 = CGSize>(_v: P0): R;
     appCentric<R = boolean>(): R;
     accessoryViewDisclosed<R = boolean>(): R;
     setAccessoryViewDisclosed<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface NSVBSavePanel<T = any> extends cocoa.classes.NSPanel, cocoa.classes.NSOpenAndSavePanelRemoteViewExportedToServiceProtocolProtocol {
+    export interface NSVBSavePanel<T = any> extends NSPanel, NSOpenAndSavePanelRemoteViewExportedToServiceProtocolProtocol {
       alloc<R = NSVBSavePanel>(): R;
       new: <R = NSVBSavePanel>() => R;
       savePanel<R = unknown>(): R;

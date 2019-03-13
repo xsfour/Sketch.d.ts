@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSBrowserTitlesContainerView<T = any> extends cocoa.NSView {
+  export interface _NSBrowserTitlesContainerView<T = any> extends NSView {
     _enclosingBrowserView<R = unknown>(): R;
     accessibilitySizeOfChild<R = unknown, P0 = unknown>(_accessibilitySizeOfChild: P0): R;
     accessibilityPositionOfChild<R = unknown, P0 = unknown>(_accessibilityPositionOfChild: P0): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     _accessibilityTitleForColumn<R = unknown, P0 = number>(__accessibilityTitleForColumn: P0): R;
   }
   namespace classes {
-    export interface _NSBrowserTitlesContainerView<T = any> extends cocoa.classes.NSView {
+    export interface _NSBrowserTitlesContainerView<T = any> extends NSView {
       alloc<R = _NSBrowserTitlesContainerView>(): R;
       new: <R = _NSBrowserTitlesContainerView>() => R;
     }

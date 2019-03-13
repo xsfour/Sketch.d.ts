@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSHistory<T = any> extends cocoa.NSObject {
+  export interface MSHistory<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     progressToNextMoment<R = boolean>(): R;
     commitCurrentMoment<R = void>(): R;
@@ -15,19 +15,19 @@ declare namespace cocoa {
     initWithInitialMoment<R = unknown, P0 = unknown>(_initWithInitialMoment: P0): R;
     indexOfCurrentMoment<R = number>(): R;
     setIndexOfCurrentMoment<R = void, P0 = number>(_v: P0): R;
-    moments<R = cocoa.NSMutableArray>(): R;
-    setMoments<R = void, P0 = cocoa.NSMutableArray>(_v: P0): R;
+    moments<R = NSMutableArray>(): R;
+    setMoments<R = void, P0 = NSMutableArray>(_v: P0): R;
     allowsCoalescingOfMomentsCloseInTime<R = boolean>(): R;
     setAllowsCoalescingOfMomentsCloseInTime<R = void, P0 = boolean>(_v: P0): R;
     numberOfMoments<R = number>(): R;
     canProgressToNextMoment<R = boolean>(): R;
     canRevertToPreviousMoment<R = boolean>(): R;
-    nextMoment<R = cocoa.MSMoment>(): R;
-    previousMoment<R = cocoa.MSMoment>(): R;
-    currentMoment<R = cocoa.MSMoment>(): R;
+    nextMoment<R = MSMoment>(): R;
+    previousMoment<R = MSMoment>(): R;
+    currentMoment<R = MSMoment>(): R;
   }
   namespace classes {
-    export interface MSHistory<T = any> extends cocoa.classes.NSObject {
+    export interface MSHistory<T = any> extends NSObject {
       alloc<R = MSHistory>(): R;
       new: <R = MSHistory>() => R;
     }

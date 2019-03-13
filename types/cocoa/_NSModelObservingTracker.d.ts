@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSModelObservingTracker<T = any> extends cocoa.NSObject {
+  export interface _NSModelObservingTracker<T = any> extends NSObject {
     _logObservingInfo<R = void>(): R;
     modelAndProxyKeysObserved<R = unknown>(): R;
     analyzeKeyPath_registerOrUnregister<R = void, P0 = unknown, P1 = boolean>(_analyzeKeyPath: P0, _registerOrUnregister: P1): R;
@@ -13,7 +13,7 @@ declare namespace cocoa {
     clearAllModelObjectObserving<R = void>(): R;
     stopObservingModelObject<R = void, P0 = unknown>(_stopObservingModelObject: P0): R;
     startObservingModelObject<R = void, P0 = unknown>(_startObservingModelObject: P0): R;
-    setObservingToModelObjectsRange<R = void, P0 = cocoa._NSRange>(_setObservingToModelObjectsRange: P0): R;
+    setObservingToModelObjectsRange<R = void, P0 = _NSRange>(_setObservingToModelObjectsRange: P0): R;
     stopObservingModelObjectsAtReferenceIndexes<R = void, P0 = unknown>(_stopObservingModelObjectsAtReferenceIndexes: P0): R;
     startObservingModelObjectsAtReferenceIndexes<R = void, P0 = unknown>(_startObservingModelObjectsAtReferenceIndexes: P0): R;
     stopObservingModelObjectAtReferenceIndex<R = void, P0 = number>(_stopObservingModelObjectAtReferenceIndex: P0): R;
@@ -35,7 +35,7 @@ declare namespace cocoa {
     initWithModelObserver_availableModelAndProxyKeys<R = unknown, P0 = unknown, P1 = unknown>(_initWithModelObserver: P0, _availableModelAndProxyKeys: P1): R;
   }
   namespace classes {
-    export interface _NSModelObservingTracker<T = any> extends cocoa.classes.NSObject {
+    export interface _NSModelObservingTracker<T = any> extends NSObject {
       alloc<R = _NSModelObservingTracker>(): R;
       new: <R = _NSModelObservingTracker>() => R;
     }

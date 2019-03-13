@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUbiquitousKeyValueStore<T = any> extends cocoa.NSObject {
+  export interface NSUbiquitousKeyValueStore<T = any> extends NSObject {
     setBool_forKey<R = void, P0 = boolean, P1 = unknown>(_setBool: P0, _forKey: P1): R;
     boolForKey<R = boolean, P0 = unknown>(_boolForKey: P0): R;
     setDouble_forKey<R = void, P0 = number, P1 = unknown>(_setDouble: P0, _forKey: P1): R;
@@ -28,7 +28,7 @@ declare namespace cocoa {
     synchronize<R = boolean>(): R;
     _synchronizeForced<R = boolean, P0 = boolean>(__synchronizeForced: P0): R;
     _synchronizeForced_notificationQueue<R = boolean, P0 = boolean, P1 = unknown>(__synchronizeForced: P0, _notificationQueue: P1): R;
-    synchronizeWithCompletionHandler<R = void, P0 = cocoa.CDUnknownBlockType>(_synchronizeWithCompletionHandler: P0): R;
+    synchronizeWithCompletionHandler<R = void, P0 = CDUnknownBlockType>(_synchronizeWithCompletionHandler: P0): R;
     _scheduleRemoteSynchronization<R = void>(): R;
     registerDefaultValues<R = void, P0 = unknown>(_registerDefaultValues: P0): R;
     removeObjectForKey<R = void, P0 = unknown>(_removeObjectForKey: P0): R;
@@ -50,13 +50,13 @@ declare namespace cocoa {
     initWithBundleIdentifier<R = unknown, P0 = unknown>(_initWithBundleIdentifier: P0): R;
     initWithBundleIdentifier_storeIdentifier<R = unknown, P0 = unknown, P1 = unknown>(_initWithBundleIdentifier: P0, _storeIdentifier: P1): R;
     initWithBundleIdentifier_storeIdentifier_additionalStore<R = unknown, P0 = unknown, P1 = unknown, P2 = boolean>(_initWithBundleIdentifier: P0, _storeIdentifier: P1, _additionalStore: P2): R;
-    _useSourceSyncWithBlock<R = void, P0 = cocoa.CDUnknownBlockType>(__useSourceSyncWithBlock: P0): R;
-    _useSourceAsyncWithBlock<R = void, P0 = cocoa.CDUnknownBlockType>(__useSourceAsyncWithBlock: P0): R;
+    _useSourceSyncWithBlock<R = void, P0 = CDUnknownBlockType>(__useSourceSyncWithBlock: P0): R;
+    _useSourceAsyncWithBlock<R = void, P0 = CDUnknownBlockType>(__useSourceAsyncWithBlock: P0): R;
     _pleaseSynchronize<R = void, P0 = unknown>(__pleaseSynchronize: P0): R;
-    dictionaryRepresentation<R = cocoa.NSDictionary>(): R;
+    dictionaryRepresentation<R = NSDictionary>(): R;
   }
   namespace classes {
-    export interface NSUbiquitousKeyValueStore<T = any> extends cocoa.classes.NSObject {
+    export interface NSUbiquitousKeyValueStore<T = any> extends NSObject {
       alloc<R = NSUbiquitousKeyValueStore>(): R;
       new: <R = NSUbiquitousKeyValueStore>() => R;
       _appWillDeactivate<R = void>(): R;

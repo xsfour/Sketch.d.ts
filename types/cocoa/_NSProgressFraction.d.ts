@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSProgressFraction<T = any> extends cocoa.NSObject, cocoa.NSSecureCodingProtocol, cocoa.NSCopyingProtocol {
+  export interface _NSProgressFraction<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
     isNaN<R = boolean>(): R;
     fractionCompleted<R = number>(): R;
     isFinished<R = boolean>(): R;
@@ -28,7 +28,7 @@ declare namespace cocoa {
     overflowed<R = boolean>(): R;
   }
   namespace classes {
-    export interface _NSProgressFraction<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSSecureCodingProtocol, cocoa.classes.NSCopyingProtocol {
+    export interface _NSProgressFraction<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
       alloc<R = _NSProgressFraction>(): R;
       new: <R = _NSProgressFraction>() => R;
       fractionWithCompleted_total<R = unknown, P0 = number, P1 = number>(_fractionWithCompleted: P0, _total: P1): R;

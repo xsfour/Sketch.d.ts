@@ -18,7 +18,7 @@ declare namespace cocoa {
       outputStreamToFileAtPath_append<R = unknown, P0 = unknown, P1 = boolean>(_outputStreamToFileAtPath: P0, _append: P1): R;
       outputStreamToBuffer_capacity<R = unknown, P0 = string, P1 = number>(_outputStreamToBuffer: P0, _capacity: P1): R;
       outputStreamToMemory<R = unknown>(): R;
-      allocWithZone<R = unknown, P0 = cocoa._NSZone>(_allocWithZone: P0): R;
+      allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
     }
   }
 }

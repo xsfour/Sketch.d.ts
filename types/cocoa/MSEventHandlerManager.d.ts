@@ -1,14 +1,14 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSEventHandlerManager<T = any> extends cocoa.NSObject {
+  export interface MSEventHandlerManager<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     recordEvent<R = void, P0 = unknown>(_recordEvent: P0): R;
     sendMouseMovedEvent<R = void, P0 = unknown>(_sendMouseMovedEvent: P0): R;
     sendMouseUpEvent<R = void, P0 = unknown>(_sendMouseUpEvent: P0): R;
     sendMouseDraggedEvent<R = void, P0 = unknown>(_sendMouseDraggedEvent: P0): R;
     sendMouseDownEvent<R = void, P0 = unknown>(_sendMouseDownEvent: P0): R;
-    drawInRect_context<R = void, P0 = cocoa.CGRect, P1 = unknown>(_drawInRect: P0, _context: P1): R;
+    drawInRect_context<R = void, P0 = CGRect, P1 = unknown>(_drawInRect: P0, _context: P1): R;
     setCurrentHandler_force<R = void, P0 = unknown, P1 = boolean>(_setCurrentHandler: P0, _force: P1): R;
     switchToEventHandlerClass<R = unknown, P0 = unknown>(_switchToEventHandlerClass: P0): R;
     toggleHandlerClass<R = unknown, P0 = unknown>(_toggleHandlerClass: P0): R;
@@ -18,17 +18,17 @@ declare namespace cocoa {
     setLastEventType<R = void, P0 = number>(_v: P0): R;
     lastMouseDownClickCount<R = number>(): R;
     setLastMouseDownClickCount<R = void, P0 = number>(_v: P0): R;
-    normalHandler<R = cocoa.MSNormalEventHandler>(): R;
-    setNormalHandler<R = void, P0 = cocoa.MSNormalEventHandler>(_v: P0): R;
-    currentHandler<R = cocoa.MSEventHandler>(): R;
-    setCurrentHandler<R = void, P0 = cocoa.MSEventHandler>(_v: P0): R;
-    delegate<R = cocoa.MSEventHandlerManagerDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.MSEventHandlerManagerDelegate>(_v: P0): R;
-    document<R = cocoa.MSDocument>(): R;
-    setDocument<R = void, P0 = cocoa.MSDocument>(_v: P0): R;
+    normalHandler<R = MSNormalEventHandler>(): R;
+    setNormalHandler<R = void, P0 = MSNormalEventHandler>(_v: P0): R;
+    currentHandler<R = MSEventHandler>(): R;
+    setCurrentHandler<R = void, P0 = MSEventHandler>(_v: P0): R;
+    delegate<R = MSEventHandlerManagerDelegate>(): R;
+    setDelegate<R = void, P0 = MSEventHandlerManagerDelegate>(_v: P0): R;
+    document<R = MSDocument>(): R;
+    setDocument<R = void, P0 = MSDocument>(_v: P0): R;
   }
   namespace classes {
-    export interface MSEventHandlerManager<T = any> extends cocoa.classes.NSObject {
+    export interface MSEventHandlerManager<T = any> extends NSObject {
       alloc<R = MSEventHandlerManager>(): R;
       new: <R = MSEventHandlerManager>() => R;
     }

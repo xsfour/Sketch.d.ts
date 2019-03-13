@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSNibControlConnector<T = any> extends cocoa.NSNibConnector {}
+  export interface NSNibControlConnector<T = any> extends NSNibConnector {}
   namespace classes {
-    export interface NSNibControlConnector<T = any> extends cocoa.classes.NSNibConnector {
+    export interface NSNibControlConnector<T = any> extends NSNibConnector {
       alloc<R = NSNibControlConnector>(): R;
       new: <R = NSNibControlConnector>() => R;
     }

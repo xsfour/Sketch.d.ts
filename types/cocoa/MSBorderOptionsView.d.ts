@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBorderOptionsView<T = any> extends cocoa.NSView {}
+  export interface MSBorderOptionsView<T = any> extends NSView {}
   namespace classes {
-    export interface MSBorderOptionsView<T = any> extends cocoa.classes.NSView {
+    export interface MSBorderOptionsView<T = any> extends NSView {
       alloc<R = MSBorderOptionsView>(): R;
       new: <R = MSBorderOptionsView>() => R;
     }

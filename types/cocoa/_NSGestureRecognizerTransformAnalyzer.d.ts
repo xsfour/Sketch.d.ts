@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSGestureRecognizerTransformAnalyzer<T = any> extends cocoa.NSObject {
+  export interface _NSGestureRecognizerTransformAnalyzer<T = any> extends NSObject {
     analyzeTouches<R = void, P0 = unknown>(_analyzeTouches: P0): R;
     reset<R = void>(): R;
     dominantComponent<R = number>(): R;
@@ -13,7 +13,7 @@ declare namespace cocoa {
     setTranslationWeight<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface _NSGestureRecognizerTransformAnalyzer<T = any> extends cocoa.classes.NSObject {
+    export interface _NSGestureRecognizerTransformAnalyzer<T = any> extends NSObject {
       alloc<R = _NSGestureRecognizerTransformAnalyzer>(): R;
       new: <R = _NSGestureRecognizerTransformAnalyzer>() => R;
     }

@@ -1,26 +1,26 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScrubber<T = any> extends cocoa.NSView, cocoa.NSScrollViewDelegateProtocol, cocoa.NSGestureRecognizerDelegateProtocol {
+  export interface NSScrubber<T = any> extends NSView, NSScrollViewDelegateProtocol, NSGestureRecognizerDelegateProtocol {
     cxx_destruct<R = void>(): R;
     setEndcapCornerRadius<R = void, P0 = number>(_setEndcapCornerRadius: P0): R;
     endcapCornerRadius<R = number>(): R;
-    setSelectionLensSize<R = void, P0 = cocoa.CGSize>(_setSelectionLensSize: P0): R;
-    selectionLensSize<R = cocoa.CGSize>(): R;
+    setSelectionLensSize<R = void, P0 = CGSize>(_setSelectionLensSize: P0): R;
+    selectionLensSize<R = CGSize>(): R;
     populatedItemViews<R = unknown>(): R;
     scrollView<R = unknown>(): R;
-    visibleContentRectForLayout<R = cocoa.CGRect>(): R;
+    visibleContentRectForLayout<R = CGRect>(): R;
     proxyState<R = unknown>(): R;
     setProxyState<R = void, P0 = unknown>(_setProxyState: P0): R;
     accessibilityAutoScrollContentIntoView<R = boolean>(): R;
     accessibilityScrollChangesSelection<R = boolean>(): R;
     _indexForItemView<R = number, P0 = unknown>(__indexForItemView: P0): R;
-    _scrollView_adjustScrollOffset_withVelocity_toItemWithAlignment_pinningTarget<R = void, P0 = unknown, P1 = cocoa.CGPoint, P2 = cocoa.CGPoint, P3 = number, P4 = boolean>(__scrollView: P0, _adjustScrollOffset: P1, _withVelocity: P2, _toItemWithAlignment: P3, _pinningTarget: P4): R;
+    _scrollView_adjustScrollOffset_withVelocity_toItemWithAlignment_pinningTarget<R = void, P0 = unknown, P1 = CGPoint, P2 = CGPoint, P3 = number, P4 = boolean>(__scrollView: P0, _adjustScrollOffset: P1, _withVelocity: P2, _toItemWithAlignment: P3, _pinningTarget: P4): R;
     _animateAutoscrollLandingAnimation<R = void>(): R;
     _updateAutoscrollWithDisplayLink<R = void, P0 = unknown>(__updateAutoscrollWithDisplayLink: P0): R;
-    _updateAutoscrollWithPointInScrollView_trackingStatus<R = void, P0 = cocoa.CGPoint, P1 = boolean>(__updateAutoscrollWithPointInScrollView: P0, _trackingStatus: P1): R;
+    _updateAutoscrollWithPointInScrollView_trackingStatus<R = void, P0 = CGPoint, P1 = boolean>(__updateAutoscrollWithPointInScrollView: P0, _trackingStatus: P1): R;
     _tellDelegatePressedItemAtIndex<R = void, P0 = number>(__tellDelegatePressedItemAtIndex: P0): R;
-    _tellDelegateVisibleRangeDidChange<R = void, P0 = cocoa._NSRange>(__tellDelegateVisibleRangeDidChange: P0): R;
+    _tellDelegateVisibleRangeDidChange<R = void, P0 = _NSRange>(__tellDelegateVisibleRangeDidChange: P0): R;
     _tellDelegateInteractionCancelled<R = void>(): R;
     _tellDelegateInteractionFinished<R = void>(): R;
     _tellDelegateInteractionBeganIfNeeded<R = void>(): R;
@@ -42,8 +42,8 @@ declare namespace cocoa {
     reloadItemsAtIndexes<R = void, P0 = unknown>(_reloadItemsAtIndexes: P0): R;
     removeItemsAtIndexes<R = void, P0 = unknown>(_removeItemsAtIndexes: P0): R;
     insertItemsAtIndexes<R = void, P0 = unknown>(_insertItemsAtIndexes: P0): R;
-    performSequentialBatchUpdates_completionHandler<R = void, P0 = cocoa.CDUnknownBlockType, P1 = cocoa.CDUnknownBlockType>(_performSequentialBatchUpdates: P0, _completionHandler: P1): R;
-    performSequentialBatchUpdates<R = void, P0 = cocoa.CDUnknownBlockType>(_performSequentialBatchUpdates: P0): R;
+    performSequentialBatchUpdates_completionHandler<R = void, P0 = CDUnknownBlockType, P1 = CDUnknownBlockType>(_performSequentialBatchUpdates: P0, _completionHandler: P1): R;
+    performSequentialBatchUpdates<R = void, P0 = CDUnknownBlockType>(_performSequentialBatchUpdates: P0): R;
     reloadData<R = void>(): R;
     _updateNumberOfItems<R = void>(): R;
     _numberOfItemsFromDataSource<R = number>(): R;
@@ -61,8 +61,8 @@ declare namespace cocoa {
     documentView<R = unknown>(): R;
     _lateCommonInit<R = void>(): R;
     _earlyCommonInit<R = void>(): R;
-    performBatchUpdates<R = void, P0 = cocoa.CDUnknownBlockType>(_performBatchUpdates: P0): R;
-    initWithFrame_scrubberLayout<R = unknown, P0 = cocoa.CGRect, P1 = unknown>(_initWithFrame: P0, _scrubberLayout: P1): R;
+    performBatchUpdates<R = void, P0 = CDUnknownBlockType>(_performBatchUpdates: P0): R;
+    initWithFrame_scrubberLayout<R = unknown, P0 = CGRect, P1 = unknown>(_initWithFrame: P0, _scrubberLayout: P1): R;
     reloadItemAtIndex<R = void, P0 = number>(_reloadItemAtIndex: P0): R;
     removeItemAtIndex<R = void, P0 = number>(_removeItemAtIndex: P0): R;
     insertItemAtIndex<R = void, P0 = number>(_insertItemAtIndex: P0): R;
@@ -82,17 +82,17 @@ declare namespace cocoa {
     accessibilityVisibleChildrenAttribute<R = unknown>(): R;
     accessibilitySelectedChildrenAttribute<R = unknown>(): R;
     accessibilityParameterizedAttributeNames<R = unknown>(): R;
-    pendingChanges<R = cocoa.NSScrubberPendingChanges>(): R;
-    setPendingChanges<R = void, P0 = cocoa.NSScrubberPendingChanges>(_v: P0): R;
+    pendingChanges<R = NSScrubberPendingChanges>(): R;
+    setPendingChanges<R = void, P0 = NSScrubberPendingChanges>(_v: P0): R;
     itemAlignment<R = number>(): R;
     setItemAlignment<R = void, P0 = number>(_v: P0): R;
-    selectionLensPopTimer<R = cocoa.NSTimer>(): R;
-    setSelectionLensPopTimer<R = void, P0 = cocoa.NSTimer>(_v: P0): R;
+    selectionLensPopTimer<R = NSTimer>(): R;
+    setSelectionLensPopTimer<R = void, P0 = NSTimer>(_v: P0): R;
     numberOfItems<R = number>(): R;
-    backgroundView<R = cocoa.NSView>(): R;
-    setBackgroundView<R = void, P0 = cocoa.NSView>(_v: P0): R;
-    backgroundColor<R = cocoa.NSColor>(): R;
-    setBackgroundColor<R = void, P0 = cocoa.NSColor>(_v: P0): R;
+    backgroundView<R = NSView>(): R;
+    setBackgroundView<R = void, P0 = NSView>(_v: P0): R;
+    backgroundColor<R = NSColor>(): R;
+    setBackgroundColor<R = void, P0 = NSColor>(_v: P0): R;
     highlightedIndex<R = number>(): R;
     selectedIndex<R = number>(): R;
     setSelectedIndex<R = void, P0 = number>(_v: P0): R;
@@ -106,33 +106,33 @@ declare namespace cocoa {
     setContinuous<R = void, P0 = boolean>(_v: P0): R;
     mode<R = number>(): R;
     setMode<R = void, P0 = number>(_v: P0): R;
-    selectionBackgroundStyle<R = cocoa.NSScrubberSelectionStyle>(): R;
-    setSelectionBackgroundStyle<R = void, P0 = cocoa.NSScrubberSelectionStyle>(_v: P0): R;
-    selectionOverlayStyle<R = cocoa.NSScrubberSelectionStyle>(): R;
-    setSelectionOverlayStyle<R = void, P0 = cocoa.NSScrubberSelectionStyle>(_v: P0): R;
-    scrubberLayout<R = cocoa.NSScrubberLayout>(): R;
-    setScrubberLayout<R = void, P0 = cocoa.NSScrubberLayout>(_v: P0): R;
-    dataSource<R = cocoa.NSScrubberDataSource>(): R;
-    setDataSource<R = void, P0 = cocoa.NSScrubberDataSource>(_v: P0): R;
-    delegate<R = cocoa.NSScrubberDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSScrubberDelegate>(_v: P0): R;
+    selectionBackgroundStyle<R = NSScrubberSelectionStyle>(): R;
+    setSelectionBackgroundStyle<R = void, P0 = NSScrubberSelectionStyle>(_v: P0): R;
+    selectionOverlayStyle<R = NSScrubberSelectionStyle>(): R;
+    setSelectionOverlayStyle<R = void, P0 = NSScrubberSelectionStyle>(_v: P0): R;
+    scrubberLayout<R = NSScrubberLayout>(): R;
+    setScrubberLayout<R = void, P0 = NSScrubberLayout>(_v: P0): R;
+    dataSource<R = NSScrubberDataSource>(): R;
+    setDataSource<R = void, P0 = NSScrubberDataSource>(_v: P0): R;
+    delegate<R = NSScrubberDelegate>(): R;
+    setDelegate<R = void, P0 = NSScrubberDelegate>(_v: P0): R;
     tag<R = number>(): R;
     setTag<R = void, P0 = number>(_v: P0): R;
-    selectionStyle<R = cocoa.NSScrubberSelectionStyle>(): R;
-    setSelectionStyle<R = void, P0 = cocoa.NSScrubberSelectionStyle>(_v: P0): R;
+    selectionStyle<R = NSScrubberSelectionStyle>(): R;
+    setSelectionStyle<R = void, P0 = NSScrubberSelectionStyle>(_v: P0): R;
     selectionIndex<R = number>(): R;
     setSelectionIndex<R = void, P0 = number>(_v: P0): R;
     _wantsPageAlignedHorizontalAxis<R = boolean>(): R;
     set_wantsPageAlignedHorizontalAxis<R = void, P0 = boolean>(_v: P0): R;
     _wantsPageAlignedVerticalAxis<R = boolean>(): R;
     set_wantsPageAlignedVerticalAxis<R = void, P0 = boolean>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSScrubber<T = any> extends cocoa.classes.NSView, cocoa.classes.NSScrollViewDelegateProtocol, cocoa.classes.NSGestureRecognizerDelegateProtocol {
+    export interface NSScrubber<T = any> extends NSView, NSScrollViewDelegateProtocol, NSGestureRecognizerDelegateProtocol {
       alloc<R = NSScrubber>(): R;
       new: <R = NSScrubber>() => R;
       texturedBackgroundColor<R = unknown>(): R;

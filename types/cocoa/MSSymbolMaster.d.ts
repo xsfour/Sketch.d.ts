@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSymbolMaster<T = any> extends cocoa._MSSymbolMaster, cocoa.MSPreviewGenerationProtocol, cocoa.MSLayerPreviewabilityProtocol, cocoa.MSSharedObjectStylingProtocol, cocoa.BCSortableProtocol {
+  export interface MSSymbolMaster<T = any> extends _MSSymbolMaster, MSPreviewGenerationProtocol, MSLayerPreviewabilityProtocol, MSSharedObjectStylingProtocol, BCSortableProtocol {
     limitsSelectionToBounds<R = boolean>(): R;
     parentSymbol<R = unknown>(): R;
     ancestorIDsForLayerNamed_skip<R = unknown, P0 = unknown, P1 = unknown>(_ancestorIDsForLayerNamed: P0, _skip: P1): R;
@@ -16,27 +16,27 @@ declare namespace cocoa {
     newSymbolInstance<R = unknown>(): R;
     copyWithIDMapping<R = unknown, P0 = unknown>(_copyWithIDMapping: P0): R;
     invalidateModifiedSymbolCache<R = void>(): R;
-    initWithFrame<R = unknown, P0 = cocoa.CGRect>(_initWithFrame: P0): R;
+    initWithFrame<R = unknown, P0 = CGRect>(_initWithFrame: P0): R;
     canSnap_toLayer<R = boolean, P0 = number, P1 = unknown>(_canSnap: P0, _toLayer: P1): R;
     shareableObjectReferenceClass_bc<R = unknown>(): R;
-    generatePreviewWithImageSize_previewSize_backingScale_shadow_colorSpace_completionBlock<R = void, P0 = cocoa.CGSize, P1 = cocoa.CGSize, P2 = number, P3 = boolean, P4 = unknown, P5 = cocoa.CDUnknownBlockType>(_generatePreviewWithImageSize: P0, _previewSize: P1, _backingScale: P2, _shadow: P3, _colorSpace: P4, _completionBlock: P5): R;
+    generatePreviewWithImageSize_previewSize_backingScale_shadow_colorSpace_completionBlock<R = void, P0 = CGSize, P1 = CGSize, P2 = number, P3 = boolean, P4 = unknown, P5 = CDUnknownBlockType>(_generatePreviewWithImageSize: P0, _previewSize: P1, _backingScale: P2, _shadow: P3, _colorSpace: P4, _completionBlock: P5): R;
     isDirty<R = boolean>(): R;
     setIsDirty<R = void, P0 = boolean>(_v: P0): R;
     changeIdentifier<R = number>(): R;
     setChangeIdentifier<R = void, P0 = number>(_v: P0): R;
-    allInfluencedInstances<R = cocoa.NSArray>(): R;
-    nestedSymbols<R = cocoa.NSSet>(): R;
-    allInstances<R = cocoa.NSArray>(): R;
-    availableOverrides<R = cocoa.NSArray>(): R;
+    allInfluencedInstances<R = NSArray>(): R;
+    nestedSymbols<R = NSSet>(): R;
+    allInstances<R = NSArray>(): R;
+    availableOverrides<R = NSArray>(): R;
     badgeType<R = number>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
-    name<R = cocoa.NSString>(): R;
+    name<R = NSString>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSSymbolMaster<T = any> extends cocoa.classes._MSSymbolMaster, cocoa.classes.MSPreviewGenerationProtocol, cocoa.classes.MSLayerPreviewabilityProtocol, cocoa.classes.MSSharedObjectStylingProtocol, cocoa.classes.BCSortableProtocol {
+    export interface MSSymbolMaster<T = any> extends _MSSymbolMaster, MSPreviewGenerationProtocol, MSLayerPreviewabilityProtocol, MSSharedObjectStylingProtocol, BCSortableProtocol {
       alloc<R = MSSymbolMaster>(): R;
       new: <R = MSSymbolMaster>() => R;
       copyPropertiesFrom_to<R = void, P0 = unknown, P1 = unknown>(_copyPropertiesFrom: P0, _to: P1): R;

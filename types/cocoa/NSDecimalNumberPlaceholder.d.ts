@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDecimalNumberPlaceholder<T = any> extends cocoa.NSDecimalNumber {}
+  export interface NSDecimalNumberPlaceholder<T = any> extends NSDecimalNumber {}
   namespace classes {
-    export interface NSDecimalNumberPlaceholder<T = any> extends cocoa.classes.NSDecimalNumber {
+    export interface NSDecimalNumberPlaceholder<T = any> extends NSDecimalNumber {
       alloc<R = NSDecimalNumberPlaceholder>(): R;
       new: <R = NSDecimalNumberPlaceholder>() => R;
     }

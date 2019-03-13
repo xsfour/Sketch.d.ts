@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBorderOptionsInspectorViewController<T = any> extends cocoa.MSStylePartInspectorViewController {
+  export interface MSBorderOptionsInspectorViewController<T = any> extends MSStylePartInspectorViewController {
     dashFields<R = unknown>(): R;
     fillDashPlaceholderFields<R = void>(): R;
     fillDashFields<R = void>(): R;
@@ -15,27 +15,27 @@ declare namespace cocoa {
     endDecorationAction<R = void, P0 = unknown>(_endDecorationAction: P0): R;
     startDecorationAction<R = void, P0 = unknown>(_startDecorationAction: P0): R;
     reloadData<R = void>(): R;
-    endMarkerTypes<R = cocoa.NSSet>(): R;
-    setEndMarkerTypes<R = void, P0 = cocoa.NSSet>(_v: P0): R;
-    startMarkerTypes<R = cocoa.NSSet>(): R;
-    setStartMarkerTypes<R = void, P0 = cocoa.NSSet>(_v: P0): R;
-    filteredLayers<R = cocoa.NSArray>(): R;
-    setFilteredLayers<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    joinSegmentedControl<R = cocoa.NSSegmentedControl>(): R;
-    setJoinSegmentedControl<R = void, P0 = cocoa.NSSegmentedControl>(_v: P0): R;
-    capSegmentedControl<R = cocoa.NSSegmentedControl>(): R;
-    setCapSegmentedControl<R = void, P0 = cocoa.NSSegmentedControl>(_v: P0): R;
-    dashField2<R = cocoa.NSTextField>(): R;
-    setDashField2<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    dashField1<R = cocoa.NSTextField>(): R;
-    setDashField1<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    endDecorationButton<R = cocoa.NSPopUpButton>(): R;
-    setEndDecorationButton<R = void, P0 = cocoa.NSPopUpButton>(_v: P0): R;
-    startDecorationButton<R = cocoa.NSPopUpButton>(): R;
-    setStartDecorationButton<R = void, P0 = cocoa.NSPopUpButton>(_v: P0): R;
+    endMarkerTypes<R = NSSet>(): R;
+    setEndMarkerTypes<R = void, P0 = NSSet>(_v: P0): R;
+    startMarkerTypes<R = NSSet>(): R;
+    setStartMarkerTypes<R = void, P0 = NSSet>(_v: P0): R;
+    filteredLayers<R = NSArray>(): R;
+    setFilteredLayers<R = void, P0 = NSArray>(_v: P0): R;
+    joinSegmentedControl<R = NSSegmentedControl>(): R;
+    setJoinSegmentedControl<R = void, P0 = NSSegmentedControl>(_v: P0): R;
+    capSegmentedControl<R = NSSegmentedControl>(): R;
+    setCapSegmentedControl<R = void, P0 = NSSegmentedControl>(_v: P0): R;
+    dashField2<R = NSTextField>(): R;
+    setDashField2<R = void, P0 = NSTextField>(_v: P0): R;
+    dashField1<R = NSTextField>(): R;
+    setDashField1<R = void, P0 = NSTextField>(_v: P0): R;
+    endDecorationButton<R = NSPopUpButton>(): R;
+    setEndDecorationButton<R = void, P0 = NSPopUpButton>(_v: P0): R;
+    startDecorationButton<R = NSPopUpButton>(): R;
+    setStartDecorationButton<R = void, P0 = NSPopUpButton>(_v: P0): R;
   }
   namespace classes {
-    export interface MSBorderOptionsInspectorViewController<T = any> extends cocoa.classes.MSStylePartInspectorViewController {
+    export interface MSBorderOptionsInspectorViewController<T = any> extends MSStylePartInspectorViewController {
       alloc<R = MSBorderOptionsInspectorViewController>(): R;
       new: <R = MSBorderOptionsInspectorViewController>() => R;
     }

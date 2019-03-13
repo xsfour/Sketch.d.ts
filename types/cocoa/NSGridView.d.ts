@@ -1,14 +1,14 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSGridView<T = any> extends cocoa.NSView {
-    _mergeCellsInRect<R = void, P0 = cocoa.CGRect>(__mergeCellsInRect: P0): R;
-    _expandMergeBoundsIfNeeded<R = cocoa.CGRect, P0 = cocoa.CGRect>(__expandMergeBoundsIfNeeded: P0): R;
-    _expandMergeBounds_ifNeededForColumnAtIndex<R = boolean, P0 = cocoa.CGRect, P1 = number>(__expandMergeBounds: P0, _ifNeededForColumnAtIndex: P1): R;
-    _expandMergeBounds_ifNeededForRow<R = boolean, P0 = cocoa.CGRect, P1 = unknown>(__expandMergeBounds: P0, _ifNeededForRow: P1): R;
-    _expandMergeBounds_ifNeededForCell<R = boolean, P0 = cocoa.CGRect, P1 = unknown>(__expandMergeBounds: P0, _ifNeededForCell: P1): R;
-    _unmergeCellsInRect<R = void, P0 = cocoa.CGRect>(__unmergeCellsInRect: P0): R;
-    mergeCellsInHorizontalRange_verticalRange<R = void, P0 = cocoa._NSRange, P1 = cocoa._NSRange>(_mergeCellsInHorizontalRange: P0, _verticalRange: P1): R;
+  export interface NSGridView<T = any> extends NSView {
+    _mergeCellsInRect<R = void, P0 = CGRect>(__mergeCellsInRect: P0): R;
+    _expandMergeBoundsIfNeeded<R = CGRect, P0 = CGRect>(__expandMergeBoundsIfNeeded: P0): R;
+    _expandMergeBounds_ifNeededForColumnAtIndex<R = boolean, P0 = CGRect, P1 = number>(__expandMergeBounds: P0, _ifNeededForColumnAtIndex: P1): R;
+    _expandMergeBounds_ifNeededForRow<R = boolean, P0 = CGRect, P1 = unknown>(__expandMergeBounds: P0, _ifNeededForRow: P1): R;
+    _expandMergeBounds_ifNeededForCell<R = boolean, P0 = CGRect, P1 = unknown>(__expandMergeBounds: P0, _ifNeededForCell: P1): R;
+    _unmergeCellsInRect<R = void, P0 = CGRect>(__unmergeCellsInRect: P0): R;
+    mergeCellsInHorizontalRange_verticalRange<R = void, P0 = _NSRange, P1 = _NSRange>(_mergeCellsInHorizontalRange: P0, _verticalRange: P1): R;
     deleteColumn<R = void, P0 = unknown>(_deleteColumn: P0): R;
     deleteRow<R = void, P0 = unknown>(_deleteRow: P0): R;
     _insertColumnAtIndex_withViews<R = unknown, P0 = number, P1 = unknown>(__insertColumnAtIndex: P0, _withViews: P1): R;
@@ -56,7 +56,7 @@ declare namespace cocoa {
     setXPlacement<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface NSGridView<T = any> extends cocoa.classes.NSView {
+    export interface NSGridView<T = any> extends NSView {
       alloc<R = NSGridView>(): R;
       new: <R = NSGridView>() => R;
       gridViewWithViews<R = unknown, P0 = unknown>(_gridViewWithViews: P0): R;

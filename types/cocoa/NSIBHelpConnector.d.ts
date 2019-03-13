@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSIBHelpConnector<T = any> extends cocoa.NSObject, cocoa.NSCodingProtocol {
+  export interface NSIBHelpConnector<T = any> extends NSObject, NSCodingProtocol {
     instantiateWithObjectInstantiator<R = void, P0 = unknown>(_instantiateWithObjectInstantiator: P0): R;
     establishConnection<R = void>(): R;
     replaceObject_withObject<R = void, P0 = unknown, P1 = unknown>(_replaceObject: P0, _withObject: P1): R;
@@ -18,7 +18,7 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
   }
   namespace classes {
-    export interface NSIBHelpConnector<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCodingProtocol {
+    export interface NSIBHelpConnector<T = any> extends NSObject, NSCodingProtocol {
       alloc<R = NSIBHelpConnector>(): R;
       new: <R = NSIBHelpConnector>() => R;
       initialize<R = void>(): R;

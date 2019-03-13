@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSBindingAdaptor<T = any> extends cocoa.NSObject {
+  export interface _NSBindingAdaptor<T = any> extends NSObject {
     controller_didChangeToFilterPredicate<R = void, P0 = unknown, P1 = unknown>(_controller: P0, _didChangeToFilterPredicate: P1): R;
     controller_didChangeToSortDescriptors<R = void, P0 = unknown, P1 = unknown>(_controller: P0, _didChangeToSortDescriptors: P1): R;
     controller_didChangeToSelectionIndexPaths<R = void, P0 = unknown, P1 = unknown>(_controller: P0, _didChangeToSelectionIndexPaths: P1): R;
@@ -21,7 +21,7 @@ declare namespace cocoa {
     outlineView_didExpandItem<R = void, P0 = unknown, P1 = unknown>(_outlineView: P0, _didExpandItem: P1): R;
     outlineColumn_willDisplayCell_row<R = void, P0 = unknown, P1 = unknown, P2 = number>(_outlineColumn: P0, _willDisplayCell: P1, _row: P2): R;
     outlineColumn_willDisplayOutlineCell_row<R = void, P0 = unknown, P1 = unknown, P2 = number>(_outlineColumn: P0, _willDisplayOutlineCell: P1, _row: P2): R;
-    tableView_updateVisibleRowInformation<R = void, P0 = unknown, P1 = cocoa._NSRange>(_tableView: P0, _updateVisibleRowInformation: P1): R;
+    tableView_updateVisibleRowInformation<R = void, P0 = unknown, P1 = _NSRange>(_tableView: P0, _updateVisibleRowInformation: P1): R;
     tableView_didChangeToSelectedRowIndexes<R = void, P0 = unknown, P1 = unknown>(_tableView: P0, _didChangeToSelectedRowIndexes: P1): R;
     tableView_didChangeToSortDescriptors<R = void, P0 = unknown, P1 = unknown>(_tableView: P0, _didChangeToSortDescriptors: P1): R;
     tableView_willDisplayCell_forTableColumn_row<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = number>(_tableView: P0, _willDisplayCell: P1, _forTableColumn: P2, _row: P3): R;
@@ -64,7 +64,7 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
   }
   namespace classes {
-    export interface _NSBindingAdaptor<T = any> extends cocoa.classes.NSObject {
+    export interface _NSBindingAdaptor<T = any> extends NSObject {
       alloc<R = _NSBindingAdaptor>(): R;
       new: <R = _NSBindingAdaptor>() => R;
       reconnectBindings<R = void, P0 = unknown>(_reconnectBindings: P0): R;

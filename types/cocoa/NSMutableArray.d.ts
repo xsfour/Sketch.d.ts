@@ -11,11 +11,11 @@ declare namespace cocoa {
     initWithContentsOfFile<R = unknown, P0 = unknown>(_initWithContentsOfFile: P0): R;
     removeObjectsFromIndices_numIndices<R = void, P0 = number, P1 = number>(_removeObjectsFromIndices: P0, _numIndices: P1): R;
     classForCoder<R = unknown>(): R;
-    replaceRangeAtIndex_withRange<R = void, P0 = number, P1 = cocoa._NSRange>(_replaceRangeAtIndex: P0, _withRange: P1): R;
+    replaceRangeAtIndex_withRange<R = void, P0 = number, P1 = _NSRange>(_replaceRangeAtIndex: P0, _withRange: P1): R;
     removeLastRange<R = void>(): R;
-    addRange<R = void, P0 = cocoa._NSRange>(_addRange: P0): R;
+    addRange<R = void, P0 = _NSRange>(_addRange: P0): R;
     removeRangeAtIndex<R = void, P0 = number>(_removeRangeAtIndex: P0): R;
-    insertRange_atIndex<R = void, P0 = cocoa._NSRange, P1 = number>(_insertRange: P0, _atIndex: P1): R;
+    insertRange_atIndex<R = void, P0 = _NSRange, P1 = number>(_insertRange: P0, _atIndex: P1): R;
     filterUsingPredicate<R = void, P0 = unknown>(_filterUsingPredicate: P0): R;
     removeAttributeWithName<R = void, P0 = unknown>(_removeAttributeWithName: P0): R;
     addAttributeWithName_percentageFractionalValue<R = void, P0 = unknown, P1 = number>(_addAttributeWithName: P0, _percentageFractionalValue: P1): R;

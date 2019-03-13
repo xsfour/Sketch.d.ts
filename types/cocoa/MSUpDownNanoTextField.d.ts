@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSUpDownNanoTextField<T = any> extends cocoa.MSUpDownTextField {}
+  export interface MSUpDownNanoTextField<T = any> extends MSUpDownTextField {}
   namespace classes {
-    export interface MSUpDownNanoTextField<T = any> extends cocoa.classes.MSUpDownTextField {
+    export interface MSUpDownNanoTextField<T = any> extends MSUpDownTextField {
       alloc<R = MSUpDownNanoTextField>(): R;
       new: <R = MSUpDownNanoTextField>() => R;
     }

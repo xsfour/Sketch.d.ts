@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCALayerGraphicsContext<T = any> extends cocoa.NSWindowGraphicsContext {
+  export interface NSCALayerGraphicsContext<T = any> extends NSWindowGraphicsContext {
     _initWithGraphicsPort_CALayer_flipped<R = unknown, P0 = void, P1 = unknown, P2 = boolean>(__initWithGraphicsPort: P0, _CALayer: P1, _flipped: P2): R;
   }
   namespace classes {
-    export interface NSCALayerGraphicsContext<T = any> extends cocoa.classes.NSWindowGraphicsContext {
+    export interface NSCALayerGraphicsContext<T = any> extends NSWindowGraphicsContext {
       alloc<R = NSCALayerGraphicsContext>(): R;
       new: <R = NSCALayerGraphicsContext>() => R;
     }

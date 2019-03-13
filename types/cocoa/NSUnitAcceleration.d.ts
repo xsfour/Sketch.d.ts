@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUnitAcceleration<T = any> extends cocoa.NSDimension, cocoa.NSSecureCodingProtocol {}
+  export interface NSUnitAcceleration<T = any> extends NSDimension, NSSecureCodingProtocol {}
   namespace classes {
-    export interface NSUnitAcceleration<T = any> extends cocoa.classes.NSDimension, cocoa.classes.NSSecureCodingProtocol {
+    export interface NSUnitAcceleration<T = any> extends NSDimension, NSSecureCodingProtocol {
       alloc<R = NSUnitAcceleration>(): R;
       new: <R = NSUnitAcceleration>() => R;
       metersPerSecondSquared<R = unknown>(): R;

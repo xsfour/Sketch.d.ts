@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFontManager<T = any> extends cocoa.NSObject, cocoa.NSMenuItemValidationProtocol {
+  export interface NSFontManager<T = any> extends NSObject, NSMenuItemValidationProtocol {
     _collectionWithName<R = unknown, P0 = unknown>(__collectionWithName: P0): R;
     _createFontPanelRepFromCollection_removingHidden<R = unknown, P0 = unknown, P1 = boolean>(__createFontPanelRepFromCollection: P0, _removingHidden: P1): R;
     _renameCollection_to<R = number, P0 = unknown, P1 = unknown>(__renameCollection: P0, _to: P1): R;
@@ -95,11 +95,11 @@ declare namespace cocoa {
     setFontMenu<R = void, P0 = unknown>(_setFontMenu: P0): R;
     fontMenu<R = unknown, P0 = boolean>(_fontMenu: P0): R;
     _init<R = unknown>(): R;
-    collectionNames<R = cocoa.NSArray>(): R;
-    availableFontFamilies<R = cocoa.NSArray>(): R;
-    availableFonts<R = cocoa.NSArray>(): R;
+    collectionNames<R = NSArray>(): R;
+    availableFontFamilies<R = NSArray>(): R;
+    availableFonts<R = NSArray>(): R;
     currentFontAction<R = number>(): R;
-    selectedFont<R = cocoa.NSFont>(): R;
+    selectedFont<R = NSFont>(): R;
     multiple<R = boolean>(): R;
     delegate<R = unknown>(): R;
     setDelegate<R = void, P0 = unknown>(_v: P0): R;
@@ -109,13 +109,13 @@ declare namespace cocoa {
     setAction<R = void, P0 = string>(_v: P0): R;
     enabled<R = boolean>(): R;
     setEnabled<R = void, P0 = boolean>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSFontManager<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSMenuItemValidationProtocol {
+    export interface NSFontManager<T = any> extends NSObject, NSMenuItemValidationProtocol {
       alloc<R = NSFontManager>(): R;
       new: <R = NSFontManager>() => R;
       setFontManagerFactory<R = void, P0 = unknown>(_setFontManagerFactory: P0): R;

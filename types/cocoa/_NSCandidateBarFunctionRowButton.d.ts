@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSCandidateBarFunctionRowButton<T = any> extends cocoa.NSButton, cocoa._NSCandidateBarFunctionRowSegment_AccessibilityDelegateProtocol {
-    convertLocation_toSegmentType_index<R = void, P0 = cocoa.CGPoint, P1 = number, P2 = number>(_convertLocation: P0, _toSegmentType: P1, _index: P2): R;
-    setFrame<R = void, P0 = cocoa.CGRect>(_setFrame: P0): R;
+  export interface _NSCandidateBarFunctionRowButton<T = any> extends NSButton, _NSCandidateBarFunctionRowSegment_AccessibilityDelegateProtocol {
+    convertLocation_toSegmentType_index<R = void, P0 = CGPoint, P1 = number, P2 = number>(_convertLocation: P0, _toSegmentType: P1, _index: P2): R;
+    setFrame<R = void, P0 = CGRect>(_setFrame: P0): R;
     segments<R = unknown>(): R;
     layoutSegments<R = void>(): R;
     collapsedSegmentWithWidth<R = unknown, P0 = number>(_collapsedSegmentWithWidth: P0): R;
@@ -24,15 +24,15 @@ declare namespace cocoa {
     setAllowsCollapsing<R = void, P0 = boolean>(_v: P0): R;
     collapsed<R = boolean>(): R;
     setCollapsed<R = void, P0 = boolean>(_v: P0): R;
-    trackingTouch<R = cocoa.NSTouch>(): R;
-    setTrackingTouch<R = void, P0 = cocoa.NSTouch>(_v: P0): R;
-    controller<R = cocoa.NSCandidateListViewController>(): R;
-    setController<R = void, P0 = cocoa.NSCandidateListViewController>(_v: P0): R;
+    trackingTouch<R = NSTouch>(): R;
+    setTrackingTouch<R = void, P0 = NSTouch>(_v: P0): R;
+    controller<R = NSCandidateListViewController>(): R;
+    setController<R = void, P0 = NSCandidateListViewController>(_v: P0): R;
     hasSplitRight<R = boolean>(): R;
     hasContent<R = boolean>(): R;
   }
   namespace classes {
-    export interface _NSCandidateBarFunctionRowButton<T = any> extends cocoa.classes.NSButton, cocoa.classes._NSCandidateBarFunctionRowSegment_AccessibilityDelegateProtocol {
+    export interface _NSCandidateBarFunctionRowButton<T = any> extends NSButton, _NSCandidateBarFunctionRowSegment_AccessibilityDelegateProtocol {
       alloc<R = _NSCandidateBarFunctionRowButton>(): R;
       new: <R = _NSCandidateBarFunctionRowButton>() => R;
     }

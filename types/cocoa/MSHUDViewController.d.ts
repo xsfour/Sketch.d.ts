@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSHUDViewController<T = any> extends cocoa.NSViewController {
+  export interface MSHUDViewController<T = any> extends NSViewController {
     cxx_destruct<R = void>(): R;
     updateAverage<R = void, P0 = number>(_updateAverage: P0): R;
     updateSelection<R = void, P0 = unknown>(_updateSelection: P0): R;
@@ -21,17 +21,17 @@ declare namespace cocoa {
     setBufferPosition<R = void, P0 = number>(_v: P0): R;
     buffer<R = number>(): R;
     setBuffer<R = void, P0 = number>(_v: P0): R;
-    highlighted<R = cocoa.NSTextField>(): R;
-    setHighlighted<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    selection<R = cocoa.NSTextField>(): R;
-    setSelection<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    fpsTrend<R = cocoa.NSTextField>(): R;
-    setFpsTrend<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    fps<R = cocoa.NSTextField>(): R;
-    setFps<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
+    highlighted<R = NSTextField>(): R;
+    setHighlighted<R = void, P0 = NSTextField>(_v: P0): R;
+    selection<R = NSTextField>(): R;
+    setSelection<R = void, P0 = NSTextField>(_v: P0): R;
+    fpsTrend<R = NSTextField>(): R;
+    setFpsTrend<R = void, P0 = NSTextField>(_v: P0): R;
+    fps<R = NSTextField>(): R;
+    setFps<R = void, P0 = NSTextField>(_v: P0): R;
   }
   namespace classes {
-    export interface MSHUDViewController<T = any> extends cocoa.classes.NSViewController {
+    export interface MSHUDViewController<T = any> extends NSViewController {
       alloc<R = MSHUDViewController>(): R;
       new: <R = MSHUDViewController>() => R;
     }

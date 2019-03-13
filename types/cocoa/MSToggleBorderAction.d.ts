@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSToggleBorderAction<T = any> extends cocoa.MSToggleStylePartAction {
+  export interface MSToggleBorderAction<T = any> extends MSToggleStylePartAction {
     label<R = unknown>(): R;
     toggleBorder<R = void, P0 = unknown>(_toggleBorder: P0): R;
   }
   namespace classes {
-    export interface MSToggleBorderAction<T = any> extends cocoa.classes.MSToggleStylePartAction {
+    export interface MSToggleBorderAction<T = any> extends MSToggleStylePartAction {
       alloc<R = MSToggleBorderAction>(): R;
       new: <R = MSToggleBorderAction>() => R;
     }

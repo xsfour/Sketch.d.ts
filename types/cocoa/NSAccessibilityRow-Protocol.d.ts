@@ -1,13 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAccessibilityRowProtocol<T = any> extends cocoa.NSAccessibilityGroupProtocol {
+  export interface NSAccessibilityRowProtocol<T = any> extends NSAccessibilityGroupProtocol {
     accessibilityIndex<R = number>(): R;
     accessibilityDisclosureLevel<R = number>(): R;
   }
   namespace classes {
-    export interface NSAccessibilityRowProtocol<T = any> extends cocoa.classes.NSAccessibilityGroupProtocol {  }
+    export interface NSAccessibilityRowProtocol<T = any> extends NSAccessibilityGroupProtocol {  }
   }
 }
-
-declare const NSAccessibilityRowProtocol: cocoa.classes.NSAccessibilityRowProtocol;

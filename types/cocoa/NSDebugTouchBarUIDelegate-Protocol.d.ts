@@ -1,12 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDebugTouchBarUIDelegateProtocol<T = any> extends cocoa.NSObjectProtocol {
-    didUpdateResponderChainItems<R = void, P0 = cocoa.NSArray>(_didUpdateResponderChainItems: P0): R;
+  export interface NSDebugTouchBarUIDelegateProtocol<T = any> extends NSObjectProtocol {
+    didUpdateResponderChainItems<R = void, P0 = NSArray>(_didUpdateResponderChainItems: P0): R;
   }
   namespace classes {
-    export interface NSDebugTouchBarUIDelegateProtocol<T = any> extends cocoa.classes.NSObjectProtocol {  }
+    export interface NSDebugTouchBarUIDelegateProtocol<T = any> extends NSObjectProtocol {  }
   }
 }
-
-declare const NSDebugTouchBarUIDelegateProtocol: cocoa.classes.NSDebugTouchBarUIDelegateProtocol;

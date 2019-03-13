@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSAssetCollection<T = any> extends cocoa.MSModelObject {
+  export interface _MSAssetCollection<T = any> extends MSModelObject {
     moveGradientIndex_toIndex<R = void, P0 = number, P1 = number>(_moveGradientIndex: P0, _toIndex: P1): R;
     removeAllGradients<R = void>(): R;
     removeGradientsAtIndexes<R = void, P0 = unknown>(_removeGradientsAtIndexes: P0): R;
@@ -39,19 +39,19 @@ declare namespace cocoa {
     addColors<R = void, P0 = unknown>(_addColors: P0): R;
     addColor<R = void, P0 = unknown>(_addColor: P0): R;
     hasDefaultValues<R = boolean>(): R;
-    imageCollection<R = cocoa.MSImageCollection>(): R;
-    setImageCollection<R = void, P0 = cocoa.MSImageCollection>(_v: P0): R;
-    gradients<R = cocoa.NSArray>(): R;
-    setGradients<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    exportPresets<R = cocoa.NSArray>(): R;
-    setExportPresets<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    colors<R = cocoa.NSArray>(): R;
-    setColors<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    images<R = cocoa.NSArray>(): R;
-    setImages<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    imageCollection<R = MSImageCollection>(): R;
+    setImageCollection<R = void, P0 = MSImageCollection>(_v: P0): R;
+    gradients<R = NSArray>(): R;
+    setGradients<R = void, P0 = NSArray>(_v: P0): R;
+    exportPresets<R = NSArray>(): R;
+    setExportPresets<R = void, P0 = NSArray>(_v: P0): R;
+    colors<R = NSArray>(): R;
+    setColors<R = void, P0 = NSArray>(_v: P0): R;
+    images<R = NSArray>(): R;
+    setImages<R = void, P0 = NSArray>(_v: P0): R;
   }
   namespace classes {
-    export interface _MSAssetCollection<T = any> extends cocoa.classes.MSModelObject {
+    export interface _MSAssetCollection<T = any> extends MSModelObject {
       alloc<R = _MSAssetCollection>(): R;
       new: <R = _MSAssetCollection>() => R;
     }

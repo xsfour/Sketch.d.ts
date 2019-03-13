@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUnitSpeed<T = any> extends cocoa.NSDimension, cocoa.NSSecureCodingProtocol {}
+  export interface NSUnitSpeed<T = any> extends NSDimension, NSSecureCodingProtocol {}
   namespace classes {
-    export interface NSUnitSpeed<T = any> extends cocoa.classes.NSDimension, cocoa.classes.NSSecureCodingProtocol {
+    export interface NSUnitSpeed<T = any> extends NSDimension, NSSecureCodingProtocol {
       alloc<R = NSUnitSpeed>(): R;
       new: <R = NSUnitSpeed>() => R;
       knots<R = unknown>(): R;

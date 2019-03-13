@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSharingService<T = any> extends cocoa.NSObject {
+  export interface NSSharingService<T = any> extends NSObject {
     _touchBarImage<R = unknown>(): R;
     _blocksActionWhenModal<R = boolean, P0 = string>(__blocksActionWhenModal: P0): R;
     _preProcessingJavaScriptURL<R = unknown>(): R;
@@ -16,11 +16,11 @@ declare namespace cocoa {
     shkSharingService<R = unknown>(): R;
     setShkSharingService<R = void, P0 = unknown>(_setShkSharingService: P0): R;
     type<R = number>(): R;
-    dismissWithCompletion<R = void, P0 = cocoa.CDUnknownBlockType>(_dismissWithCompletion: P0): R;
+    dismissWithCompletion<R = void, P0 = CDUnknownBlockType>(_dismissWithCompletion: P0): R;
     performWithItems<R = void, P0 = unknown>(_performWithItems: P0): R;
     canPerformWithItems<R = boolean, P0 = unknown>(_canPerformWithItems: P0): R;
     dealloc<R = void>(): R;
-    initWithTitle_image_alternateImage_handler<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = cocoa.CDUnknownBlockType>(_initWithTitle: P0, _image: P1, _alternateImage: P2, _handler: P3): R;
+    initWithTitle_image_alternateImage_handler<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = CDUnknownBlockType>(_initWithTitle: P0, _image: P1, _alternateImage: P2, _handler: P3): R;
     _commonInit<R = void>(): R;
     _setSecondaryCheckboxState<R = void, P0 = number>(__setSecondaryCheckboxState: P0): R;
     _setSecondaryCheckboxTitle<R = void, P0 = unknown>(__setSecondaryCheckboxTitle: P0): R;
@@ -30,31 +30,31 @@ declare namespace cocoa {
     _setApplicationIcon<R = void, P0 = unknown>(__setApplicationIcon: P0): R;
     _setLocalizedPasswordActionTitle<R = void, P0 = unknown>(__setLocalizedPasswordActionTitle: P0): R;
     _setIsAddPeopleService<R = void, P0 = boolean>(__setIsAddPeopleService: P0): R;
-    attachmentFileURLs<R = cocoa.NSArray>(): R;
-    accountName<R = cocoa.NSString>(): R;
-    permanentLink<R = cocoa.NSURL>(): R;
-    messageBody<R = cocoa.NSString>(): R;
-    subject<R = cocoa.NSString>(): R;
-    setSubject<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    recipients<R = cocoa.NSArray>(): R;
-    setRecipients<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    menuItemTitle<R = cocoa.NSString>(): R;
-    setMenuItemTitle<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    alternateImage<R = cocoa.NSImage>(): R;
-    image<R = cocoa.NSImage>(): R;
-    title<R = cocoa.NSString>(): R;
-    delegate<R = cocoa.NSSharingServiceDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSSharingServiceDelegate>(_v: P0): R;
+    attachmentFileURLs<R = NSArray>(): R;
+    accountName<R = NSString>(): R;
+    permanentLink<R = NSURL>(): R;
+    messageBody<R = NSString>(): R;
+    subject<R = NSString>(): R;
+    setSubject<R = void, P0 = NSString>(_v: P0): R;
+    recipients<R = NSArray>(): R;
+    setRecipients<R = void, P0 = NSArray>(_v: P0): R;
+    menuItemTitle<R = NSString>(): R;
+    setMenuItemTitle<R = void, P0 = NSString>(_v: P0): R;
+    alternateImage<R = NSImage>(): R;
+    image<R = NSImage>(): R;
+    title<R = NSString>(): R;
+    delegate<R = NSSharingServiceDelegate>(): R;
+    setDelegate<R = void, P0 = NSSharingServiceDelegate>(_v: P0): R;
   }
   namespace classes {
-    export interface NSSharingService<T = any> extends cocoa.classes.NSObject {
+    export interface NSSharingService<T = any> extends NSObject {
       alloc<R = NSSharingService>(): R;
       new: <R = NSSharingService>() => R;
       _addRecentEmailServiceToDefaultsWithSubject_recipients<R = void, P0 = unknown, P1 = unknown>(__addRecentEmailServiceToDefaultsWithSubject: P0, _recipients: P1): R;
-      sharingServicesForAttributedString_range_mask<R = unknown, P0 = unknown, P1 = cocoa._NSRange, P2 = number>(_sharingServicesForAttributedString: P0, _range: P1, _mask: P2): R;
+      sharingServicesForAttributedString_range_mask<R = unknown, P0 = unknown, P1 = _NSRange, P2 = number>(_sharingServicesForAttributedString: P0, _range: P1, _mask: P2): R;
       sharingServicesForItems<R = unknown, P0 = unknown>(_sharingServicesForItems: P0): R;
       sharingServicesForItems_mask<R = unknown, P0 = unknown, P1 = number>(_sharingServicesForItems: P0, _mask: P1): R;
-      getSharingServicesForItems_mask_completion<R = void, P0 = unknown, P1 = number, P2 = cocoa.CDUnknownBlockType>(_getSharingServicesForItems: P0, _mask: P1, _completion: P2): R;
+      getSharingServicesForItems_mask_completion<R = void, P0 = unknown, P1 = number, P2 = CDUnknownBlockType>(_getSharingServicesForItems: P0, _mask: P1, _completion: P2): R;
       _filteredSharingServices_forCloudSharingWithItems<R = unknown, P0 = unknown, P1 = unknown>(__filteredSharingServices: P0, _forCloudSharingWithItems: P1): R;
       _urlFromItem<R = unknown, P0 = unknown>(__urlFromItem: P0): R;
       sharingServiceNamed<R = unknown, P0 = unknown>(_sharingServiceNamed: P0): R;

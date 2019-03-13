@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSOverrideRepresentationBase<T = any> extends cocoa.NSObject {
+  export interface MSOverrideRepresentationBase<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     updateAfterSelectingChild<R = void>(): R;
     modifiedMasterForInstanceInMaster<R = unknown, P0 = unknown>(_modifiedMasterForInstanceInMaster: P0): R;
@@ -12,14 +12,14 @@ declare namespace cocoa {
     childrenForLayerList<R = unknown>(): R;
     selectedOverrides<R = unknown>(): R;
     isEditable<R = boolean>(): R;
-    instance<R = cocoa.MSSymbolInstance>(): R;
-    children<R = cocoa.NSArray>(): R;
-    setChildren<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    transformForConvertingToInstance<R = cocoa.NSAffineTransform>(): R;
+    instance<R = MSSymbolInstance>(): R;
+    children<R = NSArray>(): R;
+    setChildren<R = void, P0 = NSArray>(_v: P0): R;
+    transformForConvertingToInstance<R = NSAffineTransform>(): R;
     isExpanded<R = boolean>(): R;
   }
   namespace classes {
-    export interface MSOverrideRepresentationBase<T = any> extends cocoa.classes.NSObject {
+    export interface MSOverrideRepresentationBase<T = any> extends NSObject {
       alloc<R = MSOverrideRepresentationBase>(): R;
       new: <R = MSOverrideRepresentationBase>() => R;
     }

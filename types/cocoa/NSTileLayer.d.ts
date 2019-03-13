@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTileLayer<T = any> extends cocoa.CALayer {
+  export interface NSTileLayer<T = any> extends CALayer {
     NS_hasPrefetchedContents<R = boolean>(): R;
-    setNeedsDisplayInRect<R = void, P0 = cocoa.CGRect>(_setNeedsDisplayInRect: P0): R;
-    setBounds<R = void, P0 = cocoa.CGRect>(_setBounds: P0): R;
-    drawInContext<R = void, P0 = cocoa.CGContext>(_drawInContext: P0): R;
+    setNeedsDisplayInRect<R = void, P0 = CGRect>(_setNeedsDisplayInRect: P0): R;
+    setBounds<R = void, P0 = CGRect>(_setBounds: P0): R;
+    drawInContext<R = void, P0 = CGContext>(_drawInContext: P0): R;
     display<R = void>(): R;
     NS_contentsAligningEnabled<R = boolean>(): R;
     setNeedsLayout<R = void>(): R;
@@ -17,7 +17,7 @@ declare namespace cocoa {
     init<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSTileLayer<T = any> extends cocoa.classes.CALayer {  }
+    export interface NSTileLayer<T = any> extends CALayer {  }
   }
 }
 

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSMouseTracker<T = any> extends cocoa.NSObject {
+  export interface MSMouseTracker<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     sendAction<R = void>(): R;
     removeTrackingState<R = void, P0 = number>(_removeTrackingState: P0): R;
@@ -14,11 +14,11 @@ declare namespace cocoa {
     mouseMoved<R = void, P0 = unknown>(_mouseMoved: P0): R;
     mouseEntered<R = void, P0 = unknown>(_mouseEntered: P0): R;
     setLocationWithEvent<R = void, P0 = unknown>(_setLocationWithEvent: P0): R;
-    locationInView<R = cocoa.CGPoint, P0 = unknown>(_locationInView: P0): R;
+    locationInView<R = CGPoint, P0 = unknown>(_locationInView: P0): R;
     initWithTarget_action<R = unknown, P0 = unknown, P1 = string>(_initWithTarget: P0, _action: P1): R;
     modifierFlags<R = number>(): R;
-    view<R = cocoa.NSView>(): R;
-    setView<R = void, P0 = cocoa.NSView>(_v: P0): R;
+    view<R = NSView>(): R;
+    setView<R = void, P0 = NSView>(_v: P0): R;
     trackingState<R = number>(): R;
     action<R = string>(): R;
     setAction<R = void, P0 = string>(_v: P0): R;
@@ -27,7 +27,7 @@ declare namespace cocoa {
     canUpdateCursor<R = boolean>(): R;
   }
   namespace classes {
-    export interface MSMouseTracker<T = any> extends cocoa.classes.NSObject {
+    export interface MSMouseTracker<T = any> extends NSObject {
       alloc<R = MSMouseTracker>(): R;
       new: <R = MSMouseTracker>() => R;
     }

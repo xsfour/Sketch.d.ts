@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableColumn<T = any> extends cocoa.NSObject, cocoa.NSCodingProtocol, cocoa.NSUserInterfaceItemIdentificationProtocol {
+  export interface NSTableColumn<T = any> extends NSObject, NSCodingProtocol, NSUserInterfaceItemIdentificationProtocol {
     cxx_destruct<R = void>(): R;
     _bindingAdaptor<R = unknown>(): R;
     _setBindingAdaptor<R = void, P0 = unknown>(__setBindingAdaptor: P0): R;
@@ -35,7 +35,7 @@ declare namespace cocoa {
     accessibilityArrayAttributeValues_index_maxCount<R = unknown, P0 = unknown, P1 = number, P2 = number>(_accessibilityArrayAttributeValues: P0, _index: P1, _maxCount: P2): R;
     accessibilityArrayAttributeCount<R = number, P0 = unknown>(_accessibilityArrayAttributeCount: P0): R;
     accessibilityFocusedUIElement<R = unknown>(): R;
-    accessibilityHitTest<R = unknown, P0 = cocoa.CGPoint>(_accessibilityHitTest: P0): R;
+    accessibilityHitTest<R = unknown, P0 = CGPoint>(_accessibilityHitTest: P0): R;
     accessibilityIsIgnored<R = boolean>(): R;
     accessibilityPerformAction<R = void, P0 = unknown>(_accessibilityPerformAction: P0): R;
     accessibilityActionDescription<R = unknown, P0 = unknown>(_accessibilityActionDescription: P0): R;
@@ -64,7 +64,7 @@ declare namespace cocoa {
     accessibilityVisibleRowsAttribute<R = unknown>(): R;
     accessibilityIsRowsAttributeSettable<R = boolean>(): R;
     accessibilityRowsAttribute<R = unknown>(): R;
-    _accessibilityRowsInRange<R = unknown, P0 = cocoa._NSRange>(__accessibilityRowsInRange: P0): R;
+    _accessibilityRowsInRange<R = unknown, P0 = _NSRange>(__accessibilityRowsInRange: P0): R;
     accessibilityIsParentAttributeSettable<R = boolean>(): R;
     accessibilityParentAttribute<R = unknown>(): R;
     accessibilityIsRoleDescriptionAttributeSettable<R = boolean>(): R;
@@ -72,33 +72,33 @@ declare namespace cocoa {
     accessibilityIsRoleAttributeSettable<R = boolean>(): R;
     accessibilityRoleAttribute<R = unknown>(): R;
     accessibilityAttributeNames<R = unknown>(): R;
-    headerToolTip<R = cocoa.NSString>(): R;
-    setHeaderToolTip<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    title<R = cocoa.NSString>(): R;
-    setTitle<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    headerToolTip<R = NSString>(): R;
+    setHeaderToolTip<R = void, P0 = NSString>(_v: P0): R;
+    title<R = NSString>(): R;
+    setTitle<R = void, P0 = NSString>(_v: P0): R;
     editable<R = boolean>(): R;
     setEditable<R = void, P0 = boolean>(_v: P0): R;
     resizingMask<R = number>(): R;
     setResizingMask<R = void, P0 = number>(_v: P0): R;
-    headerCell<R = cocoa.NSTableHeaderCell>(): R;
-    setHeaderCell<R = void, P0 = cocoa.NSTableHeaderCell>(_v: P0): R;
+    headerCell<R = NSTableHeaderCell>(): R;
+    setHeaderCell<R = void, P0 = NSTableHeaderCell>(_v: P0): R;
     maxWidth<R = number>(): R;
     setMaxWidth<R = void, P0 = number>(_v: P0): R;
     minWidth<R = number>(): R;
     setMinWidth<R = void, P0 = number>(_v: P0): R;
     width<R = number>(): R;
     setWidth<R = void, P0 = number>(_v: P0): R;
-    identifier<R = cocoa.NSString>(): R;
-    setIdentifier<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    sortDescriptorPrototype<R = cocoa.NSSortDescriptor>(): R;
-    setSortDescriptorPrototype<R = void, P0 = cocoa.NSSortDescriptor>(_v: P0): R;
-    tableView<R = cocoa.NSTableView>(): R;
-    setTableView<R = void, P0 = cocoa.NSTableView>(_v: P0): R;
+    identifier<R = NSString>(): R;
+    setIdentifier<R = void, P0 = NSString>(_v: P0): R;
+    sortDescriptorPrototype<R = NSSortDescriptor>(): R;
+    setSortDescriptorPrototype<R = void, P0 = NSSortDescriptor>(_v: P0): R;
+    tableView<R = NSTableView>(): R;
+    setTableView<R = void, P0 = NSTableView>(_v: P0): R;
     hidden<R = boolean>(): R;
     setHidden<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface NSTableColumn<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCodingProtocol, cocoa.classes.NSUserInterfaceItemIdentificationProtocol {
+    export interface NSTableColumn<T = any> extends NSObject, NSCodingProtocol, NSUserInterfaceItemIdentificationProtocol {
       alloc<R = NSTableColumn>(): R;
       new: <R = NSTableColumn>() => R;
     }

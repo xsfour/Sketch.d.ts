@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSConcreteMapTable<T = any> extends cocoa.NSMapTable {
+  export interface NSConcreteMapTable<T = any> extends NSMapTable {
     hash<R = number>(): R;
     dealloc<R = void>(): R;
     rehash<R = void>(): R;
@@ -20,7 +20,7 @@ declare namespace cocoa {
     raiseCountUnderflowException<R = void>(): R;
   }
   namespace classes {
-    export interface NSConcreteMapTable<T = any> extends cocoa.classes.NSMapTable {
+    export interface NSConcreteMapTable<T = any> extends NSMapTable {
       alloc<R = NSConcreteMapTable>(): R;
       new: <R = NSConcreteMapTable>() => R;
     }

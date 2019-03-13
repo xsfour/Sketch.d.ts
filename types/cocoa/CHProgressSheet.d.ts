@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface CHProgressSheet<T = any> extends cocoa.CHSheetController {
+  export interface CHProgressSheet<T = any> extends CHSheetController {
     setIndeterminate<R = void, P0 = boolean>(_setIndeterminate: P0): R;
     setShowsCancelButton<R = void, P0 = boolean>(_setShowsCancelButton: P0): R;
     setSubtitle<R = void, P0 = unknown>(_setSubtitle: P0): R;
@@ -18,7 +18,7 @@ declare namespace cocoa {
     setMaximum<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface CHProgressSheet<T = any> extends cocoa.classes.CHSheetController {
+    export interface CHProgressSheet<T = any> extends CHSheetController {
       alloc<R = CHProgressSheet>(): R;
       new: <R = CHProgressSheet>() => R;
     }

@@ -9,5 +9,3 @@ declare namespace cocoa {
     export interface NSValidatedUserInterfaceItemProtocol<T = any> {  }
   }
 }
-
-declare const NSValidatedUserInterfaceItemProtocol: cocoa.classes.NSValidatedUserInterfaceItemProtocol;

@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBottomGradientView<T = any> extends cocoa.NSView {}
+  export interface MSBottomGradientView<T = any> extends NSView {}
   namespace classes {
-    export interface MSBottomGradientView<T = any> extends cocoa.classes.NSView {
+    export interface MSBottomGradientView<T = any> extends NSView {
       alloc<R = MSBottomGradientView>(): R;
       new: <R = MSBottomGradientView>() => R;
     }

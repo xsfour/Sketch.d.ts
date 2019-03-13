@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAEDescriptorTranslator<T = any> extends cocoa.NSObject {
+  export interface NSAEDescriptorTranslator<T = any> extends NSObject {
     descriptorByTranslatingObject_ofType_inSuite<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_descriptorByTranslatingObject: P0, _ofType: P1, _inSuite: P2): R;
     objectByTranslatingDescriptor_toType_inSuite<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_objectByTranslatingDescriptor: P0, _toType: P1, _inSuite: P2): R;
     registerTranslator_selector_toTranslateFromClass<R = void, P0 = unknown, P1 = string, P2 = unknown>(_registerTranslator: P0, _selector: P1, _toTranslateFromClass: P2): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     _setUpAppKitTranslations<R = void>(): R;
   }
   namespace classes {
-    export interface NSAEDescriptorTranslator<T = any> extends cocoa.classes.NSObject {
+    export interface NSAEDescriptorTranslator<T = any> extends NSObject {
       alloc<R = NSAEDescriptorTranslator>(): R;
       new: <R = NSAEDescriptorTranslator>() => R;
       sharedAEDescriptorTranslator<R = unknown>(): R;

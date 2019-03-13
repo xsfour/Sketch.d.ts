@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLayoutRect<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol, cocoa.NSCodingProtocol {
+  export interface NSLayoutRect<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
     constraintsContainingWithinLayoutRect<R = unknown, P0 = unknown>(_constraintsContainingWithinLayoutRect: P0): R;
     constraintsEqualToLayoutRect<R = unknown, P0 = unknown>(_constraintsEqualToLayoutRect: P0): R;
     layoutRectBySlicingWithProportion_fromEdge<R = unknown, P0 = number, P1 = number>(_layoutRectBySlicingWithProportion: P0, _fromEdge: P1): R;
@@ -18,24 +18,24 @@ declare namespace cocoa {
     initWithLeadingAnchor_topAnchor_widthAnchor_heightAnchor_name<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown>(_initWithLeadingAnchor: P0, _topAnchor: P1, _widthAnchor: P2, _heightAnchor: P3, _name: P4): R;
     initWithLeadingAnchor_topAnchor_widthAnchor_heightAnchor<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown>(_initWithLeadingAnchor: P0, _topAnchor: P1, _widthAnchor: P2, _heightAnchor: P3): R;
     observableValueInItem<R = unknown, P0 = unknown>(_observableValueInItem: P0): R;
-    valueInItem<R = cocoa.CGRect, P0 = unknown>(_valueInItem: P0): R;
+    valueInItem<R = CGRect, P0 = unknown>(_valueInItem: P0): R;
     layoutRectWithName<R = unknown, P0 = unknown>(_layoutRectWithName: P0): R;
     nsli_isLegalConstraintItem<R = boolean>(): R;
     nsli_superitem<R = unknown>(): R;
     ruleContainingLayoutRect<R = unknown, P0 = unknown>(_ruleContainingLayoutRect: P0): R;
     ruleEqualToLayoutRect<R = unknown, P0 = unknown>(_ruleEqualToLayoutRect: P0): R;
-    centerLayoutPoint<R = cocoa.NSLayoutPoint>(): R;
-    heightAnchor<R = cocoa.NSLayoutDimension>(): R;
-    widthAnchor<R = cocoa.NSLayoutDimension>(): R;
-    trailingAnchor<R = cocoa.NSLayoutXAxisAnchor>(): R;
-    centerXAnchor<R = cocoa.NSLayoutXAxisAnchor>(): R;
-    leadingAnchor<R = cocoa.NSLayoutXAxisAnchor>(): R;
-    bottomAnchor<R = cocoa.NSLayoutYAxisAnchor>(): R;
-    centerYAnchor<R = cocoa.NSLayoutYAxisAnchor>(): R;
-    topAnchor<R = cocoa.NSLayoutYAxisAnchor>(): R;
+    centerLayoutPoint<R = NSLayoutPoint>(): R;
+    heightAnchor<R = NSLayoutDimension>(): R;
+    widthAnchor<R = NSLayoutDimension>(): R;
+    trailingAnchor<R = NSLayoutXAxisAnchor>(): R;
+    centerXAnchor<R = NSLayoutXAxisAnchor>(): R;
+    leadingAnchor<R = NSLayoutXAxisAnchor>(): R;
+    bottomAnchor<R = NSLayoutYAxisAnchor>(): R;
+    centerYAnchor<R = NSLayoutYAxisAnchor>(): R;
+    topAnchor<R = NSLayoutYAxisAnchor>(): R;
   }
   namespace classes {
-    export interface NSLayoutRect<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol, cocoa.classes.NSCodingProtocol {
+    export interface NSLayoutRect<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
       alloc<R = NSLayoutRect>(): R;
       new: <R = NSLayoutRect>() => R;
       layoutRectWithCenterLayoutPoint_widthAnchor_heightAnchor<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_layoutRectWithCenterLayoutPoint: P0, _widthAnchor: P1, _heightAnchor: P2): R;

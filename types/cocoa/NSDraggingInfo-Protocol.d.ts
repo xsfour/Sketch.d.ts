@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDraggingInfoProtocol<T = any> extends cocoa.NSObjectProtocol {
+  export interface NSDraggingInfoProtocol<T = any> extends NSObjectProtocol {
     resetSpringLoading<R = void>(): R;
-    enumerateDraggingItemsWithOptions_forView_classes_searchOptions_usingBlock<R = void, P0 = number, P1 = cocoa.NSView, P2 = cocoa.NSArray, P3 = cocoa.NSDictionary, P4 = cocoa.CDUnknownBlockType>(_enumerateDraggingItemsWithOptions: P0, _forView: P1, _classes: P2, _searchOptions: P3, _usingBlock: P4): R;
-    namesOfPromisedFilesDroppedAtDestination<R = cocoa.NSArray, P0 = cocoa.NSURL>(_namesOfPromisedFilesDroppedAtDestination: P0): R;
-    slideDraggedImageTo<R = void, P0 = cocoa.CGPoint>(_slideDraggedImageTo: P0): R;
+    enumerateDraggingItemsWithOptions_forView_classes_searchOptions_usingBlock<R = void, P0 = number, P1 = NSView, P2 = NSArray, P3 = NSDictionary, P4 = CDUnknownBlockType>(_enumerateDraggingItemsWithOptions: P0, _forView: P1, _classes: P2, _searchOptions: P3, _usingBlock: P4): R;
+    namesOfPromisedFilesDroppedAtDestination<R = NSArray, P0 = NSURL>(_namesOfPromisedFilesDroppedAtDestination: P0): R;
+    slideDraggedImageTo<R = void, P0 = CGPoint>(_slideDraggedImageTo: P0): R;
     springLoadingHighlight<R = number>(): R;
     numberOfValidItemsForDrop<R = number>(): R;
     setNumberOfValidItemsForDrop<R = void, P0 = number>(_v: P0): R;
@@ -15,16 +15,14 @@ declare namespace cocoa {
     setDraggingFormation<R = void, P0 = number>(_v: P0): R;
     draggingSequenceNumber<R = number>(): R;
     draggingSource<R = unknown>(): R;
-    draggingPasteboard<R = cocoa.NSPasteboard>(): R;
-    draggedImage<R = cocoa.NSImage>(): R;
-    draggedImageLocation<R = cocoa.CGPoint>(): R;
-    draggingLocation<R = cocoa.CGPoint>(): R;
+    draggingPasteboard<R = NSPasteboard>(): R;
+    draggedImage<R = NSImage>(): R;
+    draggedImageLocation<R = CGPoint>(): R;
+    draggingLocation<R = CGPoint>(): R;
     draggingSourceOperationMask<R = number>(): R;
-    draggingDestinationWindow<R = cocoa.NSWindow>(): R;
+    draggingDestinationWindow<R = NSWindow>(): R;
   }
   namespace classes {
-    export interface NSDraggingInfoProtocol<T = any> extends cocoa.classes.NSObjectProtocol {  }
+    export interface NSDraggingInfoProtocol<T = any> extends NSObjectProtocol {  }
   }
 }
-
-declare const NSDraggingInfoProtocol: cocoa.classes.NSDraggingInfoProtocol;

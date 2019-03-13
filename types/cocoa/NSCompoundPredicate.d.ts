@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCompoundPredicate<T = any> extends cocoa.NSPredicate {
+  export interface NSCompoundPredicate<T = any> extends NSPredicate {
     predicateOperator<R = unknown>(): R;
     _acceptSubpredicates_flags<R = void, P0 = unknown, P1 = number>(__acceptSubpredicates: P0, _flags: P1): R;
     hash<R = number>(): R;
@@ -10,11 +10,11 @@ declare namespace cocoa {
     _predicateOperator<R = unknown>(): R;
     dealloc<R = void>(): R;
     initWithType_subpredicates<R = unknown, P0 = number, P1 = unknown>(_initWithType: P0, _subpredicates: P1): R;
-    subpredicates<R = cocoa.NSArray>(): R;
+    subpredicates<R = NSArray>(): R;
     compoundPredicateType<R = number>(): R;
   }
   namespace classes {
-    export interface NSCompoundPredicate<T = any> extends cocoa.classes.NSPredicate {
+    export interface NSCompoundPredicate<T = any> extends NSPredicate {
       alloc<R = NSCompoundPredicate>(): R;
       new: <R = NSCompoundPredicate>() => R;
       _operatorForType<R = unknown, P0 = number>(__operatorForType: P0): R;

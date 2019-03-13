@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPressureConfiguration<T = any> extends cocoa.NSObject {
+  export interface NSPressureConfiguration<T = any> extends NSObject {
     _mtConfiguration<R = unknown>(): R;
     _mtBehaviorID<R = number>(): R;
     set<R = void>(): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     pressureBehavior<R = number>(): R;
   }
   namespace classes {
-    export interface NSPressureConfiguration<T = any> extends cocoa.classes.NSObject {
+    export interface NSPressureConfiguration<T = any> extends NSObject {
       alloc<R = NSPressureConfiguration>(): R;
       new: <R = NSPressureConfiguration>() => R;
       _mtConfigurationForGestureBehaviors<R = unknown, P0 = unknown>(__mtConfigurationForGestureBehaviors: P0): R;

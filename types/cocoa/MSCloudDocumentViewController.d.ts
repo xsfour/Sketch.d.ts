@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSCloudDocumentViewController<T = any> extends cocoa.MSCloudBaseViewController {
+  export interface MSCloudDocumentViewController<T = any> extends MSCloudBaseViewController {
     openShareSettings<R = void, P0 = unknown>(_openShareSettings: P0): R;
     openPublicURL<R = void, P0 = unknown>(_openPublicURL: P0): R;
     update<R = void, P0 = unknown>(_update: P0): R;
@@ -12,28 +12,28 @@ declare namespace cocoa {
     scheduleTimeLabelUpdate<R = void>(): R;
     reloadTimeLabel<R = void>(): R;
     reloadData<R = void>(): R;
-    edgeInsets<R = cocoa.NSEdgeInsets>(): R;
-    timeLabelUpdateTimer<R = cocoa.NSTimer>(): R;
-    setTimeLabelUpdateTimer<R = void, P0 = cocoa.NSTimer>(_v: P0): R;
-    permissionLabel<R = cocoa.NSTextField>(): R;
-    setPermissionLabel<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    settingsButton<R = cocoa.NSButton>(): R;
-    setSettingsButton<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    linkButton<R = cocoa.MSCursorButton>(): R;
-    setLinkButton<R = void, P0 = cocoa.MSCursorButton>(_v: P0): R;
-    uploadButtonWidthConstraint<R = cocoa.NSLayoutConstraint>(): R;
-    setUploadButtonWidthConstraint<R = void, P0 = cocoa.NSLayoutConstraint>(_v: P0): R;
-    updateButton<R = cocoa.NSButton>(): R;
-    setUpdateButton<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    uploadButton<R = cocoa.NSButton>(): R;
-    setUploadButton<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    buttonStackView<R = cocoa.NSStackView>(): R;
-    setButtonStackView<R = void, P0 = cocoa.NSStackView>(_v: P0): R;
+    edgeInsets<R = NSEdgeInsets>(): R;
+    timeLabelUpdateTimer<R = NSTimer>(): R;
+    setTimeLabelUpdateTimer<R = void, P0 = NSTimer>(_v: P0): R;
+    permissionLabel<R = NSTextField>(): R;
+    setPermissionLabel<R = void, P0 = NSTextField>(_v: P0): R;
+    settingsButton<R = NSButton>(): R;
+    setSettingsButton<R = void, P0 = NSButton>(_v: P0): R;
+    linkButton<R = MSCursorButton>(): R;
+    setLinkButton<R = void, P0 = MSCursorButton>(_v: P0): R;
+    uploadButtonWidthConstraint<R = NSLayoutConstraint>(): R;
+    setUploadButtonWidthConstraint<R = void, P0 = NSLayoutConstraint>(_v: P0): R;
+    updateButton<R = NSButton>(): R;
+    setUpdateButton<R = void, P0 = NSButton>(_v: P0): R;
+    uploadButton<R = NSButton>(): R;
+    setUploadButton<R = void, P0 = NSButton>(_v: P0): R;
+    buttonStackView<R = NSStackView>(): R;
+    setButtonStackView<R = void, P0 = NSStackView>(_v: P0): R;
     canUpdateShare<R = boolean>(): R;
-    share<R = cocoa.SCKShare>(): R;
+    share<R = SCKShare>(): R;
   }
   namespace classes {
-    export interface MSCloudDocumentViewController<T = any> extends cocoa.classes.MSCloudBaseViewController {
+    export interface MSCloudDocumentViewController<T = any> extends MSCloudBaseViewController {
       alloc<R = MSCloudDocumentViewController>(): R;
       new: <R = MSCloudDocumentViewController>() => R;
     }

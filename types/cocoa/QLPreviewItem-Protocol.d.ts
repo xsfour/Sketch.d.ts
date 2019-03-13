@@ -2,13 +2,11 @@
 
 declare namespace cocoa {
   export interface QLPreviewItemProtocol<T = any> {
-    previewItemURL<R = cocoa.NSURL>(): R;
+    previewItemURL<R = NSURL>(): R;
     previewItemDisplayState<R = unknown>(): R;
-    previewItemTitle<R = cocoa.NSString>(): R;
+    previewItemTitle<R = NSString>(): R;
   }
   namespace classes {
     export interface QLPreviewItemProtocol<T = any> {  }
   }
 }
-
-declare const QLPreviewItemProtocol: cocoa.classes.QLPreviewItemProtocol;

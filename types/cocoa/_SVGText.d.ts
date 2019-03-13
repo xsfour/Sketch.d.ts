@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _SVGText<T = any> extends cocoa.SVGDrawableElement {
+  export interface _SVGText<T = any> extends SVGDrawableElement {
     y<R = number>(): R;
     setY<R = void, P0 = number>(_v: P0): R;
     x<R = number>(): R;
     setX<R = void, P0 = number>(_v: P0): R;
-    text<R = cocoa.NSString>(): R;
-    setText<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    text<R = NSString>(): R;
+    setText<R = void, P0 = NSString>(_v: P0): R;
     rotate<R = number>(): R;
     setRotate<R = void, P0 = number>(_v: P0): R;
     length<R = number>(): R;
@@ -22,7 +22,7 @@ declare namespace cocoa {
     setAdjustSpacingAndGlyphs<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface _SVGText<T = any> extends cocoa.classes.SVGDrawableElement {
+    export interface _SVGText<T = any> extends SVGDrawableElement {
       alloc<R = _SVGText>(): R;
       new: <R = _SVGText>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPersistentUIPreservedStateDirectory<T = any> extends cocoa.NSObject {
+  export interface NSPersistentUIPreservedStateDirectory<T = any> extends NSObject {
     dealloc<R = void>(): R;
     dispose<R = void>(): R;
     isValid<R = boolean>(): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     initWithStateDirectory<R = unknown, P0 = unknown>(_initWithStateDirectory: P0): R;
   }
   namespace classes {
-    export interface NSPersistentUIPreservedStateDirectory<T = any> extends cocoa.classes.NSObject {
+    export interface NSPersistentUIPreservedStateDirectory<T = any> extends NSObject {
       alloc<R = NSPersistentUIPreservedStateDirectory>(): R;
       new: <R = NSPersistentUIPreservedStateDirectory>() => R;
     }

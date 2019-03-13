@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSShapePath<T = any> extends cocoa.MSModelObject {
+  export interface _MSShapePath<T = any> extends MSModelObject {
     moveCurvePointIndex_toIndex<R = void, P0 = number, P1 = number>(_moveCurvePointIndex: P0, _toIndex: P1): R;
     removeAllCurvePoints<R = void>(): R;
     removeCurvePointsAtIndexes<R = void, P0 = unknown>(_removeCurvePointsAtIndexes: P0): R;
@@ -15,15 +15,15 @@ declare namespace cocoa {
     addCurvePoints<R = void, P0 = unknown>(_addCurvePoints: P0): R;
     addCurvePoint<R = void, P0 = unknown>(_addCurvePoint: P0): R;
     hasDefaultValues<R = boolean>(): R;
-    points<R = cocoa.NSArray>(): R;
-    setPoints<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    points<R = NSArray>(): R;
+    setPoints<R = void, P0 = NSArray>(_v: P0): R;
     pointRadiusBehaviour<R = number>(): R;
     setPointRadiusBehaviour<R = void, P0 = number>(_v: P0): R;
     isClosed<R = boolean>(): R;
     setIsClosed<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface _MSShapePath<T = any> extends cocoa.classes.MSModelObject {
+    export interface _MSShapePath<T = any> extends MSModelObject {
       alloc<R = _MSShapePath>(): R;
       new: <R = _MSShapePath>() => R;
     }

@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSConcreteFileHandle<T = any> extends cocoa.NSFileHandle {
-    _locked_clearHandler_forSource<R = void, P0 = cocoa.CDUnknownBlockType, P1 = unknown>(__locked_clearHandler: P0, _forSource: P1): R;
+  export interface NSConcreteFileHandle<T = any> extends NSFileHandle {
+    _locked_clearHandler_forSource<R = void, P0 = CDUnknownBlockType, P1 = unknown>(__locked_clearHandler: P0, _forSource: P1): R;
     _monitor<R = unknown, P0 = number>(__monitor: P0): R;
     waitForDataInBackgroundAndNotify<R = void>(): R;
     waitForDataInBackgroundAndNotifyForModes<R = void, P0 = unknown>(_waitForDataInBackgroundAndNotifyForModes: P0): R;
@@ -13,7 +13,7 @@ declare namespace cocoa {
     readInBackgroundAndNotify<R = void>(): R;
     readInBackgroundAndNotifyForModes<R = void, P0 = unknown>(_readInBackgroundAndNotifyForModes: P0): R;
     performActivity_modes<R = void, P0 = number, P1 = unknown>(_performActivity: P0, _modes: P1): R;
-    copyWithZone<R = unknown, P0 = cocoa._NSZone>(_copyWithZone: P0): R;
+    copyWithZone<R = unknown, P0 = _NSZone>(_copyWithZone: P0): R;
     dealloc<R = void>(): R;
     setPort<R = void, P0 = unknown>(_setPort: P0): R;
     port<R = unknown>(): R;
@@ -23,7 +23,7 @@ declare namespace cocoa {
     availableData<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSConcreteFileHandle<T = any> extends cocoa.classes.NSFileHandle {
+    export interface NSConcreteFileHandle<T = any> extends NSFileHandle {
       alloc<R = NSConcreteFileHandle>(): R;
       new: <R = NSConcreteFileHandle>() => R;
     }

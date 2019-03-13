@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScrubberContainerView<T = any> extends cocoa.NSView {
+  export interface NSScrubberContainerView<T = any> extends NSView {
     wantsUpdateLayer<R = boolean>(): R;
     centerSubviews<R = boolean>(): R;
     setCenterSubviews<R = void, P0 = boolean>(_v: P0): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     setInnerView<R = void, P0 = unknown>(_v: P0): R;
   }
   namespace classes {
-    export interface NSScrubberContainerView<T = any> extends cocoa.classes.NSView {
+    export interface NSScrubberContainerView<T = any> extends NSView {
       alloc<R = NSScrubberContainerView>(): R;
       new: <R = NSScrubberContainerView>() => R;
     }

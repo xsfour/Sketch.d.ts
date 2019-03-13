@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSystemInfoPanel<T = any> extends cocoa.NSObject, cocoa.NSTextViewDelegateProtocol {
+  export interface NSSystemInfoPanel<T = any> extends NSObject, NSTextViewDelegateProtocol {
     windowWillClose<R = void, P0 = unknown>(_windowWillClose: P0): R;
     sizeCopyrightView<R = void>(): R;
     sizeCreditsView<R = void>(): R;
@@ -17,33 +17,33 @@ declare namespace cocoa {
     setOptionsDictionary<R = void, P0 = unknown>(_setOptionsDictionary: P0): R;
     showInfoPanel<R = void, P0 = unknown>(_showInfoPanel: P0): R;
     dealloc<R = void>(): R;
-    creditScrollViewWidthConstraint<R = cocoa.NSLayoutConstraint>(): R;
-    setCreditScrollViewWidthConstraint<R = void, P0 = cocoa.NSLayoutConstraint>(_v: P0): R;
-    copyrightScrollView<R = cocoa.NSScrollView>(): R;
-    setCopyrightScrollView<R = void, P0 = cocoa.NSScrollView>(_v: P0): R;
-    copyrightField<R = cocoa.NSTextField>(): R;
-    setCopyrightField<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    versionField<R = cocoa.NSTextField>(): R;
-    setVersionField<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    copyrightView<R = cocoa.NSTextView>(): R;
-    setCopyrightView<R = void, P0 = cocoa.NSTextView>(_v: P0): R;
-    creditView<R = cocoa.NSTextView>(): R;
-    setCreditView<R = void, P0 = cocoa.NSTextView>(_v: P0): R;
-    appNameField<R = cocoa.NSTextField>(): R;
-    setAppNameField<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    appIconView<R = cocoa.NSImageView>(): R;
-    setAppIconView<R = void, P0 = cocoa.NSImageView>(_v: P0): R;
-    infoPanel<R = cocoa.NSPanel>(): R;
-    setInfoPanel<R = void, P0 = cocoa.NSPanel>(_v: P0): R;
-    creditScrollView<R = cocoa.NSScrollView>(): R;
-    setCreditScrollView<R = void, P0 = cocoa.NSScrollView>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    creditScrollViewWidthConstraint<R = NSLayoutConstraint>(): R;
+    setCreditScrollViewWidthConstraint<R = void, P0 = NSLayoutConstraint>(_v: P0): R;
+    copyrightScrollView<R = NSScrollView>(): R;
+    setCopyrightScrollView<R = void, P0 = NSScrollView>(_v: P0): R;
+    copyrightField<R = NSTextField>(): R;
+    setCopyrightField<R = void, P0 = NSTextField>(_v: P0): R;
+    versionField<R = NSTextField>(): R;
+    setVersionField<R = void, P0 = NSTextField>(_v: P0): R;
+    copyrightView<R = NSTextView>(): R;
+    setCopyrightView<R = void, P0 = NSTextView>(_v: P0): R;
+    creditView<R = NSTextView>(): R;
+    setCreditView<R = void, P0 = NSTextView>(_v: P0): R;
+    appNameField<R = NSTextField>(): R;
+    setAppNameField<R = void, P0 = NSTextField>(_v: P0): R;
+    appIconView<R = NSImageView>(): R;
+    setAppIconView<R = void, P0 = NSImageView>(_v: P0): R;
+    infoPanel<R = NSPanel>(): R;
+    setInfoPanel<R = void, P0 = NSPanel>(_v: P0): R;
+    creditScrollView<R = NSScrollView>(): R;
+    setCreditScrollView<R = void, P0 = NSScrollView>(_v: P0): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSSystemInfoPanel<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSTextViewDelegateProtocol {
+    export interface NSSystemInfoPanel<T = any> extends NSObject, NSTextViewDelegateProtocol {
       alloc<R = NSSystemInfoPanel>(): R;
       new: <R = NSSystemInfoPanel>() => R;
       updateOptionsWithVersion<R = void, P0 = unknown>(_updateOptionsWithVersion: P0): R;

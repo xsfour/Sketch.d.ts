@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSQuietCheckForUpdatesAction<T = any> extends cocoa.MSSilentCheckForUpdatesAction {}
+  export interface MSQuietCheckForUpdatesAction<T = any> extends MSSilentCheckForUpdatesAction {}
   namespace classes {
-    export interface MSQuietCheckForUpdatesAction<T = any> extends cocoa.classes.MSSilentCheckForUpdatesAction {
+    export interface MSQuietCheckForUpdatesAction<T = any> extends MSSilentCheckForUpdatesAction {
       alloc<R = MSQuietCheckForUpdatesAction>(): R;
       new: <R = MSQuietCheckForUpdatesAction>() => R;
     }

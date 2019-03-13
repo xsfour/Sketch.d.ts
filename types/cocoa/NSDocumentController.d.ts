@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDocumentController<T = any> extends cocoa.NSObject, cocoa.NSCodingProtocol, cocoa.NSMenuItemValidationProtocol, cocoa.NSUserInterfaceValidationsProtocol {
+  export interface NSDocumentController<T = any> extends NSObject, NSCodingProtocol, NSMenuItemValidationProtocol, NSUserInterfaceValidationsProtocol {
     displayNameForType<R = unknown, P0 = unknown>(_displayNameForType: P0): R;
     documentClassForType<R = unknown, P0 = unknown>(_documentClassForType: P0): R;
     typeForContentsOfURL_error<R = unknown, P0 = unknown, P1 = unknown>(_typeForContentsOfURL: P0, _error: P1): R;
@@ -16,16 +16,16 @@ declare namespace cocoa {
     _recentDocumentRecordsKeyForUserInterfaceItem<R = unknown, P0 = unknown>(__recentDocumentRecordsKeyForUserInterfaceItem: P0): R;
     _recentDocumentRecordsKeyForMenu<R = unknown, P0 = unknown>(__recentDocumentRecordsKeyForMenu: P0): R;
     _readRecentDocumentDefaultsForKey<R = void, P0 = unknown>(__readRecentDocumentDefaultsForKey: P0): R;
-    _perAppRecentDocumentFileList<R = cocoa.OpaqueLSSharedFileListRef>(): R;
+    _perAppRecentDocumentFileList<R = OpaqueLSSharedFileListRef>(): R;
     _writeRecentDocumentDefaultsForKey<R = void, P0 = unknown>(__writeRecentDocumentDefaultsForKey: P0): R;
     willPresentError<R = unknown, P0 = unknown>(_willPresentError: P0): R;
     presentError<R = boolean, P0 = unknown>(_presentError: P0): R;
     presentError_modalForWindow_delegate_didPresentSelector_contextInfo<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = string, P4 = void>(_presentError: P0, _modalForWindow: P1, _delegate: P2, _didPresentSelector: P3, _contextInfo: P4): R;
-    _restorePersistentDocumentWithState_completionHandler<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(__restorePersistentDocumentWithState: P0, _completionHandler: P1): R;
+    _restorePersistentDocumentWithState_completionHandler<R = void, P0 = unknown, P1 = CDUnknownBlockType>(__restorePersistentDocumentWithState: P0, _completionHandler: P1): R;
     _persistenceCanRecreateEmptyUntitledDocumentOfType<R = boolean, P0 = unknown>(__persistenceCanRecreateEmptyUntitledDocumentOfType: P0): R;
     _persistenceMustOpenDocumentsThroughApplicationDelegate<R = boolean>(): R;
     standardShareMenuItem<R = unknown>(): R;
-    _recursivelyEnumerateMenuItemsStartingFromMenu_usingBlock<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(__recursivelyEnumerateMenuItemsStartingFromMenu: P0, _usingBlock: P1): R;
+    _recursivelyEnumerateMenuItemsStartingFromMenu_usingBlock<R = void, P0 = unknown, P1 = CDUnknownBlockType>(__recursivelyEnumerateMenuItemsStartingFromMenu: P0, _usingBlock: P1): R;
     duplicateDocumentWithContentsOfURL_copying_displayName_error<R = unknown, P0 = unknown, P1 = boolean, P2 = unknown, P3 = unknown>(_duplicateDocumentWithContentsOfURL: P0, _copying: P1, _displayName: P2, _error: P3): R;
     _oldMakeDuplicateDocumentWithContentsOfURL_copying_displayName_error<R = unknown, P0 = unknown, P1 = boolean, P2 = unknown, P3 = unknown>(__oldMakeDuplicateDocumentWithContentsOfURL: P0, _copying: P1, _displayName: P2, _error: P3): R;
     _finishOpeningDocument_andShowWindows<R = void, P0 = unknown, P1 = boolean>(__finishOpeningDocument: P0, _andShowWindows: P1): R;
@@ -34,31 +34,31 @@ declare namespace cocoa {
     _runAlertPanel_msg_first_second_guardSecond_third<R = number, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = boolean, P5 = unknown>(__runAlertPanel: P0, _msg: P1, _first: P2, _second: P3, _guardSecond: P4, _third: P5): R;
     _editedDocumentCount<R = number>(): R;
     saveAllDocuments<R = void, P0 = unknown>(_saveAllDocuments: P0): R;
-    _something_didSomething_soContinue<R = void, P0 = unknown, P1 = boolean, P2 = cocoa.CDUnknownBlockType>(__something: P0, _didSomething: P1, _soContinue: P2): R;
+    _something_didSomething_soContinue<R = void, P0 = unknown, P1 = boolean, P2 = CDUnknownBlockType>(__something: P0, _didSomething: P1, _soContinue: P2): R;
     makeDocumentForURL_withContentsOfURL_ofType_error<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown>(_makeDocumentForURL: P0, _withContentsOfURL: P1, _ofType: P2, _error: P3): R;
-    reopenDocumentForURL_withContentsOfURL_display_completionHandler<R = void, P0 = unknown, P1 = unknown, P2 = boolean, P3 = cocoa.CDUnknownBlockType>(_reopenDocumentForURL: P0, _withContentsOfURL: P1, _display: P2, _completionHandler: P3): R;
+    reopenDocumentForURL_withContentsOfURL_display_completionHandler<R = void, P0 = unknown, P1 = unknown, P2 = boolean, P3 = CDUnknownBlockType>(_reopenDocumentForURL: P0, _withContentsOfURL: P1, _display: P2, _completionHandler: P3): R;
     _willPresentReopeningError_forURL_contentsURL<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(__willPresentReopeningError: P0, _forURL: P1, _contentsURL: P2): R;
-    makeDocumentForURL_withContentsOfURL_alternateContents_ofType_completionHandler<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = cocoa.CDUnknownBlockType>(_makeDocumentForURL: P0, _withContentsOfURL: P1, _alternateContents: P2, _ofType: P3, _completionHandler: P4): R;
+    makeDocumentForURL_withContentsOfURL_alternateContents_ofType_completionHandler<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = CDUnknownBlockType>(_makeDocumentForURL: P0, _withContentsOfURL: P1, _alternateContents: P2, _ofType: P3, _completionHandler: P4): R;
     makeDocumentForURL_withAlternateContents_ofType_error<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown>(_makeDocumentForURL: P0, _withAlternateContents: P1, _ofType: P2, _error: P3): R;
     makeDocumentWithContentsOfURL_ofType_error<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_makeDocumentWithContentsOfURL: P0, _ofType: P1, _error: P2): R;
-    makeDocumentWithContentsOfURL_alternateContents_ofType_completionHandler<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = cocoa.CDUnknownBlockType>(_makeDocumentWithContentsOfURL: P0, _alternateContents: P1, _ofType: P2, _completionHandler: P3): R;
+    makeDocumentWithContentsOfURL_alternateContents_ofType_completionHandler<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = CDUnknownBlockType>(_makeDocumentWithContentsOfURL: P0, _alternateContents: P1, _ofType: P2, _completionHandler: P3): R;
     _errorForMissingDocumentClassWithContentsURL_ofType<R = unknown, P0 = unknown, P1 = unknown>(__errorForMissingDocumentClassWithContentsURL: P0, _ofType: P1): R;
-    openDocumentWithContentsOfURL_display_completionHandler<R = void, P0 = unknown, P1 = boolean, P2 = cocoa.CDUnknownBlockType>(_openDocumentWithContentsOfURL: P0, _display: P1, _completionHandler: P2): R;
-    getAlternateContentsForDocumentAtURL_withFileCoordinationInterrupter_completionHandler<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType, P2 = cocoa.CDUnknownBlockType>(_getAlternateContentsForDocumentAtURL: P0, _withFileCoordinationInterrupter: P1, _completionHandler: P2): R;
-    _coordinateReadingAndGetAlternateContentsForOpeningDocumentAtURL_resolvingSymlinks_thenContinueOnMainThreadWithAccessor<R = void, P0 = unknown, P1 = boolean, P2 = cocoa.CDUnknownBlockType>(__coordinateReadingAndGetAlternateContentsForOpeningDocumentAtURL: P0, _resolvingSymlinks: P1, _thenContinueOnMainThreadWithAccessor: P2): R;
-    _coordinateReadingForOpeningDocumentAtURL_resolvingSymlinks_byAccessor<R = void, P0 = unknown, P1 = boolean, P2 = cocoa.CDUnknownBlockType>(__coordinateReadingForOpeningDocumentAtURL: P0, _resolvingSymlinks: P1, _byAccessor: P2): R;
-    _openDocumentWithContentsOfURL_usingProcedure<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(__openDocumentWithContentsOfURL: P0, _usingProcedure: P1): R;
-    _openDocumentsWithContentsOfURLs_presentErrors_completionHandler<R = void, P0 = unknown, P1 = boolean, P2 = cocoa.CDUnknownBlockType>(__openDocumentsWithContentsOfURLs: P0, _presentErrors: P1, _completionHandler: P2): R;
+    openDocumentWithContentsOfURL_display_completionHandler<R = void, P0 = unknown, P1 = boolean, P2 = CDUnknownBlockType>(_openDocumentWithContentsOfURL: P0, _display: P1, _completionHandler: P2): R;
+    getAlternateContentsForDocumentAtURL_withFileCoordinationInterrupter_completionHandler<R = void, P0 = unknown, P1 = CDUnknownBlockType, P2 = CDUnknownBlockType>(_getAlternateContentsForDocumentAtURL: P0, _withFileCoordinationInterrupter: P1, _completionHandler: P2): R;
+    _coordinateReadingAndGetAlternateContentsForOpeningDocumentAtURL_resolvingSymlinks_thenContinueOnMainThreadWithAccessor<R = void, P0 = unknown, P1 = boolean, P2 = CDUnknownBlockType>(__coordinateReadingAndGetAlternateContentsForOpeningDocumentAtURL: P0, _resolvingSymlinks: P1, _thenContinueOnMainThreadWithAccessor: P2): R;
+    _coordinateReadingForOpeningDocumentAtURL_resolvingSymlinks_byAccessor<R = void, P0 = unknown, P1 = boolean, P2 = CDUnknownBlockType>(__coordinateReadingForOpeningDocumentAtURL: P0, _resolvingSymlinks: P1, _byAccessor: P2): R;
+    _openDocumentWithContentsOfURL_usingProcedure<R = void, P0 = unknown, P1 = CDUnknownBlockType>(__openDocumentWithContentsOfURL: P0, _usingProcedure: P1): R;
+    _openDocumentsWithContentsOfURLs_presentErrors_completionHandler<R = void, P0 = unknown, P1 = boolean, P2 = CDUnknownBlockType>(__openDocumentsWithContentsOfURLs: P0, _presentErrors: P1, _completionHandler: P2): R;
     _canPerformBatchedDocumentOpening<R = boolean>(): R;
     _openDocumentsWithContentsOfURLs_display_presentErrors<R = void, P0 = unknown, P1 = boolean, P2 = boolean>(__openDocumentsWithContentsOfURLs: P0, _display: P1, _presentErrors: P2): R;
     _finishBatchedOpeningAndPresentErrors<R = unknown, P0 = boolean>(__finishBatchedOpeningAndPresentErrors: P0): R;
     _beginBatchedOpeningWithURLs<R = void, P0 = unknown>(__beginBatchedOpeningWithURLs: P0): R;
     _didEndAsyncOpeningOrPrinting<R = void>(): R;
     _willBeginAsyncOpeningOrPrinting<R = void>(): R;
-    _waitForAsyncOpeningOrPrintingToFinishThenContinue<R = void, P0 = cocoa.CDUnknownBlockType>(__waitForAsyncOpeningOrPrintingToFinishThenContinue: P0): R;
+    _waitForAsyncOpeningOrPrintingToFinishThenContinue<R = void, P0 = CDUnknownBlockType>(__waitForAsyncOpeningOrPrintingToFinishThenContinue: P0): R;
     runModalOpenPanel_forTypes<R = number, P0 = unknown, P1 = unknown>(_runModalOpenPanel: P0, _forTypes: P1): R;
-    beginOpenPanel_forTypes_completionHandler<R = void, P0 = unknown, P1 = unknown, P2 = cocoa.CDUnknownBlockType>(_beginOpenPanel: P0, _forTypes: P1, _completionHandler: P2): R;
-    beginOpenPanelWithCompletionHandler<R = void, P0 = cocoa.CDUnknownBlockType>(_beginOpenPanelWithCompletionHandler: P0): R;
+    beginOpenPanel_forTypes_completionHandler<R = void, P0 = unknown, P1 = unknown, P2 = CDUnknownBlockType>(_beginOpenPanel: P0, _forTypes: P1, _completionHandler: P2): R;
+    beginOpenPanelWithCompletionHandler<R = void, P0 = CDUnknownBlockType>(_beginOpenPanelWithCompletionHandler: P0): R;
     URLsFromRunningOpenPanel<R = unknown>(): R;
     _openableTypes<R = unknown>(): R;
     _setupOpenPanel<R = unknown>(): R;
@@ -87,7 +87,7 @@ declare namespace cocoa {
     _openRecentDocument<R = void, P0 = unknown>(__openRecentDocument: P0): R;
     _recentDocumentURLsForKey<R = unknown, P0 = unknown>(__recentDocumentURLsForKey: P0): R;
     _mountedVolumesDidChange<R = void, P0 = unknown>(__mountedVolumesDidChange: P0): R;
-    _startResolvingRecentDocumentURLsForKey_includingResolved_preliminaryResultsHandler_completionHandler<R = void, P0 = unknown, P1 = boolean, P2 = cocoa.CDUnknownBlockType, P3 = cocoa.CDUnknownBlockType>(__startResolvingRecentDocumentURLsForKey: P0, _includingResolved: P1, _preliminaryResultsHandler: P2, _completionHandler: P3): R;
+    _startResolvingRecentDocumentURLsForKey_includingResolved_preliminaryResultsHandler_completionHandler<R = void, P0 = unknown, P1 = boolean, P2 = CDUnknownBlockType, P3 = CDUnknownBlockType>(__startResolvingRecentDocumentURLsForKey: P0, _includingResolved: P1, _preliminaryResultsHandler: P2, _completionHandler: P3): R;
     _noteRecentDocumentInfoRemoved_forKey<R = void, P0 = unknown, P1 = unknown>(__noteRecentDocumentInfoRemoved: P0, _forKey: P1): R;
     _noteNewRecentDocumentURL_forKey<R = void, P0 = unknown, P1 = unknown>(__noteNewRecentDocumentURL: P0, _forKey: P1): R;
     __noteNewRecentDocumentURL_forKey<R = void, P0 = unknown, P1 = unknown>(___noteNewRecentDocumentURL: P0, _forKey: P1): R;
@@ -106,7 +106,7 @@ declare namespace cocoa {
     _typeDescriptions<R = unknown>(): R;
     _typeDescriptionForName<R = unknown, P0 = unknown>(__typeDescriptionForName: P0): R;
     _utiUsage<R = number>(): R;
-    _getAutoreopenRecordForDocument_withoutException_queue_completionHandler<R = void, P0 = unknown, P1 = boolean, P2 = unknown, P3 = cocoa.CDUnknownBlockType>(__getAutoreopenRecordForDocument: P0, _withoutException: P1, _queue: P2, _completionHandler: P3): R;
+    _getAutoreopenRecordForDocument_withoutException_queue_completionHandler<R = void, P0 = unknown, P1 = boolean, P2 = unknown, P3 = CDUnknownBlockType>(__getAutoreopenRecordForDocument: P0, _withoutException: P1, _queue: P2, _completionHandler: P3): R;
     _createAutoreopenRecordForDocument_withoutException<R = unknown, P0 = unknown, P1 = boolean>(__createAutoreopenRecordForDocument: P0, _withoutException: P1): R;
     _customizationOfError_withDescription_recoverySuggestion_recoveryOptions_recoveryAttempter<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown>(__customizationOfError: P0, _withDescription: P1, _recoverySuggestion: P2, _recoveryOptions: P3, _recoveryAttempter: P4): R;
     _fixedFailureReasonFromError<R = unknown, P0 = unknown>(__fixedFailureReasonFromError: P0): R;
@@ -115,11 +115,11 @@ declare namespace cocoa {
     _unreserveAutosavingContentsURL<R = void, P0 = unknown>(__unreserveAutosavingContentsURL: P0): R;
     _reserveAutosavingContentsURL<R = void, P0 = unknown>(__reserveAutosavingContentsURL: P0): R;
     _resumeMainThreadUnblocker<R = void, P0 = unknown>(__resumeMainThreadUnblocker: P0): R;
-    _suspendMainThreadUnblocker_thenContinueWhenComplete<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(__suspendMainThreadUnblocker: P0, _thenContinueWhenComplete: P1): R;
-    _onMainThreadInvokeWorker<R = void, P0 = cocoa.CDUnknownBlockType>(__onMainThreadInvokeWorker: P0): R;
+    _suspendMainThreadUnblocker_thenContinueWhenComplete<R = void, P0 = unknown, P1 = CDUnknownBlockType>(__suspendMainThreadUnblocker: P0, _thenContinueWhenComplete: P1): R;
+    _onMainThreadInvokeWorker<R = void, P0 = CDUnknownBlockType>(__onMainThreadInvokeWorker: P0): R;
     _isMainThreadBlockedByWaiter<R = boolean>(): R;
-    _popMainThreadUnblockerThenContinue<R = void, P0 = cocoa.CDUnknownBlockType>(__popMainThreadUnblockerThenContinue: P0): R;
-    _pushMainThreadUnblocker<R = unknown, P0 = cocoa.CDUnknownBlockType>(__pushMainThreadUnblocker: P0): R;
+    _popMainThreadUnblockerThenContinue<R = void, P0 = CDUnknownBlockType>(__popMainThreadUnblockerThenContinue: P0): R;
+    _pushMainThreadUnblocker<R = unknown, P0 = CDUnknownBlockType>(__pushMainThreadUnblocker: P0): R;
     _uniqueNumberForDocument<R = number, P0 = unknown>(__uniqueNumberForDocument: P0): R;
     _isNativeType_forDocumentClass<R = boolean, P0 = unknown, P1 = unknown>(__isNativeType: P0, _forDocumentClass: P1): R;
     _getReadableNotWritable_types_forDocumentClass<R = void, P0 = boolean, P1 = unknown, P2 = unknown>(__getReadableNotWritable: P0, _types: P1, _forDocumentClass: P2): R;
@@ -131,14 +131,14 @@ declare namespace cocoa {
     _documentWillBeginAsynchronouslyPreservingVersion<R = void, P0 = unknown>(__documentWillBeginAsynchronouslyPreservingVersion: P0): R;
     _writeAutoreopenRecordsForOpenDocuments<R = void>(): R;
     _writeAutoreopenRecords<R = void, P0 = unknown>(__writeAutoreopenRecords: P0): R;
-    _printDocumentsWithContentsOfURLs_settings_showPrintPanels_completionHandler<R = void, P0 = unknown, P1 = unknown, P2 = boolean, P3 = cocoa.CDUnknownBlockType>(__printDocumentsWithContentsOfURLs: P0, _settings: P1, _showPrintPanels: P2, _completionHandler: P3): R;
+    _printDocumentsWithContentsOfURLs_settings_showPrintPanels_completionHandler<R = void, P0 = unknown, P1 = unknown, P2 = boolean, P3 = CDUnknownBlockType>(__printDocumentsWithContentsOfURLs: P0, _settings: P1, _showPrintPanels: P2, _completionHandler: P3): R;
     _willPresentOpenForPrintingError_forURL<R = unknown, P0 = unknown, P1 = unknown>(__willPresentOpenForPrintingError: P0, _forURL: P1): R;
     _openFile<R = boolean, P0 = unknown>(__openFile: P0): R;
     _showOpenPanel<R = boolean>(): R;
     _openUntitled<R = boolean>(): R;
     _isAutoreopening<R = boolean>(): R;
-    _autoreopenDocumentsIgnoringExpendable_withCompletionHandler<R = void, P0 = boolean, P1 = cocoa.CDUnknownBlockType>(__autoreopenDocumentsIgnoringExpendable: P0, _withCompletionHandler: P1): R;
-    _autoreopenDocumentsFromRecords_withCompletionHandler<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(__autoreopenDocumentsFromRecords: P0, _withCompletionHandler: P1): R;
+    _autoreopenDocumentsIgnoringExpendable_withCompletionHandler<R = void, P0 = boolean, P1 = CDUnknownBlockType>(__autoreopenDocumentsIgnoringExpendable: P0, _withCompletionHandler: P1): R;
+    _autoreopenDocumentsFromRecords_withCompletionHandler<R = void, P0 = unknown, P1 = CDUnknownBlockType>(__autoreopenDocumentsFromRecords: P0, _withCompletionHandler: P1): R;
     _permitAutoreopeningOfDocuments<R = void>(): R;
     _finishedWithAutoreopenRecords<R = void>(): R;
     _autoreopenRecordsBeingReopened<R = unknown>(): R;
@@ -155,7 +155,7 @@ declare namespace cocoa {
     _invalidateUnresolvedRecentDocumentInfos<R = void>(): R;
     _invalidateRecentDocumentInfosForVolumeURL<R = void, P0 = unknown>(__invalidateRecentDocumentInfosForVolumeURL: P0): R;
     _populateOpenRecentMenu_includingIcons<R = void, P0 = unknown, P1 = boolean>(__populateOpenRecentMenu: P0, _includingIcons: P1): R;
-    _resolveRecentDocumentsForKey_asynchronousUpdater<R = unknown, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(__resolveRecentDocumentsForKey: P0, _asynchronousUpdater: P1): R;
+    _resolveRecentDocumentsForKey_asynchronousUpdater<R = unknown, P0 = unknown, P1 = CDUnknownBlockType>(__resolveRecentDocumentsForKey: P0, _asynchronousUpdater: P1): R;
     _updateMenu_withRecentDocumentInfos_includingIcons<R = void, P0 = unknown, P1 = unknown, P2 = boolean>(__updateMenu: P0, _withRecentDocumentInfos: P1, _includingIcons: P2): R;
     _recentDocumentInfoForKey<R = unknown, P0 = unknown>(__recentDocumentInfoForKey: P0): R;
     _depopulateOpenRecentMenu<R = void, P0 = unknown>(__depopulateOpenRecentMenu: P0): R;
@@ -193,29 +193,29 @@ declare namespace cocoa {
     _invokeJavaOverrideForSelector_withErrorAndOtherArguments<R = unknown, P0 = string, P1 = unknown>(__invokeJavaOverrideForSelector: P0, _withErrorAndOtherArguments: P1): R;
     initJava2<R = unknown>(): R;
     initJava1<R = unknown>(): R;
-    documentClassNames<R = cocoa.NSArray>(): R;
-    defaultType<R = cocoa.NSString>(): R;
-    recentDocumentURLs<R = cocoa.NSArray>(): R;
+    documentClassNames<R = NSArray>(): R;
+    defaultType<R = NSString>(): R;
+    recentDocumentURLs<R = NSArray>(): R;
     maximumRecentDocumentCount<R = number>(): R;
     allowsAutomaticShareMenu<R = boolean>(): R;
     hasEditedDocuments<R = boolean>(): R;
     autosavingDelay<R = number>(): R;
     setAutosavingDelay<R = void, P0 = number>(_v: P0): R;
-    currentDirectory<R = cocoa.NSString>(): R;
-    currentDocument<R = cocoa.NSDocument>(): R;
-    documents<R = cocoa.NSArray>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    currentDirectory<R = NSString>(): R;
+    currentDocument<R = NSDocument>(): R;
+    documents<R = NSArray>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
     // + NSDocumentController(Enumeration):
     
   }
   namespace classes {
-    export interface NSDocumentController<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCodingProtocol, cocoa.classes.NSMenuItemValidationProtocol, cocoa.classes.NSUserInterfaceValidationsProtocol {
+    export interface NSDocumentController<T = any> extends NSObject, NSCodingProtocol, NSMenuItemValidationProtocol, NSUserInterfaceValidationsProtocol {
       alloc<R = NSDocumentController>(): R;
       new: <R = NSDocumentController>() => R;
-      restoreWindowWithIdentifier_state_completionHandler<R = void, P0 = unknown, P1 = unknown, P2 = cocoa.CDUnknownBlockType>(_restoreWindowWithIdentifier: P0, _state: P1, _completionHandler: P2): R;
+      restoreWindowWithIdentifier_state_completionHandler<R = void, P0 = unknown, P1 = unknown, P2 = CDUnknownBlockType>(_restoreWindowWithIdentifier: P0, _state: P1, _completionHandler: P2): R;
       _maximumNumberOfConcurrentlyOpeningDocuments<R = number>(): R;
       _hasOverrideForSelector<R = boolean, P0 = string>(__hasOverrideForSelector: P0): R;
       _setSharedDocumentController<R = void, P0 = unknown>(__setSharedDocumentController: P0): R;
@@ -229,7 +229,7 @@ declare namespace cocoa {
       _recentMenuItemTitlesFromRecentDocumentInfos_includingIcons<R = unknown, P0 = unknown, P1 = boolean>(__recentMenuItemTitlesFromRecentDocumentInfos: P0, _includingIcons: P1): R;
       _isJavaSubclass<R = boolean>(): R;
       // + NSDocumentController(Enumeration):
-      enumerateOpenDocuments<R = void, P0 = cocoa.CDUnknownBlockType>(_enumerateOpenDocuments: P0): R;
+      enumerateOpenDocuments<R = void, P0 = CDUnknownBlockType>(_enumerateOpenDocuments: P0): R;
     }
   }
 }

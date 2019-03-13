@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAppleEventDescriptor<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol, cocoa.NSSecureCodingProtocol {
+  export interface NSAppleEventDescriptor<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
     coerceToDescriptorType<R = unknown, P0 = number>(_coerceToDescriptorType: P0): R;
     keywordForDescriptorAtIndex<R = number, P0 = number>(_keywordForDescriptorAtIndex: P0): R;
     removeDescriptorWithKeyword<R = void, P0 = number>(_removeDescriptorWithKeyword: P0): R;
@@ -26,7 +26,7 @@ declare namespace cocoa {
     initWithEventClass_eventID_targetDescriptor_returnID_transactionID<R = unknown, P0 = number, P1 = number, P2 = unknown, P3 = number, P4 = number>(_initWithEventClass: P0, _eventID: P1, _targetDescriptor: P2, _returnID: P3, _transactionID: P4): R;
     initWithDescriptorType_data<R = unknown, P0 = number, P1 = unknown>(_initWithDescriptorType: P0, _data: P1): R;
     initWithDescriptorType_bytes_length<R = unknown, P0 = number, P1 = void, P2 = number>(_initWithDescriptorType: P0, _bytes: P1, _length: P2): R;
-    initWithAEDescNoCopy<R = unknown, P0 = cocoa.AEDesc>(_initWithAEDescNoCopy: P0): R;
+    initWithAEDescNoCopy<R = unknown, P0 = AEDesc>(_initWithAEDescNoCopy: P0): R;
     _flushAEDesc<R = void>(): R;
     _isAutoWhitelistedEvent<R = boolean>(): R;
     _senderHasGenericSendRights<R = boolean>(): R;
@@ -39,8 +39,8 @@ declare namespace cocoa {
     _dateValue<R = unknown>(): R;
     _copyValueOfDescriptorType_toBuffer_ofLength<R = boolean, P0 = number, P1 = void, P2 = number>(__copyValueOfDescriptorType: P0, _toBuffer: P1, _ofLength: P2): R;
     _numberValue<R = unknown>(): R;
-    _setAEDesc<R = void, P0 = cocoa.AEDesc>(__setAEDesc: P0): R;
-    _AEDesc<R = cocoa.AEDesc>(): R;
+    _setAEDesc<R = void, P0 = AEDesc>(__setAEDesc: P0): R;
+    _AEDesc<R = AEDesc>(): R;
     _initWithoutAEDesc<R = unknown>(): R;
     _initWithDescriptorType_bytes_byteCount<R = unknown, P0 = number, P1 = void, P2 = number>(__initWithDescriptorType: P0, _bytes: P1, _byteCount: P2): R;
     removeDecriptorAtIndex<R = void, P0 = number>(_removeDecriptorAtIndex: P0): R;
@@ -55,20 +55,20 @@ declare namespace cocoa {
     returnID<R = number>(): R;
     eventID<R = number>(): R;
     eventClass<R = number>(): R;
-    fileURLValue<R = cocoa.NSURL>(): R;
-    dateValue<R = cocoa.NSDate>(): R;
-    stringValue<R = cocoa.NSString>(): R;
+    fileURLValue<R = NSURL>(): R;
+    dateValue<R = NSDate>(): R;
+    stringValue<R = NSString>(): R;
     typeCodeValue<R = number>(): R;
     doubleValue<R = number>(): R;
     int32Value<R = number>(): R;
     enumCodeValue<R = number>(): R;
     booleanValue<R = number>(): R;
-    data<R = cocoa.NSData>(): R;
+    data<R = NSData>(): R;
     descriptorType<R = number>(): R;
-    aeDesc<R = cocoa.AEDesc>(): R;
+    aeDesc<R = AEDesc>(): R;
   }
   namespace classes {
-    export interface NSAppleEventDescriptor<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol, cocoa.classes.NSSecureCodingProtocol {
+    export interface NSAppleEventDescriptor<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
       alloc<R = NSAppleEventDescriptor>(): R;
       new: <R = NSAppleEventDescriptor>() => R;
       recordDescriptor<R = unknown>(): R;

@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAdaptableColor<T = any> extends cocoa.NSColor {}
+  export interface MSAdaptableColor<T = any> extends NSColor {}
   namespace classes {
-    export interface MSAdaptableColor<T = any> extends cocoa.classes.NSColor {
+    export interface MSAdaptableColor<T = any> extends NSColor {
       alloc<R = MSAdaptableColor>(): R;
       new: <R = MSAdaptableColor>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSNaturalCubicSplineInterpolator<T = any> extends cocoa.NSObject {
+  export interface NSNaturalCubicSplineInterpolator<T = any> extends NSObject {
     valueAt<R = number, P0 = number>(_valueAt: P0): R;
     _intervalAt<R = number, P0 = number>(__intervalAt: P0): R;
     _intervalLength<R = number, P0 = number>(__intervalLength: P0): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     initWithKnots_length<R = unknown, P0 = unknown, P1 = number>(_initWithKnots: P0, _length: P1): R;
   }
   namespace classes {
-    export interface NSNaturalCubicSplineInterpolator<T = any> extends cocoa.classes.NSObject {
+    export interface NSNaturalCubicSplineInterpolator<T = any> extends NSObject {
       alloc<R = NSNaturalCubicSplineInterpolator>(): R;
       new: <R = NSNaturalCubicSplineInterpolator>() => R;
     }

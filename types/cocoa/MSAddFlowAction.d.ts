@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAddFlowAction<T = any> extends cocoa.MSFlowBaseAction {
+  export interface MSAddFlowAction<T = any> extends MSFlowBaseAction {
     validate<R = boolean>(): R;
     hasDynamicTitle<R = boolean>(): R;
     labelForToolbar<R = unknown>(): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     addFlow<R = void, P0 = unknown>(_addFlow: P0): R;
   }
   namespace classes {
-    export interface MSAddFlowAction<T = any> extends cocoa.classes.MSFlowBaseAction {
+    export interface MSAddFlowAction<T = any> extends MSFlowBaseAction {
       alloc<R = MSAddFlowAction>(): R;
       new: <R = MSAddFlowAction>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSBinder<T = any> extends cocoa.NSObject, cocoa.NSCodingProtocol {
+  export interface NSBinder<T = any> extends NSObject, NSCodingProtocol {
     _markAutoCreated<R = void, P0 = boolean>(__markAutoCreated: P0): R;
     _isAutoCreated<R = boolean>(): R;
     description<R = unknown>(): R;
@@ -29,11 +29,11 @@ declare namespace cocoa {
     valueForBinding_resolveMarkersToPlaceholders<R = unknown, P0 = unknown, P1 = boolean>(_valueForBinding: P0, _resolveMarkersToPlaceholders: P1): R;
     resolveMarkerToPlaceholder_binding<R = unknown, P0 = unknown, P1 = unknown>(_resolveMarkerToPlaceholder: P0, _binding: P1): R;
     applyValueTransformerToValue_forBinding_reverse<R = unknown, P0 = unknown, P1 = unknown, P2 = boolean>(_applyValueTransformerToValue: P0, _forBinding: P1, _reverse: P2): R;
-    _invokeSelector_withArguments_onKeyPath_ofObject_mode_raisesForNotApplicableKeys<R = void, P0 = string, P1 = unknown, P2 = unknown, P3 = unknown, P4 = cocoa.__NSKeyValueCodingControllerModeType, P5 = boolean>(__invokeSelector: P0, _withArguments: P1, _onKeyPath: P2, _ofObject: P3, _mode: P4, _raisesForNotApplicableKeys: P5): R;
-    _setValue_forKeyPath_ofObject_mode_validateImmediately_raisesForNotApplicableKeys_error<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown, P3 = cocoa.__NSKeyValueCodingControllerModeType, P4 = boolean, P5 = boolean, P6 = unknown>(__setValue: P0, _forKeyPath: P1, _ofObject: P2, _mode: P3, _validateImmediately: P4, _raisesForNotApplicableKeys: P5, _error: P6): R;
+    _invokeSelector_withArguments_onKeyPath_ofObject_mode_raisesForNotApplicableKeys<R = void, P0 = string, P1 = unknown, P2 = unknown, P3 = unknown, P4 = __NSKeyValueCodingControllerModeType, P5 = boolean>(__invokeSelector: P0, _withArguments: P1, _onKeyPath: P2, _ofObject: P3, _mode: P4, _raisesForNotApplicableKeys: P5): R;
+    _setValue_forKeyPath_ofObject_mode_validateImmediately_raisesForNotApplicableKeys_error<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown, P3 = __NSKeyValueCodingControllerModeType, P4 = boolean, P5 = boolean, P6 = unknown>(__setValue: P0, _forKeyPath: P1, _ofObject: P2, _mode: P3, _validateImmediately: P4, _raisesForNotApplicableKeys: P5, _error: P6): R;
     _mutableSetValueForKeyPath_ofObject_atIndex_raisesForNotApplicableKeys<R = unknown, P0 = unknown, P1 = unknown, P2 = number, P3 = boolean>(__mutableSetValueForKeyPath: P0, _ofObject: P1, _atIndex: P2, _raisesForNotApplicableKeys: P3): R;
     _mutableArrayValueForKeyPath_ofObject_atIndex_raisesForNotApplicableKeys<R = unknown, P0 = unknown, P1 = unknown, P2 = number, P3 = boolean>(__mutableArrayValueForKeyPath: P0, _ofObject: P1, _atIndex: P2, _raisesForNotApplicableKeys: P3): R;
-    _valueForKeyPath_ofObject_mode_raisesForNotApplicableKeys<R = unknown, P0 = unknown, P1 = unknown, P2 = cocoa.__NSKeyValueCodingControllerModeType, P3 = boolean>(__valueForKeyPath: P0, _ofObject: P1, _mode: P2, _raisesForNotApplicableKeys: P3): R;
+    _valueForKeyPath_ofObject_mode_raisesForNotApplicableKeys<R = unknown, P0 = unknown, P1 = unknown, P2 = __NSKeyValueCodingControllerModeType, P3 = boolean>(__valueForKeyPath: P0, _ofObject: P1, _mode: P2, _raisesForNotApplicableKeys: P3): R;
     _resolveMarkerToPlaceholder_forBindingInfo_allowPluginOverride<R = unknown, P0 = unknown, P1 = unknown, P2 = boolean>(__resolveMarkerToPlaceholder: P0, _forBindingInfo: P1, _allowPluginOverride: P2): R;
     _applyValueTransformerToValue_forBindingInfo_reverse<R = unknown, P0 = unknown, P1 = unknown, P2 = boolean>(__applyValueTransformerToValue: P0, _forBindingInfo: P1, _reverse: P2): R;
     _prepareIndirectKeyValueCodingCallWithPartialControllerKey_controller<R = void, P0 = unknown, P1 = unknown>(__prepareIndirectKeyValueCodingCallWithPartialControllerKey: P0, _controller: P1): R;
@@ -115,7 +115,7 @@ declare namespace cocoa {
     _noticeTextColorPeerBinder<R = void, P0 = unknown>(__noticeTextColorPeerBinder: P0): R;
   }
   namespace classes {
-    export interface NSBinder<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCodingProtocol {
+    export interface NSBinder<T = any> extends NSObject, NSCodingProtocol {
       alloc<R = NSBinder>(): R;
       new: <R = NSBinder>() => R;
       _autoCreateBinderForObject_withController<R = boolean, P0 = unknown, P1 = unknown>(__autoCreateBinderForObject: P0, _withController: P1): R;
@@ -129,7 +129,7 @@ declare namespace cocoa {
       _pluginClassWithObject<R = unknown, P0 = unknown>(__pluginClassWithObject: P0): R;
       _pluginProtocol<R = unknown>(): R;
       binderClassesForObject<R = unknown, P0 = unknown>(_binderClassesForObject: P0): R;
-      _allBinderClasses<R = cocoa.__CFArray>(): R;
+      _allBinderClasses<R = __CFArray>(): R;
       _didPresentModalAlert_contextInfo<R = void, P0 = boolean, P1 = unknown>(__didPresentModalAlert: P0, _contextInfo: P1): R;
       _presentSheetForError_responder_responderCandidate_delegate_callback_callbackContextInfo<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = string, P5 = void>(__presentSheetForError: P0, _responder: P1, _responderCandidate: P2, _delegate: P3, _callback: P4, _callbackContextInfo: P5): R;
       _presentAlertPanelForError_responder_responderCandidate<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(__presentAlertPanelForError: P0, _responder: P1, _responderCandidate: P2): R;

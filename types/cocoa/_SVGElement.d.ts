@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _SVGElement<T = any> extends cocoa.NSObject {
+  export interface _SVGElement<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     primitiveSetParent<R = void, P0 = unknown>(_primitiveSetParent: P0): R;
     primitiveRemoveLinkedObject<R = void, P0 = unknown>(_primitiveRemoveLinkedObject: P0): R;
@@ -12,25 +12,25 @@ declare namespace cocoa {
     primitiveAddChildrenObject<R = void, P0 = unknown>(_primitiveAddChildrenObject: P0): R;
     removeChildrenObject<R = void, P0 = unknown>(_removeChildrenObject: P0): R;
     addChildrenObject<R = void, P0 = unknown>(_addChildrenObject: P0): R;
-    type<R = cocoa.NSString>(): R;
-    setType<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    title<R = cocoa.NSString>(): R;
-    setTitle<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    type<R = NSString>(): R;
+    setType<R = void, P0 = NSString>(_v: P0): R;
+    title<R = NSString>(): R;
+    setTitle<R = void, P0 = NSString>(_v: P0): R;
     index<R = number>(): R;
     setIndex<R = void, P0 = number>(_v: P0): R;
-    identifier<R = cocoa.NSString>(): R;
-    setIdentifier<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    desc<R = cocoa.NSString>(): R;
-    setDesc<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    parent<R = cocoa.SVGElement>(): R;
-    setParent<R = void, P0 = cocoa.SVGElement>(_v: P0): R;
-    linked<R = cocoa.NSSet>(): R;
-    setLinked<R = void, P0 = cocoa.NSSet>(_v: P0): R;
-    children<R = cocoa.NSSet>(): R;
-    setChildren<R = void, P0 = cocoa.NSSet>(_v: P0): R;
+    identifier<R = NSString>(): R;
+    setIdentifier<R = void, P0 = NSString>(_v: P0): R;
+    desc<R = NSString>(): R;
+    setDesc<R = void, P0 = NSString>(_v: P0): R;
+    parent<R = SVGElement>(): R;
+    setParent<R = void, P0 = SVGElement>(_v: P0): R;
+    linked<R = NSSet>(): R;
+    setLinked<R = void, P0 = NSSet>(_v: P0): R;
+    children<R = NSSet>(): R;
+    setChildren<R = void, P0 = NSSet>(_v: P0): R;
   }
   namespace classes {
-    export interface _SVGElement<T = any> extends cocoa.classes.NSObject {
+    export interface _SVGElement<T = any> extends NSObject {
       alloc<R = _SVGElement>(): R;
       new: <R = _SVGElement>() => R;
       attributeNames<R = unknown>(): R;

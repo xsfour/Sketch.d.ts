@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSLayoutGrid<T = any> extends cocoa.MSBaseGrid {
+  export interface _MSLayoutGrid<T = any> extends MSBaseGrid {
     totalWidth<R = number>(): R;
     setTotalWidth<R = void, P0 = number>(_v: P0): R;
     rowHeightMultiplication<R = number>(): R;
@@ -26,7 +26,7 @@ declare namespace cocoa {
     setColumnWidth<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface _MSLayoutGrid<T = any> extends cocoa.classes.MSBaseGrid {
+    export interface _MSLayoutGrid<T = any> extends MSBaseGrid {
       alloc<R = _MSLayoutGrid>(): R;
       new: <R = _MSLayoutGrid>() => R;
     }

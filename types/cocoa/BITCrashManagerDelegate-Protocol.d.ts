@@ -1,19 +1,17 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BITCrashManagerDelegateProtocol<T = any> extends cocoa.NSObjectProtocol {
-    crashManagerDidFinishSendingCrashReport<R = void, P0 = cocoa.BITCrashManager>(_crashManagerDidFinishSendingCrashReport: P0): R;
-    crashManager_didFailWithError<R = void, P0 = cocoa.BITCrashManager, P1 = cocoa.NSError>(_crashManager: P0, _didFailWithError: P1): R;
-    crashManagerWillSendCrashReport<R = void, P0 = cocoa.BITCrashManager>(_crashManagerWillSendCrashReport: P0): R;
-    crashManagerWillCancelSendingCrashReport<R = void, P0 = cocoa.BITCrashManager>(_crashManagerWillCancelSendingCrashReport: P0): R;
-    crashManagerWillShowSubmitCrashReportAlert<R = void, P0 = cocoa.BITCrashManager>(_crashManagerWillShowSubmitCrashReportAlert: P0): R;
-    attachmentForCrashManager<R = cocoa.BITHockeyAttachment, P0 = cocoa.BITCrashManager>(_attachmentForCrashManager: P0): R;
-    applicationLogForCrashManager<R = cocoa.NSString, P0 = cocoa.BITCrashManager>(_applicationLogForCrashManager: P0): R;
-    showMainApplicationWindowForCrashManager<R = void, P0 = cocoa.BITCrashManager>(_showMainApplicationWindowForCrashManager: P0): R;
+  export interface BITCrashManagerDelegateProtocol<T = any> extends NSObjectProtocol {
+    crashManagerDidFinishSendingCrashReport<R = void, P0 = BITCrashManager>(_crashManagerDidFinishSendingCrashReport: P0): R;
+    crashManager_didFailWithError<R = void, P0 = BITCrashManager, P1 = NSError>(_crashManager: P0, _didFailWithError: P1): R;
+    crashManagerWillSendCrashReport<R = void, P0 = BITCrashManager>(_crashManagerWillSendCrashReport: P0): R;
+    crashManagerWillCancelSendingCrashReport<R = void, P0 = BITCrashManager>(_crashManagerWillCancelSendingCrashReport: P0): R;
+    crashManagerWillShowSubmitCrashReportAlert<R = void, P0 = BITCrashManager>(_crashManagerWillShowSubmitCrashReportAlert: P0): R;
+    attachmentForCrashManager<R = BITHockeyAttachment, P0 = BITCrashManager>(_attachmentForCrashManager: P0): R;
+    applicationLogForCrashManager<R = NSString, P0 = BITCrashManager>(_applicationLogForCrashManager: P0): R;
+    showMainApplicationWindowForCrashManager<R = void, P0 = BITCrashManager>(_showMainApplicationWindowForCrashManager: P0): R;
   }
   namespace classes {
-    export interface BITCrashManagerDelegateProtocol<T = any> extends cocoa.classes.NSObjectProtocol {  }
+    export interface BITCrashManagerDelegateProtocol<T = any> extends NSObjectProtocol {  }
   }
 }
-
-declare const BITCrashManagerDelegateProtocol: cocoa.classes.BITCrashManagerDelegateProtocol;

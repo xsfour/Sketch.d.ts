@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPrintOperation<T = any> extends cocoa.NSObject {
+  export interface NSPrintOperation<T = any> extends NSObject {
     cleanUpOperation<R = void>(): R;
     deliverResult<R = boolean>(): R;
     destroyContext<R = void>(): R;
@@ -13,16 +13,16 @@ declare namespace cocoa {
     isEPSOperation<R = boolean>(): R;
     baseAffineTransform<R = unknown>(): R;
     setBaseAffineTransform<R = void, P0 = unknown>(_setBaseAffineTransform: P0): R;
-    _renderingBounds<R = cocoa.CGRect>(): R;
+    _renderingBounds<R = CGRect>(): R;
     _isRenderingBorder<R = boolean>(): R;
     _isLockingFocus<R = boolean>(): R;
     _setLockingFocus<R = void, P0 = boolean>(__setLockingFocus: P0): R;
-    _operationInfo<R = cocoa._PrivatePrintOperationInfo>(): R;
+    _operationInfo<R = _PrivatePrintOperationInfo>(): R;
     _isCancelledAfterHandlingUserEvents<R = boolean>(): R;
     _setPreferredRenderingQuality<R = void, P0 = number>(__setPreferredRenderingQuality: P0): R;
     _setRenderingBorder<R = void, P0 = boolean>(__setRenderingBorder: P0): R;
     _pageScaling<R = number>(): R;
-    _currentPageBounds<R = cocoa.CGRect>(): R;
+    _currentPageBounds<R = CGRect>(): R;
     _effectiveJobTitle<R = unknown>(): R;
     _lastRenderPageNumber<R = number>(): R;
     _firstRenderPageNumber<R = number>(): R;
@@ -38,41 +38,41 @@ declare namespace cocoa {
     accessoryView<R = unknown>(): R;
     setAccessoryView<R = void, P0 = unknown>(_setAccessoryView: P0): R;
     currentPage<R = number>(): R;
-    pageRange<R = cocoa._NSRange>(): R;
-    context<R = cocoa.NSGraphicsContext>(): R;
-    printInfo<R = cocoa.NSPrintInfo>(): R;
-    setPrintInfo<R = void, P0 = cocoa.NSPrintInfo>(_v: P0): R;
-    view<R = cocoa.NSView>(): R;
+    pageRange<R = _NSRange>(): R;
+    context<R = NSGraphicsContext>(): R;
+    printInfo<R = NSPrintInfo>(): R;
+    setPrintInfo<R = void, P0 = NSPrintInfo>(_v: P0): R;
+    view<R = NSView>(): R;
     pageOrder<R = number>(): R;
     setPageOrder<R = void, P0 = number>(_v: P0): R;
     canSpawnSeparateThread<R = boolean>(): R;
     setCanSpawnSeparateThread<R = void, P0 = boolean>(_v: P0): R;
-    PDFPanel<R = cocoa.NSPDFPanel>(): R;
-    setPDFPanel<R = void, P0 = cocoa.NSPDFPanel>(_v: P0): R;
-    printPanel<R = cocoa.NSPrintPanel>(): R;
-    setPrintPanel<R = void, P0 = cocoa.NSPrintPanel>(_v: P0): R;
+    PDFPanel<R = NSPDFPanel>(): R;
+    setPDFPanel<R = void, P0 = NSPDFPanel>(_v: P0): R;
+    printPanel<R = NSPrintPanel>(): R;
+    setPrintPanel<R = void, P0 = NSPrintPanel>(_v: P0): R;
     showsProgressPanel<R = boolean>(): R;
     setShowsProgressPanel<R = void, P0 = boolean>(_v: P0): R;
     showsPrintPanel<R = boolean>(): R;
     setShowsPrintPanel<R = void, P0 = boolean>(_v: P0): R;
-    jobTitle<R = cocoa.NSString>(): R;
-    setJobTitle<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    jobTitle<R = NSString>(): R;
+    setJobTitle<R = void, P0 = NSString>(_v: P0): R;
     preferredRenderingQuality<R = number>(): R;
     copyingOperation<R = boolean>(): R;
   }
   namespace classes {
-    export interface NSPrintOperation<T = any> extends cocoa.classes.NSObject {
+    export interface NSPrintOperation<T = any> extends NSObject {
       alloc<R = NSPrintOperation>(): R;
       new: <R = NSPrintOperation>() => R;
       setCurrentOperation<R = void, P0 = unknown>(_setCurrentOperation: P0): R;
       currentOperation<R = unknown>(): R;
-      EPSOperationWithView_insideRect_toData<R = unknown, P0 = unknown, P1 = cocoa.CGRect, P2 = unknown>(_EPSOperationWithView: P0, _insideRect: P1, _toData: P2): R;
-      PDFOperationWithView_insideRect_toData<R = unknown, P0 = unknown, P1 = cocoa.CGRect, P2 = unknown>(_PDFOperationWithView: P0, _insideRect: P1, _toData: P2): R;
+      EPSOperationWithView_insideRect_toData<R = unknown, P0 = unknown, P1 = CGRect, P2 = unknown>(_EPSOperationWithView: P0, _insideRect: P1, _toData: P2): R;
+      PDFOperationWithView_insideRect_toData<R = unknown, P0 = unknown, P1 = CGRect, P2 = unknown>(_PDFOperationWithView: P0, _insideRect: P1, _toData: P2): R;
       printOperationWithView<R = unknown, P0 = unknown>(_printOperationWithView: P0): R;
-      EPSOperationWithView_insideRect_toPath_printInfo<R = unknown, P0 = unknown, P1 = cocoa.CGRect, P2 = unknown, P3 = unknown>(_EPSOperationWithView: P0, _insideRect: P1, _toPath: P2, _printInfo: P3): R;
-      EPSOperationWithView_insideRect_toData_printInfo<R = unknown, P0 = unknown, P1 = cocoa.CGRect, P2 = unknown, P3 = unknown>(_EPSOperationWithView: P0, _insideRect: P1, _toData: P2, _printInfo: P3): R;
-      PDFOperationWithView_insideRect_toPath_printInfo<R = unknown, P0 = unknown, P1 = cocoa.CGRect, P2 = unknown, P3 = unknown>(_PDFOperationWithView: P0, _insideRect: P1, _toPath: P2, _printInfo: P3): R;
-      PDFOperationWithView_insideRect_toData_printInfo<R = unknown, P0 = unknown, P1 = cocoa.CGRect, P2 = unknown, P3 = unknown>(_PDFOperationWithView: P0, _insideRect: P1, _toData: P2, _printInfo: P3): R;
+      EPSOperationWithView_insideRect_toPath_printInfo<R = unknown, P0 = unknown, P1 = CGRect, P2 = unknown, P3 = unknown>(_EPSOperationWithView: P0, _insideRect: P1, _toPath: P2, _printInfo: P3): R;
+      EPSOperationWithView_insideRect_toData_printInfo<R = unknown, P0 = unknown, P1 = CGRect, P2 = unknown, P3 = unknown>(_EPSOperationWithView: P0, _insideRect: P1, _toData: P2, _printInfo: P3): R;
+      PDFOperationWithView_insideRect_toPath_printInfo<R = unknown, P0 = unknown, P1 = CGRect, P2 = unknown, P3 = unknown>(_PDFOperationWithView: P0, _insideRect: P1, _toPath: P2, _printInfo: P3): R;
+      PDFOperationWithView_insideRect_toData_printInfo<R = unknown, P0 = unknown, P1 = CGRect, P2 = unknown, P3 = unknown>(_PDFOperationWithView: P0, _insideRect: P1, _toData: P2, _printInfo: P3): R;
       printOperationWithView_printInfo<R = unknown, P0 = unknown, P1 = unknown>(_printOperationWithView: P0, _printInfo: P1): R;
       _setPrintEventRetrofitInfo<R = void, P0 = unknown>(__setPrintEventRetrofitInfo: P0): R;
     }

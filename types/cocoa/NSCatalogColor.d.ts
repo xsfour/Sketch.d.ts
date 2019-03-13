@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCatalogColor<T = any> extends cocoa.NSColor {
+  export interface NSCatalogColor<T = any> extends NSColor {
     dealloc<R = void>(): R;
     hash<R = number>(): R;
     classForCoder<R = unknown>(): R;
@@ -12,16 +12,16 @@ declare namespace cocoa {
     catalogNameComponent<R = unknown>(): R;
     type<R = number>(): R;
     alphaComponent<R = number>(): R;
-    drawSwatchOfColor_inRect<R = void, P0 = unknown, P1 = cocoa.CGRect>(_drawSwatchOfColor: P0, _inRect: P1): R;
-    _createCGColorWithAlpha<R = cocoa.CGColor, P0 = number>(__createCGColorWithAlpha: P0): R;
-    CGColor<R = cocoa.CGColor>(): R;
+    drawSwatchOfColor_inRect<R = void, P0 = unknown, P1 = CGRect>(_drawSwatchOfColor: P0, _inRect: P1): R;
+    _createCGColorWithAlpha<R = CGColor, P0 = number>(__createCGColorWithAlpha: P0): R;
+    CGColor<R = CGColor>(): R;
     initWithCatalogName_colorName_genericColor<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_initWithCatalogName: P0, _colorName: P1, _genericColor: P2): R;
   }
   namespace classes {
-    export interface NSCatalogColor<T = any> extends cocoa.classes.NSColor {
+    export interface NSCatalogColor<T = any> extends NSColor {
       alloc<R = NSCatalogColor>(): R;
       new: <R = NSCatalogColor>() => R;
-      newWithCoder_zone<R = unknown, P0 = unknown, P1 = cocoa._NSZone>(_newWithCoder: P0, _zone: P1): R;
+      newWithCoder_zone<R = unknown, P0 = unknown, P1 = _NSZone>(_newWithCoder: P0, _zone: P1): R;
     }
   }
 }

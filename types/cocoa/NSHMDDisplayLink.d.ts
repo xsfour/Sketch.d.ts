@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSHMDDisplayLink<T = any> extends cocoa.NSObject {
+  export interface NSHMDDisplayLink<T = any> extends NSObject {
     resume<R = void>(): R;
     suspend<R = void>(): R;
     invalidate<R = void>(): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     setExecutesConcurrently<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface NSHMDDisplayLink<T = any> extends cocoa.classes.NSObject {
+    export interface NSHMDDisplayLink<T = any> extends NSObject {
       alloc<R = NSHMDDisplayLink>(): R;
       new: <R = NSHMDDisplayLink>() => R;
       currentTimestamp<R = number>(): R;

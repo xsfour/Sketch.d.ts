@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSOverrideRepresentation<T = any> extends cocoa.MSOverrideRepresentationBase, cocoa.BCOutlineViewNodeProtocol, cocoa.MSLayerListLayerExtensionsProtocol, cocoa.MSInterfaceImageOwnerProtocol, cocoa.MSHoverableItemProtocol {
+  export interface MSOverrideRepresentation<T = any> extends MSOverrideRepresentationBase, BCOutlineViewNodeProtocol, MSLayerListLayerExtensionsProtocol, MSInterfaceImageOwnerProtocol, MSHoverableItemProtocol {
     updateExpandedStateAfterSelection<R = void>(): R;
     transformForConvertingToInstance<R = unknown>(): R;
     calculateTransformAndPath<R = void>(): R;
@@ -13,21 +13,21 @@ declare namespace cocoa {
     createOverrideViewController<R = unknown>(): R;
     hasHighlight<R = boolean>(): R;
     hudDescription<R = unknown>(): R;
-    selectionHitTest<R = unknown, P0 = cocoa.CGPoint>(_selectionHitTest: P0): R;
+    selectionHitTest<R = unknown, P0 = CGPoint>(_selectionHitTest: P0): R;
     layerListExpandedType<R = number>(): R;
     setLayerListExpandedType<R = void, P0 = number>(_v: P0): R;
-    previousSibling<R = cocoa.MSOverrideRepresentation>(): R;
-    setPreviousSibling<R = void, P0 = cocoa.MSOverrideRepresentation>(_v: P0): R;
-    parent<R = cocoa.MSOverrideRepresentationBase>(): R;
-    availableOverride<R = cocoa.MSAvailableOverride>(): R;
-    setAvailableOverride<R = void, P0 = cocoa.MSAvailableOverride>(_v: P0): R;
-    description<R = cocoa.NSString>(): R;
-    pathInInstance<R = cocoa.CGPath>(): R;
-    setPathInInstance<R = void, P0 = cocoa.CGPath>(_v: P0): R;
-    modifiedParentMaster<R = cocoa.MSImmutableSymbolMaster>(): R;
+    previousSibling<R = MSOverrideRepresentation>(): R;
+    setPreviousSibling<R = void, P0 = MSOverrideRepresentation>(_v: P0): R;
+    parent<R = MSOverrideRepresentationBase>(): R;
+    availableOverride<R = MSAvailableOverride>(): R;
+    setAvailableOverride<R = void, P0 = MSAvailableOverride>(_v: P0): R;
+    description<R = NSString>(): R;
+    pathInInstance<R = CGPath>(): R;
+    setPathInInstance<R = void, P0 = CGPath>(_v: P0): R;
+    modifiedParentMaster<R = MSImmutableSymbolMaster>(): R;
     isEditable<R = boolean>(): R;
     isAtRootLevel<R = boolean>(): R;
-    selectionID<R = cocoa.NSString>(): R;
+    selectionID<R = NSString>(): R;
     previewShouldIndicateSharedStyle<R = boolean>(): R;
     isExportableViaDragAndDrop<R = boolean>(): R;
     containedByHiddenAncestorNode<R = boolean>(): R;
@@ -35,24 +35,24 @@ declare namespace cocoa {
     hiddenOnCanvas<R = boolean>(): R;
     selectedInLayerList<R = boolean>(): R;
     expandableInLayerList<R = boolean>(): R;
-    badgeImages<R = cocoa.MSTintedImages>(): R;
+    badgeImages<R = MSTintedImages>(): R;
     hasBadgedIcon<R = boolean>(): R;
     isEditableInLayerList<R = boolean>(): R;
     isActive<R = boolean>(): R;
-    nodeName<R = cocoa.NSString>(): R;
-    setNodeName<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    nodeName<R = NSString>(): R;
+    setNodeName<R = void, P0 = NSString>(_v: P0): R;
     filterTypeMask<R = number>(): R;
     displayType<R = number>(): R;
-    interfaceImageIdentifier<R = cocoa.NSString>(): R;
+    interfaceImageIdentifier<R = NSString>(): R;
     cacheOwner<R = unknown>(): R;
-    hoveredLayer<R = cocoa.MSLayer>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
+    hoveredLayer<R = MSLayer>(): R;
+    debugDescription<R = NSString>(): R;
     hash<R = number>(): R;
     isExpanded<R = boolean>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSOverrideRepresentation<T = any> extends cocoa.classes.MSOverrideRepresentationBase, cocoa.classes.BCOutlineViewNodeProtocol, cocoa.classes.MSLayerListLayerExtensionsProtocol, cocoa.classes.MSInterfaceImageOwnerProtocol, cocoa.classes.MSHoverableItemProtocol {
+    export interface MSOverrideRepresentation<T = any> extends MSOverrideRepresentationBase, BCOutlineViewNodeProtocol, MSLayerListLayerExtensionsProtocol, MSInterfaceImageOwnerProtocol, MSHoverableItemProtocol {
       alloc<R = MSOverrideRepresentation>(): R;
       new: <R = MSOverrideRepresentation>() => R;
     }

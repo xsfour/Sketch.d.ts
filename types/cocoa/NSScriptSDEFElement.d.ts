@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScriptSDEFElement<T = any> extends cocoa.NSObject {
+  export interface NSScriptSDEFElement<T = any> extends NSObject {
     description<R = unknown>(): R;
     oneOrMoreDescriptionsForSubelementName<R = unknown, P0 = unknown>(_oneOrMoreDescriptionsForSubelementName: P0): R;
     zeroOrMoreDescriptionsForSubelementName<R = unknown, P0 = unknown>(_zeroOrMoreDescriptionsForSubelementName: P0): R;
@@ -15,7 +15,7 @@ declare namespace cocoa {
     initWithName_attributes<R = unknown, P0 = unknown, P1 = unknown>(_initWithName: P0, _attributes: P1): R;
   }
   namespace classes {
-    export interface NSScriptSDEFElement<T = any> extends cocoa.classes.NSObject {
+    export interface NSScriptSDEFElement<T = any> extends NSObject {
       alloc<R = NSScriptSDEFElement>(): R;
       new: <R = NSScriptSDEFElement>() => R;
     }

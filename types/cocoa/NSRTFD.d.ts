@@ -1,18 +1,18 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSRTFD<T = any> extends cocoa.NSMutableDictionary {
+  export interface NSRTFD<T = any> extends NSMutableDictionary {
     validatePath_ignore<R = number, P0 = unknown, P1 = unknown>(_validatePath: P0, _ignore: P1): R;
     addData_name<R = unknown, P0 = unknown, P1 = unknown>(_addData: P0, _name: P1): R;
     copy<R = unknown>(): R;
-    copyWithZone<R = unknown, P0 = cocoa._NSZone>(_copyWithZone: P0): R;
+    copyWithZone<R = unknown, P0 = _NSZone>(_copyWithZone: P0): R;
     copy_into<R = unknown, P0 = unknown, P1 = unknown>(_copy: P0, _into: P1): R;
     removeFile<R = unknown, P0 = unknown>(_removeFile: P0): R;
     dataForFile<R = unknown, P0 = unknown>(_dataForFile: P0): R;
     addLink<R = unknown, P0 = unknown>(_addLink: P0): R;
     addFile<R = unknown, P0 = unknown>(_addFile: P0): R;
     _getDocInfoForKey<R = unknown, P0 = unknown>(__getDocInfoForKey: P0): R;
-    addCommon_docInfo_value_zone<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = cocoa._NSZone>(_addCommon: P0, _docInfo: P1, _value: P2, _zone: P3): R;
+    addCommon_docInfo_value_zone<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = _NSZone>(_addCommon: P0, _docInfo: P1, _value: P2, _zone: P3): R;
     replaceFile_path<R = unknown, P0 = unknown, P1 = unknown>(_replaceFile: P0, _path: P1): R;
     replaceFile_data<R = unknown, P0 = unknown, P1 = unknown>(_replaceFile: P0, _data: P1): R;
     getDocument_docInfo<R = unknown, P0 = unknown, P1 = unknown>(_getDocument: P0, _docInfo: P1): R;
@@ -49,7 +49,7 @@ declare namespace cocoa {
     initFromElement_ofDocument<R = unknown, P0 = unknown, P1 = unknown>(_initFromElement: P0, _ofDocument: P1): R;
     addDirNamed_lazy<R = number, P0 = unknown, P1 = boolean>(_addDirNamed: P0, _lazy: P1): R;
     realAddDirNamed<R = number, P0 = unknown>(_realAddDirNamed: P0): R;
-    insertItem_path_dirInfo_zone_plist<R = number, P0 = unknown, P1 = unknown, P2 = unknown, P3 = cocoa._NSZone, P4 = unknown>(_insertItem: P0, _path: P1, _dirInfo: P2, _zone: P3, _plist: P4): R;
+    insertItem_path_dirInfo_zone_plist<R = number, P0 = unknown, P1 = unknown, P2 = unknown, P3 = _NSZone, P4 = unknown>(_insertItem: P0, _path: P1, _dirInfo: P2, _zone: P3, _plist: P4): R;
     addFileNamed_fileAttributes<R = number, P0 = unknown, P1 = unknown>(_addFileNamed: P0, _fileAttributes: P1): R;
     getDirInfo<R = unknown, P0 = boolean>(_getDirInfo: P0): R;
     initWithPasteboardDataRepresentation<R = unknown, P0 = unknown>(_initWithPasteboardDataRepresentation: P0): R;
@@ -60,7 +60,7 @@ declare namespace cocoa {
     _isLink<R = boolean, P0 = unknown>(__isLink: P0): R;
   }
   namespace classes {
-    export interface NSRTFD<T = any> extends cocoa.classes.NSMutableDictionary {
+    export interface NSRTFD<T = any> extends NSMutableDictionary {
       initialize<R = void>(): R;
     }
   }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSOutlineViewBinder<T = any> extends cocoa.NSBinder {
+  export interface NSOutlineViewBinder<T = any> extends NSBinder {
     outlineView_child_ofItem<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_outlineView: P0, _child: P1, _ofItem: P2): R;
     outlineView_numberOfChildrenOfItem<R = number, P0 = unknown, P1 = unknown>(_outlineView: P0, _numberOfChildrenOfItem: P1): R;
     outlineView_isItemExpandable<R = boolean, P0 = unknown, P1 = unknown>(_outlineView: P0, _isItemExpandable: P1): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     tableView_didChangeToSelectedRowIndexes<R = void, P0 = unknown, P1 = unknown>(_tableView: P0, _didChangeToSelectedRowIndexes: P1): R;
     _updateSelectionIndexPaths<R = void, P0 = unknown>(__updateSelectionIndexPaths: P0): R;
     _scrollSelectionToVisible<R = void>(): R;
-    tableView_updateVisibleRowInformation<R = void, P0 = unknown, P1 = cocoa._NSRange>(_tableView: P0, _updateVisibleRowInformation: P1): R;
+    tableView_updateVisibleRowInformation<R = void, P0 = unknown, P1 = _NSRange>(_tableView: P0, _updateVisibleRowInformation: P1): R;
     expandIndexPath<R = void, P0 = unknown>(_expandIndexPath: P0): R;
     _childrenChangedForNode<R = void, P0 = unknown>(__childrenChangedForNode: P0): R;
     stopObservingOutlineViewChildrenOfItem<R = void, P0 = unknown>(_stopObservingOutlineViewChildrenOfItem: P0): R;
@@ -26,7 +26,7 @@ declare namespace cocoa {
     beginIgnoreChanges<R = void>(): R;
   }
   namespace classes {
-    export interface NSOutlineViewBinder<T = any> extends cocoa.classes.NSBinder {
+    export interface NSOutlineViewBinder<T = any> extends NSBinder {
       alloc<R = NSOutlineViewBinder>(): R;
       new: <R = NSOutlineViewBinder>() => R;
     }

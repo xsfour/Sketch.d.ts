@@ -3,7 +3,7 @@
 declare namespace cocoa {
   export interface NSSet<T = any> {
     // + NSSet(NSCollectionViewAdditions,NSKeyValueCoding,NSKeyValueObserverRegistration,NSKeyValueSorting,NSPredicateSupport,NSSet,NSSetPortCoding,BezierInterval):
-    enumerateIndexPathsWithOptions_usingBlock<R = void, P0 = number, P1 = cocoa.CDUnknownBlockType>(_enumerateIndexPathsWithOptions: P0, _usingBlock: P1): R;
+    enumerateIndexPathsWithOptions_usingBlock<R = void, P0 = number, P1 = CDUnknownBlockType>(_enumerateIndexPathsWithOptions: P0, _usingBlock: P1): R;
     valueForKeyPath<R = unknown, P0 = unknown>(_valueForKeyPath: P0): R;
     setValue_forKey<R = void, P0 = unknown, P1 = unknown>(_setValue: P0, _forKey: P1): R;
     valueForKey<R = unknown, P0 = unknown>(_valueForKey: P0): R;

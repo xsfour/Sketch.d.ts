@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSNormalInspector<T = any> extends cocoa.NSViewController, cocoa.MSStackViewScrollViewDelegateProtocol, cocoa.MSStylePartInspectorDelegateProtocol, cocoa.MSInspectorChildControllerProtocol {
+  export interface MSNormalInspector<T = any> extends NSViewController, MSStackViewScrollViewDelegateProtocol, MSStylePartInspectorDelegateProtocol, MSInspectorChildControllerProtocol {
     cxx_destruct<R = void>(): R;
     fixNextResponder<R = void>(): R;
     scheduleNextResponderFixing<R = void>(): R;
@@ -9,23 +9,23 @@ declare namespace cocoa {
     setThrottleNextResponderFixing<R = void, P0 = boolean>(_v: P0): R;
     hasScheduledNextResponderFixing<R = boolean>(): R;
     setHasScheduledNextResponderFixing<R = void, P0 = boolean>(_v: P0): R;
-    scrollViewBottomConstraint<R = cocoa.NSLayoutConstraint>(): R;
-    setScrollViewBottomConstraint<R = void, P0 = cocoa.NSLayoutConstraint>(_v: P0): R;
-    storedPreferences<R = cocoa.NSMutableDictionary>(): R;
-    standardInspectors<R = cocoa.MSStandardInspectorViewControllers>(): R;
-    footerView<R = cocoa.NSStackView>(): R;
-    setFooterView<R = void, P0 = cocoa.NSStackView>(_v: P0): R;
-    scrollView<R = cocoa.NSScrollView>(): R;
-    setScrollView<R = void, P0 = cocoa.NSScrollView>(_v: P0): R;
-    eventHandler<R = cocoa.MSEventHandler>(): R;
-    setEventHandler<R = void, P0 = cocoa.MSEventHandler>(_v: P0): R;
-    layers<R = cocoa.MSLayerArray>(): R;
-    setLayers<R = void, P0 = cocoa.MSLayerArray>(_v: P0): R;
-    stackView<R = cocoa.MSInspectorStackView>(): R;
-    setStackView<R = void, P0 = cocoa.MSInspectorStackView>(_v: P0): R;
+    scrollViewBottomConstraint<R = NSLayoutConstraint>(): R;
+    setScrollViewBottomConstraint<R = void, P0 = NSLayoutConstraint>(_v: P0): R;
+    storedPreferences<R = NSMutableDictionary>(): R;
+    standardInspectors<R = MSStandardInspectorViewControllers>(): R;
+    footerView<R = NSStackView>(): R;
+    setFooterView<R = void, P0 = NSStackView>(_v: P0): R;
+    scrollView<R = NSScrollView>(): R;
+    setScrollView<R = void, P0 = NSScrollView>(_v: P0): R;
+    eventHandler<R = MSEventHandler>(): R;
+    setEventHandler<R = void, P0 = MSEventHandler>(_v: P0): R;
+    layers<R = MSLayerArray>(): R;
+    setLayers<R = void, P0 = MSLayerArray>(_v: P0): R;
+    stackView<R = MSInspectorStackView>(): R;
+    setStackView<R = void, P0 = MSInspectorStackView>(_v: P0): R;
   }
   namespace classes {
-    export interface MSNormalInspector<T = any> extends cocoa.classes.NSViewController, cocoa.classes.MSStackViewScrollViewDelegateProtocol, cocoa.classes.MSStylePartInspectorDelegateProtocol, cocoa.classes.MSInspectorChildControllerProtocol {
+    export interface MSNormalInspector<T = any> extends NSViewController, MSStackViewScrollViewDelegateProtocol, MSStylePartInspectorDelegateProtocol, MSInspectorChildControllerProtocol {
       alloc<R = MSNormalInspector>(): R;
       new: <R = MSNormalInspector>() => R;
     }

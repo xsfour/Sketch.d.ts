@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSBrowserColumnScrollHelper<T = any> extends cocoa.NSObject {
-    changeDestinationToRect<R = void, P0 = cocoa.CGRect>(_changeDestinationToRect: P0): R;
-    scrollRectToVisible_inScrollView_animate<R = void, P0 = cocoa.CGRect, P1 = unknown, P2 = boolean>(_scrollRectToVisible: P0, _inScrollView: P1, _animate: P2): R;
+  export interface _NSBrowserColumnScrollHelper<T = any> extends NSObject {
+    changeDestinationToRect<R = void, P0 = CGRect>(_changeDestinationToRect: P0): R;
+    scrollRectToVisible_inScrollView_animate<R = void, P0 = CGRect, P1 = unknown, P2 = boolean>(_scrollRectToVisible: P0, _inScrollView: P1, _animate: P2): R;
     setOptimizableColumn<R = void, P0 = unknown>(_setOptimizableColumn: P0): R;
     _doAnimation<R = void>(): R;
     _enclosingBrowserView<R = unknown>(): R;
@@ -16,7 +16,7 @@ declare namespace cocoa {
     _setupRunLoopTimer<R = void>(): R;
   }
   namespace classes {
-    export interface _NSBrowserColumnScrollHelper<T = any> extends cocoa.classes.NSObject {
+    export interface _NSBrowserColumnScrollHelper<T = any> extends NSObject {
       alloc<R = _NSBrowserColumnScrollHelper>(): R;
       new: <R = _NSBrowserColumnScrollHelper>() => R;
     }

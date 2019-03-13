@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutableShapePath<T = any> extends cocoa._MSImmutableShapePath {}
+  export interface MSImmutableShapePath<T = any> extends _MSImmutableShapePath {}
   namespace classes {
-    export interface MSImmutableShapePath<T = any> extends cocoa.classes._MSImmutableShapePath {
+    export interface MSImmutableShapePath<T = any> extends _MSImmutableShapePath {
       alloc<R = MSImmutableShapePath>(): R;
       new: <R = MSImmutableShapePath>() => R;
     }

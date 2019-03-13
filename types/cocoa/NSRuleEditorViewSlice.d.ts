@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSRuleEditorViewSlice<T = any> extends cocoa.NSView, cocoa.NSCodingProtocol {
-    _animationTargetRect<R = cocoa.CGRect>(): R;
-    _setAnimationTargetRect<R = void, P0 = cocoa.CGRect>(__setAnimationTargetRect: P0): R;
+  export interface NSRuleEditorViewSlice<T = any> extends NSView, NSCodingProtocol {
+    _animationTargetRect<R = CGRect>(): R;
+    _setAnimationTargetRect<R = void, P0 = CGRect>(__setAnimationTargetRect: P0): R;
     _setHideNonPartDrawing<R = void, P0 = boolean>(__setHideNonPartDrawing: P0): R;
     _setLastSelected<R = void, P0 = boolean>(__setLastSelected: P0): R;
     _isLastSelected<R = boolean>(): R;
@@ -17,10 +17,10 @@ declare namespace cocoa {
     _relayoutSubviewsWidthChanged<R = void, P0 = boolean>(__relayoutSubviewsWidthChanged: P0): R;
     containsDisplayValue<R = boolean, P0 = unknown>(_containsDisplayValue: P0): R;
     _curveColorForIndentation<R = unknown, P0 = number>(__curveColorForIndentation: P0): R;
-    initWithFrame_ruleEditorView<R = unknown, P0 = cocoa.CGRect, P1 = unknown>(_initWithFrame: P0, _ruleEditorView: P1): R;
+    initWithFrame_ruleEditorView<R = unknown, P0 = CGRect, P1 = unknown>(_initWithFrame: P0, _ruleEditorView: P1): R;
   }
   namespace classes {
-    export interface NSRuleEditorViewSlice<T = any> extends cocoa.classes.NSView, cocoa.classes.NSCodingProtocol {
+    export interface NSRuleEditorViewSlice<T = any> extends NSView, NSCodingProtocol {
       alloc<R = NSRuleEditorViewSlice>(): R;
       new: <R = NSRuleEditorViewSlice>() => R;
     }

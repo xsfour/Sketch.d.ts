@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface FBEdgeCrossing<T = any> extends cocoa.NSObject {
+  export interface FBEdgeCrossing<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     debugQuickLookObject<R = unknown>(): R;
     description<R = unknown>(): R;
@@ -11,37 +11,37 @@ declare namespace cocoa {
     nextUsingNonself<R = unknown, P0 = boolean>(_nextUsingNonself: P0): R;
     removeFromEdge<R = void>(): R;
     initWithIntersection<R = unknown, P0 = unknown>(_initWithIntersection: P0): R;
-    intersection<R = cocoa.FBBezierIntersection>(): R;
+    intersection<R = FBBezierIntersection>(): R;
     suspicious<R = boolean>(): R;
     setSuspicious<R = void, P0 = boolean>(_v: P0): R;
     index<R = number>(): R;
     setIndex<R = void, P0 = number>(_v: P0): R;
-    overlapRun<R = cocoa.FBEdgeOverlapRun>(): R;
-    setOverlapRun<R = void, P0 = cocoa.FBEdgeOverlapRun>(_v: P0): R;
+    overlapRun<R = FBEdgeOverlapRun>(): R;
+    setOverlapRun<R = void, P0 = FBEdgeOverlapRun>(_v: P0): R;
     selfCrossing<R = boolean>(): R;
     setSelfCrossing<R = void, P0 = boolean>(_v: P0): R;
     processed<R = boolean>(): R;
     setProcessed<R = void, P0 = boolean>(_v: P0): R;
     entry<R = boolean>(): R;
     setEntry<R = void, P0 = boolean>(_v: P0): R;
-    counterpart<R = cocoa.FBEdgeCrossing>(): R;
-    setCounterpart<R = void, P0 = cocoa.FBEdgeCrossing>(_v: P0): R;
-    edge<R = cocoa.FBBezierCurve>(): R;
-    setEdge<R = void, P0 = cocoa.FBBezierCurve>(_v: P0): R;
+    counterpart<R = FBEdgeCrossing>(): R;
+    setCounterpart<R = void, P0 = FBEdgeCrossing>(_v: P0): R;
+    edge<R = FBBezierCurve>(): R;
+    setEdge<R = void, P0 = FBBezierCurve>(_v: P0): R;
     fromCrossingOverlap<R = boolean>(): R;
     atEnd<R = boolean>(): R;
     atStart<R = boolean>(): R;
-    rightCurve<R = cocoa.FBBezierCurve>(): R;
-    leftCurve<R = cocoa.FBBezierCurve>(): R;
-    curve<R = cocoa.FBBezierCurve>(): R;
-    location<R = cocoa.CGPoint>(): R;
+    rightCurve<R = FBBezierCurve>(): R;
+    leftCurve<R = FBBezierCurve>(): R;
+    curve<R = FBBezierCurve>(): R;
+    location<R = CGPoint>(): R;
     parameter<R = number>(): R;
-    previous<R = cocoa.FBEdgeCrossing>(): R;
-    next<R = cocoa.FBEdgeCrossing>(): R;
+    previous<R = FBEdgeCrossing>(): R;
+    next<R = FBEdgeCrossing>(): R;
     order<R = number>(): R;
   }
   namespace classes {
-    export interface FBEdgeCrossing<T = any> extends cocoa.classes.NSObject {
+    export interface FBEdgeCrossing<T = any> extends NSObject {
       alloc<R = FBEdgeCrossing>(): R;
       new: <R = FBEdgeCrossing>() => R;
       crossingWithIntersection<R = unknown, P0 = unknown>(_crossingWithIntersection: P0): R;

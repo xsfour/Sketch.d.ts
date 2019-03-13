@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSMenuContext<T = any> extends cocoa.NSObject {
+  export interface _NSMenuContext<T = any> extends NSObject {
     dealloc<R = void>(): R;
-    _finishQualifingEntries_withCompletionHandler<R = boolean, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(__finishQualifingEntries: P0, _withCompletionHandler: P1): R;
-    qualifyEntries_withCompletionHandler<R = boolean, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(_qualifyEntries: P0, _withCompletionHandler: P1): R;
-    _concurrentPortionOfQualifyEntriesWithEntriesNeedingURLTypechecking_withCompletionHandler<R = boolean, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(__concurrentPortionOfQualifyEntriesWithEntriesNeedingURLTypechecking: P0, _withCompletionHandler: P1): R;
+    _finishQualifingEntries_withCompletionHandler<R = boolean, P0 = unknown, P1 = CDUnknownBlockType>(__finishQualifingEntries: P0, _withCompletionHandler: P1): R;
+    qualifyEntries_withCompletionHandler<R = boolean, P0 = unknown, P1 = CDUnknownBlockType>(_qualifyEntries: P0, _withCompletionHandler: P1): R;
+    _concurrentPortionOfQualifyEntriesWithEntriesNeedingURLTypechecking_withCompletionHandler<R = boolean, P0 = unknown, P1 = CDUnknownBlockType>(__concurrentPortionOfQualifyEntriesWithEntriesNeedingURLTypechecking: P0, _withCompletionHandler: P1): R;
     _preconcurrentPortionOfQualifyEntries_returningEntriesNeedingURLTypecheckingIntoSet<R = void, P0 = unknown, P1 = unknown>(__preconcurrentPortionOfQualifyEntries: P0, _returningEntriesNeedingURLTypecheckingIntoSet: P1): R;
     utisForURLs_error<R = unknown, P0 = unknown, P1 = unknown>(_utisForURLs: P0, _error: P1): R;
     filterEntriesWithCarbonPasteboardTypesBySupportedSendAndReceiveTypes_returningSendTypesIntoArray<R = void, P0 = unknown, P1 = unknown>(_filterEntriesWithCarbonPasteboardTypesBySupportedSendAndReceiveTypes: P0, _returningSendTypesIntoArray: P1): R;
@@ -34,11 +34,11 @@ declare namespace cocoa {
     filterEntriesByFileType<R = void, P0 = unknown>(_filterEntriesByFileType: P0): R;
     filterEntriesByMenuLocation<R = void, P0 = unknown>(_filterEntriesByMenuLocation: P0): R;
     filterEntriesByBundleID<R = void, P0 = unknown>(_filterEntriesByBundleID: P0): R;
-    _stringContainsFilePath_inRange<R = boolean, P0 = unknown, P1 = cocoa._NSRange>(__stringContainsFilePath: P0, _inRange: P1): R;
+    _stringContainsFilePath_inRange<R = boolean, P0 = unknown, P1 = _NSRange>(__stringContainsFilePath: P0, _inRange: P1): R;
     _selectionExistsAndIsAllWhitespace<R = boolean>(): R;
     _sendTypesContainsTextTypeAppropriateForFiltering<R = boolean>(): R;
     _selectedURLsForApplyingFilters<R = unknown>(): R;
-    _selectedStringAndRangeForApplyingFilters_attributed<R = unknown, P0 = cocoa._NSRange, P1 = boolean>(__selectedStringAndRangeForApplyingFilters: P0, _attributed: P1): R;
+    _selectedStringAndRangeForApplyingFilters_attributed<R = unknown, P0 = _NSRange, P1 = boolean>(__selectedStringAndRangeForApplyingFilters: P0, _attributed: P1): R;
     determineSelectedStringForApplyingFiltersViaPasteboardFromRequestorSupplyingType_attributed<R = boolean, P0 = unknown, P1 = boolean>(_determineSelectedStringForApplyingFiltersViaPasteboardFromRequestorSupplyingType: P0, _attributed: P1): R;
     determineSelectedStringForApplyingFiltersDirectlyFromRequestorSupplyingType_attributed<R = boolean, P0 = unknown, P1 = boolean>(_determineSelectedStringForApplyingFiltersDirectlyFromRequestorSupplyingType: P0, _attributed: P1): R;
     getObjectsOfClass_fromRequestorProvidingType_options<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_getObjectsOfClass: P0, _fromRequestorProvidingType: P1, _options: P2): R;
@@ -56,7 +56,7 @@ declare namespace cocoa {
     setRequiresSelection<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface _NSMenuContext<T = any> extends cocoa.classes.NSObject {
+    export interface _NSMenuContext<T = any> extends NSObject {
       alloc<R = _NSMenuContext>(): R;
       new: <R = _NSMenuContext>() => R;
     }

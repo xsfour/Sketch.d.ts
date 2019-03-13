@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface SVGCSSParser<T = any> extends cocoa.NSObject {}
+  export interface SVGCSSParser<T = any> extends NSObject {}
   namespace classes {
-    export interface SVGCSSParser<T = any> extends cocoa.classes.NSObject {
+    export interface SVGCSSParser<T = any> extends NSObject {
       alloc<R = SVGCSSParser>(): R;
       new: <R = SVGCSSParser>() => R;
       mergeStylesheet_withExisting<R = unknown, P0 = unknown, P1 = unknown>(_mergeStylesheet: P0, _withExisting: P1): R;

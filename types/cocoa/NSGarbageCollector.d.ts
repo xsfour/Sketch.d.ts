@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSGarbageCollector<T = any> extends cocoa.NSObject {
+  export interface NSGarbageCollector<T = any> extends NSObject {
     enableCollectorForPointer<R = void, P0 = void>(_enableCollectorForPointer: P0): R;
     disableCollectorForPointer<R = void, P0 = void>(_disableCollectorForPointer: P0): R;
     collectExhaustively<R = void>(): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     disable<R = void>(): R;
   }
   namespace classes {
-    export interface NSGarbageCollector<T = any> extends cocoa.classes.NSObject {
+    export interface NSGarbageCollector<T = any> extends NSObject {
       alloc<R = NSGarbageCollector>(): R;
       new: <R = NSGarbageCollector>() => R;
       defaultCollector<R = unknown>(): R;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSImmutableStyleColorControls<T = any> extends cocoa.MSImmutableStylePart {
+  export interface _MSImmutableStyleColorControls<T = any> extends MSImmutableStylePart {
     saturation<R = number>(): R;
     setSaturation<R = void, P0 = number>(_v: P0): R;
     hue<R = number>(): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     setBrightness<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface _MSImmutableStyleColorControls<T = any> extends cocoa.classes.MSImmutableStylePart {
+    export interface _MSImmutableStyleColorControls<T = any> extends MSImmutableStylePart {
       alloc<R = _MSImmutableStyleColorControls>(): R;
       new: <R = _MSImmutableStyleColorControls>() => R;
     }

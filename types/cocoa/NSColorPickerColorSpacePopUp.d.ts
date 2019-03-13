@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorPickerColorSpacePopUp<T = any> extends cocoa.NSPopUpButton {
+  export interface NSColorPickerColorSpacePopUp<T = any> extends NSPopUpButton {
     _colorSpaceForColorDisplaysAsGeneric<R = boolean, P0 = unknown>(__colorSpaceForColorDisplaysAsGeneric: P0): R;
-    setFrame<R = void, P0 = cocoa.CGRect>(_setFrame: P0): R;
+    setFrame<R = void, P0 = CGRect>(_setFrame: P0): R;
     colorPanelColorDidChange<R = void, P0 = unknown>(_colorPanelColorDidChange: P0): R;
-    _setNeedsDisplayInRectWithFocus<R = void, P0 = cocoa.CGRect>(__setNeedsDisplayInRectWithFocus: P0): R;
+    _setNeedsDisplayInRectWithFocus<R = void, P0 = CGRect>(__setNeedsDisplayInRectWithFocus: P0): R;
     _isShowingKeyboardFocus<R = boolean>(): R;
     doneSendingPopUpAction<R = void, P0 = unknown>(_doneSendingPopUpAction: P0): R;
     _selectColorProfile<R = void, P0 = unknown>(__selectColorProfile: P0): R;
@@ -14,11 +14,11 @@ declare namespace cocoa {
     _commonInitNSColorPickerColorSpacePopUp<R = void>(): R;
     selectedEntryMode<R = number>(): R;
     setSelectedEntryMode<R = void, P0 = number>(_v: P0): R;
-    selectedColorSpace<R = cocoa.NSColorSpace>(): R;
-    setSelectedColorSpace<R = void, P0 = cocoa.NSColorSpace>(_v: P0): R;
+    selectedColorSpace<R = NSColorSpace>(): R;
+    setSelectedColorSpace<R = void, P0 = NSColorSpace>(_v: P0): R;
   }
   namespace classes {
-    export interface NSColorPickerColorSpacePopUp<T = any> extends cocoa.classes.NSPopUpButton {
+    export interface NSColorPickerColorSpacePopUp<T = any> extends NSPopUpButton {
       alloc<R = NSColorPickerColorSpacePopUp>(): R;
       new: <R = NSColorPickerColorSpacePopUp>() => R;
       preferredColorSpaces<R = unknown>(): R;

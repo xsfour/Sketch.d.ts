@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCountCommand<T = any> extends cocoa.NSScriptCommand {}
+  export interface NSCountCommand<T = any> extends NSScriptCommand {}
   namespace classes {
-    export interface NSCountCommand<T = any> extends cocoa.classes.NSScriptCommand {
+    export interface NSCountCommand<T = any> extends NSScriptCommand {
       alloc<R = NSCountCommand>(): R;
       new: <R = NSCountCommand>() => R;
     }

@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScroller<T = any> extends cocoa.NSControl, cocoa.NSScrollerImpDelegateProtocol {
-    _drawingRectForPart<R = cocoa.CGRect, P0 = number>(__drawingRectForPart: P0): R;
+  export interface NSScroller<T = any> extends NSControl, NSScrollerImpDelegateProtocol {
+    _drawingRectForPart<R = CGRect, P0 = number>(__drawingRectForPart: P0): R;
     _setThumbingKnobProportion<R = void, P0 = number>(__setThumbingKnobProportion: P0): R;
     _thumbingKnobProportion<R = number>(): R;
     _setThumbingDoubleValue<R = void, P0 = number>(__setThumbingDoubleValue: P0): R;
@@ -20,7 +20,7 @@ declare namespace cocoa {
     scrollerImp<R = unknown>(): R;
     _orientation<R = number>(): R;
     _setIsHorizontal<R = void, P0 = boolean>(__setIsHorizontal: P0): R;
-    _setNeedsDisplayIfNotLayerBackedOverlayCompatibleInRect<R = void, P0 = cocoa.CGRect>(__setNeedsDisplayIfNotLayerBackedOverlayCompatibleInRect: P0): R;
+    _setNeedsDisplayIfNotLayerBackedOverlayCompatibleInRect<R = void, P0 = CGRect>(__setNeedsDisplayIfNotLayerBackedOverlayCompatibleInRect: P0): R;
     _setNeedsDisplayIfNotLayerBackedOverlayCompatible<R = void>(): R;
     _setOverlayScrollerState_forceImmediately<R = void, P0 = number, P1 = boolean>(__setOverlayScrollerState: P0, _forceImmediately: P1): R;
     _setAvoidingOtherScrollerThumb<R = void, P0 = boolean>(__setAvoidingOtherScrollerThumb: P0): R;
@@ -43,17 +43,17 @@ declare namespace cocoa {
     setFloatValue_knobProportion<R = void, P0 = number, P1 = number>(_setFloatValue: P0, _knobProportion: P1): R;
     doubleValue<R = number>(): R;
     floatValue<R = number>(): R;
-    _windowResizeMouseLocationIsInVisibleScrollerThumb<R = boolean, P0 = cocoa.CGPoint>(__windowResizeMouseLocationIsInVisibleScrollerThumb: P0): R;
+    _windowResizeMouseLocationIsInVisibleScrollerThumb<R = boolean, P0 = CGPoint>(__windowResizeMouseLocationIsInVisibleScrollerThumb: P0): R;
     trackPagingArea<R = void, P0 = unknown>(_trackPagingArea: P0): R;
     trackScrollButtons<R = void, P0 = unknown>(_trackScrollButtons: P0): R;
     trackKnob<R = void, P0 = unknown>(_trackKnob: P0): R;
     _postScrollerDidEndTrackingNotification<R = void>(): R;
     _postScrollerDidBeginTrackingNotification<R = void>(): R;
-    testPart<R = number, P0 = cocoa.CGPoint>(_testPart: P0): R;
-    _testPartUsingDestinationFloatValue<R = number, P0 = cocoa.CGPoint>(__testPartUsingDestinationFloatValue: P0): R;
+    testPart<R = number, P0 = CGPoint>(_testPart: P0): R;
+    _testPartUsingDestinationFloatValue<R = number, P0 = CGPoint>(__testPartUsingDestinationFloatValue: P0): R;
     highlight<R = void, P0 = boolean>(_highlight: P0): R;
-    _compositeScrollerPart_inRect_withAlpha_drawHandler<R = void, P0 = number, P1 = cocoa.CGRect, P2 = number, P3 = cocoa.CDUnknownBlockType>(__compositeScrollerPart: P0, _inRect: P1, _withAlpha: P2, _drawHandler: P3): R;
-    drawKnobSlotInRect_highlight<R = void, P0 = cocoa.CGRect, P1 = boolean>(_drawKnobSlotInRect: P0, _highlight: P1): R;
+    _compositeScrollerPart_inRect_withAlpha_drawHandler<R = void, P0 = number, P1 = CGRect, P2 = number, P3 = CDUnknownBlockType>(__compositeScrollerPart: P0, _inRect: P1, _withAlpha: P2, _drawHandler: P3): R;
+    drawKnobSlotInRect_highlight<R = void, P0 = CGRect, P1 = boolean>(_drawKnobSlotInRect: P0, _highlight: P1): R;
     drawKnob<R = void>(): R;
     drawArrow_highlight<R = void, P0 = number, P1 = boolean>(_drawArrow: P0, _highlight: P1): R;
     drawArrow_highlightPart<R = void, P0 = number, P1 = number>(_drawArrow: P0, _highlightPart: P1): R;
@@ -67,7 +67,7 @@ declare namespace cocoa {
     setAction<R = void, P0 = string>(_setAction: P0): R;
     setTarget<R = void, P0 = unknown>(_setTarget: P0): R;
     checkSpaceForParts<R = void>(): R;
-    rectForPart<R = cocoa.CGRect, P0 = number>(_rectForPart: P0): R;
+    rectForPart<R = CGRect, P0 = number>(_rectForPart: P0): R;
     drawParts<R = void>(): R;
     _really_setLionScrollerStyle<R = void, P0 = number>(__really_setLionScrollerStyle: P0): R;
     wantsLayer<R = boolean>(): R;
@@ -97,13 +97,13 @@ declare namespace cocoa {
     setKnobStyle<R = void, P0 = number>(_v: P0): R;
     scrollerStyle<R = number>(): R;
     setScrollerStyle<R = void, P0 = number>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSScroller<T = any> extends cocoa.classes.NSControl, cocoa.classes.NSScrollerImpDelegateProtocol {
+    export interface NSScroller<T = any> extends NSControl, NSScrollerImpDelegateProtocol {
       alloc<R = NSScroller>(): R;
       new: <R = NSScroller>() => R;
       scrollerSubclassIsCompatibleWithOverlayScrollers<R = boolean>(): R;

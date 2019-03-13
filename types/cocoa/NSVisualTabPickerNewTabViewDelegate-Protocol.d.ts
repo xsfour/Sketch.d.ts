@@ -1,12 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSVisualTabPickerNewTabViewDelegateProtocol<T = any> extends cocoa.NSObjectProtocol {
-    didRequestNewTabForNSVisualTabPickerNewTabView<R = void, P0 = cocoa.NSVisualTabPickerNewTabView>(_didRequestNewTabForNSVisualTabPickerNewTabView: P0): R;
+  export interface NSVisualTabPickerNewTabViewDelegateProtocol<T = any> extends NSObjectProtocol {
+    didRequestNewTabForNSVisualTabPickerNewTabView<R = void, P0 = NSVisualTabPickerNewTabView>(_didRequestNewTabForNSVisualTabPickerNewTabView: P0): R;
   }
   namespace classes {
-    export interface NSVisualTabPickerNewTabViewDelegateProtocol<T = any> extends cocoa.classes.NSObjectProtocol {  }
+    export interface NSVisualTabPickerNewTabViewDelegateProtocol<T = any> extends NSObjectProtocol {  }
   }
 }
-
-declare const NSVisualTabPickerNewTabViewDelegateProtocol: cocoa.classes.NSVisualTabPickerNewTabViewDelegateProtocol;

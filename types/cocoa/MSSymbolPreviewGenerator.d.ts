@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSymbolPreviewGenerator<T = any> extends cocoa.NSObject {}
+  export interface MSSymbolPreviewGenerator<T = any> extends NSObject {}
   namespace classes {
-    export interface MSSymbolPreviewGenerator<T = any> extends cocoa.classes.NSObject {
+    export interface MSSymbolPreviewGenerator<T = any> extends NSObject {
       alloc<R = MSSymbolPreviewGenerator>(): R;
       new: <R = MSSymbolPreviewGenerator>() => R;
-      imageForSymbolAncestry_withSize_colorSpace_trimmed<R = unknown, P0 = unknown, P1 = cocoa.CGSize, P2 = unknown, P3 = boolean>(_imageForSymbolAncestry: P0, _withSize: P1, _colorSpace: P2, _trimmed: P3): R;
-      imageRepForArtboardAncestry_withSize_drawingRect_colorSpace_trimmed<R = unknown, P0 = unknown, P1 = cocoa.CGSize, P2 = cocoa.CGRect, P3 = unknown, P4 = boolean>(_imageRepForArtboardAncestry: P0, _withSize: P1, _drawingRect: P2, _colorSpace: P3, _trimmed: P4): R;
+      imageForSymbolAncestry_withSize_colorSpace_trimmed<R = unknown, P0 = unknown, P1 = CGSize, P2 = unknown, P3 = boolean>(_imageForSymbolAncestry: P0, _withSize: P1, _colorSpace: P2, _trimmed: P3): R;
+      imageRepForArtboardAncestry_withSize_drawingRect_colorSpace_trimmed<R = unknown, P0 = unknown, P1 = CGSize, P2 = CGRect, P3 = unknown, P4 = boolean>(_imageRepForArtboardAncestry: P0, _withSize: P1, _drawingRect: P2, _colorSpace: P3, _trimmed: P4): R;
     }
   }
 }

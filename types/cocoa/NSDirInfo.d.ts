@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDirInfo<T = any> extends cocoa.NSMutableDictionary {
+  export interface NSDirInfo<T = any> extends NSMutableDictionary {
     serializeToData<R = unknown>(): R;
     writePath_docInfo_errorHandler_remapContents_hardLinkPath<R = number, P0 = unknown, P1 = unknown, P2 = unknown, P3 = boolean, P4 = unknown>(_writePath: P0, _docInfo: P1, _errorHandler: P2, _remapContents: P3, _hardLinkPath: P4): R;
     removeObjectForKey<R = void, P0 = unknown>(_removeObjectForKey: P0): R;
@@ -18,7 +18,7 @@ declare namespace cocoa {
     init<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSDirInfo<T = any> extends cocoa.classes.NSMutableDictionary {  }
+    export interface NSDirInfo<T = any> extends NSMutableDictionary {  }
   }
 }
 

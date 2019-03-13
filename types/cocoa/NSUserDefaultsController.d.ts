@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUserDefaultsController<T = any> extends cocoa.NSController {
+  export interface NSUserDefaultsController<T = any> extends NSController {
     _setSharedUserDefaultsControllerProxy<R = void, P0 = boolean>(__setSharedUserDefaultsControllerProxy: P0): R;
     _isSharedUserDefaultsControllerProxy<R = boolean>(): R;
     revertToInitialValues<R = void, P0 = unknown>(_revertToInitialValues: P0): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     hasUnappliedChanges<R = boolean>(): R;
     appliesImmediately<R = boolean>(): R;
     setAppliesImmediately<R = void, P0 = boolean>(_v: P0): R;
-    initialValues<R = cocoa.NSDictionary>(): R;
-    setInitialValues<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
-    defaults<R = cocoa.NSUserDefaults>(): R;
+    initialValues<R = NSDictionary>(): R;
+    setInitialValues<R = void, P0 = NSDictionary>(_v: P0): R;
+    defaults<R = NSUserDefaults>(): R;
   }
   namespace classes {
-    export interface NSUserDefaultsController<T = any> extends cocoa.classes.NSController {
+    export interface NSUserDefaultsController<T = any> extends NSController {
       alloc<R = NSUserDefaultsController>(): R;
       new: <R = NSUserDefaultsController>() => R;
       sharedUserDefaultsController<R = unknown>(): R;

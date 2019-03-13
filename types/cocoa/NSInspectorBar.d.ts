@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSInspectorBar<T = any> extends cocoa.NSObject, cocoa.NSCodingProtocol {
+  export interface NSInspectorBar<T = any> extends NSObject, NSCodingProtocol {
     convertAttributes<R = unknown, P0 = unknown>(_convertAttributes: P0): R;
     convertFont<R = unknown, P0 = unknown>(_convertFont: P0): R;
     _setIsOwnedByTextView<R = void, P0 = boolean>(__setIsOwnedByTextView: P0): R;
@@ -19,21 +19,21 @@ declare namespace cocoa {
     _auxiliaryViewController<R = unknown>(): R;
     defaultItems<R = unknown>(): R;
     dealloc<R = void>(): R;
-    delegate<R = cocoa.NSInspectorBarDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSInspectorBarDelegate>(_v: P0): R;
-    window<R = cocoa.NSWindow>(): R;
+    delegate<R = NSInspectorBarDelegate>(): R;
+    setDelegate<R = void, P0 = NSInspectorBarDelegate>(_v: P0): R;
+    window<R = NSWindow>(): R;
     showsBaselineSeparator<R = boolean>(): R;
     setShowsBaselineSeparator<R = void, P0 = boolean>(_v: P0): R;
     visible<R = boolean>(): R;
     setVisible<R = void, P0 = boolean>(_v: P0): R;
-    client<R = cocoa.NSInspectorBarClient>(): R;
-    setClient<R = void, P0 = cocoa.NSInspectorBarClient>(_v: P0): R;
-    items<R = cocoa.NSArray>(): R;
-    defaultItemIdentifiers<R = cocoa.NSArray>(): R;
-    setDefaultItemIdentifiers<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    client<R = NSInspectorBarClient>(): R;
+    setClient<R = void, P0 = NSInspectorBarClient>(_v: P0): R;
+    items<R = NSArray>(): R;
+    defaultItemIdentifiers<R = NSArray>(): R;
+    setDefaultItemIdentifiers<R = void, P0 = NSArray>(_v: P0): R;
   }
   namespace classes {
-    export interface NSInspectorBar<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCodingProtocol {
+    export interface NSInspectorBar<T = any> extends NSObject, NSCodingProtocol {
       alloc<R = NSInspectorBar>(): R;
       new: <R = NSInspectorBar>() => R;
       _sharedSpacerItem<R = unknown>(): R;

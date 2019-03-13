@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface PDFScanner<T = any> extends cocoa.NSObject {
+  export interface PDFScanner<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     operatorglyphBoundsWithInfo<R = void, P0 = unknown>(_operatorglyphBoundsWithInfo: P0): R;
     registerOperatorglyphBounds<R = void>(): R;
@@ -155,7 +155,7 @@ declare namespace cocoa {
     endText<R = void>(): R;
     offset<R = void, P0 = number>(_offset: P0): R;
     appendText<R = void, P0 = unknown>(_appendText: P0): R;
-    nextLineWithOffset<R = void, P0 = cocoa.CGPoint>(_nextLineWithOffset: P0): R;
+    nextLineWithOffset<R = void, P0 = CGPoint>(_nextLineWithOffset: P0): R;
     setTextMatrix<R = void, P0 = unknown>(_setTextMatrix: P0): R;
     endImage<R = void>(): R;
     imageData<R = void>(): R;
@@ -200,17 +200,17 @@ declare namespace cocoa {
     setLineCap<R = void, P0 = number>(_setLineCap: P0): R;
     setLineJoin<R = void, P0 = number>(_setLineJoin: P0): R;
     setLineWidth<R = void, P0 = number>(_setLineWidth: P0): R;
-    appendRectangle<R = void, P0 = cocoa.CGRect>(_appendRectangle: P0): R;
-    curveTo_control1_control2<R = void, P0 = cocoa.CGPoint, P1 = cocoa.CGPoint, P2 = cocoa.CGPoint>(_curveTo: P0, _control1: P1, _control2: P2): R;
-    lineTo<R = void, P0 = cocoa.CGPoint>(_lineTo: P0): R;
-    moveTo<R = void, P0 = cocoa.CGPoint>(_moveTo: P0): R;
+    appendRectangle<R = void, P0 = CGRect>(_appendRectangle: P0): R;
+    curveTo_control1_control2<R = void, P0 = CGPoint, P1 = CGPoint, P2 = CGPoint>(_curveTo: P0, _control1: P1, _control2: P2): R;
+    lineTo<R = void, P0 = CGPoint>(_lineTo: P0): R;
+    moveTo<R = void, P0 = CGPoint>(_moveTo: P0): R;
     currentRenderingIntent<R = number>(): R;
     currentStrokeColorSpaceMapping<R = unknown>(): R;
     currentStrokeColorSpace<R = unknown>(): R;
     currentFillColorSpaceMapping<R = unknown>(): R;
     currentFillColorSpace<R = unknown>(): R;
     currentLeading<R = number>(): R;
-    currentPoint<R = cocoa.CGPoint>(): R;
+    currentPoint<R = CGPoint>(): R;
     currentFont<R = unknown>(): R;
     gradientForPattern<R = unknown, P0 = unknown>(_gradientForPattern: P0): R;
     componentIndexForColorSpace_colorSpaceInfo<R = number, P0 = unknown, P1 = unknown>(_componentIndexForColorSpace: P0, _colorSpaceInfo: P1): R;
@@ -229,10 +229,10 @@ declare namespace cocoa {
     popCMYKColor<R = unknown>(): R;
     popRGBColor<R = unknown>(): R;
     popTransform<R = unknown>(): R;
-    popPoint<R = cocoa.CGPoint>(): R;
-    popRectangle<R = cocoa.CGRect>(): R;
+    popPoint<R = CGPoint>(): R;
+    popRectangle<R = CGRect>(): R;
     fontResourceNamed<R = unknown, P0 = unknown>(_fontResourceNamed: P0): R;
-    newImageFromStream_details<R = cocoa.CGImage, P0 = unknown, P1 = unknown>(_newImageFromStream: P0, _details: P1): R;
+    newImageFromStream_details<R = CGImage, P0 = unknown, P1 = unknown>(_newImageFromStream: P0, _details: P1): R;
     interpretObjectStream<R = void, P0 = unknown>(_interpretObjectStream: P0): R;
     interpretImageStream<R = void, P0 = unknown>(_interpretImageStream: P0): R;
     data_filteredWith<R = unknown, P0 = unknown, P1 = unknown>(_data: P0, _filteredWith: P1): R;
@@ -244,33 +244,33 @@ declare namespace cocoa {
     colorSpaceNamed_mapping<R = unknown, P0 = unknown, P1 = unknown>(_colorSpaceNamed: P0, _mapping: P1): R;
     defaultColorSpaceNamed<R = unknown, P0 = unknown>(_defaultColorSpaceNamed: P0): R;
     resourceNamed_ofKind<R = unknown, P0 = unknown, P1 = unknown>(_resourceNamed: P0, _ofKind: P1): R;
-    scanStream_dictionary<R = void, P0 = cocoa.CGPDFContentStream, P1 = unknown>(_scanStream: P0, _dictionary: P1): R;
-    scanPage_parser_isPasted<R = void, P0 = cocoa.CGPDFPage, P1 = unknown, P2 = boolean>(_scanPage: P0, _parser: P1, _isPasted: P2): R;
-    addOperator_name_description<R = unknown, P0 = cocoa.CDUnknownFunctionPointerType, P1 = unknown, P2 = unknown>(_addOperator: P0, _name: P1, _description: P2): R;
+    scanStream_dictionary<R = void, P0 = CGPDFContentStream, P1 = unknown>(_scanStream: P0, _dictionary: P1): R;
+    scanPage_parser_isPasted<R = void, P0 = CGPDFPage, P1 = unknown, P2 = boolean>(_scanPage: P0, _parser: P1, _isPasted: P2): R;
+    addOperator_name_description<R = unknown, P0 = CDUnknownFunctionPointerType, P1 = unknown, P2 = unknown>(_addOperator: P0, _name: P1, _description: P2): R;
     registerAllOperators<R = void>(): R;
     dealloc<R = void>(): R;
-    encodingMap<R = cocoa.NSDictionary>(): R;
-    setEncodingMap<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
-    fontTypesToMap<R = cocoa.NSSet>(): R;
-    setFontTypesToMap<R = void, P0 = cocoa.NSSet>(_v: P0): R;
-    fonts<R = cocoa.NSMutableDictionary>(): R;
-    setFonts<R = void, P0 = cocoa.NSMutableDictionary>(_v: P0): R;
-    stream<R = cocoa.CGPDFContentStream>(): R;
-    setStream<R = void, P0 = cocoa.CGPDFContentStream>(_v: P0): R;
-    scanner<R = cocoa.CGPDFScanner>(): R;
-    setScanner<R = void, P0 = cocoa.CGPDFScanner>(_v: P0): R;
-    table<R = cocoa.CGPDFOperatorTable>(): R;
-    setTable<R = void, P0 = cocoa.CGPDFOperatorTable>(_v: P0): R;
-    dictionary<R = cocoa.NSDictionary>(): R;
-    setDictionary<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
+    encodingMap<R = NSDictionary>(): R;
+    setEncodingMap<R = void, P0 = NSDictionary>(_v: P0): R;
+    fontTypesToMap<R = NSSet>(): R;
+    setFontTypesToMap<R = void, P0 = NSSet>(_v: P0): R;
+    fonts<R = NSMutableDictionary>(): R;
+    setFonts<R = void, P0 = NSMutableDictionary>(_v: P0): R;
+    stream<R = CGPDFContentStream>(): R;
+    setStream<R = void, P0 = CGPDFContentStream>(_v: P0): R;
+    scanner<R = CGPDFScanner>(): R;
+    setScanner<R = void, P0 = CGPDFScanner>(_v: P0): R;
+    table<R = CGPDFOperatorTable>(): R;
+    setTable<R = void, P0 = CGPDFOperatorTable>(_v: P0): R;
+    dictionary<R = NSDictionary>(): R;
+    setDictionary<R = void, P0 = NSDictionary>(_v: P0): R;
   }
   namespace classes {
-    export interface PDFScanner<T = any> extends cocoa.classes.NSObject {
+    export interface PDFScanner<T = any> extends NSObject {
       alloc<R = PDFScanner>(): R;
       new: <R = PDFScanner>() => R;
-      convertObject<R = unknown, P0 = cocoa.CGPDFObject>(_convertObject: P0): R;
-      convertDictionary<R = unknown, P0 = cocoa.CGPDFDictionary>(_convertDictionary: P0): R;
-      convertArray<R = unknown, P0 = cocoa.CGPDFArray>(_convertArray: P0): R;
+      convertObject<R = unknown, P0 = CGPDFObject>(_convertObject: P0): R;
+      convertDictionary<R = unknown, P0 = CGPDFDictionary>(_convertDictionary: P0): R;
+      convertArray<R = unknown, P0 = CGPDFArray>(_convertArray: P0): R;
     }
   }
 }

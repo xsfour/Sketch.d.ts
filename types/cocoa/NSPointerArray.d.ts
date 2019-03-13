@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPointerArray<T = any> extends cocoa.NSObject, cocoa.NSFastEnumerationProtocol, cocoa.NSCopyingProtocol, cocoa.NSSecureCodingProtocol {
+  export interface NSPointerArray<T = any> extends NSObject, NSFastEnumerationProtocol, NSCopyingProtocol, NSSecureCodingProtocol {
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     compact<R = void>(): R;
     replacePointerAtIndex_withPointer<R = void, P0 = number, P1 = void>(_replacePointerAtIndex: P0, _withPointer: P1): R;
@@ -16,13 +16,13 @@ declare namespace cocoa {
     mutableArray<R = unknown>(): R;
     count<R = number>(): R;
     setCount<R = void, P0 = number>(_v: P0): R;
-    pointerFunctions<R = cocoa.NSPointerFunctions>(): R;
+    pointerFunctions<R = NSPointerFunctions>(): R;
   }
   namespace classes {
-    export interface NSPointerArray<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSFastEnumerationProtocol, cocoa.classes.NSCopyingProtocol, cocoa.classes.NSSecureCodingProtocol {
+    export interface NSPointerArray<T = any> extends NSObject, NSFastEnumerationProtocol, NSCopyingProtocol, NSSecureCodingProtocol {
       alloc<R = NSPointerArray>(): R;
       new: <R = NSPointerArray>() => R;
-      allocWithZone<R = unknown, P0 = cocoa._NSZone>(_allocWithZone: P0): R;
+      allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
       pointerArrayWithPointerFunctions<R = unknown, P0 = unknown>(_pointerArrayWithPointerFunctions: P0): R;
       pointerArrayWithOptions<R = unknown, P0 = number>(_pointerArrayWithOptions: P0): R;
       weakObjectsPointerArray<R = unknown>(): R;

@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSInputClientWrapper<T = any> extends cocoa.NSObject, cocoa.NSTextInputProtocol {
+  export interface NSInputClientWrapper<T = any> extends NSObject, NSTextInputProtocol {
     dealloc<R = void>(): R;
     initWithRealClient<R = unknown, P0 = unknown>(_initWithRealClient: P0): R;
     resetState<R = void>(): R;
   }
   namespace classes {
-    export interface NSInputClientWrapper<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSTextInputProtocol {
+    export interface NSInputClientWrapper<T = any> extends NSObject, NSTextInputProtocol {
       alloc<R = NSInputClientWrapper>(): R;
       new: <R = NSInputClientWrapper>() => R;
       terminateForClient<R = void, P0 = unknown>(_terminateForClient: P0): R;

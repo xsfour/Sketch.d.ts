@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutableStyleFill<T = any> extends cocoa._MSImmutableStyleFill {
+  export interface MSImmutableStyleFill<T = any> extends _MSImmutableStyleFill {
     patternFillHasOpacity<R = boolean>(): R;
     NSImage<R = unknown>(): R;
     updateColorCounter<R = void, P0 = unknown>(_updateColorCounter: P0): R;
@@ -18,7 +18,7 @@ declare namespace cocoa {
     hasOpacity<R = boolean>(): R;
   }
   namespace classes {
-    export interface MSImmutableStyleFill<T = any> extends cocoa.classes._MSImmutableStyleFill {
+    export interface MSImmutableStyleFill<T = any> extends _MSImmutableStyleFill {
       alloc<R = MSImmutableStyleFill>(): R;
       new: <R = MSImmutableStyleFill>() => R;
     }

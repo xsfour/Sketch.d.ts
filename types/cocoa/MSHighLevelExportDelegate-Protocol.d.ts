@@ -1,10 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSHighLevelExportDelegateProtocol<T = any> extends cocoa.ECIODelegateProtocol {}
+  export interface MSHighLevelExportDelegateProtocol<T = any> extends ECIODelegateProtocol {}
   namespace classes {
-    export interface MSHighLevelExportDelegateProtocol<T = any> extends cocoa.classes.ECIODelegateProtocol {  }
+    export interface MSHighLevelExportDelegateProtocol<T = any> extends ECIODelegateProtocol {  }
   }
 }
-
-declare const MSHighLevelExportDelegateProtocol: cocoa.classes.MSHighLevelExportDelegateProtocol;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSExpression<T = any> extends cocoa.NSObject, cocoa.NSSecureCodingProtocol, cocoa.NSCopyingProtocol {
+  export interface NSExpression<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
     _expressionWithSubstitutionVariables<R = unknown, P0 = unknown>(__expressionWithSubstitutionVariables: P0): R;
     acceptVisitor_flags<R = void, P0 = unknown, P1 = number>(_acceptVisitor: P0, _flags: P1): R;
     _shouldUseParensWithDescription<R = boolean>(): R;
@@ -15,27 +15,27 @@ declare namespace cocoa {
     allowEvaluation<R = void>(): R;
     _allowsEvaluation<R = boolean>(): R;
     initWithExpressionType<R = unknown, P0 = number>(_initWithExpressionType: P0): R;
-    expressionBlock<R = cocoa.CDUnknownBlockType>(): R;
-    falseExpression<R = cocoa.NSExpression>(): R;
-    trueExpression<R = cocoa.NSExpression>(): R;
+    expressionBlock<R = CDUnknownBlockType>(): R;
+    falseExpression<R = NSExpression>(): R;
+    trueExpression<R = NSExpression>(): R;
     collection<R = unknown>(): R;
-    predicate<R = cocoa.NSPredicate>(): R;
-    rightExpression<R = cocoa.NSExpression>(): R;
-    leftExpression<R = cocoa.NSExpression>(): R;
-    arguments<R = cocoa.NSArray>(): R;
-    operand<R = cocoa.NSExpression>(): R;
-    function<R = cocoa.NSString>(): R;
-    variable<R = cocoa.NSString>(): R;
+    predicate<R = NSPredicate>(): R;
+    rightExpression<R = NSExpression>(): R;
+    leftExpression<R = NSExpression>(): R;
+    arguments<R = NSArray>(): R;
+    operand<R = NSExpression>(): R;
+    function<R = NSString>(): R;
+    variable<R = NSString>(): R;
     constantValue<R = unknown>(): R;
-    keyPath<R = cocoa.NSString>(): R;
+    keyPath<R = NSString>(): R;
     expressionType<R = number>(): R;
   }
   namespace classes {
-    export interface NSExpression<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSSecureCodingProtocol, cocoa.classes.NSCopyingProtocol {
+    export interface NSExpression<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
       alloc<R = NSExpression>(): R;
       new: <R = NSExpression>() => R;
       expressionForAnyKey<R = unknown>(): R;
-      expressionForBlock_arguments<R = unknown, P0 = cocoa.CDUnknownBlockType, P1 = unknown>(_expressionForBlock: P0, _arguments: P1): R;
+      expressionForBlock_arguments<R = unknown, P0 = CDUnknownBlockType, P1 = unknown>(_expressionForBlock: P0, _arguments: P1): R;
       expressionForMinusSet_with<R = unknown, P0 = unknown, P1 = unknown>(_expressionForMinusSet: P0, _with: P1): R;
       expressionForIntersectSet_with<R = unknown, P0 = unknown, P1 = unknown>(_expressionForIntersectSet: P0, _with: P1): R;
       expressionForUnionSet_with<R = unknown, P0 = unknown, P1 = unknown>(_expressionForUnionSet: P0, _with: P1): R;
@@ -52,7 +52,7 @@ declare namespace cocoa {
       expressionForVariable<R = unknown, P0 = unknown>(_expressionForVariable: P0): R;
       expressionForEvaluatedObject<R = unknown>(): R;
       expressionForConstantValue<R = unknown, P0 = unknown>(_expressionForConstantValue: P0): R;
-      expressionWithFormat_arguments<R = unknown, P0 = unknown, P1 = cocoa.__va_list_tag>(_expressionWithFormat: P0, _arguments: P1): R;
+      expressionWithFormat_arguments<R = unknown, P0 = unknown, P1 = __va_list_tag>(_expressionWithFormat: P0, _arguments: P1): R;
       expressionWithFormat<R = unknown, P0 = unknown>(_expressionWithFormat: P0): R;
       expressionWithFormat_argumentArray<R = unknown, P0 = unknown, P1 = unknown>(_expressionWithFormat: P0, _argumentArray: P1): R;
     }

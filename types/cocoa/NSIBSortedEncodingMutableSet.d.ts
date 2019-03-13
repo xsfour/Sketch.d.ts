@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSIBSortedEncodingMutableSet<T = any> extends cocoa.NSMutableSet {
+  export interface NSIBSortedEncodingMutableSet<T = any> extends NSMutableSet {
     getObjects<R = void, P0 = unknown>(_getObjects: P0): R;
     allObjects<R = unknown>(): R;
     countByEnumeratingWithState_objects_count<R = number, P0 = unknown, P1 = unknown, P2 = number>(_countByEnumeratingWithState: P0, _objects: P1, _count: P2): R;
@@ -13,10 +13,10 @@ declare namespace cocoa {
     count<R = number>(): R;
     sortStorageArray<R = void>(): R;
     dealloc<R = void>(): R;
-    initWithSet_comparator<R = unknown, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(_initWithSet: P0, _comparator: P1): R;
+    initWithSet_comparator<R = unknown, P0 = unknown, P1 = CDUnknownBlockType>(_initWithSet: P0, _comparator: P1): R;
   }
   namespace classes {
-    export interface NSIBSortedEncodingMutableSet<T = any> extends cocoa.classes.NSMutableSet {  }
+    export interface NSIBSortedEncodingMutableSet<T = any> extends NSMutableSet {  }
   }
 }
 

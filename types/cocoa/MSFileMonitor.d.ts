@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFileMonitor<T = any> extends cocoa.MSFolderMonitor {}
+  export interface MSFileMonitor<T = any> extends MSFolderMonitor {}
   namespace classes {
-    export interface MSFileMonitor<T = any> extends cocoa.classes.MSFolderMonitor {
+    export interface MSFileMonitor<T = any> extends MSFolderMonitor {
       alloc<R = MSFileMonitor>(): R;
       new: <R = MSFileMonitor>() => R;
     }

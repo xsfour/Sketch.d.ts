@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDOStreamData<T = any> extends cocoa.NSMutableData {
+  export interface NSDOStreamData<T = any> extends NSMutableData {
     length<R = number>(): R;
     mutableBytes<R = void>(): R;
     bytes<R = void>(): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     init<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSDOStreamData<T = any> extends cocoa.classes.NSMutableData {  }
+    export interface NSDOStreamData<T = any> extends NSMutableData {  }
   }
 }
 

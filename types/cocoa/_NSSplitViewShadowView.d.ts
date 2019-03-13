@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSSplitViewShadowView<T = any> extends cocoa.NSView {
+  export interface _NSSplitViewShadowView<T = any> extends NSView {
     getShadowImage<R = unknown>(): R;
     isOpaque<R = boolean>(): R;
     wantsUpdateLayer<R = boolean>(): R;
@@ -11,7 +11,7 @@ declare namespace cocoa {
     setShadowRevealAmount<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface _NSSplitViewShadowView<T = any> extends cocoa.classes.NSView {
+    export interface _NSSplitViewShadowView<T = any> extends NSView {
       alloc<R = _NSSplitViewShadowView>(): R;
       new: <R = _NSSplitViewShadowView>() => R;
     }

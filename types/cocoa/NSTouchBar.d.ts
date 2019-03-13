@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBar<T = any> extends cocoa.NSObject, cocoa.NSAnimatablePropertyContainerProtocol, cocoa.NSCodingProtocol {
+  export interface NSTouchBar<T = any> extends NSObject, NSAnimatablePropertyContainerProtocol, NSCodingProtocol {
     cxx_destruct<R = void>(): R;
     debugDescription<R = unknown>(): R;
     description<R = unknown>(): R;
@@ -24,24 +24,24 @@ declare namespace cocoa {
     setCustomizationDefaultItemIdentifiers<R = void, P0 = unknown>(_setCustomizationDefaultItemIdentifiers: P0): R;
     customizationDefaultItemIdentifiers<R = unknown>(): R;
     visible<R = boolean>(): R;
-    escapeKeyReplacementItemIdentifier<R = cocoa.NSString>(): R;
-    setEscapeKeyReplacementItemIdentifier<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    principalItemIdentifier<R = cocoa.NSString>(): R;
-    setPrincipalItemIdentifier<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    templateItems<R = cocoa.NSSet>(): R;
-    setTemplateItems<R = void, P0 = cocoa.NSSet>(_v: P0): R;
-    customizationRequiredItemIdentifiers<R = cocoa.NSArray>(): R;
-    setCustomizationRequiredItemIdentifiers<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    customizationAllowedItemIdentifiers<R = cocoa.NSArray>(): R;
-    setCustomizationAllowedItemIdentifiers<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    customizationIdentifier<R = cocoa.NSString>(): R;
-    setCustomizationIdentifier<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    defaultItemIdentifiers<R = cocoa.NSArray>(): R;
-    setDefaultItemIdentifiers<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    configuration<R = cocoa.NSTouchBarCustomizableConfiguration>(): R;
-    itemIdentifiers<R = cocoa.NSArray>(): R;
-    delegate<R = cocoa.NSTouchBarDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSTouchBarDelegate>(_v: P0): R;
+    escapeKeyReplacementItemIdentifier<R = NSString>(): R;
+    setEscapeKeyReplacementItemIdentifier<R = void, P0 = NSString>(_v: P0): R;
+    principalItemIdentifier<R = NSString>(): R;
+    setPrincipalItemIdentifier<R = void, P0 = NSString>(_v: P0): R;
+    templateItems<R = NSSet>(): R;
+    setTemplateItems<R = void, P0 = NSSet>(_v: P0): R;
+    customizationRequiredItemIdentifiers<R = NSArray>(): R;
+    setCustomizationRequiredItemIdentifiers<R = void, P0 = NSArray>(_v: P0): R;
+    customizationAllowedItemIdentifiers<R = NSArray>(): R;
+    setCustomizationAllowedItemIdentifiers<R = void, P0 = NSArray>(_v: P0): R;
+    customizationIdentifier<R = NSString>(): R;
+    setCustomizationIdentifier<R = void, P0 = NSString>(_v: P0): R;
+    defaultItemIdentifiers<R = NSArray>(): R;
+    setDefaultItemIdentifiers<R = void, P0 = NSArray>(_v: P0): R;
+    configuration<R = NSTouchBarCustomizableConfiguration>(): R;
+    itemIdentifiers<R = NSArray>(): R;
+    delegate<R = NSTouchBarDelegate>(): R;
+    setDelegate<R = void, P0 = NSTouchBarDelegate>(_v: P0): R;
     suppressedByMoreFocusedTouchBars<R = boolean>(): R;
     setSuppressedByMoreFocusedTouchBars<R = void, P0 = boolean>(_v: P0): R;
     suppressedByLessFocusedTouchBars<R = boolean>(): R;
@@ -50,15 +50,15 @@ declare namespace cocoa {
     setSuppressesMoreFocusedBars<R = void, P0 = boolean>(_v: P0): R;
     suppressesLessFocusedBars<R = boolean>(): R;
     setSuppressesLessFocusedBars<R = void, P0 = boolean>(_v: P0): R;
-    animationTimingFunction<R = cocoa.CAMediaTimingFunction>(): R;
+    animationTimingFunction<R = CAMediaTimingFunction>(): R;
     animationDuration<R = number>(): R;
-    animations<R = cocoa.NSDictionary>(): R;
-    setAnimations<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
-    escapeKeyReplacementItem<R = cocoa.NSTouchBarItem>(): R;
-    setEscapeKeyReplacementItem<R = void, P0 = cocoa.NSTouchBarItem>(_v: P0): R;
+    animations<R = NSDictionary>(): R;
+    setAnimations<R = void, P0 = NSDictionary>(_v: P0): R;
+    escapeKeyReplacementItem<R = NSTouchBarItem>(): R;
+    setEscapeKeyReplacementItem<R = void, P0 = NSTouchBarItem>(_v: P0): R;
   }
   namespace classes {
-    export interface NSTouchBar<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSAnimatablePropertyContainerProtocol, cocoa.classes.NSCodingProtocol {
+    export interface NSTouchBar<T = any> extends NSObject, NSAnimatablePropertyContainerProtocol, NSCodingProtocol {
       alloc<R = NSTouchBar>(): R;
       new: <R = NSTouchBar>() => R;
       automaticallyNotifiesObserversOfVisible<R = boolean>(): R;

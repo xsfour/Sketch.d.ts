@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBaseInsertAction<T = any> extends cocoa.MSDocumentAction {
+  export interface MSBaseInsertAction<T = any> extends MSDocumentAction {
     validate<R = boolean>(): R;
   }
   namespace classes {
-    export interface MSBaseInsertAction<T = any> extends cocoa.classes.MSDocumentAction {
+    export interface MSBaseInsertAction<T = any> extends MSDocumentAction {
       alloc<R = MSBaseInsertAction>(): R;
       new: <R = MSBaseInsertAction>() => R;
     }

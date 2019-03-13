@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSecurityScopedURLWrapper<T = any> extends cocoa.NSObject, cocoa.NSSecureCodingProtocol {
+  export interface NSSecurityScopedURLWrapper<T = any> extends NSObject, NSSecureCodingProtocol {
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     description<R = unknown>(): R;
@@ -11,16 +11,16 @@ declare namespace cocoa {
     initWithURL_readonly<R = unknown, P0 = unknown, P1 = boolean>(_initWithURL: P0, _readonly: P1): R;
     initWithURL<R = unknown, P0 = unknown>(_initWithURL: P0): R;
     initWithProviderIdentifier_domainIdentifier_itemIdentifier<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_initWithProviderIdentifier: P0, _domainIdentifier: P1, _itemIdentifier: P2): R;
-    itemIdentifier<R = cocoa.NSString>(): R;
-    domainIdentifier<R = cocoa.NSString>(): R;
-    providerIdentifier<R = cocoa.NSString>(): R;
+    itemIdentifier<R = NSString>(): R;
+    domainIdentifier<R = NSString>(): R;
+    providerIdentifier<R = NSString>(): R;
     backedByFileProvider<R = boolean>(): R;
     readonly<R = boolean>(): R;
-    url<R = cocoa.NSURL>(): R;
-    _scope<R = cocoa.NSData>(): R;
+    url<R = NSURL>(): R;
+    _scope<R = NSData>(): R;
   }
   namespace classes {
-    export interface NSSecurityScopedURLWrapper<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSSecureCodingProtocol {
+    export interface NSSecurityScopedURLWrapper<T = any> extends NSObject, NSSecureCodingProtocol {
       alloc<R = NSSecurityScopedURLWrapper>(): R;
       new: <R = NSSecurityScopedURLWrapper>() => R;
     }

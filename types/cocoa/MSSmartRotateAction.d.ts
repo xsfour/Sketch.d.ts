@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSmartRotateAction<T = any> extends cocoa.MSDocumentAction {
+  export interface MSSmartRotateAction<T = any> extends MSDocumentAction {
     tooltip<R = unknown>(): R;
     label<R = unknown>(): R;
     isSelectable<R = boolean>(): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     smartRotate<R = void, P0 = unknown>(_smartRotate: P0): R;
   }
   namespace classes {
-    export interface MSSmartRotateAction<T = any> extends cocoa.classes.MSDocumentAction {
+    export interface MSSmartRotateAction<T = any> extends MSDocumentAction {
       alloc<R = MSSmartRotateAction>(): R;
       new: <R = MSSmartRotateAction>() => R;
     }

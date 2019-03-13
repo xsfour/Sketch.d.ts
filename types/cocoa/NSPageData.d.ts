@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPageData<T = any> extends cocoa.NSData {
+  export interface NSPageData<T = any> extends NSData {
     data<R = unknown>(): R;
     initWithDataNoCopy<R = unknown, P0 = unknown>(_initWithDataNoCopy: P0): R;
     deserializer<R = unknown>(): R;
@@ -23,7 +23,7 @@ declare namespace cocoa {
     writeFd<R = number, P0 = number>(_writeFd: P0): R;
   }
   namespace classes {
-    export interface NSPageData<T = any> extends cocoa.classes.NSData {
+    export interface NSPageData<T = any> extends NSData {
       _umask<R = number>(): R;
       initialize<R = void>(): R;
     }

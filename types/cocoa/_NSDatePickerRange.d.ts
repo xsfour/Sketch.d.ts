@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSDatePickerRange<T = any> extends cocoa.NSObject {
+  export interface _NSDatePickerRange<T = any> extends NSObject {
     dealloc<R = void>(): R;
-    daysInMonth_year_forDatePickerCell<R = cocoa._NSRange, P0 = number, P1 = number, P2 = unknown>(_daysInMonth: P0, _year: P1, _forDatePickerCell: P2): R;
+    daysInMonth_year_forDatePickerCell<R = _NSRange, P0 = number, P1 = number, P2 = unknown>(_daysInMonth: P0, _year: P1, _forDatePickerCell: P2): R;
     containsMonth_year_forDatePickerCell<R = boolean, P0 = number, P1 = number, P2 = unknown>(_containsMonth: P0, _year: P1, _forDatePickerCell: P2): R;
     containsDayGranularityDate_forDatePickerCell<R = boolean, P0 = unknown, P1 = unknown>(_containsDayGranularityDate: P0, _forDatePickerCell: P1): R;
     dateRangeAnchoredSelectionWithDate<R = unknown, P0 = unknown>(_dateRangeAnchoredSelectionWithDate: P0): R;
@@ -23,7 +23,7 @@ declare namespace cocoa {
     description<R = unknown>(): R;
   }
   namespace classes {
-    export interface _NSDatePickerRange<T = any> extends cocoa.classes.NSObject {
+    export interface _NSDatePickerRange<T = any> extends NSObject {
       alloc<R = _NSDatePickerRange>(): R;
       new: <R = _NSDatePickerRange>() => R;
     }

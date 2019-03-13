@@ -1,19 +1,19 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSCGSWindow<T = any> extends cocoa.NSCGSWindow {
-    setChameleonOverrideColor<R = void, P0 = cocoa.CGColor>(_setChameleonOverrideColor: P0): R;
-    chameleonOverrideColor<R = cocoa.CGColor>(): R;
+  export interface _NSCGSWindow<T = any> extends NSCGSWindow {
+    setChameleonOverrideColor<R = void, P0 = CGColor>(_setChameleonOverrideColor: P0): R;
+    chameleonOverrideColor<R = CGColor>(): R;
     movementChildren<R = unknown>(): R;
     setMovementChildren<R = void, P0 = unknown>(_setMovementChildren: P0): R;
-    setButtonShape<R = void, P0 = cocoa.CGSRegionObject>(_setButtonShape: P0): R;
-    buttonShape<R = cocoa.CGSRegionObject>(): R;
-    setActivationShape<R = void, P0 = cocoa.CGSRegionObject>(_setActivationShape: P0): R;
-    activationShape<R = cocoa.CGSRegionObject>(): R;
-    setCommandModifierExclusionShape<R = void, P0 = cocoa.CGSRegionObject>(_setCommandModifierExclusionShape: P0): R;
-    commandModifierExclusionShape<R = cocoa.CGSRegionObject>(): R;
-    setDragShape<R = void, P0 = cocoa.CGSRegionObject>(_setDragShape: P0): R;
-    dragShape<R = cocoa.CGSRegionObject>(): R;
+    setButtonShape<R = void, P0 = CGSRegionObject>(_setButtonShape: P0): R;
+    buttonShape<R = CGSRegionObject>(): R;
+    setActivationShape<R = void, P0 = CGSRegionObject>(_setActivationShape: P0): R;
+    activationShape<R = CGSRegionObject>(): R;
+    setCommandModifierExclusionShape<R = void, P0 = CGSRegionObject>(_setCommandModifierExclusionShape: P0): R;
+    commandModifierExclusionShape<R = CGSRegionObject>(): R;
+    setDragShape<R = void, P0 = CGSRegionObject>(_setDragShape: P0): R;
+    dragShape<R = CGSRegionObject>(): R;
     setHasMainAppearance<R = void, P0 = boolean>(_setHasMainAppearance: P0): R;
     hasMainAppearance<R = boolean>(): R;
     setHasKeyAppearance<R = void, P0 = boolean>(_setHasKeyAppearance: P0): R;
@@ -30,20 +30,20 @@ declare namespace cocoa {
     shadowProperties<R = unknown>(): R;
     setCornerMask<R = void, P0 = unknown>(_setCornerMask: P0): R;
     cornerMask<R = unknown>(): R;
-    setEventShape<R = void, P0 = cocoa.CGSRegionObject>(_setEventShape: P0): R;
-    eventShape<R = cocoa.CGSRegionObject>(): R;
-    setOpaqueShape<R = void, P0 = cocoa.CGSRegionObject>(_setOpaqueShape: P0): R;
-    opaqueShape<R = cocoa.CGSRegionObject>(): R;
+    setEventShape<R = void, P0 = CGSRegionObject>(_setEventShape: P0): R;
+    eventShape<R = CGSRegionObject>(): R;
+    setOpaqueShape<R = void, P0 = CGSRegionObject>(_setOpaqueShape: P0): R;
+    opaqueShape<R = CGSRegionObject>(): R;
     setOpacity<R = void, P0 = number>(_setOpacity: P0): R;
     opacity<R = number>(): R;
-    setSize<R = void, P0 = cocoa.CGSize>(_setSize: P0): R;
-    size<R = cocoa.CGSize>(): R;
+    setSize<R = void, P0 = CGSize>(_setSize: P0): R;
+    size<R = CGSize>(): R;
     moveGroupByX_Y_isChildOfGroupMovement<R = void, P0 = number, P1 = number, P2 = boolean>(_moveGroupByX: P0, _Y: P1, _isChildOfGroupMovement: P2): R;
     moveByX_Y_isChildOfGroupMovement<R = void, P0 = number, P1 = number, P2 = boolean>(_moveByX: P0, _Y: P1, _isChildOfGroupMovement: P2): R;
-    setFrame<R = void, P0 = cocoa.CGRect>(_setFrame: P0): R;
-    frame<R = cocoa.CGRect>(): R;
-    setShape<R = void, P0 = cocoa.CGSRegionObject>(_setShape: P0): R;
-    shape<R = cocoa.CGSRegionObject>(): R;
+    setFrame<R = void, P0 = CGRect>(_setFrame: P0): R;
+    frame<R = CGRect>(): R;
+    setShape<R = void, P0 = CGSRegionObject>(_setShape: P0): R;
+    shape<R = CGSRegionObject>(): R;
     windowID<R = number>(): R;
     description<R = unknown>(): R;
     dealloc<R = void>(): R;
@@ -51,7 +51,7 @@ declare namespace cocoa {
     initWithConnectionID<R = unknown, P0 = number>(_initWithConnectionID: P0): R;
   }
   namespace classes {
-    export interface _NSCGSWindow<T = any> extends cocoa.classes.NSCGSWindow {
+    export interface _NSCGSWindow<T = any> extends NSCGSWindow {
       alloc<R = _NSCGSWindow>(): R;
       new: <R = _NSCGSWindow>() => R;
     }

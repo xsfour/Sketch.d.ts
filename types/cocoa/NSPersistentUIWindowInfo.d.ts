@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPersistentUIWindowInfo<T = any> extends cocoa.NSObject {
+  export interface NSPersistentUIWindowInfo<T = any> extends NSObject {
     recordEncryptionKey<R = string>(): R;
     dealloc<R = void>(): R;
     copyAllPublicProperties<R = unknown>(): R;
@@ -11,7 +11,7 @@ declare namespace cocoa {
     setWindowID<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface NSPersistentUIWindowInfo<T = any> extends cocoa.classes.NSObject {
+    export interface NSPersistentUIWindowInfo<T = any> extends NSObject {
       alloc<R = NSPersistentUIWindowInfo>(): R;
       new: <R = NSPersistentUIWindowInfo>() => R;
     }

@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFakePopoverBackgroundView<T = any> extends cocoa.NSVisualEffectView {}
+  export interface NSFakePopoverBackgroundView<T = any> extends NSVisualEffectView {}
   namespace classes {
-    export interface NSFakePopoverBackgroundView<T = any> extends cocoa.classes.NSVisualEffectView {
+    export interface NSFakePopoverBackgroundView<T = any> extends NSVisualEffectView {
       alloc<R = NSFakePopoverBackgroundView>(): R;
       new: <R = NSFakePopoverBackgroundView>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSModelResources<T = any> extends cocoa.BCSingleton {
+  export interface MSModelResources<T = any> extends BCSingleton {
     cxx_destruct<R = void>(): R;
     resourcesNeedingMigration<R = unknown>(): R;
     loadNoiseImageWithIndex<R = unknown, P0 = number>(_loadNoiseImageWithIndex: P0): R;
@@ -9,15 +9,15 @@ declare namespace cocoa {
     preloadResources<R = void>(): R;
     URLForResource_withExtension<R = unknown, P0 = unknown, P1 = unknown>(_URLForResource: P0, _withExtension: P1): R;
     URLForImageResource<R = unknown, P0 = unknown>(_URLForImageResource: P0): R;
-    errorPattern<R = cocoa.NSBitmapImageRep>(): R;
-    setErrorPattern<R = void, P0 = cocoa.NSBitmapImageRep>(_v: P0): R;
-    noiseImages<R = cocoa.NSArray>(): R;
-    setNoiseImages<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    bundle<R = cocoa.NSBundle>(): R;
-    setBundle<R = void, P0 = cocoa.NSBundle>(_v: P0): R;
+    errorPattern<R = NSBitmapImageRep>(): R;
+    setErrorPattern<R = void, P0 = NSBitmapImageRep>(_v: P0): R;
+    noiseImages<R = NSArray>(): R;
+    setNoiseImages<R = void, P0 = NSArray>(_v: P0): R;
+    bundle<R = NSBundle>(): R;
+    setBundle<R = void, P0 = NSBundle>(_v: P0): R;
   }
   namespace classes {
-    export interface MSModelResources<T = any> extends cocoa.classes.BCSingleton {  }
+    export interface MSModelResources<T = any> extends BCSingleton {  }
   }
 }
 

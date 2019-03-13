@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSLayerListBadgeConfigurator<T = any> extends cocoa.NSObject, cocoa.MSInterfaceImageOwnerProtocol, cocoa.NSMenuDelegateProtocol, cocoa.BCOutlineViewPopupConfiguratorProtocol {
+  export interface MSLayerListBadgeConfigurator<T = any> extends NSObject, MSInterfaceImageOwnerProtocol, NSMenuDelegateProtocol, BCOutlineViewPopupConfiguratorProtocol {
     cxx_destruct<R = void>(): R;
     onBooleanOperation<R = void, P0 = unknown>(_onBooleanOperation: P0): R;
     updateImagesOnMenu_withSelectedItem<R = void, P0 = unknown, P1 = unknown>(_updateImagesOnMenu: P0, _withSelectedItem: P1): R;
@@ -11,19 +11,19 @@ declare namespace cocoa {
     initWithLayer<R = unknown, P0 = unknown>(_initWithLayer: P0): R;
     isOpen<R = boolean>(): R;
     setIsOpen<R = void, P0 = boolean>(_v: P0): R;
-    popup<R = cocoa.NSPopUpButton>(): R;
-    setPopup<R = void, P0 = cocoa.NSPopUpButton>(_v: P0): R;
-    layer<R = cocoa.MSLayer>(): R;
-    setLayer<R = void, P0 = cocoa.MSLayer>(_v: P0): R;
-    interfaceImageIdentifier<R = cocoa.NSString>(): R;
+    popup<R = NSPopUpButton>(): R;
+    setPopup<R = void, P0 = NSPopUpButton>(_v: P0): R;
+    layer<R = MSLayer>(): R;
+    setLayer<R = void, P0 = MSLayer>(_v: P0): R;
+    interfaceImageIdentifier<R = NSString>(): R;
     cacheOwner<R = unknown>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSLayerListBadgeConfigurator<T = any> extends cocoa.classes.NSObject, cocoa.classes.MSInterfaceImageOwnerProtocol, cocoa.classes.NSMenuDelegateProtocol, cocoa.classes.BCOutlineViewPopupConfiguratorProtocol {
+    export interface MSLayerListBadgeConfigurator<T = any> extends NSObject, MSInterfaceImageOwnerProtocol, NSMenuDelegateProtocol, BCOutlineViewPopupConfiguratorProtocol {
       alloc<R = MSLayerListBadgeConfigurator>(): R;
       new: <R = MSLayerListBadgeConfigurator>() => R;
       configuratorWithLayer<R = unknown, P0 = unknown>(_configuratorWithLayer: P0): R;

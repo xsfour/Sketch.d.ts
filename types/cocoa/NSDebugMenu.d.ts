@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDebugMenu<T = any> extends cocoa.NSObject {
+  export interface NSDebugMenu<T = any> extends NSObject {
     dealloc<R = void>(): R;
-    debugMenu<R = cocoa.NSMenu>(): R;
+    debugMenu<R = NSMenu>(): R;
   }
   namespace classes {
-    export interface NSDebugMenu<T = any> extends cocoa.classes.NSObject {
+    export interface NSDebugMenu<T = any> extends NSObject {
       alloc<R = NSDebugMenu>(): R;
       new: <R = NSDebugMenu>() => R;
       unregisterMenuItemProvider<R = void, P0 = unknown>(_unregisterMenuItemProvider: P0): R;

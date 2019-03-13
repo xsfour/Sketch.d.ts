@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NCPushRegistration<T = any> extends cocoa.NSObject {
+  export interface _NCPushRegistration<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     _messageServerRemotePush<R = void, P0 = unknown>(__messageServerRemotePush: P0): R;
     _messageServerTokenUpdated<R = void, P0 = unknown>(__messageServerTokenUpdated: P0): R;
@@ -16,13 +16,13 @@ declare namespace cocoa {
     initWithTypes_delegate<R = unknown, P0 = number, P1 = unknown>(_initWithTypes: P0, _delegate: P1): R;
     types<R = number>(): R;
     setTypes<R = void, P0 = number>(_v: P0): R;
-    delegate<R = cocoa.NCPushRegistrationDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NCPushRegistrationDelegate>(_v: P0): R;
-    token<R = cocoa.NSData>(): R;
-    setToken<R = void, P0 = cocoa.NSData>(_v: P0): R;
+    delegate<R = NCPushRegistrationDelegate>(): R;
+    setDelegate<R = void, P0 = NCPushRegistrationDelegate>(_v: P0): R;
+    token<R = NSData>(): R;
+    setToken<R = void, P0 = NSData>(_v: P0): R;
   }
   namespace classes {
-    export interface _NCPushRegistration<T = any> extends cocoa.classes.NSObject {
+    export interface _NCPushRegistration<T = any> extends NSObject {
       alloc<R = _NCPushRegistration>(): R;
       new: <R = _NCPushRegistration>() => R;
     }

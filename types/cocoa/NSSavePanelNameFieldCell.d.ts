@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSavePanelNameFieldCell<T = any> extends cocoa.NSTextFieldCell {}
+  export interface NSSavePanelNameFieldCell<T = any> extends NSTextFieldCell {}
   namespace classes {
-    export interface NSSavePanelNameFieldCell<T = any> extends cocoa.classes.NSTextFieldCell {
+    export interface NSSavePanelNameFieldCell<T = any> extends NSTextFieldCell {
       alloc<R = NSSavePanelNameFieldCell>(): R;
       new: <R = NSSavePanelNameFieldCell>() => R;
     }

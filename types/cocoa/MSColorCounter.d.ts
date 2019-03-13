@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSColorCounter<T = any> extends cocoa.NSObject {
+  export interface MSColorCounter<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     compareArtboardCounts<R = number, P0 = unknown>(_compareArtboardCounts: P0): R;
     compareTextCounts<R = number, P0 = unknown>(_compareTextCounts: P0): R;
@@ -25,15 +25,15 @@ declare namespace cocoa {
     setBorderCount<R = void, P0 = number>(_v: P0): R;
     fillCount<R = number>(): R;
     setFillCount<R = void, P0 = number>(_v: P0): R;
-    color<R = cocoa.MSColor>(): R;
-    setColor<R = void, P0 = cocoa.MSColor>(_v: P0): R;
-    immutableColor<R = cocoa.MSImmutableColor>(): R;
-    setImmutableColor<R = void, P0 = cocoa.MSImmutableColor>(_v: P0): R;
-    title<R = cocoa.NSString>(): R;
+    color<R = MSColor>(): R;
+    setColor<R = void, P0 = MSColor>(_v: P0): R;
+    immutableColor<R = MSImmutableColor>(): R;
+    setImmutableColor<R = void, P0 = MSImmutableColor>(_v: P0): R;
+    title<R = NSString>(): R;
     totalCount<R = number>(): R;
   }
   namespace classes {
-    export interface MSColorCounter<T = any> extends cocoa.classes.NSObject {
+    export interface MSColorCounter<T = any> extends NSObject {
       alloc<R = MSColorCounter>(): R;
       new: <R = MSColorCounter>() => R;
       initialize<R = void>(): R;

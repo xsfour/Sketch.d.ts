@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTreeNode<T = any> extends cocoa.NSObject {
+  export interface NSTreeNode<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     objectAtIndexPath<R = unknown, P0 = unknown>(_objectAtIndexPath: P0): R;
     _descendantNodeWithRepresentedObjectLineage<R = unknown, P0 = unknown>(__descendantNodeWithRepresentedObjectLineage: P0): R;
@@ -14,7 +14,7 @@ declare namespace cocoa {
     objectInSubNodesAtIndex<R = unknown, P0 = number>(_objectInSubNodesAtIndex: P0): R;
     subnodeAtIndex<R = unknown, P0 = number>(_subnodeAtIndex: P0): R;
     subNodesAtIndexes<R = unknown, P0 = unknown>(_subNodesAtIndexes: P0): R;
-    getSubNodes_range<R = void, P0 = unknown, P1 = cocoa._NSRange>(_getSubNodes: P0, _range: P1): R;
+    getSubNodes_range<R = void, P0 = unknown, P1 = _NSRange>(_getSubNodes: P0, _range: P1): R;
     willAccessChildNodes<R = void>(): R;
     descendantNodeAtIndexPath<R = unknown, P0 = unknown>(_descendantNodeAtIndexPath: P0): R;
     _privateChildNodes<R = unknown>(): R;
@@ -38,15 +38,15 @@ declare namespace cocoa {
     description<R = unknown>(): R;
     dealloc<R = void>(): R;
     initWithRepresentedObject<R = unknown, P0 = unknown>(_initWithRepresentedObject: P0): R;
-    indexPath<R = cocoa.NSIndexPath>(): R;
+    indexPath<R = NSIndexPath>(): R;
     leaf<R = boolean>(): R;
-    mutableChildNodes<R = cocoa.NSMutableArray>(): R;
-    childNodes<R = cocoa.NSArray>(): R;
-    parentNode<R = cocoa.NSTreeNode>(): R;
+    mutableChildNodes<R = NSMutableArray>(): R;
+    childNodes<R = NSArray>(): R;
+    parentNode<R = NSTreeNode>(): R;
     representedObject<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSTreeNode<T = any> extends cocoa.classes.NSObject {
+    export interface NSTreeNode<T = any> extends NSObject {
       alloc<R = NSTreeNode>(): R;
       new: <R = NSTreeNode>() => R;
       treeNodeWithRepresentedObject<R = unknown, P0 = unknown>(_treeNodeWithRepresentedObject: P0): R;

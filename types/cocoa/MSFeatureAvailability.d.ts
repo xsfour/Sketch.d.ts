@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFeatureAvailability<T = any> extends cocoa.NSObject {}
+  export interface MSFeatureAvailability<T = any> extends NSObject {}
   namespace classes {
-    export interface MSFeatureAvailability<T = any> extends cocoa.classes.NSObject {
+    export interface MSFeatureAvailability<T = any> extends NSObject {
       alloc<R = MSFeatureAvailability>(): R;
       new: <R = MSFeatureAvailability>() => R;
       setFeature14414Enabled<R = void, P0 = boolean>(_setFeature14414Enabled: P0): R;

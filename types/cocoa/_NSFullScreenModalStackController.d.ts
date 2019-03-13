@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSFullScreenModalStackController<T = any> extends cocoa.NSObject, cocoa._NSFullScreenModalDimmingWindowDelegateProtocol {
+  export interface _NSFullScreenModalStackController<T = any> extends NSObject, _NSFullScreenModalDimmingWindowDelegateProtocol {
     windowDidEndDraggingNotification<R = void, P0 = unknown>(_windowDidEndDraggingNotification: P0): R;
     windowWillStartDraggingNotification<R = void, P0 = unknown>(_windowWillStartDraggingNotification: P0): R;
     _actuallyBeginDraggingFrontWindow<R = void>(): R;
@@ -16,10 +16,10 @@ declare namespace cocoa {
     backgroundWindowIDs<R = unknown>(): R;
     endTilePresentation<R = void>(): R;
     nonAnimatedBeginModalPresentationForTileJoin<R = void>(): R;
-    endModalPresentationWithCompletionHandler<R = void, P0 = cocoa.CDUnknownBlockType>(_endModalPresentationWithCompletionHandler: P0): R;
-    beginModalPresentationWithCompletionHandler_forCloseSpace_waitUntilDone<R = void, P0 = cocoa.CDUnknownBlockType, P1 = boolean, P2 = boolean>(_beginModalPresentationWithCompletionHandler: P0, _forCloseSpace: P1, _waitUntilDone: P2): R;
-    beginModalPresentationWithCompletionHandler_forCloseSpace<R = void, P0 = cocoa.CDUnknownBlockType, P1 = boolean>(_beginModalPresentationWithCompletionHandler: P0, _forCloseSpace: P1): R;
-    _adjustedSnapshotWindowFrame_basedOnImage<R = cocoa.CGRect, P0 = cocoa.CGRect, P1 = cocoa.CGImage>(__adjustedSnapshotWindowFrame: P0, _basedOnImage: P1): R;
+    endModalPresentationWithCompletionHandler<R = void, P0 = CDUnknownBlockType>(_endModalPresentationWithCompletionHandler: P0): R;
+    beginModalPresentationWithCompletionHandler_forCloseSpace_waitUntilDone<R = void, P0 = CDUnknownBlockType, P1 = boolean, P2 = boolean>(_beginModalPresentationWithCompletionHandler: P0, _forCloseSpace: P1, _waitUntilDone: P2): R;
+    beginModalPresentationWithCompletionHandler_forCloseSpace<R = void, P0 = CDUnknownBlockType, P1 = boolean>(_beginModalPresentationWithCompletionHandler: P0, _forCloseSpace: P1): R;
+    _adjustedSnapshotWindowFrame_basedOnImage<R = CGRect, P0 = CGRect, P1 = CGImage>(__adjustedSnapshotWindowFrame: P0, _basedOnImage: P1): R;
     reshapeFrontWindow<R = void>(): R;
     reshapeContents<R = void>(): R;
     displayChanged<R = void>(): R;
@@ -40,17 +40,17 @@ declare namespace cocoa {
     setDisableBeginPresentation<R = void, P0 = boolean>(_v: P0): R;
     isDragActive<R = boolean>(): R;
     isPresentedModally<R = boolean>(): R;
-    collapsedTabWindow<R = cocoa._NSFullScreenModalCollapsedTabWindow>(): R;
-    windowStackController<R = cocoa.NSWindowStackController>(): R;
-    space<R = cocoa._NSFullScreenSpace>(): R;
-    setSpace<R = void, P0 = cocoa._NSFullScreenSpace>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    collapsedTabWindow<R = _NSFullScreenModalCollapsedTabWindow>(): R;
+    windowStackController<R = NSWindowStackController>(): R;
+    space<R = _NSFullScreenSpace>(): R;
+    setSpace<R = void, P0 = _NSFullScreenSpace>(_v: P0): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface _NSFullScreenModalStackController<T = any> extends cocoa.classes.NSObject, cocoa.classes._NSFullScreenModalDimmingWindowDelegateProtocol {
+    export interface _NSFullScreenModalStackController<T = any> extends NSObject, _NSFullScreenModalDimmingWindowDelegateProtocol {
       alloc<R = _NSFullScreenModalStackController>(): R;
       new: <R = _NSFullScreenModalStackController>() => R;
     }

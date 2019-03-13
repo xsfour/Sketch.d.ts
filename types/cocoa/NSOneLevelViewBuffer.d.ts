@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSOneLevelViewBuffer<T = any> extends cocoa.NSViewBuffer {
+  export interface NSOneLevelViewBuffer<T = any> extends NSViewBuffer {
     dealloc<R = void>(): R;
   }
   namespace classes {
-    export interface NSOneLevelViewBuffer<T = any> extends cocoa.classes.NSViewBuffer {
+    export interface NSOneLevelViewBuffer<T = any> extends NSViewBuffer {
       alloc<R = NSOneLevelViewBuffer>(): R;
       new: <R = NSOneLevelViewBuffer>() => R;
     }

@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSButton<T = any> extends cocoa.NSControl, cocoa._NSAlertSensitiveViewProtocol, cocoa.NSUserInterfaceValidationsProtocol, cocoa.NSAccessibilityButtonProtocol, cocoa.NSUserInterfaceCompressionProtocol {
+  export interface NSButton<T = any> extends NSControl, _NSAlertSensitiveViewProtocol, NSUserInterfaceValidationsProtocol, NSAccessibilityButtonProtocol, NSUserInterfaceCompressionProtocol {
     _preferredAppearance<R = unknown>(): R;
     _supportedOptionsFromPrioritizedOptions<R = unknown, P0 = unknown>(__supportedOptionsFromPrioritizedOptions: P0): R;
-    touchBarHitTestInsets<R = cocoa.NSEdgeInsets>(): R;
+    touchBarHitTestInsets<R = NSEdgeInsets>(): R;
     setMinimumPressDuration<R = void, P0 = number>(_setMinimumPressDuration: P0): R;
     minimumPressDuration<R = number>(): R;
     setGuarded<R = void, P0 = boolean>(_setGuarded: P0): R;
@@ -43,15 +43,15 @@ declare namespace cocoa {
     setAttributedTitle<R = void, P0 = unknown>(_setAttributedTitle: P0): R;
     attributedTitle<R = unknown>(): R;
     setNextState<R = void>(): R;
-    activeCompressionOptions<R = cocoa.NSUserInterfaceCompressionOptions>(): R;
-    bezelColor<R = cocoa.NSColor>(): R;
-    setBezelColor<R = void, P0 = cocoa.NSColor>(_v: P0): R;
-    contentTintColor<R = cocoa.NSColor>(): R;
-    setContentTintColor<R = void, P0 = cocoa.NSColor>(_v: P0): R;
+    activeCompressionOptions<R = NSUserInterfaceCompressionOptions>(): R;
+    bezelColor<R = NSColor>(): R;
+    setBezelColor<R = void, P0 = NSColor>(_v: P0): R;
+    contentTintColor<R = NSColor>(): R;
+    setContentTintColor<R = void, P0 = NSColor>(_v: P0): R;
     keyEquivalentModifierMask<R = number>(): R;
     setKeyEquivalentModifierMask<R = void, P0 = number>(_v: P0): R;
-    keyEquivalent<R = cocoa.NSString>(): R;
-    setKeyEquivalent<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    keyEquivalent<R = NSString>(): R;
+    setKeyEquivalent<R = void, P0 = NSString>(_v: P0): R;
     transparent<R = boolean>(): R;
     setTransparent<R = void, P0 = boolean>(_v: P0): R;
     bordered<R = boolean>(): R;
@@ -64,14 +64,14 @@ declare namespace cocoa {
     setImageHugsTitle<R = void, P0 = boolean>(_v: P0): R;
     imagePosition<R = number>(): R;
     setImagePosition<R = void, P0 = number>(_v: P0): R;
-    alternateImage<R = cocoa.NSImage>(): R;
-    setAlternateImage<R = void, P0 = cocoa.NSImage>(_v: P0): R;
-    image<R = cocoa.NSImage>(): R;
-    setImage<R = void, P0 = cocoa.NSImage>(_v: P0): R;
-    alternateTitle<R = cocoa.NSString>(): R;
-    setAlternateTitle<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    title<R = cocoa.NSString>(): R;
-    setTitle<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    alternateImage<R = NSImage>(): R;
+    setAlternateImage<R = void, P0 = NSImage>(_v: P0): R;
+    image<R = NSImage>(): R;
+    setImage<R = void, P0 = NSImage>(_v: P0): R;
+    alternateTitle<R = NSString>(): R;
+    setAlternateTitle<R = void, P0 = NSString>(_v: P0): R;
+    title<R = NSString>(): R;
+    setTitle<R = void, P0 = NSString>(_v: P0): R;
     springLoaded<R = boolean>(): R;
     setSpringLoaded<R = void, P0 = boolean>(_v: P0): R;
     maxAcceleratorLevel<R = number>(): R;
@@ -83,15 +83,15 @@ declare namespace cocoa {
     setAllowsMixedState<R = void, P0 = boolean>(_v: P0): R;
     showsBorderOnlyWhileMouseInside<R = boolean>(): R;
     setShowsBorderOnlyWhileMouseInside<R = void, P0 = boolean>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
     // + NSButton(NextKeyViewSupport):
     canBeKeyView<R = boolean>(): R;
   }
   namespace classes {
-    export interface NSButton<T = any> extends cocoa.classes.NSControl, cocoa.classes._NSAlertSensitiveViewProtocol, cocoa.classes.NSUserInterfaceValidationsProtocol, cocoa.classes.NSAccessibilityButtonProtocol, cocoa.classes.NSUserInterfaceCompressionProtocol {
+    export interface NSButton<T = any> extends NSControl, _NSAlertSensitiveViewProtocol, NSUserInterfaceValidationsProtocol, NSAccessibilityButtonProtocol, NSUserInterfaceCompressionProtocol {
       alloc<R = NSButton>(): R;
       new: <R = NSButton>() => R;
       radioButtonWithTitle_target_action<R = unknown, P0 = unknown, P1 = unknown, P2 = string>(_radioButtonWithTitle: P0, _target: P1, _action: P2): R;

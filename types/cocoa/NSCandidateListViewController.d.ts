@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCandidateListViewController<T = any> extends cocoa.NSViewController {
+  export interface NSCandidateListViewController<T = any> extends NSViewController {
     stopTrackingInSegmentType_index<R = void, P0 = number, P1 = number>(_stopTrackingInSegmentType: P0, _index: P1): R;
     continueTrackingInSegmentType_index<R = void, P0 = number, P1 = number>(_continueTrackingInSegmentType: P0, _index: P1): R;
     startTrackingInSegmentType_index<R = void, P0 = number, P1 = number>(_startTrackingInSegmentType: P0, _index: P1): R;
@@ -18,13 +18,13 @@ declare namespace cocoa {
     updateTitles<R = void>(): R;
     updateStateAndTitles_allowDelay<R = void, P0 = boolean, P1 = boolean>(_updateStateAndTitles: P0, _allowDelay: P1): R;
     updateTimerFired<R = void, P0 = unknown>(_updateTimerFired: P0): R;
-    showCandidates_forString_inRect_view_completionHandler<R = void, P0 = unknown, P1 = unknown, P2 = cocoa.CGRect, P3 = unknown, P4 = cocoa.CDUnknownBlockType>(_showCandidates: P0, _forString: P1, _inRect: P2, _view: P3, _completionHandler: P4): R;
-    setCandidates_forSelectedRange_inString_rect_view_completionHandler<R = void, P0 = unknown, P1 = cocoa._NSRange, P2 = unknown, P3 = cocoa.CGRect, P4 = unknown, P5 = cocoa.CDUnknownBlockType>(_setCandidates: P0, _forSelectedRange: P1, _inString: P2, _rect: P3, _view: P4, _completionHandler: P5): R;
-    setCandidates_forSelectedRange_inString<R = void, P0 = unknown, P1 = cocoa._NSRange, P2 = unknown>(_setCandidates: P0, _forSelectedRange: P1, _inString: P2): R;
-    setCandidates_forSelectedRange_inString_replacedString_rect_view_completionHandler<R = void, P0 = unknown, P1 = cocoa._NSRange, P2 = unknown, P3 = unknown, P4 = cocoa.CGRect, P5 = unknown, P6 = cocoa.CDUnknownBlockType>(_setCandidates: P0, _forSelectedRange: P1, _inString: P2, _replacedString: P3, _rect: P4, _view: P5, _completionHandler: P6): R;
+    showCandidates_forString_inRect_view_completionHandler<R = void, P0 = unknown, P1 = unknown, P2 = CGRect, P3 = unknown, P4 = CDUnknownBlockType>(_showCandidates: P0, _forString: P1, _inRect: P2, _view: P3, _completionHandler: P4): R;
+    setCandidates_forSelectedRange_inString_rect_view_completionHandler<R = void, P0 = unknown, P1 = _NSRange, P2 = unknown, P3 = CGRect, P4 = unknown, P5 = CDUnknownBlockType>(_setCandidates: P0, _forSelectedRange: P1, _inString: P2, _rect: P3, _view: P4, _completionHandler: P5): R;
+    setCandidates_forSelectedRange_inString<R = void, P0 = unknown, P1 = _NSRange, P2 = unknown>(_setCandidates: P0, _forSelectedRange: P1, _inString: P2): R;
+    setCandidates_forSelectedRange_inString_replacedString_rect_view_completionHandler<R = void, P0 = unknown, P1 = _NSRange, P2 = unknown, P3 = unknown, P4 = CGRect, P5 = unknown, P6 = CDUnknownBlockType>(_setCandidates: P0, _forSelectedRange: P1, _inString: P2, _replacedString: P3, _rect: P4, _view: P5, _completionHandler: P6): R;
     _setNonTextCheckingResultCandidates<R = void, P0 = unknown>(__setNonTextCheckingResultCandidates: P0): R;
-    _setTextCheckingResultCandidates_forSelectedRange_inString_replacedString<R = void, P0 = unknown, P1 = cocoa._NSRange, P2 = unknown, P3 = unknown>(__setTextCheckingResultCandidates: P0, _forSelectedRange: P1, _inString: P2, _replacedString: P3): R;
-    _replacementStringForRange_inString_firstCandidateString<R = unknown, P0 = cocoa._NSRange, P1 = unknown, P2 = unknown>(__replacementStringForRange: P0, _inString: P1, _firstCandidateString: P2): R;
+    _setTextCheckingResultCandidates_forSelectedRange_inString_replacedString<R = void, P0 = unknown, P1 = _NSRange, P2 = unknown, P3 = unknown>(__setTextCheckingResultCandidates: P0, _forSelectedRange: P1, _inString: P2, _replacedString: P3): R;
+    _replacementStringForRange_inString_firstCandidateString<R = unknown, P0 = _NSRange, P1 = unknown, P2 = unknown>(__replacementStringForRange: P0, _inString: P1, _firstCandidateString: P2): R;
     _stringForCandidate_atIndex<R = unknown, P0 = unknown, P1 = number>(__stringForCandidate: P0, _atIndex: P1): R;
     _compositeCandidateForCandidate_atIndex_addQuotes_isCorrection_isEmoji<R = unknown, P0 = unknown, P1 = number, P2 = boolean, P3 = boolean, P4 = boolean>(__compositeCandidateForCandidate: P0, _atIndex: P1, _addQuotes: P2, _isCorrection: P3, _isEmoji: P4): R;
     rightCandidate<R = unknown>(): R;
@@ -39,22 +39,22 @@ declare namespace cocoa {
     setCollapsed<R = void, P0 = boolean>(_v: P0): R;
     processingUserExpand<R = boolean>(): R;
     shouldAnimateNextLayoutPass<R = boolean>(): R;
-    candidates<R = cocoa.NSArray>(): R;
-    accessoryViewController<R = cocoa.NSViewController>(): R;
-    setAccessoryViewController<R = void, P0 = cocoa.NSViewController>(_v: P0): R;
-    completionHandler<R = cocoa.CDUnknownBlockType>(): R;
-    setCompletionHandler<R = void, P0 = cocoa.CDUnknownBlockType>(_v: P0): R;
-    formattingBlock<R = cocoa.CDUnknownBlockType>(): R;
-    setFormattingBlock<R = void, P0 = cocoa.CDUnknownBlockType>(_v: P0): R;
+    candidates<R = NSArray>(): R;
+    accessoryViewController<R = NSViewController>(): R;
+    setAccessoryViewController<R = void, P0 = NSViewController>(_v: P0): R;
+    completionHandler<R = CDUnknownBlockType>(): R;
+    setCompletionHandler<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
+    formattingBlock<R = CDUnknownBlockType>(): R;
+    setFormattingBlock<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
     delegate<R = unknown>(): R;
     setDelegate<R = void, P0 = unknown>(_v: P0): R;
-    client<R = cocoa.NSTextInputClient>(): R;
-    setClient<R = void, P0 = cocoa.NSTextInputClient>(_v: P0): R;
-    touchBarItem<R = cocoa.NSTouchBarItem>(): R;
-    setTouchBarItem<R = void, P0 = cocoa.NSTouchBarItem>(_v: P0): R;
+    client<R = NSTextInputClient>(): R;
+    setClient<R = void, P0 = NSTextInputClient>(_v: P0): R;
+    touchBarItem<R = NSTouchBarItem>(): R;
+    setTouchBarItem<R = void, P0 = NSTouchBarItem>(_v: P0): R;
   }
   namespace classes {
-    export interface NSCandidateListViewController<T = any> extends cocoa.classes.NSViewController {
+    export interface NSCandidateListViewController<T = any> extends NSViewController {
       alloc<R = NSCandidateListViewController>(): R;
       new: <R = NSCandidateListViewController>() => R;
       standardWidth<R = number>(): R;

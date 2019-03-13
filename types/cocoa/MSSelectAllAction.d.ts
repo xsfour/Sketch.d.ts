@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSelectAllAction<T = any> extends cocoa.MSDocumentAction {
+  export interface MSSelectAllAction<T = any> extends MSDocumentAction {
     label<R = unknown>(): R;
     selectAll<R = void, P0 = unknown>(_selectAll: P0): R;
     validate<R = boolean>(): R;
   }
   namespace classes {
-    export interface MSSelectAllAction<T = any> extends cocoa.classes.MSDocumentAction {
+    export interface MSSelectAllAction<T = any> extends MSDocumentAction {
       alloc<R = MSSelectAllAction>(): R;
       new: <R = MSSelectAllAction>() => R;
     }

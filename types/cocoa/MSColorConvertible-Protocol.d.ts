@@ -1,12 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSColorConvertibleProtocol<T = any> extends cocoa.NSObjectProtocol {
-    convertColorsUsing<R = void, P0 = cocoa.MSColorConverter>(_convertColorsUsing: P0): R;
+  export interface MSColorConvertibleProtocol<T = any> extends NSObjectProtocol {
+    convertColorsUsing<R = void, P0 = MSColorConverter>(_convertColorsUsing: P0): R;
   }
   namespace classes {
-    export interface MSColorConvertibleProtocol<T = any> extends cocoa.classes.NSObjectProtocol {  }
+    export interface MSColorConvertibleProtocol<T = any> extends NSObjectProtocol {  }
   }
 }
-
-declare const MSColorConvertibleProtocol: cocoa.classes.MSColorConvertibleProtocol;

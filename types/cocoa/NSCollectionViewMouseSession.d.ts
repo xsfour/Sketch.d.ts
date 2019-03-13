@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCollectionViewMouseSession<T = any> extends cocoa.NSResponder {
+  export interface NSCollectionViewMouseSession<T = any> extends NSResponder {
     trackWithEvent<R = void, P0 = unknown>(_trackWithEvent: P0): R;
     handleEvent<R = boolean, P0 = unknown>(_handleEvent: P0): R;
     autoscrollTimerFired<R = void, P0 = unknown>(_autoscrollTimerFired: P0): R;
@@ -27,10 +27,10 @@ declare namespace cocoa {
     detachFromCollectionView<R = void>(): R;
     clearAutoscrollTimer<R = void>(): R;
     initWithCollectionView<R = unknown, P0 = unknown>(_initWithCollectionView: P0): R;
-    indexPathsBeingDragged<R = cocoa.NSSet>(): R;
+    indexPathsBeingDragged<R = NSSet>(): R;
   }
   namespace classes {
-    export interface NSCollectionViewMouseSession<T = any> extends cocoa.classes.NSResponder {
+    export interface NSCollectionViewMouseSession<T = any> extends NSResponder {
       alloc<R = NSCollectionViewMouseSession>(): R;
       new: <R = NSCollectionViewMouseSession>() => R;
       mouseSessionWithCollectionView<R = unknown, P0 = unknown>(_mouseSessionWithCollectionView: P0): R;

@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDeviceRGBColor<T = any> extends cocoa.NSCalibratedRGBColor {}
+  export interface NSDeviceRGBColor<T = any> extends NSCalibratedRGBColor {}
   namespace classes {
-    export interface NSDeviceRGBColor<T = any> extends cocoa.classes.NSCalibratedRGBColor {
+    export interface NSDeviceRGBColor<T = any> extends NSCalibratedRGBColor {
       alloc<R = NSDeviceRGBColor>(): R;
       new: <R = NSDeviceRGBColor>() => R;
     }

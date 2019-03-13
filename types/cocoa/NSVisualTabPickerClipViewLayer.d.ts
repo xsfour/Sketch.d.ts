@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSVisualTabPickerClipViewLayer<T = any> extends cocoa._NSSafariTransformLayer {
-    anchorPoint<R = cocoa.CGPoint>(): R;
-    setAnchorPoint<R = void, P0 = cocoa.CGPoint>(_setAnchorPoint: P0): R;
+  export interface NSVisualTabPickerClipViewLayer<T = any> extends _NSSafariTransformLayer {
+    anchorPoint<R = CGPoint>(): R;
+    setAnchorPoint<R = void, P0 = CGPoint>(_setAnchorPoint: P0): R;
   }
   namespace classes {
-    export interface NSVisualTabPickerClipViewLayer<T = any> extends cocoa.classes._NSSafariTransformLayer {  }
+    export interface NSVisualTabPickerClipViewLayer<T = any> extends _NSSafariTransformLayer {  }
   }
 }
 

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScrollerImp<T = any> extends cocoa.NSObject {
+  export interface NSScrollerImp<T = any> extends NSObject {
     mouseExitedScroller<R = void>(): R;
     mouseEnteredScroller<R = void>(): R;
     _installDelayedRolloverAnimation<R = void>(): R;
@@ -9,24 +9,24 @@ declare namespace cocoa {
     _animateToRolloverState<R = void>(): R;
     _animateCollapse<R = void>(): R;
     _animateExpansion<R = void>(): R;
-    _rolloverTrackingRect<R = cocoa.CGRect>(): R;
+    _rolloverTrackingRect<R = CGRect>(): R;
     removeTrackingAreas<R = void>(): R;
     updateTrackingAreas<R = void>(): R;
     drawKnobWithAlpha<R = void, P0 = number>(_drawKnobWithAlpha: P0): R;
     drawKnob<R = void>(): R;
-    drawKnobSlotInRect_highlight_alpha<R = void, P0 = cocoa.CGRect, P1 = boolean, P2 = number>(_drawKnobSlotInRect: P0, _highlight: P1, _alpha: P2): R;
-    drawKnobSlotInRect_highlight<R = void, P0 = cocoa.CGRect, P1 = boolean>(_drawKnobSlotInRect: P0, _highlight: P1): R;
-    _compositeScrollerPart_inRect_withAlpha_drawHandler<R = void, P0 = number, P1 = cocoa.CGRect, P2 = number, P3 = cocoa.CDUnknownBlockType>(__compositeScrollerPart: P0, _inRect: P1, _withAlpha: P2, _drawHandler: P3): R;
+    drawKnobSlotInRect_highlight_alpha<R = void, P0 = CGRect, P1 = boolean, P2 = number>(_drawKnobSlotInRect: P0, _highlight: P1, _alpha: P2): R;
+    drawKnobSlotInRect_highlight<R = void, P0 = CGRect, P1 = boolean>(_drawKnobSlotInRect: P0, _highlight: P1): R;
+    _compositeScrollerPart_inRect_withAlpha_drawHandler<R = void, P0 = number, P1 = CGRect, P2 = number, P3 = CDUnknownBlockType>(__compositeScrollerPart: P0, _inRect: P1, _withAlpha: P2, _drawHandler: P3): R;
     displayLayer<R = void, P0 = unknown>(_displayLayer: P0): R;
     _vibrancyBlendModeForAppearance<R = number, P0 = unknown>(__vibrancyBlendModeForAppearance: P0): R;
-    copyCoreUITrackOptions<R = cocoa.__CFDictionary>(): R;
-    copyCoreUIKnobOptions<R = cocoa.__CFDictionary>(): R;
-    copyCoreUIOptions<R = cocoa.__CFDictionary>(): R;
-    hitTestForLocalPoint<R = boolean, P0 = cocoa.CGPoint>(_hitTestForLocalPoint: P0): R;
-    expandedRectForPart<R = cocoa.CGRect, P0 = number>(_expandedRectForPart: P0): R;
-    _unsafeRectForPart<R = cocoa.CGRect, P0 = number>(__unsafeRectForPart: P0): R;
-    _threadsafeRectForPart_preBlock_postBlock<R = cocoa.CGRect, P0 = number, P1 = cocoa.CDUnknownBlockType, P2 = cocoa.CDUnknownBlockType>(__threadsafeRectForPart: P0, _preBlock: P1, _postBlock: P2): R;
-    rectForPart<R = cocoa.CGRect, P0 = number>(_rectForPart: P0): R;
+    copyCoreUITrackOptions<R = __CFDictionary>(): R;
+    copyCoreUIKnobOptions<R = __CFDictionary>(): R;
+    copyCoreUIOptions<R = __CFDictionary>(): R;
+    hitTestForLocalPoint<R = boolean, P0 = CGPoint>(_hitTestForLocalPoint: P0): R;
+    expandedRectForPart<R = CGRect, P0 = number>(_expandedRectForPart: P0): R;
+    _unsafeRectForPart<R = CGRect, P0 = number>(__unsafeRectForPart: P0): R;
+    _threadsafeRectForPart_preBlock_postBlock<R = CGRect, P0 = number, P1 = CDUnknownBlockType, P2 = CDUnknownBlockType>(__threadsafeRectForPart: P0, _preBlock: P1, _postBlock: P2): R;
+    rectForPart<R = CGRect, P0 = number>(_rectForPart: P0): R;
     usableParts<R = number>(): R;
     checkSpaceForParts<R = void>(): R;
     knobInset<R = number>(): R;
@@ -34,14 +34,14 @@ declare namespace cocoa {
     _expandedTrackWidth<R = number>(): R;
     _expandedTrackBoxWidth<R = number>(): R;
     setOverlayScrollerState_forceImmediately<R = void, P0 = number, P1 = boolean>(_setOverlayScrollerState: P0, _forceImmediately: P1): R;
-    _doWork<R = void, P0 = cocoa.CDUnknownBlockType>(__doWork: P0): R;
+    _doWork<R = void, P0 = CDUnknownBlockType>(__doWork: P0): R;
     overlayScrollerState<R = number>(): R;
     _hasCustomScroller<R = boolean>(): R;
     _wantsRedisplayOnExpansionProgress<R = boolean>(): R;
     _useCoreUILayerContents<R = boolean>(): R;
     _setUseCoreUILayerContents<R = void, P0 = boolean>(__setUseCoreUILayerContents: P0): R;
     _usesSeparateLayersPerPart<R = boolean>(): R;
-    setNeedsDisplayInRect<R = void, P0 = cocoa.CGRect>(_setNeedsDisplayInRect: P0): R;
+    setNeedsDisplayInRect<R = void, P0 = CGRect>(_setNeedsDisplayInRect: P0): R;
     setNeedsDisplay<R = void, P0 = boolean>(_setNeedsDisplay: P0): R;
     _makeScrollerPartLayer<R = unknown>(): R;
     _setupCommonLayerProperties<R = void, P0 = unknown>(__setupCommonLayerProperties: P0): R;
@@ -57,8 +57,8 @@ declare namespace cocoa {
     setAction<R = void, P0 = string>(_v: P0): R;
     target<R = unknown>(): R;
     setTarget<R = void, P0 = unknown>(_v: P0): R;
-    delegate<R = cocoa.NSScrollerImpDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSScrollerImpDelegate>(_v: P0): R;
+    delegate<R = NSScrollerImpDelegate>(): R;
+    setDelegate<R = void, P0 = NSScrollerImpDelegate>(_v: P0): R;
     rangeIndicatorAlpha<R = number>(): R;
     setRangeIndicatorAlpha<R = void, P0 = number>(_v: P0): R;
     uiStateTransitionProgress<R = number>(): R;
@@ -90,8 +90,8 @@ declare namespace cocoa {
     setHorizontal<R = void, P0 = boolean>(_v: P0): R;
     enabled<R = boolean>(): R;
     setEnabled<R = void, P0 = boolean>(_v: P0): R;
-    scroller<R = cocoa.NSScroller>(): R;
-    setScroller<R = void, P0 = cocoa.NSScroller>(_v: P0): R;
+    scroller<R = NSScroller>(): R;
+    setScroller<R = void, P0 = NSScroller>(_v: P0): R;
     knobAlpha<R = number>(): R;
     setKnobAlpha<R = void, P0 = number>(_v: P0): R;
     trackAlpha<R = number>(): R;
@@ -106,17 +106,17 @@ declare namespace cocoa {
     setPresentationValue<R = void, P0 = number>(_v: P0): R;
     doubleValue<R = number>(): R;
     setDoubleValue<R = void, P0 = number>(_v: P0): R;
-    boundsSize<R = cocoa.CGSize>(): R;
-    setBoundsSize<R = void, P0 = cocoa.CGSize>(_v: P0): R;
-    knobLayer<R = cocoa.CALayer>(): R;
-    setKnobLayer<R = void, P0 = cocoa.CALayer>(_v: P0): R;
-    trackLayer<R = cocoa.CALayer>(): R;
-    setTrackLayer<R = void, P0 = cocoa.CALayer>(_v: P0): R;
-    layer<R = cocoa.CALayer>(): R;
-    setLayer<R = void, P0 = cocoa.CALayer>(_v: P0): R;
+    boundsSize<R = CGSize>(): R;
+    setBoundsSize<R = void, P0 = CGSize>(_v: P0): R;
+    knobLayer<R = CALayer>(): R;
+    setKnobLayer<R = void, P0 = CALayer>(_v: P0): R;
+    trackLayer<R = CALayer>(): R;
+    setTrackLayer<R = void, P0 = CALayer>(_v: P0): R;
+    layer<R = CALayer>(): R;
+    setLayer<R = void, P0 = CALayer>(_v: P0): R;
   }
   namespace classes {
-    export interface NSScrollerImp<T = any> extends cocoa.classes.NSObject {
+    export interface NSScrollerImp<T = any> extends NSObject {
       alloc<R = NSScrollerImp>(): R;
       new: <R = NSScrollerImp>() => R;
       scrollerWidth<R = number>(): R;

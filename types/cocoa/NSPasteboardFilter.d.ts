@@ -1,18 +1,18 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPasteboardFilter<T = any> extends cocoa.NSObject {
+  export interface NSPasteboardFilter<T = any> extends NSObject {
     description<R = unknown>(): R;
     _computeDataFromData<R = unknown, P0 = unknown>(__computeDataFromData: P0): R;
     hash<R = number>(): R;
     dealloc<R = void>(): R;
     initWithFilterSpec_intype_outtype<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_initWithFilterSpec: P0, _intype: P1, _outtype: P2): R;
-    spec<R = cocoa.NSDictionary>(): R;
-    outtype<R = cocoa.NSString>(): R;
-    intype<R = cocoa.NSString>(): R;
+    spec<R = NSDictionary>(): R;
+    outtype<R = NSString>(): R;
+    intype<R = NSString>(): R;
   }
   namespace classes {
-    export interface NSPasteboardFilter<T = any> extends cocoa.classes.NSObject {
+    export interface NSPasteboardFilter<T = any> extends NSObject {
       alloc<R = NSPasteboardFilter>(): R;
       new: <R = NSPasteboardFilter>() => R;
       filterWithFilterSpec_intype_outtype<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_filterWithFilterSpec: P0, _intype: P1, _outtype: P2): R;

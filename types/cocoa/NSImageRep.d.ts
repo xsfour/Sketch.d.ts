@@ -1,15 +1,15 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSImageRep<T = any> extends cocoa.NSObject, cocoa.NSSecureCodingProtocol, cocoa.NSCopyingProtocol, cocoa.NSCodingProtocol {
+  export interface NSImageRep<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol, NSCodingProtocol {
     _bitmapImageRepsForTIFFRepresentation<R = unknown>(): R;
     _imageRepsForEncodingWithCoder<R = unknown, P0 = unknown>(__imageRepsForEncodingWithCoder: P0): R;
     _bitmapImageReps<R = unknown>(): R;
-    _setCGImageRef<R = void, P0 = cocoa.CGImage>(__setCGImageRef: P0): R;
-    _CGImageRef<R = cocoa.CGImage>(): R;
-    CGImageForProposedRect_context_hints_flipped<R = cocoa.CGImage, P0 = cocoa.CGRect, P1 = unknown, P2 = unknown, P3 = boolean>(_CGImageForProposedRect: P0, _context: P1, _hints: P2, _flipped: P3): R;
-    CGImageForProposedRect_context_hints<R = cocoa.CGImage, P0 = cocoa.CGRect, P1 = unknown, P2 = unknown>(_CGImageForProposedRect: P0, _context: P1, _hints: P2): R;
-    _newCGImageForProposedRect_context_hints_flipped<R = cocoa.CGImage, P0 = cocoa.CGRect, P1 = unknown, P2 = unknown, P3 = boolean>(__newCGImageForProposedRect: P0, _context: P1, _hints: P2, _flipped: P3): R;
+    _setCGImageRef<R = void, P0 = CGImage>(__setCGImageRef: P0): R;
+    _CGImageRef<R = CGImage>(): R;
+    CGImageForProposedRect_context_hints_flipped<R = CGImage, P0 = CGRect, P1 = unknown, P2 = unknown, P3 = boolean>(_CGImageForProposedRect: P0, _context: P1, _hints: P2, _flipped: P3): R;
+    CGImageForProposedRect_context_hints<R = CGImage, P0 = CGRect, P1 = unknown, P2 = unknown>(_CGImageForProposedRect: P0, _context: P1, _hints: P2): R;
+    _newCGImageForProposedRect_context_hints_flipped<R = CGImage, P0 = CGRect, P1 = unknown, P2 = unknown, P3 = boolean>(__newCGImageForProposedRect: P0, _context: P1, _hints: P2, _flipped: P3): R;
     description<R = unknown>(): R;
     _loadDataIfNotYetLoaded<R = boolean>(): R;
     replacementObjectForCoder<R = unknown, P0 = unknown>(_replacementObjectForCoder: P0): R;
@@ -24,19 +24,19 @@ declare namespace cocoa {
     _imageRep_colorSpaceName<R = unknown>(): R;
     setColorSpace<R = void, P0 = unknown>(_setColorSpace: P0): R;
     colorSpace<R = unknown>(): R;
-    _createPatternForRect_context<R = void, P0 = cocoa.CGRect, P1 = unknown>(__createPatternForRect: P0, _context: P1): R;
+    _createPatternForRect_context<R = void, P0 = CGRect, P1 = unknown>(__createPatternForRect: P0, _context: P1): R;
     _isValid<R = boolean>(): R;
     _uncachedSize<R = number>(): R;
-    drawInRect_fromRect_operation_fraction_respectFlipped_hints<R = boolean, P0 = cocoa.CGRect, P1 = cocoa.CGRect, P2 = number, P3 = number, P4 = boolean, P5 = unknown>(_drawInRect: P0, _fromRect: P1, _operation: P2, _fraction: P3, _respectFlipped: P4, _hints: P5): R;
-    _drawFromRect_toRect_operation_alpha_compositing_flipped_ignoreContext<R = boolean, P0 = cocoa.CGRect, P1 = cocoa.CGRect, P2 = number, P3 = number, P4 = boolean, P5 = boolean, P6 = boolean>(__drawFromRect: P0, _toRect: P1, _operation: P2, _alpha: P3, _compositing: P4, _flipped: P5, _ignoreContext: P6): R;
+    drawInRect_fromRect_operation_fraction_respectFlipped_hints<R = boolean, P0 = CGRect, P1 = CGRect, P2 = number, P3 = number, P4 = boolean, P5 = unknown>(_drawInRect: P0, _fromRect: P1, _operation: P2, _fraction: P3, _respectFlipped: P4, _hints: P5): R;
+    _drawFromRect_toRect_operation_alpha_compositing_flipped_ignoreContext<R = boolean, P0 = CGRect, P1 = CGRect, P2 = number, P3 = number, P4 = boolean, P5 = boolean, P6 = boolean>(__drawFromRect: P0, _toRect: P1, _operation: P2, _alpha: P3, _compositing: P4, _flipped: P5, _ignoreContext: P6): R;
     _processedHintsForHints_includeOnlyIfAvailable<R = unknown, P0 = unknown, P1 = boolean>(__processedHintsForHints: P0, _includeOnlyIfAvailable: P1): R;
     _defaultImageHintsIncludeOnlyIfAvailable<R = unknown, P0 = boolean>(__defaultImageHintsIncludeOnlyIfAvailable: P0): R;
     draw<R = boolean>(): R;
-    drawInRect<R = boolean, P0 = cocoa.CGRect>(_drawInRect: P0): R;
-    drawAtPoint<R = boolean, P0 = cocoa.CGPoint>(_drawAtPoint: P0): R;
+    drawInRect<R = boolean, P0 = CGRect>(_drawInRect: P0): R;
+    drawAtPoint<R = boolean, P0 = CGPoint>(_drawAtPoint: P0): R;
     dealloc<R = void>(): R;
-    _appearanceName<R = cocoa.NSString>(): R;
-    set_appearanceName<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    _appearanceName<R = NSString>(): R;
+    set_appearanceName<R = void, P0 = NSString>(_v: P0): R;
     pixelsHigh<R = number>(): R;
     setPixelsHigh<R = void, P0 = number>(_v: P0): R;
     pixelsWide<R = number>(): R;
@@ -49,10 +49,10 @@ declare namespace cocoa {
     setAlpha<R = void, P0 = boolean>(_v: P0): R;
     layoutDirection<R = number>(): R;
     setLayoutDirection<R = void, P0 = number>(_v: P0): R;
-    colorSpaceName<R = cocoa.NSString>(): R;
-    setColorSpaceName<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    size<R = cocoa.CGSize>(): R;
-    setSize<R = void, P0 = cocoa.CGSize>(_v: P0): R;
+    colorSpaceName<R = NSString>(): R;
+    setColorSpaceName<R = void, P0 = NSString>(_v: P0): R;
+    size<R = CGSize>(): R;
+    setSize<R = void, P0 = CGSize>(_v: P0): R;
     // + NSImageRep(Alpha,MSSmallerArchiving):
     repSupportsAlpha<R = boolean>(): R;
     dataForArchiving<R = unknown>(): R;
@@ -60,7 +60,7 @@ declare namespace cocoa {
     hasPDFRepresentation<R = boolean>(): R;
   }
   namespace classes {
-    export interface NSImageRep<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSSecureCodingProtocol, cocoa.classes.NSCopyingProtocol, cocoa.classes.NSCodingProtocol {
+    export interface NSImageRep<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol, NSCodingProtocol {
       alloc<R = NSImageRep>(): R;
       new: <R = NSImageRep>() => R;
       _deprecated_hasReversedFlippednessInFlippedImages<R = boolean>(): R;

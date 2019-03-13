@@ -2,13 +2,11 @@
 
 declare namespace cocoa {
   export interface MSRectProtocol<T = any> {
-    origin<R = cocoa.CGPoint>(): R;
-    size<R = cocoa.CGSize>(): R;
-    rect<R = cocoa.CGRect>(): R;
+    origin<R = CGPoint>(): R;
+    size<R = CGSize>(): R;
+    rect<R = CGRect>(): R;
   }
   namespace classes {
     export interface MSRectProtocol<T = any> {  }
   }
 }
-
-declare const MSRectProtocol: cocoa.classes.MSRectProtocol;

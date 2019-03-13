@@ -1,12 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorChangingProtocol<T = any> extends cocoa.NSObjectProtocol {
-    changeColor<R = void, P0 = cocoa.NSColorPanel>(_changeColor: P0): R;
+  export interface NSColorChangingProtocol<T = any> extends NSObjectProtocol {
+    changeColor<R = void, P0 = NSColorPanel>(_changeColor: P0): R;
   }
   namespace classes {
-    export interface NSColorChangingProtocol<T = any> extends cocoa.classes.NSObjectProtocol {  }
+    export interface NSColorChangingProtocol<T = any> extends NSObjectProtocol {  }
   }
 }
-
-declare const NSColorChangingProtocol: cocoa.classes.NSColorChangingProtocol;

@@ -1,15 +1,15 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSRangeSpecifier<T = any> extends cocoa.NSScriptObjectSpecifier {
+  export interface NSRangeSpecifier<T = any> extends NSScriptObjectSpecifier {
     initWithContainerClassDescription_containerSpecifier_key_startSpecifier_endSpecifier<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown>(_initWithContainerClassDescription: P0, _containerSpecifier: P1, _key: P2, _startSpecifier: P3, _endSpecifier: P4): R;
-    endSpecifier<R = cocoa.NSScriptObjectSpecifier>(): R;
-    setEndSpecifier<R = void, P0 = cocoa.NSScriptObjectSpecifier>(_v: P0): R;
-    startSpecifier<R = cocoa.NSScriptObjectSpecifier>(): R;
-    setStartSpecifier<R = void, P0 = cocoa.NSScriptObjectSpecifier>(_v: P0): R;
+    endSpecifier<R = NSScriptObjectSpecifier>(): R;
+    setEndSpecifier<R = void, P0 = NSScriptObjectSpecifier>(_v: P0): R;
+    startSpecifier<R = NSScriptObjectSpecifier>(): R;
+    setStartSpecifier<R = void, P0 = NSScriptObjectSpecifier>(_v: P0): R;
   }
   namespace classes {
-    export interface NSRangeSpecifier<T = any> extends cocoa.classes.NSScriptObjectSpecifier {
+    export interface NSRangeSpecifier<T = any> extends NSScriptObjectSpecifier {
       alloc<R = NSRangeSpecifier>(): R;
       new: <R = NSRangeSpecifier>() => R;
     }

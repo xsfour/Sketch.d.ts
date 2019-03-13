@@ -26,7 +26,7 @@ declare namespace cocoa {
     isEqual<R = boolean, P0 = unknown>(_isEqual: P0): R;
     _copyDescription<R = unknown>(): R;
     _allowsDirectEncoding<R = boolean>(): R;
-    zone<R = cocoa._NSZone>(): R;
+    zone<R = _NSZone>(): R;
     finalize<R = void>(): R;
     dealloc<R = void>(): R;
     retainWeakReference<R = boolean>(): R;
@@ -44,17 +44,17 @@ declare namespace cocoa {
     self<R = unknown>(): R;
     class<R = unknown>(): R;
     _conformsToProtocolNamed<R = boolean, P0 = string>(__conformsToProtocolNamed: P0): R;
-    methodDescriptionForSelector<R = cocoa.objc_method_description, P0 = string>(_methodDescriptionForSelector: P0): R;
+    methodDescriptionForSelector<R = objc_method_description, P0 = string>(_methodDescriptionForSelector: P0): R;
     hash<R = number>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
     export interface NSProxy<T = any> {
       description<R = unknown>(): R;
-      methodForSelector<R = cocoa.CDUnknownFunctionPointerType, P0 = string>(_methodForSelector: P0): R;
-      instanceMethodForSelector<R = cocoa.CDUnknownFunctionPointerType, P0 = string>(_instanceMethodForSelector: P0): R;
+      methodForSelector<R = CDUnknownFunctionPointerType, P0 = string>(_methodForSelector: P0): R;
+      instanceMethodForSelector<R = CDUnknownFunctionPointerType, P0 = string>(_instanceMethodForSelector: P0): R;
       instancesRespondToSelector<R = boolean, P0 = string>(_instancesRespondToSelector: P0): R;
       isSubclassOfClass<R = boolean, P0 = unknown>(_isSubclassOfClass: P0): R;
       hash<R = number>(): R;
@@ -62,13 +62,13 @@ declare namespace cocoa {
       init<R = unknown>(): R;
       instanceMethodSignatureForSelector<R = unknown, P0 = string>(_instanceMethodSignatureForSelector: P0): R;
       isAncestorOfObject<R = boolean, P0 = unknown>(_isAncestorOfObject: P0): R;
-      mutableCopyWithZone<R = unknown, P0 = cocoa._NSZone>(_mutableCopyWithZone: P0): R;
+      mutableCopyWithZone<R = unknown, P0 = _NSZone>(_mutableCopyWithZone: P0): R;
       mutableCopy<R = unknown>(): R;
-      copyWithZone<R = unknown, P0 = cocoa._NSZone>(_copyWithZone: P0): R;
+      copyWithZone<R = unknown, P0 = _NSZone>(_copyWithZone: P0): R;
       copy<R = unknown>(): R;
       superclass<R = unknown>(): R;
       alloc<R = unknown>(): R;
-      allocWithZone<R = unknown, P0 = cocoa._NSZone>(_allocWithZone: P0): R;
+      allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
       initialize<R = void>(): R;
     }
   }

@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBarView<T = any> extends cocoa.MSGradientView {}
+  export interface MSBarView<T = any> extends MSGradientView {}
   namespace classes {
-    export interface MSBarView<T = any> extends cocoa.classes.MSGradientView {
+    export interface MSBarView<T = any> extends MSGradientView {
       alloc<R = MSBarView>(): R;
       new: <R = MSBarView>() => R;
     }

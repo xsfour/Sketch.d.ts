@@ -1,16 +1,16 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface AFNetworkReachabilityManager<T = any> extends cocoa.NSObject {
+  export interface AFNetworkReachabilityManager<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
-    setReachabilityStatusChangeBlock<R = void, P0 = cocoa.CDUnknownBlockType>(_setReachabilityStatusChangeBlock: P0): R;
+    setReachabilityStatusChangeBlock<R = void, P0 = CDUnknownBlockType>(_setReachabilityStatusChangeBlock: P0): R;
     localizedNetworkReachabilityStatusString<R = unknown>(): R;
     stopMonitoring<R = void>(): R;
     startMonitoring<R = void>(): R;
     dealloc<R = void>(): R;
-    initWithReachability<R = unknown, P0 = cocoa.__SCNetworkReachability>(_initWithReachability: P0): R;
-    networkReachabilityStatusBlock<R = cocoa.CDUnknownBlockType>(): R;
-    setNetworkReachabilityStatusBlock<R = void, P0 = cocoa.CDUnknownBlockType>(_v: P0): R;
+    initWithReachability<R = unknown, P0 = __SCNetworkReachability>(_initWithReachability: P0): R;
+    networkReachabilityStatusBlock<R = CDUnknownBlockType>(): R;
+    setNetworkReachabilityStatusBlock<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
     networkReachability<R = unknown>(): R;
     setNetworkReachability<R = void, P0 = unknown>(_v: P0): R;
     networkReachabilityStatus<R = number>(): R;
@@ -20,7 +20,7 @@ declare namespace cocoa {
     reachable<R = boolean>(): R;
   }
   namespace classes {
-    export interface AFNetworkReachabilityManager<T = any> extends cocoa.classes.NSObject {
+    export interface AFNetworkReachabilityManager<T = any> extends NSObject {
       alloc<R = AFNetworkReachabilityManager>(): R;
       new: <R = AFNetworkReachabilityManager>() => R;
       keyPathsForValuesAffectingValueForKey<R = unknown, P0 = unknown>(_keyPathsForValuesAffectingValueForKey: P0): R;

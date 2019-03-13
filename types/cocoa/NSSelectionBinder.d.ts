@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSelectionBinder<T = any> extends cocoa.NSValueBinder {
-    contentValueWithEditedMode_selectedObject<R = unknown, P0 = cocoa.__NSKeyValueCodingControllerModeType, P1 = unknown>(_contentValueWithEditedMode: P0, _selectedObject: P1): R;
-    contentCountWithEditedMode<R = number, P0 = cocoa.__NSKeyValueCodingControllerModeType>(_contentCountWithEditedMode: P0): R;
-    contentObjectWithEditedMode_contentIndex<R = unknown, P0 = cocoa.__NSKeyValueCodingControllerModeType, P1 = number>(_contentObjectWithEditedMode: P0, _contentIndex: P1): R;
-    contentValueWithEditedMode_contentIndex<R = unknown, P0 = cocoa.__NSKeyValueCodingControllerModeType, P1 = number>(_contentValueWithEditedMode: P0, _contentIndex: P1): R;
-    _valueForBindingWithoutResolve_mode<R = unknown, P0 = unknown, P1 = cocoa.__NSKeyValueCodingControllerModeType>(__valueForBindingWithoutResolve: P0, _mode: P1): R;
+  export interface NSSelectionBinder<T = any> extends NSValueBinder {
+    contentValueWithEditedMode_selectedObject<R = unknown, P0 = __NSKeyValueCodingControllerModeType, P1 = unknown>(_contentValueWithEditedMode: P0, _selectedObject: P1): R;
+    contentCountWithEditedMode<R = number, P0 = __NSKeyValueCodingControllerModeType>(_contentCountWithEditedMode: P0): R;
+    contentObjectWithEditedMode_contentIndex<R = unknown, P0 = __NSKeyValueCodingControllerModeType, P1 = number>(_contentObjectWithEditedMode: P0, _contentIndex: P1): R;
+    contentValueWithEditedMode_contentIndex<R = unknown, P0 = __NSKeyValueCodingControllerModeType, P1 = number>(_contentValueWithEditedMode: P0, _contentIndex: P1): R;
+    _valueForBindingWithoutResolve_mode<R = unknown, P0 = unknown, P1 = __NSKeyValueCodingControllerModeType>(__valueForBindingWithoutResolve: P0, _mode: P1): R;
     contentObjectKey<R = unknown>(): R;
     contentValueKey<R = unknown>(): R;
     preferredPlaceholderForMarker<R = unknown, P0 = unknown>(_preferredPlaceholderForMarker: P0): R;
@@ -19,7 +19,7 @@ declare namespace cocoa {
     setInsertsNullPlaceholder<R = void, P0 = boolean>(_setInsertsNullPlaceholder: P0): R;
   }
   namespace classes {
-    export interface NSSelectionBinder<T = any> extends cocoa.classes.NSValueBinder {
+    export interface NSSelectionBinder<T = any> extends NSValueBinder {
       alloc<R = NSSelectionBinder>(): R;
       new: <R = NSSelectionBinder>() => R;
     }

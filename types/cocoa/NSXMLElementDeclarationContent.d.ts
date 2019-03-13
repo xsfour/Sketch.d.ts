@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXMLElementDeclarationContent<T = any> extends cocoa.NSXMLNode {
-    libxml2Content<R = cocoa._xmlElementContent>(): R;
+  export interface NSXMLElementDeclarationContent<T = any> extends NSXMLNode {
+    libxml2Content<R = _xmlElementContent>(): R;
     XMLStringSequenceStarted_choiceStarted_appendingToString<R = void, P0 = boolean, P1 = boolean, P2 = unknown>(_XMLStringSequenceStarted: P0, _choiceStarted: P1, _appendingToString: P2): R;
     occurrence<R = number>(): R;
     contentKind<R = number>(): R;
@@ -15,11 +15,11 @@ declare namespace cocoa {
     initWithContentKind_occurrence<R = unknown, P0 = number, P1 = number>(_initWithContentKind: P0, _occurrence: P1): R;
   }
   namespace classes {
-    export interface NSXMLElementDeclarationContent<T = any> extends cocoa.classes.NSXMLNode {
+    export interface NSXMLElementDeclarationContent<T = any> extends NSXMLNode {
       alloc<R = NSXMLElementDeclarationContent>(): R;
       new: <R = NSXMLElementDeclarationContent>() => R;
       createElementContentFromString<R = unknown, P0 = unknown>(_createElementContentFromString: P0): R;
-      createElementContent<R = unknown, P0 = cocoa._xmlElementContent>(_createElementContent: P0): R;
+      createElementContent<R = unknown, P0 = _xmlElementContent>(_createElementContent: P0): R;
     }
   }
 }

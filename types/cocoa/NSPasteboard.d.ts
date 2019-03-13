@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPasteboard<T = any> extends cocoa.NSObject {
+  export interface NSPasteboard<T = any> extends NSObject {
     stringForType<R = unknown, P0 = unknown>(_stringForType: P0): R;
     setString_forType<R = boolean, P0 = unknown, P1 = unknown>(_setString: P0, _forType: P1): R;
     _propertyListForType_securityScoped<R = unknown, P0 = unknown, P1 = boolean>(__propertyListForType: P0, _securityScoped: P1): R;
@@ -37,9 +37,9 @@ declare namespace cocoa {
     _setOwner_forTypes_atIndex_selector_usesPboardTypes<R = number, P0 = unknown, P1 = unknown, P2 = number, P3 = string, P4 = boolean>(__setOwner: P0, _forTypes: P1, _atIndex: P2, _selector: P3, _usesPboardTypes: P4): R;
     _setData_forType_index_usesPboardTypes<R = boolean, P0 = unknown, P1 = unknown, P2 = number, P3 = boolean>(__setData: P0, _forType: P1, _index: P2, _usesPboardTypes: P3): R;
     _pasteboardItems<R = unknown>(): R;
-    _promiseTypeNameForIdentifier<R = unknown, P0 = cocoa.__CFString>(__promiseTypeNameForIdentifier: P0): R;
+    _promiseTypeNameForIdentifier<R = unknown, P0 = __CFString>(__promiseTypeNameForIdentifier: P0): R;
     _currentGeneration<R = number>(): R;
-    _cfPasteboard<R = cocoa.__CFPasteboard>(): R;
+    _cfPasteboard<R = __CFPasteboard>(): R;
     releaseGlobally<R = void>(): R;
     _removeFromGlobalTable<R = void>(): R;
     _clearOutstandingPromises<R = void>(): R;
@@ -54,13 +54,13 @@ declare namespace cocoa {
     attemptOverwrite<R = boolean, P0 = unknown>(_attemptOverwrite: P0): R;
     writeFileWrapper<R = boolean, P0 = unknown>(_writeFileWrapper: P0): R;
     writeFileContents<R = boolean, P0 = unknown>(_writeFileContents: P0): R;
-    types<R = cocoa.NSArray>(): R;
-    pasteboardItems<R = cocoa.NSArray>(): R;
+    types<R = NSArray>(): R;
+    pasteboardItems<R = NSArray>(): R;
     changeCount<R = number>(): R;
-    name<R = cocoa.NSString>(): R;
+    name<R = NSString>(): R;
   }
   namespace classes {
-    export interface NSPasteboard<T = any> extends cocoa.classes.NSObject {
+    export interface NSPasteboard<T = any> extends NSObject {
       alloc<R = NSPasteboard>(): R;
       new: <R = NSPasteboard>() => R;
       _propertyListForType_fromData<R = unknown, P0 = unknown, P1 = unknown>(__propertyListForType: P0, _fromData: P1): R;
@@ -76,17 +76,17 @@ declare namespace cocoa {
       generalPasteboard<R = unknown>(): R;
       _pasteboardWithName<R = unknown, P0 = unknown>(__pasteboardWithName: P0): R;
       alloc<R = unknown>(): R;
-      allocWithZone<R = unknown, P0 = cocoa._NSZone>(_allocWithZone: P0): R;
+      allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
       _typeIdentifierIskUTTypeFileURL<R = boolean, P0 = unknown>(__typeIdentifierIskUTTypeFileURL: P0): R;
       _resetUsesUTIsOnly<R = void>(): R;
       _usesUTIsOnly<R = boolean>(): R;
-      _setConversionFromData_typeIdentifier_inPasteboard_generation_item<R = void, P0 = unknown, P1 = unknown, P2 = cocoa.__CFPasteboard, P3 = number, P4 = void>(__setConversionFromData: P0, _typeIdentifier: P1, _inPasteboard: P2, _generation: P3, _item: P4): R;
+      _setConversionFromData_typeIdentifier_inPasteboard_generation_item<R = void, P0 = unknown, P1 = unknown, P2 = __CFPasteboard, P3 = number, P4 = void>(__setConversionFromData: P0, _typeIdentifier: P1, _inPasteboard: P2, _generation: P3, _item: P4): R;
       _typeIdentifiersIncludingConversionsFromTypeIdentifiers_usesPboardTypes<R = unknown, P0 = unknown, P1 = boolean>(__typeIdentifiersIncludingConversionsFromTypeIdentifiers: P0, _usesPboardTypes: P1): R;
       _typeIdentifiersIncludingConversionsFromTypeIdentifiers<R = unknown, P0 = unknown>(__typeIdentifiersIncludingConversionsFromTypeIdentifiers: P0): R;
       _typesIncludingConversionsFromTypes<R = unknown, P0 = unknown>(__typesIncludingConversionsFromTypes: P0): R;
-      _typeIdentifierForName_securityScoped<R = cocoa.__CFString, P0 = unknown, P1 = boolean>(__typeIdentifierForName: P0, _securityScoped: P1): R;
-      _typeIdentifierForName<R = cocoa.__CFString, P0 = unknown>(__typeIdentifierForName: P0): R;
-      _oldStyleTypeNameForIdentifier<R = unknown, P0 = cocoa.__CFString>(__oldStyleTypeNameForIdentifier: P0): R;
+      _typeIdentifierForName_securityScoped<R = __CFString, P0 = unknown, P1 = boolean>(__typeIdentifierForName: P0, _securityScoped: P1): R;
+      _typeIdentifierForName<R = __CFString, P0 = unknown>(__typeIdentifierForName: P0): R;
+      _oldStyleTypeNameForIdentifier<R = unknown, P0 = __CFString>(__oldStyleTypeNameForIdentifier: P0): R;
       pasteboardByFilteringTypesInPasteboard<R = unknown, P0 = unknown>(_pasteboardByFilteringTypesInPasteboard: P0): R;
       pasteboardByFilteringData_ofType<R = unknown, P0 = unknown, P1 = unknown>(_pasteboardByFilteringData: P0, _ofType: P1): R;
       pasteboardByFilteringFile<R = unknown, P0 = unknown>(_pasteboardByFilteringFile: P0): R;

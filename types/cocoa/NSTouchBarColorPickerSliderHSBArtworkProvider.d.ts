@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarColorPickerSliderHSBArtworkProvider<T = any> extends cocoa.NSTouchBarColorPickerSliderArtworkProvider {
+  export interface NSTouchBarColorPickerSliderHSBArtworkProvider<T = any> extends NSTouchBarColorPickerSliderArtworkProvider {
     representedHSBComponent<R = number>(): R;
   }
   namespace classes {
-    export interface NSTouchBarColorPickerSliderHSBArtworkProvider<T = any> extends cocoa.classes.NSTouchBarColorPickerSliderArtworkProvider {
+    export interface NSTouchBarColorPickerSliderHSBArtworkProvider<T = any> extends NSTouchBarColorPickerSliderArtworkProvider {
       alloc<R = NSTouchBarColorPickerSliderHSBArtworkProvider>(): R;
       new: <R = NSTouchBarColorPickerSliderHSBArtworkProvider>() => R;
       brightnessArtworkProviderWithDisplayHue_displaySaturation<R = unknown, P0 = number, P1 = number>(_brightnessArtworkProviderWithDisplayHue: P0, _displaySaturation: P1): R;

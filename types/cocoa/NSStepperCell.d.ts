@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSStepperCell<T = any> extends cocoa.NSActionCell {
+  export interface NSStepperCell<T = any> extends NSActionCell {
     _updateMouseTracking<R = void>(): R;
     _coreUIDrawOptionsWithView<R = unknown, P0 = unknown>(__coreUIDrawOptionsWithView: P0): R;
-    _stepperImageSizeForControlSize<R = cocoa.CGSize, P0 = number>(__stepperImageSizeForControlSize: P0): R;
+    _stepperImageSizeForControlSize<R = CGSize, P0 = number>(__stepperImageSizeForControlSize: P0): R;
     setDoubleValue<R = void, P0 = number>(_setDoubleValue: P0): R;
     doubleValue<R = number>(): R;
     setFloatValue<R = void, P0 = number>(_setFloatValue: P0): R;
@@ -33,7 +33,7 @@ declare namespace cocoa {
     accessibilityPositionOfChild<R = unknown, P0 = unknown>(_accessibilityPositionOfChild: P0): R;
     accessibilityIsChildFocusable<R = boolean, P0 = unknown>(_accessibilityIsChildFocusable: P0): R;
     accessibilityHelpStringForChild<R = unknown, P0 = unknown>(_accessibilityHelpStringForChild: P0): R;
-    _accessibilityArrowScreenRect<R = cocoa.CGRect, P0 = boolean>(__accessibilityArrowScreenRect: P0): R;
+    _accessibilityArrowScreenRect<R = CGRect, P0 = boolean>(__accessibilityArrowScreenRect: P0): R;
     accessibilityIsChildrenAttributeSettable<R = boolean>(): R;
     accessibilityChildrenAttribute<R = unknown>(): R;
     accessibilityChildrenInNavigationOrderAttribute<R = unknown>(): R;
@@ -53,7 +53,7 @@ declare namespace cocoa {
     setMinValue<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface NSStepperCell<T = any> extends cocoa.classes.NSActionCell {
+    export interface NSStepperCell<T = any> extends NSActionCell {
       alloc<R = NSStepperCell>(): R;
       new: <R = NSStepperCell>() => R;
     }

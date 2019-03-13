@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSRoundedDashStrokeView<T = any> extends cocoa.NSView {
-    innerDashColor<R = cocoa.NSColor>(): R;
-    setInnerDashColor<R = void, P0 = cocoa.NSColor>(_v: P0): R;
-    dashColor<R = cocoa.NSColor>(): R;
-    setDashColor<R = void, P0 = cocoa.NSColor>(_v: P0): R;
+  export interface NSRoundedDashStrokeView<T = any> extends NSView {
+    innerDashColor<R = NSColor>(): R;
+    setInnerDashColor<R = void, P0 = NSColor>(_v: P0): R;
+    dashColor<R = NSColor>(): R;
+    setDashColor<R = void, P0 = NSColor>(_v: P0): R;
     strokeThickness<R = number>(): R;
     setStrokeThickness<R = void, P0 = number>(_v: P0): R;
     lineDash<R = number>(): R;
@@ -14,7 +14,7 @@ declare namespace cocoa {
     setCornerRadius<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface NSRoundedDashStrokeView<T = any> extends cocoa.classes.NSView {
+    export interface NSRoundedDashStrokeView<T = any> extends NSView {
       alloc<R = NSRoundedDashStrokeView>(): R;
       new: <R = NSRoundedDashStrokeView>() => R;
     }

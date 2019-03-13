@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScriptSDEFParser<T = any> extends cocoa.NSObject, cocoa.NSXMLParserDelegateProtocol {
+  export interface NSScriptSDEFParser<T = any> extends NSObject, NSXMLParserDelegateProtocol {
     suiteDescriptions<R = unknown>(): R;
     _createValueTypeDescriptionFromElement<R = unknown, P0 = unknown>(__createValueTypeDescriptionFromElement: P0): R;
     _createTypeDescriptionFromElement<R = unknown, P0 = unknown>(__createTypeDescriptionFromElement: P0): R;
@@ -39,13 +39,13 @@ declare namespace cocoa {
     setBundle<R = void, P0 = unknown>(_setBundle: P0): R;
     dealloc<R = void>(): R;
     initWithDataNoCopy<R = unknown, P0 = unknown>(_initWithDataNoCopy: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSScriptSDEFParser<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSXMLParserDelegateProtocol {
+    export interface NSScriptSDEFParser<T = any> extends NSObject, NSXMLParserDelegateProtocol {
       alloc<R = NSScriptSDEFParser>(): R;
       new: <R = NSScriptSDEFParser>() => R;
     }

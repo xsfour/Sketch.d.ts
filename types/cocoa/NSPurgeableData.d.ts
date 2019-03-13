@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPurgeableData<T = any> extends cocoa.NSMutableData, cocoa.NSDiscardableContentProtocol {
+  export interface NSPurgeableData<T = any> extends NSMutableData, NSDiscardableContentProtocol {
     dealloc<R = void>(): R;
-    initWithBytes_length_copy_deallocator<R = unknown, P0 = void, P1 = number, P2 = boolean, P3 = cocoa.CDUnknownBlockType>(_initWithBytes: P0, _length: P1, _copy: P2, _deallocator: P3): R;
+    initWithBytes_length_copy_deallocator<R = unknown, P0 = void, P1 = number, P2 = boolean, P3 = CDUnknownBlockType>(_initWithBytes: P0, _length: P1, _copy: P2, _deallocator: P3): R;
     initWithCapacity<R = unknown, P0 = number>(_initWithCapacity: P0): R;
     init<R = unknown>(): R;
     _destroyMemory<R = void>(): R;
@@ -14,7 +14,7 @@ declare namespace cocoa {
     length<R = number>(): R;
   }
   namespace classes {
-    export interface NSPurgeableData<T = any> extends cocoa.classes.NSMutableData, cocoa.classes.NSDiscardableContentProtocol {  }
+    export interface NSPurgeableData<T = any> extends NSMutableData, NSDiscardableContentProtocol {  }
   }
 }
 

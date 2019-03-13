@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAnimationManager<T = any> extends cocoa.NSObject {
+  export interface NSAnimationManager<T = any> extends NSObject {
     animationForObject_keyPath<R = unknown, P0 = unknown, P1 = unknown>(_animationForObject: P0, _keyPath: P1): R;
     hasAnimationForObject_keyPath<R = boolean, P0 = unknown, P1 = unknown>(_hasAnimationForObject: P0, _keyPath: P1): R;
     targetValueForObject_keyPath<R = unknown, P0 = unknown, P1 = unknown>(_targetValueForObject: P0, _keyPath: P1): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     removeAnimationsForObject_keyPath<R = void, P0 = unknown, P1 = unknown>(_removeAnimationsForObject: P0, _keyPath: P1): R;
   }
   namespace classes {
-    export interface NSAnimationManager<T = any> extends cocoa.classes.NSObject {
+    export interface NSAnimationManager<T = any> extends NSObject {
       alloc<R = NSAnimationManager>(): R;
       new: <R = NSAnimationManager>() => R;
       observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;

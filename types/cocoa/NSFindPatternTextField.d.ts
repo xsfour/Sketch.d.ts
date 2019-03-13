@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFindPatternTextField<T = any> extends cocoa.NSTextFinderBarTextField, cocoa.NSFindPatternFieldProtocol {
+  export interface NSFindPatternTextField<T = any> extends NSTextFinderBarTextField, NSFindPatternFieldProtocol {
     _selectedFindPattern<R = void, P0 = unknown>(__selectedFindPattern: P0): R;
     _uniquePatterns<R = unknown>(): R;
     _rangesOfFindPattern<R = unknown, P0 = unknown>(__rangesOfFindPattern: P0): R;
@@ -18,15 +18,15 @@ declare namespace cocoa {
     _isFindField<R = boolean>(): R;
     replaceField<R = unknown>(): R;
     findField<R = unknown>(): R;
-    findPatternManager<R = cocoa.NSFindPatternManager>(): R;
-    setFindPatternManager<R = void, P0 = cocoa.NSFindPatternManager>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    findPatternManager<R = NSFindPatternManager>(): R;
+    setFindPatternManager<R = void, P0 = NSFindPatternManager>(_v: P0): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSFindPatternTextField<T = any> extends cocoa.classes.NSTextFinderBarTextField, cocoa.classes.NSFindPatternFieldProtocol {
+    export interface NSFindPatternTextField<T = any> extends NSTextFinderBarTextField, NSFindPatternFieldProtocol {
       alloc<R = NSFindPatternTextField>(): R;
       new: <R = NSFindPatternTextField>() => R;
     }

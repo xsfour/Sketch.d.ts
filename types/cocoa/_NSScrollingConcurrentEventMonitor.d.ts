@@ -1,19 +1,19 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSScrollingConcurrentEventMonitor<T = any> extends cocoa.NSObject {
+  export interface _NSScrollingConcurrentEventMonitor<T = any> extends NSObject {
     _monitorEvent<R = void, P0 = unknown>(__monitorEvent: P0): R;
-    consumePropertiesWithBlock<R = void, P0 = cocoa.CDUnknownBlockType>(_consumePropertiesWithBlock: P0): R;
-    threadSafeMultiPropertyAccess<R = void, P0 = cocoa.CDUnknownBlockType>(_threadSafeMultiPropertyAccess: P0): R;
+    consumePropertiesWithBlock<R = void, P0 = CDUnknownBlockType>(_consumePropertiesWithBlock: P0): R;
+    threadSafeMultiPropertyAccess<R = void, P0 = CDUnknownBlockType>(_threadSafeMultiPropertyAccess: P0): R;
     stopMonitoring<R = void>(): R;
     startMonitoring<R = void>(): R;
     dealloc<R = void>(): R;
     initWithEvent_predominantAxisMode<R = unknown, P0 = unknown, P1 = number>(_initWithEvent: P0, _predominantAxisMode: P1): R;
     deviceType<R = number>(): R;
-    scrollStateDelegate<R = cocoa._NSScrollStateEventListener>(): R;
-    setScrollStateDelegate<R = void, P0 = cocoa._NSScrollStateEventListener>(_v: P0): R;
-    eventProcessingHandler<R = cocoa.CDUnknownBlockType>(): R;
-    setEventProcessingHandler<R = void, P0 = cocoa.CDUnknownBlockType>(_v: P0): R;
+    scrollStateDelegate<R = _NSScrollStateEventListener>(): R;
+    setScrollStateDelegate<R = void, P0 = _NSScrollStateEventListener>(_v: P0): R;
+    eventProcessingHandler<R = CDUnknownBlockType>(): R;
+    setEventProcessingHandler<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
     predominantAxisMode<R = number>(): R;
     setPredominantAxisMode<R = void, P0 = number>(_v: P0): R;
     deltaIsAccelerated<R = boolean>(): R;
@@ -27,11 +27,11 @@ declare namespace cocoa {
     setShouldCoalesceDeltas<R = void, P0 = boolean>(_v: P0): R;
     shouldUseUnacceleratedDelta<R = boolean>(): R;
     setShouldUseUnacceleratedDelta<R = void, P0 = boolean>(_v: P0): R;
-    velocity<R = cocoa.CGPoint>(): R;
-    delta<R = cocoa.CGPoint>(): R;
+    velocity<R = CGPoint>(): R;
+    delta<R = CGPoint>(): R;
   }
   namespace classes {
-    export interface _NSScrollingConcurrentEventMonitor<T = any> extends cocoa.classes.NSObject {
+    export interface _NSScrollingConcurrentEventMonitor<T = any> extends NSObject {
       alloc<R = _NSScrollingConcurrentEventMonitor>(): R;
       new: <R = _NSScrollingConcurrentEventMonitor>() => R;
       initialize<R = void>(): R;

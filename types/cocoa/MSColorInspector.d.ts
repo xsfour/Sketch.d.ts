@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSColorInspector<T = any> extends cocoa.NSViewController, cocoa.MSColorInspectorSectionDelegateProtocol, cocoa.MSModeModePickerDelegateProtocol, cocoa.BCPopoverDelegateProtocol, cocoa.NSTouchBarDelegateProtocol, cocoa.BCHSBColorPickerDelegateProtocol, cocoa.MSStylePartPreviewButtonDelegateProtocol {
+  export interface MSColorInspector<T = any> extends NSViewController, MSColorInspectorSectionDelegateProtocol, MSModeModePickerDelegateProtocol, BCPopoverDelegateProtocol, NSTouchBarDelegateProtocol, BCHSBColorPickerDelegateProtocol, MSStylePartPreviewButtonDelegateProtocol {
     cxx_destruct<R = void>(): R;
     touchBarColorAction<R = void, P0 = unknown>(_touchBarColorAction: P0): R;
     customTouchBarItemIdentifiers<R = unknown>(): R;
@@ -38,59 +38,59 @@ declare namespace cocoa {
     currentModePicker<R = unknown>(): R;
     colorModeViewDidChange<R = void, P0 = unknown>(_colorModeViewDidChange: P0): R;
     initWithSender_document_handlerManager_globalAssets<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown>(_initWithSender: P0, _document: P1, _handlerManager: P2, _globalAssets: P3): R;
-    textFieldToContinueEditing<R = cocoa.NSTextField>(): R;
-    setTextFieldToContinueEditing<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    stackView<R = cocoa.MSStackView>(): R;
-    setStackView<R = void, P0 = cocoa.MSStackView>(_v: P0): R;
+    textFieldToContinueEditing<R = NSTextField>(): R;
+    setTextFieldToContinueEditing<R = void, P0 = NSTextField>(_v: P0): R;
+    stackView<R = MSStackView>(): R;
+    setStackView<R = void, P0 = MSStackView>(_v: P0): R;
     displayingDiverseStyles<R = boolean>(): R;
     setDisplayingDiverseStyles<R = void, P0 = boolean>(_v: P0): R;
-    globalAssets<R = cocoa.MSPersistentAssetCollection>(): R;
-    setGlobalAssets<R = void, P0 = cocoa.MSPersistentAssetCollection>(_v: P0): R;
-    document<R = cocoa.MSDocument>(): R;
-    setDocument<R = void, P0 = cocoa.MSDocument>(_v: P0): R;
-    eventHandlerManager<R = cocoa.MSEventHandlerManager>(): R;
-    setEventHandlerManager<R = void, P0 = cocoa.MSEventHandlerManager>(_v: P0): R;
-    noiseSection<R = cocoa.MSColorInspectorSectionNoise>(): R;
-    setNoiseSection<R = void, P0 = cocoa.MSColorInspectorSectionNoise>(_v: P0): R;
-    patternSection<R = cocoa.MSColorInspectorSectionPattern>(): R;
-    setPatternSection<R = void, P0 = cocoa.MSColorInspectorSectionPattern>(_v: P0): R;
-    gradientSection<R = cocoa.MSColorInspectorSectionGradient>(): R;
-    setGradientSection<R = void, P0 = cocoa.MSColorInspectorSectionGradient>(_v: P0): R;
-    colorSection<R = cocoa.MSColorInspectorSectionColor>(): R;
-    setColorSection<R = void, P0 = cocoa.MSColorInspectorSectionColor>(_v: P0): R;
-    borderBlendingOpacityView<R = cocoa.NSView>(): R;
-    setBorderBlendingOpacityView<R = void, P0 = cocoa.NSView>(_v: P0): R;
-    shadowBlendingView<R = cocoa.NSView>(): R;
-    setShadowBlendingView<R = void, P0 = cocoa.NSView>(_v: P0): R;
-    colorPickerView<R = cocoa.NSView>(): R;
-    setColorPickerView<R = void, P0 = cocoa.NSView>(_v: P0): R;
-    emptyTopView<R = cocoa.NSView>(): R;
-    setEmptyTopView<R = void, P0 = cocoa.NSView>(_v: P0): R;
-    colorPicker<R = cocoa.BCHSBColorPicker>(): R;
-    setColorPicker<R = void, P0 = cocoa.BCHSBColorPicker>(_v: P0): R;
-    fillColorTypePicker<R = cocoa.MSModePickerView>(): R;
-    setFillColorTypePicker<R = void, P0 = cocoa.MSModePickerView>(_v: P0): R;
-    borderColorTypePicker<R = cocoa.MSModePickerView>(): R;
-    setBorderColorTypePicker<R = void, P0 = cocoa.MSModePickerView>(_v: P0): R;
-    hsbFieldsView<R = cocoa.MSAlternatingView>(): R;
-    setHsbFieldsView<R = void, P0 = cocoa.MSAlternatingView>(_v: P0): R;
-    rgbFieldsView<R = cocoa.MSAlternatingView>(): R;
-    setRgbFieldsView<R = void, P0 = cocoa.MSAlternatingView>(_v: P0): R;
-    delegate<R = cocoa.MSColorInspectorDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.MSColorInspectorDelegate>(_v: P0): R;
-    styleParts<R = cocoa.NSArray>(): R;
-    setStyleParts<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    globalAssets<R = MSPersistentAssetCollection>(): R;
+    setGlobalAssets<R = void, P0 = MSPersistentAssetCollection>(_v: P0): R;
+    document<R = MSDocument>(): R;
+    setDocument<R = void, P0 = MSDocument>(_v: P0): R;
+    eventHandlerManager<R = MSEventHandlerManager>(): R;
+    setEventHandlerManager<R = void, P0 = MSEventHandlerManager>(_v: P0): R;
+    noiseSection<R = MSColorInspectorSectionNoise>(): R;
+    setNoiseSection<R = void, P0 = MSColorInspectorSectionNoise>(_v: P0): R;
+    patternSection<R = MSColorInspectorSectionPattern>(): R;
+    setPatternSection<R = void, P0 = MSColorInspectorSectionPattern>(_v: P0): R;
+    gradientSection<R = MSColorInspectorSectionGradient>(): R;
+    setGradientSection<R = void, P0 = MSColorInspectorSectionGradient>(_v: P0): R;
+    colorSection<R = MSColorInspectorSectionColor>(): R;
+    setColorSection<R = void, P0 = MSColorInspectorSectionColor>(_v: P0): R;
+    borderBlendingOpacityView<R = NSView>(): R;
+    setBorderBlendingOpacityView<R = void, P0 = NSView>(_v: P0): R;
+    shadowBlendingView<R = NSView>(): R;
+    setShadowBlendingView<R = void, P0 = NSView>(_v: P0): R;
+    colorPickerView<R = NSView>(): R;
+    setColorPickerView<R = void, P0 = NSView>(_v: P0): R;
+    emptyTopView<R = NSView>(): R;
+    setEmptyTopView<R = void, P0 = NSView>(_v: P0): R;
+    colorPicker<R = BCHSBColorPicker>(): R;
+    setColorPicker<R = void, P0 = BCHSBColorPicker>(_v: P0): R;
+    fillColorTypePicker<R = MSModePickerView>(): R;
+    setFillColorTypePicker<R = void, P0 = MSModePickerView>(_v: P0): R;
+    borderColorTypePicker<R = MSModePickerView>(): R;
+    setBorderColorTypePicker<R = void, P0 = MSModePickerView>(_v: P0): R;
+    hsbFieldsView<R = MSAlternatingView>(): R;
+    setHsbFieldsView<R = void, P0 = MSAlternatingView>(_v: P0): R;
+    rgbFieldsView<R = MSAlternatingView>(): R;
+    setRgbFieldsView<R = void, P0 = MSAlternatingView>(_v: P0): R;
+    delegate<R = MSColorInspectorDelegate>(): R;
+    setDelegate<R = void, P0 = MSColorInspectorDelegate>(_v: P0): R;
+    styleParts<R = NSArray>(): R;
+    setStyleParts<R = void, P0 = NSArray>(_v: P0): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSColorInspector<T = any> extends cocoa.classes.NSViewController, cocoa.classes.MSColorInspectorSectionDelegateProtocol, cocoa.classes.MSModeModePickerDelegateProtocol, cocoa.classes.BCPopoverDelegateProtocol, cocoa.classes.NSTouchBarDelegateProtocol, cocoa.classes.BCHSBColorPickerDelegateProtocol, cocoa.classes.MSStylePartPreviewButtonDelegateProtocol {
+    export interface MSColorInspector<T = any> extends NSViewController, MSColorInspectorSectionDelegateProtocol, MSModeModePickerDelegateProtocol, BCPopoverDelegateProtocol, NSTouchBarDelegateProtocol, BCHSBColorPickerDelegateProtocol, MSStylePartPreviewButtonDelegateProtocol {
       alloc<R = MSColorInspector>(): R;
       new: <R = MSColorInspector>() => R;
-      presentColorInspectorPopoverForViewController_document_globalAssets_relativeToView_colorInspectorSetupHandler<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = cocoa.CDUnknownBlockType>(_presentColorInspectorPopoverForViewController: P0, _document: P1, _globalAssets: P2, _relativeToView: P3, _colorInspectorSetupHandler: P4): R;
-      presentColorInspectorPopoverForViewController_inspectorController_relativeToView_colorInspectorSetupHandler<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = cocoa.CDUnknownBlockType>(_presentColorInspectorPopoverForViewController: P0, _inspectorController: P1, _relativeToView: P2, _colorInspectorSetupHandler: P3): R;
+      presentColorInspectorPopoverForViewController_document_globalAssets_relativeToView_colorInspectorSetupHandler<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = CDUnknownBlockType>(_presentColorInspectorPopoverForViewController: P0, _document: P1, _globalAssets: P2, _relativeToView: P3, _colorInspectorSetupHandler: P4): R;
+      presentColorInspectorPopoverForViewController_inspectorController_relativeToView_colorInspectorSetupHandler<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = CDUnknownBlockType>(_presentColorInspectorPopoverForViewController: P0, _inspectorController: P1, _relativeToView: P2, _colorInspectorSetupHandler: P3): R;
     }
   }
 }

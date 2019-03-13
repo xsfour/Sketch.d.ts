@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDebugAppearance<T = any> extends cocoa.NSAquaAppearance {}
+  export interface NSDebugAppearance<T = any> extends NSAquaAppearance {}
   namespace classes {
-    export interface NSDebugAppearance<T = any> extends cocoa.classes.NSAquaAppearance {
+    export interface NSDebugAppearance<T = any> extends NSAquaAppearance {
       alloc<R = NSDebugAppearance>(): R;
       new: <R = NSDebugAppearance>() => R;
     }

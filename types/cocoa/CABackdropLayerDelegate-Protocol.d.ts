@@ -1,12 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface CABackdropLayerDelegateProtocol<T = any> extends cocoa.CALayerDelegateProtocol {
-    backdropLayerStatisticsDidChange<R = void, P0 = cocoa.CABackdropLayer>(_backdropLayerStatisticsDidChange: P0): R;
+  export interface CABackdropLayerDelegateProtocol<T = any> extends CALayerDelegateProtocol {
+    backdropLayerStatisticsDidChange<R = void, P0 = CABackdropLayer>(_backdropLayerStatisticsDidChange: P0): R;
   }
   namespace classes {
-    export interface CABackdropLayerDelegateProtocol<T = any> extends cocoa.classes.CALayerDelegateProtocol {  }
+    export interface CABackdropLayerDelegateProtocol<T = any> extends CALayerDelegateProtocol {  }
   }
 }
-
-declare const CABackdropLayerDelegateProtocol: cocoa.classes.CABackdropLayerDelegateProtocol;

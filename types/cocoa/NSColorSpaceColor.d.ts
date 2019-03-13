@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorSpaceColor<T = any> extends cocoa.NSColor {
+  export interface NSColorSpaceColor<T = any> extends NSColor {
     whiteComponent<R = number>(): R;
     blackComponent<R = number>(): R;
     yellowComponent<R = number>(): R;
@@ -17,8 +17,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     description<R = unknown>(): R;
     type<R = number>(): R;
-    CGColor<R = cocoa.CGColor>(): R;
-    _createCGColorWithAlpha<R = cocoa.CGColor, P0 = number>(__createCGColorWithAlpha: P0): R;
+    CGColor<R = CGColor>(): R;
+    _createCGColorWithAlpha<R = CGColor, P0 = number>(__createCGColorWithAlpha: P0): R;
     alphaComponent<R = number>(): R;
     numberOfComponents<R = number>(): R;
     colorSpace<R = unknown>(): R;
@@ -27,10 +27,10 @@ declare namespace cocoa {
     _release<R = void>(): R;
   }
   namespace classes {
-    export interface NSColorSpaceColor<T = any> extends cocoa.classes.NSColor {
+    export interface NSColorSpaceColor<T = any> extends NSColor {
       alloc<R = NSColorSpaceColor>(): R;
       new: <R = NSColorSpaceColor>() => R;
-      newWithCoder_zone<R = unknown, P0 = unknown, P1 = cocoa._NSZone>(_newWithCoder: P0, _zone: P1): R;
+      newWithCoder_zone<R = unknown, P0 = unknown, P1 = _NSZone>(_newWithCoder: P0, _zone: P1): R;
       newWithColorSpace_components_count<R = unknown, P0 = unknown, P1 = number, P2 = number>(_newWithColorSpace: P0, _components: P1, _count: P2): R;
       load<R = void>(): R;
     }

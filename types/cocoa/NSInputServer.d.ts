@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSInputServer<T = any> extends cocoa.NSObject, cocoa.NSInputServiceProviderProtocol, cocoa.NSInputServerMouseTrackerProtocol {
+  export interface NSInputServer<T = any> extends NSObject, NSInputServiceProviderProtocol, NSInputServerMouseTrackerProtocol {
     description<R = unknown>(): R;
     dealloc<R = void>(): R;
     initWithDelegate_name<R = unknown, P0 = unknown, P1 = unknown>(_initWithDelegate: P0, _name: P1): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     _inputClientChangedStatus_inputClient<R = void, P0 = unknown, P1 = unknown>(__inputClientChangedStatus: P0, _inputClient: P1): R;
   }
   namespace classes {
-    export interface NSInputServer<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSInputServiceProviderProtocol, cocoa.classes.NSInputServerMouseTrackerProtocol {
+    export interface NSInputServer<T = any> extends NSObject, NSInputServiceProviderProtocol, NSInputServerMouseTrackerProtocol {
       alloc<R = NSInputServer>(): R;
       new: <R = NSInputServer>() => R;
     }

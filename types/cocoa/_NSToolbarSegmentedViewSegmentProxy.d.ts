@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSToolbarSegmentedViewSegmentProxy<T = any> extends cocoa.NSAccessibilityReparentingProxy {
+  export interface _NSToolbarSegmentedViewSegmentProxy<T = any> extends NSAccessibilityReparentingProxy {
     accessibilitySizeAttribute<R = unknown>(): R;
     accessibilityPositionAttribute<R = unknown>(): R;
     accessibilityIsDescriptionAttributeSettable<R = boolean>(): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     index<R = number>(): R;
   }
   namespace classes {
-    export interface _NSToolbarSegmentedViewSegmentProxy<T = any> extends cocoa.classes.NSAccessibilityReparentingProxy {
+    export interface _NSToolbarSegmentedViewSegmentProxy<T = any> extends NSAccessibilityReparentingProxy {
       alloc<R = _NSToolbarSegmentedViewSegmentProxy>(): R;
       new: <R = _NSToolbarSegmentedViewSegmentProxy>() => R;
       segmentProxyFor_parent<R = unknown, P0 = unknown, P1 = unknown>(_segmentProxyFor: P0, _parent: P1): R;

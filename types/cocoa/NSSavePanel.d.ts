@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSavePanel<T = any> extends cocoa.NSPanel, cocoa.FIFinderViewDelegateProtocol, cocoa.NSTouchBarDelegateProtocol {
+  export interface NSSavePanel<T = any> extends NSPanel, FIFinderViewDelegateProtocol, NSTouchBarDelegateProtocol {
     _setTagsIfNecessary<R = void>(): R;
     _registerTagsWithFinder<R = void>(): R;
     _commitPendingTags<R = void>(): R;
@@ -104,8 +104,8 @@ declare namespace cocoa {
     _reactToPanelDismissalWithReturnCode<R = void, P0 = number>(__reactToPanelDismissalWithReturnCode: P0): R;
     _hidePreviewPanelIfNecessary<R = void>(): R;
     seamlessOpenerTransientWindow_level<R = unknown, P0 = unknown, P1 = number>(_seamlessOpenerTransientWindow: P0, _level: P1): R;
-    seamlessOpener_transitionImageForPreviewItem_contentRect<R = unknown, P0 = unknown, P1 = unknown, P2 = cocoa.CGRect>(_seamlessOpener: P0, _transitionImageForPreviewItem: P1, _contentRect: P2): R;
-    seamlessOpener_sourceFrameOnScreenForPreviewItem<R = cocoa.CGRect, P0 = unknown, P1 = unknown>(_seamlessOpener: P0, _sourceFrameOnScreenForPreviewItem: P1): R;
+    seamlessOpener_transitionImageForPreviewItem_contentRect<R = unknown, P0 = unknown, P1 = unknown, P2 = CGRect>(_seamlessOpener: P0, _transitionImageForPreviewItem: P1, _contentRect: P2): R;
+    seamlessOpener_sourceFrameOnScreenForPreviewItem<R = CGRect, P0 = unknown, P1 = unknown>(_seamlessOpener: P0, _sourceFrameOnScreenForPreviewItem: P1): R;
     _isModal<R = boolean>(): R;
     _resolveUbiquitousConflictsForURLs<R = boolean, P0 = unknown>(__resolveUbiquitousConflictsForURLs: P0): R;
     _okForOpenMode<R = boolean>(): R;
@@ -127,12 +127,12 @@ declare namespace cocoa {
     _dismissModeless<R = void, P0 = number>(__dismissModeless: P0): R;
     _didEndSheet_returnCode_contextInfo<R = void, P0 = unknown, P1 = number, P2 = void>(__didEndSheet: P0, _returnCode: P1, _contextInfo: P2): R;
     _removeExtraRetainIfNeeded<R = void>(): R;
-    beginWithCompletionHandler<R = void, P0 = cocoa.CDUnknownBlockType>(_beginWithCompletionHandler: P0): R;
-    beginSheetModalForWindow_completionHandler<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(_beginSheetModalForWindow: P0, _completionHandler: P1): R;
+    beginWithCompletionHandler<R = void, P0 = CDUnknownBlockType>(_beginWithCompletionHandler: P0): R;
+    beginSheetModalForWindow_completionHandler<R = void, P0 = unknown, P1 = CDUnknownBlockType>(_beginSheetModalForWindow: P0, _completionHandler: P1): R;
     _doMakeKeyAndOrderFront<R = void>(): R;
     beginForDirectory_file_types_modelessDelegate_didEndSelector_contextInfo<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = string, P5 = void>(_beginForDirectory: P0, _file: P1, _types: P2, _modelessDelegate: P3, _didEndSelector: P4, _contextInfo: P5): R;
     beginSheetForDirectory_file_types_modalForWindow_modalDelegate_didEndSelector_contextInfo<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown, P5 = string, P6 = void>(_beginSheetForDirectory: P0, _file: P1, _types: P2, _modalForWindow: P3, _modalDelegate: P4, _didEndSelector: P5, _contextInfo: P6): R;
-    _finderKitMinimumViewSize<R = cocoa.CGSize>(): R;
+    _finderKitMinimumViewSize<R = CGSize>(): R;
     runModalForDirectory_file_types<R = number, P0 = unknown, P1 = unknown, P2 = unknown>(_runModalForDirectory: P0, _file: P1, _types: P2): R;
     _selectFilePath<R = void, P0 = unknown>(__selectFilePath: P0): R;
     _setBeginWithFileNames<R = void, P0 = unknown>(__setBeginWithFileNames: P0): R;
@@ -151,14 +151,14 @@ declare namespace cocoa {
     _delegateCompareFilename_with_caseSensitive<R = number, P0 = unknown, P1 = unknown, P2 = boolean>(__delegateCompareFilename: P0, _with: P1, _caseSensitive: P2): R;
     _delegateRespondsToCompareFilename<R = boolean>(): R;
     _allowSearchingForFolders<R = boolean>(): R;
-    scheduleURLEnableTestForItems_callDelegate_completionHandler<R = void, P0 = unknown, P1 = boolean, P2 = cocoa.CDUnknownBlockType>(_scheduleURLEnableTestForItems: P0, _callDelegate: P1, _completionHandler: P2): R;
+    scheduleURLEnableTestForItems_callDelegate_completionHandler<R = void, P0 = unknown, P1 = boolean, P2 = CDUnknownBlockType>(_scheduleURLEnableTestForItems: P0, _callDelegate: P1, _completionHandler: P2): R;
     _replyToFinderKitShouldEnableURL_isDirectory_isPackage_pathExtension_itemHFSType_typeIdentifier_delegateRepliedWith<R = boolean, P0 = unknown, P1 = boolean, P2 = boolean, P3 = unknown, P4 = number, P5 = unknown, P6 = boolean>(__replyToFinderKitShouldEnableURL: P0, _isDirectory: P1, _isPackage: P2, _pathExtension: P3, _itemHFSType: P4, _typeIdentifier: P5, _delegateRepliedWith: P6): R;
     _shouldEnableURL<R = boolean, P0 = unknown>(__shouldEnableURL: P0): R;
-    _shouldEnableURL_isDirectoryURLHandler<R = boolean, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(__shouldEnableURL: P0, _isDirectoryURLHandler: P1): R;
+    _shouldEnableURL_isDirectoryURLHandler<R = boolean, P0 = unknown, P1 = CDUnknownBlockType>(__shouldEnableURL: P0, _isDirectoryURLHandler: P1): R;
     _canChooseURL<R = boolean, P0 = unknown>(__canChooseURL: P0): R;
     _nonDelegateShouldEnableURL_isDirectory<R = boolean, P0 = unknown, P1 = boolean>(__nonDelegateShouldEnableURL: P0, _isDirectory: P1): R;
     _isFileTypeEnabledForURL<R = boolean, P0 = unknown>(__isFileTypeEnabledForURL: P0): R;
-    _isEnabledItemWithExtensionProvider_HFSTypeProvider_UTIProvider<R = boolean, P0 = cocoa.CDUnknownBlockType, P1 = cocoa.CDUnknownBlockType, P2 = cocoa.CDUnknownBlockType>(__isEnabledItemWithExtensionProvider: P0, _HFSTypeProvider: P1, _UTIProvider: P2): R;
+    _isEnabledItemWithExtensionProvider_HFSTypeProvider_UTIProvider<R = boolean, P0 = CDUnknownBlockType, P1 = CDUnknownBlockType, P2 = CDUnknownBlockType>(__isEnabledItemWithExtensionProvider: P0, _HFSTypeProvider: P1, _UTIProvider: P2): R;
     _isDirectoryURL<R = boolean, P0 = unknown>(__isDirectoryURL: P0): R;
     _isFauxFilePackageURL<R = boolean, P0 = unknown>(__isFauxFilePackageURL: P0): R;
     _delegateShouldEnableURL<R = boolean, P0 = unknown>(__delegateShouldEnableURL: P0): R;
@@ -179,7 +179,7 @@ declare namespace cocoa {
     _sendDirectoryDidChange_toDelegate<R = void, P0 = unknown, P1 = unknown>(__sendDirectoryDidChange: P0, _toDelegate: P1): R;
     _sendDidChangeToDirectoryURL_toDelegate<R = void, P0 = unknown, P1 = unknown>(__sendDidChangeToDirectoryURL: P0, _toDelegate: P1): R;
     control_textView_doCommandBySelector<R = boolean, P0 = unknown, P1 = unknown, P2 = string>(_control: P0, _textView: P1, _doCommandBySelector: P2): R;
-    control_textView_completions_forPartialWordRange_indexOfSelectedItem<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = cocoa._NSRange, P4 = number>(_control: P0, _textView: P1, _completions: P2, _forPartialWordRange: P3, _indexOfSelectedItem: P4): R;
+    control_textView_completions_forPartialWordRange_indexOfSelectedItem<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = _NSRange, P4 = number>(_control: P0, _textView: P1, _completions: P2, _forPartialWordRange: P3, _indexOfSelectedItem: P4): R;
     controlTextDidEndEditing<R = void, P0 = unknown>(_controlTextDidEndEditing: P0): R;
     controlTextDidChange<R = void, P0 = unknown>(_controlTextDidChange: P0): R;
     control_textShouldBeginEditing<R = boolean, P0 = unknown, P1 = unknown>(_control: P0, _textShouldBeginEditing: P1): R;
@@ -195,8 +195,8 @@ declare namespace cocoa {
     _storeUserSetHideExtensionButtonState<R = void>(): R;
     _fetchUserSetHideExtensionButtonState<R = boolean>(): R;
     _storeExpandedFrameSize<R = void>(): R;
-    _storeExpandedFrameSizeValue<R = void, P0 = cocoa.CGSize>(__storeExpandedFrameSizeValue: P0): R;
-    _fetchExpandedFrameSize<R = cocoa.CGSize, P0 = cocoa.CGSize>(__fetchExpandedFrameSize: P0): R;
+    _storeExpandedFrameSizeValue<R = void, P0 = CGSize>(__storeExpandedFrameSizeValue: P0): R;
+    _fetchExpandedFrameSize<R = CGSize, P0 = CGSize>(__fetchExpandedFrameSize: P0): R;
     _storeExpandedState<R = void>(): R;
     _fetchExpandedState<R = boolean>(): R;
     _writeFileListMode<R = void>(): R;
@@ -227,7 +227,7 @@ declare namespace cocoa {
     set_animatingExpandCollapse<R = void, P0 = boolean>(_set_animatingExpandCollapse: P0): R;
     _markExpandAnimationEnd<R = void>(): R;
     _markExpandAnimationStart<R = void>(): R;
-    shouldForceSize_andRunBlock<R = void, P0 = boolean, P1 = cocoa.CDUnknownBlockType>(_shouldForceSize: P0, _andRunBlock: P1): R;
+    shouldForceSize_andRunBlock<R = void, P0 = boolean, P1 = CDUnknownBlockType>(_shouldForceSize: P0, _andRunBlock: P1): R;
     createFakeConstraintsForStoredExpandedSize<R = unknown>(): R;
     _setIsExpanded_andStoreState<R = void, P0 = boolean, P1 = boolean>(__setIsExpanded: P0, _andStoreState: P1): R;
     _configureAll<R = void>(): R;
@@ -243,7 +243,7 @@ declare namespace cocoa {
     _accessoryViewFrameDidChange<R = void, P0 = unknown>(__accessoryViewFrameDidChange: P0): R;
     _shouldAutosizeBasedOnAccessoryViewChanges<R = boolean>(): R;
     _isUserAccessoryViewFrameChange<R = boolean>(): R;
-    setRemoteAccessoryViewDesiredSize<R = void, P0 = cocoa.CGSize>(_setRemoteAccessoryViewDesiredSize: P0): R;
+    setRemoteAccessoryViewDesiredSize<R = void, P0 = CGSize>(_setRemoteAccessoryViewDesiredSize: P0): R;
     _placeAccessoryViewInContainer<R = void, P0 = unknown>(__placeAccessoryViewInContainer: P0): R;
     _discloseAccessoryView_animate_accessoryViewChanged<R = void, P0 = boolean, P1 = boolean, P2 = boolean>(__discloseAccessoryView: P0, _animate: P1, _accessoryViewChanged: P2): R;
     _shouldAnimateAccessoryViewByResizingWindow<R = boolean>(): R;
@@ -271,7 +271,7 @@ declare namespace cocoa {
     toggleOptionsView<R = void, P0 = unknown>(_toggleOptionsView: P0): R;
     _shouldAlwaysDiscloseAccessoryView<R = boolean>(): R;
     _accessoryViewDisclosureIsSupported<R = boolean>(): R;
-    _setFrameForTimeMachineMode_animate<R = void, P0 = cocoa.CGRect, P1 = boolean>(__setFrameForTimeMachineMode: P0, _animate: P1): R;
+    _setFrameForTimeMachineMode_animate<R = void, P0 = CGRect, P1 = boolean>(__setFrameForTimeMachineMode: P0, _animate: P1): R;
     _hideWindowForTimeMachineMode<R = void, P0 = boolean>(__hideWindowForTimeMachineMode: P0): R;
     _setFauxFilePackageTypes<R = void, P0 = unknown>(__setFauxFilePackageTypes: P0): R;
     _fauxFilePackageTypes<R = unknown>(): R;
@@ -366,11 +366,11 @@ declare namespace cocoa {
     _canSendSynchronousMessagesToRemote<R = boolean>(): R;
     _setCanSendSynchronousMessagesToRemote<R = void, P0 = boolean>(__setCanSendSynchronousMessagesToRemote: P0): R;
     accessoryViewContainerContentFrameDidChange<R = void, P0 = unknown>(_accessoryViewContainerContentFrameDidChange: P0): R;
-    _visibleFrameAvailableForPanelWithDocumentWindow<R = cocoa.CGRect, P0 = unknown>(__visibleFrameAvailableForPanelWithDocumentWindow: P0): R;
-    _visibleFrameAvailableForScreen<R = cocoa.CGRect>(): R;
-    _visibleFrameAvailableForScreenOfWindow<R = cocoa.CGRect, P0 = unknown>(__visibleFrameAvailableForScreenOfWindow: P0): R;
-    _documentWindowFrameForPanelRunningAsASheet<R = cocoa.CGRect, P0 = unknown>(__documentWindowFrameForPanelRunningAsASheet: P0): R;
-    _fixFetchExpandedFrameSizeForVisibleFrameWithDocumentWindow_visibleFrameAvailable<R = void, P0 = unknown, P1 = cocoa.CGRect>(__fixFetchExpandedFrameSizeForVisibleFrameWithDocumentWindow: P0, _visibleFrameAvailable: P1): R;
+    _visibleFrameAvailableForPanelWithDocumentWindow<R = CGRect, P0 = unknown>(__visibleFrameAvailableForPanelWithDocumentWindow: P0): R;
+    _visibleFrameAvailableForScreen<R = CGRect>(): R;
+    _visibleFrameAvailableForScreenOfWindow<R = CGRect, P0 = unknown>(__visibleFrameAvailableForScreenOfWindow: P0): R;
+    _documentWindowFrameForPanelRunningAsASheet<R = CGRect, P0 = unknown>(__documentWindowFrameForPanelRunningAsASheet: P0): R;
+    _fixFetchExpandedFrameSizeForVisibleFrameWithDocumentWindow_visibleFrameAvailable<R = void, P0 = unknown, P1 = CGRect>(__fixFetchExpandedFrameSizeForVisibleFrameWithDocumentWindow: P0, _visibleFrameAvailable: P1): R;
     _fixupKeyboardLoop<R = void>(): R;
     _configureBottomControls<R = void>(): R;
     _appCentricSidebarWidth<R = number>(): R;
@@ -385,7 +385,7 @@ declare namespace cocoa {
     _makeFinderKitView<R = unknown>(): R;
     setContentView<R = void, P0 = unknown>(_setContentView: P0): R;
     _titlebarAuxiliaryHeight<R = number>(): R;
-    setMinSize<R = void, P0 = cocoa.CGSize>(_setMinSize: P0): R;
+    setMinSize<R = void, P0 = CGSize>(_setMinSize: P0): R;
     accessibilityIsDescriptionAttributeSettable<R = boolean>(): R;
     accessibilityDescriptionAttribute<R = unknown>(): R;
     _unregisterKey_withViewBridgeService_onBridge_shouldRemoveObserversFromBridge_shouldRemoveObserversFromPanel<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = boolean, P4 = boolean>(__unregisterKey: P0, _withViewBridgeService: P1, _onBridge: P2, _shouldRemoveObserversFromBridge: P3, _shouldRemoveObserversFromPanel: P4): R;
@@ -401,20 +401,20 @@ declare namespace cocoa {
     _registerKVOWithViewBridgeService_onBridge<R = void, P0 = unknown, P1 = unknown>(__registerKVOWithViewBridgeService: P0, _onBridge: P1): R;
     defaultNSNumberBOOLObjectForKey<R = unknown, P0 = unknown>(_defaultNSNumberBOOLObjectForKey: P0): R;
     defaultObjectForKey<R = unknown, P0 = unknown>(_defaultObjectForKey: P0): R;
-    tagNames<R = cocoa.NSArray>(): R;
-    setTagNames<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    tagNames<R = NSArray>(): R;
+    setTagNames<R = void, P0 = NSArray>(_v: P0): R;
     showsTagField<R = boolean>(): R;
     setShowsTagField<R = void, P0 = boolean>(_v: P0): R;
-    message<R = cocoa.NSString>(): R;
-    setMessage<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    nameFieldStringValue<R = cocoa.NSString>(): R;
-    setNameFieldStringValue<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    nameFieldLabel<R = cocoa.NSString>(): R;
-    setNameFieldLabel<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    title<R = cocoa.NSString>(): R;
-    setTitle<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    prompt<R = cocoa.NSString>(): R;
-    setPrompt<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    message<R = NSString>(): R;
+    setMessage<R = void, P0 = NSString>(_v: P0): R;
+    nameFieldStringValue<R = NSString>(): R;
+    setNameFieldStringValue<R = void, P0 = NSString>(_v: P0): R;
+    nameFieldLabel<R = NSString>(): R;
+    setNameFieldLabel<R = void, P0 = NSString>(_v: P0): R;
+    title<R = NSString>(): R;
+    setTitle<R = void, P0 = NSString>(_v: P0): R;
+    prompt<R = NSString>(): R;
+    setPrompt<R = void, P0 = NSString>(_v: P0): R;
     treatsFilePackagesAsDirectories<R = boolean>(): R;
     setTreatsFilePackagesAsDirectories<R = void, P0 = boolean>(_v: P0): R;
     extensionHidden<R = boolean>(): R;
@@ -424,27 +424,27 @@ declare namespace cocoa {
     canCreateDirectories<R = boolean>(): R;
     setCanCreateDirectories<R = void, P0 = boolean>(_v: P0): R;
     expanded<R = boolean>(): R;
-    delegate<R = cocoa.NSOpenSavePanelDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSOpenSavePanelDelegate>(_v: P0): R;
-    accessoryView<R = cocoa.NSView>(): R;
-    setAccessoryView<R = void, P0 = cocoa.NSView>(_v: P0): R;
+    delegate<R = NSOpenSavePanelDelegate>(): R;
+    setDelegate<R = void, P0 = NSOpenSavePanelDelegate>(_v: P0): R;
+    accessoryView<R = NSView>(): R;
+    setAccessoryView<R = void, P0 = NSView>(_v: P0): R;
     showsHiddenFiles<R = boolean>(): R;
     setShowsHiddenFiles<R = void, P0 = boolean>(_v: P0): R;
     allowsOtherFileTypes<R = boolean>(): R;
     setAllowsOtherFileTypes<R = void, P0 = boolean>(_v: P0): R;
-    allowedFileTypes<R = cocoa.NSArray>(): R;
-    setAllowedFileTypes<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    directoryURL<R = cocoa.NSURL>(): R;
-    setDirectoryURL<R = void, P0 = cocoa.NSURL>(_v: P0): R;
-    URL<R = cocoa.NSURL>(): R;
-    _itemIdentifiers<R = cocoa.NSArray>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    allowedFileTypes<R = NSArray>(): R;
+    setAllowedFileTypes<R = void, P0 = NSArray>(_v: P0): R;
+    directoryURL<R = NSURL>(): R;
+    setDirectoryURL<R = void, P0 = NSURL>(_v: P0): R;
+    URL<R = NSURL>(): R;
+    _itemIdentifiers<R = NSArray>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSSavePanel<T = any> extends cocoa.classes.NSPanel, cocoa.classes.FIFinderViewDelegateProtocol, cocoa.classes.NSTouchBarDelegateProtocol {
+    export interface NSSavePanel<T = any> extends NSPanel, FIFinderViewDelegateProtocol, NSTouchBarDelegateProtocol {
       alloc<R = NSSavePanel>(): R;
       new: <R = NSSavePanel>() => R;
       _waitForURL_useSecurityScopedURL_withNameFieldString_thenSetTags<R = void, P0 = unknown, P1 = boolean, P2 = unknown, P3 = unknown>(__waitForURL: P0, _useSecurityScopedURL: P1, _withNameFieldString: P2, _thenSetTags: P3): R;
@@ -479,7 +479,7 @@ declare namespace cocoa {
       newRemotePanel<R = unknown>(): R;
       _warmUp<R = void>(): R;
       _applicationContextHasEntitlement<R = boolean, P0 = string>(__applicationContextHasEntitlement: P0): R;
-      _clientWithSecurityTaskRef_hasEntitlement_sandboxPermissions<R = boolean, P0 = cocoa.__SecTask, P1 = string, P2 = string>(__clientWithSecurityTaskRef: P0, _hasEntitlement: P1, _sandboxPermissions: P2): R;
+      _clientWithSecurityTaskRef_hasEntitlement_sandboxPermissions<R = boolean, P0 = __SecTask, P1 = string, P2 = string>(__clientWithSecurityTaskRef: P0, _hasEntitlement: P1, _sandboxPermissions: P2): R;
       _resolvedSymLinkedURL<R = unknown, P0 = unknown>(__resolvedSymLinkedURL: P0): R;
       _filenameHasAcceptableFileType_allowedFileTypes_allowsOtherFileTypes<R = boolean, P0 = unknown, P1 = unknown, P2 = boolean>(__filenameHasAcceptableFileType: P0, _allowedFileTypes: P1, _allowsOtherFileTypes: P2): R;
       _filenameHasNonEmptyAcceptableFileType_allowedFileTypes_allowsOtherFileTypes<R = boolean, P0 = unknown, P1 = unknown, P2 = boolean>(__filenameHasNonEmptyAcceptableFileType: P0, _allowedFileTypes: P1, _allowsOtherFileTypes: P2): R;
@@ -490,7 +490,7 @@ declare namespace cocoa {
       keyPathsForValuesAffecting_itemIdentifiers<R = unknown>(): R;
       _cachedAuditTokenForMovePanel<R = unknown>(): R;
       _containerURLsForRemoteProcessWithAuditToken<R = unknown, P0 = unknown>(__containerURLsForRemoteProcessWithAuditToken: P0): R;
-      _minContentRectSize<R = cocoa.CGSize>(): R;
+      _minContentRectSize<R = CGSize>(): R;
       setValue_forUndefinedKey_onObject<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown>(_setValue: P0, _forUndefinedKey: P1, _onObject: P2): R;
       _spiPropertySelectorForKey_withClass_isSetter_outSelector<R = void, P0 = unknown, P1 = unknown, P2 = boolean, P3 = string>(__spiPropertySelectorForKey: P0, _withClass: P1, _isSetter: P2, _outSelector: P3): R;
       kvoKeysForType<R = unknown, P0 = number>(_kvoKeysForType: P0): R;
@@ -503,10 +503,10 @@ declare namespace cocoa {
       _storeRootDirectoryUsingKey_rootURL_directoryPath<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(__storeRootDirectoryUsingKey: P0, _rootURL: P1, _directoryPath: P2): R;
       _storeCurrentDirectoryUsingKey_directoryURL_rootURL<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(__storeCurrentDirectoryUsingKey: P0, _directoryURL: P1, _rootURL: P2): R;
       _directoryForKey<R = unknown, P0 = unknown>(__directoryForKey: P0): R;
-      _expandedFrameSizeForKey_minSize<R = cocoa.CGSize, P0 = unknown, P1 = cocoa.CGSize>(__expandedFrameSizeForKey: P0, _minSize: P1): R;
+      _expandedFrameSizeForKey_minSize<R = CGSize, P0 = unknown, P1 = CGSize>(__expandedFrameSizeForKey: P0, _minSize: P1): R;
       _storeToDefaultsExpandedState_forPanelType<R = void, P0 = boolean, P1 = boolean>(__storeToDefaultsExpandedState: P0, _forPanelType: P1): R;
       _expandedStateFromDefaultsForPanelType<R = boolean, P0 = boolean>(__expandedStateFromDefaultsForPanelType: P0): R;
-      _storeFrameSize_withKey<R = void, P0 = cocoa.CGSize, P1 = unknown>(__storeFrameSize: P0, _withKey: P1): R;
+      _storeFrameSize_withKey<R = void, P0 = CGSize, P1 = unknown>(__storeFrameSize: P0, _withKey: P1): R;
       _shouldShowHiddenFiles<R = boolean>(): R;
       _writeToDefaultsFileListMode_forPanelType<R = void, P0 = number, P1 = boolean>(__writeToDefaultsFileListMode: P0, _forPanelType: P1): R;
       _mapNSNavFileListModeFromFinderViewStyle<R = number, P0 = number>(__mapNSNavFileListModeFromFinderViewStyle: P0): R;

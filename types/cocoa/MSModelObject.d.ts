@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSModelObject<T = any> extends cocoa.MSModelObjectCommon, cocoa.NSCopyingProtocol, cocoa.MSModelObjectProtocol {
+  export interface MSModelObject<T = any> extends MSModelObjectCommon, NSCopyingProtocol, MSModelObjectProtocol {
     breakConnectionWith<R = void, P0 = unknown>(_breakConnectionWith: P0): R;
     parentGroupRecursive<R = unknown>(): R;
     setAsParentOnChildren<R = void>(): R;
@@ -17,7 +17,7 @@ declare namespace cocoa {
     clearCachedValueForKey<R = void, P0 = unknown>(_clearCachedValueForKey: P0): R;
     clearCache<R = void>(): R;
     updateCachedValue_forKey<R = void, P0 = unknown, P1 = unknown>(_updateCachedValue: P0, _forKey: P1): R;
-    cachedValueForKey_setUsingBlock<R = unknown, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(_cachedValueForKey: P0, _setUsingBlock: P1): R;
+    cachedValueForKey_setUsingBlock<R = unknown, P0 = unknown, P1 = CDUnknownBlockType>(_cachedValueForKey: P0, _setUsingBlock: P1): R;
     cachedValueForKey<R = unknown, P0 = unknown>(_cachedValueForKey: P0): R;
     performInitWithImmutableModelObject<R = void, P0 = unknown>(_performInitWithImmutableModelObject: P0): R;
     syncPropertiesFromObject<R = void, P0 = unknown>(_syncPropertiesFromObject: P0): R;
@@ -25,27 +25,27 @@ declare namespace cocoa {
     copyWithOptions<R = unknown, P0 = number>(_copyWithOptions: P0): R;
     metadataForKey<R = unknown, P0 = unknown>(_metadataForKey: P0): R;
     storeMetadata_forKey<R = void, P0 = unknown, P1 = unknown>(_storeMetadata: P0, _forKey: P1): R;
-    documentData<R = cocoa.MSDocumentData>(): R;
-    setDocumentData<R = void, P0 = cocoa.MSDocumentData>(_v: P0): R;
+    documentData<R = MSDocumentData>(): R;
+    setDocumentData<R = void, P0 = MSDocumentData>(_v: P0): R;
     isFault<R = boolean>(): R;
     setIsFault<R = void, P0 = boolean>(_v: P0): R;
-    parentObject<R = cocoa.MSModelObject>(): R;
-    setParentObject<R = void, P0 = cocoa.MSModelObject>(_v: P0): R;
-    parentGroup<R = cocoa.MSLayerGroup>(): R;
+    parentObject<R = MSModelObject>(): R;
+    setParentObject<R = void, P0 = MSModelObject>(_v: P0): R;
+    parentGroup<R = MSLayerGroup>(): R;
     immutableModelObject<R = unknown>(): R;
     isForeign<R = boolean>(): R;
-    foreignObject<R = cocoa.MSModelObject>(): R;
+    foreignObject<R = MSModelObject>(): R;
     cachedImmutableModelObject<R = unknown>(): R;
     setCachedImmutableModelObject<R = void, P0 = unknown>(_v: P0): R;
-    UIMetadataKey<R = cocoa.NSString>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    UIMetadataKey<R = NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
-    objectID<R = cocoa.NSString>(): R;
+    objectID<R = NSString>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSModelObject<T = any> extends cocoa.classes.MSModelObjectCommon, cocoa.classes.NSCopyingProtocol, cocoa.classes.MSModelObjectProtocol {
+    export interface MSModelObject<T = any> extends MSModelObjectCommon, NSCopyingProtocol, MSModelObjectProtocol {
       alloc<R = MSModelObject>(): R;
       new: <R = MSModelObject>() => R;
       immutableClass<R = unknown>(): R;

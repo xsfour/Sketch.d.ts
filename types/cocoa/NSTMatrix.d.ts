@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTMatrix<T = any> extends cocoa.NSObject {
+  export interface NSTMatrix<T = any> extends NSObject {
     invert<R = unknown>(): R;
     multiplyRowBy_x<R = void, P0 = number, P1 = number>(_multiplyRowBy: P0, _x: P1): R;
     swapRows_b<R = void, P0 = number, P1 = number>(_swapRows: P0, _b: P1): R;
@@ -14,7 +14,7 @@ declare namespace cocoa {
     initWitRows_columns<R = unknown, P0 = number, P1 = number>(_initWitRows: P0, _columns: P1): R;
   }
   namespace classes {
-    export interface NSTMatrix<T = any> extends cocoa.classes.NSObject {
+    export interface NSTMatrix<T = any> extends NSObject {
       alloc<R = NSTMatrix>(): R;
       new: <R = NSTMatrix>() => R;
       crossProduct_b<R = unknown, P0 = unknown, P1 = unknown>(_crossProduct: P0, _b: P1): R;

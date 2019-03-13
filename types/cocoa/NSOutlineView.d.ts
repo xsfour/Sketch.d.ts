@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSOutlineView<T = any> extends cocoa.NSTableView, cocoa.NSAccessibilityOutlineProtocol {
+  export interface NSOutlineView<T = any> extends NSTableView, NSAccessibilityOutlineProtocol {
     reloadItem_reloadChildren_withInsertAnimation_removeAnimation<R = void, P0 = unknown, P1 = boolean, P2 = number, P3 = number>(_reloadItem: P0, _reloadChildren: P1, _withInsertAnimation: P2, _removeAnimation: P3): R;
     _recursivelyReloadItem_reloadChildren_withInsertAnimation_removeAnimation<R = void, P0 = unknown, P1 = boolean, P2 = number, P3 = number>(__recursivelyReloadItem: P0, _reloadChildren: P1, _withInsertAnimation: P2, _removeAnimation: P3): R;
     moveItemAtIndex_inParent_toIndex_inParent<R = void, P0 = number, P1 = unknown, P2 = number, P3 = unknown>(_moveItemAtIndex: P0, _inParent: P1, _toIndex: P2, _inParent1: P3): R;
@@ -89,9 +89,9 @@ declare namespace cocoa {
     _addOutlineCellTrackingAreas<R = void>(): R;
     _setOutlineCellTrackingAreaRow<R = void, P0 = number>(__setOutlineCellTrackingAreaRow: P0): R;
     _setOutlineButtonVisible_onRow<R = void, P0 = boolean, P1 = number>(__setOutlineButtonVisible: P0, _onRow: P1): R;
-    frameOfOutlineCellAtRow<R = cocoa.CGRect, P0 = number>(_frameOfOutlineCellAtRow: P0): R;
-    _frameOfOutlineCellAtRow<R = cocoa.CGRect, P0 = number>(__frameOfOutlineCellAtRow: P0): R;
-    _frameOfSourceListGroupOutlineCellRow<R = cocoa.CGRect, P0 = number>(__frameOfSourceListGroupOutlineCellRow: P0): R;
+    frameOfOutlineCellAtRow<R = CGRect, P0 = number>(_frameOfOutlineCellAtRow: P0): R;
+    _frameOfOutlineCellAtRow<R = CGRect, P0 = number>(__frameOfOutlineCellAtRow: P0): R;
+    _frameOfSourceListGroupOutlineCellRow<R = CGRect, P0 = number>(__frameOfSourceListGroupOutlineCellRow: P0): R;
     _outlineColumnIndex<R = number>(): R;
     _shouldShowOutlineCellForRow<R = boolean, P0 = number>(__shouldShowOutlineCellForRow: P0): R;
     _delegateShouldShowOutlineCellForItem<R = boolean, P0 = unknown>(__delegateShouldShowOutlineCellForItem: P0): R;
@@ -112,8 +112,8 @@ declare namespace cocoa {
     _notifyDelegateOfStateChangeForCell<R = void, P0 = unknown>(__notifyDelegateOfStateChangeForCell: P0): R;
     _setupStateForOutlineCell_atRow<R = void, P0 = unknown, P1 = number>(__setupStateForOutlineCell: P0, _atRow: P1): R;
     _outlineCellBackgroundStyleForRow<R = number, P0 = number>(__outlineCellBackgroundStyleForRow: P0): R;
-    _debugDrawRowNumberInCell_withFrame_forRow<R = void, P0 = unknown, P1 = cocoa.CGRect, P2 = number>(__debugDrawRowNumberInCell: P0, _withFrame: P1, _forRow: P2): R;
-    _alternateAutoExpandImageForOutlineCell_inRow_withFrame<R = unknown, P0 = unknown, P1 = number, P2 = cocoa.CGRect>(__alternateAutoExpandImageForOutlineCell: P0, _inRow: P1, _withFrame: P2): R;
+    _debugDrawRowNumberInCell_withFrame_forRow<R = void, P0 = unknown, P1 = CGRect, P2 = number>(__debugDrawRowNumberInCell: P0, _withFrame: P1, _forRow: P2): R;
+    _alternateAutoExpandImageForOutlineCell_inRow_withFrame<R = unknown, P0 = unknown, P1 = number, P2 = CGRect>(__alternateAutoExpandImageForOutlineCell: P0, _inRow: P1, _withFrame: P2): R;
     _sendDelegateWillDisplayOutlineCell_inOutlineTableColumnAtRow<R = void, P0 = unknown, P1 = number>(__sendDelegateWillDisplayOutlineCell: P0, _inOutlineTableColumnAtRow: P1): R;
     _shouldCallWillDisplayOutlineCell<R = boolean>(): R;
     _delegateWillDisplayOutlineCell_forColumn_row<R = void, P0 = unknown, P1 = unknown, P2 = number>(__delegateWillDisplayOutlineCell: P0, _forColumn: P1, _row: P2): R;
@@ -143,15 +143,15 @@ declare namespace cocoa {
     _canUseWhiteDisclosureTriangles<R = boolean>(): R;
     _handleRightArrowKeyWithChildren<R = void, P0 = boolean>(__handleRightArrowKeyWithChildren: P0): R;
     _handleLeftArrowKeyWithChildren<R = void, P0 = boolean>(__handleLeftArrowKeyWithChildren: P0): R;
-    _newSelectedRowEntriesArrayIncludingExpandable_includingUnexpandable_withCurrentExpandState<R = cocoa.__CFArray, P0 = boolean, P1 = boolean, P2 = boolean>(__newSelectedRowEntriesArrayIncludingExpandable: P0, _includingUnexpandable: P1, _withCurrentExpandState: P2): R;
+    _newSelectedRowEntriesArrayIncludingExpandable_includingUnexpandable_withCurrentExpandState<R = __CFArray, P0 = boolean, P1 = boolean, P2 = boolean>(__newSelectedRowEntriesArrayIncludingExpandable: P0, _includingUnexpandable: P1, _withCurrentExpandState: P2): R;
     _doUserExpandOrCollapseOfItem_isExpand_optionKeyWasDown<R = void, P0 = unknown, P1 = boolean, P2 = boolean>(__doUserExpandOrCollapseOfItem: P0, _isExpand: P1, _optionKeyWasDown: P2): R;
     _dropOverdrawBeforeAnimation<R = void>(): R;
     _doExpandAnimation_forRow<R = void, P0 = boolean, P1 = number>(__doExpandAnimation: P0, _forRow: P1): R;
     _shouldDoExpandAnimationForRow<R = boolean, P0 = number>(__shouldDoExpandAnimationForRow: P0): R;
-    _highlightOutlineCell_highlight_withFrame_inView<R = void, P0 = unknown, P1 = boolean, P2 = cocoa.CGRect, P3 = unknown>(__highlightOutlineCell: P0, _highlight: P1, _withFrame: P2, _inView: P3): R;
-    _drawOutlineCell_withFrame_inView<R = void, P0 = unknown, P1 = cocoa.CGRect, P2 = unknown>(__drawOutlineCell: P0, _withFrame: P1, _inView: P2): R;
-    _isEditingRowAChildOfRowAtPoint<R = boolean, P0 = cocoa.CGPoint>(__isEditingRowAChildOfRowAtPoint: P0): R;
-    _clickedInExpansionTriangle<R = boolean, P0 = cocoa.CGPoint>(__clickedInExpansionTriangle: P0): R;
+    _highlightOutlineCell_highlight_withFrame_inView<R = void, P0 = unknown, P1 = boolean, P2 = CGRect, P3 = unknown>(__highlightOutlineCell: P0, _highlight: P1, _withFrame: P2, _inView: P3): R;
+    _drawOutlineCell_withFrame_inView<R = void, P0 = unknown, P1 = CGRect, P2 = unknown>(__drawOutlineCell: P0, _withFrame: P1, _inView: P2): R;
+    _isEditingRowAChildOfRowAtPoint<R = boolean, P0 = CGPoint>(__isEditingRowAChildOfRowAtPoint: P0): R;
+    _clickedInExpansionTriangle<R = boolean, P0 = CGPoint>(__clickedInExpansionTriangle: P0): R;
     numberOfRows<R = number>(): R;
     _setAllowAnimationsToYes<R = void>(): R;
     _postItemDidCollapseNotification<R = void, P0 = unknown>(__postItemDidCollapseNotification: P0): R;
@@ -174,8 +174,8 @@ declare namespace cocoa {
     _collapseRootEntry_clearExpandState<R = void, P0 = boolean, P1 = boolean>(__collapseRootEntry: P0, _clearExpandState: P1): R;
     collapseItem_collapseChildren<R = void, P0 = unknown, P1 = boolean>(_collapseItem: P0, _collapseChildren: P1): R;
     collapseItem<R = void, P0 = unknown>(_collapseItem: P0): R;
-    _batchCollapseItemsWithItemEntries_collapseChildren<R = void, P0 = cocoa.__CFArray, P1 = boolean>(__batchCollapseItemsWithItemEntries: P0, _collapseChildren: P1): R;
-    _batchCollapseItemsWithItemEntries_collapseChildren_clearExpandState<R = void, P0 = cocoa.__CFArray, P1 = boolean, P2 = boolean>(__batchCollapseItemsWithItemEntries: P0, _collapseChildren: P1, _clearExpandState: P2): R;
+    _batchCollapseItemsWithItemEntries_collapseChildren<R = void, P0 = __CFArray, P1 = boolean>(__batchCollapseItemsWithItemEntries: P0, _collapseChildren: P1): R;
+    _batchCollapseItemsWithItemEntries_collapseChildren_clearExpandState<R = void, P0 = __CFArray, P1 = boolean, P2 = boolean>(__batchCollapseItemsWithItemEntries: P0, _collapseChildren: P1, _clearExpandState: P2): R;
     _collapseItemEntry_collapseChildren_clearExpandState<R = void, P0 = unknown, P1 = boolean, P2 = boolean>(__collapseItemEntry: P0, _collapseChildren: P1, _clearExpandState: P2): R;
     _recursiveCollapseItemEntry_collapseChildren_clearExpandState<R = void, P0 = unknown, P1 = boolean, P2 = boolean>(__recursiveCollapseItemEntry: P0, _collapseChildren: P1, _clearExpandState: P2): R;
     expandItem_expandChildren<R = void, P0 = unknown, P1 = boolean>(_expandItem: P0, _expandChildren: P1): R;
@@ -184,7 +184,7 @@ declare namespace cocoa {
     _setupAnimationsIfNeeded<R = void>(): R;
     _shouldAnimateChanges<R = boolean>(): R;
     expandItem<R = void, P0 = unknown>(_expandItem: P0): R;
-    _batchExpandItemsWithItemEntries_expandChildren<R = void, P0 = cocoa.__CFArray, P1 = boolean>(__batchExpandItemsWithItemEntries: P0, _expandChildren: P1): R;
+    _batchExpandItemsWithItemEntries_expandChildren<R = void, P0 = __CFArray, P1 = boolean>(__batchExpandItemsWithItemEntries: P0, _expandChildren: P1): R;
     _expandItemEntry_expandChildren<R = void, P0 = unknown, P1 = boolean>(__expandItemEntry: P0, _expandChildren: P1): R;
     _staticItemWasExpanded<R = boolean, P0 = unknown>(__staticItemWasExpanded: P0): R;
     _staticSetItem_isExpanded<R = void, P0 = unknown, P1 = boolean>(__staticSetItem: P0, _isExpanded: P1): R;
@@ -204,14 +204,14 @@ declare namespace cocoa {
     _disclosureTriangleButtonImageSorceID<R = unknown>(): R;
     autosaveExpandedItems<R = boolean>(): R;
     setAutosaveExpandedItems<R = void, P0 = boolean>(_v: P0): R;
-    delegate<R = cocoa.NSOutlineViewDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSOutlineViewDelegate>(_v: P0): R;
-    dataSource<R = cocoa.NSOutlineViewDataSource>(): R;
-    setDataSource<R = void, P0 = cocoa.NSOutlineViewDataSource>(_v: P0): R;
+    delegate<R = NSOutlineViewDelegate>(): R;
+    setDelegate<R = void, P0 = NSOutlineViewDelegate>(_v: P0): R;
+    dataSource<R = NSOutlineViewDataSource>(): R;
+    setDataSource<R = void, P0 = NSOutlineViewDataSource>(_v: P0): R;
     autoresizesOutlineColumn<R = boolean>(): R;
     setAutoresizesOutlineColumn<R = void, P0 = boolean>(_v: P0): R;
-    outlineTableColumn<R = cocoa.NSTableColumn>(): R;
-    setOutlineTableColumn<R = void, P0 = cocoa.NSTableColumn>(_v: P0): R;
+    outlineTableColumn<R = NSTableColumn>(): R;
+    setOutlineTableColumn<R = void, P0 = NSTableColumn>(_v: P0): R;
     indentationMarkerFollowsCell<R = boolean>(): R;
     setIndentationMarkerFollowsCell<R = void, P0 = boolean>(_v: P0): R;
     indentationPerLevel<R = number>(): R;
@@ -220,8 +220,8 @@ declare namespace cocoa {
     setStronglyReferencesItems<R = void, P0 = boolean>(_v: P0): R;
     userInterfaceLayoutDirection<R = number>(): R;
     setUserInterfaceLayoutDirection<R = void, P0 = number>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
     // + NSOutlineView(BCLayerList,Chocolat):
@@ -233,11 +233,11 @@ declare namespace cocoa {
     ms_rowForTitle<R = number, P0 = unknown>(_ms_rowForTitle: P0): R;
     setSimpleExpandedState<R = void, P0 = unknown>(_setSimpleExpandedState: P0): R;
     simpleExpandedState<R = unknown>(): R;
-    floatingGroupRowView<R = cocoa.NSTableRowView>(): R;
+    floatingGroupRowView<R = NSTableRowView>(): R;
     floatingGroupRow<R = number>(): R;
   }
   namespace classes {
-    export interface NSOutlineView<T = any> extends cocoa.classes.NSTableView, cocoa.classes.NSAccessibilityOutlineProtocol {
+    export interface NSOutlineView<T = any> extends NSTableView, NSAccessibilityOutlineProtocol {
       alloc<R = NSOutlineView>(): R;
       new: <R = NSOutlineView>() => R;
       _shouldRequireAutoCollapseOutlineAfterDropsDefault<R = boolean>(): R;

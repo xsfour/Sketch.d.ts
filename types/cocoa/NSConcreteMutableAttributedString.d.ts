@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSConcreteMutableAttributedString<T = any> extends cocoa.NSMutableAttributedString {
-    edited_range_changeInLength<R = void, P0 = number, P1 = cocoa._NSRange, P2 = number>(_edited: P0, _range: P1, _changeInLength: P2): R;
+  export interface NSConcreteMutableAttributedString<T = any> extends NSMutableAttributedString {
+    edited_range_changeInLength<R = void, P0 = number, P1 = _NSRange, P2 = number>(_edited: P0, _range: P1, _changeInLength: P2): R;
     _runArrayHoldingAttributes<R = unknown>(): R;
     string<R = unknown>(): R;
     dealloc<R = void>(): R;
@@ -11,7 +11,7 @@ declare namespace cocoa {
     initWithAttributedString<R = unknown, P0 = unknown>(_initWithAttributedString: P0): R;
   }
   namespace classes {
-    export interface NSConcreteMutableAttributedString<T = any> extends cocoa.classes.NSMutableAttributedString {
+    export interface NSConcreteMutableAttributedString<T = any> extends NSMutableAttributedString {
       alloc<R = NSConcreteMutableAttributedString>(): R;
       new: <R = NSConcreteMutableAttributedString>() => R;
       _mutableStringClass<R = unknown>(): R;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSToggleRulersAction<T = any> extends cocoa.MSToggleVisibilityAction {
+  export interface MSToggleRulersAction<T = any> extends MSToggleVisibilityAction {
     tooltip<R = unknown>(): R;
     label<R = unknown>(): R;
     validate<R = boolean>(): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     toggleRulers<R = void, P0 = unknown>(_toggleRulers: P0): R;
   }
   namespace classes {
-    export interface MSToggleRulersAction<T = any> extends cocoa.classes.MSToggleVisibilityAction {
+    export interface MSToggleRulersAction<T = any> extends MSToggleVisibilityAction {
       alloc<R = MSToggleRulersAction>(): R;
       new: <R = MSToggleRulersAction>() => R;
     }

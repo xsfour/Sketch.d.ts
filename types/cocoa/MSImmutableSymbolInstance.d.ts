@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutableSymbolInstance<T = any> extends cocoa._MSImmutableSymbolInstance, cocoa.MSFlowContainmentCheckProtocol {
+  export interface MSImmutableSymbolInstance<T = any> extends _MSImmutableSymbolInstance, MSFlowContainmentCheckProtocol {
     modifiedMasterInDocument<R = unknown, P0 = unknown>(_modifiedMasterInDocument: P0): R;
     prepareModifiedMasterInDocument<R = unknown, P0 = unknown>(_prepareModifiedMasterInDocument: P0): R;
     modifiedMasterCacheKey<R = unknown>(): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     availableOverridesWithDocument<R = unknown, P0 = unknown>(_availableOverridesWithDocument: P0): R;
     scale<R = number>(): R;
     isScaled<R = boolean>(): R;
-    paddedInfluenceRect_withPaddingsFromMasterInDocument_visitedSymbols<R = cocoa.CGRect, P0 = cocoa.CGRect, P1 = unknown, P2 = unknown>(_paddedInfluenceRect: P0, _withPaddingsFromMasterInDocument: P1, _visitedSymbols: P2): R;
+    paddedInfluenceRect_withPaddingsFromMasterInDocument_visitedSymbols<R = CGRect, P0 = CGRect, P1 = unknown, P2 = unknown>(_paddedInfluenceRect: P0, _withPaddingsFromMasterInDocument: P1, _visitedSymbols: P2): R;
     overridesFromGroupForMigration<R = unknown, P0 = unknown>(_overridesFromGroupForMigration: P0): R;
     initWithGroupForMigration<R = unknown, P0 = unknown>(_initWithGroupForMigration: P0): R;
     overrideMatchingPoint_inDocument<R = unknown, P0 = unknown, P1 = unknown>(_overrideMatchingPoint: P0, _inDocument: P1): R;
@@ -26,13 +26,13 @@ declare namespace cocoa {
     migratePropertiesFromV84OrEarlierWithUnarchiver<R = void, P0 = unknown>(_migratePropertiesFromV84OrEarlierWithUnarchiver: P0): R;
     differsFromLayer<R = boolean, P0 = unknown>(_differsFromLayer: P0): R;
     cachedModifiedSymbolForMaster_inContext<R = unknown, P0 = unknown, P1 = unknown>(_cachedModifiedSymbolForMaster: P0, _inContext: P1): R;
-    cachedModifiedSymbolMaster<R = cocoa.MSImmutableSymbolMaster>(): R;
-    setCachedModifiedSymbolMaster<R = void, P0 = cocoa.MSImmutableSymbolMaster>(_v: P0): R;
+    cachedModifiedSymbolMaster<R = MSImmutableSymbolMaster>(): R;
+    setCachedModifiedSymbolMaster<R = void, P0 = MSImmutableSymbolMaster>(_v: P0): R;
     masterRefreshCounter<R = number>(): R;
-    overrides<R = cocoa.NSDictionary>(): R;
+    overrides<R = NSDictionary>(): R;
   }
   namespace classes {
-    export interface MSImmutableSymbolInstance<T = any> extends cocoa.classes._MSImmutableSymbolInstance, cocoa.classes.MSFlowContainmentCheckProtocol {
+    export interface MSImmutableSymbolInstance<T = any> extends _MSImmutableSymbolInstance, MSFlowContainmentCheckProtocol {
       alloc<R = MSImmutableSymbolInstance>(): R;
       new: <R = MSImmutableSymbolInstance>() => R;
     }

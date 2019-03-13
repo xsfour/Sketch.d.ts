@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDisplayLink<T = any> extends cocoa.NSObject {
+  export interface NSDisplayLink<T = any> extends NSObject {
     invalidate<R = void>(): R;
     removeFromRunLoop_forMode<R = void, P0 = unknown, P1 = unknown>(_removeFromRunLoop: P0, _forMode: P1): R;
     addToRunLoop_forMode<R = void, P0 = unknown, P1 = unknown>(_addToRunLoop: P0, _forMode: P1): R;
@@ -11,7 +11,7 @@ declare namespace cocoa {
     setExecutesConcurrently<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface NSDisplayLink<T = any> extends cocoa.classes.NSObject {
+    export interface NSDisplayLink<T = any> extends NSObject {
       alloc<R = NSDisplayLink>(): R;
       new: <R = NSDisplayLink>() => R;
       currentTimestamp<R = number>(): R;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSEncodingDetectionBuffer<T = any> extends cocoa.NSObject {
+  export interface NSEncodingDetectionBuffer<T = any> extends NSObject {
     stringWithLossySubsitutionString<R = unknown, P0 = unknown>(_stringWithLossySubsitutionString: P0): R;
     appendBytes_count<R = void, P0 = string, P1 = number>(_appendBytes: P0, _count: P1): R;
     appendPlaceholder<R = void>(): R;
@@ -16,7 +16,7 @@ declare namespace cocoa {
     initWithNSStringEncoding_CFStringEncoding_stackBuffer_bufferLength_placeholder<R = unknown, P0 = number, P1 = number, P2 = string, P3 = number, P4 = unknown>(_initWithNSStringEncoding: P0, _CFStringEncoding: P1, _stackBuffer: P2, _bufferLength: P3, _placeholder: P4): R;
   }
   namespace classes {
-    export interface NSEncodingDetectionBuffer<T = any> extends cocoa.classes.NSObject {
+    export interface NSEncodingDetectionBuffer<T = any> extends NSObject {
       alloc<R = NSEncodingDetectionBuffer>(): R;
       new: <R = NSEncodingDetectionBuffer>() => R;
     }

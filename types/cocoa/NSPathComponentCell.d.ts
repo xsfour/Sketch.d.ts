@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPathComponentCell<T = any> extends cocoa.NSTextFieldCell {
-    titleRectForBounds_imageRect<R = cocoa.CGRect, P0 = cocoa.CGRect, P1 = cocoa.CGRect>(_titleRectForBounds: P0, _imageRect: P1): R;
+  export interface NSPathComponentCell<T = any> extends NSTextFieldCell {
+    titleRectForBounds_imageRect<R = CGRect, P0 = CGRect, P1 = CGRect>(_titleRectForBounds: P0, _imageRect: P1): R;
     _effectiveArrowBackgroundStyleInView<R = number, P0 = unknown>(__effectiveArrowBackgroundStyleInView: P0): R;
     _shouldDrawRTL<R = boolean>(): R;
     _shouldHighlightDropTarget<R = boolean>(): R;
-    _iconSize<R = cocoa.CGSize>(): R;
-    _drawNavigationBarBackgroundWithFrame_inView<R = void, P0 = cocoa.CGRect, P1 = unknown>(__drawNavigationBarBackgroundWithFrame: P0, _inView: P1): R;
+    _iconSize<R = CGSize>(): R;
+    _drawNavigationBarBackgroundWithFrame_inView<R = void, P0 = CGRect, P1 = unknown>(__drawNavigationBarBackgroundWithFrame: P0, _inView: P1): R;
     _setCurrentWidth<R = void, P0 = number>(__setCurrentWidth: P0): R;
     _currentWidth<R = number>(): R;
     _setResizedWidth<R = void, P0 = number>(__setResizedWidth: P0): R;
@@ -29,16 +29,16 @@ declare namespace cocoa {
     _setIsDropTarget<R = void, P0 = boolean>(__setIsDropTarget: P0): R;
     _isDropTarget<R = boolean>(): R;
     description<R = unknown>(): R;
-    URL<R = cocoa.NSURL>(): R;
-    setURL<R = void, P0 = cocoa.NSURL>(_v: P0): R;
-    image<R = cocoa.NSImage>(): R;
-    setImage<R = void, P0 = cocoa.NSImage>(_v: P0): R;
+    URL<R = NSURL>(): R;
+    setURL<R = void, P0 = NSURL>(_v: P0): R;
+    image<R = NSImage>(): R;
+    setImage<R = void, P0 = NSImage>(_v: P0): R;
   }
   namespace classes {
-    export interface NSPathComponentCell<T = any> extends cocoa.classes.NSTextFieldCell {
+    export interface NSPathComponentCell<T = any> extends NSTextFieldCell {
       alloc<R = NSPathComponentCell>(): R;
       new: <R = NSPathComponentCell>() => R;
-      _iconSizeForControlSize<R = cocoa.CGSize, P0 = number>(__iconSizeForControlSize: P0): R;
+      _iconSizeForControlSize<R = CGSize, P0 = number>(__iconSizeForControlSize: P0): R;
     }
   }
 }

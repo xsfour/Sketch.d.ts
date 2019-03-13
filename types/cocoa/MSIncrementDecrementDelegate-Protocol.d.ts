@@ -8,5 +8,3 @@ declare namespace cocoa {
     export interface MSIncrementDecrementDelegateProtocol<T = any> {  }
   }
 }
-
-declare const MSIncrementDecrementDelegateProtocol: cocoa.classes.MSIncrementDecrementDelegateProtocol;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSNibAXAttributeConnector<T = any> extends cocoa.NSObject, cocoa.NSCodingProtocol {
+  export interface NSNibAXAttributeConnector<T = any> extends NSObject, NSCodingProtocol {
     setLabel<R = void, P0 = unknown>(_setLabel: P0): R;
     label<R = unknown>(): R;
     instantiateWithObjectInstantiator<R = void, P0 = unknown>(_instantiateWithObjectInstantiator: P0): R;
@@ -19,7 +19,7 @@ declare namespace cocoa {
     _isAXConnector<R = boolean>(): R;
   }
   namespace classes {
-    export interface NSNibAXAttributeConnector<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCodingProtocol {
+    export interface NSNibAXAttributeConnector<T = any> extends NSObject, NSCodingProtocol {
       alloc<R = NSNibAXAttributeConnector>(): R;
       new: <R = NSNibAXAttributeConnector>() => R;
     }

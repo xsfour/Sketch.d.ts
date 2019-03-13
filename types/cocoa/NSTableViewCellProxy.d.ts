@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableViewCellProxy<T = any> extends cocoa.NSAccessibilityProxy, cocoa.NSTableViewCellElementProtocol {
+  export interface NSTableViewCellProxy<T = any> extends NSAccessibilityProxy, NSTableViewCellElementProtocol {
     accessibilityChildrenInNavigationOrderAttribute<R = unknown>(): R;
     accessibilityCurrentEditor<R = unknown>(): R;
-    accessibilityWindowPointForShowMenu<R = cocoa.CGPoint>(): R;
+    accessibilityWindowPointForShowMenu<R = CGPoint>(): R;
     _accessibilityShowMenu<R = void, P0 = unknown>(__accessibilityShowMenu: P0): R;
     _accessibilityPerformAction<R = void, P0 = unknown>(__accessibilityPerformAction: P0): R;
     _accessibilityPerformAction_withValue<R = void, P0 = unknown, P1 = unknown>(__accessibilityPerformAction: P0, _withValue: P1): R;
@@ -27,13 +27,13 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     initWithRow_column_tableView<R = unknown, P0 = number, P1 = number, P2 = unknown>(_initWithRow: P0, _column: P1, _tableView: P2): R;
     initWithRow_tableColumn<R = unknown, P0 = number, P1 = unknown>(_initWithRow: P0, _tableColumn: P1): R;
-    description<R = cocoa.NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSTableViewCellProxy<T = any> extends cocoa.classes.NSAccessibilityProxy, cocoa.classes.NSTableViewCellElementProtocol {
+    export interface NSTableViewCellProxy<T = any> extends NSAccessibilityProxy, NSTableViewCellElementProtocol {
       alloc<R = NSTableViewCellProxy>(): R;
       new: <R = NSTableViewCellProxy>() => R;
     }

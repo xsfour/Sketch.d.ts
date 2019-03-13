@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInsertMenuAction<T = any> extends cocoa.MSDocumentAction {
+  export interface MSInsertMenuAction<T = any> extends MSDocumentAction {
     addInsertMenuItemsFor_usingMenuBuilder_forMenu<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(_addInsertMenuItemsFor: P0, _usingMenuBuilder: P1, _forMenu: P2): R;
     addInsertSharedTextToMenu<R = void, P0 = unknown>(_addInsertSharedTextToMenu: P0): R;
     addInsertSymbolsToMenu<R = void, P0 = unknown>(_addInsertSymbolsToMenu: P0): R;
@@ -9,15 +9,15 @@ declare namespace cocoa {
     isSelectable<R = boolean>(): R;
     label<R = unknown>(): R;
     tooltip<R = unknown>(): R;
-    textStyleMenuBuilder<R = cocoa.MSForeignObjectMenuBuilder>(): R;
-    setTextStyleMenuBuilder<R = void, P0 = cocoa.MSForeignObjectMenuBuilder>(_v: P0): R;
-    symbolMenuBuilder<R = cocoa.MSForeignObjectMenuBuilder>(): R;
-    setSymbolMenuBuilder<R = void, P0 = cocoa.MSForeignObjectMenuBuilder>(_v: P0): R;
-    documentCloseObserver<R = cocoa.NSObject>(): R;
-    setDocumentCloseObserver<R = void, P0 = cocoa.NSObject>(_v: P0): R;
+    textStyleMenuBuilder<R = MSForeignObjectMenuBuilder>(): R;
+    setTextStyleMenuBuilder<R = void, P0 = MSForeignObjectMenuBuilder>(_v: P0): R;
+    symbolMenuBuilder<R = MSForeignObjectMenuBuilder>(): R;
+    setSymbolMenuBuilder<R = void, P0 = MSForeignObjectMenuBuilder>(_v: P0): R;
+    documentCloseObserver<R = NSObject>(): R;
+    setDocumentCloseObserver<R = void, P0 = NSObject>(_v: P0): R;
   }
   namespace classes {
-    export interface MSInsertMenuAction<T = any> extends cocoa.classes.MSDocumentAction {
+    export interface MSInsertMenuAction<T = any> extends MSDocumentAction {
       alloc<R = MSInsertMenuAction>(): R;
       new: <R = MSInsertMenuAction>() => R;
     }

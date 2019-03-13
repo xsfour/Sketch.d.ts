@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUnitLength<T = any> extends cocoa.NSDimension, cocoa.NSSecureCodingProtocol {}
+  export interface NSUnitLength<T = any> extends NSDimension, NSSecureCodingProtocol {}
   namespace classes {
-    export interface NSUnitLength<T = any> extends cocoa.classes.NSDimension, cocoa.classes.NSSecureCodingProtocol {
+    export interface NSUnitLength<T = any> extends NSDimension, NSSecureCodingProtocol {
       alloc<R = NSUnitLength>(): R;
       new: <R = NSUnitLength>() => R;
       parsecs<R = unknown>(): R;

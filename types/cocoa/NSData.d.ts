@@ -14,7 +14,7 @@ declare namespace cocoa {
     _initWithBase64EncodedObject_options<R = unknown, P0 = unknown, P1 = number>(__initWithBase64EncodedObject: P0, _options: P1): R;
     _decodeBase64EncodedCharacterBuffer_length_options_buffer_bufferLength_state<R = boolean, P0 = string, P1 = number, P2 = number, P3 = string, P4 = number, P5 = unknown>(__decodeBase64EncodedCharacterBuffer: P0, _length: P1, _options: P2, _buffer: P3, _bufferLength: P4, _state: P5): R;
     _createDispatchData<R = unknown>(): R;
-    rangeOfData_options_range<R = cocoa._NSRange, P0 = unknown, P1 = number, P2 = cocoa._NSRange>(_rangeOfData: P0, _options: P1, _range: P2): R;
+    rangeOfData_options_range<R = _NSRange, P0 = unknown, P1 = number, P2 = _NSRange>(_rangeOfData: P0, _options: P1, _range: P2): R;
     initWithData<R = unknown, P0 = unknown>(_initWithData: P0): R;
     initWithContentsOfFile_error<R = unknown, P0 = unknown, P1 = unknown>(_initWithContentsOfFile: P0, _error: P1): R;
     initWithContentsOfMappedFile_error<R = unknown, P0 = unknown, P1 = unknown>(_initWithContentsOfMappedFile: P0, _error: P1): R;
@@ -25,8 +25,8 @@ declare namespace cocoa {
     initWithContentsOfURL_options_maxLength_error<R = unknown, P0 = unknown, P1 = number, P2 = number, P3 = unknown>(_initWithContentsOfURL: P0, _options: P1, _maxLength: P2, _error: P3): R;
     initWithContentsOfFile_options_maxLength_error<R = unknown, P0 = unknown, P1 = number, P2 = number, P3 = unknown>(_initWithContentsOfFile: P0, _options: P1, _maxLength: P2, _error: P3): R;
     initWithContentsOfFile<R = unknown, P0 = unknown>(_initWithContentsOfFile: P0): R;
-    initWithBytes_length_copy_deallocator<R = unknown, P0 = void, P1 = number, P2 = boolean, P3 = cocoa.CDUnknownBlockType>(_initWithBytes: P0, _length: P1, _copy: P2, _deallocator: P3): R;
-    initWithBytesNoCopy_length_deallocator<R = unknown, P0 = void, P1 = number, P2 = cocoa.CDUnknownBlockType>(_initWithBytesNoCopy: P0, _length: P1, _deallocator: P2): R;
+    initWithBytes_length_copy_deallocator<R = unknown, P0 = void, P1 = number, P2 = boolean, P3 = CDUnknownBlockType>(_initWithBytes: P0, _length: P1, _copy: P2, _deallocator: P3): R;
+    initWithBytesNoCopy_length_deallocator<R = unknown, P0 = void, P1 = number, P2 = CDUnknownBlockType>(_initWithBytesNoCopy: P0, _length: P1, _deallocator: P2): R;
     initWithBytesNoCopy_length_freeWhenDone<R = unknown, P0 = void, P1 = number, P2 = boolean>(_initWithBytesNoCopy: P0, _length: P1, _freeWhenDone: P2): R;
     initWithBytesNoCopy_length<R = unknown, P0 = void, P1 = number>(_initWithBytesNoCopy: P0, _length: P1): R;
     initWithBytes_length<R = unknown, P0 = void, P1 = number>(_initWithBytes: P0, _length: P1): R;
@@ -36,12 +36,12 @@ declare namespace cocoa {
     writeToFile_atomically_error<R = boolean, P0 = unknown, P1 = boolean, P2 = unknown>(_writeToFile: P0, _atomically: P1, _error: P2): R;
     writeToURL_options_error<R = boolean, P0 = unknown, P1 = number, P2 = unknown>(_writeToURL: P0, _options: P1, _error: P2): R;
     writeToFile_options_error<R = boolean, P0 = unknown, P1 = number, P2 = unknown>(_writeToFile: P0, _options: P1, _error: P2): R;
-    subdataWithRange<R = unknown, P0 = cocoa._NSRange>(_subdataWithRange: P0): R;
+    subdataWithRange<R = unknown, P0 = _NSRange>(_subdataWithRange: P0): R;
     isEqualToData<R = boolean, P0 = unknown>(_isEqualToData: P0): R;
     _isCompact<R = boolean>(): R;
     _isDispatchData<R = boolean>(): R;
-    getBytes_range<R = void, P0 = void, P1 = cocoa._NSRange>(_getBytes: P0, _range: P1): R;
-    enumerateByteRangesUsingBlock<R = void, P0 = cocoa.CDUnknownBlockType>(_enumerateByteRangesUsingBlock: P0): R;
+    getBytes_range<R = void, P0 = void, P1 = _NSRange>(_getBytes: P0, _range: P1): R;
+    enumerateByteRangesUsingBlock<R = void, P0 = CDUnknownBlockType>(_enumerateByteRangesUsingBlock: P0): R;
     getBytes_length<R = void, P0 = void, P1 = number>(_getBytes: P0, _length: P1): R;
     getBytes<R = void, P0 = void>(_getBytes: P0): R;
     _allowsDirectEncoding<R = boolean>(): R;
@@ -50,9 +50,9 @@ declare namespace cocoa {
     classForCoder<R = unknown>(): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
-    mutableCopyWithZone<R = unknown, P0 = cocoa._NSZone>(_mutableCopyWithZone: P0): R;
+    mutableCopyWithZone<R = unknown, P0 = _NSZone>(_mutableCopyWithZone: P0): R;
     _copyWillRetain<R = boolean>(): R;
-    copyWithZone<R = unknown, P0 = cocoa._NSZone>(_copyWithZone: P0): R;
+    copyWithZone<R = unknown, P0 = _NSZone>(_copyWithZone: P0): R;
     isEqual<R = boolean, P0 = unknown>(_isEqual: P0): R;
     hash<R = number>(): R;
     _asciiDescription<R = unknown>(): R;
@@ -84,13 +84,13 @@ declare namespace cocoa {
     sha1AsString<R = unknown>(): R;
     sha1<R = unknown>(): R;
     treeAsDictionary<R = unknown>(): R;
-    archiveReferenceIdentifier_bc<R = cocoa.NSString>(): R;
+    archiveReferenceIdentifier_bc<R = NSString>(): R;
   }
   namespace classes {
     export interface NSData<T = any> {
       // + NSData(NSData,NSDataObjCTypeDeserialization,NSDataPortCoding,NSDeserialization,NSKindOfAdditions,NSScriptAppleEventConversion,NSURLExtras,BCReceiptUtilities,Base64,MSBaseArchiver,SHA1,TreeAsDictionarySupport):
       _base64DecodingAlwaysSucceedsForOptions<R = boolean, P0 = number>(__base64DecodingAlwaysSucceedsForOptions: P0): R;
-      _newZeroingDataWithBytesNoCopy_length_deallocator<R = unknown, P0 = void, P1 = number, P2 = cocoa.CDUnknownBlockType>(__newZeroingDataWithBytesNoCopy: P0, _length: P1, _deallocator: P2): R;
+      _newZeroingDataWithBytesNoCopy_length_deallocator<R = unknown, P0 = void, P1 = number, P2 = CDUnknownBlockType>(__newZeroingDataWithBytesNoCopy: P0, _length: P1, _deallocator: P2): R;
       _newZeroingDataWithBytes_length<R = unknown, P0 = void, P1 = number>(__newZeroingDataWithBytes: P0, _length: P1): R;
       dataWithData<R = unknown, P0 = unknown>(_dataWithData: P0): R;
       dataWithContentsOfURL_options_maxLength_error<R = unknown, P0 = unknown, P1 = number, P2 = number, P3 = unknown>(_dataWithContentsOfURL: P0, _options: P1, _maxLength: P2, _error: P3): R;
@@ -103,7 +103,7 @@ declare namespace cocoa {
       dataWithBytesNoCopy_length<R = unknown, P0 = void, P1 = number>(_dataWithBytesNoCopy: P0, _length: P1): R;
       dataWithBytes_length<R = unknown, P0 = void, P1 = number>(_dataWithBytes: P0, _length: P1): R;
       data<R = unknown>(): R;
-      allocWithZone<R = unknown, P0 = cocoa._NSZone>(_allocWithZone: P0): R;
+      allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
       _scriptingRectangleWithDescriptor<R = unknown, P0 = unknown>(__scriptingRectangleWithDescriptor: P0): R;
       _scriptingPointWithDescriptor<R = unknown, P0 = unknown>(__scriptingPointWithDescriptor: P0): R;
       dataWithBase64Encoding_xcd<R = unknown, P0 = unknown>(_dataWithBase64Encoding_xcd: P0): R;

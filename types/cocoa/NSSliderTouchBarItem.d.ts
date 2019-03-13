@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSliderTouchBarItem<T = any> extends cocoa.NSTouchBarItem, cocoa.NSSliderAccessoryContainerProtocol {
+  export interface NSSliderTouchBarItem<T = any> extends NSTouchBarItem, NSSliderAccessoryContainerProtocol {
     cxx_destruct<R = void>(): R;
     _itemViewDidCancelTracking<R = void>(): R;
     _itemViewDidEndTracking<R = void>(): R;
@@ -15,20 +15,20 @@ declare namespace cocoa {
     setAction<R = void, P0 = string>(_v: P0): R;
     target<R = unknown>(): R;
     setTarget<R = void, P0 = unknown>(_v: P0): R;
-    customizationLabel<R = cocoa.NSString>(): R;
-    setCustomizationLabel<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    label<R = cocoa.NSString>(): R;
-    setLabel<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    customizationLabel<R = NSString>(): R;
+    setCustomizationLabel<R = void, P0 = NSString>(_v: P0): R;
+    label<R = NSString>(): R;
+    setLabel<R = void, P0 = NSString>(_v: P0): R;
     valueAccessoryWidth<R = number>(): R;
     setValueAccessoryWidth<R = void, P0 = number>(_v: P0): R;
-    slider<R = cocoa.NSSlider>(): R;
-    setSlider<R = void, P0 = cocoa.NSSlider>(_v: P0): R;
-    maximumValueAccessory<R = cocoa.NSSliderAccessory>(): R;
-    setMaximumValueAccessory<R = void, P0 = cocoa.NSSliderAccessory>(_v: P0): R;
-    minimumValueAccessory<R = cocoa.NSSliderAccessory>(): R;
-    setMinimumValueAccessory<R = void, P0 = cocoa.NSSliderAccessory>(_v: P0): R;
-    view<R = cocoa.NSUserInterfaceCompression>(): R;
-    _sliderItemView<R = cocoa._NSSliderTouchBarItemView>(): R;
+    slider<R = NSSlider>(): R;
+    setSlider<R = void, P0 = NSSlider>(_v: P0): R;
+    maximumValueAccessory<R = NSSliderAccessory>(): R;
+    setMaximumValueAccessory<R = void, P0 = NSSliderAccessory>(_v: P0): R;
+    minimumValueAccessory<R = NSSliderAccessory>(): R;
+    setMinimumValueAccessory<R = void, P0 = NSSliderAccessory>(_v: P0): R;
+    view<R = NSUserInterfaceCompression>(): R;
+    _sliderItemView<R = _NSSliderTouchBarItemView>(): R;
     incrementValue<R = number>(): R;
     setIncrementValue<R = void, P0 = number>(_v: P0): R;
     value<R = number>(): R;
@@ -38,13 +38,13 @@ declare namespace cocoa {
     minimumValue<R = number>(): R;
     setMinimumValue<R = void, P0 = number>(_v: P0): R;
     _hasStepBehaviorContext<R = boolean>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSSliderTouchBarItem<T = any> extends cocoa.classes.NSTouchBarItem, cocoa.classes.NSSliderAccessoryContainerProtocol {
+    export interface NSSliderTouchBarItem<T = any> extends NSTouchBarItem, NSSliderAccessoryContainerProtocol {
       alloc<R = NSSliderTouchBarItem>(): R;
       new: <R = NSSliderTouchBarItem>() => R;
       keyPathsForValuesAffecting_hasStepBehaviorContext<R = unknown>(): R;

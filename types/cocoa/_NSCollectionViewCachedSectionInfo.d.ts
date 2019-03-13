@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSCollectionViewCachedSectionInfo<T = any> extends cocoa.NSObject {
+  export interface _NSCollectionViewCachedSectionInfo<T = any> extends NSObject {
     dealloc<R = void>(): R;
     description<R = unknown>(): R;
-    enumerateObjectsUsingBlock<R = void, P0 = cocoa.CDUnknownBlockType>(_enumerateObjectsUsingBlock: P0): R;
+    enumerateObjectsUsingBlock<R = void, P0 = CDUnknownBlockType>(_enumerateObjectsUsingBlock: P0): R;
     reloadItemsAtIndexes<R = void, P0 = unknown>(_reloadItemsAtIndexes: P0): R;
     moveItemFromIndex_toIndex<R = void, P0 = number, P1 = number>(_moveItemFromIndex: P0, _toIndex: P1): R;
     deleteItemsAtIndexes<R = void, P0 = unknown>(_deleteItemsAtIndexes: P0): R;
@@ -23,7 +23,7 @@ declare namespace cocoa {
     setItemCount<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface _NSCollectionViewCachedSectionInfo<T = any> extends cocoa.classes.NSObject {
+    export interface _NSCollectionViewCachedSectionInfo<T = any> extends NSObject {
       alloc<R = _NSCollectionViewCachedSectionInfo>(): R;
       new: <R = _NSCollectionViewCachedSectionInfo>() => R;
     }

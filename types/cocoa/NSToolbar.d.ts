@@ -1,16 +1,16 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSToolbar<T = any> extends cocoa.NSObject {
+  export interface NSToolbar<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     _setDoNotShowBaselineSeparator<R = void, P0 = boolean>(__setDoNotShowBaselineSeparator: P0): R;
     _setLoadedMetrics<R = void, P0 = boolean>(__setLoadedMetrics: P0): R;
     _window<R = unknown>(): R;
-    _minimumWindowSizeEnsuringVisibilityOfItem<R = cocoa.CGSize, P0 = unknown>(__minimumWindowSizeEnsuringVisibilityOfItem: P0): R;
-    _minimumSizeForTextFieldToolbarItem<R = cocoa.CGSize>(): R;
-    _maximumSizeForTextFieldToolbarItem<R = cocoa.CGSize>(): R;
-    _minimumSizeForSearchFieldToolbarItem<R = cocoa.CGSize>(): R;
-    _maximumSizeForSearchFieldToolbarItem<R = cocoa.CGSize>(): R;
+    _minimumWindowSizeEnsuringVisibilityOfItem<R = CGSize, P0 = unknown>(__minimumWindowSizeEnsuringVisibilityOfItem: P0): R;
+    _minimumSizeForTextFieldToolbarItem<R = CGSize>(): R;
+    _maximumSizeForTextFieldToolbarItem<R = CGSize>(): R;
+    _minimumSizeForSearchFieldToolbarItem<R = CGSize>(): R;
+    _maximumSizeForSearchFieldToolbarItem<R = CGSize>(): R;
     _toolbarItemsFromDelegateWithPasteboard<R = unknown, P0 = unknown>(__toolbarItemsFromDelegateWithPasteboard: P0): R;
     _delegateMightBeAbleToProduceToolbarItemsFromPasteboard<R = boolean, P0 = unknown>(__delegateMightBeAbleToProduceToolbarItemsFromPasteboard: P0): R;
     registeredDraggedTypes<R = unknown>(): R;
@@ -45,15 +45,15 @@ declare namespace cocoa {
     setFullScreenAccessoryViewMinHeight<R = void, P0 = number>(_setFullScreenAccessoryViewMinHeight: P0): R;
     fullScreenAccessoryView<R = unknown>(): R;
     setFullScreenAccessoryView<R = void, P0 = unknown>(_setFullScreenAccessoryView: P0): R;
-    _setAuxiliaryViewMaxSize<R = void, P0 = cocoa.CGSize>(__setAuxiliaryViewMaxSize: P0): R;
-    _auxiliaryViewMaxSize<R = cocoa.CGSize>(): R;
+    _setAuxiliaryViewMaxSize<R = void, P0 = CGSize>(__setAuxiliaryViewMaxSize: P0): R;
+    _auxiliaryViewMaxSize<R = CGSize>(): R;
     _fullScreenAuxiliaryViewController<R = unknown>(): R;
     _ensureFullScreenAuxiliaryViewController<R = void>(): R;
     _getFullScreenAuxiliaryViewController<R = unknown>(): R;
     _setFullScreenAuxiliaryViewController<R = void, P0 = unknown>(__setFullScreenAuxiliaryViewController: P0): R;
-    _setAuxiliaryViewMinSize<R = void, P0 = cocoa.CGSize>(__setAuxiliaryViewMinSize: P0): R;
+    _setAuxiliaryViewMinSize<R = void, P0 = CGSize>(__setAuxiliaryViewMinSize: P0): R;
     _ensureViewsFrameIsSet<R = void>(): R;
-    _auxiliaryViewMinSize<R = cocoa.CGSize>(): R;
+    _auxiliaryViewMinSize<R = CGSize>(): R;
     _fullScreenAuxiliaryView<R = unknown>(): R;
     _fullScreenOriginalAutoresizingMask<R = number>(): R;
     _removeFullScreenAuxWindowController<R = void>(): R;
@@ -218,8 +218,8 @@ declare namespace cocoa {
     _toolbarViewClass<R = unknown>(): R;
     _loadInitialItemIdentifiers_requireImmediateLoad<R = void, P0 = unknown, P1 = boolean>(__loadInitialItemIdentifiers: P0, _requireImmediateLoad: P1): R;
     _noteDefaultMetricsChanged<R = void>(): R;
-    _metrics<R = cocoa.__NSToolbarMetrics>(): R;
-    _setMetrics<R = void, P0 = cocoa.__NSToolbarMetrics>(__setMetrics: P0): R;
+    _metrics<R = __NSToolbarMetrics>(): R;
+    _setMetrics<R = void, P0 = __NSToolbarMetrics>(__setMetrics: P0): R;
     _customMetrics<R = unknown>(): R;
     _toolbarView<R = unknown>(): R;
     _setToolbarView<R = void, P0 = unknown>(__setToolbarView: P0): R;
@@ -251,18 +251,18 @@ declare namespace cocoa {
     setAllowsExtensionItems<R = void, P0 = boolean>(_v: P0): R;
     autosavesConfiguration<R = boolean>(): R;
     setAutosavesConfiguration<R = void, P0 = boolean>(_v: P0): R;
-    configurationDictionary<R = cocoa.NSDictionary>(): R;
-    centeredItemIdentifier<R = cocoa.NSString>(): R;
-    setCenteredItemIdentifier<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    visibleItems<R = cocoa.NSArray>(): R;
-    items<R = cocoa.NSArray>(): R;
-    identifier<R = cocoa.NSString>(): R;
+    configurationDictionary<R = NSDictionary>(): R;
+    centeredItemIdentifier<R = NSString>(): R;
+    setCenteredItemIdentifier<R = void, P0 = NSString>(_v: P0): R;
+    visibleItems<R = NSArray>(): R;
+    items<R = NSArray>(): R;
+    identifier<R = NSString>(): R;
     allowsUserCustomization<R = boolean>(): R;
     setAllowsUserCustomization<R = void, P0 = boolean>(_v: P0): R;
     displayMode<R = number>(): R;
     setDisplayMode<R = void, P0 = number>(_v: P0): R;
-    selectedItemIdentifier<R = cocoa.NSString>(): R;
-    setSelectedItemIdentifier<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    selectedItemIdentifier<R = NSString>(): R;
+    setSelectedItemIdentifier<R = void, P0 = NSString>(_v: P0): R;
     showsBaselineSeparator<R = boolean>(): R;
     setShowsBaselineSeparator<R = void, P0 = boolean>(_v: P0): R;
     sizeMode<R = number>(): R;
@@ -270,13 +270,13 @@ declare namespace cocoa {
     customizationPaletteIsRunning<R = boolean>(): R;
     visible<R = boolean>(): R;
     setVisible<R = void, P0 = boolean>(_v: P0): R;
-    delegate<R = cocoa.NSToolbarDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSToolbarDelegate>(_v: P0): R;
+    delegate<R = NSToolbarDelegate>(): R;
+    setDelegate<R = void, P0 = NSToolbarDelegate>(_v: P0): R;
     // + NSToolbar(CHToolbarExtensions):
     itemWithIdentifier<R = unknown, P0 = unknown>(_itemWithIdentifier: P0): R;
   }
   namespace classes {
-    export interface NSToolbar<T = any> extends cocoa.classes.NSObject {
+    export interface NSToolbar<T = any> extends NSObject {
       alloc<R = NSToolbar>(): R;
       new: <R = NSToolbar>() => R;
       _servicesIdentifiers<R = unknown>(): R;

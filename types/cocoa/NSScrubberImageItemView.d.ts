@@ -1,15 +1,15 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScrubberImageItemView<T = any> extends cocoa.NSScrubberItemView {
-    imageView<R = cocoa.NSImageView>(): R;
+  export interface NSScrubberImageItemView<T = any> extends NSScrubberItemView {
+    imageView<R = NSImageView>(): R;
     imageAlignment<R = number>(): R;
     setImageAlignment<R = void, P0 = number>(_v: P0): R;
-    image<R = cocoa.NSImage>(): R;
-    setImage<R = void, P0 = cocoa.NSImage>(_v: P0): R;
+    image<R = NSImage>(): R;
+    setImage<R = void, P0 = NSImage>(_v: P0): R;
   }
   namespace classes {
-    export interface NSScrubberImageItemView<T = any> extends cocoa.classes.NSScrubberItemView {
+    export interface NSScrubberImageItemView<T = any> extends NSScrubberItemView {
       alloc<R = NSScrubberImageItemView>(): R;
       new: <R = NSScrubberImageItemView>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface FBEdgeOverlap<T = any> extends cocoa.NSObject {
+  export interface FBEdgeOverlap<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     debugQuickLookObject<R = unknown>(): R;
     description<R = unknown>(): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     fitsAfter<R = boolean, P0 = unknown>(_fitsAfter: P0): R;
     fitsBefore<R = boolean, P0 = unknown>(_fitsBefore: P0): R;
     initWithRange_edge1_edge2<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_initWithRange: P0, _edge1: P1, _edge2: P2): R;
-    edge2<R = cocoa.FBBezierCurve>(): R;
-    edge1<R = cocoa.FBBezierCurve>(): R;
-    range<R = cocoa.FBBezierIntersectRange>(): R;
+    edge2<R = FBBezierCurve>(): R;
+    edge1<R = FBBezierCurve>(): R;
+    range<R = FBBezierIntersectRange>(): R;
   }
   namespace classes {
-    export interface FBEdgeOverlap<T = any> extends cocoa.classes.NSObject {
+    export interface FBEdgeOverlap<T = any> extends NSObject {
       alloc<R = FBEdgeOverlap>(): R;
       new: <R = FBEdgeOverlap>() => R;
       overlapWithRange_edge1_edge2<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_overlapWithRange: P0, _edge1: P1, _edge2: P2): R;

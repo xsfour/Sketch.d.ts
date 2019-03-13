@@ -1,18 +1,18 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSMenuItemHelper<T = any> extends cocoa.NSObject {
+  export interface MSMenuItemHelper<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     menuItem<R = unknown>(): R;
     isSeparator<R = boolean>(): R;
     setIsSeparator<R = void, P0 = boolean>(_v: P0): R;
     tag<R = number>(): R;
     setTag<R = void, P0 = number>(_v: P0): R;
-    title<R = cocoa.NSString>(): R;
-    setTitle<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    title<R = NSString>(): R;
+    setTitle<R = void, P0 = NSString>(_v: P0): R;
   }
   namespace classes {
-    export interface MSMenuItemHelper<T = any> extends cocoa.classes.NSObject {
+    export interface MSMenuItemHelper<T = any> extends NSObject {
       alloc<R = MSMenuItemHelper>(): R;
       new: <R = MSMenuItemHelper>() => R;
       separator<R = unknown>(): R;

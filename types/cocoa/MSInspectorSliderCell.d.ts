@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInspectorSliderCell<T = any> extends cocoa.NSSliderCell {
-    drawTickmarkKnob<R = void, P0 = cocoa.CGRect>(_drawTickmarkKnob: P0): R;
+  export interface MSInspectorSliderCell<T = any> extends NSSliderCell {
+    drawTickmarkKnob<R = void, P0 = CGRect>(_drawTickmarkKnob: P0): R;
   }
   namespace classes {
-    export interface MSInspectorSliderCell<T = any> extends cocoa.classes.NSSliderCell {
+    export interface MSInspectorSliderCell<T = any> extends NSSliderCell {
       alloc<R = MSInspectorSliderCell>(): R;
       new: <R = MSInspectorSliderCell>() => R;
     }

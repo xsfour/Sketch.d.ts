@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSLayerYFocusAction<T = any> extends cocoa.MSDocumentAction {
+  export interface MSLayerYFocusAction<T = any> extends MSDocumentAction {
     label<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSLayerYFocusAction<T = any> extends cocoa.classes.MSDocumentAction {
+    export interface MSLayerYFocusAction<T = any> extends MSDocumentAction {
       alloc<R = MSLayerYFocusAction>(): R;
       new: <R = MSLayerYFocusAction>() => R;
     }

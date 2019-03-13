@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTabBarViewButton<T = any> extends cocoa._NSKeyLoopSplicingContainerView {
+  export interface NSTabBarViewButton<T = any> extends _NSKeyLoopSplicingContainerView {
     _removeVisualEffectViewForFullScreenToolbarWindow<R = void>(): R;
     _addVisualEffectViewForFullScreenToolbarWindow<R = void>(): R;
     _unregisterBackgroundHighlightLayer<R = void, P0 = unknown>(__unregisterBackgroundHighlightLayer: P0): R;
@@ -20,9 +20,9 @@ declare namespace cocoa {
     _makeBoxInVibrantContentView<R = unknown>(): R;
     _makeViewInVibrantContentView<R = unknown>(): R;
     _setUpBackgroundViews<R = void>(): R;
-    nonVibrantContentView<R = cocoa.NSView>(): R;
-    vibrantContentView<R = cocoa.NSView>(): R;
-    contentView<R = cocoa.NSView>(): R;
+    nonVibrantContentView<R = NSView>(): R;
+    vibrantContentView<R = NSView>(): R;
+    contentView<R = NSView>(): R;
     useModalCollapsedLayout<R = boolean>(): R;
     setUseModalCollapsedLayout<R = void, P0 = boolean>(_v: P0): R;
     hasMouseOverHighlight<R = boolean>(): R;
@@ -33,11 +33,11 @@ declare namespace cocoa {
     setForcesActiveWindowState<R = void, P0 = boolean>(_v: P0): R;
     shouldReduceTransparency<R = boolean>(): R;
     setShouldReduceTransparency<R = void, P0 = boolean>(_v: P0): R;
-    backdropGroupName<R = cocoa.NSString>(): R;
-    setBackdropGroupName<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    backdropGroupName<R = NSString>(): R;
+    setBackdropGroupName<R = void, P0 = NSString>(_v: P0): R;
   }
   namespace classes {
-    export interface NSTabBarViewButton<T = any> extends cocoa.classes._NSKeyLoopSplicingContainerView {
+    export interface NSTabBarViewButton<T = any> extends _NSKeyLoopSplicingContainerView {
       alloc<R = NSTabBarViewButton>(): R;
       new: <R = NSTabBarViewButton>() => R;
     }

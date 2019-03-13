@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAssetLibraryTableCellView<T = any> extends cocoa.NSTableCellView {
+  export interface MSAssetLibraryTableCellView<T = any> extends NSTableCellView {
     setPrimaryTextFieldTextColor<R = void, P0 = unknown>(_setPrimaryTextFieldTextColor: P0): R;
     setSecondaryTextFieldTextColor<R = void, P0 = unknown>(_setSecondaryTextFieldTextColor: P0): R;
     downloadLibrary<R = void, P0 = unknown>(_downloadLibrary: P0): R;
@@ -18,28 +18,28 @@ declare namespace cocoa {
     setDownloadButtonHidden<R = void, P0 = boolean>(_v: P0): R;
     quickLookButtonHidden<R = boolean>(): R;
     setQuickLookButtonHidden<R = void, P0 = boolean>(_v: P0): R;
-    downloadProgress<R = cocoa.NSProgressIndicator>(): R;
-    setDownloadProgress<R = void, P0 = cocoa.NSProgressIndicator>(_v: P0): R;
-    previewContainer<R = cocoa.MSAssetLibraryPreview>(): R;
-    setPreviewContainer<R = void, P0 = cocoa.MSAssetLibraryPreview>(_v: P0): R;
-    libraryPreferencePane<R = cocoa.MSAssetLibrariesPreferencePane>(): R;
-    setLibraryPreferencePane<R = void, P0 = cocoa.MSAssetLibrariesPreferencePane>(_v: P0): R;
-    updateAvailableTextField<R = cocoa.NSTextField>(): R;
-    setUpdateAvailableTextField<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    updateAvailableSecondaryTextField<R = cocoa.NSTextField>(): R;
-    setUpdateAvailableSecondaryTextField<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    updateAvailablePrimaryTextField<R = cocoa.NSTextField>(): R;
-    setUpdateAvailablePrimaryTextField<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    secondaryTextField<R = cocoa.NSTextField>(): R;
-    setSecondaryTextField<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    primaryTextField<R = cocoa.NSTextField>(): R;
-    setPrimaryTextField<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
+    downloadProgress<R = NSProgressIndicator>(): R;
+    setDownloadProgress<R = void, P0 = NSProgressIndicator>(_v: P0): R;
+    previewContainer<R = MSAssetLibraryPreview>(): R;
+    setPreviewContainer<R = void, P0 = MSAssetLibraryPreview>(_v: P0): R;
+    libraryPreferencePane<R = MSAssetLibrariesPreferencePane>(): R;
+    setLibraryPreferencePane<R = void, P0 = MSAssetLibrariesPreferencePane>(_v: P0): R;
+    updateAvailableTextField<R = NSTextField>(): R;
+    setUpdateAvailableTextField<R = void, P0 = NSTextField>(_v: P0): R;
+    updateAvailableSecondaryTextField<R = NSTextField>(): R;
+    setUpdateAvailableSecondaryTextField<R = void, P0 = NSTextField>(_v: P0): R;
+    updateAvailablePrimaryTextField<R = NSTextField>(): R;
+    setUpdateAvailablePrimaryTextField<R = void, P0 = NSTextField>(_v: P0): R;
+    secondaryTextField<R = NSTextField>(): R;
+    setSecondaryTextField<R = void, P0 = NSTextField>(_v: P0): R;
+    primaryTextField<R = NSTextField>(): R;
+    setPrimaryTextField<R = void, P0 = NSTextField>(_v: P0): R;
     enabled<R = boolean>(): R;
     setEnabled<R = void, P0 = boolean>(_v: P0): R;
-    assetPreferenceItem<R = cocoa.MSAssetPreferenceItem>(): R;
+    assetPreferenceItem<R = MSAssetPreferenceItem>(): R;
   }
   namespace classes {
-    export interface MSAssetLibraryTableCellView<T = any> extends cocoa.classes.NSTableCellView {
+    export interface MSAssetLibraryTableCellView<T = any> extends NSTableCellView {
       alloc<R = MSAssetLibraryTableCellView>(): R;
       new: <R = MSAssetLibraryTableCellView>() => R;
       sketchRemoteLibraryPlaceholderImage<R = unknown>(): R;

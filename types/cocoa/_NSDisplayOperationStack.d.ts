@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSDisplayOperationStack<T = any> extends cocoa.NSObject {
+  export interface _NSDisplayOperationStack<T = any> extends NSObject {
     setThreadIsViewDrawOperationThread<R = void, P0 = boolean>(_setThreadIsViewDrawOperationThread: P0): R;
     threadIsViewDrawOperationThread<R = boolean>(): R;
     blockOnDrawOperationsForAncestorsOfView<R = void, P0 = unknown>(_blockOnDrawOperationsForAncestorsOfView: P0): R;
     blockOnAllRemainingDrawOperations<R = void>(): R;
-    queueDrawOperationForView_rect_rectSet_windowRegion_options<R = void, P0 = unknown, P1 = cocoa.CGRect, P2 = unknown, P3 = unknown, P4 = number>(_queueDrawOperationForView: P0, _rect: P1, _rectSet: P2, _windowRegion: P3, _options: P4): R;
+    queueDrawOperationForView_rect_rectSet_windowRegion_options<R = void, P0 = unknown, P1 = CGRect, P2 = unknown, P3 = unknown, P4 = number>(_queueDrawOperationForView: P0, _rect: P1, _rectSet: P2, _windowRegion: P3, _options: P4): R;
     setAttemptingConcurrentViewDrawing<R = void, P0 = boolean>(_setAttemptingConcurrentViewDrawing: P0): R;
     attemptingConcurrentViewDrawing<R = boolean>(): R;
     description<R = unknown>(): R;
@@ -25,7 +25,7 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
   }
   namespace classes {
-    export interface _NSDisplayOperationStack<T = any> extends cocoa.classes.NSObject {
+    export interface _NSDisplayOperationStack<T = any> extends NSObject {
       alloc<R = _NSDisplayOperationStack>(): R;
       new: <R = _NSDisplayOperationStack>() => R;
       anyThreadHasActiveDisplayOperationForWindow<R = boolean, P0 = unknown>(_anyThreadHasActiveDisplayOperationForWindow: P0): R;

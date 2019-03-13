@@ -9,5 +9,3 @@ declare namespace cocoa {
     export interface MSAlignmentTargetProtocol<T = any> {  }
   }
 }
-
-declare const MSAlignmentTargetProtocol: cocoa.classes.MSAlignmentTargetProtocol;

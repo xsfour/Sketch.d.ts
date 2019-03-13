@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScriptAttributeDescription<T = any> extends cocoa.NSScriptPropertyDescription {
+  export interface NSScriptAttributeDescription<T = any> extends NSScriptPropertyDescription {
     firstPresentableName<R = unknown>(): R;
     presentableNames<R = unknown>(): R;
     presentableDescription<R = unknown>(): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     _termedDescriptionWithTabCount_propertyKindName<R = unknown, P0 = number, P1 = unknown>(__termedDescriptionWithTabCount: P0, _propertyKindName: P1): R;
   }
   namespace classes {
-    export interface NSScriptAttributeDescription<T = any> extends cocoa.classes.NSScriptPropertyDescription {
+    export interface NSScriptAttributeDescription<T = any> extends NSScriptPropertyDescription {
       alloc<R = NSScriptAttributeDescription>(): R;
       new: <R = NSScriptAttributeDescription>() => R;
     }

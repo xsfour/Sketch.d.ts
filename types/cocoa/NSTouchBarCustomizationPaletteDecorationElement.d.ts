@@ -1,16 +1,16 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarCustomizationPaletteDecorationElement<T = any> extends cocoa.NSView, cocoa.NSCollectionViewElementProtocol {
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+  export interface NSTouchBarCustomizationPaletteDecorationElement<T = any> extends NSView, NSCollectionViewElementProtocol {
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
-    identifier<R = cocoa.NSString>(): R;
-    setIdentifier<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    identifier<R = NSString>(): R;
+    setIdentifier<R = void, P0 = NSString>(_v: P0): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSTouchBarCustomizationPaletteDecorationElement<T = any> extends cocoa.classes.NSView, cocoa.classes.NSCollectionViewElementProtocol {
+    export interface NSTouchBarCustomizationPaletteDecorationElement<T = any> extends NSView, NSCollectionViewElementProtocol {
       alloc<R = NSTouchBarCustomizationPaletteDecorationElement>(): R;
       new: <R = NSTouchBarCustomizationPaletteDecorationElement>() => R;
     }

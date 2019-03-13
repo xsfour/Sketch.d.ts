@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPluginsPreferencePane<T = any> extends cocoa.MSPreferencePane, cocoa.NSTableViewDelegateProtocol, cocoa.MSDropableViewDelegateProtocol, cocoa.NSTextFieldDelegateProtocol {
+  export interface MSPluginsPreferencePane<T = any> extends MSPreferencePane, NSTableViewDelegateProtocol, MSDropableViewDelegateProtocol, NSTextFieldDelegateProtocol {
     installPluginsWithURLArray<R = void, P0 = unknown>(_installPluginsWithURLArray: P0): R;
     draggedURLsFromPasteboard<R = unknown, P0 = unknown>(_draggedURLsFromPasteboard: P0): R;
-    updateAndReloadPluginsWithBlock<R = void, P0 = cocoa.CDUnknownBlockType>(_updateAndReloadPluginsWithBlock: P0): R;
+    updateAndReloadPluginsWithBlock<R = void, P0 = CDUnknownBlockType>(_updateAndReloadPluginsWithBlock: P0): R;
     doAnyPluginsSupplyData<R = boolean, P0 = unknown>(_doAnyPluginsSupplyData: P0): R;
     makePluginCellView<R = unknown>(): R;
     attributedStringUpdateAvailableLinkForString<R = unknown, P0 = unknown>(_attributedStringUpdateAvailableLinkForString: P0): R;
@@ -46,59 +46,59 @@ declare namespace cocoa {
     updateUIForPluginsChange<R = void>(): R;
     observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
     awakeFromNib<R = void>(): R;
-    tableCellViewNib<R = cocoa.NSNib>(): R;
-    setTableCellViewNib<R = void, P0 = cocoa.NSNib>(_v: P0): R;
-    selectedItemIdentifiers<R = cocoa.NSArray>(): R;
-    setSelectedItemIdentifiers<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    tableCellViewNib<R = NSNib>(): R;
+    setTableCellViewNib<R = void, P0 = NSNib>(_v: P0): R;
+    selectedItemIdentifiers<R = NSArray>(): R;
+    setSelectedItemIdentifiers<R = void, P0 = NSArray>(_v: P0): R;
     originalHeightIncompatiblePlugin<R = number>(): R;
     setOriginalHeightIncompatiblePlugin<R = void, P0 = number>(_v: P0): R;
     originalHeightUpdatesAvailable<R = number>(): R;
     setOriginalHeightUpdatesAvailable<R = void, P0 = number>(_v: P0): R;
-    zeroPluginsImageView<R = cocoa.NSImageView>(): R;
-    setZeroPluginsImageView<R = void, P0 = cocoa.NSImageView>(_v: P0): R;
+    zeroPluginsImageView<R = NSImageView>(): R;
+    setZeroPluginsImageView<R = void, P0 = NSImageView>(_v: P0): R;
     observingPlugins<R = boolean>(): R;
     setObservingPlugins<R = void, P0 = boolean>(_v: P0): R;
-    rowHeightCache<R = cocoa.NSCache>(): R;
-    setRowHeightCache<R = void, P0 = cocoa.NSCache>(_v: P0): R;
-    filteredPlugins<R = cocoa.NSArray>(): R;
-    setFilteredPlugins<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    pluginManager<R = cocoa.MSPluginManager>(): R;
-    setPluginManager<R = void, P0 = cocoa.MSPluginManager>(_v: P0): R;
+    rowHeightCache<R = NSCache>(): R;
+    setRowHeightCache<R = void, P0 = NSCache>(_v: P0): R;
+    filteredPlugins<R = NSArray>(): R;
+    setFilteredPlugins<R = void, P0 = NSArray>(_v: P0): R;
+    pluginManager<R = MSPluginManager>(): R;
+    setPluginManager<R = void, P0 = MSPluginManager>(_v: P0): R;
     enableUpdateAllButton<R = boolean>(): R;
     setEnableUpdateAllButton<R = void, P0 = boolean>(_v: P0): R;
-    spyglassFilterButton<R = cocoa.NSButton>(): R;
-    setSpyglassFilterButton<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    contextMenu<R = cocoa.NSMenu>(): R;
-    setContextMenu<R = void, P0 = cocoa.NSMenu>(_v: P0): R;
-    contextMenuControl<R = cocoa.NSControl>(): R;
-    setContextMenuControl<R = void, P0 = cocoa.NSControl>(_v: P0): R;
-    getPluginsButton<R = cocoa.NSButton>(): R;
-    setGetPluginsButton<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    tableView<R = cocoa.BCKeyEventActionTableView>(): R;
-    setTableView<R = void, P0 = cocoa.BCKeyEventActionTableView>(_v: P0): R;
-    filterTextField<R = cocoa.NSSearchField>(): R;
-    setFilterTextField<R = void, P0 = cocoa.NSSearchField>(_v: P0): R;
-    zeroPluginsText<R = cocoa.NSString>(): R;
-    setZeroPluginsText<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    zeroPluginsTitle<R = cocoa.NSString>(): R;
-    setZeroPluginsTitle<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    zeroPluginsImage<R = cocoa.NSImage>(): R;
-    setZeroPluginsImage<R = void, P0 = cocoa.NSImage>(_v: P0): R;
-    pluginFilterPredicate<R = cocoa.NSPredicate>(): R;
-    setPluginFilterPredicate<R = void, P0 = cocoa.NSPredicate>(_v: P0): R;
-    pluginsArrayController<R = cocoa.NSArrayController>(): R;
-    setPluginsArrayController<R = void, P0 = cocoa.NSArrayController>(_v: P0): R;
-    pluginCellViewForHeightCalculations<R = cocoa.MSPluginsPreferenceTableCellView>(): R;
-    pluginSortDescriptors<R = cocoa.NSArray>(): R;
+    spyglassFilterButton<R = NSButton>(): R;
+    setSpyglassFilterButton<R = void, P0 = NSButton>(_v: P0): R;
+    contextMenu<R = NSMenu>(): R;
+    setContextMenu<R = void, P0 = NSMenu>(_v: P0): R;
+    contextMenuControl<R = NSControl>(): R;
+    setContextMenuControl<R = void, P0 = NSControl>(_v: P0): R;
+    getPluginsButton<R = NSButton>(): R;
+    setGetPluginsButton<R = void, P0 = NSButton>(_v: P0): R;
+    tableView<R = BCKeyEventActionTableView>(): R;
+    setTableView<R = void, P0 = BCKeyEventActionTableView>(_v: P0): R;
+    filterTextField<R = NSSearchField>(): R;
+    setFilterTextField<R = void, P0 = NSSearchField>(_v: P0): R;
+    zeroPluginsText<R = NSString>(): R;
+    setZeroPluginsText<R = void, P0 = NSString>(_v: P0): R;
+    zeroPluginsTitle<R = NSString>(): R;
+    setZeroPluginsTitle<R = void, P0 = NSString>(_v: P0): R;
+    zeroPluginsImage<R = NSImage>(): R;
+    setZeroPluginsImage<R = void, P0 = NSImage>(_v: P0): R;
+    pluginFilterPredicate<R = NSPredicate>(): R;
+    setPluginFilterPredicate<R = void, P0 = NSPredicate>(_v: P0): R;
+    pluginsArrayController<R = NSArrayController>(): R;
+    setPluginsArrayController<R = void, P0 = NSArrayController>(_v: P0): R;
+    pluginCellViewForHeightCalculations<R = MSPluginsPreferenceTableCellView>(): R;
+    pluginSortDescriptors<R = NSArray>(): R;
     updatesAvailable<R = boolean>(): R;
-    zeroPluginsTitleFont<R = cocoa.NSFont>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    zeroPluginsTitleFont<R = NSFont>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSPluginsPreferencePane<T = any> extends cocoa.classes.MSPreferencePane, cocoa.classes.NSTableViewDelegateProtocol, cocoa.classes.MSDropableViewDelegateProtocol, cocoa.classes.NSTextFieldDelegateProtocol {
+    export interface MSPluginsPreferencePane<T = any> extends MSPreferencePane, NSTableViewDelegateProtocol, MSDropableViewDelegateProtocol, NSTextFieldDelegateProtocol {
       alloc<R = MSPluginsPreferencePane>(): R;
       new: <R = MSPluginsPreferencePane>() => R;
       openWithPluginToHighlight<R = void, P0 = unknown>(_openWithPluginToHighlight: P0): R;

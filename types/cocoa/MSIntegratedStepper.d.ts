@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSIntegratedStepper<T = any> extends cocoa.NSView {
+  export interface MSIntegratedStepper<T = any> extends NSView {
     cxx_destruct<R = void>(): R;
     isFlipped<R = boolean>(): R;
     stepWithEvent<R = void, P0 = unknown>(_stepWithEvent: P0): R;
@@ -10,17 +10,17 @@ declare namespace cocoa {
     clickShouldDismissPopover<R = boolean, P0 = unknown>(_clickShouldDismissPopover: P0): R;
     keepFiringTimer<R = boolean>(): R;
     setKeepFiringTimer<R = void, P0 = boolean>(_v: P0): R;
-    initialSlowTimer<R = cocoa.NSTimer>(): R;
-    setInitialSlowTimer<R = void, P0 = cocoa.NSTimer>(_v: P0): R;
-    timer<R = cocoa.NSTimer>(): R;
-    setTimer<R = void, P0 = cocoa.NSTimer>(_v: P0): R;
+    initialSlowTimer<R = NSTimer>(): R;
+    setInitialSlowTimer<R = void, P0 = NSTimer>(_v: P0): R;
+    timer<R = NSTimer>(): R;
+    setTimer<R = void, P0 = NSTimer>(_v: P0): R;
     highlightMode<R = number>(): R;
     setHighlightMode<R = void, P0 = number>(_v: P0): R;
-    target<R = cocoa.MSUpDownController>(): R;
-    setTarget<R = void, P0 = cocoa.MSUpDownController>(_v: P0): R;
+    target<R = MSUpDownController>(): R;
+    setTarget<R = void, P0 = MSUpDownController>(_v: P0): R;
   }
   namespace classes {
-    export interface MSIntegratedStepper<T = any> extends cocoa.classes.NSView {
+    export interface MSIntegratedStepper<T = any> extends NSView {
       alloc<R = MSIntegratedStepper>(): R;
       new: <R = MSIntegratedStepper>() => R;
     }

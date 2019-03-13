@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPDFBookExporter<T = any> extends cocoa.NSObject {}
+  export interface MSPDFBookExporter<T = any> extends NSObject {}
   namespace classes {
-    export interface MSPDFBookExporter<T = any> extends cocoa.classes.NSObject {
+    export interface MSPDFBookExporter<T = any> extends NSObject {
       alloc<R = MSPDFBookExporter>(): R;
       new: <R = MSPDFBookExporter>() => R;
       pdfFromArtboard<R = unknown, P0 = unknown>(_pdfFromArtboard: P0): R;

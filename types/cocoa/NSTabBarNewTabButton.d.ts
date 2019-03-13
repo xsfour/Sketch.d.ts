@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTabBarNewTabButton<T = any> extends cocoa.NSButton, cocoa.NSDraggingDestinationProtocol, cocoa.NSTabBarSyncedButtonProtocol {
+  export interface NSTabBarNewTabButton<T = any> extends NSButton, NSDraggingDestinationProtocol, NSTabBarSyncedButtonProtocol {
     cxx_destruct<R = void>(): R;
     draggingDestination<R = unknown>(): R;
     associatedWindow<R = unknown>(): R;
@@ -17,17 +17,17 @@ declare namespace cocoa {
     _updateButtonHighlightWhenPressed_hovered<R = void, P0 = boolean, P1 = boolean>(__updateButtonHighlightWhenPressed: P0, _hovered: P1): R;
     syncedWithOtherButton<R = boolean>(): R;
     setSyncedWithOtherButton<R = void, P0 = boolean>(_v: P0): R;
-    buttonInTabSyncGroupDelegate<R = cocoa.NSTabBarSyncedButtonDelegate>(): R;
-    setButtonInTabSyncGroupDelegate<R = void, P0 = cocoa.NSTabBarSyncedButtonDelegate>(_v: P0): R;
+    buttonInTabSyncGroupDelegate<R = NSTabBarSyncedButtonDelegate>(): R;
+    setButtonInTabSyncGroupDelegate<R = void, P0 = NSTabBarSyncedButtonDelegate>(_v: P0): R;
     forcesActiveWindowState<R = boolean>(): R;
     setForcesActiveWindowState<R = void, P0 = boolean>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSTabBarNewTabButton<T = any> extends cocoa.classes.NSButton, cocoa.classes.NSDraggingDestinationProtocol, cocoa.classes.NSTabBarSyncedButtonProtocol {
+    export interface NSTabBarNewTabButton<T = any> extends NSButton, NSDraggingDestinationProtocol, NSTabBarSyncedButtonProtocol {
       alloc<R = NSTabBarNewTabButton>(): R;
       new: <R = NSTabBarNewTabButton>() => R;
       width<R = number>(): R;

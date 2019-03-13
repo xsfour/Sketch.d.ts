@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSortedArray<T = any> extends cocoa.NSMutableArray {
+  export interface NSSortedArray<T = any> extends NSMutableArray {
     sortUsingSelector<R = void, P0 = string>(_sortUsingSelector: P0): R;
-    sortUsingFunction_context<R = void, P0 = cocoa.CDUnknownFunctionPointerType, P1 = void>(_sortUsingFunction: P0, _context: P1): R;
+    sortUsingFunction_context<R = void, P0 = CDUnknownFunctionPointerType, P1 = void>(_sortUsingFunction: P0, _context: P1): R;
     setArray<R = void, P0 = unknown>(_setArray: P0): R;
     removeObjectAtIndex<R = void, P0 = number>(_removeObjectAtIndex: P0): R;
     insertObject_atIndex<R = void, P0 = unknown, P1 = number>(_insertObject: P0, _atIndex: P1): R;
@@ -17,7 +17,7 @@ declare namespace cocoa {
     conformsToProtocol<R = boolean, P0 = unknown>(_conformsToProtocol: P0): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
-    mutableCopyWithZone<R = unknown, P0 = cocoa._NSZone>(_mutableCopyWithZone: P0): R;
+    mutableCopyWithZone<R = unknown, P0 = _NSZone>(_mutableCopyWithZone: P0): R;
     initWithArray<R = unknown, P0 = unknown>(_initWithArray: P0): R;
     initWithArray_copyItems<R = unknown, P0 = unknown, P1 = boolean>(_initWithArray: P0, _copyItems: P1): R;
     initWithObjects<R = unknown, P0 = unknown>(_initWithObjects: P0): R;
@@ -30,7 +30,7 @@ declare namespace cocoa {
     setCompareSelector<R = void, P0 = string>(_v: P0): R;
   }
   namespace classes {
-    export interface NSSortedArray<T = any> extends cocoa.classes.NSMutableArray {
+    export interface NSSortedArray<T = any> extends NSMutableArray {
       initialize<R = void>(): R;
     }
   }

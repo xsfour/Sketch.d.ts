@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCDebugMenuController<T = any> extends cocoa.BCSingleton {
+  export interface BCDebugMenuController<T = any> extends BCSingleton {
     cxx_destruct<R = void>(): R;
     revealApplicationSupport<R = void, P0 = unknown>(_revealApplicationSupport: P0): R;
     validateMenuItem<R = boolean, P0 = unknown>(_validateMenuItem: P0): R;
@@ -13,11 +13,11 @@ declare namespace cocoa {
     installDebugSubmenuWithTitle<R = unknown, P0 = unknown>(_installDebugSubmenuWithTitle: P0): R;
     addDebugMenu<R = void>(): R;
     init<R = unknown>(): R;
-    settings<R = cocoa.NSDictionary>(): R;
-    setSettings<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
+    settings<R = NSDictionary>(): R;
+    setSettings<R = void, P0 = NSDictionary>(_v: P0): R;
   }
   namespace classes {
-    export interface BCDebugMenuController<T = any> extends cocoa.classes.BCSingleton {  }
+    export interface BCDebugMenuController<T = any> extends BCSingleton {  }
   }
 }
 

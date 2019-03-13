@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSCGSWindowOrderingProperties<T = any> extends cocoa.NSObject {
+  export interface _NSCGSWindowOrderingProperties<T = any> extends NSObject {
     clearOrderingGroup<R = void, P0 = unknown>(_clearOrderingGroup: P0): R;
     removeWindowFromOrderingGroup<R = void, P0 = unknown>(_removeWindowFromOrderingGroup: P0): R;
     addWindow_toOrderingGroupBelowWindow<R = void, P0 = unknown, P1 = unknown>(_addWindow: P0, _toOrderingGroupBelowWindow: P1): R;
@@ -19,7 +19,7 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
   }
   namespace classes {
-    export interface _NSCGSWindowOrderingProperties<T = any> extends cocoa.classes.NSObject {
+    export interface _NSCGSWindowOrderingProperties<T = any> extends NSObject {
       alloc<R = _NSCGSWindowOrderingProperties>(): R;
       new: <R = _NSCGSWindowOrderingProperties>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSFullScreenCreateTileDropTargetController<T = any> extends cocoa.NSObject {
+  export interface _NSFullScreenCreateTileDropTargetController<T = any> extends NSObject {
     windowDidEndDraggingNotification<R = void, P0 = unknown>(_windowDidEndDraggingNotification: P0): R;
     acceptDropForTearOffTabWindow<R = boolean, P0 = unknown>(_acceptDropForTearOffTabWindow: P0): R;
     _handleWindowDropIfNecessary<R = boolean>(): R;
@@ -16,10 +16,10 @@ declare namespace cocoa {
     _dismissLeftDropTarget<R = void>(): R;
     _revealLeftDropTarget<R = void>(): R;
     _cleanUpLeftDropTargetIfNeeded<R = void>(): R;
-    _rightCollapsedRect<R = cocoa.CGRect>(): R;
-    _rightDropRect<R = cocoa.CGRect>(): R;
-    _leftCollapsedRect<R = cocoa.CGRect>(): R;
-    _leftDropRect<R = cocoa.CGRect>(): R;
+    _rightCollapsedRect<R = CGRect>(): R;
+    _rightDropRect<R = CGRect>(): R;
+    _leftCollapsedRect<R = CGRect>(): R;
+    _leftDropRect<R = CGRect>(): R;
     _startTrackingWindowDrag<R = void, P0 = unknown>(__startTrackingWindowDrag: P0): R;
     _stopTrackingWindowDrag<R = void>(): R;
     resetState<R = void>(): R;
@@ -28,11 +28,11 @@ declare namespace cocoa {
     displayChanged<R = void>(): R;
     _registerForNotifications<R = void, P0 = boolean>(__registerForNotifications: P0): R;
     dealloc<R = void>(): R;
-    space<R = cocoa._NSFullScreenSpace>(): R;
-    setSpace<R = void, P0 = cocoa._NSFullScreenSpace>(_v: P0): R;
+    space<R = _NSFullScreenSpace>(): R;
+    setSpace<R = void, P0 = _NSFullScreenSpace>(_v: P0): R;
   }
   namespace classes {
-    export interface _NSFullScreenCreateTileDropTargetController<T = any> extends cocoa.classes.NSObject {
+    export interface _NSFullScreenCreateTileDropTargetController<T = any> extends NSObject {
       alloc<R = _NSFullScreenCreateTileDropTargetController>(): R;
       new: <R = _NSFullScreenCreateTileDropTargetController>() => R;
     }

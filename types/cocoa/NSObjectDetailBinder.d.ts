@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSObjectDetailBinder<T = any> extends cocoa.NSEditorBinder {
+  export interface NSObjectDetailBinder<T = any> extends NSEditorBinder {
     _useErrorPresenter<R = void, P0 = unknown>(__useErrorPresenter: P0): R;
     noteContentValueHasChanged<R = void>(): R;
     setMasterObjectRelationship<R = boolean, P0 = unknown>(_setMasterObjectRelationship: P0): R;
@@ -14,7 +14,7 @@ declare namespace cocoa {
     _notifyEditorStateChanged<R = void, P0 = boolean>(__notifyEditorStateChanged: P0): R;
   }
   namespace classes {
-    export interface NSObjectDetailBinder<T = any> extends cocoa.classes.NSEditorBinder {
+    export interface NSObjectDetailBinder<T = any> extends NSEditorBinder {
       alloc<R = NSObjectDetailBinder>(): R;
       new: <R = NSObjectDetailBinder>() => R;
       initialize<R = void>(): R;

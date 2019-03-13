@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPasteboardLayersBase<T = any> extends cocoa.NSObject {}
+  export interface MSPasteboardLayersBase<T = any> extends NSObject {}
   namespace classes {
-    export interface MSPasteboardLayersBase<T = any> extends cocoa.classes.NSObject {
+    export interface MSPasteboardLayersBase<T = any> extends NSObject {
       alloc<R = MSPasteboardLayersBase>(): R;
       new: <R = MSPasteboardLayersBase>() => R;
       usedSymbolsInContainer_document<R = unknown, P0 = unknown, P1 = unknown>(_usedSymbolsInContainer: P0, _document: P1): R;

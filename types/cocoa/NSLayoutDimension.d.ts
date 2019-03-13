@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLayoutDimension<T = any> extends cocoa.NSLayoutAnchor {
+  export interface NSLayoutDimension<T = any> extends NSLayoutAnchor {
     constraintLessThanOrEqualToAnchor_multiplier_constant<R = unknown, P0 = unknown, P1 = number, P2 = number>(_constraintLessThanOrEqualToAnchor: P0, _multiplier: P1, _constant: P2): R;
     constraintGreaterThanOrEqualToAnchor_multiplier_constant<R = unknown, P0 = unknown, P1 = number, P2 = number>(_constraintGreaterThanOrEqualToAnchor: P0, _multiplier: P1, _constant: P2): R;
     constraintEqualToAnchor_multiplier_constant<R = unknown, P0 = unknown, P1 = number, P2 = number>(_constraintEqualToAnchor: P0, _multiplier: P1, _constant: P2): R;
@@ -27,7 +27,7 @@ declare namespace cocoa {
     anchorByMultiplyingByConstant<R = unknown, P0 = number>(_anchorByMultiplyingByConstant: P0): R;
   }
   namespace classes {
-    export interface NSLayoutDimension<T = any> extends cocoa.classes.NSLayoutAnchor {
+    export interface NSLayoutDimension<T = any> extends NSLayoutAnchor {
       alloc<R = NSLayoutDimension>(): R;
       new: <R = NSLayoutDimension>() => R;
     }

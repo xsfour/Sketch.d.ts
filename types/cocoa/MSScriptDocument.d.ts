@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSScriptDocument<T = any> extends cocoa.NSDocument {
+  export interface MSScriptDocument<T = any> extends NSDocument {
     showBundleIncompatibleAlert<R = boolean, P0 = unknown>(_showBundleIncompatibleAlert: P0): R;
     showBundleAlreadyInstalledAlert_isIncompatible_existingPlugin<R = boolean, P0 = unknown, P1 = boolean, P2 = unknown>(_showBundleAlreadyInstalledAlert: P0, _isIncompatible: P1, _existingPlugin: P2): R;
     showBundleUpgradeAlert_isIncompatible_existingPlugin<R = boolean, P0 = unknown, P1 = boolean, P2 = unknown>(_showBundleUpgradeAlert: P0, _isIncompatible: P1, _existingPlugin: P2): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     removeExistingPlugin<R = void, P0 = unknown>(_removeExistingPlugin: P0): R;
   }
   namespace classes {
-    export interface MSScriptDocument<T = any> extends cocoa.classes.NSDocument {
+    export interface MSScriptDocument<T = any> extends NSDocument {
       alloc<R = MSScriptDocument>(): R;
       new: <R = MSScriptDocument>() => R;
     }

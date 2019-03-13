@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface SVGMask<T = any> extends cocoa._SVGMask {}
+  export interface SVGMask<T = any> extends _SVGMask {}
   namespace classes {
-    export interface SVGMask<T = any> extends cocoa.classes._SVGMask {
+    export interface SVGMask<T = any> extends _SVGMask {
       alloc<R = SVGMask>(): R;
       new: <R = SVGMask>() => R;
     }

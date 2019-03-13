@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPrintPanel<T = any> extends cocoa.NSObject {
+  export interface NSPrintPanel<T = any> extends NSObject {
     runModal<R = number>(): R;
     runModalWithPrintInfo<R = number, P0 = unknown>(_runModalWithPrintInfo: P0): R;
     _sheet_didEndWithResult_contextInfo<R = void, P0 = unknown, P1 = number, P2 = void>(__sheet: P0, _didEndWithResult: P1, _contextInfo: P2): R;
@@ -27,17 +27,17 @@ declare namespace cocoa {
     pickedLayoutList<R = void, P0 = unknown>(_pickedLayoutList: P0): R;
     pickedButton<R = void, P0 = unknown>(_pickedButton: P0): R;
     pickedAllPages<R = void, P0 = unknown>(_pickedAllPages: P0): R;
-    printInfo<R = cocoa.NSPrintInfo>(): R;
-    jobStyleHint<R = cocoa.NSString>(): R;
-    setJobStyleHint<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    helpAnchor<R = cocoa.NSString>(): R;
-    setHelpAnchor<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    printInfo<R = NSPrintInfo>(): R;
+    jobStyleHint<R = NSString>(): R;
+    setJobStyleHint<R = void, P0 = NSString>(_v: P0): R;
+    helpAnchor<R = NSString>(): R;
+    setHelpAnchor<R = void, P0 = NSString>(_v: P0): R;
     options<R = number>(): R;
     setOptions<R = void, P0 = number>(_v: P0): R;
-    accessoryControllers<R = cocoa.NSArray>(): R;
+    accessoryControllers<R = NSArray>(): R;
   }
   namespace classes {
-    export interface NSPrintPanel<T = any> extends cocoa.classes.NSObject {
+    export interface NSPrintPanel<T = any> extends NSObject {
       alloc<R = NSPrintPanel>(): R;
       new: <R = NSPrintPanel>() => R;
       printPanel<R = unknown>(): R;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAccessibilityPathComponent<T = any> extends cocoa.NSAccessibilityIndexedMockUIElement {
+  export interface NSAccessibilityPathComponent<T = any> extends NSAccessibilityIndexedMockUIElement {
     accessibilityIsEnabledAttributeSettable<R = boolean>(): R;
     accessibilityEnabledAttribute<R = unknown>(): R;
     accessibilityIsURLAttributeSettable<R = boolean>(): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     initWithPathComponentCell_index_parent<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_initWithPathComponentCell: P0, _index: P1, _parent: P2): R;
   }
   namespace classes {
-    export interface NSAccessibilityPathComponent<T = any> extends cocoa.classes.NSAccessibilityIndexedMockUIElement {
+    export interface NSAccessibilityPathComponent<T = any> extends NSAccessibilityIndexedMockUIElement {
       alloc<R = NSAccessibilityPathComponent>(): R;
       new: <R = NSAccessibilityPathComponent>() => R;
       pathComponentWithPathComponentCell_index_parent<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_pathComponentWithPathComponentCell: P0, _index: P1, _parent: P2): R;

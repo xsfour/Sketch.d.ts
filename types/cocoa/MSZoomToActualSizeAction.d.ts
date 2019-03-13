@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSZoomToActualSizeAction<T = any> extends cocoa.MSDocumentAction {
+  export interface MSZoomToActualSizeAction<T = any> extends MSDocumentAction {
     label<R = unknown>(): R;
     actualSize<R = void, P0 = unknown>(_actualSize: P0): R;
   }
   namespace classes {
-    export interface MSZoomToActualSizeAction<T = any> extends cocoa.classes.MSDocumentAction {
+    export interface MSZoomToActualSizeAction<T = any> extends MSDocumentAction {
       alloc<R = MSZoomToActualSizeAction>(): R;
       new: <R = MSZoomToActualSizeAction>() => R;
     }

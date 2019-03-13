@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSBundle<T = any> extends cocoa.NSObject {
+  export interface NSBundle<T = any> extends NSObject {
     preflightAndReturnError<R = boolean, P0 = unknown>(_preflightAndReturnError: P0): R;
     pathsForResourcesOfType_inDirectory_forLanguage<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_pathsForResourcesOfType: P0, _inDirectory: P1, _forLanguage: P2): R;
     pathForResource_ofType_inDirectory_forLanguage<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown>(_pathForResource: P0, _ofType: P1, _inDirectory: P2, _forLanguage: P3): R;
@@ -35,35 +35,35 @@ declare namespace cocoa {
     pathForResource_ofType_inDirectory<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_pathForResource: P0, _ofType: P1, _inDirectory: P2): R;
     URLForResource_withExtension_subdirectory_localization<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown>(_URLForResource: P0, _withExtension: P1, _subdirectory: P2, _localization: P3): R;
     pathForResource_ofType_inDirectory_forLocalization<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown>(_pathForResource: P0, _ofType: P1, _inDirectory: P2, _forLocalization: P3): R;
-    findBundleResourceURLsCallingMethod_passingTest<R = unknown, P0 = string, P1 = cocoa.CDUnknownBlockType>(_findBundleResourceURLsCallingMethod: P0, _passingTest: P1): R;
-    _cfBundleIfPresent<R = cocoa.__CFBundle>(): R;
-    _cfBundle<R = cocoa.__CFBundle>(): R;
+    findBundleResourceURLsCallingMethod_passingTest<R = unknown, P0 = string, P1 = CDUnknownBlockType>(_findBundleResourceURLsCallingMethod: P0, _passingTest: P1): R;
+    _cfBundleIfPresent<R = __CFBundle>(): R;
+    _cfBundle<R = __CFBundle>(): R;
     preservationPriorityForTag<R = number, P0 = unknown>(_preservationPriorityForTag: P0): R;
     setPreservationPriority_forTag<R = void, P0 = number, P1 = unknown>(_setPreservationPriority: P0, _forTag: P1): R;
     setPreservationPriority_forTags<R = void, P0 = number, P1 = unknown>(_setPreservationPriority: P0, _forTags: P1): R;
-    executableArchitectures<R = cocoa.NSArray>(): R;
-    developmentLocalization<R = cocoa.NSString>(): R;
-    preferredLocalizations<R = cocoa.NSArray>(): R;
-    localizations<R = cocoa.NSArray>(): R;
-    localizedInfoDictionary<R = cocoa.NSDictionary>(): R;
-    infoDictionary<R = cocoa.NSDictionary>(): R;
+    executableArchitectures<R = NSArray>(): R;
+    developmentLocalization<R = NSString>(): R;
+    preferredLocalizations<R = NSArray>(): R;
+    localizations<R = NSArray>(): R;
+    localizedInfoDictionary<R = NSDictionary>(): R;
+    infoDictionary<R = NSDictionary>(): R;
     principalClass<R = unknown>(): R;
-    bundleIdentifier<R = cocoa.NSString>(): R;
-    builtInPlugInsURL<R = cocoa.NSURL>(): R;
-    builtInPlugInsPath<R = cocoa.NSString>(): R;
-    sharedSupportURL<R = cocoa.NSURL>(): R;
-    sharedSupportPath<R = cocoa.NSString>(): R;
-    sharedFrameworksURL<R = cocoa.NSURL>(): R;
-    sharedFrameworksPath<R = cocoa.NSString>(): R;
-    privateFrameworksURL<R = cocoa.NSURL>(): R;
-    privateFrameworksPath<R = cocoa.NSString>(): R;
-    appStoreReceiptURL<R = cocoa.NSURL>(): R;
-    executableURL<R = cocoa.NSURL>(): R;
-    executablePath<R = cocoa.NSString>(): R;
-    resourceURL<R = cocoa.NSURL>(): R;
-    resourcePath<R = cocoa.NSString>(): R;
-    bundleURL<R = cocoa.NSURL>(): R;
-    bundlePath<R = cocoa.NSString>(): R;
+    bundleIdentifier<R = NSString>(): R;
+    builtInPlugInsURL<R = NSURL>(): R;
+    builtInPlugInsPath<R = NSString>(): R;
+    sharedSupportURL<R = NSURL>(): R;
+    sharedSupportPath<R = NSString>(): R;
+    sharedFrameworksURL<R = NSURL>(): R;
+    sharedFrameworksPath<R = NSString>(): R;
+    privateFrameworksURL<R = NSURL>(): R;
+    privateFrameworksPath<R = NSString>(): R;
+    appStoreReceiptURL<R = NSURL>(): R;
+    executableURL<R = NSURL>(): R;
+    executablePath<R = NSString>(): R;
+    resourceURL<R = NSURL>(): R;
+    resourcePath<R = NSString>(): R;
+    bundleURL<R = NSURL>(): R;
+    bundlePath<R = NSString>(): R;
     loaded<R = boolean>(): R;
     // + NSBundle(NSBundleHelpExtension,NSBundleImageExtension,NSBundleSoundExtensions,NSNibLoading,NSNibLoadingInternal):
     contextHelpForKey<R = unknown, P0 = unknown>(_contextHelpForKey: P0): R;
@@ -74,11 +74,11 @@ declare namespace cocoa {
     URLsForImageResource<R = unknown, P0 = unknown>(_URLsForImageResource: P0): R;
     pathForSoundResource<R = unknown, P0 = unknown>(_pathForSoundResource: P0): R;
     loadNibNamed_owner_topLevelObjects<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown>(_loadNibNamed: P0, _owner: P1, _topLevelObjects: P2): R;
-    loadNibFile_externalNameTable_withZone<R = boolean, P0 = unknown, P1 = unknown, P2 = cocoa._NSZone>(_loadNibFile: P0, _externalNameTable: P1, _withZone: P2): R;
-    loadNibFile_externalNameTable_options_withZone<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown, P3 = cocoa._NSZone>(_loadNibFile: P0, _externalNameTable: P1, _options: P2, _withZone: P3): R;
+    loadNibFile_externalNameTable_withZone<R = boolean, P0 = unknown, P1 = unknown, P2 = _NSZone>(_loadNibFile: P0, _externalNameTable: P1, _withZone: P2): R;
+    loadNibFile_externalNameTable_options_withZone<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown, P3 = _NSZone>(_loadNibFile: P0, _externalNameTable: P1, _options: P2, _withZone: P3): R;
   }
   namespace classes {
-    export interface NSBundle<T = any> extends cocoa.classes.NSObject {
+    export interface NSBundle<T = any> extends NSObject {
       alloc<R = NSBundle>(): R;
       new: <R = NSBundle>() => R;
       preferredLocalizationsFromArray_forPreferences<R = unknown, P0 = unknown, P1 = unknown>(_preferredLocalizationsFromArray: P0, _forPreferences: P1): R;
@@ -95,13 +95,13 @@ declare namespace cocoa {
       setSystemLanguages<R = void, P0 = unknown>(_setSystemLanguages: P0): R;
       URLsForResourcesWithExtension_subdirectory_inBundleWithURL<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_URLsForResourcesWithExtension: P0, _subdirectory: P1, _inBundleWithURL: P2): R;
       URLForResource_withExtension_subdirectory_inBundleWithURL<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown>(_URLForResource: P0, _withExtension: P1, _subdirectory: P2, _inBundleWithURL: P3): R;
-      findBundleResourceURLsCallingMethod_baseURL_passingTest<R = unknown, P0 = string, P1 = unknown, P2 = cocoa.CDUnknownBlockType>(_findBundleResourceURLsCallingMethod: P0, _baseURL: P1, _passingTest: P2): R;
+      findBundleResourceURLsCallingMethod_baseURL_passingTest<R = unknown, P0 = string, P1 = unknown, P2 = CDUnknownBlockType>(_findBundleResourceURLsCallingMethod: P0, _baseURL: P1, _passingTest: P2): R;
       findBundleResources_callingMethod_directory_languages_name_types_limit<R = unknown, P0 = unknown, P1 = string, P2 = unknown, P3 = unknown, P4 = unknown, P5 = unknown, P6 = number>(_findBundleResources: P0, _callingMethod: P1, _directory: P2, _languages: P3, _name: P4, _types: P5, _limit: P6): R;
       // + NSBundle(NSBundleHelpExtension,NSBundleImageExtension,NSBundleSoundExtensions,NSNibLoading,NSNibLoadingInternal):
-      _loadNibFile_nameTable_options_withZone_ownerBundle<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown, P3 = cocoa._NSZone, P4 = unknown>(__loadNibFile: P0, _nameTable: P1, _options: P2, _withZone: P3, _ownerBundle: P4): R;
+      _loadNibFile_nameTable_options_withZone_ownerBundle<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown, P3 = _NSZone, P4 = unknown>(__loadNibFile: P0, _nameTable: P1, _options: P2, _withZone: P3, _ownerBundle: P4): R;
       loadNibNamed_owner<R = boolean, P0 = unknown, P1 = unknown>(_loadNibNamed: P0, _owner: P1): R;
       load<R = void>(): R;
-      _loadNibFile_externalNameTable_options_withZone<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown, P3 = cocoa._NSZone>(__loadNibFile: P0, _externalNameTable: P1, _options: P2, _withZone: P3): R;
+      _loadNibFile_externalNameTable_options_withZone<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown, P3 = _NSZone>(__loadNibFile: P0, _externalNameTable: P1, _options: P2, _withZone: P3): R;
       currentNibLocalizedStringsBundle<R = unknown>(): R;
       popNibLocalizedStringsBundle<R = void>(): R;
       pushNibLocalizedStringsBundle<R = void, P0 = unknown>(_pushNibLocalizedStringsBundle: P0): R;

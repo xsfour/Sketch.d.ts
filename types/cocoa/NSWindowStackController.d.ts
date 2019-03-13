@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSWindowStackController<T = any> extends cocoa.NSWindowTabGroup, cocoa.NSTabBarDelegateProtocol, cocoa.NSTabPickerDelegateProtocol {
+  export interface NSWindowStackController<T = any> extends NSWindowTabGroup, NSTabBarDelegateProtocol, NSTabPickerDelegateProtocol {
     reattachFullScreenModalTabBar<R = void>(): R;
     detachedFullScreenModalTabBar<R = unknown>(): R;
     setOverviewVisible<R = void, P0 = boolean>(_setOverviewVisible: P0): R;
@@ -22,7 +22,7 @@ declare namespace cocoa {
     willEnterFullScreenForWindow<R = void, P0 = unknown>(_willEnterFullScreenForWindow: P0): R;
     didEnterFullScreenForWindow<R = void, P0 = unknown>(_didEnterFullScreenForWindow: P0): R;
     setTALTabIndex_forWindow<R = void, P0 = number, P1 = unknown>(_setTALTabIndex: P0, _forWindow: P1): R;
-    tabRectForWindow<R = cocoa.CGRect, P0 = unknown>(_tabRectForWindow: P0): R;
+    tabRectForWindow<R = CGRect, P0 = unknown>(_tabRectForWindow: P0): R;
     tabIndexForWindow<R = number, P0 = unknown>(_tabIndexForWindow: P0): R;
     moveTabToNewWindow<R = void, P0 = unknown>(_moveTabToNewWindow: P0): R;
     unpinTabForWindow<R = void, P0 = unknown>(_unpinTabForWindow: P0): R;
@@ -30,7 +30,7 @@ declare namespace cocoa {
     _onePastLastPinnedTab<R = number>(): R;
     _animateTabMergeOfWindowsFromTargetWindow<R = boolean, P0 = unknown>(__animateTabMergeOfWindowsFromTargetWindow: P0): R;
     _regularTabMergeOfWindowsFromTargetWindow<R = boolean, P0 = unknown>(__regularTabMergeOfWindowsFromTargetWindow: P0): R;
-    _enumerateTabMergableWindows_targetWindow<R = void, P0 = cocoa.CDUnknownBlockType, P1 = unknown>(__enumerateTabMergableWindows: P0, _targetWindow: P1): R;
+    _enumerateTabMergableWindows_targetWindow<R = void, P0 = CDUnknownBlockType, P1 = unknown>(__enumerateTabMergableWindows: P0, _targetWindow: P1): R;
     _doDockWindowMinimizeOfSelectedWindow<R = void>(): R;
     handleDeminimizingWindow<R = boolean, P0 = unknown>(_handleDeminimizingWindow: P0): R;
     didFinishDeminiaturizeWindow<R = void, P0 = unknown>(_didFinishDeminiaturizeWindow: P0): R;
@@ -85,11 +85,11 @@ declare namespace cocoa {
     _ensureTabBarBasedOnWindow<R = void, P0 = unknown>(__ensureTabBarBasedOnWindow: P0): R;
     windowDidGainToolbar<R = void, P0 = unknown>(_windowDidGainToolbar: P0): R;
     _makeTabBarForWindow_visible<R = void, P0 = unknown, P1 = boolean>(__makeTabBarForWindow: P0, _visible: P1): R;
-    windowBeingDragged<R = cocoa.NSWindow>(): R;
-    stateIdentifier<R = cocoa.NSString>(): R;
-    setStateIdentifier<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    fullScreenModalStackController<R = cocoa._NSFullScreenModalStackController>(): R;
-    setFullScreenModalStackController<R = void, P0 = cocoa._NSFullScreenModalStackController>(_v: P0): R;
+    windowBeingDragged<R = NSWindow>(): R;
+    stateIdentifier<R = NSString>(): R;
+    setStateIdentifier<R = void, P0 = NSString>(_v: P0): R;
+    fullScreenModalStackController<R = _NSFullScreenModalStackController>(): R;
+    setFullScreenModalStackController<R = void, P0 = _NSFullScreenModalStackController>(_v: P0): R;
     shouldAnimate<R = boolean>(): R;
     setShouldAnimate<R = void, P0 = boolean>(_v: P0): R;
     tabBarVisible<R = boolean>(): R;
@@ -97,15 +97,15 @@ declare namespace cocoa {
     shouldShowTabBarWithOneItem<R = boolean>(): R;
     setShouldShowTabBarWithOneItem<R = void, P0 = boolean>(_v: P0): R;
     numberOfTabs<R = number>(): R;
-    selectedWindow<R = cocoa.NSWindow>(): R;
-    setSelectedWindow<R = void, P0 = cocoa.NSWindow>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    selectedWindow<R = NSWindow>(): R;
+    setSelectedWindow<R = void, P0 = NSWindow>(_v: P0): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSWindowStackController<T = any> extends cocoa.classes.NSWindowTabGroup, cocoa.classes.NSTabBarDelegateProtocol, cocoa.classes.NSTabPickerDelegateProtocol {
+    export interface NSWindowStackController<T = any> extends NSWindowTabGroup, NSTabBarDelegateProtocol, NSTabPickerDelegateProtocol {
       alloc<R = NSWindowStackController>(): R;
       new: <R = NSWindowStackController>() => R;
       enableTabBar<R = void>(): R;

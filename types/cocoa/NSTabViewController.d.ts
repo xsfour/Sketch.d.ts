@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTabViewController<T = any> extends cocoa.NSViewController, cocoa.NSTabViewDelegateProtocol, cocoa.NSToolbarDelegateProtocol {
+  export interface NSTabViewController<T = any> extends NSViewController, NSTabViewDelegateProtocol, NSToolbarDelegateProtocol {
     _associatedTabStyleForUIProvider<R = number, P0 = unknown>(__associatedTabStyleForUIProvider: P0): R;
     _implicitUIProviderForTabStyle<R = unknown, P0 = number>(__implicitUIProviderForTabStyle: P0): R;
     setUIProvider<R = void, P0 = unknown>(_setUIProvider: P0): R;
@@ -40,10 +40,10 @@ declare namespace cocoa {
     tabBar<R = unknown>(): R;
     _removeAllTabs<R = void>(): R;
     _addAllTabs<R = void>(): R;
-    _makeTabViewWithFrame<R = unknown, P0 = cocoa.CGRect>(__makeTabViewWithFrame: P0): R;
-    _defaultFrame<R = cocoa.CGRect>(): R;
+    _makeTabViewWithFrame<R = unknown, P0 = CGRect>(__makeTabViewWithFrame: P0): R;
+    _defaultFrame<R = CGRect>(): R;
     setView<R = void, P0 = unknown>(_setView: P0): R;
-    _goodTabViewContentSize<R = cocoa.CGSize>(): R;
+    _goodTabViewContentSize<R = CGSize>(): R;
     canPropagateSelectedChildViewControllerTitle<R = boolean>(): R;
     setCanPropagateSelectedChildViewControllerTitle<R = void, P0 = boolean>(_v: P0): R;
     transitionOptions<R = number>(): R;
@@ -52,17 +52,17 @@ declare namespace cocoa {
     setSelectedTabViewItemIndex<R = void, P0 = number>(_v: P0): R;
     tabStyle<R = number>(): R;
     setTabStyle<R = void, P0 = number>(_v: P0): R;
-    tabViewItems<R = cocoa.NSArray>(): R;
-    setTabViewItems<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    tabView<R = cocoa.NSTabView>(): R;
-    setTabView<R = void, P0 = cocoa.NSTabView>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    tabViewItems<R = NSArray>(): R;
+    setTabViewItems<R = void, P0 = NSArray>(_v: P0): R;
+    tabView<R = NSTabView>(): R;
+    setTabView<R = void, P0 = NSTabView>(_v: P0): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSTabViewController<T = any> extends cocoa.classes.NSViewController, cocoa.classes.NSTabViewDelegateProtocol, cocoa.classes.NSToolbarDelegateProtocol {
+    export interface NSTabViewController<T = any> extends NSViewController, NSTabViewDelegateProtocol, NSToolbarDelegateProtocol {
       alloc<R = NSTabViewController>(): R;
       new: <R = NSTabViewController>() => R;
       _findWindowTabViewControllerInWindow<R = unknown, P0 = unknown>(__findWindowTabViewControllerInWindow: P0): R;

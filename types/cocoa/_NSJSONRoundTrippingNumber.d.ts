@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSJSONRoundTrippingNumber<T = any> extends cocoa.NSObject, cocoa.NSSecureCodingProtocol {
+  export interface _NSJSONRoundTrippingNumber<T = any> extends NSObject, NSSecureCodingProtocol {
     forwardInvocation<R = void, P0 = unknown>(_forwardInvocation: P0): R;
     methodSignatureForSelector<R = unknown, P0 = string>(_methodSignatureForSelector: P0): R;
     isNSNumber__<R = boolean>(): R;
@@ -16,7 +16,7 @@ declare namespace cocoa {
     initWithNumber_representation<R = unknown, P0 = unknown, P1 = unknown>(_initWithNumber: P0, _representation: P1): R;
   }
   namespace classes {
-    export interface _NSJSONRoundTrippingNumber<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSSecureCodingProtocol {
+    export interface _NSJSONRoundTrippingNumber<T = any> extends NSObject, NSSecureCodingProtocol {
       alloc<R = _NSJSONRoundTrippingNumber>(): R;
       new: <R = _NSJSONRoundTrippingNumber>() => R;
       instanceMethodSignatureForSelector<R = unknown, P0 = string>(_instanceMethodSignatureForSelector: P0): R;

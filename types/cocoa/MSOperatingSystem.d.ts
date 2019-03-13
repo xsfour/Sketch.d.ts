@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSOperatingSystem<T = any> extends cocoa.NSObject {}
+  export interface MSOperatingSystem<T = any> extends NSObject {}
   namespace classes {
-    export interface MSOperatingSystem<T = any> extends cocoa.classes.NSObject {
+    export interface MSOperatingSystem<T = any> extends NSObject {
       alloc<R = MSOperatingSystem>(): R;
       new: <R = MSOperatingSystem>() => R;
       systemVersionString<R = unknown>(): R;

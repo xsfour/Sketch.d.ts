@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSFullScreenDetachedToolbarMenuBarCompanionController<T = any> extends cocoa._NSFullScreenMenuBarCompanionController {
+  export interface _NSFullScreenDetachedToolbarMenuBarCompanionController<T = any> extends _NSFullScreenMenuBarCompanionController {
     windowDidChangeSheetNotification<R = void, P0 = unknown>(_windowDidChangeSheetNotification: P0): R;
     updateWindowCorners<R = void>(): R;
     updateForTabbedWindowOrderFront<R = void>(): R;
@@ -25,14 +25,14 @@ declare namespace cocoa {
     updateWindowAndContentView<R = void>(): R;
     didChangeAuxiliaryViewControllers<R = void>(): R;
     _addViewControllerToWindow<R = void>(): R;
-    _calcWindowTopLeft<R = cocoa.CGPoint>(): R;
+    _calcWindowTopLeft<R = CGPoint>(): R;
     _forceUpdateSpaceAndMenubarCompanionWindowAutohideHeight<R = void>(): R;
     _updateSpaceAndMenubarCompanionWindowAutohideHeight<R = void>(): R;
     _updateMenubarCompanionWindowAutohideHeight<R = void>(): R;
     _updateSpaceIfNecessary<R = void>(): R;
     updateWindowLayout<R = void>(): R;
     updateWindowHeight<R = void>(): R;
-    topCenterForSheet<R = cocoa.CGPoint, P0 = unknown>(_topCenterForSheet: P0): R;
+    topCenterForSheet<R = CGPoint, P0 = unknown>(_topCenterForSheet: P0): R;
     updateWindowAlpha<R = void>(): R;
     getMenuBarTransitionDuration<R = number>(): R;
     updateMenuBarScreenRevealHeight<R = void>(): R;
@@ -45,7 +45,7 @@ declare namespace cocoa {
     _currentChildWindowOrderingPriority<R = number>(): R;
     _shouldToolbarFloatAboveSiblings<R = boolean>(): R;
     _shouldRoundCorners<R = boolean>(): R;
-    toolbarWindowSize<R = cocoa.CGSize>(): R;
+    toolbarWindowSize<R = CGSize>(): R;
     _visibleWindowHeight<R = number>(): R;
     effectiveClampedAutohideHeight<R = number>(): R;
     effectiveAutohideHeight<R = number>(): R;
@@ -54,30 +54,30 @@ declare namespace cocoa {
     setMenuBarReveal<R = void, P0 = number>(_setMenuBarReveal: P0): R;
     _synchronizeMenuBarReveal<R = void>(): R;
     _shouldDrawBaselineForEffectiveReveal<R = boolean, P0 = number>(__shouldDrawBaselineForEffectiveReveal: P0): R;
-    toolbar_didChangeFrameSizeFromOldSize<R = void, P0 = unknown, P1 = cocoa.CGSize>(_toolbar: P0, _didChangeFrameSizeFromOldSize: P1): R;
+    toolbar_didChangeFrameSizeFromOldSize<R = void, P0 = unknown, P1 = CGSize>(_toolbar: P0, _didChangeFrameSizeFromOldSize: P1): R;
     _doDidEnterFullScreen<R = void>(): R;
     _relinquishTitlebar<R = void>(): R;
     mainLayoutView<R = unknown>(): R;
     _calcAttachesToMenuBar<R = boolean>(): R;
     toolbarWindow<R = unknown>(): R;
-    getToolbarLayout<R = cocoa.NSToolbarFullScreenContentViewLayout_t>(): R;
+    getToolbarLayout<R = NSToolbarFullScreenContentViewLayout_t>(): R;
     windowAnimationDuration<R = number>(): R;
     dealloc<R = void>(): R;
     _originalWindowShouldAutomaticallyAutohide<R = boolean>(): R;
     _originalWindowHasAutohideToolbarSet<R = boolean>(): R;
-    titlebarView<R = cocoa.NSTitlebarView>(): R;
-    setTitlebarView<R = void, P0 = cocoa.NSTitlebarView>(_v: P0): R;
-    titlebarContainerView<R = cocoa.NSTitlebarContainerView>(): R;
-    setTitlebarContainerView<R = void, P0 = cocoa.NSTitlebarContainerView>(_v: P0): R;
+    titlebarView<R = NSTitlebarView>(): R;
+    setTitlebarView<R = void, P0 = NSTitlebarView>(_v: P0): R;
+    titlebarContainerView<R = NSTitlebarContainerView>(): R;
+    setTitlebarContainerView<R = void, P0 = NSTitlebarContainerView>(_v: P0): R;
     isHandlingHotKeyEvent<R = boolean>(): R;
     setIsHandlingHotKeyEvent<R = void, P0 = boolean>(_v: P0): R;
-    auxiliaryViewController<R = cocoa.NSTitlebarAccessoryViewController>(): R;
-    setAuxiliaryViewController<R = void, P0 = cocoa.NSTitlebarAccessoryViewController>(_v: P0): R;
-    toolbar<R = cocoa.NSToolbar>(): R;
-    setToolbar<R = void, P0 = cocoa.NSToolbar>(_v: P0): R;
+    auxiliaryViewController<R = NSTitlebarAccessoryViewController>(): R;
+    setAuxiliaryViewController<R = void, P0 = NSTitlebarAccessoryViewController>(_v: P0): R;
+    toolbar<R = NSToolbar>(): R;
+    setToolbar<R = void, P0 = NSToolbar>(_v: P0): R;
   }
   namespace classes {
-    export interface _NSFullScreenDetachedToolbarMenuBarCompanionController<T = any> extends cocoa.classes._NSFullScreenMenuBarCompanionController {
+    export interface _NSFullScreenDetachedToolbarMenuBarCompanionController<T = any> extends _NSFullScreenMenuBarCompanionController {
       alloc<R = _NSFullScreenDetachedToolbarMenuBarCompanionController>(): R;
       new: <R = _NSFullScreenDetachedToolbarMenuBarCompanionController>() => R;
     }

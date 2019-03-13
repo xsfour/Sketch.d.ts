@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSStoryboardShowSegueTemplate<T = any> extends cocoa.NSStoryboardSegueTemplate, cocoa.NSCodingProtocol {
-    uniqueControllerIdentifier<R = cocoa.NSString>(): R;
+  export interface NSStoryboardShowSegueTemplate<T = any> extends NSStoryboardSegueTemplate, NSCodingProtocol {
+    uniqueControllerIdentifier<R = NSString>(): R;
   }
   namespace classes {
-    export interface NSStoryboardShowSegueTemplate<T = any> extends cocoa.classes.NSStoryboardSegueTemplate, cocoa.classes.NSCodingProtocol {
+    export interface NSStoryboardShowSegueTemplate<T = any> extends NSStoryboardSegueTemplate, NSCodingProtocol {
       alloc<R = NSStoryboardShowSegueTemplate>(): R;
       new: <R = NSStoryboardShowSegueTemplate>() => R;
     }

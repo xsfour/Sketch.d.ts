@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSKeyValueUndefinedSetter<T = any> extends cocoa.NSKeyValueSetter {
+  export interface NSKeyValueUndefinedSetter<T = any> extends NSKeyValueSetter {
     initWithContainerClassID_key_containerIsa<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_initWithContainerClassID: P0, _key: P1, _containerIsa: P2): R;
   }
   namespace classes {
-    export interface NSKeyValueUndefinedSetter<T = any> extends cocoa.classes.NSKeyValueSetter {
+    export interface NSKeyValueUndefinedSetter<T = any> extends NSKeyValueSetter {
       alloc<R = NSKeyValueUndefinedSetter>(): R;
       new: <R = NSKeyValueUndefinedSetter>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMultiReadUniWriteLock<T = any> extends cocoa.NSObject, cocoa.NSLockingProtocol {
+  export interface NSMultiReadUniWriteLock<T = any> extends NSObject, NSLockingProtocol {
     name<R = unknown>(): R;
     setName<R = void, P0 = unknown>(_setName: P0): R;
     description<R = unknown>(): R;
@@ -14,10 +14,10 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
   }
   namespace classes {
-    export interface NSMultiReadUniWriteLock<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSLockingProtocol {
+    export interface NSMultiReadUniWriteLock<T = any> extends NSObject, NSLockingProtocol {
       alloc<R = NSMultiReadUniWriteLock>(): R;
       new: <R = NSMultiReadUniWriteLock>() => R;
-      allocWithZone<R = unknown, P0 = cocoa._NSZone>(_allocWithZone: P0): R;
+      allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
     }
   }
 }

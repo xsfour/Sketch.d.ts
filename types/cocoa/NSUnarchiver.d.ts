@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUnarchiver<T = any> extends cocoa.NSCoder {
+  export interface NSUnarchiver<T = any> extends NSCoder {
     classNameDecodedForArchiveClassName<R = unknown, P0 = unknown>(_classNameDecodedForArchiveClassName: P0): R;
     decodeClassName_asClassName<R = void, P0 = unknown, P1 = unknown>(_decodeClassName: P0, _asClassName: P1): R;
     data<R = unknown>(): R;
@@ -13,7 +13,7 @@ declare namespace cocoa {
     atEnd<R = boolean>(): R;
   }
   namespace classes {
-    export interface NSUnarchiver<T = any> extends cocoa.classes.NSCoder {
+    export interface NSUnarchiver<T = any> extends NSCoder {
       alloc<R = NSUnarchiver>(): R;
       new: <R = NSUnarchiver>() => R;
       unarchiveObjectWithFile<R = unknown, P0 = unknown>(_unarchiveObjectWithFile: P0): R;

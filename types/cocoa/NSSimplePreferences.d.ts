@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSimplePreferences<T = any> extends cocoa.NSPreferences {
+  export interface NSSimplePreferences<T = any> extends NSPreferences {
     _createGroupBoxForChildGrid_title_footer<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(__createGroupBoxForChildGrid: P0, _title: P1, _footer: P2): R;
     _insertRadioGroupForItem_label_intoGrid_bundle_stringsTable<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown>(__insertRadioGroupForItem: P0, _label: P1, _intoGrid: P2, _bundle: P3, _stringsTable: P4): R;
     _createPopUpButtonForItem_bundle_stringsTable<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(__createPopUpButtonForItem: P0, _bundle: P1, _stringsTable: P2): R;
@@ -18,7 +18,7 @@ declare namespace cocoa {
     _horizontalBasePriority<R = number>(): R;
   }
   namespace classes {
-    export interface NSSimplePreferences<T = any> extends cocoa.classes.NSPreferences {
+    export interface NSSimplePreferences<T = any> extends NSPreferences {
       alloc<R = NSSimplePreferences>(): R;
       new: <R = NSSimplePreferences>() => R;
       setBundleToSearch<R = void, P0 = unknown>(_setBundleToSearch: P0): R;

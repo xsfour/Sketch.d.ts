@@ -12,8 +12,8 @@ declare namespace cocoa {
       NS_isBackground<R = boolean>(): R;
       NS_tryAggressiveCommit<R = boolean>(): R;
       NS_setFlushesWithDisplayRefresh<R = void>(): R;
-      NS_apply_block<R = void, P0 = number, P1 = cocoa.CDUnknownBlockType>(_NS_apply: P0, _block: P1): R;
-      disableAnimationsInBlock<R = void, P0 = cocoa.CDUnknownBlockType>(_disableAnimationsInBlock: P0): R;
+      NS_apply_block<R = void, P0 = number, P1 = CDUnknownBlockType>(_NS_apply: P0, _block: P1): R;
+      disableAnimationsInBlock<R = void, P0 = CDUnknownBlockType>(_disableAnimationsInBlock: P0): R;
     }
   }
 }

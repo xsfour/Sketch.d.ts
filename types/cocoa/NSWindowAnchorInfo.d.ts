@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSWindowAnchorInfo<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol {
+  export interface NSWindowAnchorInfo<T = any> extends NSObject, NSCopyingProtocol {
     dealloc<R = void>(): R;
     verticalAttribute<R = number>(): R;
     setVerticalAttribute<R = void, P0 = number>(_v: P0): R;
@@ -13,7 +13,7 @@ declare namespace cocoa {
     setHorizontalItem<R = void, P0 = unknown>(_v: P0): R;
   }
   namespace classes {
-    export interface NSWindowAnchorInfo<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol {
+    export interface NSWindowAnchorInfo<T = any> extends NSObject, NSCopyingProtocol {
       alloc<R = NSWindowAnchorInfo>(): R;
       new: <R = NSWindowAnchorInfo>() => R;
     }

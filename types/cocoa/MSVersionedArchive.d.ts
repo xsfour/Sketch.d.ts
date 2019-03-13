@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSVersionedArchive<T = any> extends cocoa.NSObject {
+  export interface MSVersionedArchive<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     cleanupAfterTesting<R = void>(): R;
     archiveRootObject_error<R = boolean, P0 = unknown, P1 = unknown>(_archiveRootObject: P0, _error: P1): R;
@@ -12,19 +12,19 @@ declare namespace cocoa {
     existingURL<R = unknown>(): R;
     existingURLBasedOnFullURL<R = unknown, P0 = unknown>(_existingURLBasedOnFullURL: P0): R;
     initWithURL_version<R = unknown, P0 = unknown, P1 = number>(_initWithURL: P0, _version: P1): R;
-    alternateFolder<R = cocoa.NSString>(): R;
-    setAlternateFolder<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    alternateFolder<R = NSString>(): R;
+    setAlternateFolder<R = void, P0 = NSString>(_v: P0): R;
     version<R = number>(): R;
     setVersion<R = void, P0 = number>(_v: P0): R;
-    data<R = cocoa.NSData>(): R;
-    setData<R = void, P0 = cocoa.NSData>(_v: P0): R;
-    baseURL<R = cocoa.NSURL>(): R;
-    setBaseURL<R = void, P0 = cocoa.NSURL>(_v: P0): R;
-    url<R = cocoa.NSURL>(): R;
-    setUrl<R = void, P0 = cocoa.NSURL>(_v: P0): R;
+    data<R = NSData>(): R;
+    setData<R = void, P0 = NSData>(_v: P0): R;
+    baseURL<R = NSURL>(): R;
+    setBaseURL<R = void, P0 = NSURL>(_v: P0): R;
+    url<R = NSURL>(): R;
+    setUrl<R = void, P0 = NSURL>(_v: P0): R;
   }
   namespace classes {
-    export interface MSVersionedArchive<T = any> extends cocoa.classes.NSObject {
+    export interface MSVersionedArchive<T = any> extends NSObject {
       alloc<R = MSVersionedArchive>(): R;
       new: <R = MSVersionedArchive>() => R;
       versionedURLWithBase_extension_version<R = unknown, P0 = unknown, P1 = unknown, P2 = number>(_versionedURLWithBase: P0, _extension: P1, _version: P2): R;

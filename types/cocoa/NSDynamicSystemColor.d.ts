@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDynamicSystemColor<T = any> extends cocoa.NSDynamicNamedColor {
+  export interface NSDynamicSystemColor<T = any> extends NSDynamicNamedColor {
     retainWeakReference<R = boolean>(): R;
     allowsWeakReference<R = boolean>(): R;
     resolvedColor<R = unknown>(): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     initWithSelector<R = unknown, P0 = string>(_initWithSelector: P0): R;
   }
   namespace classes {
-    export interface NSDynamicSystemColor<T = any> extends cocoa.classes.NSDynamicNamedColor {
+    export interface NSDynamicSystemColor<T = any> extends NSDynamicNamedColor {
       alloc<R = NSDynamicSystemColor>(): R;
       new: <R = NSDynamicSystemColor>() => R;
       alternateSecondarySelectedControlColor<R = unknown>(): R;

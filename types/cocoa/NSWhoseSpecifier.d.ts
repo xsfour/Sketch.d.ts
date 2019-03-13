@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSWhoseSpecifier<T = any> extends cocoa.NSScriptObjectSpecifier {
+  export interface NSWhoseSpecifier<T = any> extends NSScriptObjectSpecifier {
     _subsetDescription<R = unknown>(): R;
     _objectIndexForSubelementIdentifier_subelementIndex_fromIndexes<R = number, P0 = number, P1 = number, P2 = unknown>(__objectIndexForSubelementIdentifier: P0, _subelementIndex: P1, _fromIndexes: P2): R;
     _indexesOfPassingObjectsInContainer<R = unknown, P0 = unknown>(__indexesOfPassingObjectsInContainer: P0): R;
@@ -20,11 +20,11 @@ declare namespace cocoa {
     setStartSubelementIndex<R = void, P0 = number>(_v: P0): R;
     startSubelementIdentifier<R = number>(): R;
     setStartSubelementIdentifier<R = void, P0 = number>(_v: P0): R;
-    test<R = cocoa.NSScriptWhoseTest>(): R;
-    setTest<R = void, P0 = cocoa.NSScriptWhoseTest>(_v: P0): R;
+    test<R = NSScriptWhoseTest>(): R;
+    setTest<R = void, P0 = NSScriptWhoseTest>(_v: P0): R;
   }
   namespace classes {
-    export interface NSWhoseSpecifier<T = any> extends cocoa.classes.NSScriptObjectSpecifier {
+    export interface NSWhoseSpecifier<T = any> extends NSScriptObjectSpecifier {
       alloc<R = NSWhoseSpecifier>(): R;
       new: <R = NSWhoseSpecifier>() => R;
       _canCreateCollapsedSpecifierFromRangeRecord<R = boolean, P0 = unknown>(__canCreateCollapsedSpecifierFromRangeRecord: P0): R;

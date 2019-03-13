@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSDatePickerCellExtraIvars<T = any> extends cocoa.NSObject {
+  export interface _NSDatePickerCellExtraIvars<T = any> extends NSObject {
     dealloc<R = void>(): R;
     setDisabledTextColor<R = void, P0 = unknown>(_setDisabledTextColor: P0): R;
     disabledTextColor<R = unknown>(): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     arrowLeftCellForDatePickerCell<R = unknown, P0 = unknown>(_arrowLeftCellForDatePickerCell: P0): R;
   }
   namespace classes {
-    export interface _NSDatePickerCellExtraIvars<T = any> extends cocoa.classes.NSObject {
+    export interface _NSDatePickerCellExtraIvars<T = any> extends NSObject {
       alloc<R = _NSDatePickerCellExtraIvars>(): R;
       new: <R = _NSDatePickerCellExtraIvars>() => R;
     }

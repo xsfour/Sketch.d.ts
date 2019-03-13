@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSToolbarItemViewerAccessibilityHelper<T = any> extends cocoa.NSObject {
-    accessibilityHitTest<R = unknown, P0 = cocoa.CGPoint>(_accessibilityHitTest: P0): R;
+  export interface _NSToolbarItemViewerAccessibilityHelper<T = any> extends NSObject {
+    accessibilityHitTest<R = unknown, P0 = CGPoint>(_accessibilityHitTest: P0): R;
     accessibilityPerformAction<R = void, P0 = unknown>(_accessibilityPerformAction: P0): R;
     accessibilityActionDescription<R = unknown, P0 = unknown>(_accessibilityActionDescription: P0): R;
     accessibilityActionNames<R = unknown>(): R;
@@ -21,7 +21,7 @@ declare namespace cocoa {
     initWithToolbarItemViewer<R = unknown, P0 = unknown>(_initWithToolbarItemViewer: P0): R;
   }
   namespace classes {
-    export interface _NSToolbarItemViewerAccessibilityHelper<T = any> extends cocoa.classes.NSObject {
+    export interface _NSToolbarItemViewerAccessibilityHelper<T = any> extends NSObject {
       alloc<R = _NSToolbarItemViewerAccessibilityHelper>(): R;
       new: <R = _NSToolbarItemViewerAccessibilityHelper>() => R;
       accessibilityHelperForToolbarItemViewer<R = unknown, P0 = unknown>(_accessibilityHelperForToolbarItemViewer: P0): R;

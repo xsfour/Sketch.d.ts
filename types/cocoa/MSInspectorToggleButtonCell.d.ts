@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInspectorToggleButtonCell<T = any> extends cocoa.MSInspectorButtonCell {}
+  export interface MSInspectorToggleButtonCell<T = any> extends MSInspectorButtonCell {}
   namespace classes {
-    export interface MSInspectorToggleButtonCell<T = any> extends cocoa.classes.MSInspectorButtonCell {
+    export interface MSInspectorToggleButtonCell<T = any> extends MSInspectorButtonCell {
       alloc<R = MSInspectorToggleButtonCell>(): R;
       new: <R = MSInspectorToggleButtonCell>() => R;
     }

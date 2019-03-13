@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface SVGTransformImporter<T = any> extends cocoa.NSObject {}
+  export interface SVGTransformImporter<T = any> extends NSObject {}
   namespace classes {
-    export interface SVGTransformImporter<T = any> extends cocoa.classes.NSObject {
+    export interface SVGTransformImporter<T = any> extends NSObject {
       alloc<R = SVGTransformImporter>(): R;
       new: <R = SVGTransformImporter>() => R;
       matrixTransformFromComponents<R = unknown, P0 = unknown>(_matrixTransformFromComponents: P0): R;

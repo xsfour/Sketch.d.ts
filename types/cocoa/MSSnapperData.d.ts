@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSnapperData<T = any> extends cocoa.NSObject {
+  export interface MSSnapperData<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     hash<R = number>(): R;
-    drawSpacingRect_zoomScale_coordinateSpace<R = void, P0 = cocoa.CGRect, P1 = number, P2 = unknown>(_drawSpacingRect: P0, _zoomScale: P1, _coordinateSpace: P2): R;
+    drawSpacingRect_zoomScale_coordinateSpace<R = void, P0 = CGRect, P1 = number, P2 = unknown>(_drawSpacingRect: P0, _zoomScale: P1, _coordinateSpace: P2): R;
     drawSpacingSnap_zoomScale_coordinateSpace<R = void, P0 = unknown, P1 = number, P2 = unknown>(_drawSpacingSnap: P0, _zoomScale: P1, _coordinateSpace: P2): R;
     drawDimensionSnap_zoomScale<R = void, P0 = unknown, P1 = number>(_drawDimensionSnap: P0, _zoomScale: P1): R;
     drawSnappedDimension_zoomScale<R = void, P0 = unknown, P1 = number>(_drawSnappedDimension: P0, _zoomScale: P1): R;
@@ -19,19 +19,19 @@ declare namespace cocoa {
     firstDimensionSnapForAxis<R = unknown, P0 = number>(_firstDimensionSnapForAxis: P0): R;
     accumulatorForAxis<R = unknown, P0 = number>(_accumulatorForAxis: P0): R;
     initWithSnappingSession<R = unknown, P0 = unknown>(_initWithSnappingSession: P0): R;
-    drawingHelper<R = cocoa.MSMeasurementDrawing>(): R;
-    setDrawingHelper<R = void, P0 = cocoa.MSMeasurementDrawing>(_v: P0): R;
-    numberFormatter<R = cocoa.NSNumberFormatter>(): R;
-    setNumberFormatter<R = void, P0 = cocoa.NSNumberFormatter>(_v: P0): R;
-    yAxisAccumulator<R = cocoa.MSSnappingAccumulator>(): R;
-    xAxisAccumulator<R = cocoa.MSSnappingAccumulator>(): R;
-    snappingSession<R = cocoa.MSSnappingSession>(): R;
+    drawingHelper<R = MSMeasurementDrawing>(): R;
+    setDrawingHelper<R = void, P0 = MSMeasurementDrawing>(_v: P0): R;
+    numberFormatter<R = NSNumberFormatter>(): R;
+    setNumberFormatter<R = void, P0 = NSNumberFormatter>(_v: P0): R;
+    yAxisAccumulator<R = MSSnappingAccumulator>(): R;
+    xAxisAccumulator<R = MSSnappingAccumulator>(): R;
+    snappingSession<R = MSSnappingSession>(): R;
     spacingAxes<R = number>(): R;
     dimensionAxes<R = number>(): R;
-    item<R = cocoa.MSSnapItem>(): R;
+    item<R = MSSnapItem>(): R;
   }
   namespace classes {
-    export interface MSSnapperData<T = any> extends cocoa.classes.NSObject {
+    export interface MSSnapperData<T = any> extends NSObject {
       alloc<R = MSSnapperData>(): R;
       new: <R = MSSnapperData>() => R;
     }

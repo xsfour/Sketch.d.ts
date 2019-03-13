@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInspectorItem<T = any> extends cocoa.NSViewController, cocoa.MSInspectorValueAdaptorDelegateProtocol, cocoa.MSUpDownTextFieldDelegateProtocol {
+  export interface MSInspectorItem<T = any> extends NSViewController, MSInspectorValueAdaptorDelegateProtocol, MSUpDownTextFieldDelegateProtocol {
     cxx_destruct<R = void>(): R;
     cachedUserInterfaceElementForKey<R = unknown, P0 = unknown>(_cachedUserInterfaceElementForKey: P0): R;
     cacheUserInterfaceElement_withKey<R = void, P0 = unknown, P1 = unknown>(_cacheUserInterfaceElement: P0, _withKey: P1): R;
@@ -9,22 +9,22 @@ declare namespace cocoa {
     sectionWithIdentifierWillCollapse<R = void, P0 = unknown>(_sectionWithIdentifierWillCollapse: P0): R;
     updateDisplayedValues<R = void>(): R;
     selectionDidChangeTo<R = void, P0 = unknown>(_selectionDidChangeTo: P0): R;
-    managedControls<R = cocoa.NSMapTable>(): R;
-    setManagedControls<R = void, P0 = cocoa.NSMapTable>(_v: P0): R;
-    layersController<R = cocoa.NSArrayController>(): R;
-    setLayersController<R = void, P0 = cocoa.NSArrayController>(_v: P0): R;
-    layers<R = cocoa.MSLayerArray>(): R;
-    setLayers<R = void, P0 = cocoa.MSLayerArray>(_v: P0): R;
-    delegate<R = cocoa.MSInspectorItemDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.MSInspectorItemDelegate>(_v: P0): R;
-    document<R = cocoa.MSDocument>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    managedControls<R = NSMapTable>(): R;
+    setManagedControls<R = void, P0 = NSMapTable>(_v: P0): R;
+    layersController<R = NSArrayController>(): R;
+    setLayersController<R = void, P0 = NSArrayController>(_v: P0): R;
+    layers<R = MSLayerArray>(): R;
+    setLayers<R = void, P0 = MSLayerArray>(_v: P0): R;
+    delegate<R = MSInspectorItemDelegate>(): R;
+    setDelegate<R = void, P0 = MSInspectorItemDelegate>(_v: P0): R;
+    document<R = MSDocument>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSInspectorItem<T = any> extends cocoa.classes.NSViewController, cocoa.classes.MSInspectorValueAdaptorDelegateProtocol, cocoa.classes.MSUpDownTextFieldDelegateProtocol {
+    export interface MSInspectorItem<T = any> extends NSViewController, MSInspectorValueAdaptorDelegateProtocol, MSUpDownTextFieldDelegateProtocol {
       alloc<R = MSInspectorItem>(): R;
       new: <R = MSInspectorItem>() => R;
       canHandleLayer<R = boolean, P0 = unknown>(_canHandleLayer: P0): R;

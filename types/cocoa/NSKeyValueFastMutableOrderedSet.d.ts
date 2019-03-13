@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSKeyValueFastMutableOrderedSet<T = any> extends cocoa.NSKeyValueMutableOrderedSet {
+  export interface NSKeyValueFastMutableOrderedSet<T = any> extends NSKeyValueMutableOrderedSet {
     replaceObjectsAtIndexes_withObjects<R = void, P0 = unknown, P1 = unknown>(_replaceObjectsAtIndexes: P0, _withObjects: P1): R;
     replaceObjectAtIndex_withObject<R = void, P0 = number, P1 = unknown>(_replaceObjectAtIndex: P0, _withObject: P1): R;
     removeObjectsAtIndexes<R = void, P0 = unknown>(_removeObjectsAtIndexes: P0): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     insertObject_atIndex<R = void, P0 = unknown, P1 = number>(_insertObject: P0, _atIndex: P1): R;
   }
   namespace classes {
-    export interface NSKeyValueFastMutableOrderedSet<T = any> extends cocoa.classes.NSKeyValueMutableOrderedSet {  }
+    export interface NSKeyValueFastMutableOrderedSet<T = any> extends NSKeyValueMutableOrderedSet {  }
   }
 }
 

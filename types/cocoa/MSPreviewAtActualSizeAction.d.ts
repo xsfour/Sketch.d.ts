@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPreviewAtActualSizeAction<T = any> extends cocoa.MSDocumentAction {
+  export interface MSPreviewAtActualSizeAction<T = any> extends MSDocumentAction {
     label<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSPreviewAtActualSizeAction<T = any> extends cocoa.classes.MSDocumentAction {
+    export interface MSPreviewAtActualSizeAction<T = any> extends MSDocumentAction {
       alloc<R = MSPreviewAtActualSizeAction>(): R;
       new: <R = MSPreviewAtActualSizeAction>() => R;
     }

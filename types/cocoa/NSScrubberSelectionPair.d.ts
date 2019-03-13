@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScrubberSelectionPair<T = any> extends cocoa.NSObject {
-    _forEachContainer<R = void, P0 = cocoa.CDUnknownBlockType>(__forEachContainer: P0): R;
+  export interface NSScrubberSelectionPair<T = any> extends NSObject {
+    _forEachContainer<R = void, P0 = CDUnknownBlockType>(__forEachContainer: P0): R;
     setContainerAlphaValue<R = void, P0 = number>(_setContainerAlphaValue: P0): R;
     applyLayoutAttributes_relativeToContentView<R = void, P0 = unknown, P1 = unknown>(_applyLayoutAttributes: P0, _relativeToContentView: P1): R;
     currentSuperview<R = unknown>(): R;
@@ -14,10 +14,10 @@ declare namespace cocoa {
     description<R = unknown>(): R;
     dealloc<R = void>(): R;
     initWithBackgroundView_overlayView<R = unknown, P0 = unknown, P1 = unknown>(_initWithBackgroundView: P0, _overlayView: P1): R;
-    overlayView<R = cocoa.NSScrubberContainerView>(): R;
-    setOverlayView<R = void, P0 = cocoa.NSScrubberContainerView>(_v: P0): R;
-    backgroundView<R = cocoa.NSScrubberContainerView>(): R;
-    setBackgroundView<R = void, P0 = cocoa.NSScrubberContainerView>(_v: P0): R;
+    overlayView<R = NSScrubberContainerView>(): R;
+    setOverlayView<R = void, P0 = NSScrubberContainerView>(_v: P0): R;
+    backgroundView<R = NSScrubberContainerView>(): R;
+    setBackgroundView<R = void, P0 = NSScrubberContainerView>(_v: P0): R;
     containsCustomViews<R = boolean>(): R;
     setContainsCustomViews<R = void, P0 = boolean>(_v: P0): R;
     itemIndex<R = number>(): R;
@@ -25,7 +25,7 @@ declare namespace cocoa {
     preferredItemCornerRadius<R = number>(): R;
   }
   namespace classes {
-    export interface NSScrubberSelectionPair<T = any> extends cocoa.classes.NSObject {
+    export interface NSScrubberSelectionPair<T = any> extends NSObject {
       alloc<R = NSScrubberSelectionPair>(): R;
       new: <R = NSScrubberSelectionPair>() => R;
     }

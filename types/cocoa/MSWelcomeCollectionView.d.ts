@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSWelcomeCollectionView<T = any> extends cocoa.NSCollectionView {}
+  export interface MSWelcomeCollectionView<T = any> extends NSCollectionView {}
   namespace classes {
-    export interface MSWelcomeCollectionView<T = any> extends cocoa.classes.NSCollectionView {
+    export interface MSWelcomeCollectionView<T = any> extends NSCollectionView {
       alloc<R = MSWelcomeCollectionView>(): R;
       new: <R = MSWelcomeCollectionView>() => R;
     }

@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface FBEdgeOverlapRun<T = any> extends cocoa.NSObject {
+  export interface FBEdgeOverlapRun<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     debugQuickLookObject<R = unknown>(): R;
-    edgeOverlapsWithBlock<R = void, P0 = cocoa.CDUnknownBlockType>(_edgeOverlapsWithBlock: P0): R;
+    edgeOverlapsWithBlock<R = void, P0 = CDUnknownBlockType>(_edgeOverlapsWithBlock: P0): R;
     description<R = unknown>(): R;
     middleIntersection<R = unknown>(): R;
     addStopCrossing<R = void>(): R;
@@ -21,11 +21,11 @@ declare namespace cocoa {
     insertOverlap<R = boolean, P0 = unknown>(_insertOverlap: P0): R;
     calculateContour2StartStopInsides<R = void>(): R;
     calculateContour1StartStopInsides<R = void>(): R;
-    contour2TestPoints<R = cocoa.FBEdgeOverlapRunTestPoints>(): R;
-    contour1TestPoints<R = cocoa.FBEdgeOverlapRunTestPoints>(): R;
-    overlaps<R = cocoa.NSArray>(): R;
-    contour2<R = cocoa.FBBezierContour>(): R;
-    contour1<R = cocoa.FBBezierContour>(): R;
+    contour2TestPoints<R = FBEdgeOverlapRunTestPoints>(): R;
+    contour1TestPoints<R = FBEdgeOverlapRunTestPoints>(): R;
+    overlaps<R = NSArray>(): R;
+    contour2<R = FBBezierContour>(): R;
+    contour1<R = FBBezierContour>(): R;
     crossingType<R = number>(): R;
     stopIsInsideContour2<R = boolean>(): R;
     stopIsInsideContour1<R = boolean>(): R;
@@ -33,7 +33,7 @@ declare namespace cocoa {
     startIsInsideContour1<R = boolean>(): R;
   }
   namespace classes {
-    export interface FBEdgeOverlapRun<T = any> extends cocoa.classes.NSObject {
+    export interface FBEdgeOverlapRun<T = any> extends NSObject {
       alloc<R = FBEdgeOverlapRun>(): R;
       new: <R = FBEdgeOverlapRun>() => R;
       overlapRun<R = unknown>(): R;

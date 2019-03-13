@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAltButton<T = any> extends cocoa.MSHoverButton {
+  export interface MSAltButton<T = any> extends MSHoverButton {
     cxx_destruct<R = void>(): R;
     flagsChangedNotification<R = void, P0 = unknown>(_flagsChangedNotification: P0): R;
     setTarget<R = void, P0 = unknown>(_setTarget: P0): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     setBc_weakTarget<R = void, P0 = unknown>(_v: P0): R;
   }
   namespace classes {
-    export interface MSAltButton<T = any> extends cocoa.classes.MSHoverButton {
+    export interface MSAltButton<T = any> extends MSHoverButton {
       alloc<R = MSAltButton>(): R;
       new: <R = MSAltButton>() => R;
     }

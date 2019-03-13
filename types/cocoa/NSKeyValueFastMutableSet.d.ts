@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSKeyValueFastMutableSet<T = any> extends cocoa.NSKeyValueMutableSet {
+  export interface NSKeyValueFastMutableSet<T = any> extends NSKeyValueMutableSet {
     unionSet<R = void, P0 = unknown>(_unionSet: P0): R;
     setSet<R = void, P0 = unknown>(_setSet: P0): R;
     removeObject<R = void, P0 = unknown>(_removeObject: P0): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     addObject<R = void, P0 = unknown>(_addObject: P0): R;
   }
   namespace classes {
-    export interface NSKeyValueFastMutableSet<T = any> extends cocoa.classes.NSKeyValueMutableSet {  }
+    export interface NSKeyValueFastMutableSet<T = any> extends NSKeyValueMutableSet {  }
   }
 }
 

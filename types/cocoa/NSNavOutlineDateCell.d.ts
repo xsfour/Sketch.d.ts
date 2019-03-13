@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSNavOutlineDateCell<T = any> extends cocoa.NSTextFieldCell {
+  export interface NSNavOutlineDateCell<T = any> extends NSTextFieldCell {
     minimumWidth<R = number>(): R;
-    _interiorBoundsToDrawWithFrame<R = cocoa.CGRect, P0 = cocoa.CGRect>(__interiorBoundsToDrawWithFrame: P0): R;
+    _interiorBoundsToDrawWithFrame<R = CGRect, P0 = CGRect>(__interiorBoundsToDrawWithFrame: P0): R;
     _stringToDraw<R = unknown>(): R;
     _isValidDate<R = boolean, P0 = unknown>(__isValidDate: P0): R;
     setObjectValue<R = void, P0 = unknown>(_setObjectValue: P0): R;
@@ -18,7 +18,7 @@ declare namespace cocoa {
     setUseRelativeDates<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface NSNavOutlineDateCell<T = any> extends cocoa.classes.NSTextFieldCell {
+    export interface NSNavOutlineDateCell<T = any> extends NSTextFieldCell {
       alloc<R = NSNavOutlineDateCell>(): R;
       new: <R = NSNavOutlineDateCell>() => R;
     }

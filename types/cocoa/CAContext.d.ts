@@ -6,8 +6,8 @@ declare namespace cocoa {
     _NS_accumulateSuggestedScaleBelow<R = void, P0 = number>(__NS_accumulateSuggestedScaleBelow: P0): R;
     NS_defaultContentsScale<R = number>(): R;
     setNS_defaultContentsScale<R = void, P0 = number>(_v: P0): R;
-    NS_visibleRect<R = cocoa.CGRect>(): R;
-    setNS_visibleRect<R = void, P0 = cocoa.CGRect>(_v: P0): R;
+    NS_visibleRect<R = CGRect>(): R;
+    setNS_visibleRect<R = void, P0 = CGRect>(_v: P0): R;
   }
   namespace classes {
     export interface CAContext<T = any> {

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSDatePickerArrowCell<T = any> extends cocoa.NSActionCell {
+  export interface _NSDatePickerArrowCell<T = any> extends NSActionCell {
     setAlternateImage<R = void, P0 = unknown>(_setAlternateImage: P0): R;
     alternateImage<R = unknown>(): R;
     _updateMouseTracking<R = void>(): R;
@@ -17,7 +17,7 @@ declare namespace cocoa {
     setDoubleValue<R = void, P0 = number>(_setDoubleValue: P0): R;
   }
   namespace classes {
-    export interface _NSDatePickerArrowCell<T = any> extends cocoa.classes.NSActionCell {
+    export interface _NSDatePickerArrowCell<T = any> extends NSActionCell {
       alloc<R = _NSDatePickerArrowCell>(): R;
       new: <R = _NSDatePickerArrowCell>() => R;
     }

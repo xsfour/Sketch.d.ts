@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSVerticalRulerViewLayer<T = any> extends cocoa.MSRulerViewLayer {}
+  export interface MSVerticalRulerViewLayer<T = any> extends MSRulerViewLayer {}
   namespace classes {
-    export interface MSVerticalRulerViewLayer<T = any> extends cocoa.classes.MSRulerViewLayer {  }
+    export interface MSVerticalRulerViewLayer<T = any> extends MSRulerViewLayer {  }
   }
 }
 

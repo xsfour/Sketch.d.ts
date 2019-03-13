@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSimpleAttributeDictionary<T = any> extends cocoa.NSDictionary {
-    copyWithZone<R = unknown, P0 = cocoa._NSZone>(_copyWithZone: P0): R;
-    mutableCopyWithZone<R = unknown, P0 = cocoa._NSZone>(_mutableCopyWithZone: P0): R;
+  export interface NSSimpleAttributeDictionary<T = any> extends NSDictionary {
+    copyWithZone<R = unknown, P0 = _NSZone>(_copyWithZone: P0): R;
+    mutableCopyWithZone<R = unknown, P0 = _NSZone>(_mutableCopyWithZone: P0): R;
     dealloc<R = void>(): R;
     keyEnumerator<R = unknown>(): R;
     objectForKey<R = unknown, P0 = unknown>(_objectForKey: P0): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     newWithKey_object<R = unknown, P0 = unknown, P1 = unknown>(_newWithKey: P0, _object: P1): R;
   }
   namespace classes {
-    export interface NSSimpleAttributeDictionary<T = any> extends cocoa.classes.NSDictionary {
+    export interface NSSimpleAttributeDictionary<T = any> extends NSDictionary {
       newWithDictionary<R = unknown, P0 = unknown>(_newWithDictionary: P0): R;
       emptyAttributeDictionary<R = unknown>(): R;
     }

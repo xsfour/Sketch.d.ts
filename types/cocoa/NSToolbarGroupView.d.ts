@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSToolbarGroupView<T = any> extends cocoa.NSView {
+  export interface NSToolbarGroupView<T = any> extends NSView {
     sendAction<R = void>(): R;
     moveLeft<R = void, P0 = unknown>(_moveLeft: P0): R;
     moveRight<R = void, P0 = unknown>(_moveRight: P0): R;
@@ -11,7 +11,7 @@ declare namespace cocoa {
     initWithItem<R = unknown, P0 = unknown>(_initWithItem: P0): R;
   }
   namespace classes {
-    export interface NSToolbarGroupView<T = any> extends cocoa.classes.NSView {
+    export interface NSToolbarGroupView<T = any> extends NSView {
       alloc<R = NSToolbarGroupView>(): R;
       new: <R = NSToolbarGroupView>() => R;
     }

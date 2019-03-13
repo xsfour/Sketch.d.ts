@@ -1,18 +1,18 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSBrowser<T = any> extends cocoa.NSControl {
+  export interface NSBrowser<T = any> extends NSControl {
     cxx_destruct<R = void>(): R;
     setAutomaticallyAdjustsContentInsets<R = void, P0 = boolean>(_setAutomaticallyAdjustsContentInsets: P0): R;
     automaticallyAdjustsContentInsets<R = boolean>(): R;
-    setContentInsets<R = void, P0 = cocoa.NSEdgeInsets>(_setContentInsets: P0): R;
+    setContentInsets<R = void, P0 = NSEdgeInsets>(_setContentInsets: P0): R;
     _updateNonAutomaticContentInsetsOfAllColumns<R = void>(): R;
-    contentInsets<R = cocoa.NSEdgeInsets>(): R;
+    contentInsets<R = NSEdgeInsets>(): R;
     _hasLeafViewControllerForItem<R = boolean, P0 = unknown>(__hasLeafViewControllerForItem: P0): R;
     _clearLeafControllers<R = void>(): R;
     _gdbLeafItemViewControllerByItem<R = unknown>(): R;
     editItemAtIndexPath_withEvent_select<R = void, P0 = unknown, P1 = unknown, P2 = boolean>(_editItemAtIndexPath: P0, _withEvent: P1, _select: P2): R;
-    _shouldAutoScrollForPoint<R = boolean, P0 = cocoa.CGPoint>(__shouldAutoScrollForPoint: P0): R;
+    _shouldAutoScrollForPoint<R = boolean, P0 = CGPoint>(__shouldAutoScrollForPoint: P0): R;
     namesOfPromisedFilesDroppedAtDestination<R = unknown, P0 = unknown>(_namesOfPromisedFilesDroppedAtDestination: P0): R;
     _delegateRespondsToNamesOfPromisedFilesDroppedAtDestination<R = boolean>(): R;
     _sendDelegateAcceptDropForDragInfo<R = boolean, P0 = unknown>(__sendDelegateAcceptDropForDragInfo: P0): R;
@@ -24,7 +24,7 @@ declare namespace cocoa {
     _determineIsSameTargetForDragInfo<R = boolean, P0 = unknown>(__determineIsSameTargetForDragInfo: P0): R;
     _setNeedsDisplayForTargetRow_column_operation<R = void, P0 = number, P1 = number, P2 = number>(__setNeedsDisplayForTargetRow: P0, _column: P1, _operation: P2): R;
     _drawDropHighlight<R = void>(): R;
-    _drawDropHighlightAroundColumnWithRect<R = void, P0 = cocoa.CGRect>(__drawDropHighlightAroundColumnWithRect: P0): R;
+    _drawDropHighlightAroundColumnWithRect<R = void, P0 = CGRect>(__drawDropHighlightAroundColumnWithRect: P0): R;
     _endColumnDragging<R = void>(): R;
     _commitAutoExpandedItems<R = void>(): R;
     _collapseAutoExpandedItems<R = void>(): R;
@@ -34,30 +34,30 @@ declare namespace cocoa {
     _markAutoExpandedItemWithDragInfo<R = void, P0 = unknown>(__markAutoExpandedItemWithDragInfo: P0): R;
     _setDropTargetColumn_targetRow_targetDropOperation_dragOperation<R = void, P0 = number, P1 = number, P2 = number, P3 = number>(__setDropTargetColumn: P0, _targetRow: P1, _targetDropOperation: P2, _dragOperation: P3): R;
     _beginColumnDragging<R = void>(): R;
-    _drawDropHighlightAboveRect<R = void, P0 = cocoa.CGRect>(__drawDropHighlightAboveRect: P0): R;
-    _drawDropHighlightAroundRect_isSelected_rounded<R = void, P0 = cocoa.CGRect, P1 = boolean, P2 = boolean>(__drawDropHighlightAroundRect: P0, _isSelected: P1, _rounded: P2): R;
-    _beforeDrawCell_atRow_col_clipRect<R = void, P0 = unknown, P1 = number, P2 = number, P3 = cocoa.CGRect>(__beforeDrawCell: P0, _atRow: P1, _col: P2, _clipRect: P3): R;
-    _drawDropHighlightBackgroundAroundRect<R = void, P0 = cocoa.CGRect>(__drawDropHighlightBackgroundAroundRect: P0): R;
+    _drawDropHighlightAboveRect<R = void, P0 = CGRect>(__drawDropHighlightAboveRect: P0): R;
+    _drawDropHighlightAroundRect_isSelected_rounded<R = void, P0 = CGRect, P1 = boolean, P2 = boolean>(__drawDropHighlightAroundRect: P0, _isSelected: P1, _rounded: P2): R;
+    _beforeDrawCell_atRow_col_clipRect<R = void, P0 = unknown, P1 = number, P2 = number, P3 = CGRect>(__beforeDrawCell: P0, _atRow: P1, _col: P2, _clipRect: P3): R;
+    _drawDropHighlightBackgroundAroundRect<R = void, P0 = CGRect>(__drawDropHighlightBackgroundAroundRect: P0): R;
     _setDropHighilightColorIfSelected<R = void, P0 = boolean>(__setDropHighilightColorIfSelected: P0): R;
     _dropHighlightColorForEntireTableView<R = unknown>(): R;
     _dropHighlightBackgroundColor<R = unknown>(): R;
     _dropHighlightColor<R = unknown>(): R;
     ignoreModifierKeysWhileDragging<R = boolean>(): R;
-    draggedImage_endedAt_operation<R = void, P0 = unknown, P1 = cocoa.CGPoint, P2 = number>(_draggedImage: P0, _endedAt: P1, _operation: P2): R;
-    draggedImage_beganAt<R = void, P0 = unknown, P1 = cocoa.CGPoint>(_draggedImage: P0, _beganAt: P1): R;
+    draggedImage_endedAt_operation<R = void, P0 = unknown, P1 = CGPoint, P2 = number>(_draggedImage: P0, _endedAt: P1, _operation: P2): R;
+    draggedImage_beganAt<R = void, P0 = unknown, P1 = CGPoint>(_draggedImage: P0, _beganAt: P1): R;
     draggingSourceOperationMaskForLocal<R = number, P0 = boolean>(_draggingSourceOperationMaskForLocal: P0): R;
     setDraggingSourceOperationMask_forLocal<R = void, P0 = number, P1 = boolean>(_setDraggingSourceOperationMask: P0, _forLocal: P1): R;
     _cancelAutoExpandItemUnderCursor<R = void>(): R;
     _autoExpandItemUnderCursor<R = boolean>(): R;
     _shouldAutoExpandItemAtRow_inColumn<R = boolean, P0 = number, P1 = number>(__shouldAutoExpandItemAtRow: P0, _inColumn: P1): R;
-    draggingImageForRowsWithIndexes_inColumn_withEvent_offset<R = unknown, P0 = unknown, P1 = number, P2 = unknown, P3 = cocoa.CGPoint>(_draggingImageForRowsWithIndexes: P0, _inColumn: P1, _withEvent: P2, _offset: P3): R;
+    draggingImageForRowsWithIndexes_inColumn_withEvent_offset<R = unknown, P0 = unknown, P1 = number, P2 = unknown, P3 = CGPoint>(_draggingImageForRowsWithIndexes: P0, _inColumn: P1, _withEvent: P2, _offset: P3): R;
     canDragRowsWithIndexes_inColumn_withEvent<R = boolean, P0 = unknown, P1 = number, P2 = unknown>(_canDragRowsWithIndexes: P0, _inColumn: P1, _withEvent: P2): R;
     _performDragFromMouseDown_inColumn<R = boolean, P0 = unknown, P1 = number>(__performDragFromMouseDown: P0, _inColumn: P1): R;
     _concludeDragRows_inColumn<R = void, P0 = unknown, P1 = number>(__concludeDragRows: P0, _inColumn: P1): R;
     _prepareToDragRows_inColumn<R = void, P0 = unknown, P1 = number>(__prepareToDragRows: P0, _inColumn: P1): R;
     _canDragRowsWithIndexes_inColumn_withEvent<R = boolean, P0 = unknown, P1 = number, P2 = unknown>(__canDragRowsWithIndexes: P0, _inColumn: P1, _withEvent: P2): R;
     _dragRowIndexes_inColumn_withEvent_pasteboard_source_slideBack<R = void, P0 = unknown, P1 = number, P2 = unknown, P3 = unknown, P4 = unknown, P5 = boolean>(__dragRowIndexes: P0, _inColumn: P1, _withEvent: P2, _pasteboard: P3, _source: P4, _slideBack: P5): R;
-    _draggingImageForRowsWithIndexes_inColumn_withEvent_offset<R = unknown, P0 = unknown, P1 = number, P2 = unknown, P3 = cocoa.CGPoint>(__draggingImageForRowsWithIndexes: P0, _inColumn: P1, _withEvent: P2, _offset: P3): R;
+    _draggingImageForRowsWithIndexes_inColumn_withEvent_offset<R = unknown, P0 = unknown, P1 = number, P2 = unknown, P3 = CGPoint>(__draggingImageForRowsWithIndexes: P0, _inColumn: P1, _withEvent: P2, _offset: P3): R;
     _dragShouldBeginFromMouseDown<R = boolean, P0 = unknown>(__dragShouldBeginFromMouseDown: P0): R;
     _sendDelegateWriteRowsWithIndexes_inColumn_toPasteboard<R = boolean, P0 = unknown, P1 = number, P2 = unknown>(__sendDelegateWriteRowsWithIndexes: P0, _inColumn: P1, _toPasteboard: P2): R;
     _delegateRespondsToWriteRows<R = boolean>(): R;
@@ -68,16 +68,16 @@ declare namespace cocoa {
     _resizeColumn_withEvent<R = void, P0 = unknown, P1 = unknown>(__resizeColumn: P0, _withEvent: P1): R;
     _enableAutosavingAndColumnResizingNotifications<R = void>(): R;
     _disableAutosavingAndColumnResizingNotificationsAndMark<R = void, P0 = boolean>(__disableAutosavingAndColumnResizingNotificationsAndMark: P0): R;
-    _resizeColumnByDelta_resizeInfo<R = void, P0 = number, P1 = cocoa._NSBrowserColumnResizeInfo>(__resizeColumnByDelta: P0, _resizeInfo: P1): R;
-    _equalyResizeColumnsByDelta_resizeInfo<R = void, P0 = number, P1 = cocoa._NSBrowserColumnResizeInfo>(__equalyResizeColumnsByDelta: P0, _resizeInfo: P1): R;
-    _zeroPinnedResizeColumnsBySharingDelta_lastSharingColumn_resizeInfo<R = void, P0 = number, P1 = unknown, P2 = cocoa._NSBrowserColumnResizeInfo>(__zeroPinnedResizeColumnsBySharingDelta: P0, _lastSharingColumn: P1, _resizeInfo: P2): R;
+    _resizeColumnByDelta_resizeInfo<R = void, P0 = number, P1 = _NSBrowserColumnResizeInfo>(__resizeColumnByDelta: P0, _resizeInfo: P1): R;
+    _equalyResizeColumnsByDelta_resizeInfo<R = void, P0 = number, P1 = _NSBrowserColumnResizeInfo>(__equalyResizeColumnsByDelta: P0, _resizeInfo: P1): R;
+    _zeroPinnedResizeColumnsBySharingDelta_lastSharingColumn_resizeInfo<R = void, P0 = number, P1 = unknown, P2 = _NSBrowserColumnResizeInfo>(__zeroPinnedResizeColumnsBySharingDelta: P0, _lastSharingColumn: P1, _resizeInfo: P2): R;
     _setWidth_ofColumn_stretchWindow<R = void, P0 = number, P1 = number, P2 = boolean>(__setWidth: P0, _ofColumn: P1, _stretchWindow: P2): R;
-    _alignColumnForStretchedWindowWithInfo<R = void, P0 = cocoa._NSBrowserColumnResizeInfo>(__alignColumnForStretchedWindowWithInfo: P0): R;
-    _stretchWindowIfNecessaryToFitResizedColumnWithInfo_resizeColumnDelta<R = boolean, P0 = cocoa._NSBrowserColumnResizeInfo, P1 = number>(__stretchWindowIfNecessaryToFitResizedColumnWithInfo: P0, _resizeColumnDelta: P1): R;
+    _alignColumnForStretchedWindowWithInfo<R = void, P0 = _NSBrowserColumnResizeInfo>(__alignColumnForStretchedWindowWithInfo: P0): R;
+    _stretchWindowIfNecessaryToFitResizedColumnWithInfo_resizeColumnDelta<R = boolean, P0 = _NSBrowserColumnResizeInfo, P1 = number>(__stretchWindowIfNecessaryToFitResizedColumnWithInfo: P0, _resizeColumnDelta: P1): R;
     _shouldStretchWindowIfNecessaryForUserColumnResize<R = boolean>(): R;
     userColumnResizingAutoresizesWindow<R = boolean>(): R;
     setUserColumnResizingAutoresizesWindow<R = void, P0 = boolean>(_setUserColumnResizingAutoresizesWindow: P0): R;
-    _columnResizeChangeFrameOfColumn_toFrame_constrainWidth_resizeInfo<R = void, P0 = unknown, P1 = cocoa.CGRect, P2 = boolean, P3 = cocoa._NSBrowserColumnResizeInfo>(__columnResizeChangeFrameOfColumn: P0, _toFrame: P1, _constrainWidth: P2, _resizeInfo: P3): R;
+    _columnResizeChangeFrameOfColumn_toFrame_constrainWidth_resizeInfo<R = void, P0 = unknown, P1 = CGRect, P2 = boolean, P3 = _NSBrowserColumnResizeInfo>(__columnResizeChangeFrameOfColumn: P0, _toFrame: P1, _constrainWidth: P2, _resizeInfo: P3): R;
     _preferedColumnWidth<R = number>(): R;
     _setNewPreferedColumnWidth<R = void, P0 = number>(__setNewPreferedColumnWidth: P0): R;
     _clearVisitedColumnContentWidths<R = void>(): R;
@@ -114,7 +114,7 @@ declare namespace cocoa {
     currentTypeSelectSearchString<R = unknown>(): R;
     _old_encodeWithCoder_NSBrowser<R = void, P0 = unknown>(__old_encodeWithCoder_NSBrowser: P0): R;
     _old_initWithCoder_NSBrowser<R = unknown, P0 = unknown>(__old_initWithCoder_NSBrowser: P0): R;
-    _calcVisibleColumnAreaAvailable<R = cocoa.CGSize>(): R;
+    _calcVisibleColumnAreaAvailable<R = CGSize>(): R;
     sendAction<R = boolean>(): R;
     doDoubleClick<R = void, P0 = unknown>(_doDoubleClick: P0): R;
     _willStartTrackingMouseInMatrix_withEvent<R = void, P0 = unknown, P1 = unknown>(__willStartTrackingMouseInMatrix: P0, _withEvent: P1): R;
@@ -140,13 +140,13 @@ declare namespace cocoa {
     _bumpSelectedItem<R = void, P0 = unknown>(__bumpSelectedItem: P0): R;
     _selectItemBestMatching<R = boolean, P0 = unknown>(__selectItemBestMatching: P0): R;
     _getMatchingRow_forString_inMatrix_startingAtRow_prefixMatch_caseSensitive<R = boolean, P0 = number, P1 = unknown, P2 = unknown, P3 = number, P4 = boolean, P5 = boolean>(__getMatchingRow: P0, _forString: P1, _inMatrix: P2, _startingAtRow: P3, _prefixMatch: P4, _caseSensitive: P5): R;
-    _drawTitlesForView_inRect<R = void, P0 = unknown, P1 = cocoa.CGRect>(__drawTitlesForView: P0, _inRect: P1): R;
-    _drawEmptyColumnsForView_inRect<R = void, P0 = unknown, P1 = cocoa.CGRect>(__drawEmptyColumnsForView: P0, _inRect: P1): R;
-    _slowPathDrawEmptyColumnsForView_inRect<R = void, P0 = unknown, P1 = cocoa.CGRect>(__slowPathDrawEmptyColumnsForView: P0, _inRect: P1): R;
-    _imageForEmptyColumnOfSize<R = unknown, P0 = cocoa.CGSize>(__imageForEmptyColumnOfSize: P0): R;
-    _fastPathDrawEmptyColumnsForView_inRect<R = void, P0 = unknown, P1 = cocoa.CGRect>(__fastPathDrawEmptyColumnsForView: P0, _inRect: P1): R;
+    _drawTitlesForView_inRect<R = void, P0 = unknown, P1 = CGRect>(__drawTitlesForView: P0, _inRect: P1): R;
+    _drawEmptyColumnsForView_inRect<R = void, P0 = unknown, P1 = CGRect>(__drawEmptyColumnsForView: P0, _inRect: P1): R;
+    _slowPathDrawEmptyColumnsForView_inRect<R = void, P0 = unknown, P1 = CGRect>(__slowPathDrawEmptyColumnsForView: P0, _inRect: P1): R;
+    _imageForEmptyColumnOfSize<R = unknown, P0 = CGSize>(__imageForEmptyColumnOfSize: P0): R;
+    _fastPathDrawEmptyColumnsForView_inRect<R = void, P0 = unknown, P1 = CGRect>(__fastPathDrawEmptyColumnsForView: P0, _inRect: P1): R;
     _imageForEmptyVerticalScroller<R = unknown>(): R;
-    _focusRingRect<R = cocoa.CGRect>(): R;
+    _focusRingRect<R = CGRect>(): R;
     observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
     tile<R = void>(): R;
     _tileContinuousScrollingBrowser<R = void>(): R;
@@ -167,15 +167,15 @@ declare namespace cocoa {
     _sizeDocumentViewToColumnsAndAlign<R = void>(): R;
     _sizeDocumentViewToColumns<R = void>(): R;
     _calcNumVisibleColumnsAndColumnSize<R = void>(): R;
-    drawTitleOfColumn_inRect<R = void, P0 = number, P1 = cocoa.CGRect>(_drawTitleOfColumn: P0, _inRect: P1): R;
-    _containerRelativeFrameOfInsideOfColumn<R = cocoa.CGRect, P0 = number>(__containerRelativeFrameOfInsideOfColumn: P0): R;
-    _containerRelativeFrameOfColumn<R = cocoa.CGRect, P0 = number>(__containerRelativeFrameOfColumn: P0): R;
-    _containerRelativeTitleFrameOfColumn<R = cocoa.CGRect, P0 = number>(__containerRelativeTitleFrameOfColumn: P0): R;
-    titleFrameOfColumn<R = cocoa.CGRect, P0 = number>(_titleFrameOfColumn: P0): R;
-    getRow_column_forPoint<R = boolean, P0 = number, P1 = number, P2 = cocoa.CGPoint>(_getRow: P0, _column: P1, _forPoint: P2): R;
-    frameOfRow_inColumn<R = cocoa.CGRect, P0 = number, P1 = number>(_frameOfRow: P0, _inColumn: P1): R;
-    frameOfInsideOfColumn<R = cocoa.CGRect, P0 = number>(_frameOfInsideOfColumn: P0): R;
-    frameOfColumn<R = cocoa.CGRect, P0 = number>(_frameOfColumn: P0): R;
+    drawTitleOfColumn_inRect<R = void, P0 = number, P1 = CGRect>(_drawTitleOfColumn: P0, _inRect: P1): R;
+    _containerRelativeFrameOfInsideOfColumn<R = CGRect, P0 = number>(__containerRelativeFrameOfInsideOfColumn: P0): R;
+    _containerRelativeFrameOfColumn<R = CGRect, P0 = number>(__containerRelativeFrameOfColumn: P0): R;
+    _containerRelativeTitleFrameOfColumn<R = CGRect, P0 = number>(__containerRelativeTitleFrameOfColumn: P0): R;
+    titleFrameOfColumn<R = CGRect, P0 = number>(_titleFrameOfColumn: P0): R;
+    getRow_column_forPoint<R = boolean, P0 = number, P1 = number, P2 = CGPoint>(_getRow: P0, _column: P1, _forPoint: P2): R;
+    frameOfRow_inColumn<R = CGRect, P0 = number, P1 = number>(_frameOfRow: P0, _inColumn: P1): R;
+    frameOfInsideOfColumn<R = CGRect, P0 = number>(_frameOfInsideOfColumn: P0): R;
+    frameOfColumn<R = CGRect, P0 = number>(_frameOfColumn: P0): R;
     _containerViewOfColumns<R = unknown>(): R;
     _containerViewOfTitles<R = unknown>(): R;
     _columnControllerInColumn<R = unknown, P0 = number>(__columnControllerInColumn: P0): R;
@@ -208,8 +208,8 @@ declare namespace cocoa {
     _addAnimatedColumn<R = void>(): R;
     _scrollLastColumnTrailingEdgeToVisible<R = void>(): R;
     _computeAndAlignFirstClosestVisibleColumn<R = void>(): R;
-    _setVisibleRectOfColumns<R = void, P0 = cocoa.CGRect>(__setVisibleRectOfColumns: P0): R;
-    _visibleRectOfColumns<R = cocoa.CGRect>(): R;
+    _setVisibleRectOfColumns<R = void, P0 = CGRect>(__setVisibleRectOfColumns: P0): R;
+    _visibleRectOfColumns<R = CGRect>(): R;
     _postColumnConfigurationDidChangeNotification<R = void>(): R;
     _doPostColumnConfigurationDidChangeNotification<R = void, P0 = unknown>(__doPostColumnConfigurationDidChangeNotification: P0): R;
     didFinishColumnScrollWithHelper<R = void, P0 = unknown>(_didFinishColumnScrollWithHelper: P0): R;
@@ -222,7 +222,7 @@ declare namespace cocoa {
     scrollRowToVisible_inColumn<R = void, P0 = number, P1 = number>(_scrollRowToVisible: P0, _inColumn: P1): R;
     _scrollOptimizingLastColumnPlacement<R = void>(): R;
     scrollColumnToVisible<R = void, P0 = number>(_scrollColumnToVisible: P0): R;
-    _scrollRectToVisible<R = void, P0 = cocoa.CGRect>(__scrollRectToVisible: P0): R;
+    _scrollRectToVisible<R = void, P0 = CGRect>(__scrollRectToVisible: P0): R;
     _shouldScrollStartOfColumnToVisible<R = boolean>(): R;
     _useSnowLeopardBehavior<R = boolean>(): R;
     _scrollFirstVisibleColumnIntoView<R = void>(): R;
@@ -230,7 +230,7 @@ declare namespace cocoa {
     scrollColumnsLeftBy<R = void, P0 = number>(_scrollColumnsLeftBy: P0): R;
     scrollColumnsRightBy<R = void, P0 = number>(_scrollColumnsRightBy: P0): R;
     _scrollColumnsRightBy<R = void, P0 = number>(__scrollColumnsRightBy: P0): R;
-    _createColumn_empty<R = unknown, P0 = cocoa.CGRect, P1 = boolean>(__createColumn: P0, _empty: P1): R;
+    _createColumn_empty<R = unknown, P0 = CGRect, P1 = boolean>(__createColumn: P0, _empty: P1): R;
     _setScrollerSize<R = void, P0 = number>(__setScrollerSize: P0): R;
     _syncScrollerSizeOfColumn<R = void, P0 = unknown>(__syncScrollerSizeOfColumn: P0): R;
     _controlSizeForScrollers<R = number>(): R;
@@ -331,8 +331,8 @@ declare namespace cocoa {
     accessibilityHorizontalScrollBarAttribute<R = unknown>(): R;
     accessibilityIsVisibleColumnsAttributeSettable<R = boolean>(): R;
     accessibilityVisibleColumnsAttribute<R = unknown>(): R;
-    columnsAutosaveName<R = cocoa.NSString>(): R;
-    setColumnsAutosaveName<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    columnsAutosaveName<R = NSString>(): R;
+    setColumnsAutosaveName<R = void, P0 = NSString>(_v: P0): R;
     rowHeight<R = number>(): R;
     setRowHeight<R = void, P0 = number>(_v: P0): R;
     prefersAllColumnUserResizing<R = boolean>(): R;
@@ -341,7 +341,7 @@ declare namespace cocoa {
     setColumnResizingType<R = void, P0 = number>(_v: P0): R;
     titleHeight<R = number>(): R;
     loaded<R = boolean>(): R;
-    selectedCells<R = cocoa.NSArray>(): R;
+    selectedCells<R = NSArray>(): R;
     selectedCell<R = unknown>(): R;
     selectedColumn<R = number>(): R;
     clickedRow<R = number>(): R;
@@ -356,12 +356,12 @@ declare namespace cocoa {
     setMinColumnWidth<R = void, P0 = number>(_v: P0): R;
     takesTitleFromPreviousColumn<R = boolean>(): R;
     setTakesTitleFromPreviousColumn<R = void, P0 = boolean>(_v: P0): R;
-    pathSeparator<R = cocoa.NSString>(): R;
-    setPathSeparator<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    selectionIndexPaths<R = cocoa.NSArray>(): R;
-    setSelectionIndexPaths<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    selectionIndexPath<R = cocoa.NSIndexPath>(): R;
-    setSelectionIndexPath<R = void, P0 = cocoa.NSIndexPath>(_v: P0): R;
+    pathSeparator<R = NSString>(): R;
+    setPathSeparator<R = void, P0 = NSString>(_v: P0): R;
+    selectionIndexPaths<R = NSArray>(): R;
+    setSelectionIndexPaths<R = void, P0 = NSArray>(_v: P0): R;
+    selectionIndexPath<R = NSIndexPath>(): R;
+    setSelectionIndexPath<R = void, P0 = NSIndexPath>(_v: P0): R;
     titled<R = boolean>(): R;
     setTitled<R = void, P0 = boolean>(_v: P0): R;
     sendsActionOnArrowKeys<R = boolean>(): R;
@@ -374,8 +374,8 @@ declare namespace cocoa {
     setHasHorizontalScroller<R = void, P0 = boolean>(_v: P0): R;
     reusesColumns<R = boolean>(): R;
     setReusesColumns<R = void, P0 = boolean>(_v: P0): R;
-    backgroundColor<R = cocoa.NSColor>(): R;
-    setBackgroundColor<R = void, P0 = cocoa.NSColor>(_v: P0): R;
+    backgroundColor<R = NSColor>(): R;
+    setBackgroundColor<R = void, P0 = NSColor>(_v: P0): R;
     allowsTypeSelect<R = boolean>(): R;
     setAllowsTypeSelect<R = void, P0 = boolean>(_v: P0): R;
     allowsEmptySelection<R = boolean>(): R;
@@ -384,8 +384,8 @@ declare namespace cocoa {
     setAllowsBranchSelection<R = void, P0 = boolean>(_v: P0): R;
     allowsMultipleSelection<R = boolean>(): R;
     setAllowsMultipleSelection<R = void, P0 = boolean>(_v: P0): R;
-    delegate<R = cocoa.NSBrowserDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSBrowserDelegate>(_v: P0): R;
+    delegate<R = NSBrowserDelegate>(): R;
+    setDelegate<R = void, P0 = NSBrowserDelegate>(_v: P0): R;
     cellPrototype<R = unknown>(): R;
     setCellPrototype<R = void, P0 = unknown>(_v: P0): R;
     doubleAction<R = string>(): R;
@@ -393,7 +393,7 @@ declare namespace cocoa {
     numberOfVisibleColumns<R = number>(): R;
   }
   namespace classes {
-    export interface NSBrowser<T = any> extends cocoa.classes.NSControl {
+    export interface NSBrowser<T = any> extends NSControl {
       alloc<R = NSBrowser>(): R;
       new: <R = NSBrowser>() => R;
       removeSavedColumnsWithAutosaveName<R = void, P0 = unknown>(_removeSavedColumnsWithAutosaveName: P0): R;

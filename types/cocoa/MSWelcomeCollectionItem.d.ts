@@ -1,20 +1,20 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSWelcomeCollectionItem<T = any> extends cocoa.NSObject, cocoa.MSWelcomeCollectionItemPreviewImageLoadingProtocol {
+  export interface MSWelcomeCollectionItem<T = any> extends NSObject, MSWelcomeCollectionItemPreviewImageLoadingProtocol {
     cxx_destruct<R = void>(): R;
     initWithController<R = unknown, P0 = unknown>(_initWithController: P0): R;
-    cachedPreviewImage<R = cocoa.NSImage>(): R;
-    setCachedPreviewImage<R = void, P0 = cocoa.NSImage>(_v: P0): R;
-    welcomeWindowController<R = cocoa.MSWelcomeWindowController>(): R;
-    setWelcomeWindowController<R = void, P0 = cocoa.MSWelcomeWindowController>(_v: P0): R;
-    title<R = cocoa.NSString>(): R;
+    cachedPreviewImage<R = NSImage>(): R;
+    setCachedPreviewImage<R = void, P0 = NSImage>(_v: P0): R;
+    welcomeWindowController<R = MSWelcomeWindowController>(): R;
+    setWelcomeWindowController<R = void, P0 = MSWelcomeWindowController>(_v: P0): R;
+    title<R = NSString>(): R;
     providesPreviewImage<R = boolean>(): R;
-    placeholderImage<R = cocoa.NSImage>(): R;
-    URL<R = cocoa.NSURL>(): R;
+    placeholderImage<R = NSImage>(): R;
+    URL<R = NSURL>(): R;
   }
   namespace classes {
-    export interface MSWelcomeCollectionItem<T = any> extends cocoa.classes.NSObject, cocoa.classes.MSWelcomeCollectionItemPreviewImageLoadingProtocol {
+    export interface MSWelcomeCollectionItem<T = any> extends NSObject, MSWelcomeCollectionItemPreviewImageLoadingProtocol {
       alloc<R = MSWelcomeCollectionItem>(): R;
       new: <R = MSWelcomeCollectionItem>() => R;
       userTemplatesDirectoryURL<R = unknown>(): R;

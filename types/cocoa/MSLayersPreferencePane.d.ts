@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSLayersPreferencePane<T = any> extends cocoa.MSPreferencePane {}
+  export interface MSLayersPreferencePane<T = any> extends MSPreferencePane {}
   namespace classes {
-    export interface MSLayersPreferencePane<T = any> extends cocoa.classes.MSPreferencePane {
+    export interface MSLayersPreferencePane<T = any> extends MSPreferencePane {
       alloc<R = MSLayersPreferencePane>(): R;
       new: <R = MSLayersPreferencePane>() => R;
     }

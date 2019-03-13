@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFocusStack<T = any> extends cocoa.NSObject {
+  export interface NSFocusStack<T = any> extends NSObject {
     fixInvalidatedFocusForFocusView<R = void>(): R;
     invalidateFocus<R = void, P0 = unknown>(_invalidateFocus: P0): R;
     isWindowInFocusStack<R = boolean, P0 = unknown>(_isWindowInFocusStack: P0): R;
     removeFreedWindow<R = void, P0 = unknown>(_removeFreedWindow: P0): R;
     removeFreedView<R = void, P0 = unknown>(_removeFreedView: P0): R;
-    performWithFocusView_inWindow_usingBlock<R = void, P0 = unknown, P1 = unknown, P2 = cocoa.CDUnknownBlockType>(_performWithFocusView: P0, _inWindow: P1, _usingBlock: P2): R;
+    performWithFocusView_inWindow_usingBlock<R = void, P0 = unknown, P1 = unknown, P2 = CDUnknownBlockType>(_performWithFocusView: P0, _inWindow: P1, _usingBlock: P2): R;
     popTopView<R = void>(): R;
     unfocusView<R = void, P0 = unknown>(_unfocusView: P0): R;
     focusedView<R = unknown>(): R;
@@ -16,7 +16,7 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
   }
   namespace classes {
-    export interface NSFocusStack<T = any> extends cocoa.classes.NSObject {
+    export interface NSFocusStack<T = any> extends NSObject {
       alloc<R = NSFocusStack>(): R;
       new: <R = NSFocusStack>() => R;
       currentFocusStack<R = unknown>(): R;

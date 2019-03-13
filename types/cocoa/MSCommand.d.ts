@@ -1,14 +1,14 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSCommand<T = any> extends cocoa.NSObject {
+  export interface MSCommand<T = any> extends NSObject {
     run<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSCommand<T = any> extends cocoa.classes.NSObject {
+    export interface MSCommand<T = any> extends NSObject {
       alloc<R = MSCommand>(): R;
       new: <R = MSCommand>() => R;
-      runWithArguments<R = unknown, P0 = cocoa.CDUnknownBlockType>(_runWithArguments: P0): R;
+      runWithArguments<R = unknown, P0 = CDUnknownBlockType>(_runWithArguments: P0): R;
     }
   }
 }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXPCListener<T = any> extends cocoa.NSObject {
+  export interface NSXPCListener<T = any> extends NSObject {
     _xpcConnection<R = unknown>(): R;
     _queue<R = unknown>(): R;
     _setQueue<R = void, P0 = unknown>(__setQueue: P0): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     initWithMachServiceName<R = unknown, P0 = unknown>(_initWithMachServiceName: P0): R;
     initWithServiceName<R = unknown, P0 = unknown>(_initWithServiceName: P0): R;
     _initShared<R = unknown>(): R;
-    delegate<R = cocoa.NSXPCListenerDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSXPCListenerDelegate>(_v: P0): R;
-    endpoint<R = cocoa.NSXPCListenerEndpoint>(): R;
+    delegate<R = NSXPCListenerDelegate>(): R;
+    setDelegate<R = void, P0 = NSXPCListenerDelegate>(_v: P0): R;
+    endpoint<R = NSXPCListenerEndpoint>(): R;
   }
   namespace classes {
-    export interface NSXPCListener<T = any> extends cocoa.classes.NSObject {
+    export interface NSXPCListener<T = any> extends NSObject {
       alloc<R = NSXPCListener>(): R;
       new: <R = NSXPCListener>() => R;
       _UUID<R = unknown>(): R;

@@ -1,28 +1,28 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSScaleSheet<T = any> extends cocoa.MSCanvasUpdatingSheet {
+  export interface MSScaleSheet<T = any> extends MSCanvasUpdatingSheet {
     selectScalingOrigin<R = void, P0 = unknown>(_selectScalingOrigin: P0): R;
     refreshScalingOriginButton<R = void, P0 = unknown>(_refreshScalingOriginButton: P0): R;
     refreshScalingOriginControls<R = void>(): R;
     didChangeValues<R = void>(): R;
     willChangeValues<R = void>(): R;
     setNilValueForKey<R = void, P0 = unknown>(_setNilValueForKey: P0): R;
-    originLabel<R = cocoa.NSTextField>(): R;
-    setOriginLabel<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    originButtonsContainer<R = cocoa.NSView>(): R;
-    setOriginButtonsContainer<R = void, P0 = cocoa.NSView>(_v: P0): R;
+    originLabel<R = NSTextField>(): R;
+    setOriginLabel<R = void, P0 = NSTextField>(_v: P0): R;
+    originButtonsContainer<R = NSView>(): R;
+    setOriginButtonsContainer<R = void, P0 = NSView>(_v: P0): R;
     scalingOriginCorner<R = number>(): R;
     setScalingOriginCorner<R = void, P0 = number>(_v: P0): R;
-    labelField<R = cocoa.NSTextField>(): R;
-    setLabelField<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    heightField<R = cocoa.NSTextField>(): R;
-    setHeightField<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    widthField<R = cocoa.NSTextField>(): R;
-    setWidthField<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    scalingField<R = cocoa.NSTextField>(): R;
-    setScalingField<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    originalRect<R = cocoa.CGRect>(): R;
+    labelField<R = NSTextField>(): R;
+    setLabelField<R = void, P0 = NSTextField>(_v: P0): R;
+    heightField<R = NSTextField>(): R;
+    setHeightField<R = void, P0 = NSTextField>(_v: P0): R;
+    widthField<R = NSTextField>(): R;
+    setWidthField<R = void, P0 = NSTextField>(_v: P0): R;
+    scalingField<R = NSTextField>(): R;
+    setScalingField<R = void, P0 = NSTextField>(_v: P0): R;
+    originalRect<R = CGRect>(): R;
     scale<R = number>(): R;
     setScale<R = void, P0 = number>(_v: P0): R;
     height<R = number>(): R;
@@ -31,7 +31,7 @@ declare namespace cocoa {
     setWidth<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface MSScaleSheet<T = any> extends cocoa.classes.MSCanvasUpdatingSheet {
+    export interface MSScaleSheet<T = any> extends MSCanvasUpdatingSheet {
       alloc<R = MSScaleSheet>(): R;
       new: <R = MSScaleSheet>() => R;
     }

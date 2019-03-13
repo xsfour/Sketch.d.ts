@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPressureSensitivePanGestureRecognizer<T = any> extends cocoa.NSPanGestureRecognizer, cocoa.NSCodingProtocol {
+  export interface NSPressureSensitivePanGestureRecognizer<T = any> extends NSPanGestureRecognizer, NSCodingProtocol {
     _updatePropertiesWithEvent<R = void, P0 = unknown>(__updatePropertiesWithEvent: P0): R;
     _setHasCustomDefaultPressure<R = void, P0 = boolean>(__setHasCustomDefaultPressure: P0): R;
     _hasCustomDefaultPressure<R = boolean>(): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     setRecognizesOnPressureChange<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface NSPressureSensitivePanGestureRecognizer<T = any> extends cocoa.classes.NSPanGestureRecognizer, cocoa.classes.NSCodingProtocol {
+    export interface NSPressureSensitivePanGestureRecognizer<T = any> extends NSPanGestureRecognizer, NSCodingProtocol {
       alloc<R = NSPressureSensitivePanGestureRecognizer>(): R;
       new: <R = NSPressureSensitivePanGestureRecognizer>() => R;
     }

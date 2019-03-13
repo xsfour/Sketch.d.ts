@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSIBPrototypingLayoutConstraint<T = any> extends cocoa.NSLayoutConstraint {}
+  export interface NSIBPrototypingLayoutConstraint<T = any> extends NSLayoutConstraint {}
   namespace classes {
-    export interface NSIBPrototypingLayoutConstraint<T = any> extends cocoa.classes.NSLayoutConstraint {
+    export interface NSIBPrototypingLayoutConstraint<T = any> extends NSLayoutConstraint {
       alloc<R = NSIBPrototypingLayoutConstraint>(): R;
       new: <R = NSIBPrototypingLayoutConstraint>() => R;
       classFallbacksForKeyedArchiver<R = unknown>(): R;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLayoutConstraint<T = any> extends cocoa.NSObject, cocoa.NSISConstraintProtocol {
+  export interface NSLayoutConstraint<T = any> extends NSObject, NSISConstraintProtocol {
     _setActive_mutuallyExclusiveConstraints<R = void, P0 = boolean, P1 = unknown>(__setActive: P0, _mutuallyExclusiveConstraints: P1): R;
     _nsib_isRedundant<R = boolean>(): R;
     _nsib_isRedundantInEngine<R = boolean, P0 = unknown>(__nsib_isRedundantInEngine: P0): R;
@@ -11,7 +11,7 @@ declare namespace cocoa {
     _tryToActivateMeasuringUnsatisfactionChanges_andMutuallyExclusiveConstraints<R = void, P0 = unknown, P1 = unknown>(__tryToActivateMeasuringUnsatisfactionChanges: P0, _andMutuallyExclusiveConstraints: P1): R;
     _loweredExpression<R = unknown>(): R;
     _lowerIntoExpression_reportingConstantIsRounded<R = boolean, P0 = unknown, P1 = string>(__lowerIntoExpression: P0, _reportingConstantIsRounded: P1): R;
-    _engineToContainerScalingCoefficients<R = cocoa.CGSize>(): R;
+    _engineToContainerScalingCoefficients<R = CGSize>(): R;
     _makeExtraVars<R = void>(): R;
     _removeFromEngine<R = void, P0 = unknown>(__removeFromEngine: P0): R;
     _addToEngine<R = void, P0 = unknown>(__addToEngine: P0): R;
@@ -43,7 +43,7 @@ declare namespace cocoa {
     _setSymbolicConstant_constant<R = void, P0 = unknown, P1 = number>(__setSymbolicConstant: P0, _constant: P1): R;
     _effectiveConstant_error<R = boolean, P0 = number, P1 = unknown>(__effectiveConstant: P0, _error: P1): R;
     _containerGeometryDidChange<R = void>(): R;
-    _tryToChangeContainerGeometryWithUndoHandler<R = boolean, P0 = cocoa.CDUnknownBlockType>(__tryToChangeContainerGeometryWithUndoHandler: P0): R;
+    _tryToChangeContainerGeometryWithUndoHandler<R = boolean, P0 = CDUnknownBlockType>(__tryToChangeContainerGeometryWithUndoHandler: P0): R;
     _clearWeakContainerReference<R = void>(): R;
     _loweredConstantIsRounded<R = boolean>(): R;
     _allocationDescription<R = unknown>(): R;
@@ -70,24 +70,24 @@ declare namespace cocoa {
     dissatisfaction<R = number>(): R;
     sourceRuleHierarchy<R = unknown>(): R;
     _ancestorRuleNodes<R = unknown>(): R;
-    secondAnchor<R = cocoa.NSLayoutAnchor>(): R;
-    setSecondAnchor<R = void, P0 = cocoa.NSLayoutAnchor>(_v: P0): R;
-    firstAnchor<R = cocoa.NSLayoutAnchor>(): R;
-    setFirstAnchor<R = void, P0 = cocoa.NSLayoutAnchor>(_v: P0): R;
+    secondAnchor<R = NSLayoutAnchor>(): R;
+    setSecondAnchor<R = void, P0 = NSLayoutAnchor>(_v: P0): R;
+    firstAnchor<R = NSLayoutAnchor>(): R;
+    setFirstAnchor<R = void, P0 = NSLayoutAnchor>(_v: P0): R;
     active<R = boolean>(): R;
     setActive<R = void, P0 = boolean>(_v: P0): R;
-    _referencedLayoutItems<R = cocoa.NSSet>(): R;
-    description<R = cocoa.NSString>(): R;
-    symbolicConstant<R = cocoa.NSString>(): R;
-    setSymbolicConstant<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    _referencedLayoutItems<R = NSSet>(): R;
+    description<R = NSString>(): R;
+    symbolicConstant<R = NSString>(): R;
+    setSymbolicConstant<R = void, P0 = NSString>(_v: P0): R;
     constant<R = number>(): R;
     setConstant<R = void, P0 = number>(_v: P0): R;
     _containerDeclaredConstraint<R = boolean>(): R;
     set_containerDeclaredConstraint<R = void, P0 = boolean>(_v: P0): R;
     container<R = unknown>(): R;
     setContainer<R = void, P0 = unknown>(_v: P0): R;
-    identifier<R = cocoa.NSString>(): R;
-    setIdentifier<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    identifier<R = NSString>(): R;
+    setIdentifier<R = void, P0 = NSString>(_v: P0): R;
     hasBeenLowered<R = boolean>(): R;
     priority<R = number>(): R;
     setPriority<R = void, P0 = number>(_v: P0): R;
@@ -104,9 +104,9 @@ declare namespace cocoa {
     loweredConstantNeedsUpdate<R = boolean>(): R;
     setLoweredConstantNeedsUpdate<R = void, P0 = boolean>(_v: P0): R;
     unsatisfaction<R = number>(): R;
-    _associatedRuleNode<R = cocoa._NSConstraintDescriptionLayoutRuleNode>(): R;
-    set_associatedRuleNode<R = void, P0 = cocoa._NSConstraintDescriptionLayoutRuleNode>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
+    _associatedRuleNode<R = _NSConstraintDescriptionLayoutRuleNode>(): R;
+    set_associatedRuleNode<R = void, P0 = _NSConstraintDescriptionLayoutRuleNode>(_v: P0): R;
+    debugDescription<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
     // + NSLayoutConstraint(NSAnimation,NSConsistentLayoutIntegralization,NSConstraintSourceDetection,NSLayoutConstraintConveniences,NSLayoutConstraintVisualization,NSSymbolicConstantResolution,NSTabBarExtras,Utility):
@@ -115,14 +115,14 @@ declare namespace cocoa {
     _usingConsistentIntegralization<R = boolean>(): R;
     _isPrototypingConstraint<R = boolean>(): R;
     _geometricCompare<R = number, P0 = unknown>(__geometricCompare: P0): R;
-    _visualCenterInWindowSpace<R = cocoa.CGPoint>(): R;
+    _visualCenterInWindowSpace<R = CGPoint>(): R;
     _orientation<R = number>(): R;
     defaultResolvedValue_forSymbolicConstant_error<R = boolean, P0 = number, P1 = unknown, P2 = unknown>(_defaultResolvedValue: P0, _forSymbolicConstant: P1, _error: P2): R;
     _setConstant_animated<R = void, P0 = number, P1 = boolean>(__setConstant: P0, _animated: P1): R;
     isRequired<R = boolean>(): R;
   }
   namespace classes {
-    export interface NSLayoutConstraint<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSISConstraintProtocol {
+    export interface NSLayoutConstraint<T = any> extends NSObject, NSISConstraintProtocol {
       alloc<R = NSLayoutConstraint>(): R;
       new: <R = NSLayoutConstraint>() => R;
       constraintWithAnchor_relatedBy_constant<R = unknown, P0 = unknown, P1 = number, P2 = number>(_constraintWithAnchor: P0, _relatedBy: P1, _constant: P2): R;
@@ -147,8 +147,8 @@ declare namespace cocoa {
       _ns_constraintsWithItem_attribute_toItem_attribute_inequalityRelation_inequalityIdentifier_inequalityPriority_inequalityConstant_equivalencePriority_equivalenceIdentifier_equalityConstant_layoutDirection<R = unknown, P0 = unknown, P1 = number, P2 = unknown, P3 = number, P4 = number, P5 = unknown, P6 = number, P7 = number, P8 = number, P9 = unknown, P10 = number, P11 = number>(__ns_constraintsWithItem: P0, _attribute: P1, _toItem: P2, _attribute1: P3, _inequalityRelation: P4, _inequalityIdentifier: P5, _inequalityPriority: P6, _inequalityConstant: P7, _equivalencePriority: P8, _equivalenceIdentifier: P9, _equalityConstant: P10, _layoutDirection: P11): R;
       _ns_constraintsWithItem_attribute_toItem_attribute_constant_inequalityRelation_inequalityIdentifier_inequalityPriority_equivalencePriority_equivalenceIdentifier_layoutDirection<R = unknown, P0 = unknown, P1 = number, P2 = unknown, P3 = number, P4 = number, P5 = number, P6 = unknown, P7 = number, P8 = number, P9 = unknown, P10 = number>(__ns_constraintsWithItem: P0, _attribute: P1, _toItem: P2, _attribute1: P3, _constant: P4, _inequalityRelation: P5, _inequalityIdentifier: P6, _inequalityPriority: P7, _equivalencePriority: P8, _equivalenceIdentifier: P9, _layoutDirection: P10): R;
       _ns_constraintWithItem_attribute_relatedBy_toItem_attribute_multiplier_constant_layoutDirection_priority_identifier<R = unknown, P0 = unknown, P1 = number, P2 = number, P3 = unknown, P4 = number, P5 = number, P6 = number, P7 = number, P8 = number, P9 = unknown>(__ns_constraintWithItem: P0, _attribute: P1, _relatedBy: P2, _toItem: P3, _attribute1: P4, _multiplier: P5, _constant: P6, _layoutDirection: P7, _priority: P8, _identifier: P9): R;
-      _constraintsMatchingFrameOfView_withFrameOfView_edgeInsets_priority<R = unknown, P0 = unknown, P1 = unknown, P2 = cocoa.NSEdgeInsets, P3 = number>(__constraintsMatchingFrameOfView: P0, _withFrameOfView: P1, _edgeInsets: P2, _priority: P3): R;
-      _constraintsMatchingFrameOfView_withFrameOfView_edgeInsets<R = unknown, P0 = unknown, P1 = unknown, P2 = cocoa.NSEdgeInsets>(__constraintsMatchingFrameOfView: P0, _withFrameOfView: P1, _edgeInsets: P2): R;
+      _constraintsMatchingFrameOfView_withFrameOfView_edgeInsets_priority<R = unknown, P0 = unknown, P1 = unknown, P2 = NSEdgeInsets, P3 = number>(__constraintsMatchingFrameOfView: P0, _withFrameOfView: P1, _edgeInsets: P2, _priority: P3): R;
+      _constraintsMatchingFrameOfView_withFrameOfView_edgeInsets<R = unknown, P0 = unknown, P1 = unknown, P2 = NSEdgeInsets>(__constraintsMatchingFrameOfView: P0, _withFrameOfView: P1, _edgeInsets: P2): R;
       _constraintsMatchingFrameOfView_withFrameOfView<R = unknown, P0 = unknown, P1 = unknown>(__constraintsMatchingFrameOfView: P0, _withFrameOfView: P1): R;
       _constraintWithItem_attribute_relatedBy_toItem_attribute_multiplier_constant_priority<R = unknown, P0 = unknown, P1 = number, P2 = number, P3 = unknown, P4 = number, P5 = number, P6 = number, P7 = number>(__constraintWithItem: P0, _attribute: P1, _relatedBy: P2, _toItem: P3, _attribute1: P4, _multiplier: P5, _constant: P6, _priority: P7): R;
       _minimizingConstraintWithItem_attribute<R = unknown, P0 = unknown, P1 = number>(__minimizingConstraintWithItem: P0, _attribute: P1): R;

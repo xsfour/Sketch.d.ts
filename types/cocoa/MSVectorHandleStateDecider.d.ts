@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSVectorHandleStateDecider<T = any> extends cocoa.NSObject {
+  export interface MSVectorHandleStateDecider<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     debugDescription<R = unknown>(): R;
-    indexPathOfHandleAtPoint_tolerance<R = unknown, P0 = cocoa.CGPoint, P1 = number>(_indexPathOfHandleAtPoint: P0, _tolerance: P1): R;
+    indexPathOfHandleAtPoint_tolerance<R = unknown, P0 = CGPoint, P1 = number>(_indexPathOfHandleAtPoint: P0, _tolerance: P1): R;
     stateOfCurvePointAtIndexPath_curveToState_curveFromState<R = number, P0 = unknown, P1 = number, P2 = number>(_stateOfCurvePointAtIndexPath: P0, _curveToState: P1, _curveFromState: P2): R;
     isCurveAdjustmentHandleVisibleDueToHighlightedHandle<R = boolean, P0 = unknown>(_isCurveAdjustmentHandleVisibleDueToHighlightedHandle: P0): R;
     isCurveAdjustmentHandleVisibleDueToSelectedHandles<R = boolean, P0 = unknown>(_isCurveAdjustmentHandleVisibleDueToSelectedHandles: P0): R;
@@ -16,17 +16,17 @@ declare namespace cocoa {
     highlightedOrSelectedStateForHandleAtIndexPath<R = number, P0 = unknown>(_highlightedOrSelectedStateForHandleAtIndexPath: P0): R;
     isHandleAtIndexPathSelected<R = boolean, P0 = unknown>(_isHandleAtIndexPathSelected: P0): R;
     reset<R = void>(): R;
-    indexPathForHighlightedComponent<R = cocoa.NSIndexPath>(): R;
-    setIndexPathForHighlightedComponent<R = void, P0 = cocoa.NSIndexPath>(_v: P0): R;
-    selectionContext<R = cocoa.MSShapeChangeContext>(): R;
-    setSelectionContext<R = void, P0 = cocoa.MSShapeChangeContext>(_v: P0): R;
+    indexPathForHighlightedComponent<R = NSIndexPath>(): R;
+    setIndexPathForHighlightedComponent<R = void, P0 = NSIndexPath>(_v: P0): R;
+    selectionContext<R = MSShapeChangeContext>(): R;
+    setSelectionContext<R = void, P0 = MSShapeChangeContext>(_v: P0): R;
     visibilityAroundHighlight<R = number>(): R;
     setVisibilityAroundHighlight<R = void, P0 = number>(_v: P0): R;
     visibilityAroundSelectedHandles<R = number>(): R;
     setVisibilityAroundSelectedHandles<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface MSVectorHandleStateDecider<T = any> extends cocoa.classes.NSObject {
+    export interface MSVectorHandleStateDecider<T = any> extends NSObject {
       alloc<R = MSVectorHandleStateDecider>(): R;
       new: <R = MSVectorHandleStateDecider>() => R;
     }

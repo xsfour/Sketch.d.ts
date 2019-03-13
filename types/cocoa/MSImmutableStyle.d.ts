@@ -1,17 +1,17 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutableStyle<T = any> extends cocoa._MSImmutableStyle {
+  export interface MSImmutableStyle<T = any> extends _MSImmutableStyle {
     migratePropertiesFromV104OrEarlierWithUnarchiver<R = void, P0 = unknown>(_migratePropertiesFromV104OrEarlierWithUnarchiver: P0): R;
     migratePropertiesFromV103OrEarlierWithUnarchiver<R = void, P0 = unknown>(_migratePropertiesFromV103OrEarlierWithUnarchiver: P0): R;
-    boundsForPath<R = cocoa.CGRect, P0 = unknown>(_boundsForPath: P0): R;
+    boundsForPath<R = CGRect, P0 = unknown>(_boundsForPath: P0): R;
     _shadowWithGreatestSpread<R = unknown, P0 = unknown>(__shadowWithGreatestSpread: P0): R;
-    _boundsForShadow_path<R = cocoa.CGRect, P0 = unknown, P1 = unknown>(__boundsForShadow: P0, _path: P1): R;
+    _boundsForShadow_path<R = CGRect, P0 = unknown, P1 = unknown>(__boundsForShadow: P0, _path: P1): R;
     applyPropertiesToBezier<R = void, P0 = unknown>(_applyPropertiesToBezier: P0): R;
-    boundingBoxForBiggestShadowSpreadForLayer<R = cocoa.CGRect, P0 = unknown>(_boundingBoxForBiggestShadowSpreadForLayer: P0): R;
+    boundingBoxForBiggestShadowSpreadForLayer<R = CGRect, P0 = unknown>(_boundingBoxForBiggestShadowSpreadForLayer: P0): R;
     clearTextStyle<R = void>(): R;
     migratePropertiesFromV111OrEarlierWithUnarchiver<R = void, P0 = unknown>(_migratePropertiesFromV111OrEarlierWithUnarchiver: P0): R;
-    renderBitmapEffects_bounds_parentCoordinateTransform<R = unknown, P0 = unknown, P1 = cocoa.CGRect, P2 = cocoa.CGAffineTransform>(_renderBitmapEffects: P0, _bounds: P1, _parentCoordinateTransform: P2): R;
+    renderBitmapEffects_bounds_parentCoordinateTransform<R = unknown, P0 = unknown, P1 = CGRect, P2 = CGAffineTransform>(_renderBitmapEffects: P0, _bounds: P1, _parentCoordinateTransform: P2): R;
     addSVGFilterAttributes_exporter_position<R = void, P0 = unknown, P1 = unknown, P2 = number>(_addSVGFilterAttributes: P0, _exporter: P1, _position: P2): R;
     addBlurFilter_exporter<R = void, P0 = unknown, P1 = unknown>(_addBlurFilter: P0, _exporter: P1): R;
     addShadowFilters_includeSource_attributes_exporter<R = void, P0 = unknown, P1 = boolean, P2 = unknown, P3 = unknown>(_addShadowFilters: P0, _includeSource: P1, _attributes: P2, _exporter: P3): R;
@@ -25,10 +25,10 @@ declare namespace cocoa {
     hasBorderRequiringMask<R = boolean>(): R;
     addSVGAttributes_exporter_elementPosition<R = void, P0 = unknown, P1 = unknown, P2 = number>(_addSVGAttributes: P0, _exporter: P1, _elementPosition: P2): R;
     numberOfElementsWithExporter<R = number, P0 = unknown>(_numberOfElementsWithExporter: P0): R;
-    enabledInnerShadows<R = cocoa.NSArray>(): R;
-    enabledShadows<R = cocoa.NSArray>(): R;
-    enabledBorders<R = cocoa.NSArray>(): R;
-    enabledFills<R = cocoa.NSArray>(): R;
+    enabledInnerShadows<R = NSArray>(): R;
+    enabledShadows<R = NSArray>(): R;
+    enabledBorders<R = NSArray>(): R;
+    enabledFills<R = NSArray>(): R;
     shadowStrokeType<R = number>(): R;
     shadowType<R = number>(): R;
     outerPaddingForBiggestShadowSpread<R = number>(): R;
@@ -40,18 +40,18 @@ declare namespace cocoa {
     hasEnabledBorder<R = boolean>(): R;
     hasEnabledInnerShadow<R = boolean>(): R;
     hasEnabledShadow<R = boolean>(): R;
-    firstEnabledBorder<R = cocoa.MSImmutableStyleBorder>(): R;
-    firstEnabledFill<R = cocoa.MSImmutableStyleFill>(): R;
-    firstEnabledInnerShadow<R = cocoa.MSImmutableStyleInnerShadow>(): R;
-    firstEnabledShadow<R = cocoa.MSImmutableStyleShadow>(): R;
+    firstEnabledBorder<R = MSImmutableStyleBorder>(): R;
+    firstEnabledFill<R = MSImmutableStyleFill>(): R;
+    firstEnabledInnerShadow<R = MSImmutableStyleInnerShadow>(): R;
+    firstEnabledShadow<R = MSImmutableStyleShadow>(): R;
     hasMoreThanOneEnabledFill<R = boolean>(): R;
     hasMarkers<R = boolean>(): R;
     hasEnabledBackgroundBlur<R = boolean>(): R;
-    renderableFills<R = cocoa.NSArray>(): R;
+    renderableFills<R = NSArray>(): R;
     hasEnabledOpaqueFill<R = boolean>(): R;
   }
   namespace classes {
-    export interface MSImmutableStyle<T = any> extends cocoa.classes._MSImmutableStyle {
+    export interface MSImmutableStyle<T = any> extends _MSImmutableStyle {
       alloc<R = MSImmutableStyle>(): R;
       new: <R = MSImmutableStyle>() => R;
     }

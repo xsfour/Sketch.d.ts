@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSServiceEntry<T = any> extends cocoa.NSObject, cocoa._NSServiceActionProtocol {
+  export interface _NSServiceEntry<T = any> extends NSObject, _NSServiceActionProtocol {
     internalRunService_flags_cancelledHint<R = unknown, P0 = unknown, P1 = number, P2 = string>(_internalRunService: P0, _flags: P1, _cancelledHint: P2): R;
     enableStatus<R = number>(): R;
     compareServiceEntryByLocalizedTitle<R = number, P0 = unknown>(_compareServiceEntryByLocalizedTitle: P0): R;
@@ -19,26 +19,26 @@ declare namespace cocoa {
     typeCategory<R = number>(): R;
     _inferServiceCategory<R = number>(): R;
     combinedSendTypeCount<R = number>(): R;
-    availablePresentationModes<R = cocoa.NSSet>(): R;
-    defaultPresentationModes<R = cocoa.NSSet>(): R;
-    presentationModes<R = cocoa.NSSet>(): R;
-    setPresentationModes<R = void, P0 = cocoa.NSSet>(_v: P0): R;
-    bundleIdentifier<R = cocoa.NSString>(): R;
-    keyboardShortcut<R = cocoa.NSKeyboardShortcut>(): R;
-    setKeyboardShortcut<R = void, P0 = cocoa.NSKeyboardShortcut>(_v: P0): R;
-    defaultKeyboardShortcut<R = cocoa.NSKeyboardShortcut>(): R;
-    bundlePath<R = cocoa.NSString>(): R;
-    title<R = cocoa.NSString>(): R;
+    availablePresentationModes<R = NSSet>(): R;
+    defaultPresentationModes<R = NSSet>(): R;
+    presentationModes<R = NSSet>(): R;
+    setPresentationModes<R = void, P0 = NSSet>(_v: P0): R;
+    bundleIdentifier<R = NSString>(): R;
+    keyboardShortcut<R = NSKeyboardShortcut>(): R;
+    setKeyboardShortcut<R = void, P0 = NSKeyboardShortcut>(_v: P0): R;
+    defaultKeyboardShortcut<R = NSKeyboardShortcut>(): R;
+    bundlePath<R = NSString>(): R;
+    title<R = NSString>(): R;
     hasBackgroundColor<R = boolean>(): R;
     hasCustomIcon<R = boolean>(): R;
-    localizedTitle<R = cocoa.NSString>(): R;
-    serviceUUID<R = cocoa.NSUUID>(): R;
-    description<R = cocoa.NSString>(): R;
-    keyEquivalent<R = cocoa.NSString>(): R;
-    setKeyEquivalent<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    localizedCategoryTitle<R = cocoa.NSString>(): R;
-    categoryTitle<R = cocoa.NSString>(): R;
-    localizedServiceDescription<R = cocoa.NSString>(): R;
+    localizedTitle<R = NSString>(): R;
+    serviceUUID<R = NSUUID>(): R;
+    description<R = NSString>(): R;
+    keyEquivalent<R = NSString>(): R;
+    setKeyEquivalent<R = void, P0 = NSString>(_v: P0): R;
+    localizedCategoryTitle<R = NSString>(): R;
+    categoryTitle<R = NSString>(): R;
+    localizedServiceDescription<R = NSString>(): R;
     isAvailableInServicesMenu<R = boolean>(): R;
     setIsAvailableInServicesMenu<R = void, P0 = boolean>(_v: P0): R;
     isAvailableInContextMenu<R = boolean>(): R;
@@ -46,15 +46,15 @@ declare namespace cocoa {
     isSpellChecker<R = boolean>(): R;
     isRestricted<R = boolean>(): R;
     isWorkflow<R = boolean>(): R;
-    returnTypes<R = cocoa.NSArray>(): R;
-    sendFileTypes<R = cocoa.NSArray>(): R;
-    combinedSendTypes<R = cocoa.NSArray>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
+    returnTypes<R = NSArray>(): R;
+    sendFileTypes<R = NSArray>(): R;
+    combinedSendTypes<R = NSArray>(): R;
+    debugDescription<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface _NSServiceEntry<T = any> extends cocoa.classes.NSObject, cocoa.classes._NSServiceActionProtocol {
+    export interface _NSServiceEntry<T = any> extends NSObject, _NSServiceActionProtocol {
       alloc<R = _NSServiceEntry>(): R;
       new: <R = _NSServiceEntry>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSlider<T = any> extends cocoa.NSControl, cocoa.NSSliderAccessoryContainerProtocol, cocoa.NSSliderCellControlViewProtocol, cocoa.NSSliderTickMarksDelegateProtocol, cocoa.NSAccessibilitySliderProtocol {
+  export interface NSSlider<T = any> extends NSControl, NSSliderAccessoryContainerProtocol, NSSliderCellControlViewProtocol, NSSliderTickMarksDelegateProtocol, NSAccessibilitySliderProtocol {
     _preferredAppearance<R = unknown>(): R;
     _layoutComponentSubviewsIfNecessary<R = void>(): R;
     _clearComponentSubviewsAndRemoveFromSuperview<R = void, P0 = boolean>(__clearComponentSubviewsAndRemoveFromSuperview: P0): R;
@@ -27,7 +27,7 @@ declare namespace cocoa {
     setTickMarkIsProminent_atIndex<R = void, P0 = boolean, P1 = number>(_setTickMarkIsProminent: P0, _atIndex: P1): R;
     tickMarkIsProminentAtIndex<R = boolean, P0 = number>(_tickMarkIsProminentAtIndex: P0): R;
     closestTickMarkValueToValue<R = number, P0 = number>(_closestTickMarkValueToValue: P0): R;
-    indexOfTickMarkAtPoint<R = number, P0 = cocoa.CGPoint>(_indexOfTickMarkAtPoint: P0): R;
+    indexOfTickMarkAtPoint<R = number, P0 = CGPoint>(_indexOfTickMarkAtPoint: P0): R;
     tickMarkValueAtIndex<R = number, P0 = number>(_tickMarkValueAtIndex: P0): R;
     allowsTickMarkValuesOnly<R = boolean>(): R;
     setAllowsTickMarkValuesOnly<R = void, P0 = boolean>(_setAllowsTickMarkValuesOnly: P0): R;
@@ -62,17 +62,17 @@ declare namespace cocoa {
     setMaximumValueAccessory<R = void, P0 = unknown>(_setMaximumValueAccessory: P0): R;
     setMinimumValueAccessory<R = void, P0 = unknown>(_setMinimumValueAccessory: P0): R;
     isFlipped<R = boolean>(): R;
-    _removeAnchorsInRange<R = void, P0 = cocoa._NSRange>(__removeAnchorsInRange: P0): R;
+    _removeAnchorsInRange<R = void, P0 = _NSRange>(__removeAnchorsInRange: P0): R;
     layoutPointForTickMarkAtIndex<R = unknown, P0 = number>(_layoutPointForTickMarkAtIndex: P0): R;
-    trackFillColor<R = cocoa.NSColor>(): R;
-    setTrackFillColor<R = void, P0 = cocoa.NSColor>(_v: P0): R;
+    trackFillColor<R = NSColor>(): R;
+    setTrackFillColor<R = void, P0 = NSColor>(_v: P0): R;
     vertical<R = boolean>(): R;
     setVertical<R = void, P0 = boolean>(_v: P0): R;
     knobThickness<R = number>(): R;
     altIncrementValue<R = number>(): R;
     setAltIncrementValue<R = void, P0 = number>(_v: P0): R;
-    maximumValueAccessory<R = cocoa.NSSliderAccessory>(): R;
-    minimumValueAccessory<R = cocoa.NSSliderAccessory>(): R;
+    maximumValueAccessory<R = NSSliderAccessory>(): R;
+    minimumValueAccessory<R = NSSliderAccessory>(): R;
     maxValue<R = number>(): R;
     setMaxValue<R = void, P0 = number>(_v: P0): R;
     minValue<R = number>(): R;
@@ -88,15 +88,15 @@ declare namespace cocoa {
     setMaximumValue<R = void, P0 = number>(_v: P0): R;
     minimumValue<R = number>(): R;
     setMinimumValue<R = void, P0 = number>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
     // + NSSlider(NextKeyViewSupport):
     canBeKeyView<R = boolean>(): R;
   }
   namespace classes {
-    export interface NSSlider<T = any> extends cocoa.classes.NSControl, cocoa.classes.NSSliderAccessoryContainerProtocol, cocoa.classes.NSSliderCellControlViewProtocol, cocoa.classes.NSSliderTickMarksDelegateProtocol, cocoa.classes.NSAccessibilitySliderProtocol {
+    export interface NSSlider<T = any> extends NSControl, NSSliderAccessoryContainerProtocol, NSSliderCellControlViewProtocol, NSSliderTickMarksDelegateProtocol, NSAccessibilitySliderProtocol {
       alloc<R = NSSlider>(): R;
       new: <R = NSSlider>() => R;
       verticalSliderWithMinValue_maxValue_initialValue_target_action<R = unknown, P0 = number, P1 = number, P2 = number, P3 = unknown, P4 = string>(_verticalSliderWithMinValue: P0, _maxValue: P1, _initialValue: P2, _target: P3, _action: P4): R;

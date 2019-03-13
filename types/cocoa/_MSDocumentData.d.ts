@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSDocumentData<T = any> extends cocoa.MSModelObject {
+  export interface _MSDocumentData<T = any> extends MSModelObject {
     movePageIndex_toIndex<R = void, P0 = number, P1 = number>(_movePageIndex: P0, _toIndex: P1): R;
     removeAllPages<R = void>(): R;
     removePagesAtIndexes<R = void, P0 = unknown>(_removePagesAtIndexes: P0): R;
@@ -51,31 +51,31 @@ declare namespace cocoa {
     addForeignLayerStyles<R = void, P0 = unknown>(_addForeignLayerStyles: P0): R;
     addForeignLayerStyle<R = void, P0 = unknown>(_addForeignLayerStyle: P0): R;
     hasDefaultValues<R = boolean>(): R;
-    pages<R = cocoa.NSArray>(): R;
-    setPages<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    layerTextStyles<R = cocoa.MSSharedTextStyleContainer>(): R;
-    setLayerTextStyles<R = void, P0 = cocoa.MSSharedTextStyleContainer>(_v: P0): R;
-    layerSymbols<R = cocoa.MSSymbolContainer>(): R;
-    setLayerSymbols<R = void, P0 = cocoa.MSSymbolContainer>(_v: P0): R;
-    layerStyles<R = cocoa.MSSharedStyleContainer>(): R;
-    setLayerStyles<R = void, P0 = cocoa.MSSharedStyleContainer>(_v: P0): R;
-    foreignTextStyles<R = cocoa.NSArray>(): R;
-    setForeignTextStyles<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    foreignSymbols<R = cocoa.NSArray>(): R;
-    setForeignSymbols<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    foreignLayerStyles<R = cocoa.NSArray>(): R;
-    setForeignLayerStyles<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    assets<R = cocoa.MSAssetCollection>(): R;
-    setAssets<R = void, P0 = cocoa.MSAssetCollection>(_v: P0): R;
-    userInfo<R = cocoa.NSDictionary>(): R;
-    setUserInfo<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
+    pages<R = NSArray>(): R;
+    setPages<R = void, P0 = NSArray>(_v: P0): R;
+    layerTextStyles<R = MSSharedTextStyleContainer>(): R;
+    setLayerTextStyles<R = void, P0 = MSSharedTextStyleContainer>(_v: P0): R;
+    layerSymbols<R = MSSymbolContainer>(): R;
+    setLayerSymbols<R = void, P0 = MSSymbolContainer>(_v: P0): R;
+    layerStyles<R = MSSharedStyleContainer>(): R;
+    setLayerStyles<R = void, P0 = MSSharedStyleContainer>(_v: P0): R;
+    foreignTextStyles<R = NSArray>(): R;
+    setForeignTextStyles<R = void, P0 = NSArray>(_v: P0): R;
+    foreignSymbols<R = NSArray>(): R;
+    setForeignSymbols<R = void, P0 = NSArray>(_v: P0): R;
+    foreignLayerStyles<R = NSArray>(): R;
+    setForeignLayerStyles<R = void, P0 = NSArray>(_v: P0): R;
+    assets<R = MSAssetCollection>(): R;
+    setAssets<R = void, P0 = MSAssetCollection>(_v: P0): R;
+    userInfo<R = NSDictionary>(): R;
+    setUserInfo<R = void, P0 = NSDictionary>(_v: P0): R;
     currentPageIndex<R = number>(): R;
     setCurrentPageIndex<R = void, P0 = number>(_v: P0): R;
     colorSpace<R = number>(): R;
     setColorSpace<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface _MSDocumentData<T = any> extends cocoa.classes.MSModelObject {
+    export interface _MSDocumentData<T = any> extends MSModelObject {
       alloc<R = _MSDocumentData>(): R;
       new: <R = _MSDocumentData>() => R;
     }

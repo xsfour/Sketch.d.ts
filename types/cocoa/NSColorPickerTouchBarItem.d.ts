@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorPickerTouchBarItem<T = any> extends cocoa.NSTouchBarItem, cocoa.NSTouchBarItemTypePopoverProtocol, cocoa.NSGestureRecognizerDelegateProtocol, cocoa.NSTouchBarColorPickerViewControllerDelegateProtocol {
+  export interface NSColorPickerTouchBarItem<T = any> extends NSTouchBarItem, NSTouchBarItemTypePopoverProtocol, NSGestureRecognizerDelegateProtocol, NSTouchBarColorPickerViewControllerDelegateProtocol {
     cxx_destruct<R = void>(): R;
     _pickColor<R = void, P0 = unknown>(__pickColor: P0): R;
     view<R = unknown>(): R;
@@ -26,31 +26,31 @@ declare namespace cocoa {
     setColorListSupportsPressAndHoldVariants<R = void, P0 = boolean>(_v: P0): R;
     showsAlpha<R = boolean>(): R;
     setShowsAlpha<R = void, P0 = boolean>(_v: P0): R;
-    color<R = cocoa.NSColor>(): R;
-    setColor<R = void, P0 = cocoa.NSColor>(_v: P0): R;
-    storedColor<R = cocoa.NSColor>(): R;
-    allowedColorSpaces<R = cocoa.NSArray>(): R;
-    setAllowedColorSpaces<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    colorList<R = cocoa.NSColorList>(): R;
-    setColorList<R = void, P0 = cocoa.NSColorList>(_v: P0): R;
+    color<R = NSColor>(): R;
+    setColor<R = void, P0 = NSColor>(_v: P0): R;
+    storedColor<R = NSColor>(): R;
+    allowedColorSpaces<R = NSArray>(): R;
+    setAllowedColorSpaces<R = void, P0 = NSArray>(_v: P0): R;
+    colorList<R = NSColorList>(): R;
+    setColorList<R = void, P0 = NSColorList>(_v: P0): R;
     mode<R = number>(): R;
     setMode<R = void, P0 = number>(_v: P0): R;
     enabled<R = boolean>(): R;
     setEnabled<R = void, P0 = boolean>(_v: P0): R;
-    customizationLabel<R = cocoa.NSString>(): R;
-    setCustomizationLabel<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    customizationLabel<R = NSString>(): R;
+    setCustomizationLabel<R = void, P0 = NSString>(_v: P0): R;
     isPresented<R = boolean>(): R;
-    popoverTouchBar<R = cocoa.NSTouchBar>(): R;
+    popoverTouchBar<R = NSTouchBar>(): R;
     showsCloseButton<R = boolean>(): R;
     supportsPressAndHold<R = boolean>(): R;
-    _overlay<R = cocoa.NSTouchBarItemOverlay>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    _overlay<R = NSTouchBarItemOverlay>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSColorPickerTouchBarItem<T = any> extends cocoa.classes.NSTouchBarItem, cocoa.classes.NSTouchBarItemTypePopoverProtocol, cocoa.classes.NSGestureRecognizerDelegateProtocol, cocoa.classes.NSTouchBarColorPickerViewControllerDelegateProtocol {
+    export interface NSColorPickerTouchBarItem<T = any> extends NSTouchBarItem, NSTouchBarItemTypePopoverProtocol, NSGestureRecognizerDelegateProtocol, NSTouchBarColorPickerViewControllerDelegateProtocol {
       alloc<R = NSColorPickerTouchBarItem>(): R;
       new: <R = NSColorPickerTouchBarItem>() => R;
       automaticallyNotifiesObserversOfColor<R = boolean>(): R;

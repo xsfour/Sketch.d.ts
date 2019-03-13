@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTextFinder<T = any> extends cocoa.NSObject, cocoa.NSCodingProtocol {
+  export interface NSTextFinder<T = any> extends NSObject, NSCodingProtocol {
     _isSearchingAsynchronousDocument<R = boolean>(): R;
     _webViews<R = unknown>(): R;
     _isSearchingWebViews<R = boolean>(): R;
@@ -22,21 +22,21 @@ declare namespace cocoa {
     _textFinderForStyle_create<R = unknown, P0 = number, P1 = boolean>(__textFinderForStyle: P0, _create: P1): R;
     incrementalSearchingShouldDimContentView<R = boolean>(): R;
     setIncrementalSearchingShouldDimContentView<R = void, P0 = boolean>(_v: P0): R;
-    incrementalMatchRanges<R = cocoa.NSArray>(): R;
+    incrementalMatchRanges<R = NSArray>(): R;
     incrementalSearchingEnabled<R = boolean>(): R;
     setIncrementalSearchingEnabled<R = void, P0 = boolean>(_v: P0): R;
     findIndicatorNeedsUpdate<R = boolean>(): R;
     setFindIndicatorNeedsUpdate<R = void, P0 = boolean>(_v: P0): R;
-    findBarContainer<R = cocoa.NSTextFinderBarContainer>(): R;
-    setFindBarContainer<R = void, P0 = cocoa.NSTextFinderBarContainer>(_v: P0): R;
-    client<R = cocoa.NSTextFinderClient>(): R;
-    setClient<R = void, P0 = cocoa.NSTextFinderClient>(_v: P0): R;
+    findBarContainer<R = NSTextFinderBarContainer>(): R;
+    setFindBarContainer<R = void, P0 = NSTextFinderBarContainer>(_v: P0): R;
+    client<R = NSTextFinderClient>(): R;
+    setClient<R = void, P0 = NSTextFinderClient>(_v: P0): R;
   }
   namespace classes {
-    export interface NSTextFinder<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCodingProtocol {
+    export interface NSTextFinder<T = any> extends NSObject, NSCodingProtocol {
       alloc<R = NSTextFinder>(): R;
       new: <R = NSTextFinder>() => R;
-      drawIncrementalMatchHighlightInRect<R = void, P0 = cocoa.CGRect>(_drawIncrementalMatchHighlightInRect: P0): R;
+      drawIncrementalMatchHighlightInRect<R = void, P0 = CGRect>(_drawIncrementalMatchHighlightInRect: P0): R;
       _findIndicatorNeedsUpdate<R = void, P0 = unknown>(__findIndicatorNeedsUpdate: P0): R;
       _cancelFindIndicatorForView<R = void, P0 = unknown>(__cancelFindIndicatorForView: P0): R;
       _findIndicatorForView<R = unknown, P0 = unknown>(__findIndicatorForView: P0): R;

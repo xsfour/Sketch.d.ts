@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSImmutableGraphicsContextSettings<T = any> extends cocoa.MSImmutableModelObject {
+  export interface _MSImmutableGraphicsContextSettings<T = any> extends MSImmutableModelObject {
     hasDefaultValues<R = boolean>(): R;
     opacity<R = number>(): R;
     setOpacity<R = void, P0 = number>(_v: P0): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     setBlendMode<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface _MSImmutableGraphicsContextSettings<T = any> extends cocoa.classes.MSImmutableModelObject {
+    export interface _MSImmutableGraphicsContextSettings<T = any> extends MSImmutableModelObject {
       alloc<R = _MSImmutableGraphicsContextSettings>(): R;
       new: <R = _MSImmutableGraphicsContextSettings>() => R;
     }

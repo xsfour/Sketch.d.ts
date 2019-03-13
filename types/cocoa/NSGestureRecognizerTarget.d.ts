@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSGestureRecognizerTarget<T = any> extends cocoa.NSObject {
+  export interface NSGestureRecognizerTarget<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     description<R = unknown>(): R;
     action<R = string>(): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     setTarget<R = void, P0 = unknown>(_v: P0): R;
   }
   namespace classes {
-    export interface NSGestureRecognizerTarget<T = any> extends cocoa.classes.NSObject {
+    export interface NSGestureRecognizerTarget<T = any> extends NSObject {
       alloc<R = NSGestureRecognizerTarget>(): R;
       new: <R = NSGestureRecognizerTarget>() => R;
     }

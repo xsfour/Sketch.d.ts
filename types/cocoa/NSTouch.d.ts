@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouch<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol {
-    deviceSize<R = cocoa.CGSize>(): R;
+  export interface NSTouch<T = any> extends NSObject, NSCopyingProtocol {
+    deviceSize<R = CGSize>(): R;
   }
   namespace classes {
-    export interface NSTouch<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol {
+    export interface NSTouch<T = any> extends NSObject, NSCopyingProtocol {
       alloc<R = NSTouch>(): R;
       new: <R = NSTouch>() => R;
     }

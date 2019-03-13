@@ -1,18 +1,18 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInspectorFlowHandler<T = any> extends cocoa.NSObject, cocoa.MSFlowMenuBuilderTargetProtocol {
+  export interface MSInspectorFlowHandler<T = any> extends NSObject, MSFlowMenuBuilderTargetProtocol {
     cxx_destruct<R = void>(): R;
     layers<R = unknown>(): R;
     document<R = unknown>(): R;
     reload<R = void>(): R;
     flowConnection<R = unknown>(): R;
-    enumerateLayersAndReload<R = void, P0 = cocoa.CDUnknownBlockType>(_enumerateLayersAndReload: P0): R;
-    delegate<R = cocoa.MSInspectorFlowHandlerDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.MSInspectorFlowHandlerDelegate>(_v: P0): R;
+    enumerateLayersAndReload<R = void, P0 = CDUnknownBlockType>(_enumerateLayersAndReload: P0): R;
+    delegate<R = MSInspectorFlowHandlerDelegate>(): R;
+    setDelegate<R = void, P0 = MSInspectorFlowHandlerDelegate>(_v: P0): R;
   }
   namespace classes {
-    export interface MSInspectorFlowHandler<T = any> extends cocoa.classes.NSObject, cocoa.classes.MSFlowMenuBuilderTargetProtocol {
+    export interface MSInspectorFlowHandler<T = any> extends NSObject, MSFlowMenuBuilderTargetProtocol {
       alloc<R = MSInspectorFlowHandler>(): R;
       new: <R = MSInspectorFlowHandler>() => R;
       shouldShowFullInspectorForLayers<R = boolean, P0 = unknown>(_shouldShowFullInspectorForLayers: P0): R;

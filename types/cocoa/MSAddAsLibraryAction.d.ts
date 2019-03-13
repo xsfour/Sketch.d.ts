@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAddAsLibraryAction<T = any> extends cocoa.MSDocumentAction {
+  export interface MSAddAsLibraryAction<T = any> extends MSDocumentAction {
     label<R = unknown>(): R;
     addAsLibrary<R = void>(): R;
     document_didSave_contextInfo<R = void, P0 = unknown, P1 = boolean, P2 = void>(_document: P0, _didSave: P1, _contextInfo: P2): R;
@@ -11,7 +11,7 @@ declare namespace cocoa {
     validate<R = boolean>(): R;
   }
   namespace classes {
-    export interface MSAddAsLibraryAction<T = any> extends cocoa.classes.MSDocumentAction {
+    export interface MSAddAsLibraryAction<T = any> extends MSDocumentAction {
       alloc<R = MSAddAsLibraryAction>(): R;
       new: <R = MSAddAsLibraryAction>() => R;
     }

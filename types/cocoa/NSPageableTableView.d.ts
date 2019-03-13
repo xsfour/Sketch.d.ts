@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPageableTableView<T = any> extends cocoa.NSTableView, cocoa.NSTableViewDelegateProtocol {
+  export interface NSPageableTableView<T = any> extends NSTableView, NSTableViewDelegateProtocol {
     setDelegate<R = void, P0 = unknown>(_setDelegate: P0): R;
     preservesContentDuringLiveResize<R = boolean>(): R;
     _updateMinimumHeightConstraint<R = void>(): R;
@@ -15,13 +15,13 @@ declare namespace cocoa {
     setPage<R = void, P0 = number>(_v: P0): R;
     displayedRowCount<R = number>(): R;
     setDisplayedRowCount<R = void, P0 = number>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSPageableTableView<T = any> extends cocoa.classes.NSTableView, cocoa.classes.NSTableViewDelegateProtocol {
+    export interface NSPageableTableView<T = any> extends NSTableView, NSTableViewDelegateProtocol {
       alloc<R = NSPageableTableView>(): R;
       new: <R = NSPageableTableView>() => R;
     }

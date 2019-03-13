@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInspectorController<T = any> extends cocoa.NSViewController, cocoa.NSTouchBarDelegateProtocol {
+  export interface MSInspectorController<T = any> extends NSViewController, NSTouchBarDelegateProtocol {
     cxx_destruct<R = void>(): R;
     reloadTouchBars<R = void>(): R;
     closeAnyColorPopover<R = void>(): R;
@@ -21,7 +21,7 @@ declare namespace cocoa {
     refreshCurrentController<R = void>(): R;
     layoutContentView<R = void>(): R;
     reloadSharedObjectsSection<R = void>(): R;
-    beginRenameSharedObject_completionBlock<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(_beginRenameSharedObject: P0, _completionBlock: P1): R;
+    beginRenameSharedObject_completionBlock<R = void, P0 = unknown, P1 = CDUnknownBlockType>(_beginRenameSharedObject: P0, _completionBlock: P1): R;
     changeTextLayerFont<R = void, P0 = unknown>(_changeTextLayerFont: P0): R;
     changeColor<R = void, P0 = unknown>(_changeColor: P0): R;
     currentHandlerChanged<R = void>(): R;
@@ -31,32 +31,32 @@ declare namespace cocoa {
     validateAlignmentButtons<R = void>(): R;
     connectAlignmentButtons<R = void>(): R;
     awakeFromNib<R = void>(): R;
-    normalInspector<R = cocoa.MSNormalInspector>(): R;
-    setNormalInspector<R = void, P0 = cocoa.MSNormalInspector>(_v: P0): R;
-    contentContainerView<R = cocoa.NSView>(): R;
-    setContentContainerView<R = void, P0 = cocoa.NSView>(_v: P0): R;
-    alignmentContainerView<R = cocoa.NSView>(): R;
-    setAlignmentContainerView<R = void, P0 = cocoa.NSView>(_v: P0): R;
-    alignmentView<R = cocoa.NSView>(): R;
-    setAlignmentView<R = void, P0 = cocoa.NSView>(_v: P0): R;
-    selectedLayers<R = cocoa.MSLayerArray>(): R;
-    setSelectedLayers<R = void, P0 = cocoa.MSLayerArray>(_v: P0): R;
+    normalInspector<R = MSNormalInspector>(): R;
+    setNormalInspector<R = void, P0 = MSNormalInspector>(_v: P0): R;
+    contentContainerView<R = NSView>(): R;
+    setContentContainerView<R = void, P0 = NSView>(_v: P0): R;
+    alignmentContainerView<R = NSView>(): R;
+    setAlignmentContainerView<R = void, P0 = NSView>(_v: P0): R;
+    alignmentView<R = NSView>(): R;
+    setAlignmentView<R = void, P0 = NSView>(_v: P0): R;
+    selectedLayers<R = MSLayerArray>(): R;
+    setSelectedLayers<R = void, P0 = MSLayerArray>(_v: P0): R;
     alignmentBarHidden<R = boolean>(): R;
     setAlignmentBarHidden<R = void, P0 = boolean>(_v: P0): R;
-    globalAssets<R = cocoa.MSPersistentAssetCollection>(): R;
-    setGlobalAssets<R = void, P0 = cocoa.MSPersistentAssetCollection>(_v: P0): R;
-    document<R = cocoa.MSDocument>(): R;
-    setDocument<R = void, P0 = cocoa.MSDocument>(_v: P0): R;
-    currentController<R = cocoa.MSInspectorChildController>(): R;
-    setCurrentController<R = void, P0 = cocoa.MSInspectorChildController>(_v: P0): R;
+    globalAssets<R = MSPersistentAssetCollection>(): R;
+    setGlobalAssets<R = void, P0 = MSPersistentAssetCollection>(_v: P0): R;
+    document<R = MSDocument>(): R;
+    setDocument<R = void, P0 = MSDocument>(_v: P0): R;
+    currentController<R = MSInspectorChildController>(): R;
+    setCurrentController<R = void, P0 = MSInspectorChildController>(_v: P0): R;
     sharedStyleInspectorVisible<R = boolean>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSInspectorController<T = any> extends cocoa.classes.NSViewController, cocoa.classes.NSTouchBarDelegateProtocol {
+    export interface MSInspectorController<T = any> extends NSViewController, NSTouchBarDelegateProtocol {
       alloc<R = MSInspectorController>(): R;
       new: <R = MSInspectorController>() => R;
     }

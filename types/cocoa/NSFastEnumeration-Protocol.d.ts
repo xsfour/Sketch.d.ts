@@ -8,5 +8,3 @@ declare namespace cocoa {
     export interface NSFastEnumerationProtocol<T = any> {  }
   }
 }
-
-declare const NSFastEnumerationProtocol: cocoa.classes.NSFastEnumerationProtocol;

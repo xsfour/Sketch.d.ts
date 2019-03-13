@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCCodeSigningVerifier<T = any> extends cocoa.NSObject {}
+  export interface BCCodeSigningVerifier<T = any> extends NSObject {}
   namespace classes {
-    export interface BCCodeSigningVerifier<T = any> extends cocoa.classes.NSObject {
+    export interface BCCodeSigningVerifier<T = any> extends NSObject {
       alloc<R = BCCodeSigningVerifier>(): R;
       new: <R = BCCodeSigningVerifier>() => R;
     }

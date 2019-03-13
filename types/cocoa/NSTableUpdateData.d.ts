@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableUpdateData<T = any> extends cocoa.NSObject {
+  export interface NSTableUpdateData<T = any> extends NSObject {
     hasChanges<R = boolean>(): R;
     dealloc<R = void>(): R;
-    updateItemsToRemove<R = cocoa.NSMutableArray>(): R;
-    setUpdateItemsToRemove<R = void, P0 = cocoa.NSMutableArray>(_v: P0): R;
-    views<R = cocoa.NSMutableArray>(): R;
-    setViews<R = void, P0 = cocoa.NSMutableArray>(_v: P0): R;
+    updateItemsToRemove<R = NSMutableArray>(): R;
+    setUpdateItemsToRemove<R = void, P0 = NSMutableArray>(_v: P0): R;
+    views<R = NSMutableArray>(): R;
+    setViews<R = void, P0 = NSMutableArray>(_v: P0): R;
     containsInserts<R = boolean>(): R;
     setContainsInserts<R = void, P0 = boolean>(_v: P0): R;
     containsMoves<R = boolean>(): R;
@@ -18,33 +18,33 @@ declare namespace cocoa {
     setContainsSlideDeletes<R = void, P0 = boolean>(_v: P0): R;
     containsDeletes<R = boolean>(): R;
     setContainsDeletes<R = void, P0 = boolean>(_v: P0): R;
-    rowIndexesToViews<R = cocoa.NSMutableIndexSet>(): R;
-    setRowIndexesToViews<R = void, P0 = cocoa.NSMutableIndexSet>(_v: P0): R;
-    priorGroupRowIndexes<R = cocoa.NSIndexSet>(): R;
-    setPriorGroupRowIndexes<R = void, P0 = cocoa.NSIndexSet>(_v: P0): R;
-    priorColumnWidths<R = cocoa.NSArray>(): R;
-    setPriorColumnWidths<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    priorRowHeightStorage<R = cocoa._NSTableRowHeightStorage>(): R;
-    setPriorRowHeightStorage<R = void, P0 = cocoa._NSTableRowHeightStorage>(_v: P0): R;
+    rowIndexesToViews<R = NSMutableIndexSet>(): R;
+    setRowIndexesToViews<R = void, P0 = NSMutableIndexSet>(_v: P0): R;
+    priorGroupRowIndexes<R = NSIndexSet>(): R;
+    setPriorGroupRowIndexes<R = void, P0 = NSIndexSet>(_v: P0): R;
+    priorColumnWidths<R = NSArray>(): R;
+    setPriorColumnWidths<R = void, P0 = NSArray>(_v: P0): R;
+    priorRowHeightStorage<R = _NSTableRowHeightStorage>(): R;
+    setPriorRowHeightStorage<R = void, P0 = _NSTableRowHeightStorage>(_v: P0): R;
     updateCount<R = number>(): R;
     setUpdateCount<R = void, P0 = number>(_v: P0): R;
     needsFrameUpdate<R = boolean>(): R;
     setNeedsFrameUpdate<R = void, P0 = boolean>(_v: P0): R;
-    allRowsToInsert<R = cocoa.NSMutableIndexSet>(): R;
-    setAllRowsToInsert<R = void, P0 = cocoa.NSMutableIndexSet>(_v: P0): R;
-    allRowsToDelete<R = cocoa.NSMutableIndexSet>(): R;
-    setAllRowsToDelete<R = void, P0 = cocoa.NSMutableIndexSet>(_v: P0): R;
+    allRowsToInsert<R = NSMutableIndexSet>(): R;
+    setAllRowsToInsert<R = void, P0 = NSMutableIndexSet>(_v: P0): R;
+    allRowsToDelete<R = NSMutableIndexSet>(): R;
+    setAllRowsToDelete<R = void, P0 = NSMutableIndexSet>(_v: P0): R;
     containsAnimations<R = boolean>(): R;
     setContainsAnimations<R = void, P0 = boolean>(_v: P0): R;
     selectionChanged<R = boolean>(): R;
     setSelectionChanged<R = void, P0 = boolean>(_v: P0): R;
-    updateItemsToInsert<R = cocoa.NSMutableArray>(): R;
-    setUpdateItemsToInsert<R = void, P0 = cocoa.NSMutableArray>(_v: P0): R;
+    updateItemsToInsert<R = NSMutableArray>(): R;
+    setUpdateItemsToInsert<R = void, P0 = NSMutableArray>(_v: P0): R;
     rowHeightsChanged<R = boolean>(): R;
     setRowHeightsChanged<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface NSTableUpdateData<T = any> extends cocoa.classes.NSObject {
+    export interface NSTableUpdateData<T = any> extends NSObject {
       alloc<R = NSTableUpdateData>(): R;
       new: <R = NSTableUpdateData>() => R;
     }

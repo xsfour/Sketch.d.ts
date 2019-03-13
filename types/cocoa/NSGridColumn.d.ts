@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSGridColumn<T = any> extends cocoa.NSObject, cocoa.NSCodingProtocol {
+  export interface NSGridColumn<T = any> extends NSObject, NSCodingProtocol {
     _previousVisibleColumn<R = unknown>(): R;
     _nextVisibleColumn<R = unknown>(): R;
     _trailingContentAnchor<R = unknown>(): R;
@@ -9,10 +9,10 @@ declare namespace cocoa {
     _findTrailingBoundaryAnchorAndContentPadding<R = unknown, P0 = number>(__findTrailingBoundaryAnchorAndContentPadding: P0): R;
     _leadingContentAnchor<R = unknown>(): R;
     _leadingBoundaryAnchor<R = unknown>(): R;
-    mergeCellsInRange<R = void, P0 = cocoa._NSRange>(_mergeCellsInRange: P0): R;
+    mergeCellsInRange<R = void, P0 = _NSRange>(_mergeCellsInRange: P0): R;
     _removedFromGridView<R = void>(): R;
     _sanityCheck<R = void>(): R;
-    _forEachCell<R = void, P0 = cocoa.CDUnknownBlockType>(__forEachCell: P0): R;
+    _forEachCell<R = void, P0 = CDUnknownBlockType>(__forEachCell: P0): R;
     _indexOfCell<R = number, P0 = unknown>(__indexOfCell: P0): R;
     cellAtIndex<R = unknown, P0 = number>(_cellAtIndex: P0): R;
     index<R = number>(): R;
@@ -21,7 +21,7 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     initWithGridView<R = unknown, P0 = unknown>(_initWithGridView: P0): R;
     numberOfCells<R = number>(): R;
-    gridView<R = cocoa.NSGridView>(): R;
+    gridView<R = NSGridView>(): R;
     trailingPadding<R = number>(): R;
     setTrailingPadding<R = void, P0 = number>(_v: P0): R;
     leadingPadding<R = number>(): R;
@@ -34,7 +34,7 @@ declare namespace cocoa {
     setXPlacement<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface NSGridColumn<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCodingProtocol {
+    export interface NSGridColumn<T = any> extends NSObject, NSCodingProtocol {
       alloc<R = NSGridColumn>(): R;
       new: <R = NSGridColumn>() => R;
     }

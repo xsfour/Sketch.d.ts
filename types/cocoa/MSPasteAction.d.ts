@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPasteAction<T = any> extends cocoa.MSDocumentAction {
+  export interface MSPasteAction<T = any> extends MSDocumentAction {
     label<R = unknown>(): R;
     paste<R = void, P0 = unknown>(_paste: P0): R;
   }
   namespace classes {
-    export interface MSPasteAction<T = any> extends cocoa.classes.MSDocumentAction {
+    export interface MSPasteAction<T = any> extends MSDocumentAction {
       alloc<R = MSPasteAction>(): R;
       new: <R = MSPasteAction>() => R;
     }

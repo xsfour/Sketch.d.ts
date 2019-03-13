@@ -3,7 +3,7 @@
 declare namespace cocoa {
   export interface NSNetService<T = any> {
     // + NSNetService(SMKWebConnection):
-    addressStrings<R = cocoa.NSArray>(): R;
+    addressStrings<R = NSArray>(): R;
   }
   namespace classes {
     export interface NSNetService<T = any> {

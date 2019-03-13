@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSConcreteSetChanges<T = any> extends cocoa.NSSetChanges {
+  export interface NSConcreteSetChanges<T = any> extends NSSetChanges {
     dealloc<R = void>(): R;
     description<R = unknown>(): R;
     _fault<R = void>(): R;
     changeCount<R = number>(): R;
-    transformObjectsWithBlock<R = void, P0 = cocoa.CDUnknownBlockType>(_transformObjectsWithBlock: P0): R;
-    filterObjectsWithTest<R = void, P0 = cocoa.CDUnknownBlockType>(_filterObjectsWithTest: P0): R;
+    transformObjectsWithBlock<R = void, P0 = CDUnknownBlockType>(_transformObjectsWithBlock: P0): R;
+    filterObjectsWithTest<R = void, P0 = CDUnknownBlockType>(_filterObjectsWithTest: P0): R;
     unionSet<R = void, P0 = unknown>(_unionSet: P0): R;
     removeAllObjects<R = void>(): R;
     minusSet<R = void, P0 = unknown>(_minusSet: P0): R;
@@ -24,7 +24,7 @@ declare namespace cocoa {
     count<R = number>(): R;
   }
   namespace classes {
-    export interface NSConcreteSetChanges<T = any> extends cocoa.classes.NSSetChanges {  }
+    export interface NSConcreteSetChanges<T = any> extends NSSetChanges {  }
   }
 }
 

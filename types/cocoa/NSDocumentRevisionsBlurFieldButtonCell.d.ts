@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDocumentRevisionsBlurFieldButtonCell<T = any> extends cocoa.NSButtonCell {}
+  export interface NSDocumentRevisionsBlurFieldButtonCell<T = any> extends NSButtonCell {}
   namespace classes {
-    export interface NSDocumentRevisionsBlurFieldButtonCell<T = any> extends cocoa.classes.NSButtonCell {
+    export interface NSDocumentRevisionsBlurFieldButtonCell<T = any> extends NSButtonCell {
       alloc<R = NSDocumentRevisionsBlurFieldButtonCell>(): R;
       new: <R = NSDocumentRevisionsBlurFieldButtonCell>() => R;
     }

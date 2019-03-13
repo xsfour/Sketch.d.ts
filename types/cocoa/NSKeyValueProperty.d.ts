@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSKeyValueProperty<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol {
+  export interface NSKeyValueProperty<T = any> extends NSObject, NSCopyingProtocol {
     matchesWithoutOperatorComponentsKeyPath<R = boolean, P0 = unknown>(_matchesWithoutOperatorComponentsKeyPath: P0): R;
     restOfKeyPathIfContainedByValueForKeyPath<R = unknown, P0 = unknown>(_restOfKeyPathIfContainedByValueForKeyPath: P0): R;
     dependentValueKeyOrKeysIsASet<R = unknown, P0 = string>(_dependentValueKeyOrKeysIsASet: P0): R;
@@ -14,10 +14,10 @@ declare namespace cocoa {
     isaForAutonotifying<R = unknown>(): R;
     keyPath<R = unknown>(): R;
     dealloc<R = void>(): R;
-    _initWithContainerClass_keyPath_propertiesBeingInitialized<R = unknown, P0 = unknown, P1 = unknown, P2 = cocoa.__CFSet>(__initWithContainerClass: P0, _keyPath: P1, _propertiesBeingInitialized: P2): R;
+    _initWithContainerClass_keyPath_propertiesBeingInitialized<R = unknown, P0 = unknown, P1 = unknown, P2 = __CFSet>(__initWithContainerClass: P0, _keyPath: P1, _propertiesBeingInitialized: P2): R;
   }
   namespace classes {
-    export interface NSKeyValueProperty<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol {
+    export interface NSKeyValueProperty<T = any> extends NSObject, NSCopyingProtocol {
       alloc<R = NSKeyValueProperty>(): R;
       new: <R = NSKeyValueProperty>() => R;
     }

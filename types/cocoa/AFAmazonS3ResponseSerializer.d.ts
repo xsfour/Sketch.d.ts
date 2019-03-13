@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface AFAmazonS3ResponseSerializer<T = any> extends cocoa.AFHTTPResponseSerializer {}
+  export interface AFAmazonS3ResponseSerializer<T = any> extends AFHTTPResponseSerializer {}
   namespace classes {
-    export interface AFAmazonS3ResponseSerializer<T = any> extends cocoa.classes.AFHTTPResponseSerializer {
+    export interface AFAmazonS3ResponseSerializer<T = any> extends AFHTTPResponseSerializer {
       alloc<R = AFAmazonS3ResponseSerializer>(): R;
       new: <R = AFAmazonS3ResponseSerializer>() => R;
     }

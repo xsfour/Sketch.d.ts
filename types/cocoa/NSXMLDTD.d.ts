@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXMLDTD<T = any> extends cocoa.NSXMLNode {
-    _addLibxml2TreeRepresentationToDoc_context<R = void, P0 = cocoa._xmlDoc, P1 = cocoa._xmlValidCtxt>(__addLibxml2TreeRepresentationToDoc: P0, _context: P1): R;
+  export interface NSXMLDTD<T = any> extends NSXMLNode {
+    _addLibxml2TreeRepresentationToDoc_context<R = void, P0 = _xmlDoc, P1 = _xmlValidCtxt>(__addLibxml2TreeRepresentationToDoc: P0, _context: P1): R;
     _renameChild_toName<R = void, P0 = unknown, P1 = unknown>(__renameChild: P0, _toName: P1): R;
     _elementAttributeRelationship<R = unknown>(): R;
     _internalXMLStringWithOptions_appendingToString<R = void, P0 = number, P1 = unknown>(__internalXMLStringWithOptions: P0, _appendingToString: P1): R;
@@ -31,18 +31,18 @@ declare namespace cocoa {
     setName<R = void, P0 = unknown>(_setName: P0): R;
     initWithData_options_error<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_initWithData: P0, _options: P1, _error: P2): R;
     initWithContentsOfURL_options_error<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_initWithContentsOfURL: P0, _options: P1, _error: P2): R;
-    systemID<R = cocoa.NSString>(): R;
-    setSystemID<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    publicID<R = cocoa.NSString>(): R;
-    setPublicID<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    systemID<R = NSString>(): R;
+    setSystemID<R = void, P0 = NSString>(_v: P0): R;
+    publicID<R = NSString>(): R;
+    setPublicID<R = void, P0 = NSString>(_v: P0): R;
   }
   namespace classes {
-    export interface NSXMLDTD<T = any> extends cocoa.classes.NSXMLNode {
+    export interface NSXMLDTD<T = any> extends NSXMLNode {
       alloc<R = NSXMLDTD>(): R;
       new: <R = NSXMLDTD>() => R;
       _initializePredefinedEntities<R = void>(): R;
       predefinedEntityDeclarationForName<R = unknown, P0 = unknown>(_predefinedEntityDeclarationForName: P0): R;
-      _initializeDTD_fromTidyNode<R = void, P0 = unknown, P1 = cocoa._TidyNode>(__initializeDTD: P0, _fromTidyNode: P1): R;
+      _initializeDTD_fromTidyNode<R = void, P0 = unknown, P1 = _TidyNode>(__initializeDTD: P0, _fromTidyNode: P1): R;
     }
   }
 }

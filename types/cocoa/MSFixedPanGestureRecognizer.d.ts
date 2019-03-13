@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFixedPanGestureRecognizer<T = any> extends cocoa.NSPanGestureRecognizer {}
+  export interface MSFixedPanGestureRecognizer<T = any> extends NSPanGestureRecognizer {}
   namespace classes {
-    export interface MSFixedPanGestureRecognizer<T = any> extends cocoa.classes.NSPanGestureRecognizer {
+    export interface MSFixedPanGestureRecognizer<T = any> extends NSPanGestureRecognizer {
       alloc<R = MSFixedPanGestureRecognizer>(): R;
       new: <R = MSFixedPanGestureRecognizer>() => R;
     }

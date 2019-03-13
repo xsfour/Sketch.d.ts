@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTabBarDelayedPopUpButtonCell<T = any> extends cocoa.NSButtonCell {
+  export interface NSTabBarDelayedPopUpButtonCell<T = any> extends NSButtonCell {
     cxx_destruct<R = void>(): R;
     _displayDelayedMenu<R = void>(): R;
     displayOffsetContextualMenu<R = void>(): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     _menuDelayTime<R = number>(): R;
   }
   namespace classes {
-    export interface NSTabBarDelayedPopUpButtonCell<T = any> extends cocoa.classes.NSButtonCell {
+    export interface NSTabBarDelayedPopUpButtonCell<T = any> extends NSButtonCell {
       alloc<R = NSTabBarDelayedPopUpButtonCell>(): R;
       new: <R = NSTabBarDelayedPopUpButtonCell>() => R;
     }

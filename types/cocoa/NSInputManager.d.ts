@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSInputManager<T = any> extends cocoa.NSObject, cocoa.NSTextInputProtocol {
-    getMarkedText_selectedRange<R = void, P0 = unknown, P1 = cocoa._NSRange>(_getMarkedText: P0, _selectedRange: P1): R;
+  export interface NSInputManager<T = any> extends NSObject, NSTextInputProtocol {
+    getMarkedText_selectedRange<R = void, P0 = unknown, P1 = _NSRange>(_getMarkedText: P0, _selectedRange: P1): R;
     _trueName<R = unknown>(): R;
     description<R = unknown>(): R;
     _terminate<R = void>(): R;
@@ -13,7 +13,7 @@ declare namespace cocoa {
     wantsToDelayTextChangeNotifications<R = boolean>(): R;
     bundleObject<R = unknown>(): R;
     server<R = unknown>(): R;
-    markedTextSelectionChanged_client<R = void, P0 = cocoa._NSRange, P1 = unknown>(_markedTextSelectionChanged: P0, _client: P1): R;
+    markedTextSelectionChanged_client<R = void, P0 = _NSRange, P1 = unknown>(_markedTextSelectionChanged: P0, _client: P1): R;
     markedTextAbandoned<R = void, P0 = unknown>(_markedTextAbandoned: P0): R;
     doCommandBySelector_client<R = void, P0 = string, P1 = unknown>(_doCommandBySelector: P0, _client: P1): R;
     insertText_client<R = void, P0 = unknown, P1 = unknown>(_insertText: P0, _client: P1): R;
@@ -36,7 +36,7 @@ declare namespace cocoa {
     _setActivationState<R = boolean, P0 = boolean>(__setActivationState: P0): R;
   }
   namespace classes {
-    export interface NSInputManager<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSTextInputProtocol {
+    export interface NSInputManager<T = any> extends NSObject, NSTextInputProtocol {
       alloc<R = NSInputManager>(): R;
       new: <R = NSInputManager>() => R;
       installInputManagerMenu<R = void, P0 = unknown>(_installInputManagerMenu: P0): R;

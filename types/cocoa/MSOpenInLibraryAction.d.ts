@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSOpenInLibraryAction<T = any> extends cocoa.MSDocumentAction {
-    foreignObjects<R = cocoa.NSSet>(): R;
+  export interface MSOpenInLibraryAction<T = any> extends MSDocumentAction {
+    foreignObjects<R = NSSet>(): R;
   }
   namespace classes {
-    export interface MSOpenInLibraryAction<T = any> extends cocoa.classes.MSDocumentAction {
+    export interface MSOpenInLibraryAction<T = any> extends MSDocumentAction {
       alloc<R = MSOpenInLibraryAction>(): R;
       new: <R = MSOpenInLibraryAction>() => R;
     }

@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSVerticalRulerView<T = any> extends cocoa.MSRulerView {
+  export interface MSVerticalRulerView<T = any> extends MSRulerView {
     isFlipped<R = boolean>(): R;
   }
   namespace classes {
-    export interface MSVerticalRulerView<T = any> extends cocoa.classes.MSRulerView {
+    export interface MSVerticalRulerView<T = any> extends MSRulerView {
       alloc<R = MSVerticalRulerView>(): R;
       new: <R = MSVerticalRulerView>() => R;
     }

@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTreeDetailBinder<T = any> extends cocoa.NSArrayDetailBinder {}
+  export interface NSTreeDetailBinder<T = any> extends NSArrayDetailBinder {}
   namespace classes {
-    export interface NSTreeDetailBinder<T = any> extends cocoa.classes.NSArrayDetailBinder {
+    export interface NSTreeDetailBinder<T = any> extends NSArrayDetailBinder {
       alloc<R = NSTreeDetailBinder>(): R;
       new: <R = NSTreeDetailBinder>() => R;
     }

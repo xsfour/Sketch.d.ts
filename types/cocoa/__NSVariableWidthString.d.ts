@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface __NSVariableWidthString<T = any> extends cocoa.NSString {
+  export interface __NSVariableWidthString<T = any> extends NSString {
     dealloc<R = void>(): R;
     initWithWidthContexts<R = unknown, P0 = unknown>(_initWithWidthContexts: P0): R;
     initWithWidthVariants<R = unknown, P0 = unknown>(_initWithWidthVariants: P0): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     length<R = number>(): R;
   }
   namespace classes {
-    export interface __NSVariableWidthString<T = any> extends cocoa.classes.NSString {
+    export interface __NSVariableWidthString<T = any> extends NSString {
       alloc<R = __NSVariableWidthString>(): R;
       new: <R = __NSVariableWidthString>() => R;
     }

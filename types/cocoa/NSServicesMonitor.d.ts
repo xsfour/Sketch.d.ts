@@ -1,18 +1,18 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSServicesMonitor<T = any> extends cocoa.NSObject {
+  export interface NSServicesMonitor<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     servicesDidChange<R = void, P0 = unknown>(_servicesDidChange: P0): R;
     dealloc<R = void>(): R;
     cancel<R = void>(): R;
     _initWithObserver<R = unknown, P0 = unknown>(__initWithObserver: P0): R;
     initWithObserver_presentationMode<R = unknown, P0 = unknown, P1 = unknown>(_initWithObserver: P0, _presentationMode: P1): R;
-    orderedServices<R = cocoa.NSArray>(): R;
-    services<R = cocoa.NSArray>(): R;
+    orderedServices<R = NSArray>(): R;
+    services<R = NSArray>(): R;
   }
   namespace classes {
-    export interface NSServicesMonitor<T = any> extends cocoa.classes.NSObject {
+    export interface NSServicesMonitor<T = any> extends NSObject {
       alloc<R = NSServicesMonitor>(): R;
       new: <R = NSServicesMonitor>() => R;
       monitorWithObserver<R = unknown, P0 = unknown>(_monitorWithObserver: P0): R;

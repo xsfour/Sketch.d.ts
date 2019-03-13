@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUIHeartBeat<T = any> extends cocoa.NSObject {
+  export interface NSUIHeartBeat<T = any> extends NSObject {
     _startFrameTime<R = number>(): R;
     _currentFrameTime<R = number>(): R;
     reenableHeartBeating<R = void, P0 = boolean>(_reenableHeartBeating: P0): R;
@@ -16,7 +16,7 @@ declare namespace cocoa {
     _heartBeatViews<R = void>(): R;
   }
   namespace classes {
-    export interface NSUIHeartBeat<T = any> extends cocoa.classes.NSObject {
+    export interface NSUIHeartBeat<T = any> extends NSObject {
       alloc<R = NSUIHeartBeat>(): R;
       new: <R = NSUIHeartBeat>() => R;
       isHeartBeatThread<R = boolean>(): R;

@@ -1,12 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTearOffTabWindowDelegateProtocol<T = any> extends cocoa.NSObjectProtocol {
-    detachWindowForTearOffTabWindow<R = cocoa.NSWindow, P0 = cocoa.NSTearOffTabWindow>(_detachWindowForTearOffTabWindow: P0): R;
+  export interface NSTearOffTabWindowDelegateProtocol<T = any> extends NSObjectProtocol {
+    detachWindowForTearOffTabWindow<R = NSWindow, P0 = NSTearOffTabWindow>(_detachWindowForTearOffTabWindow: P0): R;
   }
   namespace classes {
-    export interface NSTearOffTabWindowDelegateProtocol<T = any> extends cocoa.classes.NSObjectProtocol {  }
+    export interface NSTearOffTabWindowDelegateProtocol<T = any> extends NSObjectProtocol {  }
   }
 }
-
-declare const NSTearOffTabWindowDelegateProtocol: cocoa.classes.NSTearOffTabWindowDelegateProtocol;

@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInspectorPushButtonCell<T = any> extends cocoa.NSButtonCell {
+  export interface MSInspectorPushButtonCell<T = any> extends NSButtonCell {
     namedButtonColor<R = unknown>(): R;
-    buttonHighlightedColor<R = cocoa.NSColor>(): R;
-    buttonOnColor<R = cocoa.NSColor>(): R;
+    buttonHighlightedColor<R = NSColor>(): R;
+    buttonOnColor<R = NSColor>(): R;
   }
   namespace classes {
-    export interface MSInspectorPushButtonCell<T = any> extends cocoa.classes.NSButtonCell {
+    export interface MSInspectorPushButtonCell<T = any> extends NSButtonCell {
       alloc<R = MSInspectorPushButtonCell>(): R;
       new: <R = MSInspectorPushButtonCell>() => R;
     }

@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSocketPort<T = any> extends cocoa.NSPort {
-    _handleMessage_from_socket<R = void, P0 = cocoa.__CFData, P1 = cocoa.__CFData, P2 = cocoa.__CFSocket>(__handleMessage: P0, _from: P1, _socket: P2): R;
+  export interface NSSocketPort<T = any> extends NSPort {
+    _handleMessage_from_socket<R = void, P0 = __CFData, P1 = __CFData, P2 = __CFSocket>(__handleMessage: P0, _from: P1, _socket: P2): R;
     handlePortMessage<R = void, P0 = unknown>(_handlePortMessage: P0): R;
     sendBeforeTime_streamData_components_from_msgid<R = boolean, P0 = number, P1 = void, P2 = unknown, P3 = unknown, P4 = number>(_sendBeforeTime: P0, _streamData: P1, _components: P2, _from: P3, _msgid: P4): R;
-    _sendingSocketForPort_beforeTime<R = cocoa.__CFSocket, P0 = unknown, P1 = number>(__sendingSocketForPort: P0, _beforeTime: P1): R;
+    _sendingSocketForPort_beforeTime<R = __CFSocket, P0 = unknown, P1 = number>(__sendingSocketForPort: P0, _beforeTime: P1): R;
     description<R = unknown>(): R;
     _isDeallocating<R = boolean>(): R;
     _tryRetain<R = boolean>(): R;
@@ -16,19 +16,19 @@ declare namespace cocoa {
     _initRemoteWithSignature<R = unknown, P0 = unknown>(__initRemoteWithSignature: P0): R;
     initRemoteWithTCPPort_host<R = unknown, P0 = number, P1 = unknown>(_initRemoteWithTCPPort: P0, _host: P1): R;
     initWithTCPPort<R = unknown, P0 = number>(_initWithTCPPort: P0): R;
-    _initWithRetainedCFSocket_protocolFamily_socketType_protocol<R = unknown, P0 = cocoa.__CFSocket, P1 = number, P2 = number, P3 = number>(__initWithRetainedCFSocket: P0, _protocolFamily: P1, _socketType: P2, _protocol: P3): R;
+    _initWithRetainedCFSocket_protocolFamily_socketType_protocol<R = unknown, P0 = __CFSocket, P1 = number, P2 = number, P3 = number>(__initWithRetainedCFSocket: P0, _protocolFamily: P1, _socketType: P2, _protocol: P3): R;
     signature<R = unknown>(): R;
     handleConnDeath<R = void, P0 = unknown>(_handleConnDeath: P0): R;
     _incrementUseCount<R = void>(): R;
     isValid<R = boolean>(): R;
-    address<R = cocoa.NSData>(): R;
+    address<R = NSData>(): R;
     socket<R = number>(): R;
     protocol<R = number>(): R;
     socketType<R = number>(): R;
     protocolFamily<R = number>(): R;
   }
   namespace classes {
-    export interface NSSocketPort<T = any> extends cocoa.classes.NSPort {
+    export interface NSSocketPort<T = any> extends NSPort {
       alloc<R = NSSocketPort>(): R;
       new: <R = NSSocketPort>() => R;
       sendBeforeTime_streamData_components_to_from_msgid_reserved<R = boolean, P0 = number, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown, P5 = number, P6 = number>(_sendBeforeTime: P0, _streamData: P1, _components: P2, _to: P3, _from: P4, _msgid: P5, _reserved: P6): R;

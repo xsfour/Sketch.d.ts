@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAccessibilityTableHeaderCellProxy<T = any> extends cocoa.NSAccessibilityReparentingCellProxy {}
+  export interface NSAccessibilityTableHeaderCellProxy<T = any> extends NSAccessibilityReparentingCellProxy {}
   namespace classes {
-    export interface NSAccessibilityTableHeaderCellProxy<T = any> extends cocoa.classes.NSAccessibilityReparentingCellProxy {
+    export interface NSAccessibilityTableHeaderCellProxy<T = any> extends NSAccessibilityReparentingCellProxy {
       alloc<R = NSAccessibilityTableHeaderCellProxy>(): R;
       new: <R = NSAccessibilityTableHeaderCellProxy>() => R;
     }

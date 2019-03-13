@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPersistentUIFlushScheduler<T = any> extends cocoa.NSObject {
+  export interface NSPersistentUIFlushScheduler<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     scheduleTimer<R = void>(): R;
     _timerDidFire<R = void>(): R;
@@ -16,7 +16,7 @@ declare namespace cocoa {
     initWithHandler<R = unknown, P0 = unknown>(_initWithHandler: P0): R;
   }
   namespace classes {
-    export interface NSPersistentUIFlushScheduler<T = any> extends cocoa.classes.NSObject {
+    export interface NSPersistentUIFlushScheduler<T = any> extends NSObject {
       alloc<R = NSPersistentUIFlushScheduler>(): R;
       new: <R = NSPersistentUIFlushScheduler>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSImmediateActionGestureRecognizer<T = any> extends cocoa.NSGestureRecognizer {
+  export interface NSImmediateActionGestureRecognizer<T = any> extends NSGestureRecognizer {
     _startEvent<R = unknown>(): R;
     _forceClickMonitor<R = unknown>(): R;
     animationProgress<R = number>(): R;
@@ -14,7 +14,7 @@ declare namespace cocoa {
     style<R = number>(): R;
   }
   namespace classes {
-    export interface NSImmediateActionGestureRecognizer<T = any> extends cocoa.classes.NSGestureRecognizer {
+    export interface NSImmediateActionGestureRecognizer<T = any> extends NSGestureRecognizer {
       alloc<R = NSImmediateActionGestureRecognizer>(): R;
       new: <R = NSImmediateActionGestureRecognizer>() => R;
     }

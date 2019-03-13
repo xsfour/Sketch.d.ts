@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarCustomizationPreviewSectionLayoutItemDescription<T = any> extends cocoa.NSObject, cocoa._NSTouchBarItemLayoutWrapperProtocol {
+  export interface NSTouchBarCustomizationPreviewSectionLayoutItemDescription<T = any> extends NSObject, _NSTouchBarItemLayoutWrapperProtocol {
     dealloc<R = void>(): R;
-    backupDragSize<R = cocoa.CGSize>(): R;
-    setBackupDragSize<R = void, P0 = cocoa.CGSize>(_v: P0): R;
+    backupDragSize<R = CGSize>(): R;
+    setBackupDragSize<R = void, P0 = CGSize>(_v: P0): R;
     itemPosition<R = number>(): R;
     setItemPosition<R = void, P0 = number>(_v: P0): R;
     priorityIndex<R = number>(): R;
@@ -17,32 +17,32 @@ declare namespace cocoa {
     setEditable<R = void, P0 = boolean>(_v: P0): R;
     stacked<R = boolean>(): R;
     setStacked<R = void, P0 = boolean>(_v: P0): R;
-    dragAnchorPoint<R = cocoa.CGPoint>(): R;
-    setDragAnchorPoint<R = void, P0 = cocoa.CGPoint>(_v: P0): R;
-    dragPosition<R = cocoa.CGPoint>(): R;
-    setDragPosition<R = void, P0 = cocoa.CGPoint>(_v: P0): R;
+    dragAnchorPoint<R = CGPoint>(): R;
+    setDragAnchorPoint<R = void, P0 = CGPoint>(_v: P0): R;
+    dragPosition<R = CGPoint>(): R;
+    setDragPosition<R = void, P0 = CGPoint>(_v: P0): R;
     centered<R = boolean>(): R;
     setCentered<R = void, P0 = boolean>(_v: P0): R;
     isSpace<R = boolean>(): R;
     setIsSpace<R = void, P0 = boolean>(_v: P0): R;
-    contentClippingSize<R = cocoa.CGSize>(): R;
-    setContentClippingSize<R = void, P0 = cocoa.CGSize>(_v: P0): R;
-    maxSize<R = cocoa.CGSize>(): R;
-    setMaxSize<R = void, P0 = cocoa.CGSize>(_v: P0): R;
-    preferredSize<R = cocoa.CGSize>(): R;
-    setPreferredSize<R = void, P0 = cocoa.CGSize>(_v: P0): R;
-    minSize<R = cocoa.CGSize>(): R;
-    setMinSize<R = void, P0 = cocoa.CGSize>(_v: P0): R;
-    description<R = cocoa.NSString>(): R;
+    contentClippingSize<R = CGSize>(): R;
+    setContentClippingSize<R = void, P0 = CGSize>(_v: P0): R;
+    maxSize<R = CGSize>(): R;
+    setMaxSize<R = void, P0 = CGSize>(_v: P0): R;
+    preferredSize<R = CGSize>(): R;
+    setPreferredSize<R = void, P0 = CGSize>(_v: P0): R;
+    minSize<R = CGSize>(): R;
+    setMinSize<R = void, P0 = CGSize>(_v: P0): R;
+    description<R = NSString>(): R;
     dragging<R = boolean>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
     hash<R = number>(): R;
     preferredTrailingPosition<R = number>(): R;
     preferredZOrder<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSTouchBarCustomizationPreviewSectionLayoutItemDescription<T = any> extends cocoa.classes.NSObject, cocoa.classes._NSTouchBarItemLayoutWrapperProtocol {
+    export interface NSTouchBarCustomizationPreviewSectionLayoutItemDescription<T = any> extends NSObject, _NSTouchBarItemLayoutWrapperProtocol {
       alloc<R = NSTouchBarCustomizationPreviewSectionLayoutItemDescription>(): R;
       new: <R = NSTouchBarCustomizationPreviewSectionLayoutItemDescription>() => R;
     }

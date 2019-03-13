@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSButtonBezelView<T = any> extends cocoa.NSWidgetView {}
+  export interface NSButtonBezelView<T = any> extends NSWidgetView {}
   namespace classes {
-    export interface NSButtonBezelView<T = any> extends cocoa.classes.NSWidgetView {
+    export interface NSButtonBezelView<T = any> extends NSWidgetView {
       alloc<R = NSButtonBezelView>(): R;
       new: <R = NSButtonBezelView>() => R;
     }

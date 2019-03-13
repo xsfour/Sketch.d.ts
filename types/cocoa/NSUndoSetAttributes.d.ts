@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUndoSetAttributes<T = any> extends cocoa.NSUndoTextOperation {}
+  export interface NSUndoSetAttributes<T = any> extends NSUndoTextOperation {}
   namespace classes {
-    export interface NSUndoSetAttributes<T = any> extends cocoa.classes.NSUndoTextOperation {
+    export interface NSUndoSetAttributes<T = any> extends NSUndoTextOperation {
       alloc<R = NSUndoSetAttributes>(): R;
       new: <R = NSUndoSetAttributes>() => R;
     }

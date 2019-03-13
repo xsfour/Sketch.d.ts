@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSegmentedControlBinder<T = any> extends cocoa.NSValueBinder {
+  export interface NSSegmentedControlBinder<T = any> extends NSValueBinder {
     _updateContent<R = void>(): R;
   }
   namespace classes {
-    export interface NSSegmentedControlBinder<T = any> extends cocoa.classes.NSValueBinder {
+    export interface NSSegmentedControlBinder<T = any> extends NSValueBinder {
       alloc<R = NSSegmentedControlBinder>(): R;
       new: <R = NSSegmentedControlBinder>() => R;
     }

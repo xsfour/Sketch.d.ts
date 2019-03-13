@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTitlebarAccessoryViewController<T = any> extends cocoa.NSViewController, cocoa.NSAnimationDelegateProtocol, cocoa.NSAnimatablePropertyContainerProtocol {
+  export interface NSTitlebarAccessoryViewController<T = any> extends NSViewController, NSAnimationDelegateProtocol, NSAnimatablePropertyContainerProtocol {
     cxx_destruct<R = void>(): R;
     _animatorClass<R = unknown>(): R;
     _makeFloatingTrailingWidget<R = unknown>(): R;
@@ -16,7 +16,7 @@ declare namespace cocoa {
     _setHidden_animated<R = void, P0 = boolean, P1 = boolean>(__setHidden: P0, _animated: P1): R;
     animationData<R = unknown>(): R;
     _updateClipViewFrame<R = void>(): R;
-    _currentClipViewFrame<R = cocoa.CGRect>(): R;
+    _currentClipViewFrame<R = CGRect>(): R;
     _auxiliaryViewFrameChanged<R = void, P0 = unknown>(__auxiliaryViewFrameChanged: P0): R;
     _endUpdates<R = void>(): R;
     _beginUpdates<R = void>(): R;
@@ -30,8 +30,8 @@ declare namespace cocoa {
     setInFullScreen<R = void, P0 = boolean>(_v: P0): R;
     layoutAttribute<R = number>(): R;
     setLayoutAttribute<R = void, P0 = number>(_v: P0): R;
-    animations<R = cocoa.NSDictionary>(): R;
-    setAnimations<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
+    animations<R = NSDictionary>(): R;
+    setAnimations<R = void, P0 = NSDictionary>(_v: P0): R;
     fullScreenMinHeight<R = number>(): R;
     setFullScreenMinHeight<R = void, P0 = number>(_v: P0): R;
     visibleAmount<R = number>(): R;
@@ -39,14 +39,14 @@ declare namespace cocoa {
     setHidden<R = void, P0 = boolean>(_v: P0): R;
     revealAmount<R = number>(): R;
     setRevealAmount<R = void, P0 = number>(_v: P0): R;
-    containingClipView<R = cocoa.NSClipView>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    containingClipView<R = NSClipView>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSTitlebarAccessoryViewController<T = any> extends cocoa.classes.NSViewController, cocoa.classes.NSAnimationDelegateProtocol, cocoa.classes.NSAnimatablePropertyContainerProtocol {
+    export interface NSTitlebarAccessoryViewController<T = any> extends NSViewController, NSAnimationDelegateProtocol, NSAnimatablePropertyContainerProtocol {
       alloc<R = NSTitlebarAccessoryViewController>(): R;
       new: <R = NSTitlebarAccessoryViewController>() => R;
     }

@@ -1,15 +1,15 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSManifestMaker<T = any> extends cocoa.NSObject {
+  export interface MSManifestMaker<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     metadataForFlow<R = unknown, P0 = unknown>(_metadataForFlow: P0): R;
-    dictForRect_inRootLayer<R = unknown, P0 = cocoa.CGRect, P1 = unknown>(_dictForRect: P0, _inRootLayer: P1): R;
+    dictForRect_inRootLayer<R = unknown, P0 = CGRect, P1 = unknown>(_dictForRect: P0, _inRootLayer: P1): R;
     metadataForLayer_fixedByLayer<R = unknown, P0 = unknown, P1 = unknown>(_metadataForLayer: P0, _fixedByLayer: P1): R;
     specialiseObjectMetadata_forSymbolInstance<R = unknown, P0 = unknown, P1 = unknown>(_specialiseObjectMetadata: P0, _forSymbolInstance: P1): R;
-    metadataForChildLayersInSymbolInstance_inRootLayer_positionTransform_withAncestors_earlierSymbols_fixedByLayer<R = unknown, P0 = unknown, P1 = unknown, P2 = cocoa.CGAffineTransform, P3 = unknown, P4 = unknown, P5 = unknown>(_metadataForChildLayersInSymbolInstance: P0, _inRootLayer: P1, _positionTransform: P2, _withAncestors: P3, _earlierSymbols: P4, _fixedByLayer: P5): R;
-    metadataForChildLayersInLayer_inRootLayer_positionTransform_withAncestors_earlierSymbols_fixedByLayer<R = unknown, P0 = unknown, P1 = unknown, P2 = cocoa.CGAffineTransform, P3 = unknown, P4 = unknown, P5 = unknown>(_metadataForChildLayersInLayer: P0, _inRootLayer: P1, _positionTransform: P2, _withAncestors: P3, _earlierSymbols: P4, _fixedByLayer: P5): R;
-    metadataForLayer_inRootLayer_positionTransform_withAncestors_earlierSymbols_fixedByLayer<R = unknown, P0 = unknown, P1 = unknown, P2 = cocoa.CGAffineTransform, P3 = unknown, P4 = unknown, P5 = unknown>(_metadataForLayer: P0, _inRootLayer: P1, _positionTransform: P2, _withAncestors: P3, _earlierSymbols: P4, _fixedByLayer: P5): R;
+    metadataForChildLayersInSymbolInstance_inRootLayer_positionTransform_withAncestors_earlierSymbols_fixedByLayer<R = unknown, P0 = unknown, P1 = unknown, P2 = CGAffineTransform, P3 = unknown, P4 = unknown, P5 = unknown>(_metadataForChildLayersInSymbolInstance: P0, _inRootLayer: P1, _positionTransform: P2, _withAncestors: P3, _earlierSymbols: P4, _fixedByLayer: P5): R;
+    metadataForChildLayersInLayer_inRootLayer_positionTransform_withAncestors_earlierSymbols_fixedByLayer<R = unknown, P0 = unknown, P1 = unknown, P2 = CGAffineTransform, P3 = unknown, P4 = unknown, P5 = unknown>(_metadataForChildLayersInLayer: P0, _inRootLayer: P1, _positionTransform: P2, _withAncestors: P3, _earlierSymbols: P4, _fixedByLayer: P5): R;
+    metadataForLayer_inRootLayer_positionTransform_withAncestors_earlierSymbols_fixedByLayer<R = unknown, P0 = unknown, P1 = unknown, P2 = CGAffineTransform, P3 = unknown, P4 = unknown, P5 = unknown>(_metadataForLayer: P0, _inRootLayer: P1, _positionTransform: P2, _withAncestors: P3, _earlierSymbols: P4, _fixedByLayer: P5): R;
     metadataForLayersInRootLayer_ancestors<R = unknown, P0 = unknown, P1 = unknown>(_metadataForLayersInRootLayer: P0, _ancestors: P1): R;
     filesMetadataForRootLayer_onPage_id<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_filesMetadataForRootLayer: P0, _onPage: P1, _id: P2): R;
     metadataForRootLayer_onPage_earlierSlugs<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_metadataForRootLayer: P0, _onPage: P1, _earlierSlugs: P2): R;
@@ -23,14 +23,14 @@ declare namespace cocoa {
     setUsePageIfMissingArtboard<R = void, P0 = boolean>(_v: P0): R;
     selectiveExport<R = boolean>(): R;
     setSelectiveExport<R = void, P0 = boolean>(_v: P0): R;
-    name<R = cocoa.NSString>(): R;
-    setName<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    cacheManager<R = cocoa.MSCacheManager>(): R;
-    setCacheManager<R = void, P0 = cocoa.MSCacheManager>(_v: P0): R;
-    documentData<R = cocoa.MSImmutableDocumentData>(): R;
+    name<R = NSString>(): R;
+    setName<R = void, P0 = NSString>(_v: P0): R;
+    cacheManager<R = MSCacheManager>(): R;
+    setCacheManager<R = void, P0 = MSCacheManager>(_v: P0): R;
+    documentData<R = MSImmutableDocumentData>(): R;
   }
   namespace classes {
-    export interface MSManifestMaker<T = any> extends cocoa.classes.NSObject {
+    export interface MSManifestMaker<T = any> extends NSObject {
       alloc<R = MSManifestMaker>(): R;
       new: <R = MSManifestMaker>() => R;
       keyForFlowAnimationType<R = unknown, P0 = number>(_keyForFlowAnimationType: P0): R;

@@ -1,15 +1,15 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSTreeDiff<T = any> extends cocoa.NSObject {
+  export interface MSTreeDiff<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     containsLayerWithTraits<R = boolean, P0 = number>(_containsLayerWithTraits: P0): R;
     someChangedPropertiesExhibitTrait_allKeysWereCompared<R = boolean, P0 = number, P1 = string>(_someChangedPropertiesExhibitTrait: P0, _allKeysWereCompared: P1): R;
     changedPropertiesAllExhibitTrait_allKeysWereCompared<R = boolean, P0 = number, P1 = string>(_changedPropertiesAllExhibitTrait: P0, _allKeysWereCompared: P1): R;
     buildPropertyTraitsIfNeeded<R = void>(): R;
     description<R = unknown>(): R;
-    overlayDirtyDiffRectForPage<R = cocoa.CGRect, P0 = unknown>(_overlayDirtyDiffRectForPage: P0): R;
-    contentDirtyDiffRectForPage<R = cocoa.CGRect, P0 = unknown>(_contentDirtyDiffRectForPage: P0): R;
+    overlayDirtyDiffRectForPage<R = CGRect, P0 = unknown>(_overlayDirtyDiffRectForPage: P0): R;
+    contentDirtyDiffRectForPage<R = CGRect, P0 = unknown>(_contentDirtyDiffRectForPage: P0): R;
     addDiffPairForFirstObject_secondObject<R = void, P0 = unknown, P1 = unknown>(_addDiffPairForFirstObject: P0, _secondObject: P1): R;
     diffObject_withObject<R = void, P0 = unknown, P1 = unknown>(_diffObject: P0, _withObject: P1): R;
     diffObjects_withObjects<R = void, P0 = unknown, P1 = unknown>(_diffObjects: P0, _withObjects: P1): R;
@@ -25,19 +25,19 @@ declare namespace cocoa {
     setAllTraits<R = void, P0 = number>(_v: P0): R;
     combinedTraits<R = number>(): R;
     setCombinedTraits<R = void, P0 = number>(_v: P0): R;
-    secondObjectAncestorStack<R = cocoa.NSMutableArray>(): R;
-    setSecondObjectAncestorStack<R = void, P0 = cocoa.NSMutableArray>(_v: P0): R;
-    firstObjectAncestorStack<R = cocoa.NSMutableArray>(): R;
-    setFirstObjectAncestorStack<R = void, P0 = cocoa.NSMutableArray>(_v: P0): R;
-    mutableDiffs<R = cocoa.NSMutableArray>(): R;
-    setMutableDiffs<R = void, P0 = cocoa.NSMutableArray>(_v: P0): R;
-    secondDoc<R = cocoa.MSImmutableDocumentData>(): R;
-    setSecondDoc<R = void, P0 = cocoa.MSImmutableDocumentData>(_v: P0): R;
-    firstDoc<R = cocoa.MSImmutableDocumentData>(): R;
-    setFirstDoc<R = void, P0 = cocoa.MSImmutableDocumentData>(_v: P0): R;
+    secondObjectAncestorStack<R = NSMutableArray>(): R;
+    setSecondObjectAncestorStack<R = void, P0 = NSMutableArray>(_v: P0): R;
+    firstObjectAncestorStack<R = NSMutableArray>(): R;
+    setFirstObjectAncestorStack<R = void, P0 = NSMutableArray>(_v: P0): R;
+    mutableDiffs<R = NSMutableArray>(): R;
+    setMutableDiffs<R = void, P0 = NSMutableArray>(_v: P0): R;
+    secondDoc<R = MSImmutableDocumentData>(): R;
+    setSecondDoc<R = void, P0 = MSImmutableDocumentData>(_v: P0): R;
+    firstDoc<R = MSImmutableDocumentData>(): R;
+    setFirstDoc<R = void, P0 = MSImmutableDocumentData>(_v: P0): R;
   }
   namespace classes {
-    export interface MSTreeDiff<T = any> extends cocoa.classes.NSObject {
+    export interface MSTreeDiff<T = any> extends NSObject {
       alloc<R = MSTreeDiff>(): R;
       new: <R = MSTreeDiff>() => R;
     }

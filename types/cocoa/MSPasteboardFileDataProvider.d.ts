@@ -1,14 +1,14 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPasteboardFileDataProvider<T = any> extends cocoa.NSObject {
+  export interface MSPasteboardFileDataProvider<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     pasteboard_provideDataForType<R = void, P0 = unknown, P1 = unknown>(_pasteboard: P0, _provideDataForType: P1): R;
-    layers<R = cocoa.NSArray>(): R;
-    setLayers<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    layers<R = NSArray>(): R;
+    setLayers<R = void, P0 = NSArray>(_v: P0): R;
   }
   namespace classes {
-    export interface MSPasteboardFileDataProvider<T = any> extends cocoa.classes.NSObject {
+    export interface MSPasteboardFileDataProvider<T = any> extends NSObject {
       alloc<R = MSPasteboardFileDataProvider>(): R;
       new: <R = MSPasteboardFileDataProvider>() => R;
       buildExportRequestsForLayers_inFolder<R = unknown, P0 = unknown, P1 = unknown>(_buildExportRequestsForLayers: P0, _inFolder: P1): R;

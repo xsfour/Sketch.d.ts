@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSShapePathLayer<T = any> extends cocoa.MSStyledLayer {
+  export interface _MSShapePathLayer<T = any> extends MSStyledLayer {
     moveCurvePointIndex_toIndex<R = void, P0 = number, P1 = number>(_moveCurvePointIndex: P0, _toIndex: P1): R;
     removeAllCurvePoints<R = void>(): R;
     removeCurvePointsAtIndexes<R = void, P0 = unknown>(_removeCurvePointsAtIndexes: P0): R;
@@ -14,8 +14,8 @@ declare namespace cocoa {
     insertCurvePoint_atIndex<R = void, P0 = unknown, P1 = number>(_insertCurvePoint: P0, _atIndex: P1): R;
     addCurvePoints<R = void, P0 = unknown>(_addCurvePoints: P0): R;
     addCurvePoint<R = void, P0 = unknown>(_addCurvePoint: P0): R;
-    points<R = cocoa.NSArray>(): R;
-    setPoints<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    points<R = NSArray>(): R;
+    setPoints<R = void, P0 = NSArray>(_v: P0): R;
     pointRadiusBehaviour<R = number>(): R;
     setPointRadiusBehaviour<R = void, P0 = number>(_v: P0): R;
     isClosed<R = boolean>(): R;
@@ -24,7 +24,7 @@ declare namespace cocoa {
     setEdited<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface _MSShapePathLayer<T = any> extends cocoa.classes.MSStyledLayer {
+    export interface _MSShapePathLayer<T = any> extends MSStyledLayer {
       alloc<R = _MSShapePathLayer>(): R;
       new: <R = _MSShapePathLayer>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAttributedString<T = any> extends cocoa.NSObject, cocoa.MSCodingProtocol, cocoa.NSCopyingProtocol {
+  export interface MSAttributedString<T = any> extends NSObject, MSCodingProtocol, NSCopyingProtocol {
     cxx_destruct<R = void>(): R;
     propertiesAreEqual<R = boolean, P0 = unknown>(_propertiesAreEqual: P0): R;
     debugDescription<R = unknown>(): R;
@@ -17,18 +17,18 @@ declare namespace cocoa {
     initWithAttributedString_colorSpace_convert<R = unknown, P0 = unknown, P1 = unknown, P2 = boolean>(_initWithAttributedString: P0, _colorSpace: P1, _convert: P2): R;
     initWithEncodedAttributedString<R = unknown, P0 = unknown>(_initWithEncodedAttributedString: P0): R;
     treeAsDictionary<R = unknown>(): R;
-    encodedAttributedString<R = cocoa.NSAttributedString>(): R;
+    encodedAttributedString<R = NSAttributedString>(): R;
     areRequiredFontsAvailable<R = boolean>(): R;
-    unavailableFontNames<R = cocoa.NSSet>(): R;
-    fontNames<R = cocoa.NSSet>(): R;
-    fontDescriptors<R = cocoa.NSSet>(): R;
-    transformedAttributedString<R = cocoa.NSAttributedString>(): R;
-    attributedString<R = cocoa.NSAttributedString>(): R;
-    string<R = cocoa.NSString>(): R;
-    archiveReferenceIdentifier_bc<R = cocoa.NSString>(): R;
+    unavailableFontNames<R = NSSet>(): R;
+    fontNames<R = NSSet>(): R;
+    fontDescriptors<R = NSSet>(): R;
+    transformedAttributedString<R = NSAttributedString>(): R;
+    attributedString<R = NSAttributedString>(): R;
+    string<R = NSString>(): R;
+    archiveReferenceIdentifier_bc<R = NSString>(): R;
   }
   namespace classes {
-    export interface MSAttributedString<T = any> extends cocoa.classes.NSObject, cocoa.classes.MSCodingProtocol, cocoa.classes.NSCopyingProtocol {
+    export interface MSAttributedString<T = any> extends NSObject, MSCodingProtocol, NSCopyingProtocol {
       alloc<R = MSAttributedString>(): R;
       new: <R = MSAttributedString>() => R;
       isRequiredFontAvailableInDictionary<R = boolean, P0 = unknown>(_isRequiredFontAvailableInDictionary: P0): R;

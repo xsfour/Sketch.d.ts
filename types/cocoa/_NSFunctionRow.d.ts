@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSFunctionRow<T = any> extends cocoa.NSFunctionRow {
+  export interface _NSFunctionRow<T = any> extends NSFunctionRow {
     description<R = unknown>(): R;
     CAContext<R = unknown>(): R;
-    frame<R = cocoa.CGRect>(): R;
+    frame<R = CGRect>(): R;
     visualCenterXAnchor<R = unknown>(): R;
     setViewController<R = void, P0 = unknown>(_setViewController: P0): R;
     viewController<R = unknown>(): R;
@@ -18,7 +18,7 @@ declare namespace cocoa {
     status<R = number>(): R;
     setActive<R = void, P0 = boolean>(_setActive: P0): R;
     isActive<R = boolean>(): R;
-    DFRElement<R = cocoa.__DFRElement>(): R;
+    DFRElement<R = __DFRElement>(): R;
     dealloc<R = void>(): R;
     initWithDFRElementAttributes<R = unknown, P0 = unknown>(_initWithDFRElementAttributes: P0): R;
     initWithType<R = unknown, P0 = number>(_initWithType: P0): R;
@@ -35,7 +35,7 @@ declare namespace cocoa {
     accessibilityAttributeNames<R = unknown>(): R;
   }
   namespace classes {
-    export interface _NSFunctionRow<T = any> extends cocoa.classes.NSFunctionRow {
+    export interface _NSFunctionRow<T = any> extends NSFunctionRow {
       alloc<R = _NSFunctionRow>(): R;
       new: <R = _NSFunctionRow>() => R;
     }

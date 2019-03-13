@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDecimalNumber<T = any> extends cocoa.NSNumber {
+  export interface NSDecimalNumber<T = any> extends NSNumber {
     boolValue<R = boolean>(): R;
     floatValue<R = number>(): R;
     unsignedLongLongValue<R = number>(): R;
@@ -39,7 +39,7 @@ declare namespace cocoa {
     decimalValue<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSDecimalNumber<T = any> extends cocoa.classes.NSNumber {
+    export interface NSDecimalNumber<T = any> extends NSNumber {
       alloc<R = NSDecimalNumber>(): R;
       new: <R = NSDecimalNumber>() => R;
       defaultBehavior<R = unknown>(): R;

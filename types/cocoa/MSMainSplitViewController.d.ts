@@ -1,40 +1,40 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSMainSplitViewController<T = any> extends cocoa.NSObject, cocoa.NSSplitViewDelegateProtocol {
+  export interface MSMainSplitViewController<T = any> extends NSObject, NSSplitViewDelegateProtocol {
     cxx_destruct<R = void>(): R;
     dealloc<R = void>(): R;
     didExitVersionBrowser<R = void>(): R;
     didEnterVersionBrowser<R = void>(): R;
     dividerIndexBelongsToInspectorView<R = boolean, P0 = number>(_dividerIndexBelongsToInspectorView: P0): R;
     awakeFromNib<R = void>(): R;
-    savedInspectorView<R = cocoa.NSView>(): R;
-    setSavedInspectorView<R = void, P0 = cocoa.NSView>(_v: P0): R;
+    savedInspectorView<R = NSView>(): R;
+    setSavedInspectorView<R = void, P0 = NSView>(_v: P0): R;
     isInVersionBrowser<R = boolean>(): R;
     setIsInVersionBrowser<R = void, P0 = boolean>(_v: P0): R;
     rightSide<R = number>(): R;
     setRightSide<R = void, P0 = number>(_v: P0): R;
     leftSide<R = number>(): R;
     setLeftSide<R = void, P0 = number>(_v: P0): R;
-    window<R = cocoa.NSWindow>(): R;
-    setWindow<R = void, P0 = cocoa.NSWindow>(_v: P0): R;
-    splitView<R = cocoa.NSSplitView>(): R;
-    setSplitView<R = void, P0 = cocoa.NSSplitView>(_v: P0): R;
-    inspectorView<R = cocoa.NSView>(): R;
-    setInspectorView<R = void, P0 = cocoa.NSView>(_v: P0): R;
-    canvasView<R = cocoa.NSView>(): R;
-    setCanvasView<R = void, P0 = cocoa.NSView>(_v: P0): R;
-    layerListView<R = cocoa.NSView>(): R;
-    setLayerListView<R = void, P0 = cocoa.NSView>(_v: P0): R;
+    window<R = NSWindow>(): R;
+    setWindow<R = void, P0 = NSWindow>(_v: P0): R;
+    splitView<R = NSSplitView>(): R;
+    setSplitView<R = void, P0 = NSSplitView>(_v: P0): R;
+    inspectorView<R = NSView>(): R;
+    setInspectorView<R = void, P0 = NSView>(_v: P0): R;
+    canvasView<R = NSView>(): R;
+    setCanvasView<R = void, P0 = NSView>(_v: P0): R;
+    layerListView<R = NSView>(): R;
+    setLayerListView<R = void, P0 = NSView>(_v: P0): R;
     layerListWidth<R = number>(): R;
     setLayerListWidth<R = void, P0 = number>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSMainSplitViewController<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSSplitViewDelegateProtocol {
+    export interface MSMainSplitViewController<T = any> extends NSObject, NSSplitViewDelegateProtocol {
       alloc<R = MSMainSplitViewController>(): R;
       new: <R = MSMainSplitViewController>() => R;
     }

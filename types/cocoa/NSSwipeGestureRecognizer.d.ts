@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSwipeGestureRecognizer<T = any> extends cocoa.NSGestureRecognizer, cocoa.NSCodingProtocol {
-    _checkForSwipeWithDelta_time<R = boolean, P0 = cocoa.CGPoint, P1 = number>(__checkForSwipeWithDelta: P0, _time: P1): R;
+  export interface NSSwipeGestureRecognizer<T = any> extends NSGestureRecognizer, NSCodingProtocol {
+    _checkForSwipeWithDelta_time<R = boolean, P0 = CGPoint, P1 = number>(__checkForSwipeWithDelta: P0, _time: P1): R;
     setRecognizesAfterEndPhase<R = void, P0 = boolean>(_setRecognizesAfterEndPhase: P0): R;
     recognizesAfterEndPhase<R = boolean>(): R;
     direction<R = number>(): R;
@@ -23,14 +23,14 @@ declare namespace cocoa {
     setMinimumPrimaryMovement<R = void, P0 = number>(_v: P0): R;
     maximumDuration<R = number>(): R;
     setMaximumDuration<R = void, P0 = number>(_v: P0): R;
-    startPoint<R = cocoa.CGPoint>(): R;
+    startPoint<R = CGPoint>(): R;
     numberOfTouchesRequired<R = number>(): R;
     setNumberOfTouchesRequired<R = void, P0 = number>(_v: P0): R;
     buttonMask<R = number>(): R;
     setButtonMask<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface NSSwipeGestureRecognizer<T = any> extends cocoa.classes.NSGestureRecognizer, cocoa.classes.NSCodingProtocol {
+    export interface NSSwipeGestureRecognizer<T = any> extends NSGestureRecognizer, NSCodingProtocol {
       alloc<R = NSSwipeGestureRecognizer>(): R;
       new: <R = NSSwipeGestureRecognizer>() => R;
       touchBarMiniSwipeRecognizerWithTarget_action<R = unknown, P0 = unknown, P1 = string>(_touchBarMiniSwipeRecognizerWithTarget: P0, _action: P1): R;

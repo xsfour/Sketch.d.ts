@@ -13,7 +13,7 @@ declare namespace cocoa {
     wantsToInterpretAllKeystrokes<R = boolean>(): R;
     canBeDisabled<R = boolean>(): R;
     terminate<R = void, P0 = unknown>(_terminate: P0): R;
-    markedTextSelectionChanged_client<R = void, P0 = cocoa._NSRange, P1 = unknown>(_markedTextSelectionChanged: P0, _client: P1): R;
+    markedTextSelectionChanged_client<R = void, P0 = _NSRange, P1 = unknown>(_markedTextSelectionChanged: P0, _client: P1): R;
     markedTextAbandoned<R = void, P0 = unknown>(_markedTextAbandoned: P0): R;
     doCommandBySelector_client<R = void, P0 = string, P1 = unknown>(_doCommandBySelector: P0, _client: P1): R;
     insertText_client<R = void, P0 = unknown, P1 = unknown>(_insertText: P0, _client: P1): R;
@@ -22,5 +22,3 @@ declare namespace cocoa {
     export interface NSInputServiceProviderProtocol<T = any> {  }
   }
 }
-
-declare const NSInputServiceProviderProtocol: cocoa.classes.NSInputServiceProviderProtocol;

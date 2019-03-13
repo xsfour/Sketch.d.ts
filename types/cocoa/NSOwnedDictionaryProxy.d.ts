@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSOwnedDictionaryProxy<T = any> extends cocoa.NSDictionary {
+  export interface NSOwnedDictionaryProxy<T = any> extends NSDictionary {
     objectForKey<R = unknown, P0 = unknown>(_objectForKey: P0): R;
     keyEnumerator<R = unknown>(): R;
     count<R = number>(): R;
@@ -11,7 +11,7 @@ declare namespace cocoa {
     initWithOwner<R = unknown, P0 = unknown>(_initWithOwner: P0): R;
   }
   namespace classes {
-    export interface NSOwnedDictionaryProxy<T = any> extends cocoa.classes.NSDictionary {  }
+    export interface NSOwnedDictionaryProxy<T = any> extends NSDictionary {  }
   }
 }
 

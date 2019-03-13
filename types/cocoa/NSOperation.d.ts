@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSOperation<T = any> extends cocoa.NSObject {
+  export interface NSOperation<T = any> extends NSObject {
     __graphDescription<R = unknown, P0 = number>(___graphDescription: P0): R;
     debugDescription<R = unknown>(): R;
     removeObserver_forKeyPath<R = void, P0 = unknown, P1 = unknown>(_removeObserver: P0, _forKeyPath: P1): R;
@@ -15,19 +15,19 @@ declare namespace cocoa {
     addDependency<R = void, P0 = unknown>(_addDependency: P0): R;
     waitUntilFinishedOrTimeout<R = void, P0 = number>(_waitUntilFinishedOrTimeout: P0): R;
     waitUntilFinished<R = void>(): R;
-    _copyCompletionBlock<R = cocoa.CDUnknownBlockType>(): R;
+    _copyCompletionBlock<R = CDUnknownBlockType>(): R;
     cancel<R = void>(): R;
     dealloc<R = void>(): R;
     setObservationInfo<R = void, P0 = void>(_setObservationInfo: P0): R;
     observationInfo<R = void>(): R;
     _implicitObservationInfo<R = unknown>(): R;
-    dependencies<R = cocoa.NSArray>(): R;
+    dependencies<R = NSArray>(): R;
     qualityOfService<R = number>(): R;
     setQualityOfService<R = void, P0 = number>(_v: P0): R;
-    name<R = cocoa.NSString>(): R;
-    setName<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    completionBlock<R = cocoa.CDUnknownBlockType>(): R;
-    setCompletionBlock<R = void, P0 = cocoa.CDUnknownBlockType>(_v: P0): R;
+    name<R = NSString>(): R;
+    setName<R = void, P0 = NSString>(_v: P0): R;
+    completionBlock<R = CDUnknownBlockType>(): R;
+    setCompletionBlock<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
     threadPriority<R = number>(): R;
     setThreadPriority<R = void, P0 = number>(_v: P0): R;
     queuePriority<R = number>(): R;
@@ -40,7 +40,7 @@ declare namespace cocoa {
     cancelled<R = boolean>(): R;
   }
   namespace classes {
-    export interface NSOperation<T = any> extends cocoa.classes.NSObject {
+    export interface NSOperation<T = any> extends NSObject {
       alloc<R = NSOperation>(): R;
       new: <R = NSOperation>() => R;
       _removesDependenciesAfterFinish<R = boolean>(): R;

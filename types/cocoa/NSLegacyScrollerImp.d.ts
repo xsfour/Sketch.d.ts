@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLegacyScrollerImp<T = any> extends cocoa.NSScrollerImp {
+  export interface NSLegacyScrollerImp<T = any> extends NSScrollerImp {
     mouseExited<R = void, P0 = unknown>(_mouseExited: P0): R;
     mouseEntered<R = void, P0 = unknown>(_mouseEntered: P0): R;
     knobEndInset<R = number>(): R;
@@ -11,7 +11,7 @@ declare namespace cocoa {
     scrollerStyle<R = number>(): R;
   }
   namespace classes {
-    export interface NSLegacyScrollerImp<T = any> extends cocoa.classes.NSScrollerImp {
+    export interface NSLegacyScrollerImp<T = any> extends NSScrollerImp {
       alloc<R = NSLegacyScrollerImp>(): R;
       new: <R = NSLegacyScrollerImp>() => R;
     }

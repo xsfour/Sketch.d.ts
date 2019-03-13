@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScriptValueTypeDescription<T = any> extends cocoa.NSScriptTypeDescription {
+  export interface NSScriptValueTypeDescription<T = any> extends NSScriptTypeDescription {
     objcDescriptorCreationMethodSelector2ForClass<R = string, P0 = unknown>(_objcDescriptorCreationMethodSelector2ForClass: P0): R;
     objcCreationMethodSelector2<R = string>(): R;
     _oldStyleOneWordName<R = unknown>(): R;
@@ -14,7 +14,7 @@ declare namespace cocoa {
     _descriptionWithTabCount<R = unknown, P0 = number>(__descriptionWithTabCount: P0): R;
   }
   namespace classes {
-    export interface NSScriptValueTypeDescription<T = any> extends cocoa.classes.NSScriptTypeDescription {
+    export interface NSScriptValueTypeDescription<T = any> extends NSScriptTypeDescription {
       alloc<R = NSScriptValueTypeDescription>(): R;
       new: <R = NSScriptValueTypeDescription>() => R;
       valueTypeDescriptionFromName_declaration<R = unknown, P0 = unknown, P1 = unknown>(_valueTypeDescriptionFromName: P0, _declaration: P1): R;

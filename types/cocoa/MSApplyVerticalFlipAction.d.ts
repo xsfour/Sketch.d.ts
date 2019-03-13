@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSApplyVerticalFlipAction<T = any> extends cocoa.MSBaseFlipAction {
+  export interface MSApplyVerticalFlipAction<T = any> extends MSBaseFlipAction {
     label<R = unknown>(): R;
     applyVerticalFlip<R = void, P0 = unknown>(_applyVerticalFlip: P0): R;
     isActive<R = boolean>(): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     historyMomentTitle<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSApplyVerticalFlipAction<T = any> extends cocoa.classes.MSBaseFlipAction {
+    export interface MSApplyVerticalFlipAction<T = any> extends MSBaseFlipAction {
       alloc<R = MSApplyVerticalFlipAction>(): R;
       new: <R = MSApplyVerticalFlipAction>() => R;
     }

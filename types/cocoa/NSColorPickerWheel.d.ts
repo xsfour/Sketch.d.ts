@@ -1,14 +1,14 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorPickerWheel<T = any> extends cocoa.NSColorPicker, cocoa.NSColorPickingCustomProtocol {
+  export interface NSColorPickerWheel<T = any> extends NSColorPicker, NSColorPickingCustomProtocol {
     brightnessSlider<R = void, P0 = unknown>(_brightnessSlider: P0): R;
     worksWhenModal<R = boolean>(): R;
-    containerView<R = cocoa.NSView>(): R;
-    setContainerView<R = void, P0 = cocoa.NSView>(_v: P0): R;
+    containerView<R = NSView>(): R;
+    setContainerView<R = void, P0 = NSView>(_v: P0): R;
   }
   namespace classes {
-    export interface NSColorPickerWheel<T = any> extends cocoa.classes.NSColorPicker, cocoa.classes.NSColorPickingCustomProtocol {
+    export interface NSColorPickerWheel<T = any> extends NSColorPicker, NSColorPickingCustomProtocol {
       alloc<R = NSColorPickerWheel>(): R;
       new: <R = NSColorPickerWheel>() => R;
     }

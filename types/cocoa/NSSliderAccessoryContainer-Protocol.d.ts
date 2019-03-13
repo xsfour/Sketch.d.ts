@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSliderAccessoryContainerProtocol<T = any> extends cocoa.NSObjectProtocol {
+  export interface NSSliderAccessoryContainerProtocol<T = any> extends NSObjectProtocol {
     _incrementValue<R = void, P0 = boolean>(__incrementValue: P0): R;
     sendAction<R = void>(): R;
     _hasStepBehaviorContext<R = boolean>(): R;
-    maximumValueAccessory<R = cocoa.NSSliderAccessory>(): R;
-    minimumValueAccessory<R = cocoa.NSSliderAccessory>(): R;
+    maximumValueAccessory<R = NSSliderAccessory>(): R;
+    minimumValueAccessory<R = NSSliderAccessory>(): R;
     incrementValue<R = number>(): R;
     setIncrementValue<R = void, P0 = number>(_v: P0): R;
     maximumValue<R = number>(): R;
@@ -17,8 +17,6 @@ declare namespace cocoa {
     setValue<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface NSSliderAccessoryContainerProtocol<T = any> extends cocoa.classes.NSObjectProtocol {  }
+    export interface NSSliderAccessoryContainerProtocol<T = any> extends NSObjectProtocol {  }
   }
 }
-
-declare const NSSliderAccessoryContainerProtocol: cocoa.classes.NSSliderAccessoryContainerProtocol;

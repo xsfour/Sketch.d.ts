@@ -1,12 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSliderTickMarksDelegateProtocol<T = any> extends cocoa.NSObjectProtocol {
-    rectOfTickMarkAtIndex<R = cocoa.CGRect, P0 = number>(_rectOfTickMarkAtIndex: P0): R;
+  export interface NSSliderTickMarksDelegateProtocol<T = any> extends NSObjectProtocol {
+    rectOfTickMarkAtIndex<R = CGRect, P0 = number>(_rectOfTickMarkAtIndex: P0): R;
   }
   namespace classes {
-    export interface NSSliderTickMarksDelegateProtocol<T = any> extends cocoa.classes.NSObjectProtocol {  }
+    export interface NSSliderTickMarksDelegateProtocol<T = any> extends NSObjectProtocol {  }
   }
 }
-
-declare const NSSliderTickMarksDelegateProtocol: cocoa.classes.NSSliderTickMarksDelegateProtocol;

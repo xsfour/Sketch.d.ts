@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDataPreferencePane<T = any> extends cocoa.MSPreferencePane, cocoa.MSDropableViewDelegateProtocol, cocoa.NSTableViewDelegateProtocol, cocoa.NSTableViewDataSourceProtocol, cocoa.NSTextFieldDelegateProtocol {
+  export interface MSDataPreferencePane<T = any> extends MSPreferencePane, MSDropableViewDelegateProtocol, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol, NSTextFieldDelegateProtocol {
     setSelectedIndexesFromSelectionIdentifierArray<R = void>(): R;
     setSelectionIdentifierArrayFromSelectionIndexes<R = void>(): R;
     selectionDidChange<R = void>(): R;
@@ -29,37 +29,37 @@ declare namespace cocoa {
     searchString<R = unknown>(): R;
     activateSearchField<R = void, P0 = unknown>(_activateSearchField: P0): R;
     awakeFromNib<R = void>(): R;
-    dataFilterPredicate<R = cocoa.NSPredicate>(): R;
-    setDataFilterPredicate<R = void, P0 = cocoa.NSPredicate>(_v: P0): R;
-    filterTextField<R = cocoa.NSSearchField>(): R;
-    setFilterTextField<R = void, P0 = cocoa.NSSearchField>(_v: P0): R;
-    spyglassFilterButton<R = cocoa.NSButton>(): R;
-    setSpyglassFilterButton<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    selectedItemIdentifiers<R = cocoa.NSArray>(): R;
-    setSelectedItemIdentifiers<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    chooseDataPanelWindow<R = cocoa.NSWindow>(): R;
-    setChooseDataPanelWindow<R = void, P0 = cocoa.NSWindow>(_v: P0): R;
-    data<R = cocoa.NSArray>(): R;
-    setData<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    dataFilterPredicate<R = NSPredicate>(): R;
+    setDataFilterPredicate<R = void, P0 = NSPredicate>(_v: P0): R;
+    filterTextField<R = NSSearchField>(): R;
+    setFilterTextField<R = void, P0 = NSSearchField>(_v: P0): R;
+    spyglassFilterButton<R = NSButton>(): R;
+    setSpyglassFilterButton<R = void, P0 = NSButton>(_v: P0): R;
+    selectedItemIdentifiers<R = NSArray>(): R;
+    setSelectedItemIdentifiers<R = void, P0 = NSArray>(_v: P0): R;
+    chooseDataPanelWindow<R = NSWindow>(): R;
+    setChooseDataPanelWindow<R = void, P0 = NSWindow>(_v: P0): R;
+    data<R = NSArray>(): R;
+    setData<R = void, P0 = NSArray>(_v: P0): R;
     enableShowInFinder<R = boolean>(): R;
     setEnableShowInFinder<R = void, P0 = boolean>(_v: P0): R;
     shouldEnableCogMenu<R = boolean>(): R;
     setShouldEnableCogMenu<R = void, P0 = boolean>(_v: P0): R;
-    contextMenu<R = cocoa.NSMenu>(): R;
-    setContextMenu<R = void, P0 = cocoa.NSMenu>(_v: P0): R;
-    dataArrayController<R = cocoa.NSArrayController>(): R;
-    setDataArrayController<R = void, P0 = cocoa.NSArrayController>(_v: P0): R;
-    tableView<R = cocoa.MSDataTableView>(): R;
-    setTableView<R = void, P0 = cocoa.MSDataTableView>(_v: P0): R;
-    selectedData<R = cocoa.NSArray>(): R;
-    dataSupplierManager<R = cocoa.MSDataSupplierManager>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    contextMenu<R = NSMenu>(): R;
+    setContextMenu<R = void, P0 = NSMenu>(_v: P0): R;
+    dataArrayController<R = NSArrayController>(): R;
+    setDataArrayController<R = void, P0 = NSArrayController>(_v: P0): R;
+    tableView<R = MSDataTableView>(): R;
+    setTableView<R = void, P0 = MSDataTableView>(_v: P0): R;
+    selectedData<R = NSArray>(): R;
+    dataSupplierManager<R = MSDataSupplierManager>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSDataPreferencePane<T = any> extends cocoa.classes.MSPreferencePane, cocoa.classes.MSDropableViewDelegateProtocol, cocoa.classes.NSTableViewDelegateProtocol, cocoa.classes.NSTableViewDataSourceProtocol, cocoa.classes.NSTextFieldDelegateProtocol {
+    export interface MSDataPreferencePane<T = any> extends MSPreferencePane, MSDropableViewDelegateProtocol, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol, NSTextFieldDelegateProtocol {
       alloc<R = MSDataPreferencePane>(): R;
       new: <R = MSDataPreferencePane>() => R;
     }

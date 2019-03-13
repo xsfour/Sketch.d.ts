@@ -12,7 +12,7 @@ declare namespace cocoa {
     initWithContentsOfURL<R = unknown, P0 = unknown>(_initWithContentsOfURL: P0): R;
     initWithContentsOfFile<R = unknown, P0 = unknown>(_initWithContentsOfFile: P0): R;
     sortedArrayUsingSelector_hint<R = unknown, P0 = string, P1 = unknown>(_sortedArrayUsingSelector: P0, _hint: P1): R;
-    sortedArrayUsingFunction_context_hint<R = unknown, P0 = cocoa.CDUnknownFunctionPointerType, P1 = void, P2 = unknown>(_sortedArrayUsingFunction: P0, _context: P1, _hint: P2): R;
+    sortedArrayUsingFunction_context_hint<R = unknown, P0 = CDUnknownFunctionPointerType, P1 = void, P2 = unknown>(_sortedArrayUsingFunction: P0, _context: P1, _hint: P2): R;
     sortedArrayHint<R = unknown>(): R;
     classForCoder<R = unknown>(): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
@@ -72,19 +72,19 @@ declare namespace cocoa {
     _scriptingSetValue_forSpecifier<R = unknown, P0 = unknown, P1 = unknown>(__scriptingSetValue: P0, _forSpecifier: P1): R;
     rangesContainLocation<R = boolean, P0 = number>(_rangesContainLocation: P0): R;
     indexOfFirstRangeContainingOrFollowing<R = number, P0 = number>(_indexOfFirstRangeContainingOrFollowing: P0): R;
-    rangeAtIndex<R = cocoa._NSRange, P0 = number>(_rangeAtIndex: P0): R;
-    maximumRange<R = cocoa._NSRange>(): R;
-    lastRange<R = cocoa._NSRange>(): R;
-    firstRange<R = cocoa._NSRange>(): R;
+    rangeAtIndex<R = _NSRange, P0 = number>(_rangeAtIndex: P0): R;
+    maximumRange<R = _NSRange>(): R;
+    lastRange<R = _NSRange>(): R;
+    firstRange<R = _NSRange>(): R;
     _getRangeIndex_atIndex<R = boolean, P0 = number, P1 = number>(__getRangeIndex: P0, _atIndex: P1): R;
     _invokeSelector_withArguments_onKeyPath_ofObjectAtIndex<R = void, P0 = string, P1 = unknown, P2 = unknown, P3 = number>(__invokeSelector: P0, _withArguments: P1, _onKeyPath: P2, _ofObjectAtIndex: P3): R;
     initWithUnarchiver<R = unknown, P0 = unknown>(_initWithUnarchiver: P0): R;
     encodeWithArchiver<R = void, P0 = unknown>(_encodeWithArchiver: P0): R;
     propertiesAreEqual<R = boolean, P0 = unknown>(_propertiesAreEqual: P0): R;
-    enumerateDescendants_withAncestors<R = void, P0 = cocoa.CDUnknownBlockType, P1 = unknown>(_enumerateDescendants: P0, _withAncestors: P1): R;
+    enumerateDescendants_withAncestors<R = void, P0 = CDUnknownBlockType, P1 = unknown>(_enumerateDescendants: P0, _withAncestors: P1): R;
     hasDefaultValues<R = boolean>(): R;
     treeAsDictionary<R = unknown>(): R;
-    archiveReferenceIdentifier_bc<R = cocoa.NSString>(): R;
+    archiveReferenceIdentifier_bc<R = NSString>(): R;
   }
   namespace classes {
     export interface NSArray<T = any> {

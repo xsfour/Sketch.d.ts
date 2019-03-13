@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSKeyValueNotifyingMutableOrderedSet<T = any> extends cocoa.NSKeyValueMutableOrderedSet {
+  export interface NSKeyValueNotifyingMutableOrderedSet<T = any> extends NSKeyValueMutableOrderedSet {
     replaceObjectsAtIndexes_withObjects<R = void, P0 = unknown, P1 = unknown>(_replaceObjectsAtIndexes: P0, _withObjects: P1): R;
     replaceObjectAtIndex_withObject<R = void, P0 = number, P1 = unknown>(_replaceObjectAtIndex: P0, _withObject: P1): R;
     removeObjectsAtIndexes<R = void, P0 = unknown>(_removeObjectsAtIndexes: P0): R;
@@ -11,11 +11,11 @@ declare namespace cocoa {
     objectsAtIndexes<R = unknown, P0 = unknown>(_objectsAtIndexes: P0): R;
     objectAtIndex<R = unknown, P0 = number>(_objectAtIndex: P0): R;
     indexOfObject<R = number, P0 = unknown>(_indexOfObject: P0): R;
-    getObjects_range<R = void, P0 = unknown, P1 = cocoa._NSRange>(_getObjects: P0, _range: P1): R;
+    getObjects_range<R = void, P0 = unknown, P1 = _NSRange>(_getObjects: P0, _range: P1): R;
     count<R = number>(): R;
   }
   namespace classes {
-    export interface NSKeyValueNotifyingMutableOrderedSet<T = any> extends cocoa.classes.NSKeyValueMutableOrderedSet {  }
+    export interface NSKeyValueNotifyingMutableOrderedSet<T = any> extends NSKeyValueMutableOrderedSet {  }
   }
 }
 

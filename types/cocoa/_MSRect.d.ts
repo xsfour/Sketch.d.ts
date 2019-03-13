@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSRect<T = any> extends cocoa.MSModelObject {
+  export interface _MSRect<T = any> extends MSModelObject {
     hasDefaultValues<R = boolean>(): R;
     y<R = number>(): R;
     setY<R = void, P0 = number>(_v: P0): R;
@@ -15,7 +15,7 @@ declare namespace cocoa {
     setConstrainProportions<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface _MSRect<T = any> extends cocoa.classes.MSModelObject {
+    export interface _MSRect<T = any> extends MSModelObject {
       alloc<R = _MSRect>(): R;
       new: <R = _MSRect>() => R;
     }

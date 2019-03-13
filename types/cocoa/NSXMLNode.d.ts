@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXMLNode<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol {
+  export interface NSXMLNode<T = any> extends NSObject, NSCopyingProtocol {
     _setParent<R = void, P0 = unknown>(__setParent: P0): R;
     _setKind<R = void, P0 = number>(__setKind: P0): R;
     _setIndex<R = void, P0 = number>(__setIndex: P0): R;
@@ -20,36 +20,36 @@ declare namespace cocoa {
     initWithKind_options<R = unknown, P0 = number, P1 = number>(_initWithKind: P0, _options: P1): R;
     initWithKind<R = unknown, P0 = number>(_initWithKind: P0): R;
     dealloc<R = void>(): R;
-    XMLString<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
-    URI<R = cocoa.NSString>(): R;
-    setURI<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    prefix<R = cocoa.NSString>(): R;
-    localName<R = cocoa.NSString>(): R;
-    XPath<R = cocoa.NSString>(): R;
-    nextNode<R = cocoa.NSXMLNode>(): R;
-    previousNode<R = cocoa.NSXMLNode>(): R;
-    nextSibling<R = cocoa.NSXMLNode>(): R;
-    previousSibling<R = cocoa.NSXMLNode>(): R;
+    XMLString<R = NSString>(): R;
+    description<R = NSString>(): R;
+    URI<R = NSString>(): R;
+    setURI<R = void, P0 = NSString>(_v: P0): R;
+    prefix<R = NSString>(): R;
+    localName<R = NSString>(): R;
+    XPath<R = NSString>(): R;
+    nextNode<R = NSXMLNode>(): R;
+    previousNode<R = NSXMLNode>(): R;
+    nextSibling<R = NSXMLNode>(): R;
+    previousSibling<R = NSXMLNode>(): R;
     level<R = number>(): R;
     index<R = number>(): R;
-    stringValue<R = cocoa.NSString>(): R;
-    setStringValue<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    stringValue<R = NSString>(): R;
+    setStringValue<R = void, P0 = NSString>(_v: P0): R;
     objectValue<R = unknown>(): R;
     setObjectValue<R = void, P0 = unknown>(_v: P0): R;
-    name<R = cocoa.NSString>(): R;
-    setName<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    rootDocument<R = cocoa.NSXMLDocument>(): R;
+    name<R = NSString>(): R;
+    setName<R = void, P0 = NSString>(_v: P0): R;
+    rootDocument<R = NSXMLDocument>(): R;
     childCount<R = number>(): R;
-    children<R = cocoa.NSArray>(): R;
-    parent<R = cocoa.NSXMLNode>(): R;
+    children<R = NSArray>(): R;
+    parent<R = NSXMLNode>(): R;
     kind<R = number>(): R;
     // + NSXMLNode(SVG):
     cssClassNamesWithBase<R = unknown, P0 = unknown>(_cssClassNamesWithBase: P0): R;
     simplifyAttributesIgnoringElements_attributes<R = unknown, P0 = unknown, P1 = unknown>(_simplifyAttributesIgnoringElements: P0, _attributes: P1): R;
     numberValuesWithScale<R = unknown, P0 = number>(_numberValuesWithScale: P0): R;
     numberValues<R = unknown>(): R;
-    rectValue<R = cocoa.CGRect>(): R;
+    rectValue<R = CGRect>(): R;
     integerValue<R = number>(): R;
     doubleValueWithScale<R = number, P0 = number>(_doubleValueWithScale: P0): R;
     doubleValue<R = number>(): R;
@@ -58,7 +58,7 @@ declare namespace cocoa {
     doubleValueFromAttributeWithName<R = number, P0 = unknown>(_doubleValueFromAttributeWithName: P0): R;
   }
   namespace classes {
-    export interface NSXMLNode<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol {
+    export interface NSXMLNode<T = any> extends NSObject, NSCopyingProtocol {
       alloc<R = NSXMLNode>(): R;
       new: <R = NSXMLNode>() => R;
       _contentsOfHTMLData_encoding_strippingTagsSeparatedByString<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(__contentsOfHTMLData: P0, _encoding: P1, _strippingTagsSeparatedByString: P2): R;
@@ -87,7 +87,7 @@ declare namespace cocoa {
       documentWithRootElement<R = unknown, P0 = unknown>(_documentWithRootElement: P0): R;
       documentWithContentsOfURL_options_error<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_documentWithContentsOfURL: P0, _options: P1, _error: P2): R;
       document<R = unknown>(): R;
-      allocWithZone<R = unknown, P0 = cocoa._NSZone>(_allocWithZone: P0): R;
+      allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
       _alloc<R = unknown>(): R;
       // + NSXMLNode(SVG):
       attributeWithName_percentageFractionalValue<R = unknown, P0 = unknown, P1 = number>(_attributeWithName: P0, _percentageFractionalValue: P1): R;

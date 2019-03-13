@@ -2,11 +2,9 @@
 
 declare namespace cocoa {
   export interface MSDocumentDataProtocol<T = any> {
-    pages<R = cocoa.NSArray>(): R;
+    pages<R = NSArray>(): R;
   }
   namespace classes {
     export interface MSDocumentDataProtocol<T = any> {  }
   }
 }
-
-declare const MSDocumentDataProtocol: cocoa.classes.MSDocumentDataProtocol;

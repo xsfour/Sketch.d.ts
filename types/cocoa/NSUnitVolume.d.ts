@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUnitVolume<T = any> extends cocoa.NSDimension, cocoa.NSSecureCodingProtocol {}
+  export interface NSUnitVolume<T = any> extends NSDimension, NSSecureCodingProtocol {}
   namespace classes {
-    export interface NSUnitVolume<T = any> extends cocoa.classes.NSDimension, cocoa.classes.NSSecureCodingProtocol {
+    export interface NSUnitVolume<T = any> extends NSDimension, NSSecureCodingProtocol {
       alloc<R = NSUnitVolume>(): R;
       new: <R = NSUnitVolume>() => R;
       metricCups<R = unknown>(): R;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSWindowSnappingPrefsViewController<T = any> extends cocoa.NSViewController {
+  export interface NSWindowSnappingPrefsViewController<T = any> extends NSViewController {
     propertiesAsDictionary<R = unknown>(): R;
     _reloadProperties<R = void>(): R;
     _prefsChanged<R = void, P0 = unknown>(__prefsChanged: P0): R;
@@ -58,7 +58,7 @@ declare namespace cocoa {
     setShouldLogSnapping<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface NSWindowSnappingPrefsViewController<T = any> extends cocoa.classes.NSViewController {
+    export interface NSWindowSnappingPrefsViewController<T = any> extends NSViewController {
       alloc<R = NSWindowSnappingPrefsViewController>(): R;
       new: <R = NSWindowSnappingPrefsViewController>() => R;
     }

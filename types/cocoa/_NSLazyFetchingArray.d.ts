@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSLazyFetchingArray<T = any> extends cocoa.NSMutableArray {
+  export interface _NSLazyFetchingArray<T = any> extends NSMutableArray {
     replaceObjectAtIndex_withObject<R = void, P0 = number, P1 = unknown>(_replaceObjectAtIndex: P0, _withObject: P1): R;
     removeLastObject<R = void>(): R;
     filterUsingPredicate<R = void, P0 = unknown>(_filterUsingPredicate: P0): R;
@@ -27,13 +27,13 @@ declare namespace cocoa {
     contextDidSave<R = void>(): R;
     setArray<R = void, P0 = unknown>(_setArray: P0): R;
     _ensureContentArrayIsMutable<R = void>(): R;
-    updateBatchSizeForRange<R = void, P0 = cocoa._NSRange>(_updateBatchSizeForRange: P0): R;
+    updateBatchSizeForRange<R = void, P0 = _NSRange>(_updateBatchSizeForRange: P0): R;
     _fetchedIndexes<R = unknown>(): R;
     setOwner<R = void, P0 = unknown>(_setOwner: P0): R;
     dealloc<R = void>(): R;
     init<R = unknown>(): R;
   }
   namespace classes {
-    export interface _NSLazyFetchingArray<T = any> extends cocoa.classes.NSMutableArray {  }
+    export interface _NSLazyFetchingArray<T = any> extends NSMutableArray {  }
   }
 }

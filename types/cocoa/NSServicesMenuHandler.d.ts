@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSServicesMenuHandler<T = any> extends cocoa.NSObject {}
+  export interface NSServicesMenuHandler<T = any> extends NSObject {}
   namespace classes {
-    export interface NSServicesMenuHandler<T = any> extends cocoa.classes.NSObject {
+    export interface NSServicesMenuHandler<T = any> extends NSObject {
       alloc<R = NSServicesMenuHandler>(): R;
       new: <R = NSServicesMenuHandler>() => R;
       registerServicesMenuSendTypes_returnTypes<R = void, P0 = unknown, P1 = unknown>(_registerServicesMenuSendTypes: P0, _returnTypes: P1): R;

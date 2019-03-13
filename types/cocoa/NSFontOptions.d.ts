@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFontOptions<T = any> extends cocoa.NSObject {
+  export interface NSFontOptions<T = any> extends NSObject {
     selectAllInView_selectionOnly_fontFamily_font_characterStyle_paragraphStyle<R = void, P0 = unknown, P1 = boolean, P2 = boolean, P3 = boolean, P4 = boolean, P5 = boolean>(_selectAllInView: P0, _selectionOnly: P1, _fontFamily: P2, _font: P3, _characterStyle: P4, _paragraphStyle: P5): R;
     sheetDidEnd_returnCode_contextInfo<R = void, P0 = unknown, P1 = number, P2 = void>(_sheetDidEnd: P0, _returnCode: P1, _contextInfo: P2): R;
     removeFavoriteInWindow<R = void, P0 = unknown>(_removeFavoriteInWindow: P0): R;
@@ -15,7 +15,7 @@ declare namespace cocoa {
     selectNextRangeForward<R = void, P0 = boolean>(_selectNextRangeForward: P0): R;
     selectFarthestRangeForward<R = void, P0 = boolean>(_selectFarthestRangeForward: P0): R;
     selectDefaultRange<R = void>(): R;
-    stringForRange<R = unknown, P0 = cocoa._NSRange>(_stringForRange: P0): R;
+    stringForRange<R = unknown, P0 = _NSRange>(_stringForRange: P0): R;
     modifyOptionsViaPanel<R = void, P0 = unknown>(_modifyOptionsViaPanel: P0): R;
     convertAttributes<R = unknown, P0 = unknown>(_convertAttributes: P0): R;
     optionsAttributes<R = unknown>(): R;
@@ -45,7 +45,7 @@ declare namespace cocoa {
     storedAttributes<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSFontOptions<T = any> extends cocoa.classes.NSObject {
+    export interface NSFontOptions<T = any> extends NSObject {
       alloc<R = NSFontOptions>(): R;
       new: <R = NSFontOptions>() => R;
       sharedFontOptions<R = unknown>(): R;

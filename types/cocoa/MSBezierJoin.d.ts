@@ -1,16 +1,16 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBezierJoin<T = any> extends cocoa.NSObject {
+  export interface MSBezierJoin<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     debugQuickLookObject<R = unknown>(): R;
     initWithSegment1_segment2_joinedSegments<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_initWithSegment1: P0, _segment2: P1, _joinedSegments: P2): R;
-    joinedSegments<R = cocoa.NSArray>(): R;
-    segment2<R = cocoa.MSBezierSegment>(): R;
-    segment1<R = cocoa.MSBezierSegment>(): R;
+    joinedSegments<R = NSArray>(): R;
+    segment2<R = MSBezierSegment>(): R;
+    segment1<R = MSBezierSegment>(): R;
   }
   namespace classes {
-    export interface MSBezierJoin<T = any> extends cocoa.classes.NSObject {
+    export interface MSBezierJoin<T = any> extends NSObject {
       alloc<R = MSBezierJoin>(): R;
       new: <R = MSBezierJoin>() => R;
       segmentsByJoiningSegment1_segment2<R = unknown, P0 = unknown, P1 = unknown>(_segmentsByJoiningSegment1: P0, _segment2: P1): R;

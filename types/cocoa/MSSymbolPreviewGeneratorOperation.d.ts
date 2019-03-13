@@ -1,26 +1,26 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSymbolPreviewGeneratorOperation<T = any> extends cocoa.NSOperation, cocoa.MSRenderingContextCacheProviderProtocol {
+  export interface MSSymbolPreviewGeneratorOperation<T = any> extends NSOperation, MSRenderingContextCacheProviderProtocol {
     cxx_destruct<R = void>(): R;
-    renderingCache<R = cocoa.BCCache>(): R;
-    setRenderingCache<R = void, P0 = cocoa.BCCache>(_v: P0): R;
-    imageBlock<R = cocoa.CDUnknownBlockType>(): R;
-    setImageBlock<R = void, P0 = cocoa.CDUnknownBlockType>(_v: P0): R;
-    colorSpace<R = cocoa.NSColorSpace>(): R;
-    setColorSpace<R = void, P0 = cocoa.NSColorSpace>(_v: P0): R;
-    size<R = cocoa.CGSize>(): R;
-    setSize<R = void, P0 = cocoa.CGSize>(_v: P0): R;
-    symbolAncestry<R = cocoa.MSImmutableLayerAncestry>(): R;
-    setSymbolAncestry<R = void, P0 = cocoa.MSImmutableLayerAncestry>(_v: P0): R;
-    zoomIndependentCache<R = cocoa.BCCache>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    renderingCache<R = BCCache>(): R;
+    setRenderingCache<R = void, P0 = BCCache>(_v: P0): R;
+    imageBlock<R = CDUnknownBlockType>(): R;
+    setImageBlock<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
+    colorSpace<R = NSColorSpace>(): R;
+    setColorSpace<R = void, P0 = NSColorSpace>(_v: P0): R;
+    size<R = CGSize>(): R;
+    setSize<R = void, P0 = CGSize>(_v: P0): R;
+    symbolAncestry<R = MSImmutableLayerAncestry>(): R;
+    setSymbolAncestry<R = void, P0 = MSImmutableLayerAncestry>(_v: P0): R;
+    zoomIndependentCache<R = BCCache>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSSymbolPreviewGeneratorOperation<T = any> extends cocoa.classes.NSOperation, cocoa.classes.MSRenderingContextCacheProviderProtocol {
+    export interface MSSymbolPreviewGeneratorOperation<T = any> extends NSOperation, MSRenderingContextCacheProviderProtocol {
       alloc<R = MSSymbolPreviewGeneratorOperation>(): R;
       new: <R = MSSymbolPreviewGeneratorOperation>() => R;
     }

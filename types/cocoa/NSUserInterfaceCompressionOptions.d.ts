@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUserInterfaceCompressionOptions<T = any> extends cocoa.NSObject, cocoa.NSSecureCodingProtocol, cocoa.NSCopyingProtocol, cocoa.NSCodingProtocol {
+  export interface NSUserInterfaceCompressionOptions<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol, NSCodingProtocol {
     description<R = unknown>(): R;
     optionsByAddingOptions<R = unknown, P0 = unknown>(_optionsByAddingOptions: P0): R;
     optionsByRemovingOptions<R = unknown, P0 = unknown>(_optionsByRemovingOptions: P0): R;
@@ -14,7 +14,7 @@ declare namespace cocoa {
     empty<R = boolean>(): R;
   }
   namespace classes {
-    export interface NSUserInterfaceCompressionOptions<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSSecureCodingProtocol, cocoa.classes.NSCopyingProtocol, cocoa.classes.NSCodingProtocol {
+    export interface NSUserInterfaceCompressionOptions<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol, NSCodingProtocol {
       alloc<R = NSUserInterfaceCompressionOptions>(): R;
       new: <R = NSUserInterfaceCompressionOptions>() => R;
       standardOptions<R = unknown>(): R;

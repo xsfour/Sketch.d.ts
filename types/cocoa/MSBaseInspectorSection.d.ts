@@ -1,33 +1,33 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBaseInspectorSection<T = any> extends cocoa.NSViewController, cocoa.MSInspectorSectionProtocol, cocoa.MSInspectorItemDelegateProtocol {
+  export interface MSBaseInspectorSection<T = any> extends NSViewController, MSInspectorSectionProtocol, MSInspectorItemDelegateProtocol {
     cxx_destruct<R = void>(): R;
     doUpdateDisplayedValues<R = void>(): R;
     scheduleUpdate<R = void>(): R;
-    separatorInset<R = cocoa.NSEdgeInsets>(): R;
+    separatorInset<R = NSEdgeInsets>(): R;
     assignItemLayers<R = void>(): R;
     updateItems<R = void>(): R;
     refreshIfNecessary<R = void, P0 = unknown>(_refreshIfNecessary: P0): R;
     changeTextLayerFont<R = void, P0 = unknown>(_changeTextLayerFont: P0): R;
-    items<R = cocoa.NSArray>(): R;
-    setItems<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    items<R = NSArray>(): R;
+    setItems<R = void, P0 = NSArray>(_v: P0): R;
     needsUpdate<R = boolean>(): R;
     setNeedsUpdate<R = void, P0 = boolean>(_v: P0): R;
     throttleUpdate<R = boolean>(): R;
     setThrottleUpdate<R = void, P0 = boolean>(_v: P0): R;
-    delegate<R = cocoa.MSInspectorSectionDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.MSInspectorSectionDelegate>(_v: P0): R;
-    layers<R = cocoa.MSLayerArray>(): R;
-    setLayers<R = void, P0 = cocoa.MSLayerArray>(_v: P0): R;
+    delegate<R = MSInspectorSectionDelegate>(): R;
+    setDelegate<R = void, P0 = MSInspectorSectionDelegate>(_v: P0): R;
+    layers<R = MSLayerArray>(): R;
+    setLayers<R = void, P0 = MSLayerArray>(_v: P0): R;
     selectionContainsChildrenOfCompoundPath<R = boolean>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSBaseInspectorSection<T = any> extends cocoa.classes.NSViewController, cocoa.classes.MSInspectorSectionProtocol, cocoa.classes.MSInspectorItemDelegateProtocol {
+    export interface MSBaseInspectorSection<T = any> extends NSViewController, MSInspectorSectionProtocol, MSInspectorItemDelegateProtocol {
       alloc<R = MSBaseInspectorSection>(): R;
       new: <R = MSBaseInspectorSection>() => R;
     }

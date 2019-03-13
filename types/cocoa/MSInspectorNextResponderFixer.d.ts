@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInspectorNextResponderFixer<T = any> extends cocoa.NSObject {}
+  export interface MSInspectorNextResponderFixer<T = any> extends NSObject {}
   namespace classes {
-    export interface MSInspectorNextResponderFixer<T = any> extends cocoa.classes.NSObject {
+    export interface MSInspectorNextResponderFixer<T = any> extends NSObject {
       alloc<R = MSInspectorNextResponderFixer>(): R;
       new: <R = MSInspectorNextResponderFixer>() => R;
       compareVerticalPositionOfView_withView<R = number, P0 = unknown, P1 = unknown>(_compareVerticalPositionOfView: P0, _withView: P1): R;

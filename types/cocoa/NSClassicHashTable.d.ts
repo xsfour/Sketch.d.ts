@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSClassicHashTable<T = any> extends cocoa.NSHashTable {
+  export interface NSClassicHashTable<T = any> extends NSHashTable {
     allObjects<R = unknown>(): R;
     count<R = number>(): R;
     insertItem<R = void, P0 = void>(_insertItem: P0): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
   }
   namespace classes {
-    export interface NSClassicHashTable<T = any> extends cocoa.classes.NSHashTable {
+    export interface NSClassicHashTable<T = any> extends NSHashTable {
       alloc<R = NSClassicHashTable>(): R;
       new: <R = NSClassicHashTable>() => R;
     }

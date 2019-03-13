@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCFData<T = any> extends cocoa.NSMutableData {
+  export interface NSCFData<T = any> extends NSMutableData {
     _providesConcreteBacking<R = boolean>(): R;
     setLength<R = void, P0 = number>(_setLength: P0): R;
     mutableBytes<R = void>(): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     length<R = number>(): R;
     _createDispatchData<R = unknown>(): R;
     _compact<R = boolean>(): R;
-    copyWithZone<R = unknown, P0 = cocoa._NSZone>(_copyWithZone: P0): R;
+    copyWithZone<R = unknown, P0 = _NSZone>(_copyWithZone: P0): R;
     retainCount<R = number>(): R;
     retainWeakReference<R = boolean>(): R;
     allowsWeakReference<R = boolean>(): R;
@@ -19,7 +19,7 @@ declare namespace cocoa {
     isEqual<R = boolean, P0 = unknown>(_isEqual: P0): R;
   }
   namespace classes {
-    export interface NSCFData<T = any> extends cocoa.classes.NSMutableData {
+    export interface NSCFData<T = any> extends NSMutableData {
       automaticallyNotifiesObserversForKey<R = boolean, P0 = unknown>(_automaticallyNotifiesObserversForKey: P0): R;
     }
   }

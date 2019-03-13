@@ -9,5 +9,3 @@ declare namespace cocoa {
     export interface NSLockingProtocol<T = any> {  }
   }
 }
-
-declare const NSLockingProtocol: cocoa.classes.NSLockingProtocol;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSComboBox<T = any> extends cocoa.NSTextField {
+  export interface NSComboBox<T = any> extends NSTextField {
     indexOfItemWithObjectValue<R = number, P0 = unknown>(_indexOfItemWithObjectValue: P0): R;
     itemObjectValueAtIndex<R = unknown, P0 = number>(_itemObjectValueAtIndex: P0): R;
     selectItemWithObjectValue<R = void, P0 = unknown>(_selectItemWithObjectValue: P0): R;
@@ -25,16 +25,16 @@ declare namespace cocoa {
     comboBoxCellWillPopUp<R = void, P0 = unknown>(_comboBoxCellWillPopUp: P0): R;
     comboBoxCellSelectionIsChanging<R = void, P0 = unknown>(_comboBoxCellSelectionIsChanging: P0): R;
     comboBoxCellSelectionDidChange<R = void, P0 = unknown>(_comboBoxCellSelectionDidChange: P0): R;
-    objectValues<R = cocoa.NSArray>(): R;
+    objectValues<R = NSArray>(): R;
     objectValueOfSelectedItem<R = unknown>(): R;
     numberOfItems<R = number>(): R;
     indexOfSelectedItem<R = number>(): R;
-    delegate<R = cocoa.NSComboBoxDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSComboBoxDelegate>(_v: P0): R;
+    delegate<R = NSComboBoxDelegate>(): R;
+    setDelegate<R = void, P0 = NSComboBoxDelegate>(_v: P0): R;
     usesDataSource<R = boolean>(): R;
     setUsesDataSource<R = void, P0 = boolean>(_v: P0): R;
-    dataSource<R = cocoa.NSComboBoxDataSource>(): R;
-    setDataSource<R = void, P0 = cocoa.NSComboBoxDataSource>(_v: P0): R;
+    dataSource<R = NSComboBoxDataSource>(): R;
+    setDataSource<R = void, P0 = NSComboBoxDataSource>(_v: P0): R;
     completes<R = boolean>(): R;
     setCompletes<R = void, P0 = boolean>(_v: P0): R;
     buttonBordered<R = boolean>(): R;
@@ -43,13 +43,13 @@ declare namespace cocoa {
     setNumberOfVisibleItems<R = void, P0 = number>(_v: P0): R;
     itemHeight<R = number>(): R;
     setItemHeight<R = void, P0 = number>(_v: P0): R;
-    intercellSpacing<R = cocoa.CGSize>(): R;
-    setIntercellSpacing<R = void, P0 = cocoa.CGSize>(_v: P0): R;
+    intercellSpacing<R = CGSize>(): R;
+    setIntercellSpacing<R = void, P0 = CGSize>(_v: P0): R;
     hasVerticalScroller<R = boolean>(): R;
     setHasVerticalScroller<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface NSComboBox<T = any> extends cocoa.classes.NSTextField {
+    export interface NSComboBox<T = any> extends NSTextField {
       alloc<R = NSComboBox>(): R;
       new: <R = NSComboBox>() => R;
     }

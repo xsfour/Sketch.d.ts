@@ -1,12 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSWelcomeCollectionViewDelegateProtocol<T = any> extends cocoa.NSCollectionViewDelegateProtocol {
-    collectionView_newItemForRepresentedObject<R = cocoa.NSCollectionViewItem, P0 = cocoa.NSCollectionView, P1 = unknown>(_collectionView: P0, _newItemForRepresentedObject: P1): R;
+  export interface MSWelcomeCollectionViewDelegateProtocol<T = any> extends NSCollectionViewDelegateProtocol {
+    collectionView_newItemForRepresentedObject<R = NSCollectionViewItem, P0 = NSCollectionView, P1 = unknown>(_collectionView: P0, _newItemForRepresentedObject: P1): R;
   }
   namespace classes {
-    export interface MSWelcomeCollectionViewDelegateProtocol<T = any> extends cocoa.classes.NSCollectionViewDelegateProtocol {  }
+    export interface MSWelcomeCollectionViewDelegateProtocol<T = any> extends NSCollectionViewDelegateProtocol {  }
   }
 }
-
-declare const MSWelcomeCollectionViewDelegateProtocol: cocoa.classes.MSWelcomeCollectionViewDelegateProtocol;

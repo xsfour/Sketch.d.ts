@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSSliderTouchBarItemView<T = any> extends cocoa.NSView, cocoa.NSSliderAccessoryContainerProtocol, cocoa.NSUserInterfaceCompressionProtocol {
+  export interface _NSSliderTouchBarItemView<T = any> extends NSView, NSSliderAccessoryContainerProtocol, NSUserInterfaceCompressionProtocol {
     cxx_destruct<R = void>(): R;
     _sliderDidCancelTracking<R = void>(): R;
     _sliderDidEndTracking<R = void>(): R;
@@ -16,33 +16,33 @@ declare namespace cocoa {
     set_showsValueAccessories<R = void, P0 = boolean>(_v: P0): R;
     _showsLabel<R = boolean>(): R;
     set_showsLabel<R = void, P0 = boolean>(_v: P0): R;
-    _layoutView<R = cocoa.NSStackView>(): R;
+    _layoutView<R = NSStackView>(): R;
     _presentationCollapsed<R = boolean>(): R;
     set_presentationCollapsed<R = void, P0 = boolean>(_v: P0): R;
     _modelCollapsed<R = boolean>(): R;
     set_modelCollapsed<R = void, P0 = boolean>(_v: P0): R;
-    label<R = cocoa.NSString>(): R;
-    setLabel<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    label<R = NSString>(): R;
+    setLabel<R = void, P0 = NSString>(_v: P0): R;
     valueAccessoryWidth<R = number>(): R;
     setValueAccessoryWidth<R = void, P0 = number>(_v: P0): R;
     action<R = string>(): R;
     setAction<R = void, P0 = string>(_v: P0): R;
     target<R = unknown>(): R;
     setTarget<R = void, P0 = unknown>(_v: P0): R;
-    activeCompressionOptions<R = cocoa.NSUserInterfaceCompressionOptions>(): R;
+    activeCompressionOptions<R = NSUserInterfaceCompressionOptions>(): R;
     collapsed<R = boolean>(): R;
     setCollapsed<R = void, P0 = boolean>(_v: P0): R;
-    slider<R = cocoa.NSSlider>(): R;
-    setSlider<R = void, P0 = cocoa.NSSlider>(_v: P0): R;
+    slider<R = NSSlider>(): R;
+    setSlider<R = void, P0 = NSSlider>(_v: P0): R;
     _maxValueAccessoryIsHidden<R = boolean>(): R;
     _sliderIsHidden<R = boolean>(): R;
     _minValueAccessoryIsHidden<R = boolean>(): R;
     _labelIsHidden<R = boolean>(): R;
-    _layoutEdgeInsets<R = cocoa.NSEdgeInsets>(): R;
-    maximumValueAccessory<R = cocoa.NSSliderAccessory>(): R;
-    setMaximumValueAccessory<R = void, P0 = cocoa.NSSliderAccessory>(_v: P0): R;
-    minimumValueAccessory<R = cocoa.NSSliderAccessory>(): R;
-    setMinimumValueAccessory<R = void, P0 = cocoa.NSSliderAccessory>(_v: P0): R;
+    _layoutEdgeInsets<R = NSEdgeInsets>(): R;
+    maximumValueAccessory<R = NSSliderAccessory>(): R;
+    setMaximumValueAccessory<R = void, P0 = NSSliderAccessory>(_v: P0): R;
+    minimumValueAccessory<R = NSSliderAccessory>(): R;
+    setMinimumValueAccessory<R = void, P0 = NSSliderAccessory>(_v: P0): R;
     _hasStepBehaviorContext<R = boolean>(): R;
     incrementValue<R = number>(): R;
     setIncrementValue<R = void, P0 = number>(_v: P0): R;
@@ -52,13 +52,13 @@ declare namespace cocoa {
     setMaximumValue<R = void, P0 = number>(_v: P0): R;
     minimumValue<R = number>(): R;
     setMinimumValue<R = void, P0 = number>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface _NSSliderTouchBarItemView<T = any> extends cocoa.classes.NSView, cocoa.classes.NSSliderAccessoryContainerProtocol, cocoa.classes.NSUserInterfaceCompressionProtocol {
+    export interface _NSSliderTouchBarItemView<T = any> extends NSView, NSSliderAccessoryContainerProtocol, NSUserInterfaceCompressionProtocol {
       alloc<R = _NSSliderTouchBarItemView>(): R;
       new: <R = _NSSliderTouchBarItemView>() => R;
       automaticallyNotifiesObserversOfCollapsed<R = boolean>(): R;

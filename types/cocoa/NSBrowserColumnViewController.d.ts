@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSBrowserColumnViewController<T = any> extends cocoa.NSViewController {
+  export interface NSBrowserColumnViewController<T = any> extends NSViewController {
     noteHeightOfRowsWithIndexesChanged<R = void, P0 = unknown>(_noteHeightOfRowsWithIndexesChanged: P0): R;
     rowHeight<R = number>(): R;
     setRowHeight<R = void, P0 = number>(_setRowHeight: P0): R;
@@ -11,9 +11,9 @@ declare namespace cocoa {
     isLeafItem<R = boolean, P0 = unknown>(_isLeafItem: P0): R;
     childItemAtIndex<R = unknown, P0 = number>(_childItemAtIndex: P0): R;
     numberOfChildItems<R = number>(): R;
-    dragImageForRowsWithIndexes_withEvent_offset<R = unknown, P0 = unknown, P1 = unknown, P2 = cocoa.CGPoint>(_dragImageForRowsWithIndexes: P0, _withEvent: P1, _offset: P2): R;
-    frameOfRow<R = cocoa.CGRect, P0 = number>(_frameOfRow: P0): R;
-    rowAtPoint<R = number, P0 = cocoa.CGPoint>(_rowAtPoint: P0): R;
+    dragImageForRowsWithIndexes_withEvent_offset<R = unknown, P0 = unknown, P1 = unknown, P2 = CGPoint>(_dragImageForRowsWithIndexes: P0, _withEvent: P1, _offset: P2): R;
+    frameOfRow<R = CGRect, P0 = number>(_frameOfRow: P0): R;
+    rowAtPoint<R = number, P0 = CGPoint>(_rowAtPoint: P0): R;
     setNeedsDisplayInRow<R = void, P0 = number>(_setNeedsDisplayInRow: P0): R;
     editRow_withEvent_select<R = void, P0 = number, P1 = unknown, P2 = boolean>(_editRow: P0, _withEvent: P1, _select: P2): R;
     preparedCellAtRow<R = unknown, P0 = number>(_preparedCellAtRow: P0): R;
@@ -32,20 +32,20 @@ declare namespace cocoa {
     setView<R = void, P0 = unknown>(_setView: P0): R;
     setColumnView_forcingFlippedBehavior<R = void, P0 = unknown, P1 = boolean>(_setColumnView: P0, _forcingFlippedBehavior: P1): R;
     description<R = unknown>(): R;
-    columnView<R = cocoa.NSView>(): R;
-    setColumnView<R = void, P0 = cocoa.NSView>(_v: P0): R;
+    columnView<R = NSView>(): R;
+    setColumnView<R = void, P0 = NSView>(_v: P0): R;
     columnIndex<R = number>(): R;
     setColumnIndex<R = void, P0 = number>(_v: P0): R;
-    headerViewController<R = cocoa.NSViewController>(): R;
-    setHeaderViewController<R = void, P0 = cocoa.NSViewController>(_v: P0): R;
-    browser<R = cocoa.NSBrowser>(): R;
-    setBrowser<R = void, P0 = cocoa.NSBrowser>(_v: P0): R;
-    menu<R = cocoa.NSMenu>(): R;
-    setMenu<R = void, P0 = cocoa.NSMenu>(_v: P0): R;
+    headerViewController<R = NSViewController>(): R;
+    setHeaderViewController<R = void, P0 = NSViewController>(_v: P0): R;
+    browser<R = NSBrowser>(): R;
+    setBrowser<R = void, P0 = NSBrowser>(_v: P0): R;
+    menu<R = NSMenu>(): R;
+    setMenu<R = void, P0 = NSMenu>(_v: P0): R;
     selectedRow<R = number>(): R;
-    selectedItems<R = cocoa.NSArray>(): R;
-    selectionIndexes<R = cocoa.NSIndexSet>(): R;
-    setSelectionIndexes<R = void, P0 = cocoa.NSIndexSet>(_v: P0): R;
+    selectedItems<R = NSArray>(): R;
+    selectionIndexes<R = NSIndexSet>(): R;
+    setSelectionIndexes<R = void, P0 = NSIndexSet>(_v: P0): R;
     firstValidRowIndex<R = number>(): R;
     numberOfRows<R = number>(): R;
     allowsTypeSelect<R = boolean>(): R;
@@ -58,7 +58,7 @@ declare namespace cocoa {
     setAllowsMultipleSelection<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface NSBrowserColumnViewController<T = any> extends cocoa.classes.NSViewController {
+    export interface NSBrowserColumnViewController<T = any> extends NSViewController {
       alloc<R = NSBrowserColumnViewController>(): R;
       new: <R = NSBrowserColumnViewController>() => R;
     }

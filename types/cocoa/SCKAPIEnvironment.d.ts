@@ -3,7 +3,7 @@
 declare namespace cocoa {
   export interface SCKAPIEnvironment<T = any> {
     // + SCKAPIEnvironment(Representable):
-    suffixRepresentation<R = cocoa.NSString>(): R;
+    suffixRepresentation<R = NSString>(): R;
   }
   namespace classes {
     export interface SCKAPIEnvironment<T = any> {

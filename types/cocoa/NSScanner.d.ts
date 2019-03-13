@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScanner<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol {
+  export interface NSScanner<T = any> extends NSObject, NSCopyingProtocol {
     isAtEnd<R = boolean>(): R;
     scanUpToString_intoString<R = boolean, P0 = unknown, P1 = unknown>(_scanUpToString: P0, _intoString: P1): R;
     scanString_intoString<R = boolean, P0 = unknown, P1 = unknown>(_scanString: P0, _intoString: P1): R;
@@ -27,19 +27,19 @@ declare namespace cocoa {
     setLocale<R = void, P0 = unknown>(_v: P0): R;
     caseSensitive<R = boolean>(): R;
     setCaseSensitive<R = void, P0 = boolean>(_v: P0): R;
-    charactersToBeSkipped<R = cocoa.NSCharacterSet>(): R;
-    setCharactersToBeSkipped<R = void, P0 = cocoa.NSCharacterSet>(_v: P0): R;
+    charactersToBeSkipped<R = NSCharacterSet>(): R;
+    setCharactersToBeSkipped<R = void, P0 = NSCharacterSet>(_v: P0): R;
     scanLocation<R = number>(): R;
     setScanLocation<R = void, P0 = number>(_v: P0): R;
-    string<R = cocoa.NSString>(): R;
+    string<R = NSString>(): R;
   }
   namespace classes {
-    export interface NSScanner<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol {
+    export interface NSScanner<T = any> extends NSObject, NSCopyingProtocol {
       alloc<R = NSScanner>(): R;
       new: <R = NSScanner>() => R;
       localizedScannerWithString<R = unknown, P0 = unknown>(_localizedScannerWithString: P0): R;
       scannerWithString<R = unknown, P0 = unknown>(_scannerWithString: P0): R;
-      allocWithZone<R = unknown, P0 = cocoa._NSZone>(_allocWithZone: P0): R;
+      allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
     }
   }
 }

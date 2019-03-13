@@ -1,21 +1,21 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTileScrollingInfoLayer<T = any> extends cocoa.CALayer, cocoa.CALayerDelegateProtocol {
+  export interface NSTileScrollingInfoLayer<T = any> extends CALayer, CALayerDelegateProtocol {
     layoutSublayers<R = void>(): R;
     _updateTileRepresentation<R = void>(): R;
     display<R = void>(): R;
     dealloc<R = void>(): R;
     init<R = unknown>(): R;
-    tileLayer<R = cocoa._NSTiledLayer>(): R;
-    setTileLayer<R = void, P0 = cocoa._NSTiledLayer>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    tileLayer<R = _NSTiledLayer>(): R;
+    setTileLayer<R = void, P0 = _NSTiledLayer>(_v: P0): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSTileScrollingInfoLayer<T = any> extends cocoa.classes.CALayer, cocoa.classes.CALayerDelegateProtocol {  }
+    export interface NSTileScrollingInfoLayer<T = any> extends CALayer, CALayerDelegateProtocol {  }
   }
 }
 

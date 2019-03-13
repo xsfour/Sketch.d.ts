@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarItemView<T = any> extends cocoa.NSTouchBarItemContainerView {}
+  export interface NSTouchBarItemView<T = any> extends NSTouchBarItemContainerView {}
   namespace classes {
-    export interface NSTouchBarItemView<T = any> extends cocoa.classes.NSTouchBarItemContainerView {
+    export interface NSTouchBarItemView<T = any> extends NSTouchBarItemContainerView {
       alloc<R = NSTouchBarItemView>(): R;
       new: <R = NSTouchBarItemView>() => R;
     }

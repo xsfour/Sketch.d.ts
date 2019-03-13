@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSTextLayerTextView<T = any> extends cocoa.NSTextView {
+  export interface MSTextLayerTextView<T = any> extends NSTextView {
     cxx_destruct<R = void>(): R;
-    rectForSelectedRange<R = cocoa.CGRect>(): R;
+    rectForSelectedRange<R = CGRect>(): R;
     selectSimilar<R = void, P0 = unknown>(_selectSimilar: P0): R;
     hideSelectionTimerFired<R = void, P0 = unknown>(_hideSelectionTimerFired: P0): R;
     makeHideSelectionTimer<R = unknown>(): R;
@@ -17,17 +17,17 @@ declare namespace cocoa {
     changeColorWithColor<R = void, P0 = unknown>(_changeColorWithColor: P0): R;
     canvasColorSpace<R = unknown>(): R;
     documentColorSpace<R = unknown>(): R;
-    selectedTextAttributesBackup<R = cocoa.NSDictionary>(): R;
-    setSelectedTextAttributesBackup<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
-    hideSelectionTimer<R = cocoa.NSTimer>(): R;
-    setHideSelectionTimer<R = void, P0 = cocoa.NSTimer>(_v: P0): R;
-    textLayerTextViewDelegate<R = cocoa.MSTextLayerTextViewDelegate>(): R;
-    setTextLayerTextViewDelegate<R = void, P0 = cocoa.MSTextLayerTextViewDelegate>(_v: P0): R;
-    hangingGlyphView<R = cocoa.MSHangingGlyphView>(): R;
-    setHangingGlyphView<R = void, P0 = cocoa.MSHangingGlyphView>(_v: P0): R;
+    selectedTextAttributesBackup<R = NSDictionary>(): R;
+    setSelectedTextAttributesBackup<R = void, P0 = NSDictionary>(_v: P0): R;
+    hideSelectionTimer<R = NSTimer>(): R;
+    setHideSelectionTimer<R = void, P0 = NSTimer>(_v: P0): R;
+    textLayerTextViewDelegate<R = MSTextLayerTextViewDelegate>(): R;
+    setTextLayerTextViewDelegate<R = void, P0 = MSTextLayerTextViewDelegate>(_v: P0): R;
+    hangingGlyphView<R = MSHangingGlyphView>(): R;
+    setHangingGlyphView<R = void, P0 = MSHangingGlyphView>(_v: P0): R;
   }
   namespace classes {
-    export interface MSTextLayerTextView<T = any> extends cocoa.classes.NSTextView {
+    export interface MSTextLayerTextView<T = any> extends NSTextView {
       alloc<R = MSTextLayerTextView>(): R;
       new: <R = MSTextLayerTextView>() => R;
     }

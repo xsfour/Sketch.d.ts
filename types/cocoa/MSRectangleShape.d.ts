@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSRectangleShape<T = any> extends cocoa._MSRectangleShape {
+  export interface MSRectangleShape<T = any> extends _MSRectangleShape {
     canFlatten<R = boolean>(): R;
     resetPointsIfNecessary<R = void>(): R;
     resetPathsToRoundedRect<R = void>(): R;
@@ -19,15 +19,15 @@ declare namespace cocoa {
     smoothCornersAllowed<R = boolean>(): R;
     hasSmoothCorners<R = boolean>(): R;
     setHasSmoothCorners<R = void, P0 = boolean>(_v: P0): R;
-    cornerRadiusString<R = cocoa.NSString>(): R;
-    setCornerRadiusString<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    cornerRadiusString<R = NSString>(): R;
+    setCornerRadiusString<R = void, P0 = NSString>(_v: P0): R;
     cornerRadiusFloat<R = number>(): R;
     setCornerRadiusFloat<R = void, P0 = number>(_v: P0): R;
     normalizedExponentialCornerRadius<R = number>(): R;
     setNormalizedExponentialCornerRadius<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface MSRectangleShape<T = any> extends cocoa.classes._MSRectangleShape {
+    export interface MSRectangleShape<T = any> extends _MSRectangleShape {
       alloc<R = MSRectangleShape>(): R;
       new: <R = MSRectangleShape>() => R;
       validateComponentString<R = boolean, P0 = unknown>(_validateComponentString: P0): R;

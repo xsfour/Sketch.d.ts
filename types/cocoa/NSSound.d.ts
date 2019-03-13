@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSound<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol, cocoa.NSSecureCodingProtocol, cocoa.NSPasteboardReadingProtocol, cocoa.NSPasteboardWritingProtocol {
+  export interface NSSound<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol, NSPasteboardReadingProtocol, NSPasteboardWritingProtocol {
     cxx_destruct<R = void>(): R;
     _systemSoundIDCreateIfNecessary<R = number, P0 = boolean>(__systemSoundIDCreateIfNecessary: P0): R;
     writeToPasteboard<R = void, P0 = unknown>(_writeToPasteboard: P0): R;
@@ -41,24 +41,24 @@ declare namespace cocoa {
     volume<R = number>(): R;
     setVolume<R = void, P0 = number>(_v: P0): R;
     playing<R = boolean>(): R;
-    playbackDeviceIdentifier<R = cocoa.NSString>(): R;
-    setPlaybackDeviceIdentifier<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    name<R = cocoa.NSString>(): R;
-    delegate<R = cocoa.NSSoundDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSSoundDelegate>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    playbackDeviceIdentifier<R = NSString>(): R;
+    setPlaybackDeviceIdentifier<R = void, P0 = NSString>(_v: P0): R;
+    name<R = NSString>(): R;
+    delegate<R = NSSoundDelegate>(): R;
+    setDelegate<R = void, P0 = NSSoundDelegate>(_v: P0): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSSound<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol, cocoa.classes.NSSecureCodingProtocol, cocoa.classes.NSPasteboardReadingProtocol, cocoa.classes.NSPasteboardWritingProtocol {
+    export interface NSSound<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol, NSPasteboardReadingProtocol, NSPasteboardWritingProtocol {
       alloc<R = NSSound>(): R;
       new: <R = NSSound>() => R;
       _alertType<R = number>(): R;
       _setAlertType<R = void, P0 = number>(__setAlertType: P0): R;
       _areUISoundEffectsEnabled<R = boolean>(): R;
-      playSound_flags_completionHandler<R = boolean, P0 = unknown, P1 = number, P2 = cocoa.CDUnknownBlockType>(_playSound: P0, _flags: P1, _completionHandler: P2): R;
+      playSound_flags_completionHandler<R = boolean, P0 = unknown, P1 = number, P2 = CDUnknownBlockType>(_playSound: P0, _flags: P1, _completionHandler: P2): R;
       canInitWithPasteboard<R = boolean, P0 = unknown>(_canInitWithPasteboard: P0): R;
       _forceSoundEngine<R = void, P0 = number>(__forceSoundEngine: P0): R;
       soundNamed<R = unknown, P0 = unknown>(_soundNamed: P0): R;

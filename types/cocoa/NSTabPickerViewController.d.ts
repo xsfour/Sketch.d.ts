@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTabPickerViewController<T = any> extends cocoa.NSViewController, cocoa.NSVisualTabPickerDelegateProtocol {
+  export interface NSTabPickerViewController<T = any> extends NSViewController, NSVisualTabPickerDelegateProtocol {
     cxx_destruct<R = void>(): R;
     selectItemAtIndex<R = void, P0 = number>(_selectItemAtIndex: P0): R;
     entryOrExitAnimationInProgress<R = boolean>(): R;
@@ -16,23 +16,23 @@ declare namespace cocoa {
     showTabPickerAnimated_includeNewButton<R = void, P0 = boolean, P1 = boolean>(_showTabPickerAnimated: P0, _includeNewButton: P1): R;
     _makeTabPickerViewControllerWithTabBarSnapshot_includeNewButton<R = void, P0 = unknown, P1 = boolean>(__makeTabPickerViewControllerWithTabBarSnapshot: P0, _includeNewButton: P1): R;
     handleMagnification<R = void, P0 = unknown>(_handleMagnification: P0): R;
-    windowSnapshots<R = cocoa.NSMapTable>(): R;
-    selectedItem<R = cocoa.NSTabBarItem>(): R;
-    setSelectedItem<R = void, P0 = cocoa.NSTabBarItem>(_v: P0): R;
-    delegate<R = cocoa.NSTabPickerDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSTabPickerDelegate>(_v: P0): R;
+    windowSnapshots<R = NSMapTable>(): R;
+    selectedItem<R = NSTabBarItem>(): R;
+    setSelectedItem<R = void, P0 = NSTabBarItem>(_v: P0): R;
+    delegate<R = NSTabPickerDelegate>(): R;
+    setDelegate<R = void, P0 = NSTabPickerDelegate>(_v: P0): R;
     isShown<R = boolean>(): R;
     setIsShown<R = void, P0 = boolean>(_v: P0): R;
-    tabPickerController<R = cocoa.NSVisualTabPickerRootViewController>(): R;
-    setTabPickerController<R = void, P0 = cocoa.NSVisualTabPickerRootViewController>(_v: P0): R;
+    tabPickerController<R = NSVisualTabPickerRootViewController>(): R;
+    setTabPickerController<R = void, P0 = NSVisualTabPickerRootViewController>(_v: P0): R;
     isClosing<R = boolean>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSTabPickerViewController<T = any> extends cocoa.classes.NSViewController, cocoa.classes.NSVisualTabPickerDelegateProtocol {
+    export interface NSTabPickerViewController<T = any> extends NSViewController, NSVisualTabPickerDelegateProtocol {
       alloc<R = NSTabPickerViewController>(): R;
       new: <R = NSTabPickerViewController>() => R;
     }

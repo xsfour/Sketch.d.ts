@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMediumLightAppearance<T = any> extends cocoa.NSBuiltinAppearance {}
+  export interface NSMediumLightAppearance<T = any> extends NSBuiltinAppearance {}
   namespace classes {
-    export interface NSMediumLightAppearance<T = any> extends cocoa.classes.NSBuiltinAppearance {
+    export interface NSMediumLightAppearance<T = any> extends NSBuiltinAppearance {
       alloc<R = NSMediumLightAppearance>(): R;
       new: <R = NSMediumLightAppearance>() => R;
     }

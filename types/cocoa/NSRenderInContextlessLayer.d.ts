@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSRenderInContextlessLayer<T = any> extends cocoa._NSBackingLayer {
-    renderInContext<R = void, P0 = cocoa.CGContext>(_renderInContext: P0): R;
+  export interface NSRenderInContextlessLayer<T = any> extends _NSBackingLayer {
+    renderInContext<R = void, P0 = CGContext>(_renderInContext: P0): R;
   }
   namespace classes {
-    export interface NSRenderInContextlessLayer<T = any> extends cocoa.classes._NSBackingLayer {  }
+    export interface NSRenderInContextlessLayer<T = any> extends _NSBackingLayer {  }
   }
 }
 

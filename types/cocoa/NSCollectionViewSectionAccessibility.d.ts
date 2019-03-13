@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCollectionViewSectionAccessibility<T = any> extends cocoa.NSAccessibilityElement {
+  export interface NSCollectionViewSectionAccessibility<T = any> extends NSAccessibilityElement {
     setAccessibilityVisibleChildren<R = void, P0 = unknown>(_setAccessibilityVisibleChildren: P0): R;
     description<R = unknown>(): R;
     accessibilityPerformScrollToVisible<R = boolean>(): R;
@@ -39,13 +39,13 @@ declare namespace cocoa {
     accessibilityInvalidateLayout<R = void>(): R;
     accessibilityDidEndScrolling<R = void>(): R;
     initWithCollectionViewAccessibility<R = unknown, P0 = unknown>(_initWithCollectionViewAccessibility: P0): R;
-    supplementaryFooterElement<R = cocoa.NSCollectionViewFooterAccessibility>(): R;
-    supplementaryHeaderElement<R = cocoa.NSCollectionViewHeaderAccessibility>(): R;
-    collectionView<R = cocoa.NSCollectionView>(): R;
-    collectionViewAccessibility<R = cocoa.NSCollectionViewAccessibilityHelper>(): R;
+    supplementaryFooterElement<R = NSCollectionViewFooterAccessibility>(): R;
+    supplementaryHeaderElement<R = NSCollectionViewHeaderAccessibility>(): R;
+    collectionView<R = NSCollectionView>(): R;
+    collectionViewAccessibility<R = NSCollectionViewAccessibilityHelper>(): R;
   }
   namespace classes {
-    export interface NSCollectionViewSectionAccessibility<T = any> extends cocoa.classes.NSAccessibilityElement {
+    export interface NSCollectionViewSectionAccessibility<T = any> extends NSAccessibilityElement {
       alloc<R = NSCollectionViewSectionAccessibility>(): R;
       new: <R = NSCollectionViewSectionAccessibility>() => R;
     }

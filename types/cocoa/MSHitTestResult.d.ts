@@ -1,15 +1,15 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSHitTestResult<T = any> extends cocoa.NSObject {
+  export interface MSHitTestResult<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
-    overrideRepresentation<R = cocoa.MSOverrideRepresentation>(): R;
-    setOverrideRepresentation<R = void, P0 = cocoa.MSOverrideRepresentation>(_v: P0): R;
-    layer<R = cocoa.MSLayer>(): R;
-    setLayer<R = void, P0 = cocoa.MSLayer>(_v: P0): R;
+    overrideRepresentation<R = MSOverrideRepresentation>(): R;
+    setOverrideRepresentation<R = void, P0 = MSOverrideRepresentation>(_v: P0): R;
+    layer<R = MSLayer>(): R;
+    setLayer<R = void, P0 = MSLayer>(_v: P0): R;
   }
   namespace classes {
-    export interface MSHitTestResult<T = any> extends cocoa.classes.NSObject {
+    export interface MSHitTestResult<T = any> extends NSObject {
       alloc<R = MSHitTestResult>(): R;
       new: <R = MSHitTestResult>() => R;
     }

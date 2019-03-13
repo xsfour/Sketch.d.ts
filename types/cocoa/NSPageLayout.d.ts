@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPageLayout<T = any> extends cocoa.NSObject {
+  export interface NSPageLayout<T = any> extends NSObject {
     runModal<R = number>(): R;
     runModalWithPrintInfo<R = number, P0 = unknown>(_runModalWithPrintInfo: P0): R;
     _sheet_didEndWithResult_contextInfo<R = void, P0 = unknown, P1 = number, P2 = void>(__sheet: P0, _didEndWithResult: P1, _contextInfo: P2): R;
@@ -20,11 +20,11 @@ declare namespace cocoa {
     pickedOrientation<R = void, P0 = unknown>(_pickedOrientation: P0): R;
     pickedButton<R = void, P0 = unknown>(_pickedButton: P0): R;
     convertOldFactor_newFactor<R = void, P0 = number, P1 = number>(_convertOldFactor: P0, _newFactor: P1): R;
-    printInfo<R = cocoa.NSPrintInfo>(): R;
-    accessoryControllers<R = cocoa.NSArray>(): R;
+    printInfo<R = NSPrintInfo>(): R;
+    accessoryControllers<R = NSArray>(): R;
   }
   namespace classes {
-    export interface NSPageLayout<T = any> extends cocoa.classes.NSObject {
+    export interface NSPageLayout<T = any> extends NSObject {
       alloc<R = NSPageLayout>(): R;
       new: <R = NSPageLayout>() => R;
       pageLayout<R = unknown>(): R;

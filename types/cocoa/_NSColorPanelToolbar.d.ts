@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSColorPanelToolbar<T = any> extends cocoa.NSToolbar, cocoa.NSToolbarDelegateProtocol {
+  export interface _NSColorPanelToolbar<T = any> extends NSToolbar, NSToolbarDelegateProtocol {
     syncWithRemoteToolbars<R = void>(): R;
     _colorPickerWithIdentifier<R = unknown, P0 = unknown>(__colorPickerWithIdentifier: P0): R;
     _itemIdentifiersForColorPickers<R = unknown, P0 = unknown>(__itemIdentifiersForColorPickers: P0): R;
@@ -20,13 +20,13 @@ declare namespace cocoa {
     setRefusesToBeShown<R = void, P0 = boolean>(_setRefusesToBeShown: P0): R;
     setVisible<R = void, P0 = boolean>(_setVisible: P0): R;
     initWithIdentifier_forColorPanel<R = unknown, P0 = unknown, P1 = unknown>(_initWithIdentifier: P0, _forColorPanel: P1): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface _NSColorPanelToolbar<T = any> extends cocoa.classes.NSToolbar, cocoa.classes.NSToolbarDelegateProtocol {
+    export interface _NSColorPanelToolbar<T = any> extends NSToolbar, NSToolbarDelegateProtocol {
       alloc<R = _NSColorPanelToolbar>(): R;
       new: <R = _NSColorPanelToolbar>() => R;
       attachToolbarToColorPanel<R = void, P0 = unknown>(_attachToolbarToColorPanel: P0): R;

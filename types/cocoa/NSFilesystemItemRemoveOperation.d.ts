@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFilesystemItemRemoveOperation<T = any> extends cocoa.NSOperation {
+  export interface NSFilesystemItemRemoveOperation<T = any> extends NSOperation {
     initWithPath<R = unknown, P0 = unknown>(_initWithPath: P0): R;
     _filtersUnderbars<R = boolean>(): R;
     _setFilterUnderbars<R = void, P0 = boolean>(__setFilterUnderbars: P0): R;
@@ -11,7 +11,7 @@ declare namespace cocoa {
     delegate<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSFilesystemItemRemoveOperation<T = any> extends cocoa.classes.NSOperation {
+    export interface NSFilesystemItemRemoveOperation<T = any> extends NSOperation {
       alloc<R = NSFilesystemItemRemoveOperation>(): R;
       new: <R = NSFilesystemItemRemoveOperation>() => R;
       filesystemItemRemoveOperationWithPath<R = unknown, P0 = unknown>(_filesystemItemRemoveOperationWithPath: P0): R;

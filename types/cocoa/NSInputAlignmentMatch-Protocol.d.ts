@@ -1,14 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSInputAlignmentMatchProtocol<T = any> extends cocoa.NSObjectProtocol {
-    alignmentGuide<R = cocoa.NSInputAlignmentGuide>(): R;
-    itemRepresentativeGuide<R = cocoa.NSInputAlignmentGuide>(): R;
-    item<R = cocoa.NSInputAlignmentItem>(): R;
+  export interface NSInputAlignmentMatchProtocol<T = any> extends NSObjectProtocol {
+    alignmentGuide<R = NSInputAlignmentGuide>(): R;
+    itemRepresentativeGuide<R = NSInputAlignmentGuide>(): R;
+    item<R = NSInputAlignmentItem>(): R;
   }
   namespace classes {
-    export interface NSInputAlignmentMatchProtocol<T = any> extends cocoa.classes.NSObjectProtocol {  }
+    export interface NSInputAlignmentMatchProtocol<T = any> extends NSObjectProtocol {  }
   }
 }
-
-declare const NSInputAlignmentMatchProtocol: cocoa.classes.NSInputAlignmentMatchProtocol;

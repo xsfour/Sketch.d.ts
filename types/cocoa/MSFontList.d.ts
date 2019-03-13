@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFontList<T = any> extends cocoa.NSObject {
+  export interface MSFontList<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     prepareForDealloc<R = void>(): R;
     stopCachingFonts<R = void>(): R;
@@ -16,18 +16,18 @@ declare namespace cocoa {
     findSystemFonts<R = void>(): R;
     reloadFonts<R = void>(): R;
     initWithDocumentData<R = unknown, P0 = unknown>(_initWithDocumentData: P0): R;
-    filterFonts<R = cocoa.NSArray>(): R;
-    setFilterFonts<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    allFonts<R = cocoa.NSArray>(): R;
-    setAllFonts<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    systemFonts<R = cocoa.NSArray>(): R;
-    setSystemFonts<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    documentData<R = cocoa.MSDocumentData>(): R;
-    documentFontFamilyNames<R = cocoa.NSArray>(): R;
-    setDocumentFontFamilyNames<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    filterFonts<R = NSArray>(): R;
+    setFilterFonts<R = void, P0 = NSArray>(_v: P0): R;
+    allFonts<R = NSArray>(): R;
+    setAllFonts<R = void, P0 = NSArray>(_v: P0): R;
+    systemFonts<R = NSArray>(): R;
+    setSystemFonts<R = void, P0 = NSArray>(_v: P0): R;
+    documentData<R = MSDocumentData>(): R;
+    documentFontFamilyNames<R = NSArray>(): R;
+    setDocumentFontFamilyNames<R = void, P0 = NSArray>(_v: P0): R;
   }
   namespace classes {
-    export interface MSFontList<T = any> extends cocoa.classes.NSObject {
+    export interface MSFontList<T = any> extends NSObject {
       alloc<R = MSFontList>(): R;
       new: <R = MSFontList>() => R;
       initialize<R = void>(): R;

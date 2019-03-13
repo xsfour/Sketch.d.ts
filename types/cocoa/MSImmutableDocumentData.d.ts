@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutableDocumentData<T = any> extends cocoa._MSImmutableDocumentData, cocoa.MSLayerContainmentProtocol, cocoa.MSDocumentDataProtocol {
+  export interface MSImmutableDocumentData<T = any> extends _MSImmutableDocumentData, MSLayerContainmentProtocol, MSDocumentDataProtocol {
     pagesAndArtboardsMetadata<R = unknown>(): R;
     allSymbols<R = unknown>(): R;
     localSymbols<R = unknown>(): R;
@@ -35,24 +35,24 @@ declare namespace cocoa {
     trackColors_withinHierarchyOf_excludeForeignSymbols<R = void, P0 = unknown, P1 = unknown, P2 = boolean>(_trackColors: P0, _withinHierarchyOf: P1, _excludeForeignSymbols: P2): R;
     trackColors_excludeForeignSymbols<R = void, P0 = unknown, P1 = boolean>(_trackColors: P0, _excludeForeignSymbols: P1): R;
     colorFinderQueue<R = unknown>(): R;
-    findFrequentColorsForUse_maximumColorCount_ignoreAlpha_excludeForeignSymbols_completionHandler<R = void, P0 = number, P1 = number, P2 = boolean, P3 = boolean, P4 = cocoa.CDUnknownBlockType>(_findFrequentColorsForUse: P0, _maximumColorCount: P1, _ignoreAlpha: P2, _excludeForeignSymbols: P3, _completionHandler: P4): R;
+    findFrequentColorsForUse_maximumColorCount_ignoreAlpha_excludeForeignSymbols_completionHandler<R = void, P0 = number, P1 = number, P2 = boolean, P3 = boolean, P4 = CDUnknownBlockType>(_findFrequentColorsForUse: P0, _maximumColorCount: P1, _ignoreAlpha: P2, _excludeForeignSymbols: P3, _completionHandler: P4): R;
     prepareForRender<R = void, P0 = unknown>(_prepareForRender: P0): R;
-    symbolsIndexedByID<R = cocoa.NSDictionary>(): R;
-    setSymbolsIndexedByID<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
-    selectedOverrides<R = cocoa.NSArray>(): R;
-    metadata<R = cocoa.NSDictionary>(): R;
-    setMetadata<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
-    currentPage<R = cocoa.MSImmutablePage>(): R;
+    symbolsIndexedByID<R = NSDictionary>(): R;
+    setSymbolsIndexedByID<R = void, P0 = NSDictionary>(_v: P0): R;
+    selectedOverrides<R = NSArray>(): R;
+    metadata<R = NSDictionary>(): R;
+    setMetadata<R = void, P0 = NSDictionary>(_v: P0): R;
+    currentPage<R = MSImmutablePage>(): R;
     containsUnavailableFontNames<R = boolean>(): R;
-    unavailableFontNames<R = cocoa.NSSet>(): R;
-    fontNames<R = cocoa.NSSet>(): R;
-    pages<R = cocoa.NSArray>(): R;
+    unavailableFontNames<R = NSSet>(): R;
+    fontNames<R = NSSet>(): R;
+    pages<R = NSArray>(): R;
   }
   namespace classes {
-    export interface MSImmutableDocumentData<T = any> extends cocoa.classes._MSImmutableDocumentData, cocoa.classes.MSLayerContainmentProtocol, cocoa.classes.MSDocumentDataProtocol {
+    export interface MSImmutableDocumentData<T = any> extends _MSImmutableDocumentData, MSLayerContainmentProtocol, MSDocumentDataProtocol {
       alloc<R = MSImmutableDocumentData>(): R;
       new: <R = MSImmutableDocumentData>() => R;
-      loadDocumentDataWithMetadata_loadBlock<R = unknown, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(_loadDocumentDataWithMetadata: P0, _loadBlock: P1): R;
+      loadDocumentDataWithMetadata_loadBlock<R = unknown, P0 = unknown, P1 = CDUnknownBlockType>(_loadDocumentDataWithMetadata: P0, _loadBlock: P1): R;
     }
   }
 }

@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSOrderedSetChanges<T = any> extends cocoa.NSMutableOrderedSet, cocoa.NSCopyingProtocol {
+  export interface NSOrderedSetChanges<T = any> extends NSMutableOrderedSet, NSCopyingProtocol {
     addChange<R = void, P0 = unknown>(_addChange: P0): R;
-    enumerateChanges_usingBlock<R = void, P0 = number, P1 = cocoa.CDUnknownBlockType>(_enumerateChanges: P0, _usingBlock: P1): R;
-    enumerateChangesUsingBlock<R = void, P0 = cocoa.CDUnknownBlockType>(_enumerateChangesUsingBlock: P0): R;
+    enumerateChanges_usingBlock<R = void, P0 = number, P1 = CDUnknownBlockType>(_enumerateChanges: P0, _usingBlock: P1): R;
+    enumerateChangesUsingBlock<R = void, P0 = CDUnknownBlockType>(_enumerateChangesUsingBlock: P0): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     _toManyPropertyType<R = number>(): R;
@@ -21,8 +21,8 @@ declare namespace cocoa {
     changeCount<R = number>(): R;
   }
   namespace classes {
-    export interface NSOrderedSetChanges<T = any> extends cocoa.classes.NSMutableOrderedSet, cocoa.classes.NSCopyingProtocol {
-      allocWithZone<R = unknown, P0 = cocoa._NSZone>(_allocWithZone: P0): R;
+    export interface NSOrderedSetChanges<T = any> extends NSMutableOrderedSet, NSCopyingProtocol {
+      allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
     }
   }
 }

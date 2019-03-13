@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSCollectionViewDataSourceAdapter<T = any> extends cocoa.NSObject, cocoa.NSCollectionViewDataSourceProtocol {
+  export interface _NSCollectionViewDataSourceAdapter<T = any> extends NSObject, NSCollectionViewDataSourceProtocol {
     dealloc<R = void>(): R;
     moveItemAtIndexPath_toIndexPath<R = void, P0 = unknown, P1 = unknown>(_moveItemAtIndexPath: P0, _toIndexPath: P1): R;
     reloadItemsAtIndexPaths<R = void, P0 = unknown>(_reloadItemsAtIndexPaths: P0): R;
@@ -32,19 +32,19 @@ declare namespace cocoa {
     _beginBatchUpdate<R = void>(): R;
     _flushCacheIfScheduled<R = void>(): R;
     _scheduleFlushCacheAtNextLayoutBecauseReloadDataWasInvoked<R = void>(): R;
-    collectionView<R = cocoa.NSCollectionView>(): R;
-    setCollectionView<R = void, P0 = cocoa.NSCollectionView>(_v: P0): R;
-    dataSource<R = cocoa.NSCollectionViewDataSource>(): R;
-    setDataSource<R = void, P0 = cocoa.NSCollectionViewDataSource>(_v: P0): R;
+    collectionView<R = NSCollectionView>(): R;
+    setCollectionView<R = void, P0 = NSCollectionView>(_v: P0): R;
+    dataSource<R = NSCollectionViewDataSource>(): R;
+    setDataSource<R = void, P0 = NSCollectionViewDataSource>(_v: P0): R;
     sectionCount<R = number>(): R;
     setSectionCount<R = void, P0 = number>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface _NSCollectionViewDataSourceAdapter<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCollectionViewDataSourceProtocol {
+    export interface _NSCollectionViewDataSourceAdapter<T = any> extends NSObject, NSCollectionViewDataSourceProtocol {
       alloc<R = _NSCollectionViewDataSourceAdapter>(): R;
       new: <R = _NSCollectionViewDataSourceAdapter>() => R;
     }

@@ -8,5 +8,3 @@ declare namespace cocoa {
     export interface MSStylePartProtocol<T = any> {  }
   }
 }
-
-declare const MSStylePartProtocol: cocoa.classes.MSStylePartProtocol;

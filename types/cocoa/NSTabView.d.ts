@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTabView<T = any> extends cocoa.NSView {
+  export interface NSTabView<T = any> extends NSView {
     cxx_destruct<R = void>(): R;
     _doTestTabSwitchingPerformance<R = void>(): R;
     _testTabSwitchingPerformance<R = void>(): R;
@@ -32,7 +32,7 @@ declare namespace cocoa {
     _setPressedTabViewItem<R = void, P0 = unknown>(__setPressedTabViewItem: P0): R;
     _systemColorChanged<R = void, P0 = unknown>(__systemColorChanged: P0): R;
     _invalidateTabsCache<R = void>(): R;
-    _frameSizeForContentSize<R = cocoa.CGSize, P0 = cocoa.CGSize>(__frameSizeForContentSize: P0): R;
+    _frameSizeForContentSize<R = CGSize, P0 = CGSize>(__frameSizeForContentSize: P0): R;
     _resizeSelectedTabViewItem<R = void>(): R;
     _layoutTabs<R = void>(): R;
     _doLayoutTabs<R = number, P0 = number>(__doLayoutTabs: P0): R;
@@ -47,31 +47,31 @@ declare namespace cocoa {
     tabViewMinimumSizeConstraint<R = unknown>(): R;
     _old_initWithCoder_NSTabView<R = unknown, P0 = unknown>(__old_initWithCoder_NSTabView: P0): R;
     _old_encodeWithCoder_NSTabView<R = void, P0 = unknown>(__old_encodeWithCoder_NSTabView: P0): R;
-    _drawBackgroundAndBorderInRect<R = void, P0 = cocoa.CGRect>(__drawBackgroundAndBorderInRect: P0): R;
-    _drawBezelBorderInBounds_clipRect<R = void, P0 = cocoa.CGRect, P1 = cocoa.CGRect>(__drawBezelBorderInBounds: P0, _clipRect: P1): R;
-    _frameForBezelBorder<R = cocoa.CGRect>(): R;
-    _coreUIDrawBezelInRect_withClip_flipped<R = boolean, P0 = cocoa.CGRect, P1 = cocoa.CGRect, P2 = boolean>(__coreUIDrawBezelInRect: P0, _withClip: P1, _flipped: P2): R;
-    _createCoreUIMaskOnlyBezelOptionsForTabItem<R = cocoa.__CFDictionary, P0 = unknown>(__createCoreUIMaskOnlyBezelOptionsForTabItem: P0): R;
-    _createCoreUIBezelOptionsFlipped<R = cocoa.__CFDictionary, P0 = boolean>(__createCoreUIBezelOptionsFlipped: P0): R;
-    _hackFrameToMatchLegacyBezelRect<R = cocoa.CGRect, P0 = cocoa.CGRect>(__hackFrameToMatchLegacyBezelRect: P0): R;
+    _drawBackgroundAndBorderInRect<R = void, P0 = CGRect>(__drawBackgroundAndBorderInRect: P0): R;
+    _drawBezelBorderInBounds_clipRect<R = void, P0 = CGRect, P1 = CGRect>(__drawBezelBorderInBounds: P0, _clipRect: P1): R;
+    _frameForBezelBorder<R = CGRect>(): R;
+    _coreUIDrawBezelInRect_withClip_flipped<R = boolean, P0 = CGRect, P1 = CGRect, P2 = boolean>(__coreUIDrawBezelInRect: P0, _withClip: P1, _flipped: P2): R;
+    _createCoreUIMaskOnlyBezelOptionsForTabItem<R = __CFDictionary, P0 = unknown>(__createCoreUIMaskOnlyBezelOptionsForTabItem: P0): R;
+    _createCoreUIBezelOptionsFlipped<R = __CFDictionary, P0 = boolean>(__createCoreUIBezelOptionsFlipped: P0): R;
+    _hackFrameToMatchLegacyBezelRect<R = CGRect, P0 = CGRect>(__hackFrameToMatchLegacyBezelRect: P0): R;
     allowsVibrancy<R = boolean>(): R;
-    _coreUIDrawTab_withState_inRect<R = boolean, P0 = unknown, P1 = number, P2 = cocoa.CGRect>(__coreUIDrawTab: P0, _withState: P1, _inRect: P2): R;
-    _copyCoreUIOptionsForTabViewItem_withState_maskOnly_inRect<R = cocoa.__CFDictionary, P0 = unknown, P1 = number, P2 = boolean, P3 = cocoa.CGRect>(__copyCoreUIOptionsForTabViewItem: P0, _withState: P1, _maskOnly: P2, _inRect: P3): R;
-    _tabRectForTabViewItem<R = cocoa.CGRect, P0 = unknown>(__tabRectForTabViewItem: P0): R;
-    _themeTabAndBarArea<R = cocoa.CGRect>(): R;
-    _themeContentRect<R = cocoa.CGRect>(): R;
-    _minimumSizeNeedForTabItemLabel<R = cocoa.CGSize, P0 = unknown>(__minimumSizeNeedForTabItemLabel: P0): R;
-    _nominalSizeNeedForTabItemLabel<R = cocoa.CGSize, P0 = unknown>(__nominalSizeNeedForTabItemLabel: P0): R;
-    _titleRectForTabViewItem<R = cocoa.CGRect, P0 = unknown>(__titleRectForTabViewItem: P0): R;
-    _labelRectForTabRect_forItem<R = cocoa.CGRect, P0 = cocoa.CGRect, P1 = unknown>(__labelRectForTabRect: P0, _forItem: P1): R;
-    _drawTabViewItem_inRect<R = void, P0 = unknown, P1 = cocoa.CGRect>(__drawTabViewItem: P0, _inRect: P1): R;
-    _drawThemeTab_withState_inRect<R = void, P0 = unknown, P1 = number, P2 = cocoa.CGRect>(__drawThemeTab: P0, _withState: P1, _inRect: P2): R;
-    _drawTabsInDirtyRect<R = void, P0 = cocoa.CGRect>(__drawTabsInDirtyRect: P0): R;
+    _coreUIDrawTab_withState_inRect<R = boolean, P0 = unknown, P1 = number, P2 = CGRect>(__coreUIDrawTab: P0, _withState: P1, _inRect: P2): R;
+    _copyCoreUIOptionsForTabViewItem_withState_maskOnly_inRect<R = __CFDictionary, P0 = unknown, P1 = number, P2 = boolean, P3 = CGRect>(__copyCoreUIOptionsForTabViewItem: P0, _withState: P1, _maskOnly: P2, _inRect: P3): R;
+    _tabRectForTabViewItem<R = CGRect, P0 = unknown>(__tabRectForTabViewItem: P0): R;
+    _themeTabAndBarArea<R = CGRect>(): R;
+    _themeContentRect<R = CGRect>(): R;
+    _minimumSizeNeedForTabItemLabel<R = CGSize, P0 = unknown>(__minimumSizeNeedForTabItemLabel: P0): R;
+    _nominalSizeNeedForTabItemLabel<R = CGSize, P0 = unknown>(__nominalSizeNeedForTabItemLabel: P0): R;
+    _titleRectForTabViewItem<R = CGRect, P0 = unknown>(__titleRectForTabViewItem: P0): R;
+    _labelRectForTabRect_forItem<R = CGRect, P0 = CGRect, P1 = unknown>(__labelRectForTabRect: P0, _forItem: P1): R;
+    _drawTabViewItem_inRect<R = void, P0 = unknown, P1 = CGRect>(__drawTabViewItem: P0, _inRect: P1): R;
+    _drawThemeTab_withState_inRect<R = void, P0 = unknown, P1 = number, P2 = CGRect>(__drawThemeTab: P0, _withState: P1, _inRect: P2): R;
+    _drawTabsInDirtyRect<R = void, P0 = CGRect>(__drawTabsInDirtyRect: P0): R;
     _removeTabButtonSubviewIfNeeded<R = void>(): R;
     _addTabViewButtonsIfNeeded<R = void>(): R;
     _updateTabViewButtons<R = void>(): R;
     _updateTabViewButtonsFrame<R = void>(): R;
-    _tabViewButtonFrame<R = cocoa.CGRect>(): R;
+    _tabViewButtonFrame<R = CGRect>(): R;
     _setTabViewButtons<R = void, P0 = unknown>(__setTabViewButtons: P0): R;
     _tabViewButtons<R = unknown>(): R;
     _usesSubviewsForButtons<R = boolean>(): R;
@@ -81,7 +81,7 @@ declare namespace cocoa {
     _backgroundBezelMaskLayer<R = unknown>(): R;
     _setBackgroundBezelLayer<R = void, P0 = unknown>(__setBackgroundBezelLayer: P0): R;
     _backgroundBezelLayer<R = unknown>(): R;
-    _bezelLayerFrame<R = cocoa.CGRect>(): R;
+    _bezelLayerFrame<R = CGRect>(): R;
     _addAndUpdateBezelLayerIfNeeded<R = void>(): R;
     _performTabLayoutIfNeeded<R = void>(): R;
     _redisplayForStateChange<R = void>(): R;
@@ -91,7 +91,7 @@ declare namespace cocoa {
     _currentBackgroundColor<R = unknown>(): R;
     _setKeyboardFocusRingNeedsDisplayForTabViewItem<R = void, P0 = unknown>(__setKeyboardFocusRingNeedsDisplayForTabViewItem: P0): R;
     _setNeedsDisplayForTabViewItem<R = void, P0 = unknown>(__setNeedsDisplayForTabViewItem: P0): R;
-    _tabRectAdjustedForOverlap<R = cocoa.CGRect, P0 = cocoa.CGRect>(__tabRectAdjustedForOverlap: P0): R;
+    _tabRectAdjustedForOverlap<R = CGRect, P0 = CGRect>(__tabRectAdjustedForOverlap: P0): R;
     performClick<R = void, P0 = unknown>(_performClick: P0): R;
     moveDown<R = void, P0 = unknown>(_moveDown: P0): R;
     moveUp<R = void, P0 = unknown>(_moveUp: P0): R;
@@ -104,7 +104,7 @@ declare namespace cocoa {
     _previousNextTab_loop<R = void, P0 = number, P1 = boolean>(__previousNextTab: P0, _loop: P1): R;
     _findPreviousNextTab_loop_invertForR2L_startingAtTabItem<R = number, P0 = number, P1 = boolean, P2 = boolean, P3 = unknown>(__findPreviousNextTab: P0, _loop: P1, _invertForR2L: P2, _startingAtTabItem: P3): R;
     mouseDownCanMoveWindow<R = boolean>(): R;
-    tabViewItemAtPoint<R = unknown, P0 = cocoa.CGPoint>(_tabViewItemAtPoint: P0): R;
+    tabViewItemAtPoint<R = unknown, P0 = CGPoint>(_tabViewItemAtPoint: P0): R;
     selectPreviousTabViewItem<R = void, P0 = unknown>(_selectPreviousTabViewItem: P0): R;
     selectNextTabViewItem<R = void, P0 = unknown>(_selectNextTabViewItem: P0): R;
     selectLastTabViewItem<R = void, P0 = unknown>(_selectLastTabViewItem: P0): R;
@@ -158,10 +158,10 @@ declare namespace cocoa {
     accessibilityTabsAttribute<R = unknown>(): R;
     accessibilityIsValueAttributeSettable<R = boolean>(): R;
     accessibilityValueAttribute<R = unknown>(): R;
-    contentRect<R = cocoa.CGRect>(): R;
-    minimumSize<R = cocoa.CGSize>(): R;
-    delegate<R = cocoa.NSTabViewDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSTabViewDelegate>(_v: P0): R;
+    contentRect<R = CGRect>(): R;
+    minimumSize<R = CGSize>(): R;
+    delegate<R = NSTabViewDelegate>(): R;
+    setDelegate<R = void, P0 = NSTabViewDelegate>(_v: P0): R;
     controlSize<R = number>(): R;
     setControlSize<R = void, P0 = number>(_v: P0): R;
     controlTint<R = number>(): R;
@@ -172,19 +172,19 @@ declare namespace cocoa {
     setTabPosition<R = void, P0 = number>(_v: P0): R;
     tabViewType<R = number>(): R;
     setTabViewType<R = void, P0 = number>(_v: P0): R;
-    font<R = cocoa.NSFont>(): R;
-    setFont<R = void, P0 = cocoa.NSFont>(_v: P0): R;
+    font<R = NSFont>(): R;
+    setFont<R = void, P0 = NSFont>(_v: P0): R;
     allowsTruncatedLabels<R = boolean>(): R;
     setAllowsTruncatedLabels<R = void, P0 = boolean>(_v: P0): R;
     drawsBackground<R = boolean>(): R;
     setDrawsBackground<R = void, P0 = boolean>(_v: P0): R;
     numberOfTabViewItems<R = number>(): R;
-    selectedTabViewItem<R = cocoa.NSTabViewItem>(): R;
-    tabViewItems<R = cocoa.NSArray>(): R;
-    setTabViewItems<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    selectedTabViewItem<R = NSTabViewItem>(): R;
+    tabViewItems<R = NSArray>(): R;
+    setTabViewItems<R = void, P0 = NSArray>(_v: P0): R;
   }
   namespace classes {
-    export interface NSTabView<T = any> extends cocoa.classes.NSView {
+    export interface NSTabView<T = any> extends NSView {
       alloc<R = NSTabView>(): R;
       new: <R = NSTabView>() => R;
       _setUsesToolTipsWhenTruncated<R = void, P0 = boolean>(__setUsesToolTipsWhenTruncated: P0): R;

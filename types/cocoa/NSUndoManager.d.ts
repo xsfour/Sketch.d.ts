@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUndoManager<T = any> extends cocoa.NSObject {
+  export interface NSUndoManager<T = any> extends NSObject {
     redoMenuTitleForUndoActionName<R = unknown, P0 = unknown>(_redoMenuTitleForUndoActionName: P0): R;
     undoMenuTitleForUndoActionName<R = unknown, P0 = unknown>(_undoMenuTitleForUndoActionName: P0): R;
     setActionIsDiscardable<R = void, P0 = boolean>(_setActionIsDiscardable: P0): R;
     setActionName<R = void, P0 = unknown>(_setActionName: P0): R;
     _setGroupIdentifier<R = void, P0 = unknown>(__setGroupIdentifier: P0): R;
-    registerUndoWithTarget_handler<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(_registerUndoWithTarget: P0, _handler: P1): R;
+    registerUndoWithTarget_handler<R = void, P0 = unknown, P1 = CDUnknownBlockType>(_registerUndoWithTarget: P0, _handler: P1): R;
     registerUndoWithTarget_selector_object<R = void, P0 = unknown, P1 = string, P2 = unknown>(_registerUndoWithTarget: P0, _selector: P1, _object: P2): R;
     _forwardTargetInvocation<R = void, P0 = unknown>(__forwardTargetInvocation: P0): R;
     _registerUndoObject<R = void, P0 = unknown>(__registerUndoObject: P0): R;
@@ -34,18 +34,18 @@ declare namespace cocoa {
     _processEndOfEventNotification<R = void, P0 = unknown>(__processEndOfEventNotification: P0): R;
     _shouldCoalesceTypingForText<R = boolean, P0 = unknown>(__shouldCoalesceTypingForText: P0): R;
     _undoStack<R = unknown>(): R;
-    redoMenuItemTitle<R = cocoa.NSString>(): R;
-    undoMenuItemTitle<R = cocoa.NSString>(): R;
+    redoMenuItemTitle<R = NSString>(): R;
+    undoMenuItemTitle<R = NSString>(): R;
     redoActionIsDiscardable<R = boolean>(): R;
     undoActionIsDiscardable<R = boolean>(): R;
-    redoActionName<R = cocoa.NSString>(): R;
-    undoActionName<R = cocoa.NSString>(): R;
+    redoActionName<R = NSString>(): R;
+    undoActionName<R = NSString>(): R;
     redoing<R = boolean>(): R;
     undoing<R = boolean>(): R;
     canRedo<R = boolean>(): R;
     canUndo<R = boolean>(): R;
-    runLoopModes<R = cocoa.NSArray>(): R;
-    setRunLoopModes<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    runLoopModes<R = NSArray>(): R;
+    setRunLoopModes<R = void, P0 = NSArray>(_v: P0): R;
     levelsOfUndo<R = number>(): R;
     setLevelsOfUndo<R = void, P0 = number>(_v: P0): R;
     groupsByEvent<R = boolean>(): R;
@@ -54,7 +54,7 @@ declare namespace cocoa {
     groupingLevel<R = number>(): R;
   }
   namespace classes {
-    export interface NSUndoManager<T = any> extends cocoa.classes.NSObject {
+    export interface NSUndoManager<T = any> extends NSObject {
       alloc<R = NSUndoManager>(): R;
       new: <R = NSUndoManager>() => R;
       _endTopLevelGroupings<R = void>(): R;

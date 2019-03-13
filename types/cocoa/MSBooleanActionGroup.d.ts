@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBooleanActionGroup<T = any> extends cocoa.MSActionGroup {
+  export interface MSBooleanActionGroup<T = any> extends MSActionGroup {
     label<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSBooleanActionGroup<T = any> extends cocoa.classes.MSActionGroup {
+    export interface MSBooleanActionGroup<T = any> extends MSActionGroup {
       alloc<R = MSBooleanActionGroup>(): R;
       new: <R = MSBooleanActionGroup>() => R;
     }

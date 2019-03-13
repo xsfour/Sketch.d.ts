@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDataDetector<T = any> extends cocoa.NSRegularExpression {
+  export interface NSDataDetector<T = any> extends NSRegularExpression {
     numberOfCaptureGroups<R = number>(): R;
     options<R = number>(): R;
     pattern<R = unknown>(): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     checkingTypes<R = number>(): R;
   }
   namespace classes {
-    export interface NSDataDetector<T = any> extends cocoa.classes.NSRegularExpression {
+    export interface NSDataDetector<T = any> extends NSRegularExpression {
       alloc<R = NSDataDetector>(): R;
       new: <R = NSDataDetector>() => R;
       dataDetectorWithTypes_error<R = unknown, P0 = number, P1 = unknown>(_dataDetectorWithTypes: P0, _error: P1): R;

@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUnitElectricCurrent<T = any> extends cocoa.NSDimension, cocoa.NSSecureCodingProtocol {}
+  export interface NSUnitElectricCurrent<T = any> extends NSDimension, NSSecureCodingProtocol {}
   namespace classes {
-    export interface NSUnitElectricCurrent<T = any> extends cocoa.classes.NSDimension, cocoa.classes.NSSecureCodingProtocol {
+    export interface NSUnitElectricCurrent<T = any> extends NSDimension, NSSecureCodingProtocol {
       alloc<R = NSUnitElectricCurrent>(): R;
       new: <R = NSUnitElectricCurrent>() => R;
       microamperes<R = unknown>(): R;

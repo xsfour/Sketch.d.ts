@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSKeyValueFastMutableArray<T = any> extends cocoa.NSKeyValueMutableArray {
+  export interface NSKeyValueFastMutableArray<T = any> extends NSKeyValueMutableArray {
     replaceObjectsAtIndexes_withObjects<R = void, P0 = unknown, P1 = unknown>(_replaceObjectsAtIndexes: P0, _withObjects: P1): R;
     replaceObjectAtIndex_withObject<R = void, P0 = number, P1 = unknown>(_replaceObjectAtIndex: P0, _withObject: P1): R;
     removeObjectsAtIndexes<R = void, P0 = unknown>(_removeObjectsAtIndexes: P0): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     addObject<R = void, P0 = unknown>(_addObject: P0): R;
   }
   namespace classes {
-    export interface NSKeyValueFastMutableArray<T = any> extends cocoa.classes.NSKeyValueMutableArray {  }
+    export interface NSKeyValueFastMutableArray<T = any> extends NSKeyValueMutableArray {  }
   }
 }
 

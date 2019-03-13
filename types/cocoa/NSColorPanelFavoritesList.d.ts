@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorPanelFavoritesList<T = any> extends cocoa.NSView, cocoa.NSUserInterfaceValidationsProtocol, cocoa.NSCollectionViewDelegateProtocol, cocoa.NSCollectionViewDataSourceProtocol {
+  export interface NSColorPanelFavoritesList<T = any> extends NSView, NSUserInterfaceValidationsProtocol, NSCollectionViewDelegateProtocol, NSCollectionViewDataSourceProtocol {
     storeIndexForColorIndex<R = number, P0 = number>(_storeIndexForColorIndex: P0): R;
     _favoritesDidChange<R = void, P0 = unknown>(__favoritesDidChange: P0): R;
     setSavedColors<R = void, P0 = unknown>(_setSavedColors: P0): R;
@@ -27,16 +27,16 @@ declare namespace cocoa {
     deleteForward<R = void, P0 = unknown>(_deleteForward: P0): R;
     deleteCurrentColorAndSelectNext<R = void>(): R;
     deleteCurrentColorAndSelectPrevious<R = void>(): R;
-    colorSelectionHandler<R = cocoa.CDUnknownBlockType>(): R;
-    setColorSelectionHandler<R = void, P0 = cocoa.CDUnknownBlockType>(_v: P0): R;
-    presentedColors<R = cocoa.NSArray>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    colorSelectionHandler<R = CDUnknownBlockType>(): R;
+    setColorSelectionHandler<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
+    presentedColors<R = NSArray>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSColorPanelFavoritesList<T = any> extends cocoa.classes.NSView, cocoa.classes.NSUserInterfaceValidationsProtocol, cocoa.classes.NSCollectionViewDelegateProtocol, cocoa.classes.NSCollectionViewDataSourceProtocol {
+    export interface NSColorPanelFavoritesList<T = any> extends NSView, NSUserInterfaceValidationsProtocol, NSCollectionViewDelegateProtocol, NSCollectionViewDataSourceProtocol {
       alloc<R = NSColorPanelFavoritesList>(): R;
       new: <R = NSColorPanelFavoritesList>() => R;
     }

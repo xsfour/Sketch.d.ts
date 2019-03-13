@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSProgressValues<T = any> extends cocoa.NSObject, cocoa.NSSecureCodingProtocol {
+  export interface NSProgressValues<T = any> extends NSObject, NSSecureCodingProtocol {
     overallFraction<R = unknown>(): R;
     setTotalUnitCount<R = void, P0 = number>(_setTotalUnitCount: P0): R;
     totalUnitCount<R = number>(): R;
@@ -18,10 +18,10 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     description<R = unknown>(): R;
     _indentedDescription<R = unknown, P0 = number>(__indentedDescription: P0): R;
-    copyWithZone<R = unknown, P0 = cocoa._NSZone>(_copyWithZone: P0): R;
+    copyWithZone<R = unknown, P0 = _NSZone>(_copyWithZone: P0): R;
   }
   namespace classes {
-    export interface NSProgressValues<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSSecureCodingProtocol {
+    export interface NSProgressValues<T = any> extends NSObject, NSSecureCodingProtocol {
       alloc<R = NSProgressValues>(): R;
       new: <R = NSProgressValues>() => R;
       decodableClasses<R = unknown>(): R;

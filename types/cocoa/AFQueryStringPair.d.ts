@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface AFQueryStringPair<T = any> extends cocoa.NSObject {
+  export interface AFQueryStringPair<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     URLEncodedStringValue<R = unknown>(): R;
     initWithField_value<R = unknown, P0 = unknown, P1 = unknown>(_initWithField: P0, _value: P1): R;
@@ -11,7 +11,7 @@ declare namespace cocoa {
     setField<R = void, P0 = unknown>(_v: P0): R;
   }
   namespace classes {
-    export interface AFQueryStringPair<T = any> extends cocoa.classes.NSObject {
+    export interface AFQueryStringPair<T = any> extends NSObject {
       alloc<R = AFQueryStringPair>(): R;
       new: <R = AFQueryStringPair>() => R;
     }

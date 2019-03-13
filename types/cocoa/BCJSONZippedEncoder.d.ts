@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCJSONZippedEncoder<T = any> extends cocoa.BCJSONEncoder {
+  export interface BCJSONZippedEncoder<T = any> extends BCJSONEncoder {
     cxx_destruct<R = void>(): R;
     finishWriting<R = void>(): R;
     writeData_length<R = void, P0 = void, P1 = number>(_writeData: P0, _length: P1): R;
@@ -15,15 +15,15 @@ declare namespace cocoa {
     finishEncodingError<R = boolean, P0 = unknown>(_finishEncodingError: P0): R;
     encodeRawData_toSubpath_error<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown>(_encodeRawData: P0, _toSubpath: P1, _error: P2): R;
     encodeObject_toSubpath_error<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown>(_encodeObject: P0, _toSubpath: P1, _error: P2): R;
-    objectsToEncode<R = cocoa.NSMutableArray>(): R;
-    setObjectsToEncode<R = void, P0 = cocoa.NSMutableArray>(_v: P0): R;
+    objectsToEncode<R = NSMutableArray>(): R;
+    setObjectsToEncode<R = void, P0 = NSMutableArray>(_v: P0): R;
     hasOpenFile<R = boolean>(): R;
     setHasOpenFile<R = void, P0 = boolean>(_v: P0): R;
     zip<R = void>(): R;
     setZip<R = void, P0 = void>(_v: P0): R;
   }
   namespace classes {
-    export interface BCJSONZippedEncoder<T = any> extends cocoa.classes.BCJSONEncoder {
+    export interface BCJSONZippedEncoder<T = any> extends BCJSONEncoder {
       zipEncoderForWritingAtURL<R = unknown, P0 = unknown>(_zipEncoderForWritingAtURL: P0): R;
     }
   }

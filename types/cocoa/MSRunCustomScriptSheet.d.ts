@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSRunCustomScriptSheet<T = any> extends cocoa.CHSheetController, cocoa.NSTextViewDelegateProtocol {
+  export interface MSRunCustomScriptSheet<T = any> extends CHSheetController, NSTextViewDelegateProtocol {
     redoAction<R = void, P0 = unknown>(_redoAction: P0): R;
     undoAction<R = void, P0 = unknown>(_undoAction: P0): R;
     scriptingMenuAction<R = void, P0 = unknown>(_scriptingMenuAction: P0): R;
@@ -13,21 +13,21 @@ declare namespace cocoa {
     observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
     commandToRunWithName<R = unknown, P0 = unknown>(_commandToRunWithName: P0): R;
     awakeFromNib<R = void>(): R;
-    touchBarRun<R = cocoa.NSButton>(): R;
-    setTouchBarRun<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    touchBarSave<R = cocoa.NSButton>(): R;
-    setTouchBarSave<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    undoManager<R = cocoa.NSUndoManager>(): R;
-    setUndoManager<R = void, P0 = cocoa.NSUndoManager>(_v: P0): R;
-    logField<R = cocoa.NSTextView>(): R;
-    setLogField<R = void, P0 = cocoa.NSTextView>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    touchBarRun<R = NSButton>(): R;
+    setTouchBarRun<R = void, P0 = NSButton>(_v: P0): R;
+    touchBarSave<R = NSButton>(): R;
+    setTouchBarSave<R = void, P0 = NSButton>(_v: P0): R;
+    undoManager<R = NSUndoManager>(): R;
+    setUndoManager<R = void, P0 = NSUndoManager>(_v: P0): R;
+    logField<R = NSTextView>(): R;
+    setLogField<R = void, P0 = NSTextView>(_v: P0): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSRunCustomScriptSheet<T = any> extends cocoa.classes.CHSheetController, cocoa.classes.NSTextViewDelegateProtocol {
+    export interface MSRunCustomScriptSheet<T = any> extends CHSheetController, NSTextViewDelegateProtocol {
       alloc<R = MSRunCustomScriptSheet>(): R;
       new: <R = MSRunCustomScriptSheet>() => R;
     }

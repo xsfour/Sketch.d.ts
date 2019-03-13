@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPredicateEditorRowTemplate<T = any> extends cocoa.NSObject, cocoa.NSCodingProtocol, cocoa.NSCopyingProtocol {
+  export interface NSPredicateEditorRowTemplate<T = any> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
     description<R = unknown>(): R;
     _setTemplateViews<R = void, P0 = unknown>(__setTemplateViews: P0): R;
     dealloc<R = void>(): R;
@@ -31,17 +31,17 @@ declare namespace cocoa {
     _displayValueForCompoundPredicateType<R = unknown, P0 = number>(__displayValueForCompoundPredicateType: P0): R;
     _displayValueForPredicateOperator<R = unknown, P0 = unknown>(__displayValueForPredicateOperator: P0): R;
     _templateType<R = number>(): R;
-    templateViews<R = cocoa.NSArray>(): R;
+    templateViews<R = NSArray>(): R;
     rightExpressionAttributeType<R = number>(): R;
     modifier<R = number>(): R;
     options<R = number>(): R;
-    compoundTypes<R = cocoa.NSArray>(): R;
-    rightExpressions<R = cocoa.NSArray>(): R;
-    leftExpressions<R = cocoa.NSArray>(): R;
-    operators<R = cocoa.NSArray>(): R;
+    compoundTypes<R = NSArray>(): R;
+    rightExpressions<R = NSArray>(): R;
+    leftExpressions<R = NSArray>(): R;
+    operators<R = NSArray>(): R;
   }
   namespace classes {
-    export interface NSPredicateEditorRowTemplate<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCodingProtocol, cocoa.classes.NSCopyingProtocol {
+    export interface NSPredicateEditorRowTemplate<T = any> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
       alloc<R = NSPredicateEditorRowTemplate>(): R;
       new: <R = NSPredicateEditorRowTemplate>() => R;
       _bestMatchForPredicate_inTemplates_quality<R = unknown, P0 = unknown, P1 = unknown, P2 = number>(__bestMatchForPredicate: P0, _inTemplates: P1, _quality: P2): R;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAlignLayersUnion<T = any> extends cocoa.BCRect {
+  export interface MSAlignLayersUnion<T = any> extends BCRect {
     cxx_destruct<R = void>(): R;
     makeOriginIntegral<R = void>(): R;
     frame<R = unknown>(): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     setLayers<R = void, P0 = unknown>(_v: P0): R;
   }
   namespace classes {
-    export interface MSAlignLayersUnion<T = any> extends cocoa.classes.BCRect {
+    export interface MSAlignLayersUnion<T = any> extends BCRect {
       unionWithLayers<R = unknown, P0 = unknown>(_unionWithLayers: P0): R;
     }
   }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSDictionaryControllerKeyValuePair<T = any> extends cocoa.NSDictionaryControllerKeyValuePair {
+  export interface _NSDictionaryControllerKeyValuePair<T = any> extends NSDictionaryControllerKeyValuePair {
     isExplicitlyIncluded<R = boolean>(): R;
     _markAsExplicitlyIncluded<R = void, P0 = boolean>(__markAsExplicitlyIncluded: P0): R;
     value<R = unknown>(): R;
@@ -19,11 +19,11 @@ declare namespace cocoa {
     _validateAnyKey_error<R = boolean, P0 = unknown, P1 = unknown>(__validateAnyKey: P0, _error: P1): R;
     _setWithoutNotificationLocalizedKey_key<R = void, P0 = unknown, P1 = unknown>(__setWithoutNotificationLocalizedKey: P0, _key: P1): R;
     dealloc<R = void>(): R;
-    dictionaryController<R = cocoa.NSDictionaryController>(): R;
-    setDictionaryController<R = void, P0 = cocoa.NSDictionaryController>(_v: P0): R;
+    dictionaryController<R = NSDictionaryController>(): R;
+    setDictionaryController<R = void, P0 = NSDictionaryController>(_v: P0): R;
   }
   namespace classes {
-    export interface _NSDictionaryControllerKeyValuePair<T = any> extends cocoa.classes.NSDictionaryControllerKeyValuePair {
+    export interface _NSDictionaryControllerKeyValuePair<T = any> extends NSDictionaryControllerKeyValuePair {
       alloc<R = _NSDictionaryControllerKeyValuePair>(): R;
       new: <R = _NSDictionaryControllerKeyValuePair>() => R;
     }

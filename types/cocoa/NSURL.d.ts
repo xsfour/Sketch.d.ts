@@ -3,7 +3,7 @@
 declare namespace cocoa {
   export interface NSURL<T = any> {
     // + NSURL(NSItemProvider,NSKeyValueObservingCustomization,NSPasteboardSupport,NSScriptAppleEventConversion,NSURL,NSURLExtras,NSURLExtrasInternal,NSURLPathUtilities,NSURLPromisedItems,NSURL_NSSavePanel,PrivateNSPasteboardSupport,_NSDocumentSecurityScopeHelpers,MSRemoteLibrary,SMKExportRequest):
-    loadDataWithTypeIdentifier_forItemProviderCompletionHandler<R = unknown, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(_loadDataWithTypeIdentifier: P0, _forItemProviderCompletionHandler: P1): R;
+    loadDataWithTypeIdentifier_forItemProviderCompletionHandler<R = unknown, P0 = unknown, P1 = CDUnknownBlockType>(_loadDataWithTypeIdentifier: P0, _forItemProviderCompletionHandler: P1): R;
     _URLArchive<R = unknown>(): R;
     pasteboardPropertyListForType<R = unknown, P0 = unknown>(_pasteboardPropertyListForType: P0): R;
     writingOptionsForType_pasteboard<R = number, P0 = unknown, P1 = unknown>(_writingOptionsForType: P0, _pasteboard: P1): R;
@@ -41,7 +41,7 @@ declare namespace cocoa {
     standardizedURL<R = unknown>(): R;
     absoluteURL<R = unknown>(): R;
     absoluteString<R = unknown>(): R;
-    copyWithZone<R = unknown, P0 = cocoa._NSZone>(_copyWithZone: P0): R;
+    copyWithZone<R = unknown, P0 = _NSZone>(_copyWithZone: P0): R;
     description<R = unknown>(): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
@@ -69,8 +69,8 @@ declare namespace cocoa {
     relativeString<R = unknown>(): R;
     dealloc<R = void>(): R;
     _freeClients<R = void>(): R;
-    _clientsCreatingIfNecessary<R = cocoa.__CFDictionary, P0 = boolean>(__clientsCreatingIfNecessary: P0): R;
-    _cfurl<R = cocoa.__CFURL>(): R;
+    _clientsCreatingIfNecessary<R = __CFDictionary, P0 = boolean>(__clientsCreatingIfNecessary: P0): R;
+    _cfurl<R = __CFURL>(): R;
     initWithString_relativeToURL<R = unknown, P0 = unknown, P1 = unknown>(_initWithString: P0, _relativeToURL: P1): R;
     _cfTypeID<R = number>(): R;
     isMemberOfClass<R = boolean, P0 = unknown>(_isMemberOfClass: P0): R;
@@ -97,7 +97,7 @@ declare namespace cocoa {
     _valueFromFaultDictionary_forKey<R = unknown, P0 = unknown, P1 = unknown>(__valueFromFaultDictionary: P0, _forKey: P1): R;
     checkPromisedItemIsReachableAndReturnError<R = boolean, P0 = unknown>(_checkPromisedItemIsReachableAndReturnError: P0): R;
     _fixedUpSideFaultError<R = unknown, P0 = unknown>(__fixedUpSideFaultError: P0): R;
-    _performWithPhysicalURL<R = void, P0 = cocoa.CDUnknownBlockType>(__performWithPhysicalURL: P0): R;
+    _performWithPhysicalURL<R = void, P0 = CDUnknownBlockType>(__performWithPhysicalURL: P0): R;
     _promiseExtensionRelease<R = void, P0 = number>(__promiseExtensionRelease: P0): R;
     _promiseExtensionConsume<R = number>(): R;
     _urlForNSOpenSavePanelIsMobileDocumentsURL<R = boolean>(): R;
@@ -108,24 +108,24 @@ declare namespace cocoa {
     _NSDocument_setHasKnownSecurityScope<R = void, P0 = boolean>(__NSDocument_setHasKnownSecurityScope: P0): R;
     isEqualToCloudURL<R = boolean, P0 = unknown>(_isEqualToCloudURL: P0): R;
     exportQueryParameters<R = unknown>(): R;
-    writableTypeIdentifiersForItemProvider<R = cocoa.NSArray>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    writableTypeIdentifiersForItemProvider<R = NSArray>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
-    URLByResolvingSymlinksInPath<R = cocoa.NSURL>(): R;
-    URLByStandardizingPath<R = cocoa.NSURL>(): R;
-    URLByDeletingPathExtension<R = cocoa.NSURL>(): R;
-    URLByDeletingLastPathComponent<R = cocoa.NSURL>(): R;
-    pathExtension<R = cocoa.NSString>(): R;
-    lastPathComponent<R = cocoa.NSString>(): R;
-    pathComponents<R = cocoa.NSArray>(): R;
-    mirrorCacheKey<R = cocoa.NSString>(): R;
-    exportImageType<R = cocoa.NSString>(): R;
-    constrainedExportSize<R = cocoa.CGSize>(): R;
+    URLByResolvingSymlinksInPath<R = NSURL>(): R;
+    URLByStandardizingPath<R = NSURL>(): R;
+    URLByDeletingPathExtension<R = NSURL>(): R;
+    URLByDeletingLastPathComponent<R = NSURL>(): R;
+    pathExtension<R = NSString>(): R;
+    lastPathComponent<R = NSString>(): R;
+    pathComponents<R = NSArray>(): R;
+    mirrorCacheKey<R = NSString>(): R;
+    exportImageType<R = NSString>(): R;
+    constrainedExportSize<R = CGSize>(): R;
     exportScale<R = number>(): R;
-    exportRect<R = cocoa.CGRect>(): R;
-    exportRootLayerID<R = cocoa.NSString>(): R;
+    exportRect<R = CGRect>(): R;
+    exportRootLayerID<R = NSString>(): R;
     isExportRequest<R = boolean>(): R;
   }
   namespace classes {
@@ -150,15 +150,15 @@ declare namespace cocoa {
       URLWithDataRepresentation_relativeToURL<R = unknown, P0 = unknown, P1 = unknown>(_URLWithDataRepresentation: P0, _relativeToURL: P1): R;
       URLWithString_relativeToURL<R = unknown, P0 = unknown, P1 = unknown>(_URLWithString: P0, _relativeToURL: P1): R;
       URLWithString<R = unknown, P0 = unknown>(_URLWithString: P0): R;
-      allocWithZone<R = unknown, P0 = cocoa._NSZone>(_allocWithZone: P0): R;
+      allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
       _web_URLWithComponents<R = unknown, P0 = unknown>(__web_URLWithComponents: P0): R;
       _web_URLWithString_relativeToURL<R = unknown, P0 = unknown, P1 = unknown>(__web_URLWithString: P0, _relativeToURL: P1): R;
       _URLWithData_relativeToURL<R = unknown, P0 = unknown, P1 = unknown>(__URLWithData: P0, _relativeToURL: P1): R;
       _URLWithDataAsString_relativeToURL<R = unknown, P0 = unknown, P1 = unknown>(__URLWithDataAsString: P0, _relativeToURL: P1): R;
       fileURLWithPathComponents<R = unknown, P0 = unknown>(_fileURLWithPathComponents: P0): R;
       _securityScopedURLFromPasteboard<R = unknown, P0 = unknown>(__securityScopedURLFromPasteboard: P0): R;
-      _convertedFileReferenceURLDataOrNil<R = unknown, P0 = cocoa.__CFData>(__convertedFileReferenceURLDataOrNil: P0): R;
-      _URLFromPasteboardNSData<R = unknown, P0 = cocoa.__CFData>(__URLFromPasteboardNSData: P0): R;
+      _convertedFileReferenceURLDataOrNil<R = unknown, P0 = __CFData>(__convertedFileReferenceURLDataOrNil: P0): R;
+      _URLFromPasteboardNSData<R = unknown, P0 = __CFData>(__URLFromPasteboardNSData: P0): R;
     }
   }
 }

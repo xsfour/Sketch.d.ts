@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUIActivityDocumentManager<T = any> extends cocoa.NSObject {
+  export interface NSUIActivityDocumentManager<T = any> extends NSObject {
     documentDidChangeFileType<R = void, P0 = unknown>(_documentDidChangeFileType: P0): R;
     documentDidChangeFileURL<R = void, P0 = unknown>(_documentDidChangeFileURL: P0): R;
     documentDidClose<R = void, P0 = unknown>(_documentDidClose: P0): R;
@@ -13,7 +13,7 @@ declare namespace cocoa {
     documentIsUbiquitous<R = boolean, P0 = unknown>(_documentIsUbiquitous: P0): R;
   }
   namespace classes {
-    export interface NSUIActivityDocumentManager<T = any> extends cocoa.classes.NSObject {
+    export interface NSUIActivityDocumentManager<T = any> extends NSObject {
       alloc<R = NSUIActivityDocumentManager>(): R;
       new: <R = NSUIActivityDocumentManager>() => R;
       sharedManager<R = unknown>(): R;

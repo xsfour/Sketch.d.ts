@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCSparkleLicensedUpdateChecker<T = any> extends cocoa.NSObject {
+  export interface BCSparkleLicensedUpdateChecker<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     isUpdateInstalled<R = boolean, P0 = unknown>(_isUpdateInstalled: P0): R;
     compareBuildNumber_to<R = number, P0 = unknown, P1 = unknown>(_compareBuildNumber: P0, _to: P1): R;
@@ -13,17 +13,17 @@ declare namespace cocoa {
     isUpdateItemSupportedByOSVersion<R = boolean, P0 = unknown>(_isUpdateItemSupportedByOSVersion: P0): R;
     isUpdateItemSupportedByLicense<R = boolean, P0 = unknown>(_isUpdateItemSupportedByLicense: P0): R;
     initWithLicenseExpirationDate_buildNumber<R = unknown, P0 = unknown, P1 = unknown>(_initWithLicenseExpirationDate: P0, _buildNumber: P1): R;
-    buildNumber<R = cocoa.NSString>(): R;
-    expiryDate<R = cocoa.NSDate>(): R;
+    buildNumber<R = NSString>(): R;
+    expiryDate<R = NSDate>(): R;
     indexOfBestUpdate<R = number>(): R;
-    latestUnavailableBuildNumberBeforeUpdatingMacAndRenewing<R = cocoa.NSString>(): R;
-    latestUnavailableVersionBeforeUpdatingMacAndRenewing<R = cocoa.NSString>(): R;
-    latestUnavailableBuildNumberBeforeUpdatingMac<R = cocoa.NSString>(): R;
-    latestUnavailableVersionBeforeUpdatingMac<R = cocoa.NSString>(): R;
-    latestUnavailableBuildNumberBeforeRenewing<R = cocoa.NSString>(): R;
-    latestUnavailableVersionBeforeRenewing<R = cocoa.NSString>(): R;
-    latestUnavailableBuildNumber<R = cocoa.NSString>(): R;
-    latestUnavailableVersion<R = cocoa.NSString>(): R;
+    latestUnavailableBuildNumberBeforeUpdatingMacAndRenewing<R = NSString>(): R;
+    latestUnavailableVersionBeforeUpdatingMacAndRenewing<R = NSString>(): R;
+    latestUnavailableBuildNumberBeforeUpdatingMac<R = NSString>(): R;
+    latestUnavailableVersionBeforeUpdatingMac<R = NSString>(): R;
+    latestUnavailableBuildNumberBeforeRenewing<R = NSString>(): R;
+    latestUnavailableVersionBeforeRenewing<R = NSString>(): R;
+    latestUnavailableBuildNumber<R = NSString>(): R;
+    latestUnavailableVersion<R = NSString>(): R;
     numberOfUpdatesRequiringHostUpdateAndRenewal<R = number>(): R;
     setNumberOfUpdatesRequiringHostUpdateAndRenewal<R = void, P0 = number>(_v: P0): R;
     numberOfUpdatesRequiringHostUpdate<R = number>(): R;
@@ -34,7 +34,7 @@ declare namespace cocoa {
     numberOfUnavailableReleases<R = number>(): R;
   }
   namespace classes {
-    export interface BCSparkleLicensedUpdateChecker<T = any> extends cocoa.classes.NSObject {
+    export interface BCSparkleLicensedUpdateChecker<T = any> extends NSObject {
       alloc<R = BCSparkleLicensedUpdateChecker>(): R;
       new: <R = BCSparkleLicensedUpdateChecker>() => R;
       sparkleCheckerWithLicenseExpirationDate_buildNumber_appcastResults<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_sparkleCheckerWithLicenseExpirationDate: P0, _buildNumber: P1, _appcastResults: P2): R;

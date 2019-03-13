@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAppleScript<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol {
+  export interface NSAppleScript<T = any> extends NSObject, NSCopyingProtocol {
     executeAppleEvent_error<R = unknown, P0 = unknown, P1 = unknown>(_executeAppleEvent: P0, _error: P1): R;
     executeAndReturnError<R = unknown, P0 = unknown>(_executeAndReturnError: P0): R;
     compileAndReturnError<R = boolean, P0 = unknown>(_compileAndReturnError: P0): R;
@@ -15,16 +15,16 @@ declare namespace cocoa {
     _initWithData_error<R = unknown, P0 = unknown, P1 = unknown>(__initWithData: P0, _error: P1): R;
     _compiledScriptID<R = number>(): R;
     compiled<R = boolean>(): R;
-    source<R = cocoa.NSString>(): R;
+    source<R = NSString>(): R;
     // + NSAppleScript(NSExtensions):
-    richTextSource<R = cocoa.NSAttributedString>(): R;
+    richTextSource<R = NSAttributedString>(): R;
   }
   namespace classes {
-    export interface NSAppleScript<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol {
+    export interface NSAppleScript<T = any> extends NSObject, NSCopyingProtocol {
       alloc<R = NSAppleScript>(): R;
       new: <R = NSAppleScript>() => R;
       _infoForOSAError<R = unknown, P0 = number>(__infoForOSAError: P0): R;
-      _defaultScriptingComponent<R = cocoa.ComponentInstanceRecord>(): R;
+      _defaultScriptingComponent<R = ComponentInstanceRecord>(): R;
       // + NSAppleScript(NSExtensions):
       _attributedStringFromDescriptor<R = unknown, P0 = unknown>(__attributedStringFromDescriptor: P0): R;
     }

@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface SVGGroupElement<T = any> extends cocoa._SVGGroupElement {}
+  export interface SVGGroupElement<T = any> extends _SVGGroupElement {}
   namespace classes {
-    export interface SVGGroupElement<T = any> extends cocoa.classes._SVGGroupElement {
+    export interface SVGGroupElement<T = any> extends _SVGGroupElement {
       alloc<R = SVGGroupElement>(): R;
       new: <R = SVGGroupElement>() => R;
     }

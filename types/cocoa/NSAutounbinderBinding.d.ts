@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAutounbinderBinding<T = any> extends cocoa.NSWeakAutounbinderBinding {}
+  export interface NSAutounbinderBinding<T = any> extends NSWeakAutounbinderBinding {}
   namespace classes {
-    export interface NSAutounbinderBinding<T = any> extends cocoa.classes.NSWeakAutounbinderBinding {
+    export interface NSAutounbinderBinding<T = any> extends NSWeakAutounbinderBinding {
       alloc<R = NSAutounbinderBinding>(): R;
       new: <R = NSAutounbinderBinding>() => R;
     }

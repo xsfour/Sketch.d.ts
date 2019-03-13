@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPersistentUIEncodedReference<T = any> extends cocoa.NSObject, cocoa.NSCodingProtocol, cocoa.NSCopyingProtocol {
+  export interface NSPersistentUIEncodedReference<T = any> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
     description<R = unknown>(): R;
     hash<R = number>(): R;
     awakeAfterUsingCoder<R = unknown, P0 = unknown>(_awakeAfterUsingCoder: P0): R;
@@ -9,10 +9,10 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     windowID<R = number>(): R;
     setWindowID<R = void, P0 = number>(_v: P0): R;
-    persistentIdentifier<R = cocoa.NSString>(): R;
+    persistentIdentifier<R = NSString>(): R;
   }
   namespace classes {
-    export interface NSPersistentUIEncodedReference<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCodingProtocol, cocoa.classes.NSCopyingProtocol {
+    export interface NSPersistentUIEncodedReference<T = any> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
       alloc<R = NSPersistentUIEncodedReference>(): R;
       new: <R = NSPersistentUIEncodedReference>() => R;
       encodedReferenceToResponderMap<R = unknown>(): R;

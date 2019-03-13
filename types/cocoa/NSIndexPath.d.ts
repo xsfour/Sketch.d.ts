@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSIndexPath<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol, cocoa.NSSecureCodingProtocol {
+  export interface NSIndexPath<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     description<R = unknown>(): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     indexPathByAddingIndex<R = unknown, P0 = number>(_indexPathByAddingIndex: P0): R;
     indexPathByRemovingLastIndex<R = unknown>(): R;
     getIndexes<R = void, P0 = number>(_getIndexes: P0): R;
-    getIndexes_range<R = void, P0 = number, P1 = cocoa._NSRange>(_getIndexes: P0, _range: P1): R;
+    getIndexes_range<R = void, P0 = number, P1 = _NSRange>(_getIndexes: P0, _range: P1): R;
     indexAtPosition<R = number, P0 = number>(_indexAtPosition: P0): R;
     dealloc<R = void>(): R;
     initWithIndexes_length<R = unknown, P0 = number, P1 = number>(_initWithIndexes: P0, _length: P1): R;
@@ -27,7 +27,7 @@ declare namespace cocoa {
     component<R = number>(): R;
   }
   namespace classes {
-    export interface NSIndexPath<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol, cocoa.classes.NSSecureCodingProtocol {
+    export interface NSIndexPath<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
       alloc<R = NSIndexPath>(): R;
       new: <R = NSIndexPath>() => R;
       indexPathWithIndexes_length<R = unknown, P0 = number, P1 = number>(_indexPathWithIndexes: P0, _length: P1): R;

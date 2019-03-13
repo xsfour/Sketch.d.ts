@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSToolTipPanel<T = any> extends cocoa.NSPanel {
+  export interface NSToolTipPanel<T = any> extends NSPanel {
     _setLevelToShowAboveWindow<R = void, P0 = unknown>(__setLevelToShowAboveWindow: P0): R;
     canBecomeVisibleWithoutLogin<R = boolean>(): R;
     setToolTipString<R = void, P0 = unknown>(_setToolTipString: P0): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     hasShadow<R = boolean>(): R;
   }
   namespace classes {
-    export interface NSToolTipPanel<T = any> extends cocoa.classes.NSPanel {
+    export interface NSToolTipPanel<T = any> extends NSPanel {
       alloc<R = NSToolTipPanel>(): R;
       new: <R = NSToolTipPanel>() => R;
     }

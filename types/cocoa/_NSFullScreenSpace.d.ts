@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSFullScreenSpace<T = any> extends cocoa.NSObject, cocoa.NSAnimationDelegateProtocol {
+  export interface _NSFullScreenSpace<T = any> extends NSObject, NSAnimationDelegateProtocol {
     _showTileDividerWindows<R = void>(): R;
     _hideTileDividerWindows<R = void>(): R;
     _removeEastTileDividerWindow<R = void>(): R;
@@ -18,20 +18,20 @@ declare namespace cocoa {
     isLeftTile<R = boolean>(): R;
     siblingFullScreenSpaceFromThisApp<R = unknown>(): R;
     hasSiblingFromThisApp<R = boolean>(): R;
-    updateTileShapeAndReshapeContentsUsingTileFrame_ackServer<R = void, P0 = cocoa.CGRect, P1 = boolean>(_updateTileShapeAndReshapeContentsUsingTileFrame: P0, _ackServer: P1): R;
-    updateTileShapeAndReshapeContentsUsingTileFrame<R = void, P0 = cocoa.CGRect>(_updateTileShapeAndReshapeContentsUsingTileFrame: P0): R;
+    updateTileShapeAndReshapeContentsUsingTileFrame_ackServer<R = void, P0 = CGRect, P1 = boolean>(_updateTileShapeAndReshapeContentsUsingTileFrame: P0, _ackServer: P1): R;
+    updateTileShapeAndReshapeContentsUsingTileFrame<R = void, P0 = CGRect>(_updateTileShapeAndReshapeContentsUsingTileFrame: P0): R;
     _updateTileShapeAndReshapeContentsWithAckServer<R = void, P0 = boolean>(__updateTileShapeAndReshapeContentsWithAckServer: P0): R;
     updateTileShapeAndReshapeContents<R = void>(): R;
     updateTileShapeAndReshapeContentsWithoutNotifyingServer<R = void>(): R;
-    tileContentRect<R = cocoa.CGRect>(): R;
-    tileToolbarContentRect<R = cocoa.CGRect>(): R;
-    availableWallSpaceSize<R = cocoa.CGSize>(): R;
+    tileContentRect<R = CGRect>(): R;
+    tileToolbarContentRect<R = CGRect>(): R;
+    availableWallSpaceSize<R = CGSize>(): R;
     tileFillsScreen<R = boolean>(): R;
-    parentSpaceCGRect<R = cocoa.CGRect>(): R;
-    wallSpaceRect<R = cocoa.CGRect>(): R;
-    tileRect<R = cocoa.CGRect>(): R;
+    parentSpaceCGRect<R = CGRect>(): R;
+    wallSpaceRect<R = CGRect>(): R;
+    tileRect<R = CGRect>(): R;
     updateTileShape<R = void>(): R;
-    _cacheTileRect<R = void, P0 = cocoa.CGRect>(__cacheTileRect: P0): R;
+    _cacheTileRect<R = void, P0 = CGRect>(__cacheTileRect: P0): R;
     wallSpaceID<R = number>(): R;
     parentSpaceID<R = number>(): R;
     modelBackingIsValid<R = boolean>(): R;
@@ -61,7 +61,7 @@ declare namespace cocoa {
     tileOverlayWindow<R = unknown>(): R;
     updateOverlayWithBlur<R = void, P0 = boolean>(_updateOverlayWithBlur: P0): R;
     hideOverlayWindow<R = void>(): R;
-    showOverlayWindowFromFrame_blurContent<R = void, P0 = cocoa.CGRect, P1 = boolean>(_showOverlayWindowFromFrame: P0, _blurContent: P1): R;
+    showOverlayWindowFromFrame_blurContent<R = void, P0 = CGRect, P1 = boolean>(_showOverlayWindowFromFrame: P0, _blurContent: P1): R;
     showingOverlayWindowFrame<R = boolean>(): R;
     _endOverlayPresentation<R = void, P0 = unknown>(__endOverlayPresentation: P0): R;
     _beginOverlayPresentation<R = void, P0 = unknown>(__beginOverlayPresentation: P0): R;
@@ -79,7 +79,7 @@ declare namespace cocoa {
     _menuBarRevealUpdated<R = void, P0 = number>(__menuBarRevealUpdated: P0): R;
     _animateMenuBarTo_startingAt_duration<R = void, P0 = number, P1 = number, P2 = number>(__animateMenuBarTo: P0, _startingAt: P1, _duration: P2): R;
     _cancelMenuRevealAnimationIfNeeded<R = void>(): R;
-    captureSnapshotIncludingMenuBar_contentRect<R = cocoa.CGImage, P0 = boolean, P1 = cocoa.CGRect>(_captureSnapshotIncludingMenuBar: P0, _contentRect: P1): R;
+    captureSnapshotIncludingMenuBar_contentRect<R = CGImage, P0 = boolean, P1 = CGRect>(_captureSnapshotIncludingMenuBar: P0, _contentRect: P1): R;
     rightReservedSpace<R = number>(): R;
     setRightReservedSpace<R = void, P0 = number>(_v: P0): R;
     leftReservedSpace<R = number>(): R;
@@ -87,22 +87,22 @@ declare namespace cocoa {
     bottomReservedSpace<R = number>(): R;
     setBottomReservedSpace<R = void, P0 = number>(_v: P0): R;
     exitReplacementWindowID<R = number>(): R;
-    createTileDropTargetController<R = cocoa._NSFullScreenCreateTileDropTargetController>(): R;
-    modalStackController<R = cocoa._NSFullScreenModalStackController>(): R;
-    backdropController<R = cocoa._NSFullScreenBackdropController>(): R;
-    contentController<R = cocoa._NSFullScreenContentController>(): R;
-    setContentController<R = void, P0 = cocoa._NSFullScreenContentController>(_v: P0): R;
+    createTileDropTargetController<R = _NSFullScreenCreateTileDropTargetController>(): R;
+    modalStackController<R = _NSFullScreenModalStackController>(): R;
+    backdropController<R = _NSFullScreenBackdropController>(): R;
+    contentController<R = _NSFullScreenContentController>(): R;
+    setContentController<R = void, P0 = _NSFullScreenContentController>(_v: P0): R;
     tileSpaceID<R = number>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface _NSFullScreenSpace<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSAnimationDelegateProtocol {
+    export interface _NSFullScreenSpace<T = any> extends NSObject, NSAnimationDelegateProtocol {
       alloc<R = _NSFullScreenSpace>(): R;
       new: <R = _NSFullScreenSpace>() => R;
-      tileRectForSpaceWithID<R = cocoa.CGRect, P0 = number>(_tileRectForSpaceWithID: P0): R;
+      tileRectForSpaceWithID<R = CGRect, P0 = number>(_tileRectForSpaceWithID: P0): R;
       spaceWithContentWindowID<R = unknown, P0 = number>(_spaceWithContentWindowID: P0): R;
       hasTransitionForWindowID_ofClass<R = boolean, P0 = number, P1 = unknown>(_hasTransitionForWindowID: P0, _ofClass: P1): R;
       hasTransitionForWindowID<R = boolean, P0 = number>(_hasTransitionForWindowID: P0): R;

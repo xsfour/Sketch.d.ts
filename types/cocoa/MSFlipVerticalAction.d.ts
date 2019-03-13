@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFlipVerticalAction<T = any> extends cocoa.MSBaseFlipAction {
+  export interface MSFlipVerticalAction<T = any> extends MSBaseFlipAction {
     label<R = unknown>(): R;
     isActive<R = boolean>(): R;
     areAllSelectedLayersFlippedVertically<R = boolean>(): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     historyMomentTitle<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSFlipVerticalAction<T = any> extends cocoa.classes.MSBaseFlipAction {
+    export interface MSFlipVerticalAction<T = any> extends MSBaseFlipAction {
       alloc<R = MSFlipVerticalAction>(): R;
       new: <R = MSFlipVerticalAction>() => R;
       flipVerticalHistoryTitle<R = unknown>(): R;

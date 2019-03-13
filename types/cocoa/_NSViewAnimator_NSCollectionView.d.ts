@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSViewAnimator_NSCollectionView<T = any> extends cocoa._NSViewAnimator {
+  export interface _NSViewAnimator_NSCollectionView<T = any> extends _NSViewAnimator {
     reloadItemsAtIndexes_inSectionObject<R = void, P0 = unknown, P1 = unknown>(_reloadItemsAtIndexes: P0, _inSectionObject: P1): R;
     deleteItemsAtIndexes_inSectionObject<R = void, P0 = unknown, P1 = unknown>(_deleteItemsAtIndexes: P0, _inSectionObject: P1): R;
     insertItemsAtIndexes_inSectionObject<R = void, P0 = unknown, P1 = unknown>(_insertItemsAtIndexes: P0, _inSectionObject: P1): R;
-    performBatchUpdates_completionHandler<R = void, P0 = cocoa.CDUnknownBlockType, P1 = cocoa.CDUnknownBlockType>(_performBatchUpdates: P0, _completionHandler: P1): R;
+    performBatchUpdates_completionHandler<R = void, P0 = CDUnknownBlockType, P1 = CDUnknownBlockType>(_performBatchUpdates: P0, _completionHandler: P1): R;
     moveItemAtIndexPath_toIndexPath<R = void, P0 = unknown, P1 = unknown>(_moveItemAtIndexPath: P0, _toIndexPath: P1): R;
     reloadItemsAtIndexPaths<R = void, P0 = unknown>(_reloadItemsAtIndexPaths: P0): R;
     deleteItemsAtIndexPaths<R = void, P0 = unknown>(_deleteItemsAtIndexPaths: P0): R;
@@ -18,6 +18,6 @@ declare namespace cocoa {
     setCollectionViewLayout<R = void, P0 = unknown>(_setCollectionViewLayout: P0): R;
   }
   namespace classes {
-    export interface _NSViewAnimator_NSCollectionView<T = any> extends cocoa.classes._NSViewAnimator {  }
+    export interface _NSViewAnimator_NSCollectionView<T = any> extends _NSViewAnimator {  }
   }
 }

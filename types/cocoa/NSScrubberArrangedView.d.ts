@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScrubberArrangedView<T = any> extends cocoa.NSView {
+  export interface NSScrubberArrangedView<T = any> extends NSView {
     _preferredAppearance<R = unknown>(): R;
     applyLayoutAttributes<R = void, P0 = unknown>(_applyLayoutAttributes: P0): R;
     _arrangedViewCommonInit<R = void>(): R;
@@ -11,7 +11,7 @@ declare namespace cocoa {
     setSelected<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface NSScrubberArrangedView<T = any> extends cocoa.classes.NSView {
+    export interface NSScrubberArrangedView<T = any> extends NSView {
       alloc<R = NSScrubberArrangedView>(): R;
       new: <R = NSScrubberArrangedView>() => R;
     }

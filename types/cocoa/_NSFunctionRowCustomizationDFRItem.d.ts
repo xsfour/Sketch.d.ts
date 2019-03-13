@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSFunctionRowCustomizationDFRItem<T = any> extends cocoa.NSObject {
+  export interface _NSFunctionRowCustomizationDFRItem<T = any> extends NSObject {
     description<R = unknown>(): R;
     invalidateSizes<R = void>(): R;
     _updateMinMaxSizeIfNeeded<R = void>(): R;
@@ -12,17 +12,17 @@ declare namespace cocoa {
     setRequiresExactMinSize<R = void, P0 = boolean>(_v: P0): R;
     section<R = number>(): R;
     setSection<R = void, P0 = number>(_v: P0): R;
-    compressionLayout<R = cocoa.NSCompressionGroupLayout>(): R;
-    setCompressionLayout<R = void, P0 = cocoa.NSCompressionGroupLayout>(_v: P0): R;
-    contentClippingSize<R = cocoa.CGSize>(): R;
-    preferredSize<R = cocoa.CGSize>(): R;
-    maxSize<R = cocoa.CGSize>(): R;
-    minSize<R = cocoa.CGSize>(): R;
-    itemView<R = cocoa.NSView>(): R;
-    representedItem<R = cocoa.NSTouchBarItem>(): R;
+    compressionLayout<R = NSCompressionGroupLayout>(): R;
+    setCompressionLayout<R = void, P0 = NSCompressionGroupLayout>(_v: P0): R;
+    contentClippingSize<R = CGSize>(): R;
+    preferredSize<R = CGSize>(): R;
+    maxSize<R = CGSize>(): R;
+    minSize<R = CGSize>(): R;
+    itemView<R = NSView>(): R;
+    representedItem<R = NSTouchBarItem>(): R;
   }
   namespace classes {
-    export interface _NSFunctionRowCustomizationDFRItem<T = any> extends cocoa.classes.NSObject {
+    export interface _NSFunctionRowCustomizationDFRItem<T = any> extends NSObject {
       alloc<R = _NSFunctionRowCustomizationDFRItem>(): R;
       new: <R = _NSFunctionRowCustomizationDFRItem>() => R;
     }

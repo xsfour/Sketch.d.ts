@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFilterServicesPasteboard<T = any> extends cocoa.NSPasteboard {
+  export interface NSFilterServicesPasteboard<T = any> extends NSPasteboard {
     changeCount<R = number>(): R;
     types<R = unknown>(): R;
     pasteboardItems<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSFilterServicesPasteboard<T = any> extends cocoa.classes.NSPasteboard {
+    export interface NSFilterServicesPasteboard<T = any> extends NSPasteboard {
       alloc<R = NSFilterServicesPasteboard>(): R;
       new: <R = NSFilterServicesPasteboard>() => R;
       filterPasteboardWithPasteboard<R = unknown, P0 = unknown>(_filterPasteboardWithPasteboard: P0): R;

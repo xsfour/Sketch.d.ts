@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutableHotspotLayer<T = any> extends cocoa._MSImmutableHotspotLayer, cocoa.MSImmutableLayerPreviewabilityProtocol {
+  export interface MSImmutableHotspotLayer<T = any> extends _MSImmutableHotspotLayer, MSImmutableLayerPreviewabilityProtocol {
     shouldBeIncludedInParentPath<R = boolean>(): R;
     isLayerExportable<R = boolean>(): R;
     interfaceImageIdentifier<R = unknown>(): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     flowDestination<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSImmutableHotspotLayer<T = any> extends cocoa.classes._MSImmutableHotspotLayer, cocoa.classes.MSImmutableLayerPreviewabilityProtocol {
+    export interface MSImmutableHotspotLayer<T = any> extends _MSImmutableHotspotLayer, MSImmutableLayerPreviewabilityProtocol {
       alloc<R = MSImmutableHotspotLayer>(): R;
       new: <R = MSImmutableHotspotLayer>() => R;
     }

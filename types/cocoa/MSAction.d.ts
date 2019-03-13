@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAction<T = any> extends cocoa.NSResponder, cocoa.NSMenuDelegateProtocol {
+  export interface MSAction<T = any> extends NSResponder, NSMenuDelegateProtocol {
     cxx_destruct<R = void>(): R;
     handlesKeyEvent<R = boolean, P0 = unknown>(_handlesKeyEvent: P0): R;
     submenuActionIDs<R = unknown>(): R;
@@ -17,35 +17,35 @@ declare namespace cocoa {
     menuItems<R = unknown>(): R;
     menuItemsForMenu<R = unknown, P0 = unknown>(_menuItemsForMenu: P0): R;
     isSelectable<R = boolean>(): R;
-    toolbarItem<R = cocoa.NSToolbarItem>(): R;
-    setToolbarItem<R = void, P0 = cocoa.NSToolbarItem>(_v: P0): R;
-    controller<R = cocoa.MSActionController>(): R;
-    setController<R = void, P0 = cocoa.MSActionController>(_v: P0): R;
+    toolbarItem<R = NSToolbarItem>(): R;
+    setToolbarItem<R = void, P0 = NSToolbarItem>(_v: P0): R;
+    controller<R = MSActionController>(): R;
+    setController<R = void, P0 = MSActionController>(_v: P0): R;
     isActive<R = boolean>(): R;
     hasSubMenu<R = boolean>(): R;
     validationStatus<R = number>(): R;
     validate<R = boolean>(): R;
     shortcutCharacter<R = number>(): R;
-    label<R = cocoa.NSString>(): R;
-    image<R = cocoa.NSImage>(): R;
-    imageName<R = cocoa.NSString>(): R;
+    label<R = NSString>(): R;
+    image<R = NSImage>(): R;
+    imageName<R = NSString>(): R;
     hasDynamicTitle<R = boolean>(): R;
-    badgeTitle<R = cocoa.NSAttributedString>(): R;
-    tooltip<R = cocoa.NSString>(): R;
+    badgeTitle<R = NSAttributedString>(): R;
+    tooltip<R = NSString>(): R;
     mayShowInToolbar<R = boolean>(): R;
-    labelForToolbarCustomisationSheet<R = cocoa.NSString>(): R;
-    imageForToolbar<R = cocoa.NSImage>(): R;
-    labelForToolbar<R = cocoa.NSString>(): R;
-    menuItemForToolbarItem<R = cocoa.NSMenuItem>(): R;
-    labelForMenu<R = cocoa.NSString>(): R;
+    labelForToolbarCustomisationSheet<R = NSString>(): R;
+    imageForToolbar<R = NSImage>(): R;
+    labelForToolbar<R = NSString>(): R;
+    menuItemForToolbarItem<R = NSMenuItem>(): R;
+    labelForMenu<R = NSString>(): R;
     preferredMenuAction<R = string>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSAction<T = any> extends cocoa.classes.NSResponder, cocoa.classes.NSMenuDelegateProtocol {
+    export interface MSAction<T = any> extends NSResponder, NSMenuDelegateProtocol {
       alloc<R = MSAction>(): R;
       new: <R = MSAction>() => R;
       classNamesToImageNamesDictionary<R = unknown>(): R;

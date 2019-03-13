@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSUndoAction<T = any> extends cocoa.MSUndoBaseAction {
+  export interface MSUndoAction<T = any> extends MSUndoBaseAction {
     historyMomentTitle<R = unknown>(): R;
     label<R = unknown>(): R;
     hasDynamicTitle<R = boolean>(): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     undo<R = void, P0 = unknown>(_undo: P0): R;
   }
   namespace classes {
-    export interface MSUndoAction<T = any> extends cocoa.classes.MSUndoBaseAction {
+    export interface MSUndoAction<T = any> extends MSUndoBaseAction {
       alloc<R = MSUndoAction>(): R;
       new: <R = MSUndoAction>() => R;
     }

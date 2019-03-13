@@ -1,21 +1,21 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMutableAttributedString<T = any> extends cocoa.NSAttributedString {
+  export interface NSMutableAttributedString<T = any> extends NSAttributedString {
     endEditing<R = void>(): R;
     beginEditing<R = void>(): R;
     setAttributedString<R = void, P0 = unknown>(_setAttributedString: P0): R;
-    deleteCharactersInRange<R = void, P0 = cocoa._NSRange>(_deleteCharactersInRange: P0): R;
+    deleteCharactersInRange<R = void, P0 = _NSRange>(_deleteCharactersInRange: P0): R;
     appendAttributedString<R = void, P0 = unknown>(_appendAttributedString: P0): R;
     insertAttributedString_atIndex<R = void, P0 = unknown, P1 = number>(_insertAttributedString: P0, _atIndex: P1): R;
-    replaceCharactersInRange_withAttributedString<R = void, P0 = cocoa._NSRange, P1 = unknown>(_replaceCharactersInRange: P0, _withAttributedString: P1): R;
-    removeAttribute_range<R = void, P0 = unknown, P1 = cocoa._NSRange>(_removeAttribute: P0, _range: P1): R;
-    addAttributesWeakly_range<R = void, P0 = unknown, P1 = cocoa._NSRange>(_addAttributesWeakly: P0, _range: P1): R;
-    addAttributes_range<R = void, P0 = unknown, P1 = cocoa._NSRange>(_addAttributes: P0, _range: P1): R;
-    addAttribute_value_range<R = void, P0 = unknown, P1 = unknown, P2 = cocoa._NSRange>(_addAttribute: P0, _value: P1, _range: P2): R;
+    replaceCharactersInRange_withAttributedString<R = void, P0 = _NSRange, P1 = unknown>(_replaceCharactersInRange: P0, _withAttributedString: P1): R;
+    removeAttribute_range<R = void, P0 = unknown, P1 = _NSRange>(_removeAttribute: P0, _range: P1): R;
+    addAttributesWeakly_range<R = void, P0 = unknown, P1 = _NSRange>(_addAttributesWeakly: P0, _range: P1): R;
+    addAttributes_range<R = void, P0 = unknown, P1 = _NSRange>(_addAttributes: P0, _range: P1): R;
+    addAttribute_value_range<R = void, P0 = unknown, P1 = unknown, P2 = _NSRange>(_addAttribute: P0, _value: P1, _range: P2): R;
     mutableString<R = unknown>(): R;
-    setAttributes_range<R = void, P0 = unknown, P1 = cocoa._NSRange>(_setAttributes: P0, _range: P1): R;
-    replaceCharactersInRange_withString<R = void, P0 = cocoa._NSRange, P1 = unknown>(_replaceCharactersInRange: P0, _withString: P1): R;
+    setAttributes_range<R = void, P0 = unknown, P1 = _NSRange>(_setAttributes: P0, _range: P1): R;
+    replaceCharactersInRange_withString<R = void, P0 = _NSRange, P1 = unknown>(_replaceCharactersInRange: P0, _withString: P1): R;
     // + NSMutableAttributedString(NSMutableAttributedStringAttachmentConveniences,CHMutableAttributedStringAdditions,MSList,Stripping):
     updateAttachmentsFromPath<R = void, P0 = unknown>(_updateAttachmentsFromPath: P0): R;
     appendString_attributes<R = void, P0 = unknown, P1 = unknown>(_appendString: P0, _attributes: P1): R;
@@ -32,7 +32,7 @@ declare namespace cocoa {
     removeUnsupportedAttributes<R = void>(): R;
   }
   namespace classes {
-    export interface NSMutableAttributedString<T = any> extends cocoa.classes.NSAttributedString {
+    export interface NSMutableAttributedString<T = any> extends NSAttributedString {
       alloc<R = NSMutableAttributedString>(): R;
       new: <R = NSMutableAttributedString>() => R;
       // + NSMutableAttributedString(NSMutableAttributedStringAttachmentConveniences,CHMutableAttributedStringAdditions,MSList,Stripping):

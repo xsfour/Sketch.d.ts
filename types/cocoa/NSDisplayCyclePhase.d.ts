@@ -1,14 +1,14 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDisplayCyclePhase<T = any> extends cocoa.NSObject {
+  export interface NSDisplayCyclePhase<T = any> extends NSObject {
     dealloc<R = void>(): R;
     description<R = unknown>(): R;
     initWithName_beforePhases_afterPhases<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_initWithName: P0, _beforePhases: P1, _afterPhases: P2): R;
-    name<R = cocoa.NSString>(): R;
+    name<R = NSString>(): R;
   }
   namespace classes {
-    export interface NSDisplayCyclePhase<T = any> extends cocoa.classes.NSObject {
+    export interface NSDisplayCyclePhase<T = any> extends NSObject {
       alloc<R = NSDisplayCyclePhase>(): R;
       new: <R = NSDisplayCyclePhase>() => R;
     }

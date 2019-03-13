@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSToolbarView<T = any> extends cocoa.NSView {
+  export interface NSToolbarView<T = any> extends NSView {
     _setLayoutInProgress<R = void, P0 = boolean>(__setLayoutInProgress: P0): R;
     _layoutInProgress<R = boolean>(): R;
     _hasTransparentBackground<R = boolean>(): R;
@@ -16,21 +16,21 @@ declare namespace cocoa {
     _noteToolbarDisplayModeChanged<R = void>(): R;
     _noteToolbarSizeModeChanged<R = void>(): R;
     _noteToolbarModeChangedAndUpdateItemViewers<R = void, P0 = string>(__noteToolbarModeChangedAndUpdateItemViewers: P0): R;
-    _shouldUseEngineFrameForResizingWithOldSuperviewSize<R = boolean, P0 = cocoa.CGSize>(__shouldUseEngineFrameForResizingWithOldSuperviewSize: P0): R;
+    _shouldUseEngineFrameForResizingWithOldSuperviewSize<R = boolean, P0 = CGSize>(__shouldUseEngineFrameForResizingWithOldSuperviewSize: P0): R;
     _sendBackgroundGradientHeightChangedNotification<R = void>(): R;
     _distanceFromBaseToTopOfWindow<R = number>(): R;
     _sizeHorizontallyToFitWidth<R = void, P0 = number>(__sizeHorizontallyToFitWidth: P0): R;
     _sizeHorizontallyToFit<R = void>(): R;
     _sizeVerticallyToFit<R = void>(): R;
-    _calcToolbarFrame<R = cocoa.CGRect>(): R;
+    _calcToolbarFrame<R = CGRect>(): R;
     _sizeToFit<R = void, P0 = boolean>(__sizeToFit: P0): R;
     _layoutDirtyItemViewersAndTileToolbar<R = void>(): R;
     _minimumWidthEnsuringVisibilityOfAllItems<R = number>(): R;
-    _toolbarMetrics<R = cocoa.__NSToolbarLayoutMetrics>(): R;
+    _toolbarMetrics<R = __NSToolbarLayoutMetrics>(): R;
     _isToolbarDirectionOppositeOfSystemDirection<R = boolean>(): R;
-    _rangeOfCenteredItemsForItemViewers<R = cocoa._NSRange, P0 = unknown>(__rangeOfCenteredItemsForItemViewers: P0): R;
+    _rangeOfCenteredItemsForItemViewers<R = _NSRange, P0 = unknown>(__rangeOfCenteredItemsForItemViewers: P0): R;
     _maximumItemViewerHeight<R = number>(): R;
-    _setNeedsDisplayForItemViewers_movingFromFrames_toFrames<R = void, P0 = unknown, P1 = cocoa.CGRect, P2 = cocoa.CGRect>(__setNeedsDisplayForItemViewers: P0, _movingFromFrames: P1, _toFrames: P2): R;
+    _setNeedsDisplayForItemViewers_movingFromFrames_toFrames<R = void, P0 = unknown, P1 = CGRect, P2 = CGRect>(__setNeedsDisplayForItemViewers: P0, _movingFromFrames: P1, _toFrames: P2): R;
     preservesContentDuringLiveResize<R = boolean>(): R;
     _layoutEnabled<R = boolean>(): R;
     _enableLayout<R = void>(): R;
@@ -42,8 +42,8 @@ declare namespace cocoa {
     _setNeedsModeConfiguration_itemViewers<R = void, P0 = boolean, P1 = unknown>(__setNeedsModeConfiguration: P0, _itemViewers: P1): R;
     userInterfaceLayoutDirection<R = number>(): R;
     description<R = unknown>(): R;
-    _minimumSizeEnsuringVisibilityOfItem<R = cocoa.CGSize, P0 = unknown>(__minimumSizeEnsuringVisibilityOfItem: P0): R;
-    _getPixelAligningTransformForLayout<R = cocoa.CGAffineTransform>(): R;
+    _minimumSizeEnsuringVisibilityOfItem<R = CGSize, P0 = unknown>(__minimumSizeEnsuringVisibilityOfItem: P0): R;
+    _getPixelAligningTransformForLayout<R = CGAffineTransform>(): R;
     _makeSureItemViewersInArray_areSubviews_from_to<R = void, P0 = unknown, P1 = boolean, P2 = number, P3 = number>(__makeSureItemViewersInArray: P0, _areSubviews: P1, _from: P2, _to: P3): R;
     _cycleWindows<R = void, P0 = unknown>(__cycleWindows: P0): R;
     _makeFirstResponderForKeyboardHotKeyEvent<R = void>(): R;
@@ -58,7 +58,7 @@ declare namespace cocoa {
     _clippedItemViewers<R = unknown>(): R;
     _visibleItemViewers<R = unknown>(): R;
     _allItems<R = unknown>(): R;
-    _superSetFrameSize<R = void, P0 = cocoa.CGSize>(__superSetFrameSize: P0): R;
+    _superSetFrameSize<R = void, P0 = CGSize>(__superSetFrameSize: P0): R;
     _syncItemSetAndUpdateItemViewersWithSEL_setNeedsModeConfiguration_sizeToFit_setNeedsDisplay_updateKeyLoop<R = void, P0 = string, P1 = boolean, P2 = boolean, P3 = boolean, P4 = boolean>(__syncItemSetAndUpdateItemViewersWithSEL: P0, _setNeedsModeConfiguration: P1, _sizeToFit: P2, _setNeedsDisplay: P3, _updateKeyLoop: P4): R;
     _syncItemSet<R = void>(): R;
     _adjustClipIndicatorPosition<R = void>(): R;
@@ -68,10 +68,10 @@ declare namespace cocoa {
     _setBaselineSeparatorStyle<R = void, P0 = number>(__setBaselineSeparatorStyle: P0): R;
     _baselineSeparatorStyle<R = number>(): R;
     _updateBaselineView<R = void>(): R;
-    _frameForBaselineView<R = cocoa.CGRect, P0 = unknown>(__frameForBaselineView: P0): R;
+    _frameForBaselineView<R = CGRect, P0 = unknown>(__frameForBaselineView: P0): R;
     _setBaselineView<R = void, P0 = unknown>(__setBaselineView: P0): R;
     _baselineView<R = unknown>(): R;
-    _drawBackgroundFillInClipRect<R = void, P0 = cocoa.CGRect>(__drawBackgroundFillInClipRect: P0): R;
+    _drawBackgroundFillInClipRect<R = void, P0 = CGRect>(__drawBackgroundFillInClipRect: P0): R;
     _currentBackgroundColor<R = unknown>(): R;
     _drawsBaseline<R = boolean>(): R;
     mouseDownCanMoveWindow<R = boolean>(): R;
@@ -81,7 +81,7 @@ declare namespace cocoa {
     _printVerboseDebuggingInformation<R = void, P0 = unknown>(__printVerboseDebuggingInformation: P0): R;
     validateMenuItem<R = boolean, P0 = unknown>(_validateMenuItem: P0): R;
     resetToolbarToDefaultConfiguration<R = void, P0 = unknown>(_resetToolbarToDefaultConfiguration: P0): R;
-    _findHitItemViewer<R = unknown, P0 = cocoa.CGPoint>(__findHitItemViewer: P0): R;
+    _findHitItemViewer<R = unknown, P0 = CGPoint>(__findHitItemViewer: P0): R;
     _shouldStealHitTestForCurrentEvent<R = boolean>(): R;
     _isEditing<R = boolean>(): R;
     _isInConfigurationMode<R = boolean>(): R;
@@ -92,9 +92,9 @@ declare namespace cocoa {
     _beginTempEditingMode<R = void>(): R;
     _forceResetTexturedWindowDragMargins<R = void>(): R;
     _leadingFlexibleSpaceOffset<R = number>(): R;
-    _validItemViewerBoundsAssumingClipIndicatorShown<R = cocoa.CGRect>(): R;
-    _validItemViewerBounds<R = cocoa.CGRect>(): R;
-    _validItemViewerBoundsAssumingClipIndicatorNotShown<R = cocoa.CGRect>(): R;
+    _validItemViewerBoundsAssumingClipIndicatorShown<R = CGRect>(): R;
+    _validItemViewerBounds<R = CGRect>(): R;
+    _validItemViewerBoundsAssumingClipIndicatorNotShown<R = CGRect>(): R;
     _unsuppressClipIndicatorAfterAnimationIfNecessary<R = void>(): R;
     _suppressClipIndicatorDuringAnimation<R = void>(): R;
     set_clipIndicator<R = void, P0 = unknown>(_set_clipIndicator: P0): R;
@@ -129,40 +129,40 @@ declare namespace cocoa {
     privateDragTypes<R = unknown>(): R;
     _toolbarViewCommonInit<R = void>(): R;
     adjustToWindow_attachedToEdge<R = void, P0 = unknown, P1 = number>(_adjustToWindow: P0, _attachedToEdge: P1): R;
-    _metrics<R = cocoa.__NSToolbarMetrics>(): R;
-    draggedImage_movedTo<R = void, P0 = unknown, P1 = cocoa.CGPoint>(_draggedImage: P0, _movedTo: P1): R;
-    _setImageOnDragSession_withOffset<R = void, P0 = unknown, P1 = cocoa.CGPoint>(__setImageOnDragSession: P0, _withOffset: P1): R;
+    _metrics<R = __NSToolbarMetrics>(): R;
+    draggedImage_movedTo<R = void, P0 = unknown, P1 = CGPoint>(_draggedImage: P0, _movedTo: P1): R;
+    _setImageOnDragSession_withOffset<R = void, P0 = unknown, P1 = CGPoint>(__setImageOnDragSession: P0, _withOffset: P1): R;
     _beginSrcDragItemWithEvent<R = boolean, P0 = unknown>(__beginSrcDragItemWithEvent: P0): R;
     _isItemViewerMoveable<R = boolean, P0 = unknown>(__isItemViewerMoveable: P0): R;
     _beginSrcDragItemViewerWithEvent<R = boolean, P0 = unknown>(__beginSrcDragItemViewerWithEvent: P0): R;
     _computeEarliestDateForDragAnimationForInfo<R = number, P0 = unknown>(__computeEarliestDateForDragAnimationForInfo: P0): R;
     _draggingModeForInfo<R = number, P0 = unknown>(__draggingModeForInfo: P0): R;
-    draggedImage_endedAt_operation<R = void, P0 = unknown, P1 = cocoa.CGPoint, P2 = number>(_draggedImage: P0, _endedAt: P1, _operation: P2): R;
+    draggedImage_endedAt_operation<R = void, P0 = unknown, P1 = CGPoint, P2 = number>(_draggedImage: P0, _endedAt: P1, _operation: P2): R;
     _wantsUserCancelledOperation<R = boolean>(): R;
     _canMoveItemAsSource<R = boolean, P0 = unknown>(__canMoveItemAsSource: P0): R;
     draggingSourceOperationMaskForLocal<R = number, P0 = boolean>(_draggingSourceOperationMaskForLocal: P0): R;
-    dstDraggingDepositedAtPoint_draggingInfo<R = boolean, P0 = cocoa.CGPoint, P1 = unknown>(_dstDraggingDepositedAtPoint: P0, _draggingInfo: P1): R;
-    dstDraggingExitedAtPoint_draggingInfo<R = void, P0 = cocoa.CGPoint, P1 = unknown>(_dstDraggingExitedAtPoint: P0, _draggingInfo: P1): R;
-    _dstDraggingExitedAtPoint_draggingInfo_stillInViewBounds<R = void, P0 = cocoa.CGPoint, P1 = unknown, P2 = boolean>(__dstDraggingExitedAtPoint: P0, _draggingInfo: P1, _stillInViewBounds: P2): R;
-    dstDraggingMovedToPoint_draggingInfo<R = number, P0 = cocoa.CGPoint, P1 = unknown>(_dstDraggingMovedToPoint: P0, _draggingInfo: P1): R;
-    dstDraggingEnteredAtPoint_draggingInfo<R = number, P0 = cocoa.CGPoint, P1 = unknown>(_dstDraggingEnteredAtPoint: P0, _draggingInfo: P1): R;
+    dstDraggingDepositedAtPoint_draggingInfo<R = boolean, P0 = CGPoint, P1 = unknown>(_dstDraggingDepositedAtPoint: P0, _draggingInfo: P1): R;
+    dstDraggingExitedAtPoint_draggingInfo<R = void, P0 = CGPoint, P1 = unknown>(_dstDraggingExitedAtPoint: P0, _draggingInfo: P1): R;
+    _dstDraggingExitedAtPoint_draggingInfo_stillInViewBounds<R = void, P0 = CGPoint, P1 = unknown, P2 = boolean>(__dstDraggingExitedAtPoint: P0, _draggingInfo: P1, _stillInViewBounds: P2): R;
+    dstDraggingMovedToPoint_draggingInfo<R = number, P0 = CGPoint, P1 = unknown>(_dstDraggingMovedToPoint: P0, _draggingInfo: P1): R;
+    dstDraggingEnteredAtPoint_draggingInfo<R = number, P0 = CGPoint, P1 = unknown>(_dstDraggingEnteredAtPoint: P0, _draggingInfo: P1): R;
     _itemForDraggingInfo_draggingSource<R = unknown, P0 = unknown, P1 = unknown>(__itemForDraggingInfo: P0, _draggingSource: P1): R;
     _isAcceptableDragSource_pasteboard_dragInfo<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown>(__isAcceptableDragSource: P0, _pasteboard: P1, _dragInfo: P2): R;
     _findIndexOfFirstDuplicateItemWithItemIdentifier<R = number, P0 = unknown>(__findIndexOfFirstDuplicateItemWithItemIdentifier: P0): R;
-    convertOriginForRTLIfNecessary_view<R = cocoa.CGPoint, P0 = cocoa.CGPoint, P1 = unknown>(_convertOriginForRTLIfNecessary: P0, _view: P1): R;
+    convertOriginForRTLIfNecessary_view<R = CGPoint, P0 = CGPoint, P1 = unknown>(_convertOriginForRTLIfNecessary: P0, _view: P1): R;
     beginUpdateInsertionAnimationAtIndex_throwAwayCacheWhenDone<R = void, P0 = number, P1 = boolean>(_beginUpdateInsertionAnimationAtIndex: P0, _throwAwayCacheWhenDone: P1): R;
     _dragEndedNotification<R = void, P0 = unknown>(__dragEndedNotification: P0): R;
     _endInsertionOptimizationWithDragSource_force<R = void, P0 = unknown, P1 = boolean>(__endInsertionOptimizationWithDragSource: P0, _force: P1): R;
     _startInsertionOptimizationWithDragSource<R = void, P0 = unknown>(__startInsertionOptimizationWithDragSource: P0): R;
     insertItemViewer_atIndex<R = void, P0 = unknown, P1 = number>(_insertItemViewer: P0, _atIndex: P1): R;
     removeItemViewerAtIndex<R = void, P0 = number>(_removeItemViewerAtIndex: P0): R;
-    _layoutOrderInsertionIndexForPoint_previousIndex<R = number, P0 = cocoa.CGPoint, P1 = number>(__layoutOrderInsertionIndexForPoint: P0, _previousIndex: P1): R;
+    _layoutOrderInsertionIndexForPoint_previousIndex<R = number, P0 = CGPoint, P1 = number>(__layoutOrderInsertionIndexForPoint: P0, _previousIndex: P1): R;
     _dragDataInsertionGapItemViewer<R = unknown>(): R;
     _createInsertionGapItemForItemViewer_forDraggingSource<R = unknown, P0 = unknown, P1 = unknown>(__createInsertionGapItemForItemViewer: P0, _forDraggingSource: P1): R;
-    _rectOfItemAtIndex<R = cocoa.CGRect, P0 = number>(__rectOfItemAtIndex: P0): R;
+    _rectOfItemAtIndex<R = CGRect, P0 = number>(__rectOfItemAtIndex: P0): R;
     _dragDataItemViewer<R = unknown>(): R;
     _computeDragImageFromItemViewer<R = unknown, P0 = unknown>(__computeDragImageFromItemViewer: P0): R;
-    _findItemViewerAtPoint<R = unknown, P0 = cocoa.CGPoint>(__findItemViewerAtPoint: P0): R;
+    _findItemViewerAtPoint<R = unknown, P0 = CGPoint>(__findItemViewerAtPoint: P0): R;
     _unregisterForToolbarNotifications<R = void, P0 = unknown>(__unregisterForToolbarNotifications: P0): R;
     _registerForToolbarNotifications<R = void, P0 = unknown>(__registerForToolbarNotifications: P0): R;
     _toolbarContentsAttributesChanged<R = void, P0 = unknown>(__toolbarContentsAttributesChanged: P0): R;
@@ -174,7 +174,7 @@ declare namespace cocoa {
     accessibilityOverflowButtonAttribute<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSToolbarView<T = any> extends cocoa.classes.NSView {
+    export interface NSToolbarView<T = any> extends NSView {
       alloc<R = NSToolbarView>(): R;
       new: <R = NSToolbarView>() => R;
       newViewForToolbar_inWindow_attachedToEdge<R = unknown, P0 = unknown, P1 = unknown, P2 = number>(_newViewForToolbar: P0, _inWindow: P1, _attachedToEdge: P2): R;

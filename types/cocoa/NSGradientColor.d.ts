@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSGradientColor<T = any> extends cocoa.NSColor {
-    CGColor<R = cocoa.CGColor>(): R;
+  export interface NSGradientColor<T = any> extends NSColor {
+    CGColor<R = CGColor>(): R;
     hash<R = number>(): R;
     description<R = unknown>(): R;
     type<R = number>(): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     initWithGradient<R = unknown, P0 = unknown>(_initWithGradient: P0): R;
   }
   namespace classes {
-    export interface NSGradientColor<T = any> extends cocoa.classes.NSColor {
+    export interface NSGradientColor<T = any> extends NSColor {
       alloc<R = NSGradientColor>(): R;
       new: <R = NSGradientColor>() => R;
     }

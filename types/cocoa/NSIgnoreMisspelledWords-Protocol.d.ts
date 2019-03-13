@@ -8,5 +8,3 @@ declare namespace cocoa {
     export interface NSIgnoreMisspelledWordsProtocol<T = any> {  }
   }
 }
-
-declare const NSIgnoreMisspelledWordsProtocol: cocoa.classes.NSIgnoreMisspelledWordsProtocol;

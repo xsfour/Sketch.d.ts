@@ -8,5 +8,3 @@ declare namespace cocoa {
     export interface COPrintControllerProtocol<T = any> {  }
   }
 }
-
-declare const COPrintControllerProtocol: cocoa.classes.COPrintControllerProtocol;

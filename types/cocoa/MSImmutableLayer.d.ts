@@ -1,26 +1,26 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutableLayer<T = any> extends cocoa._MSImmutableLayer, cocoa.MSInterfaceImageOwnerProtocol, cocoa.MSImmutableLayerPreviewabilityProtocol, cocoa.MSLayerContainmentProtocol, cocoa.MSFlowContainmentCheckProtocol, cocoa.MSLayerProtocol, cocoa.MSLayerTraitsProtocol {
+  export interface MSImmutableLayer<T = any> extends _MSImmutableLayer, MSInterfaceImageOwnerProtocol, MSImmutableLayerPreviewabilityProtocol, MSLayerContainmentProtocol, MSFlowContainmentCheckProtocol, MSLayerProtocol, MSLayerTraitsProtocol {
     parentShapeInAncestors<R = unknown, P0 = unknown>(_parentShapeInAncestors: P0): R;
     canSkipAdvancedClipForStrokes<R = boolean>(): R;
-    calculateInfluenceRectForBoundsInDocument_visitedSymbols<R = cocoa.CGRect, P0 = unknown, P1 = unknown>(_calculateInfluenceRectForBoundsInDocument: P0, _visitedSymbols: P1): R;
+    calculateInfluenceRectForBoundsInDocument_visitedSymbols<R = CGRect, P0 = unknown, P1 = unknown>(_calculateInfluenceRectForBoundsInDocument: P0, _visitedSymbols: P1): R;
     pathInFrameWithTransformsInDocument_asSubpath<R = unknown, P0 = unknown, P1 = boolean>(_pathInFrameWithTransformsInDocument: P0, _asSubpath: P1): R;
     pathInFrameInDocument_asSubpath<R = unknown, P0 = unknown, P1 = boolean>(_pathInFrameInDocument: P0, _asSubpath: P1): R;
     calculatePathInBoundsInDocument_asSubpath<R = unknown, P0 = unknown, P1 = boolean>(_calculatePathInBoundsInDocument: P0, _asSubpath: P1): R;
     pathInBoundsInDocument_asSubpath<R = unknown, P0 = unknown, P1 = boolean>(_pathInBoundsInDocument: P0, _asSubpath: P1): R;
-    influenceRectForBoundsOrCalculateInBlock<R = cocoa.CGRect, P0 = cocoa.CDUnknownBlockType>(_influenceRectForBoundsOrCalculateInBlock: P0): R;
-    influenceRectForBoundsInDocument_visitedSymbols<R = cocoa.CGRect, P0 = unknown, P1 = unknown>(_influenceRectForBoundsInDocument: P0, _visitedSymbols: P1): R;
-    influenceRectForFrameInDocument_visitedSymbols<R = cocoa.CGRect, P0 = unknown, P1 = unknown>(_influenceRectForFrameInDocument: P0, _visitedSymbols: P1): R;
-    influenceRectForBoundsInDocument<R = cocoa.CGRect, P0 = unknown>(_influenceRectForBoundsInDocument: P0): R;
-    influenceRectForFrameInDocument<R = cocoa.CGRect, P0 = unknown>(_influenceRectForFrameInDocument: P0): R;
+    influenceRectForBoundsOrCalculateInBlock<R = CGRect, P0 = CDUnknownBlockType>(_influenceRectForBoundsOrCalculateInBlock: P0): R;
+    influenceRectForBoundsInDocument_visitedSymbols<R = CGRect, P0 = unknown, P1 = unknown>(_influenceRectForBoundsInDocument: P0, _visitedSymbols: P1): R;
+    influenceRectForFrameInDocument_visitedSymbols<R = CGRect, P0 = unknown, P1 = unknown>(_influenceRectForFrameInDocument: P0, _visitedSymbols: P1): R;
+    influenceRectForBoundsInDocument<R = CGRect, P0 = unknown>(_influenceRectForBoundsInDocument: P0): R;
+    influenceRectForFrameInDocument<R = CGRect, P0 = unknown>(_influenceRectForFrameInDocument: P0): R;
     isLine<R = boolean>(): R;
-    rectByTransformingRect_andPaddingWithAncestors<R = cocoa.CGRect, P0 = cocoa.CGRect, P1 = unknown>(_rectByTransformingRect: P0, _andPaddingWithAncestors: P1): R;
-    transformRectToParentCoordinates<R = cocoa.CGRect, P0 = cocoa.CGRect>(_transformRectToParentCoordinates: P0): R;
-    absoluteOverlayInfluenceRectForAncestorGroups<R = cocoa.CGRect, P0 = unknown>(_absoluteOverlayInfluenceRectForAncestorGroups: P0): R;
-    absoluteInfluenceRectForAncestorGroups_document<R = cocoa.CGRect, P0 = unknown, P1 = unknown>(_absoluteInfluenceRectForAncestorGroups: P0, _document: P1): R;
+    rectByTransformingRect_andPaddingWithAncestors<R = CGRect, P0 = CGRect, P1 = unknown>(_rectByTransformingRect: P0, _andPaddingWithAncestors: P1): R;
+    transformRectToParentCoordinates<R = CGRect, P0 = CGRect>(_transformRectToParentCoordinates: P0): R;
+    absoluteOverlayInfluenceRectForAncestorGroups<R = CGRect, P0 = unknown>(_absoluteOverlayInfluenceRectForAncestorGroups: P0): R;
+    absoluteInfluenceRectForAncestorGroups_document<R = CGRect, P0 = unknown, P1 = unknown>(_absoluteInfluenceRectForAncestorGroups: P0, _document: P1): R;
     bezierBoundsInAbsoluteCoordinatesWithAncestors<R = unknown, P0 = unknown>(_bezierBoundsInAbsoluteCoordinatesWithAncestors: P0): R;
-    absoluteRectForAncestorGroups<R = cocoa.CGRect, P0 = unknown>(_absoluteRectForAncestorGroups: P0): R;
+    absoluteRectForAncestorGroups<R = CGRect, P0 = unknown>(_absoluteRectForAncestorGroups: P0): R;
     canBreakMaskChain<R = boolean>(): R;
     hasClippingMask<R = boolean>(): R;
     overrideViewControllerClassForOverridePoint<R = unknown, P0 = unknown>(_overrideViewControllerClassForOverridePoint: P0): R;
@@ -28,11 +28,11 @@ declare namespace cocoa {
     addPreviewWithBezier_documentData_forOwner<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(_addPreviewWithBezier: P0, _documentData: P1, _forOwner: P2): R;
     previewImageWithBezier_documentData_selected<R = unknown, P0 = unknown, P1 = unknown, P2 = boolean>(_previewImageWithBezier: P0, _documentData: P1, _selected: P2): R;
     hasSharedStyleInDocumentData<R = boolean, P0 = unknown>(_hasSharedStyleInDocumentData: P0): R;
-    drawPreviewInRect_documentData_selected_bezier<R = void, P0 = cocoa.CGRect, P1 = unknown, P2 = boolean, P3 = unknown>(_drawPreviewInRect: P0, _documentData: P1, _selected: P2, _bezier: P3): R;
+    drawPreviewInRect_documentData_selected_bezier<R = void, P0 = CGRect, P1 = unknown, P2 = boolean, P3 = unknown>(_drawPreviewInRect: P0, _documentData: P1, _selected: P2, _bezier: P3): R;
     badgeTypeInDocumentData<R = number, P0 = unknown>(_badgeTypeInDocumentData: P0): R;
     descendantsToLayerWithID<R = unknown, P0 = unknown>(_descendantsToLayerWithID: P0): R;
-    enumerateLayersWithOptions_classFilter_block<R = boolean, P0 = number, P1 = unknown, P2 = cocoa.CDUnknownBlockType>(_enumerateLayersWithOptions: P0, _classFilter: P1, _block: P2): R;
-    enumerateImmutableWithOptions_passingTest_parentCreatorBlock_inBlock<R = void, P0 = number, P1 = cocoa.CDUnknownBlockType, P2 = cocoa.CDUnknownBlockType, P3 = cocoa.CDUnknownBlockType>(_enumerateImmutableWithOptions: P0, _passingTest: P1, _parentCreatorBlock: P2, _inBlock: P3): R;
+    enumerateLayersWithOptions_classFilter_block<R = boolean, P0 = number, P1 = unknown, P2 = CDUnknownBlockType>(_enumerateLayersWithOptions: P0, _classFilter: P1, _block: P2): R;
+    enumerateImmutableWithOptions_passingTest_parentCreatorBlock_inBlock<R = void, P0 = number, P1 = CDUnknownBlockType, P2 = CDUnknownBlockType, P3 = CDUnknownBlockType>(_enumerateImmutableWithOptions: P0, _passingTest: P1, _parentCreatorBlock: P2, _inBlock: P3): R;
     firstFlowWithSymbolsFromDocument_visited<R = unknown, P0 = unknown, P1 = unknown>(_firstFlowWithSymbolsFromDocument: P0, _visited: P1): R;
     enumeratorWithOptions<R = unknown, P0 = number>(_enumeratorWithOptions: P0): R;
     overridePointsWithParent_overrides_document<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_overridePointsWithParent: P0, _overrides: P1, _document: P2): R;
@@ -49,8 +49,8 @@ declare namespace cocoa {
     writeSVGToElement_withExporter<R = void, P0 = unknown, P1 = unknown>(_writeSVGToElement: P0, _withExporter: P1): R;
     addTransformAttributes_exporter<R = void, P0 = unknown, P1 = unknown>(_addTransformAttributes: P0, _exporter: P1): R;
     appendBaseTranslation_exporter<R = void, P0 = unknown, P1 = unknown>(_appendBaseTranslation: P0, _exporter: P1): R;
-    relativeRectWithExporter<R = cocoa.CGRect, P0 = unknown>(_relativeRectWithExporter: P0): R;
-    layerOffsetWithExporter<R = cocoa.CGPoint, P0 = unknown>(_layerOffsetWithExporter: P0): R;
+    relativeRectWithExporter<R = CGRect, P0 = unknown>(_relativeRectWithExporter: P0): R;
+    layerOffsetWithExporter<R = CGPoint, P0 = unknown>(_layerOffsetWithExporter: P0): R;
     addSVGAttributes_exporter<R = void, P0 = unknown, P1 = unknown>(_addSVGAttributes: P0, _exporter: P1): R;
     svgStyle<R = unknown, P0 = unknown>(_svgStyle: P0): R;
     addPathDefinitionToDocument<R = void, P0 = unknown>(_addPathDefinitionToDocument: P0): R;
@@ -61,39 +61,39 @@ declare namespace cocoa {
     addContentToElement_attributes_exporter<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_addContentToElement: P0, _attributes: P1, _exporter: P2): R;
     shouldIncludeInSVGExport<R = boolean, P0 = unknown>(_shouldIncludeInSVGExport: P0): R;
     requiresPathDefinition<R = boolean, P0 = unknown>(_requiresPathDefinition: P0): R;
-    influenceRectForFrame<R = cocoa.CGRect>(): R;
+    influenceRectForFrame<R = CGRect>(): R;
     traits<R = number>(): R;
-    influenceRectEdgePaddingsThatDoNotCascade<R = cocoa.BCEdgePaddings>(): R;
-    influenceRectEdgePaddingsThatCascadeToContainedLayers<R = cocoa.BCEdgePaddings>(): R;
+    influenceRectEdgePaddingsThatDoNotCascade<R = BCEdgePaddings>(): R;
+    influenceRectEdgePaddingsThatCascadeToContainedLayers<R = BCEdgePaddings>(): R;
     hasCalculatedInfluenceRectForBounds<R = boolean>(): R;
-    frameForTransforms<R = cocoa.CGRect>(): R;
-    transform<R = cocoa.NSAffineTransform>(): R;
-    CGTransformForFrame<R = cocoa.CGAffineTransform>(): R;
-    center<R = cocoa.CGPoint>(): R;
-    origin<R = cocoa.CGPoint>(): R;
-    rect<R = cocoa.CGRect>(): R;
-    bounds<R = cocoa.CGRect>(): R;
+    frameForTransforms<R = CGRect>(): R;
+    transform<R = NSAffineTransform>(): R;
+    CGTransformForFrame<R = CGAffineTransform>(): R;
+    center<R = CGPoint>(): R;
+    origin<R = CGPoint>(): R;
+    rect<R = CGRect>(): R;
+    bounds<R = CGRect>(): R;
     hasEnabledBackgroundBlur<R = boolean>(): R;
     hasTransforms<R = boolean>(): R;
     isLayerExportable<R = boolean>(): R;
     shouldBeIncludedInParentPath<R = boolean>(): R;
     cacheOwner<R = unknown>(): R;
-    interfaceImageIdentifier<R = cocoa.NSString>(): R;
-    dataSupplierIdentifier<R = cocoa.NSString>(): R;
-    unavailableFontNames<R = cocoa.NSSet>(): R;
-    fontNames<R = cocoa.NSSet>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    interfaceImageIdentifier<R = NSString>(): R;
+    dataSupplierIdentifier<R = NSString>(): R;
+    unavailableFontNames<R = NSSet>(): R;
+    fontNames<R = NSSet>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     isFlippedHorizontal<R = boolean>(): R;
     isFlippedVertical<R = boolean>(): R;
     isVisible<R = boolean>(): R;
-    objectID<R = cocoa.NSString>(): R;
+    objectID<R = NSString>(): R;
     rotation<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSImmutableLayer<T = any> extends cocoa.classes._MSImmutableLayer, cocoa.classes.MSInterfaceImageOwnerProtocol, cocoa.classes.MSImmutableLayerPreviewabilityProtocol, cocoa.classes.MSLayerContainmentProtocol, cocoa.classes.MSFlowContainmentCheckProtocol, cocoa.classes.MSLayerProtocol, cocoa.classes.MSLayerTraitsProtocol {
+    export interface MSImmutableLayer<T = any> extends _MSImmutableLayer, MSInterfaceImageOwnerProtocol, MSImmutableLayerPreviewabilityProtocol, MSLayerContainmentProtocol, MSFlowContainmentCheckProtocol, MSLayerProtocol, MSLayerTraitsProtocol {
       alloc<R = MSImmutableLayer>(): R;
       new: <R = MSImmutableLayer>() => R;
     }

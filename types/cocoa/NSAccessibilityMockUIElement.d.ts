@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAccessibilityMockUIElement<T = any> extends cocoa.NSAccessibilityElement {
+  export interface NSAccessibilityMockUIElement<T = any> extends NSAccessibilityElement {
     accessibilityVerticalUnitDescriptionAttribute<R = unknown>(): R;
     accessibilityHorizontalUnitDescriptionAttribute<R = unknown>(): R;
     accessibilityFocusedUIElement<R = unknown>(): R;
@@ -37,7 +37,7 @@ declare namespace cocoa {
     initWithRole_subrole_parent<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_initWithRole: P0, _subrole: P1, _parent: P2): R;
   }
   namespace classes {
-    export interface NSAccessibilityMockUIElement<T = any> extends cocoa.classes.NSAccessibilityElement {
+    export interface NSAccessibilityMockUIElement<T = any> extends NSAccessibilityElement {
       alloc<R = NSAccessibilityMockUIElement>(): R;
       new: <R = NSAccessibilityMockUIElement>() => R;
       elementWithRole_parent<R = unknown, P0 = unknown, P1 = unknown>(_elementWithRole: P0, _parent: P1): R;

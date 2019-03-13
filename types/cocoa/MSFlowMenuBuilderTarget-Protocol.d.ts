@@ -10,5 +10,3 @@ declare namespace cocoa {
     export interface MSFlowMenuBuilderTargetProtocol<T = any> {  }
   }
 }
-
-declare const MSFlowMenuBuilderTargetProtocol: cocoa.classes.MSFlowMenuBuilderTargetProtocol;

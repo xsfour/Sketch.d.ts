@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSWindowController<T = any> extends cocoa.NSResponder, cocoa.NSSeguePerformingProtocol {
+  export interface NSWindowController<T = any> extends NSResponder, NSSeguePerformingProtocol {
     cxx_destruct<R = void>(): R;
     _autounbinder<R = unknown>(): R;
     _finishedMakingConnections<R = void>(): R;
@@ -35,34 +35,34 @@ declare namespace cocoa {
     initWithWindowNibName<R = unknown, P0 = unknown>(_initWithWindowNibName: P0): R;
     initWithWindow<R = unknown, P0 = unknown>(_initWithWindow: P0): R;
     _responderDebugDescription<R = unknown>(): R;
-    presentViewController_asPopoverRelativeToRect_ofView_preferredEdge_behavior<R = void, P0 = unknown, P1 = cocoa.CGRect, P2 = unknown, P3 = number, P4 = number>(_presentViewController: P0, _asPopoverRelativeToRect: P1, _ofView: P2, _preferredEdge: P3, _behavior: P4): R;
+    presentViewController_asPopoverRelativeToRect_ofView_preferredEdge_behavior<R = void, P0 = unknown, P1 = CGRect, P2 = unknown, P3 = number, P4 = number>(_presentViewController: P0, _asPopoverRelativeToRect: P1, _ofView: P2, _preferredEdge: P3, _behavior: P4): R;
     dismissController<R = void, P0 = unknown>(_dismissController: P0): R;
-    _frameAutosaveName<R = cocoa.NSString>(): R;
-    set_frameAutosaveName<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    _frameAutosaveName<R = NSString>(): R;
+    set_frameAutosaveName<R = void, P0 = NSString>(_v: P0): R;
     windowLoaded<R = boolean>(): R;
-    window<R = cocoa.NSWindow>(): R;
-    setWindow<R = void, P0 = cocoa.NSWindow>(_v: P0): R;
+    window<R = NSWindow>(): R;
+    setWindow<R = void, P0 = NSWindow>(_v: P0): R;
     shouldCloseDocument<R = boolean>(): R;
     setShouldCloseDocument<R = void, P0 = boolean>(_v: P0): R;
     document<R = unknown>(): R;
     setDocument<R = void, P0 = unknown>(_v: P0): R;
-    contentViewController<R = cocoa.NSViewController>(): R;
-    setContentViewController<R = void, P0 = cocoa.NSViewController>(_v: P0): R;
+    contentViewController<R = NSViewController>(): R;
+    setContentViewController<R = void, P0 = NSViewController>(_v: P0): R;
     shouldCascadeWindows<R = boolean>(): R;
     setShouldCascadeWindows<R = void, P0 = boolean>(_v: P0): R;
-    windowFrameAutosaveName<R = cocoa.NSString>(): R;
-    setWindowFrameAutosaveName<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    windowFrameAutosaveName<R = NSString>(): R;
+    setWindowFrameAutosaveName<R = void, P0 = NSString>(_v: P0): R;
     owner<R = unknown>(): R;
-    windowNibPath<R = cocoa.NSString>(): R;
-    windowNibName<R = cocoa.NSString>(): R;
-    presentingViewController<R = cocoa.NSViewController>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    windowNibPath<R = NSString>(): R;
+    windowNibName<R = NSString>(): R;
+    presentingViewController<R = NSViewController>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSWindowController<T = any> extends cocoa.classes.NSResponder, cocoa.classes.NSSeguePerformingProtocol {
+    export interface NSWindowController<T = any> extends NSResponder, NSSeguePerformingProtocol {
       alloc<R = NSWindowController>(): R;
       new: <R = NSWindowController>() => R;
       _doneWithLocations<R = void>(): R;

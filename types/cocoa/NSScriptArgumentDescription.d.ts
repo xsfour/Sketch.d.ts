@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScriptArgumentDescription<T = any> extends cocoa.NSObject {
+  export interface NSScriptArgumentDescription<T = any> extends NSObject {
     parameterDescriptorFromEvent<R = unknown, P0 = unknown>(_parameterDescriptorFromEvent: P0): R;
     firstPresentableName<R = unknown>(): R;
     presentableNames<R = unknown>(): R;
@@ -22,7 +22,7 @@ declare namespace cocoa {
     _descriptionWithTabCount<R = unknown, P0 = number>(__descriptionWithTabCount: P0): R;
   }
   namespace classes {
-    export interface NSScriptArgumentDescription<T = any> extends cocoa.classes.NSObject {
+    export interface NSScriptArgumentDescription<T = any> extends NSObject {
       alloc<R = NSScriptArgumentDescription>(): R;
       new: <R = NSScriptArgumentDescription>() => R;
       argumentDescriptionFromName_implDeclaration_presoDeclaration_suiteName_commandName<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown>(_argumentDescriptionFromName: P0, _implDeclaration: P1, _presoDeclaration: P2, _suiteName: P3, _commandName: P4): R;

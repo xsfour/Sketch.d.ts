@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTextFinderIndicatorManager<T = any> extends cocoa.NSObject {
+  export interface NSTextFinderIndicatorManager<T = any> extends NSObject {
     isVisible<R = boolean>(): R;
     setIsVisible_animate<R = void, P0 = boolean, P1 = boolean>(_setIsVisible: P0, _animate: P1): R;
     _hideAnimate<R = void, P0 = boolean>(__hideAnimate: P0): R;
@@ -13,7 +13,7 @@ declare namespace cocoa {
     _flushUpdate<R = void>(): R;
     _scheduleDelayedUpdate<R = void>(): R;
     _delayedUpdate<R = void>(): R;
-    _enumerateViewsAndRectsForRange_withBlock<R = void, P0 = cocoa._NSRange, P1 = cocoa.CDUnknownBlockType>(__enumerateViewsAndRectsForRange: P0, _withBlock: P1): R;
+    _enumerateViewsAndRectsForRange_withBlock<R = void, P0 = _NSRange, P1 = CDUnknownBlockType>(__enumerateViewsAndRectsForRange: P0, _withBlock: P1): R;
     _parentWindow<R = unknown>(): R;
     _containerDidChange<R = void>(): R;
     _contentView<R = unknown>(): R;
@@ -22,7 +22,7 @@ declare namespace cocoa {
     initWithTextFinderImpl<R = unknown, P0 = unknown>(_initWithTextFinderImpl: P0): R;
   }
   namespace classes {
-    export interface NSTextFinderIndicatorManager<T = any> extends cocoa.classes.NSObject {
+    export interface NSTextFinderIndicatorManager<T = any> extends NSObject {
       alloc<R = NSTextFinderIndicatorManager>(): R;
       new: <R = NSTextFinderIndicatorManager>() => R;
       _textRects_inWebViewCoordinateSpace<R = unknown, P0 = unknown, P1 = unknown>(__textRects: P0, _inWebViewCoordinateSpace: P1): R;

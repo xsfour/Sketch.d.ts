@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSResponder<T = any> extends cocoa.NSObject, cocoa.NSTouchBarProviderContainerProtocol, cocoa.NSUIActivityProviderProtocol, cocoa.NSTouchBarProviderProtocol, cocoa._NSQuickActionItemSourceProtocol, cocoa.NSCodingProtocol {
+  export interface NSResponder<T = any> extends NSObject, NSTouchBarProviderContainerProtocol, NSUIActivityProviderProtocol, NSTouchBarProviderProtocol, _NSQuickActionItemSourceProtocol, NSCodingProtocol {
     _ignoreBadFirstResponders<R = boolean>(): R;
     accessibilityPerformShowMenu<R = boolean>(): R;
     accessibilityPerformShowDefaultUI<R = boolean>(): R;
@@ -36,8 +36,8 @@ declare namespace cocoa {
     accessibilityVisibleColumns<R = unknown>(): R;
     setAccessibilityVisibleChildren<R = void, P0 = unknown>(_setAccessibilityVisibleChildren: P0): R;
     accessibilityVisibleChildren<R = unknown>(): R;
-    setAccessibilityVisibleCharacterRange<R = void, P0 = cocoa._NSRange>(_setAccessibilityVisibleCharacterRange: P0): R;
-    accessibilityVisibleCharacterRange<R = cocoa._NSRange>(): R;
+    setAccessibilityVisibleCharacterRange<R = void, P0 = _NSRange>(_setAccessibilityVisibleCharacterRange: P0): R;
+    accessibilityVisibleCharacterRange<R = _NSRange>(): R;
     setAccessibilityVisibleCells<R = void, P0 = unknown>(_setAccessibilityVisibleCells: P0): R;
     accessibilityVisibleCells<R = unknown>(): R;
     setAccessibilityVerticalUnits<R = void, P0 = number>(_setAccessibilityVerticalUnits: P0): R;
@@ -72,24 +72,24 @@ declare namespace cocoa {
     accessibilitySplitters<R = unknown>(): R;
     setAccessibilitySortDirection<R = void, P0 = number>(_setAccessibilitySortDirection: P0): R;
     accessibilitySortDirection<R = number>(): R;
-    setAccessibilityFrameInParentSpace<R = void, P0 = cocoa.CGRect>(_setAccessibilityFrameInParentSpace: P0): R;
-    accessibilityFrameInParentSpace<R = cocoa.CGRect>(): R;
-    setAccessibilityFrame<R = void, P0 = cocoa.CGRect>(_setAccessibilityFrame: P0): R;
-    accessibilityFrame<R = cocoa.CGRect>(): R;
+    setAccessibilityFrameInParentSpace<R = void, P0 = CGRect>(_setAccessibilityFrameInParentSpace: P0): R;
+    accessibilityFrameInParentSpace<R = CGRect>(): R;
+    setAccessibilityFrame<R = void, P0 = CGRect>(_setAccessibilityFrame: P0): R;
+    accessibilityFrame<R = CGRect>(): R;
     setAccessibilityShownMenu<R = void, P0 = unknown>(_setAccessibilityShownMenu: P0): R;
     accessibilityShownMenu<R = unknown>(): R;
     setAccessibilitySharedTextUIElements<R = void, P0 = unknown>(_setAccessibilitySharedTextUIElements: P0): R;
     accessibilitySharedTextUIElements<R = unknown>(): R;
     setAccessibilitySharedFocusElements<R = void, P0 = unknown>(_setAccessibilitySharedFocusElements: P0): R;
     accessibilitySharedFocusElements<R = unknown>(): R;
-    setAccessibilitySharedCharacterRange<R = void, P0 = cocoa._NSRange>(_setAccessibilitySharedCharacterRange: P0): R;
-    accessibilitySharedCharacterRange<R = cocoa._NSRange>(): R;
+    setAccessibilitySharedCharacterRange<R = void, P0 = _NSRange>(_setAccessibilitySharedCharacterRange: P0): R;
+    accessibilitySharedCharacterRange<R = _NSRange>(): R;
     setAccessibilityServesAsTitleForUIElements<R = void, P0 = unknown>(_setAccessibilityServesAsTitleForUIElements: P0): R;
     accessibilityServesAsTitleForUIElements<R = unknown>(): R;
     setAccessibilitySelectedTextRanges<R = void, P0 = unknown>(_setAccessibilitySelectedTextRanges: P0): R;
     accessibilitySelectedTextRanges<R = unknown>(): R;
-    setAccessibilitySelectedTextRange<R = void, P0 = cocoa._NSRange>(_setAccessibilitySelectedTextRange: P0): R;
-    accessibilitySelectedTextRange<R = cocoa._NSRange>(): R;
+    setAccessibilitySelectedTextRange<R = void, P0 = _NSRange>(_setAccessibilitySelectedTextRange: P0): R;
+    accessibilitySelectedTextRange<R = _NSRange>(): R;
     setAccessibilitySelectedText<R = void, P0 = unknown>(_setAccessibilitySelectedText: P0): R;
     accessibilitySelectedText<R = unknown>(): R;
     setAccessibilitySelectedRows<R = void, P0 = unknown>(_setAccessibilitySelectedRows: P0): R;
@@ -112,8 +112,8 @@ declare namespace cocoa {
     accessibilitySearchButton<R = unknown>(): R;
     setAccessibilityRows<R = void, P0 = unknown>(_setAccessibilityRows: P0): R;
     accessibilityRows<R = unknown>(): R;
-    setAccessibilityRowIndexRange<R = void, P0 = cocoa._NSRange>(_setAccessibilityRowIndexRange: P0): R;
-    accessibilityRowIndexRange<R = cocoa._NSRange>(): R;
+    setAccessibilityRowIndexRange<R = void, P0 = _NSRange>(_setAccessibilityRowIndexRange: P0): R;
+    accessibilityRowIndexRange<R = _NSRange>(): R;
     setAccessibilityRowHeaderUIElements<R = void, P0 = unknown>(_setAccessibilityRowHeaderUIElements: P0): R;
     accessibilityRowHeaderUIElements<R = unknown>(): R;
     setAccessibilityRowCount<R = void, P0 = number>(_setAccessibilityRowCount: P0): R;
@@ -257,8 +257,8 @@ declare namespace cocoa {
     accessibilityColumns<R = unknown>(): R;
     setAccessibilityColumnTitles<R = void, P0 = unknown>(_setAccessibilityColumnTitles: P0): R;
     accessibilityColumnTitles<R = unknown>(): R;
-    setAccessibilityColumnIndexRange<R = void, P0 = cocoa._NSRange>(_setAccessibilityColumnIndexRange: P0): R;
-    accessibilityColumnIndexRange<R = cocoa._NSRange>(): R;
+    setAccessibilityColumnIndexRange<R = void, P0 = _NSRange>(_setAccessibilityColumnIndexRange: P0): R;
+    accessibilityColumnIndexRange<R = _NSRange>(): R;
     setAccessibilityColumnHeaderUIElements<R = void, P0 = unknown>(_setAccessibilityColumnHeaderUIElements: P0): R;
     accessibilityColumnHeaderUIElements<R = unknown>(): R;
     setAccessibilityColumnCount<R = void, P0 = number>(_setAccessibilityColumnCount: P0): R;
@@ -279,24 +279,24 @@ declare namespace cocoa {
     isAccessibilityAlternateUIVisible<R = boolean>(): R;
     setAccessibilityAllowedValues<R = void, P0 = unknown>(_setAccessibilityAllowedValues: P0): R;
     accessibilityAllowedValues<R = unknown>(): R;
-    setAccessibilityActivationPoint<R = void, P0 = cocoa.CGPoint>(_setAccessibilityActivationPoint: P0): R;
-    accessibilityActivationPoint<R = cocoa.CGPoint>(): R;
+    setAccessibilityActivationPoint<R = void, P0 = CGPoint>(_setAccessibilityActivationPoint: P0): R;
+    accessibilityActivationPoint<R = CGPoint>(): R;
     setAccessibilityElement<R = void, P0 = boolean>(_setAccessibilityElement: P0): R;
     isAccessibilityElement<R = boolean>(): R;
-    accessibilityAttributedStringForRange<R = unknown, P0 = cocoa._NSRange>(_accessibilityAttributedStringForRange: P0): R;
-    accessibilityStringForRange<R = unknown, P0 = cocoa._NSRange>(_accessibilityStringForRange: P0): R;
-    accessibilityRTFForRange<R = unknown, P0 = cocoa._NSRange>(_accessibilityRTFForRange: P0): R;
-    accessibilityStyleRangeForIndex<R = cocoa._NSRange, P0 = number>(_accessibilityStyleRangeForIndex: P0): R;
-    accessibilityScreenSizeForLayoutSize<R = cocoa.CGSize, P0 = cocoa.CGSize>(_accessibilityScreenSizeForLayoutSize: P0): R;
-    accessibilityScreenPointForLayoutPoint<R = cocoa.CGPoint, P0 = cocoa.CGPoint>(_accessibilityScreenPointForLayoutPoint: P0): R;
+    accessibilityAttributedStringForRange<R = unknown, P0 = _NSRange>(_accessibilityAttributedStringForRange: P0): R;
+    accessibilityStringForRange<R = unknown, P0 = _NSRange>(_accessibilityStringForRange: P0): R;
+    accessibilityRTFForRange<R = unknown, P0 = _NSRange>(_accessibilityRTFForRange: P0): R;
+    accessibilityStyleRangeForIndex<R = _NSRange, P0 = number>(_accessibilityStyleRangeForIndex: P0): R;
+    accessibilityScreenSizeForLayoutSize<R = CGSize, P0 = CGSize>(_accessibilityScreenSizeForLayoutSize: P0): R;
+    accessibilityScreenPointForLayoutPoint<R = CGPoint, P0 = CGPoint>(_accessibilityScreenPointForLayoutPoint: P0): R;
     accessibilityResultsForSearchPredicate<R = unknown, P0 = unknown>(_accessibilityResultsForSearchPredicate: P0): R;
-    accessibilityRangeForPosition<R = cocoa._NSRange, P0 = cocoa.CGPoint>(_accessibilityRangeForPosition: P0): R;
-    accessibilityRangeForLine<R = cocoa._NSRange, P0 = number>(_accessibilityRangeForLine: P0): R;
-    accessibilityRangeForIndex<R = cocoa._NSRange, P0 = number>(_accessibilityRangeForIndex: P0): R;
+    accessibilityRangeForPosition<R = _NSRange, P0 = CGPoint>(_accessibilityRangeForPosition: P0): R;
+    accessibilityRangeForLine<R = _NSRange, P0 = number>(_accessibilityRangeForLine: P0): R;
+    accessibilityRangeForIndex<R = _NSRange, P0 = number>(_accessibilityRangeForIndex: P0): R;
     accessibilityLineForIndex<R = number, P0 = number>(_accessibilityLineForIndex: P0): R;
-    accessibilityLayoutSizeForScreenSize<R = cocoa.CGSize, P0 = cocoa.CGSize>(_accessibilityLayoutSizeForScreenSize: P0): R;
-    accessibilityLayoutPointForScreenPoint<R = cocoa.CGPoint, P0 = cocoa.CGPoint>(_accessibilityLayoutPointForScreenPoint: P0): R;
-    accessibilityFrameForRange<R = cocoa.CGRect, P0 = cocoa._NSRange>(_accessibilityFrameForRange: P0): R;
+    accessibilityLayoutSizeForScreenSize<R = CGSize, P0 = CGSize>(_accessibilityLayoutSizeForScreenSize: P0): R;
+    accessibilityLayoutPointForScreenPoint<R = CGPoint, P0 = CGPoint>(_accessibilityLayoutPointForScreenPoint: P0): R;
+    accessibilityFrameForRange<R = CGRect, P0 = _NSRange>(_accessibilityFrameForRange: P0): R;
     accessibilityCellForColumn_row<R = unknown, P0 = number, P1 = number>(_accessibilityCellForColumn: P0, _row: P1): R;
     isAccessibilitySelectorAllowed<R = boolean, P0 = string>(_isAccessibilitySelectorAllowed: P0): R;
     validateProposedFirstResponder_forEvent<R = boolean, P0 = unknown, P1 = unknown>(_validateProposedFirstResponder: P0, _forEvent: P1): R;
@@ -333,7 +333,7 @@ declare namespace cocoa {
     noResponderFor<R = void, P0 = string>(_noResponderFor: P0): R;
     pressureChangeWithEvent<R = void, P0 = unknown>(_pressureChangeWithEvent: P0): R;
     navigateWithEvent<R = void, P0 = unknown>(_navigateWithEvent: P0): R;
-    quickLookPreviewItemsAtWindowLocation<R = void, P0 = cocoa.CGPoint>(_quickLookPreviewItemsAtWindowLocation: P0): R;
+    quickLookPreviewItemsAtWindowLocation<R = void, P0 = CGPoint>(_quickLookPreviewItemsAtWindowLocation: P0): R;
     quickLookWithEvent<R = void, P0 = unknown>(_quickLookWithEvent: P0): R;
     touchesCancelledWithEvent<R = void, P0 = unknown>(_touchesCancelledWithEvent: P0): R;
     touchesEndedWithEvent<R = void, P0 = unknown>(_touchesEndedWithEvent: P0): R;
@@ -399,20 +399,20 @@ declare namespace cocoa {
     _copyPersistentUIChildren<R = unknown>(): R;
     makeTouchBar<R = unknown>(): R;
     ns_widgetType<R = unknown>(): R;
-    menu<R = cocoa.NSMenu>(): R;
-    setMenu<R = void, P0 = cocoa.NSMenu>(_v: P0): R;
+    menu<R = NSMenu>(): R;
+    setMenu<R = void, P0 = NSMenu>(_v: P0): R;
     acceptsFirstResponder<R = boolean>(): R;
-    nextResponder<R = cocoa.NSResponder>(): R;
-    setNextResponder<R = void, P0 = cocoa.NSResponder>(_v: P0): R;
-    _responderDebugDescription<R = cocoa.NSString>(): R;
-    userActivity<R = cocoa.NSUserActivity>(): R;
-    setUserActivity<R = void, P0 = cocoa.NSUserActivity>(_v: P0): R;
-    touchBar<R = cocoa.NSTouchBar>(): R;
-    setTouchBar<R = void, P0 = cocoa.NSTouchBar>(_v: P0): R;
-    servicesRequestor<R = cocoa.NSServicesRequestor>(): R;
-    additionalQuickActionItemSource<R = cocoa._NSQuickActionItemSource>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    nextResponder<R = NSResponder>(): R;
+    setNextResponder<R = void, P0 = NSResponder>(_v: P0): R;
+    _responderDebugDescription<R = NSString>(): R;
+    userActivity<R = NSUserActivity>(): R;
+    setUserActivity<R = void, P0 = NSUserActivity>(_v: P0): R;
+    touchBar<R = NSTouchBar>(): R;
+    setTouchBar<R = void, P0 = NSTouchBar>(_v: P0): R;
+    servicesRequestor<R = NSServicesRequestor>(): R;
+    additionalQuickActionItemSource<R = _NSQuickActionItemSource>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
     // + NSResponder(Chocolat):
@@ -420,7 +420,7 @@ declare namespace cocoa {
     supportsTouchBar<R = boolean>(): R;
   }
   namespace classes {
-    export interface NSResponder<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSTouchBarProviderContainerProtocol, cocoa.classes.NSUIActivityProviderProtocol, cocoa.classes.NSTouchBarProviderProtocol, cocoa.classes._NSQuickActionItemSourceProtocol, cocoa.classes.NSCodingProtocol {
+    export interface NSResponder<T = any> extends NSObject, NSTouchBarProviderContainerProtocol, NSUIActivityProviderProtocol, NSTouchBarProviderProtocol, _NSQuickActionItemSourceProtocol, NSCodingProtocol {
       alloc<R = NSResponder>(): R;
       new: <R = NSResponder>() => R;
       initialize<R = void>(): R;

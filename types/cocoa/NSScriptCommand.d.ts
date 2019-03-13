@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScriptCommand<T = any> extends cocoa.NSObject, cocoa.NSCodingProtocol {
+  export interface NSScriptCommand<T = any> extends NSObject, NSCodingProtocol {
     description<R = unknown>(): R;
     replacementObjectForPortCoder<R = unknown, P0 = unknown>(_replacementObjectForPortCoder: P0): R;
     resumeExecutionWithResult<R = void, P0 = unknown>(_resumeExecutionWithResult: P0): R;
@@ -25,28 +25,28 @@ declare namespace cocoa {
     _setScriptErrorExpectedTypeDescriptor<R = void, P0 = unknown>(__setScriptErrorExpectedTypeDescriptor: P0): R;
     _setScriptErrorOffendingObjectDescriptor<R = void, P0 = unknown>(__setScriptErrorOffendingObjectDescriptor: P0): R;
     _setScriptErrorFromKVCException<R = void, P0 = unknown>(__setScriptErrorFromKVCException: P0): R;
-    appleEvent<R = cocoa.NSAppleEventDescriptor>(): R;
-    scriptErrorString<R = cocoa.NSString>(): R;
-    setScriptErrorString<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    scriptErrorExpectedTypeDescriptor<R = cocoa.NSAppleEventDescriptor>(): R;
-    setScriptErrorExpectedTypeDescriptor<R = void, P0 = cocoa.NSAppleEventDescriptor>(_v: P0): R;
-    scriptErrorOffendingObjectDescriptor<R = cocoa.NSAppleEventDescriptor>(): R;
-    setScriptErrorOffendingObjectDescriptor<R = void, P0 = cocoa.NSAppleEventDescriptor>(_v: P0): R;
+    appleEvent<R = NSAppleEventDescriptor>(): R;
+    scriptErrorString<R = NSString>(): R;
+    setScriptErrorString<R = void, P0 = NSString>(_v: P0): R;
+    scriptErrorExpectedTypeDescriptor<R = NSAppleEventDescriptor>(): R;
+    setScriptErrorExpectedTypeDescriptor<R = void, P0 = NSAppleEventDescriptor>(_v: P0): R;
+    scriptErrorOffendingObjectDescriptor<R = NSAppleEventDescriptor>(): R;
+    setScriptErrorOffendingObjectDescriptor<R = void, P0 = NSAppleEventDescriptor>(_v: P0): R;
     scriptErrorNumber<R = number>(): R;
     setScriptErrorNumber<R = void, P0 = number>(_v: P0): R;
     wellFormed<R = boolean>(): R;
-    evaluatedArguments<R = cocoa.NSDictionary>(): R;
-    arguments<R = cocoa.NSDictionary>(): R;
-    setArguments<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
+    evaluatedArguments<R = NSDictionary>(): R;
+    arguments<R = NSDictionary>(): R;
+    setArguments<R = void, P0 = NSDictionary>(_v: P0): R;
     evaluatedReceivers<R = unknown>(): R;
-    receiversSpecifier<R = cocoa.NSScriptObjectSpecifier>(): R;
-    setReceiversSpecifier<R = void, P0 = cocoa.NSScriptObjectSpecifier>(_v: P0): R;
+    receiversSpecifier<R = NSScriptObjectSpecifier>(): R;
+    setReceiversSpecifier<R = void, P0 = NSScriptObjectSpecifier>(_v: P0): R;
     directParameter<R = unknown>(): R;
     setDirectParameter<R = void, P0 = unknown>(_v: P0): R;
-    commandDescription<R = cocoa.NSScriptCommandDescription>(): R;
+    commandDescription<R = NSScriptCommandDescription>(): R;
   }
   namespace classes {
-    export interface NSScriptCommand<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCodingProtocol {
+    export interface NSScriptCommand<T = any> extends NSObject, NSCodingProtocol {
       alloc<R = NSScriptCommand>(): R;
       new: <R = NSScriptCommand>() => R;
       currentCommand<R = unknown>(): R;

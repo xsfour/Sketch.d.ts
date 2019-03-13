@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFlowBaseAction<T = any> extends cocoa.MSDocumentAction {
+  export interface MSFlowBaseAction<T = any> extends MSDocumentAction {
     refreshLayerListInspectorAndOverlay<R = void>(): R;
   }
   namespace classes {
-    export interface MSFlowBaseAction<T = any> extends cocoa.classes.MSDocumentAction {
+    export interface MSFlowBaseAction<T = any> extends MSDocumentAction {
       alloc<R = MSFlowBaseAction>(): R;
       new: <R = MSFlowBaseAction>() => R;
     }

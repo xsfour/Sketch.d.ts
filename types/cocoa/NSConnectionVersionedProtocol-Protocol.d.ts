@@ -9,5 +9,3 @@ declare namespace cocoa {
     export interface NSConnectionVersionedProtocolProtocol<T = any> {  }
   }
 }
-
-declare const NSConnectionVersionedProtocolProtocol: cocoa.classes.NSConnectionVersionedProtocolProtocol;

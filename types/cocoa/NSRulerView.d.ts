@@ -1,19 +1,19 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSRulerView<T = any> extends cocoa.NSView {
+  export interface NSRulerView<T = any> extends NSView {
     cxx_destruct<R = void>(): R;
     description<R = unknown>(): R;
     mouseDownCanMoveWindow<R = boolean>(): R;
-    _drawContentRect<R = void, P0 = cocoa.CGRect>(__drawContentRect: P0): R;
+    _drawContentRect<R = void, P0 = CGRect>(__drawContentRect: P0): R;
     drawRulerLines<R = void>(): R;
-    drawMarkersInRect<R = void, P0 = cocoa.CGRect>(_drawMarkersInRect: P0): R;
-    drawHashMarksAndLabelsInRect<R = void, P0 = cocoa.CGRect>(_drawHashMarksAndLabelsInRect: P0): R;
+    drawMarkersInRect<R = void, P0 = CGRect>(_drawMarkersInRect: P0): R;
+    drawHashMarksAndLabelsInRect<R = void, P0 = CGRect>(_drawHashMarksAndLabelsInRect: P0): R;
     setLabelString_forValue<R = void, P0 = unknown, P1 = unknown>(_setLabelString: P0, _forValue: P1): R;
     labelStringForValue<R = unknown, P0 = unknown>(_labelStringForValue: P0): R;
-    drawSeparatorInRect<R = void, P0 = cocoa.CGRect>(_drawSeparatorInRect: P0): R;
-    _centerScanSeparatorRect<R = cocoa.CGRect, P0 = cocoa.CGRect>(__centerScanSeparatorRect: P0): R;
-    _rectWithSingleThickness<R = cocoa.CGRect, P0 = cocoa.CGRect>(__rectWithSingleThickness: P0): R;
+    drawSeparatorInRect<R = void, P0 = CGRect>(_drawSeparatorInRect: P0): R;
+    _centerScanSeparatorRect<R = CGRect, P0 = CGRect>(__centerScanSeparatorRect: P0): R;
+    _rectWithSingleThickness<R = CGRect, P0 = CGRect>(__rectWithSingleThickness: P0): R;
     invalidateHashMarks<R = void>(): R;
     moveRulerlineFromLocation_toLocation<R = void, P0 = number, P1 = number>(_moveRulerlineFromLocation: P0, _toLocation: P1): R;
     trackMarker_withMouseEvent<R = boolean, P0 = unknown, P1 = unknown>(_trackMarker: P0, _withMouseEvent: P1): R;
@@ -28,7 +28,7 @@ declare namespace cocoa {
     accessibilityPositionOfChild<R = unknown, P0 = unknown>(_accessibilityPositionOfChild: P0): R;
     accessibilityIsChildFocusable<R = boolean, P0 = unknown>(_accessibilityIsChildFocusable: P0): R;
     accessibilityHelpStringForChild<R = unknown, P0 = unknown>(_accessibilityHelpStringForChild: P0): R;
-    testPart<R = unknown, P0 = cocoa.CGPoint>(_testPart: P0): R;
+    testPart<R = unknown, P0 = CGPoint>(_testPart: P0): R;
     accessibilityIsMarkerUIElementsAttributeSettable<R = boolean>(): R;
     accessibilityMarkerUIElementsAttribute<R = unknown>(): R;
     accessibilityIsUnitDescriptionAttributeSettable<R = boolean>(): R;
@@ -50,27 +50,27 @@ declare namespace cocoa {
     _scrollToMatchContentView<R = void>(): R;
     setDisplaysTooltips<R = void, P0 = boolean>(_setDisplaysTooltips: P0): R;
     displaysTooltips<R = boolean>(): R;
-    _markerHitTest<R = unknown, P0 = cocoa.CGPoint>(__markerHitTest: P0): R;
+    _markerHitTest<R = unknown, P0 = CGPoint>(__markerHitTest: P0): R;
     _hashMarkDictionaryForDocView_measurementUnitToBoundsConversionFactor_stepUpCycle_stepDownCycle_minimumHashSpacing_minimumLabelSpacing<R = unknown, P0 = unknown, P1 = number, P2 = unknown, P3 = unknown, P4 = number, P5 = number>(__hashMarkDictionaryForDocView: P0, _measurementUnitToBoundsConversionFactor: P1, _stepUpCycle: P2, _stepDownCycle: P3, _minimumHashSpacing: P4, _minimumLabelSpacing: P5): R;
     _hashMarkDictionaryForDocumentView_measurementUnitName<R = unknown, P0 = unknown, P1 = unknown>(__hashMarkDictionaryForDocumentView: P0, _measurementUnitName: P1): R;
     _hashMarkDictionary<R = unknown>(): R;
-    _rulerOrigin<R = cocoa.CGPoint>(): R;
-    _rulerAccessoryViewAreaRect<R = cocoa.CGRect>(): R;
-    _markerAreaRect<R = cocoa.CGRect>(): R;
-    _ruleAreaMarginRect<R = cocoa.CGRect>(): R;
-    _maxRuleAreaRect<R = cocoa.CGRect>(): R;
-    _ruleAreaRect<R = cocoa.CGRect>(): R;
+    _rulerOrigin<R = CGPoint>(): R;
+    _rulerAccessoryViewAreaRect<R = CGRect>(): R;
+    _markerAreaRect<R = CGRect>(): R;
+    _ruleAreaMarginRect<R = CGRect>(): R;
+    _maxRuleAreaRect<R = CGRect>(): R;
+    _ruleAreaRect<R = CGRect>(): R;
     flipped<R = boolean>(): R;
-    accessoryView<R = cocoa.NSView>(): R;
-    setAccessoryView<R = void, P0 = cocoa.NSView>(_v: P0): R;
-    markers<R = cocoa.NSArray>(): R;
-    setMarkers<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    clientView<R = cocoa.NSView>(): R;
-    setClientView<R = void, P0 = cocoa.NSView>(_v: P0): R;
+    accessoryView<R = NSView>(): R;
+    setAccessoryView<R = void, P0 = NSView>(_v: P0): R;
+    markers<R = NSArray>(): R;
+    setMarkers<R = void, P0 = NSArray>(_v: P0): R;
+    clientView<R = NSView>(): R;
+    setClientView<R = void, P0 = NSView>(_v: P0): R;
     originOffset<R = number>(): R;
     setOriginOffset<R = void, P0 = number>(_v: P0): R;
-    measurementUnits<R = cocoa.NSString>(): R;
-    setMeasurementUnits<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    measurementUnits<R = NSString>(): R;
+    setMeasurementUnits<R = void, P0 = NSString>(_v: P0): R;
     reservedThicknessForAccessoryView<R = number>(): R;
     setReservedThicknessForAccessoryView<R = void, P0 = number>(_v: P0): R;
     reservedThicknessForMarkers<R = number>(): R;
@@ -81,11 +81,11 @@ declare namespace cocoa {
     baselineLocation<R = number>(): R;
     orientation<R = number>(): R;
     setOrientation<R = void, P0 = number>(_v: P0): R;
-    scrollView<R = cocoa.NSScrollView>(): R;
-    setScrollView<R = void, P0 = cocoa.NSScrollView>(_v: P0): R;
+    scrollView<R = NSScrollView>(): R;
+    setScrollView<R = void, P0 = NSScrollView>(_v: P0): R;
   }
   namespace classes {
-    export interface NSRulerView<T = any> extends cocoa.classes.NSView {
+    export interface NSRulerView<T = any> extends NSView {
       alloc<R = NSRulerView>(): R;
       new: <R = NSRulerView>() => R;
       registerUnitWithName_abbreviation_unitToPointsConversionFactor_stepUpCycle_stepDownCycle<R = void, P0 = unknown, P1 = unknown, P2 = number, P3 = unknown, P4 = unknown>(_registerUnitWithName: P0, _abbreviation: P1, _unitToPointsConversionFactor: P2, _stepUpCycle: P3, _stepDownCycle: P4): R;

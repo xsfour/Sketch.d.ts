@@ -1,17 +1,15 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSUpDownProtocolProtocol<T = any> extends cocoa.NSObjectProtocol {
-    maximum<R = cocoa.NSNumber>(): R;
-    minimum<R = cocoa.NSNumber>(): R;
+  export interface MSUpDownProtocolProtocol<T = any> extends NSObjectProtocol {
+    maximum<R = NSNumber>(): R;
+    minimum<R = NSNumber>(): R;
     incrementValue<R = number>(): R;
     minimumIncrementValue<R = number>(): R;
     setMinimumIncrementValue<R = void, P0 = number>(_v: P0): R;
-    upDownController<R = cocoa.MSUpDownController>(): R;
+    upDownController<R = MSUpDownController>(): R;
   }
   namespace classes {
-    export interface MSUpDownProtocolProtocol<T = any> extends cocoa.classes.NSObjectProtocol {  }
+    export interface MSUpDownProtocolProtocol<T = any> extends NSObjectProtocol {  }
   }
 }
-
-declare const MSUpDownProtocolProtocol: cocoa.classes.MSUpDownProtocolProtocol;

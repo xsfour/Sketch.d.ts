@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSViewControllerPushTransition<T = any> extends cocoa.NSViewControllerPresentationAnimatorObject {}
+  export interface NSViewControllerPushTransition<T = any> extends NSViewControllerPresentationAnimatorObject {}
   namespace classes {
-    export interface NSViewControllerPushTransition<T = any> extends cocoa.classes.NSViewControllerPresentationAnimatorObject {
+    export interface NSViewControllerPushTransition<T = any> extends NSViewControllerPresentationAnimatorObject {
       alloc<R = NSViewControllerPushTransition>(): R;
       new: <R = NSViewControllerPushTransition>() => R;
     }

@@ -8,5 +8,3 @@ declare namespace cocoa {
     export interface NSChangeSpellingProtocol<T = any> {  }
   }
 }
-
-declare const NSChangeSpellingProtocol: cocoa.classes.NSChangeSpellingProtocol;

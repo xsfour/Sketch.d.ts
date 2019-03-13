@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSActionCell<T = any> extends cocoa.NSCell {
+  export interface NSActionCell<T = any> extends NSCell {
     controlView<R = unknown>(): R;
     setControlView<R = void, P0 = unknown>(_setControlView: P0): R;
     tag<R = number>(): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     setTarget<R = void, P0 = unknown>(_v: P0): R;
   }
   namespace classes {
-    export interface NSActionCell<T = any> extends cocoa.classes.NSCell {
+    export interface NSActionCell<T = any> extends NSCell {
       alloc<R = NSActionCell>(): R;
       new: <R = NSActionCell>() => R;
     }

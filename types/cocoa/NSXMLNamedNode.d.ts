@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXMLNamedNode<T = any> extends cocoa.NSXMLNode {
+  export interface NSXMLNamedNode<T = any> extends NSXMLNode {
     _prefixIndex<R = number>(): R;
     _setPrefix<R = boolean, P0 = unknown>(__setPrefix: P0): R;
     prefix<R = unknown>(): R;
@@ -21,7 +21,7 @@ declare namespace cocoa {
     initWithKind_name_stringValue<R = unknown, P0 = number, P1 = unknown, P2 = unknown>(_initWithKind: P0, _name: P1, _stringValue: P2): R;
   }
   namespace classes {
-    export interface NSXMLNamedNode<T = any> extends cocoa.classes.NSXMLNode {
+    export interface NSXMLNamedNode<T = any> extends NSXMLNode {
       alloc<R = NSXMLNamedNode>(): R;
       new: <R = NSXMLNamedNode>() => R;
     }

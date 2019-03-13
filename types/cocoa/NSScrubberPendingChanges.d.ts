@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScrubberPendingChanges<T = any> extends cocoa.NSObject {
+  export interface NSScrubberPendingChanges<T = any> extends NSObject {
     oldIndexForNewIndex<R = number, P0 = number>(_oldIndexForNewIndex: P0): R;
     stagedAttributesForIndex<R = unknown, P0 = number>(_stagedAttributesForIndex: P0): R;
     moveItemAtIndex_toIndex<R = void, P0 = number, P1 = number>(_moveItemAtIndex: P0, _toIndex: P1): R;
@@ -13,14 +13,14 @@ declare namespace cocoa {
     initWithCurrentLayoutAttributes<R = unknown, P0 = unknown>(_initWithCurrentLayoutAttributes: P0): R;
     countDelta<R = number>(): R;
     stagedAttributesStart<R = number>(): R;
-    stagedAttributes<R = cocoa.NSMutableArray>(): R;
-    toReload<R = cocoa.NSMutableSet>(): R;
-    toBeRemoved<R = cocoa.NSMutableSet>(): R;
+    stagedAttributes<R = NSMutableArray>(): R;
+    toReload<R = NSMutableSet>(): R;
+    toBeRemoved<R = NSMutableSet>(): R;
     selectedIndex<R = number>(): R;
     setSelectedIndex<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface NSScrubberPendingChanges<T = any> extends cocoa.classes.NSObject {
+    export interface NSScrubberPendingChanges<T = any> extends NSObject {
       alloc<R = NSScrubberPendingChanges>(): R;
       new: <R = NSScrubberPendingChanges>() => R;
     }

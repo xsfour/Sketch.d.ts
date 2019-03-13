@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSRegularOverlayScrollerImp<T = any> extends cocoa.NSOverlayScrollerImp {
+  export interface NSRegularOverlayScrollerImp<T = any> extends NSOverlayScrollerImp {
     trackOverlapEndInset<R = number>(): R;
     knobMinLength<R = number>(): R;
     trackSideInset<R = number>(): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     controlSize<R = number>(): R;
   }
   namespace classes {
-    export interface NSRegularOverlayScrollerImp<T = any> extends cocoa.classes.NSOverlayScrollerImp {
+    export interface NSRegularOverlayScrollerImp<T = any> extends NSOverlayScrollerImp {
       alloc<R = NSRegularOverlayScrollerImp>(): R;
       new: <R = NSRegularOverlayScrollerImp>() => R;
     }

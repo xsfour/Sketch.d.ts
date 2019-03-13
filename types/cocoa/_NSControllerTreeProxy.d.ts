@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSControllerTreeProxy<T = any> extends cocoa.NSTreeNode, cocoa._NSBindingTreeProtocol {
+  export interface _NSControllerTreeProxy<T = any> extends NSTreeNode, _NSBindingTreeProtocol {
     objectInChildNodesAtIndex<R = unknown, P0 = number>(_objectInChildNodesAtIndex: P0): R;
     parentNode<R = unknown>(): R;
     mutableChildNodes<R = unknown>(): R;
@@ -13,7 +13,7 @@ declare namespace cocoa {
     initWithController<R = unknown, P0 = unknown>(_initWithController: P0): R;
   }
   namespace classes {
-    export interface _NSControllerTreeProxy<T = any> extends cocoa.classes.NSTreeNode, cocoa.classes._NSBindingTreeProtocol {
+    export interface _NSControllerTreeProxy<T = any> extends NSTreeNode, _NSBindingTreeProtocol {
       alloc<R = _NSControllerTreeProxy>(): R;
       new: <R = _NSControllerTreeProxy>() => R;
     }

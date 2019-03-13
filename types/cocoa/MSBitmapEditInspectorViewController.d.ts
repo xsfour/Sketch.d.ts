@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBitmapEditInspectorViewController<T = any> extends cocoa.NSViewController, cocoa.BCPopoverDelegateProtocol, cocoa.MSColorInspectorDelegateProtocol, cocoa.MSInspectorChildControllerProtocol {
+  export interface MSBitmapEditInspectorViewController<T = any> extends NSViewController, BCPopoverDelegateProtocol, MSColorInspectorDelegateProtocol, MSInspectorChildControllerProtocol {
     cxx_destruct<R = void>(): R;
     views<R = unknown>(): R;
     colorMagnifierAction<R = void, P0 = unknown>(_colorMagnifierAction: P0): R;
@@ -14,42 +14,42 @@ declare namespace cocoa {
     refresh<R = void>(): R;
     buttonLabels<R = unknown>(): R;
     actionButtons<R = unknown>(): R;
-    fillLabel<R = cocoa.NSTextField>(): R;
-    setFillLabel<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    cropLabel<R = cocoa.NSTextField>(): R;
-    setCropLabel<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    invertLabel<R = cocoa.NSTextField>(): R;
-    setInvertLabel<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    heightField<R = cocoa.NSTextField>(): R;
-    setHeightField<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    widthField<R = cocoa.NSTextField>(): R;
-    setWidthField<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    fillButton<R = cocoa.NSButton>(): R;
-    setFillButton<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    cropButton<R = cocoa.NSButton>(): R;
-    setCropButton<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    invertButton<R = cocoa.NSButton>(): R;
-    setInvertButton<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    popover<R = cocoa.BCPopover>(): R;
-    setPopover<R = void, P0 = cocoa.BCPopover>(_v: P0): R;
-    magicWandButton<R = cocoa.NSButton>(): R;
-    setMagicWandButton<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    rectSelectionButton<R = cocoa.NSButton>(): R;
-    setRectSelectionButton<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    eventHandler<R = cocoa.MSBitmapEditEventHandler>(): R;
-    setEventHandler<R = void, P0 = cocoa.MSBitmapEditEventHandler>(_v: P0): R;
-    selectionSize<R = cocoa.CGSize>(): R;
-    setSelectionSize<R = void, P0 = cocoa.CGSize>(_v: P0): R;
+    fillLabel<R = NSTextField>(): R;
+    setFillLabel<R = void, P0 = NSTextField>(_v: P0): R;
+    cropLabel<R = NSTextField>(): R;
+    setCropLabel<R = void, P0 = NSTextField>(_v: P0): R;
+    invertLabel<R = NSTextField>(): R;
+    setInvertLabel<R = void, P0 = NSTextField>(_v: P0): R;
+    heightField<R = NSTextField>(): R;
+    setHeightField<R = void, P0 = NSTextField>(_v: P0): R;
+    widthField<R = NSTextField>(): R;
+    setWidthField<R = void, P0 = NSTextField>(_v: P0): R;
+    fillButton<R = NSButton>(): R;
+    setFillButton<R = void, P0 = NSButton>(_v: P0): R;
+    cropButton<R = NSButton>(): R;
+    setCropButton<R = void, P0 = NSButton>(_v: P0): R;
+    invertButton<R = NSButton>(): R;
+    setInvertButton<R = void, P0 = NSButton>(_v: P0): R;
+    popover<R = BCPopover>(): R;
+    setPopover<R = void, P0 = BCPopover>(_v: P0): R;
+    magicWandButton<R = NSButton>(): R;
+    setMagicWandButton<R = void, P0 = NSButton>(_v: P0): R;
+    rectSelectionButton<R = NSButton>(): R;
+    setRectSelectionButton<R = void, P0 = NSButton>(_v: P0): R;
+    eventHandler<R = MSBitmapEditEventHandler>(): R;
+    setEventHandler<R = void, P0 = MSBitmapEditEventHandler>(_v: P0): R;
+    selectionSize<R = CGSize>(): R;
+    setSelectionSize<R = void, P0 = CGSize>(_v: P0): R;
     currentMode<R = number>(): R;
     setCurrentMode<R = void, P0 = number>(_v: P0): R;
     hasSelection<R = boolean>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSBitmapEditInspectorViewController<T = any> extends cocoa.classes.NSViewController, cocoa.classes.BCPopoverDelegateProtocol, cocoa.classes.MSColorInspectorDelegateProtocol, cocoa.classes.MSInspectorChildControllerProtocol {
+    export interface MSBitmapEditInspectorViewController<T = any> extends NSViewController, BCPopoverDelegateProtocol, MSColorInspectorDelegateProtocol, MSInspectorChildControllerProtocol {
       alloc<R = MSBitmapEditInspectorViewController>(): R;
       new: <R = MSBitmapEditInspectorViewController>() => R;
     }

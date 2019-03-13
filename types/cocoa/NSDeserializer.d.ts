@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDeserializer<T = any> extends cocoa.NSObject {}
+  export interface NSDeserializer<T = any> extends NSObject {}
   namespace classes {
-    export interface NSDeserializer<T = any> extends cocoa.classes.NSObject {
+    export interface NSDeserializer<T = any> extends NSObject {
       alloc<R = NSDeserializer>(): R;
       new: <R = NSDeserializer>() => R;
       deserializePropertyListLazilyFromData_atCursor_length_mutableContainers<R = unknown, P0 = unknown, P1 = number, P2 = number, P3 = boolean>(_deserializePropertyListLazilyFromData: P0, _atCursor: P1, _length: P2, _mutableContainers: P3): R;

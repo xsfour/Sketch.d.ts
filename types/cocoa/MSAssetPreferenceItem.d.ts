@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAssetPreferenceItem<T = any> extends cocoa.NSObject {
+  export interface MSAssetPreferenceItem<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     evaluateSecondaryTitle<R = void>(): R;
     updatingRelatedSecondaryTitle<R = unknown>(): R;
@@ -17,28 +17,28 @@ declare namespace cocoa {
     setDownloadedSoFar<R = void, P0 = number>(_v: P0): R;
     fileSize<R = number>(): R;
     setFileSize<R = void, P0 = number>(_v: P0): R;
-    secondaryTitle<R = cocoa.NSString>(): R;
-    setSecondaryTitle<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    preview<R = cocoa.NSImage>(): R;
-    setPreview<R = void, P0 = cocoa.NSImage>(_v: P0): R;
-    library<R = cocoa.MSAssetLibrary>(): R;
-    delegate<R = cocoa.MSAssetPreferenceItemDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.MSAssetPreferenceItemDelegate>(_v: P0): R;
+    secondaryTitle<R = NSString>(): R;
+    setSecondaryTitle<R = void, P0 = NSString>(_v: P0): R;
+    preview<R = NSImage>(): R;
+    setPreview<R = void, P0 = NSImage>(_v: P0): R;
+    library<R = MSAssetLibrary>(): R;
+    delegate<R = MSAssetPreferenceItemDelegate>(): R;
+    setDelegate<R = void, P0 = MSAssetPreferenceItemDelegate>(_v: P0): R;
     updatingStatus<R = number>(): R;
     setUpdatingStatus<R = void, P0 = number>(_v: P0): R;
     missingRemoteLibraryWithNoInternet<R = boolean>(): R;
-    remoteLibrary<R = cocoa.MSRemoteAssetLibrary>(): R;
-    modificationDate<R = cocoa.NSString>(): R;
+    remoteLibrary<R = MSRemoteAssetLibrary>(): R;
+    modificationDate<R = NSString>(): R;
     hasAppcastURL<R = boolean>(): R;
     validForSecondaryTextField<R = boolean>(): R;
     downloadFailed<R = boolean>(): R;
     updateAvailable<R = boolean>(): R;
     enabled<R = boolean>(): R;
     setEnabled<R = void, P0 = boolean>(_v: P0): R;
-    name<R = cocoa.NSString>(): R;
+    name<R = NSString>(): R;
   }
   namespace classes {
-    export interface MSAssetPreferenceItem<T = any> extends cocoa.classes.NSObject {
+    export interface MSAssetPreferenceItem<T = any> extends NSObject {
       alloc<R = MSAssetPreferenceItem>(): R;
       new: <R = MSAssetPreferenceItem>() => R;
       keyPathsForValuesAffectingUpdateAvailable<R = unknown>(): R;

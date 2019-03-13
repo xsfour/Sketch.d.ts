@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSConstantValueExpression<T = any> extends cocoa.NSExpression {
+  export interface NSConstantValueExpression<T = any> extends NSExpression {
     expressionValueWithObject<R = unknown, P0 = unknown>(_expressionValueWithObject: P0): R;
     hash<R = number>(): R;
     constantValue<R = unknown>(): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
   }
   namespace classes {
-    export interface NSConstantValueExpression<T = any> extends cocoa.classes.NSExpression {
+    export interface NSConstantValueExpression<T = any> extends NSExpression {
       alloc<R = NSConstantValueExpression>(): R;
       new: <R = NSConstantValueExpression>() => R;
     }

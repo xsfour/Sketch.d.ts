@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSManageForeignSymbolsView<T = any> extends cocoa.NSViewController, cocoa.NSTableViewDataSourceProtocol, cocoa.NSTabViewDelegateProtocol {
+  export interface MSManageForeignSymbolsView<T = any> extends NSViewController, NSTableViewDataSourceProtocol, NSTabViewDelegateProtocol {
     cxx_destruct<R = void>(): R;
     unlinkFromLibrary<R = void, P0 = unknown>(_unlinkFromLibrary: P0): R;
     editInLibrary<R = void, P0 = unknown>(_editInLibrary: P0): R;
@@ -9,23 +9,23 @@ declare namespace cocoa {
     showContextMenu<R = void, P0 = unknown>(_showContextMenu: P0): R;
     tableViewSelectionDidChange<R = void, P0 = unknown>(_tableViewSelectionDidChange: P0): R;
     buildSymbolList<R = void>(): R;
-    contextMenu<R = cocoa.NSMenu>(): R;
-    setContextMenu<R = void, P0 = cocoa.NSMenu>(_v: P0): R;
+    contextMenu<R = NSMenu>(): R;
+    setContextMenu<R = void, P0 = NSMenu>(_v: P0): R;
     cogEnabled<R = boolean>(): R;
     setCogEnabled<R = void, P0 = boolean>(_v: P0): R;
-    symbols<R = cocoa.NSArray>(): R;
-    setSymbols<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    tableView<R = cocoa.NSTableView>(): R;
-    setTableView<R = void, P0 = cocoa.NSTableView>(_v: P0): R;
-    document<R = cocoa.MSDocument>(): R;
-    setDocument<R = void, P0 = cocoa.MSDocument>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    symbols<R = NSArray>(): R;
+    setSymbols<R = void, P0 = NSArray>(_v: P0): R;
+    tableView<R = NSTableView>(): R;
+    setTableView<R = void, P0 = NSTableView>(_v: P0): R;
+    document<R = MSDocument>(): R;
+    setDocument<R = void, P0 = MSDocument>(_v: P0): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSManageForeignSymbolsView<T = any> extends cocoa.classes.NSViewController, cocoa.classes.NSTableViewDataSourceProtocol, cocoa.classes.NSTabViewDelegateProtocol {
+    export interface MSManageForeignSymbolsView<T = any> extends NSViewController, NSTableViewDataSourceProtocol, NSTabViewDelegateProtocol {
       alloc<R = MSManageForeignSymbolsView>(): R;
       new: <R = MSManageForeignSymbolsView>() => R;
     }

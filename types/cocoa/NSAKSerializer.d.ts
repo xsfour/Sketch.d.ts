@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAKSerializer<T = any> extends cocoa.NSObject {
+  export interface NSAKSerializer<T = any> extends NSObject {
     serializePListValueIn_key_value<R = number, P0 = unknown, P1 = unknown, P2 = unknown>(_serializePListValueIn: P0, _key: P1, _value: P2): R;
     serializePListKeyIn_key_value<R = number, P0 = unknown, P1 = unknown, P2 = unknown>(_serializePListKeyIn: P0, _key: P1, _value: P2): R;
     serializePropertyList<R = number, P0 = unknown>(_serializePropertyList: P0): R;
@@ -15,7 +15,7 @@ declare namespace cocoa {
     initForSerializerStream<R = unknown, P0 = unknown>(_initForSerializerStream: P0): R;
   }
   namespace classes {
-    export interface NSAKSerializer<T = any> extends cocoa.classes.NSObject {
+    export interface NSAKSerializer<T = any> extends NSObject {
       alloc<R = NSAKSerializer>(): R;
       new: <R = NSAKSerializer>() => R;
     }

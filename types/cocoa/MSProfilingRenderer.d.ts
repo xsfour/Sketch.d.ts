@@ -1,21 +1,21 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSProfilingRenderer<T = any> extends cocoa.NSObject, cocoa.MSAllRenderersProtocol {
+  export interface MSProfilingRenderer<T = any> extends NSObject, MSAllRenderersProtocol {
     cxx_destruct<R = void>(): R;
     forwardInvocation<R = void, P0 = unknown>(_forwardInvocation: P0): R;
     initWithBaseRenderer_profilingDelegate_isGroup_label<R = unknown, P0 = unknown, P1 = unknown, P2 = boolean, P3 = unknown>(_initWithBaseRenderer: P0, _profilingDelegate: P1, _isGroup: P2, _label: P3): R;
-    label<R = cocoa.NSString>(): R;
+    label<R = NSString>(): R;
     isGroup<R = boolean>(): R;
-    profilingDelegate<R = cocoa.MSProfilingRendererDelegate>(): R;
-    baseRenderer<R = cocoa.MSRenderer>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    profilingDelegate<R = MSProfilingRendererDelegate>(): R;
+    baseRenderer<R = MSRenderer>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSProfilingRenderer<T = any> extends cocoa.classes.NSObject, cocoa.classes.MSAllRenderersProtocol {
+    export interface MSProfilingRenderer<T = any> extends NSObject, MSAllRenderersProtocol {
       alloc<R = MSProfilingRenderer>(): R;
       new: <R = MSProfilingRenderer>() => R;
     }

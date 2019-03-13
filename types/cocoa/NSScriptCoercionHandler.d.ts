@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScriptCoercionHandler<T = any> extends cocoa.NSObject {
+  export interface NSScriptCoercionHandler<T = any> extends NSObject {
     registerCoercer_selector_toConvertFromClass_toClass<R = void, P0 = unknown, P1 = string, P2 = unknown, P3 = unknown>(_registerCoercer: P0, _selector: P1, _toConvertFromClass: P2, _toClass: P3): R;
     coerceValue_toClass<R = unknown, P0 = unknown, P1 = unknown>(_coerceValue: P0, _toClass: P1): R;
     _findCoercerFromClass_toClass<R = unknown, P0 = unknown, P1 = unknown>(__findCoercerFromClass: P0, _toClass: P1): R;
@@ -11,7 +11,7 @@ declare namespace cocoa {
     _setUpAppKitCoercions<R = void>(): R;
   }
   namespace classes {
-    export interface NSScriptCoercionHandler<T = any> extends cocoa.classes.NSObject {
+    export interface NSScriptCoercionHandler<T = any> extends NSObject {
       alloc<R = NSScriptCoercionHandler>(): R;
       new: <R = NSScriptCoercionHandler>() => R;
       sharedCoercionHandler<R = unknown>(): R;

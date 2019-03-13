@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCountedSet<T = any> extends cocoa.NSMutableSet {
+  export interface NSCountedSet<T = any> extends NSMutableSet {
     dealloc<R = void>(): R;
     initWithSet<R = unknown, P0 = unknown>(_initWithSet: P0): R;
     initWithArray<R = unknown, P0 = unknown>(_initWithArray: P0): R;
@@ -16,8 +16,8 @@ declare namespace cocoa {
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     getObjects_count<R = void, P0 = unknown, P1 = number>(_getObjects: P0, _count: P1): R;
     countByEnumeratingWithState_objects_count<R = number, P0 = unknown, P1 = unknown, P2 = number>(_countByEnumeratingWithState: P0, _objects: P1, _count: P2): R;
-    mutableCopyWithZone<R = unknown, P0 = cocoa._NSZone>(_mutableCopyWithZone: P0): R;
-    copyWithZone<R = unknown, P0 = cocoa._NSZone>(_copyWithZone: P0): R;
+    mutableCopyWithZone<R = unknown, P0 = _NSZone>(_mutableCopyWithZone: P0): R;
+    copyWithZone<R = unknown, P0 = _NSZone>(_copyWithZone: P0): R;
     removeObject<R = void, P0 = unknown>(_removeObject: P0): R;
     addObject<R = void, P0 = unknown>(_addObject: P0): R;
     objectEnumerator<R = unknown>(): R;
@@ -25,7 +25,7 @@ declare namespace cocoa {
     count<R = number>(): R;
   }
   namespace classes {
-    export interface NSCountedSet<T = any> extends cocoa.classes.NSMutableSet {
+    export interface NSCountedSet<T = any> extends NSMutableSet {
       supportsSecureCoding<R = boolean>(): R;
     }
   }

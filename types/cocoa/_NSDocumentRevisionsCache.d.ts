@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSDocumentRevisionsCache<T = any> extends cocoa.NSObject {
+  export interface _NSDocumentRevisionsCache<T = any> extends NSObject {
     removeRevision<R = void, P0 = unknown>(_removeRevision: P0): R;
     updateCost_forRevision<R = void, P0 = number, P1 = unknown>(_updateCost: P0, _forRevision: P1): R;
     addRevision_cost<R = void, P0 = unknown, P1 = number>(_addRevision: P0, _cost: P1): R;
@@ -15,7 +15,7 @@ declare namespace cocoa {
     setEvictionEnabled<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface _NSDocumentRevisionsCache<T = any> extends cocoa.classes.NSObject {
+    export interface _NSDocumentRevisionsCache<T = any> extends NSObject {
       alloc<R = _NSDocumentRevisionsCache>(): R;
       new: <R = _NSDocumentRevisionsCache>() => R;
     }

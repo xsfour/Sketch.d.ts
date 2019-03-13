@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSKeyValueProxyShareKey<T = any> extends cocoa.NSObject, cocoa.NSKeyValueProxyCachingProtocol {}
+  export interface NSKeyValueProxyShareKey<T = any> extends NSObject, NSKeyValueProxyCachingProtocol {}
   namespace classes {
-    export interface NSKeyValueProxyShareKey<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSKeyValueProxyCachingProtocol {
+    export interface NSKeyValueProxyShareKey<T = any> extends NSObject, NSKeyValueProxyCachingProtocol {
       alloc<R = NSKeyValueProxyShareKey>(): R;
       new: <R = NSKeyValueProxyShareKey>() => R;
     }

@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSVectorAdjustmentHandle<T = any> extends cocoa.MSVectorHandle {
-    locationOfMainPoint<R = cocoa.CGPoint>(): R;
-    setLocationOfMainPoint<R = void, P0 = cocoa.CGPoint>(_v: P0): R;
+  export interface MSVectorAdjustmentHandle<T = any> extends MSVectorHandle {
+    locationOfMainPoint<R = CGPoint>(): R;
+    setLocationOfMainPoint<R = void, P0 = CGPoint>(_v: P0): R;
   }
   namespace classes {
-    export interface MSVectorAdjustmentHandle<T = any> extends cocoa.classes.MSVectorHandle {
+    export interface MSVectorAdjustmentHandle<T = any> extends MSVectorHandle {
       alloc<R = MSVectorAdjustmentHandle>(): R;
       new: <R = MSVectorAdjustmentHandle>() => R;
     }

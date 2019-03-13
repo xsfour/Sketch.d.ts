@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSMenuBuilder<T = any> extends cocoa.NSObject {
+  export interface MSMenuBuilder<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     dealloc<R = void>(): R;
     action<R = string>(): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     setTarget<R = void, P0 = unknown>(_v: P0): R;
   }
   namespace classes {
-    export interface MSMenuBuilder<T = any> extends cocoa.classes.NSObject {
+    export interface MSMenuBuilder<T = any> extends NSObject {
       alloc<R = MSMenuBuilder>(): R;
       new: <R = MSMenuBuilder>() => R;
       menuBuilderWithTarget_action<R = unknown, P0 = unknown, P1 = string>(_menuBuilderWithTarget: P0, _action: P1): R;

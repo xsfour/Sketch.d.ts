@@ -1,10 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAllRenderersProtocol<T = any> extends cocoa.MSLayerRendererProtocol, cocoa.MSPathRendererProtocol, cocoa.MSFillRendererProtocol, cocoa.MSBackgroundBlurRendererProtocol, cocoa.MSShadowRendererProtocol, cocoa.MSGridRendererProtocol {}
+  export interface MSAllRenderersProtocol<T = any> extends MSLayerRendererProtocol, MSPathRendererProtocol, MSFillRendererProtocol, MSBackgroundBlurRendererProtocol, MSShadowRendererProtocol, MSGridRendererProtocol {}
   namespace classes {
-    export interface MSAllRenderersProtocol<T = any> extends cocoa.classes.MSLayerRendererProtocol, cocoa.classes.MSPathRendererProtocol, cocoa.classes.MSFillRendererProtocol, cocoa.classes.MSBackgroundBlurRendererProtocol, cocoa.classes.MSShadowRendererProtocol, cocoa.classes.MSGridRendererProtocol {  }
+    export interface MSAllRenderersProtocol<T = any> extends MSLayerRendererProtocol, MSPathRendererProtocol, MSFillRendererProtocol, MSBackgroundBlurRendererProtocol, MSShadowRendererProtocol, MSGridRendererProtocol {  }
   }
 }
-
-declare const MSAllRenderersProtocol: cocoa.classes.MSAllRenderersProtocol;

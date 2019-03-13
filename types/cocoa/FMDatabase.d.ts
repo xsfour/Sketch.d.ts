@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface FMDatabase<T = any> extends cocoa.NSObject {
-    makeFunctionNamed_maximumArguments_withBlock<R = void, P0 = unknown, P1 = number, P2 = cocoa.CDUnknownBlockType>(_makeFunctionNamed: P0, _maximumArguments: P1, _withBlock: P2): R;
+  export interface FMDatabase<T = any> extends NSObject {
+    makeFunctionNamed_maximumArguments_withBlock<R = void, P0 = unknown, P1 = number, P2 = CDUnknownBlockType>(_makeFunctionNamed: P0, _maximumArguments: P1, _withBlock: P2): R;
     setShouldCacheStatements<R = void, P0 = boolean>(_setShouldCacheStatements: P0): R;
     shouldCacheStatements<R = boolean>(): R;
-    inSavePoint<R = unknown, P0 = cocoa.CDUnknownBlockType>(_inSavePoint: P0): R;
+    inSavePoint<R = unknown, P0 = CDUnknownBlockType>(_inSavePoint: P0): R;
     rollbackToSavePointWithName_error<R = boolean, P0 = unknown, P1 = unknown>(_rollbackToSavePointWithName: P0, _error: P1): R;
     releaseSavePointWithName_error<R = boolean, P0 = unknown, P1 = unknown>(_releaseSavePointWithName: P0, _error: P1): R;
     startSavePointWithName_error<R = boolean, P0 = unknown, P1 = unknown>(_startSavePointWithName: P0, _error: P1): R;
@@ -16,24 +16,24 @@ declare namespace cocoa {
     rollback<R = boolean>(): R;
     update_withErrorAndBindings<R = boolean, P0 = unknown, P1 = unknown>(_update: P0, _withErrorAndBindings: P1): R;
     executeUpdate_withErrorAndBindings<R = boolean, P0 = unknown, P1 = unknown>(_executeUpdate: P0, _withErrorAndBindings: P1): R;
-    executeStatements_withResultBlock<R = boolean, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(_executeStatements: P0, _withResultBlock: P1): R;
+    executeStatements_withResultBlock<R = boolean, P0 = unknown, P1 = CDUnknownBlockType>(_executeStatements: P0, _withResultBlock: P1): R;
     executeStatements<R = boolean, P0 = unknown>(_executeStatements: P0): R;
     executeUpdateWithFormat<R = boolean, P0 = unknown>(_executeUpdateWithFormat: P0): R;
-    executeUpdate_withVAList<R = boolean, P0 = unknown, P1 = cocoa.__va_list_tag>(_executeUpdate: P0, _withVAList: P1): R;
+    executeUpdate_withVAList<R = boolean, P0 = unknown, P1 = __va_list_tag>(_executeUpdate: P0, _withVAList: P1): R;
     executeUpdate_withParameterDictionary<R = boolean, P0 = unknown, P1 = unknown>(_executeUpdate: P0, _withParameterDictionary: P1): R;
     executeUpdate_values_error<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown>(_executeUpdate: P0, _values: P1, _error: P2): R;
     executeUpdate_withArgumentsInArray<R = boolean, P0 = unknown, P1 = unknown>(_executeUpdate: P0, _withArgumentsInArray: P1): R;
     executeUpdate<R = boolean, P0 = unknown>(_executeUpdate: P0): R;
-    executeUpdate_error_withArgumentsInArray_orDictionary_orVAList<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = cocoa.__va_list_tag>(_executeUpdate: P0, _error: P1, _withArgumentsInArray: P2, _orDictionary: P3, _orVAList: P4): R;
-    executeQuery_withVAList<R = unknown, P0 = unknown, P1 = cocoa.__va_list_tag>(_executeQuery: P0, _withVAList: P1): R;
+    executeUpdate_error_withArgumentsInArray_orDictionary_orVAList<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = __va_list_tag>(_executeUpdate: P0, _error: P1, _withArgumentsInArray: P2, _orDictionary: P3, _orVAList: P4): R;
+    executeQuery_withVAList<R = unknown, P0 = unknown, P1 = __va_list_tag>(_executeQuery: P0, _withVAList: P1): R;
     executeQuery_values_error<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_executeQuery: P0, _values: P1, _error: P2): R;
     executeQuery_withArgumentsInArray<R = unknown, P0 = unknown, P1 = unknown>(_executeQuery: P0, _withArgumentsInArray: P1): R;
     executeQueryWithFormat<R = unknown, P0 = unknown>(_executeQueryWithFormat: P0): R;
     executeQuery<R = unknown, P0 = unknown>(_executeQuery: P0): R;
-    executeQuery_withArgumentsInArray_orDictionary_orVAList<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = cocoa.__va_list_tag>(_executeQuery: P0, _withArgumentsInArray: P1, _orDictionary: P2, _orVAList: P3): R;
+    executeQuery_withArgumentsInArray_orDictionary_orVAList<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = __va_list_tag>(_executeQuery: P0, _withArgumentsInArray: P1, _orDictionary: P2, _orVAList: P3): R;
     executeQuery_withParameterDictionary<R = unknown, P0 = unknown, P1 = unknown>(_executeQuery: P0, _withParameterDictionary: P1): R;
-    extractSQL_argumentsList_intoString_arguments<R = void, P0 = unknown, P1 = cocoa.__va_list_tag, P2 = unknown, P3 = unknown>(_extractSQL: P0, _argumentsList: P1, _intoString: P2, _arguments: P3): R;
-    bindObject_toColumn_inStatement<R = void, P0 = unknown, P1 = number, P2 = cocoa.sqlite3_stmt>(_bindObject: P0, _toColumn: P1, _inStatement: P2): R;
+    extractSQL_argumentsList_intoString_arguments<R = void, P0 = unknown, P1 = __va_list_tag, P2 = unknown, P3 = unknown>(_extractSQL: P0, _argumentsList: P1, _intoString: P2, _arguments: P3): R;
+    bindObject_toColumn_inStatement<R = void, P0 = unknown, P1 = number, P2 = sqlite3_stmt>(_bindObject: P0, _toColumn: P1, _inStatement: P2): R;
     changes<R = number>(): R;
     lastInsertRowId<R = number>(): R;
     lastError<R = unknown>(): R;
@@ -67,7 +67,7 @@ declare namespace cocoa {
     openWithFlags<R = boolean, P0 = number>(_openWithFlags: P0): R;
     open<R = boolean>(): R;
     sqlitePath<R = string>(): R;
-    sqliteHandle<R = cocoa.sqlite3>(): R;
+    sqliteHandle<R = sqlite3>(): R;
     databasePath<R = unknown>(): R;
     dealloc<R = void>(): R;
     initWithPath<R = unknown, P0 = unknown>(_initWithPath: P0): R;
@@ -98,11 +98,11 @@ declare namespace cocoa {
     setCrashOnErrors<R = void, P0 = boolean>(_v: P0): R;
     logsErrors<R = boolean>(): R;
     setLogsErrors<R = void, P0 = boolean>(_v: P0): R;
-    cachedStatements<R = cocoa.NSMutableDictionary>(): R;
-    setCachedStatements<R = void, P0 = cocoa.NSMutableDictionary>(_v: P0): R;
+    cachedStatements<R = NSMutableDictionary>(): R;
+    setCachedStatements<R = void, P0 = NSMutableDictionary>(_v: P0): R;
   }
   namespace classes {
-    export interface FMDatabase<T = any> extends cocoa.classes.NSObject {
+    export interface FMDatabase<T = any> extends NSObject {
       alloc<R = FMDatabase>(): R;
       new: <R = FMDatabase>() => R;
       storeableDateFormat<R = unknown, P0 = unknown>(_storeableDateFormat: P0): R;

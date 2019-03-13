@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSArtboardPresetsRowView<T = any> extends cocoa.NSTableRowView {}
+  export interface MSArtboardPresetsRowView<T = any> extends NSTableRowView {}
   namespace classes {
-    export interface MSArtboardPresetsRowView<T = any> extends cocoa.classes.NSTableRowView {
+    export interface MSArtboardPresetsRowView<T = any> extends NSTableRowView {
       alloc<R = MSArtboardPresetsRowView>(): R;
       new: <R = MSArtboardPresetsRowView>() => R;
     }

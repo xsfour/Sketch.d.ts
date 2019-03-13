@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCorrectionTypedTextHighlightView<T = any> extends cocoa.NSView {}
+  export interface NSCorrectionTypedTextHighlightView<T = any> extends NSView {}
   namespace classes {
-    export interface NSCorrectionTypedTextHighlightView<T = any> extends cocoa.classes.NSView {
+    export interface NSCorrectionTypedTextHighlightView<T = any> extends NSView {
       alloc<R = NSCorrectionTypedTextHighlightView>(): R;
       new: <R = NSCorrectionTypedTextHighlightView>() => R;
     }

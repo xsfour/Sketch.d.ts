@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSKeyValueMutableOrderedSet<T = any> extends cocoa.NSMutableOrderedSet, cocoa.NSKeyValueProxyCachingProtocol {
+  export interface NSKeyValueMutableOrderedSet<T = any> extends NSMutableOrderedSet, NSKeyValueProxyCachingProtocol {
     dealloc<R = void>(): R;
   }
   namespace classes {
-    export interface NSKeyValueMutableOrderedSet<T = any> extends cocoa.classes.NSMutableOrderedSet, cocoa.classes.NSKeyValueProxyCachingProtocol {  }
+    export interface NSKeyValueMutableOrderedSet<T = any> extends NSMutableOrderedSet, NSKeyValueProxyCachingProtocol {  }
   }
 }
 

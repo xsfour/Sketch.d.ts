@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface SVGGradientStop<T = any> extends cocoa._SVGGradientStop {}
+  export interface SVGGradientStop<T = any> extends _SVGGradientStop {}
   namespace classes {
-    export interface SVGGradientStop<T = any> extends cocoa.classes._SVGGradientStop {
+    export interface SVGGradientStop<T = any> extends _SVGGradientStop {
       alloc<R = SVGGradientStop>(): R;
       new: <R = SVGGradientStop>() => R;
       styleDefaults<R = unknown>(): R;

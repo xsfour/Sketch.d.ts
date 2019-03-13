@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSVisualEffectView<T = any> extends cocoa.NSView {
+  export interface NSVisualEffectView<T = any> extends NSView {
     _stringValueForIntrospectorPropertyKey<R = unknown, P0 = unknown>(__stringValueForIntrospectorPropertyKey: P0): R;
     _propertyKeysForIntrospector<R = unknown>(): R;
     _vibrantBlendingStyleForSubtree<R = number>(): R;
@@ -32,23 +32,23 @@ declare namespace cocoa {
     _updateWindowBackdrop<R = void>(): R;
     _accessibilityRTChanged<R = void, P0 = unknown>(__accessibilityRTChanged: P0): R;
     _markDirtyIfHasAccelerationChanged<R = void>(): R;
-    rectToClearBackingStore<R = cocoa.CGRect>(): R;
+    rectToClearBackingStore<R = CGRect>(): R;
     _shouldUseActiveAppearance<R = boolean>(): R;
     _reactToMaterialChangeDiscardingMaterialLayers_invalidatingForFSBC_invalidatingPreferredAppearance<R = void, P0 = boolean, P1 = boolean, P2 = boolean>(__reactToMaterialChangeDiscardingMaterialLayers: P0, _invalidatingForFSBC: P1, _invalidatingPreferredAppearance: P2): R;
     _currentMaterialName<R = unknown>(): R;
     _markDirty<R = void>(): R;
     emphasized<R = boolean>(): R;
     _preferredAppearance<R = unknown>(): R;
-    maskImage<R = cocoa.NSImage>(): R;
-    setMaskImage<R = void, P0 = cocoa.NSImage>(_v: P0): R;
+    maskImage<R = NSImage>(): R;
+    setMaskImage<R = void, P0 = NSImage>(_v: P0): R;
     vibrancyEffect<R = number>(): R;
     setVibrancyEffect<R = void, P0 = number>(_v: P0): R;
     blendingMode<R = number>(): R;
     setBlendingMode<R = void, P0 = number>(_v: P0): R;
     interiorBackgroundStyle<R = number>(): R;
-    _effectiveGroupName<R = cocoa.NSString>(): R;
-    _groupName<R = cocoa.NSString>(): R;
-    set_groupName<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    _effectiveGroupName<R = NSString>(): R;
+    _groupName<R = NSString>(): R;
+    set_groupName<R = void, P0 = NSString>(_v: P0): R;
     _needsClearProxyLayer<R = boolean>(): R;
     set_needsClearProxyLayer<R = void, P0 = boolean>(_v: P0): R;
     _clear<R = boolean>(): R;
@@ -69,13 +69,13 @@ declare namespace cocoa {
     set_usesMaterialPreferredAppearance<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface NSVisualEffectView<T = any> extends cocoa.classes.NSView {
+    export interface NSVisualEffectView<T = any> extends NSView {
       alloc<R = NSVisualEffectView>(): R;
       new: <R = NSVisualEffectView>() => R;
       endFreezingInWindow<R = void, P0 = unknown>(_endFreezingInWindow: P0): R;
       beginFreezingInWindow<R = void, P0 = unknown>(_beginFreezingInWindow: P0): R;
       _representativeColorForMaterial_isActive<R = unknown, P0 = number, P1 = boolean>(__representativeColorForMaterial: P0, _isActive: P1): R;
-      allocWithZone<R = unknown, P0 = cocoa._NSZone>(_allocWithZone: P0): R;
+      allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
       keyPathsForValuesAffecting_effectiveGroupName<R = unknown>(): R;
     }
   }

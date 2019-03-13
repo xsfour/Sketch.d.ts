@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDragEventTracker<T = any> extends cocoa.NSEventTracker {
-    locationInView<R = cocoa.CGPoint, P0 = unknown>(_locationInView: P0): R;
-    location<R = cocoa.CGPoint>(): R;
-    setLocation<R = void, P0 = cocoa.CGPoint>(_v: P0): R;
+  export interface NSDragEventTracker<T = any> extends NSEventTracker {
+    locationInView<R = CGPoint, P0 = unknown>(_locationInView: P0): R;
+    location<R = CGPoint>(): R;
+    setLocation<R = void, P0 = CGPoint>(_v: P0): R;
     stage<R = number>(): R;
     setStage<R = void, P0 = number>(_v: P0): R;
     gestureAmount<R = number>(): R;
@@ -21,7 +21,7 @@ declare namespace cocoa {
     setMovementThreshold<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface NSDragEventTracker<T = any> extends cocoa.classes.NSEventTracker {
+    export interface NSDragEventTracker<T = any> extends NSEventTracker {
       alloc<R = NSDragEventTracker>(): R;
       new: <R = NSDragEventTracker>() => R;
     }

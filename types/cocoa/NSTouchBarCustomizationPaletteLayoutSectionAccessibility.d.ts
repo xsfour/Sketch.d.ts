@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarCustomizationPaletteLayoutSectionAccessibility<T = any> extends cocoa.NSCollectionViewSectionAccessibility {}
+  export interface NSTouchBarCustomizationPaletteLayoutSectionAccessibility<T = any> extends NSCollectionViewSectionAccessibility {}
   namespace classes {
-    export interface NSTouchBarCustomizationPaletteLayoutSectionAccessibility<T = any> extends cocoa.classes.NSCollectionViewSectionAccessibility {
+    export interface NSTouchBarCustomizationPaletteLayoutSectionAccessibility<T = any> extends NSCollectionViewSectionAccessibility {
       alloc<R = NSTouchBarCustomizationPaletteLayoutSectionAccessibility>(): R;
       new: <R = NSTouchBarCustomizationPaletteLayoutSectionAccessibility>() => R;
     }

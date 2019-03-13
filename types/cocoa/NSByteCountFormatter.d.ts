@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSByteCountFormatter<T = any> extends cocoa.NSFormatter, cocoa.NSObservableProtocol, cocoa.NSObserverProtocol {
+  export interface NSByteCountFormatter<T = any> extends NSFormatter, NSObservableProtocol, NSObserverProtocol {
     stringFromByteCount<R = unknown, P0 = number>(_stringFromByteCount: P0): R;
     _options<R = number>(): R;
     zeroPadsFractionDigits<R = boolean>(): R;
@@ -22,13 +22,13 @@ declare namespace cocoa {
     setCountStyle<R = void, P0 = number>(_v: P0): R;
     allowedUnits<R = number>(): R;
     setAllowedUnits<R = void, P0 = number>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSByteCountFormatter<T = any> extends cocoa.classes.NSFormatter, cocoa.classes.NSObservableProtocol, cocoa.classes.NSObserverProtocol {
+    export interface NSByteCountFormatter<T = any> extends NSFormatter, NSObservableProtocol, NSObserverProtocol {
       alloc<R = NSByteCountFormatter>(): R;
       new: <R = NSByteCountFormatter>() => R;
       stringFromByteCount_countStyle<R = unknown, P0 = number, P1 = number>(_stringFromByteCount: P0, _countStyle: P1): R;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAboutWindowController<T = any> extends cocoa.NSWindowController {
+  export interface MSAboutWindowController<T = any> extends NSWindowController {
     fetchRemoteUpdateExpiratonDate<R = void>(): R;
     unlinkDevice<R = void, P0 = unknown>(_unlinkDevice: P0): R;
     registerLicense<R = void, P0 = unknown>(_registerLicense: P0): R;
@@ -13,35 +13,35 @@ declare namespace cocoa {
     refreshLicenseStatusViewWithLicenseManager<R = void, P0 = unknown>(_refreshLicenseStatusViewWithLicenseManager: P0): R;
     refreshRegisteredToView<R = void, P0 = unknown>(_refreshRegisteredToView: P0): R;
     refresh<R = void>(): R;
-    remoteUpdateExpirationDate<R = cocoa.NSDate>(): R;
-    setRemoteUpdateExpirationDate<R = void, P0 = cocoa.NSDate>(_v: P0): R;
-    versionTextField<R = cocoa.NSTextField>(): R;
-    setVersionTextField<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    variantNameTextField<R = cocoa.NSTextField>(): R;
-    setVariantNameTextField<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    unlinkDeviceButton<R = cocoa.NSButton>(): R;
-    setUnlinkDeviceButton<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    trialNoteTextField<R = cocoa.NSTextField>(): R;
-    setTrialNoteTextField<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    renewLicenseButton<R = cocoa.NSButton>(): R;
-    setRenewLicenseButton<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    registeredToTextField<R = cocoa.NSTextField>(): R;
-    setRegisteredToTextField<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    purchaseLicenseButton<R = cocoa.NSButton>(): R;
-    setPurchaseLicenseButton<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    expirationDateTextField<R = cocoa.NSTextField>(): R;
-    setExpirationDateTextField<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    expirationTitleTextField<R = cocoa.NSTextField>(): R;
-    setExpirationTitleTextField<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    copyrightTextField<R = cocoa.NSTextField>(): R;
-    setCopyrightTextField<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    buildNumberTextField<R = cocoa.NSTextField>(): R;
-    setBuildNumberTextField<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    backgroundImageView<R = cocoa.MSThemeImageView>(): R;
-    setBackgroundImageView<R = void, P0 = cocoa.MSThemeImageView>(_v: P0): R;
+    remoteUpdateExpirationDate<R = NSDate>(): R;
+    setRemoteUpdateExpirationDate<R = void, P0 = NSDate>(_v: P0): R;
+    versionTextField<R = NSTextField>(): R;
+    setVersionTextField<R = void, P0 = NSTextField>(_v: P0): R;
+    variantNameTextField<R = NSTextField>(): R;
+    setVariantNameTextField<R = void, P0 = NSTextField>(_v: P0): R;
+    unlinkDeviceButton<R = NSButton>(): R;
+    setUnlinkDeviceButton<R = void, P0 = NSButton>(_v: P0): R;
+    trialNoteTextField<R = NSTextField>(): R;
+    setTrialNoteTextField<R = void, P0 = NSTextField>(_v: P0): R;
+    renewLicenseButton<R = NSButton>(): R;
+    setRenewLicenseButton<R = void, P0 = NSButton>(_v: P0): R;
+    registeredToTextField<R = NSTextField>(): R;
+    setRegisteredToTextField<R = void, P0 = NSTextField>(_v: P0): R;
+    purchaseLicenseButton<R = NSButton>(): R;
+    setPurchaseLicenseButton<R = void, P0 = NSButton>(_v: P0): R;
+    expirationDateTextField<R = NSTextField>(): R;
+    setExpirationDateTextField<R = void, P0 = NSTextField>(_v: P0): R;
+    expirationTitleTextField<R = NSTextField>(): R;
+    setExpirationTitleTextField<R = void, P0 = NSTextField>(_v: P0): R;
+    copyrightTextField<R = NSTextField>(): R;
+    setCopyrightTextField<R = void, P0 = NSTextField>(_v: P0): R;
+    buildNumberTextField<R = NSTextField>(): R;
+    setBuildNumberTextField<R = void, P0 = NSTextField>(_v: P0): R;
+    backgroundImageView<R = MSThemeImageView>(): R;
+    setBackgroundImageView<R = void, P0 = MSThemeImageView>(_v: P0): R;
   }
   namespace classes {
-    export interface MSAboutWindowController<T = any> extends cocoa.classes.NSWindowController {
+    export interface MSAboutWindowController<T = any> extends NSWindowController {
       alloc<R = MSAboutWindowController>(): R;
       new: <R = MSAboutWindowController>() => R;
       showAboutWindow<R = void>(): R;

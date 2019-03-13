@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSHelpManager<T = any> extends cocoa.NSObject {
+  export interface NSHelpManager<T = any> extends NSObject {
     registerBooksInBundle<R = boolean, P0 = unknown>(_registerBooksInBundle: P0): R;
     findString_inBook<R = void, P0 = unknown, P1 = unknown>(_findString: P0, _inBook: P1): R;
     openHelpAnchor_inBook<R = void, P0 = unknown, P1 = unknown>(_openHelpAnchor: P0, _inBook: P1): R;
-    showContextHelpForObject_locationHint<R = boolean, P0 = unknown, P1 = cocoa.CGPoint>(_showContextHelpForObject: P0, _locationHint: P1): R;
+    showContextHelpForObject_locationHint<R = boolean, P0 = unknown, P1 = CGPoint>(_showContextHelpForObject: P0, _locationHint: P1): R;
     contextHelpForObject<R = unknown, P0 = unknown>(_contextHelpForObject: P0): R;
     removeContextHelpForObject<R = void, P0 = unknown>(_removeContextHelpForObject: P0): R;
     setContextHelp_forObject<R = void, P0 = unknown, P1 = unknown>(_setContextHelp: P0, _forObject: P1): R;
@@ -16,9 +16,9 @@ declare namespace cocoa {
     _showHelpForBundle<R = boolean, P0 = unknown>(__showHelpForBundle: P0): R;
     showHelpFile_context<R = void, P0 = unknown, P1 = number>(_showHelpFile: P0, _context: P1): R;
     _cleanupHelpForQuit<R = void>(): R;
-    _prepareHelpWindow_locationHint<R = void, P0 = unknown, P1 = cocoa.CGPoint>(__prepareHelpWindow: P0, _locationHint: P1): R;
-    _placeHelpWindowNear<R = void, P0 = cocoa.CGPoint>(__placeHelpWindowNear: P0): R;
-    _screenRectContainingPoint<R = cocoa.CGRect, P0 = cocoa.CGPoint>(__screenRectContainingPoint: P0): R;
+    _prepareHelpWindow_locationHint<R = void, P0 = unknown, P1 = CGPoint>(__prepareHelpWindow: P0, _locationHint: P1): R;
+    _placeHelpWindowNear<R = void, P0 = CGPoint>(__placeHelpWindowNear: P0): R;
+    _screenRectContainingPoint<R = CGRect, P0 = CGPoint>(__screenRectContainingPoint: P0): R;
     _setBundleForHelpSearch<R = void, P0 = unknown>(__setBundleForHelpSearch: P0): R;
     _resolveHelpKeyForObject<R = unknown, P0 = unknown>(__resolveHelpKeyForObject: P0): R;
     _helpKeyForObject<R = unknown, P0 = unknown>(__helpKeyForObject: P0): R;
@@ -32,7 +32,7 @@ declare namespace cocoa {
     _orderFrontHelpWindow<R = void>(): R;
   }
   namespace classes {
-    export interface NSHelpManager<T = any> extends cocoa.classes.NSObject {
+    export interface NSHelpManager<T = any> extends NSObject {
       alloc<R = NSHelpManager>(): R;
       new: <R = NSHelpManager>() => R;
       isContextHelpModeActive<R = boolean>(): R;

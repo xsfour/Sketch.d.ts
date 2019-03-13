@@ -1,20 +1,20 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDirectoryTraversalOperation<T = any> extends cocoa.NSOperation {
+  export interface NSDirectoryTraversalOperation<T = any> extends NSOperation {
     _validatePaths<R = boolean, P0 = unknown>(__validatePaths: P0): R;
-    _handleFTSEntry<R = void, P0 = cocoa._ftsent>(__handleFTSEntry: P0): R;
+    _handleFTSEntry<R = void, P0 = _ftsent>(__handleFTSEntry: P0): R;
     shouldProceedAfterError<R = boolean, P0 = unknown>(_shouldProceedAfterError: P0): R;
     _setError<R = void, P0 = unknown>(__setError: P0): R;
     error<R = unknown>(): R;
-    _shouldFilterEntry<R = boolean, P0 = cocoa._ftsent>(__shouldFilterEntry: P0): R;
+    _shouldFilterEntry<R = boolean, P0 = _ftsent>(__shouldFilterEntry: P0): R;
     handlePathname<R = void, P0 = unknown>(_handlePathname: P0): R;
     setDelegate<R = void, P0 = unknown>(_setDelegate: P0): R;
     delegate<R = unknown>(): R;
     initWithPath<R = unknown, P0 = unknown>(_initWithPath: P0): R;
   }
   namespace classes {
-    export interface NSDirectoryTraversalOperation<T = any> extends cocoa.classes.NSOperation {
+    export interface NSDirectoryTraversalOperation<T = any> extends NSOperation {
       alloc<R = NSDirectoryTraversalOperation>(): R;
       new: <R = NSDirectoryTraversalOperation>() => R;
       directoryTraversalOperationAtPath<R = unknown, P0 = unknown>(_directoryTraversalOperationAtPath: P0): R;

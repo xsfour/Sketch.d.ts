@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCollectionViewItem<T = any> extends cocoa.NSViewController, cocoa.NSCopyingProtocol, cocoa.NSCollectionViewElementProtocol {
+  export interface NSCollectionViewItem<T = any> extends NSViewController, NSCopyingProtocol, NSCollectionViewElementProtocol {
     cxx_destruct<R = void>(): R;
     representedObject<R = unknown>(): R;
     setView<R = void, P0 = unknown>(_setView: P0): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     _draggingImageForView<R = unknown, P0 = unknown>(__draggingImageForView: P0): R;
     _setDragging<R = void, P0 = boolean>(__setDragging: P0): R;
     _dragging<R = boolean>(): R;
-    _hasOpaquePartsInRect<R = boolean, P0 = cocoa.CGRect>(__hasOpaquePartsInRect: P0): R;
+    _hasOpaquePartsInRect<R = boolean, P0 = CGRect>(__hasOpaquePartsInRect: P0): R;
     _titleViews<R = unknown>(): R;
     _isLoaded<R = boolean>(): R;
     _shouldLoadFromNib<R = boolean>(): R;
@@ -43,7 +43,7 @@ declare namespace cocoa {
     _accessibilityIndexPathForTransientElement<R = unknown>(): R;
     _setAccessibilityTransientElement<R = void, P0 = boolean>(__setAccessibilityTransientElement: P0): R;
     _isAccessibilityTransientElement<R = boolean>(): R;
-    accessibilityHitTest<R = unknown, P0 = cocoa.CGPoint>(_accessibilityHitTest: P0): R;
+    accessibilityHitTest<R = unknown, P0 = CGPoint>(_accessibilityHitTest: P0): R;
     accessibilityIdentifierAttribute<R = unknown>(): R;
     accessibilityWindowAttribute<R = unknown>(): R;
     accessibilityTopLevelUIElementAttribute<R = unknown>(): R;
@@ -61,26 +61,26 @@ declare namespace cocoa {
     isHiddenOrHasHiddenAncestor<R = boolean>(): R;
     accessibilityIsIgnored<R = boolean>(): R;
     _section<R = unknown>(): R;
-    collectionView<R = cocoa.NSCollectionView>(): R;
-    setCollectionView<R = void, P0 = cocoa.NSCollectionView>(_v: P0): R;
-    description<R = cocoa.NSString>(): R;
-    draggingImageComponents<R = cocoa.NSArray>(): R;
-    textField<R = cocoa.NSTextField>(): R;
-    setTextField<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    imageView<R = cocoa.NSImageView>(): R;
-    setImageView<R = void, P0 = cocoa.NSImageView>(_v: P0): R;
+    collectionView<R = NSCollectionView>(): R;
+    setCollectionView<R = void, P0 = NSCollectionView>(_v: P0): R;
+    description<R = NSString>(): R;
+    draggingImageComponents<R = NSArray>(): R;
+    textField<R = NSTextField>(): R;
+    setTextField<R = void, P0 = NSTextField>(_v: P0): R;
+    imageView<R = NSImageView>(): R;
+    setImageView<R = void, P0 = NSImageView>(_v: P0): R;
     selected<R = boolean>(): R;
     setSelected<R = void, P0 = boolean>(_v: P0): R;
     highlightState<R = number>(): R;
     setHighlightState<R = void, P0 = number>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
     hash<R = number>(): R;
-    identifier<R = cocoa.NSString>(): R;
-    setIdentifier<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    identifier<R = NSString>(): R;
+    setIdentifier<R = void, P0 = NSString>(_v: P0): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSCollectionViewItem<T = any> extends cocoa.classes.NSViewController, cocoa.classes.NSCopyingProtocol, cocoa.classes.NSCollectionViewElementProtocol {
+    export interface NSCollectionViewItem<T = any> extends NSViewController, NSCopyingProtocol, NSCollectionViewElementProtocol {
       alloc<R = NSCollectionViewItem>(): R;
       new: <R = NSCollectionViewItem>() => R;
       _collectionViewItemForView<R = unknown, P0 = unknown>(__collectionViewItemForView: P0): R;

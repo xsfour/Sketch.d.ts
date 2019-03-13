@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutableForeignSymbol<T = any> extends cocoa._MSImmutableForeignSymbol {}
+  export interface MSImmutableForeignSymbol<T = any> extends _MSImmutableForeignSymbol {}
   namespace classes {
-    export interface MSImmutableForeignSymbol<T = any> extends cocoa.classes._MSImmutableForeignSymbol {
+    export interface MSImmutableForeignSymbol<T = any> extends _MSImmutableForeignSymbol {
       alloc<R = MSImmutableForeignSymbol>(): R;
       new: <R = MSImmutableForeignSymbol>() => R;
     }

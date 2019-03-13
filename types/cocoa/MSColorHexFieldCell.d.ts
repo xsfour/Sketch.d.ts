@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSColorHexFieldCell<T = any> extends cocoa.MSInlineUpDownTextFieldCell {
+  export interface MSColorHexFieldCell<T = any> extends MSInlineUpDownTextFieldCell {
     poundPrefixString<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSColorHexFieldCell<T = any> extends cocoa.classes.MSInlineUpDownTextFieldCell {
+    export interface MSColorHexFieldCell<T = any> extends MSInlineUpDownTextFieldCell {
       alloc<R = MSColorHexFieldCell>(): R;
       new: <R = MSColorHexFieldCell>() => R;
     }

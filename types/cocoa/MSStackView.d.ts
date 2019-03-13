@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSStackView<T = any> extends cocoa.NSView {
+  export interface MSStackView<T = any> extends NSView {
     cxx_destruct<R = void>(): R;
     isFlipped<R = boolean>(): R;
     adjustHeight_hasScrollViews<R = void, P0 = number, P1 = boolean>(_adjustHeight: P0, _hasScrollViews: P1): R;
@@ -14,8 +14,8 @@ declare namespace cocoa {
     awakeFromNib<R = void>(): R;
     keyResponder<R = unknown>(): R;
     setKeyResponder<R = void, P0 = unknown>(_v: P0): R;
-    backgroundColor<R = cocoa.NSColor>(): R;
-    setBackgroundColor<R = void, P0 = cocoa.NSColor>(_v: P0): R;
+    backgroundColor<R = NSColor>(): R;
+    setBackgroundColor<R = void, P0 = NSColor>(_v: P0): R;
     minimumHeight<R = number>(): R;
     setMinimumHeight<R = void, P0 = number>(_v: P0): R;
     maximumHeight<R = number>(): R;
@@ -24,7 +24,7 @@ declare namespace cocoa {
     setAutoupdatesMaximumHeight<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface MSStackView<T = any> extends cocoa.classes.NSView {
+    export interface MSStackView<T = any> extends NSView {
       alloc<R = MSStackView>(): R;
       new: <R = MSStackView>() => R;
     }

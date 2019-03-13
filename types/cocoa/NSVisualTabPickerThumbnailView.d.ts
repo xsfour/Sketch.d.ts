@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSVisualTabPickerThumbnailView<T = any> extends cocoa.NSVisualTabPickerShadowTileView {
+  export interface NSVisualTabPickerThumbnailView<T = any> extends NSVisualTabPickerShadowTileView {
     _closeButtonPressed<R = void, P0 = unknown>(__closeButtonPressed: P0): R;
     reloadData<R = void>(): R;
     _createTitleTextField<R = unknown>(): R;
@@ -15,13 +15,13 @@ declare namespace cocoa {
     setExposeBorderVisible<R = void, P0 = boolean>(_v: P0): R;
     closeButtonVisible<R = boolean>(): R;
     setCloseButtonVisible<R = void, P0 = boolean>(_v: P0): R;
-    delegate<R = cocoa.NSVisualTabPickerThumbnailDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSVisualTabPickerThumbnailDelegate>(_v: P0): R;
-    dataSource<R = cocoa.NSVisualTabPickerThumbnailDataSource>(): R;
-    setDataSource<R = void, P0 = cocoa.NSVisualTabPickerThumbnailDataSource>(_v: P0): R;
+    delegate<R = NSVisualTabPickerThumbnailDelegate>(): R;
+    setDelegate<R = void, P0 = NSVisualTabPickerThumbnailDelegate>(_v: P0): R;
+    dataSource<R = NSVisualTabPickerThumbnailDataSource>(): R;
+    setDataSource<R = void, P0 = NSVisualTabPickerThumbnailDataSource>(_v: P0): R;
   }
   namespace classes {
-    export interface NSVisualTabPickerThumbnailView<T = any> extends cocoa.classes.NSVisualTabPickerShadowTileView {
+    export interface NSVisualTabPickerThumbnailView<T = any> extends NSVisualTabPickerShadowTileView {
       alloc<R = NSVisualTabPickerThumbnailView>(): R;
       new: <R = NSVisualTabPickerThumbnailView>() => R;
     }

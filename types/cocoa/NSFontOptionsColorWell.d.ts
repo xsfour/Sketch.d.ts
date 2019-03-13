@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFontOptionsColorWell<T = any> extends cocoa.NSColorWell {}
+  export interface NSFontOptionsColorWell<T = any> extends NSColorWell {}
   namespace classes {
-    export interface NSFontOptionsColorWell<T = any> extends cocoa.classes.NSColorWell {
+    export interface NSFontOptionsColorWell<T = any> extends NSColorWell {
       alloc<R = NSFontOptionsColorWell>(): R;
       new: <R = NSFontOptionsColorWell>() => R;
     }

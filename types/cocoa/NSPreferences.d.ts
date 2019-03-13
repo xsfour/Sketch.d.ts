@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPreferences<T = any> extends cocoa.NSObject, cocoa.NSWindowRestorationProtocol {
+  export interface NSPreferences<T = any> extends NSObject, NSWindowRestorationProtocol {
     toolbarSelectableItemIdentifiers<R = unknown, P0 = unknown>(_toolbarSelectableItemIdentifiers: P0): R;
     toolbarAllowedItemIdentifiers<R = unknown, P0 = unknown>(_toolbarAllowedItemIdentifiers: P0): R;
     toolbarDefaultItemIdentifiers<R = unknown, P0 = unknown>(_toolbarDefaultItemIdentifiers: P0): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     toolbarItemClicked<R = void, P0 = unknown>(_toolbarItemClicked: P0): R;
     _itemIdentifierForModule<R = unknown, P0 = unknown>(__itemIdentifierForModule: P0): R;
     usesButtons<R = boolean>(): R;
-    windowWillResize_toSize<R = cocoa.CGSize, P0 = unknown, P1 = cocoa.CGSize>(_windowWillResize: P0, _toSize: P1): R;
+    windowWillResize_toSize<R = CGSize, P0 = unknown, P1 = CGSize>(_windowWillResize: P0, _toSize: P1): R;
     windowDidResize<R = void, P0 = unknown>(_windowDidResize: P0): R;
     windowShouldClose<R = boolean, P0 = unknown>(_windowShouldClose: P0): R;
     confirmCloseSheetIsDone_returnCode_contextInfo<R = void, P0 = unknown, P1 = number, P2 = void>(_confirmCloseSheetIsDone: P0, _returnCode: P1, _contextInfo: P2): R;
@@ -29,13 +29,13 @@ declare namespace cocoa {
     _setupToolbar<R = void>(): R;
     addPreferenceNamed_owner<R = void, P0 = unknown, P1 = unknown>(_addPreferenceNamed: P0, _owner: P1): R;
     dealloc<R = void>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSPreferences<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSWindowRestorationProtocol {
+    export interface NSPreferences<T = any> extends NSObject, NSWindowRestorationProtocol {
       alloc<R = NSPreferences>(): R;
       new: <R = NSPreferences>() => R;
       defaultPreferencesClass<R = unknown>(): R;

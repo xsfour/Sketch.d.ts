@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPopUpToolbarItem<T = any> extends cocoa.MSToolbarItem {}
+  export interface MSPopUpToolbarItem<T = any> extends MSToolbarItem {}
   namespace classes {
-    export interface MSPopUpToolbarItem<T = any> extends cocoa.classes.MSToolbarItem {
+    export interface MSPopUpToolbarItem<T = any> extends MSToolbarItem {
       alloc<R = MSPopUpToolbarItem>(): R;
       new: <R = MSPopUpToolbarItem>() => R;
     }

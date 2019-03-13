@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFunctionRowDevice<T = any> extends cocoa.NSObject {
-    touchDevice<R = cocoa.NSTouchDevice>(): R;
-    frame<R = cocoa.CGRect>(): R;
+  export interface NSFunctionRowDevice<T = any> extends NSObject {
+    touchDevice<R = NSTouchDevice>(): R;
+    frame<R = CGRect>(): R;
   }
   namespace classes {
-    export interface NSFunctionRowDevice<T = any> extends cocoa.classes.NSObject {
+    export interface NSFunctionRowDevice<T = any> extends NSObject {
       alloc<R = NSFunctionRowDevice>(): R;
       new: <R = NSFunctionRowDevice>() => R;
       deviceDimmed<R = boolean>(): R;

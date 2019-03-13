@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSVerticalOffsetSegmentedControl<T = any> extends cocoa.NSSegmentedControl {}
+  export interface MSVerticalOffsetSegmentedControl<T = any> extends NSSegmentedControl {}
   namespace classes {
-    export interface MSVerticalOffsetSegmentedControl<T = any> extends cocoa.classes.NSSegmentedControl {
+    export interface MSVerticalOffsetSegmentedControl<T = any> extends NSSegmentedControl {
       alloc<R = MSVerticalOffsetSegmentedControl>(): R;
       new: <R = MSVerticalOffsetSegmentedControl>() => R;
     }

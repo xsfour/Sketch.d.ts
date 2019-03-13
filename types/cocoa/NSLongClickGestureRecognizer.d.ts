@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLongClickGestureRecognizer<T = any> extends cocoa.NSGestureRecognizer {
+  export interface NSLongClickGestureRecognizer<T = any> extends NSGestureRecognizer {
     allowableMovement<R = number>(): R;
     setAllowableMovement<R = void, P0 = number>(_v: P0): R;
     minimumPressDuration<R = number>(): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     setButtonMask<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface NSLongClickGestureRecognizer<T = any> extends cocoa.classes.NSGestureRecognizer {
+    export interface NSLongClickGestureRecognizer<T = any> extends NSGestureRecognizer {
       alloc<R = NSLongClickGestureRecognizer>(): R;
       new: <R = NSLongClickGestureRecognizer>() => R;
     }

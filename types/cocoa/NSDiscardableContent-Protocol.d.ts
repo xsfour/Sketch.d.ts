@@ -11,5 +11,3 @@ declare namespace cocoa {
     export interface NSDiscardableContentProtocol<T = any> {  }
   }
 }
-
-declare const NSDiscardableContentProtocol: cocoa.classes.NSDiscardableContentProtocol;

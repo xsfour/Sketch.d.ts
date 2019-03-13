@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSBrowserMatrixColumnViewController<T = any> extends cocoa.NSBrowserColumnViewController {
+  export interface _NSBrowserMatrixColumnViewController<T = any> extends NSBrowserColumnViewController {
     _matrixSelectAll<R = void, P0 = unknown>(__matrixSelectAll: P0): R;
     selectedRow<R = number>(): R;
     setSelectionIndexes<R = void, P0 = unknown>(_setSelectionIndexes: P0): R;
@@ -19,7 +19,7 @@ declare namespace cocoa {
     matrix<R = unknown>(): R;
   }
   namespace classes {
-    export interface _NSBrowserMatrixColumnViewController<T = any> extends cocoa.classes.NSBrowserColumnViewController {
+    export interface _NSBrowserMatrixColumnViewController<T = any> extends NSBrowserColumnViewController {
       alloc<R = _NSBrowserMatrixColumnViewController>(): R;
       new: <R = _NSBrowserMatrixColumnViewController>() => R;
     }

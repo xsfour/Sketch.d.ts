@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableRowData<T = any> extends cocoa.NSObject, cocoa.NSAnimationDelegateProtocol {
+  export interface NSTableRowData<T = any> extends NSObject, NSAnimationDelegateProtocol {
     cxx_destruct<R = void>(): R;
     _animateSwipeToDeleteWithGestureAmount_velocity_stiffness<R = void, P0 = number, P1 = number, P2 = number>(__animateSwipeToDeleteWithGestureAmount: P0, _velocity: P1, _stiffness: P2): R;
     _trackSwipeToDeleteFromEvent<R = void, P0 = unknown>(__trackSwipeToDeleteFromEvent: P0): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     _setupDeleteScanLineViewWithRowAction<R = void, P0 = unknown>(__setupDeleteScanLineViewWithRowAction: P0): R;
     _fullRowSwipeToDeletePercentage<R = number>(): R;
     _maxSwipeToDeletePercentage<R = number>(): R;
-    _trackSwipeWithScrollEvent_usingHandler<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(__trackSwipeWithScrollEvent: P0, _usingHandler: P1): R;
+    _trackSwipeWithScrollEvent_usingHandler<R = void, P0 = unknown, P1 = CDUnknownBlockType>(__trackSwipeWithScrollEvent: P0, _usingHandler: P1): R;
     _setSwipeToDeleteRow_editActions_edge<R = void, P0 = number, P1 = unknown, P2 = number>(__setSwipeToDeleteRow: P0, _editActions: P1, _edge: P2): R;
     _actionButtonClicked<R = void, P0 = unknown>(__actionButtonClicked: P0): R;
     _updateActionButtonPositionsForRowView_edge_exposedPercentage<R = void, P0 = unknown, P1 = number, P2 = number>(__updateActionButtonPositionsForRowView: P0, _edge: P1, _exposedPercentage: P2): R;
@@ -29,12 +29,12 @@ declare namespace cocoa {
     _releaseSwipeToDeleteConsumeAnimation<R = void>(): R;
     _setSwipeToDeleteCellOffset<R = void, P0 = number>(__setSwipeToDeleteCellOffset: P0): R;
     _resetSwipeToDeleteRow<R = void>(): R;
-    _runAnimationGroupWithDuration_disableInteraction_work<R = void, P0 = number, P1 = boolean, P2 = cocoa.CDUnknownBlockType>(__runAnimationGroupWithDuration: P0, _disableInteraction: P1, _work: P2): R;
+    _runAnimationGroupWithDuration_disableInteraction_work<R = void, P0 = number, P1 = boolean, P2 = CDUnknownBlockType>(__runAnimationGroupWithDuration: P0, _disableInteraction: P1, _work: P2): R;
     _defaultShouldAnimateValue<R = boolean>(): R;
     handleSwipeOnRow_withEvent<R = boolean, P0 = number, P1 = unknown>(_handleSwipeOnRow: P0, _withEvent: P1): R;
     _startSwipeOnRow_withEvent<R = boolean, P0 = number, P1 = unknown>(__startSwipeOnRow: P0, _withEvent: P1): R;
     endSwipeToDeleteIfNeeded<R = boolean>(): R;
-    prepareContentInRect<R = void, P0 = cocoa.CGRect>(_prepareContentInRect: P0): R;
+    prepareContentInRect<R = void, P0 = CGRect>(_prepareContentInRect: P0): R;
     hideFloatingHeaderViewAnimated<R = void, P0 = boolean>(_hideFloatingHeaderViewAnimated: P0): R;
     showFloatingHeaderViewAnimated<R = void, P0 = boolean>(_showFloatingHeaderViewAnimated: P0): R;
     _updateFloatingHeaderViewFrame<R = void>(): R;
@@ -50,7 +50,7 @@ declare namespace cocoa {
     _removeDropFeedbackViewsFromOldRow<R = void, P0 = number>(__removeDropFeedbackViewsFromOldRow: P0): R;
     insertedRowIndexes<R = unknown>(): R;
     deletedRowIndexes<R = unknown>(): R;
-    moveRowsInRange_toIndex<R = void, P0 = cocoa._NSRange, P1 = number>(_moveRowsInRange: P0, _toIndex: P1): R;
+    moveRowsInRange_toIndex<R = void, P0 = _NSRange, P1 = number>(_moveRowsInRange: P0, _toIndex: P1): R;
     moveRowAtIndex_toIndex<R = void, P0 = number, P1 = number>(_moveRowAtIndex: P0, _toIndex: P1): R;
     unhideRowsAtIndexes_withRowAnimation<R = void, P0 = unknown, P1 = number>(_unhideRowsAtIndexes: P0, _withRowAnimation: P1): R;
     hideRowsAtIndexes_withRowAnimation<R = void, P0 = unknown, P1 = number>(_hideRowsAtIndexes: P0, _withRowAnimation: P1): R;
@@ -64,7 +64,7 @@ declare namespace cocoa {
     _extractExistingViewForRow<R = unknown, P0 = number>(__extractExistingViewForRow: P0): R;
     _addRowView_toDeleteForOldRow_animation<R = void, P0 = unknown, P1 = number, P2 = number>(__addRowView: P0, _toDeleteForOldRow: P1, _animation: P2): R;
     _insertUpdateItem_atIndexes<R = void, P0 = unknown, P1 = unknown>(__insertUpdateItem: P0, _atIndexes: P1): R;
-    _insertAtIndexes_addItemToArrayFromRange<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(__insertAtIndexes: P0, _addItemToArrayFromRange: P1): R;
+    _insertAtIndexes_addItemToArrayFromRange<R = void, P0 = unknown, P1 = CDUnknownBlockType>(__insertAtIndexes: P0, _addItemToArrayFromRange: P1): R;
     _validateInsertUpdateData<R = void>(): R;
     _createAllRowstoInsertIfNecessary<R = void>(): R;
     _validateRowForInsertion<R = void, P0 = number>(__validateRowForInsertion: P0): R;
@@ -75,7 +75,7 @@ declare namespace cocoa {
     _ensureDropFeedbackData<R = void>(): R;
     draggingAccepted<R = void>(): R;
     draggingExited<R = void>(): R;
-    draggingSessionEndedAtPoint_operation<R = void, P0 = cocoa.CGPoint, P1 = number>(_draggingSessionEndedAtPoint: P0, _operation: P1): R;
+    draggingSessionEndedAtPoint_operation<R = void, P0 = CGPoint, P1 = number>(_draggingSessionEndedAtPoint: P0, _operation: P1): R;
     _doDraggingEndedForGapStyleWithFeedbackData<R = void, P0 = unknown>(__doDraggingEndedForGapStyleWithFeedbackData: P0): R;
     draggingBeginWithRowIndexes_startRow<R = void, P0 = unknown, P1 = number>(_draggingBeginWithRowIndexes: P0, _startRow: P1): R;
     draggingDestinationFeedbackStyleChanged<R = void>(): R;
@@ -99,14 +99,14 @@ declare namespace cocoa {
     _shouldDelayUpdatingFrames<R = boolean>(): R;
     _updateFrameRowView_row<R = void, P0 = unknown, P1 = number>(__updateFrameRowView: P0, _row: P1): R;
     _updateFloatingGroupRowView_row<R = void, P0 = unknown, P1 = number>(__updateFloatingGroupRowView: P0, _row: P1): R;
-    _frameForFloatingGroupRowIsFloating<R = cocoa.CGRect, P0 = string>(__frameForFloatingGroupRowIsFloating: P0): R;
+    _frameForFloatingGroupRowIsFloating<R = CGRect, P0 = string>(__frameForFloatingGroupRowIsFloating: P0): R;
     _updateClipView_forRowView_row<R = void, P0 = unknown, P1 = unknown, P2 = number>(__updateClipView: P0, _forRowView: P1, _row: P2): R;
     endUpdatingColumnWidths<R = void>(): R;
     beginUpdatingColumnWidths<R = void>(): R;
     tableHeaderViewDraggedDistanceChanged<R = void>(): R;
     endDraggingColumn<R = void, P0 = number>(_endDraggingColumn: P0): R;
     beginDraggingColumn<R = void, P0 = number>(_beginDraggingColumn: P0): R;
-    _draggedColumnViewFrameForColumn<R = cocoa.CGRect, P0 = number>(__draggedColumnViewFrameForColumn: P0): R;
+    _draggedColumnViewFrameForColumn<R = CGRect, P0 = number>(__draggedColumnViewFrameForColumn: P0): R;
     concludeDragOperation<R = void, P0 = unknown>(_concludeDragOperation: P0): R;
     didMoveFromColumn_toColumn<R = void, P0 = number, P1 = number>(_didMoveFromColumn: P0, _toColumn: P1): R;
     _animatedUpdateViewPositionsForRow_rowView<R = void, P0 = number, P1 = unknown>(__animatedUpdateViewPositionsForRow: P0, _rowView: P1): R;
@@ -124,7 +124,7 @@ declare namespace cocoa {
     selectionColorChanged<R = void>(): R;
     selectionShouldUsePrimaryColorChanged<R = void>(): R;
     setSelectionShouldUsePrimaryColor<R = void, P0 = boolean>(_setSelectionShouldUsePrimaryColor: P0): R;
-    enumerateAvailableRowViewsUsingBlock<R = void, P0 = cocoa.CDUnknownBlockType>(_enumerateAvailableRowViewsUsingBlock: P0): R;
+    enumerateAvailableRowViewsUsingBlock<R = void, P0 = CDUnknownBlockType>(_enumerateAvailableRowViewsUsingBlock: P0): R;
     deselectRowIndexes<R = void, P0 = unknown>(_deselectRowIndexes: P0): R;
     didDeselectRow<R = void, P0 = number>(_didDeselectRow: P0): R;
     didSelectRow<R = void, P0 = number>(_didSelectRow: P0): R;
@@ -145,18 +145,18 @@ declare namespace cocoa {
     _updateConstraintsForRowView_atRow<R = void, P0 = unknown, P1 = number>(__updateConstraintsForRowView: P0, _atRow: P1): R;
     _updateConstraintsAtColumn_row_rowView<R = void, P0 = number, P1 = number, P2 = unknown>(__updateConstraintsAtColumn: P0, _row: P1, _rowView: P2): R;
     _makeCellConstraintsAtColumn_row_rowView_cellView<R = unknown, P0 = number, P1 = number, P2 = unknown, P3 = unknown>(__makeCellConstraintsAtColumn: P0, _row: P1, _rowView: P2, _cellView: P3): R;
-    _cellOffsetConstraintConstantsForColumn_row<R = cocoa.CGRect, P0 = number, P1 = number>(__cellOffsetConstraintConstantsForColumn: P0, _row: P1): R;
+    _cellOffsetConstraintConstantsForColumn_row<R = CGRect, P0 = number, P1 = number>(__cellOffsetConstraintConstantsForColumn: P0, _row: P1): R;
     setColumnHidden_atColumnIndex<R = void, P0 = boolean, P1 = number>(_setColumnHidden: P0, _atColumnIndex: P1): R;
     updateVisibleRowViews<R = void>(): R;
     _automaticRowHeightsUpdateVisibleRowViews<R = void>(): R;
     _handleChangedAutomaticRowHeights<R = void>(): R;
-    _keepTopRowStable_andDoWorkUntilDone<R = void, P0 = boolean, P1 = cocoa.CDUnknownBlockType>(__keepTopRowStable: P0, _andDoWorkUntilDone: P1): R;
+    _keepTopRowStable_andDoWorkUntilDone<R = void, P0 = boolean, P1 = CDUnknownBlockType>(__keepTopRowStable: P0, _andDoWorkUntilDone: P1): R;
     cacheExistingSubviews<R = void>(): R;
     removePluckedRowView<R = void, P0 = unknown>(_removePluckedRowView: P0): R;
     verifyAttachedRowEntries<R = void>(): R;
     _updateVisibleRowEntries<R = void>(): R;
     _updatePreparedContentRect<R = void>(): R;
-    _currentPreparedContentRect<R = cocoa.CGRect>(): R;
+    _currentPreparedContentRect<R = CGRect>(): R;
     _updateFloatingGroupRowView<R = void>(): R;
     _updateGroupViewBackgrounds<R = void>(): R;
     _floatsGroupRows<R = boolean>(): R;
@@ -164,15 +164,15 @@ declare namespace cocoa {
     _updateGroupRowFinderStyleBackgrounds<R = void>(): R;
     _separatorColorForParentGroupRowView_withChildren<R = unknown, P0 = unknown, P1 = boolean>(__separatorColorForParentGroupRowView: P0, _withChildren: P1): R;
     _groupRowSeparatorColor<R = unknown>(): R;
-    _backgroundViewWithFrame<R = unknown, P0 = cocoa.CGRect>(__backgroundViewWithFrame: P0): R;
+    _backgroundViewWithFrame<R = unknown, P0 = CGRect>(__backgroundViewWithFrame: P0): R;
     _backgroundViewGradient<R = unknown>(): R;
-    _frameForBackgroundGroupViewInRange<R = cocoa.CGRect, P0 = cocoa._NSRange>(__frameForBackgroundGroupViewInRange: P0): R;
+    _frameForBackgroundGroupViewInRange<R = CGRect, P0 = _NSRange>(__frameForBackgroundGroupViewInRange: P0): R;
     _removeAndCacheValuesInDictionary<R = void, P0 = unknown>(__removeAndCacheValuesInDictionary: P0): R;
     _setFloatingGroupRow<R = void, P0 = number>(__setFloatingGroupRow: P0): R;
     _addFloatingGroupRowView<R = void>(): R;
     updateFloatingGroupRowFrame<R = void>(): R;
     _computeCurrentFloatingGroupRow<R = number>(): R;
-    _computeFloatingGroupRowFromIndex_inVisibleRange<R = number, P0 = number, P1 = cocoa._NSRange>(__computeFloatingGroupRowFromIndex: P0, _inVisibleRange: P1): R;
+    _computeFloatingGroupRowFromIndex_inVisibleRange<R = number, P0 = number, P1 = _NSRange>(__computeFloatingGroupRowFromIndex: P0, _inVisibleRange: P1): R;
     _updateClipPathIfNeeded<R = void>(): R;
     needsClipPath<R = boolean>(): R;
     ensureGroupRowIndexes<R = void>(): R;
@@ -195,7 +195,7 @@ declare namespace cocoa {
     _clearVisibleRows<R = void>(): R;
     _addRowViewForVisibleRow<R = void, P0 = number>(__addRowViewForVisibleRow: P0): R;
     _addRowViewForVisibleRow_withPriorRowIndex_inDictionary_withRowAnimation<R = unknown, P0 = number, P1 = number, P2 = unknown, P3 = number>(__addRowViewForVisibleRow: P0, _withPriorRowIndex: P1, _inDictionary: P2, _withRowAnimation: P3): R;
-    _setFrameForAddedRowView_row_withRowAnimation_priorFrameHandler<R = void, P0 = unknown, P1 = number, P2 = number, P3 = cocoa.CDUnknownBlockType>(__setFrameForAddedRowView: P0, _row: P1, _withRowAnimation: P2, _priorFrameHandler: P3): R;
+    _setFrameForAddedRowView_row_withRowAnimation_priorFrameHandler<R = void, P0 = unknown, P1 = number, P2 = number, P3 = CDUnknownBlockType>(__setFrameForAddedRowView: P0, _row: P1, _withRowAnimation: P2, _priorFrameHandler: P3): R;
     _rowView_updateAssociatedViewsByOffset_inColumn<R = void, P0 = unknown, P1 = number, P2 = number>(__rowView: P0, _updateAssociatedViewsByOffset: P1, _inColumn: P2): R;
     _addRowViewForVisibleRow_withPriorView<R = unknown, P0 = number, P1 = unknown>(__addRowViewForVisibleRow: P0, _withPriorView: P1): R;
     _initializeRowView_atRow<R = void, P0 = unknown, P1 = number>(__initializeRowView: P0, _atRow: P1): R;
@@ -203,7 +203,7 @@ declare namespace cocoa {
     _numberOfColumnsForRowView_atRow<R = number, P0 = unknown, P1 = number>(__numberOfColumnsForRowView: P0, _atRow: P1): R;
     _makeTemporaryPreparedRowViewForRow<R = unknown, P0 = number>(__makeTemporaryPreparedRowViewForRow: P0): R;
     preparedRowViewForOutlineView<R = unknown>(): R;
-    _preparedRowViewForRow_storageHandler<R = unknown, P0 = number, P1 = cocoa.CDUnknownBlockType>(__preparedRowViewForRow: P0, _storageHandler: P1): R;
+    _preparedRowViewForRow_storageHandler<R = unknown, P0 = number, P1 = CDUnknownBlockType>(__preparedRowViewForRow: P0, _storageHandler: P1): R;
     _setPropertiesForRowView_atRow<R = void, P0 = unknown, P1 = number>(__setPropertiesForRowView: P0, _atRow: P1): R;
     _setupLayoutPropertiesForCellView<R = void, P0 = unknown>(__setupLayoutPropertiesForCellView: P0): R;
     _setupLayoutHostingEngineForView<R = void, P0 = unknown>(__setupLayoutHostingEngineForView: P0): R;
@@ -260,7 +260,7 @@ declare namespace cocoa {
     _addViewToRowView_atColumn_row<R = unknown, P0 = unknown, P1 = number, P2 = number>(__addViewToRowView: P0, _atColumn: P1, _row: P2): R;
     _effectiveRowSizeStyleInRowView<R = number, P0 = unknown>(__effectiveRowSizeStyleInRowView: P0): R;
     setSizeModeUpdateNeeded<R = void>(): R;
-    _cellFrameForRow_column_rowFrame<R = cocoa.CGRect, P0 = number, P1 = number, P2 = cocoa.CGRect>(__cellFrameForRow: P0, _column: P1, _rowFrame: P2): R;
+    _cellFrameForRow_column_rowFrame<R = CGRect, P0 = number, P1 = number, P2 = CGRect>(__cellFrameForRow: P0, _column: P1, _rowFrame: P2): R;
     isReloadingData<R = boolean>(): R;
     endUpdates<R = void>(): R;
     _doWorkAfterEndUpdates<R = void>(): R;
@@ -273,7 +273,7 @@ declare namespace cocoa {
     _growVisibleRowsForUpdateItemsIfNeeded<R = void>(): R;
     _setFloating_forRowView_atRow<R = void, P0 = boolean, P1 = unknown, P2 = number>(__setFloating: P0, _forRowView: P1, _atRow: P2): R;
     _setupBackgroundFillerAnimationToLastTopY_bottomYOfSlideRemoveClipView<R = void, P0 = number, P1 = number>(__setupBackgroundFillerAnimationToLastTopY: P0, _bottomYOfSlideRemoveClipView: P1): R;
-    _expandedVisibleRect<R = cocoa.CGRect>(): R;
+    _expandedVisibleRect<R = CGRect>(): R;
     _shouldExpandVisibleRect<R = boolean>(): R;
     _updateBackgroundColorForRowView_row_colors<R = void, P0 = unknown, P1 = number, P2 = unknown>(__updateBackgroundColorForRowView: P0, _row: P1, _colors: P2): R;
     _setBackgroundColorForRowView_row<R = void, P0 = unknown, P1 = number>(__setBackgroundColorForRowView: P0, _row: P1): R;
@@ -292,14 +292,14 @@ declare namespace cocoa {
     _updateColumnWidthsForNewRow_rowView<R = void, P0 = number, P1 = unknown>(__updateColumnWidthsForNewRow: P0, _rowView: P1): R;
     _animateInsertingOfClipView_rowAnimation<R = void, P0 = unknown, P1 = number>(__animateInsertingOfClipView: P0, _rowAnimation: P1): R;
     _shouldFlipRowClipViewSubviews<R = boolean>(): R;
-    _makeClipViewWithFrame_rowAnimation_fromRow<R = unknown, P0 = cocoa.CGRect, P1 = number, P2 = number>(__makeClipViewWithFrame: P0, _rowAnimation: P1, _fromRow: P2): R;
+    _makeClipViewWithFrame_rowAnimation_fromRow<R = unknown, P0 = CGRect, P1 = number, P2 = number>(__makeClipViewWithFrame: P0, _rowAnimation: P1, _fromRow: P2): R;
     _cleanupAnimationClipView<R = void, P0 = unknown>(__cleanupAnimationClipView: P0): R;
     _slideRemoveRowViews_originalRow_withAnimation<R = unknown, P0 = unknown, P1 = number, P2 = number>(__slideRemoveRowViews: P0, _originalRow: P1, _withAnimation: P2): R;
     _doLayerPerformanceUpdates<R = boolean>(): R;
     updateFloatingGroupRows<R = void>(): R;
-    isFloatingGroupRowAtPoint<R = boolean, P0 = cocoa.CGPoint>(_isFloatingGroupRowAtPoint: P0): R;
+    isFloatingGroupRowAtPoint<R = boolean, P0 = CGPoint>(_isFloatingGroupRowAtPoint: P0): R;
     _flipAllSubviewsInView_toHeight<R = void, P0 = unknown, P1 = number>(__flipAllSubviewsInView: P0, _toHeight: P1): R;
-    _frameInTableForView<R = cocoa.CGRect, P0 = unknown>(__frameInTableForView: P0): R;
+    _frameInTableForView<R = CGRect, P0 = unknown>(__frameInTableForView: P0): R;
     _shouldDoSlideAnimation<R = boolean, P0 = number>(__shouldDoSlideAnimation: P0): R;
     _throwExceptionForUpdateErrorOnRow<R = void, P0 = number>(__throwExceptionForUpdateErrorOnRow: P0): R;
     _allChangesAsStringForRow<R = unknown, P0 = number>(__allChangesAsStringForRow: P0): R;
@@ -319,43 +319,43 @@ declare namespace cocoa {
     _animatingBackgroundView<R = unknown>(): R;
     hasBackgroundView<R = boolean>(): R;
     initWithTableView<R = unknown, P0 = unknown>(_initWithTableView: P0): R;
-    mutableHiddenRowIndexes<R = cocoa.NSMutableIndexSet>(): R;
-    animationCompletionHandler<R = cocoa.CDUnknownBlockType>(): R;
-    setAnimationCompletionHandler<R = void, P0 = cocoa.CDUnknownBlockType>(_v: P0): R;
-    preferredReuseView<R = cocoa.NSView>(): R;
-    setPreferredReuseView<R = void, P0 = cocoa.NSView>(_v: P0): R;
-    rowViewsBeingAnimatedOff<R = cocoa.NSMutableDictionary>(): R;
-    setRowViewsBeingAnimatedOff<R = void, P0 = cocoa.NSMutableDictionary>(_v: P0): R;
+    mutableHiddenRowIndexes<R = NSMutableIndexSet>(): R;
+    animationCompletionHandler<R = CDUnknownBlockType>(): R;
+    setAnimationCompletionHandler<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
+    preferredReuseView<R = NSView>(): R;
+    setPreferredReuseView<R = void, P0 = NSView>(_v: P0): R;
+    rowViewsBeingAnimatedOff<R = NSMutableDictionary>(): R;
+    setRowViewsBeingAnimatedOff<R = void, P0 = NSMutableDictionary>(_v: P0): R;
     firstResponderRow<R = number>(): R;
     setFirstResponderRow<R = void, P0 = number>(_v: P0): R;
-    dropFeedbackData<R = cocoa.NSTableViewDropFeedbackData>(): R;
-    tableView<R = cocoa.NSTableView>(): R;
-    setTableView<R = void, P0 = cocoa.NSTableView>(_v: P0): R;
-    swipeData<R = cocoa.NSTableSwipeData>(): R;
-    targetTableFrameSize<R = cocoa.CGSize>(): R;
-    setTargetTableFrameSize<R = void, P0 = cocoa.CGSize>(_v: P0): R;
-    delayEditBlock<R = cocoa.CDUnknownBlockType>(): R;
-    setDelayEditBlock<R = void, P0 = cocoa.CDUnknownBlockType>(_v: P0): R;
+    dropFeedbackData<R = NSTableViewDropFeedbackData>(): R;
+    tableView<R = NSTableView>(): R;
+    setTableView<R = void, P0 = NSTableView>(_v: P0): R;
+    swipeData<R = NSTableSwipeData>(): R;
+    targetTableFrameSize<R = CGSize>(): R;
+    setTargetTableFrameSize<R = void, P0 = CGSize>(_v: P0): R;
+    delayEditBlock<R = CDUnknownBlockType>(): R;
+    setDelayEditBlock<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
     editing<R = boolean>(): R;
     setEditing<R = void, P0 = boolean>(_v: P0): R;
     ignoreTrackingAreas<R = boolean>(): R;
     setIgnoreTrackingAreas<R = void, P0 = boolean>(_v: P0): R;
-    contextualHighlightView<R = cocoa.NSView>(): R;
-    setContextualHighlightView<R = void, P0 = cocoa.NSView>(_v: P0): R;
+    contextualHighlightView<R = NSView>(): R;
+    setContextualHighlightView<R = void, P0 = NSView>(_v: P0): R;
     attemptingDrag<R = boolean>(): R;
     setAttemptingDrag<R = void, P0 = boolean>(_v: P0): R;
-    dropFeedbackViews<R = cocoa.NSMutableArray>(): R;
-    setDropFeedbackViews<R = void, P0 = cocoa.NSMutableArray>(_v: P0): R;
+    dropFeedbackViews<R = NSMutableArray>(): R;
+    setDropFeedbackViews<R = void, P0 = NSMutableArray>(_v: P0): R;
     dragActive<R = boolean>(): R;
-    hiddenRowIndexes<R = cocoa.NSIndexSet>(): R;
-    setHiddenRowIndexes<R = void, P0 = cocoa.NSIndexSet>(_v: P0): R;
-    floatingGroupRowView<R = cocoa.NSTableRowView>(): R;
-    setFloatingGroupRowView<R = void, P0 = cocoa.NSTableRowView>(_v: P0): R;
+    hiddenRowIndexes<R = NSIndexSet>(): R;
+    setHiddenRowIndexes<R = void, P0 = NSIndexSet>(_v: P0): R;
+    floatingGroupRowView<R = NSTableRowView>(): R;
+    setFloatingGroupRowView<R = void, P0 = NSTableRowView>(_v: P0): R;
     floatingGroupRow<R = number>(): R;
     setFloatingGroupRow<R = void, P0 = number>(_v: P0): R;
-    groupRowIndexes<R = cocoa.NSMutableIndexSet>(): R;
-    setGroupRowIndexes<R = void, P0 = cocoa.NSMutableIndexSet>(_v: P0): R;
-    description<R = cocoa.NSString>(): R;
+    groupRowIndexes<R = NSMutableIndexSet>(): R;
+    setGroupRowIndexes<R = void, P0 = NSMutableIndexSet>(_v: P0): R;
+    description<R = NSString>(): R;
     goingToAnimate<R = boolean>(): R;
     animating<R = boolean>(): R;
     updating<R = boolean>(): R;
@@ -368,15 +368,15 @@ declare namespace cocoa {
     animateViewWidths<R = boolean>(): R;
     setAnimateViewWidths<R = void, P0 = boolean>(_v: P0): R;
     currentlyActive<R = boolean>(): R;
-    updateData<R = cocoa.NSTableUpdateData>(): R;
+    updateData<R = NSTableUpdateData>(): R;
     callingHeightOfRow<R = boolean>(): R;
     setCallingHeightOfRow<R = void, P0 = boolean>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSTableRowData<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSAnimationDelegateProtocol {
+    export interface NSTableRowData<T = any> extends NSObject, NSAnimationDelegateProtocol {
       alloc<R = NSTableRowData>(): R;
       new: <R = NSTableRowData>() => R;
     }

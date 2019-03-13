@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAnimation<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol, cocoa.NSCodingProtocol {
+  export interface NSAnimation<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
     cxx_destruct<R = void>(): R;
     clearStopAnimation<R = void>(): R;
     clearStartAnimation<R = void>(): R;
@@ -30,11 +30,11 @@ declare namespace cocoa {
     _createDisplayLink<R = void, P0 = boolean>(__createDisplayLink: P0): R;
     _screen<R = unknown>(): R;
     _setSendProgressAllTheTime<R = void, P0 = boolean>(__setSendProgressAllTheTime: P0): R;
-    runLoopModesForAnimating<R = cocoa.NSArray>(): R;
-    progressMarks<R = cocoa.NSArray>(): R;
-    setProgressMarks<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    delegate<R = cocoa.NSAnimationDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSAnimationDelegate>(_v: P0): R;
+    runLoopModesForAnimating<R = NSArray>(): R;
+    progressMarks<R = NSArray>(): R;
+    setProgressMarks<R = void, P0 = NSArray>(_v: P0): R;
+    delegate<R = NSAnimationDelegate>(): R;
+    setDelegate<R = void, P0 = NSAnimationDelegate>(_v: P0): R;
     currentValue<R = number>(): R;
     animationCurve<R = number>(): R;
     setAnimationCurve<R = void, P0 = number>(_v: P0): R;
@@ -47,11 +47,11 @@ declare namespace cocoa {
     currentProgress<R = number>(): R;
     setCurrentProgress<R = void, P0 = number>(_v: P0): R;
     animating<R = boolean>(): R;
-    _progressHandler<R = cocoa.CDUnknownBlockType>(): R;
-    set_progressHandler<R = void, P0 = cocoa.CDUnknownBlockType>(_v: P0): R;
+    _progressHandler<R = CDUnknownBlockType>(): R;
+    set_progressHandler<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
   }
   namespace classes {
-    export interface NSAnimation<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol, cocoa.classes.NSCodingProtocol {
+    export interface NSAnimation<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
       alloc<R = NSAnimation>(): R;
       new: <R = NSAnimation>() => R;
       initialize<R = void>(): R;

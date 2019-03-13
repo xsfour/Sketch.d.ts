@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSGrayFrame<T = any> extends cocoa.NSThemeFrame {}
+  export interface NSGrayFrame<T = any> extends NSThemeFrame {}
   namespace classes {
-    export interface NSGrayFrame<T = any> extends cocoa.classes.NSThemeFrame {
+    export interface NSGrayFrame<T = any> extends NSThemeFrame {
       alloc<R = NSGrayFrame>(): R;
       new: <R = NSGrayFrame>() => R;
     }

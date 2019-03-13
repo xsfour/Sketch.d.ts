@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCellView<T = any> extends cocoa.NSControl {}
+  export interface NSCellView<T = any> extends NSControl {}
   namespace classes {
-    export interface NSCellView<T = any> extends cocoa.classes.NSControl {
+    export interface NSCellView<T = any> extends NSControl {
       alloc<R = NSCellView>(): R;
       new: <R = NSCellView>() => R;
     }

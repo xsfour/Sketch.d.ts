@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSArrayController<T = any> extends cocoa.NSObjectController {
+  export interface NSArrayController<T = any> extends NSObjectController {
     _validateMultipleValue_forKeyPath_atIndex_error<R = boolean, P0 = unknown, P1 = unknown, P2 = number, P3 = unknown>(__validateMultipleValue: P0, _forKeyPath: P1, _atIndex: P2, _error: P3): R;
     _invokeMultipleSelector_withArguments_onKeyPath_atIndex<R = void, P0 = string, P1 = unknown, P2 = unknown, P3 = number>(__invokeMultipleSelector: P0, _withArguments: P1, _onKeyPath: P2, _atIndex: P3): R;
     _setMultipleValue_forKeyPath_atIndex<R = void, P0 = unknown, P1 = unknown, P2 = number>(__setMultipleValue: P0, _forKeyPath: P1, _atIndex: P2): R;
@@ -80,15 +80,15 @@ declare namespace cocoa {
     _startObservingSelectionIfNecessary<R = void>(): R;
     _registerObservingForAllModelObjects<R = boolean>(): R;
     _rearrangementExtensions<R = unknown, P0 = boolean>(__rearrangementExtensions: P0): R;
-    addRangeOfInterest<R = void, P0 = cocoa._NSRange>(_addRangeOfInterest: P0): R;
+    addRangeOfInterest<R = void, P0 = _NSRange>(_addRangeOfInterest: P0): R;
     setManagedObjectContext<R = void, P0 = unknown>(_setManagedObjectContext: P0): R;
     arrangedObjects<R = unknown>(): R;
     canSelectPrevious<R = boolean>(): R;
     canSelectNext<R = boolean>(): R;
     canInsert<R = boolean>(): R;
-    selectedObjects<R = cocoa.NSArray>(): R;
+    selectedObjects<R = NSArray>(): R;
     selectionIndex<R = number>(): R;
-    selectionIndexes<R = cocoa.NSIndexSet>(): R;
+    selectionIndexes<R = NSIndexSet>(): R;
     alwaysUsesMultipleValuesMarker<R = boolean>(): R;
     setAlwaysUsesMultipleValuesMarker<R = void, P0 = boolean>(_v: P0): R;
     clearsFilterPredicateOnInsertion<R = boolean>(): R;
@@ -99,16 +99,16 @@ declare namespace cocoa {
     setPreservesSelection<R = void, P0 = boolean>(_v: P0): R;
     avoidsEmptySelection<R = boolean>(): R;
     setAvoidsEmptySelection<R = void, P0 = boolean>(_v: P0): R;
-    automaticRearrangementKeyPaths<R = cocoa.NSArray>(): R;
+    automaticRearrangementKeyPaths<R = NSArray>(): R;
     automaticallyRearrangesObjects<R = boolean>(): R;
     setAutomaticallyRearrangesObjects<R = void, P0 = boolean>(_v: P0): R;
-    sortDescriptors<R = cocoa.NSArray>(): R;
-    setSortDescriptors<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    filterPredicate<R = cocoa.NSPredicate>(): R;
-    setFilterPredicate<R = void, P0 = cocoa.NSPredicate>(_v: P0): R;
+    sortDescriptors<R = NSArray>(): R;
+    setSortDescriptors<R = void, P0 = NSArray>(_v: P0): R;
+    filterPredicate<R = NSPredicate>(): R;
+    setFilterPredicate<R = void, P0 = NSPredicate>(_v: P0): R;
   }
   namespace classes {
-    export interface NSArrayController<T = any> extends cocoa.classes.NSObjectController {
+    export interface NSArrayController<T = any> extends NSObjectController {
       alloc<R = NSArrayController>(): R;
       new: <R = NSArrayController>() => R;
     }

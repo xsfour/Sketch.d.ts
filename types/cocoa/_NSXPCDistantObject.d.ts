@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSXPCDistantObject<T = any> extends cocoa.NSObject, cocoa.NSXPCProxyCreatingProtocol, cocoa.NSSecureCodingProtocol {
-    remoteObjectProxyWithTimeout_errorHandler<R = unknown, P0 = number, P1 = cocoa.CDUnknownBlockType>(_remoteObjectProxyWithTimeout: P0, _errorHandler: P1): R;
-    remoteObjectProxyWithUserInfo_errorHandler<R = unknown, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(_remoteObjectProxyWithUserInfo: P0, _errorHandler: P1): R;
+  export interface _NSXPCDistantObject<T = any> extends NSObject, NSXPCProxyCreatingProtocol, NSSecureCodingProtocol {
+    remoteObjectProxyWithTimeout_errorHandler<R = unknown, P0 = number, P1 = CDUnknownBlockType>(_remoteObjectProxyWithTimeout: P0, _errorHandler: P1): R;
+    remoteObjectProxyWithUserInfo_errorHandler<R = unknown, P0 = unknown, P1 = CDUnknownBlockType>(_remoteObjectProxyWithUserInfo: P0, _errorHandler: P1): R;
     _unboostingRemoteObjectProxy<R = unknown>(): R;
     _forwardStackInvocation<R = void, P0 = unknown>(__forwardStackInvocation: P0): R;
     forwardInvocation<R = void, P0 = unknown>(_forwardInvocation: P0): R;
@@ -12,15 +12,15 @@ declare namespace cocoa {
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     dealloc<R = void>(): R;
     _initWithConnection_exportedObject_interface<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(__initWithConnection: P0, _exportedObject: P1, _interface: P2): R;
-    _initWithConnection_proxyNumber_generationCount_interface_options_error<R = unknown, P0 = unknown, P1 = number, P2 = number, P3 = unknown, P4 = number, P5 = cocoa.CDUnknownBlockType>(__initWithConnection: P0, _proxyNumber: P1, _generationCount: P2, _interface: P3, _options: P4, _error: P5): R;
-    _userInfo<R = cocoa.NSDictionary>(): R;
-    set_userInfo<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
+    _initWithConnection_proxyNumber_generationCount_interface_options_error<R = unknown, P0 = unknown, P1 = number, P2 = number, P3 = unknown, P4 = number, P5 = CDUnknownBlockType>(__initWithConnection: P0, _proxyNumber: P1, _generationCount: P2, _interface: P3, _options: P4, _error: P5): R;
+    _userInfo<R = NSDictionary>(): R;
+    set_userInfo<R = void, P0 = NSDictionary>(_v: P0): R;
     _timeout<R = number>(): R;
     set_timeout<R = void, P0 = number>(_v: P0): R;
-    _errorBlock<R = cocoa.CDUnknownBlockType>(): R;
-    _remoteInterface<R = cocoa.NSXPCInterface>(): R;
-    set_remoteInterface<R = void, P0 = cocoa.NSXPCInterface>(_v: P0): R;
-    _connection<R = cocoa.NSXPCConnection>(): R;
+    _errorBlock<R = CDUnknownBlockType>(): R;
+    _remoteInterface<R = NSXPCInterface>(): R;
+    set_remoteInterface<R = void, P0 = NSXPCInterface>(_v: P0): R;
+    _connection<R = NSXPCConnection>(): R;
     _generationCount<R = number>(): R;
     _proxyNumber<R = number>(): R;
     _sync<R = boolean>(): R;
@@ -28,7 +28,7 @@ declare namespace cocoa {
     _exported<R = boolean>(): R;
   }
   namespace classes {
-    export interface _NSXPCDistantObject<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSXPCProxyCreatingProtocol, cocoa.classes.NSSecureCodingProtocol {
+    export interface _NSXPCDistantObject<T = any> extends NSObject, NSXPCProxyCreatingProtocol, NSSecureCodingProtocol {
       alloc<R = _NSXPCDistantObject>(): R;
       new: <R = _NSXPCDistantObject>() => R;
     }

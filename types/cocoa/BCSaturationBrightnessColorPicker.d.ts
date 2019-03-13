@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCSaturationBrightnessColorPicker<T = any> extends cocoa.BCColorPickerBaseView {
-    pickerRect<R = cocoa.CGRect>(): R;
+  export interface BCSaturationBrightnessColorPicker<T = any> extends BCColorPickerBaseView {
+    pickerRect<R = CGRect>(): R;
     groupingUndo<R = boolean>(): R;
     setGroupingUndo<R = void, P0 = boolean>(_v: P0): R;
     handlingHistoryCoalescing<R = boolean>(): R;
@@ -15,7 +15,7 @@ declare namespace cocoa {
     setHue<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface BCSaturationBrightnessColorPicker<T = any> extends cocoa.classes.BCColorPickerBaseView {
+    export interface BCSaturationBrightnessColorPicker<T = any> extends BCColorPickerBaseView {
       alloc<R = BCSaturationBrightnessColorPicker>(): R;
       new: <R = BCSaturationBrightnessColorPicker>() => R;
     }

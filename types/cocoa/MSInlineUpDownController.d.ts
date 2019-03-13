@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInlineUpDownController<T = any> extends cocoa.MSUpDownController {}
+  export interface MSInlineUpDownController<T = any> extends MSUpDownController {}
   namespace classes {
-    export interface MSInlineUpDownController<T = any> extends cocoa.classes.MSUpDownController {
+    export interface MSInlineUpDownController<T = any> extends MSUpDownController {
       alloc<R = MSInlineUpDownController>(): R;
       new: <R = MSInlineUpDownController>() => R;
     }

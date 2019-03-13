@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSWorkspace<T = any> extends cocoa.NSObject {
+  export interface NSWorkspace<T = any> extends NSObject {
     automaticallyTerminatedApplications<R = unknown>(): R;
     unterminatedApplications<R = unknown>(): R;
     runningApplications<R = unknown>(): R;
@@ -16,7 +16,7 @@ declare namespace cocoa {
     preferredFilenameExtensionForType<R = unknown, P0 = unknown>(_preferredFilenameExtensionForType: P0): R;
     localizedDescriptionForType<R = unknown, P0 = unknown>(_localizedDescriptionForType: P0): R;
     typeOfFile_error<R = unknown, P0 = unknown, P1 = unknown>(_typeOfFile: P0, _error: P1): R;
-    _copyApplicationDictionaryFromLSDictionary_constructingAppFromCorpse<R = unknown, P0 = cocoa.__CFDictionary, P1 = boolean>(__copyApplicationDictionaryFromLSDictionary: P0, _constructingAppFromCorpse: P1): R;
+    _copyApplicationDictionaryFromLSDictionary_constructingAppFromCorpse<R = unknown, P0 = __CFDictionary, P1 = boolean>(__copyApplicationDictionaryFromLSDictionary: P0, _constructingAppFromCorpse: P1): R;
     resetProfiling<R = void>(): R;
     writeProfilingDataToPath<R = void, P0 = unknown>(_writeProfilingDataToPath: P0): R;
     stopProfiling<R = void>(): R;
@@ -46,8 +46,8 @@ declare namespace cocoa {
     noteFileSystemChanged<R = void, P0 = unknown>(_noteFileSystemChanged: P0): R;
     performFileOperation_source_destination_files_tag<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = number>(_performFileOperation: P0, _source: P1, _destination: P2, _files: P3, _tag: P4): R;
     _fileOperation_source_destination_files<R = boolean, P0 = number, P1 = unknown, P2 = unknown, P3 = unknown>(__fileOperation: P0, _source: P1, _destination: P2, _files: P3): R;
-    recycleURLs_completionHandler<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(_recycleURLs: P0, _completionHandler: P1): R;
-    duplicateURLs_completionHandler<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(_duplicateURLs: P0, _completionHandler: P1): R;
+    recycleURLs_completionHandler<R = void, P0 = unknown, P1 = CDUnknownBlockType>(_recycleURLs: P0, _completionHandler: P1): R;
+    duplicateURLs_completionHandler<R = void, P0 = unknown, P1 = CDUnknownBlockType>(_duplicateURLs: P0, _completionHandler: P1): R;
     fullPathForApplication<R = unknown, P0 = unknown>(_fullPathForApplication: P0): R;
     _locationsForApplications<R = unknown>(): R;
     _fullPathForService<R = unknown, P0 = unknown>(__fullPathForService: P0): R;
@@ -57,7 +57,7 @@ declare namespace cocoa {
     desktopImageOptionsForScreen<R = unknown, P0 = unknown>(_desktopImageOptionsForScreen: P0): R;
     desktopImageURLForScreen<R = unknown, P0 = unknown>(_desktopImageURLForScreen: P0): R;
     setDesktopImageURL_forScreen_options_error<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown>(_setDesktopImageURL: P0, _forScreen: P1, _options: P2, _error: P3): R;
-    slideImage_from_to<R = void, P0 = unknown, P1 = cocoa.CGPoint, P2 = cocoa.CGPoint>(_slideImage: P0, _from: P1, _to: P2): R;
+    slideImage_from_to<R = void, P0 = unknown, P1 = CGPoint, P2 = CGPoint>(_slideImage: P0, _from: P1, _to: P2): R;
     extendPowerOffBy<R = number, P0 = number>(_extendPowerOffBy: P0): R;
     isFilePackageAtPath<R = boolean, P0 = unknown>(_isFilePackageAtPath: P0): R;
     getInfoForFile_application_type<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown>(_getInfoForFile: P0, _application: P1, _type: P2): R;
@@ -73,7 +73,7 @@ declare namespace cocoa {
     launchApplication_showIcon_autolaunch<R = boolean, P0 = unknown, P1 = boolean, P2 = boolean>(_launchApplication: P0, _showIcon: P1, _autolaunch: P2): R;
     launchApplication<R = boolean, P0 = unknown>(_launchApplication: P0): R;
     _launchService_andWait<R = boolean, P0 = unknown, P1 = boolean>(__launchService: P0, _andWait: P1): R;
-    openFile_fromImage_at_inView<R = boolean, P0 = unknown, P1 = unknown, P2 = cocoa.CGPoint, P3 = unknown>(_openFile: P0, _fromImage: P1, _at: P2, _inView: P3): R;
+    openFile_fromImage_at_inView<R = boolean, P0 = unknown, P1 = unknown, P2 = CGPoint, P3 = unknown>(_openFile: P0, _fromImage: P1, _at: P2, _inView: P3): R;
     openTempFile<R = boolean, P0 = unknown>(_openTempFile: P0): R;
     openFile_withApplication_andDeactivate<R = boolean, P0 = unknown, P1 = unknown, P2 = boolean>(_openFile: P0, _withApplication: P1, _andDeactivate: P2): R;
     _openFile_withApplication_asService_andWait_andDeactivate<R = boolean, P0 = unknown, P1 = unknown, P2 = boolean, P3 = boolean, P4 = boolean>(__openFile: P0, _withApplication: P1, _asService: P2, _andWait: P3, _andDeactivate: P4): R;
@@ -89,21 +89,21 @@ declare namespace cocoa {
     _openURLs_withAppPath_options_additionalEventParamDescriptor_launchIdentifiers<R = boolean, P0 = unknown, P1 = unknown, P2 = number, P3 = unknown, P4 = unknown>(__openURLs: P0, _withAppPath: P1, _options: P2, _additionalEventParamDescriptor: P3, _launchIdentifiers: P4): R;
     openURLs_withApplicationAtURL_options_configuration_error<R = unknown, P0 = unknown, P1 = unknown, P2 = number, P3 = unknown, P4 = unknown>(_openURLs: P0, _withApplicationAtURL: P1, _options: P2, _configuration: P3, _error: P4): R;
     openURL_options_configuration_error<R = unknown, P0 = unknown, P1 = number, P2 = unknown, P3 = unknown>(_openURL: P0, _options: P1, _configuration: P2, _error: P3): R;
-    _openURLs_withApplicationAtURL_options_configuration_errorHandler<R = unknown, P0 = unknown, P1 = unknown, P2 = number, P3 = unknown, P4 = cocoa.CDUnknownBlockType>(__openURLs: P0, _withApplicationAtURL: P1, _options: P2, _configuration: P3, _errorHandler: P4): R;
-    _launchServicesArchictureStringFromNSBundleExecutableArchitecture<R = cocoa.__CFString, P0 = number>(__launchServicesArchictureStringFromNSBundleExecutableArchitecture: P0): R;
+    _openURLs_withApplicationAtURL_options_configuration_errorHandler<R = unknown, P0 = unknown, P1 = unknown, P2 = number, P3 = unknown, P4 = CDUnknownBlockType>(__openURLs: P0, _withApplicationAtURL: P1, _options: P2, _configuration: P3, _errorHandler: P4): R;
+    _launchServicesArchictureStringFromNSBundleExecutableArchitecture<R = __CFString, P0 = number>(__launchServicesArchictureStringFromNSBundleExecutableArchitecture: P0): R;
     absolutePathForAppBundleWithIdentifier<R = unknown, P0 = unknown>(_absolutePathForAppBundleWithIdentifier: P0): R;
     URLForApplicationToOpenURL<R = unknown, P0 = unknown>(_URLForApplicationToOpenURL: P0): R;
     URLForApplicationWithBundleIdentifier<R = unknown, P0 = unknown>(_URLForApplicationWithBundleIdentifier: P0): R;
     _switchControlStatusChanged<R = void>(): R;
     _voiceOverStatusChanged<R = void>(): R;
     _sendFileSystemChangedNotificationForSavePanelInfo<R = void, P0 = unknown>(__sendFileSystemChangedNotificationForSavePanelInfo: P0): R;
-    requestAuthorizationOfType_completionHandler<R = void, P0 = number, P1 = cocoa.CDUnknownBlockType>(_requestAuthorizationOfType: P0, _completionHandler: P1): R;
-    menuBarOwningApplication<R = cocoa.NSRunningApplication>(): R;
-    frontmostApplication<R = cocoa.NSRunningApplication>(): R;
-    fileLabels<R = cocoa.NSArray>(): R;
-    fileLabelColors<R = cocoa.NSArray>(): R;
-    _defaultDocumentIcon<R = cocoa.NSImage>(): R;
-    notificationCenter<R = cocoa.NSNotificationCenter>(): R;
+    requestAuthorizationOfType_completionHandler<R = void, P0 = number, P1 = CDUnknownBlockType>(_requestAuthorizationOfType: P0, _completionHandler: P1): R;
+    menuBarOwningApplication<R = NSRunningApplication>(): R;
+    frontmostApplication<R = NSRunningApplication>(): R;
+    fileLabels<R = NSArray>(): R;
+    fileLabelColors<R = NSArray>(): R;
+    _defaultDocumentIcon<R = NSImage>(): R;
+    notificationCenter<R = NSNotificationCenter>(): R;
     accessibilityDisplayShouldReduceTransparency<R = boolean>(): R;
     accessibilityDisplayShouldDifferentiateWithoutColor<R = boolean>(): R;
     accessibilityDisplayShouldUseGrayscale<R = boolean>(): R;
@@ -120,7 +120,7 @@ declare namespace cocoa {
     applicationSupportDirectoryName<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSWorkspace<T = any> extends cocoa.classes.NSObject {
+    export interface NSWorkspace<T = any> extends NSObject {
       alloc<R = NSWorkspace>(): R;
       new: <R = NSWorkspace>() => R;
       sharedWorkspace<R = unknown>(): R;

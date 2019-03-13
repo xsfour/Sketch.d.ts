@@ -8,5 +8,3 @@ declare namespace cocoa {
     export interface NSTextLayoutOrientationProviderProtocol<T = any> {  }
   }
 }
-
-declare const NSTextLayoutOrientationProviderProtocol: cocoa.classes.NSTextLayoutOrientationProviderProtocol;

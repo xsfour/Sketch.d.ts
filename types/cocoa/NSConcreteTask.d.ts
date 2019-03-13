@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSConcreteTask<T = any> extends cocoa.NSTask {
+  export interface NSConcreteTask<T = any> extends NSTask {
     setStartsNewProcessGroup<R = void, P0 = boolean>(_setStartsNewProcessGroup: P0): R;
     processIdentifier<R = number>(): R;
     _procid<R = number>(): R;
@@ -21,21 +21,21 @@ declare namespace cocoa {
     setEnvironment<R = void, P0 = unknown>(_setEnvironment: P0): R;
     setPreferredArchitectures<R = void, P0 = unknown>(_setPreferredArchitectures: P0): R;
     setArguments<R = void, P0 = unknown>(_setArguments: P0): R;
-    _withTaskDictionary<R = void, P0 = cocoa.CDUnknownBlockType>(__withTaskDictionary: P0): R;
+    _withTaskDictionary<R = void, P0 = CDUnknownBlockType>(__withTaskDictionary: P0): R;
     waitUntilExit<R = void>(): R;
     launchWithDictionary_error<R = boolean, P0 = unknown, P1 = unknown>(_launchWithDictionary: P0, _error: P1): R;
     isRunning<R = boolean>(): R;
     terminationReason<R = number>(): R;
     _platformExitInformation<R = number>(): R;
     terminationStatus<R = number>(): R;
-    setTerminationHandler<R = void, P0 = cocoa.CDUnknownBlockType>(_setTerminationHandler: P0): R;
-    _setTerminationHandler<R = void, P0 = cocoa.CDUnknownBlockType>(__setTerminationHandler: P0): R;
-    terminationHandler<R = cocoa.CDUnknownBlockType>(): R;
+    setTerminationHandler<R = void, P0 = CDUnknownBlockType>(_setTerminationHandler: P0): R;
+    _setTerminationHandler<R = void, P0 = CDUnknownBlockType>(__setTerminationHandler: P0): R;
+    terminationHandler<R = CDUnknownBlockType>(): R;
     setQualityOfService<R = void, P0 = number>(_setQualityOfService: P0): R;
     qualityOfService<R = number>(): R;
   }
   namespace classes {
-    export interface NSConcreteTask<T = any> extends cocoa.classes.NSTask {
+    export interface NSConcreteTask<T = any> extends NSTask {
       alloc<R = NSConcreteTask>(): R;
       new: <R = NSConcreteTask>() => R;
     }

@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSTiledLayerVisibleRectObserver<T = any> extends cocoa.NSObject {}
+  export interface _NSTiledLayerVisibleRectObserver<T = any> extends NSObject {}
   namespace classes {
-    export interface _NSTiledLayerVisibleRectObserver<T = any> extends cocoa.classes.NSObject {
+    export interface _NSTiledLayerVisibleRectObserver<T = any> extends NSObject {
       alloc<R = _NSTiledLayerVisibleRectObserver>(): R;
       new: <R = _NSTiledLayerVisibleRectObserver>() => R;
       observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;

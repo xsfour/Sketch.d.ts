@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPersistentUIRecord<T = any> extends cocoa.NSObject {
+  export interface NSPersistentUIRecord<T = any> extends NSObject {
     _setSecurityScopedBookmarks<R = void, P0 = unknown>(__setSecurityScopedBookmarks: P0): R;
     addSecurityScopedBookmarks<R = void, P0 = unknown>(_addSecurityScopedBookmarks: P0): R;
     openedPushStateUnarchivers<R = unknown>(): R;
@@ -12,12 +12,12 @@ declare namespace cocoa {
     _setKeyedState<R = void, P0 = unknown>(__setKeyedState: P0): R;
     setEncodedKeyedState_forKey<R = void, P0 = unknown, P1 = unknown>(_setEncodedKeyedState: P0, _forKey: P1): R;
     keyedState<R = unknown>(): R;
-    generateArchive<R = void, P0 = cocoa.CDUnknownBlockType>(_generateArchive: P0): R;
+    generateArchive<R = void, P0 = CDUnknownBlockType>(_generateArchive: P0): R;
     compare<R = number, P0 = unknown>(_compare: P0): R;
     copyStateDecoder<R = unknown>(): R;
     mergeFromRecord<R = void, P0 = unknown>(_mergeFromRecord: P0): R;
     parsePayloadFromData_length<R = boolean, P0 = void, P1 = number>(_parsePayloadFromData: P0, _length: P1): R;
-    copyData<R = cocoa.__CFData>(): R;
+    copyData<R = __CFData>(): R;
     setEncryptionKey<R = void, P0 = number>(_setEncryptionKey: P0): R;
     description<R = unknown>(): R;
     dealloc<R = void>(): R;
@@ -28,17 +28,17 @@ declare namespace cocoa {
     isCarbonWindow<R = boolean>(): R;
     setIsCarbonWindow<R = void, P0 = boolean>(_v: P0): R;
     windowID<R = number>(): R;
-    persistentID<R = cocoa.NSString>(): R;
-    archivedState<R = cocoa.NSData>(): R;
-    setArchivedState<R = void, P0 = cocoa.NSData>(_v: P0): R;
-    securityScopedBookmarks<R = cocoa.NSArray>(): R;
+    persistentID<R = NSString>(): R;
+    archivedState<R = NSData>(): R;
+    setArchivedState<R = void, P0 = NSData>(_v: P0): R;
+    securityScopedBookmarks<R = NSArray>(): R;
   }
   namespace classes {
-    export interface NSPersistentUIRecord<T = any> extends cocoa.classes.NSObject {
+    export interface NSPersistentUIRecord<T = any> extends NSObject {
       alloc<R = NSPersistentUIRecord>(): R;
       new: <R = NSPersistentUIRecord>() => R;
       coalesceRecords<R = void, P0 = unknown>(_coalesceRecords: P0): R;
-      parseOneRecordFromReadBlock_withDecryptionKeys<R = unknown, P0 = cocoa.CDUnknownBlockType, P1 = unknown>(_parseOneRecordFromReadBlock: P0, _withDecryptionKeys: P1): R;
+      parseOneRecordFromReadBlock_withDecryptionKeys<R = unknown, P0 = CDUnknownBlockType, P1 = unknown>(_parseOneRecordFromReadBlock: P0, _withDecryptionKeys: P1): R;
     }
   }
 }

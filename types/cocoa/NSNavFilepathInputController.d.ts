@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSNavFilepathInputController<T = any> extends cocoa.NSWindowController {
+  export interface NSNavFilepathInputController<T = any> extends NSWindowController {
     controlTextDidEndEditing<R = void, P0 = unknown>(_controlTextDidEndEditing: P0): R;
     controlTextDidChange<R = void, P0 = unknown>(_controlTextDidChange: P0): R;
     control_textShouldBeginEditing<R = boolean, P0 = unknown, P1 = unknown>(_control: P0, _textShouldBeginEditing: P1): R;
@@ -41,11 +41,11 @@ declare namespace cocoa {
     _updateUIToMatchCachedValues<R = void>(): R;
     _scheduleDelayedAutocomplete<R = void>(): R;
     _cancelDelayedAutocomplete<R = void>(): R;
-    errorMessage<R = cocoa.NSString>(): R;
-    setErrorMessage<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    errorMessage<R = NSString>(): R;
+    setErrorMessage<R = void, P0 = NSString>(_v: P0): R;
   }
   namespace classes {
-    export interface NSNavFilepathInputController<T = any> extends cocoa.classes.NSWindowController {
+    export interface NSNavFilepathInputController<T = any> extends NSWindowController {
       alloc<R = NSNavFilepathInputController>(): R;
       new: <R = NSNavFilepathInputController>() => R;
     }

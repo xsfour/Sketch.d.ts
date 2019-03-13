@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSISEngine<T = any> extends cocoa.NSObject, cocoa.NSISVariableDelegateProtocol {
+  export interface NSISEngine<T = any> extends NSObject, NSISVariableDelegateProtocol {
     exerciseAmbiguityInVariable<R = boolean, P0 = unknown>(_exerciseAmbiguityInVariable: P0): R;
     valueOfVariableIsAmbiguous<R = boolean, P0 = unknown>(_valueOfVariableIsAmbiguous: P0): R;
     incoming_andOutgoing_foundOutgoing_rowHeadsThatMakeValueAmbiguousForVariable<R = boolean, P0 = unknown, P1 = unknown, P2 = string, P3 = unknown>(_incoming: P0, _andOutgoing: P1, _foundOutgoing: P2, _rowHeadsThatMakeValueAmbiguousForVariable: P3): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     colCount<R = number>(): R;
     rowCount<R = number>(): R;
     constraints<R = unknown>(): R;
-    enumerateOriginalConstraints<R = void, P0 = cocoa.CDUnknownBlockType>(_enumerateOriginalConstraints: P0): R;
+    enumerateOriginalConstraints<R = void, P0 = CDUnknownBlockType>(_enumerateOriginalConstraints: P0): R;
     variableChangeTransactionSignal<R = unknown>(): R;
     hasObservableForVariable<R = boolean, P0 = unknown>(_hasObservableForVariable: P0): R;
     removeObservableForVariable<R = void, P0 = unknown>(_removeObservableForVariable: P0): R;
     observableForVariable<R = unknown, P0 = unknown>(_observableForVariable: P0): R;
-    tryToChangeConstraintSuchThatMarker_isReplacedByMarkerPlusDelta_undoHandler<R = boolean, P0 = unknown, P1 = number, P2 = cocoa.CDUnknownBlockType>(_tryToChangeConstraintSuchThatMarker: P0, _isReplacedByMarkerPlusDelta: P1, _undoHandler: P2): R;
+    tryToChangeConstraintSuchThatMarker_isReplacedByMarkerPlusDelta_undoHandler<R = boolean, P0 = unknown, P1 = number, P2 = CDUnknownBlockType>(_tryToChangeConstraintSuchThatMarker: P0, _isReplacedByMarkerPlusDelta: P1, _undoHandler: P2): R;
     constraintDidChangeSuchThatMarker_shouldBeReplacedByMarkerPlusDelta<R = void, P0 = unknown, P1 = number>(_constraintDidChangeSuchThatMarker: P0, _shouldBeReplacedByMarkerPlusDelta: P1): R;
     _coreReplaceMarker_withMarkerPlusDelta<R = void, P0 = unknown, P1 = number>(__coreReplaceMarker: P0, _withMarkerPlusDelta: P1): R;
     removeConstraintWithMarker<R = void, P0 = unknown>(_removeConstraintWithMarker: P0): R;
@@ -40,11 +40,11 @@ declare namespace cocoa {
     hasValue_forVariable<R = boolean, P0 = number, P1 = unknown>(_hasValue: P0, _forVariable: P1): R;
     valueForEngineVar<R = number, P0 = unknown>(_valueForEngineVar: P0): R;
     valueForVariable<R = number, P0 = unknown>(_valueForVariable: P0): R;
-    withDelegateCallsDisabled<R = void, P0 = cocoa.CDUnknownBlockType>(_withDelegateCallsDisabled: P0): R;
-    withoutOptimizingAtEndRunBlockWithAutomaticOptimizationDisabled<R = void, P0 = cocoa.CDUnknownBlockType>(_withoutOptimizingAtEndRunBlockWithAutomaticOptimizationDisabled: P0): R;
-    withAutomaticOptimizationDisabled<R = void, P0 = cocoa.CDUnknownBlockType>(_withAutomaticOptimizationDisabled: P0): R;
+    withDelegateCallsDisabled<R = void, P0 = CDUnknownBlockType>(_withDelegateCallsDisabled: P0): R;
+    withoutOptimizingAtEndRunBlockWithAutomaticOptimizationDisabled<R = void, P0 = CDUnknownBlockType>(_withoutOptimizingAtEndRunBlockWithAutomaticOptimizationDisabled: P0): R;
+    withAutomaticOptimizationDisabled<R = void, P0 = CDUnknownBlockType>(_withAutomaticOptimizationDisabled: P0): R;
     _optimizeIfNotDisabled<R = boolean>(): R;
-    withBehaviors_performModifications<R = void, P0 = number, P1 = cocoa.CDUnknownBlockType>(_withBehaviors: P0, _performModifications: P1): R;
+    withBehaviors_performModifications<R = void, P0 = number, P1 = CDUnknownBlockType>(_withBehaviors: P0, _performModifications: P1): R;
     _flushPendingRemovals<R = void>(): R;
     _addObjectiveRow<R = void>(): R;
     rebuildFromConstraints<R = void>(): R;
@@ -62,7 +62,7 @@ declare namespace cocoa {
     tryAddingDirectly<R = boolean, P0 = unknown>(_tryAddingDirectly: P0): R;
     chooseHeadForRow_chosenCol_outNewToEngine<R = boolean, P0 = unknown, P1 = unknown, P2 = string>(_chooseHeadForRow: P0, _chosenCol: P1, _outNewToEngine: P2): R;
     copyExpressionSubstitutingRowHeadVariables_intoRow<R = void, P0 = unknown, P1 = unknown>(_copyExpressionSubstitutingRowHeadVariables: P0, _intoRow: P1): R;
-    performModifications_withUnsatisfiableConstraintsHandler<R = void, P0 = cocoa.CDUnknownBlockType, P1 = cocoa.CDUnknownBlockType>(_performModifications: P0, _withUnsatisfiableConstraintsHandler: P1): R;
+    performModifications_withUnsatisfiableConstraintsHandler<R = void, P0 = CDUnknownBlockType, P1 = CDUnknownBlockType>(_performModifications: P0, _withUnsatisfiableConstraintsHandler: P1): R;
     fixUpValueRestrictionViolationsWithInfeasibilityHandlingBehavior<R = unknown, P0 = number>(_fixUpValueRestrictionViolationsWithInfeasibilityHandlingBehavior: P0): R;
     handleUnsatisfiableRow_usingInfeasibilityHandlingBehavior_prospectiveRowHead_mutuallyExclusiveConstraints<R = boolean, P0 = unknown, P1 = number, P2 = unknown, P3 = unknown>(_handleUnsatisfiableRow: P0, _usingInfeasibilityHandlingBehavior: P1, _prospectiveRowHead: P2, _mutuallyExclusiveConstraints: P3): R;
     errorVariableIntroducedByBreakingConstraintWithMarker_errorIsPositive<R = unknown, P0 = unknown, P1 = boolean>(_errorVariableIntroducedByBreakingConstraintWithMarker: P0, _errorIsPositive: P1): R;
@@ -91,30 +91,30 @@ declare namespace cocoa {
     positiveErrorVarForBrokenConstraintWithMarker_errorVar<R = boolean, P0 = unknown, P1 = unknown>(_positiveErrorVarForBrokenConstraintWithMarker: P0, _errorVar: P1): R;
     _brokenConstraintPositiveErrorsIfAvailable<R = unknown>(): R;
     _brokenConstraintPositiveErrors<R = unknown>(): R;
-    enumerateCols<R = void, P0 = cocoa.CDUnknownBlockType>(_enumerateCols: P0): R;
+    enumerateCols<R = void, P0 = CDUnknownBlockType>(_enumerateCols: P0): R;
     allRowHeads<R = unknown>(): R;
-    enumerateRows<R = void, P0 = cocoa.CDUnknownBlockType>(_enumerateRows: P0): R;
-    enumerateEngineVars<R = void, P0 = cocoa.CDUnknownBlockType>(_enumerateEngineVars: P0): R;
+    enumerateRows<R = void, P0 = CDUnknownBlockType>(_enumerateRows: P0): R;
+    enumerateEngineVars<R = void, P0 = CDUnknownBlockType>(_enumerateEngineVars: P0): R;
     traceState<R = unknown>(): R;
-    _disambiguateFrame_forAmbiguousItem_withOldFrame<R = boolean, P0 = cocoa.CGRect, P1 = unknown, P2 = cocoa.CGRect>(__disambiguateFrame: P0, _forAmbiguousItem: P1, _withOldFrame: P2): R;
-    engineScalingCoefficients<R = cocoa.CGSize>(): R;
-    setEngineScalingCoefficients<R = void, P0 = cocoa.CGSize>(_v: P0): R;
+    _disambiguateFrame_forAmbiguousItem_withOldFrame<R = boolean, P0 = CGRect, P1 = unknown, P2 = CGRect>(__disambiguateFrame: P0, _forAmbiguousItem: P1, _withOldFrame: P2): R;
+    engineScalingCoefficients<R = CGSize>(): R;
+    setEngineScalingCoefficients<R = void, P0 = CGSize>(_v: P0): R;
     revertsAfterUnsatisfiabilityHandler<R = boolean>(): R;
     setRevertsAfterUnsatisfiabilityHandler<R = void, P0 = boolean>(_v: P0): R;
-    delegate<R = cocoa.NSISEngineDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSISEngineDelegate>(_v: P0): R;
-    variablesWithValueRestrictionViolations<R = cocoa.NSMutableArray>(): R;
-    setVariablesWithValueRestrictionViolations<R = void, P0 = cocoa.NSMutableArray>(_v: P0): R;
-    description<R = cocoa.NSString>(): R;
+    delegate<R = NSISEngineDelegate>(): R;
+    setDelegate<R = void, P0 = NSISEngineDelegate>(_v: P0): R;
+    variablesWithValueRestrictionViolations<R = NSMutableArray>(): R;
+    setVariablesWithValueRestrictionViolations<R = void, P0 = NSMutableArray>(_v: P0): R;
+    description<R = NSString>(): R;
     variableChangeCount<R = number>(): R;
     shouldIntegralize<R = boolean>(): R;
     setShouldIntegralize<R = void, P0 = boolean>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSISEngine<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSISVariableDelegateProtocol {
+    export interface NSISEngine<T = any> extends NSObject, NSISVariableDelegateProtocol {
       alloc<R = NSISEngine>(): R;
       new: <R = NSISEngine>() => R;
       setLogOnInvalidUseFromBGThread<R = void, P0 = boolean>(_setLogOnInvalidUseFromBGThread: P0): R;

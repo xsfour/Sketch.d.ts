@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSXMLElementWrapper<T = any> extends cocoa.NSObject {
+  export interface MSXMLElementWrapper<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     addChildWrapper<R = void, P0 = unknown>(_addChildWrapper: P0): R;
     addChild<R = void, P0 = unknown>(_addChild: P0): R;
@@ -14,17 +14,17 @@ declare namespace cocoa {
     svgAttributeNameForKey<R = unknown, P0 = unknown>(_svgAttributeNameForKey: P0): R;
     initWithElement<R = unknown, P0 = unknown>(_initWithElement: P0): R;
     initWithName<R = unknown, P0 = unknown>(_initWithName: P0): R;
-    element<R = cocoa.NSXMLElement>(): R;
-    setElement<R = void, P0 = cocoa.NSXMLElement>(_v: P0): R;
-    style<R = cocoa.NSString>(): R;
-    setStyle<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    svgClass<R = cocoa.NSString>(): R;
-    setSvgClass<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    svgId<R = cocoa.NSString>(): R;
-    setSvgId<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    element<R = NSXMLElement>(): R;
+    setElement<R = void, P0 = NSXMLElement>(_v: P0): R;
+    style<R = NSString>(): R;
+    setStyle<R = void, P0 = NSString>(_v: P0): R;
+    svgClass<R = NSString>(): R;
+    setSvgClass<R = void, P0 = NSString>(_v: P0): R;
+    svgId<R = NSString>(): R;
+    setSvgId<R = void, P0 = NSString>(_v: P0): R;
   }
   namespace classes {
-    export interface MSXMLElementWrapper<T = any> extends cocoa.classes.NSObject {
+    export interface MSXMLElementWrapper<T = any> extends NSObject {
       alloc<R = MSXMLElementWrapper>(): R;
       new: <R = MSXMLElementWrapper>() => R;
       resolveInstanceMethod<R = boolean, P0 = string>(_resolveInstanceMethod: P0): R;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSToolbarItemPlaceholder<T = any> extends cocoa.NSObject {
+  export interface _NSToolbarItemPlaceholder<T = any> extends NSObject {
     _hasCustomVisibilityPriority<R = boolean>(): R;
     visibilityPriority<R = number>(): R;
     setVisibilityPriority<R = void, P0 = number>(_setVisibilityPriority: P0): R;
@@ -15,7 +15,7 @@ declare namespace cocoa {
     setPropertyListRepresentation<R = void, P0 = unknown>(_v: P0): R;
   }
   namespace classes {
-    export interface _NSToolbarItemPlaceholder<T = any> extends cocoa.classes.NSObject {
+    export interface _NSToolbarItemPlaceholder<T = any> extends NSObject {
       alloc<R = _NSToolbarItemPlaceholder>(): R;
       new: <R = _NSToolbarItemPlaceholder>() => R;
     }

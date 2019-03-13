@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSModalInputSheet<T = any> extends cocoa.NSObject, cocoa.NSWindowDelegateProtocol {
+  export interface MSModalInputSheet<T = any> extends NSObject, NSWindowDelegateProtocol {
     cxx_destruct<R = void>(): R;
     cancel<R = void, P0 = unknown>(_cancel: P0): R;
     ok<R = void, P0 = unknown>(_ok: P0): R;
@@ -9,17 +9,17 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     numberFieldBinding<R = number>(): R;
     setNumberFieldBinding<R = void, P0 = number>(_v: P0): R;
-    label<R = cocoa.NSString>(): R;
-    setLabel<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    label<R = NSString>(): R;
+    setLabel<R = void, P0 = NSString>(_v: P0): R;
     type<R = number>(): R;
     setType<R = void, P0 = number>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSModalInputSheet<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSWindowDelegateProtocol {
+    export interface MSModalInputSheet<T = any> extends NSObject, NSWindowDelegateProtocol {
       alloc<R = MSModalInputSheet>(): R;
       new: <R = MSModalInputSheet>() => R;
     }

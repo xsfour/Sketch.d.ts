@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFileAccessArbiter<T = any> extends cocoa.NSObject, cocoa.NSXPCListenerDelegateProtocol, cocoa.NSFileAccessArbiterXPCInterfaceProtocol, cocoa.NSFileAccessArbiterProtocol {
+  export interface NSFileAccessArbiter<T = any> extends NSObject, NSXPCListenerDelegateProtocol, NSFileAccessArbiterXPCInterfaceProtocol, NSFileAccessArbiterProtocol {
     _registerForDebugInfoRequests<R = void>(): R;
-    getDebugInformationIncludingEverything_withString_fromPid_thenContinue<R = void, P0 = boolean, P1 = unknown, P2 = number, P3 = cocoa.CDUnknownBlockType>(_getDebugInformationIncludingEverything: P0, _withString: P1, _fromPid: P2, _thenContinue: P3): R;
+    getDebugInformationIncludingEverything_withString_fromPid_thenContinue<R = void, P0 = boolean, P1 = unknown, P2 = number, P3 = CDUnknownBlockType>(_getDebugInformationIncludingEverything: P0, _withString: P1, _fromPid: P2, _thenContinue: P3): R;
     _handleCanceledClient<R = void, P0 = unknown>(__handleCanceledClient: P0): R;
-    _enumerateSubarbitersUsingBlock<R = void, P0 = cocoa.CDUnknownBlockType>(__enumerateSubarbitersUsingBlock: P0): R;
+    _enumerateSubarbitersUsingBlock<R = void, P0 = CDUnknownBlockType>(__enumerateSubarbitersUsingBlock: P0): R;
     rootNode<R = unknown>(): R;
     stopArbitrating<R = void>(): R;
     _startArbitratingItemsAtURLs_withSuperarbitrationServer<R = void, P0 = unknown, P1 = unknown>(__startArbitratingItemsAtURLs: P0, _withSuperarbitrationServer: P1): R;
@@ -19,20 +19,20 @@ declare namespace cocoa {
     _grantAccessClaim<R = void, P0 = unknown>(__grantAccessClaim: P0): R;
     dealloc<R = void>(): R;
     initWithQueue_isSubarbiter_listener<R = unknown, P0 = unknown, P1 = boolean, P2 = unknown>(_initWithQueue: P0, _isSubarbiter: P1, _listener: P2): R;
-    superarbitrationConnection<R = cocoa.NSXPCConnection>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    superarbitrationConnection<R = NSXPCConnection>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSFileAccessArbiter<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSXPCListenerDelegateProtocol, cocoa.classes.NSFileAccessArbiterXPCInterfaceProtocol, cocoa.classes.NSFileAccessArbiterProtocol {
+    export interface NSFileAccessArbiter<T = any> extends NSObject, NSXPCListenerDelegateProtocol, NSFileAccessArbiterXPCInterfaceProtocol, NSFileAccessArbiterProtocol {
       alloc<R = NSFileAccessArbiter>(): R;
       new: <R = NSFileAccessArbiter>() => R;
       _lostBirdProvider<R = void, P0 = unknown>(__lostBirdProvider: P0): R;
       _gainedBirdProvider<R = void, P0 = unknown>(__gainedBirdProvider: P0): R;
-      ensureProvidersIfNecessaryForClaim_atLocation_queue_thenContinue<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = cocoa.CDUnknownBlockType>(_ensureProvidersIfNecessaryForClaim: P0, _atLocation: P1, _queue: P2, _thenContinue: P3): R;
-      _wakeUpBirdWithUID_urls_queue_thenContinue<R = void, P0 = number, P1 = unknown, P2 = unknown, P3 = cocoa.CDUnknownBlockType>(__wakeUpBirdWithUID: P0, _urls: P1, _queue: P2, _thenContinue: P3): R;
+      ensureProvidersIfNecessaryForClaim_atLocation_queue_thenContinue<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = CDUnknownBlockType>(_ensureProvidersIfNecessaryForClaim: P0, _atLocation: P1, _queue: P2, _thenContinue: P3): R;
+      _wakeUpBirdWithUID_urls_queue_thenContinue<R = void, P0 = number, P1 = unknown, P2 = unknown, P3 = CDUnknownBlockType>(__wakeUpBirdWithUID: P0, _urls: P1, _queue: P2, _thenContinue: P3): R;
     }
   }
 }

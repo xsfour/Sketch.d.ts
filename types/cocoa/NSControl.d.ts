@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSControl<T = any> extends cocoa.NSView {
+  export interface NSControl<T = any> extends NSView {
     allowsVibrancy<R = boolean>(): R;
     setUsesSingleLineMode<R = void, P0 = boolean>(_setUsesSingleLineMode: P0): R;
     usesSingleLineMode<R = boolean>(): R;
@@ -20,8 +20,8 @@ declare namespace cocoa {
     performClick<R = void, P0 = unknown>(_performClick: P0): R;
     _setControlTextDelegateFromOld_toNew<R = void, P0 = unknown, P1 = unknown>(__setControlTextDelegateFromOld: P0, _toNew: P1): R;
     endEditing<R = void, P0 = unknown>(_endEditing: P0): R;
-    selectWithFrame_editor_delegate_start_length<R = void, P0 = cocoa.CGRect, P1 = unknown, P2 = unknown, P3 = number, P4 = number>(_selectWithFrame: P0, _editor: P1, _delegate: P2, _start: P3, _length: P4): R;
-    editWithFrame_editor_delegate_event<R = void, P0 = cocoa.CGRect, P1 = unknown, P2 = unknown, P3 = unknown>(_editWithFrame: P0, _editor: P1, _delegate: P2, _event: P3): R;
+    selectWithFrame_editor_delegate_start_length<R = void, P0 = CGRect, P1 = unknown, P2 = unknown, P3 = number, P4 = number>(_selectWithFrame: P0, _editor: P1, _delegate: P2, _start: P3, _length: P4): R;
+    editWithFrame_editor_delegate_event<R = void, P0 = CGRect, P1 = unknown, P2 = unknown, P3 = unknown>(_editWithFrame: P0, _editor: P1, _delegate: P2, _event: P3): R;
     setSkipEditValidation<R = void, P0 = boolean>(_setSkipEditValidation: P0): R;
     skipEditValidation<R = boolean>(): R;
     validateEditing<R = void>(): R;
@@ -29,7 +29,7 @@ declare namespace cocoa {
     abortEditing<R = boolean>(): R;
     currentEditor<R = unknown>(): R;
     textViewDidChangeSelection<R = void, P0 = unknown>(_textViewDidChangeSelection: P0): R;
-    textView_willChangeSelectionFromCharacterRange_toCharacterRange<R = cocoa._NSRange, P0 = unknown, P1 = cocoa._NSRange, P2 = cocoa._NSRange>(_textView: P0, _willChangeSelectionFromCharacterRange: P1, _toCharacterRange: P2): R;
+    textView_willChangeSelectionFromCharacterRange_toCharacterRange<R = _NSRange, P0 = unknown, P1 = _NSRange, P2 = _NSRange>(_textView: P0, _willChangeSelectionFromCharacterRange: P1, _toCharacterRange: P2): R;
     _removeAllCellMouseTracking<R = void>(): R;
     _clearMouseTrackingForCell<R = void, P0 = unknown>(__clearMouseTrackingForCell: P0): R;
     _setMouseTrackingForCell<R = void, P0 = unknown>(__setMouseTrackingForCell: P0): R;
@@ -91,10 +91,10 @@ declare namespace cocoa {
     _setSetsMaxLayoutWidthAtFirstLayout<R = void, P0 = boolean>(__setSetsMaxLayoutWidthAtFirstLayout: P0): R;
     calcSize<R = void>(): R;
     sizeToFit<R = void>(): R;
-    sizeThatFits<R = cocoa.CGSize, P0 = cocoa.CGSize>(_sizeThatFits: P0): R;
+    sizeThatFits<R = CGSize, P0 = CGSize>(_sizeThatFits: P0): R;
     mouseDownCanMoveWindow<R = boolean>(): R;
-    drawWithExpansionFrame_inView<R = void, P0 = cocoa.CGRect, P1 = unknown>(_drawWithExpansionFrame: P0, _inView: P1): R;
-    expansionFrameWithFrame<R = cocoa.CGRect, P0 = cocoa.CGRect>(_expansionFrameWithFrame: P0): R;
+    drawWithExpansionFrame_inView<R = void, P0 = CGRect, P1 = unknown>(_drawWithExpansionFrame: P0, _inView: P1): R;
+    expansionFrameWithFrame<R = CGRect, P0 = CGRect>(_expansionFrameWithFrame: P0): R;
     setAllowsExpansionToolTips<R = void, P0 = boolean>(_setAllowsExpansionToolTips: P0): R;
     allowsExpansionToolTips<R = boolean>(): R;
     isOpaque<R = boolean>(): R;
@@ -121,12 +121,12 @@ declare namespace cocoa {
     setIntegerValue<R = void, P0 = number>(_v: P0): R;
     intValue<R = number>(): R;
     setIntValue<R = void, P0 = number>(_v: P0): R;
-    attributedStringValue<R = cocoa.NSAttributedString>(): R;
-    setAttributedStringValue<R = void, P0 = cocoa.NSAttributedString>(_v: P0): R;
-    stringValue<R = cocoa.NSString>(): R;
-    setStringValue<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    formatter<R = cocoa.NSFormatter>(): R;
-    setFormatter<R = void, P0 = cocoa.NSFormatter>(_v: P0): R;
+    attributedStringValue<R = NSAttributedString>(): R;
+    setAttributedStringValue<R = void, P0 = NSAttributedString>(_v: P0): R;
+    stringValue<R = NSString>(): R;
+    setStringValue<R = void, P0 = NSString>(_v: P0): R;
+    formatter<R = NSFormatter>(): R;
+    setFormatter<R = void, P0 = NSFormatter>(_v: P0): R;
     enabled<R = boolean>(): R;
     setEnabled<R = void, P0 = boolean>(_v: P0): R;
     continuous<R = boolean>(): R;
@@ -147,7 +147,7 @@ declare namespace cocoa {
     clickShouldDismissPopover<R = boolean, P0 = unknown>(_clickShouldDismissPopover: P0): R;
   }
   namespace classes {
-    export interface NSControl<T = any> extends cocoa.classes.NSView {
+    export interface NSControl<T = any> extends NSView {
       alloc<R = NSControl>(): R;
       new: <R = NSControl>() => R;
       _prefersCellUserInterfaceLayoutDirection<R = boolean>(): R;
@@ -156,12 +156,12 @@ declare namespace cocoa {
       setCellClass<R = void, P0 = unknown>(_setCellClass: P0): R;
       accessibilityIsSingleCelled<R = boolean>(): R;
       // + NSControl(Inspector,PopoverDismissal):
-      inpectorFocusRingPathForRect_borderRadius<R = unknown, P0 = cocoa.CGRect, P1 = number>(_inpectorFocusRingPathForRect: P0, _borderRadius: P1): R;
-      inpectorBorderPathForRect_borderRadius<R = unknown, P0 = cocoa.CGRect, P1 = number>(_inpectorBorderPathForRect: P0, _borderRadius: P1): R;
-      inpectorBorderPathForRectWithMaxRadius<R = unknown, P0 = cocoa.CGRect>(_inpectorBorderPathForRectWithMaxRadius: P0): R;
-      inpectorCheckmarkBorderPathForRect<R = unknown, P0 = cocoa.CGRect>(_inpectorCheckmarkBorderPathForRect: P0): R;
-      inpectorFocusRingPathForRect<R = unknown, P0 = cocoa.CGRect>(_inpectorFocusRingPathForRect: P0): R;
-      inpectorBorderPathForRect<R = unknown, P0 = cocoa.CGRect>(_inpectorBorderPathForRect: P0): R;
+      inpectorFocusRingPathForRect_borderRadius<R = unknown, P0 = CGRect, P1 = number>(_inpectorFocusRingPathForRect: P0, _borderRadius: P1): R;
+      inpectorBorderPathForRect_borderRadius<R = unknown, P0 = CGRect, P1 = number>(_inpectorBorderPathForRect: P0, _borderRadius: P1): R;
+      inpectorBorderPathForRectWithMaxRadius<R = unknown, P0 = CGRect>(_inpectorBorderPathForRectWithMaxRadius: P0): R;
+      inpectorCheckmarkBorderPathForRect<R = unknown, P0 = CGRect>(_inpectorCheckmarkBorderPathForRect: P0): R;
+      inpectorFocusRingPathForRect<R = unknown, P0 = CGRect>(_inpectorFocusRingPathForRect: P0): R;
+      inpectorBorderPathForRect<R = unknown, P0 = CGRect>(_inpectorBorderPathForRect: P0): R;
     }
   }
 }

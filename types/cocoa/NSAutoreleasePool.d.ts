@@ -1,14 +1,14 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAutoreleasePool<T = any> extends cocoa.NSObject {
+  export interface NSAutoreleasePool<T = any> extends NSObject {
     dealloc<R = void>(): R;
     addObject<R = void, P0 = unknown>(_addObject: P0): R;
     initWithCapacity<R = unknown, P0 = number>(_initWithCapacity: P0): R;
     drain<R = void>(): R;
   }
   namespace classes {
-    export interface NSAutoreleasePool<T = any> extends cocoa.classes.NSObject {
+    export interface NSAutoreleasePool<T = any> extends NSObject {
       alloc<R = NSAutoreleasePool>(): R;
       new: <R = NSAutoreleasePool>() => R;
       resetTotalAutoreleasedObjects<R = void>(): R;
@@ -24,7 +24,7 @@ declare namespace cocoa {
       autoreleasedObjectCount<R = number>(): R;
       releaseAllPools<R = void>(): R;
       showPools<R = void>(): R;
-      allocWithZone<R = unknown, P0 = cocoa._NSZone>(_allocWithZone: P0): R;
+      allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
     }
   }
 }

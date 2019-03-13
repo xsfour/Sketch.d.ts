@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCorrectionSubPanel<T = any> extends cocoa.NSPanel {
+  export interface NSCorrectionSubPanel<T = any> extends NSPanel {
     accessibilityIsHelpAttributeSettable<R = boolean>(): R;
     accessibilityHelpAttribute<R = unknown>(): R;
     accessibilityIsTopLevelUIElementAttributeSettable<R = boolean>(): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     setPanelAccessibilityParent<R = void, P0 = unknown>(_v: P0): R;
   }
   namespace classes {
-    export interface NSCorrectionSubPanel<T = any> extends cocoa.classes.NSPanel {
+    export interface NSCorrectionSubPanel<T = any> extends NSPanel {
       alloc<R = NSCorrectionSubPanel>(): R;
       new: <R = NSCorrectionSubPanel>() => R;
     }

@@ -1,14 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSCloudLoginWindowControllerDelegateProtocol<T = any> extends cocoa.NSObjectProtocol {
-    cloudLoginControllerDidCancel<R = void, P0 = cocoa.MSCloudLoginWindowController>(_cloudLoginControllerDidCancel: P0): R;
-    cloudLoginControllerDidOpenBrowser<R = void, P0 = cocoa.MSCloudLoginWindowController>(_cloudLoginControllerDidOpenBrowser: P0): R;
-    cloudLoginControllerDidSignIn<R = void, P0 = cocoa.MSCloudLoginWindowController>(_cloudLoginControllerDidSignIn: P0): R;
+  export interface MSCloudLoginWindowControllerDelegateProtocol<T = any> extends NSObjectProtocol {
+    cloudLoginControllerDidCancel<R = void, P0 = MSCloudLoginWindowController>(_cloudLoginControllerDidCancel: P0): R;
+    cloudLoginControllerDidOpenBrowser<R = void, P0 = MSCloudLoginWindowController>(_cloudLoginControllerDidOpenBrowser: P0): R;
+    cloudLoginControllerDidSignIn<R = void, P0 = MSCloudLoginWindowController>(_cloudLoginControllerDidSignIn: P0): R;
   }
   namespace classes {
-    export interface MSCloudLoginWindowControllerDelegateProtocol<T = any> extends cocoa.classes.NSObjectProtocol {  }
+    export interface MSCloudLoginWindowControllerDelegateProtocol<T = any> extends NSObjectProtocol {  }
   }
 }
-
-declare const MSCloudLoginWindowControllerDelegateProtocol: cocoa.classes.MSCloudLoginWindowControllerDelegateProtocol;

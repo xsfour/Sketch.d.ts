@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableHeaderData<T = any> extends cocoa.NSObject {
+  export interface NSTableHeaderData<T = any> extends NSObject {
     updateColumnViewWidthsAnimated<R = void, P0 = boolean>(_updateColumnViewWidthsAnimated: P0): R;
     headerCellViewAtColumn<R = unknown, P0 = number>(_headerCellViewAtColumn: P0): R;
     tableHeaderViewDraggedDistanceChanged<R = void>(): R;
-    _draggedColumnHeaderViewFrameForColumn<R = cocoa.CGRect, P0 = number>(__draggedColumnHeaderViewFrameForColumn: P0): R;
+    _draggedColumnHeaderViewFrameForColumn<R = CGRect, P0 = number>(__draggedColumnHeaderViewFrameForColumn: P0): R;
     endDraggingColumn_animated<R = void, P0 = number, P1 = boolean>(_endDraggingColumn: P0, _animated: P1): R;
     beginDraggingColumn<R = void, P0 = number>(_beginDraggingColumn: P0): R;
     didMoveFromColumn_toColumn_animated<R = void, P0 = number, P1 = number, P2 = boolean>(_didMoveFromColumn: P0, _toColumn: P1, _animated: P2): R;
@@ -17,11 +17,11 @@ declare namespace cocoa {
     removeAllKnownSubviews<R = void>(): R;
     dealloc<R = void>(): R;
     initWithHeaderView<R = unknown, P0 = unknown>(_initWithHeaderView: P0): R;
-    headerView<R = cocoa.NSTableHeaderView>(): R;
-    setHeaderView<R = void, P0 = cocoa.NSTableHeaderView>(_v: P0): R;
+    headerView<R = NSTableHeaderView>(): R;
+    setHeaderView<R = void, P0 = NSTableHeaderView>(_v: P0): R;
   }
   namespace classes {
-    export interface NSTableHeaderData<T = any> extends cocoa.classes.NSObject {
+    export interface NSTableHeaderData<T = any> extends NSObject {
       alloc<R = NSTableHeaderData>(): R;
       new: <R = NSTableHeaderData>() => R;
     }

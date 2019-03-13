@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDocumentAction<T = any> extends cocoa.MSAction, cocoa.NSMenuDelegateProtocol, cocoa.NSTouchBarDelegateProtocol {
+  export interface MSDocumentAction<T = any> extends MSAction, NSMenuDelegateProtocol, NSTouchBarDelegateProtocol {
     refreshOverlay<R = void>(): R;
     contentDrawView<R = unknown>(): R;
     currentPage<R = unknown>(): R;
@@ -24,20 +24,20 @@ declare namespace cocoa {
     makeTouchBarItemButton<R = unknown>(): R;
     refreshTouchBarItem<R = void>(): R;
     touchBarItem<R = unknown>(): R;
-    previousEvent<R = cocoa.NSEvent>(): R;
-    setPreviousEvent<R = void, P0 = cocoa.NSEvent>(_v: P0): R;
-    cachedTouchedBarItem<R = cocoa.NSTouchBarItem>(): R;
-    setCachedTouchedBarItem<R = void, P0 = cocoa.NSTouchBarItem>(_v: P0): R;
-    document<R = cocoa.MSDocument>(): R;
-    setDocument<R = void, P0 = cocoa.MSDocument>(_v: P0): R;
-    historyMomentTitle<R = cocoa.NSString>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    previousEvent<R = NSEvent>(): R;
+    setPreviousEvent<R = void, P0 = NSEvent>(_v: P0): R;
+    cachedTouchedBarItem<R = NSTouchBarItem>(): R;
+    setCachedTouchedBarItem<R = void, P0 = NSTouchBarItem>(_v: P0): R;
+    document<R = MSDocument>(): R;
+    setDocument<R = void, P0 = MSDocument>(_v: P0): R;
+    historyMomentTitle<R = NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSDocumentAction<T = any> extends cocoa.classes.MSAction, cocoa.classes.NSMenuDelegateProtocol, cocoa.classes.NSTouchBarDelegateProtocol {
+    export interface MSDocumentAction<T = any> extends MSAction, NSMenuDelegateProtocol, NSTouchBarDelegateProtocol {
       alloc<R = MSDocumentAction>(): R;
       new: <R = MSDocumentAction>() => R;
     }

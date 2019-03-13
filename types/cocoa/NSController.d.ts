@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSController<T = any> extends cocoa.NSObject, cocoa.NSCodingProtocol, cocoa.NSEditorProtocol, cocoa.NSEditorRegistrationProtocol {
+  export interface NSController<T = any> extends NSObject, NSCodingProtocol, NSEditorProtocol, NSEditorRegistrationProtocol {
     _refreshesAllModelKeys<R = boolean>(): R;
     _setRefreshesAllModelKeys<R = void, P0 = boolean>(__setRefreshesAllModelKeys: P0): R;
     _modelKeysTriggeringChangeNotificationsForDependentKey<R = unknown, P0 = unknown>(__modelKeysTriggeringChangeNotificationsForDependentKey: P0): R;
@@ -45,13 +45,13 @@ declare namespace cocoa {
     _dealloc<R = void>(): R;
     _init<R = void>(): R;
     editing<R = boolean>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSController<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCodingProtocol, cocoa.classes.NSEditorProtocol, cocoa.classes.NSEditorRegistrationProtocol {
+    export interface NSController<T = any> extends NSObject, NSCodingProtocol, NSEditorProtocol, NSEditorRegistrationProtocol {
       alloc<R = NSController>(): R;
       new: <R = NSController>() => R;
       _modelAndProxyKeys<R = unknown>(): R;

@@ -1,15 +1,15 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchDevice<T = any> extends cocoa.NSObject, cocoa.NSHapticFeedbackPerformerProtocol {
+  export interface NSTouchDevice<T = any> extends NSObject, NSHapticFeedbackPerformerProtocol {
     supportsForce<R = boolean>(): R;
     hasActuation<R = boolean>(): R;
     _cancelledTouches<R = unknown>(): R;
     _touchingTouches<R = unknown>(): R;
     _deviceInfo<R = unknown>(): R;
-    _preventFlushingContextID_during<R = void, P0 = number, P1 = cocoa.CDUnknownBlockType>(__preventFlushingContextID: P0, _during: P1): R;
+    _preventFlushingContextID_during<R = void, P0 = number, P1 = CDUnknownBlockType>(__preventFlushingContextID: P0, _during: P1): R;
     _flushContextID<R = void, P0 = number>(__flushContextID: P0): R;
-    _commandeerDirectTouches_handler<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(__commandeerDirectTouches: P0, _handler: P1): R;
+    _commandeerDirectTouches_handler<R = void, P0 = unknown, P1 = CDUnknownBlockType>(__commandeerDirectTouches: P0, _handler: P1): R;
     _cancelAllTouchesRemoving<R = void, P0 = boolean>(__cancelAllTouchesRemoving: P0): R;
     _cancelTouchesForContextID_removing<R = void, P0 = number, P1 = boolean>(__cancelTouchesForContextID: P0, _removing: P1): R;
     _cancelCommandeeredTouchesForContextId<R = void, P0 = number>(__cancelCommandeeredTouchesForContextId: P0): R;
@@ -38,15 +38,15 @@ declare namespace cocoa {
     deviceType<R = number>(): R;
     _initWithIOHIDDictionary<R = unknown, P0 = unknown>(__initWithIOHIDDictionary: P0): R;
     dealloc<R = void>(): R;
-    surfaceSize<R = cocoa.CGSize>(): R;
+    surfaceSize<R = CGSize>(): R;
     deviceID<R = number>(): R;
-    description<R = cocoa.NSString>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
+    description<R = NSString>(): R;
+    debugDescription<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSTouchDevice<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSHapticFeedbackPerformerProtocol {
+    export interface NSTouchDevice<T = any> extends NSObject, NSHapticFeedbackPerformerProtocol {
       alloc<R = NSTouchDevice>(): R;
       new: <R = NSTouchDevice>() => R;
       _touchDeviceRemoved<R = void, P0 = unknown>(__touchDeviceRemoved: P0): R;

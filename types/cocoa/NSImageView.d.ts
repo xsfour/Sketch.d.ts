@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSImageView<T = any> extends cocoa.NSControl, cocoa._NSAsynchronousPreparationDelegateProtocol, cocoa.NSAccessibilityImageProtocol, cocoa.NSMenuItemValidationProtocol {
+  export interface NSImageView<T = any> extends NSControl, _NSAsynchronousPreparationDelegateProtocol, NSAccessibilityImageProtocol, NSMenuItemValidationProtocol {
     registerForDrags<R = void>(): R;
     setEnabled<R = void, P0 = boolean>(_setEnabled: P0): R;
     delete<R = void, P0 = unknown>(_delete: P0): R;
@@ -26,18 +26,18 @@ declare namespace cocoa {
     _rejectsMultiFileDrops<R = boolean>(): R;
     _usesCachedImage<R = boolean>(): R;
     set_usesCachedImage<R = void, P0 = boolean>(_v: P0): R;
-    templateTintColor<R = cocoa.NSColor>(): R;
-    setTemplateTintColor<R = void, P0 = cocoa.NSColor>(_v: P0): R;
-    contentTintColor<R = cocoa.NSColor>(): R;
-    setContentTintColor<R = void, P0 = cocoa.NSColor>(_v: P0): R;
+    templateTintColor<R = NSColor>(): R;
+    setTemplateTintColor<R = void, P0 = NSColor>(_v: P0): R;
+    contentTintColor<R = NSColor>(): R;
+    setContentTintColor<R = void, P0 = NSColor>(_v: P0): R;
     allowsCutCopyPaste<R = boolean>(): R;
     setAllowsCutCopyPaste<R = void, P0 = boolean>(_v: P0): R;
     animates<R = boolean>(): R;
     setAnimates<R = void, P0 = boolean>(_v: P0): R;
-    placeholderImage<R = cocoa.NSImage>(): R;
-    setPlaceholderImage<R = void, P0 = cocoa.NSImage>(_v: P0): R;
-    image<R = cocoa.NSImage>(): R;
-    setImage<R = void, P0 = cocoa.NSImage>(_v: P0): R;
+    placeholderImage<R = NSImage>(): R;
+    setPlaceholderImage<R = void, P0 = NSImage>(_v: P0): R;
+    image<R = NSImage>(): R;
+    setImage<R = void, P0 = NSImage>(_v: P0): R;
     editable<R = boolean>(): R;
     setEditable<R = void, P0 = boolean>(_v: P0): R;
     imageScaling<R = number>(): R;
@@ -46,13 +46,13 @@ declare namespace cocoa {
     setImageAlignment<R = void, P0 = number>(_v: P0): R;
     imageFrameStyle<R = number>(): R;
     setImageFrameStyle<R = void, P0 = number>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSImageView<T = any> extends cocoa.classes.NSControl, cocoa.classes._NSAsynchronousPreparationDelegateProtocol, cocoa.classes.NSAccessibilityImageProtocol, cocoa.classes.NSMenuItemValidationProtocol {
+    export interface NSImageView<T = any> extends NSControl, _NSAsynchronousPreparationDelegateProtocol, NSAccessibilityImageProtocol, NSMenuItemValidationProtocol {
       alloc<R = NSImageView>(): R;
       new: <R = NSImageView>() => R;
       imageWellWithImage_target_action<R = unknown, P0 = unknown, P1 = unknown, P2 = string>(_imageWellWithImage: P0, _target: P1, _action: P2): R;

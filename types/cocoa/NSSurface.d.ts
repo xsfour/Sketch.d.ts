@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSurface<T = any> extends cocoa.NSObject {
+  export interface NSSurface<T = any> extends NSObject {
     displayIfNeeded<R = void>(): R;
     setNeedsDisplay<R = void>(): R;
     needsDisplay<R = boolean>(): R;
@@ -38,8 +38,8 @@ declare namespace cocoa {
     _windowWillClose<R = void, P0 = unknown>(__windowWillClose: P0): R;
     screen<R = unknown>(): R;
     setWindow<R = void, P0 = unknown>(_setWindow: P0): R;
-    frame<R = cocoa.CGRect>(): R;
-    setFrame<R = void, P0 = cocoa.CGRect>(_setFrame: P0): R;
+    frame<R = CGRect>(): R;
+    setFrame<R = void, P0 = CGRect>(_setFrame: P0): R;
     _cgScaleFactor<R = number>(): R;
     surfaceID<R = number>(): R;
     orderSurface_relativeTo<R = void, P0 = number, P1 = unknown>(_orderSurface: P0, _relativeTo: P1): R;
@@ -49,23 +49,23 @@ declare namespace cocoa {
     updateColorSpace<R = void>(): R;
     syncToView<R = void, P0 = boolean>(_syncToView: P0): R;
     syncToViewUnconditionally<R = void>(): R;
-    _currentSurfaceFrame<R = cocoa.CGRect>(): R;
+    _currentSurfaceFrame<R = CGRect>(): R;
     syncSurfaceWantsExtendedDynamicRange<R = void>(): R;
     syncSurfaceResolution<R = void>(): R;
     syncBackingStoreResolution<R = void>(): R;
     dealloc<R = void>(): R;
     _disposeSurface<R = void>(): R;
     _createSurface<R = void>(): R;
-    _createRoundedBottomRegionForRect<R = cocoa.CGSRegionObject, P0 = cocoa.CGRect>(__createRoundedBottomRegionForRect: P0): R;
+    _createRoundedBottomRegionForRect<R = CGSRegionObject, P0 = CGRect>(__createRoundedBottomRegionForRect: P0): R;
     _disposeBackingStore<R = void>(): R;
     _createBackingStore<R = void>(): R;
     _updateLastScreenNumber<R = void>(): R;
-    initWithFrame_inWindow<R = unknown, P0 = cocoa.CGRect, P1 = unknown>(_initWithFrame: P0, _inWindow: P1): R;
+    initWithFrame_inWindow<R = unknown, P0 = CGRect, P1 = unknown>(_initWithFrame: P0, _inWindow: P1): R;
     initWithView<R = unknown, P0 = unknown>(_initWithView: P0): R;
     description<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSSurface<T = any> extends cocoa.classes.NSObject {
+    export interface NSSurface<T = any> extends NSObject {
       alloc<R = NSSurface>(): R;
       new: <R = NSSurface>() => R;
     }

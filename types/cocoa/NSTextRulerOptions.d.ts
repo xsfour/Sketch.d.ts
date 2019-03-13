@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTextRulerOptions<T = any> extends cocoa.NSObject {
+  export interface NSTextRulerOptions<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     displayStringForLineHeightMultiple_min_max_lineSpacing_paragraphSpacingBefore_after<R = unknown, P0 = number, P1 = number, P2 = number, P3 = number, P4 = number, P5 = number>(_displayStringForLineHeightMultiple: P0, _min: P1, _max: P2, _lineSpacing: P3, _paragraphSpacingBefore: P4, _after: P5): R;
     sheetDidEnd_returnCode_contextInfo<R = void, P0 = unknown, P1 = number, P2 = void>(_sheetDidEnd: P0, _returnCode: P1, _contextInfo: P2): R;
@@ -28,7 +28,7 @@ declare namespace cocoa {
     saveFavoritesToDefaults<R = void>(): R;
   }
   namespace classes {
-    export interface NSTextRulerOptions<T = any> extends cocoa.classes.NSObject {
+    export interface NSTextRulerOptions<T = any> extends NSObject {
       alloc<R = NSTextRulerOptions>(): R;
       new: <R = NSTextRulerOptions>() => R;
       sharedTextRulerOptions<R = unknown>(): R;

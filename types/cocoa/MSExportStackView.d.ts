@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSExportStackView<T = any> extends cocoa.MSStackView {}
+  export interface MSExportStackView<T = any> extends MSStackView {}
   namespace classes {
-    export interface MSExportStackView<T = any> extends cocoa.classes.MSStackView {
+    export interface MSExportStackView<T = any> extends MSStackView {
       alloc<R = MSExportStackView>(): R;
       new: <R = MSExportStackView>() => R;
     }

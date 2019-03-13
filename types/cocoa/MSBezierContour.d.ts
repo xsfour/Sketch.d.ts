@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBezierContour<T = any> extends cocoa.NSObject {
+  export interface MSBezierContour<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     debugQuickLookObject<R = unknown>(): R;
     intersectionsWithSegment<R = unknown, P0 = unknown>(_intersectionsWithSegment: P0): R;
@@ -23,21 +23,21 @@ declare namespace cocoa {
     calculateIsClockwise<R = boolean>(): R;
     createPath<R = unknown>(): R;
     doSegmentsFormARectangle_closed<R = boolean, P0 = unknown, P1 = boolean>(_doSegmentsFormARectangle: P0, _closed: P1): R;
-    calculateBounds<R = cocoa.CGRect>(): R;
+    calculateBounds<R = CGRect>(): R;
     initWithSegments_closed<R = unknown, P0 = unknown, P1 = boolean>(_initWithSegments: P0, _closed: P1): R;
-    segments<R = cocoa.NSArray>(): R;
+    segments<R = NSArray>(): R;
     closed<R = boolean>(): R;
     clockwise<R = boolean>(): R;
-    path<R = cocoa.MSPath>(): R;
+    path<R = MSPath>(): R;
     isRectangular<R = boolean>(): R;
-    bounds<R = cocoa.CGRect>(): R;
+    bounds<R = CGRect>(): R;
   }
   namespace classes {
-    export interface MSBezierContour<T = any> extends cocoa.classes.NSObject {
+    export interface MSBezierContour<T = any> extends NSObject {
       alloc<R = MSBezierContour>(): R;
       new: <R = MSBezierContour>() => R;
-      contourWithPolygonAtPoint_radius_sides<R = unknown, P0 = cocoa.CGPoint, P1 = number, P2 = number>(_contourWithPolygonAtPoint: P0, _radius: P1, _sides: P2): R;
-      contourWithRect<R = unknown, P0 = cocoa.CGRect>(_contourWithRect: P0): R;
+      contourWithPolygonAtPoint_radius_sides<R = unknown, P0 = CGPoint, P1 = number, P2 = number>(_contourWithPolygonAtPoint: P0, _radius: P1, _sides: P2): R;
+      contourWithRect<R = unknown, P0 = CGRect>(_contourWithRect: P0): R;
     }
   }
 }

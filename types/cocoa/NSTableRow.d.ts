@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableRow<T = any> extends cocoa.NSObject {
+  export interface NSTableRow<T = any> extends NSObject {
     accessibilityHasOutlineColumnMockGroupForRow_column<R = boolean, P0 = number, P1 = number>(_accessibilityHasOutlineColumnMockGroupForRow: P0, _column: P1): R;
     _childrenCount<R = number>(): R;
     _accessibilityChildrenWithIndexes<R = unknown, P0 = unknown>(__accessibilityChildrenWithIndexes: P0): R;
@@ -17,7 +17,7 @@ declare namespace cocoa {
     accessibilityArrayAttributeCount<R = number, P0 = unknown>(_accessibilityArrayAttributeCount: P0): R;
     accessibilityIndexOfChild<R = number, P0 = unknown>(_accessibilityIndexOfChild: P0): R;
     accessibilityFocusedUIElement<R = unknown>(): R;
-    accessibilityHitTest<R = unknown, P0 = cocoa.CGPoint>(_accessibilityHitTest: P0): R;
+    accessibilityHitTest<R = unknown, P0 = CGPoint>(_accessibilityHitTest: P0): R;
     accessibilityIsIgnored<R = boolean>(): R;
     accessibilityPerformAction<R = void, P0 = unknown>(_accessibilityPerformAction: P0): R;
     accessibilityActionDescription<R = unknown, P0 = unknown>(_accessibilityActionDescription: P0): R;
@@ -55,7 +55,7 @@ declare namespace cocoa {
     accessibilityAttributeNames<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSTableRow<T = any> extends cocoa.classes.NSObject {
+    export interface NSTableRow<T = any> extends NSObject {
       alloc<R = NSTableRow>(): R;
       new: <R = NSTableRow>() => R;
       tableRow_ofTableView<R = unknown, P0 = number, P1 = unknown>(_tableRow: P0, _ofTableView: P1): R;

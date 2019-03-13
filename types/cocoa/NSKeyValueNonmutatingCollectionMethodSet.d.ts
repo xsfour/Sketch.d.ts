@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSKeyValueNonmutatingCollectionMethodSet<T = any> extends cocoa.NSObject {}
+  export interface NSKeyValueNonmutatingCollectionMethodSet<T = any> extends NSObject {}
   namespace classes {
-    export interface NSKeyValueNonmutatingCollectionMethodSet<T = any> extends cocoa.classes.NSObject {
+    export interface NSKeyValueNonmutatingCollectionMethodSet<T = any> extends NSObject {
       alloc<R = NSKeyValueNonmutatingCollectionMethodSet>(): R;
       new: <R = NSKeyValueNonmutatingCollectionMethodSet>() => R;
     }

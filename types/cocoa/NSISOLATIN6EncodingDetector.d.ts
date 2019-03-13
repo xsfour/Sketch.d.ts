@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSISOLATIN6EncodingDetector<T = any> extends cocoa.NSSingleByteEncodingDetector {}
+  export interface NSISOLATIN6EncodingDetector<T = any> extends NSSingleByteEncodingDetector {}
   namespace classes {
-    export interface NSISOLATIN6EncodingDetector<T = any> extends cocoa.classes.NSSingleByteEncodingDetector {
+    export interface NSISOLATIN6EncodingDetector<T = any> extends NSSingleByteEncodingDetector {
       alloc<R = NSISOLATIN6EncodingDetector>(): R;
       new: <R = NSISOLATIN6EncodingDetector>() => R;
     }

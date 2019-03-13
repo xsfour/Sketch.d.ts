@@ -6,12 +6,12 @@ declare namespace cocoa {
     initWithLength<R = unknown, P0 = number>(_initWithLength: P0): R;
     initWithCapacity<R = unknown, P0 = number>(_initWithCapacity: P0): R;
     setData<R = void, P0 = unknown>(_setData: P0): R;
-    resetBytesInRange<R = void, P0 = cocoa._NSRange>(_resetBytesInRange: P0): R;
-    replaceBytesInRange_withBytes<R = void, P0 = cocoa._NSRange, P1 = void>(_replaceBytesInRange: P0, _withBytes: P1): R;
+    resetBytesInRange<R = void, P0 = _NSRange>(_resetBytesInRange: P0): R;
+    replaceBytesInRange_withBytes<R = void, P0 = _NSRange, P1 = void>(_replaceBytesInRange: P0, _withBytes: P1): R;
     increaseLengthBy<R = void, P0 = number>(_increaseLengthBy: P0): R;
     appendData<R = void, P0 = unknown>(_appendData: P0): R;
     appendBytes_length<R = void, P0 = void, P1 = number>(_appendBytes: P0, _length: P1): R;
-    replaceBytesInRange_withBytes_length<R = void, P0 = cocoa._NSRange, P1 = void, P2 = number>(_replaceBytesInRange: P0, _withBytes: P1, _length: P2): R;
+    replaceBytesInRange_withBytes_length<R = void, P0 = _NSRange, P1 = void, P2 = number>(_replaceBytesInRange: P0, _withBytes: P1, _length: P2): R;
     _isCompact<R = boolean>(): R;
     classForCoder<R = unknown>(): R;
     setLength<R = void, P0 = number>(_setLength: P0): R;
@@ -29,7 +29,7 @@ declare namespace cocoa {
       // + NSMutableData(NSMutableData,NSMutableDataObjcTypeSerialization,NSSerialization):
       dataWithLength<R = unknown, P0 = number>(_dataWithLength: P0): R;
       dataWithCapacity<R = unknown, P0 = number>(_dataWithCapacity: P0): R;
-      allocWithZone<R = unknown, P0 = cocoa._NSZone>(_allocWithZone: P0): R;
+      allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
     }
   }
 }

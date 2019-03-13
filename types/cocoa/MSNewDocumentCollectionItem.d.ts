@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSNewDocumentCollectionItem<T = any> extends cocoa.MSWelcomeCollectionItem {
+  export interface MSNewDocumentCollectionItem<T = any> extends MSWelcomeCollectionItem {
     providesPreviewImage<R = boolean>(): R;
     title<R = unknown>(): R;
     placeholderImage<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSNewDocumentCollectionItem<T = any> extends cocoa.classes.MSWelcomeCollectionItem {
+    export interface MSNewDocumentCollectionItem<T = any> extends MSWelcomeCollectionItem {
       alloc<R = MSNewDocumentCollectionItem>(): R;
       new: <R = MSNewDocumentCollectionItem>() => R;
     }

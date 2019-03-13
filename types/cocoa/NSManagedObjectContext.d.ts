@@ -3,8 +3,8 @@
 declare namespace cocoa {
   export interface NSManagedObjectContext<T = any> {
     // + NSManagedObjectContext(NSEditorAndEditorRegistrationConformance):
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }

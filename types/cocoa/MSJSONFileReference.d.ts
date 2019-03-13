@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSJSONFileReference<T = any> extends cocoa.MSJSONArchiveReference {}
+  export interface MSJSONFileReference<T = any> extends MSJSONArchiveReference {}
   namespace classes {
-    export interface MSJSONFileReference<T = any> extends cocoa.classes.MSJSONArchiveReference {
+    export interface MSJSONFileReference<T = any> extends MSJSONArchiveReference {
       alloc<R = MSJSONFileReference>(): R;
       new: <R = MSJSONFileReference>() => R;
     }

@@ -1,10 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAccessibilityListProtocol<T = any> extends cocoa.NSAccessibilityTableProtocol {}
+  export interface NSAccessibilityListProtocol<T = any> extends NSAccessibilityTableProtocol {}
   namespace classes {
-    export interface NSAccessibilityListProtocol<T = any> extends cocoa.classes.NSAccessibilityTableProtocol {  }
+    export interface NSAccessibilityListProtocol<T = any> extends NSAccessibilityTableProtocol {  }
   }
 }
-
-declare const NSAccessibilityListProtocol: cocoa.classes.NSAccessibilityListProtocol;

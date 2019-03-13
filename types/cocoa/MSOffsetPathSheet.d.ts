@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSOffsetPathSheet<T = any> extends cocoa.MSCanvasUpdatingSheet {
+  export interface MSOffsetPathSheet<T = any> extends MSCanvasUpdatingSheet {
     setNilValueForKey<R = void, P0 = unknown>(_setNilValueForKey: P0): R;
     offsetLayer<R = void, P0 = unknown>(_offsetLayer: P0): R;
     duplicatelayers<R = unknown, P0 = unknown>(_duplicatelayers: P0): R;
@@ -11,7 +11,7 @@ declare namespace cocoa {
     setOffset<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface MSOffsetPathSheet<T = any> extends cocoa.classes.MSCanvasUpdatingSheet {
+    export interface MSOffsetPathSheet<T = any> extends MSCanvasUpdatingSheet {
       alloc<R = MSOffsetPathSheet>(): R;
       new: <R = MSOffsetPathSheet>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCollectionViewAccessibilityHelper<T = any> extends cocoa.NSAccessibilityElement {
+  export interface NSCollectionViewAccessibilityHelper<T = any> extends NSAccessibilityElement {
     accessibilitySelectedChildrenDidChange<R = void>(): R;
     _dequeueSectionWithIndex<R = unknown, P0 = number>(__dequeueSectionWithIndex: P0): R;
     _trimSectionCacheToVisibleSections<R = void, P0 = unknown>(__trimSectionCacheToVisibleSections: P0): R;
@@ -30,16 +30,16 @@ declare namespace cocoa {
     set_sectionCacheOffset<R = void, P0 = number>(_v: P0): R;
     sectionAccessibilityClass<R = unknown>(): R;
     setSectionAccessibilityClass<R = void, P0 = unknown>(_v: P0): R;
-    _sectionCache<R = cocoa.NSMutableArray>(): R;
-    accessibilityVisibleChildren<R = cocoa.NSArray>(): R;
-    collectionView<R = cocoa.NSCollectionView>(): R;
-    layout<R = cocoa.NSCollectionViewLayout>(): R;
-    setLayout<R = void, P0 = cocoa.NSCollectionViewLayout>(_v: P0): R;
-    accessibilitySelectedCells<R = cocoa.NSArray>(): R;
-    setAccessibilitySelectedCells<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    _sectionCache<R = NSMutableArray>(): R;
+    accessibilityVisibleChildren<R = NSArray>(): R;
+    collectionView<R = NSCollectionView>(): R;
+    layout<R = NSCollectionViewLayout>(): R;
+    setLayout<R = void, P0 = NSCollectionViewLayout>(_v: P0): R;
+    accessibilitySelectedCells<R = NSArray>(): R;
+    setAccessibilitySelectedCells<R = void, P0 = NSArray>(_v: P0): R;
   }
   namespace classes {
-    export interface NSCollectionViewAccessibilityHelper<T = any> extends cocoa.classes.NSAccessibilityElement {
+    export interface NSCollectionViewAccessibilityHelper<T = any> extends NSAccessibilityElement {
       alloc<R = NSCollectionViewAccessibilityHelper>(): R;
       new: <R = NSCollectionViewAccessibilityHelper>() => R;
     }

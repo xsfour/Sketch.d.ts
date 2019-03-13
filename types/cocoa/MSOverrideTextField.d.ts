@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSOverrideTextField<T = any> extends cocoa.NSTextField {
+  export interface MSOverrideTextField<T = any> extends NSTextField {
     tryGivingUpFirstResponderToSketchDocument<R = boolean>(): R;
     giveUpFirstResponder<R = void>(): R;
     insertTabIgnoringFieldEditor<R = void, P0 = unknown>(_insertTabIgnoringFieldEditor: P0): R;
@@ -11,7 +11,7 @@ declare namespace cocoa {
     setDidChangeTextDuringEditing<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface MSOverrideTextField<T = any> extends cocoa.classes.NSTextField {
+    export interface MSOverrideTextField<T = any> extends NSTextField {
       alloc<R = MSOverrideTextField>(): R;
       new: <R = MSOverrideTextField>() => R;
     }

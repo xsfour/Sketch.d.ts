@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSZoomPopUpButton<T = any> extends cocoa.NSPopUpButton {}
+  export interface MSZoomPopUpButton<T = any> extends NSPopUpButton {}
   namespace classes {
-    export interface MSZoomPopUpButton<T = any> extends cocoa.classes.NSPopUpButton {
+    export interface MSZoomPopUpButton<T = any> extends NSPopUpButton {
       alloc<R = MSZoomPopUpButton>(): R;
       new: <R = MSZoomPopUpButton>() => R;
     }

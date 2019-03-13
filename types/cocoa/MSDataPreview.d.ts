@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDataPreview<T = any> extends cocoa.NSView {
+  export interface MSDataPreview<T = any> extends NSView {
     cxx_destruct<R = void>(): R;
     firstFourDataImages<R = unknown>(): R;
     firstThreeDataTextItems<R = unknown>(): R;
@@ -14,16 +14,16 @@ declare namespace cocoa {
     generateImageDataPreview<R = unknown>(): R;
     generatePreview<R = void>(): R;
     placeHolderImage<R = unknown>(): R;
-    preview<R = cocoa.NSImage>(): R;
-    setPreview<R = void, P0 = cocoa.NSImage>(_v: P0): R;
-    dataItem<R = cocoa.MSDataPreferenceItem>(): R;
-    setDataItem<R = void, P0 = cocoa.MSDataPreferenceItem>(_v: P0): R;
-    imageSize<R = cocoa.CGSize>(): R;
-    contentPath<R = cocoa.NSBezierPath>(): R;
-    previewFrame<R = cocoa.CGRect>(): R;
+    preview<R = NSImage>(): R;
+    setPreview<R = void, P0 = NSImage>(_v: P0): R;
+    dataItem<R = MSDataPreferenceItem>(): R;
+    setDataItem<R = void, P0 = MSDataPreferenceItem>(_v: P0): R;
+    imageSize<R = CGSize>(): R;
+    contentPath<R = NSBezierPath>(): R;
+    previewFrame<R = CGRect>(): R;
   }
   namespace classes {
-    export interface MSDataPreview<T = any> extends cocoa.classes.NSView {
+    export interface MSDataPreview<T = any> extends NSView {
       alloc<R = MSDataPreview>(): R;
       new: <R = MSDataPreview>() => R;
     }

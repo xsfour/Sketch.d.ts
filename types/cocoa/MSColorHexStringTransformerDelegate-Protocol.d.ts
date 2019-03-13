@@ -1,12 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSColorHexStringTransformerDelegateProtocol<T = any> extends cocoa.NSObjectProtocol {
-    currentColorValueForTransformer<R = cocoa.MSColor, P0 = cocoa.MSColorHexStringTransformer>(_currentColorValueForTransformer: P0): R;
+  export interface MSColorHexStringTransformerDelegateProtocol<T = any> extends NSObjectProtocol {
+    currentColorValueForTransformer<R = MSColor, P0 = MSColorHexStringTransformer>(_currentColorValueForTransformer: P0): R;
   }
   namespace classes {
-    export interface MSColorHexStringTransformerDelegateProtocol<T = any> extends cocoa.classes.NSObjectProtocol {  }
+    export interface MSColorHexStringTransformerDelegateProtocol<T = any> extends NSObjectProtocol {  }
   }
 }
-
-declare const MSColorHexStringTransformerDelegateProtocol: cocoa.classes.MSColorHexStringTransformerDelegateProtocol;

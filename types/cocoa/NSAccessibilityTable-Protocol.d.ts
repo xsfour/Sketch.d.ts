@@ -1,24 +1,22 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAccessibilityTableProtocol<T = any> extends cocoa.NSAccessibilityGroupProtocol {
-    accessibilityRows<R = cocoa.NSArray>(): R;
-    accessibilityLabel<R = cocoa.NSString>(): R;
-    accessibilityColumnHeaderUIElements<R = cocoa.NSArray>(): R;
-    accessibilityRowHeaderUIElements<R = cocoa.NSArray>(): R;
-    accessibilityVisibleCells<R = cocoa.NSArray>(): R;
-    accessibilitySelectedCells<R = cocoa.NSArray>(): R;
-    accessibilityHeaderGroup<R = cocoa.NSString>(): R;
-    accessibilitySelectedColumns<R = cocoa.NSArray>(): R;
-    accessibilityVisibleColumns<R = cocoa.NSArray>(): R;
-    accessibilityColumns<R = cocoa.NSArray>(): R;
-    accessibilityVisibleRows<R = cocoa.NSArray>(): R;
-    setAccessibilitySelectedRows<R = void, P0 = cocoa.NSArray>(_setAccessibilitySelectedRows: P0): R;
-    accessibilitySelectedRows<R = cocoa.NSArray>(): R;
+  export interface NSAccessibilityTableProtocol<T = any> extends NSAccessibilityGroupProtocol {
+    accessibilityRows<R = NSArray>(): R;
+    accessibilityLabel<R = NSString>(): R;
+    accessibilityColumnHeaderUIElements<R = NSArray>(): R;
+    accessibilityRowHeaderUIElements<R = NSArray>(): R;
+    accessibilityVisibleCells<R = NSArray>(): R;
+    accessibilitySelectedCells<R = NSArray>(): R;
+    accessibilityHeaderGroup<R = NSString>(): R;
+    accessibilitySelectedColumns<R = NSArray>(): R;
+    accessibilityVisibleColumns<R = NSArray>(): R;
+    accessibilityColumns<R = NSArray>(): R;
+    accessibilityVisibleRows<R = NSArray>(): R;
+    setAccessibilitySelectedRows<R = void, P0 = NSArray>(_setAccessibilitySelectedRows: P0): R;
+    accessibilitySelectedRows<R = NSArray>(): R;
   }
   namespace classes {
-    export interface NSAccessibilityTableProtocol<T = any> extends cocoa.classes.NSAccessibilityGroupProtocol {  }
+    export interface NSAccessibilityTableProtocol<T = any> extends NSAccessibilityGroupProtocol {  }
   }
 }
-
-declare const NSAccessibilityTableProtocol: cocoa.classes.NSAccessibilityTableProtocol;

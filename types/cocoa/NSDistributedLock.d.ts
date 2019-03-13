@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDistributedLock<T = any> extends cocoa.NSObject {
+  export interface NSDistributedLock<T = any> extends NSObject {
     description<R = unknown>(): R;
     breakLock<R = void>(): R;
     unlock<R = void>(): R;
@@ -9,10 +9,10 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     invalidate<R = void>(): R;
     initWithPath<R = unknown, P0 = unknown>(_initWithPath: P0): R;
-    lockDate<R = cocoa.NSDate>(): R;
+    lockDate<R = NSDate>(): R;
   }
   namespace classes {
-    export interface NSDistributedLock<T = any> extends cocoa.classes.NSObject {
+    export interface NSDistributedLock<T = any> extends NSObject {
       alloc<R = NSDistributedLock>(): R;
       new: <R = NSDistributedLock>() => R;
       lockWithPath<R = unknown, P0 = unknown>(_lockWithPath: P0): R;

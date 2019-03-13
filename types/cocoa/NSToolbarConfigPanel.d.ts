@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSToolbarConfigPanel<T = any> extends cocoa.NSPanel, cocoa.NSCollectionViewDataSourceProtocol, cocoa.NSTouchBarCustomizationPaletteLayoutDelegateProtocol, cocoa.NSCollectionViewDelegateFlowLayoutProtocol, cocoa.NSCollectionViewDelegateProtocol {
+  export interface NSToolbarConfigPanel<T = any> extends NSPanel, NSCollectionViewDataSourceProtocol, NSTouchBarCustomizationPaletteLayoutDelegateProtocol, NSCollectionViewDelegateFlowLayoutProtocol, NSCollectionViewDelegateProtocol {
     _updateTouchBarWithToolbarDisplayMode<R = void, P0 = number>(__updateTouchBarWithToolbarDisplayMode: P0): R;
     _touchBarDisplayModeChanged<R = void, P0 = unknown>(__touchBarDisplayModeChanged: P0): R;
     _setDefaultToolbarItemSetFromMenuItem<R = void, P0 = unknown>(__setDefaultToolbarItemSetFromMenuItem: P0): R;
@@ -16,13 +16,13 @@ declare namespace cocoa {
     ok<R = void, P0 = unknown>(_ok: P0): R;
     editedToolbar<R = unknown>(): R;
     _finishInitialization<R = void>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSToolbarConfigPanel<T = any> extends cocoa.classes.NSPanel, cocoa.classes.NSCollectionViewDataSourceProtocol, cocoa.classes.NSTouchBarCustomizationPaletteLayoutDelegateProtocol, cocoa.classes.NSCollectionViewDelegateFlowLayoutProtocol, cocoa.classes.NSCollectionViewDelegateProtocol {
+    export interface NSToolbarConfigPanel<T = any> extends NSPanel, NSCollectionViewDataSourceProtocol, NSTouchBarCustomizationPaletteLayoutDelegateProtocol, NSCollectionViewDelegateFlowLayoutProtocol, NSCollectionViewDelegateProtocol {
       alloc<R = NSToolbarConfigPanel>(): R;
       new: <R = NSToolbarConfigPanel>() => R;
       toolbarConfigPanelForToolbar_withWidth<R = unknown, P0 = unknown, P1 = number>(_toolbarConfigPanelForToolbar: P0, _withWidth: P1): R;

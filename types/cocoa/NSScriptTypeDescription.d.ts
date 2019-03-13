@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScriptTypeDescription<T = any> extends cocoa.NSObject {
+  export interface NSScriptTypeDescription<T = any> extends NSObject {
     errorExpectedTypeDescriptor<R = unknown>(): R;
     coercedValue<R = unknown, P0 = unknown>(_coercedValue: P0): R;
     matchesAppleEventCode<R = boolean, P0 = number>(_matchesAppleEventCode: P0): R;
@@ -17,7 +17,7 @@ declare namespace cocoa {
     description<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSScriptTypeDescription<T = any> extends cocoa.classes.NSObject {
+    export interface NSScriptTypeDescription<T = any> extends NSObject {
       alloc<R = NSScriptTypeDescription>(): R;
       new: <R = NSScriptTypeDescription>() => R;
     }

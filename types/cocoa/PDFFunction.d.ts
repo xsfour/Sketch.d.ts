@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface PDFFunction<T = any> extends cocoa.NSObject {
+  export interface PDFFunction<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     mapInputs_toOutputs<R = void, P0 = number, P1 = number>(_mapInputs: P0, _toOutputs: P1): R;
     setupStitchedWithDictionary<R = void, P0 = unknown>(_setupStitchedWithDictionary: P0): R;
@@ -12,10 +12,10 @@ declare namespace cocoa {
     setupWithDictionary<R = void, P0 = unknown>(_setupWithDictionary: P0): R;
     setupWithStream<R = void, P0 = unknown>(_setupWithStream: P0): R;
     initWithInfo<R = unknown, P0 = unknown>(_initWithInfo: P0): R;
-    range<R = cocoa.NSArray>(): R;
-    setRange<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    domain<R = cocoa.NSArray>(): R;
-    setDomain<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    range<R = NSArray>(): R;
+    setRange<R = void, P0 = NSArray>(_v: P0): R;
+    domain<R = NSArray>(): R;
+    setDomain<R = void, P0 = NSArray>(_v: P0): R;
     numberOfSamples<R = number>(): R;
     setNumberOfSamples<R = void, P0 = number>(_v: P0): R;
     bytesPerSample<R = number>(): R;
@@ -28,13 +28,13 @@ declare namespace cocoa {
     setNumberOfOutputComponents<R = void, P0 = number>(_v: P0): R;
     numberOfInputComponents<R = number>(): R;
     setNumberOfInputComponents<R = void, P0 = number>(_v: P0): R;
-    parameters<R = cocoa.NSDictionary>(): R;
-    setParameters<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
-    samples<R = cocoa.NSData>(): R;
-    setSamples<R = void, P0 = cocoa.NSData>(_v: P0): R;
+    parameters<R = NSDictionary>(): R;
+    setParameters<R = void, P0 = NSDictionary>(_v: P0): R;
+    samples<R = NSData>(): R;
+    setSamples<R = void, P0 = NSData>(_v: P0): R;
   }
   namespace classes {
-    export interface PDFFunction<T = any> extends cocoa.classes.NSObject {
+    export interface PDFFunction<T = any> extends NSObject {
       alloc<R = PDFFunction>(): R;
       new: <R = PDFFunction>() => R;
       functionWithInfo<R = unknown, P0 = unknown>(_functionWithInfo: P0): R;

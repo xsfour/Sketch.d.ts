@@ -61,12 +61,12 @@ declare namespace cocoa {
     prepareStringAttributesForEncoding<R = unknown>(): R;
     initWithUnarchiver<R = unknown, P0 = unknown>(_initWithUnarchiver: P0): R;
     encodeWithArchiver<R = void, P0 = unknown>(_encodeWithArchiver: P0): R;
-    pointForXKey_yKey<R = cocoa.CGPoint, P0 = unknown, P1 = unknown>(_pointForXKey: P0, _yKey: P1): R;
-    sizeForWidthKey_heightKey<R = cocoa.CGSize, P0 = unknown, P1 = unknown>(_sizeForWidthKey: P0, _heightKey: P1): R;
+    pointForXKey_yKey<R = CGPoint, P0 = unknown, P1 = unknown>(_pointForXKey: P0, _yKey: P1): R;
+    sizeForWidthKey_heightKey<R = CGSize, P0 = unknown, P1 = unknown>(_sizeForWidthKey: P0, _heightKey: P1): R;
     objectForKey_ofType<R = unknown, P0 = unknown, P1 = unknown>(_objectForKey: P0, _ofType: P1): R;
     propertiesAreEqual<R = boolean, P0 = unknown>(_propertiesAreEqual: P0): R;
     treeAsDictionary<R = unknown>(): R;
-    archiveReferenceIdentifier_bc<R = cocoa.NSString>(): R;
+    archiveReferenceIdentifier_bc<R = NSString>(): R;
   }
   namespace classes {
     export interface NSDictionary<T = any> {

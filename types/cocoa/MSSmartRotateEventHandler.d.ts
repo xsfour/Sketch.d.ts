@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSmartRotateEventHandler<T = any> extends cocoa.MSEventHandler {
+  export interface MSSmartRotateEventHandler<T = any> extends MSEventHandler {
     unregisterObservers<R = void>(): R;
     registerObservers<R = void>(): R;
     rotationForRepetitionAtIndex<R = number, P0 = number>(_rotationForRepetitionAtIndex: P0): R;
     drawControlPoints<R = void>(): R;
-    tryToSnapPoint_toMid<R = cocoa.CGPoint, P0 = cocoa.CGPoint, P1 = cocoa.CGPoint>(_tryToSnapPoint: P0, _toMid: P1): R;
+    tryToSnapPoint_toMid<R = CGPoint, P0 = CGPoint, P1 = CGPoint>(_tryToSnapPoint: P0, _toMid: P1): R;
     rotateCopies<R = void>(): R;
     adjustGroup<R = void>(): R;
     transformForRotatingShape_toIndex<R = unknown, P0 = unknown, P1 = number>(_transformForRotatingShape: P0, _toIndex: P1): R;
@@ -18,15 +18,15 @@ declare namespace cocoa {
     determineOriginalRotationCenter<R = void>(): R;
     createShapeCopies<R = void>(): R;
     findShapes<R = void>(): R;
-    shapeLayersCopies<R = cocoa.NSArray>(): R;
-    setShapeLayersCopies<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    shapeLayers<R = cocoa.NSArray>(): R;
-    setShapeLayers<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    shapeLayersCopies<R = NSArray>(): R;
+    setShapeLayersCopies<R = void, P0 = NSArray>(_v: P0): R;
+    shapeLayers<R = NSArray>(): R;
+    setShapeLayers<R = void, P0 = NSArray>(_v: P0): R;
     numberOfRepetitions<R = number>(): R;
     setNumberOfRepetitions<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface MSSmartRotateEventHandler<T = any> extends cocoa.classes.MSEventHandler {
+    export interface MSSmartRotateEventHandler<T = any> extends MSEventHandler {
       alloc<R = MSSmartRotateEventHandler>(): R;
       new: <R = MSSmartRotateEventHandler>() => R;
     }

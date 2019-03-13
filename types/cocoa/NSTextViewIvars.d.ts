@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTextViewIvars<T = any> extends cocoa.NSObject {}
+  export interface NSTextViewIvars<T = any> extends NSObject {}
   namespace classes {
-    export interface NSTextViewIvars<T = any> extends cocoa.classes.NSObject {
+    export interface NSTextViewIvars<T = any> extends NSObject {
       alloc<R = NSTextViewIvars>(): R;
       new: <R = NSTextViewIvars>() => R;
     }

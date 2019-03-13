@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSZoomActions<T = any> extends cocoa.MSActionGroup {
+  export interface MSZoomActions<T = any> extends MSActionGroup {
     label<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSZoomActions<T = any> extends cocoa.classes.MSActionGroup {
+    export interface MSZoomActions<T = any> extends MSActionGroup {
       alloc<R = MSZoomActions>(): R;
       new: <R = MSZoomActions>() => R;
     }

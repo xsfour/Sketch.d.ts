@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSOtherItemsProxyTouchBarItem<T = any> extends cocoa.NSTouchBarItem {}
+  export interface NSOtherItemsProxyTouchBarItem<T = any> extends NSTouchBarItem {}
   namespace classes {
-    export interface NSOtherItemsProxyTouchBarItem<T = any> extends cocoa.classes.NSTouchBarItem {
+    export interface NSOtherItemsProxyTouchBarItem<T = any> extends NSTouchBarItem {
       alloc<R = NSOtherItemsProxyTouchBarItem>(): R;
       new: <R = NSOtherItemsProxyTouchBarItem>() => R;
     }

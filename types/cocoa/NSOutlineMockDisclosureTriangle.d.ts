@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSOutlineMockDisclosureTriangle<T = any> extends cocoa.NSObject {
+  export interface NSOutlineMockDisclosureTriangle<T = any> extends NSObject {
     accessibilityFocusedUIElement<R = unknown>(): R;
-    accessibilityHitTest<R = unknown, P0 = cocoa.CGPoint>(_accessibilityHitTest: P0): R;
+    accessibilityHitTest<R = unknown, P0 = CGPoint>(_accessibilityHitTest: P0): R;
     accessibilityIsIgnored<R = boolean>(): R;
     accessibilitySetValue_forAttribute<R = void, P0 = unknown, P1 = unknown>(_accessibilitySetValue: P0, _forAttribute: P1): R;
     accessibilityIsAttributeSettable<R = boolean, P0 = unknown>(_accessibilityIsAttributeSettable: P0): R;
@@ -37,7 +37,7 @@ declare namespace cocoa {
     initWithRow_column_outlineView<R = unknown, P0 = number, P1 = number, P2 = unknown>(_initWithRow: P0, _column: P1, _outlineView: P2): R;
   }
   namespace classes {
-    export interface NSOutlineMockDisclosureTriangle<T = any> extends cocoa.classes.NSObject {
+    export interface NSOutlineMockDisclosureTriangle<T = any> extends NSObject {
       alloc<R = NSOutlineMockDisclosureTriangle>(): R;
       new: <R = NSOutlineMockDisclosureTriangle>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPluginCommand<T = any> extends cocoa.NSObject, cocoa.COPrintControllerProtocol {
+  export interface MSPluginCommand<T = any> extends NSObject, COPrintControllerProtocol {
     cxx_destruct<R = void>(): R;
     setValue_forKey_onDocument<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(_setValue: P0, _forKey: P1, _onDocument: P2): R;
     valueForKey_onDocument<R = unknown, P0 = unknown, P1 = unknown>(_valueForKey: P0, _onDocument: P1): R;
@@ -24,13 +24,13 @@ declare namespace cocoa {
     executeScript<R = unknown, P0 = unknown>(_executeScript: P0): R;
     hasRunHandler<R = boolean>(): R;
     tearDownIfFinished<R = boolean>(): R;
-    runHandler_context_manager_onComplete<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = cocoa.CDUnknownBlockType>(_runHandler: P0, _context: P1, _manager: P2, _onComplete: P3): R;
+    runHandler_context_manager_onComplete<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = CDUnknownBlockType>(_runHandler: P0, _context: P1, _manager: P2, _onComplete: P3): R;
     runHandler_context_manager<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_runHandler: P0, _context: P1, _manager: P2): R;
-    runHandlerWithKey_context_manager_onComplete<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = cocoa.CDUnknownBlockType>(_runHandlerWithKey: P0, _context: P1, _manager: P2, _onComplete: P3): R;
+    runHandlerWithKey_context_manager_onComplete<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = CDUnknownBlockType>(_runHandlerWithKey: P0, _context: P1, _manager: P2, _onComplete: P3): R;
     runHandlerWithKey_context_manager<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_runHandlerWithKey: P0, _context: P1, _manager: P2): R;
-    run_manager_onComplete<R = unknown, P0 = unknown, P1 = unknown, P2 = cocoa.CDUnknownBlockType>(_run: P0, _manager: P1, _onComplete: P2): R;
+    run_manager_onComplete<R = unknown, P0 = unknown, P1 = unknown, P2 = CDUnknownBlockType>(_run: P0, _manager: P1, _onComplete: P2): R;
     run_manager<R = unknown, P0 = unknown, P1 = unknown>(_run: P0, _manager: P1): R;
-    runHandler_withOptionalKey_context_manager_onComplete<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = cocoa.CDUnknownBlockType>(_runHandler: P0, _withOptionalKey: P1, _context: P2, _manager: P3, _onComplete: P4): R;
+    runHandler_withOptionalKey_context_manager_onComplete<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = CDUnknownBlockType>(_runHandler: P0, _withOptionalKey: P1, _context: P2, _manager: P3, _onComplete: P4): R;
     fullContextFromContext_url<R = unknown, P0 = unknown, P1 = unknown>(_fullContextFromContext: P0, _url: P1): R;
     tearDownSession<R = void>(): R;
     setUpSessionWithContext<R = void, P0 = unknown>(_setUpSessionWithContext: P0): R;
@@ -53,40 +53,40 @@ declare namespace cocoa {
     prepareForPerformanceTesting<R = void>(): R;
     URLForPerformanceTempFileWithName<R = unknown, P0 = unknown>(_URLForPerformanceTempFileWithName: P0): R;
     URLForPerformanceDocumentWithName<R = unknown, P0 = unknown>(_URLForPerformanceDocumentWithName: P0): R;
-    manager<R = cocoa.MSPluginManager>(): R;
-    setManager<R = void, P0 = cocoa.MSPluginManager>(_v: P0): R;
-    coreModuleMap<R = cocoa.NSMutableDictionary>(): R;
-    setCoreModuleMap<R = void, P0 = cocoa.NSMutableDictionary>(_v: P0): R;
-    executingScript<R = cocoa.NSString>(): R;
-    setExecutingScript<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    manager<R = MSPluginManager>(): R;
+    setManager<R = void, P0 = MSPluginManager>(_v: P0): R;
+    coreModuleMap<R = NSMutableDictionary>(): R;
+    setCoreModuleMap<R = void, P0 = NSMutableDictionary>(_v: P0): R;
+    executingScript<R = NSString>(): R;
+    setExecutingScript<R = void, P0 = NSString>(_v: P0): R;
     errorInScript<R = boolean>(): R;
     setErrorInScript<R = void, P0 = boolean>(_v: P0): R;
     hasAPI<R = boolean>(): R;
     setHasAPI<R = void, P0 = boolean>(_v: P0): R;
-    context<R = cocoa.NSMutableDictionary>(): R;
-    setContext<R = void, P0 = cocoa.NSMutableDictionary>(_v: P0): R;
-    session<R = cocoa.COScript>(): R;
-    setSession<R = void, P0 = cocoa.COScript>(_v: P0): R;
-    logsWhenRunViaTests<R = cocoa.NSMutableArray>(): R;
-    setLogsWhenRunViaTests<R = void, P0 = cocoa.NSMutableArray>(_v: P0): R;
+    context<R = NSMutableDictionary>(): R;
+    setContext<R = void, P0 = NSMutableDictionary>(_v: P0): R;
+    session<R = COScript>(): R;
+    setSession<R = void, P0 = COScript>(_v: P0): R;
+    logsWhenRunViaTests<R = NSMutableArray>(): R;
+    setLogsWhenRunViaTests<R = void, P0 = NSMutableArray>(_v: P0): R;
     disableCocoaScriptPreprocessor<R = boolean>(): R;
     setDisableCocoaScriptPreprocessor<R = void, P0 = boolean>(_v: P0): R;
     scope<R = number>(): R;
-    pluginBundle<R = cocoa.MSPluginBundle>(): R;
-    setPluginBundle<R = void, P0 = cocoa.MSPluginBundle>(_v: P0): R;
-    shortcut<R = cocoa.NSString>(): R;
-    handlers<R = cocoa.NSDictionary>(): R;
-    name<R = cocoa.NSString>(): R;
-    script<R = cocoa.MSPluginScript>(): R;
-    identifier<R = cocoa.NSString>(): R;
-    commandSpecifier<R = cocoa.MSPluginCommandSpecifier>(): R;
+    pluginBundle<R = MSPluginBundle>(): R;
+    setPluginBundle<R = void, P0 = MSPluginBundle>(_v: P0): R;
+    shortcut<R = NSString>(): R;
+    handlers<R = NSDictionary>(): R;
+    name<R = NSString>(): R;
+    script<R = MSPluginScript>(): R;
+    identifier<R = NSString>(): R;
+    commandSpecifier<R = MSPluginCommandSpecifier>(): R;
     stayRunning<R = boolean>(): R;
     setStayRunning<R = void, P0 = boolean>(_v: P0): R;
-    performanceData<R = cocoa.NSDictionary>(): R;
-    setPerformanceData<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
+    performanceData<R = NSDictionary>(): R;
+    setPerformanceData<R = void, P0 = NSDictionary>(_v: P0): R;
   }
   namespace classes {
-    export interface MSPluginCommand<T = any> extends cocoa.classes.NSObject, cocoa.classes.COPrintControllerProtocol {
+    export interface MSPluginCommand<T = any> extends NSObject, COPrintControllerProtocol {
       alloc<R = MSPluginCommand>(): R;
       new: <R = MSPluginCommand>() => R;
       commandWithJSON_scripts_scriptsURL<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_commandWithJSON: P0, _scripts: P1, _scriptsURL: P2): R;

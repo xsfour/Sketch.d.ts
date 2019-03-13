@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLayoutGuide<T = any> extends cocoa.NSObject, cocoa.NSCodingProtocol, cocoa.NSUserInterfaceItemIdentificationProtocol {
+  export interface NSLayoutGuide<T = any> extends NSObject, NSCodingProtocol, NSUserInterfaceItemIdentificationProtocol {
     cxx_destruct<R = void>(): R;
     centerY<R = unknown>(): R;
     centerX<R = unknown>(): R;
@@ -45,8 +45,8 @@ declare namespace cocoa {
     nsli_ancestorSharedWithItem<R = unknown, P0 = unknown>(_nsli_ancestorSharedWithItem: P0): R;
     nsli_layoutRect<R = unknown>(): R;
     nsli_superitem<R = unknown>(): R;
-    nsli_convertSizeFromEngineSpace<R = cocoa.CGSize, P0 = cocoa.CGSize>(_nsli_convertSizeFromEngineSpace: P0): R;
-    nsli_convertSizeToEngineSpace<R = cocoa.CGSize, P0 = cocoa.CGSize>(_nsli_convertSizeToEngineSpace: P0): R;
+    nsli_convertSizeFromEngineSpace<R = CGSize, P0 = CGSize>(_nsli_convertSizeFromEngineSpace: P0): R;
+    nsli_convertSizeToEngineSpace<R = CGSize, P0 = CGSize>(_nsli_convertSizeToEngineSpace: P0): R;
     nsli_layoutEngine<R = unknown>(): R;
     _referencingConstraints<R = unknown>(): R;
     constraintsAffectingLayoutForOrientation<R = unknown, P0 = number>(_constraintsAffectingLayoutForOrientation: P0): R;
@@ -56,11 +56,11 @@ declare namespace cocoa {
     setShouldBeArchived<R = void, P0 = boolean>(_setShouldBeArchived: P0): R;
     shouldBeArchived<R = boolean>(): R;
     _snipReferencingConstraints<R = void>(): R;
-    convertRect_toView<R = cocoa.CGRect, P0 = cocoa.CGRect, P1 = unknown>(_convertRect: P0, _toView: P1): R;
+    convertRect_toView<R = CGRect, P0 = CGRect, P1 = unknown>(_convertRect: P0, _toView: P1): R;
     layoutRect<R = unknown>(): R;
-    bounds<R = cocoa.CGRect>(): R;
-    _alignmentFrame<R = cocoa.CGRect>(): R;
-    setFrame<R = void, P0 = cocoa.CGRect>(_setFrame: P0): R;
+    bounds<R = CGRect>(): R;
+    _alignmentFrame<R = CGRect>(): R;
+    setFrame<R = void, P0 = CGRect>(_setFrame: P0): R;
     setObservationInfo<R = void, P0 = void>(_setObservationInfo: P0): R;
     nsli_lowersExpressionRelativeToConstraintContainer<R = boolean>(): R;
     nsli_lowerAttribute_intoExpression_withCoefficient_container<R = boolean, P0 = number, P1 = unknown, P2 = number, P3 = unknown>(_nsli_lowerAttribute: P0, _intoExpression: P1, _withCoefficient: P2, _container: P3): R;
@@ -71,28 +71,28 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     ns_containerWidgetType<R = unknown>(): R;
     ns_widgetType<R = unknown>(): R;
-    centerYAnchor<R = cocoa.NSLayoutYAxisAnchor>(): R;
-    centerXAnchor<R = cocoa.NSLayoutXAxisAnchor>(): R;
-    heightAnchor<R = cocoa.NSLayoutDimension>(): R;
-    widthAnchor<R = cocoa.NSLayoutDimension>(): R;
-    bottomAnchor<R = cocoa.NSLayoutYAxisAnchor>(): R;
-    topAnchor<R = cocoa.NSLayoutYAxisAnchor>(): R;
-    rightAnchor<R = cocoa.NSLayoutXAxisAnchor>(): R;
-    leftAnchor<R = cocoa.NSLayoutXAxisAnchor>(): R;
-    trailingAnchor<R = cocoa.NSLayoutXAxisAnchor>(): R;
-    leadingAnchor<R = cocoa.NSLayoutXAxisAnchor>(): R;
+    centerYAnchor<R = NSLayoutYAxisAnchor>(): R;
+    centerXAnchor<R = NSLayoutXAxisAnchor>(): R;
+    heightAnchor<R = NSLayoutDimension>(): R;
+    widthAnchor<R = NSLayoutDimension>(): R;
+    bottomAnchor<R = NSLayoutYAxisAnchor>(): R;
+    topAnchor<R = NSLayoutYAxisAnchor>(): R;
+    rightAnchor<R = NSLayoutXAxisAnchor>(): R;
+    leftAnchor<R = NSLayoutXAxisAnchor>(): R;
+    trailingAnchor<R = NSLayoutXAxisAnchor>(): R;
+    leadingAnchor<R = NSLayoutXAxisAnchor>(): R;
     hasAmbiguousLayout<R = boolean>(): R;
-    identifier<R = cocoa.NSString>(): R;
-    setIdentifier<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    owningView<R = cocoa.NSView>(): R;
-    setOwningView<R = void, P0 = cocoa.NSView>(_v: P0): R;
-    frame<R = cocoa.CGRect>(): R;
+    identifier<R = NSString>(): R;
+    setIdentifier<R = void, P0 = NSString>(_v: P0): R;
+    owningView<R = NSView>(): R;
+    setOwningView<R = void, P0 = NSView>(_v: P0): R;
+    frame<R = CGRect>(): R;
   }
   namespace classes {
-    export interface NSLayoutGuide<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCodingProtocol, cocoa.classes.NSUserInterfaceItemIdentificationProtocol {
+    export interface NSLayoutGuide<T = any> extends NSObject, NSCodingProtocol, NSUserInterfaceItemIdentificationProtocol {
       alloc<R = NSLayoutGuide>(): R;
       new: <R = NSLayoutGuide>() => R;
-      _allowingStaleFramesPerformBlock<R = void, P0 = cocoa.CDUnknownBlockType>(__allowingStaleFramesPerformBlock: P0): R;
+      _allowingStaleFramesPerformBlock<R = void, P0 = CDUnknownBlockType>(__allowingStaleFramesPerformBlock: P0): R;
     }
   }
 }

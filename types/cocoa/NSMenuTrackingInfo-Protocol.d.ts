@@ -1,15 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMenuTrackingInfoProtocol<T = any> extends cocoa.NSObjectProtocol {
-    targetedItemFrame<R = cocoa.CGRect>(): R;
-    targetedItem<R = cocoa.NSMenuItem>(): R;
-    selectedItem<R = cocoa.NSMenuItem>(): R;
-    menu<R = cocoa.NSMenu>(): R;
+  export interface NSMenuTrackingInfoProtocol<T = any> extends NSObjectProtocol {
+    targetedItemFrame<R = CGRect>(): R;
+    targetedItem<R = NSMenuItem>(): R;
+    selectedItem<R = NSMenuItem>(): R;
+    menu<R = NSMenu>(): R;
   }
   namespace classes {
-    export interface NSMenuTrackingInfoProtocol<T = any> extends cocoa.classes.NSObjectProtocol {  }
+    export interface NSMenuTrackingInfoProtocol<T = any> extends NSObjectProtocol {  }
   }
 }
-
-declare const NSMenuTrackingInfoProtocol: cocoa.classes.NSMenuTrackingInfoProtocol;

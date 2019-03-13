@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSNestedInspectorSection<T = any> extends cocoa.MSBaseInspectorSection, cocoa.MSInspectorSectionDelegateProtocol {}
+  export interface MSNestedInspectorSection<T = any> extends MSBaseInspectorSection, MSInspectorSectionDelegateProtocol {}
   namespace classes {
-    export interface MSNestedInspectorSection<T = any> extends cocoa.classes.MSBaseInspectorSection, cocoa.classes.MSInspectorSectionDelegateProtocol {
+    export interface MSNestedInspectorSection<T = any> extends MSBaseInspectorSection, MSInspectorSectionDelegateProtocol {
       alloc<R = MSNestedInspectorSection>(): R;
       new: <R = MSNestedInspectorSection>() => R;
     }

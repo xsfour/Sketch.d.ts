@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInterceptingView<T = any> extends cocoa.NSView {}
+  export interface MSInterceptingView<T = any> extends NSView {}
   namespace classes {
-    export interface MSInterceptingView<T = any> extends cocoa.classes.NSView {
+    export interface MSInterceptingView<T = any> extends NSView {
       alloc<R = MSInterceptingView>(): R;
       new: <R = MSInterceptingView>() => R;
     }

@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSJSONSerialization<T = any> extends cocoa.NSObject {}
+  export interface NSJSONSerialization<T = any> extends NSObject {}
   namespace classes {
-    export interface NSJSONSerialization<T = any> extends cocoa.classes.NSObject {
+    export interface NSJSONSerialization<T = any> extends NSObject {
       alloc<R = NSJSONSerialization>(): R;
       new: <R = NSJSONSerialization>() => R;
       JSONObjectWithStream_options_error<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_JSONObjectWithStream: P0, _options: P1, _error: P2): R;
@@ -11,7 +11,7 @@ declare namespace cocoa {
       JSONObjectWithData_options_error<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_JSONObjectWithData: P0, _options: P1, _error: P2): R;
       dataWithJSONObject_options_error<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_dataWithJSONObject: P0, _options: P1, _error: P2): R;
       isValidJSONObject<R = boolean, P0 = unknown>(_isValidJSONObject: P0): R;
-      allocWithZone<R = unknown, P0 = cocoa._NSZone>(_allocWithZone: P0): R;
+      allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
     }
   }
 }

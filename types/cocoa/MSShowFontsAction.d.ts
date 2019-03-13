@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSShowFontsAction<T = any> extends cocoa.MSDocumentAction {
+  export interface MSShowFontsAction<T = any> extends MSDocumentAction {
     label<R = unknown>(): R;
     showFontsAction<R = void, P0 = unknown>(_showFontsAction: P0): R;
   }
   namespace classes {
-    export interface MSShowFontsAction<T = any> extends cocoa.classes.MSDocumentAction {
+    export interface MSShowFontsAction<T = any> extends MSDocumentAction {
       alloc<R = MSShowFontsAction>(): R;
       new: <R = MSShowFontsAction>() => R;
     }

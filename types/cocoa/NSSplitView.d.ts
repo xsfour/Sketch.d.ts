@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSplitView<T = any> extends cocoa.NSView, cocoa._NSTransientUIElementProtocol {
+  export interface NSSplitView<T = any> extends NSView, _NSTransientUIElementProtocol {
     _automaticMaximumSizeForArrangedView<R = number, P0 = unknown>(__automaticMaximumSizeForArrangedView: P0): R;
     _uncollapseWithOverlayArrangedView_animated<R = void, P0 = unknown, P1 = boolean>(__uncollapseWithOverlayArrangedView: P0, _animated: P1): R;
     _uncollapseArrangedView_animated<R = void, P0 = unknown, P1 = boolean>(__uncollapseArrangedView: P0, _animated: P1): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     _collapseArrangedView_animated<R = void, P0 = unknown, P1 = boolean>(__collapseArrangedView: P0, _animated: P1): R;
     _setArrangedView_isCollapsed<R = void, P0 = unknown, P1 = boolean>(__setArrangedView: P0, _isCollapsed: P1): R;
     _isArrangedViewAnimating<R = boolean, P0 = unknown>(__isArrangedViewAnimating: P0): R;
-    _resizeViewsForOffset_coordinate<R = cocoa.CGRect, P0 = number, P1 = number>(__resizeViewsForOffset: P0, _coordinate: P1): R;
+    _resizeViewsForOffset_coordinate<R = CGRect, P0 = number, P1 = number>(__resizeViewsForOffset: P0, _coordinate: P1): R;
     _setSplitViewControllerAllowsPropertyChange<R = void, P0 = boolean>(__setSplitViewControllerAllowsPropertyChange: P0): R;
     _splitViewControllerAllowsPropertyChange<R = boolean>(): R;
     _canMakePropertyChange<R = boolean>(): R;
@@ -77,12 +77,12 @@ declare namespace cocoa {
     isOpaque<R = boolean>(): R;
     _allSubviewsAreOpaque<R = boolean>(): R;
     isFlipped<R = boolean>(): R;
-    _visualIndexOfDividerForLocation_andReturnFrame<R = number, P0 = cocoa.CGPoint, P1 = cocoa.CGRect>(__visualIndexOfDividerForLocation: P0, _andReturnFrame: P1): R;
-    _indexOfDividerForLocation_andReturnFrame<R = number, P0 = cocoa.CGPoint, P1 = cocoa.CGRect>(__indexOfDividerForLocation: P0, _andReturnFrame: P1): R;
+    _visualIndexOfDividerForLocation_andReturnFrame<R = number, P0 = CGPoint, P1 = CGRect>(__visualIndexOfDividerForLocation: P0, _andReturnFrame: P1): R;
+    _indexOfDividerForLocation_andReturnFrame<R = number, P0 = CGPoint, P1 = CGRect>(__indexOfDividerForLocation: P0, _andReturnFrame: P1): R;
     _canCollapseArrangedView<R = boolean, P0 = unknown>(__canCollapseArrangedView: P0): R;
-    _additionalEffectiveFrameOfDividerAtIndex<R = cocoa.CGRect, P0 = number>(__additionalEffectiveFrameOfDividerAtIndex: P0): R;
-    _effectiveFrameForDrawnFrame_ofDividerAtIndex<R = cocoa.CGRect, P0 = cocoa.CGRect, P1 = number>(__effectiveFrameForDrawnFrame: P0, _ofDividerAtIndex: P1): R;
-    _makeDividerLayerWithFrame<R = unknown, P0 = cocoa.CGRect>(__makeDividerLayerWithFrame: P0): R;
+    _additionalEffectiveFrameOfDividerAtIndex<R = CGRect, P0 = number>(__additionalEffectiveFrameOfDividerAtIndex: P0): R;
+    _effectiveFrameForDrawnFrame_ofDividerAtIndex<R = CGRect, P0 = CGRect, P1 = number>(__effectiveFrameForDrawnFrame: P0, _ofDividerAtIndex: P1): R;
+    _makeDividerLayerWithFrame<R = unknown, P0 = CGRect>(__makeDividerLayerWithFrame: P0): R;
     _updateDividerLayer<R = void, P0 = unknown>(__updateDividerLayer: P0): R;
     _removeDividerLayers<R = void>(): R;
     _setDividerLayers<R = void, P0 = unknown>(__setDividerLayers: P0): R;
@@ -108,16 +108,16 @@ declare namespace cocoa {
     _dividerDraggingAnchor<R = unknown>(): R;
     _constantFromDividerPosition_toAnchorView<R = number, P0 = number, P1 = unknown>(__constantFromDividerPosition: P0, _toAnchorView: P1): R;
     _distanceFromTrailingEdgeOfView_toAnchor<R = number, P0 = unknown, P1 = unknown>(__distanceFromTrailingEdgeOfView: P0, _toAnchor: P1): R;
-    _trailingDistanceFromSelf<R = number, P0 = cocoa.CGRect>(__trailingDistanceFromSelf: P0): R;
-    _leadingDistanceFromSelf<R = number, P0 = cocoa.CGRect>(__leadingDistanceFromSelf: P0): R;
+    _trailingDistanceFromSelf<R = number, P0 = CGRect>(__trailingDistanceFromSelf: P0): R;
+    _leadingDistanceFromSelf<R = number, P0 = CGRect>(__leadingDistanceFromSelf: P0): R;
     _dragLimitsOfDividerAtLogicalIndex<R = unknown, P0 = number>(__dragLimitsOfDividerAtLogicalIndex: P0): R;
     _unscaledDividerThickness<R = number>(): R;
     maxPossiblePositionOfDividerAtIndex<R = number, P0 = number>(_maxPossiblePositionOfDividerAtIndex: P0): R;
     minPossiblePositionOfDividerAtIndex<R = number, P0 = number>(_minPossiblePositionOfDividerAtIndex: P0): R;
     isSubviewCollapsed<R = boolean, P0 = unknown>(_isSubviewCollapsed: P0): R;
     adjustSubviews<R = void>(): R;
-    _setFrameOrAlignmentRect_ofArrangedView<R = void, P0 = cocoa.CGRect, P1 = unknown>(__setFrameOrAlignmentRect: P0, _ofArrangedView: P1): R;
-    _frameOrAlignmentRectOfArrangedView<R = cocoa.CGRect, P0 = unknown>(__frameOrAlignmentRectOfArrangedView: P0): R;
+    _setFrameOrAlignmentRect_ofArrangedView<R = void, P0 = CGRect, P1 = unknown>(__setFrameOrAlignmentRect: P0, _ofArrangedView: P1): R;
+    _frameOrAlignmentRectOfArrangedView<R = CGRect, P0 = unknown>(__frameOrAlignmentRectOfArrangedView: P0): R;
     _arrangedViewsOrDividersHaveChangedSinceAdjustment<R = boolean>(): R;
     _setArrangedViewsAreAdjusted<R = void, P0 = boolean>(__setArrangedViewsAreAdjusted: P0): R;
     instantiateWithObjectInstantiator<R = void, P0 = unknown>(_instantiateWithObjectInstantiator: P0): R;
@@ -130,11 +130,11 @@ declare namespace cocoa {
     _hasHidableDividerAtLogicalIndex<R = boolean, P0 = number>(__hasHidableDividerAtLogicalIndex: P0): R;
     _dividerIsHiddenAtLogicalIndex<R = boolean, P0 = number>(__dividerIsHiddenAtLogicalIndex: P0): R;
     setDividerColor<R = void, P0 = unknown>(_setDividerColor: P0): R;
-    drawDividerInRect<R = void, P0 = cocoa.CGRect>(_drawDividerInRect: P0): R;
-    _drawDividerDimpleInRect_indicatorOnly<R = void, P0 = cocoa.CGRect, P1 = boolean>(__drawDividerDimpleInRect: P0, _indicatorOnly: P1): R;
-    _currentStateKey<R = cocoa.__CFString>(): R;
-    _currentVerticalKey<R = cocoa.__CFString>(): R;
-    _currentDividerDimpleVariant<R = cocoa.__CFString>(): R;
+    drawDividerInRect<R = void, P0 = CGRect>(_drawDividerInRect: P0): R;
+    _drawDividerDimpleInRect_indicatorOnly<R = void, P0 = CGRect, P1 = boolean>(__drawDividerDimpleInRect: P0, _indicatorOnly: P1): R;
+    _currentStateKey<R = __CFString>(): R;
+    _currentVerticalKey<R = __CFString>(): R;
+    _currentDividerDimpleVariant<R = __CFString>(): R;
     _isInTexturedWindow<R = boolean>(): R;
     orientation<R = number>(): R;
     _initVariables<R = void>(): R;
@@ -151,7 +151,7 @@ declare namespace cocoa {
     _willAddOverlayView<R = void, P0 = unknown>(__willAddOverlayView: P0): R;
     _overlayArrangedView<R = void, P0 = unknown>(__overlayArrangedView: P0): R;
     _uncollapseAndOverlayArrangedView<R = void, P0 = unknown>(__uncollapseAndOverlayArrangedView: P0): R;
-    _fakeCollapse_arrangedView_canOverlay_withHandler<R = void, P0 = boolean, P1 = unknown, P2 = boolean, P3 = cocoa.CDUnknownBlockType>(__fakeCollapse: P0, _arrangedView: P1, _canOverlay: P2, _withHandler: P3): R;
+    _fakeCollapse_arrangedView_canOverlay_withHandler<R = void, P0 = boolean, P1 = unknown, P2 = boolean, P3 = CDUnknownBlockType>(__fakeCollapse: P0, _arrangedView: P1, _canOverlay: P2, _withHandler: P3): R;
     _uncollapseArrangedView_overlayIfNecessary<R = boolean, P0 = unknown, P1 = boolean>(__uncollapseArrangedView: P0, _overlayIfNecessary: P1): R;
     _testingForOverlays<R = boolean>(): R;
     _setInTransientSpringLoad<R = void, P0 = boolean>(__setInTransientSpringLoad: P0): R;
@@ -167,7 +167,7 @@ declare namespace cocoa {
     _autosaveSubviewLayoutIfNecessary<R = void>(): R;
     _autosaveArrangedViewLayoutIfNecessary<R = void>(): R;
     _arrangedViewLayoutDescriptions<R = unknown>(): R;
-    _walkLayoutDescriptionArray_withFrameHandler<R = boolean, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(__walkLayoutDescriptionArray: P0, _withFrameHandler: P1): R;
+    _walkLayoutDescriptionArray_withFrameHandler<R = boolean, P0 = unknown, P1 = CDUnknownBlockType>(__walkLayoutDescriptionArray: P0, _withFrameHandler: P1): R;
     _isArrangedViewAutoCollapsed<R = boolean, P0 = unknown>(__isArrangedViewAutoCollapsed: P0): R;
     _setArrangedView_isAutocollapsed<R = void, P0 = unknown, P1 = boolean>(__setArrangedView: P0, _isAutocollapsed: P1): R;
     _animatedAutoCollapseArrangedView<R = void, P0 = unknown>(__animatedAutoCollapseArrangedView: P0): R;
@@ -192,16 +192,16 @@ declare namespace cocoa {
     accessibilityIsSplittersAttributeSettable<R = boolean>(): R;
     accessibilitySplittersAttribute<R = unknown>(): R;
     dividerThickness<R = number>(): R;
-    dividerColor<R = cocoa.NSColor>(): R;
-    delegate<R = cocoa.NSSplitViewDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSSplitViewDelegate>(_v: P0): R;
-    autosaveName<R = cocoa.NSString>(): R;
-    setAutosaveName<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    dividerColor<R = NSColor>(): R;
+    delegate<R = NSSplitViewDelegate>(): R;
+    setDelegate<R = void, P0 = NSSplitViewDelegate>(_v: P0): R;
+    autosaveName<R = NSString>(): R;
+    setAutosaveName<R = void, P0 = NSString>(_v: P0): R;
     dividerStyle<R = number>(): R;
     setDividerStyle<R = void, P0 = number>(_v: P0): R;
     vertical<R = boolean>(): R;
     setVertical<R = void, P0 = boolean>(_v: P0): R;
-    arrangedSubviews<R = cocoa.NSArray>(): R;
+    arrangedSubviews<R = NSArray>(): R;
     arrangesAllSubviews<R = boolean>(): R;
     setArrangesAllSubviews<R = void, P0 = boolean>(_v: P0): R;
     _canOverlayArrangedViews<R = boolean>(): R;
@@ -209,17 +209,17 @@ declare namespace cocoa {
     setSpringLoaded<R = void, P0 = boolean>(_v: P0): R;
     _animatesAutocollapses<R = boolean>(): R;
     set_animatesAutocollapses<R = void, P0 = boolean>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
     _transientBehavior<R = number>(): R;
     _registeredTransientBehavior<R = number>(): R;
     set_registeredTransientBehavior<R = void, P0 = number>(_v: P0): R;
-    description<R = cocoa.NSString>(): R;
+    description<R = NSString>(): R;
     detached<R = boolean>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSSplitView<T = any> extends cocoa.classes.NSView, cocoa.classes._NSTransientUIElementProtocol {
+    export interface NSSplitView<T = any> extends NSView, _NSTransientUIElementProtocol {
       alloc<R = NSSplitView>(): R;
       new: <R = NSSplitView>() => R;
       _autosaveDefaultsKeyForName<R = unknown, P0 = unknown>(__autosaveDefaultsKeyForName: P0): R;

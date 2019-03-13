@@ -1,14 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSLibraryObjectProtocol<T = any> extends cocoa.NSObjectProtocol {
-    document<R = cocoa.MSDocumentData>(): R;
-    libraryID<R = cocoa.NSString>(): R;
-    name<R = cocoa.NSString>(): R;
+  export interface MSLibraryObjectProtocol<T = any> extends NSObjectProtocol {
+    document<R = MSDocumentData>(): R;
+    libraryID<R = NSString>(): R;
+    name<R = NSString>(): R;
   }
   namespace classes {
-    export interface MSLibraryObjectProtocol<T = any> extends cocoa.classes.NSObjectProtocol {  }
+    export interface MSLibraryObjectProtocol<T = any> extends NSObjectProtocol {  }
   }
 }
-
-declare const MSLibraryObjectProtocol: cocoa.classes.MSLibraryObjectProtocol;

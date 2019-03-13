@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSIBObjectData<T = any> extends cocoa.NSObject, cocoa.NSCodingProtocol {
+  export interface NSIBObjectData<T = any> extends NSObject, NSCodingProtocol {
     _removeEarlyDecodingObjectConnectionsFromConnections<R = void, P0 = unknown>(__removeEarlyDecodingObjectConnectionsFromConnections: P0): R;
     _addEarlyDecodingObjectsFromObjectList_toConnections<R = void, P0 = unknown, P1 = unknown>(__addEarlyDecodingObjectsFromObjectList: P0, _toConnections: P1): R;
     nibInstantiateWithOwner_options_topLevelObjects<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(_nibInstantiateWithOwner: P0, _options: P1, _topLevelObjects: P2): R;
@@ -34,7 +34,7 @@ declare namespace cocoa {
     _encodeObjectValuedMapTable_withCoder<R = void, P0 = unknown, P1 = unknown>(__encodeObjectValuedMapTable: P0, _withCoder: P1): R;
   }
   namespace classes {
-    export interface NSIBObjectData<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCodingProtocol {
+    export interface NSIBObjectData<T = any> extends NSObject, NSCodingProtocol {
       alloc<R = NSIBObjectData>(): R;
       new: <R = NSIBObjectData>() => R;
       initialize<R = void>(): R;

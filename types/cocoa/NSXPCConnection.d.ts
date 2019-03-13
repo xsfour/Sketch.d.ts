@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXPCConnection<T = any> extends cocoa.NSObject, cocoa.NSXPCProxyCreatingProtocol {
+  export interface NSXPCConnection<T = any> extends NSObject, NSXPCProxyCreatingProtocol {
     _decodeProgressMessageWithData_flags<R = void, P0 = unknown, P1 = number>(__decodeProgressMessageWithData: P0, _flags: P1): R;
     _resumeProgress<R = void, P0 = number>(__resumeProgress: P0): R;
     _pauseProgress<R = void, P0 = number>(__pauseProgress: P0): R;
@@ -13,8 +13,8 @@ declare namespace cocoa {
     _setUUID<R = void, P0 = unknown>(__setUUID: P0): R;
     _removeImportedProxy<R = void, P0 = unknown>(__removeImportedProxy: P0): R;
     _addImportedProxy<R = void, P0 = unknown>(__addImportedProxy: P0): R;
-    remoteObjectProxyWithTimeout_errorHandler<R = unknown, P0 = number, P1 = cocoa.CDUnknownBlockType>(_remoteObjectProxyWithTimeout: P0, _errorHandler: P1): R;
-    remoteObjectProxyWithUserInfo_errorHandler<R = unknown, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(_remoteObjectProxyWithUserInfo: P0, _errorHandler: P1): R;
+    remoteObjectProxyWithTimeout_errorHandler<R = unknown, P0 = number, P1 = CDUnknownBlockType>(_remoteObjectProxyWithTimeout: P0, _errorHandler: P1): R;
+    remoteObjectProxyWithUserInfo_errorHandler<R = unknown, P0 = unknown, P1 = CDUnknownBlockType>(_remoteObjectProxyWithUserInfo: P0, _errorHandler: P1): R;
     _unboostingRemoteObjectProxy<R = unknown>(): R;
     _remoteObjectInterfaceClass<R = unknown>(): R;
     _addClassToDecodeCache<R = void, P0 = unknown>(__addClassToDecodeCache: P0): R;
@@ -35,8 +35,8 @@ declare namespace cocoa {
     auditToken<R = unknown>(): R;
     setOptions<R = void, P0 = number>(_setOptions: P0): R;
     _exportTable<R = unknown>(): R;
-    _additionalInvalidationHandler<R = cocoa.CDUnknownBlockType>(): R;
-    set_additionalInvalidationHandler<R = void, P0 = cocoa.CDUnknownBlockType>(_set_additionalInvalidationHandler: P0): R;
+    _additionalInvalidationHandler<R = CDUnknownBlockType>(): R;
+    set_additionalInvalidationHandler<R = void, P0 = CDUnknownBlockType>(_set_additionalInvalidationHandler: P0): R;
     _sendInvocation_orArguments_count_methodSignature_selector_withProxy<R = void, P0 = unknown, P1 = unknown, P2 = number, P3 = unknown, P4 = string, P5 = unknown>(__sendInvocation: P0, _orArguments: P1, _count: P2, _methodSignature: P3, _selector: P4, _withProxy: P5): R;
     _sendInvocation_withProxy<R = void, P0 = unknown, P1 = unknown>(__sendInvocation: P0, _withProxy: P1): R;
     _sendSelector_withProxy_arg1_arg2_arg3_arg4<R = void, P0 = string, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown, P5 = unknown>(__sendSelector: P0, _withProxy: P1, _arg1: P2, _arg2: P3, _arg3: P4, _arg4: P5): R;
@@ -45,7 +45,7 @@ declare namespace cocoa {
     _sendSelector_withProxy_arg1<R = void, P0 = string, P1 = unknown, P2 = unknown>(__sendSelector: P0, _withProxy: P1, _arg1: P2): R;
     _sendSelector_withProxy<R = void, P0 = string, P1 = unknown>(__sendSelector: P0, _withProxy: P1): R;
     _sendDesistForProxy<R = void, P0 = unknown>(__sendDesistForProxy: P0): R;
-    addBarrierBlock<R = void, P0 = cocoa.CDUnknownBlockType>(_addBarrierBlock: P0): R;
+    addBarrierBlock<R = void, P0 = CDUnknownBlockType>(_addBarrierBlock: P0): R;
     invalidate<R = void>(): R;
     stop<R = void>(): R;
     start<R = void>(): R;
@@ -61,26 +61,26 @@ declare namespace cocoa {
     _initWithPeerConnection_name_options<R = unknown, P0 = unknown, P1 = unknown, P2 = number>(__initWithPeerConnection: P0, _name: P1, _options: P2): R;
     _decodeAndInvokeMessageWithEvent_flags<R = void, P0 = unknown, P1 = number>(__decodeAndInvokeMessageWithEvent: P0, _flags: P1): R;
     _decodeAndInvokeReplyBlockWithEvent_sequence_replyInfo<R = void, P0 = unknown, P1 = number, P2 = unknown>(__decodeAndInvokeReplyBlockWithEvent: P0, _sequence: P1, _replyInfo: P2): R;
-    remoteObjectInterface<R = cocoa.NSXPCInterface>(): R;
-    setRemoteObjectInterface<R = void, P0 = cocoa.NSXPCInterface>(_v: P0): R;
+    remoteObjectInterface<R = NSXPCInterface>(): R;
+    setRemoteObjectInterface<R = void, P0 = NSXPCInterface>(_v: P0): R;
     effectiveGroupIdentifier<R = number>(): R;
     effectiveUserIdentifier<R = number>(): R;
     processIdentifier<R = number>(): R;
     auditSessionIdentifier<R = number>(): R;
     remoteObjectProxy<R = unknown>(): R;
-    exportedInterface<R = cocoa.NSXPCInterface>(): R;
-    setExportedInterface<R = void, P0 = cocoa.NSXPCInterface>(_v: P0): R;
+    exportedInterface<R = NSXPCInterface>(): R;
+    setExportedInterface<R = void, P0 = NSXPCInterface>(_v: P0): R;
     exportedObject<R = unknown>(): R;
     setExportedObject<R = void, P0 = unknown>(_v: P0): R;
-    endpoint<R = cocoa.NSXPCListenerEndpoint>(): R;
-    serviceName<R = cocoa.NSString>(): R;
-    invalidationHandler<R = cocoa.CDUnknownBlockType>(): R;
-    setInvalidationHandler<R = void, P0 = cocoa.CDUnknownBlockType>(_v: P0): R;
-    interruptionHandler<R = cocoa.CDUnknownBlockType>(): R;
-    setInterruptionHandler<R = void, P0 = cocoa.CDUnknownBlockType>(_v: P0): R;
+    endpoint<R = NSXPCListenerEndpoint>(): R;
+    serviceName<R = NSString>(): R;
+    invalidationHandler<R = CDUnknownBlockType>(): R;
+    setInvalidationHandler<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
+    interruptionHandler<R = CDUnknownBlockType>(): R;
+    setInterruptionHandler<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
   }
   namespace classes {
-    export interface NSXPCConnection<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSXPCProxyCreatingProtocol {
+    export interface NSXPCConnection<T = any> extends NSObject, NSXPCProxyCreatingProtocol {
       alloc<R = NSXPCConnection>(): R;
       new: <R = NSXPCConnection>() => R;
       endTransaction<R = void>(): R;

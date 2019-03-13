@@ -1,17 +1,17 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAccessibilityCustomChooserSearchPredicate<T = any> extends cocoa.NSObject {
+  export interface NSAccessibilityCustomChooserSearchPredicate<T = any> extends NSObject {
     dealloc<R = void>(): R;
-    filterText<R = cocoa.NSString>(): R;
-    setFilterText<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    filterText<R = NSString>(): R;
+    setFilterText<R = void, P0 = NSString>(_v: P0): R;
     searchDirection<R = number>(): R;
     setSearchDirection<R = void, P0 = number>(_v: P0): R;
-    currentItem<R = cocoa.NSAccessibilityCustomChooserItemResult>(): R;
-    setCurrentItem<R = void, P0 = cocoa.NSAccessibilityCustomChooserItemResult>(_v: P0): R;
+    currentItem<R = NSAccessibilityCustomChooserItemResult>(): R;
+    setCurrentItem<R = void, P0 = NSAccessibilityCustomChooserItemResult>(_v: P0): R;
   }
   namespace classes {
-    export interface NSAccessibilityCustomChooserSearchPredicate<T = any> extends cocoa.classes.NSObject {
+    export interface NSAccessibilityCustomChooserSearchPredicate<T = any> extends NSObject {
       alloc<R = NSAccessibilityCustomChooserSearchPredicate>(): R;
       new: <R = NSAccessibilityCustomChooserSearchPredicate>() => R;
     }

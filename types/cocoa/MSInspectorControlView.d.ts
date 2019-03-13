@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInspectorControlView<T = any> extends cocoa.NSView {}
+  export interface MSInspectorControlView<T = any> extends NSView {}
   namespace classes {
-    export interface MSInspectorControlView<T = any> extends cocoa.classes.NSView {
+    export interface MSInspectorControlView<T = any> extends NSView {
       alloc<R = MSInspectorControlView>(): R;
       new: <R = MSInspectorControlView>() => R;
     }

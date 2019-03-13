@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLayoutYAxisAnchor<T = any> extends cocoa.NSLayoutAnchor {
+  export interface NSLayoutYAxisAnchor<T = any> extends NSLayoutAnchor {
     offsetBy<R = unknown, P0 = number>(_offsetBy: P0): R;
     offsetByDimension<R = unknown, P0 = unknown>(_offsetByDimension: P0): R;
     offsetByDimension_times_plus<R = unknown, P0 = unknown, P1 = number, P2 = number>(_offsetByDimension: P0, _times: P1, _plus: P2): R;
@@ -13,7 +13,7 @@ declare namespace cocoa {
     anchorWithOffsetToAnchor<R = unknown, P0 = unknown>(_anchorWithOffsetToAnchor: P0): R;
   }
   namespace classes {
-    export interface NSLayoutYAxisAnchor<T = any> extends cocoa.classes.NSLayoutAnchor {
+    export interface NSLayoutYAxisAnchor<T = any> extends NSLayoutAnchor {
       alloc<R = NSLayoutYAxisAnchor>(): R;
       new: <R = NSLayoutYAxisAnchor>() => R;
     }

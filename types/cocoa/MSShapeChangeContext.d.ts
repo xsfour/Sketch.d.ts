@@ -1,22 +1,22 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSShapeChangeContext<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol {
+  export interface MSShapeChangeContext<T = any> extends NSObject, NSCopyingProtocol {
     cxx_destruct<R = void>(): R;
     description<R = unknown>(): R;
-    rectOfSelectedPoints<R = cocoa.CGRect>(): R;
+    rectOfSelectedPoints<R = CGRect>(): R;
     selectedHandlesSortedByAxis<R = unknown, P0 = number>(_selectedHandlesSortedByAxis: P0): R;
-    setLocation_ofHandleAtIndexPath<R = void, P0 = cocoa.CGPoint, P1 = unknown>(_setLocation: P0, _ofHandleAtIndexPath: P1): R;
-    locationOfHandleAtIndexPath_inCoordinateSpace<R = cocoa.CGPoint, P0 = unknown, P1 = unknown>(_locationOfHandleAtIndexPath: P0, _inCoordinateSpace: P1): R;
+    setLocation_ofHandleAtIndexPath<R = void, P0 = CGPoint, P1 = unknown>(_setLocation: P0, _ofHandleAtIndexPath: P1): R;
+    locationOfHandleAtIndexPath_inCoordinateSpace<R = CGPoint, P0 = unknown, P1 = unknown>(_locationOfHandleAtIndexPath: P0, _inCoordinateSpace: P1): R;
     curvePointAtIndexPath<R = unknown, P0 = unknown>(_curvePointAtIndexPath: P0): R;
-    enumerateCurvePointsUsingBlock<R = void, P0 = cocoa.CDUnknownBlockType>(_enumerateCurvePointsUsingBlock: P0): R;
+    enumerateCurvePointsUsingBlock<R = void, P0 = CDUnknownBlockType>(_enumerateCurvePointsUsingBlock: P0): R;
     initWithLayers_handleIndexPaths<R = unknown, P0 = unknown, P1 = unknown>(_initWithLayers: P0, _handleIndexPaths: P1): R;
-    handleIndexPaths<R = cocoa.NSArray>(): R;
-    layers<R = cocoa.NSArray>(): R;
-    orderedHandleIndexPaths<R = cocoa.NSArray>(): R;
+    handleIndexPaths<R = NSArray>(): R;
+    layers<R = NSArray>(): R;
+    orderedHandleIndexPaths<R = NSArray>(): R;
   }
   namespace classes {
-    export interface MSShapeChangeContext<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol {
+    export interface MSShapeChangeContext<T = any> extends NSObject, NSCopyingProtocol {
       alloc<R = MSShapeChangeContext>(): R;
       new: <R = MSShapeChangeContext>() => R;
     }

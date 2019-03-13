@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSHashTable<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol, cocoa.NSSecureCodingProtocol, cocoa.NSFastEnumerationProtocol {
-    mutableCopyWithZone<R = unknown, P0 = cocoa._NSZone>(_mutableCopyWithZone: P0): R;
+  export interface NSHashTable<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol, NSFastEnumerationProtocol {
+    mutableCopyWithZone<R = unknown, P0 = _NSZone>(_mutableCopyWithZone: P0): R;
     mutableSet<R = unknown>(): R;
     minusHashTable<R = void, P0 = unknown>(_minusHashTable: P0): R;
     unionHashTable<R = void, P0 = unknown>(_unionHashTable: P0): R;
@@ -28,20 +28,20 @@ declare namespace cocoa {
     description<R = unknown>(): R;
     initWithOptions_capacity<R = unknown, P0 = number, P1 = number>(_initWithOptions: P0, _capacity: P1): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
-    setRepresentation<R = cocoa.NSSet>(): R;
+    setRepresentation<R = NSSet>(): R;
     anyObject<R = unknown>(): R;
-    pointerFunctions<R = cocoa.NSPointerFunctions>(): R;
-    allObjects<R = cocoa.NSArray>(): R;
+    pointerFunctions<R = NSPointerFunctions>(): R;
+    allObjects<R = NSArray>(): R;
     count<R = number>(): R;
   }
   namespace classes {
-    export interface NSHashTable<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol, cocoa.classes.NSSecureCodingProtocol, cocoa.classes.NSFastEnumerationProtocol {
+    export interface NSHashTable<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol, NSFastEnumerationProtocol {
       alloc<R = NSHashTable>(): R;
       new: <R = NSHashTable>() => R;
       hashTableWithOptions<R = unknown, P0 = number>(_hashTableWithOptions: P0): R;
       weakObjectsHashTable<R = unknown>(): R;
       hashTableWithWeakObjects<R = unknown>(): R;
-      allocWithZone<R = unknown, P0 = cocoa._NSZone>(_allocWithZone: P0): R;
+      allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
       alloc<R = unknown>(): R;
     }
   }

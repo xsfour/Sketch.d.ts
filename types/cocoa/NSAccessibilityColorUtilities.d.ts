@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAccessibilityColorUtilities<T = any> extends cocoa.NSObject {}
+  export interface NSAccessibilityColorUtilities<T = any> extends NSObject {}
   namespace classes {
-    export interface NSAccessibilityColorUtilities<T = any> extends cocoa.classes.NSObject {
+    export interface NSAccessibilityColorUtilities<T = any> extends NSObject {
       alloc<R = NSAccessibilityColorUtilities>(): R;
       new: <R = NSAccessibilityColorUtilities>() => R;
       hexValueForColor<R = unknown, P0 = unknown>(_hexValueForColor: P0): R;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSKeyedPortCoder<T = any> extends cocoa.NSConcretePortCoder {
+  export interface NSKeyedPortCoder<T = any> extends NSConcretePortCoder {
     decodeReturnValueOfInvocation_forKey<R = void, P0 = unknown, P1 = unknown>(_decodeReturnValueOfInvocation: P0, _forKey: P1): R;
     encodeReturnValueOfInvocation_forKey<R = void, P0 = unknown, P1 = unknown>(_encodeReturnValueOfInvocation: P0, _forKey: P1): R;
     decodeInvocation<R = unknown>(): R;
@@ -32,7 +32,7 @@ declare namespace cocoa {
     invalidate<R = void>(): R;
   }
   namespace classes {
-    export interface NSKeyedPortCoder<T = any> extends cocoa.classes.NSConcretePortCoder {
+    export interface NSKeyedPortCoder<T = any> extends NSConcretePortCoder {
       alloc<R = NSKeyedPortCoder>(): R;
       new: <R = NSKeyedPortCoder>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPortNameServer<T = any> extends cocoa.NSObject {
+  export interface NSPortNameServer<T = any> extends NSObject {
     portForName_onHost<R = unknown, P0 = unknown, P1 = unknown>(_portForName: P0, _onHost: P1): R;
     registerPort_forName<R = boolean, P0 = unknown, P1 = unknown>(_registerPort: P0, _forName: P1): R;
     removePortForName<R = boolean, P0 = unknown>(_removePortForName: P0): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     portForName<R = unknown, P0 = unknown>(_portForName: P0): R;
   }
   namespace classes {
-    export interface NSPortNameServer<T = any> extends cocoa.classes.NSObject {
+    export interface NSPortNameServer<T = any> extends NSObject {
       alloc<R = NSPortNameServer>(): R;
       new: <R = NSPortNameServer>() => R;
       defaultPortNameServer<R = unknown>(): R;

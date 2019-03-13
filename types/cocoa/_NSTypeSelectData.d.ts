@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSTypeSelectData<T = any> extends cocoa.NSObject {
+  export interface _NSTypeSelectData<T = any> extends NSObject {
     foundMatch<R = boolean>(): R;
     setFoundMatch<R = void, P0 = boolean>(_setFoundMatch: P0): R;
     _typeSelectEndCurrentSearch<R = void>(): R;
@@ -13,7 +13,7 @@ declare namespace cocoa {
     setCurrentSearchRow<R = void, P0 = number>(_setCurrentSearchRow: P0): R;
     currentSearchRow<R = number>(): R;
     nextSearchStringForNewValue<R = unknown, P0 = unknown>(_nextSearchStringForNewValue: P0): R;
-    setCurrentSearchRect<R = void, P0 = cocoa.CGRect>(_setCurrentSearchRect: P0): R;
+    setCurrentSearchRect<R = void, P0 = CGRect>(_setCurrentSearchRect: P0): R;
     _orderFrontTypeSelectPanel<R = void>(): R;
     setCurrentSearch<R = void, P0 = unknown>(_setCurrentSearch: P0): R;
     currentSearch<R = unknown>(): R;
@@ -23,7 +23,7 @@ declare namespace cocoa {
     _resetCurrentSearchRow<R = void>(): R;
   }
   namespace classes {
-    export interface _NSTypeSelectData<T = any> extends cocoa.classes.NSObject {
+    export interface _NSTypeSelectData<T = any> extends NSObject {
       alloc<R = _NSTypeSelectData>(): R;
       new: <R = _NSTypeSelectData>() => R;
       ignoreTypos<R = boolean>(): R;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarCustomizableConfiguration<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol {
+  export interface NSTouchBarCustomizableConfiguration<T = any> extends NSObject, NSCopyingProtocol {
     debugDescription<R = unknown>(): R;
     description<R = unknown>(): R;
     _resetCustomization<R = void>(): R;
@@ -11,20 +11,20 @@ declare namespace cocoa {
     _registerForCustomizationChangesWithIdentifier<R = void, P0 = unknown>(__registerForCustomizationChangesWithIdentifier: P0): R;
     dealloc<R = void>(): R;
     initWithIdentifier<R = unknown, P0 = unknown>(_initWithIdentifier: P0): R;
-    presentedItemIdentifiers<R = cocoa.NSArray>(): R;
-    _customizedItemIdentifiers<R = cocoa.NSArray>(): R;
-    set_customizedItemIdentifiers<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    requiredItemIdentifiers<R = cocoa.NSArray>(): R;
-    setRequiredItemIdentifiers<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    allowedItemIdentifiers<R = cocoa.NSArray>(): R;
-    setAllowedItemIdentifiers<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    defaultItemIdentifiers<R = cocoa.NSArray>(): R;
-    setDefaultItemIdentifiers<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    identifier<R = cocoa.NSString>(): R;
-    setIdentifier<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    presentedItemIdentifiers<R = NSArray>(): R;
+    _customizedItemIdentifiers<R = NSArray>(): R;
+    set_customizedItemIdentifiers<R = void, P0 = NSArray>(_v: P0): R;
+    requiredItemIdentifiers<R = NSArray>(): R;
+    setRequiredItemIdentifiers<R = void, P0 = NSArray>(_v: P0): R;
+    allowedItemIdentifiers<R = NSArray>(): R;
+    setAllowedItemIdentifiers<R = void, P0 = NSArray>(_v: P0): R;
+    defaultItemIdentifiers<R = NSArray>(): R;
+    setDefaultItemIdentifiers<R = void, P0 = NSArray>(_v: P0): R;
+    identifier<R = NSString>(): R;
+    setIdentifier<R = void, P0 = NSString>(_v: P0): R;
   }
   namespace classes {
-    export interface NSTouchBarCustomizableConfiguration<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol {
+    export interface NSTouchBarCustomizableConfiguration<T = any> extends NSObject, NSCopyingProtocol {
       alloc<R = NSTouchBarCustomizableConfiguration>(): R;
       new: <R = NSTouchBarCustomizableConfiguration>() => R;
       keyPathsForValuesAffectingPresentedItemIdentifiers<R = unknown>(): R;

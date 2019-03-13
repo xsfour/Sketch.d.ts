@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDocumentControllerMoreIVars<T = any> extends cocoa.NSObject {}
+  export interface NSDocumentControllerMoreIVars<T = any> extends NSObject {}
   namespace classes {
-    export interface NSDocumentControllerMoreIVars<T = any> extends cocoa.classes.NSObject {
+    export interface NSDocumentControllerMoreIVars<T = any> extends NSObject {
       alloc<R = NSDocumentControllerMoreIVars>(): R;
       new: <R = NSDocumentControllerMoreIVars>() => R;
     }

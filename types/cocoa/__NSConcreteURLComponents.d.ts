@@ -1,19 +1,19 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface __NSConcreteURLComponents<T = any> extends cocoa.NSURLComponents, cocoa.NSCopyingProtocol {
+  export interface __NSConcreteURLComponents<T = any> extends NSURLComponents, NSCopyingProtocol {
     setPercentEncodedQueryItems<R = void, P0 = unknown>(_setPercentEncodedQueryItems: P0): R;
     percentEncodedQueryItems<R = unknown>(): R;
     setQueryItems<R = void, P0 = unknown>(_setQueryItems: P0): R;
     queryItems<R = unknown>(): R;
-    rangeOfFragment<R = cocoa._NSRange>(): R;
-    rangeOfQuery<R = cocoa._NSRange>(): R;
-    rangeOfPath<R = cocoa._NSRange>(): R;
-    rangeOfPort<R = cocoa._NSRange>(): R;
-    rangeOfHost<R = cocoa._NSRange>(): R;
-    rangeOfPassword<R = cocoa._NSRange>(): R;
-    rangeOfUser<R = cocoa._NSRange>(): R;
-    rangeOfScheme<R = cocoa._NSRange>(): R;
+    rangeOfFragment<R = _NSRange>(): R;
+    rangeOfQuery<R = _NSRange>(): R;
+    rangeOfPath<R = _NSRange>(): R;
+    rangeOfPort<R = _NSRange>(): R;
+    rangeOfHost<R = _NSRange>(): R;
+    rangeOfPassword<R = _NSRange>(): R;
+    rangeOfUser<R = _NSRange>(): R;
+    rangeOfScheme<R = _NSRange>(): R;
     setPercentEncodedFragment<R = void, P0 = unknown>(_setPercentEncodedFragment: P0): R;
     percentEncodedFragment<R = unknown>(): R;
     setPercentEncodedQuery<R = void, P0 = unknown>(_setPercentEncodedQuery: P0): R;
@@ -47,10 +47,10 @@ declare namespace cocoa {
     description<R = unknown>(): R;
     dealloc<R = void>(): R;
     hash<R = number>(): R;
-    __cfComponents<R = cocoa.__CFURLComponents>(): R;
+    __cfComponents<R = __CFURLComponents>(): R;
   }
   namespace classes {
-    export interface __NSConcreteURLComponents<T = any> extends cocoa.classes.NSURLComponents, cocoa.classes.NSCopyingProtocol {
+    export interface __NSConcreteURLComponents<T = any> extends NSURLComponents, NSCopyingProtocol {
       alloc<R = __NSConcreteURLComponents>(): R;
       new: <R = __NSConcreteURLComponents>() => R;
       automaticallyNotifiesObserversForKey<R = boolean, P0 = unknown>(_automaticallyNotifiesObserversForKey: P0): R;

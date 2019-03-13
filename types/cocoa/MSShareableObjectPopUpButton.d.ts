@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSShareableObjectPopUpButton<T = any> extends cocoa.NSPopUpButton, cocoa.NSMenuDelegateProtocol {
+  export interface MSShareableObjectPopUpButton<T = any> extends NSPopUpButton, NSMenuDelegateProtocol {
     cxx_destruct<R = void>(): R;
     refreshIfNecessary<R = void, P0 = unknown>(_refreshIfNecessary: P0): R;
     libraryControllerDidChange<R = void, P0 = unknown>(_libraryControllerDidChange: P0): R;
@@ -26,23 +26,23 @@ declare namespace cocoa {
     symbolMenuItemSelectorDictionary<R = unknown>(): R;
     needsRebuildMenu<R = boolean>(): R;
     setNeedsRebuildMenu<R = void, P0 = boolean>(_v: P0): R;
-    objectLibraryMapping<R = cocoa.NSArray>(): R;
-    setObjectLibraryMapping<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    selectedObjectReference<R = cocoa.MSShareableObjectReference>(): R;
-    setSelectedObjectReference<R = void, P0 = cocoa.MSShareableObjectReference>(_v: P0): R;
-    layers<R = cocoa.NSArray>(): R;
-    setLayers<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    menuBuilder<R = cocoa.MSForeignObjectMenuBuilder>(): R;
-    setMenuBuilder<R = void, P0 = cocoa.MSForeignObjectMenuBuilder>(_v: P0): R;
-    menuItemSelectorDictionary<R = cocoa.NSDictionary>(): R;
+    objectLibraryMapping<R = NSArray>(): R;
+    setObjectLibraryMapping<R = void, P0 = NSArray>(_v: P0): R;
+    selectedObjectReference<R = MSShareableObjectReference>(): R;
+    setSelectedObjectReference<R = void, P0 = MSShareableObjectReference>(_v: P0): R;
+    layers<R = NSArray>(): R;
+    setLayers<R = void, P0 = NSArray>(_v: P0): R;
+    menuBuilder<R = MSForeignObjectMenuBuilder>(): R;
+    setMenuBuilder<R = void, P0 = MSForeignObjectMenuBuilder>(_v: P0): R;
+    menuItemSelectorDictionary<R = NSDictionary>(): R;
     objectType<R = number>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSShareableObjectPopUpButton<T = any> extends cocoa.classes.NSPopUpButton, cocoa.classes.NSMenuDelegateProtocol {
+    export interface MSShareableObjectPopUpButton<T = any> extends NSPopUpButton, NSMenuDelegateProtocol {
       alloc<R = MSShareableObjectPopUpButton>(): R;
       new: <R = MSShareableObjectPopUpButton>() => R;
     }

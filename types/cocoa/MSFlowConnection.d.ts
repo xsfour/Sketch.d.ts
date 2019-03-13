@@ -1,16 +1,16 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFlowConnection<T = any> extends cocoa._MSFlowConnection {
+  export interface MSFlowConnection<T = any> extends _MSFlowConnection {
     bezierPathForRenderingFlowAtZoomLevel<R = unknown, P0 = number>(_bezierPathForRenderingFlowAtZoomLevel: P0): R;
     isValidFlowConnection<R = boolean>(): R;
-    destinationArtboard<R = cocoa.MSArtboardGroup>(): R;
-    sendingLayer<R = cocoa.MSLayer>(): R;
+    destinationArtboard<R = MSArtboardGroup>(): R;
+    sendingLayer<R = MSLayer>(): R;
     isBackAction<R = boolean>(): R;
     setIsBackAction<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface MSFlowConnection<T = any> extends cocoa.classes._MSFlowConnection {
+    export interface MSFlowConnection<T = any> extends _MSFlowConnection {
       alloc<R = MSFlowConnection>(): R;
       new: <R = MSFlowConnection>() => R;
       defaultAnimationType<R = number>(): R;

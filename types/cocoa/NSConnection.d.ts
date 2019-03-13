@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSConnection<T = any> extends cocoa.NSObject {
+  export interface NSConnection<T = any> extends NSObject {
     runInNewThread<R = void>(): R;
     run<R = void>(): R;
     removeRunLoop<R = void, P0 = unknown>(_removeRunLoop: P0): R;
@@ -53,17 +53,17 @@ declare namespace cocoa {
     initWithReceivePort_sendPort<R = unknown, P0 = unknown, P1 = unknown>(_initWithReceivePort: P0, _sendPort: P1): R;
     _portInvalidated<R = void, P0 = unknown>(__portInvalidated: P0): R;
     multipleThreadsEnabled<R = boolean>(): R;
-    statistics<R = cocoa.NSDictionary>(): R;
-    localObjects<R = cocoa.NSArray>(): R;
-    remoteObjects<R = cocoa.NSArray>(): R;
+    statistics<R = NSDictionary>(): R;
+    localObjects<R = NSArray>(): R;
+    remoteObjects<R = NSArray>(): R;
     rootObject<R = unknown>(): R;
     setRootObject<R = void, P0 = unknown>(_v: P0): R;
-    rootProxy<R = cocoa.NSDistantObject>(): R;
-    sendPort<R = cocoa.NSPort>(): R;
-    receivePort<R = cocoa.NSPort>(): R;
-    requestModes<R = cocoa.NSArray>(): R;
-    delegate<R = cocoa.NSConnectionDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSConnectionDelegate>(_v: P0): R;
+    rootProxy<R = NSDistantObject>(): R;
+    sendPort<R = NSPort>(): R;
+    receivePort<R = NSPort>(): R;
+    requestModes<R = NSArray>(): R;
+    delegate<R = NSConnectionDelegate>(): R;
+    setDelegate<R = void, P0 = NSConnectionDelegate>(_v: P0): R;
     independentConversationQueueing<R = boolean>(): R;
     setIndependentConversationQueueing<R = void, P0 = boolean>(_v: P0): R;
     replyTimeout<R = number>(): R;
@@ -73,7 +73,7 @@ declare namespace cocoa {
     valid<R = boolean>(): R;
   }
   namespace classes {
-    export interface NSConnection<T = any> extends cocoa.classes.NSObject {
+    export interface NSConnection<T = any> extends NSObject {
       alloc<R = NSConnection>(): R;
       new: <R = NSConnection>() => R;
       _enableLogging<R = void, P0 = boolean>(__enableLogging: P0): R;

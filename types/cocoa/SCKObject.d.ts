@@ -3,7 +3,7 @@
 declare namespace cocoa {
   export interface SCKObject<T = any> {
     // + SCKObject(Representable):
-    localizedUpdatedTimeComponentsString<R = cocoa.NSString>(): R;
+    localizedUpdatedTimeComponentsString<R = NSString>(): R;
   }
   namespace classes {
     export interface SCKObject<T = any> {

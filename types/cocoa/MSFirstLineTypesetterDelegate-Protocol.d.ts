@@ -1,12 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFirstLineTypesetterDelegateProtocol<T = any> extends cocoa.NSObjectProtocol {
-    baselineAdjustmentForLayoutManager<R = number, P0 = cocoa.NSLayoutManager>(_baselineAdjustmentForLayoutManager: P0): R;
+  export interface MSFirstLineTypesetterDelegateProtocol<T = any> extends NSObjectProtocol {
+    baselineAdjustmentForLayoutManager<R = number, P0 = NSLayoutManager>(_baselineAdjustmentForLayoutManager: P0): R;
   }
   namespace classes {
-    export interface MSFirstLineTypesetterDelegateProtocol<T = any> extends cocoa.classes.NSObjectProtocol {  }
+    export interface MSFirstLineTypesetterDelegateProtocol<T = any> extends NSObjectProtocol {  }
   }
 }
-
-declare const MSFirstLineTypesetterDelegateProtocol: cocoa.classes.MSFirstLineTypesetterDelegateProtocol;

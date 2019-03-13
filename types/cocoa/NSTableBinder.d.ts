@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableBinder<T = any> extends cocoa.NSBinder {
+  export interface NSTableBinder<T = any> extends NSBinder {
     _visibleColumnIndexesForKeyPath<R = unknown, P0 = unknown>(__visibleColumnIndexesForKeyPath: P0): R;
     _visibleRowIndexesForObject<R = unknown, P0 = unknown>(__visibleRowIndexesForObject: P0): R;
-    _preparedContentRectForTableView<R = cocoa.CGRect, P0 = unknown>(__preparedContentRectForTableView: P0): R;
+    _preparedContentRectForTableView<R = CGRect, P0 = unknown>(__preparedContentRectForTableView: P0): R;
     _redisplayTableContentWithRowIndexes_columnIndexes<R = void, P0 = unknown, P1 = unknown>(__redisplayTableContentWithRowIndexes: P0, _columnIndexes: P1): R;
-    tableView_updateVisibleRowInformation<R = void, P0 = unknown, P1 = cocoa._NSRange>(_tableView: P0, _updateVisibleRowInformation: P1): R;
+    tableView_updateVisibleRowInformation<R = void, P0 = unknown, P1 = _NSRange>(_tableView: P0, _updateVisibleRowInformation: P1): R;
     tableView_didChangeToSelectedRowIndexes<R = void, P0 = unknown, P1 = unknown>(_tableView: P0, _didChangeToSelectedRowIndexes: P1): R;
     tableView_didChangeToSortDescriptors<R = void, P0 = unknown, P1 = unknown>(_tableView: P0, _didChangeToSortDescriptors: P1): R;
     tableView_willDisplayCell_forTableColumn_row<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = number>(_tableView: P0, _willDisplayCell: P1, _forTableColumn: P2, _row: P3): R;
@@ -21,7 +21,7 @@ declare namespace cocoa {
     _scrollSelectionToVisible<R = void>(): R;
   }
   namespace classes {
-    export interface NSTableBinder<T = any> extends cocoa.classes.NSBinder {
+    export interface NSTableBinder<T = any> extends NSBinder {
       alloc<R = NSTableBinder>(): R;
       new: <R = NSTableBinder>() => R;
       _editableBinderAtIndex_forTableView<R = unknown, P0 = number, P1 = unknown>(__editableBinderAtIndex: P0, _forTableView: P1): R;

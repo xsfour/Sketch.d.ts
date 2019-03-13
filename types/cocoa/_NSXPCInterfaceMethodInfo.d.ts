@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSXPCInterfaceMethodInfo<T = any> extends cocoa.NSObject {
+  export interface _NSXPCInterfaceMethodInfo<T = any> extends NSObject {
     dealloc<R = void>(): R;
     receivesProxyInReply<R = boolean>(): R;
     setReceivesProxyInReply<R = void, P0 = boolean>(_v: P0): R;
@@ -13,15 +13,15 @@ declare namespace cocoa {
     setVersion<R = void, P0 = number>(_v: P0): R;
     replyPosition<R = number>(): R;
     setReplyPosition<R = void, P0 = number>(_v: P0): R;
-    arguments<R = cocoa.NSArray>(): R;
-    setArguments<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    replyMethodSignature<R = cocoa.NSMethodSignature>(): R;
-    setReplyMethodSignature<R = void, P0 = cocoa.NSMethodSignature>(_v: P0): R;
-    replyArguments<R = cocoa.NSArray>(): R;
-    setReplyArguments<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    arguments<R = NSArray>(): R;
+    setArguments<R = void, P0 = NSArray>(_v: P0): R;
+    replyMethodSignature<R = NSMethodSignature>(): R;
+    setReplyMethodSignature<R = void, P0 = NSMethodSignature>(_v: P0): R;
+    replyArguments<R = NSArray>(): R;
+    setReplyArguments<R = void, P0 = NSArray>(_v: P0): R;
   }
   namespace classes {
-    export interface _NSXPCInterfaceMethodInfo<T = any> extends cocoa.classes.NSObject {
+    export interface _NSXPCInterfaceMethodInfo<T = any> extends NSObject {
       alloc<R = _NSXPCInterfaceMethodInfo>(): R;
       new: <R = _NSXPCInterfaceMethodInfo>() => R;
     }

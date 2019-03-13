@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPopoverTouchBarItem<T = any> extends cocoa.NSTouchBarItem, cocoa.NSGestureRecognizerDelegateProtocol, cocoa.NSTouchBarItemTypePopoverProtocol {
+  export interface NSPopoverTouchBarItem<T = any> extends NSTouchBarItem, NSGestureRecognizerDelegateProtocol, NSTouchBarItemTypePopoverProtocol {
     fingerBias<R = number>(): R;
     setCollapsedRepresentationChevronBehavior<R = void, P0 = number>(_setCollapsedRepresentationChevronBehavior: P0): R;
     collapsedRepresentationChevronBehavior<R = number>(): R;
@@ -25,25 +25,25 @@ declare namespace cocoa {
     isPresented<R = boolean>(): R;
     showsCloseButton<R = boolean>(): R;
     setShowsCloseButton<R = void, P0 = boolean>(_v: P0): R;
-    customizationLabel<R = cocoa.NSString>(): R;
-    setCustomizationLabel<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    pressAndHoldTouchBar<R = cocoa.NSTouchBar>(): R;
-    setPressAndHoldTouchBar<R = void, P0 = cocoa.NSTouchBar>(_v: P0): R;
-    popoverTouchBar<R = cocoa.NSTouchBar>(): R;
-    setPopoverTouchBar<R = void, P0 = cocoa.NSTouchBar>(_v: P0): R;
-    collapsedRepresentationLabel<R = cocoa.NSString>(): R;
-    setCollapsedRepresentationLabel<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    collapsedRepresentationImage<R = cocoa.NSImage>(): R;
-    setCollapsedRepresentationImage<R = void, P0 = cocoa.NSImage>(_v: P0): R;
-    collapsedRepresentation<R = cocoa.NSView>(): R;
-    setCollapsedRepresentation<R = void, P0 = cocoa.NSView>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    customizationLabel<R = NSString>(): R;
+    setCustomizationLabel<R = void, P0 = NSString>(_v: P0): R;
+    pressAndHoldTouchBar<R = NSTouchBar>(): R;
+    setPressAndHoldTouchBar<R = void, P0 = NSTouchBar>(_v: P0): R;
+    popoverTouchBar<R = NSTouchBar>(): R;
+    setPopoverTouchBar<R = void, P0 = NSTouchBar>(_v: P0): R;
+    collapsedRepresentationLabel<R = NSString>(): R;
+    setCollapsedRepresentationLabel<R = void, P0 = NSString>(_v: P0): R;
+    collapsedRepresentationImage<R = NSImage>(): R;
+    setCollapsedRepresentationImage<R = void, P0 = NSImage>(_v: P0): R;
+    collapsedRepresentation<R = NSView>(): R;
+    setCollapsedRepresentation<R = void, P0 = NSView>(_v: P0): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSPopoverTouchBarItem<T = any> extends cocoa.classes.NSTouchBarItem, cocoa.classes.NSGestureRecognizerDelegateProtocol, cocoa.classes.NSTouchBarItemTypePopoverProtocol {
+    export interface NSPopoverTouchBarItem<T = any> extends NSTouchBarItem, NSGestureRecognizerDelegateProtocol, NSTouchBarItemTypePopoverProtocol {
       alloc<R = NSPopoverTouchBarItem>(): R;
       new: <R = NSPopoverTouchBarItem>() => R;
       keyPathsForValuesAffectingPresented<R = unknown>(): R;

@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSConcreteSetChange<T = any> extends cocoa.NSSetChange {
+  export interface NSConcreteSetChange<T = any> extends NSSetChange {
     value<R = unknown>(): R;
     changeType<R = number>(): R;
     dealloc<R = void>(): R;
   }
   namespace classes {
-    export interface NSConcreteSetChange<T = any> extends cocoa.classes.NSSetChange {
+    export interface NSConcreteSetChange<T = any> extends NSSetChange {
       alloc<R = NSConcreteSetChange>(): R;
       new: <R = NSConcreteSetChange>() => R;
     }

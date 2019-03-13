@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCustomView<T = any> extends cocoa.NSView {
+  export interface NSCustomView<T = any> extends NSView {
     setClassName<R = void, P0 = unknown>(_setClassName: P0): R;
     className<R = unknown>(): R;
     nibInstantiateWithObjectInstantiator<R = unknown, P0 = unknown>(_nibInstantiateWithObjectInstantiator: P0): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     _setAsClipViewDocumentViewIfNeeded<R = void>(): R;
   }
   namespace classes {
-    export interface NSCustomView<T = any> extends cocoa.classes.NSView {
+    export interface NSCustomView<T = any> extends NSView {
       alloc<R = NSCustomView>(): R;
       new: <R = NSCustomView>() => R;
     }

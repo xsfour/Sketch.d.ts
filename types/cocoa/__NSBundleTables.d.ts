@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface __NSBundleTables<T = any> extends cocoa.NSObject {
+  export interface __NSBundleTables<T = any> extends NSObject {
     loadedBundles<R = unknown>(): R;
     allBundles<R = unknown>(): R;
     allFrameworks<R = unknown>(): R;
@@ -13,7 +13,7 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
   }
   namespace classes {
-    export interface __NSBundleTables<T = any> extends cocoa.classes.NSObject {
+    export interface __NSBundleTables<T = any> extends NSObject {
       alloc<R = __NSBundleTables>(): R;
       new: <R = __NSBundleTables>() => R;
       bundleTables<R = unknown>(): R;

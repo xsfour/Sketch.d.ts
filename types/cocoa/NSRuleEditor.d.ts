@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSRuleEditor<T = any> extends cocoa.NSControl {
+  export interface NSRuleEditor<T = any> extends NSControl {
     cxx_destruct<R = void>(): R;
     _generateFormattingDictionaryStringsFile<R = unknown>(): R;
     _recursiveGenerateFormattingDictionaryPlistForItem_rowType_intoArray_withPriorValues_hasSiblings<R = void, P0 = unknown, P1 = number, P2 = unknown, P3 = unknown, P4 = boolean>(__recursiveGenerateFormattingDictionaryPlistForItem: P0, _rowType: P1, _intoArray: P2, _withPriorValues: P3, _hasSiblings: P4): R;
-    draggedImage_endedAt_operation<R = void, P0 = unknown, P1 = cocoa.CGPoint, P2 = number>(_draggedImage: P0, _endedAt: P1, _operation: P2): R;
+    draggedImage_endedAt_operation<R = void, P0 = unknown, P1 = CGPoint, P2 = number>(_draggedImage: P0, _endedAt: P1, _operation: P2): R;
     _updateDragging<R = number, P0 = unknown>(__updateDragging: P0): R;
     _dragOperationFromInfo<R = number, P0 = unknown>(__dragOperationFromInfo: P0): R;
     draggingSourceOperationMaskForLocal<R = number, P0 = boolean>(_draggingSourceOperationMaskForLocal: P0): R;
@@ -99,7 +99,7 @@ declare namespace cocoa {
     _postRowCountChangedNotificationOfType_indexes<R = void, P0 = number, P1 = unknown>(__postRowCountChangedNotificationOfType: P0, _indexes: P1): R;
     _postRuleOptionChangedNotification<R = void>(): R;
     _newSlice<R = unknown>(): R;
-    _createNewSliceWithFrame_ruleEditorView<R = unknown, P0 = cocoa.CGRect, P1 = unknown>(__createNewSliceWithFrame: P0, _ruleEditorView: P1): R;
+    _createNewSliceWithFrame_ruleEditorView<R = unknown, P0 = CGRect, P1 = unknown>(__createNewSliceWithFrame: P0, _ruleEditorView: P1): R;
     _minimumFrameHeight<R = number>(): R;
     _suppressKeyDownHandling<R = boolean>(): R;
     _setSuppressKeyDownHandling<R = void, P0 = boolean>(__setSuppressKeyDownHandling: P0): R;
@@ -116,36 +116,36 @@ declare namespace cocoa {
     _wantsMinimalArchival<R = boolean>(): R;
     _initRuleEditorShared<R = void>(): R;
     _createSliceDropSeparator<R = unknown>(): R;
-    displayValuesKeyPath<R = cocoa.NSString>(): R;
-    setDisplayValuesKeyPath<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    criteriaKeyPath<R = cocoa.NSString>(): R;
-    setCriteriaKeyPath<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    subrowsKeyPath<R = cocoa.NSString>(): R;
-    setSubrowsKeyPath<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    rowTypeKeyPath<R = cocoa.NSString>(): R;
-    setRowTypeKeyPath<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    displayValuesKeyPath<R = NSString>(): R;
+    setDisplayValuesKeyPath<R = void, P0 = NSString>(_v: P0): R;
+    criteriaKeyPath<R = NSString>(): R;
+    setCriteriaKeyPath<R = void, P0 = NSString>(_v: P0): R;
+    subrowsKeyPath<R = NSString>(): R;
+    setSubrowsKeyPath<R = void, P0 = NSString>(_v: P0): R;
+    rowTypeKeyPath<R = NSString>(): R;
+    setRowTypeKeyPath<R = void, P0 = NSString>(_v: P0): R;
     rowClass<R = unknown>(): R;
     setRowClass<R = void, P0 = unknown>(_v: P0): R;
-    selectedRowIndexes<R = cocoa.NSIndexSet>(): R;
+    selectedRowIndexes<R = NSIndexSet>(): R;
     numberOfRows<R = number>(): R;
-    predicate<R = cocoa.NSPredicate>(): R;
-    delegate<R = cocoa.NSRuleEditorDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSRuleEditorDelegate>(_v: P0): R;
+    predicate<R = NSPredicate>(): R;
+    delegate<R = NSRuleEditorDelegate>(): R;
+    setDelegate<R = void, P0 = NSRuleEditorDelegate>(_v: P0): R;
     nestingMode<R = number>(): R;
     setNestingMode<R = void, P0 = number>(_v: P0): R;
     canRemoveAllRows<R = boolean>(): R;
     setCanRemoveAllRows<R = void, P0 = boolean>(_v: P0): R;
     editable<R = boolean>(): R;
     setEditable<R = void, P0 = boolean>(_v: P0): R;
-    formattingDictionary<R = cocoa.NSDictionary>(): R;
-    setFormattingDictionary<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
-    formattingStringsFilename<R = cocoa.NSString>(): R;
-    setFormattingStringsFilename<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    formattingDictionary<R = NSDictionary>(): R;
+    setFormattingDictionary<R = void, P0 = NSDictionary>(_v: P0): R;
+    formattingStringsFilename<R = NSString>(): R;
+    setFormattingStringsFilename<R = void, P0 = NSString>(_v: P0): R;
     rowHeight<R = number>(): R;
     setRowHeight<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface NSRuleEditor<T = any> extends cocoa.classes.NSControl {
+    export interface NSRuleEditor<T = any> extends NSControl {
       alloc<R = NSRuleEditor>(): R;
       new: <R = NSRuleEditor>() => R;
     }

@@ -1,19 +1,19 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSHistoryMaker<T = any> extends cocoa.NSObject {
+  export interface MSHistoryMaker<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     installedFontsChanged<R = void>(): R;
-    ignoreDocumentChangesInBlock<R = boolean, P0 = cocoa.CDUnknownBlockType>(_ignoreDocumentChangesInBlock: P0): R;
+    ignoreDocumentChangesInBlock<R = boolean, P0 = CDUnknownBlockType>(_ignoreDocumentChangesInBlock: P0): R;
     moveThroughHistoryBackInTime<R = void, P0 = boolean>(_moveThroughHistoryBackInTime: P0): R;
     canMoveThroughHistoryBackInTime<R = boolean, P0 = boolean>(_canMoveThroughHistoryBackInTime: P0): R;
     updateCurrentMomentWithSelection<R = void, P0 = unknown>(_updateCurrentMomentWithSelection: P0): R;
     makeHistoryIfNecessaryUsingTransientMoment<R = void, P0 = boolean>(_makeHistoryIfNecessaryUsingTransientMoment: P0): R;
-    deferMakingHistoryInBlock<R = void, P0 = cocoa.CDUnknownBlockType>(_deferMakingHistoryInBlock: P0): R;
+    deferMakingHistoryInBlock<R = void, P0 = CDUnknownBlockType>(_deferMakingHistoryInBlock: P0): R;
     makeTransientMomentInHistoryIfNecessary<R = void>(): R;
     makeHistoryIfNecessary<R = void>(): R;
     commitTransientMomentIfNecessary<R = void>(): R;
-    coalesceHistoryInBlock<R = void, P0 = cocoa.CDUnknownBlockType>(_coalesceHistoryInBlock: P0): R;
+    coalesceHistoryInBlock<R = void, P0 = CDUnknownBlockType>(_coalesceHistoryInBlock: P0): R;
     finishCoalescingHistory<R = void>(): R;
     startCoalescingHistory<R = void>(): R;
     registerHistoryMomentTitle<R = void, P0 = unknown>(_registerHistoryMomentTitle: P0): R;
@@ -28,13 +28,13 @@ declare namespace cocoa {
     setFontsDidChange<R = void, P0 = boolean>(_v: P0): R;
     historyIsCoalescing<R = boolean>(): R;
     setHistoryIsCoalescing<R = void, P0 = boolean>(_v: P0): R;
-    historyMomentTitle<R = cocoa.NSString>(): R;
-    setHistoryMomentTitle<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    history<R = cocoa.MSHistory>(): R;
-    document<R = cocoa.MSDocument>(): R;
+    historyMomentTitle<R = NSString>(): R;
+    setHistoryMomentTitle<R = void, P0 = NSString>(_v: P0): R;
+    history<R = MSHistory>(): R;
+    document<R = MSDocument>(): R;
   }
   namespace classes {
-    export interface MSHistoryMaker<T = any> extends cocoa.classes.NSObject {
+    export interface MSHistoryMaker<T = any> extends NSObject {
       alloc<R = MSHistoryMaker>(): R;
       new: <R = MSHistoryMaker>() => R;
     }

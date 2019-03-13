@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXMLDocument<T = any> extends cocoa.NSXMLNode {
+  export interface NSXMLDocument<T = any> extends NSXMLNode {
     _setContentKindAndEncoding<R = void>(): R;
-    _initWithLibTidyDoc_child_encoding<R = void, P0 = cocoa._TidyDoc, P1 = cocoa._TidyNode, P2 = number>(__initWithLibTidyDoc: P0, _child: P1, _encoding: P2): R;
-    _libxml2TreeRepresentation<R = cocoa._xmlDoc>(): R;
+    _initWithLibTidyDoc_child_encoding<R = void, P0 = _TidyDoc, P1 = _TidyNode, P2 = number>(__initWithLibTidyDoc: P0, _child: P1, _encoding: P2): R;
+    _libxml2TreeRepresentation<R = _xmlDoc>(): R;
     _validateWithSchemaAndReturnError<R = boolean, P0 = unknown>(__validateWithSchemaAndReturnError: P0): R;
     validateAndReturnError<R = boolean, P0 = unknown>(_validateAndReturnError: P0): R;
-    _applyStylesheet_arguments_error<R = unknown, P0 = cocoa._xmlDoc, P1 = unknown, P2 = unknown>(__applyStylesheet: P0, _arguments: P1, _error: P2): R;
+    _applyStylesheet_arguments_error<R = unknown, P0 = _xmlDoc, P1 = unknown, P2 = unknown>(__applyStylesheet: P0, _arguments: P1, _error: P2): R;
     objectByApplyingXSLTAtURL_arguments_error<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_objectByApplyingXSLTAtURL: P0, _arguments: P1, _error: P2): R;
     objectByApplyingXSLTString_arguments_error<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_objectByApplyingXSLTString: P0, _arguments: P1, _error: P2): R;
     objectByApplyingXSLT_arguments_error<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_objectByApplyingXSLT: P0, _arguments: P1, _error: P2): R;
@@ -44,19 +44,19 @@ declare namespace cocoa {
     initWithContentsOfURL_options_error<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_initWithContentsOfURL: P0, _options: P1, _error: P2): R;
     initWithData_options_validExternalEntityURLs_error<R = unknown, P0 = unknown, P1 = number, P2 = unknown, P3 = unknown>(_initWithData: P0, _options: P1, _validExternalEntityURLs: P2, _error: P3): R;
     initWithXMLString_options_error<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_initWithXMLString: P0, _options: P1, _error: P2): R;
-    XMLData<R = cocoa.NSData>(): R;
-    DTD<R = cocoa.NSXMLDTD>(): R;
-    setDTD<R = void, P0 = cocoa.NSXMLDTD>(_v: P0): R;
-    MIMEType<R = cocoa.NSString>(): R;
-    setMIMEType<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    XMLData<R = NSData>(): R;
+    DTD<R = NSXMLDTD>(): R;
+    setDTD<R = void, P0 = NSXMLDTD>(_v: P0): R;
+    MIMEType<R = NSString>(): R;
+    setMIMEType<R = void, P0 = NSString>(_v: P0): R;
     documentContentKind<R = number>(): R;
     setDocumentContentKind<R = void, P0 = number>(_v: P0): R;
     standalone<R = boolean>(): R;
     setStandalone<R = void, P0 = boolean>(_v: P0): R;
-    version<R = cocoa.NSString>(): R;
-    setVersion<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    characterEncoding<R = cocoa.NSString>(): R;
-    setCharacterEncoding<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    version<R = NSString>(): R;
+    setVersion<R = void, P0 = NSString>(_v: P0): R;
+    characterEncoding<R = NSString>(): R;
+    setCharacterEncoding<R = void, P0 = NSString>(_v: P0): R;
     // + NSXMLDocument(SVGDocument):
     bezierPathElement<R = unknown, P0 = unknown>(_bezierPathElement: P0): R;
     data<R = unknown>(): R;
@@ -64,7 +64,7 @@ declare namespace cocoa {
     createSVGForBezierPath<R = unknown, P0 = unknown>(_createSVGForBezierPath: P0): R;
   }
   namespace classes {
-    export interface NSXMLDocument<T = any> extends cocoa.classes.NSXMLNode {
+    export interface NSXMLDocument<T = any> extends NSXMLNode {
       alloc<R = NSXMLDocument>(): R;
       new: <R = NSXMLDocument>() => R;
       _loadXSLT<R = void>(): R;

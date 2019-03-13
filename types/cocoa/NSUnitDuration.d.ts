@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUnitDuration<T = any> extends cocoa.NSDimension, cocoa.NSSecureCodingProtocol {}
+  export interface NSUnitDuration<T = any> extends NSDimension, NSSecureCodingProtocol {}
   namespace classes {
-    export interface NSUnitDuration<T = any> extends cocoa.classes.NSDimension, cocoa.classes.NSSecureCodingProtocol {
+    export interface NSUnitDuration<T = any> extends NSDimension, NSSecureCodingProtocol {
       alloc<R = NSUnitDuration>(): R;
       new: <R = NSUnitDuration>() => R;
       hours<R = unknown>(): R;

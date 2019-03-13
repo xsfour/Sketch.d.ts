@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPopUpButton<T = any> extends cocoa.NSButton {
+  export interface NSPopUpButton<T = any> extends NSButton {
     state<R = number>(): R;
     image<R = unknown>(): R;
     title<R = unknown>(): R;
@@ -30,26 +30,26 @@ declare namespace cocoa {
     addItemWithTitle<R = void, P0 = unknown>(_addItemWithTitle: P0): R;
     _fixTargetsForMenu<R = void, P0 = unknown>(__fixTargetsForMenu: P0): R;
     instantiateWithObjectInstantiator<R = void, P0 = unknown>(_instantiateWithObjectInstantiator: P0): R;
-    initWithFrame_pullsDown<R = unknown, P0 = cocoa.CGRect, P1 = boolean>(_initWithFrame: P0, _pullsDown: P1): R;
+    initWithFrame_pullsDown<R = unknown, P0 = CGRect, P1 = boolean>(_initWithFrame: P0, _pullsDown: P1): R;
     selectedTag<R = number>(): R;
-    titleOfSelectedItem<R = cocoa.NSString>(): R;
-    itemTitles<R = cocoa.NSArray>(): R;
+    titleOfSelectedItem<R = NSString>(): R;
+    itemTitles<R = NSArray>(): R;
     indexOfSelectedItem<R = number>(): R;
-    selectedItem<R = cocoa.NSMenuItem>(): R;
-    lastItem<R = cocoa.NSMenuItem>(): R;
+    selectedItem<R = NSMenuItem>(): R;
+    lastItem<R = NSMenuItem>(): R;
     numberOfItems<R = number>(): R;
-    itemArray<R = cocoa.NSArray>(): R;
+    itemArray<R = NSArray>(): R;
     preferredEdge<R = number>(): R;
     setPreferredEdge<R = void, P0 = number>(_v: P0): R;
     autoenablesItems<R = boolean>(): R;
     setAutoenablesItems<R = void, P0 = boolean>(_v: P0): R;
     pullsDown<R = boolean>(): R;
     setPullsDown<R = void, P0 = boolean>(_v: P0): R;
-    menu<R = cocoa.NSMenu>(): R;
-    setMenu<R = void, P0 = cocoa.NSMenu>(_v: P0): R;
+    menu<R = NSMenu>(): R;
+    setMenu<R = void, P0 = NSMenu>(_v: P0): R;
   }
   namespace classes {
-    export interface NSPopUpButton<T = any> extends cocoa.classes.NSButton {
+    export interface NSPopUpButton<T = any> extends NSButton {
       alloc<R = NSPopUpButton>(): R;
       new: <R = NSPopUpButton>() => R;
     }

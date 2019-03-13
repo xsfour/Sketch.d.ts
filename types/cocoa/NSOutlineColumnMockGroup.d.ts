@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSOutlineColumnMockGroup<T = any> extends cocoa.NSObject {
+  export interface NSOutlineColumnMockGroup<T = any> extends NSObject {
     accessibilityFocusedUIElement<R = unknown>(): R;
-    accessibilityHitTest<R = unknown, P0 = cocoa.CGPoint>(_accessibilityHitTest: P0): R;
+    accessibilityHitTest<R = unknown, P0 = CGPoint>(_accessibilityHitTest: P0): R;
     accessibilityIsIgnored<R = boolean>(): R;
     accessibilityPerformAction<R = void, P0 = unknown>(_accessibilityPerformAction: P0): R;
     accessibilityActionDescription<R = unknown, P0 = unknown>(_accessibilityActionDescription: P0): R;
@@ -15,7 +15,7 @@ declare namespace cocoa {
     accessibilitySizeAttribute<R = unknown>(): R;
     accessibilityIsPositionAttributeSettable<R = boolean>(): R;
     accessibilityPositionAttribute<R = unknown>(): R;
-    _groupRect<R = cocoa.CGRect>(): R;
+    _groupRect<R = CGRect>(): R;
     accessibilityIsTopLevelUIElementAttributeSettable<R = boolean>(): R;
     accessibilityTopLevelUIElementAttribute<R = unknown>(): R;
     accessibilityIsWindowAttributeSettable<R = boolean>(): R;
@@ -39,7 +39,7 @@ declare namespace cocoa {
     initWithRow_tableColumn<R = unknown, P0 = number, P1 = unknown>(_initWithRow: P0, _tableColumn: P1): R;
   }
   namespace classes {
-    export interface NSOutlineColumnMockGroup<T = any> extends cocoa.classes.NSObject {
+    export interface NSOutlineColumnMockGroup<T = any> extends NSObject {
       alloc<R = NSOutlineColumnMockGroup>(): R;
       new: <R = NSOutlineColumnMockGroup>() => R;
       outlineColumnGroupForRow_tableColumn<R = unknown, P0 = number, P1 = unknown>(_outlineColumnGroupForRow: P0, _tableColumn: P1): R;

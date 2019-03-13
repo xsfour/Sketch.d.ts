@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPasteboardLayerListReaderWriter<T = any> extends cocoa.MSPasteboardLayersReaderWriter {}
+  export interface MSPasteboardLayerListReaderWriter<T = any> extends MSPasteboardLayersReaderWriter {}
   namespace classes {
-    export interface MSPasteboardLayerListReaderWriter<T = any> extends cocoa.classes.MSPasteboardLayersReaderWriter {
+    export interface MSPasteboardLayerListReaderWriter<T = any> extends MSPasteboardLayersReaderWriter {
       alloc<R = MSPasteboardLayerListReaderWriter>(): R;
       new: <R = MSPasteboardLayerListReaderWriter>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSNumber<T = any> extends cocoa.NSValue {
+  export interface NSNumber<T = any> extends NSValue {
     _getCString_length_multiplier<R = boolean, P0 = string, P1 = number, P2 = number>(__getCString: P0, _length: P1, _multiplier: P2): R;
     initWithBool<R = unknown, P0 = boolean>(_initWithBool: P0): R;
     initWithDouble<R = unknown, P0 = number>(_initWithDouble: P0): R;
@@ -34,7 +34,7 @@ declare namespace cocoa {
     _scriptingIntegerDescriptor<R = unknown>(): R;
     _scriptingBooleanDescriptor<R = unknown>(): R;
     _scriptingAlternativeValueRankWithDescriptor<R = number, P0 = unknown>(__scriptingAlternativeValueRankWithDescriptor: P0): R;
-    stringValue<R = cocoa.NSString>(): R;
+    stringValue<R = NSString>(): R;
     unsignedLongLongValue<R = number>(): R;
     longLongValue<R = number>(): R;
     floatValue<R = number>(): R;
@@ -53,11 +53,11 @@ declare namespace cocoa {
     decimalValue<R = unknown>(): R;
     // + NSNumber(OverrideInspector,TreeAsDictionarySupport):
     treeAsDictionary<R = unknown>(): R;
-    overrideRepresentation<R = cocoa.MSOverrideRepresentation>(): R;
-    placeholderIdentifier<R = cocoa.NSNumber>(): R;
+    overrideRepresentation<R = MSOverrideRepresentation>(): R;
+    placeholderIdentifier<R = NSNumber>(): R;
   }
   namespace classes {
-    export interface NSNumber<T = any> extends cocoa.classes.NSValue {
+    export interface NSNumber<T = any> extends NSValue {
       alloc<R = NSNumber>(): R;
       new: <R = NSNumber>() => R;
       numberWithBool<R = unknown, P0 = boolean>(_numberWithBool: P0): R;

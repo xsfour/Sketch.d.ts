@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScrubberItemView<T = any> extends cocoa.NSScrubberArrangedView {
+  export interface NSScrubberItemView<T = any> extends NSScrubberArrangedView {
     _layoutMaskLayers<R = void>(): R;
     _createMaskLayersIfNeeded<R = void>(): R;
     _clearMaskLayers<R = void>(): R;
@@ -15,17 +15,17 @@ declare namespace cocoa {
     _accessibilityScrubber<R = unknown>(): R;
     accessibilityIndexAttribute<R = unknown>(): R;
     accessibilitySelectedAttribute<R = unknown>(): R;
-    rightMaskLayer<R = cocoa.CALayer>(): R;
-    setRightMaskLayer<R = void, P0 = cocoa.CALayer>(_v: P0): R;
-    leftMaskLayer<R = cocoa.CALayer>(): R;
-    setLeftMaskLayer<R = void, P0 = cocoa.CALayer>(_v: P0): R;
-    selectionOverlayView<R = cocoa.NSScrubberSelectionView>(): R;
-    setSelectionOverlayView<R = void, P0 = cocoa.NSScrubberSelectionView>(_v: P0): R;
-    selectionBackgroundView<R = cocoa.NSScrubberSelectionView>(): R;
-    setSelectionBackgroundView<R = void, P0 = cocoa.NSScrubberSelectionView>(_v: P0): R;
+    rightMaskLayer<R = CALayer>(): R;
+    setRightMaskLayer<R = void, P0 = CALayer>(_v: P0): R;
+    leftMaskLayer<R = CALayer>(): R;
+    setLeftMaskLayer<R = void, P0 = CALayer>(_v: P0): R;
+    selectionOverlayView<R = NSScrubberSelectionView>(): R;
+    setSelectionOverlayView<R = void, P0 = NSScrubberSelectionView>(_v: P0): R;
+    selectionBackgroundView<R = NSScrubberSelectionView>(): R;
+    setSelectionBackgroundView<R = void, P0 = NSScrubberSelectionView>(_v: P0): R;
   }
   namespace classes {
-    export interface NSScrubberItemView<T = any> extends cocoa.classes.NSScrubberArrangedView {
+    export interface NSScrubberItemView<T = any> extends NSScrubberArrangedView {
       alloc<R = NSScrubberItemView>(): R;
       new: <R = NSScrubberItemView>() => R;
       createTouchBarColorListPickerSelectionOverlayView<R = unknown>(): R;

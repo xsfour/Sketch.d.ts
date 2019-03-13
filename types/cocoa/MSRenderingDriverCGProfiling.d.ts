@@ -1,14 +1,14 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSRenderingDriverCGProfiling<T = any> extends cocoa.MSRenderingDriverCG {
+  export interface MSRenderingDriverCGProfiling<T = any> extends MSRenderingDriverCG {
     initWithDelegate<R = unknown, P0 = unknown>(_initWithDelegate: P0): R;
-    delegate<R = cocoa.MSProfilingRendererDelegate>(): R;
-    traversalIndent<R = cocoa.NSString>(): R;
-    traversalLog<R = cocoa.NSMutableString>(): R;
+    delegate<R = MSProfilingRendererDelegate>(): R;
+    traversalIndent<R = NSString>(): R;
+    traversalLog<R = NSMutableString>(): R;
   }
   namespace classes {
-    export interface MSRenderingDriverCGProfiling<T = any> extends cocoa.classes.MSRenderingDriverCG {
+    export interface MSRenderingDriverCGProfiling<T = any> extends MSRenderingDriverCG {
       alloc<R = MSRenderingDriverCGProfiling>(): R;
       new: <R = MSRenderingDriverCGProfiling>() => R;
     }

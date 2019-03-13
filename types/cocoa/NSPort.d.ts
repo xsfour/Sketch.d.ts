@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPort<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol, cocoa.NSCodingProtocol {
+  export interface NSPort<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
     removeConnection_fromRunLoop_forMode<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(_removeConnection: P0, _fromRunLoop: P1, _forMode: P2): R;
     addConnection_toRunLoop_forMode<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(_addConnection: P0, _toRunLoop: P1, _forMode: P2): R;
     removeFromRunLoop_forMode<R = void, P0 = unknown, P1 = unknown>(_removeFromRunLoop: P0, _forMode: P1): R;
@@ -21,12 +21,12 @@ declare namespace cocoa {
     valid<R = boolean>(): R;
   }
   namespace classes {
-    export interface NSPort<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol, cocoa.classes.NSCodingProtocol {
+    export interface NSPort<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
       alloc<R = NSPort>(): R;
       new: <R = NSPort>() => R;
       portWithMachPort<R = unknown, P0 = number>(_portWithMachPort: P0): R;
       port<R = unknown>(): R;
-      allocWithZone<R = unknown, P0 = cocoa._NSZone>(_allocWithZone: P0): R;
+      allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
     }
   }
 }

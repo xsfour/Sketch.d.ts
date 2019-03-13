@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXMLNSDateTransformerName<T = any> extends cocoa.NSValueTransformer {}
+  export interface NSXMLNSDateTransformerName<T = any> extends NSValueTransformer {}
   namespace classes {
-    export interface NSXMLNSDateTransformerName<T = any> extends cocoa.classes.NSValueTransformer {
+    export interface NSXMLNSDateTransformerName<T = any> extends NSValueTransformer {
       alloc<R = NSXMLNSDateTransformerName>(): R;
       new: <R = NSXMLNSDateTransformerName>() => R;
     }

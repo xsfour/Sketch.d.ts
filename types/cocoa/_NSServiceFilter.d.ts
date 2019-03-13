@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSServiceFilter<T = any> extends cocoa.NSObject {
+  export interface _NSServiceFilter<T = any> extends NSObject {
     dealloc<R = void>(): R;
     _setMenuLocations<R = void, P0 = unknown>(__setMenuLocations: P0): R;
     serviceCategory<R = number>(): R;
@@ -14,7 +14,7 @@ declare namespace cocoa {
     _descriptionInnards<R = unknown>(): R;
   }
   namespace classes {
-    export interface _NSServiceFilter<T = any> extends cocoa.classes.NSObject {
+    export interface _NSServiceFilter<T = any> extends NSObject {
       alloc<R = _NSServiceFilter>(): R;
       new: <R = _NSServiceFilter>() => R;
       isCJKInputSourceEnabled<R = boolean>(): R;

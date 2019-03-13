@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCLayerListFilterViewController<T = any> extends cocoa.NSViewController, cocoa.NSMenuDelegateProtocol, cocoa.NSSearchFieldDelegateProtocol, cocoa.NSTextViewDelegateProtocol {
+  export interface BCLayerListFilterViewController<T = any> extends NSViewController, NSMenuDelegateProtocol, NSSearchFieldDelegateProtocol, NSTextViewDelegateProtocol {
     cxx_destruct<R = void>(): R;
     refreshFilterTokens<R = void>(): R;
     dropLastFilterToken<R = void>(): R;
@@ -28,31 +28,31 @@ declare namespace cocoa {
     observeFilterTextSelection<R = void, P0 = unknown>(_observeFilterTextSelection: P0): R;
     editFilterString<R = void>(): R;
     applyAppearance<R = void>(): R;
-    namedImageOwners<R = cocoa.NSMutableDictionary>(): R;
-    setNamedImageOwners<R = void, P0 = cocoa.NSMutableDictionary>(_v: P0): R;
-    filterTokensView<R = cocoa.NSView>(): R;
-    setFilterTokensView<R = void, P0 = cocoa.NSView>(_v: P0): R;
-    filterStringTextField<R = cocoa.NSSearchField>(): R;
-    setFilterStringTextField<R = void, P0 = cocoa.NSSearchField>(_v: P0): R;
-    filterMenuItemTemplateImages<R = cocoa.NSDictionary>(): R;
-    setFilterMenuItemTemplateImages<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
-    filterPickerMenu<R = cocoa.NSMenu>(): R;
-    setFilterPickerMenu<R = void, P0 = cocoa.NSMenu>(_v: P0): R;
-    filterButton<R = cocoa.NSButton>(): R;
-    setFilterButton<R = void, P0 = cocoa.NSButton>(_v: P0): R;
+    namedImageOwners<R = NSMutableDictionary>(): R;
+    setNamedImageOwners<R = void, P0 = NSMutableDictionary>(_v: P0): R;
+    filterTokensView<R = NSView>(): R;
+    setFilterTokensView<R = void, P0 = NSView>(_v: P0): R;
+    filterStringTextField<R = NSSearchField>(): R;
+    setFilterStringTextField<R = void, P0 = NSSearchField>(_v: P0): R;
+    filterMenuItemTemplateImages<R = NSDictionary>(): R;
+    setFilterMenuItemTemplateImages<R = void, P0 = NSDictionary>(_v: P0): R;
+    filterPickerMenu<R = NSMenu>(): R;
+    setFilterPickerMenu<R = void, P0 = NSMenu>(_v: P0): R;
+    filterButton<R = NSButton>(): R;
+    setFilterButton<R = void, P0 = NSButton>(_v: P0): R;
     designedClearButtonWidth<R = number>(): R;
     setDesignedClearButtonWidth<R = void, P0 = number>(_v: P0): R;
-    clearButton<R = cocoa.NSButton>(): R;
-    setClearButton<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    filter<R = cocoa.BCFilterInfo>(): R;
-    setFilter<R = void, P0 = cocoa.BCFilterInfo>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    clearButton<R = NSButton>(): R;
+    setClearButton<R = void, P0 = NSButton>(_v: P0): R;
+    filter<R = BCFilterInfo>(): R;
+    setFilter<R = void, P0 = BCFilterInfo>(_v: P0): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface BCLayerListFilterViewController<T = any> extends cocoa.classes.NSViewController, cocoa.classes.NSMenuDelegateProtocol, cocoa.classes.NSSearchFieldDelegateProtocol, cocoa.classes.NSTextViewDelegateProtocol {
+    export interface BCLayerListFilterViewController<T = any> extends NSViewController, NSMenuDelegateProtocol, NSSearchFieldDelegateProtocol, NSTextViewDelegateProtocol {
       alloc<R = BCLayerListFilterViewController>(): R;
       new: <R = BCLayerListFilterViewController>() => R;
     }

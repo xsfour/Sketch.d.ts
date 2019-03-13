@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAlert<T = any> extends cocoa.NSObject, cocoa.NSTouchBarProviderProtocol {
+  export interface NSAlert<T = any> extends NSObject, NSTouchBarProviderProtocol {
     _setSuppressionButton<R = void, P0 = unknown>(__setSuppressionButton: P0): R;
     _suppressionButton<R = unknown>(): R;
     _setDidDismissSelector<R = void, P0 = string>(__setDidDismissSelector: P0): R;
@@ -18,9 +18,9 @@ declare namespace cocoa {
     _secondButtonExists<R = boolean>(): R;
     _firstButtonExists<R = boolean>(): R;
     buildAlertStyle_title_formattedMessage_first_second_third_oldStyle<R = unknown, P0 = number, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown, P5 = unknown, P6 = boolean>(_buildAlertStyle: P0, _title: P1, _formattedMessage: P2, _first: P3, _second: P4, _third: P5, _oldStyle: P6): R;
-    _constraintsForExplicitFrameSize_forView<R = unknown, P0 = cocoa.CGSize, P1 = unknown>(__constraintsForExplicitFrameSize: P0, _forView: P1): R;
-    _constraintForExplicitFrameHeight_forView_strength<R = unknown, P0 = cocoa.CGSize, P1 = unknown, P2 = number>(__constraintForExplicitFrameHeight: P0, _forView: P1, _strength: P2): R;
-    _constraintsForExplicitFrameSize_forView_strength<R = unknown, P0 = cocoa.CGSize, P1 = unknown, P2 = number>(__constraintsForExplicitFrameSize: P0, _forView: P1, _strength: P2): R;
+    _constraintsForExplicitFrameSize_forView<R = unknown, P0 = CGSize, P1 = unknown>(__constraintsForExplicitFrameSize: P0, _forView: P1): R;
+    _constraintForExplicitFrameHeight_forView_strength<R = unknown, P0 = CGSize, P1 = unknown, P2 = number>(__constraintForExplicitFrameHeight: P0, _forView: P1, _strength: P2): R;
+    _constraintsForExplicitFrameSize_forView_strength<R = unknown, P0 = CGSize, P1 = unknown, P2 = number>(__constraintsForExplicitFrameSize: P0, _forView: P1, _strength: P2): R;
     startSpeaking<R = void, P0 = unknown>(_startSpeaking: P0): R;
     startTimerForSpeaking<R = void>(): R;
     stopTimerForSpeaking<R = void>(): R;
@@ -33,7 +33,7 @@ declare namespace cocoa {
     _dontSaveButton<R = unknown>(): R;
     buttonPressed<R = void, P0 = unknown>(_buttonPressed: P0): R;
     _screenForMaxHeight<R = unknown>(): R;
-    beginSheetModalForWindow_completionHandler<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(_beginSheetModalForWindow: P0, _completionHandler: P1): R;
+    beginSheetModalForWindow_completionHandler<R = void, P0 = unknown, P1 = CDUnknownBlockType>(_beginSheetModalForWindow: P0, _completionHandler: P1): R;
     runModal<R = number>(): R;
     prepare<R = void>(): R;
     layout<R = void>(): R;
@@ -49,44 +49,44 @@ declare namespace cocoa {
     didEndSheet_returnCode_contextInfo<R = void, P0 = unknown, P1 = number, P2 = void>(_didEndSheet: P0, _returnCode: P1, _contextInfo: P2): R;
     didEndAlert_returnCode_contextInfo<R = void, P0 = unknown, P1 = number, P2 = void>(_didEndAlert: P0, _returnCode: P1, _contextInfo: P2): R;
     beginSheetModalForWindow_modalDelegate_didEndSelector_contextInfo<R = void, P0 = unknown, P1 = unknown, P2 = string, P3 = void>(_beginSheetModalForWindow: P0, _modalDelegate: P1, _didEndSelector: P2, _contextInfo: P3): R;
-    buildAlertStyle_title_message_first_second_third_oldStyle_args<R = unknown, P0 = number, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown, P5 = unknown, P6 = boolean, P7 = cocoa.__va_list_tag>(_buildAlertStyle: P0, _title: P1, _message: P2, _first: P3, _second: P4, _third: P5, _oldStyle: P6, _args: P7): R;
-    _panel<R = cocoa.NSWindow>(): R;
-    set_panel<R = void, P0 = cocoa.NSWindow>(_v: P0): R;
-    accessoryView<R = cocoa.NSView>(): R;
-    setAccessoryView<R = void, P0 = cocoa.NSView>(_v: P0): R;
-    suppressionButton<R = cocoa.NSButton>(): R;
+    buildAlertStyle_title_message_first_second_third_oldStyle_args<R = unknown, P0 = number, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown, P5 = unknown, P6 = boolean, P7 = __va_list_tag>(_buildAlertStyle: P0, _title: P1, _message: P2, _first: P3, _second: P4, _third: P5, _oldStyle: P6, _args: P7): R;
+    _panel<R = NSWindow>(): R;
+    set_panel<R = void, P0 = NSWindow>(_v: P0): R;
+    accessoryView<R = NSView>(): R;
+    setAccessoryView<R = void, P0 = NSView>(_v: P0): R;
+    suppressionButton<R = NSButton>(): R;
     showsSuppressionButton<R = boolean>(): R;
     setShowsSuppressionButton<R = void, P0 = boolean>(_v: P0): R;
-    window<R = cocoa.NSWindow>(): R;
-    delegate<R = cocoa.NSAlertDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSAlertDelegate>(_v: P0): R;
+    window<R = NSWindow>(): R;
+    delegate<R = NSAlertDelegate>(): R;
+    setDelegate<R = void, P0 = NSAlertDelegate>(_v: P0): R;
     alertStyle<R = number>(): R;
     setAlertStyle<R = void, P0 = number>(_v: P0): R;
-    helpAnchor<R = cocoa.NSString>(): R;
-    setHelpAnchor<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    helpAnchor<R = NSString>(): R;
+    setHelpAnchor<R = void, P0 = NSString>(_v: P0): R;
     showsHelp<R = boolean>(): R;
     setShowsHelp<R = void, P0 = boolean>(_v: P0): R;
-    buttons<R = cocoa.NSArray>(): R;
-    icon<R = cocoa.NSImage>(): R;
-    setIcon<R = void, P0 = cocoa.NSImage>(_v: P0): R;
-    informativeText<R = cocoa.NSString>(): R;
-    setInformativeText<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    messageText<R = cocoa.NSString>(): R;
-    setMessageText<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    attributedInformativeText<R = cocoa.NSAttributedString>(): R;
-    setAttributedInformativeText<R = void, P0 = cocoa.NSAttributedString>(_v: P0): R;
-    attributedMessageText<R = cocoa.NSAttributedString>(): R;
-    setAttributedMessageText<R = void, P0 = cocoa.NSAttributedString>(_v: P0): R;
-    touchBar<R = cocoa.NSTouchBar>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    buttons<R = NSArray>(): R;
+    icon<R = NSImage>(): R;
+    setIcon<R = void, P0 = NSImage>(_v: P0): R;
+    informativeText<R = NSString>(): R;
+    setInformativeText<R = void, P0 = NSString>(_v: P0): R;
+    messageText<R = NSString>(): R;
+    setMessageText<R = void, P0 = NSString>(_v: P0): R;
+    attributedInformativeText<R = NSAttributedString>(): R;
+    setAttributedInformativeText<R = void, P0 = NSAttributedString>(_v: P0): R;
+    attributedMessageText<R = NSAttributedString>(): R;
+    setAttributedMessageText<R = void, P0 = NSAttributedString>(_v: P0): R;
+    touchBar<R = NSTouchBar>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
     // + NSAlert(Chocolat):
     
   }
   namespace classes {
-    export interface NSAlert<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSTouchBarProviderProtocol {
+    export interface NSAlert<T = any> extends NSObject, NSTouchBarProviderProtocol {
       alloc<R = NSAlert>(): R;
       new: <R = NSAlert>() => R;
       _stopTimerForSpeakingForAlert<R = void, P0 = unknown>(__stopTimerForSpeakingForAlert: P0): R;

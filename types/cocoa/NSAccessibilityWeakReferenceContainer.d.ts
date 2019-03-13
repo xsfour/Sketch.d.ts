@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAccessibilityWeakReferenceContainer<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol {
+  export interface NSAccessibilityWeakReferenceContainer<T = any> extends NSObject, NSCopyingProtocol {
     hash<R = number>(): R;
     strongReference<R = unknown>(): R;
     autoreleasedReference<R = unknown>(): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     initWithObject<R = unknown, P0 = unknown>(_initWithObject: P0): R;
   }
   namespace classes {
-    export interface NSAccessibilityWeakReferenceContainer<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol {
+    export interface NSAccessibilityWeakReferenceContainer<T = any> extends NSObject, NSCopyingProtocol {
       alloc<R = NSAccessibilityWeakReferenceContainer>(): R;
       new: <R = NSAccessibilityWeakReferenceContainer>() => R;
     }

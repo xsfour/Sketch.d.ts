@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSScrollingConcurrentVBLMonitor<T = any> extends cocoa.NSObject {
+  export interface _NSScrollingConcurrentVBLMonitor<T = any> extends NSObject {
     remove<R = void>(): R;
     suspend<R = void>(): R;
     resume<R = void>(): R;
@@ -10,21 +10,21 @@ declare namespace cocoa {
     _checkCursorTargeting<R = void>(): R;
     dealloc<R = void>(): R;
     initWithConstantData<R = unknown, P0 = unknown>(_initWithConstantData: P0): R;
-    mainThreadSynchronizer<R = cocoa._NSScrollingConcurrentMainThreadSynchronizer>(): R;
-    setMainThreadSynchronizer<R = void, P0 = cocoa._NSScrollingConcurrentMainThreadSynchronizer>(_v: P0): R;
-    preprocessFilter<R = cocoa._NSScrollingConcurrentVBLPreprocessFilter>(): R;
-    setPreprocessFilter<R = void, P0 = cocoa._NSScrollingConcurrentVBLPreprocessFilter>(_v: P0): R;
-    constantData<R = cocoa._NSScrollingConcurrentConstantData>(): R;
-    setConstantData<R = void, P0 = cocoa._NSScrollingConcurrentConstantData>(_v: P0): R;
-    sharedData<R = cocoa._NSScrollingConcurrentSharedData>(): R;
-    setSharedData<R = void, P0 = cocoa._NSScrollingConcurrentSharedData>(_v: P0): R;
-    scrollStateDelegate<R = cocoa._NSScrollStateEventListener>(): R;
-    setScrollStateDelegate<R = void, P0 = cocoa._NSScrollStateEventListener>(_v: P0): R;
-    cursorTargetFrame<R = cocoa.CGRect>(): R;
-    setCursorTargetFrame<R = void, P0 = cocoa.CGRect>(_v: P0): R;
+    mainThreadSynchronizer<R = _NSScrollingConcurrentMainThreadSynchronizer>(): R;
+    setMainThreadSynchronizer<R = void, P0 = _NSScrollingConcurrentMainThreadSynchronizer>(_v: P0): R;
+    preprocessFilter<R = _NSScrollingConcurrentVBLPreprocessFilter>(): R;
+    setPreprocessFilter<R = void, P0 = _NSScrollingConcurrentVBLPreprocessFilter>(_v: P0): R;
+    constantData<R = _NSScrollingConcurrentConstantData>(): R;
+    setConstantData<R = void, P0 = _NSScrollingConcurrentConstantData>(_v: P0): R;
+    sharedData<R = _NSScrollingConcurrentSharedData>(): R;
+    setSharedData<R = void, P0 = _NSScrollingConcurrentSharedData>(_v: P0): R;
+    scrollStateDelegate<R = _NSScrollStateEventListener>(): R;
+    setScrollStateDelegate<R = void, P0 = _NSScrollStateEventListener>(_v: P0): R;
+    cursorTargetFrame<R = CGRect>(): R;
+    setCursorTargetFrame<R = void, P0 = CGRect>(_v: P0): R;
   }
   namespace classes {
-    export interface _NSScrollingConcurrentVBLMonitor<T = any> extends cocoa.classes.NSObject {
+    export interface _NSScrollingConcurrentVBLMonitor<T = any> extends NSObject {
       alloc<R = _NSScrollingConcurrentVBLMonitor>(): R;
       new: <R = _NSScrollingConcurrentVBLMonitor>() => R;
     }

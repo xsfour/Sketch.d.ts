@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSNavBannerView<T = any> extends cocoa.NSView {
+  export interface NSNavBannerView<T = any> extends NSView {
     _preferredAppearance<R = unknown>(): R;
     _vibrantBlendingStyleForSubtree<R = number>(): R;
     _commonInit<R = void>(): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     setBannerType<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface NSNavBannerView<T = any> extends cocoa.classes.NSView {
+    export interface NSNavBannerView<T = any> extends NSView {
       alloc<R = NSNavBannerView>(): R;
       new: <R = NSNavBannerView>() => R;
     }

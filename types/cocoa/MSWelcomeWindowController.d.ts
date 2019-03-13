@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSWelcomeWindowController<T = any> extends cocoa.CHWindowController, cocoa.NSMenuDelegateProtocol, cocoa.NSWindowDelegateProtocol, cocoa.MSWelcomeCollectionViewDelegateProtocol {
+  export interface MSWelcomeWindowController<T = any> extends CHWindowController, NSMenuDelegateProtocol, NSWindowDelegateProtocol, MSWelcomeCollectionViewDelegateProtocol {
     scrollViewDidScrollNotification<R = void, P0 = unknown>(_scrollViewDidScrollNotification: P0): R;
     cloudSharesController_didFailLoadingWithError<R = void, P0 = unknown, P1 = unknown>(_cloudSharesController: P0, _didFailLoadingWithError: P1): R;
     cloudSharesController_didFinishLoadingShares<R = void, P0 = unknown, P1 = unknown>(_cloudSharesController: P0, _didFinishLoadingShares: P1): R;
@@ -31,49 +31,49 @@ declare namespace cocoa {
     clearCaches<R = void>(): R;
     centerWindowIfAppropriate<R = void>(): R;
     updateCollectionSegments<R = void>(): R;
-    cloudSharesController<R = cocoa.MSCloudSharesController>(): R;
-    setCloudSharesController<R = void, P0 = cocoa.MSCloudSharesController>(_v: P0): R;
-    cachedTemplateItems<R = cocoa.NSArray>(): R;
-    setCachedTemplateItems<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    cachedRecentDocumentItems<R = cocoa.NSArray>(): R;
-    setCachedRecentDocumentItems<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    previewImageCache<R = cocoa.MSPreviewImageCache>(): R;
+    cloudSharesController<R = MSCloudSharesController>(): R;
+    setCloudSharesController<R = void, P0 = MSCloudSharesController>(_v: P0): R;
+    cachedTemplateItems<R = NSArray>(): R;
+    setCachedTemplateItems<R = void, P0 = NSArray>(_v: P0): R;
+    cachedRecentDocumentItems<R = NSArray>(): R;
+    setCachedRecentDocumentItems<R = void, P0 = NSArray>(_v: P0): R;
+    previewImageCache<R = MSPreviewImageCache>(): R;
     collectionToShow<R = number>(): R;
     setCollectionToShow<R = void, P0 = number>(_v: P0): R;
-    versionTextField<R = cocoa.NSTextField>(): R;
-    setVersionTextField<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    templatesContextMenu<R = cocoa.NSMenu>(): R;
-    setTemplatesContextMenu<R = void, P0 = cocoa.NSMenu>(_v: P0): R;
-    recentDocumentsContextMenu<R = cocoa.NSMenu>(): R;
-    setRecentDocumentsContextMenu<R = void, P0 = cocoa.NSMenu>(_v: P0): R;
-    pluginsButton<R = cocoa.MSCallToActionButton>(): R;
-    setPluginsButton<R = void, P0 = cocoa.MSCallToActionButton>(_v: P0): R;
-    newsletterButton<R = cocoa.MSCallToActionButton>(): R;
-    setNewsletterButton<R = void, P0 = cocoa.MSCallToActionButton>(_v: P0): R;
-    doNotShowAgainButton<R = cocoa.NSButton>(): R;
-    setDoNotShowAgainButton<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    confirmButton<R = cocoa.NSButton>(): R;
-    setConfirmButton<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    collectionsWidthConstraint<R = cocoa.NSLayoutConstraint>(): R;
-    setCollectionsWidthConstraint<R = void, P0 = cocoa.NSLayoutConstraint>(_v: P0): R;
-    collectionsSegmentedControl<R = cocoa.NSSegmentedControl>(): R;
-    setCollectionsSegmentedControl<R = void, P0 = cocoa.NSSegmentedControl>(_v: P0): R;
-    collectionStaticContainerView<R = cocoa.NSView>(): R;
-    setCollectionStaticContainerView<R = void, P0 = cocoa.NSView>(_v: P0): R;
-    collectionScrollView<R = cocoa.NSScrollView>(): R;
-    setCollectionScrollView<R = void, P0 = cocoa.NSScrollView>(_v: P0): R;
-    collectionView<R = cocoa.NSCollectionView>(): R;
-    setCollectionView<R = void, P0 = cocoa.NSCollectionView>(_v: P0): R;
-    closeButton<R = cocoa.NSButton>(): R;
-    setCloseButton<R = void, P0 = cocoa.NSButton>(_v: P0): R;
+    versionTextField<R = NSTextField>(): R;
+    setVersionTextField<R = void, P0 = NSTextField>(_v: P0): R;
+    templatesContextMenu<R = NSMenu>(): R;
+    setTemplatesContextMenu<R = void, P0 = NSMenu>(_v: P0): R;
+    recentDocumentsContextMenu<R = NSMenu>(): R;
+    setRecentDocumentsContextMenu<R = void, P0 = NSMenu>(_v: P0): R;
+    pluginsButton<R = MSCallToActionButton>(): R;
+    setPluginsButton<R = void, P0 = MSCallToActionButton>(_v: P0): R;
+    newsletterButton<R = MSCallToActionButton>(): R;
+    setNewsletterButton<R = void, P0 = MSCallToActionButton>(_v: P0): R;
+    doNotShowAgainButton<R = NSButton>(): R;
+    setDoNotShowAgainButton<R = void, P0 = NSButton>(_v: P0): R;
+    confirmButton<R = NSButton>(): R;
+    setConfirmButton<R = void, P0 = NSButton>(_v: P0): R;
+    collectionsWidthConstraint<R = NSLayoutConstraint>(): R;
+    setCollectionsWidthConstraint<R = void, P0 = NSLayoutConstraint>(_v: P0): R;
+    collectionsSegmentedControl<R = NSSegmentedControl>(): R;
+    setCollectionsSegmentedControl<R = void, P0 = NSSegmentedControl>(_v: P0): R;
+    collectionStaticContainerView<R = NSView>(): R;
+    setCollectionStaticContainerView<R = void, P0 = NSView>(_v: P0): R;
+    collectionScrollView<R = NSScrollView>(): R;
+    setCollectionScrollView<R = void, P0 = NSScrollView>(_v: P0): R;
+    collectionView<R = NSCollectionView>(): R;
+    setCollectionView<R = void, P0 = NSCollectionView>(_v: P0): R;
+    closeButton<R = NSButton>(): R;
+    setCloseButton<R = void, P0 = NSButton>(_v: P0): R;
     numberOfDocuments<R = number>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSWelcomeWindowController<T = any> extends cocoa.classes.CHWindowController, cocoa.classes.NSMenuDelegateProtocol, cocoa.classes.NSWindowDelegateProtocol, cocoa.classes.MSWelcomeCollectionViewDelegateProtocol {
+    export interface MSWelcomeWindowController<T = any> extends CHWindowController, NSMenuDelegateProtocol, NSWindowDelegateProtocol, MSWelcomeCollectionViewDelegateProtocol {
       alloc<R = MSWelcomeWindowController>(): R;
       new: <R = MSWelcomeWindowController>() => R;
       templateURLsAtDirectoryURL<R = unknown, P0 = unknown>(_templateURLsAtDirectoryURL: P0): R;

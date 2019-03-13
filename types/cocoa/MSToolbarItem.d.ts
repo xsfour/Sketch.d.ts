@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSToolbarItem<T = any> extends cocoa.NSToolbarItem {
+  export interface MSToolbarItem<T = any> extends NSToolbarItem {
     makeViewForAction<R = unknown, P0 = unknown>(_makeViewForAction: P0): R;
     initWithAction<R = unknown, P0 = unknown>(_initWithAction: P0): R;
   }
   namespace classes {
-    export interface MSToolbarItem<T = any> extends cocoa.classes.NSToolbarItem {
+    export interface MSToolbarItem<T = any> extends NSToolbarItem {
       alloc<R = MSToolbarItem>(): R;
       new: <R = MSToolbarItem>() => R;
     }

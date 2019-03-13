@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMapTable<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol, cocoa.NSSecureCodingProtocol, cocoa.NSFastEnumerationProtocol {
-    mutableCopyWithZone<R = unknown, P0 = cocoa._NSZone>(_mutableCopyWithZone: P0): R;
+  export interface NSMapTable<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol, NSFastEnumerationProtocol {
+    mutableCopyWithZone<R = unknown, P0 = _NSZone>(_mutableCopyWithZone: P0): R;
     dictionaryRepresentation<R = unknown>(): R;
     mutableDictionary<R = unknown>(): R;
     removeAllObjects<R = void>(): R;
@@ -29,14 +29,14 @@ declare namespace cocoa {
     initWithKeyPointerFunctions_valuePointerFunctions_capacity<R = unknown, P0 = unknown, P1 = unknown, P2 = number>(_initWithKeyPointerFunctions: P0, _valuePointerFunctions: P1, _capacity: P2): R;
     initWithKeyOptions_valueOptions_capacity<R = unknown, P0 = number, P1 = number, P2 = number>(_initWithKeyOptions: P0, _valueOptions: P1, _capacity: P2): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
-    valuePointerFunctions<R = cocoa.NSPointerFunctions>(): R;
-    keyPointerFunctions<R = cocoa.NSPointerFunctions>(): R;
+    valuePointerFunctions<R = NSPointerFunctions>(): R;
+    keyPointerFunctions<R = NSPointerFunctions>(): R;
     count<R = number>(): R;
     // + NSMapTable(UIElementChildCacheExtension):
     _flushChildCache<R = void, P0 = unknown>(__flushChildCache: P0): R;
   }
   namespace classes {
-    export interface NSMapTable<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol, cocoa.classes.NSSecureCodingProtocol, cocoa.classes.NSFastEnumerationProtocol {
+    export interface NSMapTable<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol, NSFastEnumerationProtocol {
       alloc<R = NSMapTable>(): R;
       new: <R = NSMapTable>() => R;
       weakToWeakObjectsMapTable<R = unknown>(): R;
@@ -48,7 +48,7 @@ declare namespace cocoa {
       mapTableWithWeakToStrongObjects<R = unknown>(): R;
       mapTableWithStrongToStrongObjects<R = unknown>(): R;
       mapTableWithKeyOptions_valueOptions<R = unknown, P0 = number, P1 = number>(_mapTableWithKeyOptions: P0, _valueOptions: P1): R;
-      allocWithZone<R = unknown, P0 = cocoa._NSZone>(_allocWithZone: P0): R;
+      allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
       alloc<R = unknown>(): R;
       // + NSMapTable(UIElementChildCacheExtension):
       

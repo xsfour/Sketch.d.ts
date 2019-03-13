@@ -1,17 +1,17 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDragToMoveOrCopyGestureRecognizer<T = any> extends cocoa.MSDragGestureRecognizer {
+  export interface MSDragToMoveOrCopyGestureRecognizer<T = any> extends MSDragGestureRecognizer {
     setState<R = void, P0 = number>(_setState: P0): R;
     recalculateAlignmentAxis<R = void>(): R;
     alignmentDistance<R = number>(): R;
     setAlignmentDistance<R = void, P0 = number>(_v: P0): R;
-    copiedItems<R = cocoa.NSArray>(): R;
-    setCopiedItems<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    originalDragPositions<R = cocoa.NSArray>(): R;
-    setOriginalDragPositions<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    originalDraggedItems<R = cocoa.NSArray>(): R;
-    setOriginalDraggedItems<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    copiedItems<R = NSArray>(): R;
+    setCopiedItems<R = void, P0 = NSArray>(_v: P0): R;
+    originalDragPositions<R = NSArray>(): R;
+    setOriginalDragPositions<R = void, P0 = NSArray>(_v: P0): R;
+    originalDraggedItems<R = NSArray>(): R;
+    setOriginalDraggedItems<R = void, P0 = NSArray>(_v: P0): R;
     draggedItem<R = unknown>(): R;
     setDraggedItem<R = void, P0 = unknown>(_v: P0): R;
     alignmentAxis<R = number>(): R;
@@ -24,7 +24,7 @@ declare namespace cocoa {
     shouldCopyDraggedItems<R = boolean>(): R;
   }
   namespace classes {
-    export interface MSDragToMoveOrCopyGestureRecognizer<T = any> extends cocoa.classes.MSDragGestureRecognizer {
+    export interface MSDragToMoveOrCopyGestureRecognizer<T = any> extends MSDragGestureRecognizer {
       alloc<R = MSDragToMoveOrCopyGestureRecognizer>(): R;
       new: <R = MSDragToMoveOrCopyGestureRecognizer>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFlattenAction<T = any> extends cocoa.MSDocumentAction {
+  export interface MSFlattenAction<T = any> extends MSDocumentAction {
     historyMomentTitle<R = unknown>(): R;
     label<R = unknown>(): R;
     tooltip<R = unknown>(): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     validate<R = boolean>(): R;
   }
   namespace classes {
-    export interface MSFlattenAction<T = any> extends cocoa.classes.MSDocumentAction {
+    export interface MSFlattenAction<T = any> extends MSDocumentAction {
       alloc<R = MSFlattenAction>(): R;
       new: <R = MSFlattenAction>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSWindowTemplate<T = any> extends cocoa.NSObject, cocoa.NSCodingProtocol, cocoa.NSUserInterfaceItemIdentificationProtocol {
+  export interface NSWindowTemplate<T = any> extends NSObject, NSCodingProtocol, NSUserInterfaceItemIdentificationProtocol {
     setUserInterfaceItemIdentifier<R = void, P0 = unknown>(_setUserInterfaceItemIdentifier: P0): R;
     userInterfaceItemIdentifier<R = unknown>(): R;
     nibInstantiate<R = unknown>(): R;
@@ -17,10 +17,10 @@ declare namespace cocoa {
     setAutorecalculatesContentBorderThickness_forEdge<R = void, P0 = boolean, P1 = number>(_setAutorecalculatesContentBorderThickness: P0, _forEdge: P1): R;
     setShowsToolbarButton<R = void, P0 = boolean>(_setShowsToolbarButton: P0): R;
     showsToolbarButton<R = boolean>(): R;
-    setContentMinSize<R = void, P0 = cocoa.CGSize>(_setContentMinSize: P0): R;
-    contentMinSize<R = cocoa.CGSize>(): R;
-    setContentMaxSize<R = void, P0 = cocoa.CGSize>(_setContentMaxSize: P0): R;
-    contentMaxSize<R = cocoa.CGSize>(): R;
+    setContentMinSize<R = void, P0 = CGSize>(_setContentMinSize: P0): R;
+    contentMinSize<R = CGSize>(): R;
+    setContentMaxSize<R = void, P0 = CGSize>(_setContentMaxSize: P0): R;
+    contentMaxSize<R = CGSize>(): R;
     setWindowBackingLocation<R = void, P0 = number>(_setWindowBackingLocation: P0): R;
     windowBackingLocation<R = number>(): R;
     setWindowSharingType<R = void, P0 = number>(_setWindowSharingType: P0): R;
@@ -33,10 +33,10 @@ declare namespace cocoa {
     setHasShadow<R = void, P0 = boolean>(_setHasShadow: P0): R;
     allowsToolTipsWhenApplicationIsInactive<R = boolean>(): R;
     setAllowsToolTipsWhenApplicationIsInactive<R = void, P0 = boolean>(_setAllowsToolTipsWhenApplicationIsInactive: P0): R;
-    setMaxSize<R = void, P0 = cocoa.CGSize>(_setMaxSize: P0): R;
-    maxSize<R = cocoa.CGSize>(): R;
-    setMinSize<R = void, P0 = cocoa.CGSize>(_setMinSize: P0): R;
-    minSize<R = cocoa.CGSize>(): R;
+    setMaxSize<R = void, P0 = CGSize>(_setMaxSize: P0): R;
+    maxSize<R = CGSize>(): R;
+    setMinSize<R = void, P0 = CGSize>(_setMinSize: P0): R;
+    minSize<R = CGSize>(): R;
     frameAutosaveName<R = unknown>(): R;
     setFrameAutosaveName<R = void, P0 = unknown>(_setFrameAutosaveName: P0): R;
     setInterfaceStyle<R = void, P0 = number>(_setInterfaceStyle: P0): R;
@@ -77,21 +77,21 @@ declare namespace cocoa {
     setTitleVisibility<R = void, P0 = number>(_v: P0): R;
     tabbingMode<R = number>(): R;
     setTabbingMode<R = void, P0 = number>(_v: P0): R;
-    tabbingIdentifier<R = cocoa.NSString>(): R;
-    setTabbingIdentifier<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    contentViewController<R = cocoa.NSViewController>(): R;
-    setContentViewController<R = void, P0 = cocoa.NSViewController>(_v: P0): R;
-    appearance<R = cocoa.NSAppearance>(): R;
-    setAppearance<R = void, P0 = cocoa.NSAppearance>(_v: P0): R;
-    identifier<R = cocoa.NSString>(): R;
-    setIdentifier<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    maxFullScreenContentSize<R = cocoa.CGSize>(): R;
-    setMaxFullScreenContentSize<R = void, P0 = cocoa.CGSize>(_v: P0): R;
-    minFullScreenContentSize<R = cocoa.CGSize>(): R;
-    setMinFullScreenContentSize<R = void, P0 = cocoa.CGSize>(_v: P0): R;
+    tabbingIdentifier<R = NSString>(): R;
+    setTabbingIdentifier<R = void, P0 = NSString>(_v: P0): R;
+    contentViewController<R = NSViewController>(): R;
+    setContentViewController<R = void, P0 = NSViewController>(_v: P0): R;
+    appearance<R = NSAppearance>(): R;
+    setAppearance<R = void, P0 = NSAppearance>(_v: P0): R;
+    identifier<R = NSString>(): R;
+    setIdentifier<R = void, P0 = NSString>(_v: P0): R;
+    maxFullScreenContentSize<R = CGSize>(): R;
+    setMaxFullScreenContentSize<R = void, P0 = CGSize>(_v: P0): R;
+    minFullScreenContentSize<R = CGSize>(): R;
+    setMinFullScreenContentSize<R = void, P0 = CGSize>(_v: P0): R;
   }
   namespace classes {
-    export interface NSWindowTemplate<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCodingProtocol, cocoa.classes.NSUserInterfaceItemIdentificationProtocol {
+    export interface NSWindowTemplate<T = any> extends NSObject, NSCodingProtocol, NSUserInterfaceItemIdentificationProtocol {
       alloc<R = NSWindowTemplate>(): R;
       new: <R = NSWindowTemplate>() => R;
       initialize<R = void>(): R;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableOptions<T = any> extends cocoa.NSWindowController {
+  export interface NSTableOptions<T = any> extends NSWindowController {
     worksWhenModal<R = boolean>(): R;
     removeClient<R = void, P0 = unknown>(_removeClient: P0): R;
     setClient<R = void, P0 = unknown>(_setClient: P0): R;
@@ -13,7 +13,7 @@ declare namespace cocoa {
     setVerticalAlignment<R = void, P0 = number>(_setVerticalAlignment: P0): R;
     setHorizontalAlignment<R = void, P0 = number>(_setHorizontalAlignment: P0): R;
     splitCells<R = void>(): R;
-    splitCell_range<R = void, P0 = unknown, P1 = cocoa._NSRange>(_splitCell: P0, _range: P1): R;
+    splitCell_range<R = void, P0 = unknown, P1 = _NSRange>(_splitCell: P0, _range: P1): R;
     mergeCells<R = void>(): R;
     removeColumns<R = void, P0 = number>(_removeColumns: P0): R;
     addColumns<R = void, P0 = number>(_addColumns: P0): R;
@@ -22,7 +22,7 @@ declare namespace cocoa {
     removeTable<R = void>(): R;
     addDefaultTable<R = void>(): R;
     _addDefaultTable<R = void>(): R;
-    getRows_columns_inTabDelimitedString_inRange<R = boolean, P0 = number, P1 = number, P2 = unknown, P3 = cocoa._NSRange>(_getRows: P0, _columns: P1, _inTabDelimitedString: P2, _inRange: P3): R;
+    getRows_columns_inTabDelimitedString_inRange<R = boolean, P0 = number, P1 = number, P2 = unknown, P3 = _NSRange>(_getRows: P0, _columns: P1, _inTabDelimitedString: P2, _inRange: P3): R;
     addOrNestTable<R = void>(): R;
     orderFrontTableOptionsPanel<R = void, P0 = unknown>(_orderFrontTableOptionsPanel: P0): R;
     updateUI<R = void>(): R;
@@ -34,7 +34,7 @@ declare namespace cocoa {
     shouldCascadeWindows<R = boolean>(): R;
   }
   namespace classes {
-    export interface NSTableOptions<T = any> extends cocoa.classes.NSWindowController {
+    export interface NSTableOptions<T = any> extends NSWindowController {
       alloc<R = NSTableOptions>(): R;
       new: <R = NSTableOptions>() => R;
       sharedTableOptions<R = unknown>(): R;

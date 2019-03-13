@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSNavSharedServerController<T = any> extends cocoa.NSViewController {
+  export interface NSNavSharedServerController<T = any> extends NSViewController {
     updateConnectAsButtonForConnectionState<R = void, P0 = number>(_updateConnectAsButtonForConnectionState: P0): R;
     updateStatusTextForConnectionState_userName<R = void, P0 = number, P1 = unknown>(_updateStatusTextForConnectionState: P0, _userName: P1): R;
     updateStatus<R = void>(): R;
@@ -9,8 +9,8 @@ declare namespace cocoa {
     _frameChangedOnText<R = void, P0 = unknown>(__frameChangedOnText: P0): R;
     initAsSharedServerBannerView<R = unknown>(): R;
     initAsSharedServerView<R = unknown>(): R;
-    userName<R = cocoa.NSString>(): R;
-    setUserName<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    userName<R = NSString>(): R;
+    setUserName<R = void, P0 = NSString>(_v: P0): R;
     connectionState<R = number>(): R;
     setConnectionState<R = void, P0 = number>(_v: P0): R;
     waitingForDisc<R = boolean>(): R;
@@ -21,17 +21,17 @@ declare namespace cocoa {
     setRemoteDisc<R = void, P0 = boolean>(_v: P0): R;
     isBannerView<R = boolean>(): R;
     setIsBannerView<R = void, P0 = boolean>(_v: P0): R;
-    serverIcon<R = cocoa.NSImage>(): R;
-    setServerIcon<R = void, P0 = cocoa.NSImage>(_v: P0): R;
-    serverName<R = cocoa.NSString>(): R;
-    setServerName<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    statusText<R = cocoa.NSString>(): R;
-    setStatusText<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    shareScreenButton<R = cocoa.NSButton>(): R;
-    connectAsButton<R = cocoa.NSButton>(): R;
+    serverIcon<R = NSImage>(): R;
+    setServerIcon<R = void, P0 = NSImage>(_v: P0): R;
+    serverName<R = NSString>(): R;
+    setServerName<R = void, P0 = NSString>(_v: P0): R;
+    statusText<R = NSString>(): R;
+    setStatusText<R = void, P0 = NSString>(_v: P0): R;
+    shareScreenButton<R = NSButton>(): R;
+    connectAsButton<R = NSButton>(): R;
   }
   namespace classes {
-    export interface NSNavSharedServerController<T = any> extends cocoa.classes.NSViewController {
+    export interface NSNavSharedServerController<T = any> extends NSViewController {
       alloc<R = NSNavSharedServerController>(): R;
       new: <R = NSNavSharedServerController>() => R;
     }

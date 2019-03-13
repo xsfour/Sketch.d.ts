@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSForceClickMonitor<T = any> extends cocoa.NSObject {
+  export interface NSForceClickMonitor<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     pressureChangeWithEvent<R = void, P0 = unknown>(_pressureChangeWithEvent: P0): R;
     mouseUp<R = void, P0 = unknown>(_mouseUp: P0): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     firstMouseEvent<R = void, P0 = unknown>(_firstMouseEvent: P0): R;
     sendEvent<R = void, P0 = unknown>(_sendEvent: P0): R;
     cancel<R = void>(): R;
-    location<R = cocoa.CGPoint>(): R;
+    location<R = CGPoint>(): R;
     initWithEvent<R = unknown, P0 = unknown>(_initWithEvent: P0): R;
     _initWithEvent_ignoreForceClickSystemPreferences<R = unknown, P0 = unknown, P1 = boolean>(__initWithEvent: P0, _ignoreForceClickSystemPreferences: P1): R;
     allowableMovement<R = number>(): R;
@@ -25,7 +25,7 @@ declare namespace cocoa {
     setState<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface NSForceClickMonitor<T = any> extends cocoa.classes.NSObject {
+    export interface NSForceClickMonitor<T = any> extends NSObject {
       alloc<R = NSForceClickMonitor>(): R;
       new: <R = NSForceClickMonitor>() => R;
       forceClickUserPreferencesEnabled<R = boolean>(): R;

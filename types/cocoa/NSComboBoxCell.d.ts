@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSComboBoxCell<T = any> extends cocoa.NSTextFieldCell {
+  export interface NSComboBoxCell<T = any> extends NSTextFieldCell {
     setFormatter<R = void, P0 = unknown>(_setFormatter: P0): R;
     _initWithTypedStreamCoder_NSComboBoxCell<R = unknown, P0 = unknown>(__initWithTypedStreamCoder_NSComboBoxCell: P0): R;
     _old_encodeWithCoder_NSComboBoxCell<R = void, P0 = unknown>(__old_encodeWithCoder_NSComboBoxCell: P0): R;
@@ -22,7 +22,7 @@ declare namespace cocoa {
     popUp<R = void, P0 = unknown>(_popUp: P0): R;
     _numberOfRowsDidChangeInComboBoxTableView<R = void, P0 = unknown>(__numberOfRowsDidChangeInComboBoxTableView: P0): R;
     _updatePopUpWindowFrameFirstTimeInSession<R = void, P0 = boolean>(__updatePopUpWindowFrameFirstTimeInSession: P0): R;
-    frameForPopUpWithOldFrame_cellFrame_controlView<R = cocoa.CGRect, P0 = cocoa.CGRect, P1 = cocoa.CGRect, P2 = unknown>(_frameForPopUpWithOldFrame: P0, _cellFrame: P1, _controlView: P2): R;
+    frameForPopUpWithOldFrame_cellFrame_controlView<R = CGRect, P0 = CGRect, P1 = CGRect, P2 = unknown>(_frameForPopUpWithOldFrame: P0, _cellFrame: P1, _controlView: P2): R;
     orderOutPopUpWindow<R = void, P0 = unknown>(_orderOutPopUpWindow: P0): R;
     dismissPopUp<R = void, P0 = unknown>(_dismissPopUp: P0): R;
     filterEvents<R = void, P0 = unknown>(_filterEvents: P0): R;
@@ -32,13 +32,13 @@ declare namespace cocoa {
     _appWillTerminate<R = void, P0 = unknown>(__appWillTerminate: P0): R;
     _isFilteringEvents<R = boolean>(): R;
     _shouldRegisterForEditingNotifications<R = boolean>(): R;
-    shouldEdit_inRect_ofView<R = boolean, P0 = unknown, P1 = cocoa.CGRect, P2 = unknown>(_shouldEdit: P0, _inRect: P1, _ofView: P2): R;
+    shouldEdit_inRect_ofView<R = boolean, P0 = unknown, P1 = CGRect, P2 = unknown>(_shouldEdit: P0, _inRect: P1, _ofView: P2): R;
     _textVerticalAdjust<R = number>(): R;
     _textVerticalInset<R = number>(): R;
-    _coreUIDrawOptionsWithFrame_inView<R = cocoa.__CFDictionary, P0 = cocoa.CGRect, P1 = unknown>(__coreUIDrawOptionsWithFrame: P0, _inView: P1): R;
-    _computeBezelRectWithTextCellFrame_inView_topLeft_bottomLeft_left_right_top_bottom<R = void, P0 = cocoa.CGRect, P1 = unknown, P2 = cocoa.CGRect, P3 = cocoa.CGRect, P4 = cocoa.CGRect, P5 = cocoa.CGRect, P6 = cocoa.CGRect, P7 = cocoa.CGRect>(__computeBezelRectWithTextCellFrame: P0, _inView: P1, _topLeft: P2, _bottomLeft: P3, _left: P4, _right: P5, _top: P6, _bottom: P7): R;
-    boundsForButtonCell<R = cocoa.CGRect, P0 = cocoa.CGRect>(_boundsForButtonCell: P0): R;
-    boundsForTextCell<R = cocoa.CGRect, P0 = cocoa.CGRect>(_boundsForTextCell: P0): R;
+    _coreUIDrawOptionsWithFrame_inView<R = __CFDictionary, P0 = CGRect, P1 = unknown>(__coreUIDrawOptionsWithFrame: P0, _inView: P1): R;
+    _computeBezelRectWithTextCellFrame_inView_topLeft_bottomLeft_left_right_top_bottom<R = void, P0 = CGRect, P1 = unknown, P2 = CGRect, P3 = CGRect, P4 = CGRect, P5 = CGRect, P6 = CGRect, P7 = CGRect>(__computeBezelRectWithTextCellFrame: P0, _inView: P1, _topLeft: P2, _bottomLeft: P3, _left: P4, _right: P5, _top: P6, _bottom: P7): R;
+    boundsForButtonCell<R = CGRect, P0 = CGRect>(_boundsForButtonCell: P0): R;
+    boundsForTextCell<R = CGRect, P0 = CGRect>(_boundsForTextCell: P0): R;
     setDelegate<R = void, P0 = unknown>(_setDelegate: P0): R;
     delegate<R = unknown>(): R;
     setAlignment<R = void, P0 = number>(_setAlignment: P0): R;
@@ -61,8 +61,8 @@ declare namespace cocoa {
     _setButtonBordered<R = void, P0 = boolean>(__setButtonBordered: P0): R;
     _buttonHeight<R = number>(): R;
     _buttonWidth<R = number>(): R;
-    _cellFrame<R = cocoa.CGRect>(): R;
-    _setCellFrame<R = void, P0 = cocoa.CGRect>(__setCellFrame: P0): R;
+    _cellFrame<R = CGRect>(): R;
+    _setCellFrame<R = void, P0 = CGRect>(__setCellFrame: P0): R;
     _initializeButtonCell<R = void>(): R;
     initPopUpWindow<R = void>(): R;
     tableViewAction<R = void, P0 = unknown>(_tableViewAction: P0): R;
@@ -71,19 +71,19 @@ declare namespace cocoa {
     tableViewSelectionDidChange<R = void, P0 = unknown>(_tableViewSelectionDidChange: P0): R;
     tableViewSelectionIsChanging<R = void, P0 = unknown>(_tableViewSelectionIsChanging: P0): R;
     _suppressNonTitleDrawing<R = boolean>(): R;
-    _accessibilityButtonRect<R = cocoa.CGRect>(): R;
+    _accessibilityButtonRect<R = CGRect>(): R;
     _accessibilityButtonUIElement<R = unknown>(): R;
     accessibilitySetExpandedAttribute<R = void, P0 = unknown>(_accessibilitySetExpandedAttribute: P0): R;
     accessibilityIsExpandedAttributeSettable<R = boolean>(): R;
     accessibilityExpandedAttribute<R = unknown>(): R;
     completes<R = boolean>(): R;
     setCompletes<R = void, P0 = boolean>(_v: P0): R;
-    objectValues<R = cocoa.NSArray>(): R;
+    objectValues<R = NSArray>(): R;
     objectValueOfSelectedItem<R = unknown>(): R;
     numberOfItems<R = number>(): R;
     indexOfSelectedItem<R = number>(): R;
-    dataSource<R = cocoa.NSComboBoxCellDataSource>(): R;
-    setDataSource<R = void, P0 = cocoa.NSComboBoxCellDataSource>(_v: P0): R;
+    dataSource<R = NSComboBoxCellDataSource>(): R;
+    setDataSource<R = void, P0 = NSComboBoxCellDataSource>(_v: P0): R;
     usesDataSource<R = boolean>(): R;
     setUsesDataSource<R = void, P0 = boolean>(_v: P0): R;
     numberOfVisibleItems<R = number>(): R;
@@ -92,13 +92,13 @@ declare namespace cocoa {
     setItemHeight<R = void, P0 = number>(_v: P0): R;
     buttonBordered<R = boolean>(): R;
     setButtonBordered<R = void, P0 = boolean>(_v: P0): R;
-    intercellSpacing<R = cocoa.CGSize>(): R;
-    setIntercellSpacing<R = void, P0 = cocoa.CGSize>(_v: P0): R;
+    intercellSpacing<R = CGSize>(): R;
+    setIntercellSpacing<R = void, P0 = CGSize>(_v: P0): R;
     hasVerticalScroller<R = boolean>(): R;
     setHasVerticalScroller<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface NSComboBoxCell<T = any> extends cocoa.classes.NSTextFieldCell {
+    export interface NSComboBoxCell<T = any> extends NSTextFieldCell {
       alloc<R = NSComboBoxCell>(): R;
       new: <R = NSComboBoxCell>() => R;
       automaticTextCompletionEnabled<R = boolean>(): R;

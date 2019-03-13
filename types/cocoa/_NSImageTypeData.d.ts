@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSImageTypeData<T = any> extends cocoa.NSObject {
+  export interface _NSImageTypeData<T = any> extends NSObject {
     namedImageUnfilteredSuffixExpression<R = unknown>(): R;
     namedImageSuffixExpression<R = unknown>(): R;
     imageUnfilteredPasteboardTypes<R = unknown>(): R;
@@ -13,7 +13,7 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
   }
   namespace classes {
-    export interface _NSImageTypeData<T = any> extends cocoa.classes.NSObject {
+    export interface _NSImageTypeData<T = any> extends NSObject {
       alloc<R = _NSImageTypeData>(): R;
       new: <R = _NSImageTypeData>() => R;
       initialize<R = void>(): R;

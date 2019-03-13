@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScriptClassDescription<T = any> extends cocoa.NSClassDescription {
+  export interface NSScriptClassDescription<T = any> extends NSClassDescription {
     toManyRelationshipKeys<R = unknown>(): R;
     toOneRelationshipKeys<R = unknown>(): R;
     attributeKeys<R = unknown>(): R;
@@ -57,15 +57,15 @@ declare namespace cocoa {
     _initWithSuiteName_className_implDeclaration_presoDeclaration<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown>(__initWithSuiteName: P0, _className: P1, _implDeclaration: P2, _presoDeclaration: P3): R;
     description<R = unknown>(): R;
     _descriptionWithTabCount<R = unknown, P0 = number>(__descriptionWithTabCount: P0): R;
-    defaultSubcontainerAttributeKey<R = cocoa.NSString>(): R;
+    defaultSubcontainerAttributeKey<R = NSString>(): R;
     appleEventCode<R = number>(): R;
-    superclassDescription<R = cocoa.NSScriptClassDescription>(): R;
-    implementationClassName<R = cocoa.NSString>(): R;
-    className<R = cocoa.NSString>(): R;
-    suiteName<R = cocoa.NSString>(): R;
+    superclassDescription<R = NSScriptClassDescription>(): R;
+    implementationClassName<R = NSString>(): R;
+    className<R = NSString>(): R;
+    suiteName<R = NSString>(): R;
   }
   namespace classes {
-    export interface NSScriptClassDescription<T = any> extends cocoa.classes.NSClassDescription {
+    export interface NSScriptClassDescription<T = any> extends NSClassDescription {
       alloc<R = NSScriptClassDescription>(): R;
       new: <R = NSScriptClassDescription>() => R;
       _propertyDescriptionsOfClass_fromImplDeclarations_presoDeclarations_suiteName_className<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown>(__propertyDescriptionsOfClass: P0, _fromImplDeclarations: P1, _presoDeclarations: P2, _suiteName: P3, _className: P4): R;

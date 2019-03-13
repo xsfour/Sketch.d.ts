@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSplitViewItem<T = any> extends cocoa.NSObject, cocoa.NSAppearanceCustomizationProtocol, cocoa.NSAnimatablePropertyContainerProtocol, cocoa.NSCodingProtocol {
+  export interface NSSplitViewItem<T = any> extends NSObject, NSAppearanceCustomizationProtocol, NSAnimatablePropertyContainerProtocol, NSCodingProtocol {
     _animatorClass<R = unknown>(): R;
     _setForceWithinWindowBlending<R = void, P0 = boolean>(__setForceWithinWindowBlending: P0): R;
     _forceWithinWindowBlending<R = boolean>(): R;
@@ -50,8 +50,8 @@ declare namespace cocoa {
     isSidebar<R = boolean>(): R;
     setSidebar<R = void, P0 = boolean>(_setSidebar: P0): R;
     setBehavior<R = void, P0 = number>(_setBehavior: P0): R;
-    animations<R = cocoa.NSDictionary>(): R;
-    setAnimations<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
+    animations<R = NSDictionary>(): R;
+    setAnimations<R = void, P0 = NSDictionary>(_v: P0): R;
     springLoaded<R = boolean>(): R;
     setSpringLoaded<R = void, P0 = boolean>(_v: P0): R;
     preferredThicknessFraction<R = number>(): R;
@@ -70,19 +70,19 @@ declare namespace cocoa {
     setCollapsed<R = void, P0 = boolean>(_v: P0): R;
     canCollapse<R = boolean>(): R;
     setCanCollapse<R = void, P0 = boolean>(_v: P0): R;
-    viewController<R = cocoa.NSViewController>(): R;
-    setViewController<R = void, P0 = cocoa.NSViewController>(_v: P0): R;
+    viewController<R = NSViewController>(): R;
+    setViewController<R = void, P0 = NSViewController>(_v: P0): R;
     behavior<R = number>(): R;
-    effectiveAppearance<R = cocoa.NSAppearance>(): R;
-    appearance<R = cocoa.NSAppearance>(): R;
-    setAppearance<R = void, P0 = cocoa.NSAppearance>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    effectiveAppearance<R = NSAppearance>(): R;
+    appearance<R = NSAppearance>(): R;
+    setAppearance<R = void, P0 = NSAppearance>(_v: P0): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSSplitViewItem<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSAppearanceCustomizationProtocol, cocoa.classes.NSAnimatablePropertyContainerProtocol, cocoa.classes.NSCodingProtocol {
+    export interface NSSplitViewItem<T = any> extends NSObject, NSAppearanceCustomizationProtocol, NSAnimatablePropertyContainerProtocol, NSCodingProtocol {
       alloc<R = NSSplitViewItem>(): R;
       new: <R = NSSplitViewItem>() => R;
       keyPathsForValuesAffectingEffectiveCollapseBehavior<R = unknown>(): R;

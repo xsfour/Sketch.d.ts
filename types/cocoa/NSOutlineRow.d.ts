@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSOutlineRow<T = any> extends cocoa.NSTableRow {
+  export interface NSOutlineRow<T = any> extends NSTableRow {
     _accessibilityDisplaysDisclosureTriangleForRow<R = boolean, P0 = number>(__accessibilityDisplaysDisclosureTriangleForRow: P0): R;
     _outlineTableColumnIndex<R = number>(): R;
     accessibilityIsDisclosureLevelAttributeSettable<R = boolean>(): R;
@@ -15,7 +15,7 @@ declare namespace cocoa {
     accessibilityDisclosingAttribute<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSOutlineRow<T = any> extends cocoa.classes.NSTableRow {
+    export interface NSOutlineRow<T = any> extends NSTableRow {
       alloc<R = NSOutlineRow>(): R;
       new: <R = NSOutlineRow>() => R;
     }

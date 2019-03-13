@@ -8,8 +8,8 @@ declare namespace cocoa {
     cancelPerformSelectorsWithTarget<R = void, P0 = unknown>(_cancelPerformSelectorsWithTarget: P0): R;
     cancelPerformSelector_target_argument<R = void, P0 = string, P1 = unknown, P2 = unknown>(_cancelPerformSelector: P0, _target: P1, _argument: P2): R;
     performSelector_target_argument_order_modes<R = void, P0 = string, P1 = unknown, P2 = unknown, P3 = number, P4 = unknown>(_performSelector: P0, _target: P1, _argument: P2, _order: P3, _modes: P4): R;
-    performBlock<R = void, P0 = cocoa.CDUnknownBlockType>(_performBlock: P0): R;
-    performInModes_block<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(_performInModes: P0, _block: P1): R;
+    performBlock<R = void, P0 = CDUnknownBlockType>(_performBlock: P0): R;
+    performInModes_block<R = void, P0 = unknown, P1 = CDUnknownBlockType>(_performInModes: P0, _block: P1): R;
     configureAsServer<R = void>(): R;
     runBeforeDate<R = boolean, P0 = unknown>(_runBeforeDate: P0): R;
     runUntilDate<R = void, P0 = unknown>(_runUntilDate: P0): R;
@@ -31,15 +31,15 @@ declare namespace cocoa {
     removePort_forMode<R = void, P0 = unknown, P1 = unknown>(_removePort: P0, _forMode: P1): R;
     addPort_forMode<R = void, P0 = unknown, P1 = unknown>(_addPort: P0, _forMode: P1): R;
     description<R = unknown>(): R;
-    getCFRunLoop<R = cocoa.__CFRunLoop>(): R;
+    getCFRunLoop<R = __CFRunLoop>(): R;
     dealloc<R = void>(): R;
     init<R = unknown>(): R;
-    copyWithZone<R = unknown, P0 = cocoa._NSZone>(_copyWithZone: P0): R;
+    copyWithZone<R = unknown, P0 = _NSZone>(_copyWithZone: P0): R;
     _removePort_forMode<R = void, P0 = unknown, P1 = unknown>(__removePort: P0, _forMode: P1): R;
     _addPort_forMode<R = void, P0 = unknown, P1 = unknown>(__addPort: P0, _forMode: P1): R;
     _containsPort_forMode<R = boolean, P0 = unknown, P1 = unknown>(__containsPort: P0, _forMode: P1): R;
     _portInvalidated<R = void, P0 = unknown>(__portInvalidated: P0): R;
-    _enumerateInfoPairsWithBlock<R = void, P0 = cocoa.CDUnknownBlockType>(__enumerateInfoPairsWithBlock: P0): R;
+    _enumerateInfoPairsWithBlock<R = void, P0 = CDUnknownBlockType>(__enumerateInfoPairsWithBlock: P0): R;
   }
   namespace classes {
     export interface NSRunLoop<T = any> {

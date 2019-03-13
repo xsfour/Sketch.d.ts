@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAggregateExpression<T = any> extends cocoa.NSExpression {
+  export interface NSAggregateExpression<T = any> extends NSExpression {
     hash<R = number>(): R;
     collection<R = unknown>(): R;
     constantValue<R = unknown>(): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     initWithCollection<R = unknown, P0 = unknown>(_initWithCollection: P0): R;
   }
   namespace classes {
-    export interface NSAggregateExpression<T = any> extends cocoa.classes.NSExpression {
+    export interface NSAggregateExpression<T = any> extends NSExpression {
       alloc<R = NSAggregateExpression>(): R;
       new: <R = NSAggregateExpression>() => R;
     }

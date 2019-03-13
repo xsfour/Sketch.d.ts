@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPasteboardInternalImageReader<T = any> extends cocoa.MSPasteboardImagesReader {}
+  export interface MSPasteboardInternalImageReader<T = any> extends MSPasteboardImagesReader {}
   namespace classes {
-    export interface MSPasteboardInternalImageReader<T = any> extends cocoa.classes.MSPasteboardImagesReader {
+    export interface MSPasteboardInternalImageReader<T = any> extends MSPasteboardImagesReader {
       alloc<R = MSPasteboardInternalImageReader>(): R;
       new: <R = MSPasteboardInternalImageReader>() => R;
     }

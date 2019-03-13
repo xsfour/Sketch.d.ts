@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSGradient<T = any> extends cocoa.MSModelObject {
+  export interface _MSGradient<T = any> extends MSModelObject {
     moveGradientStopIndex_toIndex<R = void, P0 = number, P1 = number>(_moveGradientStopIndex: P0, _toIndex: P1): R;
     removeAllGradientStops<R = void>(): R;
     removeGradientStopsAtIndexes<R = void, P0 = unknown>(_removeGradientStopsAtIndexes: P0): R;
@@ -15,19 +15,19 @@ declare namespace cocoa {
     addGradientStops<R = void, P0 = unknown>(_addGradientStops: P0): R;
     addGradientStop<R = void, P0 = unknown>(_addGradientStop: P0): R;
     hasDefaultValues<R = boolean>(): R;
-    stops<R = cocoa.NSArray>(): R;
-    setStops<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    to<R = cocoa.CGPoint>(): R;
-    setTo<R = void, P0 = cocoa.CGPoint>(_v: P0): R;
+    stops<R = NSArray>(): R;
+    setStops<R = void, P0 = NSArray>(_v: P0): R;
+    to<R = CGPoint>(): R;
+    setTo<R = void, P0 = CGPoint>(_v: P0): R;
     gradientType<R = number>(): R;
     setGradientType<R = void, P0 = number>(_v: P0): R;
-    from<R = cocoa.CGPoint>(): R;
-    setFrom<R = void, P0 = cocoa.CGPoint>(_v: P0): R;
+    from<R = CGPoint>(): R;
+    setFrom<R = void, P0 = CGPoint>(_v: P0): R;
     elipseLength<R = number>(): R;
     setElipseLength<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface _MSGradient<T = any> extends cocoa.classes.MSModelObject {
+    export interface _MSGradient<T = any> extends MSModelObject {
       alloc<R = _MSGradient>(): R;
       new: <R = _MSGradient>() => R;
     }

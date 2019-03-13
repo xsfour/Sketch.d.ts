@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSGroupTouchBarItem<T = any> extends cocoa.NSTouchBarItem, cocoa.NSTouchBarItemTypeGroupProtocol {
+  export interface NSGroupTouchBarItem<T = any> extends NSTouchBarItem, NSTouchBarItemTypeGroupProtocol {
     observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
-    item_minSize_maxSize_preferredSize<R = void, P0 = unknown, P1 = cocoa.CGSize, P2 = cocoa.CGSize, P3 = cocoa.CGSize>(_item: P0, _minSize: P1, _maxSize: P2, _preferredSize: P3): R;
+    item_minSize_maxSize_preferredSize<R = void, P0 = unknown, P1 = CGSize, P2 = CGSize, P3 = CGSize>(_item: P0, _minSize: P1, _maxSize: P2, _preferredSize: P3): R;
     _defaultCompressionOptionOrder<R = unknown>(): R;
     _minimumWidthForCompressionOptions<R = number, P0 = unknown>(__minimumWidthForCompressionOptions: P0): R;
     _invalidateMeasurementsOfItem<R = void, P0 = unknown>(__invalidateMeasurementsOfItem: P0): R;
@@ -16,26 +16,26 @@ declare namespace cocoa {
     hasAutomaticLayoutDirection<R = boolean>(): R;
     _setGroupItems<R = void, P0 = unknown>(__setGroupItems: P0): R;
     _makeContainerTouchBar<R = unknown>(): R;
-    prioritizedCompressionOptions<R = cocoa.NSArray>(): R;
-    setPrioritizedCompressionOptions<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    effectiveCompressionOptions<R = cocoa.NSUserInterfaceCompressionOptions>(): R;
+    prioritizedCompressionOptions<R = NSArray>(): R;
+    setPrioritizedCompressionOptions<R = void, P0 = NSArray>(_v: P0): R;
+    effectiveCompressionOptions<R = NSUserInterfaceCompressionOptions>(): R;
     preferredItemWidth<R = number>(): R;
     setPreferredItemWidth<R = void, P0 = number>(_v: P0): R;
     prefersEqualWidths<R = boolean>(): R;
     setPrefersEqualWidths<R = void, P0 = boolean>(_v: P0): R;
     groupUserInterfaceLayoutDirection<R = number>(): R;
     setGroupUserInterfaceLayoutDirection<R = void, P0 = number>(_v: P0): R;
-    customizationLabel<R = cocoa.NSString>(): R;
-    setCustomizationLabel<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    groupTouchBar<R = cocoa.NSTouchBar>(): R;
-    setGroupTouchBar<R = void, P0 = cocoa.NSTouchBar>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    customizationLabel<R = NSString>(): R;
+    setCustomizationLabel<R = void, P0 = NSString>(_v: P0): R;
+    groupTouchBar<R = NSTouchBar>(): R;
+    setGroupTouchBar<R = void, P0 = NSTouchBar>(_v: P0): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSGroupTouchBarItem<T = any> extends cocoa.classes.NSTouchBarItem, cocoa.classes.NSTouchBarItemTypeGroupProtocol {
+    export interface NSGroupTouchBarItem<T = any> extends NSTouchBarItem, NSTouchBarItemTypeGroupProtocol {
       alloc<R = NSGroupTouchBarItem>(): R;
       new: <R = NSGroupTouchBarItem>() => R;
       keyPathsForValuesAffecting_requiresReducedMetricAppearance<R = unknown>(): R;

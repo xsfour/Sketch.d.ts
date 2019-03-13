@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSQuickActionTouchBarItemDataSource<T = any> extends cocoa.NSObject {
+  export interface _NSQuickActionTouchBarItemDataSource<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     dealloc<R = void>(): R;
     invokeWithoutClient<R = boolean>(): R;
@@ -12,13 +12,13 @@ declare namespace cocoa {
     setObservationInfo<R = void, P0 = void>(_setObservationInfo: P0): R;
     initWithQuickActionIdentifier_backgroundLoadingQueue<R = unknown, P0 = unknown, P1 = unknown>(_initWithQuickActionIdentifier: P0, _backgroundLoadingQueue: P1): R;
     enabled<R = boolean>(): R;
-    label<R = cocoa.NSString>(): R;
-    quickActionIdentifier<R = cocoa.NSString>(): R;
-    backgroundColor<R = cocoa.NSColor>(): R;
-    image<R = cocoa.NSImage>(): R;
+    label<R = NSString>(): R;
+    quickActionIdentifier<R = NSString>(): R;
+    backgroundColor<R = NSColor>(): R;
+    image<R = NSImage>(): R;
   }
   namespace classes {
-    export interface _NSQuickActionTouchBarItemDataSource<T = any> extends cocoa.classes.NSObject {
+    export interface _NSQuickActionTouchBarItemDataSource<T = any> extends NSObject {
       alloc<R = _NSQuickActionTouchBarItemDataSource>(): R;
       new: <R = _NSQuickActionTouchBarItemDataSource>() => R;
       automaticallyNotifiesObserversOfBackgroundColor<R = boolean>(): R;

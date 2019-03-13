@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXMLElement<T = any> extends cocoa.NSXMLNode {
-    _libxml2TreeRepresentationWithNamespaces<R = cocoa._xmlNode, P0 = unknown>(__libxml2TreeRepresentationWithNamespaces: P0): R;
+  export interface NSXMLElement<T = any> extends NSXMLNode {
+    _libxml2TreeRepresentationWithNamespaces<R = _xmlNode, P0 = unknown>(__libxml2TreeRepresentationWithNamespaces: P0): R;
     _prefixIndex<R = number>(): R;
     _setPrefix<R = boolean, P0 = unknown>(__setPrefix: P0): R;
     prefix<R = unknown>(): R;
@@ -71,10 +71,10 @@ declare namespace cocoa {
     initWithName_stringValue<R = unknown, P0 = unknown, P1 = unknown>(_initWithName: P0, _stringValue: P1): R;
     initWithLocalName_URI<R = unknown, P0 = unknown, P1 = unknown>(_initWithLocalName: P0, _URI: P1): R;
     initWithName<R = unknown, P0 = unknown>(_initWithName: P0): R;
-    namespaces<R = cocoa.NSArray>(): R;
-    setNamespaces<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    attributes<R = cocoa.NSArray>(): R;
-    setAttributes<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    namespaces<R = NSArray>(): R;
+    setNamespaces<R = void, P0 = NSArray>(_v: P0): R;
+    attributes<R = NSArray>(): R;
+    setAttributes<R = void, P0 = NSArray>(_v: P0): R;
     // + NSXMLElement(SVG):
     addAttributeWithName_percentageFractionalValue<R = void, P0 = unknown, P1 = number>(_addAttributeWithName: P0, _percentageFractionalValue: P1): R;
     addAttributeWithName_percentageValue<R = void, P0 = unknown, P1 = number>(_addAttributeWithName: P0, _percentageValue: P1): R;
@@ -92,9 +92,9 @@ declare namespace cocoa {
     doubleValueFromPercentageAttributeWithName_orDefault<R = number, P0 = unknown, P1 = number>(_doubleValueFromPercentageAttributeWithName: P0, _orDefault: P1): R;
     doubleValueFromPercentageAttributeWithName_alternate<R = number, P0 = unknown, P1 = unknown>(_doubleValueFromPercentageAttributeWithName: P0, _alternate: P1): R;
     doubleValueFromPercentageAttributeWithName<R = number, P0 = unknown>(_doubleValueFromPercentageAttributeWithName: P0): R;
-    rectValueWithXScale_yScale<R = cocoa.CGRect, P0 = number, P1 = number>(_rectValueWithXScale: P0, _yScale: P1): R;
-    rectValue<R = cocoa.CGRect>(): R;
-    rectValueFromAttributeWithName<R = cocoa.CGRect, P0 = unknown>(_rectValueFromAttributeWithName: P0): R;
+    rectValueWithXScale_yScale<R = CGRect, P0 = number, P1 = number>(_rectValueWithXScale: P0, _yScale: P1): R;
+    rectValue<R = CGRect>(): R;
+    rectValueFromAttributeWithName<R = CGRect, P0 = unknown>(_rectValueFromAttributeWithName: P0): R;
     intValueFromAttributeWithName<R = number, P0 = unknown>(_intValueFromAttributeWithName: P0): R;
     stringForHREFLink<R = unknown>(): R;
     stringFromAttributeWithName_orDefault<R = unknown, P0 = unknown, P1 = unknown>(_stringFromAttributeWithName: P0, _orDefault: P1): R;
@@ -110,10 +110,10 @@ declare namespace cocoa {
     gotAttributeWithName<R = boolean, P0 = unknown>(_gotAttributeWithName: P0): R;
   }
   namespace classes {
-    export interface NSXMLElement<T = any> extends cocoa.classes.NSXMLNode {
+    export interface NSXMLElement<T = any> extends NSXMLNode {
       alloc<R = NSXMLElement>(): R;
       new: <R = NSXMLElement>() => R;
-      _elementFromTidyDoc_element_encoding_elementClass_nodeClass<R = unknown, P0 = cocoa._TidyDoc, P1 = cocoa._TidyNode, P2 = number, P3 = unknown, P4 = unknown>(__elementFromTidyDoc: P0, _element: P1, _encoding: P2, _elementClass: P3, _nodeClass: P4): R;
+      _elementFromTidyDoc_element_encoding_elementClass_nodeClass<R = unknown, P0 = _TidyDoc, P1 = _TidyNode, P2 = number, P3 = unknown, P4 = unknown>(__elementFromTidyDoc: P0, _element: P1, _encoding: P2, _elementClass: P3, _nodeClass: P4): R;
       // + NSXMLElement(SVG):
       
     }

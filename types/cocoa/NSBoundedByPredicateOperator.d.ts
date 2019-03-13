@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSBoundedByPredicateOperator<T = any> extends cocoa.NSPredicateOperator {}
+  export interface NSBoundedByPredicateOperator<T = any> extends NSPredicateOperator {}
   namespace classes {
-    export interface NSBoundedByPredicateOperator<T = any> extends cocoa.classes.NSPredicateOperator {
+    export interface NSBoundedByPredicateOperator<T = any> extends NSPredicateOperator {
       alloc<R = NSBoundedByPredicateOperator>(): R;
       new: <R = NSBoundedByPredicateOperator>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSStyle<T = any> extends cocoa._MSStyle, cocoa.MSSharedObjectInstanceProtocol, cocoa.NSCopyingProtocol {
+  export interface MSStyle<T = any> extends _MSStyle, MSSharedObjectInstanceProtocol, NSCopyingProtocol {
     addStylePartOfType<R = unknown, P0 = number>(_addStylePartOfType: P0): R;
     stylePartsOfType<R = unknown, P0 = number>(_stylePartsOfType: P0): R;
     hasTextStyle<R = boolean>(): R;
@@ -23,29 +23,29 @@ declare namespace cocoa {
     disableAllBorders<R = void>(): R;
     determineMaskingMode<R = number>(): R;
     prepareAsMask<R = void>(): R;
-    generatePreviewWithImageSize_previewSize_colorSpace_backingScale_completionBlock<R = void, P0 = cocoa.CGSize, P1 = cocoa.CGSize, P2 = unknown, P3 = number, P4 = cocoa.CDUnknownBlockType>(_generatePreviewWithImageSize: P0, _previewSize: P1, _colorSpace: P2, _backingScale: P3, _completionBlock: P4): R;
-    prepareForPreviewingWithImageSize_previewSize<R = void, P0 = cocoa.CGSize, P1 = cocoa.CGSize>(_prepareForPreviewingWithImageSize: P0, _previewSize: P1): R;
-    shapeForPreviewWithSize<R = unknown, P0 = cocoa.CGSize>(_shapeForPreviewWithSize: P0): R;
-    primitiveSharedObjectID<R = cocoa.NSString>(): R;
-    setPrimitiveSharedObjectID<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    generatePreviewWithImageSize_previewSize_colorSpace_backingScale_completionBlock<R = void, P0 = CGSize, P1 = CGSize, P2 = unknown, P3 = number, P4 = CDUnknownBlockType>(_generatePreviewWithImageSize: P0, _previewSize: P1, _colorSpace: P2, _backingScale: P3, _completionBlock: P4): R;
+    prepareForPreviewingWithImageSize_previewSize<R = void, P0 = CGSize, P1 = CGSize>(_prepareForPreviewingWithImageSize: P0, _previewSize: P1): R;
+    shapeForPreviewWithSize<R = unknown, P0 = CGSize>(_shapeForPreviewWithSize: P0): R;
+    primitiveSharedObjectID<R = NSString>(): R;
+    setPrimitiveSharedObjectID<R = void, P0 = NSString>(_v: P0): R;
     thickestInnerStroke<R = number>(): R;
     hasMarkers<R = boolean>(): R;
     thickestStroke<R = number>(): R;
     hasEnabledBackgroundBlur<R = boolean>(): R;
-    primitiveTextStyle<R = cocoa.MSTextStyle>(): R;
-    setPrimitiveTextStyle<R = void, P0 = cocoa.MSTextStyle>(_v: P0): R;
+    primitiveTextStyle<R = MSTextStyle>(): R;
+    setPrimitiveTextStyle<R = void, P0 = MSTextStyle>(_v: P0): R;
     hasBlending<R = boolean>(): R;
     hasEnabledBorder<R = boolean>(): R;
     hasMoreThanOneEnabledFill<R = boolean>(): R;
     hasEnabledFill<R = boolean>(): R;
     hasEnabledShadow<R = boolean>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSStyle<T = any> extends cocoa.classes._MSStyle, cocoa.classes.MSSharedObjectInstanceProtocol, cocoa.classes.NSCopyingProtocol {
+    export interface MSStyle<T = any> extends _MSStyle, MSSharedObjectInstanceProtocol, NSCopyingProtocol {
       alloc<R = MSStyle>(): R;
       new: <R = MSStyle>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSGroupAction<T = any> extends cocoa.MSDocumentAction {
+  export interface MSGroupAction<T = any> extends MSDocumentAction {
     historyMomentTitle<R = unknown>(): R;
     group<R = void, P0 = unknown>(_group: P0): R;
     validate<R = boolean>(): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     tooltip<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSGroupAction<T = any> extends cocoa.classes.MSDocumentAction {
+    export interface MSGroupAction<T = any> extends MSDocumentAction {
       alloc<R = MSGroupAction>(): R;
       new: <R = MSGroupAction>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTabViewControllerSegmentedControlUIProvider<T = any> extends cocoa.NSObject, cocoa.NSTabViewControllerUIProviderProtocol {
+  export interface NSTabViewControllerSegmentedControlUIProvider<T = any> extends NSObject, NSTabViewControllerUIProviderProtocol {
     observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
     _stopObservingTabViewItem<R = void, P0 = unknown>(__stopObservingTabViewItem: P0): R;
     _startObservingTabViewItem<R = void, P0 = unknown>(__startObservingTabViewItem: P0): R;
@@ -13,17 +13,17 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     segmentedControlLocation<R = number>(): R;
     setSegmentedControlLocation<R = void, P0 = number>(_v: P0): R;
-    tabViewController<R = cocoa.NSTabViewController>(): R;
-    setTabViewController<R = void, P0 = cocoa.NSTabViewController>(_v: P0): R;
-    segmentedControl<R = cocoa.NSSegmentedControl>(): R;
-    setSegmentedControl<R = void, P0 = cocoa.NSSegmentedControl>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    tabViewController<R = NSTabViewController>(): R;
+    setTabViewController<R = void, P0 = NSTabViewController>(_v: P0): R;
+    segmentedControl<R = NSSegmentedControl>(): R;
+    setSegmentedControl<R = void, P0 = NSSegmentedControl>(_v: P0): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSTabViewControllerSegmentedControlUIProvider<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSTabViewControllerUIProviderProtocol {
+    export interface NSTabViewControllerSegmentedControlUIProvider<T = any> extends NSObject, NSTabViewControllerUIProviderProtocol {
       alloc<R = NSTabViewControllerSegmentedControlUIProvider>(): R;
       new: <R = NSTabViewControllerSegmentedControlUIProvider>() => R;
     }

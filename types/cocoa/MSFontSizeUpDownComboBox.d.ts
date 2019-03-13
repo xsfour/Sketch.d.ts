@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFontSizeUpDownComboBox<T = any> extends cocoa.MSUpDownComboBox {}
+  export interface MSFontSizeUpDownComboBox<T = any> extends MSUpDownComboBox {}
   namespace classes {
-    export interface MSFontSizeUpDownComboBox<T = any> extends cocoa.classes.MSUpDownComboBox {
+    export interface MSFontSizeUpDownComboBox<T = any> extends MSUpDownComboBox {
       alloc<R = MSFontSizeUpDownComboBox>(): R;
       new: <R = MSFontSizeUpDownComboBox>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSViewAlignmentLayoutRect<T = any> extends cocoa.NSLayoutRect {
+  export interface _NSViewAlignmentLayoutRect<T = any> extends NSLayoutRect {
     heightAnchor<R = unknown>(): R;
     widthAnchor<R = unknown>(): R;
     bottomAnchor<R = unknown>(): R;
@@ -11,10 +11,10 @@ declare namespace cocoa {
     centerXAnchor<R = unknown>(): R;
     leadingAnchor<R = unknown>(): R;
     initWithHostItem<R = unknown, P0 = unknown>(_initWithHostItem: P0): R;
-    hostItem<R = cocoa.NSAKLayoutItem>(): R;
+    hostItem<R = NSAKLayoutItem>(): R;
   }
   namespace classes {
-    export interface _NSViewAlignmentLayoutRect<T = any> extends cocoa.classes.NSLayoutRect {
+    export interface _NSViewAlignmentLayoutRect<T = any> extends NSLayoutRect {
       alloc<R = _NSViewAlignmentLayoutRect>(): R;
       new: <R = _NSViewAlignmentLayoutRect>() => R;
     }

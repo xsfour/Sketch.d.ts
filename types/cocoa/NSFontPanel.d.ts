@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFontPanel<T = any> extends cocoa.NSPanel {
+  export interface NSFontPanel<T = any> extends NSPanel {
     _fontPanelDescriptorsDictionaryFromFromPasteboard<R = unknown, P0 = unknown>(__fontPanelDescriptorsDictionaryFromFromPasteboard: P0): R;
     removeItemForTableView_pasteboard_operation<R = boolean, P0 = unknown, P1 = unknown, P2 = number>(_removeItemForTableView: P0, _pasteboard: P1, _operation: P2): R;
     draggingSourceOperationMaskForTableView<R = number, P0 = unknown>(_draggingSourceOperationMaskForTableView: P0): R;
@@ -40,7 +40,7 @@ declare namespace cocoa {
     _inHideCollectionsMode<R = boolean>(): R;
     _checkCollectionMoveOut<R = void, P0 = number>(__checkCollectionMoveOut: P0): R;
     _reflectSize<R = void>(): R;
-    windowWillResize_toSize<R = cocoa.CGSize, P0 = unknown, P1 = cocoa.CGSize>(_windowWillResize: P0, _toSize: P1): R;
+    windowWillResize_toSize<R = CGSize, P0 = unknown, P1 = CGSize>(_windowWillResize: P0, _toSize: P1): R;
     _toggleCollections_animate<R = void, P0 = number, P1 = boolean>(__toggleCollections: P0, _animate: P1): R;
     _validateFaces<R = void, P0 = number>(__validateFaces: P0): R;
     _validateSizes<R = void, P0 = number>(__validateSizes: P0): R;
@@ -91,14 +91,14 @@ declare namespace cocoa {
     setEnabled<R = void, P0 = boolean>(_v: P0): R;
     worksWhenModal<R = boolean>(): R;
     setWorksWhenModal<R = void, P0 = boolean>(_v: P0): R;
-    accessoryView<R = cocoa.NSView>(): R;
-    setAccessoryView<R = void, P0 = cocoa.NSView>(_v: P0): R;
+    accessoryView<R = NSView>(): R;
+    setAccessoryView<R = void, P0 = NSView>(_v: P0): R;
   }
   namespace classes {
-    export interface NSFontPanel<T = any> extends cocoa.classes.NSPanel {
+    export interface NSFontPanel<T = any> extends NSPanel {
       alloc<R = NSFontPanel>(): R;
       new: <R = NSFontPanel>() => R;
-      restoreWindowWithIdentifier_state_completionHandler<R = void, P0 = unknown, P1 = unknown, P2 = cocoa.CDUnknownBlockType>(_restoreWindowWithIdentifier: P0, _state: P1, _completionHandler: P2): R;
+      restoreWindowWithIdentifier_state_completionHandler<R = void, P0 = unknown, P1 = unknown, P2 = CDUnknownBlockType>(_restoreWindowWithIdentifier: P0, _state: P1, _completionHandler: P2): R;
       sharedFontPanel<R = unknown>(): R;
       sharedFontPanelExists<R = boolean>(): R;
     }

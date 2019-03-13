@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXMLParser<T = any> extends cocoa.NSObject {
+  export interface NSXMLParser<T = any> extends NSObject {
     _initializeSAX2Callbacks<R = void>(): R;
     _popNamespaces<R = void>(): R;
     _pushNamespaces<R = void, P0 = unknown>(__pushNamespaces: P0): R;
@@ -20,12 +20,12 @@ declare namespace cocoa {
     _handleParseResult<R = boolean, P0 = number>(__handleParseResult: P0): R;
     shouldContinueAfterFatalError<R = boolean>(): R;
     setShouldContinueAfterFatalError<R = void, P0 = boolean>(_setShouldContinueAfterFatalError: P0): R;
-    _xmlExternalEntityWithURL_identifier_context_originalLoaderFunction<R = cocoa._xmlParserInput, P0 = string, P1 = string, P2 = cocoa._xmlParserCtxt, P3 = cocoa.CDUnknownFunctionPointerType>(__xmlExternalEntityWithURL: P0, _identifier: P1, _context: P2, _originalLoaderFunction: P3): R;
+    _xmlExternalEntityWithURL_identifier_context_originalLoaderFunction<R = _xmlParserInput, P0 = string, P1 = string, P2 = _xmlParserCtxt, P3 = CDUnknownFunctionPointerType>(__xmlExternalEntityWithURL: P0, _identifier: P1, _context: P2, _originalLoaderFunction: P3): R;
     initWithStream<R = unknown, P0 = unknown>(_initWithStream: P0): R;
     initForIncrementalParsing<R = unknown>(): R;
     initWithData<R = unknown, P0 = unknown>(_initWithData: P0): R;
     initWithContentsOfURL<R = unknown, P0 = unknown>(_initWithContentsOfURL: P0): R;
-    parserError<R = cocoa.NSError>(): R;
+    parserError<R = NSError>(): R;
     shouldResolveExternalEntities<R = boolean>(): R;
     setShouldResolveExternalEntities<R = void, P0 = boolean>(_v: P0): R;
     shouldReportNamespacePrefixes<R = boolean>(): R;
@@ -34,13 +34,13 @@ declare namespace cocoa {
     setShouldProcessNamespaces<R = void, P0 = boolean>(_v: P0): R;
     externalEntityResolvingPolicy<R = number>(): R;
     setExternalEntityResolvingPolicy<R = void, P0 = number>(_v: P0): R;
-    allowedExternalEntityURLs<R = cocoa.NSSet>(): R;
-    setAllowedExternalEntityURLs<R = void, P0 = cocoa.NSSet>(_v: P0): R;
-    delegate<R = cocoa.NSXMLParserDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSXMLParserDelegate>(_v: P0): R;
+    allowedExternalEntityURLs<R = NSSet>(): R;
+    setAllowedExternalEntityURLs<R = void, P0 = NSSet>(_v: P0): R;
+    delegate<R = NSXMLParserDelegate>(): R;
+    setDelegate<R = void, P0 = NSXMLParserDelegate>(_v: P0): R;
   }
   namespace classes {
-    export interface NSXMLParser<T = any> extends cocoa.classes.NSObject {
+    export interface NSXMLParser<T = any> extends NSObject {
       alloc<R = NSXMLParser>(): R;
       new: <R = NSXMLParser>() => R;
       currentParser<R = unknown>(): R;

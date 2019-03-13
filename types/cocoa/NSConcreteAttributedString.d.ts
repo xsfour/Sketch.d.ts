@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSConcreteAttributedString<T = any> extends cocoa.NSAttributedString {
+  export interface NSConcreteAttributedString<T = any> extends NSAttributedString {
     _runArrayHoldingAttributes<R = unknown>(): R;
     string<R = unknown>(): R;
     dealloc<R = void>(): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     initWithString<R = unknown, P0 = unknown>(_initWithString: P0): R;
   }
   namespace classes {
-    export interface NSConcreteAttributedString<T = any> extends cocoa.classes.NSAttributedString {
+    export interface NSConcreteAttributedString<T = any> extends NSAttributedString {
       alloc<R = NSConcreteAttributedString>(): R;
       new: <R = NSConcreteAttributedString>() => R;
     }

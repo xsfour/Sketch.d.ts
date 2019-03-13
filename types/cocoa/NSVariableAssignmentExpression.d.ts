@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSVariableAssignmentExpression<T = any> extends cocoa.NSExpression {
+  export interface NSVariableAssignmentExpression<T = any> extends NSExpression {
     hash<R = number>(): R;
     variable<R = unknown>(): R;
     assignmentVariable<R = unknown>(): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
   }
   namespace classes {
-    export interface NSVariableAssignmentExpression<T = any> extends cocoa.classes.NSExpression {
+    export interface NSVariableAssignmentExpression<T = any> extends NSExpression {
       alloc<R = NSVariableAssignmentExpression>(): R;
       new: <R = NSVariableAssignmentExpression>() => R;
     }

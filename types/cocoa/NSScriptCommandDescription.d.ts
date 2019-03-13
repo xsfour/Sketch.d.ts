@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScriptCommandDescription<T = any> extends cocoa.NSObject, cocoa.NSCodingProtocol {
+  export interface NSScriptCommandDescription<T = any> extends NSObject, NSCodingProtocol {
     replacementObjectForPortCoder<R = unknown, P0 = unknown>(_replacementObjectForPortCoder: P0): R;
-    createCommandInstanceWithZone<R = unknown, P0 = cocoa._NSZone>(_createCommandInstanceWithZone: P0): R;
+    createCommandInstanceWithZone<R = unknown, P0 = _NSZone>(_createCommandInstanceWithZone: P0): R;
     createCommandInstance<R = unknown>(): R;
     isOptionalArgumentWithName<R = boolean, P0 = unknown>(_isOptionalArgumentWithName: P0): R;
     appleEventCodeForArgumentWithName<R = number, P0 = unknown>(_appleEventCodeForArgumentWithName: P0): R;
@@ -33,17 +33,17 @@ declare namespace cocoa {
     _initWithSuiteName_commandName_implDeclaration_presoDeclaration<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown>(__initWithSuiteName: P0, _commandName: P1, _implDeclaration: P2, _presoDeclaration: P3): R;
     description<R = unknown>(): R;
     _descriptionWithTabCount<R = unknown, P0 = number>(__descriptionWithTabCount: P0): R;
-    argumentNames<R = cocoa.NSArray>(): R;
+    argumentNames<R = NSArray>(): R;
     appleEventCodeForReturnType<R = number>(): R;
-    returnType<R = cocoa.NSString>(): R;
-    commandClassName<R = cocoa.NSString>(): R;
+    returnType<R = NSString>(): R;
+    commandClassName<R = NSString>(): R;
     appleEventCode<R = number>(): R;
     appleEventClassCode<R = number>(): R;
-    commandName<R = cocoa.NSString>(): R;
-    suiteName<R = cocoa.NSString>(): R;
+    commandName<R = NSString>(): R;
+    suiteName<R = NSString>(): R;
   }
   namespace classes {
-    export interface NSScriptCommandDescription<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCodingProtocol {
+    export interface NSScriptCommandDescription<T = any> extends NSObject, NSCodingProtocol {
       alloc<R = NSScriptCommandDescription>(): R;
       new: <R = NSScriptCommandDescription>() => R;
       _argumentDescriptionsFromUnnamedImplDeclaration_presoDeclaration_namedImplDeclarations_presoDeclarations_suiteName_commandName<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown, P5 = unknown>(__argumentDescriptionsFromUnnamedImplDeclaration: P0, _presoDeclaration: P1, _namedImplDeclarations: P2, _presoDeclarations: P3, _suiteName: P4, _commandName: P5): R;

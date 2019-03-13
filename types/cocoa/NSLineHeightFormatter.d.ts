@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLineHeightFormatter<T = any> extends cocoa.NSFormatter {}
+  export interface NSLineHeightFormatter<T = any> extends NSFormatter {}
   namespace classes {
-    export interface NSLineHeightFormatter<T = any> extends cocoa.classes.NSFormatter {
+    export interface NSLineHeightFormatter<T = any> extends NSFormatter {
       alloc<R = NSLineHeightFormatter>(): R;
       new: <R = NSLineHeightFormatter>() => R;
     }

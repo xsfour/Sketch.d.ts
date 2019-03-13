@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSValueBinder<T = any> extends cocoa.NSEditorBinder, cocoa.NSEditorProtocol {
+  export interface NSValueBinder<T = any> extends NSEditorBinder, NSEditorProtocol {
     _didPresentDiscardEditingSheetWithRecovery_contextInfo<R = void, P0 = boolean, P1 = unknown>(__didPresentDiscardEditingSheetWithRecovery: P0, _contextInfo: P1): R;
     _presentDiscardEditingSheetWithError_discardEditingCallback_otherCallback_callbackContextInfo_relatedToBinding<R = void, P0 = unknown, P1 = string, P2 = string, P3 = void, P4 = unknown>(__presentDiscardEditingSheetWithError: P0, _discardEditingCallback: P1, _otherCallback: P2, _callbackContextInfo: P3, _relatedToBinding: P4): R;
     _presentDiscardEditingAlertPanelWithError_relatedToBinding<R = boolean, P0 = unknown, P1 = unknown>(__presentDiscardEditingAlertPanelWithError: P0, _relatedToBinding: P1): R;
@@ -23,7 +23,7 @@ declare namespace cocoa {
     _revertDisplayValueBackToOriginalValue<R = void, P0 = void>(__revertDisplayValueBackToOriginalValue: P0): R;
     _applyObjectValue_forBinding_canRecoverFromErrors_handleErrors_typeOfAlert_discardEditingCallback_otherCallback_callbackContextInfo_didRunAlert<R = number, P0 = unknown, P1 = unknown, P2 = boolean, P3 = boolean, P4 = boolean, P5 = string, P6 = string, P7 = void, P8 = string>(__applyObjectValue: P0, _forBinding: P1, _canRecoverFromErrors: P2, _handleErrors: P3, _typeOfAlert: P4, _discardEditingCallback: P5, _otherCallback: P6, _callbackContextInfo: P7, _didRunAlert: P8): R;
     _handleApplyValueError_forBinding_canRecoverFromErrors_handleErrors_typeOfAlert_discardEditingCallback_otherCallback_callbackContextInfo_didRunAlert<R = number, P0 = unknown, P1 = unknown, P2 = boolean, P3 = boolean, P4 = boolean, P5 = string, P6 = string, P7 = void, P8 = string>(__handleApplyValueError: P0, _forBinding: P1, _canRecoverFromErrors: P2, _handleErrors: P3, _typeOfAlert: P4, _discardEditingCallback: P5, _otherCallback: P6, _callbackContextInfo: P7, _didRunAlert: P8): R;
-    _adjustObject_mode_observedController_observedKeyPath_context_editableState_adjustState<R = void, P0 = unknown, P1 = cocoa.__NSKeyValueCodingControllerModeType, P2 = unknown, P3 = unknown, P4 = void, P5 = string, P6 = string>(__adjustObject: P0, _mode: P1, _observedController: P2, _observedKeyPath: P3, _context: P4, _editableState: P5, _adjustState: P6): R;
+    _adjustObject_mode_observedController_observedKeyPath_context_editableState_adjustState<R = void, P0 = unknown, P1 = __NSKeyValueCodingControllerModeType, P2 = unknown, P3 = unknown, P4 = void, P5 = string, P6 = string>(__adjustObject: P0, _mode: P1, _observedController: P2, _observedKeyPath: P3, _context: P4, _editableState: P5, _adjustState: P6): R;
     objectValueSupportsEnabledState<R = boolean, P0 = unknown>(_objectValueSupportsEnabledState: P0): R;
     createsSortDescriptor<R = boolean>(): R;
     setCreatesSortDescriptor<R = void, P0 = boolean>(_setCreatesSortDescriptor: P0): R;
@@ -51,13 +51,13 @@ declare namespace cocoa {
     _valueClass<R = unknown>(): R;
     _valueClassIsSortableWithBinding<R = boolean, P0 = unknown>(__valueClassIsSortableWithBinding: P0): R;
     _supportsMinAndMax<R = boolean>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSValueBinder<T = any> extends cocoa.classes.NSEditorBinder, cocoa.classes.NSEditorProtocol {
+    export interface NSValueBinder<T = any> extends NSEditorBinder, NSEditorProtocol {
       alloc<R = NSValueBinder>(): R;
       new: <R = NSValueBinder>() => R;
       initialize<R = void>(): R;

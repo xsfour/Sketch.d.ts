@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutableColor<T = any> extends cocoa._MSImmutableColor, cocoa.MSColorProtocol {
+  export interface MSImmutableColor<T = any> extends _MSImmutableColor, MSColorProtocol {
     colorWithAlphaComponent<R = unknown, P0 = number>(_colorWithAlphaComponent: P0): R;
     stringValueWithAlpha_alphaMultiplication<R = unknown, P0 = boolean, P1 = number>(_stringValueWithAlpha: P0, _alphaMultiplication: P1): R;
     stringValueWithAlpha<R = unknown, P0 = boolean>(_stringValueWithAlpha: P0): R;
@@ -13,24 +13,24 @@ declare namespace cocoa {
     isGrayscale<R = boolean>(): R;
     isBlack<R = boolean>(): R;
     isWhite<R = boolean>(): R;
-    newCGColorWithColorSpace<R = cocoa.CGColor, P0 = cocoa.CGColorSpace>(_newCGColorWithColorSpace: P0): R;
+    newCGColorWithColorSpace<R = CGColor, P0 = CGColorSpace>(_newCGColorWithColorSpace: P0): R;
     NSColorWithColorSpace<R = unknown, P0 = unknown>(_NSColorWithColorSpace: P0): R;
     initWithRed_green_blue_alpha<R = unknown, P0 = number, P1 = number, P2 = number, P3 = number>(_initWithRed: P0, _green: P1, _blue: P2, _alpha: P3): R;
     svgRepresentation<R = unknown>(): R;
     NSColorForContext<R = unknown, P0 = unknown>(_NSColorForContext: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
     opaque<R = boolean>(): R;
     hash<R = number>(): R;
-    manifestComponents<R = cocoa.NSArray>(): R;
+    manifestComponents<R = NSArray>(): R;
     alpha<R = number>(): R;
     blue<R = number>(): R;
-    description<R = cocoa.NSString>(): R;
+    description<R = NSString>(): R;
     green<R = number>(): R;
     red<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSImmutableColor<T = any> extends cocoa.classes._MSImmutableColor, cocoa.classes.MSColorProtocol {
+    export interface MSImmutableColor<T = any> extends _MSImmutableColor, MSColorProtocol {
       alloc<R = MSImmutableColor>(): R;
       new: <R = MSImmutableColor>() => R;
       hexValueForRed_green_blue<R = unknown, P0 = number, P1 = number, P2 = number>(_hexValueForRed: P0, _green: P1, _blue: P2): R;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSEvent<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol, cocoa.NSCodingProtocol {
+  export interface NSEvent<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
     cxx_destruct<R = void>(): R;
     _isTouchesEnded<R = boolean>(): R;
     coalescedTouchesForTouch<R = unknown, P0 = unknown>(_coalescedTouchesForTouch: P0): R;
@@ -14,13 +14,13 @@ declare namespace cocoa {
     _eventRemovingTouchIdentities<R = unknown, P0 = unknown>(__eventRemovingTouchIdentities: P0): R;
     _eventCancellingTouchIdentities<R = unknown, P0 = unknown>(__eventCancellingTouchIdentities: P0): R;
     _eventCancellingTouches<R = unknown>(): R;
-    _currentEventWithLocationInWindow_modifiers<R = unknown, P0 = cocoa.CGPoint, P1 = number>(__currentEventWithLocationInWindow: P0, _modifiers: P1): R;
+    _currentEventWithLocationInWindow_modifiers<R = unknown, P0 = CGPoint, P1 = number>(__currentEventWithLocationInWindow: P0, _modifiers: P1): R;
     _eventRelativeToWindow<R = unknown, P0 = unknown>(__eventRelativeToWindow: P0): R;
-    _velocity<R = cocoa.CGSize>(): R;
-    velocity<R = cocoa.CGSize>(): R;
+    _velocity<R = CGSize>(): R;
+    velocity<R = CGSize>(): R;
     _gestureAxis<R = number>(): R;
-    trackSwipeEventWithOptions_dampenAmountThresholdMin_max_usingHandler<R = void, P0 = number, P1 = number, P2 = number, P3 = cocoa.CDUnknownBlockType>(_trackSwipeEventWithOptions: P0, _dampenAmountThresholdMin: P1, _max: P2, _usingHandler: P3): R;
-    _trackSwipeEventWithOptions_dampenAmountThresholdMin_max_trackingDistance_axis_velocityFilterClass_usingHandler<R = void, P0 = number, P1 = number, P2 = number, P3 = number, P4 = number, P5 = unknown, P6 = cocoa.CDUnknownBlockType>(__trackSwipeEventWithOptions: P0, _dampenAmountThresholdMin: P1, _max: P2, _trackingDistance: P3, _axis: P4, _velocityFilterClass: P5, _usingHandler: P6): R;
+    trackSwipeEventWithOptions_dampenAmountThresholdMin_max_usingHandler<R = void, P0 = number, P1 = number, P2 = number, P3 = CDUnknownBlockType>(_trackSwipeEventWithOptions: P0, _dampenAmountThresholdMin: P1, _max: P2, _usingHandler: P3): R;
+    _trackSwipeEventWithOptions_dampenAmountThresholdMin_max_trackingDistance_axis_velocityFilterClass_usingHandler<R = void, P0 = number, P1 = number, P2 = number, P3 = number, P4 = number, P5 = unknown, P6 = CDUnknownBlockType>(__trackSwipeEventWithOptions: P0, _dampenAmountThresholdMin: P1, _max: P2, _trackingDistance: P3, _axis: P4, _velocityFilterClass: P5, _usingHandler: P6): R;
     gestureAxis<R = number>(): R;
     progress<R = number>(): R;
     gestureAmount<R = number>(): R;
@@ -51,10 +51,10 @@ declare namespace cocoa {
     _hasAcceleratedScrollingDeltas<R = boolean>(): R;
     _eventRecordDelta<R = number, P0 = number>(__eventRecordDelta: P0): R;
     _cgsEventRecord<R = unknown>(): R;
-    _initWithCGEvent_eventRef<R = unknown, P0 = cocoa.__CGEvent, P1 = void>(__initWithCGEvent: P0, _eventRef: P1): R;
-    _initDigitizerTouchesFromIOHidEvent_window_contextID<R = void, P0 = cocoa.__IOHIDEvent, P1 = unknown, P2 = number>(__initDigitizerTouchesFromIOHidEvent: P0, _window: P1, _contextID: P2): R;
+    _initWithCGEvent_eventRef<R = unknown, P0 = __CGEvent, P1 = void>(__initWithCGEvent: P0, _eventRef: P1): R;
+    _initDigitizerTouchesFromIOHidEvent_window_contextID<R = void, P0 = __IOHIDEvent, P1 = unknown, P2 = number>(__initDigitizerTouchesFromIOHidEvent: P0, _window: P1, _contextID: P2): R;
     _initCoalescingTouchEvents<R = unknown, P0 = unknown>(__initCoalescingTouchEvents: P0): R;
-    _initMTTouchesFromIOHidEvent<R = void, P0 = cocoa.__IOHIDEvent>(__initMTTouchesFromIOHidEvent: P0): R;
+    _initMTTouchesFromIOHidEvent<R = void, P0 = __IOHIDEvent>(__initMTTouchesFromIOHidEvent: P0): R;
     _initAuxiliaryData<R = void>(): R;
     _eventRefInternal<R = void>(): R;
     _initWithEventRefInternal<R = unknown, P0 = void>(__initWithEventRefInternal: P0): R;
@@ -83,7 +83,7 @@ declare namespace cocoa {
     vendorDefined<R = unknown>(): R;
     tangentialPressure<R = number>(): R;
     rotation<R = number>(): R;
-    tilt<R = cocoa.CGPoint>(): R;
+    tilt<R = CGPoint>(): R;
     buttonMask<R = number>(): R;
     absoluteZ<R = number>(): R;
     absoluteY<R = number>(): R;
@@ -98,12 +98,12 @@ declare namespace cocoa {
     data1<R = number>(): R;
     subtype<R = number>(): R;
     userData<R = void>(): R;
-    trackingArea<R = cocoa.NSTrackingArea>(): R;
+    trackingArea<R = NSTrackingArea>(): R;
     trackingNumber<R = number>(): R;
     keyCode<R = number>(): R;
     ARepeat<R = boolean>(): R;
-    charactersIgnoringModifiers<R = cocoa.NSString>(): R;
-    characters<R = cocoa.NSString>(): R;
+    charactersIgnoringModifiers<R = NSString>(): R;
+    characters<R = NSString>(): R;
     magnification<R = number>(): R;
     momentumPhase<R = number>(): R;
     scrollingDeltaY<R = number>(): R;
@@ -116,14 +116,14 @@ declare namespace cocoa {
     pressure<R = number>(): R;
     clickCount<R = number>(): R;
     eventNumber<R = number>(): R;
-    context<R = cocoa.NSGraphicsContext>(): R;
+    context<R = NSGraphicsContext>(): R;
     windowNumber<R = number>(): R;
-    window<R = cocoa.NSWindow>(): R;
+    window<R = NSWindow>(): R;
     timestamp<R = number>(): R;
     modifierFlags<R = number>(): R;
-    locationInWindow<R = cocoa.CGPoint>(): R;
+    locationInWindow<R = CGPoint>(): R;
     type<R = number>(): R;
-    CGEvent<R = cocoa.__CGEvent>(): R;
+    CGEvent<R = __CGEvent>(): R;
     eventRef<R = void>(): R;
     // + NSEvent(EventShouldDrag):
     isRightClick<R = boolean>(): R;
@@ -131,7 +131,7 @@ declare namespace cocoa {
     shouldStartDrag<R = boolean>(): R;
   }
   namespace classes {
-    export interface NSEvent<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol, cocoa.classes.NSCodingProtocol {
+    export interface NSEvent<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
       alloc<R = NSEvent>(): R;
       new: <R = NSEvent>() => R;
       _touchesFromSet_matchingPhase_inView_includeResting<R = unknown, P0 = unknown, P1 = number, P2 = unknown, P3 = boolean>(__touchesFromSet: P0, _matchingPhase: P1, _inView: P2, _includeResting: P3): R;
@@ -154,36 +154,36 @@ declare namespace cocoa {
       _resetDefaults<R = void>(): R;
       isMouseCoalescingEnabled<R = boolean>(): R;
       setMouseCoalescingEnabled<R = void, P0 = boolean>(_setMouseCoalescingEnabled: P0): R;
-      eventWithCGEvent<R = unknown, P0 = cocoa.__CGEvent>(_eventWithCGEvent: P0): R;
+      eventWithCGEvent<R = unknown, P0 = __CGEvent>(_eventWithCGEvent: P0): R;
       eventWithEventRef<R = unknown, P0 = void>(_eventWithEventRef: P0): R;
       _eventWithEventRefInternal<R = unknown, P0 = void>(__eventWithEventRefInternal: P0): R;
       _eventWithCGSEvent<R = unknown, P0 = void>(__eventWithCGSEvent: P0): R;
       removeMonitor<R = void, P0 = unknown>(_removeMonitor: P0): R;
       _sendEventToObservers<R = unknown, P0 = unknown>(__sendEventToObservers: P0): R;
-      addLocalMonitorForEventsMatchingMask_handler<R = unknown, P0 = number, P1 = cocoa.CDUnknownBlockType>(_addLocalMonitorForEventsMatchingMask: P0, _handler: P1): R;
-      addLocalMonitorForEventsMatchingMask_placement_handler<R = unknown, P0 = number, P1 = number, P2 = cocoa.CDUnknownBlockType>(_addLocalMonitorForEventsMatchingMask: P0, _placement: P1, _handler: P2): R;
-      addGlobalMonitorForEventsMatchingMask_handler<R = unknown, P0 = number, P1 = cocoa.CDUnknownBlockType>(_addGlobalMonitorForEventsMatchingMask: P0, _handler: P1): R;
+      addLocalMonitorForEventsMatchingMask_handler<R = unknown, P0 = number, P1 = CDUnknownBlockType>(_addLocalMonitorForEventsMatchingMask: P0, _handler: P1): R;
+      addLocalMonitorForEventsMatchingMask_placement_handler<R = unknown, P0 = number, P1 = number, P2 = CDUnknownBlockType>(_addLocalMonitorForEventsMatchingMask: P0, _placement: P1, _handler: P2): R;
+      addGlobalMonitorForEventsMatchingMask_handler<R = unknown, P0 = number, P1 = CDUnknownBlockType>(_addGlobalMonitorForEventsMatchingMask: P0, _handler: P1): R;
       keyRepeatInterval<R = number>(): R;
       keyRepeatDelay<R = number>(): R;
       doubleClickInterval<R = number>(): R;
       pressedMouseButtons<R = number>(): R;
       modifierFlags<R = number>(): R;
-      mouseLocation<R = cocoa.CGPoint>(): R;
+      mouseLocation<R = CGPoint>(): R;
       _clearCancelledTouches<R = void>(): R;
       _setSuppressesDirectTouchRouting<R = void, P0 = boolean>(__setSuppressesDirectTouchRouting: P0): R;
       _clearDFRTouches<R = void>(): R;
       _eventWithTouches<R = unknown, P0 = unknown>(__eventWithTouches: P0): R;
       _eventsCancellingTouchesForWindow<R = unknown, P0 = unknown>(__eventsCancellingTouchesForWindow: P0): R;
-      otherEventWithType_location_modifierFlags_timestamp_windowNumber_context_subtype_data1_data2<R = unknown, P0 = number, P1 = cocoa.CGPoint, P2 = number, P3 = number, P4 = number, P5 = unknown, P6 = number, P7 = number, P8 = number>(_otherEventWithType: P0, _location: P1, _modifierFlags: P2, _timestamp: P3, _windowNumber: P4, _context: P5, _subtype: P6, _data1: P7, _data2: P8): R;
-      enterExitEventWithType_location_modifierFlags_timestamp_windowNumber_context_eventNumber_trackingNumber_userData<R = unknown, P0 = number, P1 = cocoa.CGPoint, P2 = number, P3 = number, P4 = number, P5 = unknown, P6 = number, P7 = number, P8 = void>(_enterExitEventWithType: P0, _location: P1, _modifierFlags: P2, _timestamp: P3, _windowNumber: P4, _context: P5, _eventNumber: P6, _trackingNumber: P7, _userData: P8): R;
-      keyEventWithType_location_modifierFlags_timestamp_windowNumber_context_characters_charactersIgnoringModifiers_isARepeat_keyCode<R = unknown, P0 = number, P1 = cocoa.CGPoint, P2 = number, P3 = number, P4 = number, P5 = unknown, P6 = unknown, P7 = unknown, P8 = boolean, P9 = number>(_keyEventWithType: P0, _location: P1, _modifierFlags: P2, _timestamp: P3, _windowNumber: P4, _context: P5, _characters: P6, _charactersIgnoringModifiers: P7, _isARepeat: P8, _keyCode: P9): R;
-      _quickLookEventWithLocation_modifierFlags_timestamp_windowNumber_context_eventNumber<R = unknown, P0 = cocoa.CGPoint, P1 = number, P2 = number, P3 = number, P4 = unknown, P5 = number>(__quickLookEventWithLocation: P0, _modifierFlags: P1, _timestamp: P2, _windowNumber: P3, _context: P4, _eventNumber: P5): R;
-      mouseEventWithType_location_modifierFlags_timestamp_windowNumber_context_eventNumber_clickCount_pressure<R = unknown, P0 = number, P1 = cocoa.CGPoint, P2 = number, P3 = number, P4 = number, P5 = unknown, P6 = number, P7 = number, P8 = number>(_mouseEventWithType: P0, _location: P1, _modifierFlags: P2, _timestamp: P3, _windowNumber: P4, _context: P5, _eventNumber: P6, _clickCount: P7, _pressure: P8): R;
+      otherEventWithType_location_modifierFlags_timestamp_windowNumber_context_subtype_data1_data2<R = unknown, P0 = number, P1 = CGPoint, P2 = number, P3 = number, P4 = number, P5 = unknown, P6 = number, P7 = number, P8 = number>(_otherEventWithType: P0, _location: P1, _modifierFlags: P2, _timestamp: P3, _windowNumber: P4, _context: P5, _subtype: P6, _data1: P7, _data2: P8): R;
+      enterExitEventWithType_location_modifierFlags_timestamp_windowNumber_context_eventNumber_trackingNumber_userData<R = unknown, P0 = number, P1 = CGPoint, P2 = number, P3 = number, P4 = number, P5 = unknown, P6 = number, P7 = number, P8 = void>(_enterExitEventWithType: P0, _location: P1, _modifierFlags: P2, _timestamp: P3, _windowNumber: P4, _context: P5, _eventNumber: P6, _trackingNumber: P7, _userData: P8): R;
+      keyEventWithType_location_modifierFlags_timestamp_windowNumber_context_characters_charactersIgnoringModifiers_isARepeat_keyCode<R = unknown, P0 = number, P1 = CGPoint, P2 = number, P3 = number, P4 = number, P5 = unknown, P6 = unknown, P7 = unknown, P8 = boolean, P9 = number>(_keyEventWithType: P0, _location: P1, _modifierFlags: P2, _timestamp: P3, _windowNumber: P4, _context: P5, _characters: P6, _charactersIgnoringModifiers: P7, _isARepeat: P8, _keyCode: P9): R;
+      _quickLookEventWithLocation_modifierFlags_timestamp_windowNumber_context_eventNumber<R = unknown, P0 = CGPoint, P1 = number, P2 = number, P3 = number, P4 = unknown, P5 = number>(__quickLookEventWithLocation: P0, _modifierFlags: P1, _timestamp: P2, _windowNumber: P3, _context: P4, _eventNumber: P5): R;
+      mouseEventWithType_location_modifierFlags_timestamp_windowNumber_context_eventNumber_clickCount_pressure<R = unknown, P0 = number, P1 = CGPoint, P2 = number, P3 = number, P4 = number, P5 = unknown, P6 = number, P7 = number, P8 = number>(_mouseEventWithType: P0, _location: P1, _modifierFlags: P2, _timestamp: P3, _windowNumber: P4, _context: P5, _eventNumber: P6, _clickCount: P7, _pressure: P8): R;
       initialize<R = void>(): R;
       _navigationEventWithCommand_data_windowNumber<R = unknown, P0 = number, P1 = number, P2 = number>(__navigationEventWithCommand: P0, _data: P1, _windowNumber: P2): R;
       _nextConcurrentEventMatchingMask<R = unknown, P0 = number>(__nextConcurrentEventMatchingMask: P0): R;
       _removeConcurrentEventMonitor<R = void, P0 = unknown>(__removeConcurrentEventMonitor: P0): R;
-      _addConcurrentEventMonitorMatchingMask_identifier_handler<R = unknown, P0 = number, P1 = unknown, P2 = cocoa.CDUnknownBlockType>(__addConcurrentEventMonitorMatchingMask: P0, _identifier: P1, _handler: P2): R;
+      _addConcurrentEventMonitorMatchingMask_identifier_handler<R = unknown, P0 = number, P1 = unknown, P2 = CDUnknownBlockType>(__addConcurrentEventMonitorMatchingMask: P0, _identifier: P1, _handler: P2): R;
       _isConcurrentEventProcessingOn<R = boolean>(): R;
       _updateMainThreadEventFilter<R = void>(): R;
       _registerForConcurrentEventProcessing<R = void>(): R;

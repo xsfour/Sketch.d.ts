@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFileVersion<T = any> extends cocoa.NSObject {
+  export interface NSFileVersion<T = any> extends NSObject {
     removeAndReturnError<R = boolean, P0 = unknown>(_removeAndReturnError: P0): R;
     replaceItemAtURL_options_error<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_replaceItemAtURL: P0, _options: P1, _error: P2): R;
     description<R = unknown>(): R;
@@ -19,32 +19,32 @@ declare namespace cocoa {
     setDiscardable<R = void, P0 = boolean>(_v: P0): R;
     resolved<R = boolean>(): R;
     setResolved<R = void, P0 = boolean>(_v: P0): R;
-    etag<R = cocoa.NSString>(): R;
+    etag<R = NSString>(): R;
     hasThumbnail<R = boolean>(): R;
     hasLocalContents<R = boolean>(): R;
     ubiquitous<R = boolean>(): R;
     conflict<R = boolean>(): R;
-    persistentIdentifier<R = cocoa.NSCoding>(): R;
+    persistentIdentifier<R = NSCoding>(): R;
     size<R = number>(): R;
-    modificationDate<R = cocoa.NSDate>(): R;
-    originatorNameComponents<R = cocoa.NSPersonNameComponents>(): R;
-    originatorName<R = cocoa.NSString>(): R;
-    localizedNameOfSavingComputer<R = cocoa.NSString>(): R;
-    localizedName<R = cocoa.NSString>(): R;
-    originalPOSIXName<R = cocoa.NSString>(): R;
-    URL<R = cocoa.NSURL>(): R;
+    modificationDate<R = NSDate>(): R;
+    originatorNameComponents<R = NSPersonNameComponents>(): R;
+    originatorName<R = NSString>(): R;
+    localizedNameOfSavingComputer<R = NSString>(): R;
+    localizedName<R = NSString>(): R;
+    originalPOSIXName<R = NSString>(): R;
+    URL<R = NSURL>(): R;
     _isBackup<R = boolean>(): R;
     // + NSFileVersion(BUStarfieldTimelineSupport,NSDocumentInternal,NSExtensions):
     timelineItemType<R = number>(): R;
     timelineItemDate<R = unknown>(): R;
     _compareToVersion<R = number, P0 = unknown>(__compareToVersion: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSFileVersion<T = any> extends cocoa.classes.NSObject {
+    export interface NSFileVersion<T = any> extends NSObject {
       alloc<R = NSFileVersion>(): R;
       new: <R = NSFileVersion>() => R;
       removeOtherVersionsOfItemAtURL_error<R = boolean, P0 = unknown, P1 = unknown>(_removeOtherVersionsOfItemAtURL: P0, _error: P1): R;
@@ -52,7 +52,7 @@ declare namespace cocoa {
       temporaryDirectoryURLForNewVersionOfItemAtURL<R = unknown, P0 = unknown>(_temporaryDirectoryURLForNewVersionOfItemAtURL: P0): R;
       addVersionOfItemAtURL_withContentsOfURL_options_error<R = unknown, P0 = unknown, P1 = unknown, P2 = number, P3 = unknown>(_addVersionOfItemAtURL: P0, _withContentsOfURL: P1, _options: P2, _error: P3): R;
       versionOfItemAtURL_forPersistentIdentifier<R = unknown, P0 = unknown, P1 = unknown>(_versionOfItemAtURL: P0, _forPersistentIdentifier: P1): R;
-      getNonlocalVersionsOfItemAtURL_completionHandler<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(_getNonlocalVersionsOfItemAtURL: P0, _completionHandler: P1): R;
+      getNonlocalVersionsOfItemAtURL_completionHandler<R = void, P0 = unknown, P1 = CDUnknownBlockType>(_getNonlocalVersionsOfItemAtURL: P0, _completionHandler: P1): R;
       otherVersionsOfItemAtURL<R = unknown, P0 = unknown>(_otherVersionsOfItemAtURL: P0): R;
       currentVersionOfItemAtURL<R = unknown, P0 = unknown>(_currentVersionOfItemAtURL: P0): R;
       keyPathsForValuesAffectingValueForKey<R = unknown, P0 = unknown>(_keyPathsForValuesAffectingValueForKey: P0): R;
@@ -66,8 +66,8 @@ declare namespace cocoa {
       _otherNonpurgeableVersionsOfItemAtURL_temporaryStorageIdentifier<R = unknown, P0 = unknown, P1 = unknown>(__otherNonpurgeableVersionsOfItemAtURL: P0, _temporaryStorageIdentifier: P1): R;
       _otherVersionsOfItemAtURL_temporaryStorageIdentifier<R = unknown, P0 = unknown, P1 = unknown>(__otherVersionsOfItemAtURL: P0, _temporaryStorageIdentifier: P1): R;
       _otherVersionsOfItemAtURL_temporaryStorageIdentifier_withoutOptions<R = unknown, P0 = unknown, P1 = unknown, P2 = number>(__otherVersionsOfItemAtURL: P0, _temporaryStorageIdentifier: P1, _withoutOptions: P2): R;
-      _libraryForURL_temporaryStorageIdentifier<R = cocoa.NSObject, P0 = unknown, P1 = unknown>(__libraryForURL: P0, _temporaryStorageIdentifier: P1): R;
-      _existingLibraryForURL_temporaryStorageIdentifier<R = cocoa.NSObject, P0 = unknown, P1 = unknown>(__existingLibraryForURL: P0, _temporaryStorageIdentifier: P1): R;
+      _libraryForURL_temporaryStorageIdentifier<R = NSObject, P0 = unknown, P1 = unknown>(__libraryForURL: P0, _temporaryStorageIdentifier: P1): R;
+      _existingLibraryForURL_temporaryStorageIdentifier<R = NSObject, P0 = unknown, P1 = unknown>(__existingLibraryForURL: P0, _temporaryStorageIdentifier: P1): R;
       _permanentVersionStorageSupportedForURL_temporaryStorageIdentifier_error<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown>(__permanentVersionStorageSupportedForURL: P0, _temporaryStorageIdentifier: P1, _error: P2): R;
       _makeTemporaryStorageIdentifier<R = unknown>(): R;
       _makePermanentStorageLibraryForURL_temporaryStorageRequired_error<R = unknown, P0 = unknown, P1 = string, P2 = unknown>(__makePermanentStorageLibraryForURL: P0, _temporaryStorageRequired: P1, _error: P2): R;
@@ -75,17 +75,17 @@ declare namespace cocoa {
       _supportedGenerationalStorageClientIDs<R = unknown>(): R;
       _temporaryStorageLocationForIdentifier<R = unknown, P0 = unknown>(__temporaryStorageLocationForIdentifier: P0): R;
       _autosaveDirectoryURLCreateIfNecessary<R = unknown, P0 = boolean>(__autosaveDirectoryURLCreateIfNecessary: P0): R;
-      getNonlocalVersionsOfItemAtURL_options_completionHandler<R = void, P0 = unknown, P1 = number, P2 = cocoa.CDUnknownBlockType>(_getNonlocalVersionsOfItemAtURL: P0, _options: P1, _completionHandler: P2): R;
-      discoverUbiquitousVersionsOfItemAtURL_completionHandler<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(_discoverUbiquitousVersionsOfItemAtURL: P0, _completionHandler: P1): R;
+      getNonlocalVersionsOfItemAtURL_options_completionHandler<R = void, P0 = unknown, P1 = number, P2 = CDUnknownBlockType>(_getNonlocalVersionsOfItemAtURL: P0, _options: P1, _completionHandler: P2): R;
+      discoverUbiquitousVersionsOfItemAtURL_completionHandler<R = void, P0 = unknown, P1 = CDUnknownBlockType>(_discoverUbiquitousVersionsOfItemAtURL: P0, _completionHandler: P1): R;
       _removeConflictObserver<R = void, P0 = void>(__removeConflictObserver: P0): R;
-      _addConflictObserverForItemAtURL_statusChangedHandler<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(__addConflictObserverForItemAtURL: P0, _statusChangedHandler: P1): R;
+      _addConflictObserverForItemAtURL_statusChangedHandler<R = void, P0 = unknown, P1 = CDUnknownBlockType>(__addConflictObserverForItemAtURL: P0, _statusChangedHandler: P1): R;
       _markConflicts_asHandledForItemAtURL<R = void, P0 = unknown, P1 = unknown>(__markConflicts: P0, _asHandledForItemAtURL: P1): R;
       _conflictsExistForItemAtURL<R = boolean, P0 = unknown>(__conflictsExistForItemAtURL: P0): R;
       unresolvedConflictsExistForItemAtURL<R = boolean, P0 = unknown>(_unresolvedConflictsExistForItemAtURL: P0): R;
       versionsOfItemAtURL<R = unknown, P0 = unknown>(_versionsOfItemAtURL: P0): R;
       // + NSFileVersion(BUStarfieldTimelineSupport,NSDocumentInternal,NSExtensions):
       _finishedWithBackupCollection<R = void, P0 = void>(__finishedWithBackupCollection: P0): R;
-      _getBackupVersionsForURL_queue_completionHandler<R = void, P0 = unknown, P1 = unknown, P2 = cocoa.CDUnknownBlockType>(__getBackupVersionsForURL: P0, _queue: P1, _completionHandler: P2): R;
+      _getBackupVersionsForURL_queue_completionHandler<R = void, P0 = unknown, P1 = unknown, P2 = CDUnknownBlockType>(__getBackupVersionsForURL: P0, _queue: P1, _completionHandler: P2): R;
     }
   }
 }

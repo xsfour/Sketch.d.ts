@@ -1,16 +1,16 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSImmutableLayer<T = any> extends cocoa.MSImmutableModelObject {
+  export interface _MSImmutableLayer<T = any> extends MSImmutableModelObject {
     hasDefaultValues<R = boolean>(): R;
-    frame<R = cocoa.MSImmutableRect>(): R;
-    setFrame<R = void, P0 = cocoa.MSImmutableRect>(_v: P0): R;
-    flow<R = cocoa.MSImmutableFlowConnection>(): R;
-    setFlow<R = void, P0 = cocoa.MSImmutableFlowConnection>(_v: P0): R;
-    exportOptions<R = cocoa.MSImmutableExportOptions>(): R;
-    setExportOptions<R = void, P0 = cocoa.MSImmutableExportOptions>(_v: P0): R;
-    userInfo<R = cocoa.NSDictionary>(): R;
-    setUserInfo<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
+    frame<R = MSImmutableRect>(): R;
+    setFrame<R = void, P0 = MSImmutableRect>(_v: P0): R;
+    flow<R = MSImmutableFlowConnection>(): R;
+    setFlow<R = void, P0 = MSImmutableFlowConnection>(_v: P0): R;
+    exportOptions<R = MSImmutableExportOptions>(): R;
+    setExportOptions<R = void, P0 = MSImmutableExportOptions>(_v: P0): R;
+    userInfo<R = NSDictionary>(): R;
+    setUserInfo<R = void, P0 = NSDictionary>(_v: P0): R;
     shouldBreakMaskChain<R = boolean>(): R;
     setShouldBreakMaskChain<R = void, P0 = boolean>(_v: P0): R;
     rotation<R = number>(): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     setResizingType<R = void, P0 = number>(_v: P0): R;
     resizingConstraint<R = number>(): R;
     setResizingConstraint<R = void, P0 = number>(_v: P0): R;
-    originalObjectID<R = cocoa.NSString>(): R;
-    setOriginalObjectID<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    originalObjectID<R = NSString>(): R;
+    setOriginalObjectID<R = void, P0 = NSString>(_v: P0): R;
     nameIsFixed<R = boolean>(): R;
     setNameIsFixed<R = void, P0 = boolean>(_v: P0): R;
-    name<R = cocoa.NSString>(): R;
-    setName<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    name<R = NSString>(): R;
+    setName<R = void, P0 = NSString>(_v: P0): R;
     layerListExpandedType<R = number>(): R;
     setLayerListExpandedType<R = void, P0 = number>(_v: P0): R;
     isVisible<R = boolean>(): R;
@@ -41,7 +41,7 @@ declare namespace cocoa {
     setBooleanOperation<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface _MSImmutableLayer<T = any> extends cocoa.classes.MSImmutableModelObject {
+    export interface _MSImmutableLayer<T = any> extends MSImmutableModelObject {
       alloc<R = _MSImmutableLayer>(): R;
       new: <R = _MSImmutableLayer>() => R;
     }

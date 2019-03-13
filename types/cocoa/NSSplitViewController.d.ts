@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSplitViewController<T = any> extends cocoa.NSViewController, cocoa.NSSplitViewDelegateProtocol, cocoa.NSUserInterfaceValidationsProtocol {
+  export interface NSSplitViewController<T = any> extends NSViewController, NSSplitViewDelegateProtocol, NSUserInterfaceValidationsProtocol {
     toggleSidebar<R = void, P0 = unknown>(_toggleSidebar: P0): R;
     _sidebarItemForToggling<R = unknown>(): R;
     _splitView_didStopOverlayingView<R = void, P0 = unknown, P1 = unknown>(__splitView: P0, _didStopOverlayingView: P1): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     _setHoldingPriority_forSplitViewItem<R = void, P0 = number, P1 = unknown>(__setHoldingPriority: P0, _forSplitViewItem: P1): R;
     _splitView_holdingPriorityForViewAtIndex<R = number, P0 = unknown, P1 = number>(__splitView: P0, _holdingPriorityForViewAtIndex: P1): R;
     _splitViewItemSizesAfterSplitViewItem_isCollapsed<R = unknown, P0 = unknown, P1 = boolean>(__splitViewItemSizesAfterSplitViewItem: P0, _isCollapsed: P1): R;
-    _collapse_splitViewItem_forceOverlay_completionHandler<R = void, P0 = boolean, P1 = unknown, P2 = boolean, P3 = cocoa.CDUnknownBlockType>(__collapse: P0, _splitViewItem: P1, _forceOverlay: P2, _completionHandler: P3): R;
+    _collapse_splitViewItem_forceOverlay_completionHandler<R = void, P0 = boolean, P1 = unknown, P2 = boolean, P3 = CDUnknownBlockType>(__collapse: P0, _splitViewItem: P1, _forceOverlay: P2, _completionHandler: P3): R;
     _shouldUseConstraintAnimationToCollapseItem_withWindowResize<R = boolean, P0 = unknown, P1 = boolean>(__shouldUseConstraintAnimationToCollapseItem: P0, _withWindowResize: P1): R;
-    _shrinkingWindowAnchorEdgeToShowItem_withSize_atIndex<R = number, P0 = unknown, P1 = cocoa.CGSize, P2 = number>(__shrinkingWindowAnchorEdgeToShowItem: P0, _withSize: P1, _atIndex: P2): R;
-    _growingWindowAnchorEdgeToShowItem_withSize_atIndex<R = number, P0 = unknown, P1 = cocoa.CGSize, P2 = number>(__growingWindowAnchorEdgeToShowItem: P0, _withSize: P1, _atIndex: P2): R;
-    _shouldShrinkWindowToShowItem_withSize<R = boolean, P0 = unknown, P1 = cocoa.CGSize>(__shouldShrinkWindowToShowItem: P0, _withSize: P1): R;
-    _shouldGrowWindowToShowItem_withSize<R = boolean, P0 = unknown, P1 = cocoa.CGSize>(__shouldGrowWindowToShowItem: P0, _withSize: P1): R;
+    _shrinkingWindowAnchorEdgeToShowItem_withSize_atIndex<R = number, P0 = unknown, P1 = CGSize, P2 = number>(__shrinkingWindowAnchorEdgeToShowItem: P0, _withSize: P1, _atIndex: P2): R;
+    _growingWindowAnchorEdgeToShowItem_withSize_atIndex<R = number, P0 = unknown, P1 = CGSize, P2 = number>(__growingWindowAnchorEdgeToShowItem: P0, _withSize: P1, _atIndex: P2): R;
+    _shouldShrinkWindowToShowItem_withSize<R = boolean, P0 = unknown, P1 = CGSize>(__shouldShrinkWindowToShowItem: P0, _withSize: P1): R;
+    _shouldGrowWindowToShowItem_withSize<R = boolean, P0 = unknown, P1 = CGSize>(__shouldGrowWindowToShowItem: P0, _withSize: P1): R;
     _canOverlaySplitViewItem<R = boolean, P0 = unknown>(__canOverlaySplitViewItem: P0): R;
     _splitView_appearanceForDividerAtIndex<R = unknown, P0 = unknown, P1 = number>(__splitView: P0, _appearanceForDividerAtIndex: P1): R;
     _splitView_blendingModeForDividerAtIndex<R = number, P0 = unknown, P1 = number>(__splitView: P0, _blendingModeForDividerAtIndex: P1): R;
@@ -45,11 +45,11 @@ declare namespace cocoa {
     _tearDownSplitView<R = void>(): R;
     _setupSplitView<R = void>(): R;
     setView<R = void, P0 = unknown>(_setView: P0): R;
-    _splitViewFrame<R = cocoa.CGRect>(): R;
-    _defaultFrame<R = cocoa.CGRect>(): R;
-    _makeSplitViewWithFrame<R = unknown, P0 = cocoa.CGRect>(__makeSplitViewWithFrame: P0): R;
+    _splitViewFrame<R = CGRect>(): R;
+    _defaultFrame<R = CGRect>(): R;
+    _makeSplitViewWithFrame<R = unknown, P0 = CGRect>(__makeSplitViewWithFrame: P0): R;
     _splitView<R = unknown>(): R;
-    _updateSplitView_withBlock<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(__updateSplitView: P0, _withBlock: P1): R;
+    _updateSplitView_withBlock<R = void, P0 = unknown, P1 = CDUnknownBlockType>(__updateSplitView: P0, _withBlock: P1): R;
     splitViewItem_didChangeCollapsed_animated<R = void, P0 = unknown, P1 = boolean, P2 = boolean>(_splitViewItem: P0, _didChangeCollapsed: P1, _animated: P2): R;
     splitViewItem_isChangingCollapsed_animated<R = void, P0 = unknown, P1 = boolean, P2 = boolean>(_splitViewItem: P0, _isChangingCollapsed: P1, _animated: P2): R;
     splitViewItem_willChangeCollapsed_animated<R = void, P0 = unknown, P1 = boolean, P2 = boolean>(_splitViewItem: P0, _willChangeCollapsed: P1, _animated: P2): R;
@@ -63,19 +63,19 @@ declare namespace cocoa {
     _didEnterFullscreen<R = void, P0 = unknown>(__didEnterFullscreen: P0): R;
     _stopObservingFullscreenForWindow<R = void, P0 = unknown>(__stopObservingFullscreenForWindow: P0): R;
     _startObservingFullscreenForWindow<R = void, P0 = unknown>(__startObservingFullscreenForWindow: P0): R;
-    splitViewItems<R = cocoa.NSArray>(): R;
-    setSplitViewItems<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    splitViewItems<R = NSArray>(): R;
+    setSplitViewItems<R = void, P0 = NSArray>(_v: P0): R;
     minimumThicknessForInlineSidebars<R = number>(): R;
     setMinimumThicknessForInlineSidebars<R = void, P0 = number>(_v: P0): R;
-    splitView<R = cocoa.NSSplitView>(): R;
-    setSplitView<R = void, P0 = cocoa.NSSplitView>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    splitView<R = NSSplitView>(): R;
+    setSplitView<R = void, P0 = NSSplitView>(_v: P0): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSSplitViewController<T = any> extends cocoa.classes.NSViewController, cocoa.classes.NSSplitViewDelegateProtocol, cocoa.classes.NSUserInterfaceValidationsProtocol {
+    export interface NSSplitViewController<T = any> extends NSViewController, NSSplitViewDelegateProtocol, NSUserInterfaceValidationsProtocol {
       alloc<R = NSSplitViewController>(): R;
       new: <R = NSSplitViewController>() => R;
     }

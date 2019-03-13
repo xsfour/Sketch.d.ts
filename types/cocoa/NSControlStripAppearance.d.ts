@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSControlStripAppearance<T = any> extends cocoa.NSBuiltinAppearance {}
+  export interface NSControlStripAppearance<T = any> extends NSBuiltinAppearance {}
   namespace classes {
-    export interface NSControlStripAppearance<T = any> extends cocoa.classes.NSBuiltinAppearance {
+    export interface NSControlStripAppearance<T = any> extends NSBuiltinAppearance {
       alloc<R = NSControlStripAppearance>(): R;
       new: <R = NSControlStripAppearance>() => R;
     }

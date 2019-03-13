@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSGestureRecognizer<T = any> extends cocoa.NSObject, cocoa.NSCodingProtocol {
-    locationInView<R = cocoa.CGPoint, P0 = unknown>(_locationInView: P0): R;
+  export interface NSGestureRecognizer<T = any> extends NSObject, NSCodingProtocol {
+    locationInView<R = CGPoint, P0 = unknown>(_locationInView: P0): R;
     _affectedByGesture<R = boolean, P0 = unknown>(__affectedByGesture: P0): R;
     _invalidate<R = void>(): R;
     description<R = unknown>(): R;
@@ -115,10 +115,10 @@ declare namespace cocoa {
     shouldBeArchived<R = boolean>(): R;
     initWithTarget_action<R = unknown, P0 = unknown, P1 = string>(_initWithTarget: P0, _action: P1): R;
     _descriptionForTouchBarLogging<R = unknown>(): R;
-    _dynamicFailureDependents<R = cocoa.NSMutableSet>(): R;
-    _dynamicFailureRequirements<R = cocoa.NSMutableSet>(): R;
-    _failureDependents<R = cocoa.NSMutableSet>(): R;
-    _failureRequirements<R = cocoa.NSMutableSet>(): R;
+    _dynamicFailureDependents<R = NSMutableSet>(): R;
+    _dynamicFailureRequirements<R = NSMutableSet>(): R;
+    _failureDependents<R = NSMutableSet>(): R;
+    _failureRequirements<R = NSMutableSet>(): R;
     action<R = string>(): R;
     setAction<R = void, P0 = string>(_v: P0): R;
     state<R = number>(): R;
@@ -136,16 +136,16 @@ declare namespace cocoa {
     setDelaysSecondaryMouseButtonEvents<R = void, P0 = boolean>(_v: P0): R;
     delaysPrimaryMouseButtonEvents<R = boolean>(): R;
     setDelaysPrimaryMouseButtonEvents<R = void, P0 = boolean>(_v: P0): R;
-    pressureConfiguration<R = cocoa.NSPressureConfiguration>(): R;
-    setPressureConfiguration<R = void, P0 = cocoa.NSPressureConfiguration>(_v: P0): R;
-    view<R = cocoa.NSView>(): R;
-    delegate<R = cocoa.NSGestureRecognizerDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSGestureRecognizerDelegate>(_v: P0): R;
+    pressureConfiguration<R = NSPressureConfiguration>(): R;
+    setPressureConfiguration<R = void, P0 = NSPressureConfiguration>(_v: P0): R;
+    view<R = NSView>(): R;
+    delegate<R = NSGestureRecognizerDelegate>(): R;
+    setDelegate<R = void, P0 = NSGestureRecognizerDelegate>(_v: P0): R;
     target<R = unknown>(): R;
     setTarget<R = void, P0 = unknown>(_v: P0): R;
   }
   namespace classes {
-    export interface NSGestureRecognizer<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCodingProtocol {
+    export interface NSGestureRecognizer<T = any> extends NSObject, NSCodingProtocol {
       alloc<R = NSGestureRecognizer>(): R;
       new: <R = NSGestureRecognizer>() => R;
       _mostCompatibleRecognizerFromConfigured<R = unknown, P0 = unknown>(__mostCompatibleRecognizerFromConfigured: P0): R;

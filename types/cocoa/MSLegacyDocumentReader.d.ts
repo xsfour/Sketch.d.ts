@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSLegacyDocumentReader<T = any> extends cocoa.MSDocumentReader {
+  export interface MSLegacyDocumentReader<T = any> extends MSDocumentReader {
     metadata<R = unknown>(): R;
     documentWasMigrated<R = boolean>(): R;
     UIMetadata<R = unknown>(): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     initWithFileURL<R = unknown, P0 = unknown>(_initWithFileURL: P0): R;
     documentFileState<R = number>(): R;
-    fileURL<R = cocoa.NSURL>(): R;
-    file<R = cocoa.BCStructuredFile>(): R;
-    setFile<R = void, P0 = cocoa.BCStructuredFile>(_v: P0): R;
+    fileURL<R = NSURL>(): R;
+    file<R = BCStructuredFile>(): R;
+    setFile<R = void, P0 = BCStructuredFile>(_v: P0): R;
   }
   namespace classes {
-    export interface MSLegacyDocumentReader<T = any> extends cocoa.classes.MSDocumentReader {
+    export interface MSLegacyDocumentReader<T = any> extends MSDocumentReader {
       alloc<R = MSLegacyDocumentReader>(): R;
       new: <R = MSLegacyDocumentReader>() => R;
     }

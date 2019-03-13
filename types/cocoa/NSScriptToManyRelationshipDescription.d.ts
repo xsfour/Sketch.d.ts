@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScriptToManyRelationshipDescription<T = any> extends cocoa.NSScriptPropertyDescription {
+  export interface NSScriptToManyRelationshipDescription<T = any> extends NSScriptPropertyDescription {
     shouldByDefaultInsertAtBeginning<R = boolean>(): R;
     isLocationRequiredToCreate<R = boolean>(): R;
     initWithKey_type_isReadOnly_appleEventCode_isLocationRequiredToCreate<R = unknown, P0 = unknown, P1 = unknown, P2 = boolean, P3 = number, P4 = boolean>(_initWithKey: P0, _type: P1, _isReadOnly: P2, _appleEventCode: P3, _isLocationRequiredToCreate: P4): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     _descriptionWithTabCount<R = unknown, P0 = number>(__descriptionWithTabCount: P0): R;
   }
   namespace classes {
-    export interface NSScriptToManyRelationshipDescription<T = any> extends cocoa.classes.NSScriptPropertyDescription {
+    export interface NSScriptToManyRelationshipDescription<T = any> extends NSScriptPropertyDescription {
       alloc<R = NSScriptToManyRelationshipDescription>(): R;
       new: <R = NSScriptToManyRelationshipDescription>() => R;
       defaultKeyMarker<R = unknown>(): R;

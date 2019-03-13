@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSKeyValueIvarMutableSet<T = any> extends cocoa.NSKeyValueMutableSet {
+  export interface NSKeyValueIvarMutableSet<T = any> extends NSKeyValueMutableSet {
     unionSet<R = void, P0 = unknown>(_unionSet: P0): R;
     setSet<R = void, P0 = unknown>(_setSet: P0): R;
     removeObject<R = void, P0 = unknown>(_removeObject: P0): R;
@@ -15,7 +15,7 @@ declare namespace cocoa {
     count<R = number>(): R;
   }
   namespace classes {
-    export interface NSKeyValueIvarMutableSet<T = any> extends cocoa.classes.NSKeyValueMutableSet {  }
+    export interface NSKeyValueIvarMutableSet<T = any> extends NSKeyValueMutableSet {  }
   }
 }
 

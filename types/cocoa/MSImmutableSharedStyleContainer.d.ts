@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutableSharedStyleContainer<T = any> extends cocoa._MSImmutableSharedStyleContainer {}
+  export interface MSImmutableSharedStyleContainer<T = any> extends _MSImmutableSharedStyleContainer {}
   namespace classes {
-    export interface MSImmutableSharedStyleContainer<T = any> extends cocoa.classes._MSImmutableSharedStyleContainer {
+    export interface MSImmutableSharedStyleContainer<T = any> extends _MSImmutableSharedStyleContainer {
       alloc<R = MSImmutableSharedStyleContainer>(): R;
       new: <R = MSImmutableSharedStyleContainer>() => R;
     }

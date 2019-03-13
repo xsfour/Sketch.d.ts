@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCursor<T = any> extends cocoa.NSObject, cocoa.NSCodingProtocol {
+  export interface NSCursor<T = any> extends NSObject, NSCodingProtocol {
     pop<R = void>(): R;
     push<R = void>(): R;
     awakeAfterUsingCoder<R = unknown, P0 = unknown>(_awakeAfterUsingCoder: P0): R;
@@ -17,18 +17,18 @@ declare namespace cocoa {
     _coreCursorType<R = number>(): R;
     dealloc<R = void>(): R;
     _setImage<R = void, P0 = unknown>(__setImage: P0): R;
-    initWithImage_foregroundColorHint_backgroundColorHint_hotSpot<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = cocoa.CGPoint>(_initWithImage: P0, _foregroundColorHint: P1, _backgroundColorHint: P2, _hotSpot: P3): R;
-    initWithImage_hotSpot<R = unknown, P0 = unknown, P1 = cocoa.CGPoint>(_initWithImage: P0, _hotSpot: P1): R;
-    _initWithHotSpot<R = unknown, P0 = cocoa.CGPoint>(__initWithHotSpot: P0): R;
+    initWithImage_foregroundColorHint_backgroundColorHint_hotSpot<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = CGPoint>(_initWithImage: P0, _foregroundColorHint: P1, _backgroundColorHint: P2, _hotSpot: P3): R;
+    initWithImage_hotSpot<R = unknown, P0 = unknown, P1 = CGPoint>(_initWithImage: P0, _hotSpot: P1): R;
+    _initWithHotSpot<R = unknown, P0 = CGPoint>(__initWithHotSpot: P0): R;
     setOnMouseEntered<R = boolean>(): R;
     setOnMouseExited<R = boolean>(): R;
-    hotSpot<R = cocoa.CGPoint>(): R;
-    image<R = cocoa.NSImage>(): R;
+    hotSpot<R = CGPoint>(): R;
+    image<R = NSImage>(): R;
     // + NSCursor(CHCursorExtensions,NSCursorResizeExtensions):
     
   }
   namespace classes {
-    export interface NSCursor<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCodingProtocol {
+    export interface NSCursor<T = any> extends NSObject, NSCodingProtocol {
       alloc<R = NSCursor>(): R;
       new: <R = NSCursor>() => R;
       _overrideHelpCursor<R = unknown>(): R;
@@ -93,10 +93,10 @@ declare namespace cocoa {
       pointingHandCursor<R = unknown>(): R;
       IBeamCursor<R = unknown>(): R;
       arrowCursor<R = unknown>(): R;
-      _buildCursor_cursorData<R = unknown, P0 = unknown, P1 = cocoa.CGPoint>(__buildCursor: P0, _cursorData: P1): R;
+      _buildCursor_cursorData<R = unknown, P0 = unknown, P1 = CGPoint>(__buildCursor: P0, _cursorData: P1): R;
       initialize<R = void>(): R;
       // + NSCursor(CHCursorExtensions,NSCursorResizeExtensions):
-      cursorWithImageNamed_hotSpot<R = unknown, P0 = unknown, P1 = cocoa.CGPoint>(_cursorWithImageNamed: P0, _hotSpot: P1): R;
+      cursorWithImageNamed_hotSpot<R = unknown, P0 = unknown, P1 = CGPoint>(_cursorWithImageNamed: P0, _hotSpot: P1): R;
       cursorWithImageNamed<R = unknown, P0 = unknown>(_cursorWithImageNamed: P0): R;
       rotateBottomCursor<R = unknown>(): R;
       rotateTopCursor<R = unknown>(): R;

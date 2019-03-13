@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSStatusItem<T = any> extends cocoa.NSObject {
+  export interface NSStatusItem<T = any> extends NSObject {
     setAllowsVibrancy<R = void, P0 = boolean>(_setAllowsVibrancy: P0): R;
     allowsVibrancy<R = boolean>(): R;
     setDelegate<R = void, P0 = unknown>(_setDelegate: P0): R;
@@ -70,7 +70,7 @@ declare namespace cocoa {
     _activeMenuBarDrawingStyleDidChange<R = void>(): R;
     _propagateBackgroundStyle<R = void>(): R;
     view<R = unknown>(): R;
-    drawStatusBarBackgroundInRect_withHighlight<R = void, P0 = cocoa.CGRect, P1 = boolean>(_drawStatusBarBackgroundInRect: P0, _withHighlight: P1): R;
+    drawStatusBarBackgroundInRect_withHighlight<R = void, P0 = CGRect, P1 = boolean>(_drawStatusBarBackgroundInRect: P0, _withHighlight: P1): R;
     backgroundStyleForHighlight<R = number, P0 = boolean>(_backgroundStyleForHighlight: P0): R;
     _setPopupMenuAssociation<R = void, P0 = unknown>(__setPopupMenuAssociation: P0): R;
     _removePopupMenuAssociation<R = void, P0 = unknown>(__removePopupMenuAssociation: P0): R;
@@ -111,21 +111,21 @@ declare namespace cocoa {
     _systemInsertOrder<R = number>(): R;
     dealloc<R = void>(): R;
     _accessibilityContainer<R = unknown>(): R;
-    button<R = cocoa.NSStatusBarButton>(): R;
+    button<R = NSStatusBarButton>(): R;
     visible<R = boolean>(): R;
     setVisible<R = void, P0 = boolean>(_v: P0): R;
     behavior<R = number>(): R;
     setBehavior<R = void, P0 = number>(_v: P0): R;
-    autosaveName<R = cocoa.NSString>(): R;
-    setAutosaveName<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    menu<R = cocoa.NSMenu>(): R;
-    setMenu<R = void, P0 = cocoa.NSMenu>(_v: P0): R;
+    autosaveName<R = NSString>(): R;
+    setAutosaveName<R = void, P0 = NSString>(_v: P0): R;
+    menu<R = NSMenu>(): R;
+    setMenu<R = void, P0 = NSMenu>(_v: P0): R;
     length<R = number>(): R;
     setLength<R = void, P0 = number>(_v: P0): R;
-    statusBar<R = cocoa.NSStatusBar>(): R;
+    statusBar<R = NSStatusBar>(): R;
   }
   namespace classes {
-    export interface NSStatusItem<T = any> extends cocoa.classes.NSObject {
+    export interface NSStatusItem<T = any> extends NSObject {
       alloc<R = NSStatusItem>(): R;
       new: <R = NSStatusItem>() => R;
       _itemInStatusBar_withLength_withPriority_systemInsertOrder<R = unknown, P0 = unknown, P1 = number, P2 = number, P3 = number>(__itemInStatusBar: P0, _withLength: P1, _withPriority: P2, _systemInsertOrder: P3): R;

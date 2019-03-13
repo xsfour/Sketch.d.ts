@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFileLocator<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol {
+  export interface NSFileLocator<T = any> extends NSObject, NSCopyingProtocol {
     url<R = unknown>(): R;
     standardizedPath<R = unknown>(): R;
     specifier<R = unknown>(): R;
@@ -15,14 +15,14 @@ declare namespace cocoa {
     initWithBestLocationRep<R = unknown, P0 = unknown>(_initWithBestLocationRep: P0): R;
   }
   namespace classes {
-    export interface NSFileLocator<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol {
+    export interface NSFileLocator<T = any> extends NSObject, NSCopyingProtocol {
       alloc<R = NSFileLocator>(): R;
       new: <R = NSFileLocator>() => R;
       bestLocationRep_matchesBestLocationRep<R = boolean, P0 = unknown, P1 = unknown>(_bestLocationRep: P0, _matchesBestLocationRep: P1): R;
       bestLocationRepFromURL<R = unknown, P0 = unknown>(_bestLocationRepFromURL: P0): R;
       bestLocationRepFromPath<R = unknown, P0 = unknown>(_bestLocationRepFromPath: P0): R;
       _stringByReplacingChar_withChar_inString<R = unknown, P0 = number, P1 = number, P2 = unknown>(__stringByReplacingChar: P0, _withChar: P1, _inString: P2): R;
-      _shouldUseAliasToLocate<R = boolean, P0 = cocoa.FSRef>(__shouldUseAliasToLocate: P0): R;
+      _shouldUseAliasToLocate<R = boolean, P0 = FSRef>(__shouldUseAliasToLocate: P0): R;
     }
   }
 }

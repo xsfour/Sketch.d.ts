@@ -1,12 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSLayerChangeObserverProtocol<T = any> extends cocoa.NSObjectProtocol {
-    layerDidChange<R = void, P0 = cocoa.MSLayer>(_layerDidChange: P0): R;
+  export interface MSLayerChangeObserverProtocol<T = any> extends NSObjectProtocol {
+    layerDidChange<R = void, P0 = MSLayer>(_layerDidChange: P0): R;
   }
   namespace classes {
-    export interface MSLayerChangeObserverProtocol<T = any> extends cocoa.classes.NSObjectProtocol {  }
+    export interface MSLayerChangeObserverProtocol<T = any> extends NSObjectProtocol {  }
   }
 }
-
-declare const MSLayerChangeObserverProtocol: cocoa.classes.MSLayerChangeObserverProtocol;

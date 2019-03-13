@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarCustomizationPreviewCollectionViewItem<T = any> extends cocoa.NSCollectionViewItem, cocoa.NSGestureRecognizerDelegateProtocol {
+  export interface NSTouchBarCustomizationPreviewCollectionViewItem<T = any> extends NSCollectionViewItem, NSGestureRecognizerDelegateProtocol {
     _shouldTrailingJiggle<R = boolean>(): R;
     _shouldLeadingJiggle<R = boolean>(): R;
     _updateJiggle<R = void>(): R;
@@ -15,21 +15,21 @@ declare namespace cocoa {
     accessibilityActionNames<R = unknown>(): R;
     state<R = number>(): R;
     jiggleIndex<R = number>(): R;
-    panHandler<R = cocoa.CDUnknownBlockType>(): R;
-    setPanHandler<R = void, P0 = cocoa.CDUnknownBlockType>(_v: P0): R;
-    pressHandler<R = cocoa.CDUnknownBlockType>(): R;
-    setPressHandler<R = void, P0 = cocoa.CDUnknownBlockType>(_v: P0): R;
+    panHandler<R = CDUnknownBlockType>(): R;
+    setPanHandler<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
+    pressHandler<R = CDUnknownBlockType>(): R;
+    setPressHandler<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
     _shouldJiggle<R = boolean>(): R;
-    itemView<R = cocoa.NSTouchBarCustomizationPreviewItemContainerView>(): R;
-    accessibilityActionEntries<R = cocoa.NSArray>(): R;
-    setAccessibilityActionEntries<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    itemView<R = NSTouchBarCustomizationPreviewItemContainerView>(): R;
+    accessibilityActionEntries<R = NSArray>(): R;
+    setAccessibilityActionEntries<R = void, P0 = NSArray>(_v: P0): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSTouchBarCustomizationPreviewCollectionViewItem<T = any> extends cocoa.classes.NSCollectionViewItem, cocoa.classes.NSGestureRecognizerDelegateProtocol {
+    export interface NSTouchBarCustomizationPreviewCollectionViewItem<T = any> extends NSCollectionViewItem, NSGestureRecognizerDelegateProtocol {
       alloc<R = NSTouchBarCustomizationPreviewCollectionViewItem>(): R;
       new: <R = NSTouchBarCustomizationPreviewCollectionViewItem>() => R;
     }

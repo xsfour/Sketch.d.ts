@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSExportRendererWithSVGSupport<T = any> extends cocoa.MSExporter {}
+  export interface MSExportRendererWithSVGSupport<T = any> extends MSExporter {}
   namespace classes {
-    export interface MSExportRendererWithSVGSupport<T = any> extends cocoa.classes.MSExporter {
+    export interface MSExportRendererWithSVGSupport<T = any> extends MSExporter {
       alloc<R = MSExportRendererWithSVGSupport>(): R;
       new: <R = MSExportRendererWithSVGSupport>() => R;
     }

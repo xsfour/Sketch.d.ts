@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDataAction<T = any> extends cocoa.MSDocumentAction, cocoa.MSDataMenuProviderDelegateProtocol, cocoa.NSMenuDelegateProtocol {
+  export interface MSDataAction<T = any> extends MSDocumentAction, MSDataMenuProviderDelegateProtocol, NSMenuDelegateProtocol {
     overridesByDataIdentifierWithDataManager<R = unknown, P0 = unknown>(_overridesByDataIdentifierWithDataManager: P0): R;
     overridePropertyForDataType<R = unknown, P0 = number>(_overridePropertyForDataType: P0): R;
     firstOverridePointInOverridePoints_withProperty<R = unknown, P0 = unknown, P1 = unknown>(_firstOverridePointInOverridePoints: P0, _withProperty: P1): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     applyImageData_supplierIdentifier_toBitmapLayer<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(_applyImageData: P0, _supplierIdentifier: P1, _toBitmapLayer: P2): R;
     applyImageData_supplierIdentifier_toShapeGroup<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(_applyImageData: P0, _supplierIdentifier: P1, _toShapeGroup: P2): R;
     applyTextData_supplierIdentifier_toTextLayer<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(_applyTextData: P0, _supplierIdentifier: P1, _toTextLayer: P2): R;
-    applyDataWithSupplierIdentifer_toLayer_applierBlock<R = void, P0 = unknown, P1 = unknown, P2 = cocoa.CDUnknownBlockType>(_applyDataWithSupplierIdentifer: P0, _toLayer: P1, _applierBlock: P2): R;
+    applyDataWithSupplierIdentifer_toLayer_applierBlock<R = void, P0 = unknown, P1 = unknown, P2 = CDUnknownBlockType>(_applyDataWithSupplierIdentifer: P0, _toLayer: P1, _applierBlock: P2): R;
     dataIdentifierInLayers<R = unknown, P0 = unknown>(_dataIdentifierInLayers: P0): R;
     label<R = unknown>(): R;
     validate<R = boolean>(): R;
@@ -20,15 +20,15 @@ declare namespace cocoa {
     supportedDataTypeForSelection<R = number>(): R;
     dataTypeForSelectionContainingOnlySymbolInstancesWithOneOverridePerDataType<R = number>(): R;
     hasSubMenu<R = boolean>(): R;
-    data<R = cocoa.MSDataMenuProvider>(): R;
-    setData<R = void, P0 = cocoa.MSDataMenuProvider>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    data<R = MSDataMenuProvider>(): R;
+    setData<R = void, P0 = MSDataMenuProvider>(_v: P0): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSDataAction<T = any> extends cocoa.classes.MSDocumentAction, cocoa.classes.MSDataMenuProviderDelegateProtocol, cocoa.classes.NSMenuDelegateProtocol {
+    export interface MSDataAction<T = any> extends MSDocumentAction, MSDataMenuProviderDelegateProtocol, NSMenuDelegateProtocol {
       alloc<R = MSDataAction>(): R;
       new: <R = MSDataAction>() => R;
     }

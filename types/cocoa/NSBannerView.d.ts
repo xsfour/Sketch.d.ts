@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSBannerView<T = any> extends cocoa.NSView {
+  export interface NSBannerView<T = any> extends NSView {
     _preferredAppearance<R = unknown>(): R;
     _vibrantBlendingStyleForSubtree<R = number>(): R;
     drawsBackground<R = boolean>(): R;
@@ -16,7 +16,7 @@ declare namespace cocoa {
     setContiguousWithTitlebar<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface NSBannerView<T = any> extends cocoa.classes.NSView {
+    export interface NSBannerView<T = any> extends NSView {
       alloc<R = NSBannerView>(): R;
       new: <R = NSBannerView>() => R;
       _heightOfStyle<R = number, P0 = number>(__heightOfStyle: P0): R;

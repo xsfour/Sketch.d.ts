@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSBoundKeyPath<T = any> extends cocoa.NSObject {
+  export interface NSBoundKeyPath<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     mutableSetValue<R = unknown>(): R;
     mutableOrderedSetValue<R = unknown>(): R;
@@ -13,10 +13,10 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     rootObject<R = unknown>(): R;
     setRootObject<R = void, P0 = unknown>(_v: P0): R;
-    keyPath<R = cocoa.NSString>(): R;
+    keyPath<R = NSString>(): R;
   }
   namespace classes {
-    export interface NSBoundKeyPath<T = any> extends cocoa.classes.NSObject {
+    export interface NSBoundKeyPath<T = any> extends NSObject {
       alloc<R = NSBoundKeyPath>(): R;
       new: <R = NSBoundKeyPath>() => R;
       automaticallyNotifiesObserversForKey<R = boolean, P0 = unknown>(_automaticallyNotifiesObserversForKey: P0): R;

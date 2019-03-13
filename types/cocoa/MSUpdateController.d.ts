@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSUpdateController<T = any> extends cocoa.NSObject, cocoa.SUUpdaterDelegateProtocol {
+  export interface MSUpdateController<T = any> extends NSObject, SUUpdaterDelegateProtocol {
     checkerWithAppcast<R = unknown, P0 = unknown>(_checkerWithAppcast: P0): R;
-    parseAppcast_withCompletion<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(_parseAppcast: P0, _withCompletion: P1): R;
+    parseAppcast_withCompletion<R = void, P0 = unknown, P1 = CDUnknownBlockType>(_parseAppcast: P0, _withCompletion: P1): R;
     storeResultsFromChecker<R = void, P0 = unknown>(_storeResultsFromChecker: P0): R;
     appCastFetchFailedWithError<R = void, P0 = unknown>(_appCastFetchFailedWithError: P0): R;
-    fetchAppcastWithCompletion<R = void, P0 = cocoa.CDUnknownBlockType>(_fetchAppcastWithCompletion: P0): R;
+    fetchAppcastWithCompletion<R = void, P0 = CDUnknownBlockType>(_fetchAppcastWithCompletion: P0): R;
     commandLabel<R = unknown>(): R;
     commandEnabled<R = boolean>(): R;
     checkNormally<R = void>(): R;
@@ -18,13 +18,13 @@ declare namespace cocoa {
     setHasAvailableUpdates<R = void, P0 = boolean>(_v: P0): R;
     unavailableUpdateCount<R = number>(): R;
     setUnavailableUpdateCount<R = void, P0 = number>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSUpdateController<T = any> extends cocoa.classes.NSObject, cocoa.classes.SUUpdaterDelegateProtocol {
+    export interface MSUpdateController<T = any> extends NSObject, SUUpdaterDelegateProtocol {
       alloc<R = MSUpdateController>(): R;
       new: <R = MSUpdateController>() => R;
     }

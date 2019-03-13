@@ -1,15 +1,15 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSStyleShadow<T = any> extends cocoa._MSStyleShadow, cocoa.MSColorConvertibleProtocol {
+  export interface MSStyleShadow<T = any> extends _MSStyleShadow, MSColorConvertibleProtocol {
     CSSAttributeString<R = unknown>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSStyleShadow<T = any> extends cocoa.classes._MSStyleShadow, cocoa.classes.MSColorConvertibleProtocol {
+    export interface MSStyleShadow<T = any> extends _MSStyleShadow, MSColorConvertibleProtocol {
       alloc<R = MSStyleShadow>(): R;
       new: <R = MSStyleShadow>() => R;
     }

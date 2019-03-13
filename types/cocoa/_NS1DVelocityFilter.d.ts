@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NS1DVelocityFilter<T = any> extends cocoa.NSObject {
+  export interface _NS1DVelocityFilter<T = any> extends NSObject {
     _isTimestampOutOfDate<R = boolean, P0 = number>(__isTimestampOutOfDate: P0): R;
     resetIfOutOfDate<R = boolean, P0 = number>(_resetIfOutOfDate: P0): R;
     reset<R = void>(): R;
@@ -14,7 +14,7 @@ declare namespace cocoa {
     filteredVelocity<R = number>(): R;
   }
   namespace classes {
-    export interface _NS1DVelocityFilter<T = any> extends cocoa.classes.NSObject {
+    export interface _NS1DVelocityFilter<T = any> extends NSObject {
       alloc<R = _NS1DVelocityFilter>(): R;
       new: <R = _NS1DVelocityFilter>() => R;
     }

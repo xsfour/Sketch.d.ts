@@ -2,12 +2,10 @@
 
 declare namespace cocoa {
   export interface MSInspectorTableViewManagerDelegateProtocol<T = any> {
-    parentViewControllerForTableViewManager<R = cocoa.NSViewController, P0 = cocoa.MSInspectorTableViewManager>(_parentViewControllerForTableViewManager: P0): R;
-    sectionsForTableViewManager<R = cocoa.NSArray, P0 = cocoa.MSInspectorTableViewManager>(_sectionsForTableViewManager: P0): R;
+    parentViewControllerForTableViewManager<R = NSViewController, P0 = MSInspectorTableViewManager>(_parentViewControllerForTableViewManager: P0): R;
+    sectionsForTableViewManager<R = NSArray, P0 = MSInspectorTableViewManager>(_sectionsForTableViewManager: P0): R;
   }
   namespace classes {
     export interface MSInspectorTableViewManagerDelegateProtocol<T = any> {  }
   }
 }
-
-declare const MSInspectorTableViewManagerDelegateProtocol: cocoa.classes.MSInspectorTableViewManagerDelegateProtocol;

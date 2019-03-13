@@ -1,13 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSNibFinishedLoadingDependentProtocol<T = any> extends cocoa.NSObjectProtocol {
+  export interface NSNibFinishedLoadingDependentProtocol<T = any> extends NSObjectProtocol {
     _finishedLoadingNibDependencies<R = void>(): R;
-    _nibLoadingDependencies<R = cocoa.NSArray>(): R;
+    _nibLoadingDependencies<R = NSArray>(): R;
   }
   namespace classes {
-    export interface NSNibFinishedLoadingDependentProtocol<T = any> extends cocoa.classes.NSObjectProtocol {  }
+    export interface NSNibFinishedLoadingDependentProtocol<T = any> extends NSObjectProtocol {  }
   }
 }
-
-declare const NSNibFinishedLoadingDependentProtocol: cocoa.classes.NSNibFinishedLoadingDependentProtocol;

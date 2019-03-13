@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSubqueryExpression<T = any> extends cocoa.NSExpression {
+  export interface NSSubqueryExpression<T = any> extends NSExpression {
     hash<R = number>(): R;
     predicate<R = unknown>(): R;
     variable<R = unknown>(): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
   }
   namespace classes {
-    export interface NSSubqueryExpression<T = any> extends cocoa.classes.NSExpression {
+    export interface NSSubqueryExpression<T = any> extends NSExpression {
       alloc<R = NSSubqueryExpression>(): R;
       new: <R = NSSubqueryExpression>() => R;
     }

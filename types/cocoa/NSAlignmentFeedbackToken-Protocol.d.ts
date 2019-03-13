@@ -1,10 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAlignmentFeedbackTokenProtocol<T = any> extends cocoa.NSObjectProtocol {}
+  export interface NSAlignmentFeedbackTokenProtocol<T = any> extends NSObjectProtocol {}
   namespace classes {
-    export interface NSAlignmentFeedbackTokenProtocol<T = any> extends cocoa.classes.NSObjectProtocol {  }
+    export interface NSAlignmentFeedbackTokenProtocol<T = any> extends NSObjectProtocol {  }
   }
 }
-
-declare const NSAlignmentFeedbackTokenProtocol: cocoa.classes.NSAlignmentFeedbackTokenProtocol;

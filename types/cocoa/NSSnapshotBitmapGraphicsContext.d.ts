@@ -1,15 +1,15 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSnapshotBitmapGraphicsContext<T = any> extends cocoa.NSBitmapGraphicsContext {
-    retainedCGImage<R = cocoa.CGImage>(): R;
-    backingData<R = cocoa.NSMutableData>(): R;
-    setBackingData<R = void, P0 = cocoa.NSMutableData>(_v: P0): R;
-    signature<R = cocoa.NSSnapshotContextSignature>(): R;
-    setSignature<R = void, P0 = cocoa.NSSnapshotContextSignature>(_v: P0): R;
+  export interface NSSnapshotBitmapGraphicsContext<T = any> extends NSBitmapGraphicsContext {
+    retainedCGImage<R = CGImage>(): R;
+    backingData<R = NSMutableData>(): R;
+    setBackingData<R = void, P0 = NSMutableData>(_v: P0): R;
+    signature<R = NSSnapshotContextSignature>(): R;
+    setSignature<R = void, P0 = NSSnapshotContextSignature>(_v: P0): R;
   }
   namespace classes {
-    export interface NSSnapshotBitmapGraphicsContext<T = any> extends cocoa.classes.NSBitmapGraphicsContext {
+    export interface NSSnapshotBitmapGraphicsContext<T = any> extends NSBitmapGraphicsContext {
       alloc<R = NSSnapshotBitmapGraphicsContext>(): R;
       new: <R = NSSnapshotBitmapGraphicsContext>() => R;
     }

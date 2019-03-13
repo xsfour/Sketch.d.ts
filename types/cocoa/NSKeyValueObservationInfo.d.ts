@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSKeyValueObservationInfo<T = any> extends cocoa.NSObject {
+  export interface NSKeyValueObservationInfo<T = any> extends NSObject {
     description<R = unknown>(): R;
     hash<R = number>(): R;
     dealloc<R = void>(): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     _copyByAddingObservance<R = unknown, P0 = unknown>(__copyByAddingObservance: P0): R;
   }
   namespace classes {
-    export interface NSKeyValueObservationInfo<T = any> extends cocoa.classes.NSObject {
+    export interface NSKeyValueObservationInfo<T = any> extends NSObject {
       alloc<R = NSKeyValueObservationInfo>(): R;
       new: <R = NSKeyValueObservationInfo>() => R;
     }

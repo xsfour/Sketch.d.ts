@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUnitPower<T = any> extends cocoa.NSDimension, cocoa.NSSecureCodingProtocol {}
+  export interface NSUnitPower<T = any> extends NSDimension, NSSecureCodingProtocol {}
   namespace classes {
-    export interface NSUnitPower<T = any> extends cocoa.classes.NSDimension, cocoa.classes.NSSecureCodingProtocol {
+    export interface NSUnitPower<T = any> extends NSDimension, NSSecureCodingProtocol {
       alloc<R = NSUnitPower>(): R;
       new: <R = NSUnitPower>() => R;
       horsepower<R = unknown>(): R;

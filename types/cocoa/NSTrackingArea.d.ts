@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTrackingArea<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol, cocoa.NSCodingProtocol {
+  export interface NSTrackingArea<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
     cxx_destruct<R = void>(): R;
     setGestureBehaviors<R = void, P0 = unknown>(_setGestureBehaviors: P0): R;
     gestureBehaviors<R = unknown>(): R;
@@ -16,7 +16,7 @@ declare namespace cocoa {
     _dispatchMouseEntered<R = void, P0 = unknown>(__dispatchMouseEntered: P0): R;
     mouseMoved<R = void, P0 = unknown>(_mouseMoved: P0): R;
     _installDelayedRolloverForMouseEnteredEvent<R = void, P0 = unknown>(__installDelayedRolloverForMouseEnteredEvent: P0): R;
-    _doWork<R = void, P0 = cocoa.CDUnknownBlockType>(__doWork: P0): R;
+    _doWork<R = void, P0 = CDUnknownBlockType>(__doWork: P0): R;
     _removed<R = boolean>(): R;
     _setRemoved<R = void, P0 = boolean>(__setRemoved: P0): R;
     _hasPressureConfigurations<R = boolean>(): R;
@@ -38,20 +38,20 @@ declare namespace cocoa {
     _installPending<R = boolean>(): R;
     _setInstallPending<R = void, P0 = boolean>(__setInstallPending: P0): R;
     _userInfo<R = void>(): R;
-    _setRect<R = void, P0 = cocoa.CGRect>(__setRect: P0): R;
+    _setRect<R = void, P0 = CGRect>(__setRect: P0): R;
     description<R = unknown>(): R;
     dealloc<R = void>(): R;
-    initWithRect_options_owner_userInfo<R = unknown, P0 = cocoa.CGRect, P1 = number, P2 = unknown, P3 = unknown>(_initWithRect: P0, _options: P1, _owner: P2, _userInfo: P3): R;
-    initWithRect_options_pressureConfigurations_owner_userInfo<R = unknown, P0 = cocoa.CGRect, P1 = number, P2 = unknown, P3 = unknown, P4 = unknown>(_initWithRect: P0, _options: P1, _pressureConfigurations: P2, _owner: P3, _userInfo: P4): R;
+    initWithRect_options_owner_userInfo<R = unknown, P0 = CGRect, P1 = number, P2 = unknown, P3 = unknown>(_initWithRect: P0, _options: P1, _owner: P2, _userInfo: P3): R;
+    initWithRect_options_pressureConfigurations_owner_userInfo<R = unknown, P0 = CGRect, P1 = number, P2 = unknown, P3 = unknown, P4 = unknown>(_initWithRect: P0, _options: P1, _pressureConfigurations: P2, _owner: P3, _userInfo: P4): R;
     options<R = number>(): R;
-    userInfo<R = cocoa.NSDictionary>(): R;
+    userInfo<R = NSDictionary>(): R;
     owner<R = unknown>(): R;
-    rect<R = cocoa.CGRect>(): R;
+    rect<R = CGRect>(): R;
     // + NSTrackingArea(CHTrackingAreaExtensions):
     
   }
   namespace classes {
-    export interface NSTrackingArea<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol, cocoa.classes.NSCodingProtocol {
+    export interface NSTrackingArea<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
       alloc<R = NSTrackingArea>(): R;
       new: <R = NSTrackingArea>() => R;
       _areaSendingMouseEntered<R = unknown>(): R;

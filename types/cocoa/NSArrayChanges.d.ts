@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSArrayChanges<T = any> extends cocoa.NSMutableArray, cocoa.NSCopyingProtocol {
+  export interface NSArrayChanges<T = any> extends NSMutableArray, NSCopyingProtocol {
     addChange<R = void, P0 = unknown>(_addChange: P0): R;
-    enumerateChanges_usingBlock<R = void, P0 = number, P1 = cocoa.CDUnknownBlockType>(_enumerateChanges: P0, _usingBlock: P1): R;
-    enumerateChangesUsingBlock<R = void, P0 = cocoa.CDUnknownBlockType>(_enumerateChangesUsingBlock: P0): R;
+    enumerateChanges_usingBlock<R = void, P0 = number, P1 = CDUnknownBlockType>(_enumerateChanges: P0, _usingBlock: P1): R;
+    enumerateChangesUsingBlock<R = void, P0 = CDUnknownBlockType>(_enumerateChangesUsingBlock: P0): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     _toManyPropertyType<R = number>(): R;
@@ -19,14 +19,14 @@ declare namespace cocoa {
     exchangeObjectAtIndex_withObjectAtIndex<R = void, P0 = number, P1 = number>(_exchangeObjectAtIndex: P0, _withObjectAtIndex: P1): R;
     moveObjectsAtIndexes_toIndex<R = void, P0 = unknown, P1 = number>(_moveObjectsAtIndexes: P0, _toIndex: P1): R;
     sortUsingSelector<R = void, P0 = string>(_sortUsingSelector: P0): R;
-    sortUsingFunction_context<R = void, P0 = cocoa.CDUnknownFunctionPointerType, P1 = void>(_sortUsingFunction: P0, _context: P1): R;
+    sortUsingFunction_context<R = void, P0 = CDUnknownFunctionPointerType, P1 = void>(_sortUsingFunction: P0, _context: P1): R;
     removeLastObject<R = void>(): R;
     addObject<R = void, P0 = unknown>(_addObject: P0): R;
     changeCount<R = number>(): R;
   }
   namespace classes {
-    export interface NSArrayChanges<T = any> extends cocoa.classes.NSMutableArray, cocoa.classes.NSCopyingProtocol {
-      allocWithZone<R = unknown, P0 = cocoa._NSZone>(_allocWithZone: P0): R;
+    export interface NSArrayChanges<T = any> extends NSMutableArray, NSCopyingProtocol {
+      allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
     }
   }
 }

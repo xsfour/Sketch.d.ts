@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCPasteboardMock<T = any> extends cocoa.NSObject {
+  export interface BCPasteboardMock<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     clearContents<R = void>(): R;
     writeObjects<R = boolean, P0 = unknown>(_writeObjects: P0): R;
@@ -16,14 +16,14 @@ declare namespace cocoa {
     addTypes_owner<R = void, P0 = unknown, P1 = unknown>(_addTypes: P0, _owner: P1): R;
     declareTypes_owner<R = void, P0 = unknown, P1 = unknown>(_declareTypes: P0, _owner: P1): R;
     addDataForTypes_fromOwner<R = void, P0 = unknown, P1 = unknown>(_addDataForTypes: P0, _fromOwner: P1): R;
-    storage<R = cocoa.NSMutableDictionary>(): R;
-    setStorage<R = void, P0 = cocoa.NSMutableDictionary>(_v: P0): R;
-    name<R = cocoa.NSString>(): R;
-    setName<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    storage<R = NSMutableDictionary>(): R;
+    setStorage<R = void, P0 = NSMutableDictionary>(_v: P0): R;
+    name<R = NSString>(): R;
+    setName<R = void, P0 = NSString>(_v: P0): R;
     changeCount<R = number>(): R;
   }
   namespace classes {
-    export interface BCPasteboardMock<T = any> extends cocoa.classes.NSObject {
+    export interface BCPasteboardMock<T = any> extends NSObject {
       alloc<R = BCPasteboardMock>(): R;
       new: <R = BCPasteboardMock>() => R;
       pasteboardWithName<R = unknown, P0 = unknown>(_pasteboardWithName: P0): R;

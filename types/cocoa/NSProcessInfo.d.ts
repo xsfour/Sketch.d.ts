@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSProcessInfo<T = any> extends cocoa.NSObject {
+  export interface NSProcessInfo<T = any> extends NSObject {
     _reactivateActivity<R = void, P0 = unknown>(__reactivateActivity: P0): R;
     _supportsAutomaticTermination<R = boolean>(): R;
-    _setShouldRelaunchDueToAutomaticTerminationStateChangedHandler<R = void, P0 = cocoa.CDUnknownBlockType>(__setShouldRelaunchDueToAutomaticTerminationStateChangedHandler: P0): R;
+    _setShouldRelaunchDueToAutomaticTerminationStateChangedHandler<R = void, P0 = CDUnknownBlockType>(__setShouldRelaunchDueToAutomaticTerminationStateChangedHandler: P0): R;
     _enableAutomaticTerminationSupport<R = void>(): R;
     _isAutoQuittable<R = boolean>(): R;
     _shouldDisableRelaunchOnLoginDueToAutomaticTermination<R = boolean>(): R;
@@ -27,9 +27,9 @@ declare namespace cocoa {
     setArguments<R = void, P0 = unknown>(_setArguments: P0): R;
     _registerForHardwareStateNotifications<R = void>(): R;
     dealloc<R = void>(): R;
-    performExpiringActivityWithReason_usingBlock<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(_performExpiringActivityWithReason: P0, _usingBlock: P1): R;
-    performActivityWithOptions_reason_usingBlock<R = void, P0 = number, P1 = unknown, P2 = cocoa.CDUnknownBlockType>(_performActivityWithOptions: P0, _reason: P1, _usingBlock: P2): R;
-    performActivityWithOptions_reason_block<R = void, P0 = number, P1 = unknown, P2 = cocoa.CDUnknownBlockType>(_performActivityWithOptions: P0, _reason: P1, _block: P2): R;
+    performExpiringActivityWithReason_usingBlock<R = void, P0 = unknown, P1 = CDUnknownBlockType>(_performExpiringActivityWithReason: P0, _usingBlock: P1): R;
+    performActivityWithOptions_reason_usingBlock<R = void, P0 = number, P1 = unknown, P2 = CDUnknownBlockType>(_performActivityWithOptions: P0, _reason: P1, _usingBlock: P2): R;
+    performActivityWithOptions_reason_block<R = void, P0 = number, P1 = unknown, P2 = CDUnknownBlockType>(_performActivityWithOptions: P0, _reason: P1, _block: P2): R;
     endActivity<R = void, P0 = unknown>(_endActivity: P0): R;
     beginActivityWithOptions_reason<R = unknown, P0 = number, P1 = unknown>(_beginActivityWithOptions: P0, _reason: P1): R;
     endSystemBehaviorSuspension<R = void, P0 = unknown>(_endSystemBehaviorSuspension: P0): R;
@@ -43,19 +43,19 @@ declare namespace cocoa {
     activeProcessorCount<R = number>(): R;
     processorCount<R = number>(): R;
     operatingSystemVersion<R = unknown>(): R;
-    operatingSystemVersionString<R = cocoa.NSString>(): R;
-    userName<R = cocoa.NSString>(): R;
-    globallyUniqueString<R = cocoa.NSString>(): R;
+    operatingSystemVersionString<R = NSString>(): R;
+    userName<R = NSString>(): R;
+    globallyUniqueString<R = NSString>(): R;
     processIdentifier<R = number>(): R;
-    processName<R = cocoa.NSString>(): R;
-    setProcessName<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    hostName<R = cocoa.NSString>(): R;
-    arguments<R = cocoa.NSArray>(): R;
-    environment<R = cocoa.NSDictionary>(): R;
-    fullUserName<R = cocoa.NSString>(): R;
+    processName<R = NSString>(): R;
+    setProcessName<R = void, P0 = NSString>(_v: P0): R;
+    hostName<R = NSString>(): R;
+    arguments<R = NSArray>(): R;
+    environment<R = NSDictionary>(): R;
+    fullUserName<R = NSString>(): R;
   }
   namespace classes {
-    export interface NSProcessInfo<T = any> extends cocoa.classes.NSObject {
+    export interface NSProcessInfo<T = any> extends NSObject {
       alloc<R = NSProcessInfo>(): R;
       new: <R = NSProcessInfo>() => R;
       processInfo<R = unknown>(): R;

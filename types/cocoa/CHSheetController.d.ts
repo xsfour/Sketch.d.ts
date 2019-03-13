@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface CHSheetController<T = any> extends cocoa.CHWindowController, cocoa.NSTouchBarDelegateProtocol {
+  export interface CHSheetController<T = any> extends CHWindowController, NSTouchBarDelegateProtocol {
     sheetWillClose<R = void>(): R;
     _init<R = unknown>(): R;
     selectorForTouchbarItemIdentifier<R = string, P0 = unknown>(_selectorForTouchbarItemIdentifier: P0): R;
@@ -13,19 +13,19 @@ declare namespace cocoa {
     run<R = unknown>(): R;
     releaseSelf<R = void>(): R;
     retainSelf<R = void>(): R;
-    selfReferences<R = cocoa.NSCountedSet>(): R;
-    setSelfReferences<R = void, P0 = cocoa.NSCountedSet>(_v: P0): R;
-    parentWindow<R = cocoa.NSWindow>(): R;
-    setParentWindow<R = void, P0 = cocoa.NSWindow>(_v: P0): R;
+    selfReferences<R = NSCountedSet>(): R;
+    setSelfReferences<R = void, P0 = NSCountedSet>(_v: P0): R;
+    parentWindow<R = NSWindow>(): R;
+    setParentWindow<R = void, P0 = NSWindow>(_v: P0): R;
     object<R = unknown>(): R;
     setObject<R = void, P0 = unknown>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface CHSheetController<T = any> extends cocoa.classes.CHWindowController, cocoa.classes.NSTouchBarDelegateProtocol {
+    export interface CHSheetController<T = any> extends CHWindowController, NSTouchBarDelegateProtocol {
       alloc<R = CHSheetController>(): R;
       new: <R = CHSheetController>() => R;
       findSuitableWindowForSheet<R = unknown>(): R;

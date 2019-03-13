@@ -14,7 +14,7 @@ declare namespace cocoa {
     export interface NSShadow<T = any> {
       // + NSShadow(CHShadowExtensions):
       clearShadow<R = void>(): R;
-      shadowWithColor_offset_blur<R = unknown, P0 = unknown, P1 = cocoa.CGSize, P2 = number>(_shadowWithColor: P0, _offset: P1, _blur: P2): R;
+      shadowWithColor_offset_blur<R = unknown, P0 = unknown, P1 = CGSize, P2 = number>(_shadowWithColor: P0, _offset: P1, _blur: P2): R;
     }
   }
 }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSURLFileTypeMappings<T = any> extends cocoa.NSObject {
+  export interface NSURLFileTypeMappings<T = any> extends NSObject {
     extensionsForMIMEType<R = unknown, P0 = unknown>(_extensionsForMIMEType: P0): R;
     preferredExtensionForMIMEType<R = unknown, P0 = unknown>(_preferredExtensionForMIMEType: P0): R;
     MIMETypeForExtension<R = unknown, P0 = unknown>(_MIMETypeForExtension: P0): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     _init<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSURLFileTypeMappings<T = any> extends cocoa.classes.NSObject {
+    export interface NSURLFileTypeMappings<T = any> extends NSObject {
       alloc<R = NSURLFileTypeMappings>(): R;
       new: <R = NSURLFileTypeMappings>() => R;
       sharedMappings<R = unknown>(): R;

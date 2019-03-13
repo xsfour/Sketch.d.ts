@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFilesystemItemCopyOperation<T = any> extends cocoa.NSDirectoryTraversalOperation {
+  export interface NSFilesystemItemCopyOperation<T = any> extends NSDirectoryTraversalOperation {
     _shouldProceedAfterErrno_copyingItemAtPath_toPath<R = boolean, P0 = number, P1 = string, P2 = string>(__shouldProceedAfterErrno: P0, _copyingItemAtPath: P1, _toPath: P2): R;
     shouldProceedAfterError_copyingItemAtPath_toPath<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown>(_shouldProceedAfterError: P0, _copyingItemAtPath: P1, _toPath: P2): R;
     _shouldCopyItemAtPath_toPath<R = boolean, P0 = string, P1 = string>(__shouldCopyItemAtPath: P0, _toPath: P1): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     initWithSourcePath_destinationPath_options<R = void, P0 = unknown, P1 = unknown, P2 = number>(_initWithSourcePath: P0, _destinationPath: P1, _options: P2): R;
   }
   namespace classes {
-    export interface NSFilesystemItemCopyOperation<T = any> extends cocoa.classes.NSDirectoryTraversalOperation {
+    export interface NSFilesystemItemCopyOperation<T = any> extends NSDirectoryTraversalOperation {
       alloc<R = NSFilesystemItemCopyOperation>(): R;
       new: <R = NSFilesystemItemCopyOperation>() => R;
       filesystemItemCopyOperationWithSourcePath_destinationPath_options<R = unknown, P0 = unknown, P1 = unknown, P2 = number>(_filesystemItemCopyOperationWithSourcePath: P0, _destinationPath: P1, _options: P2): R;

@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFinishEditingButton<T = any> extends cocoa.NSButton {}
+  export interface MSFinishEditingButton<T = any> extends NSButton {}
   namespace classes {
-    export interface MSFinishEditingButton<T = any> extends cocoa.classes.NSButton {
+    export interface MSFinishEditingButton<T = any> extends NSButton {
       alloc<R = MSFinishEditingButton>(): R;
       new: <R = MSFinishEditingButton>() => R;
     }

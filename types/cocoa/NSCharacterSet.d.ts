@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCharacterSet<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol, cocoa.NSMutableCopyingProtocol, cocoa.NSSecureCodingProtocol {
+  export interface NSCharacterSet<T = any> extends NSObject, NSCopyingProtocol, NSMutableCopyingProtocol, NSSecureCodingProtocol {
     _retainedBitmapRepresentation<R = unknown>(): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
@@ -14,19 +14,19 @@ declare namespace cocoa {
     count<R = number>(): R;
     isEmpty<R = boolean>(): R;
     hash<R = number>(): R;
-    _expandedCFCharacterSet<R = cocoa.__CFCharacterSet>(): R;
+    _expandedCFCharacterSet<R = __CFCharacterSet>(): R;
     _cfTypeID<R = number>(): R;
     replacementObjectForPortCoder<R = unknown, P0 = unknown>(_replacementObjectForPortCoder: P0): R;
-    bitmapRepresentation<R = cocoa.NSData>(): R;
-    invertedSet<R = cocoa.NSCharacterSet>(): R;
+    bitmapRepresentation<R = NSData>(): R;
+    invertedSet<R = NSCharacterSet>(): R;
   }
   namespace classes {
-    export interface NSCharacterSet<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol, cocoa.classes.NSMutableCopyingProtocol, cocoa.classes.NSSecureCodingProtocol {
+    export interface NSCharacterSet<T = any> extends NSObject, NSCopyingProtocol, NSMutableCopyingProtocol, NSSecureCodingProtocol {
       alloc<R = NSCharacterSet>(): R;
       new: <R = NSCharacterSet>() => R;
       characterSetWithBitmapRepresentation<R = unknown, P0 = unknown>(_characterSetWithBitmapRepresentation: P0): R;
       characterSetWithCharactersInString<R = unknown, P0 = unknown>(_characterSetWithCharactersInString: P0): R;
-      characterSetWithRange<R = unknown, P0 = cocoa._NSRange>(_characterSetWithRange: P0): R;
+      characterSetWithRange<R = unknown, P0 = _NSRange>(_characterSetWithRange: P0): R;
       characterSetWithContentsOfFile<R = unknown, P0 = unknown>(_characterSetWithContentsOfFile: P0): R;
       newlineCharacterSet<R = unknown>(): R;
       symbolCharacterSet<R = unknown>(): R;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSplitViewSplitter<T = any> extends cocoa.NSAccessibilityElement {
+  export interface NSSplitViewSplitter<T = any> extends NSAccessibilityElement {
     index<R = number>(): R;
     hash<R = number>(): R;
     initWithIndex_parent<R = unknown, P0 = number, P1 = unknown>(_initWithIndex: P0, _parent: P1): R;
@@ -23,7 +23,7 @@ declare namespace cocoa {
     _accessibilitySplitterMinCoordinate<R = number>(): R;
   }
   namespace classes {
-    export interface NSSplitViewSplitter<T = any> extends cocoa.classes.NSAccessibilityElement {
+    export interface NSSplitViewSplitter<T = any> extends NSAccessibilityElement {
       alloc<R = NSSplitViewSplitter>(): R;
       new: <R = NSSplitViewSplitter>() => R;
       splitterWithIndex_parent<R = unknown, P0 = number, P1 = unknown>(_splitterWithIndex: P0, _parent: P1): R;

@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCFInputStream<T = any> extends cocoa.NSInputStream {
-    _unscheduleFromCFRunLoop_forMode<R = void, P0 = cocoa.__CFRunLoop, P1 = cocoa.__CFString>(__unscheduleFromCFRunLoop: P0, _forMode: P1): R;
-    _scheduleInCFRunLoop_forMode<R = void, P0 = cocoa.__CFRunLoop, P1 = cocoa.__CFString>(__scheduleInCFRunLoop: P0, _forMode: P1): R;
-    _setCFClientFlags_callback_context<R = boolean, P0 = number, P1 = cocoa.CDUnknownFunctionPointerType, P2 = unknown>(__setCFClientFlags: P0, _callback: P1, _context: P2): R;
+  export interface NSCFInputStream<T = any> extends NSInputStream {
+    _unscheduleFromCFRunLoop_forMode<R = void, P0 = __CFRunLoop, P1 = __CFString>(__unscheduleFromCFRunLoop: P0, _forMode: P1): R;
+    _scheduleInCFRunLoop_forMode<R = void, P0 = __CFRunLoop, P1 = __CFString>(__scheduleInCFRunLoop: P0, _forMode: P1): R;
+    _setCFClientFlags_callback_context<R = boolean, P0 = number, P1 = CDUnknownFunctionPointerType, P2 = unknown>(__setCFClientFlags: P0, _callback: P1, _context: P2): R;
     hasBytesAvailable<R = boolean>(): R;
     getBuffer_length<R = boolean, P0 = string, P1 = number>(_getBuffer: P0, _length: P1): R;
     read_maxLength<R = number, P0 = string, P1 = number>(_read: P0, _maxLength: P1): R;
@@ -30,8 +30,8 @@ declare namespace cocoa {
     isEqual<R = boolean, P0 = unknown>(_isEqual: P0): R;
   }
   namespace classes {
-    export interface NSCFInputStream<T = any> extends cocoa.classes.NSInputStream {
-      allocWithZone<R = unknown, P0 = cocoa._NSZone>(_allocWithZone: P0): R;
+    export interface NSCFInputStream<T = any> extends NSInputStream {
+      allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
       automaticallyNotifiesObserversForKey<R = boolean, P0 = unknown>(_automaticallyNotifiesObserversForKey: P0): R;
     }
   }

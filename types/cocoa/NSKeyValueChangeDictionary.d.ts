@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSKeyValueChangeDictionary<T = any> extends cocoa.NSDictionary {
+  export interface NSKeyValueChangeDictionary<T = any> extends NSDictionary {
     keyEnumerator<R = unknown>(): R;
     objectForKey<R = unknown, P0 = unknown>(_objectForKey: P0): R;
     count<R = number>(): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     initWithDetailsNoCopy_originalObservable_isPriorNotification<R = unknown, P0 = unknown, P1 = unknown, P2 = boolean>(_initWithDetailsNoCopy: P0, _originalObservable: P1, _isPriorNotification: P2): R;
   }
   namespace classes {
-    export interface NSKeyValueChangeDictionary<T = any> extends cocoa.classes.NSDictionary {  }
+    export interface NSKeyValueChangeDictionary<T = any> extends NSDictionary {  }
   }
 }
 

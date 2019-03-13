@@ -1,17 +1,17 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSEditableBinder<T = any> extends cocoa.NSBinder {
-    _setStatesImmediatelyInObject_mode_triggerRedisplay<R = void, P0 = unknown, P1 = cocoa.__NSKeyValueCodingControllerModeType, P2 = boolean>(__setStatesImmediatelyInObject: P0, _mode: P1, _triggerRedisplay: P2): R;
-    _hiddenStateWithMode<R = boolean, P0 = cocoa.__NSKeyValueCodingControllerModeType>(__hiddenStateWithMode: P0): R;
+  export interface NSEditableBinder<T = any> extends NSBinder {
+    _setStatesImmediatelyInObject_mode_triggerRedisplay<R = void, P0 = unknown, P1 = __NSKeyValueCodingControllerModeType, P2 = boolean>(__setStatesImmediatelyInObject: P0, _mode: P1, _triggerRedisplay: P2): R;
+    _hiddenStateWithMode<R = boolean, P0 = __NSKeyValueCodingControllerModeType>(__hiddenStateWithMode: P0): R;
     hiddenStateAtIndexPath<R = boolean, P0 = unknown>(_hiddenStateAtIndexPath: P0): R;
     hiddenStateAtIndex<R = boolean, P0 = number>(_hiddenStateAtIndex: P0): R;
     hiddenState<R = boolean>(): R;
-    _enabledStateWithMode<R = boolean, P0 = cocoa.__NSKeyValueCodingControllerModeType>(__enabledStateWithMode: P0): R;
+    _enabledStateWithMode<R = boolean, P0 = __NSKeyValueCodingControllerModeType>(__enabledStateWithMode: P0): R;
     enabledStateAtIndexPath<R = boolean, P0 = unknown>(_enabledStateAtIndexPath: P0): R;
     enabledStateAtIndex<R = boolean, P0 = number>(_enabledStateAtIndex: P0): R;
     enabledState<R = boolean>(): R;
-    _editableStateWithMode<R = boolean, P0 = cocoa.__NSKeyValueCodingControllerModeType>(__editableStateWithMode: P0): R;
+    _editableStateWithMode<R = boolean, P0 = __NSKeyValueCodingControllerModeType>(__editableStateWithMode: P0): R;
     editableStateAtIndexPath<R = boolean, P0 = unknown>(_editableStateAtIndexPath: P0): R;
     editableStateAtIndex<R = boolean, P0 = number>(_editableStateAtIndex: P0): R;
     editableState<R = boolean>(): R;
@@ -24,7 +24,7 @@ declare namespace cocoa {
     _countBindings<R = void>(): R;
   }
   namespace classes {
-    export interface NSEditableBinder<T = any> extends cocoa.classes.NSBinder {
+    export interface NSEditableBinder<T = any> extends NSBinder {
       alloc<R = NSEditableBinder>(): R;
       new: <R = NSEditableBinder>() => R;
       _enumeratedHiddenBindings<R = unknown, P0 = number>(__enumeratedHiddenBindings: P0): R;

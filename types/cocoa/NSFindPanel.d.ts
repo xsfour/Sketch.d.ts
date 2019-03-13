@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFindPanel<T = any> extends cocoa.NSPanel, cocoa.NSWindowDelegateProtocol {
+  export interface NSFindPanel<T = any> extends NSPanel, NSWindowDelegateProtocol {
     setSubstringMatchType<R = void, P0 = number>(_setSubstringMatchType: P0): R;
     substringMatchType<R = number>(): R;
     searchOptions<R = number>(): R;
@@ -18,13 +18,13 @@ declare namespace cocoa {
     numberOfItemsInComboBox<R = number, P0 = unknown>(_numberOfItemsInComboBox: P0): R;
     comboBox_objectValueForItemAtIndex<R = unknown, P0 = unknown, P1 = number>(_comboBox: P0, _objectValueForItemAtIndex: P1): R;
     awakeFromNib<R = void>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSFindPanel<T = any> extends cocoa.classes.NSPanel, cocoa.classes.NSWindowDelegateProtocol {
+    export interface NSFindPanel<T = any> extends NSPanel, NSWindowDelegateProtocol {
       alloc<R = NSFindPanel>(): R;
       new: <R = NSFindPanel>() => R;
       _isLoaded<R = boolean>(): R;

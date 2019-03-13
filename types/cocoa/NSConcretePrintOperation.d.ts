@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSConcretePrintOperation<T = any> extends cocoa.NSPrintOperation {
+  export interface NSConcretePrintOperation<T = any> extends NSPrintOperation {
     currentPage<R = number>(): R;
-    pageRange<R = cocoa._NSRange>(): R;
+    pageRange<R = _NSRange>(): R;
     context<R = unknown>(): R;
     setPrintInfo<R = void, P0 = unknown>(_setPrintInfo: P0): R;
     printInfo<R = unknown>(): R;
@@ -18,7 +18,7 @@ declare namespace cocoa {
     _renderView<R = boolean>(): R;
     _setPageOrderFromPrintInfo<R = void>(): R;
     _createAndShowProgressPanelIfAppropriate<R = void, P0 = boolean>(__createAndShowProgressPanelIfAppropriate: P0): R;
-    _beginPDFPanelModalForWindow_thenContinue<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(__beginPDFPanelModalForWindow: P0, _thenContinue: P1): R;
+    _beginPDFPanelModalForWindow_thenContinue<R = void, P0 = unknown, P1 = CDUnknownBlockType>(__beginPDFPanelModalForWindow: P0, _thenContinue: P1): R;
     _preparedPrintPanel<R = unknown>(): R;
     pageOrder<R = number>(): R;
     setPageOrder<R = void, P0 = number>(_setPageOrder: P0): R;
@@ -38,7 +38,7 @@ declare namespace cocoa {
     preferredRenderingQuality<R = number>(): R;
     isCopyingOperation<R = boolean>(): R;
     dealloc<R = void>(): R;
-    _initWithView_printInfo_epsNotPDF_bounds_data_orPath<R = unknown, P0 = unknown, P1 = unknown, P2 = boolean, P3 = cocoa.CGRect, P4 = unknown, P5 = unknown>(__initWithView: P0, _printInfo: P1, _epsNotPDF: P2, _bounds: P3, _data: P4, _orPath: P5): R;
+    _initWithView_printInfo_epsNotPDF_bounds_data_orPath<R = unknown, P0 = unknown, P1 = unknown, P2 = boolean, P3 = CGRect, P4 = unknown, P5 = unknown>(__initWithView: P0, _printInfo: P1, _epsNotPDF: P2, _bounds: P3, _data: P4, _orPath: P5): R;
     _initWithView_printInfo<R = unknown, P0 = unknown, P1 = unknown>(__initWithView: P0, _printInfo: P1): R;
     _setShowProgressPanel<R = void, P0 = boolean>(__setShowProgressPanel: P0): R;
     _setShowPrintPanel<R = void, P0 = boolean>(__setShowPrintPanel: P0): R;
@@ -52,7 +52,7 @@ declare namespace cocoa {
     _validatePagination<R = void>(): R;
   }
   namespace classes {
-    export interface NSConcretePrintOperation<T = any> extends cocoa.classes.NSPrintOperation {
+    export interface NSConcretePrintOperation<T = any> extends NSPrintOperation {
       alloc<R = NSConcretePrintOperation>(): R;
       new: <R = NSConcretePrintOperation>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSNib<T = any> extends cocoa.NSObject, cocoa.NSCodingProtocol {
+  export interface NSNib<T = any> extends NSObject, NSCodingProtocol {
     setInheritsDecodeTimeBundlePath<R = void, P0 = boolean>(_setInheritsDecodeTimeBundlePath: P0): R;
     inheritsDecodeTimeBundlePath<R = boolean>(): R;
     _loadNibDataFromPath<R = void, P0 = unknown>(__loadNibDataFromPath: P0): R;
@@ -10,8 +10,8 @@ declare namespace cocoa {
     instantiateWithOwner_topLevelObjects<R = boolean, P0 = unknown, P1 = unknown>(_instantiateWithOwner: P0, _topLevelObjects: P1): R;
     instantiateNibWithExternalNameTable<R = boolean, P0 = unknown>(_instantiateNibWithExternalNameTable: P0): R;
     _instantiateNibWithExternalNameTable_options<R = boolean, P0 = unknown, P1 = unknown>(__instantiateNibWithExternalNameTable: P0, _options: P1): R;
-    _decoderWithZone<R = unknown, P0 = cocoa._NSZone>(__decoderWithZone: P0): R;
-    _makeDecoderWithZone<R = unknown, P0 = cocoa._NSZone>(__makeDecoderWithZone: P0): R;
+    _decoderWithZone<R = unknown, P0 = _NSZone>(__decoderWithZone: P0): R;
+    _makeDecoderWithZone<R = unknown, P0 = _NSZone>(__makeDecoderWithZone: P0): R;
     _setReusableDecoder<R = void, P0 = unknown>(__setReusableDecoder: P0): R;
     _reusableDecoder<R = unknown>(): R;
     dealloc<R = void>(): R;
@@ -23,7 +23,7 @@ declare namespace cocoa {
     initWithContentsOfURL<R = unknown, P0 = unknown>(_initWithContentsOfURL: P0): R;
   }
   namespace classes {
-    export interface NSNib<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCodingProtocol {
+    export interface NSNib<T = any> extends NSObject, NSCodingProtocol {
       alloc<R = NSNib>(): R;
       new: <R = NSNib>() => R;
       _NSNibBindingHelpStringForUIItem_binding<R = unknown, P0 = unknown, P1 = unknown>(__NSNibBindingHelpStringForUIItem: P0, _binding: P1): R;

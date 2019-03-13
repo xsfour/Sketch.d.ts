@@ -1,10 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSStyledLayerProtocol<T = any> extends cocoa.MSLayerProtocol {}
+  export interface MSStyledLayerProtocol<T = any> extends MSLayerProtocol {}
   namespace classes {
-    export interface MSStyledLayerProtocol<T = any> extends cocoa.classes.MSLayerProtocol {  }
+    export interface MSStyledLayerProtocol<T = any> extends MSLayerProtocol {  }
   }
 }
-
-declare const MSStyledLayerProtocol: cocoa.classes.MSStyledLayerProtocol;

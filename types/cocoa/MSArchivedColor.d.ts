@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSArchivedColor<T = any> extends cocoa.NSObject, cocoa.NSCodingProtocol {
+  export interface MSArchivedColor<T = any> extends NSObject, NSCodingProtocol {
     awakeAfterUsingCoder<R = unknown, P0 = unknown>(_awakeAfterUsingCoder: P0): R;
   }
   namespace classes {
-    export interface MSArchivedColor<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCodingProtocol {
+    export interface MSArchivedColor<T = any> extends NSObject, NSCodingProtocol {
       alloc<R = MSArchivedColor>(): R;
       new: <R = MSArchivedColor>() => R;
     }

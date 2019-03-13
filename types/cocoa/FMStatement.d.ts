@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface FMStatement<T = any> extends cocoa.NSObject {
+  export interface FMStatement<T = any> extends NSObject {
     description<R = unknown>(): R;
     reset<R = void>(): R;
     close<R = void>(): R;
@@ -10,13 +10,13 @@ declare namespace cocoa {
     setInUse<R = void, P0 = boolean>(_v: P0): R;
     useCount<R = number>(): R;
     setUseCount<R = void, P0 = number>(_v: P0): R;
-    query<R = cocoa.NSString>(): R;
-    setQuery<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    statement<R = cocoa.sqlite3_stmt>(): R;
-    setStatement<R = void, P0 = cocoa.sqlite3_stmt>(_v: P0): R;
+    query<R = NSString>(): R;
+    setQuery<R = void, P0 = NSString>(_v: P0): R;
+    statement<R = sqlite3_stmt>(): R;
+    setStatement<R = void, P0 = sqlite3_stmt>(_v: P0): R;
   }
   namespace classes {
-    export interface FMStatement<T = any> extends cocoa.classes.NSObject {
+    export interface FMStatement<T = any> extends NSObject {
       alloc<R = FMStatement>(): R;
       new: <R = FMStatement>() => R;
     }

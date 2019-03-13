@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTokenField<T = any> extends cocoa.NSTextField {
+  export interface NSTokenField<T = any> extends NSTextField {
     displaysTokenWhileEditing<R = boolean>(): R;
     setDisplaysTokenWhileEditing<R = void, P0 = boolean>(_setDisplaysTokenWhileEditing: P0): R;
     tokenFieldCell<R = unknown>(): R;
@@ -22,17 +22,17 @@ declare namespace cocoa {
     tokenFieldCell_completionsForSubstring_indexOfToken_indexOfSelectedItem<R = unknown, P0 = unknown, P1 = unknown, P2 = number, P3 = number>(_tokenFieldCell: P0, _completionsForSubstring: P1, _indexOfToken: P2, _indexOfSelectedItem: P3): R;
     _baselineIsSpecialCasingForMiniFont<R = boolean>(): R;
     _commonInit<R = void>(): R;
-    delegate<R = cocoa.NSTokenFieldDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSTokenFieldDelegate>(_v: P0): R;
-    tokenizingCharacterSet<R = cocoa.NSCharacterSet>(): R;
-    setTokenizingCharacterSet<R = void, P0 = cocoa.NSCharacterSet>(_v: P0): R;
+    delegate<R = NSTokenFieldDelegate>(): R;
+    setDelegate<R = void, P0 = NSTokenFieldDelegate>(_v: P0): R;
+    tokenizingCharacterSet<R = NSCharacterSet>(): R;
+    setTokenizingCharacterSet<R = void, P0 = NSCharacterSet>(_v: P0): R;
     completionDelay<R = number>(): R;
     setCompletionDelay<R = void, P0 = number>(_v: P0): R;
     tokenStyle<R = number>(): R;
     setTokenStyle<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface NSTokenField<T = any> extends cocoa.classes.NSTextField {
+    export interface NSTokenField<T = any> extends NSTextField {
       alloc<R = NSTokenField>(): R;
       new: <R = NSTokenField>() => R;
       defaultTokenizingCharacterSet<R = unknown>(): R;

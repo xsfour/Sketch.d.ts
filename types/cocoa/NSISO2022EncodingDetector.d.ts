@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSISO2022EncodingDetector<T = any> extends cocoa.NSEncodingDetector {}
+  export interface NSISO2022EncodingDetector<T = any> extends NSEncodingDetector {}
   namespace classes {
-    export interface NSISO2022EncodingDetector<T = any> extends cocoa.classes.NSEncodingDetector {
+    export interface NSISO2022EncodingDetector<T = any> extends NSEncodingDetector {
       alloc<R = NSISO2022EncodingDetector>(): R;
       new: <R = NSISO2022EncodingDetector>() => R;
     }

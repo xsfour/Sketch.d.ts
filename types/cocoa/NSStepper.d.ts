@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSStepper<T = any> extends cocoa.NSControl, cocoa.NSAccessibilityStepperProtocol {
+  export interface NSStepper<T = any> extends NSControl, NSAccessibilityStepperProtocol {
     moveDown<R = void, P0 = unknown>(_moveDown: P0): R;
     moveUp<R = void, P0 = unknown>(_moveUp: P0): R;
     autorepeat<R = boolean>(): R;
@@ -14,13 +14,13 @@ declare namespace cocoa {
     setMaxValue<R = void, P0 = number>(_v: P0): R;
     minValue<R = number>(): R;
     setMinValue<R = void, P0 = number>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSStepper<T = any> extends cocoa.classes.NSControl, cocoa.classes.NSAccessibilityStepperProtocol {
+    export interface NSStepper<T = any> extends NSControl, NSAccessibilityStepperProtocol {
       alloc<R = NSStepper>(): R;
       new: <R = NSStepper>() => R;
     }

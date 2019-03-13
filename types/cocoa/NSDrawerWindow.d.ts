@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDrawerWindow<T = any> extends cocoa.NSWindow {
+  export interface NSDrawerWindow<T = any> extends NSWindow {
     _drawerDefaultRightTrailingOffset<R = number>(): R;
     _drawerDefaultLeftLeadingOffset<R = number>(): R;
     _drawerDefaultBottomTrailingOffset<R = number>(): R;
@@ -18,7 +18,7 @@ declare namespace cocoa {
     isMovableByWindowBackground<R = boolean>(): R;
     isMovable<R = boolean>(): R;
     _isVertical<R = boolean>(): R;
-    resizeWithDelta_fromFrame_beginOperation_endOperation<R = void, P0 = cocoa.CGPoint, P1 = cocoa.CGRect, P2 = boolean, P3 = boolean>(_resizeWithDelta: P0, _fromFrame: P1, _beginOperation: P2, _endOperation: P3): R;
+    resizeWithDelta_fromFrame_beginOperation_endOperation<R = void, P0 = CGPoint, P1 = CGRect, P2 = boolean, P3 = boolean>(_resizeWithDelta: P0, _fromFrame: P1, _beginOperation: P2, _endOperation: P3): R;
     isExcludedFromWindowsMenu<R = boolean>(): R;
     worksWhenModal<R = boolean>(): R;
     canBecomeMainWindow<R = boolean>(): R;
@@ -32,17 +32,17 @@ declare namespace cocoa {
     canBecomeKeyWindow<R = boolean>(): R;
     isKeyWindow<R = boolean>(): R;
     hasShadow<R = boolean>(): R;
-    maxSize<R = cocoa.CGSize>(): R;
-    minSize<R = cocoa.CGSize>(): R;
-    _potentialMaxSize<R = cocoa.CGSize>(): R;
-    _potentialMinSize<R = cocoa.CGSize>(): R;
+    maxSize<R = CGSize>(): R;
+    minSize<R = CGSize>(): R;
+    _potentialMaxSize<R = CGSize>(): R;
+    _potentialMinSize<R = CGSize>(): R;
     _parentWindow<R = unknown>(): R;
     _setParentWindow<R = void, P0 = unknown>(__setParentWindow: P0): R;
     _changeTexture<R = void>(): R;
-    initWithContentRect_styleMask_backing_defer_drawer<R = unknown, P0 = cocoa.CGRect, P1 = number, P2 = number, P3 = boolean, P4 = unknown>(_initWithContentRect: P0, _styleMask: P1, _backing: P2, _defer: P3, _drawer: P4): R;
+    initWithContentRect_styleMask_backing_defer_drawer<R = unknown, P0 = CGRect, P1 = number, P2 = number, P3 = boolean, P4 = unknown>(_initWithContentRect: P0, _styleMask: P1, _backing: P2, _defer: P3, _drawer: P4): R;
   }
   namespace classes {
-    export interface NSDrawerWindow<T = any> extends cocoa.classes.NSWindow {
+    export interface NSDrawerWindow<T = any> extends NSWindow {
       alloc<R = NSDrawerWindow>(): R;
       new: <R = NSDrawerWindow>() => R;
     }

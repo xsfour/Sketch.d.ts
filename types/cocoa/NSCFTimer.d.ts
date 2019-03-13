@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCFTimer<T = any> extends cocoa.NSTimer {
+  export interface NSCFTimer<T = any> extends NSTimer {
     init<R = unknown>(): R;
     initWithFireDate_interval_target_selector_userInfo_repeats<R = unknown, P0 = unknown, P1 = number, P2 = unknown, P3 = string, P4 = unknown, P5 = boolean>(_initWithFireDate: P0, _interval: P1, _target: P2, _selector: P3, _userInfo: P4, _repeats: P5): R;
     _cfTypeID<R = number>(): R;
@@ -23,8 +23,8 @@ declare namespace cocoa {
     isEqual<R = boolean, P0 = unknown>(_isEqual: P0): R;
   }
   namespace classes {
-    export interface NSCFTimer<T = any> extends cocoa.classes.NSTimer {
-      allocWithZone<R = unknown, P0 = cocoa._NSZone>(_allocWithZone: P0): R;
+    export interface NSCFTimer<T = any> extends NSTimer {
+      allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
       automaticallyNotifiesObserversForKey<R = boolean, P0 = unknown>(_automaticallyNotifiesObserversForKey: P0): R;
     }
   }

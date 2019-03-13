@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInsertArrowEventHandler<T = any> extends cocoa.MSInsertLineEventHandler {}
+  export interface MSInsertArrowEventHandler<T = any> extends MSInsertLineEventHandler {}
   namespace classes {
-    export interface MSInsertArrowEventHandler<T = any> extends cocoa.classes.MSInsertLineEventHandler {
+    export interface MSInsertArrowEventHandler<T = any> extends MSInsertLineEventHandler {
       alloc<R = MSInsertArrowEventHandler>(): R;
       new: <R = MSInsertArrowEventHandler>() => R;
     }

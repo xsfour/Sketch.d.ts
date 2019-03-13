@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSToolbarItemViewer<T = any> extends cocoa.NSView, cocoa._NSTouchBarItemLayoutWrapperProtocol {
+  export interface NSToolbarItemViewer<T = any> extends NSView, _NSTouchBarItemLayoutWrapperProtocol {
     _toolbarView<R = unknown>(): R;
     _menuFormRepresentationChanged<R = void>(): R;
-    _scalableMaxIconSize<R = cocoa.CGSize>(): R;
-    _scalableMinIconSize<R = cocoa.CGSize>(): R;
+    _scalableMaxIconSize<R = CGSize>(): R;
+    _scalableMinIconSize<R = CGSize>(): R;
     _updateMeasuredSizes<R = void>(): R;
     _itemChangedLabelOrPaletteLabel<R = void>(): R;
     _itemLayoutChanged<R = void>(): R;
@@ -23,7 +23,7 @@ declare namespace cocoa {
     _accessibilityOptionsChanged<R = void>(): R;
     _updateJiggle<R = void, P0 = boolean>(__updateJiggle: P0): R;
     _simulateClickInLabelView_deferringPopUpsForAccessibility<R = void, P0 = unknown, P1 = boolean>(__simulateClickInLabelView: P0, _deferringPopUpsForAccessibility: P1): R;
-    _simultaneousSegmentAndLabelTrackingWithEvent_forSegmentAtIndex_withLabelRect<R = boolean, P0 = unknown, P1 = number, P2 = cocoa.CGRect>(__simultaneousSegmentAndLabelTrackingWithEvent: P0, _forSegmentAtIndex: P1, _withLabelRect: P2): R;
+    _simultaneousSegmentAndLabelTrackingWithEvent_forSegmentAtIndex_withLabelRect<R = boolean, P0 = unknown, P1 = number, P2 = CGRect>(__simultaneousSegmentAndLabelTrackingWithEvent: P0, _forSegmentAtIndex: P1, _withLabelRect: P2): R;
     _segmentedControlDidChangeHighlightDuringTracking<R = void, P0 = unknown>(__segmentedControlDidChangeHighlightDuringTracking: P0): R;
     _supportsSimultaneousSegmentAndLabelTrackingWithEvent_segment<R = boolean, P0 = unknown, P1 = number>(__supportsSimultaneousSegmentAndLabelTrackingWithEvent: P0, _segment: P1): R;
     _shouldMinimizeWindowForEvent<R = boolean, P0 = unknown>(__shouldMinimizeWindowForEvent: P0): R;
@@ -39,7 +39,7 @@ declare namespace cocoa {
     _selectLabelView<R = void, P0 = unknown>(__selectLabelView: P0): R;
     _initialLabelViewToSelectFromDirection<R = unknown, P0 = number>(__initialLabelViewToSelectFromDirection: P0): R;
     _labelViewToSelectInDirection<R = unknown, P0 = number>(__labelViewToSelectInDirection: P0): R;
-    _spaceRequiredToSatisfySplitViewTrackingForMinimumLeftOrigin_inWindow<R = number, P0 = cocoa.CGPoint, P1 = unknown>(__spaceRequiredToSatisfySplitViewTrackingForMinimumLeftOrigin: P0, _inWindow: P1): R;
+    _spaceRequiredToSatisfySplitViewTrackingForMinimumLeftOrigin_inWindow<R = number, P0 = CGPoint, P1 = unknown>(__spaceRequiredToSatisfySplitViewTrackingForMinimumLeftOrigin: P0, _inWindow: P1): R;
     _isPartitionItem<R = boolean>(): R;
     _labelViewIsSelectable<R = boolean, P0 = unknown>(__labelViewIsSelectable: P0): R;
     _allowsIndividualLabelViewSelection<R = boolean>(): R;
@@ -54,8 +54,8 @@ declare namespace cocoa {
     _backgroundStyleForLabelCell<R = number, P0 = unknown>(__backgroundStyleForLabelCell: P0): R;
     _reallyShouldDrawFocusAroundLabel<R = boolean>(): R;
     _updateEnableStateOfLabelViews<R = void>(): R;
-    drawSelectionIndicatorInRect<R = void, P0 = cocoa.CGRect>(_drawSelectionIndicatorInRect: P0): R;
-    _drawSelectionIndicatorInRect_clipRect<R = void, P0 = cocoa.CGRect, P1 = cocoa.CGRect>(__drawSelectionIndicatorInRect: P0, _clipRect: P1): R;
+    drawSelectionIndicatorInRect<R = void, P0 = CGRect>(_drawSelectionIndicatorInRect: P0): R;
+    _drawSelectionIndicatorInRect_clipRect<R = void, P0 = CGRect, P1 = CGRect>(__drawSelectionIndicatorInRect: P0, _clipRect: P1): R;
     _shouldDrawFocus<R = boolean>(): R;
     _shouldDrawSelectionIndicator<R = boolean>(): R;
     _endInsertionOptimization<R = void>(): R;
@@ -64,21 +64,21 @@ declare namespace cocoa {
     _stopWatchingBackgroundGradientNotification<R = void>(): R;
     _watchBackgroundGradientNotification<R = void>(): R;
     _invalidateLabelViewsWhenLayerBacked<R = void, P0 = unknown>(__invalidateLabelViewsWhenLayerBacked: P0): R;
-    minViewerSize<R = cocoa.CGSize>(): R;
+    minViewerSize<R = CGSize>(): R;
     _setOverriddenMaxWidth<R = void, P0 = number>(__setOverriddenMaxWidth: P0): R;
     _hackUpTheItemSizesAndFrameToHaveSpaceFor10_11Borders<R = void>(): R;
     configureForLayoutInDisplayMode_andSizeMode_inToolbarView<R = void, P0 = number, P1 = number, P2 = unknown>(_configureForLayoutInDisplayMode: P0, _andSizeMode: P1, _inToolbarView: P2): R;
     _configureLabelCellStringValue<R = void>(): R;
     _noteToolbarSizeModeChanged<R = void>(): R;
     _recomputeLabelHeight<R = void>(): R;
-    _computeLayoutInfoForIconViewSize_frameSize<R = void, P0 = cocoa.CGSize, P1 = cocoa.CGSize>(__computeLayoutInfoForIconViewSize: P0, _frameSize: P1): R;
-    _getPixelAligningTransformForLayout<R = cocoa.CGAffineTransform>(): R;
+    _computeLayoutInfoForIconViewSize_frameSize<R = void, P0 = CGSize, P1 = CGSize>(__computeLayoutInfoForIconViewSize: P0, _frameSize: P1): R;
+    _getPixelAligningTransformForLayout<R = CGAffineTransform>(): R;
     _widthRequiredForLabelLayout<R = number>(): R;
-    _itemCanBeDraggedInTemporaryEditingModeFromPoint<R = boolean, P0 = cocoa.CGPoint>(__itemCanBeDraggedInTemporaryEditingModeFromPoint: P0): R;
+    _itemCanBeDraggedInTemporaryEditingModeFromPoint<R = boolean, P0 = CGPoint>(__itemCanBeDraggedInTemporaryEditingModeFromPoint: P0): R;
     _updateLabelViewByLabelRectInWindow<R = void, P0 = unknown>(__updateLabelViewByLabelRectInWindow: P0): R;
     _updateLabelViewByLabelRect<R = void>(): R;
-    _metrics<R = cocoa.__NSToolbarMetrics>(): R;
-    itemViewRect<R = cocoa.CGRect>(): R;
+    _metrics<R = __NSToolbarMetrics>(): R;
+    itemViewRect<R = CGRect>(): R;
     isOpaque<R = boolean>(): R;
     transparentBackground<R = boolean>(): R;
     setTransparentBackground<R = void, P0 = boolean>(_setTransparentBackground: P0): R;
@@ -116,23 +116,23 @@ declare namespace cocoa {
     _accessibilityIsSpaceOrSeparatorItem<R = boolean>(): R;
     _accessibilityTreatButtonAsToolbarButton<R = boolean, P0 = unknown>(__accessibilityTreatButtonAsToolbarButton: P0): R;
     _accessibilityTreatSegmentedControlAsToolbarButtons<R = boolean, P0 = unknown>(__accessibilityTreatSegmentedControlAsToolbarButtons: P0): R;
-    description<R = cocoa.NSString>(): R;
+    description<R = NSString>(): R;
     preferredTrailingPosition<R = number>(): R;
     priorityIndex<R = number>(): R;
     setPriorityIndex<R = void, P0 = number>(_v: P0): R;
     isSpace<R = boolean>(): R;
-    minSize<R = cocoa.CGSize>(): R;
-    maxSize<R = cocoa.CGSize>(): R;
-    contentClippingSize<R = cocoa.CGSize>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
+    minSize<R = CGSize>(): R;
+    maxSize<R = CGSize>(): R;
+    contentClippingSize<R = CGSize>(): R;
+    debugDescription<R = NSString>(): R;
     hash<R = number>(): R;
     itemPosition<R = number>(): R;
-    preferredSize<R = cocoa.CGSize>(): R;
+    preferredSize<R = CGSize>(): R;
     preferredZOrder<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSToolbarItemViewer<T = any> extends cocoa.classes.NSView, cocoa.classes._NSTouchBarItemLayoutWrapperProtocol {
+    export interface NSToolbarItemViewer<T = any> extends NSView, _NSTouchBarItemLayoutWrapperProtocol {
       alloc<R = NSToolbarItemViewer>(): R;
       new: <R = NSToolbarItemViewer>() => R;
     }

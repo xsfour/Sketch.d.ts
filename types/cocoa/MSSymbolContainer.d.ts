@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSymbolContainer<T = any> extends cocoa._MSSymbolContainer {}
+  export interface MSSymbolContainer<T = any> extends _MSSymbolContainer {}
   namespace classes {
-    export interface MSSymbolContainer<T = any> extends cocoa.classes._MSSymbolContainer {
+    export interface MSSymbolContainer<T = any> extends _MSSymbolContainer {
       alloc<R = MSSymbolContainer>(): R;
       new: <R = MSSymbolContainer>() => R;
     }

@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSVibrantLightAppearance<T = any> extends cocoa.NSBuiltinAppearance {}
+  export interface NSVibrantLightAppearance<T = any> extends NSBuiltinAppearance {}
   namespace classes {
-    export interface NSVibrantLightAppearance<T = any> extends cocoa.classes.NSBuiltinAppearance {
+    export interface NSVibrantLightAppearance<T = any> extends NSBuiltinAppearance {
       alloc<R = NSVibrantLightAppearance>(): R;
       new: <R = NSVibrantLightAppearance>() => R;
     }

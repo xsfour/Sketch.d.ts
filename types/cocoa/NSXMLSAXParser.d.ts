@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXMLSAXParser<T = any> extends cocoa.NSObject {
-    _createElementContent<R = unknown, P0 = cocoa._xmlElementContent>(__createElementContent: P0): R;
+  export interface NSXMLSAXParser<T = any> extends NSObject {
+    _createElementContent<R = unknown, P0 = _xmlElementContent>(__createElementContent: P0): R;
     isSingleDTDNode<R = boolean>(): R;
     afterEntityLookup<R = boolean>(): R;
     setAfterEntityLookup<R = void, P0 = boolean>(_setAfterEntityLookup: P0): R;
@@ -13,7 +13,7 @@ declare namespace cocoa {
     whitespace<R = unknown>(): R;
     setContent<R = void, P0 = unknown>(_setContent: P0): R;
     content<R = unknown>(): R;
-    context<R = cocoa._xmlParserCtxt>(): R;
+    context<R = _xmlParserCtxt>(): R;
     setError_info_fatal<R = void, P0 = number, P1 = unknown, P2 = boolean>(_setError: P0, _info: P1, _fatal: P2): R;
     fidelityMask<R = number>(): R;
     current<R = unknown>(): R;
@@ -27,7 +27,7 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
   }
   namespace classes {
-    export interface NSXMLSAXParser<T = any> extends cocoa.classes.NSObject {
+    export interface NSXMLSAXParser<T = any> extends NSObject {
       alloc<R = NSXMLSAXParser>(): R;
       new: <R = NSXMLSAXParser>() => R;
     }

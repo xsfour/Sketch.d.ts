@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSMultipleStylePartInspectorViewController<T = any> extends cocoa.NSViewController, cocoa.MSReorderingContainerDelegateProtocol {
+  export interface MSMultipleStylePartInspectorViewController<T = any> extends NSViewController, MSReorderingContainerDelegateProtocol {
     cxx_destruct<R = void>(): R;
     updateDisplayedValues<R = void>(): R;
     shouldShowAdvancedOptionsButton<R = boolean>(): R;
@@ -30,33 +30,33 @@ declare namespace cocoa {
     validateRemoveDisabledStylesButton<R = void>(): R;
     loadViewControllers<R = void>(): R;
     awakeFromNib<R = void>(): R;
-    headerButton<R = cocoa.NSButton>(): R;
-    setHeaderButton<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    showAdvancedOptionsButton<R = cocoa.NSButton>(): R;
-    setShowAdvancedOptionsButton<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    removeDisabledStylesButton<R = cocoa.NSButton>(): R;
-    setRemoveDisabledStylesButton<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    nameView<R = cocoa.NSView>(): R;
-    setNameView<R = void, P0 = cocoa.NSView>(_v: P0): R;
-    nameFieldShadow<R = cocoa.NSTextField>(): R;
-    setNameFieldShadow<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    nameField<R = cocoa.NSTextField>(): R;
-    setNameField<R = void, P0 = cocoa.NSTextField>(_v: P0): R;
-    reorderingContainer<R = cocoa.MSReorderingContainerView>(): R;
-    setReorderingContainer<R = void, P0 = cocoa.MSReorderingContainerView>(_v: P0): R;
-    delegate<R = cocoa.MSStylePartInspectorDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.MSStylePartInspectorDelegate>(_v: P0): R;
-    stylePartViewControllers<R = cocoa.NSArray>(): R;
-    setStylePartViewControllers<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    layers<R = cocoa.NSArray>(): R;
-    setLayers<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    headerButton<R = NSButton>(): R;
+    setHeaderButton<R = void, P0 = NSButton>(_v: P0): R;
+    showAdvancedOptionsButton<R = NSButton>(): R;
+    setShowAdvancedOptionsButton<R = void, P0 = NSButton>(_v: P0): R;
+    removeDisabledStylesButton<R = NSButton>(): R;
+    setRemoveDisabledStylesButton<R = void, P0 = NSButton>(_v: P0): R;
+    nameView<R = NSView>(): R;
+    setNameView<R = void, P0 = NSView>(_v: P0): R;
+    nameFieldShadow<R = NSTextField>(): R;
+    setNameFieldShadow<R = void, P0 = NSTextField>(_v: P0): R;
+    nameField<R = NSTextField>(): R;
+    setNameField<R = void, P0 = NSTextField>(_v: P0): R;
+    reorderingContainer<R = MSReorderingContainerView>(): R;
+    setReorderingContainer<R = void, P0 = MSReorderingContainerView>(_v: P0): R;
+    delegate<R = MSStylePartInspectorDelegate>(): R;
+    setDelegate<R = void, P0 = MSStylePartInspectorDelegate>(_v: P0): R;
+    stylePartViewControllers<R = NSArray>(): R;
+    setStylePartViewControllers<R = void, P0 = NSArray>(_v: P0): R;
+    layers<R = NSArray>(): R;
+    setLayers<R = void, P0 = NSArray>(_v: P0): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSMultipleStylePartInspectorViewController<T = any> extends cocoa.classes.NSViewController, cocoa.classes.MSReorderingContainerDelegateProtocol {
+    export interface MSMultipleStylePartInspectorViewController<T = any> extends NSViewController, MSReorderingContainerDelegateProtocol {
       alloc<R = MSMultipleStylePartInspectorViewController>(): R;
       new: <R = MSMultipleStylePartInspectorViewController>() => R;
     }

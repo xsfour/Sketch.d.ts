@@ -1,18 +1,18 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableHeaderView<T = any> extends cocoa.NSView, cocoa.NSViewToolTipOwnerProtocol {
+  export interface NSTableHeaderView<T = any> extends NSView, NSViewToolTipOwnerProtocol {
     cxx_destruct<R = void>(): R;
     _updateColumnViewWidthsAnimated<R = void, P0 = boolean>(__updateColumnViewWidthsAnimated: P0): R;
     _endDraggingColumn_animated<R = void, P0 = number, P1 = boolean>(__endDraggingColumn: P0, _animated: P1): R;
     _didMoveFromColumn_toColumn_animated<R = void, P0 = number, P1 = number, P2 = boolean>(__didMoveFromColumn: P0, _toColumn: P1, _animated: P2): R;
     _setAlignTitleWithDataCell<R = void, P0 = boolean>(__setAlignTitleWithDataCell: P0): R;
     _alignTitleWithDataCell<R = boolean>(): R;
-    _resizeableColumnAtPoint<R = number, P0 = cocoa.CGPoint>(__resizeableColumnAtPoint: P0): R;
+    _resizeableColumnAtPoint<R = number, P0 = CGPoint>(__resizeableColumnAtPoint: P0): R;
     _previousNonHiddenColumnStartingAtColumn<R = number, P0 = number>(__previousNonHiddenColumnStartingAtColumn: P0): R;
-    _cursorRectForColumn<R = cocoa.CGRect, P0 = number>(__cursorRectForColumn: P0): R;
-    _ltrCursorRectForColumn<R = cocoa.CGRect, P0 = number>(__ltrCursorRectForColumn: P0): R;
-    _rtlCursorRectForColumn<R = cocoa.CGRect, P0 = number>(__rtlCursorRectForColumn: P0): R;
+    _cursorRectForColumn<R = CGRect, P0 = number>(__cursorRectForColumn: P0): R;
+    _ltrCursorRectForColumn<R = CGRect, P0 = number>(__ltrCursorRectForColumn: P0): R;
+    _rtlCursorRectForColumn<R = CGRect, P0 = number>(__rtlCursorRectForColumn: P0): R;
     isOpaque<R = boolean>(): R;
     isFlipped<R = boolean>(): R;
     acceptsFirstResponder<R = boolean>(): R;
@@ -25,7 +25,7 @@ declare namespace cocoa {
     setLayer<R = void, P0 = unknown>(_setLayer: P0): R;
     _updateBackgroundViewFrame<R = void>(): R;
     _addOrRemoveBlurViewAsNecessary<R = void>(): R;
-    _makeBlurBackgroundViewWithFrame<R = unknown, P0 = cocoa.CGRect>(__makeBlurBackgroundViewWithFrame: P0): R;
+    _makeBlurBackgroundViewWithFrame<R = unknown, P0 = CGRect>(__makeBlurBackgroundViewWithFrame: P0): R;
     _viewOverridesDrawing<R = boolean>(): R;
     _hasTranslucency<R = boolean>(): R;
     _setWantsTranslucency<R = void, P0 = boolean>(__setWantsTranslucency: P0): R;
@@ -33,7 +33,7 @@ declare namespace cocoa {
     drawsBackground<R = boolean>(): R;
     setDrawsBackground<R = void, P0 = boolean>(_setDrawsBackground: P0): R;
     _preferredAppearance<R = unknown>(): R;
-    _viewBasedRawRect<R = void, P0 = cocoa.CGRect>(__viewBasedRawRect: P0): R;
+    _viewBasedRawRect<R = void, P0 = CGRect>(__viewBasedRawRect: P0): R;
     _switchToNonViewBasedIfNeeded<R = void>(): R;
     _switchToViewBasedIfNeeded<R = void>(): R;
     _supportsViewsForAnimations<R = boolean>(): R;
@@ -57,29 +57,29 @@ declare namespace cocoa {
     _endDraggingColumn<R = void, P0 = number>(__endDraggingColumn: P0): R;
     _beginDraggingColumn<R = void, P0 = number>(__beginDraggingColumn: P0): R;
     _drawHeaderDragImageForColumn<R = void, P0 = number>(__drawHeaderDragImageForColumn: P0): R;
-    _unobstructedVisibleHeaderRectOfColumn<R = cocoa.CGRect, P0 = number>(__unobstructedVisibleHeaderRectOfColumn: P0): R;
+    _unobstructedVisibleHeaderRectOfColumn<R = CGRect, P0 = number>(__unobstructedVisibleHeaderRectOfColumn: P0): R;
     _trackAndModifySelectionWithEvent_onColumn_stopOnReorderGesture<R = boolean, P0 = unknown, P1 = number, P2 = string>(__trackAndModifySelectionWithEvent: P0, _onColumn: P1, _stopOnReorderGesture: P2): R;
     _scheduleDelayedShowOpenHandCursorIfNecessary<R = void>(): R;
     _unshowOpenHandCursor<R = void, P0 = unknown>(__unshowOpenHandCursor: P0): R;
     _cancelDelayedShowOpenHandCursor<R = void>(): R;
     _showOpenHandCursor<R = void, P0 = unknown>(__showOpenHandCursor: P0): R;
-    _headerRectForInvalidation<R = cocoa.CGRect, P0 = number>(__headerRectForInvalidation: P0): R;
+    _headerRectForInvalidation<R = CGRect, P0 = number>(__headerRectForInvalidation: P0): R;
     _doModifySelectionWithEvent_onColumn<R = void, P0 = unknown, P1 = number>(__doModifySelectionWithEvent: P0, _onColumn: P1): R;
     _drawColumnHeaderWithIndexes<R = void, P0 = unknown>(__drawColumnHeaderWithIndexes: P0): R;
     _drawingEndSeparator<R = boolean>(): R;
     _hasRowHeaderColumn<R = boolean>(): R;
-    _rowHeaderScrollableContentVisibleRect<R = cocoa.CGRect>(): R;
-    _rowHeaderFixedContentRect<R = cocoa.CGRect>(): R;
-    _layoutIsSameAsCachedLayoutWithFrame<R = boolean, P0 = cocoa.CGRect>(__layoutIsSameAsCachedLayoutWithFrame: P0): R;
+    _rowHeaderScrollableContentVisibleRect<R = CGRect>(): R;
+    _rowHeaderFixedContentRect<R = CGRect>(): R;
+    _layoutIsSameAsCachedLayoutWithFrame<R = boolean, P0 = CGRect>(__layoutIsSameAsCachedLayoutWithFrame: P0): R;
     _invalidateRightMostLineIfNeeded<R = void>(): R;
-    _drawOverflowHeaderInRect<R = void, P0 = cocoa.CGRect>(__drawOverflowHeaderInRect: P0): R;
-    _overflowRectForBounds<R = cocoa.CGRect, P0 = cocoa.CGRect>(__overflowRectForBounds: P0): R;
+    _drawOverflowHeaderInRect<R = void, P0 = CGRect>(__drawOverflowHeaderInRect: P0): R;
+    _overflowRectForBounds<R = CGRect, P0 = CGRect>(__overflowRectForBounds: P0): R;
     _drawHeaderOfColumn<R = void, P0 = number>(__drawHeaderOfColumn: P0): R;
     _nextColumnDrawsLeftSeparatorFromColumn<R = boolean, P0 = number>(__nextColumnDrawsLeftSeparatorFromColumn: P0): R;
     _nextColumnAfterOneBeingDrawnIsSelected<R = boolean>(): R;
     _preparedHeaderCellAtColumn<R = unknown, P0 = number>(__preparedHeaderCellAtColumn: P0): R;
-    drawBackgroundOverhangInRect<R = void, P0 = cocoa.CGRect>(_drawBackgroundOverhangInRect: P0): R;
-    _drawHeaderFillerInRect_matchLastState<R = void, P0 = cocoa.CGRect, P1 = boolean>(__drawHeaderFillerInRect: P0, _matchLastState: P1): R;
+    drawBackgroundOverhangInRect<R = void, P0 = CGRect>(_drawBackgroundOverhangInRect: P0): R;
+    _drawHeaderFillerInRect_matchLastState<R = void, P0 = CGRect, P1 = boolean>(__drawHeaderFillerInRect: P0, _matchLastState: P1): R;
     allowsVibrancy<R = boolean>(): R;
     _preparedHeaderFillerCell<R = unknown>(): R;
     _tableView_didRemoveTableColumnAtIndex<R = void, P0 = unknown, P1 = number>(__tableView: P0, _didRemoveTableColumnAtIndex: P1): R;
@@ -88,9 +88,9 @@ declare namespace cocoa {
     _tableView_willAddTableColumn<R = void, P0 = unknown, P1 = unknown>(__tableView: P0, _willAddTableColumn: P1): R;
     _overflowHeaderCellPrototype<R = unknown>(): R;
     _setOverflowHeaderCellPrototype<R = void, P0 = unknown>(__setOverflowHeaderCellPrototype: P0): R;
-    _drawHeaderCell_withFrame_withStateFromColumn<R = void, P0 = unknown, P1 = cocoa.CGRect, P2 = number>(__drawHeaderCell: P0, _withFrame: P1, _withStateFromColumn: P2): R;
-    columnAtPoint<R = number, P0 = cocoa.CGPoint>(_columnAtPoint: P0): R;
-    headerRectOfColumn<R = cocoa.CGRect, P0 = number>(_headerRectOfColumn: P0): R;
+    _drawHeaderCell_withFrame_withStateFromColumn<R = void, P0 = unknown, P1 = CGRect, P2 = number>(__drawHeaderCell: P0, _withFrame: P1, _withStateFromColumn: P2): R;
+    columnAtPoint<R = number, P0 = CGPoint>(_columnAtPoint: P0): R;
+    headerRectOfColumn<R = CGRect, P0 = number>(_headerRectOfColumn: P0): R;
     _wantsClipViewToDoOverhangViews<R = boolean>(): R;
     _defaultHeight<R = number>(): R;
     _canSupportTallerHeight<R = boolean>(): R;
@@ -103,15 +103,15 @@ declare namespace cocoa {
     draggedDistance<R = number>(): R;
     draggedColumn<R = number>(): R;
     resizedColumn<R = number>(): R;
-    tableView<R = cocoa.NSTableView>(): R;
-    setTableView<R = void, P0 = cocoa.NSTableView>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    tableView<R = NSTableView>(): R;
+    setTableView<R = void, P0 = NSTableView>(_v: P0): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSTableHeaderView<T = any> extends cocoa.classes.NSView, cocoa.classes.NSViewToolTipOwnerProtocol {
+    export interface NSTableHeaderView<T = any> extends NSView, NSViewToolTipOwnerProtocol {
       alloc<R = NSTableHeaderView>(): R;
       new: <R = NSTableHeaderView>() => R;
     }

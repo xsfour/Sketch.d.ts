@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorPanelTextController<T = any> extends cocoa.NSObject, cocoa.NSTextFieldDelegateProtocol {
+  export interface NSColorPanelTextController<T = any> extends NSObject, NSTextFieldDelegateProtocol {
     acceptLastEnteredText<R = boolean>(): R;
     control_isValidObject<R = boolean, P0 = unknown, P1 = unknown>(_control: P0, _isValidObject: P1): R;
     control_didFailToFormatString_errorDescription<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown>(_control: P0, _didFailToFormatString: P1, _errorDescription: P2): R;
@@ -17,13 +17,13 @@ declare namespace cocoa {
     control_textView_doCommandBySelector<R = boolean, P0 = unknown, P1 = unknown, P2 = string>(_control: P0, _textView: P1, _doCommandBySelector: P2): R;
     cancel<R = void, P0 = unknown>(_cancel: P0): R;
     initWithTextField_colorPanel_delegate<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_initWithTextField: P0, _colorPanel: P1, _delegate: P2): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSColorPanelTextController<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSTextFieldDelegateProtocol {
+    export interface NSColorPanelTextController<T = any> extends NSObject, NSTextFieldDelegateProtocol {
       alloc<R = NSColorPanelTextController>(): R;
       new: <R = NSColorPanelTextController>() => R;
     }

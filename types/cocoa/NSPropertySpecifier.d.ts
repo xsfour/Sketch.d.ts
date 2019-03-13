@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPropertySpecifier<T = any> extends cocoa.NSScriptObjectSpecifier {}
+  export interface NSPropertySpecifier<T = any> extends NSScriptObjectSpecifier {}
   namespace classes {
-    export interface NSPropertySpecifier<T = any> extends cocoa.classes.NSScriptObjectSpecifier {
+    export interface NSPropertySpecifier<T = any> extends NSScriptObjectSpecifier {
       alloc<R = NSPropertySpecifier>(): R;
       new: <R = NSPropertySpecifier>() => R;
     }

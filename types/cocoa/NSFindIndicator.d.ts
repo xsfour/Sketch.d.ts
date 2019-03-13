@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFindIndicator<T = any> extends cocoa.NSObject, cocoa.NSImmediateActionAnimationControllerProtocol {
+  export interface NSFindIndicator<T = any> extends NSObject, NSImmediateActionAnimationControllerProtocol {
     focusUAZoom<R = void>(): R;
     _cancel<R = void>(): R;
     _fade<R = void, P0 = number>(__fade: P0): R;
@@ -13,39 +13,39 @@ declare namespace cocoa {
     _redrawReusingWindows<R = void>(): R;
     _buildFindIndicatorWindows<R = unknown>(): R;
     _contentImage<R = unknown>(): R;
-    _cacheDisplayInRect_ofView_toBitmapImageRep<R = void, P0 = cocoa.CGRect, P1 = unknown, P2 = unknown>(__cacheDisplayInRect: P0, _ofView: P1, _toBitmapImageRep: P2): R;
+    _cacheDisplayInRect_ofView_toBitmapImageRep<R = void, P0 = CGRect, P1 = unknown, P2 = unknown>(__cacheDisplayInRect: P0, _ofView: P1, _toBitmapImageRep: P2): R;
     _findIndicatorPathForRects<R = unknown, P0 = unknown>(__findIndicatorPathForRects: P0): R;
     _indicatorWindowGroupsOfRectGroupsForRects<R = unknown, P0 = unknown>(__indicatorWindowGroupsOfRectGroupsForRects: P0): R;
     _effectiveParentWindow<R = unknown>(): R;
     updateWithRects<R = void, P0 = unknown>(_updateWithRects: P0): R;
     dealloc<R = void>(): R;
-    imageProvider<R = cocoa.CDUnknownBlockType>(): R;
-    setImageProvider<R = void, P0 = cocoa.CDUnknownBlockType>(_v: P0): R;
-    completionHandler<R = cocoa.CDUnknownBlockType>(): R;
-    setCompletionHandler<R = void, P0 = cocoa.CDUnknownBlockType>(_v: P0): R;
-    contentDrawer<R = cocoa.CDUnknownBlockType>(): R;
-    setContentDrawer<R = void, P0 = cocoa.CDUnknownBlockType>(_v: P0): R;
-    view<R = cocoa.NSView>(): R;
-    setView<R = void, P0 = cocoa.NSView>(_v: P0): R;
-    textFinder<R = cocoa.NSTextFinder>(): R;
-    setTextFinder<R = void, P0 = cocoa.NSTextFinder>(_v: P0): R;
+    imageProvider<R = CDUnknownBlockType>(): R;
+    setImageProvider<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
+    completionHandler<R = CDUnknownBlockType>(): R;
+    setCompletionHandler<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
+    contentDrawer<R = CDUnknownBlockType>(): R;
+    setContentDrawer<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
+    view<R = NSView>(): R;
+    setView<R = void, P0 = NSView>(_v: P0): R;
+    textFinder<R = NSTextFinder>(): R;
+    setTextFinder<R = void, P0 = NSTextFinder>(_v: P0): R;
     usesThreadedAnimation<R = boolean>(): R;
     setUsesThreadedAnimation<R = void, P0 = boolean>(_v: P0): R;
-    delegate<R = cocoa.NSFindIndicatorDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSFindIndicatorDelegate>(_v: P0): R;
-    parentWindow<R = cocoa.NSWindow>(): R;
-    setParentWindow<R = void, P0 = cocoa.NSWindow>(_v: P0): R;
+    delegate<R = NSFindIndicatorDelegate>(): R;
+    setDelegate<R = void, P0 = NSFindIndicatorDelegate>(_v: P0): R;
+    parentWindow<R = NSWindow>(): R;
+    setParentWindow<R = void, P0 = NSWindow>(_v: P0): R;
     visible<R = boolean>(): R;
     setVisible<R = void, P0 = boolean>(_v: P0): R;
-    rects<R = cocoa.NSArray>(): R;
-    setRects<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    rects<R = NSArray>(): R;
+    setRects<R = void, P0 = NSArray>(_v: P0): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSFindIndicator<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSImmediateActionAnimationControllerProtocol {
+    export interface NSFindIndicator<T = any> extends NSObject, NSImmediateActionAnimationControllerProtocol {
       alloc<R = NSFindIndicator>(): R;
       new: <R = NSFindIndicator>() => R;
       endDrawing<R = void>(): R;

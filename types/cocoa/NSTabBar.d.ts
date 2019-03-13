@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTabBar<T = any> extends cocoa.NSView, cocoa.NSDetachedTabDraggingImageToWindowTransitionControllerDelegateProtocol, cocoa.NSMorphingDragImageControllerDragSourceProtocol, cocoa.NSAnimationDelegateProtocol, cocoa.NSDraggingDestinationProtocol, cocoa.NSTabButtonDelegateProtocol, cocoa.NSTabBarSyncedButtonDelegateProtocol, cocoa.NSTabDraggingDestinationProtocol {
+  export interface NSTabBar<T = any> extends NSView, NSDetachedTabDraggingImageToWindowTransitionControllerDelegateProtocol, NSMorphingDragImageControllerDragSourceProtocol, NSAnimationDelegateProtocol, NSDraggingDestinationProtocol, NSTabButtonDelegateProtocol, NSTabBarSyncedButtonDelegateProtocol, NSTabDraggingDestinationProtocol {
     cxx_destruct<R = void>(): R;
     _getTabRectsForInsertingTabCount<R = unknown, P0 = number>(__getTabRectsForInsertingTabCount: P0): R;
-    _getFirstTabRectForInsertingTabCount<R = cocoa.CGRect, P0 = number>(__getFirstTabRectForInsertingTabCount: P0): R;
-    _defaultTabItemRectForTabCount<R = cocoa.CGRect, P0 = number>(__defaultTabItemRectForTabCount: P0): R;
+    _getFirstTabRectForInsertingTabCount<R = CGRect, P0 = number>(__getFirstTabRectForInsertingTabCount: P0): R;
+    _defaultTabItemRectForTabCount<R = CGRect, P0 = number>(__defaultTabItemRectForTabCount: P0): R;
     _toggleTransparencyIfNecessary<R = void>(): R;
     _accessibilityDisplayOptionsDidChange<R = void, P0 = unknown>(__accessibilityDisplayOptionsDidChange: P0): R;
     springLoadingExited<R = void, P0 = unknown>(_springLoadingExited: P0): R;
@@ -25,16 +25,16 @@ declare namespace cocoa {
     _tabDragImageForTabButton<R = unknown, P0 = unknown>(__tabDragImageForTabButton: P0): R;
     _miniWindowDragImageWidth<R = number>(): R;
     _detachTabAndPositionUnderCursor<R = void, P0 = unknown>(__detachTabAndPositionUnderCursor: P0): R;
-    _mouseLocationInDragImageForTabButton<R = cocoa.CGPoint, P0 = unknown>(__mouseLocationInDragImageForTabButton: P0): R;
+    _mouseLocationInDragImageForTabButton<R = CGPoint, P0 = unknown>(__mouseLocationInDragImageForTabButton: P0): R;
     _shouldDetachTabForMouseEvent<R = boolean, P0 = unknown>(__shouldDetachTabForMouseEvent: P0): R;
     _canDetachTab<R = boolean>(): R;
     _cancelReorderingRestrictionsAfterPinning<R = void>(): R;
     _startReorderingRestrictionsAfterPinning<R = void>(): R;
     _autoscrollButtonsForStackingRegion<R = void, P0 = number>(__autoscrollButtonsForStackingRegion: P0): R;
-    _updateDropIndexWithDraggingLocation<R = void, P0 = cocoa.CGPoint>(__updateDropIndexWithDraggingLocation: P0): R;
+    _updateDropIndexWithDraggingLocation<R = void, P0 = CGPoint>(__updateDropIndexWithDraggingLocation: P0): R;
     _tabDragResultForEventTrackingWithStartEvent<R = number, P0 = unknown>(__tabDragResultForEventTrackingWithStartEvent: P0): R;
     _tabDragResultForInitialDragWithStartEvent<R = number, P0 = unknown>(__tabDragResultForInitialDragWithStartEvent: P0): R;
-    _currentEventOffsetFromEvent<R = cocoa.CGSize, P0 = unknown>(__currentEventOffsetFromEvent: P0): R;
+    _currentEventOffsetFromEvent<R = CGSize, P0 = unknown>(__currentEventOffsetFromEvent: P0): R;
     _trackReorderingEventsWithStartEvent_forTabButton<R = void, P0 = unknown, P1 = unknown>(__trackReorderingEventsWithStartEvent: P0, _forTabButton: P1): R;
     _setTabButtonUnderMouse_shouldAnimateHighlight<R = void, P0 = unknown, P1 = boolean>(__setTabButtonUnderMouse: P0, _shouldAnimateHighlight: P1): R;
     _setIndexOfTabUnderMouse_animated<R = void, P0 = number, P1 = boolean>(__setIndexOfTabUnderMouse: P0, _animated: P1): R;
@@ -46,7 +46,7 @@ declare namespace cocoa {
     _dragShouldBeginFromMouseDown_withExpiration_xHysteresis_yHysteresis<R = boolean, P0 = unknown, P1 = unknown, P2 = number, P3 = number>(__dragShouldBeginFromMouseDown: P0, _withExpiration: P1, _xHysteresis: P2, _yHysteresis: P3): R;
     _canDragItems<R = boolean>(): R;
     _trackMouseEventsForEvent_inStackingRegion<R = void, P0 = unknown, P1 = number>(__trackMouseEventsForEvent: P0, _inStackingRegion: P1): R;
-    _trackMouseEventsUntilMouseUp_withBlock<R = unknown, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(__trackMouseEventsUntilMouseUp: P0, _withBlock: P1): R;
+    _trackMouseEventsUntilMouseUp_withBlock<R = unknown, P0 = unknown, P1 = CDUnknownBlockType>(__trackMouseEventsUntilMouseUp: P0, _withBlock: P1): R;
     _animateTabBackgroundOnClickEventIfAppropriate<R = void, P0 = unknown>(__animateTabBackgroundOnClickEventIfAppropriate: P0): R;
     _moveButton_forTabBarViewItem_toIndex<R = void, P0 = unknown, P1 = unknown, P2 = number>(__moveButton: P0, _forTabBarViewItem: P1, _toIndex: P2): R;
     updateCloseButtonVisibilityForTabBarViewItem<R = void, P0 = unknown>(_updateCloseButtonVisibilityForTabBarViewItem: P0): R;
@@ -60,25 +60,25 @@ declare namespace cocoa {
     addTabBarViewItem<R = void, P0 = unknown>(_addTabBarViewItem: P0): R;
     wantsUpdateLayer<R = boolean>(): R;
     _scrollToButtonAtIndex_canScrollSelectedButton<R = void, P0 = number, P1 = boolean>(__scrollToButtonAtIndex: P0, _canScrollSelectedButton: P1): R;
-    _rectWithUnstackedButtons<R = cocoa.CGRect>(): R;
-    _layoutBoundsEdgeInsetsForUnstackedButtons<R = cocoa.NSEdgeInsets>(): R;
-    _syncedScrollBoundsToOrigin_animated<R = void, P0 = cocoa.CGPoint, P1 = boolean>(__syncedScrollBoundsToOrigin: P0, _animated: P1): R;
+    _rectWithUnstackedButtons<R = CGRect>(): R;
+    _layoutBoundsEdgeInsetsForUnstackedButtons<R = NSEdgeInsets>(): R;
+    _syncedScrollBoundsToOrigin_animated<R = void, P0 = CGPoint, P1 = boolean>(__syncedScrollBoundsToOrigin: P0, _animated: P1): R;
     _scrollAfterClickingOnStackingRegion<R = void, P0 = number>(__scrollAfterClickingOnStackingRegion: P0): R;
-    _scrollTargetPointForStackingRegion<R = cocoa.CGPoint, P0 = number>(__scrollTargetPointForStackingRegion: P0): R;
+    _scrollTargetPointForStackingRegion<R = CGPoint, P0 = number>(__scrollTargetPointForStackingRegion: P0): R;
     _effectiveRightStackWidthForButtonAtIndex<R = number, P0 = number>(__effectiveRightStackWidthForButtonAtIndex: P0): R;
     _effectiveLeftStackWidthForButtonAtIndex<R = number, P0 = number>(__effectiveLeftStackWidthForButtonAtIndex: P0): R;
-    _visibleTabIndexAtPoint_stackingRegion_ignorePointsOutsideOfLayoutBounds<R = number, P0 = cocoa.CGPoint, P1 = number, P2 = boolean>(__visibleTabIndexAtPoint: P0, _stackingRegion: P1, _ignorePointsOutsideOfLayoutBounds: P2): R;
-    _visibleTabIndexAtPoint_stackingRegion<R = number, P0 = cocoa.CGPoint, P1 = number>(__visibleTabIndexAtPoint: P0, _stackingRegion: P1): R;
-    _tabIndexAtPointWhenLayingOutButtonsToAlignWithWindowCenter<R = number, P0 = cocoa.CGPoint>(__tabIndexAtPointWhenLayingOutButtonsToAlignWithWindowCenter: P0): R;
-    _tabIndexAtPoint_withButtonWidth_supplementalWidth<R = number, P0 = cocoa.CGPoint, P1 = number, P2 = number>(__tabIndexAtPoint: P0, _withButtonWidth: P1, _supplementalWidth: P2): R;
-    _tabIndexAtPoint<R = number, P0 = cocoa.CGPoint>(__tabIndexAtPoint: P0): R;
-    _viewFrameForAdjustedButtonFrame<R = cocoa.CGRect, P0 = cocoa.CGRect>(__viewFrameForAdjustedButtonFrame: P0): R;
+    _visibleTabIndexAtPoint_stackingRegion_ignorePointsOutsideOfLayoutBounds<R = number, P0 = CGPoint, P1 = number, P2 = boolean>(__visibleTabIndexAtPoint: P0, _stackingRegion: P1, _ignorePointsOutsideOfLayoutBounds: P2): R;
+    _visibleTabIndexAtPoint_stackingRegion<R = number, P0 = CGPoint, P1 = number>(__visibleTabIndexAtPoint: P0, _stackingRegion: P1): R;
+    _tabIndexAtPointWhenLayingOutButtonsToAlignWithWindowCenter<R = number, P0 = CGPoint>(__tabIndexAtPointWhenLayingOutButtonsToAlignWithWindowCenter: P0): R;
+    _tabIndexAtPoint_withButtonWidth_supplementalWidth<R = number, P0 = CGPoint, P1 = number, P2 = number>(__tabIndexAtPoint: P0, _withButtonWidth: P1, _supplementalWidth: P2): R;
+    _tabIndexAtPoint<R = number, P0 = CGPoint>(__tabIndexAtPoint: P0): R;
+    _viewFrameForAdjustedButtonFrame<R = CGRect, P0 = CGRect>(__viewFrameForAdjustedButtonFrame: P0): R;
     _horizontalOffsetForButtonAtIndex_frontmostButtonIndex_slowingFactor<R = number, P0 = number, P1 = number, P2 = number>(__horizontalOffsetForButtonAtIndex: P0, _frontmostButtonIndex: P1, _slowingFactor: P2): R;
     _titleCenterOffsetForButtonAtIndex_frontmostButtonIndex<R = number, P0 = number, P1 = number>(__titleCenterOffsetForButtonAtIndex: P0, _frontmostButtonIndex: P1): R;
-    _centeringFrameForButtonAtIndex<R = cocoa.CGRect, P0 = number>(__centeringFrameForButtonAtIndex: P0): R;
-    _adjustedFrameForButtonAtIndex_isHidden<R = cocoa.CGRect, P0 = number, P1 = string>(__adjustedFrameForButtonAtIndex: P0, _isHidden: P1): R;
-    _frameForButtonAtIndex_firstButtonOffset_buttonWidth_supplementalWidth<R = cocoa.CGRect, P0 = number, P1 = number, P2 = number, P3 = number>(__frameForButtonAtIndex: P0, _firstButtonOffset: P1, _buttonWidth: P2, _supplementalWidth: P3): R;
-    _unstackedFrameForButtonAtIndex<R = cocoa.CGRect, P0 = number>(__unstackedFrameForButtonAtIndex: P0): R;
+    _centeringFrameForButtonAtIndex<R = CGRect, P0 = number>(__centeringFrameForButtonAtIndex: P0): R;
+    _adjustedFrameForButtonAtIndex_isHidden<R = CGRect, P0 = number, P1 = string>(__adjustedFrameForButtonAtIndex: P0, _isHidden: P1): R;
+    _frameForButtonAtIndex_firstButtonOffset_buttonWidth_supplementalWidth<R = CGRect, P0 = number, P1 = number, P2 = number, P3 = number>(__frameForButtonAtIndex: P0, _firstButtonOffset: P1, _buttonWidth: P2, _supplementalWidth: P3): R;
+    _unstackedFrameForButtonAtIndex<R = CGRect, P0 = number>(__unstackedFrameForButtonAtIndex: P0): R;
     _calculateStackingRegions<R = number>(): R;
     _buttonWidthForNumberOfButtons_inWidth_remainderWidth<R = number, P0 = number, P1 = number, P2 = number>(__buttonWidthForNumberOfButtons: P0, _inWidth: P1, _remainderWidth: P2): R;
     _updateButtonWidthAndRemainingWidthInTabBarToDivideAmongButtons<R = void>(): R;
@@ -94,12 +94,12 @@ declare namespace cocoa {
     _shouldAlignTabButtonTitleWithWindowCenter<R = boolean>(): R;
     _numberOfPinnedTabsForLayout<R = number>(): R;
     _numberOfTabsForLayout<R = number>(): R;
-    tabButtonFrameForItem<R = cocoa.CGRect, P0 = unknown>(_tabButtonFrameForItem: P0): R;
+    tabButtonFrameForItem<R = CGRect, P0 = unknown>(_tabButtonFrameForItem: P0): R;
     _restackButtonViews<R = void>(): R;
     _frontmostButtonIndex<R = number>(): R;
     _removeTabButton<R = void, P0 = unknown>(__removeTabButton: P0): R;
     _updatePinnedTabs<R = void>(): R;
-    _placeholderTabForEmptyUnpinnedRegionButtonFrame<R = cocoa.CGRect>(): R;
+    _placeholderTabForEmptyUnpinnedRegionButtonFrame<R = CGRect>(): R;
     _installPlaceholderTabForEmptyUnpinnedRegion<R = void>(): R;
     _uninstallPlaceholderTabForEmptyUnpinnedRegion<R = void>(): R;
     _shouldCreatePlaceholderTabForEmptyUnpinnedRegion<R = boolean>(): R;
@@ -121,24 +121,24 @@ declare namespace cocoa {
     _beginAnimationGrouping<R = void>(): R;
     _shouldLayOutButtonsNow<R = boolean>(): R;
     _clipViewBoundsChanged<R = void, P0 = unknown>(__clipViewBoundsChanged: P0): R;
-    _contentBounds<R = cocoa.CGRect>(): R;
+    _contentBounds<R = CGRect>(): R;
     isOpaque<R = boolean>(): R;
     allowsVibrancy<R = boolean>(): R;
     _isInFullscreenToolbarWindow<R = boolean>(): R;
     endGroupUpdatesAnimated<R = void, P0 = boolean>(_endGroupUpdatesAnimated: P0): R;
     beginGroupUpdates<R = void>(): R;
     _commonTabBarViewInit<R = void>(): R;
-    buttonThatSyncsWithPlaceholderTabInEmptyUnpinnedRegion<R = cocoa.NSTabBarSyncedButton>(): R;
-    setButtonThatSyncsWithPlaceholderTabInEmptyUnpinnedRegion<R = void, P0 = cocoa.NSTabBarSyncedButton>(_v: P0): R;
-    lastKeyView<R = cocoa.NSView>(): R;
-    setLastKeyView<R = void, P0 = cocoa.NSView>(_v: P0): R;
-    firstKeyView<R = cocoa.NSView>(): R;
-    setFirstKeyView<R = void, P0 = cocoa.NSView>(_v: P0): R;
-    delegate<R = cocoa.NSTabBarDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSTabBarDelegate>(_v: P0): R;
-    tabButtons<R = cocoa.NSArray>(): R;
-    tabBarViewItems<R = cocoa.NSArray>(): R;
-    setTabBarViewItems<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    buttonThatSyncsWithPlaceholderTabInEmptyUnpinnedRegion<R = NSTabBarSyncedButton>(): R;
+    setButtonThatSyncsWithPlaceholderTabInEmptyUnpinnedRegion<R = void, P0 = NSTabBarSyncedButton>(_v: P0): R;
+    lastKeyView<R = NSView>(): R;
+    setLastKeyView<R = void, P0 = NSView>(_v: P0): R;
+    firstKeyView<R = NSView>(): R;
+    setFirstKeyView<R = void, P0 = NSView>(_v: P0): R;
+    delegate<R = NSTabBarDelegate>(): R;
+    setDelegate<R = void, P0 = NSTabBarDelegate>(_v: P0): R;
+    tabButtons<R = NSArray>(): R;
+    tabBarViewItems<R = NSArray>(): R;
+    setTabBarViewItems<R = void, P0 = NSArray>(_v: P0): R;
     forcesActiveWindowState<R = boolean>(): R;
     setForcesActiveWindowState<R = void, P0 = boolean>(_v: P0): R;
     selectedTabButtonIndex<R = number>(): R;
@@ -149,13 +149,13 @@ declare namespace cocoa {
     setShouldShowAddButton<R = void, P0 = boolean>(_v: P0): R;
     enabled<R = boolean>(): R;
     setEnabled<R = void, P0 = boolean>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSTabBar<T = any> extends cocoa.classes.NSView, cocoa.classes.NSDetachedTabDraggingImageToWindowTransitionControllerDelegateProtocol, cocoa.classes.NSMorphingDragImageControllerDragSourceProtocol, cocoa.classes.NSAnimationDelegateProtocol, cocoa.classes.NSDraggingDestinationProtocol, cocoa.classes.NSTabButtonDelegateProtocol, cocoa.classes.NSTabBarSyncedButtonDelegateProtocol, cocoa.classes.NSTabDraggingDestinationProtocol {
+    export interface NSTabBar<T = any> extends NSView, NSDetachedTabDraggingImageToWindowTransitionControllerDelegateProtocol, NSMorphingDragImageControllerDragSourceProtocol, NSAnimationDelegateProtocol, NSDraggingDestinationProtocol, NSTabButtonDelegateProtocol, NSTabBarSyncedButtonDelegateProtocol, NSTabDraggingDestinationProtocol {
       alloc<R = NSTabBar>(): R;
       new: <R = NSTabBar>() => R;
       accessibilityLabelForNumberOfTabs_andNumberOfPinnedTabs<R = unknown, P0 = number, P1 = number>(_accessibilityLabelForNumberOfTabs: P0, _andNumberOfPinnedTabs: P1): R;

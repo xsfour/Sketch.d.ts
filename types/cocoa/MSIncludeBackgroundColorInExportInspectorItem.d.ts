@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSIncludeBackgroundColorInExportInspectorItem<T = any> extends cocoa.MSInspectorItem {}
+  export interface MSIncludeBackgroundColorInExportInspectorItem<T = any> extends MSInspectorItem {}
   namespace classes {
-    export interface MSIncludeBackgroundColorInExportInspectorItem<T = any> extends cocoa.classes.MSInspectorItem {
+    export interface MSIncludeBackgroundColorInExportInspectorItem<T = any> extends MSInspectorItem {
       alloc<R = MSIncludeBackgroundColorInExportInspectorItem>(): R;
       new: <R = MSIncludeBackgroundColorInExportInspectorItem>() => R;
     }

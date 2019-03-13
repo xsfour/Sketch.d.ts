@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSLayerSelectionDrawing<T = any> extends cocoa.NSObject {}
+  export interface MSLayerSelectionDrawing<T = any> extends NSObject {}
   namespace classes {
-    export interface MSLayerSelectionDrawing<T = any> extends cocoa.classes.NSObject {
+    export interface MSLayerSelectionDrawing<T = any> extends NSObject {
       alloc<R = MSLayerSelectionDrawing>(): R;
       new: <R = MSLayerSelectionDrawing>() => R;
       strokeWidthForZoomValue<R = number, P0 = number>(_strokeWidthForZoomValue: P0): R;

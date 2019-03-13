@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSSharedObjectContainer<T = any> extends cocoa.MSModelObject {
+  export interface _MSSharedObjectContainer<T = any> extends MSModelObject {
     moveSharedObjectIndex_toIndex<R = void, P0 = number, P1 = number>(_moveSharedObjectIndex: P0, _toIndex: P1): R;
     removeAllSharedObjects<R = void>(): R;
     removeSharedObjectsAtIndexes<R = void, P0 = unknown>(_removeSharedObjectsAtIndexes: P0): R;
@@ -15,11 +15,11 @@ declare namespace cocoa {
     addSharedObjects<R = void, P0 = unknown>(_addSharedObjects: P0): R;
     addSharedObject<R = void, P0 = unknown>(_addSharedObject: P0): R;
     hasDefaultValues<R = boolean>(): R;
-    objects<R = cocoa.NSArray>(): R;
-    setObjects<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    objects<R = NSArray>(): R;
+    setObjects<R = void, P0 = NSArray>(_v: P0): R;
   }
   namespace classes {
-    export interface _MSSharedObjectContainer<T = any> extends cocoa.classes.MSModelObject {
+    export interface _MSSharedObjectContainer<T = any> extends MSModelObject {
       alloc<R = _MSSharedObjectContainer>(): R;
       new: <R = _MSSharedObjectContainer>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSBrowserTableColumnViewController<T = any> extends cocoa.NSBrowserColumnViewController, cocoa.NSTableViewDataSourceProtocol, cocoa.NSTableViewDelegateProtocol {
+  export interface _NSBrowserTableColumnViewController<T = any> extends NSBrowserColumnViewController, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol {
     _autoExpandItemUnderCursor<R = boolean>(): R;
     _expandItemUnderMouse<R = void, P0 = unknown>(__expandItemUnderMouse: P0): R;
     _cancelExpandItemUnderMouse<R = void>(): R;
@@ -23,13 +23,13 @@ declare namespace cocoa {
     allowsMultipleSelection<R = boolean>(): R;
     tableView<R = unknown>(): R;
     selectedItems<R = unknown>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface _NSBrowserTableColumnViewController<T = any> extends cocoa.classes.NSBrowserColumnViewController, cocoa.classes.NSTableViewDataSourceProtocol, cocoa.classes.NSTableViewDelegateProtocol {
+    export interface _NSBrowserTableColumnViewController<T = any> extends NSBrowserColumnViewController, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol {
       alloc<R = _NSBrowserTableColumnViewController>(): R;
       new: <R = _NSBrowserTableColumnViewController>() => R;
     }

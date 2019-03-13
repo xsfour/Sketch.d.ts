@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSAutomaticFocusRing<T = any> extends cocoa.NSObject {}
+  export interface _NSAutomaticFocusRing<T = any> extends NSObject {}
   namespace classes {
-    export interface _NSAutomaticFocusRing<T = any> extends cocoa.classes.NSObject {
+    export interface _NSAutomaticFocusRing<T = any> extends NSObject {
       alloc<R = _NSAutomaticFocusRing>(): R;
       new: <R = _NSAutomaticFocusRing>() => R;
       setActiveFirstResponderChanged<R = void>(): R;
-      translateFocusRingRegionBy_forWindow<R = void, P0 = cocoa.CGPoint, P1 = unknown>(_translateFocusRingRegionBy: P0, _forWindow: P1): R;
+      translateFocusRingRegionBy_forWindow<R = void, P0 = CGPoint, P1 = unknown>(_translateFocusRingRegionBy: P0, _forWindow: P1): R;
       focusRingRegionForWindow<R = unknown, P0 = unknown>(_focusRingRegionForWindow: P0): R;
       compositeIfShownInWindow<R = void, P0 = unknown>(_compositeIfShownInWindow: P0): R;
       focusRingViewForWindow<R = unknown, P0 = unknown>(_focusRingViewForWindow: P0): R;

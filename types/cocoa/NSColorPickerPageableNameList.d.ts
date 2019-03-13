@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorPickerPageableNameList<T = any> extends cocoa.NSColorPicker, cocoa.NSTableViewDelegateProtocol, cocoa.NSTableViewDataSourceProtocol, cocoa.NSColorPickingCustomProtocol {
+  export interface NSColorPickerPageableNameList<T = any> extends NSColorPicker, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol, NSColorPickingCustomProtocol {
     pasteboardTypeForReordering<R = unknown>(): R;
     pageableTableView_handleKeyDownEvent<R = boolean, P0 = unknown, P1 = unknown>(_pageableTableView: P0, _handleKeyDownEvent: P1): R;
     activeColorList<R = unknown>(): R;
@@ -63,15 +63,15 @@ declare namespace cocoa {
     setupLoadedNib<R = void>(): R;
     _currentColorIndex<R = number>(): R;
     awakeFromNib<R = void>(): R;
-    listPickerView<R = cocoa.NSView>(): R;
-    setListPickerView<R = void, P0 = cocoa.NSView>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    listPickerView<R = NSView>(): R;
+    setListPickerView<R = void, P0 = NSView>(_v: P0): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSColorPickerPageableNameList<T = any> extends cocoa.classes.NSColorPicker, cocoa.classes.NSTableViewDelegateProtocol, cocoa.classes.NSTableViewDataSourceProtocol, cocoa.classes.NSColorPickingCustomProtocol {
+    export interface NSColorPickerPageableNameList<T = any> extends NSColorPicker, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol, NSColorPickingCustomProtocol {
       alloc<R = NSColorPickerPageableNameList>(): R;
       new: <R = NSColorPickerPageableNameList>() => R;
       keyPathsForValuesAffectingValueForKey<R = unknown, P0 = unknown>(_keyPathsForValuesAffectingValueForKey: P0): R;

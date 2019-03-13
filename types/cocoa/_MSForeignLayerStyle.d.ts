@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSForeignLayerStyle<T = any> extends cocoa.MSForeignStyle {}
+  export interface _MSForeignLayerStyle<T = any> extends MSForeignStyle {}
   namespace classes {
-    export interface _MSForeignLayerStyle<T = any> extends cocoa.classes.MSForeignStyle {
+    export interface _MSForeignLayerStyle<T = any> extends MSForeignStyle {
       alloc<R = _MSForeignLayerStyle>(): R;
       new: <R = _MSForeignLayerStyle>() => R;
     }

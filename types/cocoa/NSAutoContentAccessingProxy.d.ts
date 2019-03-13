@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAutoContentAccessingProxy<T = any> extends cocoa.NSProxy {}
+  export interface NSAutoContentAccessingProxy<T = any> extends NSProxy {}
   namespace classes {
-    export interface NSAutoContentAccessingProxy<T = any> extends cocoa.classes.NSProxy {
+    export interface NSAutoContentAccessingProxy<T = any> extends NSProxy {
       proxyWithTarget<R = unknown, P0 = unknown>(_proxyWithTarget: P0): R;
     }
   }

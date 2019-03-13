@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInspectorTextField<T = any> extends cocoa.NSTextField {}
+  export interface MSInspectorTextField<T = any> extends NSTextField {}
   namespace classes {
-    export interface MSInspectorTextField<T = any> extends cocoa.classes.NSTextField {
+    export interface MSInspectorTextField<T = any> extends NSTextField {
       alloc<R = MSInspectorTextField>(): R;
       new: <R = MSInspectorTextField>() => R;
     }

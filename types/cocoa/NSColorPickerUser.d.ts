@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorPickerUser<T = any> extends cocoa.NSColorPicker, cocoa.NSColorPickingCustomProtocol {
+  export interface NSColorPickerUser<T = any> extends NSColorPicker, NSColorPickingCustomProtocol {
     remove<R = void, P0 = unknown>(_remove: P0): R;
     _remove<R = void, P0 = unknown>(__remove: P0): R;
     _removeOrRename<R = boolean, P0 = unknown>(__removeOrRename: P0): R;
@@ -25,11 +25,11 @@ declare namespace cocoa {
     _shortNameFor<R = unknown, P0 = unknown>(__shortNameFor: P0): R;
     _setCurrImageName<R = void, P0 = unknown>(__setCurrImageName: P0): R;
     _imageFromItemTitle<R = unknown, P0 = unknown>(__imageFromItemTitle: P0): R;
-    userPickerView<R = cocoa.NSView>(): R;
-    setUserPickerView<R = void, P0 = cocoa.NSView>(_v: P0): R;
+    userPickerView<R = NSView>(): R;
+    setUserPickerView<R = void, P0 = NSView>(_v: P0): R;
   }
   namespace classes {
-    export interface NSColorPickerUser<T = any> extends cocoa.classes.NSColorPicker, cocoa.classes.NSColorPickingCustomProtocol {
+    export interface NSColorPickerUser<T = any> extends NSColorPicker, NSColorPickingCustomProtocol {
       alloc<R = NSColorPickerUser>(): R;
       new: <R = NSColorPickerUser>() => R;
     }

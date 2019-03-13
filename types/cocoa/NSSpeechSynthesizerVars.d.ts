@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSpeechSynthesizerVars<T = any> extends cocoa.NSObject {
+  export interface NSSpeechSynthesizerVars<T = any> extends NSObject {
     setSpeechChannelWithVoiceCreator_voiceID<R = number, P0 = number, P1 = number>(_setSpeechChannelWithVoiceCreator: P0, _voiceID: P1): R;
     setSpeechChannelWithVoiceIdentifier<R = number, P0 = unknown>(_setSpeechChannelWithVoiceIdentifier: P0): R;
     dealloc<R = void>(): R;
-    speechFeedbackServicesInvoker<R = cocoa._NSPeriodicInvoker>(): R;
-    setSpeechFeedbackServicesInvoker<R = void, P0 = cocoa._NSPeriodicInvoker>(_v: P0): R;
+    speechFeedbackServicesInvoker<R = _NSPeriodicInvoker>(): R;
+    setSpeechFeedbackServicesInvoker<R = void, P0 = _NSPeriodicInvoker>(_v: P0): R;
     synthesizerIsRetained<R = boolean>(): R;
     setSynthesizerIsRetained<R = void, P0 = boolean>(_v: P0): R;
     speechFinishedSuccessfully<R = boolean>(): R;
@@ -20,15 +20,15 @@ declare namespace cocoa {
     usingDefaultVoice<R = boolean>(): R;
     setUsingDefaultVoice<R = void, P0 = boolean>(_v: P0): R;
     normalSpeakingRate<R = number>(): R;
-    currentVoiceIdentifier<R = cocoa.NSString>(): R;
-    setCurrentVoiceIdentifier<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    currentVoiceIdentifier<R = NSString>(): R;
+    setCurrentVoiceIdentifier<R = void, P0 = NSString>(_v: P0): R;
     speechFeedbackServicesRef<R = number>(): R;
-    speechChannel<R = cocoa.SpeechChannelRecord>(): R;
-    delegate<R = cocoa.NSSpeechSynthesizerDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSSpeechSynthesizerDelegate>(_v: P0): R;
+    speechChannel<R = SpeechChannelRecord>(): R;
+    delegate<R = NSSpeechSynthesizerDelegate>(): R;
+    setDelegate<R = void, P0 = NSSpeechSynthesizerDelegate>(_v: P0): R;
   }
   namespace classes {
-    export interface NSSpeechSynthesizerVars<T = any> extends cocoa.classes.NSObject {
+    export interface NSSpeechSynthesizerVars<T = any> extends NSObject {
       alloc<R = NSSpeechSynthesizerVars>(): R;
       new: <R = NSSpeechSynthesizerVars>() => R;
       voiceIdentifierForVoiceCreator_voiceID<R = unknown, P0 = number, P1 = number>(_voiceIdentifierForVoiceCreator: P0, _voiceID: P1): R;

@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSJPGExporter<T = any> extends cocoa.MSExporter {}
+  export interface MSJPGExporter<T = any> extends MSExporter {}
   namespace classes {
-    export interface MSJPGExporter<T = any> extends cocoa.classes.MSExporter {
+    export interface MSJPGExporter<T = any> extends MSExporter {
       alloc<R = MSJPGExporter>(): R;
       new: <R = MSJPGExporter>() => R;
     }

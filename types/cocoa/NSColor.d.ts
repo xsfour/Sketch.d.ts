@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColor<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol, cocoa.NSSecureCodingProtocol, cocoa.NSPasteboardReadingProtocol, cocoa.NSPasteboardWritingProtocol {
+  export interface NSColor<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol, NSPasteboardReadingProtocol, NSPasteboardWritingProtocol {
     _getSemanticallyEquivalentVisualEffectMaterial<R = boolean, P0 = number>(__getSemanticallyEquivalentVisualEffectMaterial: P0): R;
     colorWithSystemEffect<R = unknown, P0 = number>(_colorWithSystemEffect: P0): R;
     shadowWithLevel<R = unknown, P0 = number>(_shadowWithLevel: P0): R;
@@ -19,7 +19,7 @@ declare namespace cocoa {
     getRed_green_blue_alpha<R = void, P0 = number, P1 = number, P2 = number, P3 = number>(_getRed: P0, _green: P1, _blue: P2, _alpha: P3): R;
     set<R = void>(): R;
     _setAsSystemColor<R = void>(): R;
-    drawSwatchInRect<R = void, P0 = cocoa.CGRect>(_drawSwatchInRect: P0): R;
+    drawSwatchInRect<R = void, P0 = CGRect>(_drawSwatchInRect: P0): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     colorUsingType<R = unknown, P0 = number>(_colorUsingType: P0): R;
@@ -44,8 +44,8 @@ declare namespace cocoa {
     _isSourceListColor<R = boolean>(): R;
     _luminance<R = number>(): R;
     numberOfComponents<R = number>(): R;
-    colorSpace<R = cocoa.NSColorSpace>(): R;
-    patternImage<R = cocoa.NSImage>(): R;
+    colorSpace<R = NSColorSpace>(): R;
+    patternImage<R = NSImage>(): R;
     blackComponent<R = number>(): R;
     yellowComponent<R = number>(): R;
     magentaComponent<R = number>(): R;
@@ -57,21 +57,21 @@ declare namespace cocoa {
     blueComponent<R = number>(): R;
     greenComponent<R = number>(): R;
     redComponent<R = number>(): R;
-    localizedColorNameComponent<R = cocoa.NSString>(): R;
-    localizedCatalogNameComponent<R = cocoa.NSString>(): R;
-    colorNameComponent<R = cocoa.NSString>(): R;
-    catalogNameComponent<R = cocoa.NSString>(): R;
+    localizedColorNameComponent<R = NSString>(): R;
+    localizedCatalogNameComponent<R = NSString>(): R;
+    colorNameComponent<R = NSString>(): R;
+    catalogNameComponent<R = NSString>(): R;
     type<R = number>(): R;
     hash<R = number>(): R;
-    CGColor<R = cocoa.CGColor>(): R;
+    CGColor<R = CGColor>(): R;
     alphaComponent<R = number>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     superclass<R = unknown>(): R;
     // + NSColor(CHColorExtensions,ColorTranslationWithoutConversion,MSTheme,Manifest,NSColor_String,TreeAsDictionarySupport):
     isWhite<R = boolean>(): R;
     fuzzyIsEqual<R = boolean, P0 = unknown>(_fuzzyIsEqual: P0): R;
-    newCGColor<R = cocoa.CGColor>(): R;
+    newCGColor<R = CGColor>(): R;
     colorTranslatedToColorSpace<R = unknown, P0 = unknown>(_colorTranslatedToColorSpace: P0): R;
     setThemeCachingKey<R = void, P0 = unknown>(_setThemeCachingKey: P0): R;
     themeCachingKey<R = unknown>(): R;
@@ -81,10 +81,10 @@ declare namespace cocoa {
     stringValueWithAlpha<R = unknown, P0 = boolean>(_stringValueWithAlpha: P0): R;
     hexValue<R = unknown>(): R;
     treeAsDictionary<R = unknown>(): R;
-    manifestComponents<R = cocoa.NSArray>(): R;
+    manifestComponents<R = NSArray>(): R;
   }
   namespace classes {
-    export interface NSColor<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol, cocoa.classes.NSSecureCodingProtocol, cocoa.classes.NSPasteboardReadingProtocol, cocoa.classes.NSPasteboardWritingProtocol {
+    export interface NSColor<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol, NSPasteboardReadingProtocol, NSPasteboardWritingProtocol {
       alloc<R = NSColor>(): R;
       new: <R = NSColor>() => R;
       currentControlTint<R = number>(): R;
@@ -98,7 +98,7 @@ declare namespace cocoa {
       colorWithHue_saturation_brightness_alpha<R = unknown, P0 = number, P1 = number, P2 = number, P3 = number>(_colorWithHue: P0, _saturation: P1, _brightness: P2, _alpha: P3): R;
       colorWithRed_green_blue_alpha<R = unknown, P0 = number, P1 = number, P2 = number, P3 = number>(_colorWithRed: P0, _green: P1, _blue: P2, _alpha: P3): R;
       colorWithWhite_alpha<R = unknown, P0 = number, P1 = number>(_colorWithWhite: P0, _alpha: P1): R;
-      colorWithCGColor<R = unknown, P0 = cocoa.CGColor>(_colorWithCGColor: P0): R;
+      colorWithCGColor<R = unknown, P0 = CGColor>(_colorWithCGColor: P0): R;
       colorWithDisplayP3Red_green_blue_alpha<R = unknown, P0 = number, P1 = number, P2 = number, P3 = number>(_colorWithDisplayP3Red: P0, _green: P1, _blue: P2, _alpha: P3): R;
       colorWithSRGBRed_green_blue_alpha<R = unknown, P0 = number, P1 = number, P2 = number, P3 = number>(_colorWithSRGBRed: P0, _green: P1, _blue: P2, _alpha: P3): R;
       colorWithGenericGamma22White_alpha<R = unknown, P0 = number, P1 = number>(_colorWithGenericGamma22White: P0, _alpha: P1): R;

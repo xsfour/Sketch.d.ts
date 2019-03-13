@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSStoryboardModalSegueTemplate<T = any> extends cocoa.NSStoryboardSegueTemplate, cocoa.NSCodingProtocol {}
+  export interface NSStoryboardModalSegueTemplate<T = any> extends NSStoryboardSegueTemplate, NSCodingProtocol {}
   namespace classes {
-    export interface NSStoryboardModalSegueTemplate<T = any> extends cocoa.classes.NSStoryboardSegueTemplate, cocoa.classes.NSCodingProtocol {
+    export interface NSStoryboardModalSegueTemplate<T = any> extends NSStoryboardSegueTemplate, NSCodingProtocol {
       alloc<R = NSStoryboardModalSegueTemplate>(): R;
       new: <R = NSStoryboardModalSegueTemplate>() => R;
     }

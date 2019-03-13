@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCoder<T = any> extends cocoa.NSObject {
+  export interface NSCoder<T = any> extends NSObject {
     _validateAllowedClass_forKey_allowingInvocations<R = boolean, P0 = unknown, P1 = unknown, P2 = boolean>(__validateAllowedClass: P0, _forKey: P1, _allowingInvocations: P2): R;
     _validateAllowedClassesContainsClass_forKey<R = boolean, P0 = unknown, P1 = unknown>(__validateAllowedClassesContainsClass: P0, _forKey: P1): R;
     validateClassSupportsSecureCoding<R = boolean, P0 = unknown>(_validateClassSupportsSecureCoding: P0): R;
@@ -16,8 +16,8 @@ declare namespace cocoa {
     decodeObjectOfClass_forKey<R = unknown, P0 = unknown, P1 = unknown>(_decodeObjectOfClass: P0, _forKey: P1): R;
     requiresSecureCoding<R = boolean>(): R;
     systemVersion<R = number>(): R;
-    objectZone<R = cocoa._NSZone>(): R;
-    setObjectZone<R = void, P0 = cocoa._NSZone>(_setObjectZone: P0): R;
+    objectZone<R = _NSZone>(): R;
+    setObjectZone<R = void, P0 = _NSZone>(_setObjectZone: P0): R;
     setAllowedClasses<R = void, P0 = unknown>(_setAllowedClasses: P0): R;
     decodeBytesForKey_returnedLength<R = string, P0 = unknown, P1 = number>(_decodeBytesForKey: P0, _returnedLength: P1): R;
     decodeDoubleForKey<R = number, P0 = unknown>(_decodeDoubleForKey: P0): R;
@@ -69,23 +69,23 @@ declare namespace cocoa {
     __failWithExternalError<R = void, P0 = unknown>(___failWithExternalError: P0): R;
     __failWithExceptionName_errorCode_format<R = boolean, P0 = unknown, P1 = number, P2 = unknown>(___failWithExceptionName: P0, _errorCode: P1, _format: P2): R;
     __failWithException<R = boolean, P0 = unknown>(___failWithException: P0): R;
-    __tryDecodeObjectForKey_error_decodeBlock<R = unknown, P0 = unknown, P1 = unknown, P2 = cocoa.CDUnknownBlockType>(___tryDecodeObjectForKey: P0, _error: P1, _decodeBlock: P2): R;
+    __tryDecodeObjectForKey_error_decodeBlock<R = unknown, P0 = unknown, P1 = unknown, P2 = CDUnknownBlockType>(___tryDecodeObjectForKey: P0, _error: P1, _decodeBlock: P2): R;
     __setError<R = void, P0 = unknown>(___setError: P0): R;
     error<R = unknown>(): R;
     decodingFailurePolicy<R = number>(): R;
     failWithError<R = void, P0 = unknown>(_failWithError: P0): R;
-    decodeRect<R = cocoa.CGRect>(): R;
-    encodeRect<R = void, P0 = cocoa.CGRect>(_encodeRect: P0): R;
-    decodeSize<R = cocoa.CGSize>(): R;
-    encodeSize<R = void, P0 = cocoa.CGSize>(_encodeSize: P0): R;
-    decodePoint<R = cocoa.CGPoint>(): R;
-    encodePoint<R = void, P0 = cocoa.CGPoint>(_encodePoint: P0): R;
-    decodeRectForKey<R = cocoa.CGRect, P0 = unknown>(_decodeRectForKey: P0): R;
-    decodeSizeForKey<R = cocoa.CGSize, P0 = unknown>(_decodeSizeForKey: P0): R;
-    decodePointForKey<R = cocoa.CGPoint, P0 = unknown>(_decodePointForKey: P0): R;
-    encodeRect_forKey<R = void, P0 = cocoa.CGRect, P1 = unknown>(_encodeRect: P0, _forKey: P1): R;
-    encodeSize_forKey<R = void, P0 = cocoa.CGSize, P1 = unknown>(_encodeSize: P0, _forKey: P1): R;
-    encodePoint_forKey<R = void, P0 = cocoa.CGPoint, P1 = unknown>(_encodePoint: P0, _forKey: P1): R;
+    decodeRect<R = CGRect>(): R;
+    encodeRect<R = void, P0 = CGRect>(_encodeRect: P0): R;
+    decodeSize<R = CGSize>(): R;
+    encodeSize<R = void, P0 = CGSize>(_encodeSize: P0): R;
+    decodePoint<R = CGPoint>(): R;
+    encodePoint<R = void, P0 = CGPoint>(_encodePoint: P0): R;
+    decodeRectForKey<R = CGRect, P0 = unknown>(_decodeRectForKey: P0): R;
+    decodeSizeForKey<R = CGSize, P0 = unknown>(_decodeSizeForKey: P0): R;
+    decodePointForKey<R = CGPoint, P0 = unknown>(_decodePointForKey: P0): R;
+    encodeRect_forKey<R = void, P0 = CGRect, P1 = unknown>(_encodeRect: P0, _forKey: P1): R;
+    encodeSize_forKey<R = void, P0 = CGSize, P1 = unknown>(_encodeSize: P0, _forKey: P1): R;
+    encodePoint_forKey<R = void, P0 = CGPoint, P1 = unknown>(_encodePoint: P0, _forKey: P1): R;
     decodeNXObject<R = unknown>(): R;
     encodeNXObject<R = void, P0 = unknown>(_encodeNXObject: P0): R;
     // + NSCoder(NSAppKitCoderExtensions,NSAppKitColorExtensions):
@@ -96,7 +96,7 @@ declare namespace cocoa {
     decodeNXColor<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSCoder<T = any> extends cocoa.classes.NSObject {
+    export interface NSCoder<T = any> extends NSObject {
       alloc<R = NSCoder>(): R;
       new: <R = NSCoder>() => R;
       __categorizeException_intoError<R = boolean, P0 = unknown, P1 = unknown>(___categorizeException: P0, _intoError: P1): R;

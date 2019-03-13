@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPluginManagingState<T = any> extends cocoa.NSObject {
+  export interface MSPluginManagingState<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     removeIncompatibilityRegistrations<R = void>(): R;
     removeDisableOverrides<R = void>(): R;
@@ -17,13 +17,13 @@ declare namespace cocoa {
     setEnabled_forPluginIdentifier_withVersion<R = void, P0 = boolean, P1 = unknown, P2 = unknown>(_setEnabled: P0, _forPluginIdentifier: P1, _withVersion: P2): R;
     resetIncompatiblePluginMetadata<R = void>(): R;
     initWithMetadataURL_incompatiblePlugins<R = unknown, P0 = unknown, P1 = unknown>(_initWithMetadataURL: P0, _incompatiblePlugins: P1): R;
-    incompatiblePluginVersions<R = cocoa.NSDictionary>(): R;
-    metadata<R = cocoa.NSDictionary>(): R;
-    setMetadata<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
-    metadataURL<R = cocoa.NSURL>(): R;
+    incompatiblePluginVersions<R = NSDictionary>(): R;
+    metadata<R = NSDictionary>(): R;
+    setMetadata<R = void, P0 = NSDictionary>(_v: P0): R;
+    metadataURL<R = NSURL>(): R;
   }
   namespace classes {
-    export interface MSPluginManagingState<T = any> extends cocoa.classes.NSObject {
+    export interface MSPluginManagingState<T = any> extends NSObject {
       alloc<R = MSPluginManagingState>(): R;
       new: <R = MSPluginManagingState>() => R;
       incompatiblePlugins<R = unknown>(): R;

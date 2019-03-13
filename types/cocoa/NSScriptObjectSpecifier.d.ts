@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScriptObjectSpecifier<T = any> extends cocoa.NSObject, cocoa.NSCodingProtocol {
+  export interface NSScriptObjectSpecifier<T = any> extends NSObject, NSCodingProtocol {
     description<R = unknown>(): R;
     replacementObjectForPortCoder<R = unknown, P0 = unknown>(_replacementObjectForPortCoder: P0): R;
     indicesOfObjectsByEvaluatingWithContainer_count<R = number, P0 = unknown, P1 = number>(_indicesOfObjectsByEvaluatingWithContainer: P0, _count: P1): R;
@@ -31,27 +31,27 @@ declare namespace cocoa {
     _setDescriptorNoCopy<R = void, P0 = unknown>(__setDescriptorNoCopy: P0): R;
     _initFromRecord<R = unknown, P0 = unknown>(__initFromRecord: P0): R;
     _asDescriptor<R = unknown>(): R;
-    descriptor<R = cocoa.NSAppleEventDescriptor>(): R;
-    evaluationErrorSpecifier<R = cocoa.NSScriptObjectSpecifier>(): R;
+    descriptor<R = NSAppleEventDescriptor>(): R;
+    evaluationErrorSpecifier<R = NSScriptObjectSpecifier>(): R;
     evaluationErrorNumber<R = number>(): R;
     setEvaluationErrorNumber<R = void, P0 = number>(_v: P0): R;
     objectsByEvaluatingSpecifier<R = unknown>(): R;
-    keyClassDescription<R = cocoa.NSScriptClassDescription>(): R;
-    childSpecifier<R = cocoa.NSScriptObjectSpecifier>(): R;
-    setChildSpecifier<R = void, P0 = cocoa.NSScriptObjectSpecifier>(_v: P0): R;
+    keyClassDescription<R = NSScriptClassDescription>(): R;
+    childSpecifier<R = NSScriptObjectSpecifier>(): R;
+    setChildSpecifier<R = void, P0 = NSScriptObjectSpecifier>(_v: P0): R;
     containerIsRangeContainerObject<R = boolean>(): R;
     setContainerIsRangeContainerObject<R = void, P0 = boolean>(_v: P0): R;
     containerIsObjectBeingTested<R = boolean>(): R;
     setContainerIsObjectBeingTested<R = void, P0 = boolean>(_v: P0): R;
-    key<R = cocoa.NSString>(): R;
-    setKey<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    containerSpecifier<R = cocoa.NSScriptObjectSpecifier>(): R;
-    setContainerSpecifier<R = void, P0 = cocoa.NSScriptObjectSpecifier>(_v: P0): R;
-    containerClassDescription<R = cocoa.NSScriptClassDescription>(): R;
-    setContainerClassDescription<R = void, P0 = cocoa.NSScriptClassDescription>(_v: P0): R;
+    key<R = NSString>(): R;
+    setKey<R = void, P0 = NSString>(_v: P0): R;
+    containerSpecifier<R = NSScriptObjectSpecifier>(): R;
+    setContainerSpecifier<R = void, P0 = NSScriptObjectSpecifier>(_v: P0): R;
+    containerClassDescription<R = NSScriptClassDescription>(): R;
+    setContainerClassDescription<R = void, P0 = NSScriptClassDescription>(_v: P0): R;
   }
   namespace classes {
-    export interface NSScriptObjectSpecifier<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCodingProtocol {
+    export interface NSScriptObjectSpecifier<T = any> extends NSObject, NSCodingProtocol {
       alloc<R = NSScriptObjectSpecifier>(): R;
       new: <R = NSScriptObjectSpecifier>() => R;
       objectSpecifierWithDescriptor<R = unknown, P0 = unknown>(_objectSpecifierWithDescriptor: P0): R;

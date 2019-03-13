@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSKeyedUnarchiver<T = any> extends cocoa.NSCoder {
+  export interface NSKeyedUnarchiver<T = any> extends NSCoder {
     _containsNextUnkeyedObject<R = boolean>(): R;
     _currentUniqueIdentifier<R = number>(): R;
     _decodePropertyListForKey<R = unknown, P0 = unknown>(__decodePropertyListForKey: P0): R;
@@ -21,17 +21,17 @@ declare namespace cocoa {
     initForReadingWithData<R = unknown, P0 = unknown>(_initForReadingWithData: P0): R;
     initForReadingFromData_error<R = unknown, P0 = unknown, P1 = unknown>(_initForReadingFromData: P0, _error: P1): R;
     _initForReadingFromData_error_throwLegacyExceptions<R = unknown, P0 = unknown, P1 = unknown, P2 = boolean>(__initForReadingFromData: P0, _error: P1, _throwLegacyExceptions: P2): R;
-    _initWithStream_data_topDict<R = unknown, P0 = cocoa.__CFReadStream, P1 = unknown, P2 = cocoa.__CFDictionary>(__initWithStream: P0, _data: P1, _topDict: P2): R;
+    _initWithStream_data_topDict<R = unknown, P0 = __CFReadStream, P1 = unknown, P2 = __CFDictionary>(__initWithStream: P0, _data: P1, _topDict: P2): R;
     _blobForCurrentObject<R = unknown>(): R;
     decodingFailurePolicy<R = number>(): R;
     setDecodingFailurePolicy<R = void, P0 = number>(_v: P0): R;
     requiresSecureCoding<R = boolean>(): R;
     setRequiresSecureCoding<R = void, P0 = boolean>(_v: P0): R;
-    delegate<R = cocoa.NSKeyedUnarchiverDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSKeyedUnarchiverDelegate>(_v: P0): R;
+    delegate<R = NSKeyedUnarchiverDelegate>(): R;
+    setDelegate<R = void, P0 = NSKeyedUnarchiverDelegate>(_v: P0): R;
   }
   namespace classes {
-    export interface NSKeyedUnarchiver<T = any> extends cocoa.classes.NSCoder {
+    export interface NSKeyedUnarchiver<T = any> extends NSCoder {
       alloc<R = NSKeyedUnarchiver>(): R;
       new: <R = NSKeyedUnarchiver>() => R;
       unarchiveTopLevelObjectWithData_error<R = unknown, P0 = unknown, P1 = unknown>(_unarchiveTopLevelObjectWithData: P0, _error: P1): R;

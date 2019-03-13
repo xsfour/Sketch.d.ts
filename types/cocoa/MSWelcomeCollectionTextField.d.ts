@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSWelcomeCollectionTextField<T = any> extends cocoa.NSTextField {
+  export interface MSWelcomeCollectionTextField<T = any> extends NSTextField {
     selected<R = boolean>(): R;
     setSelected<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface MSWelcomeCollectionTextField<T = any> extends cocoa.classes.NSTextField {
+    export interface MSWelcomeCollectionTextField<T = any> extends NSTextField {
       alloc<R = MSWelcomeCollectionTextField>(): R;
       new: <R = MSWelcomeCollectionTextField>() => R;
     }

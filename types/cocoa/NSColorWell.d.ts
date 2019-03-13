@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorWell<T = any> extends cocoa.NSControl {
+  export interface NSColorWell<T = any> extends NSControl {
     _old_initWithCoder_NSColorWell<R = unknown, P0 = unknown>(__old_initWithCoder_NSColorWell: P0): R;
     refusesFirstResponder<R = boolean>(): R;
     setRefusesFirstResponder<R = void, P0 = boolean>(_setRefusesFirstResponder: P0): R;
-    acceptColor_atPoint<R = void, P0 = unknown, P1 = cocoa.CGPoint>(_acceptColor: P0, _atPoint: P1): R;
+    acceptColor_atPoint<R = void, P0 = unknown, P1 = CGPoint>(_acceptColor: P0, _atPoint: P1): R;
     windowWillClose<R = void, P0 = unknown>(_windowWillClose: P0): R;
     shiftModifySelection<R = void, P0 = unknown>(_shiftModifySelection: P0): R;
     altModifySelection<R = void, P0 = unknown>(_altModifySelection: P0): R;
@@ -16,9 +16,9 @@ declare namespace cocoa {
     isContinuous<R = boolean>(): R;
     takeColorFrom<R = void, P0 = unknown>(_takeColorFrom: P0): R;
     deactivate<R = void>(): R;
-    _drawBorderInRect<R = void, P0 = cocoa.CGRect>(__drawBorderInRect: P0): R;
-    _coreUIBorderDrawOptions<R = cocoa.__CFDictionary>(): R;
-    drawWellInside<R = void, P0 = cocoa.CGRect>(_drawWellInside: P0): R;
+    _drawBorderInRect<R = void, P0 = CGRect>(__drawBorderInRect: P0): R;
+    _coreUIBorderDrawOptions<R = __CFDictionary>(): R;
+    drawWellInside<R = void, P0 = CGRect>(_drawWellInside: P0): R;
     drawColor<R = boolean>(): R;
     _hasKeyboardFocus<R = boolean>(): R;
     setEnabled<R = void, P0 = boolean>(_setEnabled: P0): R;
@@ -31,14 +31,14 @@ declare namespace cocoa {
     _shouldOrderFront<R = boolean>(): R;
     accessibilityIsValueAttributeSettable<R = boolean>(): R;
     accessibilityValueAttribute<R = unknown>(): R;
-    color<R = cocoa.NSColor>(): R;
-    setColor<R = void, P0 = cocoa.NSColor>(_v: P0): R;
+    color<R = NSColor>(): R;
+    setColor<R = void, P0 = NSColor>(_v: P0): R;
     active<R = boolean>(): R;
     bordered<R = boolean>(): R;
     setBordered<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface NSColorWell<T = any> extends cocoa.classes.NSControl {
+    export interface NSColorWell<T = any> extends NSControl {
       alloc<R = NSColorWell>(): R;
       new: <R = NSColorWell>() => R;
       _delayedDeactiveWindowlessWell<R = void, P0 = unknown>(__delayedDeactiveWindowlessWell: P0): R;

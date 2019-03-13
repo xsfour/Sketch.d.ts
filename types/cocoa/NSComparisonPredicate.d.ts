@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSComparisonPredicate<T = any> extends cocoa.NSPredicate {
+  export interface NSComparisonPredicate<T = any> extends NSPredicate {
     _acceptExpressions_flags<R = void, P0 = unknown, P1 = number>(__acceptExpressions: P0, _flags: P1): R;
     _acceptOperator_flags<R = void, P0 = unknown, P1 = number>(__acceptOperator: P0, _flags: P1): R;
     hash<R = number>(): R;
@@ -17,13 +17,13 @@ declare namespace cocoa {
     initWithLeftExpression_rightExpression_modifier_type_options<R = unknown, P0 = unknown, P1 = unknown, P2 = number, P3 = number, P4 = number>(_initWithLeftExpression: P0, _rightExpression: P1, _modifier: P2, _type: P3, _options: P4): R;
     options<R = number>(): R;
     customSelector<R = string>(): R;
-    rightExpression<R = cocoa.NSExpression>(): R;
-    leftExpression<R = cocoa.NSExpression>(): R;
+    rightExpression<R = NSExpression>(): R;
+    leftExpression<R = NSExpression>(): R;
     comparisonPredicateModifier<R = number>(): R;
     predicateOperatorType<R = number>(): R;
   }
   namespace classes {
-    export interface NSComparisonPredicate<T = any> extends cocoa.classes.NSPredicate {
+    export interface NSComparisonPredicate<T = any> extends NSPredicate {
       alloc<R = NSComparisonPredicate>(): R;
       new: <R = NSComparisonPredicate>() => R;
       predicateWithPredicateOperator_leftExpression_rightExpression<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_predicateWithPredicateOperator: P0, _leftExpression: P1, _rightExpression: P2): R;

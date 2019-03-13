@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImageLayerImporter<T = any> extends cocoa.NSObject {}
+  export interface MSImageLayerImporter<T = any> extends NSObject {}
   namespace classes {
-    export interface MSImageLayerImporter<T = any> extends cocoa.classes.NSObject {
+    export interface MSImageLayerImporter<T = any> extends NSObject {
       alloc<R = MSImageLayerImporter>(): R;
       new: <R = MSImageLayerImporter>() => R;
       fileIsVectorFormat<R = boolean, P0 = unknown>(_fileIsVectorFormat: P0): R;

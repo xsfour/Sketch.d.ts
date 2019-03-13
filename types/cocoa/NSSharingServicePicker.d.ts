@@ -1,16 +1,16 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSharingServicePicker<T = any> extends cocoa.NSObject {
+  export interface NSSharingServicePicker<T = any> extends NSObject {
     style<R = number>(): R;
     setStyle<R = void, P0 = number>(_setStyle: P0): R;
     menu<R = unknown>(): R;
     actionForLayer_forKey<R = unknown, P0 = unknown, P1 = unknown>(_actionForLayer: P0, _forKey: P1): R;
-    drawLayer_inContext<R = void, P0 = unknown, P1 = cocoa.CGContext>(_drawLayer: P0, _inContext: P1): R;
-    rectForBounds_preferredEdge<R = cocoa.CGRect, P0 = cocoa.CGRect, P1 = number>(_rectForBounds: P0, _preferredEdge: P1): R;
+    drawLayer_inContext<R = void, P0 = unknown, P1 = CGContext>(_drawLayer: P0, _inContext: P1): R;
+    rectForBounds_preferredEdge<R = CGRect, P0 = CGRect, P1 = number>(_rectForBounds: P0, _preferredEdge: P1): R;
     rolloverButtonCell<R = unknown>(): R;
     hide<R = void>(): R;
-    showRelativeToRect_ofView_preferredEdge<R = void, P0 = cocoa.CGRect, P1 = unknown, P2 = number>(_showRelativeToRect: P0, _ofView: P1, _preferredEdge: P2): R;
+    showRelativeToRect_ofView_preferredEdge<R = void, P0 = CGRect, P1 = unknown, P2 = number>(_showRelativeToRect: P0, _ofView: P1, _preferredEdge: P2): R;
     _openAppExtensionsPrefpane<R = void, P0 = unknown>(__openAppExtensionsPrefpane: P0): R;
     _serviceSelected<R = void, P0 = unknown>(__serviceSelected: P0): R;
     _uppercaseString<R = void, P0 = unknown>(__uppercaseString: P0): R;
@@ -25,11 +25,11 @@ declare namespace cocoa {
     _prepareSHKSharingServicePicker<R = unknown>(): R;
     dealloc<R = void>(): R;
     initWithItems<R = unknown, P0 = unknown>(_initWithItems: P0): R;
-    delegate<R = cocoa.NSSharingServicePickerDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSSharingServicePickerDelegate>(_v: P0): R;
+    delegate<R = NSSharingServicePickerDelegate>(): R;
+    setDelegate<R = void, P0 = NSSharingServicePickerDelegate>(_v: P0): R;
   }
   namespace classes {
-    export interface NSSharingServicePicker<T = any> extends cocoa.classes.NSObject {
+    export interface NSSharingServicePicker<T = any> extends NSObject {
       alloc<R = NSSharingServicePicker>(): R;
       new: <R = NSSharingServicePicker>() => R;
       openAppExtensionsPrefPane<R = void>(): R;

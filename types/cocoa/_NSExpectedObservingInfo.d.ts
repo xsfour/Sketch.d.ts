@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSExpectedObservingInfo<T = any> extends cocoa.NSObject {
+  export interface _NSExpectedObservingInfo<T = any> extends NSObject {
     description<R = unknown>(): R;
     shouldSuppressNotificationFromObject_keyPath<R = boolean, P0 = unknown, P1 = unknown>(_shouldSuppressNotificationFromObject: P0, _keyPath: P1): R;
     unsuppressSpecificNotificationFromObject_keyPath<R = void, P0 = unknown, P1 = unknown>(_unsuppressSpecificNotificationFromObject: P0, _keyPath: P1): R;
@@ -13,7 +13,7 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
   }
   namespace classes {
-    export interface _NSExpectedObservingInfo<T = any> extends cocoa.classes.NSObject {
+    export interface _NSExpectedObservingInfo<T = any> extends NSObject {
       alloc<R = _NSExpectedObservingInfo>(): R;
       new: <R = _NSExpectedObservingInfo>() => R;
     }

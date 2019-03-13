@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSpringAnimation<T = any> extends cocoa.NSAnimation {
+  export interface NSSpringAnimation<T = any> extends NSAnimation {
     currentValue<R = number>(): R;
     durationForEpsilon<R = number, P0 = number>(_durationForEpsilon: P0): R;
     initWithDuration<R = unknown, P0 = number>(_initWithDuration: P0): R;
-    timingFunction<R = cocoa.CAMediaTimingFunction>(): R;
-    setTimingFunction<R = void, P0 = cocoa.CAMediaTimingFunction>(_v: P0): R;
+    timingFunction<R = CAMediaTimingFunction>(): R;
+    setTimingFunction<R = void, P0 = CAMediaTimingFunction>(_v: P0): R;
     velocity<R = number>(): R;
     setVelocity<R = void, P0 = number>(_v: P0): R;
     damping<R = number>(): R;
@@ -17,7 +17,7 @@ declare namespace cocoa {
     setMass<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface NSSpringAnimation<T = any> extends cocoa.classes.NSAnimation {
+    export interface NSSpringAnimation<T = any> extends NSAnimation {
       alloc<R = NSSpringAnimation>(): R;
       new: <R = NSSpringAnimation>() => R;
     }

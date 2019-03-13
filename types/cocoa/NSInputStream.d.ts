@@ -17,7 +17,7 @@ declare namespace cocoa {
       inputStreamWithURL<R = unknown, P0 = unknown>(_inputStreamWithURL: P0): R;
       inputStreamWithFileAtPath<R = unknown, P0 = unknown>(_inputStreamWithFileAtPath: P0): R;
       inputStreamWithData<R = unknown, P0 = unknown>(_inputStreamWithData: P0): R;
-      allocWithZone<R = unknown, P0 = cocoa._NSZone>(_allocWithZone: P0): R;
+      allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
     }
   }
 }

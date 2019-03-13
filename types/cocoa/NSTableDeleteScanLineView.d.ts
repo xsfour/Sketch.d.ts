@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableDeleteScanLineView<T = any> extends cocoa.NSView {
+  export interface NSTableDeleteScanLineView<T = any> extends NSView {
     wantsUpdateLayer<R = boolean>(): R;
-    deleteLineColor<R = cocoa.NSColor>(): R;
-    setDeleteLineColor<R = void, P0 = cocoa.NSColor>(_v: P0): R;
+    deleteLineColor<R = NSColor>(): R;
+    setDeleteLineColor<R = void, P0 = NSColor>(_v: P0): R;
   }
   namespace classes {
-    export interface NSTableDeleteScanLineView<T = any> extends cocoa.classes.NSView {
+    export interface NSTableDeleteScanLineView<T = any> extends NSView {
       alloc<R = NSTableDeleteScanLineView>(): R;
       new: <R = NSTableDeleteScanLineView>() => R;
     }

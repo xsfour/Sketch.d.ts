@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSIBUserDefinedRuntimeAttributesConnector<T = any> extends cocoa.NSObject {
+  export interface NSIBUserDefinedRuntimeAttributesConnector<T = any> extends NSObject {
     instantiateWithObjectInstantiator<R = void, P0 = unknown>(_instantiateWithObjectInstantiator: P0): R;
     establishConnection<R = void>(): R;
     replaceObject_withObject<R = void, P0 = unknown, P1 = unknown>(_replaceObject: P0, _withObject: P1): R;
@@ -22,7 +22,7 @@ declare namespace cocoa {
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
   }
   namespace classes {
-    export interface NSIBUserDefinedRuntimeAttributesConnector<T = any> extends cocoa.classes.NSObject {
+    export interface NSIBUserDefinedRuntimeAttributesConnector<T = any> extends NSObject {
       alloc<R = NSIBUserDefinedRuntimeAttributesConnector>(): R;
       new: <R = NSIBUserDefinedRuntimeAttributesConnector>() => R;
     }

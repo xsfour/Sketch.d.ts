@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAKDeserializerStream<T = any> extends cocoa.NSObject, cocoa.NSDeserializerStreamProtocol {
+  export interface NSAKDeserializerStream<T = any> extends NSObject, NSDeserializerStreamProtocol {
     initFromPath<R = unknown, P0 = unknown>(_initFromPath: P0): R;
     dealloc<R = void>(): R;
   }
   namespace classes {
-    export interface NSAKDeserializerStream<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSDeserializerStreamProtocol {
+    export interface NSAKDeserializerStream<T = any> extends NSObject, NSDeserializerStreamProtocol {
       alloc<R = NSAKDeserializerStream>(): R;
       new: <R = NSAKDeserializerStream>() => R;
     }

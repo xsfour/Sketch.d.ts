@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutableSymbolContainer<T = any> extends cocoa._MSImmutableSymbolContainer {}
+  export interface MSImmutableSymbolContainer<T = any> extends _MSImmutableSymbolContainer {}
   namespace classes {
-    export interface MSImmutableSymbolContainer<T = any> extends cocoa.classes._MSImmutableSymbolContainer {
+    export interface MSImmutableSymbolContainer<T = any> extends _MSImmutableSymbolContainer {
       alloc<R = MSImmutableSymbolContainer>(): R;
       new: <R = MSImmutableSymbolContainer>() => R;
     }

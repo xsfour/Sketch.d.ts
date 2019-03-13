@@ -10,5 +10,3 @@ declare namespace cocoa {
     export interface MSGPUTextureProtocol<T = any> {  }
   }
 }
-
-declare const MSGPUTextureProtocol: cocoa.classes.MSGPUTextureProtocol;

@@ -1,14 +1,14 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDocumentRevisionsWindowTransformAnimationGroup<T = any> extends cocoa.NSAnimation {
+  export interface NSDocumentRevisionsWindowTransformAnimationGroup<T = any> extends NSAnimation {
     setCurrentProgress<R = void, P0 = number>(_setCurrentProgress: P0): R;
     initWithAnimations<R = unknown, P0 = unknown>(_initWithAnimations: P0): R;
-    completionHandler<R = cocoa.CDUnknownBlockType>(): R;
-    setCompletionHandler<R = void, P0 = cocoa.CDUnknownBlockType>(_v: P0): R;
+    completionHandler<R = CDUnknownBlockType>(): R;
+    setCompletionHandler<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
   }
   namespace classes {
-    export interface NSDocumentRevisionsWindowTransformAnimationGroup<T = any> extends cocoa.classes.NSAnimation {
+    export interface NSDocumentRevisionsWindowTransformAnimationGroup<T = any> extends NSAnimation {
       alloc<R = NSDocumentRevisionsWindowTransformAnimationGroup>(): R;
       new: <R = NSDocumentRevisionsWindowTransformAnimationGroup>() => R;
     }

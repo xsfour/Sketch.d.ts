@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInsertVectorAction<T = any> extends cocoa.MSDocumentAction {
+  export interface MSInsertVectorAction<T = any> extends MSDocumentAction {
     isSelectable<R = boolean>(): R;
     isActive<R = boolean>(): R;
     label<R = unknown>(): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     insertVector<R = void, P0 = unknown>(_insertVector: P0): R;
   }
   namespace classes {
-    export interface MSInsertVectorAction<T = any> extends cocoa.classes.MSDocumentAction {
+    export interface MSInsertVectorAction<T = any> extends MSDocumentAction {
       alloc<R = MSInsertVectorAction>(): R;
       new: <R = MSInsertVectorAction>() => R;
     }

@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSStatusItemReplicantView<T = any> extends cocoa.NSView {
+  export interface NSStatusItemReplicantView<T = any> extends NSView {
     allowsVibrancy<R = boolean>(): R;
-    drawBlock<R = cocoa.CDUnknownBlockType>(): R;
-    setDrawBlock<R = void, P0 = cocoa.CDUnknownBlockType>(_v: P0): R;
+    drawBlock<R = CDUnknownBlockType>(): R;
+    setDrawBlock<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
   }
   namespace classes {
-    export interface NSStatusItemReplicantView<T = any> extends cocoa.classes.NSView {
+    export interface NSStatusItemReplicantView<T = any> extends NSView {
       alloc<R = NSStatusItemReplicantView>(): R;
       new: <R = NSStatusItemReplicantView>() => R;
     }

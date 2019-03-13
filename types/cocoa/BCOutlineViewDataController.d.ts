@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCOutlineViewDataController<T = any> extends cocoa.NSObject {
+  export interface BCOutlineViewDataController<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     refreshPreviewsOnNode<R = void, P0 = unknown>(_refreshPreviewsOnNode: P0): R;
     handleBadgePressedOnNode_withAltState<R = void, P0 = unknown, P1 = boolean>(_handleBadgePressedOnNode: P0, _withAltState: P1): R;
@@ -27,21 +27,21 @@ declare namespace cocoa {
     childrenOfNode<R = unknown, P0 = unknown>(_childrenOfNode: P0): R;
     nodeOrChildMatchesFilter<R = boolean, P0 = unknown>(_nodeOrChildMatchesFilter: P0): R;
     initWithDataSource_delegate<R = unknown, P0 = unknown, P1 = unknown>(_initWithDataSource: P0, _delegate: P1): R;
-    cachedNodesChildren<R = cocoa.NSArray>(): R;
-    setCachedNodesChildren<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    cachedNodesChildren<R = NSArray>(): R;
+    setCachedNodesChildren<R = void, P0 = NSArray>(_v: P0): R;
     cachedNode<R = unknown>(): R;
     setCachedNode<R = void, P0 = unknown>(_v: P0): R;
-    filter<R = cocoa.BCFilterInfo>(): R;
-    setFilter<R = void, P0 = cocoa.BCFilterInfo>(_v: P0): R;
-    dataSource<R = cocoa.BCOutlineViewDataControllerDataSource>(): R;
-    delegate<R = cocoa.BCOutlineViewDataControllerDelegate>(): R;
+    filter<R = BCFilterInfo>(): R;
+    setFilter<R = void, P0 = BCFilterInfo>(_v: P0): R;
+    dataSource<R = BCOutlineViewDataControllerDataSource>(): R;
+    delegate<R = BCOutlineViewDataControllerDelegate>(): R;
     rootObject<R = unknown>(): R;
     canProvideContextMenuItems<R = boolean>(): R;
-    dragTypes<R = cocoa.NSArray>(): R;
-    nodeFilterPredicate<R = cocoa.NSPredicate>(): R;
+    dragTypes<R = NSArray>(): R;
+    nodeFilterPredicate<R = NSPredicate>(): R;
   }
   namespace classes {
-    export interface BCOutlineViewDataController<T = any> extends cocoa.classes.NSObject {
+    export interface BCOutlineViewDataController<T = any> extends NSObject {
       alloc<R = BCOutlineViewDataController>(): R;
       new: <R = BCOutlineViewDataController>() => R;
     }

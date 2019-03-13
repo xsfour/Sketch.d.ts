@@ -1,17 +1,17 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSCGSTransaction<T = any> extends cocoa.NSObject {
+  export interface _NSCGSTransaction<T = any> extends NSObject {
     disableUpdates<R = void>(): R;
     synchronize<R = void>(): R;
     setObject_forKey<R = void, P0 = unknown, P1 = unknown>(_setObject: P0, _forKey: P1): R;
     objectForKey<R = unknown, P0 = unknown>(_objectForKey: P0): R;
-    addPostCommitAction<R = void, P0 = cocoa.CDUnknownBlockType>(_addPostCommitAction: P0): R;
-    addActionWithOrder_usingBlock<R = void, P0 = number, P1 = cocoa.CDUnknownBlockType>(_addActionWithOrder: P0, _usingBlock: P1): R;
+    addPostCommitAction<R = void, P0 = CDUnknownBlockType>(_addPostCommitAction: P0): R;
+    addActionWithOrder_usingBlock<R = void, P0 = number, P1 = CDUnknownBlockType>(_addActionWithOrder: P0, _usingBlock: P1): R;
     dealloc<R = void>(): R;
   }
   namespace classes {
-    export interface _NSCGSTransaction<T = any> extends cocoa.classes.NSObject {
+    export interface _NSCGSTransaction<T = any> extends NSObject {
       alloc<R = _NSCGSTransaction>(): R;
       new: <R = _NSCGSTransaction>() => R;
       isActive<R = boolean>(): R;

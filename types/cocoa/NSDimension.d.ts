@@ -1,15 +1,15 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDimension<T = any> extends cocoa.NSUnit, cocoa.NSSecureCodingProtocol {
+  export interface NSDimension<T = any> extends NSUnit, NSSecureCodingProtocol {
     dimension<R = unknown>(): R;
     initWithSpecifier_symbol_converter<R = unknown, P0 = number, P1 = unknown, P2 = unknown>(_initWithSpecifier: P0, _symbol: P1, _converter: P2): R;
     initWithSymbol_converter<R = unknown, P0 = unknown, P1 = unknown>(_initWithSymbol: P0, _converter: P1): R;
-    converter<R = cocoa.NSUnitConverter>(): R;
+    converter<R = NSUnitConverter>(): R;
     specifier<R = number>(): R;
   }
   namespace classes {
-    export interface NSDimension<T = any> extends cocoa.classes.NSUnit, cocoa.classes.NSSecureCodingProtocol {
+    export interface NSDimension<T = any> extends NSUnit, NSSecureCodingProtocol {
       alloc<R = NSDimension>(): R;
       new: <R = NSDimension>() => R;
       baseUnit<R = unknown>(): R;

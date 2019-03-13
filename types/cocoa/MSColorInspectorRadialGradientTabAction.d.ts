@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSColorInspectorRadialGradientTabAction<T = any> extends cocoa.MSColorInspectorModePickerAction {}
+  export interface MSColorInspectorRadialGradientTabAction<T = any> extends MSColorInspectorModePickerAction {}
   namespace classes {
-    export interface MSColorInspectorRadialGradientTabAction<T = any> extends cocoa.classes.MSColorInspectorModePickerAction {
+    export interface MSColorInspectorRadialGradientTabAction<T = any> extends MSColorInspectorModePickerAction {
       alloc<R = MSColorInspectorRadialGradientTabAction>(): R;
       new: <R = MSColorInspectorRadialGradientTabAction>() => R;
     }

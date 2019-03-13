@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSRoundToPixelAction<T = any> extends cocoa.MSDocumentAction {
+  export interface MSRoundToPixelAction<T = any> extends MSDocumentAction {
     roundCurvePointsAtIndexPaths_ofShapes<R = void, P0 = unknown, P1 = unknown>(_roundCurvePointsAtIndexPaths: P0, _ofShapes: P1): R;
     roundCurvePointsInPath<R = void, P0 = unknown>(_roundCurvePointsInPath: P0): R;
     roundLayerPoints<R = void, P0 = unknown>(_roundLayerPoints: P0): R;
@@ -21,7 +21,7 @@ declare namespace cocoa {
     roundToPixel<R = void, P0 = unknown>(_roundToPixel: P0): R;
   }
   namespace classes {
-    export interface MSRoundToPixelAction<T = any> extends cocoa.classes.MSDocumentAction {
+    export interface MSRoundToPixelAction<T = any> extends MSDocumentAction {
       alloc<R = MSRoundToPixelAction>(): R;
       new: <R = MSRoundToPixelAction>() => R;
     }

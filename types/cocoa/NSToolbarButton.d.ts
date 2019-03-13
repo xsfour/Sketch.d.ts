@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSToolbarButton<T = any> extends cocoa.NSButton {
+  export interface NSToolbarButton<T = any> extends NSButton {
     cachedDrawingImage<R = unknown>(): R;
     invalidateCachedDrawingImage<R = void>(): R;
     refusesFirstResponder<R = boolean>(): R;
@@ -11,7 +11,7 @@ declare namespace cocoa {
     initWithItem<R = unknown, P0 = unknown>(_initWithItem: P0): R;
   }
   namespace classes {
-    export interface NSToolbarButton<T = any> extends cocoa.classes.NSButton {
+    export interface NSToolbarButton<T = any> extends NSButton {
       alloc<R = NSToolbarButton>(): R;
       new: <R = NSToolbarButton>() => R;
     }

@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSOpenGLTexture<T = any> extends cocoa.NSObject, cocoa.MSGPUTextureProtocol {
-    readImageWithColorSpace<R = cocoa.CGImage, P0 = cocoa.CGColorSpace>(_readImageWithColorSpace: P0): R;
+  export interface MSOpenGLTexture<T = any> extends NSObject, MSGPUTextureProtocol {
+    readImageWithColorSpace<R = CGImage, P0 = CGColorSpace>(_readImageWithColorSpace: P0): R;
     dealloc<R = void>(): R;
     initWithTextureID_width_height<R = unknown, P0 = number, P1 = number, P2 = number>(_initWithTextureID: P0, _width: P1, _height: P2): R;
     filter<R = number>(): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     textureID<R = number>(): R;
   }
   namespace classes {
-    export interface MSOpenGLTexture<T = any> extends cocoa.classes.NSObject, cocoa.classes.MSGPUTextureProtocol {
+    export interface MSOpenGLTexture<T = any> extends NSObject, MSGPUTextureProtocol {
       alloc<R = MSOpenGLTexture>(): R;
       new: <R = MSOpenGLTexture>() => R;
     }

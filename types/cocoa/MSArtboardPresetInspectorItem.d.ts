@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSArtboardPresetInspectorItem<T = any> extends cocoa.MSInspectorItem, cocoa.MSArtboardPresetsViewControllerDelegateProtocol, cocoa.MSEditArtboardPresetViewControllerDelegateProtocol {
+  export interface MSArtboardPresetInspectorItem<T = any> extends MSInspectorItem, MSArtboardPresetsViewControllerDelegateProtocol, MSEditArtboardPresetViewControllerDelegateProtocol {
     dismissAllPresentedViewControllers<R = void>(): R;
     observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
     orientationOfArtboard<R = unknown, P0 = unknown>(_orientationOfArtboard: P0): R;
@@ -15,18 +15,18 @@ declare namespace cocoa {
     sizeStringForPreset_match<R = unknown, P0 = unknown, P1 = number>(_sizeStringForPreset: P0, _match: P1): R;
     refreshPresetButtonAndPopover<R = void>(): R;
     showPresets<R = void, P0 = unknown>(_showPresets: P0): R;
-    presetButton<R = cocoa.MSArtboardPresetButton>(): R;
-    setPresetButton<R = void, P0 = cocoa.MSArtboardPresetButton>(_v: P0): R;
-    presetStore<R = cocoa.MSArtboardPresetStore>(): R;
-    presetsViewController<R = cocoa.MSArtboardPresetsViewController>(): R;
-    setPresetsViewController<R = void, P0 = cocoa.MSArtboardPresetsViewController>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    presetButton<R = MSArtboardPresetButton>(): R;
+    setPresetButton<R = void, P0 = MSArtboardPresetButton>(_v: P0): R;
+    presetStore<R = MSArtboardPresetStore>(): R;
+    presetsViewController<R = MSArtboardPresetsViewController>(): R;
+    setPresetsViewController<R = void, P0 = MSArtboardPresetsViewController>(_v: P0): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSArtboardPresetInspectorItem<T = any> extends cocoa.classes.MSInspectorItem, cocoa.classes.MSArtboardPresetsViewControllerDelegateProtocol, cocoa.classes.MSEditArtboardPresetViewControllerDelegateProtocol {
+    export interface MSArtboardPresetInspectorItem<T = any> extends MSInspectorItem, MSArtboardPresetsViewControllerDelegateProtocol, MSEditArtboardPresetViewControllerDelegateProtocol {
       alloc<R = MSArtboardPresetInspectorItem>(): R;
       new: <R = MSArtboardPresetInspectorItem>() => R;
     }

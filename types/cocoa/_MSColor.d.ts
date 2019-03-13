@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSColor<T = any> extends cocoa.MSModelObject {
+  export interface _MSColor<T = any> extends MSModelObject {
     hasDefaultValues<R = boolean>(): R;
     setRed<R = void, P0 = number>(_setRed: P0): R;
     setGreen<R = void, P0 = number>(_setGreen: P0): R;
@@ -13,7 +13,7 @@ declare namespace cocoa {
     alpha<R = number>(): R;
   }
   namespace classes {
-    export interface _MSColor<T = any> extends cocoa.classes.MSModelObject {
+    export interface _MSColor<T = any> extends MSModelObject {
       alloc<R = _MSColor>(): R;
       new: <R = _MSColor>() => R;
     }

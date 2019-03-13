@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSColorHexField<T = any> extends cocoa.NSTextField {}
+  export interface MSColorHexField<T = any> extends NSTextField {}
   namespace classes {
-    export interface MSColorHexField<T = any> extends cocoa.classes.NSTextField {
+    export interface MSColorHexField<T = any> extends NSTextField {
       alloc<R = MSColorHexField>(): R;
       new: <R = MSColorHexField>() => R;
     }

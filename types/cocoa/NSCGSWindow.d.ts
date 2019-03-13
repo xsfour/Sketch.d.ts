@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCGSWindow<T = any> extends cocoa.NSObject {
+  export interface NSCGSWindow<T = any> extends NSObject {
     invalidateAlphaShape<R = void>(): R;
     _prepareForRelativeMoveForWindow<R = void, P0 = unknown>(__prepareForRelativeMoveForWindow: P0): R;
     _hasUncommittedSpaceGeometryChanges<R = boolean>(): R;
@@ -49,8 +49,8 @@ declare namespace cocoa {
     addMovementChild<R = void, P0 = unknown>(_addMovementChild: P0): R;
     thaw<R = void>(): R;
     freezeWithOptions<R = void, P0 = unknown>(_freezeWithOptions: P0): R;
-    setTransform_placement<R = void, P0 = cocoa.CGAffineTransform, P1 = number>(_setTransform: P0, _placement: P1): R;
-    confineMouseToRect<R = void, P0 = cocoa.CGRect>(_confineMouseToRect: P0): R;
+    setTransform_placement<R = void, P0 = CGAffineTransform, P1 = number>(_setTransform: P0, _placement: P1): R;
+    confineMouseToRect<R = void, P0 = CGRect>(_confineMouseToRect: P0): R;
     backdropChameleonContribution<R = number>(): R;
     setBackdropChameleonContribution<R = void, P0 = number>(_v: P0): R;
     backdropBleedFraction<R = number>(): R;
@@ -60,47 +60,47 @@ declare namespace cocoa {
     orderedIn<R = boolean>(): R;
     level<R = number>(): R;
     setLevel<R = void, P0 = number>(_v: P0): R;
-    backingStore<R = cocoa.NSCGSWindowBackingStore>(): R;
+    backingStore<R = NSCGSWindowBackingStore>(): R;
     hasBackingStore<R = boolean>(): R;
     setHasBackingStore<R = void, P0 = boolean>(_v: P0): R;
-    size<R = cocoa.CGSize>(): R;
-    setSize<R = void, P0 = cocoa.CGSize>(_v: P0): R;
-    frame<R = cocoa.CGRect>(): R;
-    setFrame<R = void, P0 = cocoa.CGRect>(_v: P0): R;
-    movementChildren<R = cocoa.NSArray>(): R;
-    setMovementChildren<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    activationShape<R = cocoa.CGSRegionObject>(): R;
-    setActivationShape<R = void, P0 = cocoa.CGSRegionObject>(_v: P0): R;
-    buttonShape<R = cocoa.CGSRegionObject>(): R;
-    setButtonShape<R = void, P0 = cocoa.CGSRegionObject>(_v: P0): R;
-    chameleonOverrideColor<R = cocoa.CGColor>(): R;
-    setChameleonOverrideColor<R = void, P0 = cocoa.CGColor>(_v: P0): R;
-    commandModifierExclusionShape<R = cocoa.CGSRegionObject>(): R;
-    setCommandModifierExclusionShape<R = void, P0 = cocoa.CGSRegionObject>(_v: P0): R;
-    cornerMask<R = cocoa.NSCGSWindowCornerMask>(): R;
-    setCornerMask<R = void, P0 = cocoa.NSCGSWindowCornerMask>(_v: P0): R;
-    dragShape<R = cocoa.CGSRegionObject>(): R;
-    setDragShape<R = void, P0 = cocoa.CGSRegionObject>(_v: P0): R;
-    eventShape<R = cocoa.CGSRegionObject>(): R;
-    setEventShape<R = void, P0 = cocoa.CGSRegionObject>(_v: P0): R;
+    size<R = CGSize>(): R;
+    setSize<R = void, P0 = CGSize>(_v: P0): R;
+    frame<R = CGRect>(): R;
+    setFrame<R = void, P0 = CGRect>(_v: P0): R;
+    movementChildren<R = NSArray>(): R;
+    setMovementChildren<R = void, P0 = NSArray>(_v: P0): R;
+    activationShape<R = CGSRegionObject>(): R;
+    setActivationShape<R = void, P0 = CGSRegionObject>(_v: P0): R;
+    buttonShape<R = CGSRegionObject>(): R;
+    setButtonShape<R = void, P0 = CGSRegionObject>(_v: P0): R;
+    chameleonOverrideColor<R = CGColor>(): R;
+    setChameleonOverrideColor<R = void, P0 = CGColor>(_v: P0): R;
+    commandModifierExclusionShape<R = CGSRegionObject>(): R;
+    setCommandModifierExclusionShape<R = void, P0 = CGSRegionObject>(_v: P0): R;
+    cornerMask<R = NSCGSWindowCornerMask>(): R;
+    setCornerMask<R = void, P0 = NSCGSWindowCornerMask>(_v: P0): R;
+    dragShape<R = CGSRegionObject>(): R;
+    setDragShape<R = void, P0 = CGSRegionObject>(_v: P0): R;
+    eventShape<R = CGSRegionObject>(): R;
+    setEventShape<R = void, P0 = CGSRegionObject>(_v: P0): R;
     hasKeyAppearance<R = boolean>(): R;
     setHasKeyAppearance<R = void, P0 = boolean>(_v: P0): R;
     hasMainAppearance<R = boolean>(): R;
     setHasMainAppearance<R = void, P0 = boolean>(_v: P0): R;
     opacity<R = number>(): R;
     setOpacity<R = void, P0 = number>(_v: P0): R;
-    opaqueShape<R = cocoa.CGSRegionObject>(): R;
-    setOpaqueShape<R = void, P0 = cocoa.CGSRegionObject>(_v: P0): R;
-    shadowProperties<R = cocoa.NSDictionary>(): R;
-    setShadowProperties<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
-    shape<R = cocoa.CGSRegionObject>(): R;
-    setShape<R = void, P0 = cocoa.CGSRegionObject>(_v: P0): R;
+    opaqueShape<R = CGSRegionObject>(): R;
+    setOpaqueShape<R = void, P0 = CGSRegionObject>(_v: P0): R;
+    shadowProperties<R = NSDictionary>(): R;
+    setShadowProperties<R = void, P0 = NSDictionary>(_v: P0): R;
+    shape<R = CGSRegionObject>(): R;
+    setShape<R = void, P0 = CGSRegionObject>(_v: P0): R;
     useActiveShadow<R = boolean>(): R;
     setUseActiveShadow<R = void, P0 = boolean>(_v: P0): R;
     windowID<R = number>(): R;
   }
   namespace classes {
-    export interface NSCGSWindow<T = any> extends cocoa.classes.NSObject {
+    export interface NSCGSWindow<T = any> extends NSObject {
       alloc<R = NSCGSWindow>(): R;
       new: <R = NSCGSWindow>() => R;
       isAnyWindowOnAVisibleSpace<R = boolean, P0 = unknown>(_isAnyWindowOnAVisibleSpace: P0): R;
@@ -113,12 +113,12 @@ declare namespace cocoa {
       windowWithWindowID<R = unknown, P0 = number>(_windowWithWindowID: P0): R;
       window<R = unknown>(): R;
       windowWithConnectionID<R = unknown, P0 = number>(_windowWithConnectionID: P0): R;
-      convertPointFromCGCoordinates<R = cocoa.CGPoint, P0 = cocoa.CGPoint>(_convertPointFromCGCoordinates: P0): R;
-      convertPointToCGCoordinates<R = cocoa.CGPoint, P0 = cocoa.CGPoint>(_convertPointToCGCoordinates: P0): R;
-      convertRectFromCGCoordinates<R = cocoa.CGRect, P0 = cocoa.CGRect>(_convertRectFromCGCoordinates: P0): R;
-      convertRectToCGCoordinates<R = cocoa.CGRect, P0 = cocoa.CGRect>(_convertRectToCGCoordinates: P0): R;
-      performBarrier<R = void, P0 = cocoa.CDUnknownBlockType>(_performBarrier: P0): R;
-      coalesceUpdateOnSendRight<R = void, P0 = cocoa._mach_right_send>(_coalesceUpdateOnSendRight: P0): R;
+      convertPointFromCGCoordinates<R = CGPoint, P0 = CGPoint>(_convertPointFromCGCoordinates: P0): R;
+      convertPointToCGCoordinates<R = CGPoint, P0 = CGPoint>(_convertPointToCGCoordinates: P0): R;
+      convertRectFromCGCoordinates<R = CGRect, P0 = CGRect>(_convertRectFromCGCoordinates: P0): R;
+      convertRectToCGCoordinates<R = CGRect, P0 = CGRect>(_convertRectToCGCoordinates: P0): R;
+      performBarrier<R = void, P0 = CDUnknownBlockType>(_performBarrier: P0): R;
+      coalesceUpdateOnSendRight<R = void, P0 = _mach_right_send>(_coalesceUpdateOnSendRight: P0): R;
       reenableScreenUpdates<R = void>(): R;
       disableScreenUpdates<R = void>(): R;
       synchronizeForCarbon<R = void>(): R;

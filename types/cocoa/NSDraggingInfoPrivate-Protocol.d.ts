@@ -8,5 +8,3 @@ declare namespace cocoa {
     export interface NSDraggingInfoPrivateProtocol<T = any> {  }
   }
 }
-
-declare const NSDraggingInfoPrivateProtocol: cocoa.classes.NSDraggingInfoPrivateProtocol;

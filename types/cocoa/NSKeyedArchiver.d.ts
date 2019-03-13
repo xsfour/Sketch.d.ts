@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSKeyedArchiver<T = any> extends cocoa.NSCoder {
+  export interface NSKeyedArchiver<T = any> extends NSCoder {
     _encodePropertyList_forKey<R = void, P0 = unknown, P1 = unknown>(__encodePropertyList: P0, _forKey: P1): R;
     _encodeArrayOfObjects_forKey<R = void, P0 = unknown, P1 = unknown>(__encodeArrayOfObjects: P0, _forKey: P1): R;
     replaceObject_withObject<R = void, P0 = unknown, P1 = unknown>(_replaceObject: P0, _withObject: P1): R;
@@ -17,14 +17,14 @@ declare namespace cocoa {
     _setBlobForCurrentObject<R = void, P0 = unknown>(__setBlobForCurrentObject: P0): R;
     requiresSecureCoding<R = boolean>(): R;
     setRequiresSecureCoding<R = void, P0 = boolean>(_v: P0): R;
-    encodedData<R = cocoa.NSData>(): R;
+    encodedData<R = NSData>(): R;
     outputFormat<R = number>(): R;
     setOutputFormat<R = void, P0 = number>(_v: P0): R;
-    delegate<R = cocoa.NSKeyedArchiverDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSKeyedArchiverDelegate>(_v: P0): R;
+    delegate<R = NSKeyedArchiverDelegate>(): R;
+    setDelegate<R = void, P0 = NSKeyedArchiverDelegate>(_v: P0): R;
   }
   namespace classes {
-    export interface NSKeyedArchiver<T = any> extends cocoa.classes.NSCoder {
+    export interface NSKeyedArchiver<T = any> extends NSCoder {
       alloc<R = NSKeyedArchiver>(): R;
       new: <R = NSKeyedArchiver>() => R;
       archiveRootObject_toFile<R = boolean, P0 = unknown, P1 = unknown>(_archiveRootObject: P0, _toFile: P1): R;

@@ -11,12 +11,10 @@ declare namespace cocoa {
     willBeDisplayed<R = void>(): R;
     saveChanges<R = void>(): R;
     hasChangesPending<R = boolean>(): R;
-    imageForPreferenceNamed<R = cocoa.NSImage, P0 = cocoa.NSString>(_imageForPreferenceNamed: P0): R;
-    viewForPreferenceNamed<R = cocoa.NSBox, P0 = cocoa.NSString>(_viewForPreferenceNamed: P0): R;
+    imageForPreferenceNamed<R = NSImage, P0 = NSString>(_imageForPreferenceNamed: P0): R;
+    viewForPreferenceNamed<R = NSBox, P0 = NSString>(_viewForPreferenceNamed: P0): R;
   }
   namespace classes {
     export interface NSPreferencesModuleProtocol<T = any> {  }
   }
 }
-
-declare const NSPreferencesModuleProtocol: cocoa.classes.NSPreferencesModuleProtocol;

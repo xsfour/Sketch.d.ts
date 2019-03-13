@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPersistentUIManager<T = any> extends cocoa.NSObject, cocoa.NSPersistentUIFlushHandlerProtocol {
+  export interface NSPersistentUIManager<T = any> extends NSObject, NSPersistentUIFlushHandlerProtocol {
     shouldRestoreStateOnLaunch<R = boolean>(): R;
     writePublicPlistWithOpenWindowIDs<R = void, P0 = unknown>(_writePublicPlistWithOpenWindowIDs: P0): R;
     promptToIgnorePersistentState<R = boolean>(): R;
@@ -11,7 +11,7 @@ declare namespace cocoa {
     resumeNormalWindowOrderingAndDrawing<R = void>(): R;
     delayCGWindowOrderingIfNecessary<R = void>(): R;
     performingWindowOrdering<R = boolean>(): R;
-    restoreAllPersistentStateWithCompletionHandler<R = boolean, P0 = cocoa.CDUnknownBlockType>(_restoreAllPersistentStateWithCompletionHandler: P0): R;
+    restoreAllPersistentStateWithCompletionHandler<R = boolean, P0 = CDUnknownBlockType>(_restoreAllPersistentStateWithCompletionHandler: P0): R;
     performDockCommands_withOldWindowIDToNewWindowID<R = void, P0 = unknown, P1 = unknown>(_performDockCommands: P0, _withOldWindowIDToNewWindowID: P1): R;
     changePersistentKeyPathObservationForPaths_inObject_to<R = void, P0 = unknown, P1 = unknown, P2 = boolean>(_changePersistentKeyPathObservationForPaths: P0, _inObject: P1, _to: P2): R;
     observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
@@ -33,7 +33,7 @@ declare namespace cocoa {
     acquireDirtyState<R = void>(): R;
     flushPersistentStateAndClose<R = void>(): R;
     flushPersistentStateAndClose_waitingUntilDone<R = void, P0 = boolean, P1 = boolean>(_flushPersistentStateAndClose: P0, _waitingUntilDone: P1): R;
-    _finishPendingChangesImmediatelyWithCompletionHandler<R = void, P0 = cocoa.CDUnknownBlockType>(__finishPendingChangesImmediatelyWithCompletionHandler: P0): R;
+    _finishPendingChangesImmediatelyWithCompletionHandler<R = void, P0 = CDUnknownBlockType>(__finishPendingChangesImmediatelyWithCompletionHandler: P0): R;
     fullyDirtyAndReopenPersistentState<R = void>(): R;
     discardAllPersistentStateAndClose<R = void>(): R;
     _cancelFlushTimer<R = void>(): R;
@@ -49,13 +49,13 @@ declare namespace cocoa {
     destroyExternallyCreatedWindows<R = void, P0 = unknown>(_destroyExternallyCreatedWindows: P0): R;
     copyAcquiredExternallyCreatedWindows<R = unknown>(): R;
     beginAcquiringExternallyCreatedWindows<R = void>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSPersistentUIManager<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSPersistentUIFlushHandlerProtocol {
+    export interface NSPersistentUIManager<T = any> extends NSObject, NSPersistentUIFlushHandlerProtocol {
       alloc<R = NSPersistentUIManager>(): R;
       new: <R = NSPersistentUIManager>() => R;
       unarchiver_didDecodeObject<R = unknown, P0 = unknown, P1 = unknown>(_unarchiver: P0, _didDecodeObject: P1): R;
@@ -65,7 +65,7 @@ declare namespace cocoa {
       sharedManager<R = unknown>(): R;
       copyDebugDumpStateDirectory<R = unknown, P0 = unknown>(_copyDebugDumpStateDirectory: P0): R;
       copyPersistentCarbonWindowDictionariesForBundleID<R = unknown, P0 = unknown>(_copyPersistentCarbonWindowDictionariesForBundleID: P0): R;
-      _copyCGWindowOrderingReplayer<R = cocoa.CDUnknownBlockType>(): R;
+      _copyCGWindowOrderingReplayer<R = CDUnknownBlockType>(): R;
       _resuppressWindowOrderingNowThatStateRestorationIsOccurring<R = void>(): R;
       _permitWindowOrderingUntilStateRestoration<R = void>(): R;
       _suppressCGWindowOrdering<R = boolean>(): R;

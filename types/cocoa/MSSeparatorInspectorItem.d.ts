@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSeparatorInspectorItem<T = any> extends cocoa.MSInspectorItem {}
+  export interface MSSeparatorInspectorItem<T = any> extends MSInspectorItem {}
   namespace classes {
-    export interface MSSeparatorInspectorItem<T = any> extends cocoa.classes.MSInspectorItem {
+    export interface MSSeparatorInspectorItem<T = any> extends MSInspectorItem {
       alloc<R = MSSeparatorInspectorItem>(): R;
       new: <R = MSSeparatorInspectorItem>() => R;
     }

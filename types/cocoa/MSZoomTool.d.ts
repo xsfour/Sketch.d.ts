@@ -1,21 +1,21 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSZoomTool<T = any> extends cocoa.NSObject {
+  export interface MSZoomTool<T = any> extends NSObject {
     zoomValueAfterZoomOutUnCapped<R = number>(): R;
     zoomValueAfterZoomOut<R = number>(): R;
     zoomValueAfterZoomInUnCapped<R = number>(): R;
     zoomValueAfterZoomIn<R = number>(): R;
-    drawWithScrollOrigin<R = void, P0 = cocoa.CGPoint>(_drawWithScrollOrigin: P0): R;
+    drawWithScrollOrigin<R = void, P0 = CGPoint>(_drawWithScrollOrigin: P0): R;
     shouldZoomIntoRect<R = boolean>(): R;
     mouseUp_inView<R = void, P0 = unknown, P1 = unknown>(_mouseUp: P0, _inView: P1): R;
-    zoomRect<R = cocoa.CGRect>(): R;
+    zoomRect<R = CGRect>(): R;
     applyZoomCursor<R = void>(): R;
     mouseDragged_inView<R = void, P0 = unknown, P1 = unknown>(_mouseDragged: P0, _inView: P1): R;
     mouseMoved<R = void>(): R;
     mouseDown_inView<R = void, P0 = unknown, P1 = unknown>(_mouseDown: P0, _inView: P1): R;
     flagsChanged<R = void>(): R;
-    zoomPointFromEvent_inView<R = cocoa.CGPoint, P0 = unknown, P1 = unknown>(_zoomPointFromEvent: P0, _inView: P1): R;
+    zoomPointFromEvent_inView<R = CGPoint, P0 = unknown, P1 = unknown>(_zoomPointFromEvent: P0, _inView: P1): R;
     endZoomToolModeInView<R = void, P0 = unknown>(_endZoomToolModeInView: P0): R;
     beginZoomToolModeActivatedByKey<R = void, P0 = boolean>(_beginZoomToolModeActivatedByKey: P0): R;
     activatedByKey<R = boolean>(): R;
@@ -24,7 +24,7 @@ declare namespace cocoa {
     setZoomValue<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface MSZoomTool<T = any> extends cocoa.classes.NSObject {
+    export interface MSZoomTool<T = any> extends NSObject {
       alloc<R = MSZoomTool>(): R;
       new: <R = MSZoomTool>() => R;
     }

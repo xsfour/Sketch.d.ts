@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSBuiltinCharacterSet<T = any> extends cocoa.NSCharacterSet {}
+  export interface NSBuiltinCharacterSet<T = any> extends NSCharacterSet {}
   namespace classes {
-    export interface NSBuiltinCharacterSet<T = any> extends cocoa.classes.NSCharacterSet {
+    export interface NSBuiltinCharacterSet<T = any> extends NSCharacterSet {
       alloc<R = NSBuiltinCharacterSet>(): R;
       new: <R = NSBuiltinCharacterSet>() => R;
     }

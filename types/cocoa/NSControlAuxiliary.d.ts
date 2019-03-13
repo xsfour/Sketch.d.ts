@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSControlAuxiliary<T = any> extends cocoa.NSObject {
+  export interface NSControlAuxiliary<T = any> extends NSObject {
     removeTouchingTooLongTimer<R = void>(): R;
     dealloc<R = void>(): R;
-    touchingTooLongTimer<R = cocoa.NSTimer>(): R;
-    setTouchingTooLongTimer<R = void, P0 = cocoa.NSTimer>(_v: P0): R;
+    touchingTooLongTimer<R = NSTimer>(): R;
+    setTouchingTooLongTimer<R = void, P0 = NSTimer>(_v: P0): R;
     action<R = string>(): R;
     setAction<R = void, P0 = string>(_v: P0): R;
     tag<R = number>(): R;
@@ -22,7 +22,7 @@ declare namespace cocoa {
     setTarget<R = void, P0 = unknown>(_v: P0): R;
   }
   namespace classes {
-    export interface NSControlAuxiliary<T = any> extends cocoa.classes.NSObject {
+    export interface NSControlAuxiliary<T = any> extends NSObject {
       alloc<R = NSControlAuxiliary>(): R;
       new: <R = NSControlAuxiliary>() => R;
     }

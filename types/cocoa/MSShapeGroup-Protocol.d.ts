@@ -9,5 +9,3 @@ declare namespace cocoa {
     export interface MSShapeGroupProtocol<T = any> {  }
   }
 }
-
-declare const MSShapeGroupProtocol: cocoa.classes.MSShapeGroupProtocol;

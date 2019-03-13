@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutableStyleBasicFill<T = any> extends cocoa._MSImmutableStyleBasicFill {
+  export interface MSImmutableStyleBasicFill<T = any> extends _MSImmutableStyleBasicFill {
     hasOpacity<R = boolean>(): R;
   }
   namespace classes {
-    export interface MSImmutableStyleBasicFill<T = any> extends cocoa.classes._MSImmutableStyleBasicFill {
+    export interface MSImmutableStyleBasicFill<T = any> extends _MSImmutableStyleBasicFill {
       alloc<R = MSImmutableStyleBasicFill>(): R;
       new: <R = MSImmutableStyleBasicFill>() => R;
     }

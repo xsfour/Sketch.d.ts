@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLayoutAnchor<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol, cocoa.NSCodingProtocol {
+  export interface NSLayoutAnchor<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
     constraintLessThanOrEqualToAnchor<R = unknown, P0 = unknown>(_constraintLessThanOrEqualToAnchor: P0): R;
     constraintGreaterThanOrEqualToAnchor<R = unknown, P0 = unknown>(_constraintGreaterThanOrEqualToAnchor: P0): R;
     constraintEqualToAnchor<R = unknown, P0 = unknown>(_constraintEqualToAnchor: P0): R;
@@ -67,7 +67,7 @@ declare namespace cocoa {
     _anchorAtMidpointToAnchor<R = unknown, P0 = unknown>(__anchorAtMidpointToAnchor: P0): R;
   }
   namespace classes {
-    export interface NSLayoutAnchor<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol, cocoa.classes.NSCodingProtocol {
+    export interface NSLayoutAnchor<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
       alloc<R = NSLayoutAnchor>(): R;
       new: <R = NSLayoutAnchor>() => R;
       anchorNamed_inItem_symbolicAttribute<R = unknown, P0 = unknown, P1 = unknown, P2 = number>(_anchorNamed: P0, _inItem: P1, _symbolicAttribute: P2): R;

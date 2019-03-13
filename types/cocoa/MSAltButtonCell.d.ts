@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAltButtonCell<T = any> extends cocoa.MSHoverButtonCell {}
+  export interface MSAltButtonCell<T = any> extends MSHoverButtonCell {}
   namespace classes {
-    export interface MSAltButtonCell<T = any> extends cocoa.classes.MSHoverButtonCell {
+    export interface MSAltButtonCell<T = any> extends MSHoverButtonCell {
       alloc<R = MSAltButtonCell>(): R;
       new: <R = MSAltButtonCell>() => R;
     }

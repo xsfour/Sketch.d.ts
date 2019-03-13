@@ -2,13 +2,13 @@
 
 declare namespace cocoa {
   export interface NSObjectProtocol<T = any> {
-    zone<R = cocoa._NSZone>(): R;
+    zone<R = _NSZone>(): R;
     retainCount<R = number>(): R;
     autorelease<R = unknown>(): R;
     release<R = void>(): R;
     retain<R = unknown>(): R;
     respondsToSelector<R = boolean, P0 = string>(_respondsToSelector: P0): R;
-    conformsToProtocol<R = boolean, P0 = cocoa.Protocol>(_conformsToProtocol: P0): R;
+    conformsToProtocol<R = boolean, P0 = Protocol>(_conformsToProtocol: P0): R;
     isMemberOfClass<R = boolean, P0 = unknown>(_isMemberOfClass: P0): R;
     isKindOfClass<R = boolean, P0 = unknown>(_isKindOfClass: P0): R;
     isProxy<R = boolean>(): R;
@@ -18,14 +18,12 @@ declare namespace cocoa {
     self<R = unknown>(): R;
     class<R = unknown>(): R;
     isEqual<R = boolean, P0 = unknown>(_isEqual: P0): R;
-    description<R = cocoa.NSString>(): R;
+    description<R = NSString>(): R;
     superclass<R = unknown>(): R;
     hash<R = number>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
   }
   namespace classes {
     export interface NSObjectProtocol<T = any> {  }
   }
 }
-
-declare const NSObjectProtocol: cocoa.classes.NSObjectProtocol;

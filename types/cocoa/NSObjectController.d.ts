@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSObjectController<T = any> extends cocoa.NSController {
+  export interface NSObjectController<T = any> extends NSController {
     validateMenuItem<R = boolean, P0 = unknown>(_validateMenuItem: P0): R;
     validateUserInterfaceItem<R = boolean, P0 = unknown>(_validateUserInterfaceItem: P0): R;
     _explicitlyCannotRemove<R = boolean>(): R;
@@ -42,7 +42,7 @@ declare namespace cocoa {
     _setUsingManagedProxy<R = void, P0 = boolean>(__setUsingManagedProxy: P0): R;
     _isManagedController<R = boolean>(): R;
     selection<R = unknown>(): R;
-    selectedObjects<R = cocoa.NSArray>(): R;
+    selectedObjects<R = NSArray>(): R;
     canRemove<R = boolean>(): R;
     canAdd<R = boolean>(): R;
     objectClass<R = unknown>(): R;
@@ -53,17 +53,17 @@ declare namespace cocoa {
     setAutomaticallyPreparesContent<R = void, P0 = boolean>(_v: P0): R;
     content<R = unknown>(): R;
     setContent<R = void, P0 = unknown>(_v: P0): R;
-    fetchPredicate<R = cocoa.NSPredicate>(): R;
-    setFetchPredicate<R = void, P0 = cocoa.NSPredicate>(_v: P0): R;
-    entityName<R = cocoa.NSString>(): R;
-    setEntityName<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    managedObjectContext<R = cocoa.NSManagedObjectContext>(): R;
-    setManagedObjectContext<R = void, P0 = cocoa.NSManagedObjectContext>(_v: P0): R;
+    fetchPredicate<R = NSPredicate>(): R;
+    setFetchPredicate<R = void, P0 = NSPredicate>(_v: P0): R;
+    entityName<R = NSString>(): R;
+    setEntityName<R = void, P0 = NSString>(_v: P0): R;
+    managedObjectContext<R = NSManagedObjectContext>(): R;
+    setManagedObjectContext<R = void, P0 = NSManagedObjectContext>(_v: P0): R;
     usesLazyFetching<R = boolean>(): R;
     setUsesLazyFetching<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface NSObjectController<T = any> extends cocoa.classes.NSController {
+    export interface NSObjectController<T = any> extends NSController {
       alloc<R = NSObjectController>(): R;
       new: <R = NSObjectController>() => R;
       _defaultObjectClassName<R = unknown>(): R;

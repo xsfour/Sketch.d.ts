@@ -1,21 +1,21 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTokenAttachmentCell<T = any> extends cocoa.NSTextAttachmentCell {
+  export interface NSTokenAttachmentCell<T = any> extends NSTextAttachmentCell {
     _immediateActionAnimationControllerForTokenAttachment_inTextView<R = unknown, P0 = unknown, P1 = unknown>(__immediateActionAnimationControllerForTokenAttachment: P0, _inTextView: P1): R;
-    pullDownTrackingRectForBounds<R = cocoa.CGRect, P0 = cocoa.CGRect>(_pullDownTrackingRectForBounds: P0): R;
+    pullDownTrackingRectForBounds<R = CGRect, P0 = CGRect>(_pullDownTrackingRectForBounds: P0): R;
     isEnabled<R = boolean>(): R;
     _setNeedsSeparator<R = void, P0 = boolean>(__setNeedsSeparator: P0): R;
     _needsSeparator<R = boolean>(): R;
     _resetNeedsSeparatorWithLayoutManager_characterIndex<R = void, P0 = unknown, P1 = number>(__resetNeedsSeparatorWithLayoutManager: P0, _characterIndex: P1): R;
-    drawPullDownImageWithFrame_inView<R = void, P0 = cocoa.CGRect, P1 = unknown>(_drawPullDownImageWithFrame: P0, _inView: P1): R;
+    drawPullDownImageWithFrame_inView<R = void, P0 = CGRect, P1 = unknown>(_drawPullDownImageWithFrame: P0, _inView: P1): R;
     shouldDrawSeparator<R = boolean>(): R;
     _supportsSeparators<R = boolean>(): R;
-    drawTokenWithFrame_inView<R = void, P0 = cocoa.CGRect, P1 = unknown>(_drawTokenWithFrame: P0, _inView: P1): R;
+    drawTokenWithFrame_inView<R = void, P0 = CGRect, P1 = unknown>(_drawTokenWithFrame: P0, _inView: P1): R;
     _isActiveInView<R = boolean, P0 = unknown>(__isActiveInView: P0): R;
     shouldDrawTokenBackground<R = boolean>(): R;
-    drawTokenInRect_withOptions<R = void, P0 = cocoa.CGRect, P1 = unknown>(_drawTokenInRect: P0, _withOptions: P1): R;
-    pullDownRectForBounds<R = cocoa.CGRect, P0 = cocoa.CGRect>(_pullDownRectForBounds: P0): R;
+    drawTokenInRect_withOptions<R = void, P0 = CGRect, P1 = unknown>(_drawTokenInRect: P0, _withOptions: P1): R;
+    pullDownRectForBounds<R = CGRect, P0 = CGRect>(_pullDownRectForBounds: P0): R;
     menu<R = unknown>(): R;
     _shouldShowPullDownImage<R = boolean>(): R;
     pullDownImage<R = unknown>(): R;
@@ -36,7 +36,7 @@ declare namespace cocoa {
     alwaysShowBackground<R = boolean>(): R;
   }
   namespace classes {
-    export interface NSTokenAttachmentCell<T = any> extends cocoa.classes.NSTextAttachmentCell {
+    export interface NSTokenAttachmentCell<T = any> extends NSTextAttachmentCell {
       alloc<R = NSTokenAttachmentCell>(): R;
       new: <R = NSTokenAttachmentCell>() => R;
       _getLineSpacing_forTokenStyle<R = boolean, P0 = number, P1 = number>(__getLineSpacing: P0, _forTokenStyle: P1): R;

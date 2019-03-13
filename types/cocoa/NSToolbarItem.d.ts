@@ -1,15 +1,15 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSToolbarItem<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol, cocoa.NSMenuItemValidationProtocol, cocoa.NSValidatedUserInterfaceItemProtocol {
+  export interface NSToolbarItem<T = any> extends NSObject, NSCopyingProtocol, NSMenuItemValidationProtocol, NSValidatedUserInterfaceItemProtocol {
     cxx_destruct<R = void>(): R;
     extensionService<R = unknown>(): R;
     isSpace<R = boolean>(): R;
     isMeasuring<R = boolean>(): R;
-    _itemViewMinSize_maxSize_stretchesContent<R = void, P0 = cocoa.CGSize, P1 = cocoa.CGSize, P2 = boolean>(__itemViewMinSize: P0, _maxSize: P1, _stretchesContent: P2): R;
-    _textOrSearchFieldAdjustedMinOrMaxSize_withSize<R = cocoa.CGSize, P0 = boolean, P1 = cocoa.CGSize>(__textOrSearchFieldAdjustedMinOrMaxSize: P0, _withSize: P1): R;
-    _scalableMaxSize<R = cocoa.CGSize>(): R;
-    _scalableMinSize<R = cocoa.CGSize>(): R;
+    _itemViewMinSize_maxSize_stretchesContent<R = void, P0 = CGSize, P1 = CGSize, P2 = boolean>(__itemViewMinSize: P0, _maxSize: P1, _stretchesContent: P2): R;
+    _textOrSearchFieldAdjustedMinOrMaxSize_withSize<R = CGSize, P0 = boolean, P1 = CGSize>(__textOrSearchFieldAdjustedMinOrMaxSize: P0, _withSize: P1): R;
+    _scalableMaxSize<R = CGSize>(): R;
+    _scalableMinSize<R = CGSize>(): R;
     _shouldApplyTextFieldAdjustment<R = boolean>(): R;
     _shouldApplySearchFieldAdjustment<R = boolean>(): R;
     setPreferredWidthRatio<R = void, P0 = number>(_setPreferredWidthRatio: P0): R;
@@ -34,7 +34,7 @@ declare namespace cocoa {
     _standardCustomMenuFormRepresentationClicked<R = void, P0 = unknown>(__standardCustomMenuFormRepresentationClicked: P0): R;
     _startingWindowForSendAction<R = unknown, P0 = string>(__startingWindowForSendAction: P0): R;
     _toolbarItemPartitionAdapterDidChangeExcludedRect<R = void, P0 = unknown>(__toolbarItemPartitionAdapterDidChangeExcludedRect: P0): R;
-    _getPartitionRect_inWindowCoordinatesForWindow<R = boolean, P0 = cocoa.CGRect, P1 = unknown>(__getPartitionRect: P0, _inWindowCoordinatesForWindow: P1): R;
+    _getPartitionRect_inWindowCoordinatesForWindow<R = boolean, P0 = CGRect, P1 = unknown>(__getPartitionRect: P0, _inWindowCoordinatesForWindow: P1): R;
     _isPartitionItem<R = boolean>(): R;
     _setPartitionAdapter<R = void, P0 = unknown>(__setPartitionAdapter: P0): R;
     _partitionAdapter<R = unknown>(): R;
@@ -54,10 +54,10 @@ declare namespace cocoa {
     _clearDefaultMenuFormRepresentation<R = void>(): R;
     setPropertyListRepresentation<R = void, P0 = unknown>(_setPropertyListRepresentation: P0): R;
     propertyListRepresentation<R = unknown>(): R;
-    _collectItemRectsForViews_count_inBounds_controlBounds<R = void, P0 = cocoa.CGRect, P1 = number, P2 = cocoa.CGRect, P3 = cocoa.CGRect>(__collectItemRectsForViews: P0, _count: P1, _inBounds: P2, _controlBounds: P3): R;
-    _collectItemRectsForViews_count_inBounds<R = void, P0 = cocoa.CGRect, P1 = number, P2 = cocoa.CGRect>(__collectItemRectsForViews: P0, _count: P1, _inBounds: P2): R;
-    _collectItemRectsForLabels_count_inBounds_controlBounds<R = void, P0 = cocoa.CGRect, P1 = number, P2 = cocoa.CGRect, P3 = cocoa.CGRect>(__collectItemRectsForLabels: P0, _count: P1, _inBounds: P2, _controlBounds: P3): R;
-    _collectItemRectsForLabels_count_inBounds<R = void, P0 = cocoa.CGRect, P1 = number, P2 = cocoa.CGRect>(__collectItemRectsForLabels: P0, _count: P1, _inBounds: P2): R;
+    _collectItemRectsForViews_count_inBounds_controlBounds<R = void, P0 = CGRect, P1 = number, P2 = CGRect, P3 = CGRect>(__collectItemRectsForViews: P0, _count: P1, _inBounds: P2, _controlBounds: P3): R;
+    _collectItemRectsForViews_count_inBounds<R = void, P0 = CGRect, P1 = number, P2 = CGRect>(__collectItemRectsForViews: P0, _count: P1, _inBounds: P2): R;
+    _collectItemRectsForLabels_count_inBounds_controlBounds<R = void, P0 = CGRect, P1 = number, P2 = CGRect, P3 = CGRect>(__collectItemRectsForLabels: P0, _count: P1, _inBounds: P2, _controlBounds: P3): R;
+    _collectItemRectsForLabels_count_inBounds<R = void, P0 = CGRect, P1 = number, P2 = CGRect>(__collectItemRectsForLabels: P0, _count: P1, _inBounds: P2): R;
     _viewsArray<R = unknown>(): R;
     _applicableLabelsArrayForDisplayMode_isInPalette<R = unknown, P0 = number, P1 = boolean>(__applicableLabelsArrayForDisplayMode: P0, _isInPalette: P1): R;
     _paletteLabel<R = unknown>(): R;
@@ -89,7 +89,7 @@ declare namespace cocoa {
     _toolbarItemCommonInit<R = void>(): R;
     _loadViewIfNecessary<R = void>(): R;
     _allocDefaultView<R = unknown>(): R;
-    _buttonFrameSizeForSizeMode<R = cocoa.CGSize, P0 = number>(__buttonFrameSizeForSizeMode: P0): R;
+    _buttonFrameSizeForSizeMode<R = CGSize, P0 = number>(__buttonFrameSizeForSizeMode: P0): R;
     _participatesInDefiningMinimumGridWidthForCustomizationPalette<R = boolean>(): R;
     _initialViewToSelectFromDirection<R = unknown, P0 = number>(__initialViewToSelectFromDirection: P0): R;
     _buttonAtIndex<R = unknown, P0 = number>(__buttonAtIndex: P0): R;
@@ -121,16 +121,16 @@ declare namespace cocoa {
     _setSizeHasBeenSet<R = void, P0 = boolean>(__setSizeHasBeenSet: P0): R;
     _sizeHasBeenSet<R = boolean>(): R;
     allowsDuplicatesInToolbar<R = boolean>(): R;
-    image<R = cocoa.NSImage>(): R;
-    setImage<R = void, P0 = cocoa.NSImage>(_v: P0): R;
-    maxSize<R = cocoa.CGSize>(): R;
-    setMaxSize<R = void, P0 = cocoa.CGSize>(_v: P0): R;
-    minSize<R = cocoa.CGSize>(): R;
-    setMinSize<R = void, P0 = cocoa.CGSize>(_v: P0): R;
+    image<R = NSImage>(): R;
+    setImage<R = void, P0 = NSImage>(_v: P0): R;
+    maxSize<R = CGSize>(): R;
+    setMaxSize<R = void, P0 = CGSize>(_v: P0): R;
+    minSize<R = CGSize>(): R;
+    setMinSize<R = void, P0 = CGSize>(_v: P0): R;
     visibilityPriority<R = number>(): R;
     setVisibilityPriority<R = void, P0 = number>(_v: P0): R;
-    view<R = cocoa.NSView>(): R;
-    setView<R = void, P0 = cocoa.NSView>(_v: P0): R;
+    view<R = NSView>(): R;
+    setView<R = void, P0 = NSView>(_v: P0): R;
     tag<R = number>(): R;
     setTag<R = void, P0 = number>(_v: P0): R;
     enabled<R = boolean>(): R;
@@ -139,29 +139,29 @@ declare namespace cocoa {
     setAction<R = void, P0 = string>(_v: P0): R;
     target<R = unknown>(): R;
     setTarget<R = void, P0 = unknown>(_v: P0): R;
-    menuFormRepresentation<R = cocoa.NSMenuItem>(): R;
-    setMenuFormRepresentation<R = void, P0 = cocoa.NSMenuItem>(_v: P0): R;
-    toolTip<R = cocoa.NSString>(): R;
-    setToolTip<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    paletteLabel<R = cocoa.NSString>(): R;
-    setPaletteLabel<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    label<R = cocoa.NSString>(): R;
-    setLabel<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    toolbar<R = cocoa.NSToolbar>(): R;
-    itemIdentifier<R = cocoa.NSString>(): R;
+    menuFormRepresentation<R = NSMenuItem>(): R;
+    setMenuFormRepresentation<R = void, P0 = NSMenuItem>(_v: P0): R;
+    toolTip<R = NSString>(): R;
+    setToolTip<R = void, P0 = NSString>(_v: P0): R;
+    paletteLabel<R = NSString>(): R;
+    setPaletteLabel<R = void, P0 = NSString>(_v: P0): R;
+    label<R = NSString>(): R;
+    setLabel<R = void, P0 = NSString>(_v: P0): R;
+    toolbar<R = NSToolbar>(): R;
+    itemIdentifier<R = NSString>(): R;
     autovalidates<R = boolean>(): R;
     setAutovalidates<R = void, P0 = boolean>(_v: P0): R;
-    description<R = cocoa.NSString>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
+    description<R = NSString>(): R;
+    debugDescription<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSToolbarItem<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol, cocoa.classes.NSMenuItemValidationProtocol, cocoa.classes.NSValidatedUserInterfaceItemProtocol {
+    export interface NSToolbarItem<T = any> extends NSObject, NSCopyingProtocol, NSMenuItemValidationProtocol, NSValidatedUserInterfaceItemProtocol {
       alloc<R = NSToolbarItem>(): R;
       new: <R = NSToolbarItem>() => R;
       allowsDuplicatesInToolbar<R = boolean>(): R;
-      _imageForDrawingInRectOfSize_fromImage<R = unknown, P0 = cocoa.CGSize, P1 = unknown>(__imageForDrawingInRectOfSize: P0, _fromImage: P1): R;
+      _imageForDrawingInRectOfSize_fromImage<R = unknown, P0 = CGSize, P1 = unknown>(__imageForDrawingInRectOfSize: P0, _fromImage: P1): R;
       standardItemWithItemIdentifier<R = unknown, P0 = unknown>(_standardItemWithItemIdentifier: P0): R;
       newStandardItemWithItemIdentifier<R = unknown, P0 = unknown>(_newStandardItemWithItemIdentifier: P0): R;
       _newCloudSharingItem<R = unknown>(): R;

@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSBindingSelectionMarker<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol {}
+  export interface NSBindingSelectionMarker<T = any> extends NSObject, NSCopyingProtocol {}
   namespace classes {
-    export interface NSBindingSelectionMarker<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol {
+    export interface NSBindingSelectionMarker<T = any> extends NSObject, NSCopyingProtocol {
       alloc<R = NSBindingSelectionMarker>(): R;
       new: <R = NSBindingSelectionMarker>() => R;
       notApplicableSelectionMarker<R = unknown>(): R;

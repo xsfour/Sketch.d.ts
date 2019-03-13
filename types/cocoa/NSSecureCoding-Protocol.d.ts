@@ -8,5 +8,3 @@ declare namespace cocoa {
     }
   }
 }
-
-declare const NSSecureCodingProtocol: cocoa.classes.NSSecureCodingProtocol;

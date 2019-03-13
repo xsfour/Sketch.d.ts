@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXPCEncoder<T = any> extends cocoa.NSXPCCoder {
+  export interface NSXPCEncoder<T = any> extends NSXPCCoder {
     _encodeCString_length_forKey<R = void, P0 = string, P1 = number, P2 = unknown>(__encodeCString: P0, _length: P1, _forKey: P2): R;
     _encodeArrayOfObjects_forKey<R = void, P0 = unknown, P1 = unknown>(__encodeArrayOfObjects: P0, _forKey: P1): R;
     _encodeInvocationObjectArgumentsOnly_count_typeString_selector_isReply_into<R = void, P0 = unknown, P1 = number, P2 = string, P3 = string, P4 = boolean, P5 = unknown>(__encodeInvocationObjectArgumentsOnly: P0, _count: P1, _typeString: P2, _selector: P3, _isReply: P4, _into: P5): R;
@@ -15,13 +15,13 @@ declare namespace cocoa {
     debugDescription<R = unknown>(): R;
     initWithStackSpace_size<R = unknown, P0 = string, P1 = number>(_initWithStackSpace: P0, _size: P1): R;
     connection<R = unknown>(): R;
-    delegate<R = cocoa.NSXPCEncoderDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSXPCEncoderDelegate>(_v: P0): R;
-    _connection<R = cocoa.NSXPCConnection>(): R;
-    set_connection<R = void, P0 = cocoa.NSXPCConnection>(_v: P0): R;
+    delegate<R = NSXPCEncoderDelegate>(): R;
+    setDelegate<R = void, P0 = NSXPCEncoderDelegate>(_v: P0): R;
+    _connection<R = NSXPCConnection>(): R;
+    set_connection<R = void, P0 = NSXPCConnection>(_v: P0): R;
   }
   namespace classes {
-    export interface NSXPCEncoder<T = any> extends cocoa.classes.NSXPCCoder {
+    export interface NSXPCEncoder<T = any> extends NSXPCCoder {
       alloc<R = NSXPCEncoder>(): R;
       new: <R = NSXPCEncoder>() => R;
     }

@@ -1,22 +1,22 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPrinter<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol, cocoa.NSCodingProtocol {
+  export interface NSPrinter<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
     _compatibility_initWithUnkeyedCoder<R = unknown, P0 = unknown>(__compatibility_initWithUnkeyedCoder: P0): R;
     description<R = unknown>(): R;
     stringListForKey_inTable<R = unknown, P0 = unknown, P1 = unknown>(_stringListForKey: P0, _inTable: P1): R;
     stringForKey_inTable<R = unknown, P0 = unknown, P1 = unknown>(_stringForKey: P0, _inTable: P1): R;
-    sizeForKey_inTable<R = cocoa.CGSize, P0 = unknown, P1 = unknown>(_sizeForKey: P0, _inTable: P1): R;
-    rectForKey_inTable<R = cocoa.CGRect, P0 = unknown, P1 = unknown>(_rectForKey: P0, _inTable: P1): R;
+    sizeForKey_inTable<R = CGSize, P0 = unknown, P1 = unknown>(_sizeForKey: P0, _inTable: P1): R;
+    rectForKey_inTable<R = CGRect, P0 = unknown, P1 = unknown>(_rectForKey: P0, _inTable: P1): R;
     intForKey_inTable<R = number, P0 = unknown, P1 = unknown>(_intForKey: P0, _inTable: P1): R;
     floatForKey_inTable<R = number, P0 = unknown, P1 = unknown>(_floatForKey: P0, _inTable: P1): R;
     booleanForKey_inTable<R = boolean, P0 = unknown, P1 = unknown>(_booleanForKey: P0, _inTable: P1): R;
     isKey_inTable<R = boolean, P0 = unknown, P1 = unknown>(_isKey: P0, _inTable: P1): R;
     statusForTable<R = number, P0 = unknown>(_statusForTable: P0): R;
-    pageSizeForPaper<R = cocoa.CGSize, P0 = unknown>(_pageSizeForPaper: P0): R;
+    pageSizeForPaper<R = CGSize, P0 = unknown>(_pageSizeForPaper: P0): R;
     dealloc<R = void>(): R;
-    _initWithName_printer<R = unknown, P0 = unknown, P1 = cocoa.OpaquePMPrinter>(__initWithName: P0, _printer: P1): R;
-    _printer<R = cocoa.OpaquePMPrinter>(): R;
+    _initWithName_printer<R = unknown, P0 = unknown, P1 = OpaquePMPrinter>(__initWithName: P0, _printer: P1): R;
+    _printer<R = OpaquePMPrinter>(): R;
     note<R = unknown>(): R;
     host<R = unknown>(): R;
     domain<R = unknown>(): R;
@@ -24,7 +24,7 @@ declare namespace cocoa {
     isFontAvailable<R = boolean, P0 = unknown>(_isFontAvailable: P0): R;
     isColor<R = boolean>(): R;
     acceptsBinary<R = boolean>(): R;
-    imageRectForPaper<R = cocoa.CGRect, P0 = unknown>(_imageRectForPaper: P0): R;
+    imageRectForPaper<R = CGRect, P0 = unknown>(_imageRectForPaper: P0): R;
     _deallocatePPDStuff<R = void>(): R;
     processKeyword_option_keyTran_arg_argTran<R = unknown, P0 = string, P1 = string, P2 = string, P3 = string, P4 = string>(_processKeyword: P0, _option: P1, _keyTran: P2, _arg: P3, _argTran: P4): R;
     _setUIConstraints<R = unknown, P0 = string>(__setUIConstraints: P0): R;
@@ -41,13 +41,13 @@ declare namespace cocoa {
     _freeNode<R = unknown, P0 = unknown>(__freeNode: P0): R;
     _makeRootNode<R = unknown>(): R;
     _newNode<R = unknown, P0 = number>(__newNode: P0): R;
-    deviceDescription<R = cocoa.NSDictionary>(): R;
+    deviceDescription<R = NSDictionary>(): R;
     languageLevel<R = number>(): R;
-    type<R = cocoa.NSString>(): R;
-    name<R = cocoa.NSString>(): R;
+    type<R = NSString>(): R;
+    name<R = NSString>(): R;
   }
   namespace classes {
-    export interface NSPrinter<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol, cocoa.classes.NSCodingProtocol {
+    export interface NSPrinter<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
       alloc<R = NSPrinter>(): R;
       new: <R = NSPrinter>() => R;
       printerWithType<R = unknown, P0 = unknown>(_printerWithType: P0): R;
@@ -55,7 +55,7 @@ declare namespace cocoa {
       printerTypes<R = unknown>(): R;
       printerNames<R = unknown>(): R;
       _flushCachedCarbonPrintersByName<R = void>(): R;
-      _printerForPrinter<R = unknown, P0 = cocoa.OpaquePMPrinter>(__printerForPrinter: P0): R;
+      _printerForPrinter<R = unknown, P0 = OpaquePMPrinter>(__printerForPrinter: P0): R;
       printerWithName_domain_includeUnavailable<R = unknown, P0 = unknown, P1 = unknown, P2 = boolean>(_printerWithName: P0, _domain: P1, _includeUnavailable: P2): R;
     }
   }

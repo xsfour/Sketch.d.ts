@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSApplySharedTextStyleAction<T = any> extends cocoa.MSApplySharedStyleAction {
+  export interface MSApplySharedTextStyleAction<T = any> extends MSApplySharedStyleAction {
     applySharedTextStyle<R = void, P0 = unknown>(_applySharedTextStyle: P0): R;
   }
   namespace classes {
-    export interface MSApplySharedTextStyleAction<T = any> extends cocoa.classes.MSApplySharedStyleAction {
+    export interface MSApplySharedTextStyleAction<T = any> extends MSApplySharedStyleAction {
       alloc<R = MSApplySharedTextStyleAction>(): R;
       new: <R = MSApplySharedTextStyleAction>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSBridgedTextSubstitutionController<T = any> extends cocoa.NSObject, cocoa.NSTextViewDelegateProtocol, cocoa.NSTextStorageDelegateProtocol {
+  export interface NSBridgedTextSubstitutionController<T = any> extends NSObject, NSTextViewDelegateProtocol, NSTextStorageDelegateProtocol {
     convertToHalfWidth<R = void, P0 = unknown>(_convertToHalfWidth: P0): R;
     convertToFullWidth<R = void, P0 = unknown>(_convertToFullWidth: P0): R;
     convertToTraditionalChinese<R = void, P0 = unknown>(_convertToTraditionalChinese: P0): R;
@@ -41,13 +41,13 @@ declare namespace cocoa {
     setAutomaticQuoteSubstitutionEnabled<R = void, P0 = boolean>(_v: P0): R;
     enabledTextCheckingTypes<R = number>(): R;
     setEnabledTextCheckingTypes<R = void, P0 = number>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSBridgedTextSubstitutionController<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSTextViewDelegateProtocol, cocoa.classes.NSTextStorageDelegateProtocol {
+    export interface NSBridgedTextSubstitutionController<T = any> extends NSObject, NSTextViewDelegateProtocol, NSTextStorageDelegateProtocol {
       alloc<R = NSBridgedTextSubstitutionController>(): R;
       new: <R = NSBridgedTextSubstitutionController>() => R;
       keyPathsForValuesAffectingEnabledTextCheckingTypes<R = unknown>(): R;

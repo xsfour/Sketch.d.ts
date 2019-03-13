@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAlignLeftAction<T = any> extends cocoa.MSBaseAlignAction {
+  export interface MSAlignLeftAction<T = any> extends MSBaseAlignAction {
     label<R = unknown>(): R;
     alignLeft<R = void, P0 = unknown>(_alignLeft: P0): R;
   }
   namespace classes {
-    export interface MSAlignLeftAction<T = any> extends cocoa.classes.MSBaseAlignAction {
+    export interface MSAlignLeftAction<T = any> extends MSBaseAlignAction {
       alloc<R = MSAlignLeftAction>(): R;
       new: <R = MSAlignLeftAction>() => R;
     }

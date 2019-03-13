@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMorphingDragImageController<T = any> extends cocoa.NSObject, cocoa.NSTearOffTabWindowDelegateProtocol {
+  export interface NSMorphingDragImageController<T = any> extends NSObject, NSTearOffTabWindowDelegateProtocol {
     cxx_destruct<R = void>(): R;
     _morphToDragImage<R = void, P0 = unknown>(__morphToDragImage: P0): R;
     _updateDragImageForCurrentDragState<R = void>(): R;
@@ -32,19 +32,19 @@ declare namespace cocoa {
     _handleEvent<R = void, P0 = unknown>(__handleEvent: P0): R;
     _runDrag<R = void>(): R;
     _prepareForDragWithImage<R = void, P0 = unknown>(__prepareForDragWithImage: P0): R;
-    _dragTabWithDraggingItem_tabButtonImage_pinnedTabButtonImage_windowImage_fromView_at_source<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown, P5 = cocoa.CGPoint, P6 = unknown>(__dragTabWithDraggingItem: P0, _tabButtonImage: P1, _pinnedTabButtonImage: P2, _windowImage: P3, _fromView: P4, _at: P5, _source: P6): R;
+    _dragTabWithDraggingItem_tabButtonImage_pinnedTabButtonImage_windowImage_fromView_at_source<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown, P5 = CGPoint, P6 = unknown>(__dragTabWithDraggingItem: P0, _tabButtonImage: P1, _pinnedTabButtonImage: P2, _windowImage: P3, _fromView: P4, _at: P5, _source: P6): R;
     dealloc<R = void>(): R;
-    dragWindow<R = cocoa.NSTearOffTabWindow>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    dragWindow<R = NSTearOffTabWindow>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSMorphingDragImageController<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSTearOffTabWindowDelegateProtocol {
+    export interface NSMorphingDragImageController<T = any> extends NSObject, NSTearOffTabWindowDelegateProtocol {
       alloc<R = NSMorphingDragImageController>(): R;
       new: <R = NSMorphingDragImageController>() => R;
-      dragTabWithDraggingItem_tabButtonImage_pinnedTabButtonImage_windowImage_fromView_at_source<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown, P5 = cocoa.CGPoint, P6 = unknown>(_dragTabWithDraggingItem: P0, _tabButtonImage: P1, _pinnedTabButtonImage: P2, _windowImage: P3, _fromView: P4, _at: P5, _source: P6): R;
+      dragTabWithDraggingItem_tabButtonImage_pinnedTabButtonImage_windowImage_fromView_at_source<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown, P5 = CGPoint, P6 = unknown>(_dragTabWithDraggingItem: P0, _tabButtonImage: P1, _pinnedTabButtonImage: P2, _windowImage: P3, _fromView: P4, _at: P5, _source: P6): R;
     }
   }
 }

@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTextTemplate<T = any> extends cocoa.NSViewTemplate {}
+  export interface NSTextTemplate<T = any> extends NSViewTemplate {}
   namespace classes {
-    export interface NSTextTemplate<T = any> extends cocoa.classes.NSViewTemplate {
+    export interface NSTextTemplate<T = any> extends NSViewTemplate {
       alloc<R = NSTextTemplate>(): R;
       new: <R = NSTextTemplate>() => R;
     }

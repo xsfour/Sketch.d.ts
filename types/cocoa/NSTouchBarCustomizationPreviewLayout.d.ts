@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarCustomizationPreviewLayout<T = any> extends cocoa.NSCollectionViewLayout {
-    overlappedIndexPathsForMovingItemAtIndexPath_toIndexPath_withFrame_primaryLocation<R = unknown, P0 = unknown, P1 = unknown, P2 = cocoa.CGRect, P3 = cocoa.CGPoint>(_overlappedIndexPathsForMovingItemAtIndexPath: P0, _toIndexPath: P1, _withFrame: P2, _primaryLocation: P3): R;
+  export interface NSTouchBarCustomizationPreviewLayout<T = any> extends NSCollectionViewLayout {
+    overlappedIndexPathsForMovingItemAtIndexPath_toIndexPath_withFrame_primaryLocation<R = unknown, P0 = unknown, P1 = unknown, P2 = CGRect, P3 = CGPoint>(_overlappedIndexPathsForMovingItemAtIndexPath: P0, _toIndexPath: P1, _withFrame: P2, _primaryLocation: P3): R;
     canMoveItemAtIndexPath_toIndexPath_byRemovingItems<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_canMoveItemAtIndexPath: P0, _toIndexPath: P1, _byRemovingItems: P2): R;
     canInsertItem_atIndexPath<R = boolean, P0 = unknown, P1 = unknown>(_canInsertItem: P0, _atIndexPath: P1): R;
     canMoveItemAtIndexPath_toIndexPath<R = boolean, P0 = unknown, P1 = unknown>(_canMoveItemAtIndexPath: P0, _toIndexPath: P1): R;
@@ -13,15 +13,15 @@ declare namespace cocoa {
     finalLayoutAttributesForDisappearingItemAtIndexPath<R = unknown, P0 = unknown>(_finalLayoutAttributesForDisappearingItemAtIndexPath: P0): R;
     initialLayoutAttributesForAppearingItemAtIndexPath<R = unknown, P0 = unknown>(_initialLayoutAttributesForAppearingItemAtIndexPath: P0): R;
     layoutAttributesForItemAtIndexPath<R = unknown, P0 = unknown>(_layoutAttributesForItemAtIndexPath: P0): R;
-    layoutAttributesForElementsInRect<R = unknown, P0 = cocoa.CGRect>(_layoutAttributesForElementsInRect: P0): R;
+    layoutAttributesForElementsInRect<R = unknown, P0 = CGRect>(_layoutAttributesForElementsInRect: P0): R;
     prepareLayout<R = void>(): R;
     delegate<R = unknown>(): R;
-    shouldInvalidateLayoutForBoundsChange<R = boolean, P0 = cocoa.CGRect>(_shouldInvalidateLayoutForBoundsChange: P0): R;
-    collectionViewContentSize<R = cocoa.CGSize>(): R;
+    shouldInvalidateLayoutForBoundsChange<R = boolean, P0 = CGRect>(_shouldInvalidateLayoutForBoundsChange: P0): R;
+    collectionViewContentSize<R = CGSize>(): R;
     dealloc<R = void>(): R;
   }
   namespace classes {
-    export interface NSTouchBarCustomizationPreviewLayout<T = any> extends cocoa.classes.NSCollectionViewLayout {
+    export interface NSTouchBarCustomizationPreviewLayout<T = any> extends NSCollectionViewLayout {
       layoutAttributesClass<R = unknown>(): R;
     }
   }

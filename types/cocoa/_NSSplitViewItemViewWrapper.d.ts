@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSSplitViewItemViewWrapper<T = any> extends cocoa.NSView {
+  export interface _NSSplitViewItemViewWrapper<T = any> extends NSView {
     _shouldConsumeMouseEvents<R = boolean>(): R;
     disengageBreadthConstraint<R = void>(): R;
     updateBreadthConstraintPriority<R = void>(): R;
@@ -14,10 +14,10 @@ declare namespace cocoa {
     _preferredAppearance<R = unknown>(): R;
     setHidden<R = void, P0 = boolean>(_setHidden: P0): R;
     _splitView<R = unknown>(): R;
-    breadthConstraint<R = cocoa.NSLayoutConstraint>(): R;
-    setBreadthConstraint<R = void, P0 = cocoa.NSLayoutConstraint>(_v: P0): R;
-    equalBreadthConstraint<R = cocoa.NSLayoutConstraint>(): R;
-    setEqualBreadthConstraint<R = void, P0 = cocoa.NSLayoutConstraint>(_v: P0): R;
+    breadthConstraint<R = NSLayoutConstraint>(): R;
+    setBreadthConstraint<R = void, P0 = NSLayoutConstraint>(_v: P0): R;
+    equalBreadthConstraint<R = NSLayoutConstraint>(): R;
+    setEqualBreadthConstraint<R = void, P0 = NSLayoutConstraint>(_v: P0): R;
     sidebar<R = boolean>(): R;
     setSidebar<R = void, P0 = boolean>(_v: P0): R;
     maximumThickness<R = number>(): R;
@@ -30,11 +30,11 @@ declare namespace cocoa {
     setHasBaseVibrancyEffect<R = void, P0 = boolean>(_v: P0): R;
     overlaid<R = boolean>(): R;
     setOverlaid<R = void, P0 = boolean>(_v: P0): R;
-    splitViewItem<R = cocoa.NSSplitViewItem>(): R;
-    setSplitViewItem<R = void, P0 = cocoa.NSSplitViewItem>(_v: P0): R;
+    splitViewItem<R = NSSplitViewItem>(): R;
+    setSplitViewItem<R = void, P0 = NSSplitViewItem>(_v: P0): R;
   }
   namespace classes {
-    export interface _NSSplitViewItemViewWrapper<T = any> extends cocoa.classes.NSView {
+    export interface _NSSplitViewItemViewWrapper<T = any> extends NSView {
       alloc<R = _NSSplitViewItemViewWrapper>(): R;
       new: <R = _NSSplitViewItemViewWrapper>() => R;
     }

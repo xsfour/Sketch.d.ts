@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAutounbinder<T = any> extends cocoa.NSProxy {
+  export interface NSAutounbinder<T = any> extends NSProxy {
     _autounbinder<R = unknown>(): R;
     mutableSetValueForKeyPath<R = unknown, P0 = unknown>(_mutableSetValueForKeyPath: P0): R;
     mutableArrayValueForKeyPath<R = unknown, P0 = unknown>(_mutableArrayValueForKeyPath: P0): R;
@@ -18,7 +18,7 @@ declare namespace cocoa {
     initWithBindingTarget<R = unknown, P0 = unknown>(_initWithBindingTarget: P0): R;
   }
   namespace classes {
-    export interface NSAutounbinder<T = any> extends cocoa.classes.NSProxy {  }
+    export interface NSAutounbinder<T = any> extends NSProxy {  }
   }
 }
 

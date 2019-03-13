@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorSpace<T = any> extends cocoa.NSObject, cocoa.NSSecureCodingProtocol {
-    _newCGColorByConvertingCGColor<R = cocoa.CGColor, P0 = cocoa.CGColor>(__newCGColorByConvertingCGColor: P0): R;
+  export interface NSColorSpace<T = any> extends NSObject, NSSecureCodingProtocol {
+    _newCGColorByConvertingCGColor<R = CGColor, P0 = CGColor>(__newCGColorByConvertingCGColor: P0): R;
     awakeAfterUsingCoder<R = unknown, P0 = unknown>(_awakeAfterUsingCoder: P0): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
@@ -13,25 +13,25 @@ declare namespace cocoa {
     allowsExtendedRange<R = boolean>(): R;
     _isDeviceColorSpace<R = boolean>(): R;
     colorProfile<R = unknown>(): R;
-    _createProfileFor<R = void, P0 = cocoa.__CFString>(__createProfileFor: P0): R;
+    _createProfileFor<R = void, P0 = __CFString>(__createProfileFor: P0): R;
     dealloc<R = void>(): R;
     initWithColorSyncProfile<R = unknown, P0 = void>(_initWithColorSyncProfile: P0): R;
     initWithICCProfileData<R = unknown, P0 = unknown>(_initWithICCProfileData: P0): R;
-    initWithCGColorSpace<R = unknown, P0 = cocoa.CGColorSpace>(_initWithCGColorSpace: P0): R;
-    _initWithCGColorSpaceNoCache<R = unknown, P0 = cocoa.CGColorSpace>(__initWithCGColorSpaceNoCache: P0): R;
+    initWithCGColorSpace<R = unknown, P0 = CGColorSpace>(_initWithCGColorSpace: P0): R;
+    _initWithCGColorSpaceNoCache<R = unknown, P0 = CGColorSpace>(__initWithCGColorSpaceNoCache: P0): R;
     initWithColorProfile<R = unknown, P0 = unknown>(_initWithColorProfile: P0): R;
-    localizedName<R = cocoa.NSString>(): R;
+    localizedName<R = NSString>(): R;
     colorSpaceModel<R = number>(): R;
     numberOfColorComponents<R = number>(): R;
     colorSyncProfile<R = void>(): R;
-    CGColorSpace<R = cocoa.CGColorSpace>(): R;
-    ICCProfileData<R = cocoa.NSData>(): R;
-    colorGamut<R = cocoa.NSColorGamut>(): R;
+    CGColorSpace<R = CGColorSpace>(): R;
+    ICCProfileData<R = NSData>(): R;
+    colorGamut<R = NSColorGamut>(): R;
     // + NSColorSpace(Chocolat,Extensions):
     
   }
   namespace classes {
-    export interface NSColorSpace<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSSecureCodingProtocol {
+    export interface NSColorSpace<T = any> extends NSObject, NSSecureCodingProtocol {
       alloc<R = NSColorSpace>(): R;
       new: <R = NSColorSpace>() => R;
       availableColorSpacesWithModel<R = unknown, P0 = number>(_availableColorSpacesWithModel: P0): R;

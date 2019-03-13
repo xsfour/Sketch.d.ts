@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSStackViewContainer<T = any> extends cocoa.NSView {
+  export interface NSStackViewContainer<T = any> extends NSView {
     cxx_destruct<R = void>(): R;
     reattachViews<R = void, P0 = unknown>(_reattachViews: P0): R;
     detachViews<R = void, P0 = unknown>(_detachViews: P0): R;
@@ -20,15 +20,15 @@ declare namespace cocoa {
     customSpaceMapping<R = unknown>(): R;
     visibilityPriorityMapping<R = unknown>(): R;
     initWithStackView<R = unknown, P0 = unknown>(_initWithStackView: P0): R;
-    stackView<R = cocoa.NSStackView>(): R;
-    setStackView<R = void, P0 = cocoa.NSStackView>(_v: P0): R;
-    attachedViews<R = cocoa.NSArray>(): R;
-    detachedViews<R = cocoa.NSArray>(): R;
-    views<R = cocoa.NSArray>(): R;
-    setViews<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    stackView<R = NSStackView>(): R;
+    setStackView<R = void, P0 = NSStackView>(_v: P0): R;
+    attachedViews<R = NSArray>(): R;
+    detachedViews<R = NSArray>(): R;
+    views<R = NSArray>(): R;
+    setViews<R = void, P0 = NSArray>(_v: P0): R;
   }
   namespace classes {
-    export interface NSStackViewContainer<T = any> extends cocoa.classes.NSView {
+    export interface NSStackViewContainer<T = any> extends NSView {
       alloc<R = NSStackViewContainer>(): R;
       new: <R = NSStackViewContainer>() => R;
     }

@@ -13,5 +13,3 @@ declare namespace cocoa {
     export interface NSSerializerStreamProtocol<T = any> {  }
   }
 }
-
-declare const NSSerializerStreamProtocol: cocoa.classes.NSSerializerStreamProtocol;

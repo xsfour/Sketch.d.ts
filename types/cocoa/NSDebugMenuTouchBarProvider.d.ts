@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDebugMenuTouchBarProvider<T = any> extends cocoa.NSObject, cocoa.NSWindowDelegateProtocol, cocoa.NSDebugMenuItemProviderProtocol {
+  export interface NSDebugMenuTouchBarProvider<T = any> extends NSObject, NSWindowDelegateProtocol, NSDebugMenuItemProviderProtocol {
     cxx_destruct<R = void>(): R;
     updateTouchBarProviderChain<R = void>(): R;
     switchObservedWindow<R = void, P0 = unknown>(_switchObservedWindow: P0): R;
@@ -10,16 +10,16 @@ declare namespace cocoa {
     _sharedPanel<R = unknown>(): R;
     toggleResponderChainPanel<R = void, P0 = unknown>(_toggleResponderChainPanel: P0): R;
     dealloc<R = void>(): R;
-    uiDelegate<R = cocoa.NSDebugTouchBarUIDelegate>(): R;
-    setUiDelegate<R = void, P0 = cocoa.NSDebugTouchBarUIDelegate>(_v: P0): R;
-    menuItem<R = cocoa.NSMenuItem>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    uiDelegate<R = NSDebugTouchBarUIDelegate>(): R;
+    setUiDelegate<R = void, P0 = NSDebugTouchBarUIDelegate>(_v: P0): R;
+    menuItem<R = NSMenuItem>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSDebugMenuTouchBarProvider<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSWindowDelegateProtocol, cocoa.classes.NSDebugMenuItemProviderProtocol {
+    export interface NSDebugMenuTouchBarProvider<T = any> extends NSObject, NSWindowDelegateProtocol, NSDebugMenuItemProviderProtocol {
       alloc<R = NSDebugMenuTouchBarProvider>(): R;
       new: <R = NSDebugMenuTouchBarProvider>() => R;
     }

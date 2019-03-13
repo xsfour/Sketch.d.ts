@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPredicateEditor<T = any> extends cocoa.NSRuleEditor {
+  export interface NSPredicateEditor<T = any> extends NSRuleEditor {
     _sendsActionOnIncompleteTextChanges<R = boolean>(): R;
     action<R = string>(): R;
     setAction<R = void, P0 = string>(_setAction: P0): R;
@@ -27,11 +27,11 @@ declare namespace cocoa {
     _rowFromTemplate_originalTemplate_withRowType<R = unknown, P0 = unknown, P1 = unknown, P2 = number>(__rowFromTemplate: P0, _originalTemplate: P1, _withRowType: P2): R;
     _setDefaultTargetAndActionOnView<R = void, P0 = unknown>(__setDefaultTargetAndActionOnView: P0): R;
     _forceUseDelegate<R = boolean>(): R;
-    rowTemplates<R = cocoa.NSArray>(): R;
-    setRowTemplates<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    rowTemplates<R = NSArray>(): R;
+    setRowTemplates<R = void, P0 = NSArray>(_v: P0): R;
   }
   namespace classes {
-    export interface NSPredicateEditor<T = any> extends cocoa.classes.NSRuleEditor {
+    export interface NSPredicateEditor<T = any> extends NSRuleEditor {
       alloc<R = NSPredicateEditor>(): R;
       new: <R = NSPredicateEditor>() => R;
     }

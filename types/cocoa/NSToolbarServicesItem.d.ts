@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSToolbarServicesItem<T = any> extends cocoa.NSToolbarItem {
+  export interface NSToolbarServicesItem<T = any> extends NSToolbarItem {
     representedObject<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSToolbarServicesItem<T = any> extends cocoa.classes.NSToolbarItem {
+    export interface NSToolbarServicesItem<T = any> extends NSToolbarItem {
       alloc<R = NSToolbarServicesItem>(): R;
       new: <R = NSToolbarServicesItem>() => R;
     }

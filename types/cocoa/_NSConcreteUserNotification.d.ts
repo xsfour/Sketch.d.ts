@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSConcreteUserNotification<T = any> extends cocoa.NSUserNotification, cocoa.NSSecureCodingProtocol {
+  export interface _NSConcreteUserNotification<T = any> extends NSUserNotification, NSSecureCodingProtocol {
     peopleIdentifiers<R = unknown>(): R;
     additionalActions<R = unknown>(): R;
     additionalActivationAction<R = unknown>(): R;
@@ -117,7 +117,7 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
   }
   namespace classes {
-    export interface _NSConcreteUserNotification<T = any> extends cocoa.classes.NSUserNotification, cocoa.classes.NSSecureCodingProtocol {
+    export interface _NSConcreteUserNotification<T = any> extends NSUserNotification, NSSecureCodingProtocol {
       alloc<R = _NSConcreteUserNotification>(): R;
       new: <R = _NSConcreteUserNotification>() => R;
     }

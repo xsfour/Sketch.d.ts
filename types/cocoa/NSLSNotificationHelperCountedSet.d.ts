@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLSNotificationHelperCountedSet<T = any> extends cocoa.NSLSNotificationHelper {
+  export interface NSLSNotificationHelperCountedSet<T = any> extends NSLSNotificationHelper {
     dealloc<R = void>(): R;
   }
   namespace classes {
-    export interface NSLSNotificationHelperCountedSet<T = any> extends cocoa.classes.NSLSNotificationHelper {
+    export interface NSLSNotificationHelperCountedSet<T = any> extends NSLSNotificationHelper {
       alloc<R = NSLSNotificationHelperCountedSet>(): R;
       new: <R = NSLSNotificationHelperCountedSet>() => R;
     }

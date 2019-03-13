@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXMLContext<T = any> extends cocoa.NSObject {}
+  export interface NSXMLContext<T = any> extends NSObject {}
   namespace classes {
-    export interface NSXMLContext<T = any> extends cocoa.classes.NSObject {
+    export interface NSXMLContext<T = any> extends NSObject {
       alloc<R = NSXMLContext>(): R;
       new: <R = NSXMLContext>() => R;
       _initValueTransformers<R = void>(): R;

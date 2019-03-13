@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMouseTracker<T = any> extends cocoa.NSObject {
+  export interface NSMouseTracker<T = any> extends NSObject {
     previousEvent<R = unknown>(): R;
     initialEvent<R = unknown>(): R;
-    initialPoint<R = cocoa.CGPoint>(): R;
-    previousPoint<R = cocoa.CGPoint>(): R;
-    currentPoint<R = cocoa.CGPoint>(): R;
+    initialPoint<R = CGPoint>(): R;
+    previousPoint<R = CGPoint>(): R;
+    currentPoint<R = CGPoint>(): R;
     delegate<R = unknown>(): R;
     view<R = unknown>(): R;
     trackingConstraintKeyMask<R = number>(): R;
@@ -25,11 +25,11 @@ declare namespace cocoa {
     setPeriodicDelay_interval<R = void, P0 = number, P1 = number>(_setPeriodicDelay: P0, _interval: P1): R;
     delay<R = number>(): R;
     interval<R = number>(): R;
-    _constrainPoint_withEvent<R = cocoa.CGPoint, P0 = cocoa.CGPoint, P1 = unknown>(__constrainPoint: P0, _withEvent: P1): R;
-    _getLocalPoint<R = cocoa.CGPoint, P0 = unknown>(__getLocalPoint: P0): R;
+    _constrainPoint_withEvent<R = CGPoint, P0 = CGPoint, P1 = unknown>(__constrainPoint: P0, _withEvent: P1): R;
+    _getLocalPoint<R = CGPoint, P0 = unknown>(__getLocalPoint: P0): R;
   }
   namespace classes {
-    export interface NSMouseTracker<T = any> extends cocoa.classes.NSObject {
+    export interface NSMouseTracker<T = any> extends NSObject {
       alloc<R = NSMouseTracker>(): R;
       new: <R = NSMouseTracker>() => R;
     }

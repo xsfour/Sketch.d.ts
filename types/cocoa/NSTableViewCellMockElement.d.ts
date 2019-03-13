@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableViewCellMockElement<T = any> extends cocoa.NSObject, cocoa.NSTableViewCellElementProtocol {
+  export interface NSTableViewCellMockElement<T = any> extends NSObject, NSTableViewCellElementProtocol {
     deepestAccessibilityDescendants<R = unknown>(): R;
     accessibilityPerformAction<R = void, P0 = unknown>(_accessibilityPerformAction: P0): R;
     accessibilityActionDescription<R = unknown, P0 = unknown>(_accessibilityActionDescription: P0): R;
@@ -53,12 +53,12 @@ declare namespace cocoa {
     initWithRow_column_tableView<R = unknown, P0 = number, P1 = number, P2 = unknown>(_initWithRow: P0, _column: P1, _tableView: P2): R;
     initWithRow_tableColumn<R = unknown, P0 = number, P1 = unknown>(_initWithRow: P0, _tableColumn: P1): R;
     hash<R = number>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSTableViewCellMockElement<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSTableViewCellElementProtocol {
+    export interface NSTableViewCellMockElement<T = any> extends NSObject, NSTableViewCellElementProtocol {
       alloc<R = NSTableViewCellMockElement>(): R;
       new: <R = NSTableViewCellMockElement>() => R;
     }

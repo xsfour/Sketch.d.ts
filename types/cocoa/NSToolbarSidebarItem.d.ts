@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSToolbarSidebarItem<T = any> extends cocoa.NSToolbarItem {}
+  export interface NSToolbarSidebarItem<T = any> extends NSToolbarItem {}
   namespace classes {
-    export interface NSToolbarSidebarItem<T = any> extends cocoa.classes.NSToolbarItem {
+    export interface NSToolbarSidebarItem<T = any> extends NSToolbarItem {
       alloc<R = NSToolbarSidebarItem>(): R;
       new: <R = NSToolbarSidebarItem>() => R;
     }

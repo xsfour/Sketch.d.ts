@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSTouchBarGroupButton<T = any> extends cocoa.NSButton {
+  export interface _NSTouchBarGroupButton<T = any> extends NSButton {
     setTitle<R = void, P0 = unknown>(_setTitle: P0): R;
     _widthForTitle_compressedImage<R = number, P0 = unknown, P1 = boolean>(__widthForTitle: P0, _compressedImage: P1): R;
     updateConstraintConstants<R = void>(): R;
@@ -19,7 +19,7 @@ declare namespace cocoa {
     setPreferredWidth<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface _NSTouchBarGroupButton<T = any> extends cocoa.classes.NSButton {
+    export interface _NSTouchBarGroupButton<T = any> extends NSButton {
       alloc<R = _NSTouchBarGroupButton>(): R;
       new: <R = _NSTouchBarGroupButton>() => R;
       longTitleForString<R = unknown, P0 = unknown>(_longTitleForString: P0): R;

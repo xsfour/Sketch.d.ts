@@ -1,29 +1,29 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDocumentReader<T = any> extends cocoa.NSObject {
+  export interface MSDocumentReader<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
-    previewImageWithMaximumSize<R = unknown, P0 = cocoa.CGSize>(_previewImageWithMaximumSize: P0): R;
+    previewImageWithMaximumSize<R = unknown, P0 = CGSize>(_previewImageWithMaximumSize: P0): R;
     readImmutableDataWithCorruptionDetected_error<R = unknown, P0 = string, P1 = unknown>(_readImmutableDataWithCorruptionDetected: P0, _error: P1): R;
     validate<R = number>(): R;
     open<R = boolean, P0 = unknown>(_open: P0): R;
     repair<R = void>(): R;
     containsLibraryPreviewImage<R = boolean>(): R;
     readDataWithCorruptionDetected_error<R = unknown, P0 = string, P1 = unknown>(_readDataWithCorruptionDetected: P0, _error: P1): R;
-    error<R = cocoa.NSError>(): R;
-    setError<R = void, P0 = cocoa.NSError>(_v: P0): R;
-    libraryPreviewImage<R = cocoa.NSImage>(): R;
-    previewImage<R = cocoa.NSImage>(): R;
-    metadata<R = cocoa.NSDictionary>(): R;
-    UIMetadata<R = cocoa.NSDictionary>(): R;
+    error<R = NSError>(): R;
+    setError<R = void, P0 = NSError>(_v: P0): R;
+    libraryPreviewImage<R = NSImage>(): R;
+    previewImage<R = NSImage>(): R;
+    metadata<R = NSDictionary>(): R;
+    UIMetadata<R = NSDictionary>(): R;
     compatibilityVersion<R = number>(): R;
     version<R = number>(): R;
-    missingFonts<R = cocoa.NSArray>(): R;
+    missingFonts<R = NSArray>(): R;
     containsPreviewImage<R = boolean>(): R;
     documentWasMigrated<R = boolean>(): R;
   }
   namespace classes {
-    export interface MSDocumentReader<T = any> extends cocoa.classes.NSObject {
+    export interface MSDocumentReader<T = any> extends NSObject {
       alloc<R = MSDocumentReader>(): R;
       new: <R = MSDocumentReader>() => R;
       readerForDocumentAtURL<R = unknown, P0 = unknown>(_readerForDocumentAtURL: P0): R;

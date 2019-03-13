@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSUpDownController<T = any> extends cocoa.NSResponder {
+  export interface MSUpDownController<T = any> extends NSResponder {
     cxx_destruct<R = void>(): R;
     isEditable<R = boolean>(): R;
     isEnabled<R = boolean>(): R;
@@ -23,18 +23,18 @@ declare namespace cocoa {
     textDidEndEditing<R = void>(): R;
     eventIsInsideView<R = boolean, P0 = unknown>(_eventIsInsideView: P0): R;
     hideStepper<R = void, P0 = boolean>(_hideStepper: P0): R;
-    stepperRect<R = cocoa.CGRect>(): R;
+    stepperRect<R = CGRect>(): R;
     makeStepper<R = void>(): R;
     initWithTextField_createStepper<R = unknown, P0 = unknown, P1 = boolean>(_initWithTextField: P0, _createStepper: P1): R;
-    stepper<R = cocoa.MSIntegratedStepper>(): R;
-    setStepper<R = void, P0 = cocoa.MSIntegratedStepper>(_v: P0): R;
-    textField<R = cocoa.MSUpDownProtocol>(): R;
-    setTextField<R = void, P0 = cocoa.MSUpDownProtocol>(_v: P0): R;
-    incrementDecrementDelegate<R = cocoa.MSIncrementDecrementDelegate>(): R;
-    setIncrementDecrementDelegate<R = void, P0 = cocoa.MSIncrementDecrementDelegate>(_v: P0): R;
+    stepper<R = MSIntegratedStepper>(): R;
+    setStepper<R = void, P0 = MSIntegratedStepper>(_v: P0): R;
+    textField<R = MSUpDownProtocol>(): R;
+    setTextField<R = void, P0 = MSUpDownProtocol>(_v: P0): R;
+    incrementDecrementDelegate<R = MSIncrementDecrementDelegate>(): R;
+    setIncrementDecrementDelegate<R = void, P0 = MSIncrementDecrementDelegate>(_v: P0): R;
   }
   namespace classes {
-    export interface MSUpDownController<T = any> extends cocoa.classes.NSResponder {
+    export interface MSUpDownController<T = any> extends NSResponder {
       alloc<R = MSUpDownController>(): R;
       new: <R = MSUpDownController>() => R;
       stepperClass<R = unknown>(): R;

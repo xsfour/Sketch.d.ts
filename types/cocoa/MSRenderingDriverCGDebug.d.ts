@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSRenderingDriverCGDebug<T = any> extends cocoa.MSRenderingDriverCG {}
+  export interface MSRenderingDriverCGDebug<T = any> extends MSRenderingDriverCG {}
   namespace classes {
-    export interface MSRenderingDriverCGDebug<T = any> extends cocoa.classes.MSRenderingDriverCG {
+    export interface MSRenderingDriverCGDebug<T = any> extends MSRenderingDriverCG {
       alloc<R = MSRenderingDriverCGDebug>(): R;
       new: <R = MSRenderingDriverCGDebug>() => R;
     }

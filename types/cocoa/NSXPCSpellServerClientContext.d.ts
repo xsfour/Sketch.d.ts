@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXPCSpellServerClientContext<T = any> extends cocoa.NSObject {
+  export interface NSXPCSpellServerClientContext<T = any> extends NSObject {
     finish<R = void>(): R;
     error<R = unknown>(): R;
     proxy<R = unknown>(): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     initWithClient_messageName_waitForReply<R = unknown, P0 = unknown, P1 = unknown, P2 = boolean>(_initWithClient: P0, _messageName: P1, _waitForReply: P2): R;
   }
   namespace classes {
-    export interface NSXPCSpellServerClientContext<T = any> extends cocoa.classes.NSObject {
+    export interface NSXPCSpellServerClientContext<T = any> extends NSObject {
       alloc<R = NSXPCSpellServerClientContext>(): R;
       new: <R = NSXPCSpellServerClientContext>() => R;
       signalWaiter<R = void, P0 = unknown>(_signalWaiter: P0): R;

@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSManagedProxy<T = any> extends cocoa.NSObject {
+  export interface _NSManagedProxy<T = any> extends NSObject {
     _lazyFetchResultProxyForObjects<R = unknown, P0 = unknown>(__lazyFetchResultProxyForObjects: P0): R;
-    updateBatchSizeForRange<R = void, P0 = cocoa._NSRange>(_updateBatchSizeForRange: P0): R;
+    updateBatchSizeForRange<R = void, P0 = _NSRange>(_updateBatchSizeForRange: P0): R;
     _managedObjectsChangedInContext<R = void, P0 = unknown>(__managedObjectsChangedInContext: P0): R;
     _refetchForContext<R = void, P0 = unknown>(__refetchForContext: P0): R;
     _managedObjectContextDidSave<R = void, P0 = unknown>(__managedObjectContextDidSave: P0): R;
@@ -37,7 +37,7 @@ declare namespace cocoa {
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
   }
   namespace classes {
-    export interface _NSManagedProxy<T = any> extends cocoa.classes.NSObject {
+    export interface _NSManagedProxy<T = any> extends NSObject {
       alloc<R = _NSManagedProxy>(): R;
       new: <R = _NSManagedProxy>() => R;
     }

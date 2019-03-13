@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSGestureRecognizerFailureMap<T = any> extends cocoa.NSObject {
+  export interface _NSGestureRecognizerFailureMap<T = any> extends NSObject {
     isGestureRecognizerWaitingForGestureRecognizersToFail<R = boolean, P0 = unknown>(_isGestureRecognizerWaitingForGestureRecognizersToFail: P0): R;
     gestureRecognizerFinished_withEvent<R = void, P0 = unknown, P1 = unknown>(_gestureRecognizerFinished: P0, _withEvent: P1): R;
     _queueRecognizersForResetIfFinished<R = void>(): R;
@@ -16,7 +16,7 @@ declare namespace cocoa {
     hasUnmetFailureRequirementsOrDependents<R = boolean>(): R;
   }
   namespace classes {
-    export interface _NSGestureRecognizerFailureMap<T = any> extends cocoa.classes.NSObject {
+    export interface _NSGestureRecognizerFailureMap<T = any> extends NSObject {
       alloc<R = _NSGestureRecognizerFailureMap>(): R;
       new: <R = _NSGestureRecognizerFailureMap>() => R;
       buildFailureMapForGestureRecognizer<R = void, P0 = unknown>(_buildFailureMapForGestureRecognizer: P0): R;

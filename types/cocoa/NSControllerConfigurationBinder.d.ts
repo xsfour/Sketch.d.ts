@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSControllerConfigurationBinder<T = any> extends cocoa.NSBinder {
+  export interface NSControllerConfigurationBinder<T = any> extends NSBinder {
     controller_didChangeToFilterPredicate<R = void, P0 = unknown, P1 = unknown>(_controller: P0, _didChangeToFilterPredicate: P1): R;
     controller_didChangeToSortDescriptors<R = void, P0 = unknown, P1 = unknown>(_controller: P0, _didChangeToSortDescriptors: P1): R;
     controller_didChangeToSelectionIndexPaths<R = void, P0 = unknown, P1 = unknown>(_controller: P0, _didChangeToSelectionIndexPaths: P1): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     _updateFilterPredicate<R = void, P0 = unknown>(__updateFilterPredicate: P0): R;
   }
   namespace classes {
-    export interface NSControllerConfigurationBinder<T = any> extends cocoa.classes.NSBinder {
+    export interface NSControllerConfigurationBinder<T = any> extends NSBinder {
       alloc<R = NSControllerConfigurationBinder>(): R;
       new: <R = NSControllerConfigurationBinder>() => R;
     }

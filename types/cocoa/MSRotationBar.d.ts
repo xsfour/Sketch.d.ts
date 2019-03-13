@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSRotationBar<T = any> extends cocoa.NSControl {
+  export interface MSRotationBar<T = any> extends NSControl {
     cxx_destruct<R = void>(): R;
     isFlipped<R = boolean>(): R;
     endInertialScrolling<R = void>(): R;
@@ -17,8 +17,8 @@ declare namespace cocoa {
     setUpGestureRecognizer<R = void>(): R;
     inertialSpeed<R = number>(): R;
     setInertialSpeed<R = void, P0 = number>(_v: P0): R;
-    inertialTimer<R = cocoa.NSTimer>(): R;
-    setInertialTimer<R = void, P0 = cocoa.NSTimer>(_v: P0): R;
+    inertialTimer<R = NSTimer>(): R;
+    setInertialTimer<R = void, P0 = NSTimer>(_v: P0): R;
     startingX<R = number>(): R;
     setStartingX<R = void, P0 = number>(_v: P0): R;
     startingRotation<R = number>(): R;
@@ -35,7 +35,7 @@ declare namespace cocoa {
     setRotation<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface MSRotationBar<T = any> extends cocoa.classes.NSControl {
+    export interface MSRotationBar<T = any> extends NSControl {
       alloc<R = MSRotationBar>(): R;
       new: <R = MSRotationBar>() => R;
       shouldContinueInertialScrollingAtSpeed<R = boolean, P0 = number>(_shouldContinueInertialScrollingAtSpeed: P0): R;

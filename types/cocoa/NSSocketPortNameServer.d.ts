@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSocketPortNameServer<T = any> extends cocoa.NSPortNameServer {
+  export interface NSSocketPortNameServer<T = any> extends NSPortNameServer {
     netServiceDidStop<R = void, P0 = unknown>(_netServiceDidStop: P0): R;
     netService_didNotResolve<R = void, P0 = unknown, P1 = unknown>(_netService: P0, _didNotResolve: P1): R;
     netServiceWillResolve<R = void, P0 = unknown>(_netServiceWillResolve: P0): R;
@@ -13,7 +13,7 @@ declare namespace cocoa {
     setDefaultNameServerPortNumber<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface NSSocketPortNameServer<T = any> extends cocoa.classes.NSPortNameServer {
+    export interface NSSocketPortNameServer<T = any> extends NSPortNameServer {
       alloc<R = NSSocketPortNameServer>(): R;
       new: <R = NSSocketPortNameServer>() => R;
       sharedInstance<R = unknown>(): R;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFindPattern<T = any> extends cocoa.NSObject, cocoa.NSCodingProtocol, cocoa.NSCopyingProtocol {
+  export interface NSFindPattern<T = any> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
     backreferenceExpression<R = unknown>(): R;
     replaceExpression<R = unknown>(): R;
     initWithPropertyListRepresentation<R = unknown, P0 = unknown>(_initWithPropertyListRepresentation: P0): R;
@@ -11,26 +11,26 @@ declare namespace cocoa {
     _setUniqueID<R = void, P0 = unknown>(__setUniqueID: P0): R;
     description<R = unknown>(): R;
     dealloc<R = void>(): R;
-    replacementString<R = cocoa.NSString>(): R;
-    setReplacementString<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    replacementString<R = NSString>(): R;
+    setReplacementString<R = void, P0 = NSString>(_v: P0): R;
     repeatedPatternID<R = number>(): R;
     setRepeatedPatternID<R = void, P0 = number>(_v: P0): R;
-    uniqueID<R = cocoa.NSString>(): R;
+    uniqueID<R = NSString>(): R;
     captureGroupID<R = number>(): R;
     setCaptureGroupID<R = void, P0 = number>(_v: P0): R;
     allowsBackreferences<R = boolean>(): R;
     setAllowsBackreferences<R = void, P0 = boolean>(_v: P0): R;
     groupID<R = number>(): R;
     setGroupID<R = void, P0 = number>(_v: P0): R;
-    tokenString<R = cocoa.NSString>(): R;
-    setTokenString<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    displayString<R = cocoa.NSString>(): R;
-    setDisplayString<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    regularExpression<R = cocoa.NSString>(): R;
-    setRegularExpression<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    tokenString<R = NSString>(): R;
+    setTokenString<R = void, P0 = NSString>(_v: P0): R;
+    displayString<R = NSString>(): R;
+    setDisplayString<R = void, P0 = NSString>(_v: P0): R;
+    regularExpression<R = NSString>(): R;
+    setRegularExpression<R = void, P0 = NSString>(_v: P0): R;
   }
   namespace classes {
-    export interface NSFindPattern<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCodingProtocol, cocoa.classes.NSCopyingProtocol {
+    export interface NSFindPattern<T = any> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
       alloc<R = NSFindPattern>(): R;
       new: <R = NSFindPattern>() => R;
       placeholderFindPattern<R = unknown>(): R;

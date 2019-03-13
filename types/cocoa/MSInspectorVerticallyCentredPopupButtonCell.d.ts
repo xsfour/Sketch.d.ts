@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInspectorVerticallyCentredPopupButtonCell<T = any> extends cocoa.MSInspectorPopUpButtonCell {}
+  export interface MSInspectorVerticallyCentredPopupButtonCell<T = any> extends MSInspectorPopUpButtonCell {}
   namespace classes {
-    export interface MSInspectorVerticallyCentredPopupButtonCell<T = any> extends cocoa.classes.MSInspectorPopUpButtonCell {
+    export interface MSInspectorVerticallyCentredPopupButtonCell<T = any> extends MSInspectorPopUpButtonCell {
       alloc<R = MSInspectorVerticallyCentredPopupButtonCell>(): R;
       new: <R = MSInspectorVerticallyCentredPopupButtonCell>() => R;
     }

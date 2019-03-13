@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSegmentedCell<T = any> extends cocoa.NSActionCell {
+  export interface NSSegmentedCell<T = any> extends NSActionCell {
     _setSelectedSegmentBezelColor<R = void, P0 = unknown>(__setSelectedSegmentBezelColor: P0): R;
     _selectedSegmentBezelColor<R = unknown>(): R;
     _applicableTrackingModeForSegment<R = number, P0 = number>(__applicableTrackingModeForSegment: P0): R;
@@ -13,40 +13,40 @@ declare namespace cocoa {
     _removeAllToolTips<R = void>(): R;
     _displayDelayedMenu<R = void>(): R;
     _trackSelectedItemMenu<R = void>(): R;
-    _calculateSelectedSegmentForPoint<R = void, P0 = cocoa.CGPoint>(__calculateSelectedSegmentForPoint: P0): R;
-    indexOfSegmentContainingPoint_inCellFrame<R = number, P0 = cocoa.CGPoint, P1 = cocoa.CGRect>(_indexOfSegmentContainingPoint: P0, _inCellFrame: P1): R;
+    _calculateSelectedSegmentForPoint<R = void, P0 = CGPoint>(__calculateSelectedSegmentForPoint: P0): R;
+    indexOfSegmentContainingPoint_inCellFrame<R = number, P0 = CGPoint, P1 = CGRect>(_indexOfSegmentContainingPoint: P0, _inCellFrame: P1): R;
     _performClick_ignoreMenus<R = void, P0 = unknown, P1 = boolean>(__performClick: P0, _ignoreMenus: P1): R;
     _performClick_onSegment_ignoreMenus<R = void, P0 = unknown, P1 = number, P2 = boolean>(__performClick: P0, _onSegment: P1, _ignoreMenus: P2): R;
     _selectHighlightedSegment<R = void>(): R;
     _acceleratorTimerFired<R = void>(): R;
     _cleanupTracking<R = void>(): R;
-    _setupForTackingAtLocation_inRect_ofView_latchingToSingleSegment<R = boolean, P0 = cocoa.CGPoint, P1 = cocoa.CGRect, P2 = unknown, P3 = boolean>(__setupForTackingAtLocation: P0, _inRect: P1, _ofView: P2, _latchingToSingleSegment: P3): R;
-    _trackMouse_forSegment_inRects_count_inCellFrame_ofView_untilMouseUp<R = boolean, P0 = unknown, P1 = number, P2 = cocoa.CGRect, P3 = number, P4 = cocoa.CGRect, P5 = unknown, P6 = boolean>(__trackMouse: P0, _forSegment: P1, _inRects: P2, _count: P3, _inCellFrame: P4, _ofView: P5, _untilMouseUp: P6): R;
+    _setupForTackingAtLocation_inRect_ofView_latchingToSingleSegment<R = boolean, P0 = CGPoint, P1 = CGRect, P2 = unknown, P3 = boolean>(__setupForTackingAtLocation: P0, _inRect: P1, _ofView: P2, _latchingToSingleSegment: P3): R;
+    _trackMouse_forSegment_inRects_count_inCellFrame_ofView_untilMouseUp<R = boolean, P0 = unknown, P1 = number, P2 = CGRect, P3 = number, P4 = CGRect, P5 = unknown, P6 = boolean>(__trackMouse: P0, _forSegment: P1, _inRects: P2, _count: P3, _inCellFrame: P4, _ofView: P5, _untilMouseUp: P6): R;
     _menuDelayTimeForSegment<R = number, P0 = number>(__menuDelayTimeForSegment: P0): R;
     _segmentedMenuDragSlopRect<R = number>(): R;
     _segmentedMenuDelayTime<R = number>(): R;
-    drawSegment_inFrame_withView<R = void, P0 = number, P1 = cocoa.CGRect, P2 = unknown>(_drawSegment: P0, _inFrame: P1, _withView: P2): R;
+    drawSegment_inFrame_withView<R = void, P0 = number, P1 = CGRect, P2 = unknown>(_drawSegment: P0, _inFrame: P1, _withView: P2): R;
     _controlOrCellhasDrawingOverrides<R = boolean, P0 = unknown>(__controlOrCellhasDrawingOverrides: P0): R;
     _usesItemViews<R = boolean>(): R;
     _effectiveBackgroundStyleForSegment_inView_forSpecifiedStyle_isTemplate<R = number, P0 = number, P1 = unknown, P2 = number, P3 = boolean>(__effectiveBackgroundStyleForSegment: P0, _inView: P1, _forSpecifiedStyle: P2, _isTemplate: P3): R;
     _shouldDrawBezel<R = boolean>(): R;
     _shouldUseAlternateImageForSegment<R = boolean, P0 = number>(__shouldUseAlternateImageForSegment: P0): R;
-    _copyCoreUIBackgroundDrawOptionsForSegment_inView_drawFlags<R = cocoa.__CFDictionary, P0 = number, P1 = unknown, P2 = number>(__copyCoreUIBackgroundDrawOptionsForSegment: P0, _inView: P1, _drawFlags: P2): R;
+    _copyCoreUIBackgroundDrawOptionsForSegment_inView_drawFlags<R = __CFDictionary, P0 = number, P1 = unknown, P2 = number>(__copyCoreUIBackgroundDrawOptionsForSegment: P0, _inView: P1, _drawFlags: P2): R;
     _segmentHighlightState<R = number, P0 = number>(__segmentHighlightState: P0): R;
     _getVisualStateForSegment_andTrackingMode_forApplicableStyle<R = number, P0 = number, P1 = number, P2 = number>(__getVisualStateForSegment: P0, _andTrackingMode: P1, _forApplicableStyle: P2): R;
     _applicableSegmentedCellStyle<R = number>(): R;
     _wantsMenuIndicatorForSegment<R = boolean, P0 = number>(__wantsMenuIndicatorForSegment: P0): R;
-    rectForSegment_inFrame<R = cocoa.CGRect, P0 = number, P1 = cocoa.CGRect>(_rectForSegment: P0, _inFrame: P1): R;
-    _labelRectForSegment_inFrame_withView<R = cocoa.CGRect, P0 = number, P1 = cocoa.CGRect, P2 = unknown>(__labelRectForSegment: P0, _inFrame: P1, _withView: P2): R;
-    _rectForSegment_inFrame<R = cocoa.CGRect, P0 = number, P1 = cocoa.CGRect>(__rectForSegment: P0, _inFrame: P1): R;
-    _adjustRectForR2L_inFrame<R = void, P0 = cocoa.CGRect, P1 = cocoa.CGRect>(__adjustRectForR2L: P0, _inFrame: P1): R;
-    _boundsForCellFrame<R = cocoa.CGRect, P0 = cocoa.CGRect>(__boundsForCellFrame: P0): R;
+    rectForSegment_inFrame<R = CGRect, P0 = number, P1 = CGRect>(_rectForSegment: P0, _inFrame: P1): R;
+    _labelRectForSegment_inFrame_withView<R = CGRect, P0 = number, P1 = CGRect, P2 = unknown>(__labelRectForSegment: P0, _inFrame: P1, _withView: P2): R;
+    _rectForSegment_inFrame<R = CGRect, P0 = number, P1 = CGRect>(__rectForSegment: P0, _inFrame: P1): R;
+    _adjustRectForR2L_inFrame<R = void, P0 = CGRect, P1 = CGRect>(__adjustRectForR2L: P0, _inFrame: P1): R;
+    _boundsForCellFrame<R = CGRect, P0 = CGRect>(__boundsForCellFrame: P0): R;
     isOpaque<R = boolean>(): R;
     _setCompressibleOptions_forControlView<R = void, P0 = unknown, P1 = unknown>(__setCompressibleOptions: P0, _forControlView: P1): R;
     _compressibleOptionsForControlView<R = unknown, P0 = unknown>(__compressibleOptionsForControlView: P0): R;
-    _minimumCellSizeWithOptions_forBounds<R = cocoa.CGSize, P0 = unknown, P1 = cocoa.CGRect>(__minimumCellSizeWithOptions: P0, _forBounds: P1): R;
-    minimumCellSizeForBounds<R = cocoa.CGSize, P0 = cocoa.CGRect>(_minimumCellSizeForBounds: P0): R;
-    _cellSizeForBounds_distribution<R = cocoa.CGSize, P0 = cocoa.CGRect, P1 = number>(__cellSizeForBounds: P0, _distribution: P1): R;
+    _minimumCellSizeWithOptions_forBounds<R = CGSize, P0 = unknown, P1 = CGRect>(__minimumCellSizeWithOptions: P0, _forBounds: P1): R;
+    minimumCellSizeForBounds<R = CGSize, P0 = CGRect>(_minimumCellSizeForBounds: P0): R;
+    _cellSizeForBounds_distribution<R = CGSize, P0 = CGRect, P1 = number>(__cellSizeForBounds: P0, _distribution: P1): R;
     _setHidesUnselectedLabelsWhenNecessary<R = void, P0 = boolean>(__setHidesUnselectedLabelsWhenNecessary: P0): R;
     _hidesUnselectedLabelsWhenNecessary<R = boolean>(): R;
     springLoadingExited<R = void, P0 = unknown>(_springLoadingExited: P0): R;
@@ -63,7 +63,7 @@ declare namespace cocoa {
     _invalidateSegmentSizes<R = void>(): R;
     setControlSize<R = void, P0 = number>(_setControlSize: P0): R;
     setFont<R = void, P0 = unknown>(_setFont: P0): R;
-    _segmentAlignmentRectInsetsForControlView<R = cocoa.NSEdgeInsets, P0 = unknown>(__segmentAlignmentRectInsetsForControlView: P0): R;
+    _segmentAlignmentRectInsetsForControlView<R = NSEdgeInsets, P0 = unknown>(__segmentAlignmentRectInsetsForControlView: P0): R;
     _baselineOffsetFromBottomOfControlView<R = number, P0 = unknown>(__baselineOffsetFromBottomOfControlView: P0): R;
     setUserInterfaceLayoutDirection<R = void, P0 = number>(_setUserInterfaceLayoutDirection: P0): R;
     _isFlatOnEdge<R = boolean, P0 = number>(__isFlatOnEdge: P0): R;
@@ -170,25 +170,25 @@ declare namespace cocoa {
     _showsBadgeForSegment<R = boolean, P0 = number>(__showsBadgeForSegment: P0): R;
     _anySegmentShowsBadge<R = boolean>(): R;
     _setShowsBadge_forSegment_inView<R = void, P0 = boolean, P1 = number, P2 = unknown>(__setShowsBadge: P0, _forSegment: P1, _inView: P2): R;
-    _badgeRectForImage_inSegment_inFrame_inView_isFlipped_drawFlags<R = cocoa.CGRect, P0 = unknown, P1 = number, P2 = cocoa.CGRect, P3 = unknown, P4 = boolean, P5 = number>(__badgeRectForImage: P0, _inSegment: P1, _inFrame: P2, _inView: P3, _isFlipped: P4, _drawFlags: P5): R;
-    _rectAdjustedForR2LForSegment_cellFrame_drawFlags<R = cocoa.CGRect, P0 = number, P1 = cocoa.CGRect, P2 = number>(__rectAdjustedForR2LForSegment: P0, _cellFrame: P1, _drawFlags: P2): R;
-    _drawBackgroundWithFrame_inView<R = void, P0 = cocoa.CGRect, P1 = unknown>(__drawBackgroundWithFrame: P0, _inView: P1): R;
-    _coreUIDrawSegmentBackground_withCellFrame_inView_maskOnly<R = boolean, P0 = number, P1 = cocoa.CGRect, P2 = unknown, P3 = boolean>(__coreUIDrawSegmentBackground: P0, _withCellFrame: P1, _inView: P2, _maskOnly: P3): R;
-    _drawMenuIndicatorForSegment_withRect_inView<R = void, P0 = number, P1 = cocoa.CGRect, P2 = unknown>(__drawMenuIndicatorForSegment: P0, _withRect: P1, _inView: P2): R;
+    _badgeRectForImage_inSegment_inFrame_inView_isFlipped_drawFlags<R = CGRect, P0 = unknown, P1 = number, P2 = CGRect, P3 = unknown, P4 = boolean, P5 = number>(__badgeRectForImage: P0, _inSegment: P1, _inFrame: P2, _inView: P3, _isFlipped: P4, _drawFlags: P5): R;
+    _rectAdjustedForR2LForSegment_cellFrame_drawFlags<R = CGRect, P0 = number, P1 = CGRect, P2 = number>(__rectAdjustedForR2LForSegment: P0, _cellFrame: P1, _drawFlags: P2): R;
+    _drawBackgroundWithFrame_inView<R = void, P0 = CGRect, P1 = unknown>(__drawBackgroundWithFrame: P0, _inView: P1): R;
+    _coreUIDrawSegmentBackground_withCellFrame_inView_maskOnly<R = boolean, P0 = number, P1 = CGRect, P2 = unknown, P3 = boolean>(__coreUIDrawSegmentBackground: P0, _withCellFrame: P1, _inView: P2, _maskOnly: P3): R;
+    _drawMenuIndicatorForSegment_withRect_inView<R = void, P0 = number, P1 = CGRect, P2 = unknown>(__drawMenuIndicatorForSegment: P0, _withRect: P1, _inView: P2): R;
     _configureLabelCell_forItem_controlView_imageState_backgroundStyle<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = number, P4 = number>(__configureLabelCell: P0, _forItem: P1, _controlView: P2, _imageState: P3, _backgroundStyle: P4): R;
-    _resizeSegmentsForCellFrame<R = boolean, P0 = cocoa.CGRect>(__resizeSegmentsForCellFrame: P0): R;
-    _resizeSegmentsForCellFrame_animate<R = boolean, P0 = cocoa.CGRect, P1 = boolean>(__resizeSegmentsForCellFrame: P0, _animate: P1): R;
-    _updateLabelViewForSegmentItem_segmentContentRect_imageState_controlView<R = void, P0 = unknown, P1 = cocoa.CGRect, P2 = number, P3 = unknown>(__updateLabelViewForSegmentItem: P0, _segmentContentRect: P1, _imageState: P2, _controlView: P3): R;
-    _updateNSSegmentItemViewFramesForCellFrame<R = void, P0 = cocoa.CGRect>(__updateNSSegmentItemViewFramesForCellFrame: P0): R;
-    _legacy_labelRectForSegment_inFrame_withView<R = cocoa.CGRect, P0 = number, P1 = cocoa.CGRect, P2 = unknown>(__legacy_labelRectForSegment: P0, _inFrame: P1, _withView: P2): R;
-    _legacy_rectForSegment_inFrame<R = cocoa.CGRect, P0 = number, P1 = cocoa.CGRect>(__legacy_rectForSegment: P0, _inFrame: P1): R;
-    _legacy_minimumCellSizeForBounds<R = cocoa.CGSize, P0 = cocoa.CGRect>(__legacy_minimumCellSizeForBounds: P0): R;
-    _legacy_cellSizeForBounds<R = cocoa.CGSize, P0 = cocoa.CGRect>(__legacy_cellSizeForBounds: P0): R;
-    _legacy_segmentAlignmentRectInsetsForControlView<R = cocoa.NSEdgeInsets, P0 = unknown>(__legacy_segmentAlignmentRectInsetsForControlView: P0): R;
+    _resizeSegmentsForCellFrame<R = boolean, P0 = CGRect>(__resizeSegmentsForCellFrame: P0): R;
+    _resizeSegmentsForCellFrame_animate<R = boolean, P0 = CGRect, P1 = boolean>(__resizeSegmentsForCellFrame: P0, _animate: P1): R;
+    _updateLabelViewForSegmentItem_segmentContentRect_imageState_controlView<R = void, P0 = unknown, P1 = CGRect, P2 = number, P3 = unknown>(__updateLabelViewForSegmentItem: P0, _segmentContentRect: P1, _imageState: P2, _controlView: P3): R;
+    _updateNSSegmentItemViewFramesForCellFrame<R = void, P0 = CGRect>(__updateNSSegmentItemViewFramesForCellFrame: P0): R;
+    _legacy_labelRectForSegment_inFrame_withView<R = CGRect, P0 = number, P1 = CGRect, P2 = unknown>(__legacy_labelRectForSegment: P0, _inFrame: P1, _withView: P2): R;
+    _legacy_rectForSegment_inFrame<R = CGRect, P0 = number, P1 = CGRect>(__legacy_rectForSegment: P0, _inFrame: P1): R;
+    _legacy_minimumCellSizeForBounds<R = CGSize, P0 = CGRect>(__legacy_minimumCellSizeForBounds: P0): R;
+    _legacy_cellSizeForBounds<R = CGSize, P0 = CGRect>(__legacy_cellSizeForBounds: P0): R;
+    _legacy_segmentAlignmentRectInsetsForControlView<R = NSEdgeInsets, P0 = unknown>(__legacy_segmentAlignmentRectInsetsForControlView: P0): R;
     _edgeInset<R = number>(): R;
     _imageTextGap<R = number>(): R;
     accessibilityHelpStringForChild<R = unknown, P0 = unknown>(_accessibilityHelpStringForChild: P0): R;
-    accessibilityFocusRingBounds<R = cocoa.CGRect>(): R;
+    accessibilityFocusRingBounds<R = CGRect>(): R;
     accessibilitySizeOfChild<R = unknown, P0 = unknown>(_accessibilitySizeOfChild: P0): R;
     accessibilityPositionOfChild<R = unknown, P0 = unknown>(_accessibilityPositionOfChild: P0): R;
     accessibilitySetFocus_forChild<R = void, P0 = unknown, P1 = unknown>(_accessibilitySetFocus: P0, _forChild: P1): R;
@@ -196,7 +196,7 @@ declare namespace cocoa {
     accessibilityIsChildrenAttributeSettable<R = boolean>(): R;
     accessibilityChildrenAttribute<R = unknown>(): R;
     accessibilityChildrenInNavigationOrderAttribute<R = unknown>(): R;
-    _accessibilityScreenRectForSegment<R = cocoa.CGRect, P0 = number>(__accessibilityScreenRectForSegment: P0): R;
+    _accessibilityScreenRectForSegment<R = CGRect, P0 = number>(__accessibilityScreenRectForSegment: P0): R;
     _accessibilitySegmentAtIndex<R = unknown, P0 = number>(__accessibilitySegmentAtIndex: P0): R;
     segmentStyle<R = number>(): R;
     setSegmentStyle<R = void, P0 = number>(_v: P0): R;
@@ -208,7 +208,7 @@ declare namespace cocoa {
     setSegmentCount<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface NSSegmentedCell<T = any> extends cocoa.classes.NSActionCell {
+    export interface NSSegmentedCell<T = any> extends NSActionCell {
       alloc<R = NSSegmentedCell>(): R;
       new: <R = NSSegmentedCell>() => R;
       _labelCell<R = unknown>(): R;
@@ -219,24 +219,24 @@ declare namespace cocoa {
       _isTexturedStyle<R = boolean, P0 = number>(__isTexturedStyle: P0): R;
       _isStyleSeparated<R = boolean, P0 = number>(__isStyleSeparated: P0): R;
       _isStyleAutomatic<R = boolean, P0 = number>(__isStyleAutomatic: P0): R;
-      _debugDrawOnePixelFrameRect_color_draw<R = void, P0 = cocoa.CGRect, P1 = unknown, P2 = boolean>(__debugDrawOnePixelFrameRect: P0, _color: P1, _draw: P2): R;
+      _debugDrawOnePixelFrameRect_color_draw<R = void, P0 = CGRect, P1 = unknown, P2 = boolean>(__debugDrawOnePixelFrameRect: P0, _color: P1, _draw: P2): R;
       _segmentStyleShowsSelectedInBezelWithTracking_tracking<R = boolean, P0 = number, P1 = number>(__segmentStyleShowsSelectedInBezelWithTracking: P0, _tracking: P1): R;
       _segmentStyleWantsOnStateWhenPressedWithMomentaryTracking<R = boolean, P0 = number>(__segmentStyleWantsOnStateWhenPressedWithMomentaryTracking: P0): R;
       _image_state_for_visual_state_style_trackingMode<R = number, P0 = number, P1 = number, P2 = number>(__image_state_for_visual_state: P0, _style: P1, _trackingMode: P2): R;
       _givenState_hasState<R = boolean, P0 = number, P1 = number>(__givenState: P0, _hasState: P1): R;
       _segmentStyleIsFakedWithButtonArt<R = boolean, P0 = number>(__segmentStyleIsFakedWithButtonArt: P0): R;
-      _cuiRectForProposedRect_style_controlSize_scale_currentAppearance_controlView<R = cocoa.CGRect, P0 = cocoa.CGRect, P1 = number, P2 = number, P3 = number, P4 = unknown, P5 = unknown>(__cuiRectForProposedRect: P0, _style: P1, _controlSize: P2, _scale: P3, _currentAppearance: P4, _controlView: P5): R;
+      _cuiRectForProposedRect_style_controlSize_scale_currentAppearance_controlView<R = CGRect, P0 = CGRect, P1 = number, P2 = number, P3 = number, P4 = unknown, P5 = unknown>(__cuiRectForProposedRect: P0, _style: P1, _controlSize: P2, _scale: P3, _currentAppearance: P4, _controlView: P5): R;
       _menuIndicatorAdjustForStyle_size<R = number, P0 = number, P1 = number>(__menuIndicatorAdjustForStyle: P0, _size: P1): R;
-      _bezelToDrawingRectInsetsForStyle_controlSize_scale_semanticContext<R = cocoa.NSEdgeInsets, P0 = number, P1 = number, P2 = number, P3 = number>(__bezelToDrawingRectInsetsForStyle: P0, _controlSize: P1, _scale: P2, _semanticContext: P3): R;
-      _alignmentRectInsetsForStyle_size_semanticContext<R = cocoa.NSEdgeInsets, P0 = number, P1 = number, P2 = number>(__alignmentRectInsetsForStyle: P0, _size: P1, _semanticContext: P2): R;
+      _bezelToDrawingRectInsetsForStyle_controlSize_scale_semanticContext<R = NSEdgeInsets, P0 = number, P1 = number, P2 = number, P3 = number>(__bezelToDrawingRectInsetsForStyle: P0, _controlSize: P1, _scale: P2, _semanticContext: P3): R;
+      _alignmentRectInsetsForStyle_size_semanticContext<R = NSEdgeInsets, P0 = number, P1 = number, P2 = number>(__alignmentRectInsetsForStyle: P0, _size: P1, _semanticContext: P2): R;
       _textVerticalAdjustForStyle_controlSize_font<R = number, P0 = number, P1 = number, P2 = unknown>(__textVerticalAdjustForStyle: P0, _controlSize: P1, _font: P2): R;
       _additionalContentOffsetForStyle_controlSize<R = number, P0 = number, P1 = number>(__additionalContentOffsetForStyle: P0, _controlSize: P1): R;
       _endCapWidthForStyle_controlSize<R = number, P0 = number, P1 = number>(__endCapWidthForStyle: P0, _controlSize: P1): R;
       _preferredHeightForStyle_controlSize_controlView<R = number, P0 = number, P1 = number, P2 = unknown>(__preferredHeightForStyle: P0, _controlSize: P1, _controlView: P2): R;
-      _coreUISizeForSegmentStyle_controlSize<R = cocoa.__CFString, P0 = number, P1 = number>(__coreUISizeForSegmentStyle: P0, _controlSize: P1): R;
-      _widgetTypeForSegmentStyleFull_semanticContext<R = cocoa.__CFString, P0 = number, P1 = number>(__widgetTypeForSegmentStyleFull: P0, _semanticContext: P1): R;
-      _widgetTypeForSegmentStyle_semanticContext<R = cocoa.__CFString, P0 = number, P1 = number>(__widgetTypeForSegmentStyle: P0, _semanticContext: P1): R;
-      _widgetTypeStyleCommon_semanticContext<R = cocoa.__CFString, P0 = number, P1 = number>(__widgetTypeStyleCommon: P0, _semanticContext: P1): R;
+      _coreUISizeForSegmentStyle_controlSize<R = __CFString, P0 = number, P1 = number>(__coreUISizeForSegmentStyle: P0, _controlSize: P1): R;
+      _widgetTypeForSegmentStyleFull_semanticContext<R = __CFString, P0 = number, P1 = number>(__widgetTypeForSegmentStyleFull: P0, _semanticContext: P1): R;
+      _widgetTypeForSegmentStyle_semanticContext<R = __CFString, P0 = number, P1 = number>(__widgetTypeForSegmentStyle: P0, _semanticContext: P1): R;
+      _widgetTypeStyleCommon_semanticContext<R = __CFString, P0 = number, P1 = number>(__widgetTypeStyleCommon: P0, _semanticContext: P1): R;
       _validateControlSize<R = number, P0 = number>(__validateControlSize: P0): R;
     }
   }

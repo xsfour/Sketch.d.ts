@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAccessibilityProxy<T = any> extends cocoa.NSObject {
+  export interface NSAccessibilityProxy<T = any> extends NSObject {
     accessibilityFocusedUIElement<R = unknown>(): R;
-    accessibilityHitTest<R = unknown, P0 = cocoa.CGPoint>(_accessibilityHitTest: P0): R;
+    accessibilityHitTest<R = unknown, P0 = CGPoint>(_accessibilityHitTest: P0): R;
     _proxyForUIElement<R = unknown, P0 = unknown>(__proxyForUIElement: P0): R;
-    accessibilityFocusRingBoundsForBounds<R = cocoa.CGRect, P0 = cocoa.CGRect>(_accessibilityFocusRingBoundsForBounds: P0): R;
+    accessibilityFocusRingBoundsForBounds<R = CGRect, P0 = CGRect>(_accessibilityFocusRingBoundsForBounds: P0): R;
     accessibilityIsIgnored<R = boolean>(): R;
     accessibilityPerformAction<R = void, P0 = unknown>(_accessibilityPerformAction: P0): R;
     accessibilityActionDescription<R = unknown, P0 = unknown>(_accessibilityActionDescription: P0): R;
@@ -24,7 +24,7 @@ declare namespace cocoa {
     realElement<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSAccessibilityProxy<T = any> extends cocoa.classes.NSObject {
+    export interface NSAccessibilityProxy<T = any> extends NSObject {
       alloc<R = NSAccessibilityProxy>(): R;
       new: <R = NSAccessibilityProxy>() => R;
     }

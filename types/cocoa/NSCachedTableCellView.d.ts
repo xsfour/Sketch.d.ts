@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCachedTableCellView<T = any> extends cocoa.NSControl {
-    cachedImage<R = cocoa.NSImage>(): R;
-    setCachedImage<R = void, P0 = cocoa.NSImage>(_v: P0): R;
+  export interface NSCachedTableCellView<T = any> extends NSControl {
+    cachedImage<R = NSImage>(): R;
+    setCachedImage<R = void, P0 = NSImage>(_v: P0): R;
   }
   namespace classes {
-    export interface NSCachedTableCellView<T = any> extends cocoa.classes.NSControl {
+    export interface NSCachedTableCellView<T = any> extends NSControl {
       alloc<R = NSCachedTableCellView>(): R;
       new: <R = NSCachedTableCellView>() => R;
     }

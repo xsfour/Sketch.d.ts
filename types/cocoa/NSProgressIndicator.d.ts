@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSProgressIndicator<T = any> extends cocoa.NSView, cocoa.NSAccessibilityProgressIndicatorProtocol {
+  export interface NSProgressIndicator<T = any> extends NSView, NSAccessibilityProgressIndicatorProtocol {
     _updateHeartBeat<R = void>(): R;
     sizeToFit<R = void>(): R;
     stopAnimation<R = void, P0 = unknown>(_stopAnimation: P0): R;
@@ -38,8 +38,8 @@ declare namespace cocoa {
     accessibilityMinValueAttribute<R = unknown>(): R;
     accessibilityIsValueAttributeSettable<R = boolean>(): R;
     accessibilityValueAttribute<R = unknown>(): R;
-    roundDeterminateColor<R = cocoa.NSColor>(): R;
-    setRoundDeterminateColor<R = void, P0 = cocoa.NSColor>(_v: P0): R;
+    roundDeterminateColor<R = NSColor>(): R;
+    setRoundDeterminateColor<R = void, P0 = NSColor>(_v: P0): R;
     controlSize<R = number>(): R;
     setControlSize<R = void, P0 = number>(_v: P0): R;
     spinningTint<R = number>(): R;
@@ -62,13 +62,13 @@ declare namespace cocoa {
     setDoubleValue<R = void, P0 = number>(_v: P0): R;
     style<R = number>(): R;
     setStyle<R = void, P0 = number>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSProgressIndicator<T = any> extends cocoa.classes.NSView, cocoa.classes.NSAccessibilityProgressIndicatorProtocol {
+    export interface NSProgressIndicator<T = any> extends NSView, NSAccessibilityProgressIndicatorProtocol {
       alloc<R = NSProgressIndicator>(): R;
       new: <R = NSProgressIndicator>() => R;
     }

@@ -1,25 +1,25 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSTextLayer<T = any> extends cocoa._MSTextLayer, cocoa.MSFirstLineTypesetterDelegateProtocol, cocoa.MSColorConvertibleProtocol {
+  export interface MSTextLayer<T = any> extends _MSTextLayer, MSFirstLineTypesetterDelegateProtocol, MSColorConvertibleProtocol {
     canLockProportions<R = boolean>(): R;
     canScale<R = boolean>(): R;
     canBeTransformed<R = boolean>(): R;
     constrainProportions<R = boolean>(): R;
     checkTextBehaviourAndClippingAfterResizeFromCorner_mayClip<R = void, P0 = number, P1 = boolean>(_checkTextBehaviourAndClippingAfterResizeFromCorner: P0, _mayClip: P1): R;
-    resizeWithOldGroupSize<R = void, P0 = cocoa.CGSize>(_resizeWithOldGroupSize: P0): R;
-    layerDidResizeFromRect_corner<R = void, P0 = cocoa.CGRect, P1 = number>(_layerDidResizeFromRect: P0, _corner: P1): R;
+    resizeWithOldGroupSize<R = void, P0 = CGSize>(_resizeWithOldGroupSize: P0): R;
+    layerDidResizeFromRect_corner<R = void, P0 = CGRect, P1 = number>(_layerDidResizeFromRect: P0, _corner: P1): R;
     replaceTextPreservingAttributeRanges<R = void, P0 = unknown>(_replaceTextPreservingAttributeRanges: P0): R;
-    setTextTransform_range<R = void, P0 = number, P1 = cocoa._NSRange>(_setTextTransform: P0, _range: P1): R;
+    setTextTransform_range<R = void, P0 = number, P1 = _NSRange>(_setTextTransform: P0, _range: P1): R;
     makeLowercase<R = void, P0 = unknown>(_makeLowercase: P0): R;
     makeUppercase<R = void, P0 = unknown>(_makeUppercase: P0): R;
     attributeForKey<R = unknown, P0 = unknown>(_attributeForKey: P0): R;
     addAttribute_value<R = void, P0 = unknown, P1 = unknown>(_addAttribute: P0, _value: P1): R;
-    addAttributes_forRange<R = void, P0 = unknown, P1 = cocoa._NSRange>(_addAttributes: P0, _forRange: P1): R;
-    setAttributes_forRange<R = void, P0 = unknown, P1 = cocoa._NSRange>(_setAttributes: P0, _forRange: P1): R;
-    addAttribute_value_forRange<R = void, P0 = unknown, P1 = unknown, P2 = cocoa._NSRange>(_addAttribute: P0, _value: P1, _forRange: P2): R;
-    ignoreDelegateNotificationsInBlock<R = void, P0 = cocoa.CDUnknownBlockType>(_ignoreDelegateNotificationsInBlock: P0): R;
-    updateAttributedStringInBlock<R = void, P0 = cocoa.CDUnknownBlockType>(_updateAttributedStringInBlock: P0): R;
+    addAttributes_forRange<R = void, P0 = unknown, P1 = _NSRange>(_addAttributes: P0, _forRange: P1): R;
+    setAttributes_forRange<R = void, P0 = unknown, P1 = _NSRange>(_setAttributes: P0, _forRange: P1): R;
+    addAttribute_value_forRange<R = void, P0 = unknown, P1 = unknown, P2 = _NSRange>(_addAttribute: P0, _value: P1, _forRange: P2): R;
+    ignoreDelegateNotificationsInBlock<R = void, P0 = CDUnknownBlockType>(_ignoreDelegateNotificationsInBlock: P0): R;
+    updateAttributedStringInBlock<R = void, P0 = CDUnknownBlockType>(_updateAttributedStringInBlock: P0): R;
     setAttributedString<R = void, P0 = unknown>(_setAttributedString: P0): R;
     isEmpty<R = boolean>(): R;
     baseLineHeight<R = number>(): R;
@@ -30,7 +30,7 @@ declare namespace cocoa {
     setKerning<R = void, P0 = number>(_setKerning: P0): R;
     kerning<R = number>(): R;
     bezierPathFromGlyphsInBounds<R = unknown>(): R;
-    drawingPointForText<R = cocoa.CGPoint>(): R;
+    drawingPointForText<R = CGPoint>(): R;
     startingPositionOnPath<R = number, P0 = unknown>(_startingPositionOnPath: P0): R;
     defaultLineHeight<R = number, P0 = unknown>(_defaultLineHeight: P0): R;
     font<R = unknown>(): R;
@@ -39,8 +39,8 @@ declare namespace cocoa {
     shapeToUseForTextOnPath<R = unknown>(): R;
     updateNameFromStorage<R = void>(): R;
     changeListType<R = void, P0 = unknown>(_changeListType: P0): R;
-    updateStyleInBlock<R = void, P0 = cocoa.CDUnknownBlockType>(_updateStyleInBlock: P0): R;
-    setRectAccountingForClipped<R = void, P0 = cocoa.CGRect>(_setRectAccountingForClipped: P0): R;
+    updateStyleInBlock<R = void, P0 = CDUnknownBlockType>(_updateStyleInBlock: P0): R;
+    setRectAccountingForClipped<R = void, P0 = CGRect>(_setRectAccountingForClipped: P0): R;
     adjustFrameToFit<R = void>(): R;
     finishEditing<R = void>(): R;
     replaceMissingFontsIfNecessary<R = void>(): R;
@@ -50,9 +50,9 @@ declare namespace cocoa {
     setTextBehaviour<R = void, P0 = number>(_setTextBehaviour: P0): R;
     setTextBehaviour_mayAdjustFrame<R = void, P0 = number, P1 = boolean>(_setTextBehaviour: P0, _mayAdjustFrame: P1): R;
     setStyle<R = void, P0 = unknown>(_setStyle: P0): R;
-    initWithFrame_attributes_documentColorSpace_type<R = unknown, P0 = cocoa.CGRect, P1 = unknown, P2 = unknown, P3 = number>(_initWithFrame: P0, _attributes: P1, _documentColorSpace: P2, _type: P3): R;
+    initWithFrame_attributes_documentColorSpace_type<R = unknown, P0 = CGRect, P1 = unknown, P2 = unknown, P3 = number>(_initWithFrame: P0, _attributes: P1, _documentColorSpace: P2, _type: P3): R;
     initWithAttributedString_documentColorSpace_maxWidth<R = unknown, P0 = unknown, P1 = unknown, P2 = number>(_initWithAttributedString: P0, _documentColorSpace: P1, _maxWidth: P2): R;
-    initWithFrame<R = unknown, P0 = cocoa.CGRect>(_initWithFrame: P0): R;
+    initWithFrame<R = unknown, P0 = CGRect>(_initWithFrame: P0): R;
     PDFPreview<R = unknown>(): R;
     shouldStorePDFPreviews<R = boolean>(): R;
     cornerRectType<R = number>(): R;
@@ -78,26 +78,26 @@ declare namespace cocoa {
     embedInTransformedGroup<R = void>(): R;
     cornerForBaselineMaintaining<R = number>(): R;
     layoutDirection<R = number>(): R;
-    editingDelegate<R = cocoa.MSTextLayerEditingDelegate>(): R;
-    setEditingDelegate<R = void, P0 = cocoa.MSTextLayerEditingDelegate>(_v: P0): R;
+    editingDelegate<R = MSTextLayerEditingDelegate>(): R;
+    setEditingDelegate<R = void, P0 = MSTextLayerEditingDelegate>(_v: P0): R;
     isEditingText<R = boolean>(): R;
     setIsEditingText<R = void, P0 = boolean>(_v: P0): R;
-    previousRectCache<R = cocoa.CGRect>(): R;
-    setPreviousRectCache<R = void, P0 = cocoa.CGRect>(_v: P0): R;
-    stringValue<R = cocoa.NSString>(): R;
-    setStringValue<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    attributedStringValue<R = cocoa.NSAttributedString>(): R;
-    setAttributedStringValue<R = void, P0 = cocoa.NSAttributedString>(_v: P0): R;
-    styleAttributes<R = cocoa.NSDictionary>(): R;
-    setStyleAttributes<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
-    textColor<R = cocoa.MSColor>(): R;
-    setTextColor<R = void, P0 = cocoa.MSColor>(_v: P0): R;
+    previousRectCache<R = CGRect>(): R;
+    setPreviousRectCache<R = void, P0 = CGRect>(_v: P0): R;
+    stringValue<R = NSString>(): R;
+    setStringValue<R = void, P0 = NSString>(_v: P0): R;
+    attributedStringValue<R = NSAttributedString>(): R;
+    setAttributedStringValue<R = void, P0 = NSAttributedString>(_v: P0): R;
+    styleAttributes<R = NSDictionary>(): R;
+    setStyleAttributes<R = void, P0 = NSDictionary>(_v: P0): R;
+    textColor<R = MSColor>(): R;
+    setTextColor<R = void, P0 = MSColor>(_v: P0): R;
     lineHeight<R = number>(): R;
     setLineHeight<R = void, P0 = number>(_v: P0): R;
-    characterSpacing<R = cocoa.NSNumber>(): R;
-    setCharacterSpacing<R = void, P0 = cocoa.NSNumber>(_v: P0): R;
-    fontPostscriptName<R = cocoa.NSString>(): R;
-    setFontPostscriptName<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    characterSpacing<R = NSNumber>(): R;
+    setCharacterSpacing<R = void, P0 = NSNumber>(_v: P0): R;
+    fontPostscriptName<R = NSString>(): R;
+    setFontPostscriptName<R = void, P0 = NSString>(_v: P0): R;
     fontSize<R = number>(): R;
     setFontSize<R = void, P0 = number>(_v: P0): R;
     verticalAlignment<R = number>(): R;
@@ -105,17 +105,17 @@ declare namespace cocoa {
     textAlignment<R = number>(): R;
     setTextAlignment<R = void, P0 = number>(_v: P0): R;
     supportsVerticalAlignment<R = boolean>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSTextLayer<T = any> extends cocoa.classes._MSTextLayer, cocoa.classes.MSFirstLineTypesetterDelegateProtocol, cocoa.classes.MSColorConvertibleProtocol {
+    export interface MSTextLayer<T = any> extends _MSTextLayer, MSFirstLineTypesetterDelegateProtocol, MSColorConvertibleProtocol {
       alloc<R = MSTextLayer>(): R;
       new: <R = MSTextLayer>() => R;
       defaultValue<R = unknown>(): R;
-      menuItemStateForTest_forLayers<R = number, P0 = cocoa.CDUnknownBlockType, P1 = unknown>(_menuItemStateForTest: P0, _forLayers: P1): R;
+      menuItemStateForTest_forLayers<R = number, P0 = CDUnknownBlockType, P1 = unknown>(_menuItemStateForTest: P0, _forLayers: P1): R;
       menuItemStateForAlignment_forLayers<R = number, P0 = number, P1 = unknown>(_menuItemStateForAlignment: P0, _forLayers: P1): R;
       setTextAlignment_forLayers<R = void, P0 = number, P1 = unknown>(_setTextAlignment: P0, _forLayers: P1): R;
       canSetTextAlignmentForLayers<R = boolean, P0 = unknown>(_canSetTextAlignmentForLayers: P0): R;
@@ -127,7 +127,7 @@ declare namespace cocoa {
       keyPathsForValuesAffectingSupportsVerticalAlignment<R = unknown>(): R;
       keyPathsForValuesAffectingHasFixedHeight<R = unknown>(): R;
       keyPathsForValuesAffectingCanFixHeight<R = unknown>(): R;
-      maintainTextLayerBaselinesForLayers_inBlock<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(_maintainTextLayerBaselinesForLayers: P0, _inBlock: P1): R;
+      maintainTextLayerBaselinesForLayers_inBlock<R = void, P0 = unknown, P1 = CDUnknownBlockType>(_maintainTextLayerBaselinesForLayers: P0, _inBlock: P1): R;
     }
   }
 }

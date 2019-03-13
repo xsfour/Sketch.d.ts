@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSBaselineView<T = any> extends cocoa.NSView {
+  export interface NSBaselineView<T = any> extends NSView {
     cxx_destruct<R = void>(): R;
-    realBaselineView<R = cocoa.NSView>(): R;
-    setRealBaselineView<R = void, P0 = cocoa.NSView>(_v: P0): R;
+    realBaselineView<R = NSView>(): R;
+    setRealBaselineView<R = void, P0 = NSView>(_v: P0): R;
   }
   namespace classes {
-    export interface NSBaselineView<T = any> extends cocoa.classes.NSView {
+    export interface NSBaselineView<T = any> extends NSView {
       alloc<R = NSBaselineView>(): R;
       new: <R = NSBaselineView>() => R;
     }

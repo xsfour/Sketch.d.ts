@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScriptSuiteDescription<T = any> extends cocoa.NSObject {
+  export interface NSScriptSuiteDescription<T = any> extends NSObject {
     removeCommandDescriptions<R = void, P0 = unknown>(_removeCommandDescriptions: P0): R;
     setCommandDescription<R = void, P0 = unknown>(_setCommandDescription: P0): R;
     removeClassDescriptions<R = void, P0 = unknown>(_removeClassDescriptions: P0): R;
@@ -29,7 +29,7 @@ declare namespace cocoa {
     _descriptionWithTabCount<R = unknown, P0 = number>(__descriptionWithTabCount: P0): R;
   }
   namespace classes {
-    export interface NSScriptSuiteDescription<T = any> extends cocoa.classes.NSObject {
+    export interface NSScriptSuiteDescription<T = any> extends NSObject {
       alloc<R = NSScriptSuiteDescription>(): R;
       new: <R = NSScriptSuiteDescription>() => R;
       currentSuiteTerminology<R = unknown>(): R;

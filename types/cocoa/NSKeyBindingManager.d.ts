@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSKeyBindingManager<T = any> extends cocoa.NSObject {
+  export interface NSKeyBindingManager<T = any> extends NSObject {
     _monitorKeyBinding_flags<R = void, P0 = number, P1 = number>(__monitorKeyBinding: P0, _flags: P1): R;
     _setNextKeyBindingManager<R = void, P0 = unknown>(__setNextKeyBindingManager: P0): R;
     setQuoteBinding<R = void, P0 = unknown>(_setQuoteBinding: P0): R;
@@ -16,7 +16,7 @@ declare namespace cocoa {
     interpretEventAsCommand_forClient<R = boolean, P0 = unknown, P1 = unknown>(_interpretEventAsCommand: P0, _forClient: P1): R;
   }
   namespace classes {
-    export interface NSKeyBindingManager<T = any> extends cocoa.classes.NSObject {
+    export interface NSKeyBindingManager<T = any> extends NSObject {
       alloc<R = NSKeyBindingManager>(): R;
       new: <R = NSKeyBindingManager>() => R;
       _keyBindingMonitor<R = unknown>(): R;

@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImageData<T = any> extends cocoa.NSObject, cocoa.NSCopyingProtocol, cocoa.MSCodingProtocol, cocoa.MSJSONArchiverAlternativeFileReferenceProtocol {
+  export interface MSImageData<T = any> extends NSObject, NSCopyingProtocol, MSCodingProtocol, MSJSONArchiverAlternativeFileReferenceProtocol {
     cxx_destruct<R = void>(): R;
-    CGImageAtLevelOfDetail<R = cocoa.CGImage, P0 = number>(_CGImageAtLevelOfDetail: P0): R;
-    generateCGImageAtLevelOfDetail<R = cocoa.CGImage, P0 = number>(_generateCGImageAtLevelOfDetail: P0): R;
-    CGImageSuitableForDrawingWithSize<R = cocoa.CGImage, P0 = cocoa.CGSize>(_CGImageSuitableForDrawingWithSize: P0): R;
+    CGImageAtLevelOfDetail<R = CGImage, P0 = number>(_CGImageAtLevelOfDetail: P0): R;
+    generateCGImageAtLevelOfDetail<R = CGImage, P0 = number>(_generateCGImageAtLevelOfDetail: P0): R;
+    CGImageSuitableForDrawingWithSize<R = CGImage, P0 = CGSize>(_CGImageSuitableForDrawingWithSize: P0): R;
     correctInvalidGamma<R = void>(): R;
     replacementObjectForJSONEncoder<R = unknown, P0 = unknown>(_replacementObjectForJSONEncoder: P0): R;
     encodeAsJSON<R = void, P0 = unknown>(_encodeAsJSON: P0): R;
@@ -23,21 +23,21 @@ declare namespace cocoa {
     initWithImage<R = unknown, P0 = unknown>(_initWithImage: P0): R;
     initDefault<R = unknown>(): R;
     treeAsDictionary<R = unknown>(): R;
-    imageLock<R = cocoa.BCReadWriteLock>(): R;
-    dataLock<R = cocoa.OS_dispatch_semaphore>(): R;
-    image<R = cocoa.NSImage>(): R;
-    setImage<R = void, P0 = cocoa.NSImage>(_v: P0): R;
-    cgImage<R = cocoa.CGImage>(): R;
+    imageLock<R = BCReadWriteLock>(): R;
+    dataLock<R = OS_dispatch_semaphore>(): R;
+    image<R = NSImage>(): R;
+    setImage<R = void, P0 = NSImage>(_v: P0): R;
+    cgImage<R = CGImage>(): R;
     hash<R = number>(): R;
-    archiveReferenceIdentifier_bc<R = cocoa.NSString>(): R;
-    sha1<R = cocoa.NSData>(): R;
-    data<R = cocoa.NSData>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    archiveReferenceIdentifier_bc<R = NSString>(): R;
+    sha1<R = NSData>(): R;
+    data<R = NSData>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSImageData<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCopyingProtocol, cocoa.classes.MSCodingProtocol, cocoa.classes.MSJSONArchiverAlternativeFileReferenceProtocol {
+    export interface MSImageData<T = any> extends NSObject, NSCopyingProtocol, MSCodingProtocol, MSJSONArchiverAlternativeFileReferenceProtocol {
       alloc<R = MSImageData>(): R;
       new: <R = MSImageData>() => R;
       errorImage<R = unknown>(): R;

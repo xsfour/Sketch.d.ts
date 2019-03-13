@@ -1,13 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCHSBColorPickerDelegateProtocol<T = any> extends cocoa.NSObjectProtocol {
-    hsbColorPickerPreviewColorSpace<R = cocoa.NSColorSpace, P0 = cocoa.BCHSBColorPicker>(_hsbColorPickerPreviewColorSpace: P0): R;
-    hsbColorPickerDocumentColorSpace<R = cocoa.NSColorSpace, P0 = cocoa.BCHSBColorPicker>(_hsbColorPickerDocumentColorSpace: P0): R;
+  export interface BCHSBColorPickerDelegateProtocol<T = any> extends NSObjectProtocol {
+    hsbColorPickerPreviewColorSpace<R = NSColorSpace, P0 = BCHSBColorPicker>(_hsbColorPickerPreviewColorSpace: P0): R;
+    hsbColorPickerDocumentColorSpace<R = NSColorSpace, P0 = BCHSBColorPicker>(_hsbColorPickerDocumentColorSpace: P0): R;
   }
   namespace classes {
-    export interface BCHSBColorPickerDelegateProtocol<T = any> extends cocoa.classes.NSObjectProtocol {  }
+    export interface BCHSBColorPickerDelegateProtocol<T = any> extends NSObjectProtocol {  }
   }
 }
-
-declare const BCHSBColorPickerDelegateProtocol: cocoa.classes.BCHSBColorPickerDelegateProtocol;

@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSCloudRoundedView<T = any> extends cocoa.NSView {}
+  export interface MSCloudRoundedView<T = any> extends NSView {}
   namespace classes {
-    export interface MSCloudRoundedView<T = any> extends cocoa.classes.NSView {
+    export interface MSCloudRoundedView<T = any> extends NSView {
       alloc<R = MSCloudRoundedView>(): R;
       new: <R = MSCloudRoundedView>() => R;
     }

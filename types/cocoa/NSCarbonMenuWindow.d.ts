@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCarbonMenuWindow<T = any> extends cocoa.NSCarbonWindow {
+  export interface NSCarbonMenuWindow<T = any> extends NSCarbonWindow {
     _enableFlushWindowWithoutPerformingFlush<R = void>(): R;
-    _recursivelyPropagateCocoaDirtyRectsToCarbonForHIView<R = void, P0 = cocoa.OpaqueControlRef>(__recursivelyPropagateCocoaDirtyRectsToCarbonForHIView: P0): R;
-    _recursivelyPropagateCocoaDirtyRectsForView_toCarbonView<R = void, P0 = unknown, P1 = cocoa.OpaqueControlRef>(__recursivelyPropagateCocoaDirtyRectsForView: P0, _toCarbonView: P1): R;
-    _propagateCocoaDirtyRectsForView_toCarbonView<R = void, P0 = unknown, P1 = cocoa.OpaqueControlRef>(__propagateCocoaDirtyRectsForView: P0, _toCarbonView: P1): R;
+    _recursivelyPropagateCocoaDirtyRectsToCarbonForHIView<R = void, P0 = OpaqueControlRef>(__recursivelyPropagateCocoaDirtyRectsToCarbonForHIView: P0): R;
+    _recursivelyPropagateCocoaDirtyRectsForView_toCarbonView<R = void, P0 = unknown, P1 = OpaqueControlRef>(__recursivelyPropagateCocoaDirtyRectsForView: P0, _toCarbonView: P1): R;
+    _propagateCocoaDirtyRectsForView_toCarbonView<R = void, P0 = unknown, P1 = OpaqueControlRef>(__propagateCocoaDirtyRectsForView: P0, _toCarbonView: P1): R;
     _carbonWindowRefDidDraw<R = void>(): R;
     _carbonWindowRefWillDraw<R = void>(): R;
     _carbonWindowRefChangedVisibilityTo<R = void, P0 = boolean>(__carbonWindowRefChangedVisibilityTo: P0): R;
@@ -22,7 +22,7 @@ declare namespace cocoa {
     setAlphaValue<R = void, P0 = number>(_setAlphaValue: P0): R;
   }
   namespace classes {
-    export interface NSCarbonMenuWindow<T = any> extends cocoa.classes.NSCarbonWindow {
+    export interface NSCarbonMenuWindow<T = any> extends NSCarbonWindow {
       alloc<R = NSCarbonMenuWindow>(): R;
       new: <R = NSCarbonMenuWindow>() => R;
     }

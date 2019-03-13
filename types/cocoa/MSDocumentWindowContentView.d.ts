@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDocumentWindowContentView<T = any> extends cocoa.NSView {}
+  export interface MSDocumentWindowContentView<T = any> extends NSView {}
   namespace classes {
-    export interface MSDocumentWindowContentView<T = any> extends cocoa.classes.NSView {
+    export interface MSDocumentWindowContentView<T = any> extends NSView {
       alloc<R = MSDocumentWindowContentView>(): R;
       new: <R = MSDocumentWindowContentView>() => R;
     }

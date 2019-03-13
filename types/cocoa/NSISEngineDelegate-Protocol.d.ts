@@ -1,15 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSISEngineDelegateProtocol<T = any> extends cocoa.NSObjectProtocol {
-    engine_willBreakConstraint_dueToMutuallyExclusiveConstraints<R = void, P0 = cocoa.NSISEngine, P1 = cocoa.NSISConstraint, P2 = cocoa.NSArray>(_engine: P0, _willBreakConstraint: P1, _dueToMutuallyExclusiveConstraints: P2): R;
-    engine_markerForConstraintToBreakAmongConstraints<R = cocoa.NSISVariable, P0 = cocoa.NSISEngine, P1 = cocoa.NSArray>(_engine: P0, _markerForConstraintToBreakAmongConstraints: P1): R;
-    constraintsDidChangeInEngine<R = void, P0 = cocoa.NSISEngine>(_constraintsDidChangeInEngine: P0): R;
-    solutionDidChangeInEngine<R = void, P0 = cocoa.NSISEngine>(_solutionDidChangeInEngine: P0): R;
+  export interface NSISEngineDelegateProtocol<T = any> extends NSObjectProtocol {
+    engine_willBreakConstraint_dueToMutuallyExclusiveConstraints<R = void, P0 = NSISEngine, P1 = NSISConstraint, P2 = NSArray>(_engine: P0, _willBreakConstraint: P1, _dueToMutuallyExclusiveConstraints: P2): R;
+    engine_markerForConstraintToBreakAmongConstraints<R = NSISVariable, P0 = NSISEngine, P1 = NSArray>(_engine: P0, _markerForConstraintToBreakAmongConstraints: P1): R;
+    constraintsDidChangeInEngine<R = void, P0 = NSISEngine>(_constraintsDidChangeInEngine: P0): R;
+    solutionDidChangeInEngine<R = void, P0 = NSISEngine>(_solutionDidChangeInEngine: P0): R;
   }
   namespace classes {
-    export interface NSISEngineDelegateProtocol<T = any> extends cocoa.classes.NSObjectProtocol {  }
+    export interface NSISEngineDelegateProtocol<T = any> extends NSObjectProtocol {  }
   }
 }
-
-declare const NSISEngineDelegateProtocol: cocoa.classes.NSISEngineDelegateProtocol;

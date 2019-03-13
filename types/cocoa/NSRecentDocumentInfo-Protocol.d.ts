@@ -1,16 +1,14 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSRecentDocumentInfoProtocol<T = any> extends cocoa.NSObjectProtocol {
-    resolveURLWithCompletionHandler<R = void, P0 = cocoa.CDUnknownBlockType>(_resolveURLWithCompletionHandler: P0): R;
+  export interface NSRecentDocumentInfoProtocol<T = any> extends NSObjectProtocol {
+    resolveURLWithCompletionHandler<R = void, P0 = CDUnknownBlockType>(_resolveURLWithCompletionHandler: P0): R;
     state<R = number>(): R;
-    icon<R = cocoa.NSImage>(): R;
-    displayName<R = cocoa.NSString>(): R;
-    URL<R = cocoa.NSURL>(): R;
+    icon<R = NSImage>(): R;
+    displayName<R = NSString>(): R;
+    URL<R = NSURL>(): R;
   }
   namespace classes {
-    export interface NSRecentDocumentInfoProtocol<T = any> extends cocoa.classes.NSObjectProtocol {  }
+    export interface NSRecentDocumentInfoProtocol<T = any> extends NSObjectProtocol {  }
   }
 }
-
-declare const NSRecentDocumentInfoProtocol: cocoa.classes.NSRecentDocumentInfoProtocol;

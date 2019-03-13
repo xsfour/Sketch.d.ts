@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSStyledLayer<T = any> extends cocoa._MSStyledLayer, cocoa.MSStyledLayerProtocol {
+  export interface MSStyledLayer<T = any> extends _MSStyledLayer, MSStyledLayerProtocol {
     hasMarkers<R = boolean>(): R;
     usedStyle<R = unknown>(): R;
     hasEnabledBackgroundBlur<R = boolean>(): R;
@@ -16,7 +16,7 @@ declare namespace cocoa {
     outlineShapeFromPath_withBorder<R = unknown, P0 = unknown, P1 = unknown>(_outlineShapeFromPath: P0, _withBorder: P1): R;
     canConvertToOutlines<R = boolean>(): R;
     layersByConvertingToOutlines<R = unknown>(): R;
-    sharedMaster<R = cocoa.MSModelObject>(): R;
+    sharedMaster<R = MSModelObject>(): R;
     shareableObjectType<R = number>(): R;
     changeColor<R = void, P0 = unknown>(_changeColor: P0): R;
     canCutSegments<R = boolean>(): R;
@@ -37,28 +37,28 @@ declare namespace cocoa {
     sharedStylesReferencedInDocument<R = unknown, P0 = unknown>(_sharedStylesReferencedInDocument: P0): R;
     CSSAttributes<R = unknown>(): R;
     setupWithLayerBuilderDictionary<R = unknown, P0 = unknown>(_setupWithLayerBuilderDictionary: P0): R;
-    sharedStyle<R = cocoa.MSSharedStyle>(): R;
-    setSharedStyle<R = void, P0 = cocoa.MSSharedStyle>(_v: P0): R;
+    sharedStyle<R = MSSharedStyle>(): R;
+    setSharedStyle<R = void, P0 = MSSharedStyle>(_v: P0): R;
     isSharedStyleOutOfSync<R = boolean>(): R;
-    CGTransformForFrame<R = cocoa.CGAffineTransform>(): R;
-    bounds<R = cocoa.CGRect>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    CGTransformForFrame<R = CGAffineTransform>(): R;
+    bounds<R = CGRect>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hasTransforms<R = boolean>(): R;
     hash<R = number>(): R;
-    influenceRectEdgePaddingsThatCascadeToContainedLayers<R = cocoa.BCEdgePaddings>(): R;
+    influenceRectEdgePaddingsThatCascadeToContainedLayers<R = BCEdgePaddings>(): R;
     isFlippedHorizontal<R = boolean>(): R;
     isFlippedVertical<R = boolean>(): R;
     isLayerExportable<R = boolean>(): R;
     isVisible<R = boolean>(): R;
-    objectID<R = cocoa.NSString>(): R;
-    origin<R = cocoa.CGPoint>(): R;
-    rect<R = cocoa.CGRect>(): R;
+    objectID<R = NSString>(): R;
+    origin<R = CGPoint>(): R;
+    rect<R = CGRect>(): R;
     rotation<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSStyledLayer<T = any> extends cocoa.classes._MSStyledLayer, cocoa.classes.MSStyledLayerProtocol {
+    export interface MSStyledLayer<T = any> extends _MSStyledLayer, MSStyledLayerProtocol {
       alloc<R = MSStyledLayer>(): R;
       new: <R = MSStyledLayer>() => R;
       layerWithImage<R = unknown, P0 = unknown>(_layerWithImage: P0): R;

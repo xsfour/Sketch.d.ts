@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSExportPDFBookAction<T = any> extends cocoa.MSDocumentAction {
+  export interface MSExportPDFBookAction<T = any> extends MSDocumentAction {
     label<R = unknown>(): R;
     validate<R = boolean>(): R;
     exportPDFBook<R = void, P0 = unknown>(_exportPDFBook: P0): R;
   }
   namespace classes {
-    export interface MSExportPDFBookAction<T = any> extends cocoa.classes.MSDocumentAction {
+    export interface MSExportPDFBookAction<T = any> extends MSDocumentAction {
       alloc<R = MSExportPDFBookAction>(): R;
       new: <R = MSExportPDFBookAction>() => R;
     }

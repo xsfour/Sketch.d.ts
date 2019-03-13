@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFavoriteColorsStore<T = any> extends cocoa.NSObject {
+  export interface NSFavoriteColorsStore<T = any> extends NSObject {
     colorsFromBacking<R = unknown>(): R;
     writeColorsToBacking<R = boolean, P0 = unknown>(_writeColorsToBacking: P0): R;
     updateColorsFromBacking<R = void>(): R;
-    updatingFromBacking<R = void, P0 = cocoa.CDUnknownBlockType>(_updatingFromBacking: P0): R;
+    updatingFromBacking<R = void, P0 = CDUnknownBlockType>(_updatingFromBacking: P0): R;
     deferredWriteColors<R = void>(): R;
     replaceColorAtIndex_withColor<R = void, P0 = number, P1 = unknown>(_replaceColorAtIndex: P0, _withColor: P1): R;
     removeColorAtIndex<R = void, P0 = number>(_removeColorAtIndex: P0): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     copyColorAtIndex_toIndex<R = void, P0 = number, P1 = number>(_copyColorAtIndex: P0, _toIndex: P1): R;
     moveColorAtIndex_toIndex_replacement<R = void, P0 = number, P1 = number, P2 = boolean>(_moveColorAtIndex: P0, _toIndex: P1, _replacement: P2): R;
     dealloc<R = void>(): R;
-    colors<R = cocoa.NSArray>(): R;
-    colorEntries<R = cocoa.NSArray>(): R;
-    setColorEntries<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    colors<R = NSArray>(): R;
+    colorEntries<R = NSArray>(): R;
+    setColorEntries<R = void, P0 = NSArray>(_v: P0): R;
   }
   namespace classes {
-    export interface NSFavoriteColorsStore<T = any> extends cocoa.classes.NSObject {
+    export interface NSFavoriteColorsStore<T = any> extends NSObject {
       alloc<R = NSFavoriteColorsStore>(): R;
       new: <R = NSFavoriteColorsStore>() => R;
       defersBackingUpdates<R = boolean>(): R;

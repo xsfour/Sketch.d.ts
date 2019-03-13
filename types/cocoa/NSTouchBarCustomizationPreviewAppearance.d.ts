@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarCustomizationPreviewAppearance<T = any> extends cocoa.NSAppearance {}
+  export interface NSTouchBarCustomizationPreviewAppearance<T = any> extends NSAppearance {}
   namespace classes {
-    export interface NSTouchBarCustomizationPreviewAppearance<T = any> extends cocoa.classes.NSAppearance {
+    export interface NSTouchBarCustomizationPreviewAppearance<T = any> extends NSAppearance {
       alloc<R = NSTouchBarCustomizationPreviewAppearance>(): R;
       new: <R = NSTouchBarCustomizationPreviewAppearance>() => R;
     }

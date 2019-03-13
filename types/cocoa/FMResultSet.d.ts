@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface FMResultSet<T = any> extends cocoa.NSObject {
+  export interface FMResultSet<T = any> extends NSObject {
     objectForKeyedSubscript<R = unknown, P0 = unknown>(_objectForKeyedSubscript: P0): R;
     objectAtIndexedSubscript<R = unknown, P0 = number>(_objectAtIndexedSubscript: P0): R;
     setParentDB<R = void, P0 = unknown>(_setParentDB: P0): R;
@@ -42,14 +42,14 @@ declare namespace cocoa {
     columnCount<R = number>(): R;
     close<R = void>(): R;
     dealloc<R = void>(): R;
-    statement<R = cocoa.FMStatement>(): R;
-    setStatement<R = void, P0 = cocoa.FMStatement>(_v: P0): R;
-    query<R = cocoa.NSString>(): R;
-    setQuery<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    columnNameToIndexMap<R = cocoa.NSMutableDictionary>(): R;
+    statement<R = FMStatement>(): R;
+    setStatement<R = void, P0 = FMStatement>(_v: P0): R;
+    query<R = NSString>(): R;
+    setQuery<R = void, P0 = NSString>(_v: P0): R;
+    columnNameToIndexMap<R = NSMutableDictionary>(): R;
   }
   namespace classes {
-    export interface FMResultSet<T = any> extends cocoa.classes.NSObject {
+    export interface FMResultSet<T = any> extends NSObject {
       alloc<R = FMResultSet>(): R;
       new: <R = FMResultSet>() => R;
       resultSetWithStatement_usingParentDatabase<R = unknown, P0 = unknown, P1 = unknown>(_resultSetWithStatement: P0, _usingParentDatabase: P1): R;

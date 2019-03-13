@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAccessibilityReparentingCellProxy<T = any> extends cocoa.NSAccessibilityReparentingProxy {
-    accessibilityFrame<R = cocoa.CGRect>(): R;
+  export interface NSAccessibilityReparentingCellProxy<T = any> extends NSAccessibilityReparentingProxy {
+    accessibilityFrame<R = CGRect>(): R;
     accessibilitySizeAttribute<R = unknown>(): R;
     accessibilityPositionAttribute<R = unknown>(): R;
     accessibilityTopLevelUIElementAttribute<R = unknown>(): R;
@@ -18,7 +18,7 @@ declare namespace cocoa {
     hasEditor<R = boolean>(): R;
   }
   namespace classes {
-    export interface NSAccessibilityReparentingCellProxy<T = any> extends cocoa.classes.NSAccessibilityReparentingProxy {
+    export interface NSAccessibilityReparentingCellProxy<T = any> extends NSAccessibilityReparentingProxy {
       alloc<R = NSAccessibilityReparentingCellProxy>(): R;
       new: <R = NSAccessibilityReparentingCellProxy>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSBrowserPreviewColumnViewController<T = any> extends cocoa.NSBrowserColumnViewController {
+  export interface _NSBrowserPreviewColumnViewController<T = any> extends NSBrowserColumnViewController {
     setMenu<R = void, P0 = unknown>(_setMenu: P0): R;
     setSelectionIndexes<R = void, P0 = unknown>(_setSelectionIndexes: P0): R;
     selectionIndexes<R = unknown>(): R;
@@ -16,11 +16,11 @@ declare namespace cocoa {
     setAllowsMultipleSelection<R = void, P0 = boolean>(_setAllowsMultipleSelection: P0): R;
     allowsMultipleSelection<R = boolean>(): R;
     setRepresentedObject<R = void, P0 = unknown>(_setRepresentedObject: P0): R;
-    previewViewController<R = cocoa.NSViewController>(): R;
-    setPreviewViewController<R = void, P0 = cocoa.NSViewController>(_v: P0): R;
+    previewViewController<R = NSViewController>(): R;
+    setPreviewViewController<R = void, P0 = NSViewController>(_v: P0): R;
   }
   namespace classes {
-    export interface _NSBrowserPreviewColumnViewController<T = any> extends cocoa.classes.NSBrowserColumnViewController {
+    export interface _NSBrowserPreviewColumnViewController<T = any> extends NSBrowserColumnViewController {
       alloc<R = _NSBrowserPreviewColumnViewController>(): R;
       new: <R = _NSBrowserPreviewColumnViewController>() => R;
     }

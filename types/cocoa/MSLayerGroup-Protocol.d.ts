@@ -2,11 +2,9 @@
 
 declare namespace cocoa {
   export interface MSLayerGroupProtocol<T = any> {
-    layers<R = cocoa.NSArray>(): R;
+    layers<R = NSArray>(): R;
   }
   namespace classes {
     export interface MSLayerGroupProtocol<T = any> {  }
   }
 }
-
-declare const MSLayerGroupProtocol: cocoa.classes.MSLayerGroupProtocol;

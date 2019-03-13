@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSGraphicsContextSettings<T = any> extends cocoa._MSGraphicsContextSettings {
+  export interface MSGraphicsContextSettings<T = any> extends _MSGraphicsContextSettings {
     description<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSGraphicsContextSettings<T = any> extends cocoa.classes._MSGraphicsContextSettings {
+    export interface MSGraphicsContextSettings<T = any> extends _MSGraphicsContextSettings {
       alloc<R = MSGraphicsContextSettings>(): R;
       new: <R = MSGraphicsContextSettings>() => R;
     }

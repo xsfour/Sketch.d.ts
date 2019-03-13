@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUnitElectricPotentialDifference<T = any> extends cocoa.NSDimension, cocoa.NSSecureCodingProtocol {}
+  export interface NSUnitElectricPotentialDifference<T = any> extends NSDimension, NSSecureCodingProtocol {}
   namespace classes {
-    export interface NSUnitElectricPotentialDifference<T = any> extends cocoa.classes.NSDimension, cocoa.classes.NSSecureCodingProtocol {
+    export interface NSUnitElectricPotentialDifference<T = any> extends NSDimension, NSSecureCodingProtocol {
       alloc<R = NSUnitElectricPotentialDifference>(): R;
       new: <R = NSUnitElectricPotentialDifference>() => R;
       microvolts<R = unknown>(): R;

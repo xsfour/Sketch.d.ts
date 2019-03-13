@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDataMenuProvider<T = any> extends cocoa.NSObject, cocoa.NSMenuDelegateProtocol {
+  export interface MSDataMenuProvider<T = any> extends NSObject, NSMenuDelegateProtocol {
     cxx_destruct<R = void>(): R;
     pluginKeysDictionaryFromDataSuppliers<R = unknown, P0 = unknown>(_pluginKeysDictionaryFromDataSuppliers: P0): R;
     pluginNameForIdentifier<R = unknown, P0 = unknown>(_pluginNameForIdentifier: P0): R;
@@ -27,16 +27,16 @@ declare namespace cocoa {
     overridesMenu<R = unknown>(): R;
     menu<R = unknown>(): R;
     initWithDataManager<R = unknown, P0 = unknown>(_initWithDataManager: P0): R;
-    delegate<R = cocoa.MSDataMenuProviderDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.MSDataMenuProviderDelegate>(_v: P0): R;
-    dataManager<R = cocoa.MSDataSupplierManager>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    delegate<R = MSDataMenuProviderDelegate>(): R;
+    setDelegate<R = void, P0 = MSDataMenuProviderDelegate>(_v: P0): R;
+    dataManager<R = MSDataSupplierManager>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSDataMenuProvider<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSMenuDelegateProtocol {
+    export interface MSDataMenuProvider<T = any> extends NSObject, NSMenuDelegateProtocol {
       alloc<R = MSDataMenuProvider>(): R;
       new: <R = MSDataMenuProvider>() => R;
     }

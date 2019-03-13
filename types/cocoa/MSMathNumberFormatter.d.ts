@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSMathNumberFormatter<T = any> extends cocoa.NSNumberFormatter {}
+  export interface MSMathNumberFormatter<T = any> extends NSNumberFormatter {}
   namespace classes {
-    export interface MSMathNumberFormatter<T = any> extends cocoa.classes.NSNumberFormatter {
+    export interface MSMathNumberFormatter<T = any> extends NSNumberFormatter {
       alloc<R = MSMathNumberFormatter>(): R;
       new: <R = MSMathNumberFormatter>() => R;
     }

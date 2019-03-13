@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSMirrorWindowController<T = any> extends cocoa.NSWindowController, cocoa.MSMirrorWindowControllerContentProtocol, cocoa.NSWindowDelegateProtocol, cocoa.WKNavigationDelegateProtocol, cocoa.WKScriptMessageHandlerProtocol {
+  export interface MSMirrorWindowController<T = any> extends NSWindowController, MSMirrorWindowControllerContentProtocol, NSWindowDelegateProtocol, WKNavigationDelegateProtocol, WKScriptMessageHandlerProtocol {
     relayResponderAction_with<R = void, P0 = string, P1 = unknown>(_relayResponderAction: P0, _with: P1): R;
     showContextualMenuWithEvent<R = void, P0 = unknown>(_showContextualMenuWithEvent: P0): R;
     goWithTheFlow<R = void, P0 = unknown>(_goWithTheFlow: P0): R;
@@ -25,38 +25,38 @@ declare namespace cocoa {
     transitionToArtboardID_animatedBy<R = void, P0 = unknown, P1 = number>(_transitionToArtboardID: P0, _animatedBy: P1): R;
     changeVisibleArtboardID<R = void, P0 = unknown>(_changeVisibleArtboardID: P0): R;
     sortedArtboards<R = unknown, P0 = unknown>(_sortedArtboards: P0): R;
-    webView<R = cocoa.WKWebView>(): R;
-    setWebView<R = void, P0 = cocoa.WKWebView>(_v: P0): R;
-    backgroundView<R = cocoa.MSColorView>(): R;
-    setBackgroundView<R = void, P0 = cocoa.MSColorView>(_v: P0): R;
-    backToolbarItem<R = cocoa.NSToolbarItem>(): R;
-    setBackToolbarItem<R = void, P0 = cocoa.NSToolbarItem>(_v: P0): R;
-    backButton<R = cocoa.NSButton>(): R;
-    setBackButton<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    startpointButton<R = cocoa.NSButton>(): R;
-    setStartpointButton<R = void, P0 = cocoa.NSButton>(_v: P0): R;
-    artboardButton<R = cocoa.NSPopUpButton>(): R;
-    setArtboardButton<R = void, P0 = cocoa.NSPopUpButton>(_v: P0): R;
-    artboardToolbarItem<R = cocoa.NSToolbarItem>(): R;
-    setArtboardToolbarItem<R = void, P0 = cocoa.NSToolbarItem>(_v: P0): R;
-    fittingWindowFrame<R = cocoa.CGRect>(): R;
-    viewPort<R = cocoa.CGRect>(): R;
-    currentStartpoint<R = cocoa.MSImmutableArtboardGroup>(): R;
-    startpoints<R = cocoa.NSArray>(): R;
-    firstArtboardID<R = cocoa.NSString>(): R;
-    defaultArtboardID<R = cocoa.NSString>(): R;
-    visibleArtboardID<R = cocoa.NSString>(): R;
-    currentArtboardID<R = cocoa.NSString>(): R;
-    currentMutableDocument<R = cocoa.MSDocumentData>(): R;
-    currentDocument<R = cocoa.MSImmutableDocumentData>(): R;
-    dataProvider<R = cocoa.MSMirrorDataProvider>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    webView<R = WKWebView>(): R;
+    setWebView<R = void, P0 = WKWebView>(_v: P0): R;
+    backgroundView<R = MSColorView>(): R;
+    setBackgroundView<R = void, P0 = MSColorView>(_v: P0): R;
+    backToolbarItem<R = NSToolbarItem>(): R;
+    setBackToolbarItem<R = void, P0 = NSToolbarItem>(_v: P0): R;
+    backButton<R = NSButton>(): R;
+    setBackButton<R = void, P0 = NSButton>(_v: P0): R;
+    startpointButton<R = NSButton>(): R;
+    setStartpointButton<R = void, P0 = NSButton>(_v: P0): R;
+    artboardButton<R = NSPopUpButton>(): R;
+    setArtboardButton<R = void, P0 = NSPopUpButton>(_v: P0): R;
+    artboardToolbarItem<R = NSToolbarItem>(): R;
+    setArtboardToolbarItem<R = void, P0 = NSToolbarItem>(_v: P0): R;
+    fittingWindowFrame<R = CGRect>(): R;
+    viewPort<R = CGRect>(): R;
+    currentStartpoint<R = MSImmutableArtboardGroup>(): R;
+    startpoints<R = NSArray>(): R;
+    firstArtboardID<R = NSString>(): R;
+    defaultArtboardID<R = NSString>(): R;
+    visibleArtboardID<R = NSString>(): R;
+    currentArtboardID<R = NSString>(): R;
+    currentMutableDocument<R = MSDocumentData>(): R;
+    currentDocument<R = MSImmutableDocumentData>(): R;
+    dataProvider<R = MSMirrorDataProvider>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSMirrorWindowController<T = any> extends cocoa.classes.NSWindowController, cocoa.classes.MSMirrorWindowControllerContentProtocol, cocoa.classes.NSWindowDelegateProtocol, cocoa.classes.WKNavigationDelegateProtocol, cocoa.classes.WKScriptMessageHandlerProtocol {
+    export interface MSMirrorWindowController<T = any> extends NSWindowController, MSMirrorWindowControllerContentProtocol, NSWindowDelegateProtocol, WKNavigationDelegateProtocol, WKScriptMessageHandlerProtocol {
       alloc<R = MSMirrorWindowController>(): R;
       new: <R = MSMirrorWindowController>() => R;
       show<R = void>(): R;

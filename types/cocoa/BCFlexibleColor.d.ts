@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCFlexibleColor<T = any> extends cocoa.NSObject {
+  export interface BCFlexibleColor<T = any> extends NSObject {
     description<R = unknown>(): R;
     colorForColorSpace<R = unknown, P0 = unknown>(_colorForColorSpace: P0): R;
     alpha<R = number>(): R;
@@ -20,7 +20,7 @@ declare namespace cocoa {
     setRed<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface BCFlexibleColor<T = any> extends cocoa.classes.NSObject {
+    export interface BCFlexibleColor<T = any> extends NSObject {
       alloc<R = BCFlexibleColor>(): R;
       new: <R = BCFlexibleColor>() => R;
       colorWithHue_sat_light_alpha<R = unknown, P0 = number, P1 = number, P2 = number, P3 = number>(_colorWithHue: P0, _sat: P1, _light: P2, _alpha: P3): R;

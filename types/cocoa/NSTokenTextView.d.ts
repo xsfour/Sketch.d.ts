@@ -1,17 +1,17 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTokenTextView<T = any> extends cocoa.NSTextView {
+  export interface NSTokenTextView<T = any> extends NSTextView {
     _characterAtIndex_shouldTerminateString<R = boolean, P0 = number, P1 = unknown>(__characterAtIndex: P0, _shouldTerminateString: P1): R;
     readablePasteboardTypes<R = unknown>(): R;
     writablePasteboardTypes<R = unknown>(): R;
     acceptableDragTypes<R = unknown>(): R;
-    _tokenAttachmentForPoint_glyphIndex_drawingRect<R = unknown, P0 = cocoa.CGPoint, P1 = number, P2 = cocoa.CGRect>(__tokenAttachmentForPoint: P0, _glyphIndex: P1, _drawingRect: P2): R;
+    _tokenAttachmentForPoint_glyphIndex_drawingRect<R = unknown, P0 = CGPoint, P1 = number, P2 = CGRect>(__tokenAttachmentForPoint: P0, _glyphIndex: P1, _drawingRect: P2): R;
     setDelegate<R = void, P0 = unknown>(_setDelegate: P0): R;
     _detachFieldEditorFromWindow<R = void, P0 = unknown>(__detachFieldEditorFromWindow: P0): R;
   }
   namespace classes {
-    export interface NSTokenTextView<T = any> extends cocoa.classes.NSTextView {
+    export interface NSTokenTextView<T = any> extends NSTextView {
       alloc<R = NSTokenTextView>(): R;
       new: <R = NSTokenTextView>() => R;
       tokenTextViewForWindow<R = unknown, P0 = unknown>(_tokenTextViewForWindow: P0): R;

@@ -1,18 +1,18 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSObservationTransformer<T = any> extends cocoa.NSObservationSource, cocoa.NSObserverProtocol {
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+  export interface NSObservationTransformer<T = any> extends NSObservationSource, NSObserverProtocol {
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSObservationTransformer<T = any> extends cocoa.classes.NSObservationSource, cocoa.classes.NSObserverProtocol {
+    export interface NSObservationTransformer<T = any> extends NSObservationSource, NSObserverProtocol {
       alloc<R = NSObservationTransformer>(): R;
       new: <R = NSObservationTransformer>() => R;
-      mapErrorsWithBlock<R = unknown, P0 = cocoa.CDUnknownBlockType>(_mapErrorsWithBlock: P0): R;
-      mapValuesWithBlock<R = unknown, P0 = cocoa.CDUnknownBlockType>(_mapValuesWithBlock: P0): R;
+      mapErrorsWithBlock<R = unknown, P0 = CDUnknownBlockType>(_mapErrorsWithBlock: P0): R;
+      mapValuesWithBlock<R = unknown, P0 = CDUnknownBlockType>(_mapValuesWithBlock: P0): R;
     }
   }
 }

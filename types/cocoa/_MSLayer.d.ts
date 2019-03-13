@@ -1,16 +1,16 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSLayer<T = any> extends cocoa.MSModelObject {
+  export interface _MSLayer<T = any> extends MSModelObject {
     hasDefaultValues<R = boolean>(): R;
-    frame<R = cocoa.MSRect>(): R;
-    setFrame<R = void, P0 = cocoa.MSRect>(_v: P0): R;
-    flow<R = cocoa.MSFlowConnection>(): R;
-    setFlow<R = void, P0 = cocoa.MSFlowConnection>(_v: P0): R;
-    exportOptions<R = cocoa.MSExportOptions>(): R;
-    setExportOptions<R = void, P0 = cocoa.MSExportOptions>(_v: P0): R;
-    userInfo<R = cocoa.NSDictionary>(): R;
-    setUserInfo<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
+    frame<R = MSRect>(): R;
+    setFrame<R = void, P0 = MSRect>(_v: P0): R;
+    flow<R = MSFlowConnection>(): R;
+    setFlow<R = void, P0 = MSFlowConnection>(_v: P0): R;
+    exportOptions<R = MSExportOptions>(): R;
+    setExportOptions<R = void, P0 = MSExportOptions>(_v: P0): R;
+    userInfo<R = NSDictionary>(): R;
+    setUserInfo<R = void, P0 = NSDictionary>(_v: P0): R;
     shouldBreakMaskChain<R = boolean>(): R;
     setShouldBreakMaskChain<R = void, P0 = boolean>(_v: P0): R;
     rotation<R = number>(): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     setResizingType<R = void, P0 = number>(_v: P0): R;
     resizingConstraint<R = number>(): R;
     setResizingConstraint<R = void, P0 = number>(_v: P0): R;
-    originalObjectID<R = cocoa.NSString>(): R;
-    setOriginalObjectID<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    originalObjectID<R = NSString>(): R;
+    setOriginalObjectID<R = void, P0 = NSString>(_v: P0): R;
     nameIsFixed<R = boolean>(): R;
     setNameIsFixed<R = void, P0 = boolean>(_v: P0): R;
-    name<R = cocoa.NSString>(): R;
-    setName<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    name<R = NSString>(): R;
+    setName<R = void, P0 = NSString>(_v: P0): R;
     layerListExpandedType<R = number>(): R;
     setLayerListExpandedType<R = void, P0 = number>(_v: P0): R;
     isVisible<R = boolean>(): R;
@@ -41,7 +41,7 @@ declare namespace cocoa {
     setBooleanOperation<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface _MSLayer<T = any> extends cocoa.classes.MSModelObject {
+    export interface _MSLayer<T = any> extends MSModelObject {
       alloc<R = _MSLayer>(): R;
       new: <R = _MSLayer>() => R;
     }

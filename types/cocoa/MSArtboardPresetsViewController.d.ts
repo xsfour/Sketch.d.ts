@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSArtboardPresetsViewController<T = any> extends cocoa.NSViewController, cocoa.NSTableViewDataSourceProtocol, cocoa.NSTableViewDelegateProtocol, cocoa.MSEditArtboardPresetViewControllerDelegateProtocol, cocoa.NSUserInterfaceValidationsProtocol, cocoa.BCPopoverDelegateProtocol {
+  export interface MSArtboardPresetsViewController<T = any> extends NSViewController, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol, MSEditArtboardPresetViewControllerDelegateProtocol, NSUserInterfaceValidationsProtocol, BCPopoverDelegateProtocol {
     cxx_destruct<R = void>(): R;
     viewForGroupRow<R = unknown, P0 = number>(_viewForGroupRow: P0): R;
     deleteRowAction<R = void, P0 = unknown>(_deleteRowAction: P0): R;
@@ -20,37 +20,37 @@ declare namespace cocoa {
     selectCategory<R = void, P0 = unknown>(_selectCategory: P0): R;
     categoryForPreset<R = unknown, P0 = unknown>(_categoryForPreset: P0): R;
     artboardPresetStoreDidChange<R = void, P0 = unknown>(_artboardPresetStoreDidChange: P0): R;
-    editingPreset<R = cocoa.MSArtboardPreset>(): R;
-    setEditingPreset<R = void, P0 = cocoa.MSArtboardPreset>(_v: P0): R;
-    arrangedObjects<R = cocoa.NSArray>(): R;
-    arrangedSections<R = cocoa.NSArray>(): R;
-    categories<R = cocoa.NSArray>(): R;
-    setCategories<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    tableView<R = cocoa.NSTableView>(): R;
-    setTableView<R = void, P0 = cocoa.NSTableView>(_v: P0): R;
-    orientationSegmentedControl<R = cocoa.NSSegmentedControl>(): R;
-    setOrientationSegmentedControl<R = void, P0 = cocoa.NSSegmentedControl>(_v: P0): R;
-    categoriesController<R = cocoa.NSArrayController>(): R;
-    setCategoriesController<R = void, P0 = cocoa.NSArrayController>(_v: P0): R;
-    delegate<R = cocoa.MSArtboardPresetsViewControllerDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.MSArtboardPresetsViewControllerDelegate>(_v: P0): R;
-    selectedPresetSize<R = cocoa.CGSize>(): R;
-    setSelectedPresetSize<R = void, P0 = cocoa.CGSize>(_v: P0): R;
-    extraPresets<R = cocoa.NSArray>(): R;
-    setExtraPresets<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    editingPreset<R = MSArtboardPreset>(): R;
+    setEditingPreset<R = void, P0 = MSArtboardPreset>(_v: P0): R;
+    arrangedObjects<R = NSArray>(): R;
+    arrangedSections<R = NSArray>(): R;
+    categories<R = NSArray>(): R;
+    setCategories<R = void, P0 = NSArray>(_v: P0): R;
+    tableView<R = NSTableView>(): R;
+    setTableView<R = void, P0 = NSTableView>(_v: P0): R;
+    orientationSegmentedControl<R = NSSegmentedControl>(): R;
+    setOrientationSegmentedControl<R = void, P0 = NSSegmentedControl>(_v: P0): R;
+    categoriesController<R = NSArrayController>(): R;
+    setCategoriesController<R = void, P0 = NSArrayController>(_v: P0): R;
+    delegate<R = MSArtboardPresetsViewControllerDelegate>(): R;
+    setDelegate<R = void, P0 = MSArtboardPresetsViewControllerDelegate>(_v: P0): R;
+    selectedPresetSize<R = CGSize>(): R;
+    setSelectedPresetSize<R = void, P0 = CGSize>(_v: P0): R;
+    extraPresets<R = NSArray>(): R;
+    setExtraPresets<R = void, P0 = NSArray>(_v: P0): R;
     orientation<R = number>(): R;
     setOrientation<R = void, P0 = number>(_v: P0): R;
-    selectedCategory<R = cocoa.MSArtboardPresetsCategory>(): R;
-    setSelectedCategory<R = void, P0 = cocoa.MSArtboardPresetsCategory>(_v: P0): R;
-    presetStore<R = cocoa.MSArtboardPresetStore>(): R;
-    setPresetStore<R = void, P0 = cocoa.MSArtboardPresetStore>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    selectedCategory<R = MSArtboardPresetsCategory>(): R;
+    setSelectedCategory<R = void, P0 = MSArtboardPresetsCategory>(_v: P0): R;
+    presetStore<R = MSArtboardPresetStore>(): R;
+    setPresetStore<R = void, P0 = MSArtboardPresetStore>(_v: P0): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSArtboardPresetsViewController<T = any> extends cocoa.classes.NSViewController, cocoa.classes.NSTableViewDataSourceProtocol, cocoa.classes.NSTableViewDelegateProtocol, cocoa.classes.MSEditArtboardPresetViewControllerDelegateProtocol, cocoa.classes.NSUserInterfaceValidationsProtocol, cocoa.classes.BCPopoverDelegateProtocol {
+    export interface MSArtboardPresetsViewController<T = any> extends NSViewController, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol, MSEditArtboardPresetViewControllerDelegateProtocol, NSUserInterfaceValidationsProtocol, BCPopoverDelegateProtocol {
       alloc<R = MSArtboardPresetsViewController>(): R;
       new: <R = MSArtboardPresetsViewController>() => R;
     }

@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFileReactorProxy<T = any> extends cocoa.NSObject {
-    collectDebuggingInformationWithCompletionHandler<R = void, P0 = cocoa.CDUnknownBlockType>(_collectDebuggingInformationWithCompletionHandler: P0): R;
+  export interface NSFileReactorProxy<T = any> extends NSObject {
+    collectDebuggingInformationWithCompletionHandler<R = void, P0 = CDUnknownBlockType>(_collectDebuggingInformationWithCompletionHandler: P0): R;
     _clientProxy<R = unknown>(): R;
     allowedForURL<R = boolean, P0 = unknown>(_allowedForURL: P0): R;
     description<R = unknown>(): R;
@@ -19,10 +19,10 @@ declare namespace cocoa {
     setEffectiveUserIdentifier<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface NSFileReactorProxy<T = any> extends cocoa.classes.NSObject {
+    export interface NSFileReactorProxy<T = any> extends NSObject {
       alloc<R = NSFileReactorProxy>(): R;
       new: <R = NSFileReactorProxy>() => R;
-      _enumerateParentDirectoriesStartingAtURL_usingBlock<R = void, P0 = unknown, P1 = cocoa.CDUnknownBlockType>(__enumerateParentDirectoriesStartingAtURL: P0, _usingBlock: P1): R;
+      _enumerateParentDirectoriesStartingAtURL_usingBlock<R = void, P0 = unknown, P1 = CDUnknownBlockType>(__enumerateParentDirectoriesStartingAtURL: P0, _usingBlock: P1): R;
     }
   }
 }

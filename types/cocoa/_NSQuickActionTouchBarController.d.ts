@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSQuickActionTouchBarController<T = any> extends cocoa.NSObject, cocoa._NSQuickActionTouchBarPickerDelegateProtocol, cocoa._NSQuickActionProviderObserverProtocol {
+  export interface _NSQuickActionTouchBarController<T = any> extends NSObject, _NSQuickActionTouchBarPickerDelegateProtocol, _NSQuickActionProviderObserverProtocol {
     cxx_destruct<R = void>(): R;
     dismissPopover<R = void>(): R;
     showPopover<R = void>(): R;
@@ -14,13 +14,13 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     initWithDelegate<R = unknown, P0 = unknown>(_initWithDelegate: P0): R;
     touchBarIsShowing<R = boolean>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface _NSQuickActionTouchBarController<T = any> extends cocoa.classes.NSObject, cocoa.classes._NSQuickActionTouchBarPickerDelegateProtocol, cocoa.classes._NSQuickActionProviderObserverProtocol {
+    export interface _NSQuickActionTouchBarController<T = any> extends NSObject, _NSQuickActionTouchBarPickerDelegateProtocol, _NSQuickActionProviderObserverProtocol {
       alloc<R = _NSQuickActionTouchBarController>(): R;
       new: <R = _NSQuickActionTouchBarController>() => R;
       keyPathsForValuesAffectingTouchBarIsShowing<R = unknown>(): R;

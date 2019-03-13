@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInspectorSectionHeaderLabelCell<T = any> extends cocoa.NSTextFieldCell {
+  export interface MSInspectorSectionHeaderLabelCell<T = any> extends NSTextFieldCell {
     textColor<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSInspectorSectionHeaderLabelCell<T = any> extends cocoa.classes.NSTextFieldCell {
+    export interface MSInspectorSectionHeaderLabelCell<T = any> extends NSTextFieldCell {
       alloc<R = MSInspectorSectionHeaderLabelCell>(): R;
       new: <R = MSInspectorSectionHeaderLabelCell>() => R;
     }

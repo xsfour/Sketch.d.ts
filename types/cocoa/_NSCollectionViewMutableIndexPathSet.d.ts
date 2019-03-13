@@ -1,14 +1,14 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSCollectionViewMutableIndexPathSet<T = any> extends cocoa.NSMutableSet {
+  export interface _NSCollectionViewMutableIndexPathSet<T = any> extends NSMutableSet {
     dealloc<R = void>(): R;
     description<R = unknown>(): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
-    enumerateIndexRangesBySectionWithOptions_usingBlock<R = void, P0 = number, P1 = cocoa.CDUnknownBlockType>(_enumerateIndexRangesBySectionWithOptions: P0, _usingBlock: P1): R;
-    enumerateIndexSetsBySectionWithOptions_usingBlock<R = void, P0 = number, P1 = cocoa.CDUnknownBlockType>(_enumerateIndexSetsBySectionWithOptions: P0, _usingBlock: P1): R;
-    enumerateIndexPathsWithOptions_usingBlock<R = void, P0 = number, P1 = cocoa.CDUnknownBlockType>(_enumerateIndexPathsWithOptions: P0, _usingBlock: P1): R;
+    enumerateIndexRangesBySectionWithOptions_usingBlock<R = void, P0 = number, P1 = CDUnknownBlockType>(_enumerateIndexRangesBySectionWithOptions: P0, _usingBlock: P1): R;
+    enumerateIndexSetsBySectionWithOptions_usingBlock<R = void, P0 = number, P1 = CDUnknownBlockType>(_enumerateIndexSetsBySectionWithOptions: P0, _usingBlock: P1): R;
+    enumerateIndexPathsWithOptions_usingBlock<R = void, P0 = number, P1 = CDUnknownBlockType>(_enumerateIndexPathsWithOptions: P0, _usingBlock: P1): R;
     indexPathGreaterThan<R = unknown, P0 = unknown>(_indexPathGreaterThan: P0): R;
     indexPathLessThan<R = unknown, P0 = unknown>(_indexPathLessThan: P0): R;
     itemIndexesInSection<R = unknown, P0 = number>(_itemIndexesInSection: P0): R;
@@ -30,12 +30,12 @@ declare namespace cocoa {
     count<R = number>(): R;
     countByEnumeratingWithState_objects_count<R = number, P0 = unknown, P1 = unknown, P2 = number>(_countByEnumeratingWithState: P0, _objects: P1, _count: P2): R;
     mutableCopy<R = unknown>(): R;
-    mutableCopyWithZone<R = unknown, P0 = cocoa._NSZone>(_mutableCopyWithZone: P0): R;
+    mutableCopyWithZone<R = unknown, P0 = _NSZone>(_mutableCopyWithZone: P0): R;
     copy<R = unknown>(): R;
-    copyWithZone<R = unknown, P0 = cocoa._NSZone>(_copyWithZone: P0): R;
+    copyWithZone<R = unknown, P0 = _NSZone>(_copyWithZone: P0): R;
   }
   namespace classes {
-    export interface _NSCollectionViewMutableIndexPathSet<T = any> extends cocoa.classes.NSMutableSet {
+    export interface _NSCollectionViewMutableIndexPathSet<T = any> extends NSMutableSet {
       supportsSecureCoding<R = boolean>(): R;
       setWithCollectionViewIndexPaths<R = unknown, P0 = unknown>(_setWithCollectionViewIndexPaths: P0): R;
       setWithCollectionViewIndexPath<R = unknown, P0 = unknown>(_setWithCollectionViewIndexPath: P0): R;

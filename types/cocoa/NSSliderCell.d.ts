@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSliderCell<T = any> extends cocoa.NSActionCell {
-    _drawCustomTrackWithTrackRect_inView<R = void, P0 = cocoa.CGRect, P1 = unknown>(__drawCustomTrackWithTrackRect: P0, _inView: P1): R;
+  export interface NSSliderCell<T = any> extends NSActionCell {
+    _drawCustomTrackWithTrackRect_inView<R = void, P0 = CGRect, P1 = unknown>(__drawCustomTrackWithTrackRect: P0, _inView: P1): R;
     _usesCustomTrackImage<R = boolean>(): R;
     titleCell<R = unknown>(): R;
     setTitleCell<R = void, P0 = unknown>(_setTitleCell: P0): R;
@@ -22,29 +22,29 @@ declare namespace cocoa {
     _currentCUISliderKnobOptions<R = unknown, P0 = boolean>(__currentCUISliderKnobOptions: P0): R;
     _currentCUISliderBarOptions<R = unknown, P0 = boolean>(__currentCUISliderBarOptions: P0): R;
     _currentDrawingState<R = unknown>(): R;
-    invalidateRect_forControlView<R = void, P0 = cocoa.CGRect, P1 = unknown>(_invalidateRect: P0, _forControlView: P1): R;
-    _noteTracking_at_inView_startEvent_endEvent<R = boolean, P0 = cocoa.CGPoint, P1 = cocoa.CGPoint, P2 = unknown, P3 = boolean, P4 = boolean>(__noteTracking: P0, _at: P1, _inView: P2, _startEvent: P3, _endEvent: P4): R;
+    invalidateRect_forControlView<R = void, P0 = CGRect, P1 = unknown>(_invalidateRect: P0, _forControlView: P1): R;
+    _noteTracking_at_inView_startEvent_endEvent<R = boolean, P0 = CGPoint, P1 = CGPoint, P2 = unknown, P3 = boolean, P4 = boolean>(__noteTracking: P0, _at: P1, _inView: P2, _startEvent: P3, _endEvent: P4): R;
     _repeatTimerFired<R = void, P0 = unknown>(__repeatTimerFired: P0): R;
     _hasSnappingBehavior<R = boolean>(): R;
-    _drawLiveResizeHighlightWithFrame_inView<R = void, P0 = cocoa.CGRect, P1 = unknown>(__drawLiveResizeHighlightWithFrame: P0, _inView: P1): R;
-    _drawValueImage_inRect<R = void, P0 = unknown, P1 = cocoa.CGRect>(__drawValueImage: P0, _inRect: P1): R;
+    _drawLiveResizeHighlightWithFrame_inView<R = void, P0 = CGRect, P1 = unknown>(__drawLiveResizeHighlightWithFrame: P0, _inView: P1): R;
+    _drawValueImage_inRect<R = void, P0 = unknown, P1 = CGRect>(__drawValueImage: P0, _inRect: P1): R;
     _drawMaxValueImage<R = void>(): R;
     _drawMinValueImage<R = void>(): R;
     _drawTickMarks<R = void>(): R;
     drawTickMarks<R = void>(): R;
-    drawKnob<R = void, P0 = cocoa.CGRect>(_drawKnob: P0): R;
-    drawBarInside_flipped<R = void, P0 = cocoa.CGRect, P1 = boolean>(_drawBarInside: P0, _flipped: P1): R;
+    drawKnob<R = void, P0 = CGRect>(_drawKnob: P0): R;
+    drawBarInside_flipped<R = void, P0 = CGRect, P1 = boolean>(_drawBarInside: P0, _flipped: P1): R;
     _barIsTintedWithValue<R = boolean>(): R;
-    _rectOfMaxValueImageFlipped<R = cocoa.CGRect, P0 = boolean>(__rectOfMaxValueImageFlipped: P0): R;
-    _rectOfMinValueImageFlipped<R = cocoa.CGRect, P0 = boolean>(__rectOfMinValueImageFlipped: P0): R;
-    rectOfTickMarkAtIndex<R = cocoa.CGRect, P0 = number>(_rectOfTickMarkAtIndex: P0): R;
-    knobRectFlipped<R = cocoa.CGRect, P0 = boolean>(_knobRectFlipped: P0): R;
-    knobValueRangeRect<R = cocoa.CGRect, P0 = boolean>(_knobValueRangeRect: P0): R;
-    barRectFlipped<R = cocoa.CGRect, P0 = boolean>(_barRectFlipped: P0): R;
-    _alignmentRectInsetsInView<R = cocoa.NSEdgeInsets, P0 = unknown>(__alignmentRectInsetsInView: P0): R;
-    _calcTrackRect_andAdjustRect<R = boolean, P0 = cocoa.CGRect, P1 = boolean>(__calcTrackRect: P0, _andAdjustRect: P1): R;
-    _trackRectForCellFrame<R = cocoa.CGRect, P0 = cocoa.CGRect>(__trackRectForCellFrame: P0): R;
-    _resetTrackRectWithCellFrame<R = cocoa.CGRect, P0 = cocoa.CGRect>(__resetTrackRectWithCellFrame: P0): R;
+    _rectOfMaxValueImageFlipped<R = CGRect, P0 = boolean>(__rectOfMaxValueImageFlipped: P0): R;
+    _rectOfMinValueImageFlipped<R = CGRect, P0 = boolean>(__rectOfMinValueImageFlipped: P0): R;
+    rectOfTickMarkAtIndex<R = CGRect, P0 = number>(_rectOfTickMarkAtIndex: P0): R;
+    knobRectFlipped<R = CGRect, P0 = boolean>(_knobRectFlipped: P0): R;
+    knobValueRangeRect<R = CGRect, P0 = boolean>(_knobValueRangeRect: P0): R;
+    barRectFlipped<R = CGRect, P0 = boolean>(_barRectFlipped: P0): R;
+    _alignmentRectInsetsInView<R = NSEdgeInsets, P0 = unknown>(__alignmentRectInsetsInView: P0): R;
+    _calcTrackRect_andAdjustRect<R = boolean, P0 = CGRect, P1 = boolean>(__calcTrackRect: P0, _andAdjustRect: P1): R;
+    _trackRectForCellFrame<R = CGRect, P0 = CGRect>(__trackRectForCellFrame: P0): R;
+    _resetTrackRectWithCellFrame<R = CGRect, P0 = CGRect>(__resetTrackRectWithCellFrame: P0): R;
     _metricsStrategy<R = unknown>(): R;
     setTrackFillColor<R = void, P0 = unknown>(_setTrackFillColor: P0): R;
     trackFillColor<R = unknown>(): R;
@@ -53,7 +53,7 @@ declare namespace cocoa {
     _collapsesOnResize<R = boolean>(): R;
     closestTickMarkIndexToValue<R = number, P0 = number>(_closestTickMarkIndexToValue: P0): R;
     closestTickMarkValueToValue<R = number, P0 = number>(_closestTickMarkValueToValue: P0): R;
-    indexOfTickMarkAtPoint<R = number, P0 = cocoa.CGPoint>(_indexOfTickMarkAtPoint: P0): R;
+    indexOfTickMarkAtPoint<R = number, P0 = CGPoint>(_indexOfTickMarkAtPoint: P0): R;
     tickMarkValueAtIndex<R = number, P0 = number>(_tickMarkValueAtIndex: P0): R;
     setTickMarkIsProminent_atIndex<R = void, P0 = boolean, P1 = number>(_setTickMarkIsProminent: P0, _atIndex: P1): R;
     tickMarkIsProminentAtIndex<R = boolean, P0 = number>(_tickMarkIsProminentAtIndex: P0): R;
@@ -103,7 +103,7 @@ declare namespace cocoa {
     accessibilitySetFocus_forChild<R = void, P0 = unknown, P1 = unknown>(_accessibilitySetFocus: P0, _forChild: P1): R;
     accessibilityIsChildFocusable<R = boolean, P0 = unknown>(_accessibilityIsChildFocusable: P0): R;
     accessibilityHelpStringForChild<R = unknown, P0 = unknown>(_accessibilityHelpStringForChild: P0): R;
-    _accessibilityIndicatorRect<R = cocoa.CGRect>(): R;
+    _accessibilityIndicatorRect<R = CGRect>(): R;
     accessibilityIsActivationPointAttributeSettable<R = boolean>(): R;
     accessibilityActivationPointAttribute<R = unknown>(): R;
     accessibilityIsOrientationAttributeSettable<R = boolean>(): R;
@@ -118,7 +118,7 @@ declare namespace cocoa {
     accessibilityChildrenAttribute<R = unknown>(): R;
     accessibilityIsValueIndicatorAttributeSettable<R = boolean>(): R;
     accessibilityValueIndicatorAttribute<R = unknown>(): R;
-    trackRect<R = cocoa.CGRect>(): R;
+    trackRect<R = CGRect>(): R;
     maxValue<R = number>(): R;
     setMaxValue<R = void, P0 = number>(_v: P0): R;
     minValue<R = number>(): R;
@@ -134,7 +134,7 @@ declare namespace cocoa {
     _primaryTickMarkInset<R = number>(): R;
   }
   namespace classes {
-    export interface NSSliderCell<T = any> extends cocoa.classes.NSActionCell {
+    export interface NSSliderCell<T = any> extends NSActionCell {
       alloc<R = NSSliderCell>(): R;
       new: <R = NSSliderCell>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSFullScreenTileDividerWindow<T = any> extends cocoa.NSPanel {
+  export interface _NSFullScreenTileDividerWindow<T = any> extends NSPanel {
     _endLiveResizeAtDividerLocation<R = void, P0 = number>(__endLiveResizeAtDividerLocation: P0): R;
     _liveResizeToDividerLocation<R = void, P0 = number>(__liveResizeToDividerLocation: P0): R;
     _forceOverlayPresentation<R = void>(): R;
@@ -17,7 +17,7 @@ declare namespace cocoa {
     horizontalIndex<R = number>(): R;
     verticalIndex<R = number>(): R;
     direction<R = number>(): R;
-    spacing<R = cocoa.CGSize>(): R;
+    spacing<R = CGSize>(): R;
     space<R = unknown>(): R;
     tileSpaceID<R = number>(): R;
     parentSpaceID<R = number>(): R;
@@ -37,10 +37,10 @@ declare namespace cocoa {
     setOverrideDrivingLiveResize<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface _NSFullScreenTileDividerWindow<T = any> extends cocoa.classes.NSPanel {
+    export interface _NSFullScreenTileDividerWindow<T = any> extends NSPanel {
       alloc<R = _NSFullScreenTileDividerWindow>(): R;
       new: <R = _NSFullScreenTileDividerWindow>() => R;
-      tileGrabBarWithSize<R = unknown, P0 = cocoa.CGSize>(_tileGrabBarWithSize: P0): R;
+      tileGrabBarWithSize<R = unknown, P0 = CGSize>(_tileGrabBarWithSize: P0): R;
     }
   }
 }

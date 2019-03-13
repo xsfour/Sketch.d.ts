@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSContentAppearance<T = any> extends cocoa.NSAppearance {}
+  export interface NSContentAppearance<T = any> extends NSAppearance {}
   namespace classes {
-    export interface NSContentAppearance<T = any> extends cocoa.classes.NSAppearance {
+    export interface NSContentAppearance<T = any> extends NSAppearance {
       alloc<R = NSContentAppearance>(): R;
       new: <R = NSContentAppearance>() => R;
     }

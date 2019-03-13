@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarColorPickerSlider<T = any> extends cocoa.NSControl, cocoa.NSGestureRecognizerDelegateProtocol {
+  export interface NSTouchBarColorPickerSlider<T = any> extends NSControl, NSGestureRecognizerDelegateProtocol {
     setHighlighted<R = void, P0 = boolean>(_setHighlighted: P0): R;
     isHighlighted<R = boolean>(): R;
     _valueAtLocation<R = number, P0 = number>(__valueAtLocation: P0): R;
@@ -45,32 +45,32 @@ declare namespace cocoa {
     setLabelTextEffect<R = void, P0 = number>(_v: P0): R;
     labelIsOnLeadingSideOfKnob<R = boolean>(): R;
     setLabelIsOnLeadingSideOfKnob<R = void, P0 = boolean>(_v: P0): R;
-    allowedColorSpaces<R = cocoa.NSArray>(): R;
-    setAllowedColorSpaces<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    allowedColorSpaces<R = NSArray>(): R;
+    setAllowedColorSpaces<R = void, P0 = NSArray>(_v: P0): R;
     relativeTracking<R = boolean>(): R;
     setRelativeTracking<R = void, P0 = boolean>(_v: P0): R;
     active<R = boolean>(): R;
     setActive<R = void, P0 = boolean>(_v: P0): R;
-    minimizationDelegate<R = cocoa.NSTouchBarColorPickerSliderMinimizationDelegate>(): R;
-    setMinimizationDelegate<R = void, P0 = cocoa.NSTouchBarColorPickerSliderMinimizationDelegate>(_v: P0): R;
+    minimizationDelegate<R = NSTouchBarColorPickerSliderMinimizationDelegate>(): R;
+    setMinimizationDelegate<R = void, P0 = NSTouchBarColorPickerSliderMinimizationDelegate>(_v: P0): R;
     minimized<R = boolean>(): R;
     setMinimized<R = void, P0 = boolean>(_v: P0): R;
     valueIsFlipped<R = boolean>(): R;
     setValueIsFlipped<R = void, P0 = boolean>(_v: P0): R;
-    artworkProvider<R = cocoa.NSTouchBarColorPickerSliderArtworkProvider>(): R;
-    setArtworkProvider<R = void, P0 = cocoa.NSTouchBarColorPickerSliderArtworkProvider>(_v: P0): R;
-    displayedColor<R = cocoa.NSColor>(): R;
-    setDisplayedColor<R = void, P0 = cocoa.NSColor>(_v: P0): R;
+    artworkProvider<R = NSTouchBarColorPickerSliderArtworkProvider>(): R;
+    setArtworkProvider<R = void, P0 = NSTouchBarColorPickerSliderArtworkProvider>(_v: P0): R;
+    displayedColor<R = NSColor>(): R;
+    setDisplayedColor<R = void, P0 = NSColor>(_v: P0): R;
     knobIsPressed<R = boolean>(): R;
     labelAlphaValue<R = number>(): R;
-    valueLabel<R = cocoa.NSAttributedString>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    valueLabel<R = NSAttributedString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSTouchBarColorPickerSlider<T = any> extends cocoa.classes.NSControl, cocoa.classes.NSGestureRecognizerDelegateProtocol {
+    export interface NSTouchBarColorPickerSlider<T = any> extends NSControl, NSGestureRecognizerDelegateProtocol {
       alloc<R = NSTouchBarColorPickerSlider>(): R;
       new: <R = NSTouchBarColorPickerSlider>() => R;
       keyPathsForValuesAffectingKnobIsPressed<R = unknown>(): R;

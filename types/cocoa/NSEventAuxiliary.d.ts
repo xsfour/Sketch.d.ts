@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSEventAuxiliary<T = any> extends cocoa.NSObject {}
+  export interface NSEventAuxiliary<T = any> extends NSObject {}
   namespace classes {
-    export interface NSEventAuxiliary<T = any> extends cocoa.classes.NSObject {
+    export interface NSEventAuxiliary<T = any> extends NSObject {
       alloc<R = NSEventAuxiliary>(): R;
       new: <R = NSEventAuxiliary>() => R;
     }

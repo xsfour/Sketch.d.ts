@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCOutlineView<T = any> extends cocoa.NSOutlineView {
+  export interface BCOutlineView<T = any> extends NSOutlineView {
     refreshSelectedRowViews<R = void>(): R;
     refreshAllRowViews<R = void>(): R;
-    setIntercellSpacing<R = void, P0 = cocoa.CGSize>(_setIntercellSpacing: P0): R;
+    setIntercellSpacing<R = void, P0 = CGSize>(_setIntercellSpacing: P0): R;
     deliberateScrollRowToVisible<R = void, P0 = number>(_deliberateScrollRowToVisible: P0): R;
     applyAppearance<R = void>(): R;
     disclosureTriangleClicked<R = void, P0 = unknown>(_disclosureTriangleClicked: P0): R;
@@ -15,11 +15,11 @@ declare namespace cocoa {
     sendRenameNodeActionForRowIfAppropriate<R = boolean, P0 = number>(_sendRenameNodeActionForRowIfAppropriate: P0): R;
     rowViewAtRowIfAvailable<R = unknown, P0 = number>(_rowViewAtRowIfAvailable: P0): R;
     rowAtLocationOfMouseEvent<R = number, P0 = unknown>(_rowAtLocationOfMouseEvent: P0): R;
-    rowAtPointTakingFloatingGroupRowIntoAccount<R = number, P0 = cocoa.CGPoint>(_rowAtPointTakingFloatingGroupRowIntoAccount: P0): R;
-    rectOfRowIgnoringFloatingState<R = cocoa.CGRect, P0 = number>(_rectOfRowIgnoringFloatingState: P0): R;
-    rectOfRowTakingFloatingGroupRowIntoAccount<R = cocoa.CGRect, P0 = number>(_rectOfRowTakingFloatingGroupRowIntoAccount: P0): R;
-    processMouseEventTakingFloatingGroupRowIntoAccount_withBlock<R = void, P0 = number, P1 = cocoa.CDUnknownBlockType>(_processMouseEventTakingFloatingGroupRowIntoAccount: P0, _withBlock: P1): R;
-    processMouseEventTakingFloatingStateOfRowViewIntoAccount_atRow_withBlock<R = void, P0 = unknown, P1 = number, P2 = cocoa.CDUnknownBlockType>(_processMouseEventTakingFloatingStateOfRowViewIntoAccount: P0, _atRow: P1, _withBlock: P2): R;
+    rowAtPointTakingFloatingGroupRowIntoAccount<R = number, P0 = CGPoint>(_rowAtPointTakingFloatingGroupRowIntoAccount: P0): R;
+    rectOfRowIgnoringFloatingState<R = CGRect, P0 = number>(_rectOfRowIgnoringFloatingState: P0): R;
+    rectOfRowTakingFloatingGroupRowIntoAccount<R = CGRect, P0 = number>(_rectOfRowTakingFloatingGroupRowIntoAccount: P0): R;
+    processMouseEventTakingFloatingGroupRowIntoAccount_withBlock<R = void, P0 = number, P1 = CDUnknownBlockType>(_processMouseEventTakingFloatingGroupRowIntoAccount: P0, _withBlock: P1): R;
+    processMouseEventTakingFloatingStateOfRowViewIntoAccount_atRow_withBlock<R = void, P0 = unknown, P1 = number, P2 = CDUnknownBlockType>(_processMouseEventTakingFloatingStateOfRowViewIntoAccount: P0, _atRow: P1, _withBlock: P2): R;
     awakeFromNib<R = void>(): R;
     floatingRowToTakeIntoAccountWhenProcessingMouseEvent<R = number>(): R;
     setFloatingRowToTakeIntoAccountWhenProcessingMouseEvent<R = void, P0 = number>(_v: P0): R;
@@ -35,18 +35,18 @@ declare namespace cocoa {
     setFloatingRowDragged<R = void, P0 = boolean>(_v: P0): R;
     activeStateScheme<R = number>(): R;
     setActiveStateScheme<R = void, P0 = number>(_v: P0): R;
-    counterpartOutlineView<R = cocoa.BCOutlineView>(): R;
-    setCounterpartOutlineView<R = void, P0 = cocoa.BCOutlineView>(_v: P0): R;
+    counterpartOutlineView<R = BCOutlineView>(): R;
+    setCounterpartOutlineView<R = void, P0 = BCOutlineView>(_v: P0): R;
     discloserTriangleClickedItem<R = unknown>(): R;
     setDiscloserTriangleClickedItem<R = void, P0 = unknown>(_v: P0): R;
-    dataController<R = cocoa.BCOutlineViewDataController>(): R;
-    setDataController<R = void, P0 = cocoa.BCOutlineViewDataController>(_v: P0): R;
+    dataController<R = BCOutlineViewDataController>(): R;
+    setDataController<R = void, P0 = BCOutlineViewDataController>(_v: P0): R;
     isActiveOutlineView<R = boolean>(): R;
-    delegate<R = cocoa.BCOutlineViewDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.BCOutlineViewDelegate>(_v: P0): R;
+    delegate<R = BCOutlineViewDelegate>(): R;
+    setDelegate<R = void, P0 = BCOutlineViewDelegate>(_v: P0): R;
   }
   namespace classes {
-    export interface BCOutlineView<T = any> extends cocoa.classes.NSOutlineView {
+    export interface BCOutlineView<T = any> extends NSOutlineView {
       alloc<R = BCOutlineView>(): R;
       new: <R = BCOutlineView>() => R;
     }

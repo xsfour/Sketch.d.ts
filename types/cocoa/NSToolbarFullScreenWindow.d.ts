@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSToolbarFullScreenWindow<T = any> extends cocoa.NSWindow {
+  export interface NSToolbarFullScreenWindow<T = any> extends NSWindow {
     appearance<R = unknown>(): R;
     setAppearance<R = void, P0 = unknown>(_setAppearance: P0): R;
     accessibilityParameterizedAttributeNames<R = unknown>(): R;
@@ -17,7 +17,7 @@ declare namespace cocoa {
     isMovable<R = boolean>(): R;
   }
   namespace classes {
-    export interface NSToolbarFullScreenWindow<T = any> extends cocoa.classes.NSWindow {
+    export interface NSToolbarFullScreenWindow<T = any> extends NSWindow {
       alloc<R = NSToolbarFullScreenWindow>(): R;
       new: <R = NSToolbarFullScreenWindow>() => R;
     }

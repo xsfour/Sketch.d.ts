@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSViewAnimator_NSButton<T = any> extends cocoa._NSViewAnimator {
+  export interface _NSViewAnimator_NSButton<T = any> extends _NSViewAnimator {
     setBezelColor<R = void, P0 = unknown>(_setBezelColor: P0): R;
     setImagePosition<R = void, P0 = number>(_setImagePosition: P0): R;
     setAlternateImage<R = void, P0 = unknown>(_setAlternateImage: P0): R;
@@ -12,6 +12,6 @@ declare namespace cocoa {
     setTitle<R = void, P0 = unknown>(_setTitle: P0): R;
   }
   namespace classes {
-    export interface _NSViewAnimator_NSButton<T = any> extends cocoa.classes._NSViewAnimator {  }
+    export interface _NSViewAnimator_NSButton<T = any> extends _NSViewAnimator {  }
   }
 }

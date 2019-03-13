@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSGridCell<T = any> extends cocoa.NSObject, cocoa.NSCodingProtocol {
+  export interface NSGridCell<T = any> extends NSObject, NSCodingProtocol {
     cxx_destruct<R = void>(): R;
     _isUnmergedOrHeadOfMergedRegion<R = boolean>(): R;
     set_headOfMergedCell<R = void, P0 = unknown>(_set_headOfMergedCell: P0): R;
     _headOfMergedCell<R = unknown>(): R;
     _findMergeTail<R = unknown>(): R;
-    _findMergeBounds<R = cocoa.CGRect>(): R;
+    _findMergeBounds<R = CGRect>(): R;
     _isMergeHead<R = boolean>(): R;
     _isMerged<R = boolean>(): R;
     _effectiveAlignment<R = number>(): R;
@@ -21,12 +21,12 @@ declare namespace cocoa {
     description<R = unknown>(): R;
     dealloc<R = void>(): R;
     initWithRow_column<R = unknown, P0 = unknown, P1 = unknown>(_initWithRow: P0, _column: P1): R;
-    column<R = cocoa.NSGridColumn>(): R;
-    row<R = cocoa.NSGridRow>(): R;
-    contentView<R = cocoa.NSView>(): R;
-    setContentView<R = void, P0 = cocoa.NSView>(_v: P0): R;
-    customPlacementConstraints<R = cocoa.NSArray>(): R;
-    setCustomPlacementConstraints<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    column<R = NSGridColumn>(): R;
+    row<R = NSGridRow>(): R;
+    contentView<R = NSView>(): R;
+    setContentView<R = void, P0 = NSView>(_v: P0): R;
+    customPlacementConstraints<R = NSArray>(): R;
+    setCustomPlacementConstraints<R = void, P0 = NSArray>(_v: P0): R;
     rowAlignment<R = number>(): R;
     setRowAlignment<R = void, P0 = number>(_v: P0): R;
     xPlacement<R = number>(): R;
@@ -35,7 +35,7 @@ declare namespace cocoa {
     setYPlacement<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface NSGridCell<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSCodingProtocol {
+    export interface NSGridCell<T = any> extends NSObject, NSCodingProtocol {
       alloc<R = NSGridCell>(): R;
       new: <R = NSGridCell>() => R;
       emptyContentView<R = unknown>(): R;

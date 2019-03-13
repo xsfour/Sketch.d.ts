@@ -1,10 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSArtboardGroupProtocol<T = any> extends cocoa.MSLayerProtocol {}
+  export interface MSArtboardGroupProtocol<T = any> extends MSLayerProtocol {}
   namespace classes {
-    export interface MSArtboardGroupProtocol<T = any> extends cocoa.classes.MSLayerProtocol {  }
+    export interface MSArtboardGroupProtocol<T = any> extends MSLayerProtocol {  }
   }
 }
-
-declare const MSArtboardGroupProtocol: cocoa.classes.MSArtboardGroupProtocol;

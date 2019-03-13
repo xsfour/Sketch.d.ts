@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPlaceholderNumber<T = any> extends cocoa.NSPlaceholderValue {}
+  export interface NSPlaceholderNumber<T = any> extends NSPlaceholderValue {}
   namespace classes {
-    export interface NSPlaceholderNumber<T = any> extends cocoa.classes.NSPlaceholderValue {
+    export interface NSPlaceholderNumber<T = any> extends NSPlaceholderValue {
       alloc<R = NSPlaceholderNumber>(): R;
       new: <R = NSPlaceholderNumber>() => R;
     }

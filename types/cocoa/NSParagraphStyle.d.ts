@@ -10,8 +10,8 @@ declare namespace cocoa {
     propertiesAreEqual<R = boolean, P0 = unknown>(_propertiesAreEqual: P0): R;
     addSVGAttributes<R = void, P0 = unknown>(_addSVGAttributes: P0): R;
     treeAsDictionary<R = unknown>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
     fixedLineHeight_ms<R = number>(): R;

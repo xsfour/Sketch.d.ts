@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUnitArea<T = any> extends cocoa.NSDimension, cocoa.NSSecureCodingProtocol {}
+  export interface NSUnitArea<T = any> extends NSDimension, NSSecureCodingProtocol {}
   namespace classes {
-    export interface NSUnitArea<T = any> extends cocoa.classes.NSDimension, cocoa.classes.NSSecureCodingProtocol {
+    export interface NSUnitArea<T = any> extends NSDimension, NSSecureCodingProtocol {
       alloc<R = NSUnitArea>(): R;
       new: <R = NSUnitArea>() => R;
       hectares<R = unknown>(): R;

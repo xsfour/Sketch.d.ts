@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSKeyValueNilSetEnumerator<T = any> extends cocoa.NSEnumerator {
+  export interface NSKeyValueNilSetEnumerator<T = any> extends NSEnumerator {
     nextObject<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSKeyValueNilSetEnumerator<T = any> extends cocoa.classes.NSEnumerator {  }
+    export interface NSKeyValueNilSetEnumerator<T = any> extends NSEnumerator {  }
   }
 }
 

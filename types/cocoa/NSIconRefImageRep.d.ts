@@ -1,21 +1,21 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSIconRefImageRep<T = any> extends cocoa.NSImageRep {
+  export interface NSIconRefImageRep<T = any> extends NSImageRep {
     forwardingTargetForSelector<R = unknown, P0 = string>(_forwardingTargetForSelector: P0): R;
     methodSignatureForSelector<R = unknown, P0 = string>(_methodSignatureForSelector: P0): R;
     _fallbackBitmap<R = unknown>(): R;
     hasAlpha<R = boolean>(): R;
     pixelsHigh<R = number>(): R;
     pixelsWide<R = number>(): R;
-    _copyCGImage<R = cocoa.CGImage>(): R;
+    _copyCGImage<R = CGImage>(): R;
     scaleIdentifier<R = number>(): R;
     sizeIdentifier<R = number>(): R;
-    iconRef<R = cocoa.OpaqueIconRef>(): R;
-    initWithIconRef_sizeIdentifier_scaleIdentifier<R = unknown, P0 = cocoa.OpaqueIconRef, P1 = number, P2 = number>(_initWithIconRef: P0, _sizeIdentifier: P1, _scaleIdentifier: P2): R;
+    iconRef<R = OpaqueIconRef>(): R;
+    initWithIconRef_sizeIdentifier_scaleIdentifier<R = unknown, P0 = OpaqueIconRef, P1 = number, P2 = number>(_initWithIconRef: P0, _sizeIdentifier: P1, _scaleIdentifier: P2): R;
   }
   namespace classes {
-    export interface NSIconRefImageRep<T = any> extends cocoa.classes.NSImageRep {
+    export interface NSIconRefImageRep<T = any> extends NSImageRep {
       alloc<R = NSIconRefImageRep>(): R;
       new: <R = NSIconRefImageRep>() => R;
     }

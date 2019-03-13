@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFunctionExpression<T = any> extends cocoa.NSExpression {
+  export interface NSFunctionExpression<T = any> extends NSExpression {
     binaryOperatorForSelector<R = unknown>(): R;
     hash<R = number>(): R;
     arguments<R = unknown>(): R;
@@ -13,7 +13,7 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
   }
   namespace classes {
-    export interface NSFunctionExpression<T = any> extends cocoa.classes.NSExpression {
+    export interface NSFunctionExpression<T = any> extends NSExpression {
       alloc<R = NSFunctionExpression>(): R;
       new: <R = NSFunctionExpression>() => R;
     }

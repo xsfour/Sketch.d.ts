@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSServicesMenuUpdater<T = any> extends cocoa.NSObject, cocoa.NSMenuDelegateProtocol {
+  export interface _NSServicesMenuUpdater<T = any> extends NSObject, NSMenuDelegateProtocol {
     _processRequest<R = void, P0 = unknown>(__processRequest: P0): R;
     performServiceFromEntry<R = void, P0 = unknown>(_performServiceFromEntry: P0): R;
-    isPluggedIntoMenuRef<R = boolean, P0 = cocoa.OpaqueMenuRef>(_isPluggedIntoMenuRef: P0): R;
+    isPluggedIntoMenuRef<R = boolean, P0 = OpaqueMenuRef>(_isPluggedIntoMenuRef: P0): R;
     unplugMenu<R = void, P0 = unknown>(_unplugMenu: P0): R;
-    plugMenu_intoMenuRef<R = void, P0 = unknown, P1 = cocoa.OpaqueMenuRef>(_plugMenu: P0, _intoMenuRef: P1): R;
+    plugMenu_intoMenuRef<R = void, P0 = unknown, P1 = OpaqueMenuRef>(_plugMenu: P0, _intoMenuRef: P1): R;
     updateForLiveServicesChangedNotification<R = void, P0 = unknown>(_updateForLiveServicesChangedNotification: P0): R;
     validateMenuItem<R = boolean, P0 = unknown>(_validateMenuItem: P0): R;
     updateMenu_withEvent_withFlags<R = boolean, P0 = unknown, P1 = unknown, P2 = number>(_updateMenu: P0, _withEvent: P1, _withFlags: P2): R;
@@ -22,13 +22,13 @@ declare namespace cocoa {
     menus<R = unknown>(): R;
     menuContext<R = unknown>(): R;
     serviceEntryKinds<R = number>(): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface _NSServicesMenuUpdater<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSMenuDelegateProtocol {
+    export interface _NSServicesMenuUpdater<T = any> extends NSObject, NSMenuDelegateProtocol {
       alloc<R = _NSServicesMenuUpdater>(): R;
       new: <R = _NSServicesMenuUpdater>() => R;
     }

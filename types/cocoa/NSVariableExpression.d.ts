@@ -1,14 +1,14 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSVariableExpression<T = any> extends cocoa.NSExpression {
+  export interface NSVariableExpression<T = any> extends NSExpression {
     hash<R = number>(): R;
     variable<R = unknown>(): R;
     initWithObject<R = unknown, P0 = unknown>(_initWithObject: P0): R;
     dealloc<R = void>(): R;
   }
   namespace classes {
-    export interface NSVariableExpression<T = any> extends cocoa.classes.NSExpression {
+    export interface NSVariableExpression<T = any> extends NSExpression {
       alloc<R = NSVariableExpression>(): R;
       new: <R = NSVariableExpression>() => R;
     }

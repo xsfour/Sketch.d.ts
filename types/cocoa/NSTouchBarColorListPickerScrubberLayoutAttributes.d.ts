@@ -1,14 +1,14 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarColorListPickerScrubberLayoutAttributes<T = any> extends cocoa.NSScrubberLayoutAttributes {
+  export interface NSTouchBarColorListPickerScrubberLayoutAttributes<T = any> extends NSScrubberLayoutAttributes {
     isRightmostItem<R = boolean>(): R;
     setIsRightmostItem<R = void, P0 = boolean>(_v: P0): R;
     isLeftmostItem<R = boolean>(): R;
     setIsLeftmostItem<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface NSTouchBarColorListPickerScrubberLayoutAttributes<T = any> extends cocoa.classes.NSScrubberLayoutAttributes {
+    export interface NSTouchBarColorListPickerScrubberLayoutAttributes<T = any> extends NSScrubberLayoutAttributes {
       alloc<R = NSTouchBarColorListPickerScrubberLayoutAttributes>(): R;
       new: <R = NSTouchBarColorListPickerScrubberLayoutAttributes>() => R;
     }

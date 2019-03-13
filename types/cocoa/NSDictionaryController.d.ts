@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDictionaryController<T = any> extends cocoa.NSArrayController {
+  export interface NSDictionaryController<T = any> extends NSArrayController {
     _noteKeyValuePairChangedValue<R = void, P0 = unknown>(__noteKeyValuePairChangedValue: P0): R;
     _noteKeyValuePairChangedKey<R = void, P0 = unknown>(__noteKeyValuePairChangedKey: P0): R;
     _buildAndAssignNewContentDictionary<R = void>(): R;
@@ -20,21 +20,21 @@ declare namespace cocoa {
     _keyForLocalizedKeyDictionary<R = unknown>(): R;
     setFetchPredicate<R = void, P0 = unknown>(_setFetchPredicate: P0): R;
     setEntityName<R = void, P0 = unknown>(_setEntityName: P0): R;
-    localizedKeyTable<R = cocoa.NSString>(): R;
-    setLocalizedKeyTable<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    localizedKeyDictionary<R = cocoa.NSDictionary>(): R;
-    setLocalizedKeyDictionary<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
-    excludedKeys<R = cocoa.NSArray>(): R;
-    setExcludedKeys<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    includedKeys<R = cocoa.NSArray>(): R;
-    setIncludedKeys<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    localizedKeyTable<R = NSString>(): R;
+    setLocalizedKeyTable<R = void, P0 = NSString>(_v: P0): R;
+    localizedKeyDictionary<R = NSDictionary>(): R;
+    setLocalizedKeyDictionary<R = void, P0 = NSDictionary>(_v: P0): R;
+    excludedKeys<R = NSArray>(): R;
+    setExcludedKeys<R = void, P0 = NSArray>(_v: P0): R;
+    includedKeys<R = NSArray>(): R;
+    setIncludedKeys<R = void, P0 = NSArray>(_v: P0): R;
     initialValue<R = unknown>(): R;
     setInitialValue<R = void, P0 = unknown>(_v: P0): R;
-    initialKey<R = cocoa.NSString>(): R;
-    setInitialKey<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    initialKey<R = NSString>(): R;
+    setInitialKey<R = void, P0 = NSString>(_v: P0): R;
   }
   namespace classes {
-    export interface NSDictionaryController<T = any> extends cocoa.classes.NSArrayController {
+    export interface NSDictionaryController<T = any> extends NSArrayController {
       alloc<R = NSDictionaryController>(): R;
       new: <R = NSDictionaryController>() => R;
     }

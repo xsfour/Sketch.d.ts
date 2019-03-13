@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSegmentedControl<T = any> extends cocoa.NSControl, cocoa.NSUserInterfaceCompressionProtocol {
-    touchBarHitTestInsets<R = cocoa.NSEdgeInsets>(): R;
+  export interface NSSegmentedControl<T = any> extends NSControl, NSUserInterfaceCompressionProtocol {
+    touchBarHitTestInsets<R = NSEdgeInsets>(): R;
     _supportedOptionsFromPrioritizedOptions<R = unknown, P0 = unknown>(__supportedOptionsFromPrioritizedOptions: P0): R;
     setHidesUnselectedLabelsWhenNecessary<R = void, P0 = boolean>(_setHidesUnselectedLabelsWhenNecessary: P0): R;
     hidesUnselectedLabelsWhenNecessary<R = boolean>(): R;
@@ -44,7 +44,7 @@ declare namespace cocoa {
     springLoadingUpdated<R = number, P0 = unknown>(_springLoadingUpdated: P0): R;
     springLoadingEntered<R = number, P0 = unknown>(_springLoadingEntered: P0): R;
     _updateConstraint_forAnchor_atMinSize_priority<R = void, P0 = unknown, P1 = unknown, P2 = number, P3 = number>(__updateConstraint: P0, _forAnchor: P1, _atMinSize: P2, _priority: P3): R;
-    minimumIntrinsicContentSize<R = cocoa.CGSize>(): R;
+    minimumIntrinsicContentSize<R = CGSize>(): R;
     _updateMenuUniquing<R = void>(): R;
     moveRight<R = void, P0 = unknown>(_moveRight: P0): R;
     moveLeft<R = void, P0 = unknown>(_moveLeft: P0): R;
@@ -52,9 +52,9 @@ declare namespace cocoa {
     isFlipped<R = boolean>(): R;
     _setSpringLoadsOnDrag<R = void, P0 = boolean>(__setSpringLoadsOnDrag: P0): R;
     _springLoadsOnDrag<R = boolean>(): R;
-    activeCompressionOptions<R = cocoa.NSUserInterfaceCompressionOptions>(): R;
-    selectedSegmentBezelColor<R = cocoa.NSColor>(): R;
-    setSelectedSegmentBezelColor<R = void, P0 = cocoa.NSColor>(_v: P0): R;
+    activeCompressionOptions<R = NSUserInterfaceCompressionOptions>(): R;
+    selectedSegmentBezelColor<R = NSColor>(): R;
+    setSelectedSegmentBezelColor<R = void, P0 = NSColor>(_v: P0): R;
     doubleValueForSelectedSegment<R = number>(): R;
     trackingMode<R = number>(): R;
     setTrackingMode<R = void, P0 = number>(_v: P0): R;
@@ -71,7 +71,7 @@ declare namespace cocoa {
     setSegmentCount<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface NSSegmentedControl<T = any> extends cocoa.classes.NSControl, cocoa.classes.NSUserInterfaceCompressionProtocol {
+    export interface NSSegmentedControl<T = any> extends NSControl, NSUserInterfaceCompressionProtocol {
       alloc<R = NSSegmentedControl>(): R;
       new: <R = NSSegmentedControl>() => R;
       segmentedControlWithSegmentImages_trackingMode_target_action<R = unknown, P0 = unknown, P1 = number, P2 = unknown, P3 = string>(_segmentedControlWithSegmentImages: P0, _trackingMode: P1, _target: P2, _action: P3): R;

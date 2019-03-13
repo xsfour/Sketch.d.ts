@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSidebarListController<T = any> extends cocoa.NSObject {
+  export interface MSSidebarListController<T = any> extends NSObject {
     cxx_destruct<R = void>(): R;
     dataController_exportNodes_toFolder<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_dataController: P0, _exportNodes: P1, _toFolder: P2): R;
     dataController_copyFromPasteboard_toParent_after<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown>(_dataController: P0, _copyFromPasteboard: P1, _toParent: P2, _after: P3): R;
@@ -18,13 +18,13 @@ declare namespace cocoa {
     layerForNode<R = unknown, P0 = unknown>(_layerForNode: P0): R;
     initWithDelegate<R = unknown, P0 = unknown>(_initWithDelegate: P0): R;
     rootObject<R = unknown>(): R;
-    delegate<R = cocoa.MSSidebarControllerDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.MSSidebarControllerDelegate>(_v: P0): R;
+    delegate<R = MSSidebarControllerDelegate>(): R;
+    setDelegate<R = void, P0 = MSSidebarControllerDelegate>(_v: P0): R;
     pasteboardWriterClass<R = unknown>(): R;
-    documentData<R = cocoa.MSDocumentData>(): R;
+    documentData<R = MSDocumentData>(): R;
   }
   namespace classes {
-    export interface MSSidebarListController<T = any> extends cocoa.classes.NSObject {
+    export interface MSSidebarListController<T = any> extends NSObject {
       alloc<R = MSSidebarListController>(): R;
       new: <R = MSSidebarListController>() => R;
     }

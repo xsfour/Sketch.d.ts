@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCFError<T = any> extends cocoa.NSError {
+  export interface NSCFError<T = any> extends NSError {
     classForCoder<R = unknown>(): R;
     userInfo<R = unknown>(): R;
     domain<R = unknown>(): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     allowsWeakReference<R = boolean>(): R;
   }
   namespace classes {
-    export interface NSCFError<T = any> extends cocoa.classes.NSError {
+    export interface NSCFError<T = any> extends NSError {
       alloc<R = NSCFError>(): R;
       new: <R = NSCFError>() => R;
       automaticallyNotifiesObserversForKey<R = boolean, P0 = unknown>(_automaticallyNotifiesObserversForKey: P0): R;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSharedStyleContainer<T = any> extends cocoa._MSSharedStyleContainer {
+  export interface MSSharedStyleContainer<T = any> extends _MSSharedStyleContainer {
     sharedStyles<R = unknown>(): R;
     numberOfSharedStyles<R = number>(): R;
     indexOfSharedStyle<R = number, P0 = unknown>(_indexOfSharedStyle: P0): R;
@@ -11,7 +11,7 @@ declare namespace cocoa {
     validStyleType<R = number>(): R;
   }
   namespace classes {
-    export interface MSSharedStyleContainer<T = any> extends cocoa.classes._MSSharedStyleContainer {
+    export interface MSSharedStyleContainer<T = any> extends _MSSharedStyleContainer {
       alloc<R = MSSharedStyleContainer>(): R;
       new: <R = MSSharedStyleContainer>() => R;
     }

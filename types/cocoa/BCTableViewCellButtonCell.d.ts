@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCTableViewCellButtonCell<T = any> extends cocoa.NSButtonCell {}
+  export interface BCTableViewCellButtonCell<T = any> extends NSButtonCell {}
   namespace classes {
-    export interface BCTableViewCellButtonCell<T = any> extends cocoa.classes.NSButtonCell {
+    export interface BCTableViewCellButtonCell<T = any> extends NSButtonCell {
       alloc<R = BCTableViewCellButtonCell>(): R;
       new: <R = BCTableViewCellButtonCell>() => R;
     }

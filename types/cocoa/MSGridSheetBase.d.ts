@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSGridSheetBase<T = any> extends cocoa.CHSheetController, cocoa.NSWindowDelegateProtocol {
+  export interface MSGridSheetBase<T = any> extends CHSheetController, NSWindowDelegateProtocol {
     lightColorUpdated<R = void, P0 = unknown>(_lightColorUpdated: P0): R;
     darkColorUpdated<R = void, P0 = unknown>(_darkColorUpdated: P0): R;
     prepareColorPickers<R = void>(): R;
@@ -17,25 +17,25 @@ declare namespace cocoa {
     defaultObject<R = unknown>(): R;
     document<R = unknown>(): R;
     baseObjectForRootLayer<R = unknown, P0 = unknown>(_baseObjectForRootLayer: P0): R;
-    lightColorButton<R = cocoa.MSColorWell>(): R;
-    setLightColorButton<R = void, P0 = cocoa.MSColorWell>(_v: P0): R;
-    darkColorButton<R = cocoa.MSColorWell>(): R;
-    setDarkColorButton<R = void, P0 = cocoa.MSColorWell>(_v: P0): R;
-    templateObject<R = cocoa.MSBaseGrid>(): R;
-    setTemplateObject<R = void, P0 = cocoa.MSBaseGrid>(_v: P0): R;
-    originalSettings<R = cocoa.NSMapTable>(): R;
-    setOriginalSettings<R = void, P0 = cocoa.NSMapTable>(_v: P0): R;
-    lightColor<R = cocoa.NSColor>(): R;
-    setLightColor<R = void, P0 = cocoa.NSColor>(_v: P0): R;
-    darkColor<R = cocoa.NSColor>(): R;
-    setDarkColor<R = void, P0 = cocoa.NSColor>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    lightColorButton<R = MSColorWell>(): R;
+    setLightColorButton<R = void, P0 = MSColorWell>(_v: P0): R;
+    darkColorButton<R = MSColorWell>(): R;
+    setDarkColorButton<R = void, P0 = MSColorWell>(_v: P0): R;
+    templateObject<R = MSBaseGrid>(): R;
+    setTemplateObject<R = void, P0 = MSBaseGrid>(_v: P0): R;
+    originalSettings<R = NSMapTable>(): R;
+    setOriginalSettings<R = void, P0 = NSMapTable>(_v: P0): R;
+    lightColor<R = NSColor>(): R;
+    setLightColor<R = void, P0 = NSColor>(_v: P0): R;
+    darkColor<R = NSColor>(): R;
+    setDarkColor<R = void, P0 = NSColor>(_v: P0): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface MSGridSheetBase<T = any> extends cocoa.classes.CHSheetController, cocoa.classes.NSWindowDelegateProtocol {
+    export interface MSGridSheetBase<T = any> extends CHSheetController, NSWindowDelegateProtocol {
       alloc<R = MSGridSheetBase>(): R;
       new: <R = MSGridSheetBase>() => R;
     }

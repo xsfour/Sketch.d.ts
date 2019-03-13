@@ -1,10 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSStylePartInspectorDelegateProtocol<T = any> extends cocoa.MSInspectorSectionDelegateProtocol {}
+  export interface MSStylePartInspectorDelegateProtocol<T = any> extends MSInspectorSectionDelegateProtocol {}
   namespace classes {
-    export interface MSStylePartInspectorDelegateProtocol<T = any> extends cocoa.classes.MSInspectorSectionDelegateProtocol {  }
+    export interface MSStylePartInspectorDelegateProtocol<T = any> extends MSInspectorSectionDelegateProtocol {  }
   }
 }
-
-declare const MSStylePartInspectorDelegateProtocol: cocoa.classes.MSStylePartInspectorDelegateProtocol;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTreeController<T = any> extends cocoa.NSObjectController {
+  export interface NSTreeController<T = any> extends NSObjectController {
     removeSelectionIndexPaths<R = boolean, P0 = unknown>(_removeSelectionIndexPaths: P0): R;
     _removeSelectionIndexPathsBelowNode<R = void, P0 = unknown>(__removeSelectionIndexPathsBelowNode: P0): R;
     addSelectionIndexPaths<R = boolean, P0 = unknown>(_addSelectionIndexPaths: P0): R;
@@ -69,17 +69,17 @@ declare namespace cocoa {
     _copySelectedObjectLineages<R = unknown>(): R;
     setManagedObjectContext<R = void, P0 = unknown>(_setManagedObjectContext: P0): R;
     setUsesLazyFetching<R = void, P0 = boolean>(_setUsesLazyFetching: P0): R;
-    selectionIndexPaths<R = cocoa.NSArray>(): R;
-    selectionIndexPath<R = cocoa.NSIndexPath>(): R;
-    selectedObjects<R = cocoa.NSArray>(): R;
-    selectedNodes<R = cocoa.NSArray>(): R;
+    selectionIndexPaths<R = NSArray>(): R;
+    selectionIndexPath<R = NSIndexPath>(): R;
+    selectedObjects<R = NSArray>(): R;
+    selectedNodes<R = NSArray>(): R;
     canInsertChild<R = boolean>(): R;
     canInsert<R = boolean>(): R;
     canAddChild<R = boolean>(): R;
     content<R = unknown>(): R;
     setContent<R = void, P0 = unknown>(_v: P0): R;
-    sortDescriptors<R = cocoa.NSArray>(): R;
-    setSortDescriptors<R = void, P0 = cocoa.NSArray>(_v: P0): R;
+    sortDescriptors<R = NSArray>(): R;
+    setSortDescriptors<R = void, P0 = NSArray>(_v: P0): R;
     selectsInsertedObjects<R = boolean>(): R;
     setSelectsInsertedObjects<R = void, P0 = boolean>(_v: P0): R;
     preservesSelection<R = boolean>(): R;
@@ -88,16 +88,16 @@ declare namespace cocoa {
     setAlwaysUsesMultipleValuesMarker<R = void, P0 = boolean>(_v: P0): R;
     avoidsEmptySelection<R = boolean>(): R;
     setAvoidsEmptySelection<R = void, P0 = boolean>(_v: P0): R;
-    leafKeyPath<R = cocoa.NSString>(): R;
-    setLeafKeyPath<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    countKeyPath<R = cocoa.NSString>(): R;
-    setCountKeyPath<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    childrenKeyPath<R = cocoa.NSString>(): R;
-    setChildrenKeyPath<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    arrangedObjects<R = cocoa.NSTreeNode>(): R;
+    leafKeyPath<R = NSString>(): R;
+    setLeafKeyPath<R = void, P0 = NSString>(_v: P0): R;
+    countKeyPath<R = NSString>(): R;
+    setCountKeyPath<R = void, P0 = NSString>(_v: P0): R;
+    childrenKeyPath<R = NSString>(): R;
+    setChildrenKeyPath<R = void, P0 = NSString>(_v: P0): R;
+    arrangedObjects<R = NSTreeNode>(): R;
   }
   namespace classes {
-    export interface NSTreeController<T = any> extends cocoa.classes.NSObjectController {
+    export interface NSTreeController<T = any> extends NSObjectController {
       alloc<R = NSTreeController>(): R;
       new: <R = NSTreeController>() => R;
     }

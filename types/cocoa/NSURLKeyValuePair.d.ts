@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSURLKeyValuePair<T = any> extends cocoa.NSObject {
+  export interface NSURLKeyValuePair<T = any> extends NSObject {
     hash<R = number>(): R;
     description<R = unknown>(): R;
     value<R = unknown>(): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     initWithKey_value<R = unknown, P0 = unknown, P1 = unknown>(_initWithKey: P0, _value: P1): R;
   }
   namespace classes {
-    export interface NSURLKeyValuePair<T = any> extends cocoa.classes.NSObject {
+    export interface NSURLKeyValuePair<T = any> extends NSObject {
       alloc<R = NSURLKeyValuePair>(): R;
       new: <R = NSURLKeyValuePair>() => R;
       pairWithKey_value<R = unknown, P0 = unknown, P1 = unknown>(_pairWithKey: P0, _value: P1): R;

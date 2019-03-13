@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFileWrapper<T = any> extends cocoa.NSObject, cocoa.NSSecureCodingProtocol {
+  export interface NSFileWrapper<T = any> extends NSObject, NSSecureCodingProtocol {
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     keyForFileWrapper<R = unknown, P0 = unknown>(_keyForFileWrapper: P0): R;
@@ -48,16 +48,16 @@ declare namespace cocoa {
     needsToBeUpdatedFromPath<R = boolean, P0 = unknown>(_needsToBeUpdatedFromPath: P0): R;
     initSymbolicLinkWithDestination<R = unknown, P0 = unknown>(_initSymbolicLinkWithDestination: P0): R;
     initWithPath<R = unknown, P0 = unknown>(_initWithPath: P0): R;
-    symbolicLinkDestinationURL<R = cocoa.NSURL>(): R;
-    regularFileContents<R = cocoa.NSData>(): R;
-    fileWrappers<R = cocoa.NSDictionary>(): R;
-    serializedRepresentation<R = cocoa.NSData>(): R;
-    fileAttributes<R = cocoa.NSDictionary>(): R;
-    setFileAttributes<R = void, P0 = cocoa.NSDictionary>(_v: P0): R;
-    filename<R = cocoa.NSString>(): R;
-    setFilename<R = void, P0 = cocoa.NSString>(_v: P0): R;
-    preferredFilename<R = cocoa.NSString>(): R;
-    setPreferredFilename<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    symbolicLinkDestinationURL<R = NSURL>(): R;
+    regularFileContents<R = NSData>(): R;
+    fileWrappers<R = NSDictionary>(): R;
+    serializedRepresentation<R = NSData>(): R;
+    fileAttributes<R = NSDictionary>(): R;
+    setFileAttributes<R = void, P0 = NSDictionary>(_v: P0): R;
+    filename<R = NSString>(): R;
+    setFilename<R = void, P0 = NSString>(_v: P0): R;
+    preferredFilename<R = NSString>(): R;
+    setPreferredFilename<R = void, P0 = NSString>(_v: P0): R;
     symbolicLink<R = boolean>(): R;
     regularFile<R = boolean>(): R;
     directory<R = boolean>(): R;
@@ -66,11 +66,11 @@ declare namespace cocoa {
     _hasIcon<R = boolean>(): R;
     _initIconWithData<R = void, P0 = unknown>(__initIconWithData: P0): R;
     _initIcon<R = void, P0 = unknown>(__initIcon: P0): R;
-    icon<R = cocoa.NSImage>(): R;
-    setIcon<R = void, P0 = cocoa.NSImage>(_v: P0): R;
+    icon<R = NSImage>(): R;
+    setIcon<R = void, P0 = NSImage>(_v: P0): R;
   }
   namespace classes {
-    export interface NSFileWrapper<T = any> extends cocoa.classes.NSObject, cocoa.classes.NSSecureCodingProtocol {
+    export interface NSFileWrapper<T = any> extends NSObject, NSSecureCodingProtocol {
       alloc<R = NSFileWrapper>(): R;
       new: <R = NSFileWrapper>() => R;
       _newContentsAtURL_path_itemKind_oldChildrenByUniqueFileName_options_error<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = number, P5 = unknown>(__newContentsAtURL: P0, _path: P1, _itemKind: P2, _oldChildrenByUniqueFileName: P3, _options: P4, _error: P5): R;

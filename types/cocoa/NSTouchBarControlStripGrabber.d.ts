@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarControlStripGrabber<T = any> extends cocoa.NSView, cocoa.NSCollectionViewElementProtocol, cocoa.NSGestureRecognizerDelegateProtocol {
+  export interface NSTouchBarControlStripGrabber<T = any> extends NSView, NSCollectionViewElementProtocol, NSGestureRecognizerDelegateProtocol {
     cxx_destruct<R = void>(): R;
     handlePress<R = void, P0 = unknown>(_handlePress: P0): R;
     layoutLayers<R = void>(): R;
@@ -19,19 +19,19 @@ declare namespace cocoa {
     setAction<R = void, P0 = string>(_v: P0): R;
     target<R = unknown>(): R;
     setTarget<R = void, P0 = unknown>(_v: P0): R;
-    alignmentRectInsets<R = cocoa.NSEdgeInsets>(): R;
-    setAlignmentRectInsets<R = void, P0 = cocoa.NSEdgeInsets>(_v: P0): R;
+    alignmentRectInsets<R = NSEdgeInsets>(): R;
+    setAlignmentRectInsets<R = void, P0 = NSEdgeInsets>(_v: P0): R;
     enabled<R = boolean>(): R;
     setEnabled<R = void, P0 = boolean>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
-    description<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
     hash<R = number>(): R;
-    identifier<R = cocoa.NSString>(): R;
-    setIdentifier<R = void, P0 = cocoa.NSString>(_v: P0): R;
+    identifier<R = NSString>(): R;
+    setIdentifier<R = void, P0 = NSString>(_v: P0): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSTouchBarControlStripGrabber<T = any> extends cocoa.classes.NSView, cocoa.classes.NSCollectionViewElementProtocol, cocoa.classes.NSGestureRecognizerDelegateProtocol {
+    export interface NSTouchBarControlStripGrabber<T = any> extends NSView, NSCollectionViewElementProtocol, NSGestureRecognizerDelegateProtocol {
       alloc<R = NSTouchBarControlStripGrabber>(): R;
       new: <R = NSTouchBarControlStripGrabber>() => R;
     }

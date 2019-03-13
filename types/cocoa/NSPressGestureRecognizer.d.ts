@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPressGestureRecognizer<T = any> extends cocoa.NSGestureRecognizer, cocoa.NSCodingProtocol {
+  export interface NSPressGestureRecognizer<T = any> extends NSGestureRecognizer, NSCodingProtocol {
     startTimer<R = void>(): R;
     clearTimer<R = void>(): R;
     enoughTimeElapsed<R = void, P0 = unknown>(_enoughTimeElapsed: P0): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     _hasCustomAllowableMovement<R = boolean>(): R;
     _setHasCustomMinimumPressDuration<R = void, P0 = boolean>(__setHasCustomMinimumPressDuration: P0): R;
     _hasCustomMinimumPressDuration<R = boolean>(): R;
-    touches<R = cocoa.NSArray>(): R;
+    touches<R = NSArray>(): R;
     numberOfTouchesRequired<R = number>(): R;
     setNumberOfTouchesRequired<R = void, P0 = number>(_v: P0): R;
     cancelPastAllowableMovement<R = boolean>(): R;
@@ -22,7 +22,7 @@ declare namespace cocoa {
     setButtonMask<R = void, P0 = number>(_v: P0): R;
   }
   namespace classes {
-    export interface NSPressGestureRecognizer<T = any> extends cocoa.classes.NSGestureRecognizer, cocoa.classes.NSCodingProtocol {
+    export interface NSPressGestureRecognizer<T = any> extends NSGestureRecognizer, NSCodingProtocol {
       alloc<R = NSPressGestureRecognizer>(): R;
       new: <R = NSPressGestureRecognizer>() => R;
     }

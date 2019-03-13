@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScrollerImpPair<T = any> extends cocoa.NSObject {
+  export interface NSScrollerImpPair<T = any> extends NSObject {
     dealloc<R = void>(): R;
     updateTrackingAreas<R = void>(): R;
     _addRemoveTrackingAreasAsNeeded<R = void>(): R;
@@ -25,8 +25,8 @@ declare namespace cocoa {
     removedFromSuperview<R = void>(): R;
     contentAreaDidHide<R = void>(): R;
     contentAreaWillDraw<R = void>(): R;
-    _doWork<R = void, P0 = cocoa.CDUnknownBlockType>(__doWork: P0): R;
-    contentAreaScrolledInDirection<R = void, P0 = cocoa.CGPoint>(_contentAreaScrolledInDirection: P0): R;
+    _doWork<R = void, P0 = CDUnknownBlockType>(__doWork: P0): R;
+    contentAreaScrolledInDirection<R = void, P0 = CGPoint>(_contentAreaScrolledInDirection: P0): R;
     contentAreaScrolled<R = void>(): R;
     overlayScrollerStateIsLocked<R = boolean>(): R;
     unlockOverlayScrollerState<R = void>(): R;
@@ -40,25 +40,25 @@ declare namespace cocoa {
     _overlayScrollerHideTimerFired<R = void, P0 = unknown>(__overlayScrollerHideTimerFired: P0): R;
     _beginHideOverlayScrollers<R = void>(): R;
     _setOverlayScrollerState_forScrollerImp_forceImmediately<R = void, P0 = number, P1 = unknown, P2 = boolean>(__setOverlayScrollerState: P0, _forScrollerImp: P1, _forceImmediately: P2): R;
-    delegate<R = cocoa.NSScrollerImpPairDelegate>(): R;
-    setDelegate<R = void, P0 = cocoa.NSScrollerImpPairDelegate>(_v: P0): R;
+    delegate<R = NSScrollerImpPairDelegate>(): R;
+    setDelegate<R = void, P0 = NSScrollerImpPairDelegate>(_v: P0): R;
     inScrollGesture<R = boolean>(): R;
     overlayScrollersShown<R = boolean>(): R;
     scrollerKnobStyle<R = number>(): R;
     setScrollerKnobStyle<R = void, P0 = number>(_v: P0): R;
-    horizontalScrollerImp<R = cocoa.NSScrollerImp>(): R;
-    setHorizontalScrollerImp<R = void, P0 = cocoa.NSScrollerImp>(_v: P0): R;
-    verticalScrollerImp<R = cocoa.NSScrollerImp>(): R;
-    setVerticalScrollerImp<R = void, P0 = cocoa.NSScrollerImp>(_v: P0): R;
+    horizontalScrollerImp<R = NSScrollerImp>(): R;
+    setHorizontalScrollerImp<R = void, P0 = NSScrollerImp>(_v: P0): R;
+    verticalScrollerImp<R = NSScrollerImp>(): R;
+    setVerticalScrollerImp<R = void, P0 = NSScrollerImp>(_v: P0): R;
     scrollerStyle<R = number>(): R;
     setScrollerStyle<R = void, P0 = number>(_v: P0): R;
-    scrollView<R = cocoa.NSScrollView>(): R;
-    setScrollView<R = void, P0 = cocoa.NSScrollView>(_v: P0): R;
+    scrollView<R = NSScrollView>(): R;
+    setScrollView<R = void, P0 = NSScrollView>(_v: P0): R;
     flipped<R = boolean>(): R;
     setFlipped<R = void, P0 = boolean>(_v: P0): R;
   }
   namespace classes {
-    export interface NSScrollerImpPair<T = any> extends cocoa.classes.NSObject {
+    export interface NSScrollerImpPair<T = any> extends NSObject {
       alloc<R = NSScrollerImpPair>(): R;
       new: <R = NSScrollerImpPair>() => R;
       scrollerLayoutDirection<R = number>(): R;

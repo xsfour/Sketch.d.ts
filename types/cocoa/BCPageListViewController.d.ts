@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCPageListViewController<T = any> extends cocoa.BCOutlineViewController {}
+  export interface BCPageListViewController<T = any> extends BCOutlineViewController {}
   namespace classes {
-    export interface BCPageListViewController<T = any> extends cocoa.classes.BCOutlineViewController {
+    export interface BCPageListViewController<T = any> extends BCOutlineViewController {
       alloc<R = BCPageListViewController>(): R;
       new: <R = BCPageListViewController>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSStandardKeyBindingRespondingProtocol<T = any> extends cocoa.NSObjectProtocol {
+  export interface NSStandardKeyBindingRespondingProtocol<T = any> extends NSObjectProtocol {
     quickLookPreviewItems<R = void, P0 = unknown>(_quickLookPreviewItems: P0): R;
     makeTextWritingDirectionRightToLeft<R = void, P0 = unknown>(_makeTextWritingDirectionRightToLeft: P0): R;
     makeTextWritingDirectionLeftToRight<R = void, P0 = unknown>(_makeTextWritingDirectionLeftToRight: P0): R;
@@ -99,8 +99,6 @@ declare namespace cocoa {
     insertText<R = void, P0 = unknown>(_insertText: P0): R;
   }
   namespace classes {
-    export interface NSStandardKeyBindingRespondingProtocol<T = any> extends cocoa.classes.NSObjectProtocol {  }
+    export interface NSStandardKeyBindingRespondingProtocol<T = any> extends NSObjectProtocol {  }
   }
 }
-
-declare const NSStandardKeyBindingRespondingProtocol: cocoa.classes.NSStandardKeyBindingRespondingProtocol;

@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableRowView<T = any> extends cocoa.NSView, cocoa.NSAccessibilityRowProtocol {
+  export interface NSTableRowView<T = any> extends NSView, NSAccessibilityRowProtocol {
     removeViewAtUnknownColumn<R = void, P0 = unknown>(_removeViewAtUnknownColumn: P0): R;
     associatedViewsForColumn<R = unknown, P0 = number>(_associatedViewsForColumn: P0): R;
-    performHandler_onAssociatedViewsWithColumn<R = void, P0 = cocoa.CDUnknownBlockType, P1 = number>(_performHandler: P0, _onAssociatedViewsWithColumn: P1): R;
+    performHandler_onAssociatedViewsWithColumn<R = void, P0 = CDUnknownBlockType, P1 = number>(_performHandler: P0, _onAssociatedViewsWithColumn: P1): R;
     associatedViewWithReuseIdentifier<R = unknown, P0 = unknown>(_associatedViewWithReuseIdentifier: P0): R;
     extractAssociatedViewWithReuseIdentifier<R = unknown, P0 = unknown>(_extractAssociatedViewWithReuseIdentifier: P0): R;
     removeAssociatedView<R = void, P0 = unknown>(_removeAssociatedView: P0): R;
@@ -67,31 +67,31 @@ declare namespace cocoa {
     _selectedBackgroundView<R = unknown>(): R;
     _setSelectedBackgroundView<R = void, P0 = unknown>(__setSelectedBackgroundView: P0): R;
     wantsUpdateLayer<R = boolean>(): R;
-    drawDraggingDestinationFeedbackInRect<R = void, P0 = cocoa.CGRect>(_drawDraggingDestinationFeedbackInRect: P0): R;
-    drawSelectionInRect<R = void, P0 = cocoa.CGRect>(_drawSelectionInRect: P0): R;
+    drawDraggingDestinationFeedbackInRect<R = void, P0 = CGRect>(_drawDraggingDestinationFeedbackInRect: P0): R;
+    drawSelectionInRect<R = void, P0 = CGRect>(_drawSelectionInRect: P0): R;
     drawsBackground<R = boolean>(): R;
-    drawBackgroundInRect<R = void, P0 = cocoa.CGRect>(_drawBackgroundInRect: P0): R;
+    drawBackgroundInRect<R = void, P0 = CGRect>(_drawBackgroundInRect: P0): R;
     _floatingBackgroundColor<R = unknown>(): R;
     _shouldUseBackgroundColor<R = boolean>(): R;
     _selectedBackgroundColorForFontSmoothing<R = unknown>(): R;
     fontSmoothingBackgroundColor<R = unknown>(): R;
     _needsSelectionBlurBackgroundView<R = boolean>(): R;
     _hasSourceListBackgroundColorOrNil<R = boolean>(): R;
-    _drawSourceListBackgroundInnerEdgeInRect<R = void, P0 = cocoa.CGRect>(__drawSourceListBackgroundInnerEdgeInRect: P0): R;
+    _drawSourceListBackgroundInnerEdgeInRect<R = void, P0 = CGRect>(__drawSourceListBackgroundInnerEdgeInRect: P0): R;
     _backgroundColorForFloatingGroupFromColor<R = unknown, P0 = unknown>(__backgroundColorForFloatingGroupFromColor: P0): R;
-    _backgroundRect<R = cocoa.CGRect>(): R;
-    _backgroundRectForDirtyRect<R = cocoa.CGRect, P0 = cocoa.CGRect>(__backgroundRectForDirtyRect: P0): R;
-    drawSeparatorInRect<R = void, P0 = cocoa.CGRect>(_drawSeparatorInRect: P0): R;
+    _backgroundRect<R = CGRect>(): R;
+    _backgroundRectForDirtyRect<R = CGRect, P0 = CGRect>(__backgroundRectForDirtyRect: P0): R;
+    drawSeparatorInRect<R = void, P0 = CGRect>(_drawSeparatorInRect: P0): R;
     drawsSeparator<R = boolean>(): R;
-    _drawSeparatorInRect_withColor<R = void, P0 = cocoa.CGRect, P1 = unknown>(__drawSeparatorInRect: P0, _withColor: P1): R;
+    _drawSeparatorInRect_withColor<R = void, P0 = CGRect, P1 = unknown>(__drawSeparatorInRect: P0, _withColor: P1): R;
     _finderStyleGroupRowTopSeparatorColor<R = unknown>(): R;
-    _separatorRectAtTop<R = cocoa.CGRect>(): R;
-    _separatorRect<R = cocoa.CGRect>(): R;
+    _separatorRectAtTop<R = CGRect>(): R;
+    _separatorRect<R = CGRect>(): R;
     _drawRowNumberBadge<R = void>(): R;
     _enclosingTableView<R = unknown>(): R;
     _shouldShowRowNumbers<R = boolean>(): R;
     _drawRowNumber<R = void, P0 = number>(__drawRowNumber: P0): R;
-    _dropTargetRect<R = cocoa.CGRect>(): R;
+    _dropTargetRect<R = CGRect>(): R;
     dropHighlightColor<R = unknown>(): R;
     dropHighlightBackgroundColor<R = unknown>(): R;
     secondarySelectedControlColor<R = unknown>(): R;
@@ -139,15 +139,15 @@ declare namespace cocoa {
     set_usingCachedImageOnly<R = void, P0 = boolean>(_v: P0): R;
     numberOfColumns<R = number>(): R;
     setNumberOfColumns<R = void, P0 = number>(_v: P0): R;
-    editActionButtons<R = cocoa.NSArray>(): R;
-    setEditActionButtons<R = void, P0 = cocoa.NSArray>(_v: P0): R;
-    consumingRowActionButton<R = cocoa.NSTableViewActionButton>(): R;
-    setConsumingRowActionButton<R = void, P0 = cocoa.NSTableViewActionButton>(_v: P0): R;
+    editActionButtons<R = NSArray>(): R;
+    setEditActionButtons<R = void, P0 = NSArray>(_v: P0): R;
+    consumingRowActionButton<R = NSTableViewActionButton>(): R;
+    setConsumingRowActionButton<R = void, P0 = NSTableViewActionButton>(_v: P0): R;
     canUseSelectionMaterialWithRegularHighlights<R = boolean>(): R;
     setCanUseSelectionMaterialWithRegularHighlights<R = void, P0 = boolean>(_v: P0): R;
-    separatorColor<R = cocoa.NSColor>(): R;
-    setSeparatorColor<R = void, P0 = cocoa.NSColor>(_v: P0): R;
-    description<R = cocoa.NSString>(): R;
+    separatorColor<R = NSColor>(): R;
+    setSeparatorColor<R = void, P0 = NSColor>(_v: P0): R;
+    description<R = NSString>(): R;
     targetForDropOperation<R = boolean>(): R;
     setTargetForDropOperation<R = void, P0 = boolean>(_v: P0): R;
     groupRowStyle<R = boolean>(): R;
@@ -169,22 +169,22 @@ declare namespace cocoa {
     setFloating<R = void, P0 = boolean>(_v: P0): R;
     selectionAlpha<R = number>(): R;
     setSelectionAlpha<R = void, P0 = number>(_v: P0): R;
-    backgroundColor<R = cocoa.NSColor>(): R;
-    setBackgroundColor<R = void, P0 = cocoa.NSColor>(_v: P0): R;
+    backgroundColor<R = NSColor>(): R;
+    setBackgroundColor<R = void, P0 = NSColor>(_v: P0): R;
     selectionHighlightStyle<R = number>(): R;
     setSelectionHighlightStyle<R = void, P0 = number>(_v: P0): R;
     emphasizedForDropOperation<R = boolean>(): R;
     setEmphasizedForDropOperation<R = void, P0 = boolean>(_v: P0): R;
-    _layoutEngineChangedListener<R = cocoa.CDUnknownBlockType>(): R;
-    set_layoutEngineChangedListener<R = void, P0 = cocoa.CDUnknownBlockType>(_v: P0): R;
+    _layoutEngineChangedListener<R = CDUnknownBlockType>(): R;
+    set_layoutEngineChangedListener<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
     isStatic<R = boolean>(): R;
     setIsStatic<R = void, P0 = boolean>(_v: P0): R;
-    debugDescription<R = cocoa.NSString>(): R;
+    debugDescription<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace classes {
-    export interface NSTableRowView<T = any> extends cocoa.classes.NSView, cocoa.classes.NSAccessibilityRowProtocol {
+    export interface NSTableRowView<T = any> extends NSView, NSAccessibilityRowProtocol {
       alloc<R = NSTableRowView>(): R;
       new: <R = NSTableRowView>() => R;
     }
