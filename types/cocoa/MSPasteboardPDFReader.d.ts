@@ -1,18 +1,18 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPasteboardPDFReader<T = any> extends NSObject, MSPasteboardReaderProtocol {
+  export interface MSPasteboardPDFReader<T0 = void, T1 = void, T2 = void> extends NSObject, MSPasteboardReaderProtocol {
     debugDescription<R = NSString>(): R;
     description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSPasteboardPDFReader<T = any> extends NSObject, MSPasteboardReaderProtocol {
+  namespace MSPasteboardPDFReader {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, MSPasteboardReaderProtocol {
       alloc<R = MSPasteboardPDFReader>(): R;
       new: <R = MSPasteboardPDFReader>() => R;
     }
   }
 }
 
-declare const MSPasteboardPDFReader: cocoa.classes.MSPasteboardPDFReader;
+declare const MSPasteboardPDFReader: cocoa.MSPasteboardPDFReader.CLASS;

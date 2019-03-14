@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface CHStringAttributes<T = any> extends NSDictionary, NSCopyingProtocol {
+  export interface CHStringAttributes<T0 = void, T1 = void, T2 = void> extends NSDictionary, NSCopyingProtocol {
     cxx_destruct<R = void>(): R;
     keyEnumerator<R = unknown>(): R;
     objectForKey<R = unknown, P0 = unknown>(_objectForKey: P0): R;
@@ -22,8 +22,8 @@ declare namespace cocoa {
     font<R = NSFont>(): R;
     setFont<R = void, P0 = NSFont>(_v: P0): R;
   }
-  namespace classes {
-    export interface CHStringAttributes<T = any> extends NSDictionary, NSCopyingProtocol {
+  namespace CHStringAttributes {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSDictionary, NSCopyingProtocol {
       stringAttributesWithFont_color_alignment<R = unknown, P0 = unknown, P1 = unknown, P2 = number>(_stringAttributesWithFont: P0, _color: P1, _alignment: P2): R;
       stringAttributesWithFont_alignment<R = unknown, P0 = unknown, P1 = number>(_stringAttributesWithFont: P0, _alignment: P1): R;
       stringAttributesWithFont_color<R = unknown, P0 = unknown, P1 = unknown>(_stringAttributesWithFont: P0, _color: P1): R;
@@ -32,4 +32,4 @@ declare namespace cocoa {
   }
 }
 
-declare const CHStringAttributes: cocoa.classes.CHStringAttributes;
+declare const CHStringAttributes: cocoa.CHStringAttributes.CLASS;

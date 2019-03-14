@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSScissorsEventHandler<T = any> extends MSEventHandler {
+  export interface MSScissorsEventHandler<T0 = void, T1 = void, T2 = void> extends MSEventHandler {
     strokePath_isHovering<R = void, P0 = unknown, P1 = boolean>(_strokePath: P0, _isHovering: P1): R;
     trimPathOnBothSides<R = unknown, P0 = unknown>(_trimPathOnBothSides: P0): R;
     drawThinStrokeBezierSegments_hoverIndex<R = void, P0 = unknown, P1 = number>(_drawThinStrokeBezierSegments: P0, _hoverIndex: P1): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     hoveringSegment<R = NSIndexPath>(): R;
     setHoveringSegment<R = void, P0 = NSIndexPath>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSScissorsEventHandler<T = any> extends MSEventHandler {
+  namespace MSScissorsEventHandler {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSEventHandler {
       alloc<R = MSScissorsEventHandler>(): R;
       new: <R = MSScissorsEventHandler>() => R;
     }
   }
 }
 
-declare const MSScissorsEventHandler: cocoa.classes.MSScissorsEventHandler;
+declare const MSScissorsEventHandler: cocoa.MSScissorsEventHandler.CLASS;

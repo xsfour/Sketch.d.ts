@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSCloudAvatarView<T = any> extends NSView {
+  export interface MSCloudAvatarView<T0 = void, T1 = void, T2 = void> extends NSView {
     cxx_destruct<R = void>(): R;
     loadAvatar<R = void>(): R;
     wantsUpdateLayer<R = boolean>(): R;
@@ -11,12 +11,12 @@ declare namespace cocoa {
     avatar<R = SCKAvatar>(): R;
     setAvatar<R = void, P0 = SCKAvatar>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSCloudAvatarView<T = any> extends NSView {
+  namespace MSCloudAvatarView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = MSCloudAvatarView>(): R;
       new: <R = MSCloudAvatarView>() => R;
     }
   }
 }
 
-declare const MSCloudAvatarView: cocoa.classes.MSCloudAvatarView;
+declare const MSCloudAvatarView: cocoa.MSCloudAvatarView.CLASS;

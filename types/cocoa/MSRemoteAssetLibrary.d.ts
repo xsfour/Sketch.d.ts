@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSRemoteAssetLibrary<T = any> extends MSAssetLibrary {
+  export interface MSRemoteAssetLibrary<T0 = void, T1 = void, T2 = void> extends MSAssetLibrary {
     assetLibraryUpdated<R = void>(): R;
     name<R = unknown>(): R;
     previewURL<R = unknown>(): R;
@@ -25,8 +25,8 @@ declare namespace cocoa {
     downloadAvailable<R = boolean>(): R;
     updateAvailable<R = boolean>(): R;
   }
-  namespace classes {
-    export interface MSRemoteAssetLibrary<T = any> extends MSAssetLibrary {
+  namespace MSRemoteAssetLibrary {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSAssetLibrary {
       alloc<R = MSRemoteAssetLibrary>(): R;
       new: <R = MSRemoteAssetLibrary>() => R;
       URLForApplicationSupportLibraryNamed<R = unknown, P0 = unknown>(_URLForApplicationSupportLibraryNamed: P0): R;
@@ -35,4 +35,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSRemoteAssetLibrary: cocoa.classes.MSRemoteAssetLibrary;
+declare const MSRemoteAssetLibrary: cocoa.MSRemoteAssetLibrary.CLASS;

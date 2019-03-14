@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorPickerWheelView<T = any> extends NSView {
+  export interface NSColorPickerWheelView<T0 = void, T1 = void, T2 = void> extends NSView {
     _selectColorSpace<R = void, P0 = unknown>(__selectColorSpace: P0): R;
     _displayFallbackColorSpace<R = unknown>(): R;
     isTracking<R = boolean>(): R;
@@ -33,8 +33,8 @@ declare namespace cocoa {
     preferredDisplayColorSpace<R = NSColorSpace>(): R;
     setPreferredDisplayColorSpace<R = void, P0 = NSColorSpace>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSColorPickerWheelView<T = any> extends NSView {
+  namespace NSColorPickerWheelView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSColorPickerWheelView>(): R;
       new: <R = NSColorPickerWheelView>() => R;
       preferredColorSpaces<R = unknown>(): R;
@@ -42,4 +42,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSColorPickerWheelView: cocoa.classes.NSColorPickerWheelView;
+declare const NSColorPickerWheelView: cocoa.NSColorPickerWheelView.CLASS;

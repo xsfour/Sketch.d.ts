@@ -1,7 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSWelcomeCollectionViewItem<T = any> extends NSCollectionViewItem, NSMenuDelegateProtocol {
+  export interface MSWelcomeCollectionViewItem<T0 = void, T1 = void, T2 = void> extends NSCollectionViewItem, NSMenuDelegateProtocol {
+    cxx_destruct<R = void>(): R;
     validateRevealInCloudMenuItem<R = boolean, P0 = unknown>(_validateRevealInCloudMenuItem: P0): R;
     validateRevealInFinderMenuItem<R = boolean, P0 = unknown>(_validateRevealInFinderMenuItem: P0): R;
     fetchPreviewImage<R = void>(): R;
@@ -15,12 +16,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSWelcomeCollectionViewItem<T = any> extends NSCollectionViewItem, NSMenuDelegateProtocol {
+  namespace MSWelcomeCollectionViewItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSCollectionViewItem, NSMenuDelegateProtocol {
       alloc<R = MSWelcomeCollectionViewItem>(): R;
       new: <R = MSWelcomeCollectionViewItem>() => R;
     }
   }
 }
 
-declare const MSWelcomeCollectionViewItem: cocoa.classes.MSWelcomeCollectionViewItem;
+declare const MSWelcomeCollectionViewItem: cocoa.MSWelcomeCollectionViewItem.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSURLQueue<T = any> extends NSObject {
+  export interface NSURLQueue<T0 = void, T1 = void, T2 = void> extends NSObject {
     setWaitOnTake<R = void, P0 = boolean>(_setWaitOnTake: P0): R;
     waitOnTake<R = boolean>(): R;
     count<R = number>(): R;
@@ -15,8 +15,8 @@ declare namespace cocoa {
     put<R = void, P0 = unknown>(_put: P0): R;
     dealloc<R = void>(): R;
   }
-  namespace classes {
-    export interface NSURLQueue<T = any> extends NSObject {
+  namespace NSURLQueue {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSURLQueue>(): R;
       new: <R = NSURLQueue>() => R;
       newNode<R = unknown>(): R;
@@ -24,4 +24,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSURLQueue: cocoa.classes.NSURLQueue;
+declare const NSURLQueue: cocoa.NSURLQueue.CLASS;

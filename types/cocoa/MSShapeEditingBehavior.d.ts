@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSShapeEditingBehavior<T = any> extends NSObject {
+  export interface MSShapeEditingBehavior<T0 = void, T1 = void, T2 = void> extends NSObject {
     shouldClosePathWhenMouseDownOnHandleAtIndexPath_modifierFlags_context<R = boolean, P0 = unknown, P1 = number, P2 = unknown>(_shouldClosePathWhenMouseDownOnHandleAtIndexPath: P0, _modifierFlags: P1, _context: P2): R;
     canInsertPoints<R = boolean>(): R;
     isAddingPoints<R = boolean, P0 = unknown>(_isAddingPoints: P0): R;
@@ -13,8 +13,8 @@ declare namespace cocoa {
     setAllowSelectionOnly<R = void, P0 = boolean>(_v: P0): R;
     isNewShape<R = boolean>(): R;
   }
-  namespace classes {
-    export interface MSShapeEditingBehavior<T = any> extends NSObject {
+  namespace MSShapeEditingBehavior {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSShapeEditingBehavior>(): R;
       new: <R = MSShapeEditingBehavior>() => R;
       initialize<R = void>(): R;
@@ -22,4 +22,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSShapeEditingBehavior: cocoa.classes.MSShapeEditingBehavior;
+declare const MSShapeEditingBehavior: cocoa.MSShapeEditingBehavior.CLASS;

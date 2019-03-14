@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSpeechSynthesizerVars<T = any> extends NSObject {
+  export interface NSSpeechSynthesizerVars<T0 = void, T1 = void, T2 = void> extends NSObject {
     setSpeechChannelWithVoiceCreator_voiceID<R = number, P0 = number, P1 = number>(_setSpeechChannelWithVoiceCreator: P0, _voiceID: P1): R;
     setSpeechChannelWithVoiceIdentifier<R = number, P0 = unknown>(_setSpeechChannelWithVoiceIdentifier: P0): R;
     dealloc<R = void>(): R;
@@ -27,8 +27,8 @@ declare namespace cocoa {
     delegate<R = NSSpeechSynthesizerDelegate>(): R;
     setDelegate<R = void, P0 = NSSpeechSynthesizerDelegate>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSSpeechSynthesizerVars<T = any> extends NSObject {
+  namespace NSSpeechSynthesizerVars {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSSpeechSynthesizerVars>(): R;
       new: <R = NSSpeechSynthesizerVars>() => R;
       voiceIdentifierForVoiceCreator_voiceID<R = unknown, P0 = number, P1 = number>(_voiceIdentifierForVoiceCreator: P0, _voiceID: P1): R;
@@ -37,4 +37,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSSpeechSynthesizerVars: cocoa.classes.NSSpeechSynthesizerVars;
+declare const NSSpeechSynthesizerVars: cocoa.NSSpeechSynthesizerVars.CLASS;

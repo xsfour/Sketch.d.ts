@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSProxy<T = any> {
+  export interface NSProxy<T0 = void, T1 = void, T2 = void> {
     isNSValue__<R = boolean>(): R;
     isNSTimeZone__<R = boolean>(): R;
     isNSString__<R = boolean>(): R;
@@ -50,8 +50,8 @@ declare namespace cocoa {
     description<R = NSString>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSProxy<T = any> {
+  namespace NSProxy {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {
       description<R = unknown>(): R;
       methodForSelector<R = CDUnknownFunctionPointerType, P0 = string>(_methodForSelector: P0): R;
       instanceMethodForSelector<R = CDUnknownFunctionPointerType, P0 = string>(_instanceMethodForSelector: P0): R;
@@ -74,4 +74,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSProxy: cocoa.classes.NSProxy;
+declare const NSProxy: cocoa.NSProxy.CLASS;

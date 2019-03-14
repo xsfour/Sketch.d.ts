@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutableTextLayer<T = any> extends _MSImmutableTextLayer, MSColorUserProtocol, NSLayoutManagerDelegateProtocol, MSFirstLineTypesetterDelegateProtocol {
+  export interface MSImmutableTextLayer<T0 = void, T1 = void, T2 = void> extends _MSImmutableTextLayer, MSColorUserProtocol, NSLayoutManagerDelegateProtocol, MSFirstLineTypesetterDelegateProtocol {
     createTextStorage<R = unknown>(): R;
     lineHeight<R = number>(): R;
     defaultLineHeight<R = number, P0 = unknown>(_defaultLineHeight: P0): R;
@@ -38,12 +38,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSImmutableTextLayer<T = any> extends _MSImmutableTextLayer, MSColorUserProtocol, NSLayoutManagerDelegateProtocol, MSFirstLineTypesetterDelegateProtocol {
+  namespace MSImmutableTextLayer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSImmutableTextLayer, MSColorUserProtocol, NSLayoutManagerDelegateProtocol, MSFirstLineTypesetterDelegateProtocol {
       alloc<R = MSImmutableTextLayer>(): R;
       new: <R = MSImmutableTextLayer>() => R;
     }
   }
 }
 
-declare const MSImmutableTextLayer: cocoa.classes.MSImmutableTextLayer;
+declare const MSImmutableTextLayer: cocoa.MSImmutableTextLayer.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorSpace<T = any> extends NSObject, NSSecureCodingProtocol {
+  export interface NSColorSpace<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol {
     _newCGColorByConvertingCGColor<R = CGColor, P0 = CGColor>(__newCGColorByConvertingCGColor: P0): R;
     awakeAfterUsingCoder<R = unknown, P0 = unknown>(_awakeAfterUsingCoder: P0): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
@@ -27,11 +27,10 @@ declare namespace cocoa {
     CGColorSpace<R = CGColorSpace>(): R;
     ICCProfileData<R = NSData>(): R;
     colorGamut<R = NSColorGamut>(): R;
-    // + NSColorSpace(Chocolat,Extensions):
-    
-  }
-  namespace classes {
-    export interface NSColorSpace<T = any> extends NSObject, NSSecureCodingProtocol {
+  
+}
+  namespace NSColorSpace {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol {
       alloc<R = NSColorSpace>(): R;
       new: <R = NSColorSpace>() => R;
       availableColorSpacesWithModel<R = unknown, P0 = number>(_availableColorSpacesWithModel: P0): R;
@@ -54,11 +53,12 @@ declare namespace cocoa {
       genericGrayColorSpace<R = unknown>(): R;
       genericRGBColorSpace<R = unknown>(): R;
       specialColorSpaceWithID<R = unknown, P0 = number>(_specialColorSpaceWithID: P0): R;
-      // + NSColorSpace(Chocolat,Extensions):
+      // + NSColorSpace(Chocolat): 
       RGBColorSpaceNamed<R = unknown, P0 = unknown>(_RGBColorSpaceNamed: P0): R;
+      // + NSColorSpace(Extensions): 
       colorSpaceForSketchColorSpace<R = unknown, P0 = number>(_colorSpaceForSketchColorSpace: P0): R;
     }
   }
 }
 
-declare const NSColorSpace: cocoa.classes.NSColorSpace;
+declare const NSColorSpace: cocoa.NSColorSpace.CLASS;

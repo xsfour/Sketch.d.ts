@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCarbonWindowFrame<T = any> extends NSView {
+  export interface NSCarbonWindowFrame<T0 = void, T1 = void, T2 = void> extends NSView {
     aspectRatio<R = CGSize>(): R;
     setAspectRatio<R = void, P0 = CGSize>(_setAspectRatio: P0): R;
     resizeIncrements<R = CGSize>(): R;
@@ -36,12 +36,12 @@ declare namespace cocoa {
     contentRectForFrameRect_styleMask<R = CGRect, P0 = CGRect, P1 = number>(_contentRectForFrameRect: P0, _styleMask: P1): R;
     frameRectForContentRect_styleMask<R = CGRect, P0 = CGRect, P1 = number>(_frameRectForContentRect: P0, _styleMask: P1): R;
   }
-  namespace classes {
-    export interface NSCarbonWindowFrame<T = any> extends NSView {
+  namespace NSCarbonWindowFrame {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSCarbonWindowFrame>(): R;
       new: <R = NSCarbonWindowFrame>() => R;
     }
   }
 }
 
-declare const NSCarbonWindowFrame: cocoa.classes.NSCarbonWindowFrame;
+declare const NSCarbonWindowFrame: cocoa.NSCarbonWindowFrame.CLASS;

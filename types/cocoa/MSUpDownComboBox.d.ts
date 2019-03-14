@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSUpDownComboBox<T = any> extends NSComboBox, NSTextViewDelegateProtocol, MSUpDownProtocolProtocol {
+  export interface MSUpDownComboBox<T0 = void, T1 = void, T2 = void> extends NSComboBox, NSTextViewDelegateProtocol, MSUpDownProtocolProtocol {
     cxx_destruct<R = void>(): R;
     awakeFromNib<R = void>(): R;
     minimumIncrementValue<R = number>(): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSUpDownComboBox<T = any> extends NSComboBox, NSTextViewDelegateProtocol, MSUpDownProtocolProtocol {
+  namespace MSUpDownComboBox {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSComboBox, NSTextViewDelegateProtocol, MSUpDownProtocolProtocol {
       alloc<R = MSUpDownComboBox>(): R;
       new: <R = MSUpDownComboBox>() => R;
     }
   }
 }
 
-declare const MSUpDownComboBox: cocoa.classes.MSUpDownComboBox;
+declare const MSUpDownComboBox: cocoa.MSUpDownComboBox.CLASS;

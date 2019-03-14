@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _targetForDropOperation<T = any> {}
-  namespace classes {
-    export interface _targetForDropOperation<T = any> {  }
+  export interface _targetForDropOperation<T0 = void, T1 = void, T2 = void> {}
+  namespace _targetForDropOperation {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

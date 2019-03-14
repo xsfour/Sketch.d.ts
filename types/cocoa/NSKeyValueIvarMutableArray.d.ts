@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSKeyValueIvarMutableArray<T = any> extends NSKeyValueMutableArray {
+  export interface NSKeyValueIvarMutableArray<T0 = void, T1 = void, T2 = void> extends NSKeyValueMutableArray {
     replaceObjectsAtIndexes_withObjects<R = void, P0 = unknown, P1 = unknown>(_replaceObjectsAtIndexes: P0, _withObjects: P1): R;
     replaceObjectAtIndex_withObject<R = void, P0 = number, P1 = unknown>(_replaceObjectAtIndex: P0, _withObject: P1): R;
     removeObjectsAtIndexes<R = void, P0 = unknown>(_removeObjectsAtIndexes: P0): R;
@@ -17,9 +17,9 @@ declare namespace cocoa {
     _raiseNilValueExceptionWithSelector<R = void, P0 = string>(__raiseNilValueExceptionWithSelector: P0): R;
     count<R = number>(): R;
   }
-  namespace classes {
-    export interface NSKeyValueIvarMutableArray<T = any> extends NSKeyValueMutableArray {  }
+  namespace NSKeyValueIvarMutableArray {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSKeyValueMutableArray {}
   }
 }
 
-declare const NSKeyValueIvarMutableArray: cocoa.classes.NSKeyValueIvarMutableArray;
+declare const NSKeyValueIvarMutableArray: cocoa.NSKeyValueIvarMutableArray.CLASS;

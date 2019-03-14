@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSHistory<T = any> extends NSObject {
+  export interface MSHistory<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     progressToNextMoment<R = boolean>(): R;
     commitCurrentMoment<R = void>(): R;
@@ -26,12 +26,12 @@ declare namespace cocoa {
     previousMoment<R = MSMoment>(): R;
     currentMoment<R = MSMoment>(): R;
   }
-  namespace classes {
-    export interface MSHistory<T = any> extends NSObject {
+  namespace MSHistory {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSHistory>(): R;
       new: <R = MSHistory>() => R;
     }
   }
 }
 
-declare const MSHistory: cocoa.classes.MSHistory;
+declare const MSHistory: cocoa.MSHistory.CLASS;

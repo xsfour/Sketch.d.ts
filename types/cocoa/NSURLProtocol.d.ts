@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSURLProtocol<T = any> {}
-  namespace classes {
-    export interface NSURLProtocol<T = any> {  }
+  export interface NSURLProtocol<T0 = void, T1 = void, T2 = void> {}
+  namespace NSURLProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSURLProtocol: cocoa.classes.NSURLProtocol;
+declare const NSURLProtocol: cocoa.NSURLProtocol.CLASS;

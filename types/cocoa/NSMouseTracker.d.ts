@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMouseTracker<T = any> extends NSObject {
+  export interface NSMouseTracker<T0 = void, T1 = void, T2 = void> extends NSObject {
     previousEvent<R = unknown>(): R;
     initialEvent<R = unknown>(): R;
     initialPoint<R = CGPoint>(): R;
@@ -28,12 +28,12 @@ declare namespace cocoa {
     _constrainPoint_withEvent<R = CGPoint, P0 = CGPoint, P1 = unknown>(__constrainPoint: P0, _withEvent: P1): R;
     _getLocalPoint<R = CGPoint, P0 = unknown>(__getLocalPoint: P0): R;
   }
-  namespace classes {
-    export interface NSMouseTracker<T = any> extends NSObject {
+  namespace NSMouseTracker {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSMouseTracker>(): R;
       new: <R = NSMouseTracker>() => R;
     }
   }
 }
 
-declare const NSMouseTracker: cocoa.classes.NSMouseTracker;
+declare const NSMouseTracker: cocoa.NSMouseTracker.CLASS;

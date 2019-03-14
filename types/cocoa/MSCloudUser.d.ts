@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSCloudUser<T = any> extends NSObject, NSSecureCodingProtocol {
+  export interface MSCloudUser<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol {
     cxx_destruct<R = void>(): R;
     debugDescription<R = unknown>(): R;
     parseDictionary<R = void, P0 = unknown>(_parseDictionary: P0): R;
@@ -18,8 +18,8 @@ declare namespace cocoa {
     identifier<R = NSString>(): R;
     dictionary<R = NSDictionary>(): R;
   }
-  namespace classes {
-    export interface MSCloudUser<T = any> extends NSObject, NSSecureCodingProtocol {
+  namespace MSCloudUser {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol {
       alloc<R = MSCloudUser>(): R;
       new: <R = MSCloudUser>() => R;
       userWithIdentifier_verified<R = unknown, P0 = unknown, P1 = boolean>(_userWithIdentifier: P0, _verified: P1): R;
@@ -27,4 +27,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSCloudUser: cocoa.classes.MSCloudUser;
+declare const MSCloudUser: cocoa.MSCloudUser.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTabDraggingDestinationProtocol<T = any> extends NSObjectProtocol {
+  export interface NSTabDraggingDestinationProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     willPinTabForTabDragOperation<R = boolean, P0 = NSTabDraggingInfo>(_willPinTabForTabDragOperation: P0): R;
     wantsPeriodicTabDraggingUpdates<R = boolean>(): R;
     tabDraggingEnded<R = void, P0 = NSTabDraggingInfo>(_tabDraggingEnded: P0): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     tabDraggingUpdated<R = number, P0 = NSTabDraggingInfo>(_tabDraggingUpdated: P0): R;
     tabDraggingEntered<R = number, P0 = NSTabDraggingInfo>(_tabDraggingEntered: P0): R;
   }
-  namespace classes {
-    export interface NSTabDraggingDestinationProtocol<T = any> extends NSObjectProtocol {  }
+  namespace NSTabDraggingDestinationProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

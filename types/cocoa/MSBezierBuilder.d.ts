@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBezierBuilder<T = any> extends NSObject {
+  export interface MSBezierBuilder<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     addCurveFromPointAtIndex_toPointAtIndex_inArray_inRect_includingTrailingArc_toBezierPath_orCGPath<R = void, P0 = number, P1 = number, P2 = unknown, P3 = CGRect, P4 = boolean, P5 = unknown, P6 = CGPath>(_addCurveFromPointAtIndex: P0, _toPointAtIndex: P1, _inArray: P2, _inRect: P3, _includingTrailingArc: P4, _toBezierPath: P5, _orCGPath: P6): R;
     addLineToPointIfNecessary_toBezierPath_orCGPath<R = void, P0 = CGPoint, P1 = unknown, P2 = CGPath>(_addLineToPointIfNecessary: P0, _toBezierPath: P1, _orCGPath: P2): R;
@@ -29,8 +29,8 @@ declare namespace cocoa {
     setRect<R = void, P0 = CGRect>(_v: P0): R;
     pointRadiusBehaviour<R = number>(): R;
   }
-  namespace classes {
-    export interface MSBezierBuilder<T = any> extends NSObject {
+  namespace MSBezierBuilder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSBezierBuilder>(): R;
       new: <R = MSBezierBuilder>() => R;
       bezierPathForSegmentAtIndex_inPath_inRect<R = unknown, P0 = number, P1 = unknown, P2 = CGRect>(_bezierPathForSegmentAtIndex: P0, _inPath: P1, _inRect: P2): R;
@@ -40,4 +40,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSBezierBuilder: cocoa.classes.MSBezierBuilder;
+declare const MSBezierBuilder: cocoa.MSBezierBuilder.CLASS;

@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMutableData<T = any> {
-    // + NSMutableData(NSMutableData,NSMutableDataObjcTypeSerialization,NSSerialization):
+  export interface NSMutableData<T0 = void, T1 = void, T2 = void> {
+    // + NSMutableData(NSMutableData): 
     initWithLength<R = unknown, P0 = number>(_initWithLength: P0): R;
     initWithCapacity<R = unknown, P0 = number>(_initWithCapacity: P0): R;
     setData<R = void, P0 = unknown>(_setData: P0): R;
@@ -16,7 +16,9 @@ declare namespace cocoa {
     classForCoder<R = unknown>(): R;
     setLength<R = void, P0 = number>(_setLength: P0): R;
     mutableBytes<R = void>(): R;
+    // + NSMutableData(NSMutableDataObjcTypeSerialization): 
     serializeDataAt_ofObjCType_context<R = void, P0 = void, P1 = string, P2 = unknown>(_serializeDataAt: P0, _ofObjCType: P1, _context: P2): R;
+    // + NSMutableData(NSSerialization): 
     serializeAlignedBytes_length<R = void, P0 = void, P1 = number>(_serializeAlignedBytes: P0, _length: P1): R;
     serializeAlignedBytesLength<R = void, P0 = number>(_serializeAlignedBytesLength: P0): R;
     serializeInts_count_atIndex<R = void, P0 = number, P1 = number, P2 = number>(_serializeInts: P0, _count: P1, _atIndex: P2): R;
@@ -24,9 +26,9 @@ declare namespace cocoa {
     serializeInts_count<R = void, P0 = number, P1 = number>(_serializeInts: P0, _count: P1): R;
     serializeInt<R = void, P0 = number>(_serializeInt: P0): R;
   }
-  namespace classes {
-    export interface NSMutableData<T = any> {
-      // + NSMutableData(NSMutableData,NSMutableDataObjcTypeSerialization,NSSerialization):
+  namespace NSMutableData {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {
+      // + NSMutableData(NSMutableData): 
       dataWithLength<R = unknown, P0 = number>(_dataWithLength: P0): R;
       dataWithCapacity<R = unknown, P0 = number>(_dataWithCapacity: P0): R;
       allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
@@ -34,4 +36,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSMutableData: cocoa.classes.NSMutableData;
+declare const NSMutableData: cocoa.NSMutableData.CLASS;

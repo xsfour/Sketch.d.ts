@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSAutomaticFocusRing<T = any> extends NSObject {}
-  namespace classes {
-    export interface _NSAutomaticFocusRing<T = any> extends NSObject {
+  export interface _NSAutomaticFocusRing<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace _NSAutomaticFocusRing {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSAutomaticFocusRing>(): R;
       new: <R = _NSAutomaticFocusRing>() => R;
       setActiveFirstResponderChanged<R = void>(): R;

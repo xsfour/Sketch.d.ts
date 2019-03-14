@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSNibExternalObjectPlaceholder<T = any> extends NSObject, NSCodingProtocol {
+  export interface NSNibExternalObjectPlaceholder<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
     dealloc<R = void>(): R;
     externalObjectPlaceholderIdentifier<R = NSString>(): R;
     setExternalObjectPlaceholderIdentifier<R = void, P0 = NSString>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSNibExternalObjectPlaceholder<T = any> extends NSObject, NSCodingProtocol {
+  namespace NSNibExternalObjectPlaceholder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
       alloc<R = NSNibExternalObjectPlaceholder>(): R;
       new: <R = NSNibExternalObjectPlaceholder>() => R;
       removeMappingsForCoder<R = void, P0 = unknown>(_removeMappingsForCoder: P0): R;
@@ -19,4 +19,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSNibExternalObjectPlaceholder: cocoa.classes.NSNibExternalObjectPlaceholder;
+declare const NSNibExternalObjectPlaceholder: cocoa.NSNibExternalObjectPlaceholder.CLASS;

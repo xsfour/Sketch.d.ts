@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSScrollingConcurrentEventMonitor<T = any> extends NSObject {
+  export interface _NSScrollingConcurrentEventMonitor<T0 = void, T1 = void, T2 = void> extends NSObject {
     _monitorEvent<R = void, P0 = unknown>(__monitorEvent: P0): R;
     consumePropertiesWithBlock<R = void, P0 = CDUnknownBlockType>(_consumePropertiesWithBlock: P0): R;
     threadSafeMultiPropertyAccess<R = void, P0 = CDUnknownBlockType>(_threadSafeMultiPropertyAccess: P0): R;
@@ -30,8 +30,8 @@ declare namespace cocoa {
     velocity<R = CGPoint>(): R;
     delta<R = CGPoint>(): R;
   }
-  namespace classes {
-    export interface _NSScrollingConcurrentEventMonitor<T = any> extends NSObject {
+  namespace _NSScrollingConcurrentEventMonitor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSScrollingConcurrentEventMonitor>(): R;
       new: <R = _NSScrollingConcurrentEventMonitor>() => R;
       initialize<R = void>(): R;

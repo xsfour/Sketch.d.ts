@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSJSONArchiver<T = any> extends MSBaseArchiver {
+  export interface MSJSONArchiver<T0 = void, T1 = void, T2 = void> extends MSBaseArchiver {
     replacementObjectForObject<R = unknown, P0 = unknown>(_replacementObjectForObject: P0): R;
     encoder<R = BCJSONEncoder>(): R;
   }
-  namespace classes {
-    export interface MSJSONArchiver<T = any> extends MSBaseArchiver {
+  namespace MSJSONArchiver {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSBaseArchiver {
       alloc<R = MSJSONArchiver>(): R;
       new: <R = MSJSONArchiver>() => R;
       archiveObject_coder<R = void, P0 = unknown, P1 = unknown>(_archiveObject: P0, _coder: P1): R;
@@ -17,4 +17,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSJSONArchiver: cocoa.classes.MSJSONArchiver;
+declare const MSJSONArchiver: cocoa.MSJSONArchiver.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface SVGPattern<T = any> extends _SVGPattern {
+  export interface SVGPattern<T0 = void, T1 = void, T2 = void> extends _SVGPattern {
     isLikelyASketchExportedPattern<R = boolean>(): R;
     isSketchSVGTilePattern<R = boolean>(): R;
     isSketchSVGFitPattern<R = boolean>(): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     scale<R = number>(): R;
     imageData<R = MSImageData>(): R;
   }
-  namespace classes {
-    export interface SVGPattern<T = any> extends _SVGPattern {
+  namespace SVGPattern {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _SVGPattern {
       alloc<R = SVGPattern>(): R;
       new: <R = SVGPattern>() => R;
     }
   }
 }
 
-declare const SVGPattern: cocoa.classes.SVGPattern;
+declare const SVGPattern: cocoa.SVGPattern.CLASS;

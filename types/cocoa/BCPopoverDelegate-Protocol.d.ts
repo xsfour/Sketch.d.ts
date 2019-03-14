@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCPopoverDelegateProtocol<T = any> extends NSObjectProtocol {
+  export interface BCPopoverDelegateProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     popoverShouldTrackSuperviewOfAttachedToView<R = boolean, P0 = BCPopover>(_popoverShouldTrackSuperviewOfAttachedToView: P0): R;
     popoverWillReturnUndoManager<R = NSUndoManager, P0 = BCPopover>(_popoverWillReturnUndoManager: P0): R;
     popoverShouldAnimateOnContentFrameDidChange<R = boolean, P0 = NSNotification>(_popoverShouldAnimateOnContentFrameDidChange: P0): R;
@@ -13,7 +13,7 @@ declare namespace cocoa {
     popoverWillShow<R = void, P0 = NSNotification>(_popoverWillShow: P0): R;
     minimumPopoverContentViewHeight<R = number, P0 = BCPopover>(_minimumPopoverContentViewHeight: P0): R;
   }
-  namespace classes {
-    export interface BCPopoverDelegateProtocol<T = any> extends NSObjectProtocol {  }
+  namespace BCPopoverDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

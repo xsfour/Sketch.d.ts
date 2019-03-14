@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSHotspotLayer<T = any> extends _MSHotspotLayer, MSLayerPreviewabilityProtocol {
+  export interface MSHotspotLayer<T0 = void, T1 = void, T2 = void> extends _MSHotspotLayer, MSLayerPreviewabilityProtocol {
     resetFlow<R = void>(): R;
     canRotate<R = boolean>(): R;
     canBeTransformed<R = boolean>(): R;
@@ -16,8 +16,8 @@ declare namespace cocoa {
     applyOverride_document<R = void, P0 = unknown, P1 = unknown>(_applyOverride: P0, _document: P1): R;
     badgeType<R = number>(): R;
   }
-  namespace classes {
-    export interface MSHotspotLayer<T = any> extends _MSHotspotLayer, MSLayerPreviewabilityProtocol {
+  namespace MSHotspotLayer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSHotspotLayer, MSLayerPreviewabilityProtocol {
       alloc<R = MSHotspotLayer>(): R;
       new: <R = MSHotspotLayer>() => R;
       hotspotLayerFromLayer<R = unknown, P0 = unknown>(_hotspotLayerFromLayer: P0): R;
@@ -25,4 +25,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSHotspotLayer: cocoa.classes.MSHotspotLayer;
+declare const MSHotspotLayer: cocoa.MSHotspotLayer.CLASS;

@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFlowMenuBuilder<T = any> extends NSObject {}
-  namespace classes {
-    export interface MSFlowMenuBuilder<T = any> extends NSObject {
+  export interface MSFlowMenuBuilder<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace MSFlowMenuBuilder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSFlowMenuBuilder>(): R;
       new: <R = MSFlowMenuBuilder>() => R;
       menuItemsForArtboards_currentDestination_target<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_menuItemsForArtboards: P0, _currentDestination: P1, _target: P2): R;
@@ -14,4 +14,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSFlowMenuBuilder: cocoa.classes.MSFlowMenuBuilder;
+declare const MSFlowMenuBuilder: cocoa.MSFlowMenuBuilder.CLASS;

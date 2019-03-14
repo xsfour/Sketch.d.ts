@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSliceLayer<T = any> extends _MSSliceLayer, MSLayerPreviewabilityProtocol, MSLayerWithMutableBackgroundColorProtocol, MSColorConvertibleProtocol {
+  export interface MSSliceLayer<T0 = void, T1 = void, T2 = void> extends _MSSliceLayer, MSLayerPreviewabilityProtocol, MSLayerWithMutableBackgroundColorProtocol, MSColorConvertibleProtocol {
     rootForNameUniquing<R = unknown>(): R;
     canRotate<R = boolean>(): R;
     canBeTransformed<R = boolean>(): R;
@@ -23,8 +23,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSSliceLayer<T = any> extends _MSSliceLayer, MSLayerPreviewabilityProtocol, MSLayerWithMutableBackgroundColorProtocol, MSColorConvertibleProtocol {
+  namespace MSSliceLayer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSSliceLayer, MSLayerPreviewabilityProtocol, MSLayerWithMutableBackgroundColorProtocol, MSColorConvertibleProtocol {
       alloc<R = MSSliceLayer>(): R;
       new: <R = MSSliceLayer>() => R;
       sliceLayerFromLayer<R = unknown, P0 = unknown>(_sliceLayerFromLayer: P0): R;
@@ -32,4 +32,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSSliceLayer: cocoa.classes.MSSliceLayer;
+declare const MSSliceLayer: cocoa.MSSliceLayer.CLASS;

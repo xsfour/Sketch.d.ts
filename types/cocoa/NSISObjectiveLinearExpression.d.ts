@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSISObjectiveLinearExpression<T = any> extends NSObject {
+  export interface NSISObjectiveLinearExpression<T0 = void, T1 = void, T2 = void> extends NSObject {
     replaceVariable_withExpression_processVariableNewToReceiver_processVariableDroppedFromReceiver<R = void, P0 = unknown, P1 = unknown, P2 = CDUnknownBlockType, P3 = CDUnknownBlockType>(_replaceVariable: P0, _withExpression: P1, _processVariableNewToReceiver: P2, _processVariableDroppedFromReceiver: P3): R;
     restrictedVariableWithCoefficientOfLargestNegativeMagnitude<R = unknown>(): R;
     removeVariable<R = void, P0 = unknown>(_removeVariable: P0): R;
@@ -29,12 +29,12 @@ declare namespace cocoa {
     initWithLinearExpression_priority_engine<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_initWithLinearExpression: P0, _priority: P1, _engine: P2): R;
     initWithEngine<R = unknown, P0 = unknown>(_initWithEngine: P0): R;
   }
-  namespace classes {
-    export interface NSISObjectiveLinearExpression<T = any> extends NSObject {
+  namespace NSISObjectiveLinearExpression {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSISObjectiveLinearExpression>(): R;
       new: <R = NSISObjectiveLinearExpression>() => R;
     }
   }
 }
 
-declare const NSISObjectiveLinearExpression: cocoa.classes.NSISObjectiveLinearExpression;
+declare const NSISObjectiveLinearExpression: cocoa.NSISObjectiveLinearExpression.CLASS;

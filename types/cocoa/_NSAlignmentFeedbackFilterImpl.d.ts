@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSAlignmentFeedbackFilterImpl<T = any> extends NSObject {
+  export interface _NSAlignmentFeedbackFilterImpl<T0 = void, T1 = void, T2 = void> extends NSObject {
     performFeedback_performanceTime<R = void, P0 = unknown, P1 = number>(_performFeedback: P0, _performanceTime: P1): R;
     alignmentFeedbackTokenForVerticalMovementInView_previousY_alignedY_defaultY<R = unknown, P0 = unknown, P1 = number, P2 = number, P3 = number>(_alignmentFeedbackTokenForVerticalMovementInView: P0, _previousY: P1, _alignedY: P2, _defaultY: P3): R;
     alignmentFeedbackTokenForHorizontalMovementInView_previousX_alignedX_defaultX<R = unknown, P0 = unknown, P1 = number, P2 = number, P3 = number>(_alignmentFeedbackTokenForHorizontalMovementInView: P0, _previousX: P1, _alignedX: P2, _defaultX: P3): R;
@@ -22,8 +22,8 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     _reset<R = void>(): R;
   }
-  namespace classes {
-    export interface _NSAlignmentFeedbackFilterImpl<T = any> extends NSObject {
+  namespace _NSAlignmentFeedbackFilterImpl {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSAlignmentFeedbackFilterImpl>(): R;
       new: <R = _NSAlignmentFeedbackFilterImpl>() => R;
       inputEventMask<R = number>(): R;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSNavSharedServerController<T = any> extends NSViewController {
+  export interface NSNavSharedServerController<T0 = void, T1 = void, T2 = void> extends NSViewController {
     updateConnectAsButtonForConnectionState<R = void, P0 = number>(_updateConnectAsButtonForConnectionState: P0): R;
     updateStatusTextForConnectionState_userName<R = void, P0 = number, P1 = unknown>(_updateStatusTextForConnectionState: P0, _userName: P1): R;
     updateStatus<R = void>(): R;
@@ -30,12 +30,12 @@ declare namespace cocoa {
     shareScreenButton<R = NSButton>(): R;
     connectAsButton<R = NSButton>(): R;
   }
-  namespace classes {
-    export interface NSNavSharedServerController<T = any> extends NSViewController {
+  namespace NSNavSharedServerController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController {
       alloc<R = NSNavSharedServerController>(): R;
       new: <R = NSNavSharedServerController>() => R;
     }
   }
 }
 
-declare const NSNavSharedServerController: cocoa.classes.NSNavSharedServerController;
+declare const NSNavSharedServerController: cocoa.NSNavSharedServerController.CLASS;

@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _updatingBackgroundStyle<T = any> {}
-  namespace classes {
-    export interface _updatingBackgroundStyle<T = any> {  }
+  export interface _updatingBackgroundStyle<T0 = void, T1 = void, T2 = void> {}
+  namespace _updatingBackgroundStyle {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

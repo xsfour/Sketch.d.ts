@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMutableIndexSet<T = any> extends NSIndexSet {
+  export interface NSMutableIndexSet<T0 = void, T1 = void, T2 = void> extends NSIndexSet {
     shiftIndexesStartingAtIndex_by<R = void, P0 = number, P1 = number>(_shiftIndexesStartingAtIndex: P0, _by: P1): R;
     _removeAndDecrementBy_startingAtIndex<R = void, P0 = number, P1 = number>(__removeAndDecrementBy: P0, _startingAtIndex: P1): R;
     _incrementBy_startingAtIndex<R = void, P0 = number, P1 = number>(__incrementBy: P0, _startingAtIndex: P1): R;
@@ -25,12 +25,12 @@ declare namespace cocoa {
     _addRangeToArray<R = void, P0 = _NSRange>(__addRangeToArray: P0): R;
     _ensureRangeCapacity<R = void, P0 = number>(__ensureRangeCapacity: P0): R;
   }
-  namespace classes {
-    export interface NSMutableIndexSet<T = any> extends NSIndexSet {
+  namespace NSMutableIndexSet {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSIndexSet {
       alloc<R = NSMutableIndexSet>(): R;
       new: <R = NSMutableIndexSet>() => R;
     }
   }
 }
 
-declare const NSMutableIndexSet: cocoa.classes.NSMutableIndexSet;
+declare const NSMutableIndexSet: cocoa.NSMutableIndexSet.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSBackingLayerContents<T = any> extends NSObject, CALayerDelegateProtocol {
+  export interface _NSBackingLayerContents<T0 = void, T1 = void, T2 = void> extends NSObject, CALayerDelegateProtocol {
     cxx_destruct<R = void>(): R;
     NS_hasPartialPrefetchedContentsForRect<R = boolean, P0 = CGRect>(_NS_hasPartialPrefetchedContentsForRect: P0): R;
     NS_hasPrefetchedContentsForRect<R = boolean, P0 = CGRect>(_NS_hasPrefetchedContentsForRect: P0): R;
@@ -22,8 +22,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSBackingLayerContents<T = any> extends NSObject, CALayerDelegateProtocol {
+  namespace _NSBackingLayerContents {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, CALayerDelegateProtocol {
       alloc<R = _NSBackingLayerContents>(): R;
       new: <R = _NSBackingLayerContents>() => R;
     }

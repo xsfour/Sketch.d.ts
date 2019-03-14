@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPasteboardLayers<T = any> extends NSObject, MSLayerTraitsProtocol {
+  export interface MSPasteboardLayers<T0 = void, T1 = void, T2 = void> extends NSObject, MSLayerTraitsProtocol {
     cxx_destruct<R = void>(): R;
     suggestedRect<R = CGRect>(): R;
     insertInGroup_atPosition_afterLayer_viewport_fitToParent<R = unknown, P0 = unknown, P1 = CGPoint, P2 = unknown, P3 = unknown, P4 = boolean>(_insertInGroup: P0, _atPosition: P1, _afterLayer: P2, _viewport: P3, _fitToParent: P4): R;
@@ -26,8 +26,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSPasteboardLayers<T = any> extends NSObject, MSLayerTraitsProtocol {
+  namespace MSPasteboardLayers {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, MSLayerTraitsProtocol {
       alloc<R = MSPasteboardLayers>(): R;
       new: <R = MSPasteboardLayers>() => R;
       originForLayer_rootIsPage<R = CGPoint, P0 = unknown, P1 = boolean>(_originForLayer: P0, _rootIsPage: P1): R;
@@ -40,4 +40,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSPasteboardLayers: cocoa.classes.MSPasteboardLayers;
+declare const MSPasteboardLayers: cocoa.MSPasteboardLayers.CLASS;

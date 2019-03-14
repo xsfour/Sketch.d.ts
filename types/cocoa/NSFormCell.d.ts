@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFormCell<T = any> extends NSActionCell {
+  export interface NSFormCell<T0 = void, T1 = void, T2 = void> extends NSActionCell {
     _layoutTitleRect_interiorChromeRect_interiorTextRect_withFrame_inView<R = void, P0 = CGRect, P1 = CGRect, P2 = CGRect, P3 = CGRect, P4 = unknown>(__layoutTitleRect: P0, _interiorChromeRect: P1, _interiorTextRect: P2, _withFrame: P3, _inView: P4): R;
     _titleRectForCellFrame<R = CGRect, P0 = CGRect>(__titleRectForCellFrame: P0): R;
     _drawLiveResizeHighlightWithFrame_inView<R = void, P0 = CGRect, P1 = unknown>(__drawLiveResizeHighlightWithFrame: P0, _inView: P1): R;
@@ -42,12 +42,12 @@ declare namespace cocoa {
     titleWidth<R = number>(): R;
     setTitleWidth<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSFormCell<T = any> extends NSActionCell {
+  namespace NSFormCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSActionCell {
       alloc<R = NSFormCell>(): R;
       new: <R = NSFormCell>() => R;
     }
   }
 }
 
-declare const NSFormCell: cocoa.classes.NSFormCell;
+declare const NSFormCell: cocoa.NSFormCell.CLASS;

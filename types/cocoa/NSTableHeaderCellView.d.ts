@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableHeaderCellView<T = any> extends NSView {
+  export interface NSTableHeaderCellView<T0 = void, T1 = void, T2 = void> extends NSView {
     _commonInit<R = void>(): R;
     selected<R = boolean>(): R;
     setSelected<R = void, P0 = boolean>(_v: P0): R;
@@ -10,12 +10,12 @@ declare namespace cocoa {
     cell<R = NSCell>(): R;
     setCell<R = void, P0 = NSCell>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTableHeaderCellView<T = any> extends NSView {
+  namespace NSTableHeaderCellView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSTableHeaderCellView>(): R;
       new: <R = NSTableHeaderCellView>() => R;
     }
   }
 }
 
-declare const NSTableHeaderCellView: cocoa.classes.NSTableHeaderCellView;
+declare const NSTableHeaderCellView: cocoa.NSTableHeaderCellView.CLASS;

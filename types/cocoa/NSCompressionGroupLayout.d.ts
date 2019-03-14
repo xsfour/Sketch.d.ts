@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCompressionGroupLayout<T = any> extends NSObject, NSCopyingProtocol {
+  export interface NSCompressionGroupLayout<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     _minimumWidthForCompressionOptions<R = number, P0 = unknown>(__minimumWidthForCompressionOptions: P0): R;
     item_minSize_maxSize_preferredSize<R = void, P0 = unknown, P1 = CGSize, P2 = CGSize, P3 = CGSize>(_item: P0, _minSize: P1, _maxSize: P2, _preferredSize: P3): R;
     _guarenteedWidthForNotBreakingEqualWidths<R = number>(): R;
@@ -41,12 +41,12 @@ declare namespace cocoa {
     prefersEqualWidths<R = boolean>(): R;
     setPrefersEqualWidths<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSCompressionGroupLayout<T = any> extends NSObject, NSCopyingProtocol {
+  namespace NSCompressionGroupLayout {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = NSCompressionGroupLayout>(): R;
       new: <R = NSCompressionGroupLayout>() => R;
     }
   }
 }
 
-declare const NSCompressionGroupLayout: cocoa.classes.NSCompressionGroupLayout;
+declare const NSCompressionGroupLayout: cocoa.NSCompressionGroupLayout.CLASS;

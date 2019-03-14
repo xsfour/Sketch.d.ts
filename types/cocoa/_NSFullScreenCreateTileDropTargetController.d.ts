@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSFullScreenCreateTileDropTargetController<T = any> extends NSObject {
+  export interface _NSFullScreenCreateTileDropTargetController<T0 = void, T1 = void, T2 = void> extends NSObject {
     windowDidEndDraggingNotification<R = void, P0 = unknown>(_windowDidEndDraggingNotification: P0): R;
     acceptDropForTearOffTabWindow<R = boolean, P0 = unknown>(_acceptDropForTearOffTabWindow: P0): R;
     _handleWindowDropIfNecessary<R = boolean>(): R;
@@ -31,8 +31,8 @@ declare namespace cocoa {
     space<R = _NSFullScreenSpace>(): R;
     setSpace<R = void, P0 = _NSFullScreenSpace>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSFullScreenCreateTileDropTargetController<T = any> extends NSObject {
+  namespace _NSFullScreenCreateTileDropTargetController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSFullScreenCreateTileDropTargetController>(): R;
       new: <R = _NSFullScreenCreateTileDropTargetController>() => R;
     }

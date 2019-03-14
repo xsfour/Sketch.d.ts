@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInsertLineEventHandler<T = any> extends MSEventHandler, MSAlignmentEngineDelegateProtocol {
+  export interface MSInsertLineEventHandler<T0 = void, T1 = void, T2 = void> extends MSEventHandler, MSAlignmentEngineDelegateProtocol {
     lineThickness<R = number>(): R;
     style<R = unknown>(): R;
     addSnapTargetsToAlignmentEngine<R = void, P0 = unknown>(_addSnapTargetsToAlignmentEngine: P0): R;
@@ -21,12 +21,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSInsertLineEventHandler<T = any> extends MSEventHandler, MSAlignmentEngineDelegateProtocol {
+  namespace MSInsertLineEventHandler {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSEventHandler, MSAlignmentEngineDelegateProtocol {
       alloc<R = MSInsertLineEventHandler>(): R;
       new: <R = MSInsertLineEventHandler>() => R;
     }
   }
 }
 
-declare const MSInsertLineEventHandler: cocoa.classes.MSInsertLineEventHandler;
+declare const MSInsertLineEventHandler: cocoa.MSInsertLineEventHandler.CLASS;

@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface COPrintController<T = any> {}
-  namespace classes {
-    export interface COPrintController<T = any> {  }
+  export interface COPrintController<T0 = void, T1 = void, T2 = void> {}
+  namespace COPrintController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const COPrintController: cocoa.classes.COPrintController;
+declare const COPrintController: cocoa.COPrintController.CLASS;

@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAccessibilityProgressIndicator<T = any> {}
-  namespace classes {
-    export interface NSAccessibilityProgressIndicator<T = any> {  }
+  export interface NSAccessibilityProgressIndicator<T0 = void, T1 = void, T2 = void> {}
+  namespace NSAccessibilityProgressIndicator {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSAccessibilityProgressIndicator: cocoa.classes.NSAccessibilityProgressIndicator;
+declare const NSAccessibilityProgressIndicator: cocoa.NSAccessibilityProgressIndicator.CLASS;

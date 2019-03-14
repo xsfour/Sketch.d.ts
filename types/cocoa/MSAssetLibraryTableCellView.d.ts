@@ -1,7 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAssetLibraryTableCellView<T = any> extends NSTableCellView {
+  export interface MSAssetLibraryTableCellView<T0 = void, T1 = void, T2 = void> extends NSTableCellView {
+    cxx_destruct<R = void>(): R;
     setPrimaryTextFieldTextColor<R = void, P0 = unknown>(_setPrimaryTextFieldTextColor: P0): R;
     setSecondaryTextFieldTextColor<R = void, P0 = unknown>(_setSecondaryTextFieldTextColor: P0): R;
     downloadLibrary<R = void, P0 = unknown>(_downloadLibrary: P0): R;
@@ -38,8 +39,8 @@ declare namespace cocoa {
     setEnabled<R = void, P0 = boolean>(_v: P0): R;
     assetPreferenceItem<R = MSAssetPreferenceItem>(): R;
   }
-  namespace classes {
-    export interface MSAssetLibraryTableCellView<T = any> extends NSTableCellView {
+  namespace MSAssetLibraryTableCellView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTableCellView {
       alloc<R = MSAssetLibraryTableCellView>(): R;
       new: <R = MSAssetLibraryTableCellView>() => R;
       sketchRemoteLibraryPlaceholderImage<R = unknown>(): R;
@@ -49,4 +50,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSAssetLibraryTableCellView: cocoa.classes.MSAssetLibraryTableCellView;
+declare const MSAssetLibraryTableCellView: cocoa.MSAssetLibraryTableCellView.CLASS;

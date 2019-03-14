@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSStackView<T = any> extends NSView {
+  export interface MSStackView<T0 = void, T1 = void, T2 = void> extends NSView {
     cxx_destruct<R = void>(): R;
     isFlipped<R = boolean>(): R;
     adjustHeight_hasScrollViews<R = void, P0 = number, P1 = boolean>(_adjustHeight: P0, _hasScrollViews: P1): R;
@@ -23,12 +23,12 @@ declare namespace cocoa {
     autoupdatesMaximumHeight<R = boolean>(): R;
     setAutoupdatesMaximumHeight<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSStackView<T = any> extends NSView {
+  namespace MSStackView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = MSStackView>(): R;
       new: <R = MSStackView>() => R;
     }
   }
 }
 
-declare const MSStackView: cocoa.classes.MSStackView;
+declare const MSStackView: cocoa.MSStackView.CLASS;

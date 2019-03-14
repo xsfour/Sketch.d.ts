@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSLayoutGrid<T = any> extends _MSLayoutGrid {
+  export interface MSLayoutGrid<T0 = void, T1 = void, T2 = void> extends _MSLayoutGrid {
     setColumnWidth<R = void, P0 = number>(_setColumnWidth: P0): R;
     setGutterWidth<R = void, P0 = number>(_setGutterWidth: P0): R;
     totalNumberOfGutters<R = number>(): R;
@@ -11,12 +11,12 @@ declare namespace cocoa {
     determineAppropriateColumnWidth<R = void>(): R;
     observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
   }
-  namespace classes {
-    export interface MSLayoutGrid<T = any> extends _MSLayoutGrid {
+  namespace MSLayoutGrid {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSLayoutGrid {
       alloc<R = MSLayoutGrid>(): R;
       new: <R = MSLayoutGrid>() => R;
     }
   }
 }
 
-declare const MSLayoutGrid: cocoa.classes.MSLayoutGrid;
+declare const MSLayoutGrid: cocoa.MSLayoutGrid.CLASS;

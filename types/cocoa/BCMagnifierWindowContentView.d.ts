@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCMagnifierWindowContentView<T = any> extends NSView {
+  export interface BCMagnifierWindowContentView<T0 = void, T1 = void, T2 = void> extends NSView {
     cxx_destruct<R = void>(): R;
     drawMiddlePixel<R = void>(): R;
     drawPixelLines<R = void>(): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     screenGrab<R = BCScreenGrab>(): R;
     setScreenGrab<R = void, P0 = BCScreenGrab>(_v: P0): R;
   }
-  namespace classes {
-    export interface BCMagnifierWindowContentView<T = any> extends NSView {
+  namespace BCMagnifierWindowContentView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = BCMagnifierWindowContentView>(): R;
       new: <R = BCMagnifierWindowContentView>() => R;
     }
   }
 }
 
-declare const BCMagnifierWindowContentView: cocoa.classes.BCMagnifierWindowContentView;
+declare const BCMagnifierWindowContentView: cocoa.BCMagnifierWindowContentView.CLASS;

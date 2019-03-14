@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableUpdateData<T = any> extends NSObject {
+  export interface NSTableUpdateData<T0 = void, T1 = void, T2 = void> extends NSObject {
     hasChanges<R = boolean>(): R;
     dealloc<R = void>(): R;
     updateItemsToRemove<R = NSMutableArray>(): R;
@@ -43,12 +43,12 @@ declare namespace cocoa {
     rowHeightsChanged<R = boolean>(): R;
     setRowHeightsChanged<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTableUpdateData<T = any> extends NSObject {
+  namespace NSTableUpdateData {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSTableUpdateData>(): R;
       new: <R = NSTableUpdateData>() => R;
     }
   }
 }
 
-declare const NSTableUpdateData: cocoa.classes.NSTableUpdateData;
+declare const NSTableUpdateData: cocoa.NSTableUpdateData.CLASS;

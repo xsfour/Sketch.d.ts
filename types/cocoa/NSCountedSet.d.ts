@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCountedSet<T = any> extends NSMutableSet {
+  export interface NSCountedSet<T0 = void, T1 = void, T2 = void> extends NSMutableSet {
     dealloc<R = void>(): R;
     initWithSet<R = unknown, P0 = unknown>(_initWithSet: P0): R;
     initWithArray<R = unknown, P0 = unknown>(_initWithArray: P0): R;
@@ -24,11 +24,11 @@ declare namespace cocoa {
     member<R = unknown, P0 = unknown>(_member: P0): R;
     count<R = number>(): R;
   }
-  namespace classes {
-    export interface NSCountedSet<T = any> extends NSMutableSet {
+  namespace NSCountedSet {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSMutableSet {
       supportsSecureCoding<R = boolean>(): R;
     }
   }
 }
 
-declare const NSCountedSet: cocoa.classes.NSCountedSet;
+declare const NSCountedSet: cocoa.NSCountedSet.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSXPCConnectionExportedObjectTable<T = any> extends NSObject {
+  export interface _NSXPCConnectionExportedObjectTable<T0 = void, T1 = void, T2 = void> extends NSObject {
     description<R = unknown>(): R;
     invalidate<R = void>(): R;
     receivedReleaseForProxyNumber_userQueue<R = void, P0 = number, P1 = unknown>(_receivedReleaseForProxyNumber: P0, _userQueue: P1): R;
@@ -15,8 +15,8 @@ declare namespace cocoa {
     setExportedObject_forProxyNumber<R = void, P0 = unknown, P1 = number>(_setExportedObject: P0, _forProxyNumber: P1): R;
     dealloc<R = void>(): R;
   }
-  namespace classes {
-    export interface _NSXPCConnectionExportedObjectTable<T = any> extends NSObject {
+  namespace _NSXPCConnectionExportedObjectTable {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSXPCConnectionExportedObjectTable>(): R;
       new: <R = _NSXPCConnectionExportedObjectTable>() => R;
     }

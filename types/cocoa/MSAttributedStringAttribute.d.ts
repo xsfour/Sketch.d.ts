@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAttributedStringAttribute<T = any> extends NSObject, BCJSONEncodingProtocol {
+  export interface MSAttributedStringAttribute<T0 = void, T1 = void, T2 = void> extends NSObject, BCJSONEncodingProtocol {
     cxx_destruct<R = void>(): R;
     attributeDictionary<R = NSDictionary>(): R;
     setAttributeDictionary<R = void, P0 = NSDictionary>(_v: P0): R;
@@ -12,12 +12,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSAttributedStringAttribute<T = any> extends NSObject, BCJSONEncodingProtocol {
+  namespace MSAttributedStringAttribute {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, BCJSONEncodingProtocol {
       alloc<R = MSAttributedStringAttribute>(): R;
       new: <R = MSAttributedStringAttribute>() => R;
     }
   }
 }
 
-declare const MSAttributedStringAttribute: cocoa.classes.MSAttributedStringAttribute;
+declare const MSAttributedStringAttribute: cocoa.MSAttributedStringAttribute.CLASS;

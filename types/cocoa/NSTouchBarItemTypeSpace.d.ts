@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarItemTypeSpace<T = any> {}
-  namespace classes {
-    export interface NSTouchBarItemTypeSpace<T = any> {  }
+  export interface NSTouchBarItemTypeSpace<T0 = void, T1 = void, T2 = void> {}
+  namespace NSTouchBarItemTypeSpace {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSTouchBarItemTypeSpace: cocoa.classes.NSTouchBarItemTypeSpace;
+declare const NSTouchBarItemTypeSpace: cocoa.NSTouchBarItemTypeSpace.CLASS;

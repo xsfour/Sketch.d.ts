@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSharedObjectAction<T = any> extends MSDocumentAction, NSMenuDelegateProtocol {
+  export interface MSSharedObjectAction<T0 = void, T1 = void, T2 = void> extends MSDocumentAction, NSMenuDelegateProtocol {
     hasSubMenu<R = boolean>(): R;
     noSharedObjectMenuItemForMenu<R = unknown, P0 = unknown>(_noSharedObjectMenuItemForMenu: P0): R;
     noSharedObjectsView<R = unknown>(): R;
@@ -12,12 +12,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSSharedObjectAction<T = any> extends MSDocumentAction, NSMenuDelegateProtocol {
+  namespace MSSharedObjectAction {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSDocumentAction, NSMenuDelegateProtocol {
       alloc<R = MSSharedObjectAction>(): R;
       new: <R = MSSharedObjectAction>() => R;
     }
   }
 }
 
-declare const MSSharedObjectAction: cocoa.classes.MSSharedObjectAction;
+declare const MSSharedObjectAction: cocoa.MSSharedObjectAction.CLASS;

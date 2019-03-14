@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAnimationContextCompletionHandlerSuspensionProtocol<T = any> extends NSObjectProtocol {
+  export interface NSAnimationContextCompletionHandlerSuspensionProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     invalidate<R = void>(): R;
   }
-  namespace classes {
-    export interface NSAnimationContextCompletionHandlerSuspensionProtocol<T = any> extends NSObjectProtocol {  }
+  namespace NSAnimationContextCompletionHandlerSuspensionProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

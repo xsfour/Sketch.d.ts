@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface AFHTTPResponseSerializer<T = any> extends NSObject, AFURLResponseSerializationProtocol {
+  export interface AFHTTPResponseSerializer<T0 = void, T1 = void, T2 = void> extends NSObject, AFURLResponseSerializationProtocol {
     cxx_destruct<R = void>(): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
@@ -17,8 +17,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface AFHTTPResponseSerializer<T = any> extends NSObject, AFURLResponseSerializationProtocol {
+  namespace AFHTTPResponseSerializer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, AFURLResponseSerializationProtocol {
       alloc<R = AFHTTPResponseSerializer>(): R;
       new: <R = AFHTTPResponseSerializer>() => R;
       serializer<R = unknown>(): R;
@@ -26,4 +26,4 @@ declare namespace cocoa {
   }
 }
 
-declare const AFHTTPResponseSerializer: cocoa.classes.AFHTTPResponseSerializer;
+declare const AFHTTPResponseSerializer: cocoa.AFHTTPResponseSerializer.CLASS;

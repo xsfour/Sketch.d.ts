@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface SMKConnection<T = any> extends NSObject {
+  export interface SMKConnection<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     didReceiveData<R = void, P0 = unknown>(_didReceiveData: P0): R;
     sendData<R = void, P0 = unknown>(_sendData: P0): R;
@@ -18,12 +18,12 @@ declare namespace cocoa {
     connectionType<R = number>(): R;
     connectionInfo<R = SMKConnectionInfo>(): R;
   }
-  namespace classes {
-    export interface SMKConnection<T = any> extends NSObject {
+  namespace SMKConnection {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = SMKConnection>(): R;
       new: <R = SMKConnection>() => R;
     }
   }
 }
 
-declare const SMKConnection: cocoa.classes.SMKConnection;
+declare const SMKConnection: cocoa.SMKConnection.CLASS;

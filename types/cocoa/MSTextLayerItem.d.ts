@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSTextLayerItem<T = any> extends MSInspectorItem, NSMenuDelegateProtocol, MSColorInspectorDelegateProtocol, NSComboBoxDataSourceProtocol, MSStylePartPreviewButtonDelegateProtocol {
+  export interface MSTextLayerItem<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, NSMenuDelegateProtocol, MSColorInspectorDelegateProtocol, NSComboBoxDataSourceProtocol, MSStylePartPreviewButtonDelegateProtocol {
     applyTextColor<R = void, P0 = unknown>(_applyTextColor: P0): R;
     occurencesOfAttributeWithName<R = unknown, P0 = unknown>(_occurencesOfAttributeWithName: P0): R;
     firstOccurrenceOfAttributeWithName<R = unknown, P0 = unknown>(_firstOccurrenceOfAttributeWithName: P0): R;
@@ -84,12 +84,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSTextLayerItem<T = any> extends MSInspectorItem, NSMenuDelegateProtocol, MSColorInspectorDelegateProtocol, NSComboBoxDataSourceProtocol, MSStylePartPreviewButtonDelegateProtocol {
+  namespace MSTextLayerItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, NSMenuDelegateProtocol, MSColorInspectorDelegateProtocol, NSComboBoxDataSourceProtocol, MSStylePartPreviewButtonDelegateProtocol {
       alloc<R = MSTextLayerItem>(): R;
       new: <R = MSTextLayerItem>() => R;
     }
   }
 }
 
-declare const MSTextLayerItem: cocoa.classes.MSTextLayerItem;
+declare const MSTextLayerItem: cocoa.MSTextLayerItem.CLASS;

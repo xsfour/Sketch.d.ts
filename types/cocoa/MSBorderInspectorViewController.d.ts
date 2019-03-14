@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBorderInspectorViewController<T = any> extends MSColorStylePartInspectorViewController {
+  export interface MSBorderInspectorViewController<T0 = void, T1 = void, T2 = void> extends MSColorStylePartInspectorViewController {
     updateUI<R = void>(): R;
     enableAction<R = void, P0 = unknown>(_enableAction: P0): R;
     canDrawInnerOrOuterBorders<R = boolean>(): R;
@@ -18,12 +18,12 @@ declare namespace cocoa {
     positionControl<R = NSSegmentedControl>(): R;
     setPositionControl<R = void, P0 = NSSegmentedControl>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSBorderInspectorViewController<T = any> extends MSColorStylePartInspectorViewController {
+  namespace MSBorderInspectorViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSColorStylePartInspectorViewController {
       alloc<R = MSBorderInspectorViewController>(): R;
       new: <R = MSBorderInspectorViewController>() => R;
     }
   }
 }
 
-declare const MSBorderInspectorViewController: cocoa.classes.MSBorderInspectorViewController;
+declare const MSBorderInspectorViewController: cocoa.MSBorderInspectorViewController.CLASS;

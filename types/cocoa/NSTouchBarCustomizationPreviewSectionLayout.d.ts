@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarCustomizationPreviewSectionLayout<T = any> extends NSObject {
+  export interface NSTouchBarCustomizationPreviewSectionLayout<T0 = void, T1 = void, T2 = void> extends NSObject {
     canInsertItem_atIndex<R = boolean, P0 = unknown, P1 = number>(_canInsertItem: P0, _atIndex: P1): R;
     overlappedIndexesForMovingItemAtIndex_toIndex_withFrame_primaryLocation<R = unknown, P0 = number, P1 = number, P2 = CGRect, P3 = CGPoint>(_overlappedIndexesForMovingItemAtIndex: P0, _toIndex: P1, _withFrame: P2, _primaryLocation: P3): R;
     canMoveItemAtIndex_toIndex_byRemovingItems<R = unknown, P0 = number, P1 = number, P2 = unknown>(_canMoveItemAtIndex: P0, _toIndex: P1, _byRemovingItems: P2): R;
@@ -23,8 +23,8 @@ declare namespace cocoa {
     section<R = number>(): R;
     delegate<R = NSTouchBarCustomizationPreviewSectionLayoutDelegate>(): R;
   }
-  namespace classes {
-    export interface NSTouchBarCustomizationPreviewSectionLayout<T = any> extends NSObject {
+  namespace NSTouchBarCustomizationPreviewSectionLayout {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSTouchBarCustomizationPreviewSectionLayout>(): R;
       new: <R = NSTouchBarCustomizationPreviewSectionLayout>() => R;
       layoutAttributesClass<R = unknown>(): R;
@@ -32,4 +32,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTouchBarCustomizationPreviewSectionLayout: cocoa.classes.NSTouchBarCustomizationPreviewSectionLayout;
+declare const NSTouchBarCustomizationPreviewSectionLayout: cocoa.NSTouchBarCustomizationPreviewSectionLayout.CLASS;

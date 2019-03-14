@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSBox<T = any> extends NSView {
+  export interface NSBox<T0 = void, T1 = void, T2 = void> extends NSView {
     _lineColor<R = unknown>(): R;
     _setLineColor<R = void, P0 = unknown>(__setLineColor: P0): R;
     setTitleWithMnemonic<R = void, P0 = unknown>(_setTitleWithMnemonic: P0): R;
@@ -72,12 +72,12 @@ declare namespace cocoa {
     boxType<R = number>(): R;
     setBoxType<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSBox<T = any> extends NSView {
+  namespace NSBox {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSBox>(): R;
       new: <R = NSBox>() => R;
     }
   }
 }
 
-declare const NSBox: cocoa.classes.NSBox;
+declare const NSBox: cocoa.NSBox.CLASS;

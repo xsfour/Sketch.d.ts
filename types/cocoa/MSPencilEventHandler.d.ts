@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPencilEventHandler<T = any> extends MSEventHandler {
+  export interface MSPencilEventHandler<T0 = void, T1 = void, T2 = void> extends MSEventHandler {
     addCurvePoint<R = void, P0 = unknown>(_addCurvePoint: P0): R;
     addPoint<R = void, P0 = CGPoint>(_addPoint: P0): R;
     pathShouldClose<R = boolean>(): R;
@@ -22,12 +22,12 @@ declare namespace cocoa {
     shape<R = MSShapePathLayer>(): R;
     setShape<R = void, P0 = MSShapePathLayer>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSPencilEventHandler<T = any> extends MSEventHandler {
+  namespace MSPencilEventHandler {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSEventHandler {
       alloc<R = MSPencilEventHandler>(): R;
       new: <R = MSPencilEventHandler>() => R;
     }
   }
 }
 
-declare const MSPencilEventHandler: cocoa.classes.MSPencilEventHandler;
+declare const MSPencilEventHandler: cocoa.MSPencilEventHandler.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSMenuContext<T = any> extends NSObject {
+  export interface _NSMenuContext<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     _finishQualifingEntries_withCompletionHandler<R = boolean, P0 = unknown, P1 = CDUnknownBlockType>(__finishQualifingEntries: P0, _withCompletionHandler: P1): R;
     qualifyEntries_withCompletionHandler<R = boolean, P0 = unknown, P1 = CDUnknownBlockType>(_qualifyEntries: P0, _withCompletionHandler: P1): R;
@@ -55,8 +55,8 @@ declare namespace cocoa {
     requiresSelection<R = boolean>(): R;
     setRequiresSelection<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSMenuContext<T = any> extends NSObject {
+  namespace _NSMenuContext {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSMenuContext>(): R;
       new: <R = _NSMenuContext>() => R;
     }

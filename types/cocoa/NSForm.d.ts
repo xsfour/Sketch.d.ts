@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSForm<T = any> extends NSMatrix {
+  export interface NSForm<T0 = void, T1 = void, T2 = void> extends NSMatrix {
     setTextBaseWritingDirection<R = void, P0 = number>(_setTextBaseWritingDirection: P0): R;
     setTitleBaseWritingDirection<R = void, P0 = number>(_setTitleBaseWritingDirection: P0): R;
     selectTextAtIndex<R = void, P0 = number>(_selectTextAtIndex: P0): R;
@@ -25,12 +25,12 @@ declare namespace cocoa {
     _resetTitleWidths<R = void>(): R;
     _maxWidth<R = number>(): R;
   }
-  namespace classes {
-    export interface NSForm<T = any> extends NSMatrix {
+  namespace NSForm {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSMatrix {
       alloc<R = NSForm>(): R;
       new: <R = NSForm>() => R;
     }
   }
 }
 
-declare const NSForm: cocoa.classes.NSForm;
+declare const NSForm: cocoa.NSForm.CLASS;

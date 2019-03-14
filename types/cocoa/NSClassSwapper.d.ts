@@ -1,15 +1,15 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSClassSwapper<T = any> extends NSObject, NSCodingProtocol {
+  export interface NSClassSwapper<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
     setClassName<R = void, P0 = unknown>(_setClassName: P0): R;
     className<R = unknown>(): R;
     setTemplate<R = void, P0 = unknown>(_setTemplate: P0): R;
     template<R = unknown>(): R;
     dealloc<R = void>(): R;
   }
-  namespace classes {
-    export interface NSClassSwapper<T = any> extends NSObject, NSCodingProtocol {
+  namespace NSClassSwapper {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
       alloc<R = NSClassSwapper>(): R;
       new: <R = NSClassSwapper>() => R;
       initialize<R = void>(): R;
@@ -17,4 +17,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSClassSwapper: cocoa.classes.NSClassSwapper;
+declare const NSClassSwapper: cocoa.NSClassSwapper.CLASS;

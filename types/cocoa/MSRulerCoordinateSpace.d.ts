@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSRulerCoordinateSpace<T = any> extends NSObject {
+  export interface MSRulerCoordinateSpace<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     transformForConvertingToCoordinateSpace<R = CGAffineTransform, P0 = unknown>(_transformForConvertingToCoordinateSpace: P0): R;
     transformForConvertingFromCoordinateSpace<R = CGAffineTransform, P0 = unknown>(_transformForConvertingFromCoordinateSpace: P0): R;
@@ -18,12 +18,12 @@ declare namespace cocoa {
     parentCoordinateSpace<R = MSLayerCoordinateSpace>(): R;
     bounds<R = CGRect>(): R;
   }
-  namespace classes {
-    export interface MSRulerCoordinateSpace<T = any> extends NSObject {
+  namespace MSRulerCoordinateSpace {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSRulerCoordinateSpace>(): R;
       new: <R = MSRulerCoordinateSpace>() => R;
     }
   }
 }
 
-declare const MSRulerCoordinateSpace: cocoa.classes.MSRulerCoordinateSpace;
+declare const MSRulerCoordinateSpace: cocoa.MSRulerCoordinateSpace.CLASS;

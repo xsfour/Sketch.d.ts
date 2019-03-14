@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAssetPreferenceItem<T = any> extends NSObject {
+  export interface MSAssetPreferenceItem<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     evaluateSecondaryTitle<R = void>(): R;
     updatingRelatedSecondaryTitle<R = unknown>(): R;
@@ -37,8 +37,8 @@ declare namespace cocoa {
     setEnabled<R = void, P0 = boolean>(_v: P0): R;
     name<R = NSString>(): R;
   }
-  namespace classes {
-    export interface MSAssetPreferenceItem<T = any> extends NSObject {
+  namespace MSAssetPreferenceItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSAssetPreferenceItem>(): R;
       new: <R = MSAssetPreferenceItem>() => R;
       keyPathsForValuesAffectingUpdateAvailable<R = unknown>(): R;
@@ -47,4 +47,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSAssetPreferenceItem: cocoa.classes.MSAssetPreferenceItem;
+declare const MSAssetPreferenceItem: cocoa.MSAssetPreferenceItem.CLASS;

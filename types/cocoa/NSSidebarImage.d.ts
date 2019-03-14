@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSidebarImage<T = any> extends NSImage {
+  export interface NSSidebarImage<T0 = void, T1 = void, T2 = void> extends NSImage {
     isTemplate<R = boolean>(): R;
     alignmentRect<R = CGRect>(): R;
     size<R = CGSize>(): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     selected<R = boolean>(): R;
     setSelected<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSSidebarImage<T = any> extends NSImage {
+  namespace NSSidebarImage {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSImage {
       alloc<R = NSSidebarImage>(): R;
       new: <R = NSSidebarImage>() => R;
     }
   }
 }
 
-declare const NSSidebarImage: cocoa.classes.NSSidebarImage;
+declare const NSSidebarImage: cocoa.NSSidebarImage.CLASS;

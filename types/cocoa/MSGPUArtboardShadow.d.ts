@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSGPUArtboardShadow<T = any> extends NSObject {
+  export interface MSGPUArtboardShadow<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     cornerSourceSize<R = number>(): R;
     cornerSize<R = number>(): R;
@@ -11,12 +11,12 @@ declare namespace cocoa {
     selectedTexture<R = MSGPUTexture>(): R;
     texture<R = MSGPUTexture>(): R;
   }
-  namespace classes {
-    export interface MSGPUArtboardShadow<T = any> extends NSObject {
+  namespace MSGPUArtboardShadow {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSGPUArtboardShadow>(): R;
       new: <R = MSGPUArtboardShadow>() => R;
     }
   }
 }
 
-declare const MSGPUArtboardShadow: cocoa.classes.MSGPUArtboardShadow;
+declare const MSGPUArtboardShadow: cocoa.MSGPUArtboardShadow.CLASS;

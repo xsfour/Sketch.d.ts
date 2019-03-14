@@ -1,30 +1,16 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorPanelFavoriteSwatch<T = any> extends NSCollectionViewItem, _NSItemFocusingCollectionViewItemProtocol {
-    performClick<R = void, P0 = unknown>(_performClick: P0): R;
-    accessibilityPerformAction<R = void, P0 = unknown>(_accessibilityPerformAction: P0): R;
-    accessibilityActionDescription<R = unknown, P0 = unknown>(_accessibilityActionDescription: P0): R;
-    accessibilityActionNames<R = unknown>(): R;
-    accessibilityIsValueAttributeSettable<R = boolean>(): R;
-    accessibilityValueAttribute<R = unknown>(): R;
-    setSelected<R = void, P0 = boolean>(_setSelected: P0): R;
-    setRepresentedObject<R = void, P0 = unknown>(_setRepresentedObject: P0): R;
+  export interface NSColorPanelFavoriteSwatch<T0 = void, T1 = void, T2 = void> extends NSCollectionViewItem, _NSItemFocusingCollectionViewItemProtocol {
     action<R = string>(): R;
     setAction<R = void, P0 = string>(_v: P0): R;
-    target<R = unknown>(): R;
-    setTarget<R = void, P0 = unknown>(_v: P0): R;
-    debugDescription<R = NSString>(): R;
-    description<R = NSString>(): R;
-    hash<R = number>(): R;
-    superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSColorPanelFavoriteSwatch<T = any> extends NSCollectionViewItem, _NSItemFocusingCollectionViewItemProtocol {
+  namespace NSColorPanelFavoriteSwatch {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSCollectionViewItem, _NSItemFocusingCollectionViewItemProtocol {
       alloc<R = NSColorPanelFavoriteSwatch>(): R;
       new: <R = NSColorPanelFavoriteSwatch>() => R;
     }
   }
 }
 
-declare const NSColorPanelFavoriteSwatch: cocoa.classes.NSColorPanelFavoriteSwatch;
+declare const NSColorPanelFavoriteSwatch: cocoa.NSColorPanelFavoriteSwatch.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSInputManager<T = any> extends NSObject, NSTextInputProtocol {
+  export interface NSInputManager<T0 = void, T1 = void, T2 = void> extends NSObject, NSTextInputProtocol {
     getMarkedText_selectedRange<R = void, P0 = unknown, P1 = _NSRange>(_getMarkedText: P0, _selectedRange: P1): R;
     _trueName<R = unknown>(): R;
     description<R = unknown>(): R;
@@ -35,8 +35,8 @@ declare namespace cocoa {
     _isActivated<R = boolean>(): R;
     _setActivationState<R = boolean, P0 = boolean>(__setActivationState: P0): R;
   }
-  namespace classes {
-    export interface NSInputManager<T = any> extends NSObject, NSTextInputProtocol {
+  namespace NSInputManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSTextInputProtocol {
       alloc<R = NSInputManager>(): R;
       new: <R = NSInputManager>() => R;
       installInputManagerMenu<R = void, P0 = unknown>(_installInputManagerMenu: P0): R;
@@ -52,4 +52,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSInputManager: cocoa.classes.NSInputManager;
+declare const NSInputManager: cocoa.NSInputManager.CLASS;

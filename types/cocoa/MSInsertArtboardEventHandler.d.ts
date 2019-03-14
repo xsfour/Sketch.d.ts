@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInsertArtboardEventHandler<T = any> extends MSInsertLayerEventHandler {
+  export interface MSInsertArtboardEventHandler<T0 = void, T1 = void, T2 = void> extends MSInsertLayerEventHandler {
     shouldAddInsertFromSelectionItem<R = boolean>(): R;
     updateInspector<R = void>(): R;
     insertArtboardWithRect<R = unknown, P0 = CGRect>(_insertArtboardWithRect: P0): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     insertedArtboards<R = NSMutableArray>(): R;
     inspectorViewController<R = MSInsertArtboardInspectorViewController>(): R;
   }
-  namespace classes {
-    export interface MSInsertArtboardEventHandler<T = any> extends MSInsertLayerEventHandler {
+  namespace MSInsertArtboardEventHandler {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSInsertLayerEventHandler {
       alloc<R = MSInsertArtboardEventHandler>(): R;
       new: <R = MSInsertArtboardEventHandler>() => R;
     }
   }
 }
 
-declare const MSInsertArtboardEventHandler: cocoa.classes.MSInsertArtboardEventHandler;
+declare const MSInsertArtboardEventHandler: cocoa.MSInsertArtboardEventHandler.CLASS;

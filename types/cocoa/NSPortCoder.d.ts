@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPortCoder<T = any> extends NSCoder {
+  export interface NSPortCoder<T0 = void, T1 = void, T2 = void> extends NSCoder {
     initWithReceivePort_sendPort_components<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_initWithReceivePort: P0, _sendPort: P1, _components: P2): R;
     dispatch<R = void>(): R;
     decodePortObject<R = unknown>(): R;
@@ -11,8 +11,8 @@ declare namespace cocoa {
     isByref<R = boolean>(): R;
     isBycopy<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSPortCoder<T = any> extends NSCoder {
+  namespace NSPortCoder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSCoder {
       alloc<R = NSPortCoder>(): R;
       new: <R = NSPortCoder>() => R;
       allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
@@ -21,4 +21,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPortCoder: cocoa.classes.NSPortCoder;
+declare const NSPortCoder: cocoa.NSPortCoder.CLASS;

@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAnimationDelegate<T = any> {}
-  namespace classes {
-    export interface NSAnimationDelegate<T = any> {  }
+  export interface NSAnimationDelegate<T0 = void, T1 = void, T2 = void> {}
+  namespace NSAnimationDelegate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSAnimationDelegate: cocoa.classes.NSAnimationDelegate;
+declare const NSAnimationDelegate: cocoa.NSAnimationDelegate.CLASS;

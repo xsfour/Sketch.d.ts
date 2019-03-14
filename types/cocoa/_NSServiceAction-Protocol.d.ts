@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSServiceActionProtocol<T = any> extends NSObjectProtocol {
+  export interface _NSServiceActionProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     resetToDefaultAvailability<R = void>(): R;
     resetToDefaultKeyboardShortcut<R = void>(): R;
     validateWithResponder_completionHandler<R = void, P0 = NSResponder, P1 = CDUnknownBlockType>(_validateWithResponder: P0, _completionHandler: P1): R;
@@ -39,7 +39,7 @@ declare namespace cocoa {
     localizedTitle<R = NSString>(): R;
     title<R = NSString>(): R;
   }
-  namespace classes {
-    export interface _NSServiceActionProtocol<T = any> extends NSObjectProtocol {  }
+  namespace _NSServiceActionProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

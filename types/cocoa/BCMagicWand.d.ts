@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCMagicWand<T = any> extends NSOperation {
+  export interface BCMagicWand<T0 = void, T1 = void, T2 = void> extends NSOperation {
     cxx_destruct<R = void>(): R;
     nextUnvisitedPoint<R = CGPoint>(): R;
     pushVisit<R = void, P0 = CGPoint>(_pushVisit: P0): R;
@@ -34,12 +34,12 @@ declare namespace cocoa {
     startPoint<R = CGPoint>(): R;
     setStartPoint<R = void, P0 = CGPoint>(_v: P0): R;
   }
-  namespace classes {
-    export interface BCMagicWand<T = any> extends NSOperation {
+  namespace BCMagicWand {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSOperation {
       alloc<R = BCMagicWand>(): R;
       new: <R = BCMagicWand>() => R;
     }
   }
 }
 
-declare const BCMagicWand: cocoa.classes.BCMagicWand;
+declare const BCMagicWand: cocoa.BCMagicWand.CLASS;

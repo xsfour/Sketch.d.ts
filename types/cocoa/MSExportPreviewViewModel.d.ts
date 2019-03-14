@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSExportPreviewViewModel<T = any> extends NSObject {
+  export interface MSExportPreviewViewModel<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     imageDataInFormat<R = unknown, P0 = unknown>(_imageDataInFormat: P0): R;
     initWithPreviewImage_cachedExportRequest_ancestry<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_initWithPreviewImage: P0, _cachedExportRequest: P1, _ancestry: P2): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     previewImage<R = NSImage>(): R;
     setPreviewImage<R = void, P0 = NSImage>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSExportPreviewViewModel<T = any> extends NSObject {
+  namespace MSExportPreviewViewModel {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSExportPreviewViewModel>(): R;
       new: <R = MSExportPreviewViewModel>() => R;
     }
   }
 }
 
-declare const MSExportPreviewViewModel: cocoa.classes.MSExportPreviewViewModel;
+declare const MSExportPreviewViewModel: cocoa.MSExportPreviewViewModel.CLASS;

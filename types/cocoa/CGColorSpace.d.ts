@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface CGColorSpace<T = any> {}
-  namespace classes {
-    export interface CGColorSpace<T = any> {  }
+  export interface CGColorSpace<T0 = void, T1 = void, T2 = void> {}
+  namespace CGColorSpace {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const CGColorSpace: cocoa.classes.CGColorSpace;
+declare const CGColorSpace: cocoa.CGColorSpace.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBaseSizeInspectorItem<T = any> extends MSInspectorItem, MSInspectorMathValueAdaptorDelegateProtocol {
+  export interface MSBaseSizeInspectorItem<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, MSInspectorMathValueAdaptorDelegateProtocol {
     showSizeAlertForValue<R = void, P0 = number>(_showSizeAlertForValue: P0): R;
     interTextFieldButtonAction<R = void, P0 = unknown>(_interTextFieldButtonAction: P0): R;
     setupAccessoryButton<R = void>(): R;
@@ -24,12 +24,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSBaseSizeInspectorItem<T = any> extends MSInspectorItem, MSInspectorMathValueAdaptorDelegateProtocol {
+  namespace MSBaseSizeInspectorItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, MSInspectorMathValueAdaptorDelegateProtocol {
       alloc<R = MSBaseSizeInspectorItem>(): R;
       new: <R = MSBaseSizeInspectorItem>() => R;
     }
   }
 }
 
-declare const MSBaseSizeInspectorItem: cocoa.classes.MSBaseSizeInspectorItem;
+declare const MSBaseSizeInspectorItem: cocoa.MSBaseSizeInspectorItem.CLASS;

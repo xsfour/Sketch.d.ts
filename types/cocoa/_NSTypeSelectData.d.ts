@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSTypeSelectData<T = any> extends NSObject {
+  export interface _NSTypeSelectData<T0 = void, T1 = void, T2 = void> extends NSObject {
     foundMatch<R = boolean>(): R;
     setFoundMatch<R = void, P0 = boolean>(_setFoundMatch: P0): R;
     _typeSelectEndCurrentSearch<R = void>(): R;
@@ -22,8 +22,8 @@ declare namespace cocoa {
     initWithInitialSearchRow_totalRows_forView<R = unknown, P0 = number, P1 = number, P2 = unknown>(_initWithInitialSearchRow: P0, _totalRows: P1, _forView: P2): R;
     _resetCurrentSearchRow<R = void>(): R;
   }
-  namespace classes {
-    export interface _NSTypeSelectData<T = any> extends NSObject {
+  namespace _NSTypeSelectData {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSTypeSelectData>(): R;
       new: <R = _NSTypeSelectData>() => R;
       ignoreTypos<R = boolean>(): R;

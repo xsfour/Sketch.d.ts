@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAction<T = any> extends NSResponder, NSMenuDelegateProtocol {
+  export interface MSAction<T0 = void, T1 = void, T2 = void> extends NSResponder, NSMenuDelegateProtocol {
     cxx_destruct<R = void>(): R;
     handlesKeyEvent<R = boolean, P0 = unknown>(_handlesKeyEvent: P0): R;
     submenuActionIDs<R = unknown>(): R;
@@ -44,8 +44,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSAction<T = any> extends NSResponder, NSMenuDelegateProtocol {
+  namespace MSAction {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSResponder, NSMenuDelegateProtocol {
       alloc<R = MSAction>(): R;
       new: <R = MSAction>() => R;
       classNamesToImageNamesDictionary<R = unknown>(): R;
@@ -54,4 +54,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSAction: cocoa.classes.MSAction;
+declare const MSAction: cocoa.MSAction.CLASS;

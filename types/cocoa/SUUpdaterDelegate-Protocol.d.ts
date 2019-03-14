@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface SUUpdaterDelegateProtocol<T = any> extends NSObjectProtocol {
+  export interface SUUpdaterDelegateProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     updater_didAbortWithError<R = void, P0 = SUUpdater, P1 = NSError>(_updater: P0, _didAbortWithError: P1): R;
     updater_didCancelInstallUpdateOnQuit<R = void, P0 = SUUpdater, P1 = SUAppcastItem>(_updater: P0, _didCancelInstallUpdateOnQuit: P1): R;
     updater_willInstallUpdateOnQuit_immediateInstallationInvocation<R = void, P0 = SUUpdater, P1 = SUAppcastItem, P2 = NSInvocation>(_updater: P0, _willInstallUpdateOnQuit: P1, _immediateInstallationInvocation: P2): R;
@@ -27,7 +27,7 @@ declare namespace cocoa {
     feedParametersForUpdater_sendingSystemProfile<R = NSArray, P0 = SUUpdater, P1 = boolean>(_feedParametersForUpdater: P0, _sendingSystemProfile: P1): R;
     updaterMayCheckForUpdates<R = boolean, P0 = SUUpdater>(_updaterMayCheckForUpdates: P0): R;
   }
-  namespace classes {
-    export interface SUUpdaterDelegateProtocol<T = any> extends NSObjectProtocol {  }
+  namespace SUUpdaterDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDocument<T = any> extends NSDocument, MSCloudExportableDocumentProtocol, MSSidebarControllerDelegateProtocol, BCSideBarViewControllerDelegateProtocol, NSMenuDelegateProtocol, NSToolbarDelegateProtocol, NSWindowDelegateProtocol, MSEventHandlerManagerDelegateProtocol, MSDocumentDataDelegateProtocol, MSMenuBuilderDelegateProtocol {
+  export interface MSDocument<T0 = void, T1 = void, T2 = void> extends NSDocument, MSCloudExportableDocumentProtocol, MSSidebarControllerDelegateProtocol, BCSideBarViewControllerDelegateProtocol, NSMenuDelegateProtocol, NSToolbarDelegateProtocol, NSWindowDelegateProtocol, MSEventHandlerManagerDelegateProtocol, MSDocumentDataDelegateProtocol, MSMenuBuilderDelegateProtocol {
     cxx_destruct<R = void>(): R;
     installedFontsDidChange<R = void>(): R;
     returnToDefaultFirstResponder<R = void>(): R;
@@ -236,8 +236,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSDocument<T = any> extends NSDocument, MSCloudExportableDocumentProtocol, MSSidebarControllerDelegateProtocol, BCSideBarViewControllerDelegateProtocol, NSMenuDelegateProtocol, NSToolbarDelegateProtocol, NSWindowDelegateProtocol, MSEventHandlerManagerDelegateProtocol, MSDocumentDataDelegateProtocol, MSMenuBuilderDelegateProtocol {
+  namespace MSDocument {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSDocument, MSCloudExportableDocumentProtocol, MSSidebarControllerDelegateProtocol, BCSideBarViewControllerDelegateProtocol, NSMenuDelegateProtocol, NSToolbarDelegateProtocol, NSWindowDelegateProtocol, MSEventHandlerManagerDelegateProtocol, MSDocumentDataDelegateProtocol, MSMenuBuilderDelegateProtocol {
       alloc<R = MSDocument>(): R;
       new: <R = MSDocument>() => R;
       currentDocument<R = unknown>(): R;
@@ -246,4 +246,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSDocument: cocoa.classes.MSDocument;
+declare const MSDocument: cocoa.MSDocument.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSActionRecordTableCellView<T = any> extends NSTableCellView, NSPopoverDelegateProtocol {
+  export interface _NSActionRecordTableCellView<T0 = void, T1 = void, T2 = void> extends NSTableCellView, NSPopoverDelegateProtocol {
     _save<R = void, P0 = unknown>(__save: P0): R;
     _selectActionType<R = void, P0 = unknown>(__selectActionType: P0): R;
     _add<R = void, P0 = unknown>(__add: P0): R;
@@ -11,8 +11,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSActionRecordTableCellView<T = any> extends NSTableCellView, NSPopoverDelegateProtocol {
+  namespace _NSActionRecordTableCellView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTableCellView, NSPopoverDelegateProtocol {
       alloc<R = _NSActionRecordTableCellView>(): R;
       new: <R = _NSActionRecordTableCellView>() => R;
     }

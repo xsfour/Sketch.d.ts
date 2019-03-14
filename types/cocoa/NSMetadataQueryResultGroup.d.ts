@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMetadataQueryResultGroup<T = any> extends NSObject {
+  export interface NSMetadataQueryResultGroup<T0 = void, T1 = void, T2 = void> extends NSObject {
     _zapResultArray<R = void>(): R;
     resultAtIndex<R = unknown, P0 = number>(_resultAtIndex: P0): R;
     _addResult<R = void, P0 = number>(__addResult: P0): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     value<R = unknown>(): R;
     attribute<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSMetadataQueryResultGroup<T = any> extends NSObject {
+  namespace NSMetadataQueryResultGroup {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSMetadataQueryResultGroup>(): R;
       new: <R = NSMetadataQueryResultGroup>() => R;
     }
   }
 }
 
-declare const NSMetadataQueryResultGroup: cocoa.classes.NSMetadataQueryResultGroup;
+declare const NSMetadataQueryResultGroup: cocoa.NSMetadataQueryResultGroup.CLASS;

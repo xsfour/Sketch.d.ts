@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSColorInspectorSection<T = any> extends NSViewController, MSPresetPickerViewDelegateProtocol, MSAssetPickerHeaderViewDelegateProtocol, NSTouchBarDelegateProtocol, NSScrubberDataSourceProtocol, NSScrubberDelegateProtocol, NSScrubberFlowLayoutDelegateProtocol {
+  export interface MSColorInspectorSection<T0 = void, T1 = void, T2 = void> extends NSViewController, MSPresetPickerViewDelegateProtocol, MSAssetPickerHeaderViewDelegateProtocol, NSTouchBarDelegateProtocol, NSScrubberDataSourceProtocol, NSScrubberDelegateProtocol, NSScrubberFlowLayoutDelegateProtocol {
     cxx_destruct<R = void>(): R;
     moveAssetAtIndex_beforeObjectAtIndex_ForPickerView<R = boolean, P0 = number, P1 = number, P2 = unknown>(_moveAssetAtIndex: P0, _beforeObjectAtIndex: P1, _ForPickerView: P2): R;
     indexesOfAsset_forPickerView<R = unknown, P0 = unknown, P1 = unknown>(_indexesOfAsset: P0, _forPickerView: P1): R;
@@ -53,8 +53,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSColorInspectorSection<T = any> extends NSViewController, MSPresetPickerViewDelegateProtocol, MSAssetPickerHeaderViewDelegateProtocol, NSTouchBarDelegateProtocol, NSScrubberDataSourceProtocol, NSScrubberDelegateProtocol, NSScrubberFlowLayoutDelegateProtocol {
+  namespace MSColorInspectorSection {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController, MSPresetPickerViewDelegateProtocol, MSAssetPickerHeaderViewDelegateProtocol, NSTouchBarDelegateProtocol, NSScrubberDataSourceProtocol, NSScrubberDelegateProtocol, NSScrubberFlowLayoutDelegateProtocol {
       alloc<R = MSColorInspectorSection>(): R;
       new: <R = MSColorInspectorSection>() => R;
       viewsByAddingColorInspectorSeparators<R = unknown, P0 = unknown>(_viewsByAddingColorInspectorSeparators: P0): R;
@@ -64,4 +64,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSColorInspectorSection: cocoa.classes.MSColorInspectorSection;
+declare const MSColorInspectorSection: cocoa.MSColorInspectorSection.CLASS;

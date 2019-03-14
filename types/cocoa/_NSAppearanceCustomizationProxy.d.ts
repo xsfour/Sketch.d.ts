@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSAppearanceCustomizationProxy<T = any> extends NSObject, NSAppearanceCustomizationProtocol {
+  export interface _NSAppearanceCustomizationProxy<T0 = void, T1 = void, T2 = void> extends NSObject, NSAppearanceCustomizationProtocol {
     dealloc<R = void>(): R;
     initWithAppearance<R = unknown, P0 = unknown>(_initWithAppearance: P0): R;
     appearance<R = NSAppearance>(): R;
@@ -12,8 +12,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSAppearanceCustomizationProxy<T = any> extends NSObject, NSAppearanceCustomizationProtocol {
+  namespace _NSAppearanceCustomizationProxy {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSAppearanceCustomizationProtocol {
       alloc<R = _NSAppearanceCustomizationProxy>(): R;
       new: <R = _NSAppearanceCustomizationProxy>() => R;
       keyPathsForValuesAffectingEffectiveAppearance<R = unknown>(): R;

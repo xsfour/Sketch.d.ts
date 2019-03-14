@@ -1,14 +1,14 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSLayer<T = any> extends _MSLayer, MSInterfaceImageOwnerProtocol, MSLayerPreviewabilityProtocol, MSHoverableItemProtocol, MSSnappableProtocol, MSLayerListLayerExtensionsProtocol, MSLayerContainmentProtocol, MSLayerProtocol, NSCopyingProtocol, MSRectDelegateProtocol {
+  export interface MSLayer<T0 = void, T1 = void, T2 = void> extends _MSLayer, MSInterfaceImageOwnerProtocol, MSLayerPreviewabilityProtocol, MSHoverableItemProtocol, MSSnappableProtocol, MSLayerListLayerExtensionsProtocol, MSLayerContainmentProtocol, MSLayerProtocol, NSCopyingProtocol, MSRectDelegateProtocol {
     changeObservers<R = NSHashTable>(): R;
     setChangeObservers<R = void, P0 = NSHashTable>(_v: P0): R;
     absoluteRect<R = MSAbsoluteRect>(): R;
     setAbsoluteRect<R = void, P0 = MSAbsoluteRect>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSLayer<T = any> extends _MSLayer, MSInterfaceImageOwnerProtocol, MSLayerPreviewabilityProtocol, MSHoverableItemProtocol, MSSnappableProtocol, MSLayerListLayerExtensionsProtocol, MSLayerContainmentProtocol, MSLayerProtocol, NSCopyingProtocol, MSRectDelegateProtocol {
+  namespace MSLayer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSLayer, MSInterfaceImageOwnerProtocol, MSLayerPreviewabilityProtocol, MSHoverableItemProtocol, MSSnappableProtocol, MSLayerListLayerExtensionsProtocol, MSLayerContainmentProtocol, MSLayerProtocol, NSCopyingProtocol, MSRectDelegateProtocol {
       alloc<R = MSLayer>(): R;
       new: <R = MSLayer>() => R;
       makeLayerNamesUnique_withOptions<R = void, P0 = unknown, P1 = number>(_makeLayerNamesUnique: P0, _withOptions: P1): R;
@@ -25,4 +25,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSLayer: cocoa.classes.MSLayer;
+declare const MSLayer: cocoa.MSLayer.CLASS;

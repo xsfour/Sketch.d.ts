@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSApplicationExtensionItem<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
+  export interface NSApplicationExtensionItem<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     dealloc<R = void>(): R;
@@ -22,12 +22,12 @@ declare namespace cocoa {
     titleText<R = NSString>(): R;
     setTitleText<R = void, P0 = NSString>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSApplicationExtensionItem<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
+  namespace NSApplicationExtensionItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
       alloc<R = NSApplicationExtensionItem>(): R;
       new: <R = NSApplicationExtensionItem>() => R;
     }
   }
 }
 
-declare const NSApplicationExtensionItem: cocoa.classes.NSApplicationExtensionItem;
+declare const NSApplicationExtensionItem: cocoa.NSApplicationExtensionItem.CLASS;

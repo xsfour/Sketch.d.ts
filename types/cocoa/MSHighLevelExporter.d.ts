@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSHighLevelExporter<T = any> extends NSObject {
+  export interface MSHighLevelExporter<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     export<R = boolean, P0 = unknown>(_export: P0): R;
     prepareExportRequest_layer<R = void, P0 = unknown, P1 = unknown>(_prepareExportRequest: P0, _layer: P1): R;
@@ -18,8 +18,8 @@ declare namespace cocoa {
     delegate<R = MSHighLevelExportDelegate>(): R;
     setDelegate<R = void, P0 = MSHighLevelExportDelegate>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSHighLevelExporter<T = any> extends NSObject {
+  namespace MSHighLevelExporter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSHighLevelExporter>(): R;
       new: <R = MSHighLevelExporter>() => R;
       exporterWithDelegate<R = unknown, P0 = unknown>(_exporterWithDelegate: P0): R;
@@ -27,4 +27,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSHighLevelExporter: cocoa.classes.MSHighLevelExporter;
+declare const MSHighLevelExporter: cocoa.MSHighLevelExporter.CLASS;

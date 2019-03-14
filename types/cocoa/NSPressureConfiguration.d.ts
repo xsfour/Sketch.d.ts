@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPressureConfiguration<T = any> extends NSObject {
+  export interface NSPressureConfiguration<T0 = void, T1 = void, T2 = void> extends NSObject {
     _mtConfiguration<R = unknown>(): R;
     _mtBehaviorID<R = number>(): R;
     set<R = void>(): R;
@@ -11,8 +11,8 @@ declare namespace cocoa {
     initWithPressureBehavior<R = unknown, P0 = number>(_initWithPressureBehavior: P0): R;
     pressureBehavior<R = number>(): R;
   }
-  namespace classes {
-    export interface NSPressureConfiguration<T = any> extends NSObject {
+  namespace NSPressureConfiguration {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSPressureConfiguration>(): R;
       new: <R = NSPressureConfiguration>() => R;
       _mtConfigurationForGestureBehaviors<R = unknown, P0 = unknown>(__mtConfigurationForGestureBehaviors: P0): R;
@@ -21,4 +21,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPressureConfiguration: cocoa.classes.NSPressureConfiguration;
+declare const NSPressureConfiguration: cocoa.NSPressureConfiguration.CLASS;

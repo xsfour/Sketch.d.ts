@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorPickerSpectrumScrollerViewDelegate<T = any> {}
-  namespace classes {
-    export interface NSColorPickerSpectrumScrollerViewDelegate<T = any> {  }
+  export interface NSColorPickerSpectrumScrollerViewDelegate<T0 = void, T1 = void, T2 = void> {}
+  namespace NSColorPickerSpectrumScrollerViewDelegate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSColorPickerSpectrumScrollerViewDelegate: cocoa.classes.NSColorPickerSpectrumScrollerViewDelegate;
+declare const NSColorPickerSpectrumScrollerViewDelegate: cocoa.NSColorPickerSpectrumScrollerViewDelegate.CLASS;

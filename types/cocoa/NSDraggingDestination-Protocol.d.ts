@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDraggingDestinationProtocol<T = any> {
+  export interface NSDraggingDestinationProtocol<T0 = void, T1 = void, T2 = void> {
     updateDraggingItemsForDrag<R = void, P0 = NSDraggingInfo>(_updateDraggingItemsForDrag: P0): R;
     wantsPeriodicDraggingUpdates<R = boolean>(): R;
     draggingEnded<R = void, P0 = NSDraggingInfo>(_draggingEnded: P0): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     draggingUpdated<R = number, P0 = NSDraggingInfo>(_draggingUpdated: P0): R;
     draggingEntered<R = number, P0 = NSDraggingInfo>(_draggingEntered: P0): R;
   }
-  namespace classes {
-    export interface NSDraggingDestinationProtocol<T = any> {  }
+  namespace NSDraggingDestinationProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPreferencesModuleProtocol<T = any> {
+  export interface NSPreferencesModuleProtocol<T0 = void, T1 = void, T2 = void> {
     preferencesWindowShouldClose<R = boolean>(): R;
     moduleCanBeRemoved<R = boolean>(): R;
     moduleWasInstalled<R = void>(): R;
@@ -14,7 +14,7 @@ declare namespace cocoa {
     imageForPreferenceNamed<R = NSImage, P0 = NSString>(_imageForPreferenceNamed: P0): R;
     viewForPreferenceNamed<R = NSBox, P0 = NSString>(_viewForPreferenceNamed: P0): R;
   }
-  namespace classes {
-    export interface NSPreferencesModuleProtocol<T = any> {  }
+  namespace NSPreferencesModuleProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

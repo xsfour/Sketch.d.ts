@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutableShapePathLayer<T = any> extends _MSImmutableShapePathLayer, MSImmutableLayerPreviewabilityProtocol, MSImmutablePathLayerProtocol {
+  export interface MSImmutableShapePathLayer<T0 = void, T1 = void, T2 = void> extends _MSImmutableShapePathLayer, MSImmutableLayerPreviewabilityProtocol, MSImmutablePathLayerProtocol {
     interfaceImageIdentifier<R = unknown>(): R;
     cacheOwner<R = unknown>(): R;
     migrateByTakingStyleFrom<R = void, P0 = unknown>(_migrateByTakingStyleFrom: P0): R;
@@ -34,12 +34,12 @@ declare namespace cocoa {
     style<R = MSImmutableStyle>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSImmutableShapePathLayer<T = any> extends _MSImmutableShapePathLayer, MSImmutableLayerPreviewabilityProtocol, MSImmutablePathLayerProtocol {
+  namespace MSImmutableShapePathLayer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSImmutableShapePathLayer, MSImmutableLayerPreviewabilityProtocol, MSImmutablePathLayerProtocol {
       alloc<R = MSImmutableShapePathLayer>(): R;
       new: <R = MSImmutableShapePathLayer>() => R;
     }
   }
 }
 
-declare const MSImmutableShapePathLayer: cocoa.classes.MSImmutableShapePathLayer;
+declare const MSImmutableShapePathLayer: cocoa.MSImmutableShapePathLayer.CLASS;

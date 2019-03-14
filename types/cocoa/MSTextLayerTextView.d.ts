@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSTextLayerTextView<T = any> extends NSTextView {
+  export interface MSTextLayerTextView<T0 = void, T1 = void, T2 = void> extends NSTextView {
     cxx_destruct<R = void>(): R;
     rectForSelectedRange<R = CGRect>(): R;
     selectSimilar<R = void, P0 = unknown>(_selectSimilar: P0): R;
@@ -26,12 +26,12 @@ declare namespace cocoa {
     hangingGlyphView<R = MSHangingGlyphView>(): R;
     setHangingGlyphView<R = void, P0 = MSHangingGlyphView>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSTextLayerTextView<T = any> extends NSTextView {
+  namespace MSTextLayerTextView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTextView {
       alloc<R = MSTextLayerTextView>(): R;
       new: <R = MSTextLayerTextView>() => R;
     }
   }
 }
 
-declare const MSTextLayerTextView: cocoa.classes.MSTextLayerTextView;
+declare const MSTextLayerTextView: cocoa.MSTextLayerTextView.CLASS;

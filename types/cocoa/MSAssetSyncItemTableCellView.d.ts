@@ -1,15 +1,15 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAssetSyncItemTableCellView<T = any> extends NSTableCellView {
+  export interface MSAssetSyncItemTableCellView<T0 = void, T1 = void, T2 = void> extends NSTableCellView {
     setBackgroundStyle<R = void, P0 = number>(_setBackgroundStyle: P0): R;
   }
-  namespace classes {
-    export interface MSAssetSyncItemTableCellView<T = any> extends NSTableCellView {
+  namespace MSAssetSyncItemTableCellView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTableCellView {
       alloc<R = MSAssetSyncItemTableCellView>(): R;
       new: <R = MSAssetSyncItemTableCellView>() => R;
     }
   }
 }
 
-declare const MSAssetSyncItemTableCellView: cocoa.classes.MSAssetSyncItemTableCellView;
+declare const MSAssetSyncItemTableCellView: cocoa.MSAssetSyncItemTableCellView.CLASS;

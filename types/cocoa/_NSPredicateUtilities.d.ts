@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSPredicateUtilities<T = any> extends NSObject {
+  export interface _NSPredicateUtilities<T0 = void, T1 = void, T2 = void> extends NSObject {
     distanceFromLocation<R = number, P0 = unknown>(_distanceFromLocation: P0): R;
   }
-  namespace classes {
-    export interface _NSPredicateUtilities<T = any> extends NSObject {
+  namespace _NSPredicateUtilities {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSPredicateUtilities>(): R;
       new: <R = _NSPredicateUtilities>() => R;
       _constantValueClassesForSecureCoding<R = unknown>(): R;

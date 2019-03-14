@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorPanelFavoritesList<T = any> extends NSView, NSUserInterfaceValidationsProtocol, NSCollectionViewDelegateProtocol, NSCollectionViewDataSourceProtocol {
+  export interface NSColorPanelFavoritesList<T0 = void, T1 = void, T2 = void> extends NSView, NSUserInterfaceValidationsProtocol, NSCollectionViewDelegateProtocol, NSCollectionViewDataSourceProtocol {
     storeIndexForColorIndex<R = number, P0 = number>(_storeIndexForColorIndex: P0): R;
     _favoritesDidChange<R = void, P0 = unknown>(__favoritesDidChange: P0): R;
     setSavedColors<R = void, P0 = unknown>(_setSavedColors: P0): R;
@@ -35,12 +35,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSColorPanelFavoritesList<T = any> extends NSView, NSUserInterfaceValidationsProtocol, NSCollectionViewDelegateProtocol, NSCollectionViewDataSourceProtocol {
+  namespace NSColorPanelFavoritesList {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView, NSUserInterfaceValidationsProtocol, NSCollectionViewDelegateProtocol, NSCollectionViewDataSourceProtocol {
       alloc<R = NSColorPanelFavoritesList>(): R;
       new: <R = NSColorPanelFavoritesList>() => R;
     }
   }
 }
 
-declare const NSColorPanelFavoritesList: cocoa.classes.NSColorPanelFavoritesList;
+declare const NSColorPanelFavoritesList: cocoa.NSColorPanelFavoritesList.CLASS;

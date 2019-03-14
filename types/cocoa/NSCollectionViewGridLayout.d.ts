@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCollectionViewGridLayout<T = any> extends NSCollectionViewLayout {
+  export interface NSCollectionViewGridLayout<T0 = void, T1 = void, T2 = void> extends NSCollectionViewLayout {
     dealloc<R = void>(): R;
     _shouldRelayoutImmediatelyForNewCollectionViewSize<R = boolean>(): R;
     shouldInvalidateLayoutForBoundsChange<R = boolean, P0 = CGRect>(_shouldInvalidateLayoutForBoundsChange: P0): R;
@@ -40,11 +40,11 @@ declare namespace cocoa {
     margins<R = NSEdgeInsets>(): R;
     setMargins<R = void, P0 = NSEdgeInsets>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSCollectionViewGridLayout<T = any> extends NSCollectionViewLayout {
+  namespace NSCollectionViewGridLayout {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSCollectionViewLayout {
       itemLayoutIsSequential<R = boolean>(): R;
     }
   }
 }
 
-declare const NSCollectionViewGridLayout: cocoa.classes.NSCollectionViewGridLayout;
+declare const NSCollectionViewGridLayout: cocoa.NSCollectionViewGridLayout.CLASS;

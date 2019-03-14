@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSOverrideInspectorItem<T = any> extends MSInspectorItem, MSDataMenuProviderDelegateProtocol {
+  export interface MSOverrideInspectorItem<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, MSDataMenuProviderDelegateProtocol {
     updateCanvasHighlight<R = void>(): R;
     highlightItemInCanvas<R = void, P0 = unknown>(_highlightItemInCanvas: P0): R;
     applyOverrideToSelectedLayers<R = void, P0 = unknown>(_applyOverrideToSelectedLayers: P0): R;
@@ -34,8 +34,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSOverrideInspectorItem<T = any> extends MSInspectorItem, MSDataMenuProviderDelegateProtocol {
+  namespace MSOverrideInspectorItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, MSDataMenuProviderDelegateProtocol {
       alloc<R = MSOverrideInspectorItem>(): R;
       new: <R = MSOverrideInspectorItem>() => R;
       allOverridesInLayers_match<R = boolean, P0 = unknown, P1 = unknown>(_allOverridesInLayers: P0, _match: P1): R;
@@ -44,4 +44,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSOverrideInspectorItem: cocoa.classes.MSOverrideInspectorItem;
+declare const MSOverrideInspectorItem: cocoa.MSOverrideInspectorItem.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSRenderingDriverSettings<T = any> extends NSObject {
+  export interface MSRenderingDriverSettings<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     flowColor<R = CGColor>(): R;
     flowOtherPageImage<R = CGImage>(): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     gridLightColor<R = CGColor>(): R;
     layoutGridStyle<R = number>(): R;
   }
-  namespace classes {
-    export interface MSRenderingDriverSettings<T = any> extends NSObject {
+  namespace MSRenderingDriverSettings {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSRenderingDriverSettings>(): R;
       new: <R = MSRenderingDriverSettings>() => R;
     }
   }
 }
 
-declare const MSRenderingDriverSettings: cocoa.classes.MSRenderingDriverSettings;
+declare const MSRenderingDriverSettings: cocoa.MSRenderingDriverSettings.CLASS;

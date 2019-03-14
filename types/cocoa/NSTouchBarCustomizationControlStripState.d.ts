@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarCustomizationControlStripState<T = any> extends NSObject {
+  export interface NSTouchBarCustomizationControlStripState<T0 = void, T1 = void, T2 = void> extends NSObject {
     invalidate<R = void>(): R;
     _updateIfNeeded<R = void>(): R;
     _updateExpandedControlStripTouchBarIfNeededFrom_to<R = void, P0 = unknown, P1 = unknown>(__updateExpandedControlStripTouchBarIfNeededFrom: P0, _to: P1): R;
@@ -19,8 +19,8 @@ declare namespace cocoa {
     applicationCustomizableState<R = number>(): R;
     controlStripCustomizableState<R = number>(): R;
   }
-  namespace classes {
-    export interface NSTouchBarCustomizationControlStripState<T = any> extends NSObject {
+  namespace NSTouchBarCustomizationControlStripState {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSTouchBarCustomizationControlStripState>(): R;
       new: <R = NSTouchBarCustomizationControlStripState>() => R;
       sharedControlStrip<R = unknown>(): R;
@@ -28,4 +28,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTouchBarCustomizationControlStripState: cocoa.classes.NSTouchBarCustomizationControlStripState;
+declare const NSTouchBarCustomizationControlStripState: cocoa.NSTouchBarCustomizationControlStripState.CLASS;

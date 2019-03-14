@@ -1,16 +1,16 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSToolsMenuAction<T = any> extends MSDocumentAction {
+  export interface MSToolsMenuAction<T0 = void, T1 = void, T2 = void> extends MSDocumentAction {
     tooltip<R = unknown>(): R;
     label<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSToolsMenuAction<T = any> extends MSDocumentAction {
+  namespace MSToolsMenuAction {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSDocumentAction {
       alloc<R = MSToolsMenuAction>(): R;
       new: <R = MSToolsMenuAction>() => R;
     }
   }
 }
 
-declare const MSToolsMenuAction: cocoa.classes.MSToolsMenuAction;
+declare const MSToolsMenuAction: cocoa.MSToolsMenuAction.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLayoutManagerDelegateProtocol<T = any> {
+  export interface NSLayoutManagerDelegateProtocol<T0 = void, T1 = void, T2 = void> {
     layoutManager_shouldUseTemporaryAttributes_forDrawingToScreen_atCharacterIndex_effectiveRange<R = NSDictionary, P0 = NSLayoutManager, P1 = NSDictionary, P2 = boolean, P3 = number, P4 = _NSRange>(_layoutManager: P0, _shouldUseTemporaryAttributes: P1, _forDrawingToScreen: P2, _atCharacterIndex: P3, _effectiveRange: P4): R;
     layoutManager_textContainer_didChangeGeometryFromSize<R = void, P0 = NSLayoutManager, P1 = NSTextContainer, P2 = CGSize>(_layoutManager: P0, _textContainer: P1, _didChangeGeometryFromSize: P2): R;
     layoutManager_didCompleteLayoutForTextContainer_atEnd<R = void, P0 = NSLayoutManager, P1 = NSTextContainer, P2 = boolean>(_layoutManager: P0, _didCompleteLayoutForTextContainer: P1, _atEnd: P2): R;
@@ -16,7 +16,7 @@ declare namespace cocoa {
     layoutManager_lineSpacingAfterGlyphAtIndex_withProposedLineFragmentRect<R = number, P0 = NSLayoutManager, P1 = number, P2 = CGRect>(_layoutManager: P0, _lineSpacingAfterGlyphAtIndex: P1, _withProposedLineFragmentRect: P2): R;
     layoutManager_shouldGenerateGlyphs_properties_characterIndexes_font_forGlyphRange<R = number, P0 = NSLayoutManager, P1 = number, P2 = number, P3 = number, P4 = NSFont, P5 = _NSRange>(_layoutManager: P0, _shouldGenerateGlyphs: P1, _properties: P2, _characterIndexes: P3, _font: P4, _forGlyphRange: P5): R;
   }
-  namespace classes {
-    export interface NSLayoutManagerDelegateProtocol<T = any> {  }
+  namespace NSLayoutManagerDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

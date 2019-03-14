@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPageListController<T = any> extends MSSidebarListController, BCOutlineViewDataControllerDataSourceProtocol, BCOutlineViewDataControllerDelegateProtocol {
+  export interface MSPageListController<T0 = void, T1 = void, T2 = void> extends MSSidebarListController, BCOutlineViewDataControllerDataSourceProtocol, BCOutlineViewDataControllerDelegateProtocol {
     pasteboardWriterClass<R = unknown>(): R;
     duplicatePages<R = void, P0 = unknown>(_duplicatePages: P0): R;
     removePageWithValidation<R = void, P0 = unknown>(_removePageWithValidation: P0): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSPageListController<T = any> extends MSSidebarListController, BCOutlineViewDataControllerDataSourceProtocol, BCOutlineViewDataControllerDelegateProtocol {
+  namespace MSPageListController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSSidebarListController, BCOutlineViewDataControllerDataSourceProtocol, BCOutlineViewDataControllerDelegateProtocol {
       alloc<R = MSPageListController>(): R;
       new: <R = MSPageListController>() => R;
     }
   }
 }
 
-declare const MSPageListController: cocoa.classes.MSPageListController;
+declare const MSPageListController: cocoa.MSPageListController.CLASS;

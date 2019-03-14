@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFileLocator<T = any> extends NSObject, NSCopyingProtocol {
+  export interface NSFileLocator<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     url<R = unknown>(): R;
     standardizedPath<R = unknown>(): R;
     specifier<R = unknown>(): R;
@@ -14,8 +14,8 @@ declare namespace cocoa {
     initWithPath<R = unknown, P0 = unknown>(_initWithPath: P0): R;
     initWithBestLocationRep<R = unknown, P0 = unknown>(_initWithBestLocationRep: P0): R;
   }
-  namespace classes {
-    export interface NSFileLocator<T = any> extends NSObject, NSCopyingProtocol {
+  namespace NSFileLocator {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = NSFileLocator>(): R;
       new: <R = NSFileLocator>() => R;
       bestLocationRep_matchesBestLocationRep<R = boolean, P0 = unknown, P1 = unknown>(_bestLocationRep: P0, _matchesBestLocationRep: P1): R;
@@ -27,4 +27,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSFileLocator: cocoa.classes.NSFileLocator;
+declare const NSFileLocator: cocoa.NSFileLocator.CLASS;

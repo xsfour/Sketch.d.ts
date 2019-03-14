@@ -1,7 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCorrectionPanel<T = any> extends NSPanel {
+  export interface NSCorrectionPanel<T0 = void, T1 = void, T2 = void> extends NSPanel {
+    accessibilityChildrenInNavigationOrderAttribute<R = unknown>(): R;
+    accessibilityChildrenAttribute<R = unknown>(): R;
+    accessibilityIsIgnored<R = boolean>(): R;
     dismiss<R = void>(): R;
     dismissAndAccept<R = void, P0 = boolean>(_dismissAndAccept: P0): R;
     _doDismissAndAccept<R = void, P0 = unknown>(__doDismissAndAccept: P0): R;
@@ -29,8 +32,8 @@ declare namespace cocoa {
     useDefaultStringAttributes<R = boolean>(): R;
     setUseDefaultStringAttributes<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSCorrectionPanel<T = any> extends NSPanel {
+  namespace NSCorrectionPanel {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSPanel {
       alloc<R = NSCorrectionPanel>(): R;
       new: <R = NSCorrectionPanel>() => R;
       sharedCorrectionPanel<R = unknown>(): R;
@@ -38,4 +41,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSCorrectionPanel: cocoa.classes.NSCorrectionPanel;
+declare const NSCorrectionPanel: cocoa.NSCorrectionPanel.CLASS;

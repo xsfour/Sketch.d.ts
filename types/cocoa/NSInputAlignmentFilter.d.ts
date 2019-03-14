@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSInputAlignmentFilter<T = any> extends NSObject {
+  export interface NSInputAlignmentFilter<T0 = void, T1 = void, T2 = void> extends NSObject {
     processAlignment_ofReference_againstGuide<R = boolean, P0 = CGPoint, P1 = unknown, P2 = unknown>(_processAlignment: P0, _ofReference: P1, _againstGuide: P2): R;
     processVerticalAlignment_ofReference_againstHorizontalGuide<R = boolean, P0 = number, P1 = unknown, P2 = unknown>(_processVerticalAlignment: P0, _ofReference: P1, _againstHorizontalGuide: P2): R;
     processHorizontalAlignment_ofReference_againstVerticalGuide<R = boolean, P0 = number, P1 = unknown, P2 = unknown>(_processHorizontalAlignment: P0, _ofReference: P1, _againstVerticalGuide: P2): R;
@@ -30,8 +30,8 @@ declare namespace cocoa {
     _isVerticalVelocityAlignable<R = boolean>(): R;
     _isHorizontalVelocityAlignable<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSInputAlignmentFilter<T = any> extends NSObject {
+  namespace NSInputAlignmentFilter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSInputAlignmentFilter>(): R;
       new: <R = NSInputAlignmentFilter>() => R;
       inputEventMask<R = number>(): R;
@@ -40,4 +40,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSInputAlignmentFilter: cocoa.classes.NSInputAlignmentFilter;
+declare const NSInputAlignmentFilter: cocoa.NSInputAlignmentFilter.CLASS;

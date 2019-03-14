@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPSMatrix<T = any> extends NSObject, NSCodingProtocol {
+  export interface NSPSMatrix<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
     CGAffineTransform<R = CGAffineTransform>(): R;
     _computeInv<R = unknown>(): R;
     invTransformRect<R = unknown, P0 = CGRect>(_invTransformRect: P0): R;
@@ -23,8 +23,8 @@ declare namespace cocoa {
     getRotationAngle<R = number>(): R;
     _doRotationOnly<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSPSMatrix<T = any> extends NSObject, NSCodingProtocol {
+  namespace NSPSMatrix {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
       alloc<R = NSPSMatrix>(): R;
       new: <R = NSPSMatrix>() => R;
       matrixWithCGAffineTransform<R = unknown, P0 = CGAffineTransform>(_matrixWithCGAffineTransform: P0): R;
@@ -33,4 +33,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPSMatrix: cocoa.classes.NSPSMatrix;
+declare const NSPSMatrix: cocoa.NSPSMatrix.CLASS;

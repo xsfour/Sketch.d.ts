@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSFilenamesPboardTypeConverter<T = any> extends _NSPboardTypeConverter {}
-  namespace classes {
-    export interface _NSFilenamesPboardTypeConverter<T = any> extends _NSPboardTypeConverter {
+  export interface _NSFilenamesPboardTypeConverter<T0 = void, T1 = void, T2 = void> extends _NSPboardTypeConverter {}
+  namespace _NSFilenamesPboardTypeConverter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _NSPboardTypeConverter {
       alloc<R = _NSFilenamesPboardTypeConverter>(): R;
       new: <R = _NSFilenamesPboardTypeConverter>() => R;
       _getConvertedDataFromPasteboard_securityScoped<R = unknown, P0 = unknown, P1 = boolean>(__getConvertedDataFromPasteboard: P0, _securityScoped: P1): R;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDebugResponderChainItem<T = any> extends NSObject {
+  export interface NSDebugResponderChainItem<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     hash<R = number>(): R;
     responderDescription<R = NSString>(): R;
@@ -12,12 +12,12 @@ declare namespace cocoa {
     setAddress<R = void, P0 = void>(_v: P0): R;
     prettyDescription<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSDebugResponderChainItem<T = any> extends NSObject {
+  namespace NSDebugResponderChainItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSDebugResponderChainItem>(): R;
       new: <R = NSDebugResponderChainItem>() => R;
     }
   }
 }
 
-declare const NSDebugResponderChainItem: cocoa.classes.NSDebugResponderChainItem;
+declare const NSDebugResponderChainItem: cocoa.NSDebugResponderChainItem.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface SVGImporter<T = any> extends NSObject {
+  export interface SVGImporter<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     styleAttributesForElement_defaults<R = unknown, P0 = unknown, P1 = unknown>(_styleAttributesForElement: P0, _defaults: P1): R;
     registerStylesheet<R = void, P0 = unknown>(_registerStylesheet: P0): R;
@@ -41,12 +41,12 @@ declare namespace cocoa {
     documentHeight<R = number>(): R;
     documentWidth<R = number>(): R;
   }
-  namespace classes {
-    export interface SVGImporter<T = any> extends NSObject {
+  namespace SVGImporter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = SVGImporter>(): R;
       new: <R = SVGImporter>() => R;
     }
   }
 }
 
-declare const SVGImporter: cocoa.classes.SVGImporter;
+declare const SVGImporter: cocoa.SVGImporter.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDataAction<T = any> extends MSDocumentAction, MSDataMenuProviderDelegateProtocol, NSMenuDelegateProtocol {
+  export interface MSDataAction<T0 = void, T1 = void, T2 = void> extends MSDocumentAction, MSDataMenuProviderDelegateProtocol, NSMenuDelegateProtocol {
     overridesByDataIdentifierWithDataManager<R = unknown, P0 = unknown>(_overridesByDataIdentifierWithDataManager: P0): R;
     overridePropertyForDataType<R = unknown, P0 = number>(_overridePropertyForDataType: P0): R;
     firstOverridePointInOverridePoints_withProperty<R = unknown, P0 = unknown, P1 = unknown>(_firstOverridePointInOverridePoints: P0, _withProperty: P1): R;
@@ -27,12 +27,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSDataAction<T = any> extends MSDocumentAction, MSDataMenuProviderDelegateProtocol, NSMenuDelegateProtocol {
+  namespace MSDataAction {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSDocumentAction, MSDataMenuProviderDelegateProtocol, NSMenuDelegateProtocol {
       alloc<R = MSDataAction>(): R;
       new: <R = MSDataAction>() => R;
     }
   }
 }
 
-declare const MSDataAction: cocoa.classes.MSDataAction;
+declare const MSDataAction: cocoa.MSDataAction.CLASS;

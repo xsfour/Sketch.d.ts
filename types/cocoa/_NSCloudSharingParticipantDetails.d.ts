@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSCloudSharingParticipantDetails<T = any> extends NSObject, NSSecureCodingProtocol {
+  export interface _NSCloudSharingParticipantDetails<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol {
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     dealloc<R = void>(): R;
@@ -11,8 +11,8 @@ declare namespace cocoa {
     detailText<R = NSString>(): R;
     participant<R = CKShareParticipant>(): R;
   }
-  namespace classes {
-    export interface _NSCloudSharingParticipantDetails<T = any> extends NSObject, NSSecureCodingProtocol {
+  namespace _NSCloudSharingParticipantDetails {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol {
       alloc<R = _NSCloudSharingParticipantDetails>(): R;
       new: <R = _NSCloudSharingParticipantDetails>() => R;
     }

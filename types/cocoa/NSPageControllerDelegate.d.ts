@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPageControllerDelegate<T = any> {}
-  namespace classes {
-    export interface NSPageControllerDelegate<T = any> {  }
+  export interface NSPageControllerDelegate<T0 = void, T1 = void, T2 = void> {}
+  namespace NSPageControllerDelegate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSPageControllerDelegate: cocoa.classes.NSPageControllerDelegate;
+declare const NSPageControllerDelegate: cocoa.NSPageControllerDelegate.CLASS;

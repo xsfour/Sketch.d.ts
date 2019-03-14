@@ -1,15 +1,15 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSStyleBasicFill<T = any> extends _MSStyleBasicFill, MSColorConvertibleProtocol {
+  export interface MSStyleBasicFill<T0 = void, T1 = void, T2 = void> extends _MSStyleBasicFill, MSColorConvertibleProtocol {
     previewImageOfSize_colorSpace_clippingAsBorder_borderWidth<R = unknown, P0 = CGSize, P1 = unknown, P2 = boolean, P3 = number>(_previewImageOfSize: P0, _colorSpace: P1, _clippingAsBorder: P2, _borderWidth: P3): R;
     debugDescription<R = NSString>(): R;
     description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSStyleBasicFill<T = any> extends _MSStyleBasicFill, MSColorConvertibleProtocol {
+  namespace MSStyleBasicFill {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSStyleBasicFill, MSColorConvertibleProtocol {
       alloc<R = MSStyleBasicFill>(): R;
       new: <R = MSStyleBasicFill>() => R;
       defaultFillColor<R = unknown>(): R;
@@ -26,4 +26,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSStyleBasicFill: cocoa.classes.MSStyleBasicFill;
+declare const MSStyleBasicFill: cocoa.MSStyleBasicFill.CLASS;

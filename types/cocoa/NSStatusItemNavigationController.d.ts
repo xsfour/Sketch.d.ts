@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSStatusItemNavigationController<T = any> extends NSObject {
+  export interface NSStatusItemNavigationController<T0 = void, T1 = void, T2 = void> extends NSObject {
     isNavigating<R = boolean>(): R;
     endNavigation<R = void>(): R;
     navigateRight<R = void>(): R;
@@ -17,12 +17,12 @@ declare namespace cocoa {
     initWithStatusItem<R = unknown, P0 = unknown>(_initWithStatusItem: P0): R;
     dealloc<R = void>(): R;
   }
-  namespace classes {
-    export interface NSStatusItemNavigationController<T = any> extends NSObject {
+  namespace NSStatusItemNavigationController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSStatusItemNavigationController>(): R;
       new: <R = NSStatusItemNavigationController>() => R;
     }
   }
 }
 
-declare const NSStatusItemNavigationController: cocoa.classes.NSStatusItemNavigationController;
+declare const NSStatusItemNavigationController: cocoa.NSStatusItemNavigationController.CLASS;

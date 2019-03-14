@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSpellServer<T = any> extends NSObject {
+  export interface NSSpellServer<T0 = void, T1 = void, T2 = void> extends NSObject {
     _invalidateDictionary_newTime<R = void, P0 = unknown, P1 = number>(__invalidateDictionary: P0, _newTime: P1): R;
     _prefixesForPinyinInputString_language<R = unknown, P0 = unknown, P1 = unknown>(__prefixesForPinyinInputString: P0, _language: P1): R;
     _extendedAlternativesForPinyinInputString_language<R = unknown, P0 = unknown, P1 = unknown>(__extendedAlternativesForPinyinInputString: P0, _language: P1): R;
@@ -48,12 +48,12 @@ declare namespace cocoa {
     delegate<R = NSSpellServerDelegate>(): R;
     setDelegate<R = void, P0 = NSSpellServerDelegate>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSSpellServer<T = any> extends NSObject {
+  namespace NSSpellServer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSSpellServer>(): R;
       new: <R = NSSpellServer>() => R;
     }
   }
 }
 
-declare const NSSpellServer: cocoa.classes.NSSpellServer;
+declare const NSSpellServer: cocoa.NSSpellServer.CLASS;

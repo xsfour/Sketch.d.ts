@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInspectorChildController<T = any> {}
-  namespace classes {
-    export interface MSInspectorChildController<T = any> {  }
+  export interface MSInspectorChildController<T0 = void, T1 = void, T2 = void> {}
+  namespace MSInspectorChildController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const MSInspectorChildController: cocoa.classes.MSInspectorChildController;
+declare const MSInspectorChildController: cocoa.MSInspectorChildController.CLASS;

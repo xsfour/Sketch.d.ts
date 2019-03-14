@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSConcreteFileHandle<T = any> extends NSFileHandle {
+  export interface NSConcreteFileHandle<T0 = void, T1 = void, T2 = void> extends NSFileHandle {
     _locked_clearHandler_forSource<R = void, P0 = CDUnknownBlockType, P1 = unknown>(__locked_clearHandler: P0, _forSource: P1): R;
     _monitor<R = unknown, P0 = number>(__monitor: P0): R;
     waitForDataInBackgroundAndNotify<R = void>(): R;
@@ -22,12 +22,12 @@ declare namespace cocoa {
     readDataOfLength_buffer<R = number, P0 = number, P1 = string>(_readDataOfLength: P0, _buffer: P1): R;
     availableData<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSConcreteFileHandle<T = any> extends NSFileHandle {
+  namespace NSConcreteFileHandle {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSFileHandle {
       alloc<R = NSConcreteFileHandle>(): R;
       new: <R = NSConcreteFileHandle>() => R;
     }
   }
 }
 
-declare const NSConcreteFileHandle: cocoa.classes.NSConcreteFileHandle;
+declare const NSConcreteFileHandle: cocoa.NSConcreteFileHandle.CLASS;

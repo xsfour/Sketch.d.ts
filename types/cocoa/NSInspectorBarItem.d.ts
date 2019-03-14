@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSInspectorBarItem<T = any> extends NSObject {
+  export interface NSInspectorBarItem<T0 = void, T1 = void, T2 = void> extends NSObject {
     _setInspectorBar<R = void, P0 = unknown>(__setInspectorBar: P0): R;
     dealloc<R = void>(): R;
     initWithIdentifier_controller<R = unknown, P0 = unknown, P1 = unknown>(_initWithIdentifier: P0, _controller: P1): R;
@@ -11,8 +11,8 @@ declare namespace cocoa {
     view<R = NSView>(): R;
     identifier<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSInspectorBarItem<T = any> extends NSObject {
+  namespace NSInspectorBarItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSInspectorBarItem>(): R;
       new: <R = NSInspectorBarItem>() => R;
       separatorItem<R = unknown>(): R;
@@ -20,4 +20,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSInspectorBarItem: cocoa.classes.NSInspectorBarItem;
+declare const NSInspectorBarItem: cocoa.NSInspectorBarItem.CLASS;

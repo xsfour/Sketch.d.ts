@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface SMKArtboardMessageContent<T = any> extends NSObject, SMKMessageCodingProtocol {
+  export interface SMKArtboardMessageContent<T0 = void, T1 = void, T2 = void> extends NSObject, SMKMessageCodingProtocol {
     cxx_destruct<R = void>(): R;
     constrainingSize<R = CGSize>(): R;
     setConstrainingSize<R = void, P0 = CGSize>(_v: P0): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface SMKArtboardMessageContent<T = any> extends NSObject, SMKMessageCodingProtocol {
+  namespace SMKArtboardMessageContent {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, SMKMessageCodingProtocol {
       alloc<R = SMKArtboardMessageContent>(): R;
       new: <R = SMKArtboardMessageContent>() => R;
     }
   }
 }
 
-declare const SMKArtboardMessageContent: cocoa.classes.SMKArtboardMessageContent;
+declare const SMKArtboardMessageContent: cocoa.SMKArtboardMessageContent.CLASS;

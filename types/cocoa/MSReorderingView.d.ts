@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSReorderingView<T = any> extends NSView, NSDraggingSourceProtocol {
+  export interface MSReorderingView<T0 = void, T1 = void, T2 = void> extends NSView, NSDraggingSourceProtocol {
     cxx_destruct<R = void>(): R;
     wantsSeparator<R = boolean>(): R;
     startDragWithEvent<R = void, P0 = unknown>(_startDragWithEvent: P0): R;
@@ -18,12 +18,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSReorderingView<T = any> extends NSView, NSDraggingSourceProtocol {
+  namespace MSReorderingView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView, NSDraggingSourceProtocol {
       alloc<R = MSReorderingView>(): R;
       new: <R = MSReorderingView>() => R;
     }
   }
 }
 
-declare const MSReorderingView: cocoa.classes.MSReorderingView;
+declare const MSReorderingView: cocoa.MSReorderingView.CLASS;

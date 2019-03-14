@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _TtC17SketchControllers17MSInterLayerSpace<T = any> extends NSObject {
+  export interface _TtC17SketchControllers17MSInterLayerSpace<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = CDUnknownBlockType>(): R;
     initWithLayer_layer_axis<R = unknown, P0 = unknown, P1 = unknown, P2 = number>(_initWithLayer: P0, _layer: P1, _axis: P2): R;
     heightAnchor<R = MSLayoutDimension>(): R;
@@ -15,12 +15,11 @@ declare namespace cocoa {
     anchorForSnapping<R = MSLayoutDimension>(): R;
     frame<R = CGRect>(): R;
   }
-  namespace classes {
-    export interface _TtC17SketchControllers17MSInterLayerSpace<T = any> extends NSObject {
+  namespace _TtC17SketchControllers17MSInterLayerSpace {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _TtC17SketchControllers17MSInterLayerSpace>(): R;
       new: <R = _TtC17SketchControllers17MSInterLayerSpace>() => R;
-      // + _TtC17SketchControllers17MSInterLayerSpace(SketchControllers):
-      
-    }
+  
+  }
   }
 }

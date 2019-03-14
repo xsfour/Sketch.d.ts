@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSQuickActionValidation<T = any> {}
-  namespace classes {
-    export interface _NSQuickActionValidation<T = any> {  }
+  export interface _NSQuickActionValidation<T0 = void, T1 = void, T2 = void> {}
+  namespace _NSQuickActionValidation {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDateComponentsFormatter<T = any> extends NSFormatter, NSObservableProtocol, NSObserverProtocol {
+  export interface NSDateComponentsFormatter<T0 = void, T1 = void, T2 = void> extends NSFormatter, NSObservableProtocol, NSObserverProtocol {
     stringForObjectValue_withReferenceDate<R = unknown, P0 = unknown, P1 = unknown>(_stringForObjectValue: P0, _withReferenceDate: P1): R;
     stringFromDateComponents<R = unknown, P0 = unknown>(_stringFromDateComponents: P0): R;
     stringFromTimeInterval<R = unknown, P0 = number>(_stringFromTimeInterval: P0): R;
@@ -42,8 +42,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSDateComponentsFormatter<T = any> extends NSFormatter, NSObservableProtocol, NSObserverProtocol {
+  namespace NSDateComponentsFormatter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSFormatter, NSObservableProtocol, NSObserverProtocol {
       alloc<R = NSDateComponentsFormatter>(): R;
       new: <R = NSDateComponentsFormatter>() => R;
       localizedStringFromDateComponents_unitsStyle<R = unknown, P0 = unknown, P1 = number>(_localizedStringFromDateComponents: P0, _unitsStyle: P1): R;
@@ -51,4 +51,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSDateComponentsFormatter: cocoa.classes.NSDateComponentsFormatter;
+declare const NSDateComponentsFormatter: cocoa.NSDateComponentsFormatter.CLASS;

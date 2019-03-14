@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCRSASHA1Verify<T = any> extends NSObject {
+  export interface BCRSASHA1Verify<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     verify<R = void>(): R;
     dealloc<R = void>(): R;
@@ -17,12 +17,12 @@ declare namespace cocoa {
     error<R = NSError>(): R;
     setError<R = void, P0 = NSError>(_v: P0): R;
   }
-  namespace classes {
-    export interface BCRSASHA1Verify<T = any> extends NSObject {
+  namespace BCRSASHA1Verify {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = BCRSASHA1Verify>(): R;
       new: <R = BCRSASHA1Verify>() => R;
     }
   }
 }
 
-declare const BCRSASHA1Verify: cocoa.classes.BCRSASHA1Verify;
+declare const BCRSASHA1Verify: cocoa.BCRSASHA1Verify.CLASS;

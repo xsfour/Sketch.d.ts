@@ -1,15 +1,15 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSMultipleInnerShadowInspectorViewController<T = any> extends MSMultipleShadowInspectorViewController {
+  export interface MSMultipleInnerShadowInspectorViewController<T0 = void, T1 = void, T2 = void> extends MSMultipleShadowInspectorViewController {
     nibName<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSMultipleInnerShadowInspectorViewController<T = any> extends MSMultipleShadowInspectorViewController {
+  namespace MSMultipleInnerShadowInspectorViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSMultipleShadowInspectorViewController {
       alloc<R = MSMultipleInnerShadowInspectorViewController>(): R;
       new: <R = MSMultipleInnerShadowInspectorViewController>() => R;
     }
   }
 }
 
-declare const MSMultipleInnerShadowInspectorViewController: cocoa.classes.MSMultipleInnerShadowInspectorViewController;
+declare const MSMultipleInnerShadowInspectorViewController: cocoa.MSMultipleInnerShadowInspectorViewController.CLASS;

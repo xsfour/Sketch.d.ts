@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXMLDTD<T = any> extends NSXMLNode {
+  export interface NSXMLDTD<T0 = void, T1 = void, T2 = void> extends NSXMLNode {
     _addLibxml2TreeRepresentationToDoc_context<R = void, P0 = _xmlDoc, P1 = _xmlValidCtxt>(__addLibxml2TreeRepresentationToDoc: P0, _context: P1): R;
     _renameChild_toName<R = void, P0 = unknown, P1 = unknown>(__renameChild: P0, _toName: P1): R;
     _elementAttributeRelationship<R = unknown>(): R;
@@ -36,8 +36,8 @@ declare namespace cocoa {
     publicID<R = NSString>(): R;
     setPublicID<R = void, P0 = NSString>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSXMLDTD<T = any> extends NSXMLNode {
+  namespace NSXMLDTD {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSXMLNode {
       alloc<R = NSXMLDTD>(): R;
       new: <R = NSXMLDTD>() => R;
       _initializePredefinedEntities<R = void>(): R;
@@ -47,4 +47,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSXMLDTD: cocoa.classes.NSXMLDTD;
+declare const NSXMLDTD: cocoa.NSXMLDTD.CLASS;

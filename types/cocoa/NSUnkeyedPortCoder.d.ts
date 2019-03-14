@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUnkeyedPortCoder<T = any> extends NSConcretePortCoder {
+  export interface NSUnkeyedPortCoder<T0 = void, T1 = void, T2 = void> extends NSConcretePortCoder {
     decodeRetainedObject<R = unknown>(): R;
     encodeObject_isBycopy_isByref<R = void, P0 = unknown, P1 = boolean, P2 = boolean>(_encodeObject: P0, _isBycopy: P1, _isByref: P2): R;
     decodeReturnValue<R = void, P0 = unknown>(_decodeReturnValue: P0): R;
@@ -16,8 +16,8 @@ declare namespace cocoa {
     invalidate<R = void>(): R;
     debugDescription<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSUnkeyedPortCoder<T = any> extends NSConcretePortCoder {
+  namespace NSUnkeyedPortCoder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSConcretePortCoder {
       alloc<R = NSUnkeyedPortCoder>(): R;
       new: <R = NSUnkeyedPortCoder>() => R;
       _enableLogging<R = void, P0 = boolean>(__enableLogging: P0): R;
@@ -25,4 +25,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSUnkeyedPortCoder: cocoa.classes.NSUnkeyedPortCoder;
+declare const NSUnkeyedPortCoder: cocoa.NSUnkeyedPortCoder.CLASS;

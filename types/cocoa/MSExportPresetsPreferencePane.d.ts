@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSExportPresetsPreferencePane<T = any> extends MSPreferencePane, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol {
+  export interface MSExportPresetsPreferencePane<T0 = void, T1 = void, T2 = void> extends MSPreferencePane, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol {
     adjustFirstResponderIfNeeded<R = void>(): R;
     restoreDefaultExportPresets<R = void, P0 = unknown>(_restoreDefaultExportPresets: P0): R;
     removeExportFormatFromPreset<R = void, P0 = unknown>(_removeExportFormatFromPreset: P0): R;
@@ -53,8 +53,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSExportPresetsPreferencePane<T = any> extends MSPreferencePane, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol {
+  namespace MSExportPresetsPreferencePane {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSPreferencePane, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol {
       alloc<R = MSExportPresetsPreferencePane>(): R;
       new: <R = MSExportPresetsPreferencePane>() => R;
       localizedNewExportPresetName<R = unknown>(): R;
@@ -63,4 +63,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSExportPresetsPreferencePane: cocoa.classes.MSExportPresetsPreferencePane;
+declare const MSExportPresetsPreferencePane: cocoa.MSExportPresetsPreferencePane.CLASS;

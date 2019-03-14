@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFileAccessNode<T = any> extends NSObject {
+  export interface NSFileAccessNode<T0 = void, T1 = void, T2 = void> extends NSObject {
     subarbiterDescription<R = unknown>(): R;
     sensitiveSubarbiterDescription<R = unknown>(): R;
     description<R = unknown>(): R;
@@ -67,12 +67,12 @@ declare namespace cocoa {
     setSymbolicLinkDestination<R = void, P0 = unknown>(_setSymbolicLinkDestination: P0): R;
     initWithParent_name_normalizedName<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_initWithParent: P0, _name: P1, _normalizedName: P2): R;
   }
-  namespace classes {
-    export interface NSFileAccessNode<T = any> extends NSObject {
+  namespace NSFileAccessNode {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSFileAccessNode>(): R;
       new: <R = NSFileAccessNode>() => R;
     }
   }
 }
 
-declare const NSFileAccessNode: cocoa.classes.NSFileAccessNode;
+declare const NSFileAccessNode: cocoa.NSFileAccessNode.CLASS;

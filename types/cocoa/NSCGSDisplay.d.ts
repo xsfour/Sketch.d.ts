@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCGSDisplay<T = any> extends NSObject {
+  export interface NSCGSDisplay<T0 = void, T1 = void, T2 = void> extends NSObject {
     description<R = unknown>(): R;
     dealloc<R = void>(): R;
     initWithDisplayID_flipOffset<R = unknown, P0 = number, P1 = number>(_initWithDisplayID: P0, _flipOffset: P1): R;
@@ -14,8 +14,8 @@ declare namespace cocoa {
     frame<R = CGRect>(): R;
     displayID<R = number>(): R;
   }
-  namespace classes {
-    export interface NSCGSDisplay<T = any> extends NSObject {
+  namespace NSCGSDisplay {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSCGSDisplay>(): R;
       new: <R = NSCGSDisplay>() => R;
       displaysWillChange<R = boolean>(): R;
@@ -31,4 +31,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSCGSDisplay: cocoa.classes.NSCGSDisplay;
+declare const NSCGSDisplay: cocoa.NSCGSDisplay.CLASS;

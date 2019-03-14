@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSTileMipLevel<T = any> extends NSObject {
+  export interface MSTileMipLevel<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     subtractDirtyRect<R = void, P0 = unknown>(_subtractDirtyRect: P0): R;
     uniteDirtyRect<R = void, P0 = CGRect>(_uniteDirtyRect: P0): R;
@@ -28,8 +28,8 @@ declare namespace cocoa {
     scaleRangeMax<R = number>(): R;
     tileCount<R = number>(): R;
   }
-  namespace classes {
-    export interface MSTileMipLevel<T = any> extends NSObject {
+  namespace MSTileMipLevel {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSTileMipLevel>(): R;
       new: <R = MSTileMipLevel>() => R;
       tileMipLevelWithScaleRangeMax<R = unknown, P0 = number>(_tileMipLevelWithScaleRangeMax: P0): R;
@@ -37,4 +37,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSTileMipLevel: cocoa.classes.MSTileMipLevel;
+declare const MSTileMipLevel: cocoa.MSTileMipLevel.CLASS;

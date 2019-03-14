@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTokenField<T = any> extends NSTextField {
+  export interface NSTokenField<T0 = void, T1 = void, T2 = void> extends NSTextField {
     displaysTokenWhileEditing<R = boolean>(): R;
     setDisplaysTokenWhileEditing<R = void, P0 = boolean>(_setDisplaysTokenWhileEditing: P0): R;
     tokenFieldCell<R = unknown>(): R;
@@ -31,8 +31,8 @@ declare namespace cocoa {
     tokenStyle<R = number>(): R;
     setTokenStyle<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTokenField<T = any> extends NSTextField {
+  namespace NSTokenField {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTextField {
       alloc<R = NSTokenField>(): R;
       new: <R = NSTokenField>() => R;
       defaultTokenizingCharacterSet<R = unknown>(): R;
@@ -41,4 +41,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTokenField: cocoa.classes.NSTokenField;
+declare const NSTokenField: cocoa.NSTokenField.CLASS;

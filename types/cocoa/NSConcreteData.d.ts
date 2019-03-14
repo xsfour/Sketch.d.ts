@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSConcreteData<T = any> extends NSData {
+  export interface NSConcreteData<T0 = void, T1 = void, T2 = void> extends NSData {
     _providesConcreteBacking<R = boolean>(): R;
     _createDispatchData<R = unknown>(): R;
     dealloc<R = void>(): R;
@@ -17,9 +17,9 @@ declare namespace cocoa {
     bytes<R = void>(): R;
     length<R = number>(): R;
   }
-  namespace classes {
-    export interface NSConcreteData<T = any> extends NSData {  }
+  namespace NSConcreteData {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSData {}
   }
 }
 
-declare const NSConcreteData: cocoa.classes.NSConcreteData;
+declare const NSConcreteData: cocoa.NSConcreteData.CLASS;

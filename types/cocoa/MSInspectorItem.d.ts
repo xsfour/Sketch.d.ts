@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInspectorItem<T = any> extends NSViewController, MSInspectorValueAdaptorDelegateProtocol, MSUpDownTextFieldDelegateProtocol {
+  export interface MSInspectorItem<T0 = void, T1 = void, T2 = void> extends NSViewController, MSInspectorValueAdaptorDelegateProtocol, MSUpDownTextFieldDelegateProtocol {
     cxx_destruct<R = void>(): R;
     cachedUserInterfaceElementForKey<R = unknown, P0 = unknown>(_cachedUserInterfaceElementForKey: P0): R;
     cacheUserInterfaceElement_withKey<R = void, P0 = unknown, P1 = unknown>(_cacheUserInterfaceElement: P0, _withKey: P1): R;
@@ -23,8 +23,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSInspectorItem<T = any> extends NSViewController, MSInspectorValueAdaptorDelegateProtocol, MSUpDownTextFieldDelegateProtocol {
+  namespace MSInspectorItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController, MSInspectorValueAdaptorDelegateProtocol, MSUpDownTextFieldDelegateProtocol {
       alloc<R = MSInspectorItem>(): R;
       new: <R = MSInspectorItem>() => R;
       canHandleLayer<R = boolean, P0 = unknown>(_canHandleLayer: P0): R;
@@ -35,4 +35,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSInspectorItem: cocoa.classes.MSInspectorItem;
+declare const MSInspectorItem: cocoa.MSInspectorItem.CLASS;

@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInspectorNumberFormatter<T = any> extends NSNumberFormatter {}
-  namespace classes {
-    export interface MSInspectorNumberFormatter<T = any> extends NSNumberFormatter {
+  export interface MSInspectorNumberFormatter<T0 = void, T1 = void, T2 = void> extends NSNumberFormatter {}
+  namespace MSInspectorNumberFormatter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSNumberFormatter {
       alloc<R = MSInspectorNumberFormatter>(): R;
       new: <R = MSInspectorNumberFormatter>() => R;
       standardPercentFormatterWithoutPercentSign<R = unknown>(): R;
@@ -14,4 +14,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSInspectorNumberFormatter: cocoa.classes.MSInspectorNumberFormatter;
+declare const MSInspectorNumberFormatter: cocoa.MSInspectorNumberFormatter.CLASS;

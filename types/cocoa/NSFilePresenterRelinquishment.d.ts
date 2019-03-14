@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFilePresenterRelinquishment<T = any> extends NSObject {
+  export interface NSFilePresenterRelinquishment<T0 = void, T1 = void, T2 = void> extends NSObject {
     didRelinquish<R = void>(): R;
     addPrerelinquishReply<R = void, P0 = CDUnknownBlockType>(_addPrerelinquishReply: P0): R;
     addRelinquishReply<R = void, P0 = CDUnknownBlockType>(_addRelinquishReply: P0): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     performRemoteDeletePrerelinquishmentIfNecessaryUsingBlock_withReply<R = void, P0 = CDUnknownBlockType, P1 = CDUnknownBlockType>(_performRemoteDeletePrerelinquishmentIfNecessaryUsingBlock: P0, _withReply: P1): R;
     dealloc<R = void>(): R;
   }
-  namespace classes {
-    export interface NSFilePresenterRelinquishment<T = any> extends NSObject {
+  namespace NSFilePresenterRelinquishment {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSFilePresenterRelinquishment>(): R;
       new: <R = NSFilePresenterRelinquishment>() => R;
     }
   }
 }
 
-declare const NSFilePresenterRelinquishment: cocoa.classes.NSFilePresenterRelinquishment;
+declare const NSFilePresenterRelinquishment: cocoa.NSFilePresenterRelinquishment.CLASS;

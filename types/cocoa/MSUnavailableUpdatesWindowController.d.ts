@@ -1,11 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSUnavailableUpdatesWindowController<T = any> extends NSWindowController, NSWindowDelegateProtocol {
+  export interface MSUnavailableUpdatesWindowController<T0 = void, T1 = void, T2 = void> extends NSWindowController, NSWindowDelegateProtocol {
+    cxx_destruct<R = void>(): R;
     learnMore<R = void, P0 = unknown>(_learnMore: P0): R;
     openUpdatesPage<R = void, P0 = unknown>(_openUpdatesPage: P0): R;
     confirmationAction<R = void, P0 = unknown>(_confirmationAction: P0): R;
     renewalRequired<R = boolean>(): R;
+    windowDidLoad<R = void>(): R;
     initWithWindowNibName_version_buildNumber_reason<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = number>(_initWithWindowNibName: P0, _version: P1, _buildNumber: P2, _reason: P3): R;
     blockedUpdateReason<R = number>(): R;
     setBlockedUpdateReason<R = void, P0 = number>(_v: P0): R;
@@ -24,8 +26,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSUnavailableUpdatesWindowController<T = any> extends NSWindowController, NSWindowDelegateProtocol {
+  namespace MSUnavailableUpdatesWindowController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSWindowController, NSWindowDelegateProtocol {
       alloc<R = MSUnavailableUpdatesWindowController>(): R;
       new: <R = MSUnavailableUpdatesWindowController>() => R;
       showModalWithVersion_buildNumber_reason<R = void, P0 = unknown, P1 = unknown, P2 = number>(_showModalWithVersion: P0, _buildNumber: P1, _reason: P2): R;
@@ -33,4 +35,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSUnavailableUpdatesWindowController: cocoa.classes.MSUnavailableUpdatesWindowController;
+declare const MSUnavailableUpdatesWindowController: cocoa.MSUnavailableUpdatesWindowController.CLASS;

@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSMaskWithShape<T = any> extends NSObject {}
-  namespace classes {
-    export interface MSMaskWithShape<T = any> extends NSObject {
+  export interface MSMaskWithShape<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace MSMaskWithShape {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSMaskWithShape>(): R;
       new: <R = MSMaskWithShape>() => R;
       nameForMaskWithLayers<R = unknown, P0 = unknown>(_nameForMaskWithLayers: P0): R;
@@ -15,4 +15,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSMaskWithShape: cocoa.classes.MSMaskWithShape;
+declare const MSMaskWithShape: cocoa.MSMaskWithShape.CLASS;

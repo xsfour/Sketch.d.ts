@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCSparkleLicensedUpdateChecker<T = any> extends NSObject {
+  export interface BCSparkleLicensedUpdateChecker<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     isUpdateInstalled<R = boolean, P0 = unknown>(_isUpdateInstalled: P0): R;
     compareBuildNumber_to<R = number, P0 = unknown, P1 = unknown>(_compareBuildNumber: P0, _to: P1): R;
@@ -33,8 +33,8 @@ declare namespace cocoa {
     hasAvailableUpdates<R = boolean>(): R;
     numberOfUnavailableReleases<R = number>(): R;
   }
-  namespace classes {
-    export interface BCSparkleLicensedUpdateChecker<T = any> extends NSObject {
+  namespace BCSparkleLicensedUpdateChecker {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = BCSparkleLicensedUpdateChecker>(): R;
       new: <R = BCSparkleLicensedUpdateChecker>() => R;
       sparkleCheckerWithLicenseExpirationDate_buildNumber_appcastResults<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_sparkleCheckerWithLicenseExpirationDate: P0, _buildNumber: P1, _appcastResults: P2): R;
@@ -42,4 +42,4 @@ declare namespace cocoa {
   }
 }
 
-declare const BCSparkleLicensedUpdateChecker: cocoa.classes.BCSparkleLicensedUpdateChecker;
+declare const BCSparkleLicensedUpdateChecker: cocoa.BCSparkleLicensedUpdateChecker.CLASS;

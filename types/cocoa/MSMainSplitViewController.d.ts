@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSMainSplitViewController<T = any> extends NSObject, NSSplitViewDelegateProtocol {
+  export interface MSMainSplitViewController<T0 = void, T1 = void, T2 = void> extends NSObject, NSSplitViewDelegateProtocol {
     cxx_destruct<R = void>(): R;
     dealloc<R = void>(): R;
     didExitVersionBrowser<R = void>(): R;
@@ -33,12 +33,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSMainSplitViewController<T = any> extends NSObject, NSSplitViewDelegateProtocol {
+  namespace MSMainSplitViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSplitViewDelegateProtocol {
       alloc<R = MSMainSplitViewController>(): R;
       new: <R = MSMainSplitViewController>() => R;
     }
   }
 }
 
-declare const MSMainSplitViewController: cocoa.classes.MSMainSplitViewController;
+declare const MSMainSplitViewController: cocoa.MSMainSplitViewController.CLASS;

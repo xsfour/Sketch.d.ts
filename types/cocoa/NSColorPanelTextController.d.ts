@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorPanelTextController<T = any> extends NSObject, NSTextFieldDelegateProtocol {
+  export interface NSColorPanelTextController<T0 = void, T1 = void, T2 = void> extends NSObject, NSTextFieldDelegateProtocol {
     acceptLastEnteredText<R = boolean>(): R;
     control_isValidObject<R = boolean, P0 = unknown, P1 = unknown>(_control: P0, _isValidObject: P1): R;
     control_didFailToFormatString_errorDescription<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown>(_control: P0, _didFailToFormatString: P1, _errorDescription: P2): R;
@@ -22,12 +22,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSColorPanelTextController<T = any> extends NSObject, NSTextFieldDelegateProtocol {
+  namespace NSColorPanelTextController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSTextFieldDelegateProtocol {
       alloc<R = NSColorPanelTextController>(): R;
       new: <R = NSColorPanelTextController>() => R;
     }
   }
 }
 
-declare const NSColorPanelTextController: cocoa.classes.NSColorPanelTextController;
+declare const NSColorPanelTextController: cocoa.NSColorPanelTextController.CLASS;

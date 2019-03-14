@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSmartRotateEventHandler<T = any> extends MSEventHandler {
+  export interface MSSmartRotateEventHandler<T0 = void, T1 = void, T2 = void> extends MSEventHandler {
     unregisterObservers<R = void>(): R;
     registerObservers<R = void>(): R;
     rotationForRepetitionAtIndex<R = number, P0 = number>(_rotationForRepetitionAtIndex: P0): R;
@@ -25,12 +25,12 @@ declare namespace cocoa {
     numberOfRepetitions<R = number>(): R;
     setNumberOfRepetitions<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSSmartRotateEventHandler<T = any> extends MSEventHandler {
+  namespace MSSmartRotateEventHandler {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSEventHandler {
       alloc<R = MSSmartRotateEventHandler>(): R;
       new: <R = MSSmartRotateEventHandler>() => R;
     }
   }
 }
 
-declare const MSSmartRotateEventHandler: cocoa.classes.MSSmartRotateEventHandler;
+declare const MSSmartRotateEventHandler: cocoa.MSSmartRotateEventHandler.CLASS;

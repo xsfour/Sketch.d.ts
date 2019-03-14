@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSControl<T = any> extends NSView {
+  export interface NSControl<T0 = void, T1 = void, T2 = void> extends NSView {
     allowsVibrancy<R = boolean>(): R;
     setUsesSingleLineMode<R = void, P0 = boolean>(_setUsesSingleLineMode: P0): R;
     usesSingleLineMode<R = boolean>(): R;
@@ -143,11 +143,11 @@ declare namespace cocoa {
     setControlSize<R = void, P0 = number>(_v: P0): R;
     highlighted<R = boolean>(): R;
     setHighlighted<R = void, P0 = boolean>(_v: P0): R;
-    // + NSControl(Inspector,PopoverDismissal):
+    // + NSControl(PopoverDismissal): 
     clickShouldDismissPopover<R = boolean, P0 = unknown>(_clickShouldDismissPopover: P0): R;
   }
-  namespace classes {
-    export interface NSControl<T = any> extends NSView {
+  namespace NSControl {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSControl>(): R;
       new: <R = NSControl>() => R;
       _prefersCellUserInterfaceLayoutDirection<R = boolean>(): R;
@@ -155,7 +155,7 @@ declare namespace cocoa {
       cellClass<R = unknown>(): R;
       setCellClass<R = void, P0 = unknown>(_setCellClass: P0): R;
       accessibilityIsSingleCelled<R = boolean>(): R;
-      // + NSControl(Inspector,PopoverDismissal):
+      // + NSControl(Inspector): 
       inpectorFocusRingPathForRect_borderRadius<R = unknown, P0 = CGRect, P1 = number>(_inpectorFocusRingPathForRect: P0, _borderRadius: P1): R;
       inpectorBorderPathForRect_borderRadius<R = unknown, P0 = CGRect, P1 = number>(_inpectorBorderPathForRect: P0, _borderRadius: P1): R;
       inpectorBorderPathForRectWithMaxRadius<R = unknown, P0 = CGRect>(_inpectorBorderPathForRectWithMaxRadius: P0): R;
@@ -166,4 +166,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSControl: cocoa.classes.NSControl;
+declare const NSControl: cocoa.NSControl.CLASS;

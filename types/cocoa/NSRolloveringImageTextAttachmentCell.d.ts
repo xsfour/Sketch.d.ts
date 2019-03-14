@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSRolloveringImageTextAttachmentCell<T = any> extends NSViewTextAttachmentCell, NSServicesRolloverViewDelegateProtocol, NSSharingServiceDelegateProtocol, NSSharingServicePickerDelegateProtocol {
+  export interface NSRolloveringImageTextAttachmentCell<T0 = void, T1 = void, T2 = void> extends NSViewTextAttachmentCell, NSServicesRolloverViewDelegateProtocol, NSSharingServiceDelegateProtocol, NSSharingServicePickerDelegateProtocol {
     sharingService_containerFrameOnScreenForShareItem<R = CGRect, P0 = unknown, P1 = unknown>(_sharingService: P0, _containerFrameOnScreenForShareItem: P1): R;
     sharingServicePicker_shouldShowForView<R = boolean, P0 = unknown, P1 = unknown>(_sharingServicePicker: P0, _shouldShowForView: P1): R;
     sharingServicePicker_sharingServicesForItems_mask_proposedSharingServices<R = unknown, P0 = unknown, P1 = unknown, P2 = number, P3 = unknown>(_sharingServicePicker: P0, _sharingServicesForItems: P1, _mask: P2, _proposedSharingServices: P3): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSRolloveringImageTextAttachmentCell<T = any> extends NSViewTextAttachmentCell, NSServicesRolloverViewDelegateProtocol, NSSharingServiceDelegateProtocol, NSSharingServicePickerDelegateProtocol {
+  namespace NSRolloveringImageTextAttachmentCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewTextAttachmentCell, NSServicesRolloverViewDelegateProtocol, NSSharingServiceDelegateProtocol, NSSharingServicePickerDelegateProtocol {
       alloc<R = NSRolloveringImageTextAttachmentCell>(): R;
       new: <R = NSRolloveringImageTextAttachmentCell>() => R;
     }
   }
 }
 
-declare const NSRolloveringImageTextAttachmentCell: cocoa.classes.NSRolloveringImageTextAttachmentCell;
+declare const NSRolloveringImageTextAttachmentCell: cocoa.NSRolloveringImageTextAttachmentCell.CLASS;

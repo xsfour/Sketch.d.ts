@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFavoriteColorsStore<T = any> extends NSObject {
+  export interface NSFavoriteColorsStore<T0 = void, T1 = void, T2 = void> extends NSObject {
     colorsFromBacking<R = unknown>(): R;
     writeColorsToBacking<R = boolean, P0 = unknown>(_writeColorsToBacking: P0): R;
     updateColorsFromBacking<R = void>(): R;
@@ -18,8 +18,8 @@ declare namespace cocoa {
     colorEntries<R = NSArray>(): R;
     setColorEntries<R = void, P0 = NSArray>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSFavoriteColorsStore<T = any> extends NSObject {
+  namespace NSFavoriteColorsStore {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSFavoriteColorsStore>(): R;
       new: <R = NSFavoriteColorsStore>() => R;
       defersBackingUpdates<R = boolean>(): R;
@@ -30,4 +30,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSFavoriteColorsStore: cocoa.classes.NSFavoriteColorsStore;
+declare const NSFavoriteColorsStore: cocoa.NSFavoriteColorsStore.CLASS;

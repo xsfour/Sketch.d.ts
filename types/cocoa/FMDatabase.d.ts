@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface FMDatabase<T = any> extends NSObject {
+  export interface FMDatabase<T0 = void, T1 = void, T2 = void> extends NSObject {
     makeFunctionNamed_maximumArguments_withBlock<R = void, P0 = unknown, P1 = number, P2 = CDUnknownBlockType>(_makeFunctionNamed: P0, _maximumArguments: P1, _withBlock: P2): R;
     setShouldCacheStatements<R = void, P0 = boolean>(_setShouldCacheStatements: P0): R;
     shouldCacheStatements<R = boolean>(): R;
@@ -101,8 +101,8 @@ declare namespace cocoa {
     cachedStatements<R = NSMutableDictionary>(): R;
     setCachedStatements<R = void, P0 = NSMutableDictionary>(_v: P0): R;
   }
-  namespace classes {
-    export interface FMDatabase<T = any> extends NSObject {
+  namespace FMDatabase {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = FMDatabase>(): R;
       new: <R = FMDatabase>() => R;
       storeableDateFormat<R = unknown, P0 = unknown>(_storeableDateFormat: P0): R;
@@ -115,4 +115,4 @@ declare namespace cocoa {
   }
 }
 
-declare const FMDatabase: cocoa.classes.FMDatabase;
+declare const FMDatabase: cocoa.FMDatabase.CLASS;

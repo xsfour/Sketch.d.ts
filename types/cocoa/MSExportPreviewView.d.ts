@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSExportPreviewView<T = any> extends NSView, NSDraggingSourceProtocol, NSPasteboardWritingProtocol {
+  export interface MSExportPreviewView<T0 = void, T1 = void, T2 = void> extends NSView, NSDraggingSourceProtocol, NSPasteboardWritingProtocol {
     cxx_destruct<R = void>(): R;
     beginDragWithEvent<R = void, P0 = unknown>(_beginDragWithEvent: P0): R;
     imageDrawRect<R = CGRect>(): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSExportPreviewView<T = any> extends NSView, NSDraggingSourceProtocol, NSPasteboardWritingProtocol {
+  namespace MSExportPreviewView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView, NSDraggingSourceProtocol, NSPasteboardWritingProtocol {
       alloc<R = MSExportPreviewView>(): R;
       new: <R = MSExportPreviewView>() => R;
     }
   }
 }
 
-declare const MSExportPreviewView: cocoa.classes.MSExportPreviewView;
+declare const MSExportPreviewView: cocoa.MSExportPreviewView.CLASS;

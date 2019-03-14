@@ -1,14 +1,14 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAnyKeyExpression<T = any> extends NSExpression {
+  export interface NSAnyKeyExpression<T0 = void, T1 = void, T2 = void> extends NSExpression {
     _initPrivate<R = unknown>(): R;
     hash<R = number>(): R;
     _tryRetain<R = boolean>(): R;
     _isDeallocating<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSAnyKeyExpression<T = any> extends NSExpression {
+  namespace NSAnyKeyExpression {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSExpression {
       alloc<R = NSAnyKeyExpression>(): R;
       new: <R = NSAnyKeyExpression>() => R;
       defaultInstance<R = unknown>(): R;
@@ -18,4 +18,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSAnyKeyExpression: cocoa.classes.NSAnyKeyExpression;
+declare const NSAnyKeyExpression: cocoa.NSAnyKeyExpression.CLASS;

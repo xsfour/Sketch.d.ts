@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSearchField<T = any> extends NSTextField {
+  export interface NSSearchField<T0 = void, T1 = void, T2 = void> extends NSTextField {
     rectForCancelButtonWhenCentered<R = CGRect, P0 = boolean>(_rectForCancelButtonWhenCentered: P0): R;
     rectForSearchButtonWhenCentered<R = CGRect, P0 = boolean>(_rectForSearchButtonWhenCentered: P0): R;
     rectForSearchTextWhenCentered<R = CGRect, P0 = boolean>(_rectForSearchTextWhenCentered: P0): R;
@@ -36,12 +36,12 @@ declare namespace cocoa {
     recentSearches<R = NSArray>(): R;
     setRecentSearches<R = void, P0 = NSArray>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSSearchField<T = any> extends NSTextField {
+  namespace NSSearchField {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTextField {
       alloc<R = NSSearchField>(): R;
       new: <R = NSSearchField>() => R;
     }
   }
 }
 
-declare const NSSearchField: cocoa.classes.NSSearchField;
+declare const NSSearchField: cocoa.NSSearchField.CLASS;

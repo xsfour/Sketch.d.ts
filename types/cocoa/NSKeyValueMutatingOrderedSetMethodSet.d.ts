@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSKeyValueMutatingOrderedSetMethodSet<T = any> extends NSKeyValueMutatingCollectionMethodSet {}
-  namespace classes {
-    export interface NSKeyValueMutatingOrderedSetMethodSet<T = any> extends NSKeyValueMutatingCollectionMethodSet {
+  export interface NSKeyValueMutatingOrderedSetMethodSet<T0 = void, T1 = void, T2 = void> extends NSKeyValueMutatingCollectionMethodSet {}
+  namespace NSKeyValueMutatingOrderedSetMethodSet {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSKeyValueMutatingCollectionMethodSet {
       alloc<R = NSKeyValueMutatingOrderedSetMethodSet>(): R;
       new: <R = NSKeyValueMutatingOrderedSetMethodSet>() => R;
     }
   }
 }
 
-declare const NSKeyValueMutatingOrderedSetMethodSet: cocoa.classes.NSKeyValueMutatingOrderedSetMethodSet;
+declare const NSKeyValueMutatingOrderedSetMethodSet: cocoa.NSKeyValueMutatingOrderedSetMethodSet.CLASS;

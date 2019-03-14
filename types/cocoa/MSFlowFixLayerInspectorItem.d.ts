@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFlowFixLayerInspectorItem<T = any> extends MSInspectorItem, MSLayerChangeObserverProtocol {
+  export interface MSFlowFixLayerInspectorItem<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, MSLayerChangeObserverProtocol {
     validateFixLayersToViewportButton<R = void>(): R;
     setLayers<R = void, P0 = unknown>(_setLayers: P0): R;
     fixToViewportButton<R = NSButton>(): R;
@@ -11,12 +11,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSFlowFixLayerInspectorItem<T = any> extends MSInspectorItem, MSLayerChangeObserverProtocol {
+  namespace MSFlowFixLayerInspectorItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, MSLayerChangeObserverProtocol {
       alloc<R = MSFlowFixLayerInspectorItem>(): R;
       new: <R = MSFlowFixLayerInspectorItem>() => R;
     }
   }
 }
 
-declare const MSFlowFixLayerInspectorItem: cocoa.classes.MSFlowFixLayerInspectorItem;
+declare const MSFlowFixLayerInspectorItem: cocoa.MSFlowFixLayerInspectorItem.CLASS;

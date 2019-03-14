@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface PDFStream<T = any> extends NSObject {
+  export interface PDFStream<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     description<R = unknown>(): R;
     getDataAndFormat<R = void>(): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     stream<R = CGPDFStream>(): R;
     setStream<R = void, P0 = CGPDFStream>(_v: P0): R;
   }
-  namespace classes {
-    export interface PDFStream<T = any> extends NSObject {
+  namespace PDFStream {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = PDFStream>(): R;
       new: <R = PDFStream>() => R;
     }
   }
 }
 
-declare const PDFStream: cocoa.classes.PDFStream;
+declare const PDFStream: cocoa.PDFStream.CLASS;

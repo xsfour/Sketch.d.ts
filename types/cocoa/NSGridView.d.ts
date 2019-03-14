@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSGridView<T = any> extends NSView {
+  export interface NSGridView<T0 = void, T1 = void, T2 = void> extends NSView {
     _mergeCellsInRect<R = void, P0 = CGRect>(__mergeCellsInRect: P0): R;
     _expandMergeBoundsIfNeeded<R = CGRect, P0 = CGRect>(__expandMergeBoundsIfNeeded: P0): R;
     _expandMergeBounds_ifNeededForColumnAtIndex<R = boolean, P0 = CGRect, P1 = number>(__expandMergeBounds: P0, _ifNeededForColumnAtIndex: P1): R;
@@ -55,8 +55,8 @@ declare namespace cocoa {
     xPlacement<R = number>(): R;
     setXPlacement<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSGridView<T = any> extends NSView {
+  namespace NSGridView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSGridView>(): R;
       new: <R = NSGridView>() => R;
       gridViewWithViews<R = unknown, P0 = unknown>(_gridViewWithViews: P0): R;
@@ -65,4 +65,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSGridView: cocoa.classes.NSGridView;
+declare const NSGridView: cocoa.NSGridView.CLASS;

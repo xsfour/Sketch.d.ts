@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFindPatternComboBox<T = any> extends NSComboBox, NSFindPatternFieldProtocol {
+  export interface NSFindPatternComboBox<T0 = void, T1 = void, T2 = void> extends NSComboBox, NSFindPatternFieldProtocol {
     _selectedFindPattern<R = void, P0 = unknown>(__selectedFindPattern: P0): R;
     _uniquePatterns<R = unknown>(): R;
     _rangesOfFindPattern<R = unknown, P0 = unknown>(__rangesOfFindPattern: P0): R;
@@ -25,12 +25,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSFindPatternComboBox<T = any> extends NSComboBox, NSFindPatternFieldProtocol {
+  namespace NSFindPatternComboBox {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSComboBox, NSFindPatternFieldProtocol {
       alloc<R = NSFindPatternComboBox>(): R;
       new: <R = NSFindPatternComboBox>() => R;
     }
   }
 }
 
-declare const NSFindPatternComboBox: cocoa.classes.NSFindPatternComboBox;
+declare const NSFindPatternComboBox: cocoa.NSFindPatternComboBox.CLASS;

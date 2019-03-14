@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSCGSWindowOrdering<T = any> extends NSObject, _NSCGSWindowOrderingStateProtocol {
+  export interface _NSCGSWindowOrdering<T0 = void, T1 = void, T2 = void> extends NSObject, _NSCGSWindowOrderingStateProtocol {
     disableActivationOrderingForWindow<R = void, P0 = unknown>(_disableActivationOrderingForWindow: P0): R;
     enableActivationOrderingForWindow_isInitiallyOrderedIn<R = void, P0 = unknown, P1 = boolean>(_enableActivationOrderingForWindow: P0, _isInitiallyOrderedIn: P1): R;
     orderGroup_op_againstWindow_ifActive<R = void, P0 = unknown, P1 = number, P2 = unknown, P3 = boolean>(_orderGroup: P0, _op: P1, _againstWindow: P2, _ifActive: P3): R;
@@ -18,8 +18,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSCGSWindowOrdering<T = any> extends NSObject, _NSCGSWindowOrderingStateProtocol {
+  namespace _NSCGSWindowOrdering {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, _NSCGSWindowOrderingStateProtocol {
       alloc<R = _NSCGSWindowOrdering>(): R;
       new: <R = _NSCGSWindowOrdering>() => R;
       currentOrdering<R = unknown>(): R;

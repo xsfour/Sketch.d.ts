@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSMultipleShadowInspectorViewController<T = any> extends MSMultipleColorStylePartInspectorViewController {
+  export interface MSMultipleShadowInspectorViewController<T0 = void, T1 = void, T2 = void> extends MSMultipleColorStylePartInspectorViewController {
     views<R = unknown>(): R;
     shouldHideAddStylePartButton<R = boolean>(): R;
     buttonsTrailingConstraint<R = NSLayoutConstraint>(): R;
@@ -17,12 +17,12 @@ declare namespace cocoa {
     addStylePartButton<R = NSButton>(): R;
     setAddStylePartButton<R = void, P0 = NSButton>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSMultipleShadowInspectorViewController<T = any> extends MSMultipleColorStylePartInspectorViewController {
+  namespace MSMultipleShadowInspectorViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSMultipleColorStylePartInspectorViewController {
       alloc<R = MSMultipleShadowInspectorViewController>(): R;
       new: <R = MSMultipleShadowInspectorViewController>() => R;
     }
   }
 }
 
-declare const MSMultipleShadowInspectorViewController: cocoa.classes.MSMultipleShadowInspectorViewController;
+declare const MSMultipleShadowInspectorViewController: cocoa.MSMultipleShadowInspectorViewController.CLASS;

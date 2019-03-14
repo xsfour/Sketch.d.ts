@@ -1,9 +1,21 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSOutlineView<T = any> extends NSTableView, NSAccessibilityOutlineProtocol {
+  export interface NSOutlineView<T0 = void, T1 = void, T2 = void> extends NSTableView, NSAccessibilityOutlineProtocol {
+    _updateForSizeModeChange<R = void>(): R;
+    _sizeModeChangeForRowView_row<R = void, P0 = unknown, P1 = number>(__sizeModeChangeForRowView: P0, _row: P1): R;
     reloadItem_reloadChildren_withInsertAnimation_removeAnimation<R = void, P0 = unknown, P1 = boolean, P2 = number, P3 = number>(_reloadItem: P0, _reloadChildren: P1, _withInsertAnimation: P2, _removeAnimation: P3): R;
     _recursivelyReloadItem_reloadChildren_withInsertAnimation_removeAnimation<R = void, P0 = unknown, P1 = boolean, P2 = number, P3 = number>(__recursivelyReloadItem: P0, _reloadChildren: P1, _withInsertAnimation: P2, _removeAnimation: P3): R;
+    _nextFloatableRowFromRow_inVisibleRange<R = number, P0 = number, P1 = _NSRange>(__nextFloatableRowFromRow: P0, _inVisibleRange: P1): R;
+    _lastGroupRowChildFromRow<R = number, P0 = number>(__lastGroupRowChildFromRow: P0): R;
+    _shouldFloatRow_inVisibleRange<R = boolean, P0 = number, P1 = _NSRange>(__shouldFloatRow: P0, _inVisibleRange: P1): R;
+    _delegateDidRemoveRowView_forRow<R = void, P0 = unknown, P1 = number>(__delegateDidRemoveRowView: P0, _forRow: P1): R;
+    _delegateRespondsTo_didRemoveRowView<R = boolean>(): R;
+    _delegateDidAddRowView_forRow<R = void, P0 = unknown, P1 = number>(__delegateDidAddRowView: P0, _forRow: P1): R;
+    _delegateRespondsTo_didAddRowView<R = boolean>(): R;
+    moveRowAtIndex_toIndex<R = void, P0 = number, P1 = number>(_moveRowAtIndex: P0, _toIndex: P1): R;
+    removeRowsAtIndexes_withAnimation<R = void, P0 = unknown, P1 = number>(_removeRowsAtIndexes: P0, _withAnimation: P1): R;
+    insertRowsAtIndexes_withAnimation<R = void, P0 = unknown, P1 = number>(_insertRowsAtIndexes: P0, _withAnimation: P1): R;
     moveItemAtIndex_inParent_toIndex_inParent<R = void, P0 = number, P1 = unknown, P2 = number, P3 = unknown>(_moveItemAtIndex: P0, _inParent: P1, _toIndex: P2, _inParent1: P3): R;
     removeItemsAtIndexes_inParent_withAnimation<R = void, P0 = unknown, P1 = unknown, P2 = number>(_removeItemsAtIndexes: P0, _inParent: P1, _withAnimation: P2): R;
     insertItemsAtIndexes_inParent_withAnimation<R = void, P0 = unknown, P1 = unknown, P2 = number>(_insertItemsAtIndexes: P0, _inParent: P1, _withAnimation: P2): R;
@@ -18,18 +30,36 @@ declare namespace cocoa {
     _validateParentRowEntry_reason_indexes<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(__validateParentRowEntry: P0, _reason: P1, _indexes: P2): R;
     _throwExceptionForUpdateErrorAtIndexes_kind_ofParentRowEntry<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(__throwExceptionForUpdateErrorAtIndexes: P0, _kind: P1, _ofParentRowEntry: P2): R;
     _rowEntryForItem<R = unknown, P0 = unknown>(__rowEntryForItem: P0): R;
+    _dropDestinationIndicatorFrameForDraggingDestinationStyle_rowIndexes<R = CGRect, P0 = number, P1 = unknown>(__dropDestinationIndicatorFrameForDraggingDestinationStyle: P0, _rowIndexes: P1): R;
     _dropHighlightIndentationForRow_withLevel<R = number, P0 = number, P1 = number>(__dropHighlightIndentationForRow: P0, _withLevel: P1): R;
+    prepareDraggingDestinationView_forRowIndexes_draggingStyle<R = void, P0 = unknown, P1 = unknown, P2 = number>(_prepareDraggingDestinationView: P0, _forRowIndexes: P1, _draggingStyle: P2): R;
+    _delegate_viewForTableColumn_row<R = unknown, P0 = unknown, P1 = number>(__delegate_viewForTableColumn: P0, _row: P1): R;
+    _delegateRowViewForRow<R = unknown, P0 = number>(__delegateRowViewForRow: P0): R;
     _makeNewRowViewForItem<R = unknown, P0 = unknown>(__makeNewRowViewForItem: P0): R;
     _disclosureButtonForRowView<R = unknown, P0 = unknown>(__disclosureButtonForRowView: P0): R;
+    addDropBetweenFeedbackViewsForRow<R = void, P0 = number>(_addDropBetweenFeedbackViewsForRow: P0): R;
+    addDropOnFeedbackViewsForRow<R = void, P0 = number>(_addDropOnFeedbackViewsForRow: P0): R;
+    didAddRowView_forRow<R = void, P0 = unknown, P1 = number>(_didAddRowView: P0, _forRow: P1): R;
     _updateDisclosureButtonForRowView_forRow_removeIfNotAvailable_updatePosition_inDidAddRowView<R = void, P0 = unknown, P1 = number, P2 = boolean, P3 = boolean, P4 = boolean>(__updateDisclosureButtonForRowView: P0, _forRow: P1, _removeIfNotAvailable: P2, _updatePosition: P3, _inDidAddRowView: P4): R;
+    noteHeightOfRowsWithIndexesChanged<R = void, P0 = unknown>(_noteHeightOfRowsWithIndexesChanged: P0): R;
     _removeDisclosureButtonForRowView<R = void, P0 = unknown>(__removeDisclosureButtonForRowView: P0): R;
     _removeDisclosureButtonOtherIdentifierForRowView_withIdentifier<R = void, P0 = unknown, P1 = unknown>(__removeDisclosureButtonOtherIdentifierForRowView: P0, _withIdentifier: P1): R;
     _removeDisclosureButtonForRowView_withIdentifier<R = boolean, P0 = unknown, P1 = unknown>(__removeDisclosureButtonForRowView: P0, _withIdentifier: P1): R;
     _identifierForDisclosureButtonForRowView<R = unknown, P0 = unknown>(__identifierForDisclosureButtonForRowView: P0): R;
+    makeViewWithIdentifier_owner<R = unknown, P0 = unknown, P1 = unknown>(_makeViewWithIdentifier: P0, _owner: P1): R;
     _outlineControlClicked<R = void, P0 = unknown>(__outlineControlClicked: P0): R;
     _makeShowHideOutlineControl<R = unknown>(): R;
     _makeOutlineControl<R = unknown>(): R;
     identifierForRow<R = unknown, P0 = number>(_identifierForRow: P0): R;
+    _delegate_isGroupRow<R = boolean, P0 = number>(__delegate_isGroupRow: P0): R;
+    _delegate_shouldTypeSelectForEvent_withCurrentSearchString<R = boolean, P0 = unknown, P1 = unknown>(__delegate_shouldTypeSelectForEvent: P0, _withCurrentSearchString: P1): R;
+    _delegateRespondsTo_shouldTypeSelectForEvent<R = boolean>(): R;
+    _delegateTypeSelectStringForTableColumn_row<R = unknown, P0 = unknown, P1 = number>(__delegateTypeSelectStringForTableColumn: P0, _row: P1): R;
+    _delegateRespondsTo_typeSelectStringForTableColumn<R = boolean>(): R;
+    _delegate_nextTypeSelectMatchFromRow_toRow_forString<R = number, P0 = number, P1 = number, P2 = unknown>(__delegate_nextTypeSelectMatchFromRow: P0, _toRow: P1, _forString: P2): R;
+    _delegateRespondsTo_nextTypeSelectMatchFromRow<R = boolean>(): R;
+    _sizeToFitWidthOfColumn_row<R = number, P0 = number, P1 = number>(__sizeToFitWidthOfColumn: P0, _row: P1): R;
+    _delegate_sizeToFitWidthOfColumn<R = number, P0 = number>(__delegate_sizeToFitWidthOfColumn: P0): R;
     _findParentWithLevel_beginingAtItem_childEncountered<R = unknown, P0 = number, P1 = unknown, P2 = number>(__findParentWithLevel: P0, _beginingAtItem: P1, _childEncountered: P2): R;
     _countDisplayedDescendantsOfItem<R = number, P0 = unknown>(__countDisplayedDescendantsOfItem: P0): R;
     _maxXLocOfOutlineColumn<R = number>(): R;
@@ -50,23 +80,53 @@ declare namespace cocoa {
     _autoExpandItem_afterFlashCount<R = void, P0 = unknown, P1 = number>(__autoExpandItem: P0, _afterFlashCount: P1): R;
     _flashOutlineCell<R = void>(): R;
     _shouldAutoExpandNoExpandableItem<R = boolean, P0 = unknown>(__shouldAutoExpandNoExpandableItem: P0): R;
+    _dataSourceRespondsToNamesOfPromisedFilesDroppedAtDestination<R = boolean>(): R;
+    _dataSourceNamesOfPromisedFilesAtDestination<R = unknown, P0 = unknown>(__dataSourceNamesOfPromisedFilesAtDestination: P0): R;
+    draggedImage_movedTo<R = void, P0 = unknown, P1 = CGPoint>(_draggedImage: P0, _movedTo: P1): R;
+    draggedImage_endedAt_operation<R = void, P0 = unknown, P1 = CGPoint, P2 = number>(_draggedImage: P0, _endedAt: P1, _operation: P2): R;
+    _pasteboardWriterForRow<R = unknown, P0 = number>(__pasteboardWriterForRow: P0): R;
+    _dataSourceRespondsToPasteboardWriterForRow<R = boolean>(): R;
+    _delegateUpdateDraggingItemsForDrag<R = void, P0 = unknown>(__delegateUpdateDraggingItemsForDrag: P0): R;
+    _sendDraggingSession_endedAtPoint_operation<R = void, P0 = unknown, P1 = CGPoint, P2 = number>(__sendDraggingSession: P0, _endedAtPoint: P1, _operation: P2): R;
+    _sendWillBeginDraggingSession_willBeginAtPoint_forDraggedRowIndexes<R = void, P0 = unknown, P1 = CGPoint, P2 = unknown>(__sendWillBeginDraggingSession: P0, _willBeginAtPoint: P1, _forDraggedRowIndexes: P2): R;
+    _preferredDragColumnForEvent<R = number, P0 = unknown>(__preferredDragColumnForEvent: P0): R;
     _invalidateDropCandidateItem<R = void>(): R;
+    _dataSourceRespondsToSortDescriptorsDidChange<R = boolean>(): R;
+    _sendDataSourceSortDescriptorsDidChange<R = void, P0 = unknown>(__sendDataSourceSortDescriptorsDidChange: P0): R;
+    _dataSourceRespondsToWriteDragData<R = boolean>(): R;
+    _sendDataSourceWriteDragDataWithIndexes_toPasteboard<R = boolean, P0 = unknown, P1 = unknown>(__sendDataSourceWriteDragDataWithIndexes: P0, _toPasteboard: P1): R;
+    _sendDelegateDidDragColumn<R = void, P0 = number>(__sendDelegateDidDragColumn: P0): R;
+    _sendDelegateDidClickColumn<R = void, P0 = number>(__sendDelegateDidClickColumn: P0): R;
+    _sendDelegateDidMouseDownInHeader<R = void, P0 = number>(__sendDelegateDidMouseDownInHeader: P0): R;
+    _drawDropHighlight<R = void>(): R;
+    _isDropFeedbackRow<R = boolean, P0 = number>(__isDropFeedbackRow: P0): R;
     _dropCandidateChildIndex<R = number>(): R;
     _dropCandidateItem<R = unknown>(): R;
+    _dropCandidateRowToHighlight<R = number>(): R;
+    _dropCandidateRow<R = number>(): R;
+    _dropHighlightBackgroundRectForRow<R = CGRect, P0 = number>(__dropHighlightBackgroundRectForRow: P0): R;
     _indentationForDropTargetRow<R = number, P0 = number>(__indentationForDropTargetRow: P0): R;
     _shouldHighlightParentRows<R = boolean>(): R;
+    _columnsForDragImage<R = unknown>(): R;
     _setNeedsDisplayForDropCandidateItem_childIndex_mask<R = void, P0 = unknown, P1 = number, P2 = number>(__setNeedsDisplayForDropCandidateItem: P0, _childIndex: P1, _mask: P2): R;
     _getRow_andParentRow_forDropCandidateItem_childIndex<R = void, P0 = number, P1 = number, P2 = unknown, P3 = number>(__getRow: P0, _andParentRow: P1, _forDropCandidateItem: P2, _childIndex: P3): R;
+    _determineDropCandidateForDragInfo<R = void, P0 = unknown>(__determineDropCandidateForDragInfo: P0): R;
+    _hitRowForDropTargetRow_point<R = number, P0 = number, P1 = CGPoint>(__hitRowForDropTargetRow: P0, _point: P1): R;
     _updateDropFeedbackFromPriorItem_childIndex_mask<R = void, P0 = unknown, P1 = number, P2 = number>(__updateDropFeedbackFromPriorItem: P0, _childIndex: P1, _mask: P2): R;
     _shouldDoDragUpdateOfViewBasedRowData<R = boolean>(): R;
     _tryDrop_dropItem_dropChildIndex<R = void, P0 = unknown, P1 = unknown, P2 = number>(__tryDrop: P0, _dropItem: P1, _dropChildIndex: P2): R;
+    _hoverAreaIsSameAsLast<R = boolean, P0 = unknown>(__hoverAreaIsSameAsLast: P0): R;
     setDropItem_dropChildIndex<R = void, P0 = unknown, P1 = number>(_setDropItem: P0, _dropChildIndex: P1): R;
     shouldCollapseAutoExpandedItemsForDeposited<R = boolean, P0 = boolean>(_shouldCollapseAutoExpandedItemsForDeposited: P0): R;
     _shouldAttemptDroppingAsChildOfLeafItems<R = boolean>(): R;
+    _shouldSlideBackAfterDragFailed<R = boolean>(): R;
+    _readPersistentTableColumns<R = void>(): R;
+    _writePersistentTableColumns<R = void>(): R;
     setAutosaveName<R = void, P0 = unknown>(_setAutosaveName: P0): R;
     _writePersistentExpandItems<R = void>(): R;
     _convertPersistentItem<R = unknown, P0 = unknown>(__convertPersistentItem: P0): R;
     _readPersistentExpandItems<R = void>(): R;
+    _userCanEditTableColumn_row<R = boolean, P0 = unknown, P1 = number>(__userCanEditTableColumn: P0, _row: P1): R;
     isItemExpanded<R = boolean, P0 = unknown>(_isItemExpanded: P0): R;
     _isItemLoadedAndExpanded<R = boolean, P0 = unknown>(__isItemLoadedAndExpanded: P0): R;
     levelForRow<R = number, P0 = number>(_levelForRow: P0): R;
@@ -81,25 +141,42 @@ declare namespace cocoa {
     _lazyRowEntryForItem_requiredRowEntryLoadMask<R = unknown, P0 = unknown, P1 = number>(__lazyRowEntryForItem: P0, _requiredRowEntryLoadMask: P1): R;
     _rowEntryExistsForItem<R = boolean, P0 = unknown>(__rowEntryExistsForItem: P0): R;
     _rowEntryForItem_requiredRowEntryLoadMask<R = unknown, P0 = unknown, P1 = number>(__rowEntryForItem: P0, _requiredRowEntryLoadMask: P1): R;
+    _sendDelegateCanSelectColumn<R = boolean, P0 = number>(__sendDelegateCanSelectColumn: P0): R;
+    _sendDelegateSelectionIndexesForProposedSelection<R = unknown, P0 = unknown>(__sendDelegateSelectionIndexesForProposedSelection: P0): R;
+    _sendDelegateCanSelectRow<R = boolean, P0 = number>(__sendDelegateCanSelectRow: P0): R;
+    _delegateRespondsToCanSelectRow<R = boolean>(): R;
+    _userCanChangeSelection<R = boolean>(): R;
     _redisplayAndResizeFromRow<R = void, P0 = number>(__redisplayAndResizeFromRow: P0): R;
     _outlineMouseExited<R = void, P0 = unknown>(__outlineMouseExited: P0): R;
     _outlineMouseEntered<R = void, P0 = unknown>(__outlineMouseEntered: P0): R;
     _outlineTrackingRowForEvent<R = number, P0 = unknown>(__outlineTrackingRowForEvent: P0): R;
     _shouldUseTrackingAreasForOutlineCell<R = boolean>(): R;
     _addOutlineCellTrackingAreas<R = void>(): R;
+    _delegateWantsTrackingAreasForRow_column<R = void, P0 = number, P1 = number>(__delegateWantsTrackingAreasForRow: P0, _column: P1): R;
+    _delegateRespondsTo_wantsTrackingAreasForRowColumn<R = boolean>(): R;
     _setOutlineCellTrackingAreaRow<R = void, P0 = number>(__setOutlineCellTrackingAreaRow: P0): R;
     _setOutlineButtonVisible_onRow<R = void, P0 = boolean, P1 = number>(__setOutlineButtonVisible: P0, _onRow: P1): R;
     frameOfOutlineCellAtRow<R = CGRect, P0 = number>(_frameOfOutlineCellAtRow: P0): R;
     _frameOfOutlineCellAtRow<R = CGRect, P0 = number>(__frameOfOutlineCellAtRow: P0): R;
+    preparedCellAtColumn_row<R = unknown, P0 = number, P1 = number>(_preparedCellAtColumn: P0, _row: P1): R;
     _frameOfSourceListGroupOutlineCellRow<R = CGRect, P0 = number>(__frameOfSourceListGroupOutlineCellRow: P0): R;
     _outlineColumnIndex<R = number>(): R;
     _shouldShowOutlineCellForRow<R = boolean, P0 = number>(__shouldShowOutlineCellForRow: P0): R;
     _delegateShouldShowOutlineCellForItem<R = boolean, P0 = unknown>(__delegateShouldShowOutlineCellForItem: P0): R;
+    _setNeedsDisplayInRow<R = void, P0 = number>(__setNeedsDisplayInRow: P0): R;
+    _cellOffsetConstraintConstantsForColumn_row<R = CGRect, P0 = number, P1 = number>(__cellOffsetConstraintConstantsForColumn: P0, _row: P1): R;
+    frameOfCellAtColumn_row<R = CGRect, P0 = number, P1 = number>(_frameOfCellAtColumn: P0, _row: P1): R;
+    _gutterSpacingChanged<R = void>(): R;
+    _isOutlineView<R = boolean>(): R;
     shouldShowOutlineCellInlineForRow<R = boolean, P0 = number>(_shouldShowOutlineCellInlineForRow: P0): R;
     _indentationForRow_withLevel_isSourceListGroupRow<R = number, P0 = number, P1 = number, P2 = boolean>(__indentationForRow: P0, _withLevel: P1, _isSourceListGroupRow: P2): R;
     _outlineCellIndentation<R = number>(): R;
     _canUseUpdatedIdentation<R = boolean>(): R;
     setSelectionHighlightStyle<R = void, P0 = number>(_setSelectionHighlightStyle: P0): R;
+    _forgetBeingASourceList<R = void>(): R;
+    _becomeASourceList<R = void>(): R;
+    _adjustDrawingTestFrame_atRow_column<R = void, P0 = CGRect, P1 = number, P2 = number>(__adjustDrawingTestFrame: P0, _atRow: P1, _column: P2): R;
+    _drawContentsAtRow_column_withCellFrame<R = void, P0 = number, P1 = number, P2 = CGRect>(__drawContentsAtRow: P0, _column: P1, _withCellFrame: P2): R;
     _drawOutlineCellAtRow<R = void, P0 = number>(__drawOutlineCellAtRow: P0): R;
     _trackingOutlineCellForRow<R = unknown, P0 = number>(__trackingOutlineCellForRow: P0): R;
     _preparedOutlineCellForRow<R = unknown, P0 = number>(__preparedOutlineCellForRow: P0): R;
@@ -112,17 +189,34 @@ declare namespace cocoa {
     _notifyDelegateOfStateChangeForCell<R = void, P0 = unknown>(__notifyDelegateOfStateChangeForCell: P0): R;
     _setupStateForOutlineCell_atRow<R = void, P0 = unknown, P1 = number>(__setupStateForOutlineCell: P0, _atRow: P1): R;
     _outlineCellBackgroundStyleForRow<R = number, P0 = number>(__outlineCellBackgroundStyleForRow: P0): R;
+    _adjustRectForFocusRing_atRow<R = CGRect, P0 = CGRect, P1 = number>(__adjustRectForFocusRing: P0, _atRow: P1): R;
+    drawRowIndexes_clipRect<R = void, P0 = unknown, P1 = CGRect>(_drawRowIndexes: P0, _clipRect: P1): R;
+    _backgroundOffsetForGroupRow<R = number, P0 = number>(__backgroundOffsetForGroupRow: P0): R;
+    _priorRowIsSelectedFromRow_inSelection<R = boolean, P0 = number, P1 = unknown>(__priorRowIsSelectedFromRow: P0, _inSelection: P1): R;
     _debugDrawRowNumberInCell_withFrame_forRow<R = void, P0 = unknown, P1 = CGRect, P2 = number>(__debugDrawRowNumberInCell: P0, _withFrame: P1, _forRow: P2): R;
     _alternateAutoExpandImageForOutlineCell_inRow_withFrame<R = unknown, P0 = unknown, P1 = number, P2 = CGRect>(__alternateAutoExpandImageForOutlineCell: P0, _inRow: P1, _withFrame: P2): R;
+    _sendDelegateWillDisplayCell_forColumn_row<R = void, P0 = unknown, P1 = unknown, P2 = number>(__sendDelegateWillDisplayCell: P0, _forColumn: P1, _row: P2): R;
+    _sendBindingAdapterWillDisplayCell_forColumn_row<R = void, P0 = unknown, P1 = unknown, P2 = number>(__sendBindingAdapterWillDisplayCell: P0, _forColumn: P1, _row: P2): R;
+    _sendDelegateToolTipForCell_tableColumn_rect_row_mouseLocation<R = unknown, P0 = unknown, P1 = unknown, P2 = CGRect, P3 = number, P4 = CGPoint>(__sendDelegateToolTipForCell: P0, _tableColumn: P1, _rect: P2, _row: P3, _mouseLocation: P4): R;
+    _delegateRespondsToGetToolTip<R = boolean>(): R;
+    _sendDelegateShouldShowCellExpansionForColumn_row<R = boolean, P0 = number, P1 = number>(__sendDelegateShouldShowCellExpansionForColumn: P0, _row: P1): R;
+    _delegateRespondsToShouldShowCellExpansion<R = boolean>(): R;
     _sendDelegateWillDisplayOutlineCell_inOutlineTableColumnAtRow<R = void, P0 = unknown, P1 = number>(__sendDelegateWillDisplayOutlineCell: P0, _inOutlineTableColumnAtRow: P1): R;
     _shouldCallWillDisplayOutlineCell<R = boolean>(): R;
     _delegateWillDisplayOutlineCell_forColumn_row<R = void, P0 = unknown, P1 = unknown, P2 = number>(__delegateWillDisplayOutlineCell: P0, _forColumn: P1, _row: P2): R;
+    _delegateWillDisplayCell_forColumn_row<R = void, P0 = unknown, P1 = unknown, P2 = number>(__delegateWillDisplayCell: P0, _forColumn: P1, _row: P2): R;
+    _dataSourceSetValue_forColumn_row<R = void, P0 = unknown, P1 = unknown, P2 = number>(__dataSourceSetValue: P0, _forColumn: P1, _row: P2): R;
+    _dataSourceValueForColumn_row<R = unknown, P0 = unknown, P1 = number>(__dataSourceValueForColumn: P0, _row: P1): R;
     _dataSourceNumberOfChildrenOfItem<R = number, P0 = unknown>(__dataSourceNumberOfChildrenOfItem: P0): R;
     _nonStaticNumberOfChildrenOfItem<R = number, P0 = unknown>(__nonStaticNumberOfChildrenOfItem: P0): R;
     _staticNumberOfChildrenOfItem<R = number, P0 = unknown>(__staticNumberOfChildrenOfItem: P0): R;
     _staticLoadChildrenForItem_itemData<R = void, P0 = unknown, P1 = unknown>(__staticLoadChildrenForItem: P0, _itemData: P1): R;
     _makeAndCacheStaticDataForItem<R = unknown, P0 = unknown>(__makeAndCacheStaticDataForItem: P0): R;
+    _staticRowViewForRow<R = unknown, P0 = number>(__staticRowViewForRow: P0): R;
+    _shouldReuseViews<R = boolean>(): R;
     setUsesStaticContents<R = void, P0 = boolean>(_setUsesStaticContents: P0): R;
+    _staticTableViewDecodeRowsWithCoder<R = void, P0 = unknown>(__staticTableViewDecodeRowsWithCoder: P0): R;
+    _staticTableViewEncodeRowsWithCoder<R = void, P0 = unknown>(__staticTableViewEncodeRowsWithCoder: P0): R;
     _setStaticItems<R = void, P0 = unknown>(__setStaticItems: P0): R;
     _staticItems<R = unknown>(): R;
     _nonStaticDataSourceChild_ofItem<R = unknown, P0 = number, P1 = unknown>(__nonStaticDataSourceChild: P0, _ofItem: P1): R;
@@ -153,20 +247,31 @@ declare namespace cocoa {
     _isEditingRowAChildOfRowAtPoint<R = boolean, P0 = CGPoint>(__isEditingRowAChildOfRowAtPoint: P0): R;
     _clickedInExpansionTriangle<R = boolean, P0 = CGPoint>(__clickedInExpansionTriangle: P0): R;
     numberOfRows<R = number>(): R;
+    _numberOfRowsIsValid<R = boolean>(): R;
+    _uncachedNumberOfRows<R = number>(): R;
     _setAllowAnimationsToYes<R = void>(): R;
+    _checkDataSource<R = void>(): R;
     _postItemDidCollapseNotification<R = void, P0 = unknown>(__postItemDidCollapseNotification: P0): R;
     _postItemDidExpandNotification<R = void, P0 = unknown>(__postItemDidExpandNotification: P0): R;
     _postItemWillCollapseNotification<R = void, P0 = unknown>(__postItemWillCollapseNotification: P0): R;
     _postItemWillExpandNotification<R = void, P0 = unknown>(__postItemWillExpandNotification: P0): R;
+    removeTableColumn<R = void, P0 = unknown>(_removeTableColumn: P0): R;
+    addTableColumn<R = void, P0 = unknown>(_addTableColumn: P0): R;
     reloadItem_reloadChildren<R = void, P0 = unknown, P1 = boolean>(_reloadItem: P0, _reloadChildren: P1): R;
     _staticRemoveAllChildrenForItemEntry<R = void, P0 = unknown>(__staticRemoveAllChildrenForItemEntry: P0): R;
     _updateDisclosureButtonAtRow<R = void, P0 = number>(__updateDisclosureButtonAtRow: P0): R;
     reloadItem<R = void, P0 = unknown>(_reloadItem: P0): R;
+    reloadData<R = void>(): R;
     _resizeOutlineColumn<R = void>(): R;
     _calcOutlineColumnWidth<R = void>(): R;
     _originalOutlineColumnWidth<R = number>(): R;
     _adjustSelectionForItemEntry_numberOfRows_adjustFieldEditorIfNecessary<R = void, P0 = unknown, P1 = number, P2 = boolean>(__adjustSelectionForItemEntry: P0, _numberOfRows: P1, _adjustFieldEditorIfNecessary: P2): R;
+    _delegate_dataCellForTableColumn_row<R = unknown, P0 = unknown, P1 = number>(__delegate_dataCellForTableColumn: P0, _row: P1): R;
+    _sendShouldTrackCell_forTableColumn_row<R = boolean, P0 = unknown, P1 = unknown, P2 = number>(__sendShouldTrackCell: P0, _forTableColumn: P1, _row: P2): R;
+    _sendDelegateHeightOfRow<R = number, P0 = number>(__sendDelegateHeightOfRow: P0): R;
     _sourceListGroupRowBottomSpacing<R = number>(): R;
+    _delegateShouldReorderColumn_toColumn<R = boolean, P0 = number, P1 = number>(__delegateShouldReorderColumn: P0, _toColumn: P1): R;
+    _supportsVariableHeightRows<R = boolean>(): R;
     _scrollFieldEditorToVisible<R = void, P0 = unknown>(__scrollFieldEditorToVisible: P0): R;
     _adjustEditedCellLocation<R = void>(): R;
     _endEditingIfEditedCellIsChildOfItemEntry<R = void, P0 = unknown>(__endEditingIfEditedCellIsChildOfItemEntry: P0): R;
@@ -182,6 +287,8 @@ declare namespace cocoa {
     _shouldAnimateExpandCollapse<R = boolean>(): R;
     _setAnimateExpandAndCollapse<R = void, P0 = boolean>(__setAnimateExpandAndCollapse: P0): R;
     _setupAnimationsIfNeeded<R = void>(): R;
+    _reallySwitchToNonViewBasedIfNeeded<R = boolean>(): R;
+    _switchToViewBasedIfNeeded<R = void>(): R;
     _shouldAnimateChanges<R = boolean>(): R;
     expandItem<R = void, P0 = unknown>(_expandItem: P0): R;
     _batchExpandItemsWithItemEntries_expandChildren<R = void, P0 = __CFArray, P1 = boolean>(__batchExpandItemsWithItemEntries: P0, _expandChildren: P1): R;
@@ -200,8 +307,16 @@ declare namespace cocoa {
     _redisplayAfterExpansionChangeFromRow_withOriginalRowCount<R = void, P0 = number, P1 = number>(__redisplayAfterExpansionChangeFromRow: P0, _withOriginalRowCount: P1): R;
     isExpandable<R = boolean, P0 = unknown>(_isExpandable: P0): R;
     _initializeStaticRowViews<R = void>(): R;
+    _shouldEncodeUILayoutDirection<R = boolean>(): R;
+    _finishedTableViewInitWithCoder<R = void>(): R;
     _commonInit<R = void>(): R;
+    _supportsRTL<R = boolean>(): R;
     _disclosureTriangleButtonImageSorceID<R = unknown>(): R;
+    _tableViewColumnDidResizeNotificationName<R = unknown>(): R;
+    _selectionIsChangingNotificationName<R = unknown>(): R;
+    _selectionDidChangeNotificationName<R = unknown>(): R;
+    _didMoveNotificationName<R = unknown>(): R;
+    _accessibilityTableRow<R = unknown, P0 = number>(__accessibilityTableRow: P0): R;
     autosaveExpandedItems<R = boolean>(): R;
     setAutosaveExpandedItems<R = void, P0 = boolean>(_v: P0): R;
     delegate<R = NSOutlineViewDelegate>(): R;
@@ -224,7 +339,7 @@ declare namespace cocoa {
     description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
-    // + NSOutlineView(BCLayerList,Chocolat):
+    // + NSOutlineView(Chocolat): 
     collapseAllItems<R = void>(): R;
     expandAllItems<R = void>(): R;
     restoreSimpleExpandedState<R = void>(): R;
@@ -233,21 +348,21 @@ declare namespace cocoa {
     ms_rowForTitle<R = number, P0 = unknown>(_ms_rowForTitle: P0): R;
     setSimpleExpandedState<R = void, P0 = unknown>(_setSimpleExpandedState: P0): R;
     simpleExpandedState<R = unknown>(): R;
+    // + NSOutlineView(BCLayerList):
     floatingGroupRowView<R = NSTableRowView>(): R;
     floatingGroupRow<R = number>(): R;
   }
-  namespace classes {
-    export interface NSOutlineView<T = any> extends NSTableView, NSAccessibilityOutlineProtocol {
+  namespace NSOutlineView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTableView, NSAccessibilityOutlineProtocol {
       alloc<R = NSOutlineView>(): R;
       new: <R = NSOutlineView>() => R;
       _shouldRequireAutoCollapseOutlineAfterDropsDefault<R = boolean>(): R;
       _shouldAllowAutoCollapseItemsDuringDragsDefault<R = boolean>(): R;
       _shouldAllowAutoExpandItemsDuringDragsDefault<R = boolean>(): R;
       _delayedFreeRowEntryFreeList<R = void>(): R;
-      // + NSOutlineView(BCLayerList,Chocolat):
-      
-    }
+  
+  }
   }
 }
 
-declare const NSOutlineView: cocoa.classes.NSOutlineView;
+declare const NSOutlineView: cocoa.NSOutlineView.CLASS;

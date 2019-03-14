@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSStylePartPreviewButton<T = any> extends MSInspectorButton {
+  export interface MSStylePartPreviewButton<T0 = void, T1 = void, T2 = void> extends MSInspectorButton {
     cxx_destruct<R = void>(): R;
     contentRect<R = CGRect>(): R;
     drawButton<R = void>(): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     stylePart<R = MSStylePart>(): R;
     setStylePart<R = void, P0 = MSStylePart>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSStylePartPreviewButton<T = any> extends MSInspectorButton {
+  namespace MSStylePartPreviewButton {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSInspectorButton {
       alloc<R = MSStylePartPreviewButton>(): R;
       new: <R = MSStylePartPreviewButton>() => R;
     }
   }
 }
 
-declare const MSStylePartPreviewButton: cocoa.classes.MSStylePartPreviewButton;
+declare const MSStylePartPreviewButton: cocoa.MSStylePartPreviewButton.CLASS;

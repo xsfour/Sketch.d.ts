@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXMLAttributeDeclaration<T = any> extends NSXMLDTDNode {
+  export interface NSXMLAttributeDeclaration<T0 = void, T1 = void, T2 = void> extends NSXMLDTDNode {
     enumerations<R = unknown>(): R;
     addEnumeration<R = void, P0 = unknown>(_addEnumeration: P0): R;
     defaultType<R = number>(): R;
@@ -9,12 +9,12 @@ declare namespace cocoa {
     elementName<R = unknown>(): R;
     setElementName<R = void, P0 = unknown>(_setElementName: P0): R;
   }
-  namespace classes {
-    export interface NSXMLAttributeDeclaration<T = any> extends NSXMLDTDNode {
+  namespace NSXMLAttributeDeclaration {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSXMLDTDNode {
       alloc<R = NSXMLAttributeDeclaration>(): R;
       new: <R = NSXMLAttributeDeclaration>() => R;
     }
   }
 }
 
-declare const NSXMLAttributeDeclaration: cocoa.classes.NSXMLAttributeDeclaration;
+declare const NSXMLAttributeDeclaration: cocoa.NSXMLAttributeDeclaration.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPasteboardItem<T = any> extends NSObject, _NSPasteboardPromiseProviderAgencyProtocol, NSPasteboardWritingProtocol, NSPasteboardReadingProtocol {
+  export interface NSPasteboardItem<T0 = void, T1 = void, T2 = void> extends NSObject, _NSPasteboardPromiseProviderAgencyProtocol, NSPasteboardWritingProtocol, NSPasteboardReadingProtocol {
     propertyListForType<R = unknown, P0 = unknown>(_propertyListForType: P0): R;
     stringForType<R = unknown, P0 = unknown>(_stringForType: P0): R;
     dataForType<R = unknown, P0 = unknown>(_dataForType: P0): R;
@@ -21,12 +21,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSPasteboardItem<T = any> extends NSObject, _NSPasteboardPromiseProviderAgencyProtocol, NSPasteboardWritingProtocol, NSPasteboardReadingProtocol {
+  namespace NSPasteboardItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, _NSPasteboardPromiseProviderAgencyProtocol, NSPasteboardWritingProtocol, NSPasteboardReadingProtocol {
       alloc<R = NSPasteboardItem>(): R;
       new: <R = NSPasteboardItem>() => R;
     }
   }
 }
 
-declare const NSPasteboardItem: cocoa.classes.NSPasteboardItem;
+declare const NSPasteboardItem: cocoa.NSPasteboardItem.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLayoutRect<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
+  export interface NSLayoutRect<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
     constraintsContainingWithinLayoutRect<R = unknown, P0 = unknown>(_constraintsContainingWithinLayoutRect: P0): R;
     constraintsEqualToLayoutRect<R = unknown, P0 = unknown>(_constraintsEqualToLayoutRect: P0): R;
     layoutRectBySlicingWithProportion_fromEdge<R = unknown, P0 = number, P1 = number>(_layoutRectBySlicingWithProportion: P0, _fromEdge: P1): R;
@@ -34,8 +34,8 @@ declare namespace cocoa {
     centerYAnchor<R = NSLayoutYAxisAnchor>(): R;
     topAnchor<R = NSLayoutYAxisAnchor>(): R;
   }
-  namespace classes {
-    export interface NSLayoutRect<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
+  namespace NSLayoutRect {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
       alloc<R = NSLayoutRect>(): R;
       new: <R = NSLayoutRect>() => R;
       layoutRectWithCenterLayoutPoint_widthAnchor_heightAnchor<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_layoutRectWithCenterLayoutPoint: P0, _widthAnchor: P1, _heightAnchor: P2): R;
@@ -46,4 +46,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSLayoutRect: cocoa.classes.NSLayoutRect;
+declare const NSLayoutRect: cocoa.NSLayoutRect.CLASS;

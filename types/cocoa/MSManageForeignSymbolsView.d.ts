@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSManageForeignSymbolsView<T = any> extends NSViewController, NSTableViewDataSourceProtocol, NSTabViewDelegateProtocol {
+  export interface MSManageForeignSymbolsView<T0 = void, T1 = void, T2 = void> extends NSViewController, NSTableViewDataSourceProtocol, NSTabViewDelegateProtocol {
     cxx_destruct<R = void>(): R;
     unlinkFromLibrary<R = void, P0 = unknown>(_unlinkFromLibrary: P0): R;
     editInLibrary<R = void, P0 = unknown>(_editInLibrary: P0): R;
@@ -24,12 +24,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSManageForeignSymbolsView<T = any> extends NSViewController, NSTableViewDataSourceProtocol, NSTabViewDelegateProtocol {
+  namespace MSManageForeignSymbolsView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController, NSTableViewDataSourceProtocol, NSTabViewDelegateProtocol {
       alloc<R = MSManageForeignSymbolsView>(): R;
       new: <R = MSManageForeignSymbolsView>() => R;
     }
   }
 }
 
-declare const MSManageForeignSymbolsView: cocoa.classes.MSManageForeignSymbolsView;
+declare const MSManageForeignSymbolsView: cocoa.MSManageForeignSymbolsView.CLASS;

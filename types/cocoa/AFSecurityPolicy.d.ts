@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface AFSecurityPolicy<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
+  export interface AFSecurityPolicy<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
     cxx_destruct<R = void>(): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
@@ -18,8 +18,8 @@ declare namespace cocoa {
     SSLPinningMode<R = number>(): R;
     setSSLPinningMode<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface AFSecurityPolicy<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
+  namespace AFSecurityPolicy {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
       alloc<R = AFSecurityPolicy>(): R;
       new: <R = AFSecurityPolicy>() => R;
       keyPathsForValuesAffectingPinnedPublicKeys<R = unknown>(): R;
@@ -30,4 +30,4 @@ declare namespace cocoa {
   }
 }
 
-declare const AFSecurityPolicy: cocoa.classes.AFSecurityPolicy;
+declare const AFSecurityPolicy: cocoa.AFSecurityPolicy.CLASS;

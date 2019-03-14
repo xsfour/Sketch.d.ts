@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPersistentUIWindowRestoration<T = any> extends NSObject, NSKeyedUnarchiverDelegateProtocol {
+  export interface NSPersistentUIWindowRestoration<T0 = void, T1 = void, T2 = void> extends NSObject, NSKeyedUnarchiverDelegateProtocol {
     dealloc<R = void>(): R;
     unpinRestoredWindowFromTalagentWindow<R = void>(): R;
     pinRestoredWindowToTalagentWindow<R = void>(): R;
@@ -27,8 +27,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSPersistentUIWindowRestoration<T = any> extends NSObject, NSKeyedUnarchiverDelegateProtocol {
+  namespace NSPersistentUIWindowRestoration {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSKeyedUnarchiverDelegateProtocol {
       alloc<R = NSPersistentUIWindowRestoration>(): R;
       new: <R = NSPersistentUIWindowRestoration>() => R;
       bulkDisposeTalagentWindowsIfUnused_withFade<R = void, P0 = unknown, P1 = boolean>(_bulkDisposeTalagentWindowsIfUnused: P0, _withFade: P1): R;
@@ -36,4 +36,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPersistentUIWindowRestoration: cocoa.classes.NSPersistentUIWindowRestoration;
+declare const NSPersistentUIWindowRestoration: cocoa.NSPersistentUIWindowRestoration.CLASS;

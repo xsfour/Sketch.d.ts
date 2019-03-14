@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSIndexSet<T = any> extends NSObject, NSCopyingProtocol, NSMutableCopyingProtocol, NSSecureCodingProtocol {
+  export interface NSIndexSet<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSMutableCopyingProtocol, NSSecureCodingProtocol {
     enumerateRangesInRange_options_usingBlock<R = void, P0 = _NSRange, P1 = number, P2 = CDUnknownBlockType>(_enumerateRangesInRange: P0, _options: P1, _usingBlock: P2): R;
     enumerateRangesWithOptions_usingBlock<R = void, P0 = number, P1 = CDUnknownBlockType>(_enumerateRangesWithOptions: P0, _usingBlock: P1): R;
     enumerateRangesUsingBlock<R = void, P0 = CDUnknownBlockType>(_enumerateRangesUsingBlock: P0): R;
@@ -52,8 +52,8 @@ declare namespace cocoa {
     firstIndex<R = number>(): R;
     count<R = number>(): R;
   }
-  namespace classes {
-    export interface NSIndexSet<T = any> extends NSObject, NSCopyingProtocol, NSMutableCopyingProtocol, NSSecureCodingProtocol {
+  namespace NSIndexSet {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSMutableCopyingProtocol, NSSecureCodingProtocol {
       alloc<R = NSIndexSet>(): R;
       new: <R = NSIndexSet>() => R;
       indexSetWithIndexes_count<R = unknown, P0 = number, P1 = number>(_indexSetWithIndexes: P0, _count: P1): R;
@@ -65,4 +65,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSIndexSet: cocoa.classes.NSIndexSet;
+declare const NSIndexSet: cocoa.NSIndexSet.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBaseBlurInspectorItem<T = any> extends MSStylePartInspectorItem, MSInspectorMathValueAdaptorDelegateProtocol, MSInspectorValueAdaptorDelegateProtocol {
+  export interface MSBaseBlurInspectorItem<T0 = void, T1 = void, T2 = void> extends MSStylePartInspectorItem, MSInspectorMathValueAdaptorDelegateProtocol, MSInspectorValueAdaptorDelegateProtocol {
     popUpMenuIndexFromBlurType<R = number, P0 = number>(_popUpMenuIndexFromBlurType: P0): R;
     blurTypeFromPopUpMenuIndex<R = number, P0 = number>(_blurTypeFromPopUpMenuIndex: P0): R;
     menuNeedsUpdate<R = void, P0 = unknown>(_menuNeedsUpdate: P0): R;
@@ -23,12 +23,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSBaseBlurInspectorItem<T = any> extends MSStylePartInspectorItem, MSInspectorMathValueAdaptorDelegateProtocol, MSInspectorValueAdaptorDelegateProtocol {
+  namespace MSBaseBlurInspectorItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSStylePartInspectorItem, MSInspectorMathValueAdaptorDelegateProtocol, MSInspectorValueAdaptorDelegateProtocol {
       alloc<R = MSBaseBlurInspectorItem>(): R;
       new: <R = MSBaseBlurInspectorItem>() => R;
     }
   }
 }
 
-declare const MSBaseBlurInspectorItem: cocoa.classes.MSBaseBlurInspectorItem;
+declare const MSBaseBlurInspectorItem: cocoa.MSBaseBlurInspectorItem.CLASS;

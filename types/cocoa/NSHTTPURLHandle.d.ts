@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSHTTPURLHandle<T = any> extends NSURLHandle {
+  export interface NSHTTPURLHandle<T0 = void, T1 = void, T2 = void> extends NSURLHandle {
     performStreamRead<R = void>(): R;
     _processHeaders<R = void, P0 = __CFHTTPMessage>(__processHeaders: P0): R;
     reportStreamError<R = void>(): R;
@@ -10,8 +10,8 @@ declare namespace cocoa {
     _URL<R = unknown>(): R;
     _constructRequestForURL_isHead<R = __CFHTTPMessage, P0 = unknown, P1 = boolean>(__constructRequestForURL: P0, _isHead: P1): R;
   }
-  namespace classes {
-    export interface NSHTTPURLHandle<T = any> extends NSURLHandle {
+  namespace NSHTTPURLHandle {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSURLHandle {
       alloc<R = NSHTTPURLHandle>(): R;
       new: <R = NSHTTPURLHandle>() => R;
       canonicalHTTPURLForURL<R = unknown, P0 = unknown>(_canonicalHTTPURLForURL: P0): R;
@@ -19,4 +19,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSHTTPURLHandle: cocoa.classes.NSHTTPURLHandle;
+declare const NSHTTPURLHandle: cocoa.NSHTTPURLHandle.CLASS;

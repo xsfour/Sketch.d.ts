@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMenuImplProtocol<T = any> extends NSObjectProtocol {
+  export interface NSMenuImplProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     _principalMenuRef<R = OpaqueMenuRef>(): R;
     _menuItem_atIndex_didChangeDestructiveFrom_to<R = void, P0 = NSMenuItem, P1 = number, P2 = boolean, P3 = boolean>(__menuItem: P0, _atIndex: P1, _didChangeDestructiveFrom: P2, _to: P3): R;
     _menuItem_atIndex_didChangeAlternateFrom_to<R = void, P0 = NSMenuItem, P1 = number, P2 = boolean, P3 = boolean>(__menuItem: P0, _atIndex: P1, _didChangeAlternateFrom: P2, _to: P3): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     targetedItem<R = NSMenuItem>(): R;
     _presentingView<R = NSView>(): R;
   }
-  namespace classes {
-    export interface NSMenuImplProtocol<T = any> extends NSObjectProtocol {  }
+  namespace NSMenuImplProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

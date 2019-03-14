@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSKeyboardShortcut<T = any> extends NSObject, NSCopyingProtocol {
+  export interface NSKeyboardShortcut<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     hash<R = number>(): R;
     description<R = unknown>(): R;
     dealloc<R = void>(): R;
@@ -15,8 +15,8 @@ declare namespace cocoa {
     localizedKeyEquivalentDisplayName<R = NSString>(): R;
     localizedDisplayName<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSKeyboardShortcut<T = any> extends NSObject, NSCopyingProtocol {
+  namespace NSKeyboardShortcut {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = NSKeyboardShortcut>(): R;
       new: <R = NSKeyboardShortcut>() => R;
       emptyShortcut<R = unknown>(): R;
@@ -26,4 +26,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSKeyboardShortcut: cocoa.classes.NSKeyboardShortcut;
+declare const NSKeyboardShortcut: cocoa.NSKeyboardShortcut.CLASS;

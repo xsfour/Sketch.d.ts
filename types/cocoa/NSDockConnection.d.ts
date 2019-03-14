@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDockConnection<T = any> extends NSObject {
+  export interface NSDockConnection<T0 = void, T1 = void, T2 = void> extends NSObject {
     _processEvent<R = void, P0 = unknown>(__processEvent: P0): R;
     dockPid<R = number>(): R;
     sendMessage_synchronous_replyHandler<R = void, P0 = unknown, P1 = boolean, P2 = CDUnknownBlockType>(_sendMessage: P0, _synchronous: P1, _replyHandler: P2): R;
@@ -15,8 +15,8 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     serviceName<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSDockConnection<T = any> extends NSObject {
+  namespace NSDockConnection {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSDockConnection>(): R;
       new: <R = NSDockConnection>() => R;
       connectionWithServiceName<R = unknown, P0 = unknown>(_connectionWithServiceName: P0): R;
@@ -26,4 +26,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSDockConnection: cocoa.classes.NSDockConnection;
+declare const NSDockConnection: cocoa.NSDockConnection.CLASS;

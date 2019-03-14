@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLayoutConstraintParser<T = any> extends NSObject {
+  export interface NSLayoutConstraintParser<T0 = void, T1 = void, T2 = void> extends NSObject {
     finishConstraint<R = void>(): R;
     findContainerView<R = void>(): R;
     rangeOfName<R = _NSRange>(): R;
@@ -23,8 +23,8 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     initWithFormat_options_metrics_views<R = unknown, P0 = unknown, P1 = number, P2 = unknown, P3 = unknown>(_initWithFormat: P0, _options: P1, _metrics: P2, _views: P3): R;
   }
-  namespace classes {
-    export interface NSLayoutConstraintParser<T = any> extends NSObject {
+  namespace NSLayoutConstraintParser {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSLayoutConstraintParser>(): R;
       new: <R = NSLayoutConstraintParser>() => R;
       constraintsWithVisualFormat_options_metrics_views<R = unknown, P0 = unknown, P1 = number, P2 = unknown, P3 = unknown>(_constraintsWithVisualFormat: P0, _options: P1, _metrics: P2, _views: P3): R;
@@ -32,4 +32,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSLayoutConstraintParser: cocoa.classes.NSLayoutConstraintParser;
+declare const NSLayoutConstraintParser: cocoa.NSLayoutConstraintParser.CLASS;

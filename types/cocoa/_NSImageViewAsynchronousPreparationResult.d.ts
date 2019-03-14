@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSImageViewAsynchronousPreparationResult<T = any> extends NSObject {
+  export interface _NSImageViewAsynchronousPreparationResult<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     imageSize<R = CGSize>(): R;
     setImageSize<R = void, P0 = CGSize>(_v: P0): R;
@@ -14,8 +14,8 @@ declare namespace cocoa {
     CGImage<R = CGImage>(): R;
     setCGImage<R = void, P0 = CGImage>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSImageViewAsynchronousPreparationResult<T = any> extends NSObject {
+  namespace _NSImageViewAsynchronousPreparationResult {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSImageViewAsynchronousPreparationResult>(): R;
       new: <R = _NSImageViewAsynchronousPreparationResult>() => R;
     }

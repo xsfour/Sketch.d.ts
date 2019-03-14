@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCGSWindow<T = any> extends NSObject {
+  export interface NSCGSWindow<T0 = void, T1 = void, T2 = void> extends NSObject {
     invalidateAlphaShape<R = void>(): R;
     _prepareForRelativeMoveForWindow<R = void, P0 = unknown>(__prepareForRelativeMoveForWindow: P0): R;
     _hasUncommittedSpaceGeometryChanges<R = boolean>(): R;
@@ -99,8 +99,8 @@ declare namespace cocoa {
     setUseActiveShadow<R = void, P0 = boolean>(_v: P0): R;
     windowID<R = number>(): R;
   }
-  namespace classes {
-    export interface NSCGSWindow<T = any> extends NSObject {
+  namespace NSCGSWindow {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSCGSWindow>(): R;
       new: <R = NSCGSWindow>() => R;
       isAnyWindowOnAVisibleSpace<R = boolean, P0 = unknown>(_isAnyWindowOnAVisibleSpace: P0): R;
@@ -127,4 +127,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSCGSWindow: cocoa.classes.NSCGSWindow;
+declare const NSCGSWindow: cocoa.NSCGSWindow.CLASS;

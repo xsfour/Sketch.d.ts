@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSApplicationMetadata<T = any> extends NSObject {}
-  namespace classes {
-    export interface MSApplicationMetadata<T = any> extends NSObject {
+  export interface MSApplicationMetadata<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace MSApplicationMetadata {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSApplicationMetadata>(): R;
       new: <R = MSApplicationMetadata>() => R;
       applicationKeys<R = unknown>(): R;
@@ -12,4 +12,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSApplicationMetadata: cocoa.classes.MSApplicationMetadata;
+declare const MSApplicationMetadata: cocoa.MSApplicationMetadata.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSMakeGridSheet<T = any> extends CHSheetController {
+  export interface MSMakeGridSheet<T0 = void, T1 = void, T2 = void> extends CHSheetController {
     defaultBoxSize<R = CGSize>(): R;
     layerCount<R = number>(): R;
     layersHaveSameSize<R = boolean>(): R;
@@ -32,12 +32,12 @@ declare namespace cocoa {
     doc<R = MSDocument>(): R;
     setDoc<R = void, P0 = MSDocument>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSMakeGridSheet<T = any> extends CHSheetController {
+  namespace MSMakeGridSheet {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends CHSheetController {
       alloc<R = MSMakeGridSheet>(): R;
       new: <R = MSMakeGridSheet>() => R;
     }
   }
 }
 
-declare const MSMakeGridSheet: cocoa.classes.MSMakeGridSheet;
+declare const MSMakeGridSheet: cocoa.MSMakeGridSheet.CLASS;

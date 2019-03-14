@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTextViewDelegateProtocol<T = any> {
+  export interface NSTextViewDelegateProtocol<T0 = void, T1 = void, T2 = void> {
     textView_draggedCell_inRect_event<R = void, P0 = NSTextView, P1 = NSTextAttachmentCell, P2 = CGRect, P3 = NSEvent>(_textView: P0, _draggedCell: P1, _inRect: P2, _event: P3): R;
     textView_doubleClickedOnCell_inRect<R = void, P0 = NSTextView, P1 = NSTextAttachmentCell, P2 = CGRect>(_textView: P0, _doubleClickedOnCell: P1, _inRect: P2): R;
     textView_clickedOnCell_inRect<R = void, P0 = NSTextView, P1 = NSTextAttachmentCell, P2 = CGRect>(_textView: P0, _clickedOnCell: P1, _inRect: P2): R;
@@ -34,7 +34,7 @@ declare namespace cocoa {
     textView_clickedOnCell_inRect_atIndex<R = void, P0 = NSTextView, P1 = NSTextAttachmentCell, P2 = CGRect, P3 = number>(_textView: P0, _clickedOnCell: P1, _inRect: P2, _atIndex: P3): R;
     textView_clickedOnLink_atIndex<R = boolean, P0 = NSTextView, P1 = unknown, P2 = number>(_textView: P0, _clickedOnLink: P1, _atIndex: P2): R;
   }
-  namespace classes {
-    export interface NSTextViewDelegateProtocol<T = any> {  }
+  namespace NSTextViewDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableRowAndCellTracker<T = any> extends NSObject {
+  export interface NSTableRowAndCellTracker<T0 = void, T1 = void, T2 = void> extends NSObject {
     removeAll<R = void>(): R;
     unregisterCellsOfRowIndexes_columnIndexes<R = void, P0 = unknown, P1 = unknown>(_unregisterCellsOfRowIndexes: P0, _columnIndexes: P1): R;
     shiftIndex_shiftAmount_isDeleteForMove<R = void, P0 = number, P1 = number, P2 = boolean>(_shiftIndex: P0, _shiftAmount: P1, _isDeleteForMove: P2): R;
@@ -17,12 +17,12 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     initWithTableView<R = unknown, P0 = unknown>(_initWithTableView: P0): R;
   }
-  namespace classes {
-    export interface NSTableRowAndCellTracker<T = any> extends NSObject {
+  namespace NSTableRowAndCellTracker {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSTableRowAndCellTracker>(): R;
       new: <R = NSTableRowAndCellTracker>() => R;
     }
   }
 }
 
-declare const NSTableRowAndCellTracker: cocoa.classes.NSTableRowAndCellTracker;
+declare const NSTableRowAndCellTracker: cocoa.NSTableRowAndCellTracker.CLASS;

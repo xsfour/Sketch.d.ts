@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXPCSpellServerProtocol<T = any> {
+  export interface NSXPCSpellServerProtocol<T0 = void, T1 = void, T2 = void> {
     _xpc_invalidateDictionary_newTime<R = void, P0 = NSString, P1 = number>(__xpc_invalidateDictionary: P0, _newTime: P1): R;
     _xpc_setWords_inDictionary<R = void, P0 = NSArray, P1 = NSString>(__xpc_setWords: P0, _inDictionary: P1): R;
     _xpc_wordsInDictionary_completionHandler<R = void, P0 = NSString, P1 = CDUnknownBlockType>(__xpc_wordsInDictionary: P0, _completionHandler: P1): R;
@@ -31,7 +31,7 @@ declare namespace cocoa {
     _xpc_checkGrammarInString_language_completionHandler<R = void, P0 = NSString, P1 = NSString, P2 = CDUnknownBlockType>(__xpc_checkGrammarInString: P0, _language: P1, _completionHandler: P2): R;
     _xpc_findMisspelledWordInString_language_learnedDictionaries_countOnly_completionHandler<R = void, P0 = NSString, P1 = NSString, P2 = NSArray, P3 = boolean, P4 = CDUnknownBlockType>(__xpc_findMisspelledWordInString: P0, _language: P1, _learnedDictionaries: P2, _countOnly: P3, _completionHandler: P4): R;
   }
-  namespace classes {
-    export interface NSXPCSpellServerProtocol<T = any> {  }
+  namespace NSXPCSpellServerProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

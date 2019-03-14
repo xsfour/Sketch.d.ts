@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSRegion<T = any> extends NSObject {
+  export interface NSRegion<T0 = void, T1 = void, T2 = void> extends NSObject {
     stroke<R = void>(): R;
     fill<R = void>(): R;
     addClip<R = void>(): R;
@@ -37,12 +37,12 @@ declare namespace cocoa {
     initWithRect<R = unknown, P0 = CGRect>(_initWithRect: P0): R;
     description<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSRegion<T = any> extends NSObject {
+  namespace NSRegion {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSRegion>(): R;
       new: <R = NSRegion>() => R;
     }
   }
 }
 
-declare const NSRegion: cocoa.classes.NSRegion;
+declare const NSRegion: cocoa.NSRegion.CLASS;

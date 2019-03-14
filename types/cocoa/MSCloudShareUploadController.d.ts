@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSCloudShareUploadController<T = any> extends NSObject, SCKShareUploadDataSourceProtocol {
+  export interface MSCloudShareUploadController<T0 = void, T1 = void, T2 = void> extends NSObject, SCKShareUploadDataSourceProtocol {
     cxx_destruct<R = void>(): R;
     observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
     cancel<R = void>(): R;
@@ -37,8 +37,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSCloudShareUploadController<T = any> extends NSObject, SCKShareUploadDataSourceProtocol {
+  namespace MSCloudShareUploadController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, SCKShareUploadDataSourceProtocol {
       alloc<R = MSCloudShareUploadController>(): R;
       new: <R = MSCloudShareUploadController>() => R;
       operationQueue<R = unknown>(): R;
@@ -46,4 +46,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSCloudShareUploadController: cocoa.classes.MSCloudShareUploadController;
+declare const MSCloudShareUploadController: cocoa.MSCloudShareUploadController.CLASS;

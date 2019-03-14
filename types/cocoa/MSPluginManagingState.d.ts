@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPluginManagingState<T = any> extends NSObject {
+  export interface MSPluginManagingState<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     removeIncompatibilityRegistrations<R = void>(): R;
     removeDisableOverrides<R = void>(): R;
@@ -22,8 +22,8 @@ declare namespace cocoa {
     setMetadata<R = void, P0 = NSDictionary>(_v: P0): R;
     metadataURL<R = NSURL>(): R;
   }
-  namespace classes {
-    export interface MSPluginManagingState<T = any> extends NSObject {
+  namespace MSPluginManagingState {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSPluginManagingState>(): R;
       new: <R = MSPluginManagingState>() => R;
       incompatiblePlugins<R = unknown>(): R;
@@ -32,4 +32,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSPluginManagingState: cocoa.classes.MSPluginManagingState;
+declare const MSPluginManagingState: cocoa.MSPluginManagingState.CLASS;

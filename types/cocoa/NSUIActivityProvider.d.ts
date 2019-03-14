@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUIActivityProvider<T = any> {}
-  namespace classes {
-    export interface NSUIActivityProvider<T = any> {  }
+  export interface NSUIActivityProvider<T0 = void, T1 = void, T2 = void> {}
+  namespace NSUIActivityProvider {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSUIActivityProvider: cocoa.classes.NSUIActivityProvider;
+declare const NSUIActivityProvider: cocoa.NSUIActivityProvider.CLASS;

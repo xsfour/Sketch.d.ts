@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSExportRequest<T = any> extends NSObject, NSCopyingProtocol {
+  export interface MSExportRequest<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     cxx_destruct<R = void>(): R;
     objectIDsForSelfAncestorsAndChildrenOfAncestry<R = unknown, P0 = unknown>(_objectIDsForSelfAncestorsAndChildrenOfAncestry: P0): R;
     configureForLayerAncestry_layerOptions_includedIDs<R = void, P0 = unknown, P1 = number, P2 = unknown>(_configureForLayerAncestry: P0, _layerOptions: P1, _includedIDs: P2): R;
@@ -40,8 +40,8 @@ declare namespace cocoa {
     setRect<R = void, P0 = CGRect>(_v: P0): R;
     pasteboardType<R = NSString>(): R;
   }
-  namespace classes {
-    export interface MSExportRequest<T = any> extends NSObject, NSCopyingProtocol {
+  namespace MSExportRequest {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = MSExportRequest>(): R;
       new: <R = MSExportRequest>() => R;
       exportRequestFromLayerAncestry_exportFormat_inRect<R = unknown, P0 = unknown, P1 = unknown, P2 = CGRect>(_exportRequestFromLayerAncestry: P0, _exportFormat: P1, _inRect: P2): R;
@@ -59,4 +59,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSExportRequest: cocoa.classes.MSExportRequest;
+declare const MSExportRequest: cocoa.MSExportRequest.CLASS;

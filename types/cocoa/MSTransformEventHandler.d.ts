@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSTransformEventHandler<T = any> extends MSPointsEventHandler {
+  export interface MSTransformEventHandler<T0 = void, T1 = void, T2 = void> extends MSPointsEventHandler {
     coordinateSpace<R = unknown>(): R;
     resetTransformsForLayer<R = void, P0 = unknown>(_resetTransformsForLayer: P0): R;
     transformLayers<R = void>(): R;
@@ -29,12 +29,12 @@ declare namespace cocoa {
     originalRect<R = CGRect>(): R;
     setOriginalRect<R = void, P0 = CGRect>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSTransformEventHandler<T = any> extends MSPointsEventHandler {
+  namespace MSTransformEventHandler {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSPointsEventHandler {
       alloc<R = MSTransformEventHandler>(): R;
       new: <R = MSTransformEventHandler>() => R;
     }
   }
 }
 
-declare const MSTransformEventHandler: cocoa.classes.MSTransformEventHandler;
+declare const MSTransformEventHandler: cocoa.MSTransformEventHandler.CLASS;

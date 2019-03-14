@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSComboBox<T = any> extends NSTextField {
+  export interface NSComboBox<T0 = void, T1 = void, T2 = void> extends NSTextField {
     indexOfItemWithObjectValue<R = number, P0 = unknown>(_indexOfItemWithObjectValue: P0): R;
     itemObjectValueAtIndex<R = unknown, P0 = number>(_itemObjectValueAtIndex: P0): R;
     selectItemWithObjectValue<R = void, P0 = unknown>(_selectItemWithObjectValue: P0): R;
@@ -48,12 +48,12 @@ declare namespace cocoa {
     hasVerticalScroller<R = boolean>(): R;
     setHasVerticalScroller<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSComboBox<T = any> extends NSTextField {
+  namespace NSComboBox {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTextField {
       alloc<R = NSComboBox>(): R;
       new: <R = NSComboBox>() => R;
     }
   }
 }
 
-declare const NSComboBox: cocoa.classes.NSComboBox;
+declare const NSComboBox: cocoa.NSComboBox.CLASS;

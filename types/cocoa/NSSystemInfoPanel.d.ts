@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSystemInfoPanel<T = any> extends NSObject, NSTextViewDelegateProtocol {
+  export interface NSSystemInfoPanel<T0 = void, T1 = void, T2 = void> extends NSObject, NSTextViewDelegateProtocol {
     windowWillClose<R = void, P0 = unknown>(_windowWillClose: P0): R;
     sizeCopyrightView<R = void>(): R;
     sizeCreditsView<R = void>(): R;
@@ -42,8 +42,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSSystemInfoPanel<T = any> extends NSObject, NSTextViewDelegateProtocol {
+  namespace NSSystemInfoPanel {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSTextViewDelegateProtocol {
       alloc<R = NSSystemInfoPanel>(): R;
       new: <R = NSSystemInfoPanel>() => R;
       updateOptionsWithVersion<R = void, P0 = unknown>(_updateOptionsWithVersion: P0): R;
@@ -58,4 +58,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSSystemInfoPanel: cocoa.classes.NSSystemInfoPanel;
+declare const NSSystemInfoPanel: cocoa.NSSystemInfoPanel.CLASS;

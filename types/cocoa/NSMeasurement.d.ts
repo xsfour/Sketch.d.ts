@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMeasurement<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  export interface NSMeasurement<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     description<R = unknown>(): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     doubleValue<R = number>(): R;
     unit<R = NSUnit>(): R;
   }
-  namespace classes {
-    export interface NSMeasurement<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  namespace NSMeasurement {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
       alloc<R = NSMeasurement>(): R;
       new: <R = NSMeasurement>() => R;
     }
   }
 }
 
-declare const NSMeasurement: cocoa.classes.NSMeasurement;
+declare const NSMeasurement: cocoa.NSMeasurement.CLASS;

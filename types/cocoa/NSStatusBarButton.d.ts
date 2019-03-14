@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSStatusBarButton<T = any> extends NSButton {
+  export interface NSStatusBarButton<T0 = void, T1 = void, T2 = void> extends NSButton {
     setDoubleAction<R = void, P0 = string>(_setDoubleAction: P0): R;
     doubleAction<R = string>(): R;
     selectionInset<R = NSEdgeInsets>(): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     appearsDisabled<R = boolean>(): R;
     setAppearsDisabled<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSStatusBarButton<T = any> extends NSButton {
+  namespace NSStatusBarButton {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSButton {
       alloc<R = NSStatusBarButton>(): R;
       new: <R = NSStatusBarButton>() => R;
     }
   }
 }
 
-declare const NSStatusBarButton: cocoa.classes.NSStatusBarButton;
+declare const NSStatusBarButton: cocoa.NSStatusBarButton.CLASS;

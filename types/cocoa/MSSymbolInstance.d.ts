@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSymbolInstance<T = any> extends _MSSymbolInstance {
+  export interface MSSymbolInstance<T0 = void, T1 = void, T2 = void> extends _MSSymbolInstance {
     invalidateIfAffectedBySymbolMastersIn<R = boolean, P0 = unknown>(_invalidateIfAffectedBySymbolMastersIn: P0): R;
     removeShareableObjectsFromOverrides<R = void, P0 = unknown>(_removeShareableObjectsFromOverrides: P0): R;
     setValue_forOverridePoint<R = void, P0 = unknown, P1 = unknown>(_setValue: P0, _forOverridePoint: P1): R;
@@ -44,12 +44,12 @@ declare namespace cocoa {
     availableOverrides<R = NSArray>(): R;
     overridePoints<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface MSSymbolInstance<T = any> extends _MSSymbolInstance {
+  namespace MSSymbolInstance {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSSymbolInstance {
       alloc<R = MSSymbolInstance>(): R;
       new: <R = MSSymbolInstance>() => R;
     }
   }
 }
 
-declare const MSSymbolInstance: cocoa.classes.MSSymbolInstance;
+declare const MSSymbolInstance: cocoa.MSSymbolInstance.CLASS;

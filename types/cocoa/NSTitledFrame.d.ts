@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTitledFrame<T = any> extends NSFrameView {
+  export interface NSTitledFrame<T0 = void, T1 = void, T2 = void> extends NSFrameView {
     _minYBorderRect<R = CGRect>(): R;
     _maxYBorderRect<R = CGRect>(): R;
     _maxXBorderRect<R = CGRect>(): R;
@@ -69,8 +69,8 @@ declare namespace cocoa {
     propagateFrameDirtyRects<R = void, P0 = CGRect>(_propagateFrameDirtyRects: P0): R;
     isOpaque<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSTitledFrame<T = any> extends NSFrameView {
+  namespace NSTitledFrame {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSFrameView {
       alloc<R = NSTitledFrame>(): R;
       new: <R = NSTitledFrame>() => R;
       _titleCellSizeForTitle_styleMask<R = CGSize, P0 = unknown, P1 = number>(__titleCellSizeForTitle: P0, _styleMask: P1): R;
@@ -79,4 +79,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTitledFrame: cocoa.classes.NSTitledFrame;
+declare const NSTitledFrame: cocoa.NSTitledFrame.CLASS;

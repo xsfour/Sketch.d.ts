@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSTrailingLayersMover<T = any> extends NSObject {}
-  namespace classes {
-    export interface MSTrailingLayersMover<T = any> extends NSObject {
+  export interface MSTrailingLayersMover<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace MSTrailingLayersMover {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSTrailingLayersMover>(): R;
       new: <R = MSTrailingLayersMover>() => R;
       sortIncomingLayersByDirection<R = unknown, P0 = unknown>(_sortIncomingLayersByDirection: P0): R;
@@ -18,4 +18,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSTrailingLayersMover: cocoa.classes.MSTrailingLayersMover;
+declare const MSTrailingLayersMover: cocoa.MSTrailingLayersMover.CLASS;

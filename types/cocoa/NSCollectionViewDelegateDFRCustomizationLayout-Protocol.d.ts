@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCollectionViewDelegateDFRCustomizationLayoutProtocol<T = any> extends NSCollectionViewDelegateProtocol {
+  export interface NSCollectionViewDelegateDFRCustomizationLayoutProtocol<T0 = void, T1 = void, T2 = void> extends NSCollectionViewDelegateProtocol {
     controlStripGrabberStateInCollectionView_layout<R = number, P0 = NSCollectionView, P1 = NSTouchBarCustomizationPreviewLayout>(_controlStripGrabberStateInCollectionView: P0, _layout: P1): R;
     shouldShowDoneInCollectionView_layout<R = boolean, P0 = NSCollectionView, P1 = NSTouchBarCustomizationPreviewLayout>(_shouldShowDoneInCollectionView: P0, _layout: P1): R;
     deleteIconDisplayModeInCollectionView_layout<R = number, P0 = NSCollectionView, P1 = NSTouchBarCustomizationPreviewLayout>(_deleteIconDisplayModeInCollectionView: P0, _layout: P1): R;
@@ -13,7 +13,7 @@ declare namespace cocoa {
     collectionView_layout_containmentFrameForSection<R = CGRect, P0 = NSCollectionView, P1 = NSTouchBarCustomizationPreviewLayout, P2 = number>(_collectionView: P0, _layout: P1, _containmentFrameForSection: P2): R;
     collectionView_layout_sectionLayoutForSection<R = NSTouchBarCustomizationPreviewSectionLayout, P0 = NSCollectionView, P1 = NSTouchBarCustomizationPreviewLayout, P2 = number>(_collectionView: P0, _layout: P1, _sectionLayoutForSection: P2): R;
   }
-  namespace classes {
-    export interface NSCollectionViewDelegateDFRCustomizationLayoutProtocol<T = any> extends NSCollectionViewDelegateProtocol {  }
+  namespace NSCollectionViewDelegateDFRCustomizationLayoutProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSCollectionViewDelegateProtocol {}
   }
 }

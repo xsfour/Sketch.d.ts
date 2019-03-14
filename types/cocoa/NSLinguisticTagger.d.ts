@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLinguisticTagger<T = any> extends NSObject {
+  export interface NSLinguisticTagger<T0 = void, T1 = void, T2 = void> extends NSObject {
     enumerateTagsInRange_scheme_options_usingBlock<R = void, P0 = _NSRange, P1 = unknown, P2 = number, P3 = CDUnknownBlockType>(_enumerateTagsInRange: P0, _scheme: P1, _options: P2, _usingBlock: P3): R;
     _enumerateTagsInRange_scheme_options_usingBlock<R = void, P0 = _NSRange, P1 = unknown, P2 = number, P3 = CDUnknownBlockType>(__enumerateTagsInRange: P0, _scheme: P1, _options: P2, _usingBlock: P3): R;
     _tokenDataForParagraphAtIndex_paragraphRange_tagScheme<R = unknown, P0 = number, P1 = _NSRange, P2 = unknown>(__tokenDataForParagraphAtIndex: P0, _paragraphRange: P1, _tagScheme: P2): R;
@@ -39,8 +39,8 @@ declare namespace cocoa {
     setString<R = void, P0 = NSString>(_v: P0): R;
     tagSchemes<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface NSLinguisticTagger<T = any> extends NSObject {
+  namespace NSLinguisticTagger {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSLinguisticTagger>(): R;
       new: <R = NSLinguisticTagger>() => R;
       dominantLanguageForString<R = unknown, P0 = unknown>(_dominantLanguageForString: P0): R;
@@ -54,4 +54,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSLinguisticTagger: cocoa.classes.NSLinguisticTagger;
+declare const NSLinguisticTagger: cocoa.NSLinguisticTagger.CLASS;

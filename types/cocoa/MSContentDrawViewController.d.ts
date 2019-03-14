@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSContentDrawViewController<T = any> extends NSViewController, MSContentDrawViewDelegateProtocol {
+  export interface MSContentDrawViewController<T0 = void, T1 = void, T2 = void> extends NSViewController, MSContentDrawViewDelegateProtocol {
     cxx_destruct<R = void>(): R;
     prepareForDealloc<R = void>(): R;
     changeToPage<R = void, P0 = unknown>(_changeToPage: P0): R;
@@ -34,12 +34,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSContentDrawViewController<T = any> extends NSViewController, MSContentDrawViewDelegateProtocol {
+  namespace MSContentDrawViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController, MSContentDrawViewDelegateProtocol {
       alloc<R = MSContentDrawViewController>(): R;
       new: <R = MSContentDrawViewController>() => R;
     }
   }
 }
 
-declare const MSContentDrawViewController: cocoa.classes.MSContentDrawViewController;
+declare const MSContentDrawViewController: cocoa.MSContentDrawViewController.CLASS;

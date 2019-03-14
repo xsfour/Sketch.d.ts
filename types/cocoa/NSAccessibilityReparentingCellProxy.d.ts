@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAccessibilityReparentingCellProxy<T = any> extends NSAccessibilityReparentingProxy {
+  export interface NSAccessibilityReparentingCellProxy<T0 = void, T1 = void, T2 = void> extends NSAccessibilityReparentingProxy {
     accessibilityFrame<R = CGRect>(): R;
     accessibilitySizeAttribute<R = unknown>(): R;
     accessibilityPositionAttribute<R = unknown>(): R;
@@ -17,12 +17,12 @@ declare namespace cocoa {
     accessibilityVisibleCharacterRangeAttribute<R = unknown>(): R;
     hasEditor<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSAccessibilityReparentingCellProxy<T = any> extends NSAccessibilityReparentingProxy {
+  namespace NSAccessibilityReparentingCellProxy {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSAccessibilityReparentingProxy {
       alloc<R = NSAccessibilityReparentingCellProxy>(): R;
       new: <R = NSAccessibilityReparentingCellProxy>() => R;
     }
   }
 }
 
-declare const NSAccessibilityReparentingCellProxy: cocoa.classes.NSAccessibilityReparentingCellProxy;
+declare const NSAccessibilityReparentingCellProxy: cocoa.NSAccessibilityReparentingCellProxy.CLASS;

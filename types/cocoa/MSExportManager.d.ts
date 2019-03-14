@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSExportManager<T = any> extends NSObject {
+  export interface MSExportManager<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     savePanelWithDefaultFilename<R = unknown, P0 = unknown>(_savePanelWithDefaultFilename: P0): R;
     showSavePanelToExportIndividualSlice<R = void, P0 = unknown>(_showSavePanelToExportIndividualSlice: P0): R;
@@ -23,12 +23,12 @@ declare namespace cocoa {
     setSliceCompletionBlock<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
     colorSpace<R = NSColorSpace>(): R;
   }
-  namespace classes {
-    export interface MSExportManager<T = any> extends NSObject {
+  namespace MSExportManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSExportManager>(): R;
       new: <R = MSExportManager>() => R;
     }
   }
 }
 
-declare const MSExportManager: cocoa.classes.MSExportManager;
+declare const MSExportManager: cocoa.MSExportManager.CLASS;

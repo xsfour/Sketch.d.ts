@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTextTouchBarItemController<T = any> extends NSObject {
+  export interface NSTextTouchBarItemController<T0 = void, T1 = void, T2 = void> extends NSObject {
     _showTextListPanel<R = void, P0 = unknown>(__showTextListPanel: P0): R;
     _changeTextList<R = void, P0 = unknown>(__changeTextList: P0): R;
     _changeTextAlignment<R = void, P0 = unknown>(__changeTextAlignment: P0): R;
@@ -36,8 +36,8 @@ declare namespace cocoa {
     textStyleItem<R = NSCustomTouchBarItem>(): R;
     colorPickerItem<R = NSColorPickerTouchBarItem>(): R;
   }
-  namespace classes {
-    export interface NSTextTouchBarItemController<T = any> extends NSObject {
+  namespace NSTextTouchBarItemController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSTextTouchBarItemController>(): R;
       new: <R = NSTextTouchBarItemController>() => R;
       nibForItems<R = unknown>(): R;
@@ -45,4 +45,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTextTouchBarItemController: cocoa.classes.NSTextTouchBarItemController;
+declare const NSTextTouchBarItemController: cocoa.NSTextTouchBarItemController.CLASS;

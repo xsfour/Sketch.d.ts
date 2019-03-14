@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDataPreferencePane<T = any> extends MSPreferencePane, MSDropableViewDelegateProtocol, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol, NSTextFieldDelegateProtocol {
+  export interface MSDataPreferencePane<T0 = void, T1 = void, T2 = void> extends MSPreferencePane, MSDropableViewDelegateProtocol, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol, NSTextFieldDelegateProtocol {
     setSelectedIndexesFromSelectionIdentifierArray<R = void>(): R;
     setSelectionIdentifierArrayFromSelectionIndexes<R = void>(): R;
     selectionDidChange<R = void>(): R;
@@ -58,12 +58,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSDataPreferencePane<T = any> extends MSPreferencePane, MSDropableViewDelegateProtocol, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol, NSTextFieldDelegateProtocol {
+  namespace MSDataPreferencePane {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSPreferencePane, MSDropableViewDelegateProtocol, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol, NSTextFieldDelegateProtocol {
       alloc<R = MSDataPreferencePane>(): R;
       new: <R = MSDataPreferencePane>() => R;
     }
   }
 }
 
-declare const MSDataPreferencePane: cocoa.classes.MSDataPreferencePane;
+declare const MSDataPreferencePane: cocoa.MSDataPreferencePane.CLASS;

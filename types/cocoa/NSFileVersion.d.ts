@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFileVersion<T = any> extends NSObject {
+  export interface NSFileVersion<T0 = void, T1 = void, T2 = void> extends NSObject {
     removeAndReturnError<R = boolean, P0 = unknown>(_removeAndReturnError: P0): R;
     replaceItemAtURL_options_error<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_replaceItemAtURL: P0, _options: P1, _error: P2): R;
     description<R = unknown>(): R;
@@ -34,17 +34,19 @@ declare namespace cocoa {
     originalPOSIXName<R = NSString>(): R;
     URL<R = NSURL>(): R;
     _isBackup<R = boolean>(): R;
-    // + NSFileVersion(BUStarfieldTimelineSupport,NSDocumentInternal,NSExtensions):
+    // + NSFileVersion(BUStarfieldTimelineSupport): 
     timelineItemType<R = number>(): R;
     timelineItemDate<R = unknown>(): R;
+    // + NSFileVersion(NSDocumentInternal): 
     _compareToVersion<R = number, P0 = unknown>(__compareToVersion: P0): R;
+    // + NSFileVersion(BUStarfieldTimelineSupport):
     debugDescription<R = NSString>(): R;
     description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSFileVersion<T = any> extends NSObject {
+  namespace NSFileVersion {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSFileVersion>(): R;
       new: <R = NSFileVersion>() => R;
       removeOtherVersionsOfItemAtURL_error<R = boolean, P0 = unknown, P1 = unknown>(_removeOtherVersionsOfItemAtURL: P0, _error: P1): R;
@@ -83,11 +85,11 @@ declare namespace cocoa {
       _conflictsExistForItemAtURL<R = boolean, P0 = unknown>(__conflictsExistForItemAtURL: P0): R;
       unresolvedConflictsExistForItemAtURL<R = boolean, P0 = unknown>(_unresolvedConflictsExistForItemAtURL: P0): R;
       versionsOfItemAtURL<R = unknown, P0 = unknown>(_versionsOfItemAtURL: P0): R;
-      // + NSFileVersion(BUStarfieldTimelineSupport,NSDocumentInternal,NSExtensions):
+      // + NSFileVersion(NSExtensions): 
       _finishedWithBackupCollection<R = void, P0 = void>(__finishedWithBackupCollection: P0): R;
       _getBackupVersionsForURL_queue_completionHandler<R = void, P0 = unknown, P1 = unknown, P2 = CDUnknownBlockType>(__getBackupVersionsForURL: P0, _queue: P1, _completionHandler: P2): R;
     }
   }
 }
 
-declare const NSFileVersion: cocoa.classes.NSFileVersion;
+declare const NSFileVersion: cocoa.NSFileVersion.CLASS;

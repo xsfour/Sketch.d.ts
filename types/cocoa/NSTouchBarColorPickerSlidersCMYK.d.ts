@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarColorPickerSlidersCMYK<T = any> extends NSTouchBarColorPickerSliders {
+  export interface NSTouchBarColorPickerSlidersCMYK<T0 = void, T1 = void, T2 = void> extends NSTouchBarColorPickerSliders {
     _alphaArtworkProvider<R = NSTouchBarColorPickerSliderArtworkProvider>(): R;
     _blackArtworkProvider<R = NSTouchBarColorPickerSliderCMYKArtworkProvider>(): R;
     _yellowArtworkProvider<R = NSTouchBarColorPickerSliderCMYKArtworkProvider>(): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     _displayedMagentaComponent<R = number>(): R;
     _displayedCyanComponent<R = number>(): R;
   }
-  namespace classes {
-    export interface NSTouchBarColorPickerSlidersCMYK<T = any> extends NSTouchBarColorPickerSliders {
+  namespace NSTouchBarColorPickerSlidersCMYK {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTouchBarColorPickerSliders {
       alloc<R = NSTouchBarColorPickerSlidersCMYK>(): R;
       new: <R = NSTouchBarColorPickerSlidersCMYK>() => R;
     }
   }
 }
 
-declare const NSTouchBarColorPickerSlidersCMYK: cocoa.classes.NSTouchBarColorPickerSlidersCMYK;
+declare const NSTouchBarColorPickerSlidersCMYK: cocoa.NSTouchBarColorPickerSlidersCMYK.CLASS;

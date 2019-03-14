@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSBoxOldStyleBorderView<T = any> extends NSView {
+  export interface _NSBoxOldStyleBorderView<T0 = void, T1 = void, T2 = void> extends NSView {
     _isOneSidedGrooveBorder<R = boolean>(): R;
     wantsUpdateLayer<R = boolean>(): R;
     shouldDrawFill<R = boolean>(): R;
@@ -11,8 +11,8 @@ declare namespace cocoa {
     borderType<R = number>(): R;
     setBorderType<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSBoxOldStyleBorderView<T = any> extends NSView {
+  namespace _NSBoxOldStyleBorderView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = _NSBoxOldStyleBorderView>(): R;
       new: <R = _NSBoxOldStyleBorderView>() => R;
     }

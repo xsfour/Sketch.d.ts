@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSZipFileArchive<T = any> extends NSObject {
+  export interface NSZipFileArchive<T0 = void, T1 = void, T2 = void> extends NSObject {
     isValid<R = boolean>(): R;
     invalidate<R = void>(): R;
     writeToFile_options_error<R = boolean, P0 = unknown, P1 = number, P2 = unknown>(_writeToFile: P0, _options: P1, _error: P2): R;
@@ -18,12 +18,12 @@ declare namespace cocoa {
     initWithData_options_error<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_initWithData: P0, _options: P1, _error: P2): R;
     initWithPath_options_error<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_initWithPath: P0, _options: P1, _error: P2): R;
   }
-  namespace classes {
-    export interface NSZipFileArchive<T = any> extends NSObject {
+  namespace NSZipFileArchive {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSZipFileArchive>(): R;
       new: <R = NSZipFileArchive>() => R;
     }
   }
 }
 
-declare const NSZipFileArchive: cocoa.classes.NSZipFileArchive;
+declare const NSZipFileArchive: cocoa.NSZipFileArchive.CLASS;

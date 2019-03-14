@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSubTextStorage<T = any> extends NSTextStorage {
+  export interface NSSubTextStorage<T0 = void, T1 = void, T2 = void> extends NSTextStorage {
     allowsOriginalFontMetricsOverride<R = boolean>(): R;
     range<R = _NSRange>(): R;
     setTextStorage<R = void, P0 = unknown>(_setTextStorage: P0): R;
@@ -24,9 +24,9 @@ declare namespace cocoa {
     initWithString<R = unknown, P0 = unknown>(_initWithString: P0): R;
     initWithTextStorage_range<R = unknown, P0 = unknown, P1 = _NSRange>(_initWithTextStorage: P0, _range: P1): R;
   }
-  namespace classes {
-    export interface NSSubTextStorage<T = any> extends NSTextStorage {  }
+  namespace NSSubTextStorage {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTextStorage {}
   }
 }
 
-declare const NSSubTextStorage: cocoa.classes.NSSubTextStorage;
+declare const NSSubTextStorage: cocoa.NSSubTextStorage.CLASS;

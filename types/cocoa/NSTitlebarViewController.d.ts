@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTitlebarViewController<T = any> extends NSViewController {
+  export interface NSTitlebarViewController<T0 = void, T1 = void, T2 = void> extends NSViewController {
     _percentageToLeaveForFloatingTrailingWidgetOn_withFloatIndex<R = number, P0 = number, P1 = number>(__percentageToLeaveForFloatingTrailingWidgetOn: P0, _withFloatIndex: P1): R;
     _percentageToLeaveForFloatingTrailingWidgetOn<R = number, P0 = number>(__percentageToLeaveForFloatingTrailingWidgetOn: P0): R;
     _spaceToLeaveForFloatingTrailingWidgetOn<R = number, P0 = number>(__spaceToLeaveForFloatingTrailingWidgetOn: P0): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     inFullScreen<R = boolean>(): R;
     setInFullScreen<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTitlebarViewController<T = any> extends NSViewController {
+  namespace NSTitlebarViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController {
       alloc<R = NSTitlebarViewController>(): R;
       new: <R = NSTitlebarViewController>() => R;
     }
   }
 }
 
-declare const NSTitlebarViewController: cocoa.classes.NSTitlebarViewController;
+declare const NSTitlebarViewController: cocoa.NSTitlebarViewController.CLASS;

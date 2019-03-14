@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _SVGDrawableElement<T = any> extends SVGElement {
+  export interface _SVGDrawableElement<T0 = void, T1 = void, T2 = void> extends SVGElement {
     primitiveSetStroke<R = void, P0 = unknown>(_primitiveSetStroke: P0): R;
     primitiveSetMask<R = void, P0 = unknown>(_primitiveSetMask: P0): R;
     primitiveSetFont<R = void, P0 = unknown>(_primitiveSetFont: P0): R;
@@ -30,8 +30,8 @@ declare namespace cocoa {
     clip<R = SVGClipPath>(): R;
     setClip<R = void, P0 = SVGClipPath>(_v: P0): R;
   }
-  namespace classes {
-    export interface _SVGDrawableElement<T = any> extends SVGElement {
+  namespace _SVGDrawableElement {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends SVGElement {
       alloc<R = _SVGDrawableElement>(): R;
       new: <R = _SVGDrawableElement>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSOpacityBlendingInspectorItem<T = any> extends MSInspectorItem, NSMenuDelegateProtocol {
+  export interface MSOpacityBlendingInspectorItem<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, NSMenuDelegateProtocol {
     observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
     opacityAdaptor<R = MSMathInspectorValueAdaptor>(): R;
     setOpacityAdaptor<R = void, P0 = MSMathInspectorValueAdaptor>(_v: P0): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSOpacityBlendingInspectorItem<T = any> extends MSInspectorItem, NSMenuDelegateProtocol {
+  namespace MSOpacityBlendingInspectorItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, NSMenuDelegateProtocol {
       alloc<R = MSOpacityBlendingInspectorItem>(): R;
       new: <R = MSOpacityBlendingInspectorItem>() => R;
     }
   }
 }
 
-declare const MSOpacityBlendingInspectorItem: cocoa.classes.MSOpacityBlendingInspectorItem;
+declare const MSOpacityBlendingInspectorItem: cocoa.MSOpacityBlendingInspectorItem.CLASS;

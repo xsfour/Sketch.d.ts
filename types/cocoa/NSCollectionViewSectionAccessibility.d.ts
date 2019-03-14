@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCollectionViewSectionAccessibility<T = any> extends NSAccessibilityElement {
+  export interface NSCollectionViewSectionAccessibility<T0 = void, T1 = void, T2 = void> extends NSAccessibilityElement {
     setAccessibilityVisibleChildren<R = void, P0 = unknown>(_setAccessibilityVisibleChildren: P0): R;
     description<R = unknown>(): R;
     accessibilityPerformScrollToVisible<R = boolean>(): R;
@@ -44,12 +44,12 @@ declare namespace cocoa {
     collectionView<R = NSCollectionView>(): R;
     collectionViewAccessibility<R = NSCollectionViewAccessibilityHelper>(): R;
   }
-  namespace classes {
-    export interface NSCollectionViewSectionAccessibility<T = any> extends NSAccessibilityElement {
+  namespace NSCollectionViewSectionAccessibility {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSAccessibilityElement {
       alloc<R = NSCollectionViewSectionAccessibility>(): R;
       new: <R = NSCollectionViewSectionAccessibility>() => R;
     }
   }
 }
 
-declare const NSCollectionViewSectionAccessibility: cocoa.classes.NSCollectionViewSectionAccessibility;
+declare const NSCollectionViewSectionAccessibility: cocoa.NSCollectionViewSectionAccessibility.CLASS;

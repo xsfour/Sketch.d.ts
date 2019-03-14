@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSToolbarFullScreenContentView<T = any> extends NSView {
+  export interface NSToolbarFullScreenContentView<T0 = void, T1 = void, T2 = void> extends NSView {
     isFlipped<R = boolean>(): R;
     isOpaque<R = boolean>(): R;
     refreshLayerFrames<R = void>(): R;
@@ -26,12 +26,12 @@ declare namespace cocoa {
     cornerRoundness<R = number>(): R;
     setCornerRoundness<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSToolbarFullScreenContentView<T = any> extends NSView {
+  namespace NSToolbarFullScreenContentView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSToolbarFullScreenContentView>(): R;
       new: <R = NSToolbarFullScreenContentView>() => R;
     }
   }
 }
 
-declare const NSToolbarFullScreenContentView: cocoa.classes.NSToolbarFullScreenContentView;
+declare const NSToolbarFullScreenContentView: cocoa.NSToolbarFullScreenContentView.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorPickerColorSpacePopUp<T = any> extends NSPopUpButton {
+  export interface NSColorPickerColorSpacePopUp<T0 = void, T1 = void, T2 = void> extends NSPopUpButton {
     _colorSpaceForColorDisplaysAsGeneric<R = boolean, P0 = unknown>(__colorSpaceForColorDisplaysAsGeneric: P0): R;
     setFrame<R = void, P0 = CGRect>(_setFrame: P0): R;
     colorPanelColorDidChange<R = void, P0 = unknown>(_colorPanelColorDidChange: P0): R;
@@ -17,8 +17,8 @@ declare namespace cocoa {
     selectedColorSpace<R = NSColorSpace>(): R;
     setSelectedColorSpace<R = void, P0 = NSColorSpace>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSColorPickerColorSpacePopUp<T = any> extends NSPopUpButton {
+  namespace NSColorPickerColorSpacePopUp {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSPopUpButton {
       alloc<R = NSColorPickerColorSpacePopUp>(): R;
       new: <R = NSColorPickerColorSpacePopUp>() => R;
       preferredColorSpaces<R = unknown>(): R;
@@ -26,4 +26,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSColorPickerColorSpacePopUp: cocoa.classes.NSColorPickerColorSpacePopUp;
+declare const NSColorPickerColorSpacePopUp: cocoa.NSColorPickerColorSpacePopUp.CLASS;

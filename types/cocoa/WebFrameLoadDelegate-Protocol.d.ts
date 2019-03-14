@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface WebFrameLoadDelegateProtocol<T = any> extends NSObjectProtocol {
+  export interface WebFrameLoadDelegateProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     webView_didCreateJavaScriptContext_forFrame<R = void, P0 = WebView, P1 = JSContext, P2 = WebFrame>(_webView: P0, _didCreateJavaScriptContext: P1, _forFrame: P2): R;
     webView_windowScriptObjectAvailable<R = void, P0 = WebView, P1 = WebScriptObject>(_webView: P0, _windowScriptObjectAvailable: P1): R;
     webView_didClearWindowObject_forFrame<R = void, P0 = WebView, P1 = WebScriptObject, P2 = WebFrame>(_webView: P0, _didClearWindowObject: P1, _forFrame: P2): R;
@@ -18,7 +18,7 @@ declare namespace cocoa {
     webView_didReceiveServerRedirectForProvisionalLoadForFrame<R = void, P0 = WebView, P1 = WebFrame>(_webView: P0, _didReceiveServerRedirectForProvisionalLoadForFrame: P1): R;
     webView_didStartProvisionalLoadForFrame<R = void, P0 = WebView, P1 = WebFrame>(_webView: P0, _didStartProvisionalLoadForFrame: P1): R;
   }
-  namespace classes {
-    export interface WebFrameLoadDelegateProtocol<T = any> extends NSObjectProtocol {  }
+  namespace WebFrameLoadDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

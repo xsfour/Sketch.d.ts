@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPathLayerProtocol<T = any> extends MSLayerProtocol {
+  export interface MSPathLayerProtocol<T0 = void, T1 = void, T2 = void> extends MSLayerProtocol {
     reversePath<R = void>(): R;
     simplify<R = void>(): R;
     pathInFrame<R = MSPath>(): R;
@@ -11,7 +11,7 @@ declare namespace cocoa {
     isClosed<R = boolean>(): R;
     setIsClosed<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSPathLayerProtocol<T = any> extends MSLayerProtocol {  }
+  namespace MSPathLayerProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSLayerProtocol {}
   }
 }

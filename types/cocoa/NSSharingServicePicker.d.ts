@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSharingServicePicker<T = any> extends NSObject {
+  export interface NSSharingServicePicker<T0 = void, T1 = void, T2 = void> extends NSObject {
     style<R = number>(): R;
     setStyle<R = void, P0 = number>(_setStyle: P0): R;
     menu<R = unknown>(): R;
@@ -28,8 +28,8 @@ declare namespace cocoa {
     delegate<R = NSSharingServicePickerDelegate>(): R;
     setDelegate<R = void, P0 = NSSharingServicePickerDelegate>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSSharingServicePicker<T = any> extends NSObject {
+  namespace NSSharingServicePicker {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSSharingServicePicker>(): R;
       new: <R = NSSharingServicePicker>() => R;
       openAppExtensionsPrefPane<R = void>(): R;
@@ -38,4 +38,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSSharingServicePicker: cocoa.classes.NSSharingServicePicker;
+declare const NSSharingServicePicker: cocoa.NSSharingServicePicker.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSDictionaryControllerKeyValuePair<T = any> extends NSDictionaryControllerKeyValuePair {
+  export interface _NSDictionaryControllerKeyValuePair<T0 = void, T1 = void, T2 = void> extends NSDictionaryControllerKeyValuePair {
     isExplicitlyIncluded<R = boolean>(): R;
     _markAsExplicitlyIncluded<R = void, P0 = boolean>(__markAsExplicitlyIncluded: P0): R;
     value<R = unknown>(): R;
@@ -22,8 +22,8 @@ declare namespace cocoa {
     dictionaryController<R = NSDictionaryController>(): R;
     setDictionaryController<R = void, P0 = NSDictionaryController>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSDictionaryControllerKeyValuePair<T = any> extends NSDictionaryControllerKeyValuePair {
+  namespace _NSDictionaryControllerKeyValuePair {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSDictionaryControllerKeyValuePair {
       alloc<R = _NSDictionaryControllerKeyValuePair>(): R;
       new: <R = _NSDictionaryControllerKeyValuePair>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUserNotificationCenter<T = any> extends NSObject {
+  export interface NSUserNotificationCenter<T0 = void, T1 = void, T2 = void> extends NSObject {
     _setProgress_forNotificationWithIdentifier<R = void, P0 = number, P1 = unknown>(__setProgress: P0, _forNotificationWithIdentifier: P1): R;
     _invalidateAndUnregister<R = void>(): R;
     _unRegisterForRemotePushNotifications<R = void>(): R;
@@ -40,8 +40,8 @@ declare namespace cocoa {
     scheduledNotifications<R = NSArray>(): R;
     setScheduledNotifications<R = void, P0 = NSArray>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSUserNotificationCenter<T = any> extends NSObject {
+  namespace NSUserNotificationCenter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSUserNotificationCenter>(): R;
       new: <R = NSUserNotificationCenter>() => R;
       _identifiersForCenterType<R = unknown, P0 = number>(__identifiersForCenterType: P0): R;
@@ -58,4 +58,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSUserNotificationCenter: cocoa.classes.NSUserNotificationCenter;
+declare const NSUserNotificationCenter: cocoa.NSUserNotificationCenter.CLASS;

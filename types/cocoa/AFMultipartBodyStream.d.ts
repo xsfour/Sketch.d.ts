@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface AFMultipartBodyStream<T = any> extends NSInputStream, NSCopyingProtocol, NSStreamDelegateProtocol {
+  export interface AFMultipartBodyStream<T0 = void, T1 = void, T2 = void> extends NSInputStream, NSCopyingProtocol, NSStreamDelegateProtocol {
     setStreamError<R = void, P0 = unknown>(_setStreamError: P0): R;
     streamError<R = unknown>(): R;
     setStreamStatus<R = void, P0 = number>(_setStreamStatus: P0): R;
@@ -49,9 +49,9 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface AFMultipartBodyStream<T = any> extends NSInputStream, NSCopyingProtocol, NSStreamDelegateProtocol {  }
+  namespace AFMultipartBodyStream {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSInputStream, NSCopyingProtocol, NSStreamDelegateProtocol {}
   }
 }
 
-declare const AFMultipartBodyStream: cocoa.classes.AFMultipartBodyStream;
+declare const AFMultipartBodyStream: cocoa.AFMultipartBodyStream.CLASS;

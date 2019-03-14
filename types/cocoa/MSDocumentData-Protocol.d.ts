@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDocumentDataProtocol<T = any> {
+  export interface MSDocumentDataProtocol<T0 = void, T1 = void, T2 = void> {
     pages<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface MSDocumentDataProtocol<T = any> {  }
+  namespace MSDocumentDataProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

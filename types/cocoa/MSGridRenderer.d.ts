@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSGridRenderer<T = any> {}
-  namespace classes {
-    export interface MSGridRenderer<T = any> {  }
+  export interface MSGridRenderer<T0 = void, T1 = void, T2 = void> {}
+  namespace MSGridRenderer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const MSGridRenderer: cocoa.classes.MSGridRenderer;
+declare const MSGridRenderer: cocoa.MSGridRenderer.CLASS;

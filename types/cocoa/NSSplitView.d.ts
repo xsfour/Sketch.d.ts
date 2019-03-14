@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSplitView<T = any> extends NSView, _NSTransientUIElementProtocol {
+  export interface NSSplitView<T0 = void, T1 = void, T2 = void> extends NSView, _NSTransientUIElementProtocol {
     _automaticMaximumSizeForArrangedView<R = number, P0 = unknown>(__automaticMaximumSizeForArrangedView: P0): R;
     _uncollapseWithOverlayArrangedView_animated<R = void, P0 = unknown, P1 = boolean>(__uncollapseWithOverlayArrangedView: P0, _animated: P1): R;
     _uncollapseArrangedView_animated<R = void, P0 = unknown, P1 = boolean>(__uncollapseArrangedView: P0, _animated: P1): R;
@@ -218,8 +218,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSSplitView<T = any> extends NSView, _NSTransientUIElementProtocol {
+  namespace NSSplitView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView, _NSTransientUIElementProtocol {
       alloc<R = NSSplitView>(): R;
       new: <R = NSSplitView>() => R;
       _autosaveDefaultsKeyForName<R = unknown, P0 = unknown>(__autosaveDefaultsKeyForName: P0): R;
@@ -227,4 +227,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSSplitView: cocoa.classes.NSSplitView;
+declare const NSSplitView: cocoa.NSSplitView.CLASS;

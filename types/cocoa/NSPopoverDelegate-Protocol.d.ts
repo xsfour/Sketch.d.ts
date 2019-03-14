@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPopoverDelegateProtocol<T = any> {
+  export interface NSPopoverDelegateProtocol<T0 = void, T1 = void, T2 = void> {
     popoverDidClose<R = void, P0 = NSNotification>(_popoverDidClose: P0): R;
     popoverWillClose<R = void, P0 = NSNotification>(_popoverWillClose: P0): R;
     popoverDidShow<R = void, P0 = NSNotification>(_popoverDidShow: P0): R;
@@ -11,7 +11,7 @@ declare namespace cocoa {
     popoverShouldDetach<R = boolean, P0 = NSPopover>(_popoverShouldDetach: P0): R;
     popoverShouldClose<R = boolean, P0 = NSPopover>(_popoverShouldClose: P0): R;
   }
-  namespace classes {
-    export interface NSPopoverDelegateProtocol<T = any> {  }
+  namespace NSPopoverDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

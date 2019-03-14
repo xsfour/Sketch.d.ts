@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPDFState<T = any> extends NSObject, NSCopyingProtocol {
+  export interface MSPDFState<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     cxx_destruct<R = void>(): R;
     description<R = unknown>(): R;
     stringFromTransform<R = unknown, P0 = unknown>(_stringFromTransform: P0): R;
@@ -82,12 +82,12 @@ declare namespace cocoa {
     borderAlphaConstant<R = number>(): R;
     setBorderAlphaConstant<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSPDFState<T = any> extends NSObject, NSCopyingProtocol {
+  namespace MSPDFState {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = MSPDFState>(): R;
       new: <R = MSPDFState>() => R;
     }
   }
 }
 
-declare const MSPDFState: cocoa.classes.MSPDFState;
+declare const MSPDFState: cocoa.MSPDFState.CLASS;

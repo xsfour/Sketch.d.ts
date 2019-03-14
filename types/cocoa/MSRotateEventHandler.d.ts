@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSRotateEventHandler<T = any> extends MSNormalBaseEventHandler, MSAlignmentEngineDelegateProtocol, NSTouchBarDelegateProtocol {
+  export interface MSRotateEventHandler<T0 = void, T1 = void, T2 = void> extends MSNormalBaseEventHandler, MSAlignmentEngineDelegateProtocol, NSTouchBarDelegateProtocol {
     rotationBarAction<R = void, P0 = unknown>(_rotationBarAction: P0): R;
     drawRotationCenterAtZoomScale<R = void, P0 = number>(_drawRotationCenterAtZoomScale: P0): R;
     alignDegreesTo15Angles<R = number, P0 = number>(_alignDegreesTo15Angles: P0): R;
@@ -32,8 +32,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSRotateEventHandler<T = any> extends MSNormalBaseEventHandler, MSAlignmentEngineDelegateProtocol, NSTouchBarDelegateProtocol {
+  namespace MSRotateEventHandler {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSNormalBaseEventHandler, MSAlignmentEngineDelegateProtocol, NSTouchBarDelegateProtocol {
       alloc<R = MSRotateEventHandler>(): R;
       new: <R = MSRotateEventHandler>() => R;
       cursorForDegrees<R = unknown, P0 = number>(_cursorForDegrees: P0): R;
@@ -41,4 +41,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSRotateEventHandler: cocoa.classes.MSRotateEventHandler;
+declare const MSRotateEventHandler: cocoa.MSRotateEventHandler.CLASS;

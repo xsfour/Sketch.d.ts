@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPopUpButton<T = any> extends NSButton {
+  export interface NSPopUpButton<T0 = void, T1 = void, T2 = void> extends NSButton {
     state<R = number>(): R;
     image<R = unknown>(): R;
     title<R = unknown>(): R;
@@ -48,12 +48,12 @@ declare namespace cocoa {
     menu<R = NSMenu>(): R;
     setMenu<R = void, P0 = NSMenu>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSPopUpButton<T = any> extends NSButton {
+  namespace NSPopUpButton {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSButton {
       alloc<R = NSPopUpButton>(): R;
       new: <R = NSPopUpButton>() => R;
     }
   }
 }
 
-declare const NSPopUpButton: cocoa.classes.NSPopUpButton;
+declare const NSPopUpButton: cocoa.NSPopUpButton.CLASS;

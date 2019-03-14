@@ -1,79 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTabButton<T = any> extends NSTabBarViewButton, _NSVibrancyTransitioningImageViewDelegateProtocol, NSRolloverButtonDelegateProtocol {
-    springLoadingExited<R = void, P0 = unknown>(_springLoadingExited: P0): R;
-    springLoadingActivated_draggingInfo<R = void, P0 = boolean, P1 = unknown>(_springLoadingActivated: P0, _draggingInfo: P1): R;
-    springLoadingHighlightChanged<R = void, P0 = unknown>(_springLoadingHighlightChanged: P0): R;
-    springLoadingUpdated<R = number, P0 = unknown>(_springLoadingUpdated: P0): R;
-    springLoadingEntered<R = number, P0 = unknown>(_springLoadingEntered: P0): R;
-    springLoadingTarget<R = unknown>(): R;
-    isSpringLoaded<R = boolean>(): R;
-    draggingDestination<R = unknown>(): R;
-    associatedWindow<R = unknown>(): R;
-    pinnedTabDragImageOfSize<R = unknown, P0 = CGSize>(_pinnedTabDragImageOfSize: P0): R;
-    tabDragImageOfSize<R = unknown, P0 = CGSize>(_tabDragImageOfSize: P0): R;
-    tabImageOfSize<R = unknown, P0 = CGSize>(_tabImageOfSize: P0): R;
-    _titleStringAttributesForMainWindow_activeTab_isDragging<R = unknown, P0 = boolean, P1 = boolean, P2 = boolean>(__titleStringAttributesForMainWindow: P0, _activeTab: P1, _isDragging: P2): R;
-    _updateTitleTextFieldAndAccessibilityProperties<R = void>(): R;
-    setHasPressedHighlight<R = void, P0 = boolean>(_setHasPressedHighlight: P0): R;
-    setHasMouseOverHighlight_shouldAnimateCloseButton<R = void, P0 = boolean, P1 = boolean>(_setHasMouseOverHighlight: P0, _shouldAnimateCloseButton: P1): R;
-    _closeButtonClicked<R = void, P0 = unknown>(__closeButtonClicked: P0): R;
-    _shouldShowCloseButton<R = boolean>(): R;
-    _updatePinnedTabImageViewAnimated<R = void, P0 = boolean>(__updatePinnedTabImageViewAnimated: P0): R;
-    _removeWebsiteIconVisualEffectViewForFullScreenToolbarWindow<R = void>(): R;
-    _addWebsiteIconVisualEffectViewForFullScreenToolbarWindow<R = void>(): R;
-    _updatePinnedTabFaviconFullscreenBackgroundColor<R = void>(): R;
-    _windowIsActive<R = boolean>(): R;
-    _updateConstraints<R = void>(): R;
-    _setUpConstraints<R = void>(): R;
-    _updateTitleContainerConstraints<R = void>(): R;
-    setActive<R = void, P0 = boolean>(_setActive: P0): R;
-    setTitleTextFieldCenterOffset_animated<R = void, P0 = number, P1 = boolean>(_setTitleTextFieldCenterOffset: P0, _animated: P1): R;
-    setMainContentContainerCenterOffset_animated<R = void, P0 = number, P1 = boolean>(_setMainContentContainerCenterOffset: P0, _animated: P1): R;
-    setButtonWidthForTitleLayout_animated<R = void, P0 = number, P1 = boolean>(_setButtonWidthForTitleLayout: P0, _animated: P1): R;
-    _updateAccessoryViews<R = void>(): R;
-    setValue_forKey<R = void, P0 = unknown, P1 = unknown>(_setValue: P0, _forKey: P1): R;
-    _keysToObserve<R = unknown>(): R;
-    mouseDownCanMoveWindow<R = boolean>(): R;
-    initWithFrame_tabBarViewItem<R = unknown, P0 = CGRect, P1 = unknown>(_initWithFrame: P0, _tabBarViewItem: P1): R;
-    showingCloseButton<R = boolean>(): R;
-    setShowingCloseButton<R = void, P0 = boolean>(_v: P0): R;
-    alternateImage<R = NSImage>(): R;
-    setAlternateImage<R = void, P0 = NSImage>(_v: P0): R;
-    image<R = NSImage>(): R;
-    setImage<R = void, P0 = NSImage>(_v: P0): R;
-    pinned<R = boolean>(): R;
-    setPinned<R = void, P0 = boolean>(_v: P0): R;
-    tabBarViewItem<R = NSTabBarItem>(): R;
-    accessoryViews<R = NSArray>(): R;
-    setAccessoryViews<R = void, P0 = NSArray>(_v: P0): R;
-    accessibilityHelper<R = unknown>(): R;
-    attributedTitle<R = NSAttributedString>(): R;
-    setAttributedTitle<R = void, P0 = NSAttributedString>(_v: P0): R;
-    title<R = NSString>(): R;
-    setTitle<R = void, P0 = NSString>(_v: P0): R;
-    delegate<R = NSTabButtonDelegate>(): R;
-    setDelegate<R = void, P0 = NSTabButtonDelegate>(_v: P0): R;
-    test_titleTextField<R = NSTextField>(): R;
-    test_closeButton<R = NSRolloverButton>(): R;
-    canShowCloseButton<R = boolean>(): R;
-    setCanShowCloseButton<R = void, P0 = boolean>(_v: P0): R;
-    titleTextFieldCenterOffset<R = number>(): R;
-    setTitleTextFieldCenterOffset<R = void, P0 = number>(_v: P0): R;
-    mainContentContainerCenterOffset<R = number>(): R;
-    setMainContentContainerCenterOffset<R = void, P0 = number>(_v: P0): R;
-    alignment<R = number>(): R;
-    setAlignment<R = void, P0 = number>(_v: P0): R;
-    buttonWidthForTitleLayout<R = number>(): R;
-    setButtonWidthForTitleLayout<R = void, P0 = number>(_v: P0): R;
-    debugDescription<R = NSString>(): R;
-    description<R = NSString>(): R;
-    hash<R = number>(): R;
-    superclass<R = unknown>(): R;
-  }
-  namespace classes {
-    export interface NSTabButton<T = any> extends NSTabBarViewButton, _NSVibrancyTransitioningImageViewDelegateProtocol, NSRolloverButtonDelegateProtocol {
+  export interface NSTabButton<T0 = void, T1 = void, T2 = void> extends NSTabBarViewButton, _NSVibrancyTransitioningImageViewDelegateProtocol, NSRolloverButtonDelegateProtocol {}
+  namespace NSTabButton {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTabBarViewButton, _NSVibrancyTransitioningImageViewDelegateProtocol, NSRolloverButtonDelegateProtocol {
       alloc<R = NSTabButton>(): R;
       new: <R = NSTabButton>() => R;
       _titleFont<R = unknown>(): R;
@@ -81,4 +11,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTabButton: cocoa.classes.NSTabButton;
+declare const NSTabButton: cocoa.NSTabButton.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSISPlaybackOperation<T = any> extends NSObject, NSISVariableDelegateProtocol {
+  export interface NSISPlaybackOperation<T0 = void, T1 = void, T2 = void> extends NSObject, NSISVariableDelegateProtocol {
     _addToEngine<R = void, P0 = unknown>(__addToEngine: P0): R;
     secondAnchor<R = unknown>(): R;
     firstAnchor<R = unknown>(): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSISPlaybackOperation<T = any> extends NSObject, NSISVariableDelegateProtocol {
+  namespace NSISPlaybackOperation {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSISVariableDelegateProtocol {
       alloc<R = NSISPlaybackOperation>(): R;
       new: <R = NSISPlaybackOperation>() => R;
     }
   }
 }
 
-declare const NSISPlaybackOperation: cocoa.classes.NSISPlaybackOperation;
+declare const NSISPlaybackOperation: cocoa.NSISPlaybackOperation.CLASS;

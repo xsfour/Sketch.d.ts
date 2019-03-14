@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSOutlineColumnMockGroup<T = any> extends NSObject {
+  export interface NSOutlineColumnMockGroup<T0 = void, T1 = void, T2 = void> extends NSObject {
     accessibilityFocusedUIElement<R = unknown>(): R;
     accessibilityHitTest<R = unknown, P0 = CGPoint>(_accessibilityHitTest: P0): R;
     accessibilityIsIgnored<R = boolean>(): R;
@@ -38,8 +38,8 @@ declare namespace cocoa {
     initWithRow_column_tableView<R = unknown, P0 = number, P1 = number, P2 = unknown>(_initWithRow: P0, _column: P1, _tableView: P2): R;
     initWithRow_tableColumn<R = unknown, P0 = number, P1 = unknown>(_initWithRow: P0, _tableColumn: P1): R;
   }
-  namespace classes {
-    export interface NSOutlineColumnMockGroup<T = any> extends NSObject {
+  namespace NSOutlineColumnMockGroup {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSOutlineColumnMockGroup>(): R;
       new: <R = NSOutlineColumnMockGroup>() => R;
       outlineColumnGroupForRow_tableColumn<R = unknown, P0 = number, P1 = unknown>(_outlineColumnGroupForRow: P0, _tableColumn: P1): R;
@@ -48,4 +48,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSOutlineColumnMockGroup: cocoa.classes.NSOutlineColumnMockGroup;
+declare const NSOutlineColumnMockGroup: cocoa.NSOutlineColumnMockGroup.CLASS;

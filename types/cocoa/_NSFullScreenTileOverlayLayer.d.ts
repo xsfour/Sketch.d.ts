@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSFullScreenTileOverlayLayer<T = any> extends CALayer {
+  export interface _NSFullScreenTileOverlayLayer<T0 = void, T1 = void, T2 = void> extends CALayer {
     endPresentation<R = void>(): R;
     applyPresentationFilters<R = void, P0 = boolean>(_applyPresentationFilters: P0): R;
     updateFrame<R = void>(): R;
@@ -14,7 +14,7 @@ declare namespace cocoa {
     auxiliaryView<R = NSView>(): R;
     setAuxiliaryView<R = void, P0 = NSView>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSFullScreenTileOverlayLayer<T = any> extends CALayer {  }
+  namespace _NSFullScreenTileOverlayLayer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends CALayer {}
   }
 }

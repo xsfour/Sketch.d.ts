@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutableShapeGroup<T = any> extends _MSImmutableShapeGroup, MSImmutableLayerPreviewabilityProtocol, MSShapeGroupProtocol, MSImmutablePathLayerProtocol {
+  export interface MSImmutableShapeGroup<T0 = void, T1 = void, T2 = void> extends _MSImmutableShapeGroup, MSImmutableLayerPreviewabilityProtocol, MSShapeGroupProtocol, MSImmutablePathLayerProtocol {
     interfaceImageIdentifier<R = unknown>(): R;
     cacheOwner<R = unknown>(): R;
     migratePropertiesFromV110OrEarlierWithUnarchiver<R = void, P0 = unknown>(_migratePropertiesFromV110OrEarlierWithUnarchiver: P0): R;
@@ -31,12 +31,12 @@ declare namespace cocoa {
     style<R = MSImmutableStyle>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSImmutableShapeGroup<T = any> extends _MSImmutableShapeGroup, MSImmutableLayerPreviewabilityProtocol, MSShapeGroupProtocol, MSImmutablePathLayerProtocol {
+  namespace MSImmutableShapeGroup {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSImmutableShapeGroup, MSImmutableLayerPreviewabilityProtocol, MSShapeGroupProtocol, MSImmutablePathLayerProtocol {
       alloc<R = MSImmutableShapeGroup>(): R;
       new: <R = MSImmutableShapeGroup>() => R;
     }
   }
 }
 
-declare const MSImmutableShapeGroup: cocoa.classes.MSImmutableShapeGroup;
+declare const MSImmutableShapeGroup: cocoa.MSImmutableShapeGroup.CLASS;

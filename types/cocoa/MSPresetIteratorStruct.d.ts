@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPresetIteratorStruct<T = any> {}
-  namespace classes {
-    export interface MSPresetIteratorStruct<T = any> {  }
+  export interface MSPresetIteratorStruct<T0 = void, T1 = void, T2 = void> {}
+  namespace MSPresetIteratorStruct {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const MSPresetIteratorStruct: cocoa.classes.MSPresetIteratorStruct;
+declare const MSPresetIteratorStruct: cocoa.MSPresetIteratorStruct.CLASS;

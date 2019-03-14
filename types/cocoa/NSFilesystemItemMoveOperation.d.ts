@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFilesystemItemMoveOperation<T = any> extends NSOperation {
+  export interface NSFilesystemItemMoveOperation<T0 = void, T1 = void, T2 = void> extends NSOperation {
     _setError<R = void, P0 = unknown>(__setError: P0): R;
     error<R = unknown>(): R;
     setDelegate<R = void, P0 = unknown>(_setDelegate: P0): R;
@@ -9,8 +9,8 @@ declare namespace cocoa {
     filesystemItemCopyOperation_shouldProceedAfterError_copyingItemAtPath_toPath<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown>(_filesystemItemCopyOperation: P0, _shouldProceedAfterError: P1, _copyingItemAtPath: P2, _toPath: P3): R;
     initWithSourceURL_destinationURL_options<R = void, P0 = unknown, P1 = unknown, P2 = number>(_initWithSourceURL: P0, _destinationURL: P1, _options: P2): R;
   }
-  namespace classes {
-    export interface NSFilesystemItemMoveOperation<T = any> extends NSOperation {
+  namespace NSFilesystemItemMoveOperation {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSOperation {
       alloc<R = NSFilesystemItemMoveOperation>(): R;
       new: <R = NSFilesystemItemMoveOperation>() => R;
       filesystemItemMoveOperationWithSourceURL_destinationURL_options<R = unknown, P0 = unknown, P1 = unknown, P2 = number>(_filesystemItemMoveOperationWithSourceURL: P0, _destinationURL: P1, _options: P2): R;
@@ -19,4 +19,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSFilesystemItemMoveOperation: cocoa.classes.NSFilesystemItemMoveOperation;
+declare const NSFilesystemItemMoveOperation: cocoa.NSFilesystemItemMoveOperation.CLASS;

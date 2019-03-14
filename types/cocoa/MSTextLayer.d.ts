@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSTextLayer<T = any> extends _MSTextLayer, MSFirstLineTypesetterDelegateProtocol, MSColorConvertibleProtocol {
+  export interface MSTextLayer<T0 = void, T1 = void, T2 = void> extends _MSTextLayer, MSFirstLineTypesetterDelegateProtocol, MSColorConvertibleProtocol {
     canLockProportions<R = boolean>(): R;
     canScale<R = boolean>(): R;
     canBeTransformed<R = boolean>(): R;
@@ -110,8 +110,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSTextLayer<T = any> extends _MSTextLayer, MSFirstLineTypesetterDelegateProtocol, MSColorConvertibleProtocol {
+  namespace MSTextLayer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSTextLayer, MSFirstLineTypesetterDelegateProtocol, MSColorConvertibleProtocol {
       alloc<R = MSTextLayer>(): R;
       new: <R = MSTextLayer>() => R;
       defaultValue<R = unknown>(): R;
@@ -132,4 +132,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSTextLayer: cocoa.classes.MSTextLayer;
+declare const MSTextLayer: cocoa.MSTextLayer.CLASS;

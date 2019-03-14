@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _isScrolling<T = any> {}
-  namespace classes {
-    export interface _isScrolling<T = any> {  }
+  export interface _isScrolling<T0 = void, T1 = void, T2 = void> {}
+  namespace _isScrolling {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

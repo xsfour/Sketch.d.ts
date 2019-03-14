@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSNoise<T = any> extends NSObject {}
-  namespace classes {
-    export interface MSNoise<T = any> extends NSObject {
+  export interface MSNoise<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace MSNoise {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSNoise>(): R;
       new: <R = MSNoise>() => R;
       drawWithIntensity_ofType_inRect_zoomValue_context<R = void, P0 = number, P1 = number, P2 = CGRect, P3 = number, P4 = CGContext>(_drawWithIntensity: P0, _ofType: P1, _inRect: P2, _zoomValue: P3, _context: P4): R;
@@ -13,4 +13,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSNoise: cocoa.classes.MSNoise;
+declare const MSNoise: cocoa.MSNoise.CLASS;

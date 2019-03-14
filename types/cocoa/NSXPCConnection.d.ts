@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXPCConnection<T = any> extends NSObject, NSXPCProxyCreatingProtocol {
+  export interface NSXPCConnection<T0 = void, T1 = void, T2 = void> extends NSObject, NSXPCProxyCreatingProtocol {
     _decodeProgressMessageWithData_flags<R = void, P0 = unknown, P1 = number>(__decodeProgressMessageWithData: P0, _flags: P1): R;
     _resumeProgress<R = void, P0 = number>(__resumeProgress: P0): R;
     _pauseProgress<R = void, P0 = number>(__pauseProgress: P0): R;
@@ -79,8 +79,8 @@ declare namespace cocoa {
     interruptionHandler<R = CDUnknownBlockType>(): R;
     setInterruptionHandler<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSXPCConnection<T = any> extends NSObject, NSXPCProxyCreatingProtocol {
+  namespace NSXPCConnection {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSXPCProxyCreatingProtocol {
       alloc<R = NSXPCConnection>(): R;
       new: <R = NSXPCConnection>() => R;
       endTransaction<R = void>(): R;
@@ -91,4 +91,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSXPCConnection: cocoa.classes.NSXPCConnection;
+declare const NSXPCConnection: cocoa.NSXPCConnection.CLASS;

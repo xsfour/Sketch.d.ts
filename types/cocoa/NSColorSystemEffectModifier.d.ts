@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorSystemEffectModifier<T = any> extends NSObject, NSDynamicColorModifierProtocol {
+  export interface NSColorSystemEffectModifier<T0 = void, T1 = void, T2 = void> extends NSObject, NSDynamicColorModifierProtocol {
     dealloc<R = void>(): R;
     initWithSystemEffect<R = unknown, P0 = number>(_initWithSystemEffect: P0): R;
     systemEffect<R = number>(): R;
@@ -10,8 +10,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSColorSystemEffectModifier<T = any> extends NSObject, NSDynamicColorModifierProtocol {
+  namespace NSColorSystemEffectModifier {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSDynamicColorModifierProtocol {
       alloc<R = NSColorSystemEffectModifier>(): R;
       new: <R = NSColorSystemEffectModifier>() => R;
       modifierForEffect<R = unknown, P0 = number>(_modifierForEffect: P0): R;
@@ -19,4 +19,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSColorSystemEffectModifier: cocoa.classes.NSColorSystemEffectModifier;
+declare const NSColorSystemEffectModifier: cocoa.NSColorSystemEffectModifier.CLASS;

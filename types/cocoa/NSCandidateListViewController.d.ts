@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCandidateListViewController<T = any> extends NSViewController {
+  export interface NSCandidateListViewController<T0 = void, T1 = void, T2 = void> extends NSViewController {
     stopTrackingInSegmentType_index<R = void, P0 = number, P1 = number>(_stopTrackingInSegmentType: P0, _index: P1): R;
     continueTrackingInSegmentType_index<R = void, P0 = number, P1 = number>(_continueTrackingInSegmentType: P0, _index: P1): R;
     startTrackingInSegmentType_index<R = void, P0 = number, P1 = number>(_startTrackingInSegmentType: P0, _index: P1): R;
@@ -53,8 +53,8 @@ declare namespace cocoa {
     touchBarItem<R = NSTouchBarItem>(): R;
     setTouchBarItem<R = void, P0 = NSTouchBarItem>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSCandidateListViewController<T = any> extends NSViewController {
+  namespace NSCandidateListViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController {
       alloc<R = NSCandidateListViewController>(): R;
       new: <R = NSCandidateListViewController>() => R;
       standardWidth<R = number>(): R;
@@ -62,4 +62,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSCandidateListViewController: cocoa.classes.NSCandidateListViewController;
+declare const NSCandidateListViewController: cocoa.NSCandidateListViewController.CLASS;

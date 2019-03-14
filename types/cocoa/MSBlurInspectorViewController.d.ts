@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBlurInspectorViewController<T = any> extends MSStylePartInspectorViewController, MSStylePartInspectorItemDelegateProtocol, NSMenuDelegateProtocol {
+  export interface MSBlurInspectorViewController<T0 = void, T1 = void, T2 = void> extends MSStylePartInspectorViewController, MSStylePartInspectorItemDelegateProtocol, NSMenuDelegateProtocol {
     layers<R = unknown>(): R;
     setStyleParts<R = void, P0 = unknown>(_setStyleParts: P0): R;
     blurKinds<R = unknown>(): R;
@@ -31,12 +31,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSBlurInspectorViewController<T = any> extends MSStylePartInspectorViewController, MSStylePartInspectorItemDelegateProtocol, NSMenuDelegateProtocol {
+  namespace MSBlurInspectorViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSStylePartInspectorViewController, MSStylePartInspectorItemDelegateProtocol, NSMenuDelegateProtocol {
       alloc<R = MSBlurInspectorViewController>(): R;
       new: <R = MSBlurInspectorViewController>() => R;
     }
   }
 }
 
-declare const MSBlurInspectorViewController: cocoa.classes.MSBlurInspectorViewController;
+declare const MSBlurInspectorViewController: cocoa.MSBlurInspectorViewController.CLASS;

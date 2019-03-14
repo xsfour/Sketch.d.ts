@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSClickGestureRecognizer<T = any> extends NSGestureRecognizer, NSCodingProtocol {
+  export interface NSClickGestureRecognizer<T0 = void, T1 = void, T2 = void> extends NSGestureRecognizer, NSCodingProtocol {
     _failRecognition<R = void>(): R;
     _beginTouchInteraction<R = void>(): R;
     _beginMouseInteraction<R = void>(): R;
@@ -24,12 +24,12 @@ declare namespace cocoa {
     allowableMovement<R = number>(): R;
     setAllowableMovement<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSClickGestureRecognizer<T = any> extends NSGestureRecognizer, NSCodingProtocol {
+  namespace NSClickGestureRecognizer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSGestureRecognizer, NSCodingProtocol {
       alloc<R = NSClickGestureRecognizer>(): R;
       new: <R = NSClickGestureRecognizer>() => R;
     }
   }
 }
 
-declare const NSClickGestureRecognizer: cocoa.classes.NSClickGestureRecognizer;
+declare const NSClickGestureRecognizer: cocoa.NSClickGestureRecognizer.CLASS;

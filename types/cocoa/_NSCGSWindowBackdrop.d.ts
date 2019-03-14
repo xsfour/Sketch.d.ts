@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSCGSWindowBackdrop<T = any> extends NSCGSWindowBackdrop {
+  export interface _NSCGSWindowBackdrop<T0 = void, T1 = void, T2 = void> extends NSCGSWindowBackdrop {
     setTintColor<R = void, P0 = CGColor>(_setTintColor: P0): R;
     tintColor<R = CGColor>(): R;
     setOrderedIn<R = void, P0 = boolean>(_setOrderedIn: P0): R;
@@ -22,8 +22,8 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     initWithWindow<R = unknown, P0 = unknown>(_initWithWindow: P0): R;
   }
-  namespace classes {
-    export interface _NSCGSWindowBackdrop<T = any> extends NSCGSWindowBackdrop {
+  namespace _NSCGSWindowBackdrop {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSCGSWindowBackdrop {
       alloc<R = _NSCGSWindowBackdrop>(): R;
       new: <R = _NSCGSWindowBackdrop>() => R;
     }

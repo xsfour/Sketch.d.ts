@@ -1,15 +1,15 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSCenteredPopUpButtonCell<T = any> extends NSPopUpButtonCell {
+  export interface MSCenteredPopUpButtonCell<T0 = void, T1 = void, T2 = void> extends NSPopUpButtonCell {
     correctedTitle<R = unknown, P0 = unknown>(_correctedTitle: P0): R;
   }
-  namespace classes {
-    export interface MSCenteredPopUpButtonCell<T = any> extends NSPopUpButtonCell {
+  namespace MSCenteredPopUpButtonCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSPopUpButtonCell {
       alloc<R = MSCenteredPopUpButtonCell>(): R;
       new: <R = MSCenteredPopUpButtonCell>() => R;
     }
   }
 }
 
-declare const MSCenteredPopUpButtonCell: cocoa.classes.MSCenteredPopUpButtonCell;
+declare const MSCenteredPopUpButtonCell: cocoa.MSCenteredPopUpButtonCell.CLASS;

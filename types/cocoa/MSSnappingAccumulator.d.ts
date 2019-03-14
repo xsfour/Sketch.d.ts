@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSnappingAccumulator<T = any> extends NSObject {
+  export interface MSSnappingAccumulator<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     hash<R = number>(): R;
     removeAllSpacingSnaps<R = void>(): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     edgeSnaps<R = NSArray>(): R;
     axis<R = number>(): R;
   }
-  namespace classes {
-    export interface MSSnappingAccumulator<T = any> extends NSObject {
+  namespace MSSnappingAccumulator {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSSnappingAccumulator>(): R;
       new: <R = MSSnappingAccumulator>() => R;
     }
   }
 }
 
-declare const MSSnappingAccumulator: cocoa.classes.MSSnappingAccumulator;
+declare const MSSnappingAccumulator: cocoa.MSSnappingAccumulator.CLASS;

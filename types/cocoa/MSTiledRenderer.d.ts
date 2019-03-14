@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSTiledRenderer<T = any> extends NSObject {
+  export interface MSTiledRenderer<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     beginFastZooming<R = void>(): R;
     _scheduleRedraw<R = void>(): R;
@@ -60,12 +60,12 @@ declare namespace cocoa {
     layer<R = CALayer>(): R;
     driver<R = MSRenderingDriver>(): R;
   }
-  namespace classes {
-    export interface MSTiledRenderer<T = any> extends NSObject {
+  namespace MSTiledRenderer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSTiledRenderer>(): R;
       new: <R = MSTiledRenderer>() => R;
     }
   }
 }
 
-declare const MSTiledRenderer: cocoa.classes.MSTiledRenderer;
+declare const MSTiledRenderer: cocoa.MSTiledRenderer.CLASS;

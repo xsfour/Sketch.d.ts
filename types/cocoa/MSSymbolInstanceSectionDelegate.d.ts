@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSymbolInstanceSectionDelegate<T = any> {}
-  namespace classes {
-    export interface MSSymbolInstanceSectionDelegate<T = any> {  }
+  export interface MSSymbolInstanceSectionDelegate<T0 = void, T1 = void, T2 = void> {}
+  namespace MSSymbolInstanceSectionDelegate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const MSSymbolInstanceSectionDelegate: cocoa.classes.MSSymbolInstanceSectionDelegate;
+declare const MSSymbolInstanceSectionDelegate: cocoa.MSSymbolInstanceSectionDelegate.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCFOutputStream<T = any> extends NSOutputStream {
+  export interface NSCFOutputStream<T0 = void, T1 = void, T2 = void> extends NSOutputStream {
     _unscheduleFromCFRunLoop_forMode<R = void, P0 = __CFRunLoop, P1 = __CFString>(__unscheduleFromCFRunLoop: P0, _forMode: P1): R;
     _scheduleInCFRunLoop_forMode<R = void, P0 = __CFRunLoop, P1 = __CFString>(__scheduleInCFRunLoop: P0, _forMode: P1): R;
     _setCFClientFlags_callback_context<R = boolean, P0 = number, P1 = CDUnknownFunctionPointerType, P2 = unknown>(__setCFClientFlags: P0, _callback: P1, _context: P2): R;
@@ -29,12 +29,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     isEqual<R = boolean, P0 = unknown>(_isEqual: P0): R;
   }
-  namespace classes {
-    export interface NSCFOutputStream<T = any> extends NSOutputStream {
+  namespace NSCFOutputStream {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSOutputStream {
       allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
       automaticallyNotifiesObserversForKey<R = boolean, P0 = unknown>(_automaticallyNotifiesObserversForKey: P0): R;
     }
   }
 }
 
-declare const NSCFOutputStream: cocoa.classes.NSCFOutputStream;
+declare const NSCFOutputStream: cocoa.NSCFOutputStream.CLASS;

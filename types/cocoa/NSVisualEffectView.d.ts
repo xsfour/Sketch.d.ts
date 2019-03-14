@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSVisualEffectView<T = any> extends NSView {
+  export interface NSVisualEffectView<T0 = void, T1 = void, T2 = void> extends NSView {
     _stringValueForIntrospectorPropertyKey<R = unknown, P0 = unknown>(__stringValueForIntrospectorPropertyKey: P0): R;
     _propertyKeysForIntrospector<R = unknown>(): R;
     _vibrantBlendingStyleForSubtree<R = number>(): R;
@@ -68,8 +68,8 @@ declare namespace cocoa {
     _usesMaterialPreferredAppearance<R = boolean>(): R;
     set_usesMaterialPreferredAppearance<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSVisualEffectView<T = any> extends NSView {
+  namespace NSVisualEffectView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSVisualEffectView>(): R;
       new: <R = NSVisualEffectView>() => R;
       endFreezingInWindow<R = void, P0 = unknown>(_endFreezingInWindow: P0): R;
@@ -81,4 +81,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSVisualEffectView: cocoa.classes.NSVisualEffectView;
+declare const NSVisualEffectView: cocoa.NSVisualEffectView.CLASS;

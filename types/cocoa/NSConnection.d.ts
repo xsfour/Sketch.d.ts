@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSConnection<T = any> extends NSObject {
+  export interface NSConnection<T0 = void, T1 = void, T2 = void> extends NSObject {
     runInNewThread<R = void>(): R;
     run<R = void>(): R;
     removeRunLoop<R = void, P0 = unknown>(_removeRunLoop: P0): R;
@@ -72,8 +72,8 @@ declare namespace cocoa {
     setRequestTimeout<R = void, P0 = number>(_v: P0): R;
     valid<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSConnection<T = any> extends NSObject {
+  namespace NSConnection {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSConnection>(): R;
       new: <R = NSConnection>() => R;
       _enableLogging<R = void, P0 = boolean>(__enableLogging: P0): R;
@@ -97,4 +97,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSConnection: cocoa.classes.NSConnection;
+declare const NSConnection: cocoa.NSConnection.CLASS;

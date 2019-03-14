@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSTintedImages<T = any> extends NSObject {
+  export interface MSTintedImages<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     lockImageWhenNodeIsSelected_active<R = unknown, P0 = boolean, P1 = boolean>(_lockImageWhenNodeIsSelected: P0, _active: P1): R;
     pressedLockImageWhenNodeIsSelected<R = unknown, P0 = boolean>(_pressedLockImageWhenNodeIsSelected: P0): R;
@@ -24,12 +24,12 @@ declare namespace cocoa {
     sidebarCollapsePageListImage<R = NSImage>(): R;
     sidebarAddPageImage<R = NSImage>(): R;
   }
-  namespace classes {
-    export interface MSTintedImages<T = any> extends NSObject {
+  namespace MSTintedImages {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSTintedImages>(): R;
       new: <R = MSTintedImages>() => R;
     }
   }
 }
 
-declare const MSTintedImages: cocoa.classes.MSTintedImages;
+declare const MSTintedImages: cocoa.MSTintedImages.CLASS;

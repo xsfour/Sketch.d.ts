@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXPCProxyCreating<T = any> {}
-  namespace classes {
-    export interface NSXPCProxyCreating<T = any> {  }
+  export interface NSXPCProxyCreating<T0 = void, T1 = void, T2 = void> {}
+  namespace NSXPCProxyCreating {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSXPCProxyCreating: cocoa.classes.NSXPCProxyCreating;
+declare const NSXPCProxyCreating: cocoa.NSXPCProxyCreating.CLASS;

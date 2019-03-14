@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface AFURLSessionManager<T = any> extends NSObject, NSURLSessionDelegateProtocol, NSURLSessionTaskDelegateProtocol, NSURLSessionDataDelegateProtocol, NSURLSessionDownloadDelegateProtocol, NSSecureCodingProtocol, NSCopyingProtocol {
+  export interface AFURLSessionManager<T0 = void, T1 = void, T2 = void> extends NSObject, NSURLSessionDelegateProtocol, NSURLSessionTaskDelegateProtocol, NSURLSessionDataDelegateProtocol, NSURLSessionDownloadDelegateProtocol, NSSecureCodingProtocol, NSCopyingProtocol {
     cxx_destruct<R = void>(): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
@@ -103,12 +103,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface AFURLSessionManager<T = any> extends NSObject, NSURLSessionDelegateProtocol, NSURLSessionTaskDelegateProtocol, NSURLSessionDataDelegateProtocol, NSURLSessionDownloadDelegateProtocol, NSSecureCodingProtocol, NSCopyingProtocol {
+  namespace AFURLSessionManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSURLSessionDelegateProtocol, NSURLSessionTaskDelegateProtocol, NSURLSessionDataDelegateProtocol, NSURLSessionDownloadDelegateProtocol, NSSecureCodingProtocol, NSCopyingProtocol {
       alloc<R = AFURLSessionManager>(): R;
       new: <R = AFURLSessionManager>() => R;
     }
   }
 }
 
-declare const AFURLSessionManager: cocoa.classes.AFURLSessionManager;
+declare const AFURLSessionManager: cocoa.AFURLSessionManager.CLASS;

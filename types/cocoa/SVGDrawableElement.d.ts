@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface SVGDrawableElement<T = any> extends _SVGDrawableElement {
+  export interface SVGDrawableElement<T0 = void, T1 = void, T2 = void> extends _SVGDrawableElement {
     gradientFromSVGGradient_layer<R = unknown, P0 = unknown, P1 = unknown>(_gradientFromSVGGradient: P0, _layer: P1): R;
     applyEffectsToLayer<R = void, P0 = unknown>(_applyEffectsToLayer: P0): R;
     applyScaling_recursivelyToStyleOfLayer_parentStyle<R = void, P0 = number, P1 = unknown, P2 = unknown>(_applyScaling: P0, _recursivelyToStyleOfLayer: P1, _parentStyle: P2): R;
@@ -17,8 +17,8 @@ declare namespace cocoa {
     deferredClipping<R = NSXMLElement>(): R;
     setDeferredClipping<R = void, P0 = NSXMLElement>(_v: P0): R;
   }
-  namespace classes {
-    export interface SVGDrawableElement<T = any> extends _SVGDrawableElement {
+  namespace SVGDrawableElement {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _SVGDrawableElement {
       alloc<R = SVGDrawableElement>(): R;
       new: <R = SVGDrawableElement>() => R;
       styleDefaults<R = unknown>(): R;
@@ -26,4 +26,4 @@ declare namespace cocoa {
   }
 }
 
-declare const SVGDrawableElement: cocoa.classes.SVGDrawableElement;
+declare const SVGDrawableElement: cocoa.SVGDrawableElement.CLASS;

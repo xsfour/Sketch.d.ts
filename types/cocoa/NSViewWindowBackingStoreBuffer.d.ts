@@ -1,15 +1,15 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSViewWindowBackingStoreBuffer<T = any> extends NSViewBuffer {
+  export interface NSViewWindowBackingStoreBuffer<T0 = void, T1 = void, T2 = void> extends NSViewBuffer {
     dealloc<R = void>(): R;
   }
-  namespace classes {
-    export interface NSViewWindowBackingStoreBuffer<T = any> extends NSViewBuffer {
+  namespace NSViewWindowBackingStoreBuffer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewBuffer {
       alloc<R = NSViewWindowBackingStoreBuffer>(): R;
       new: <R = NSViewWindowBackingStoreBuffer>() => R;
     }
   }
 }
 
-declare const NSViewWindowBackingStoreBuffer: cocoa.classes.NSViewWindowBackingStoreBuffer;
+declare const NSViewWindowBackingStoreBuffer: cocoa.NSViewWindowBackingStoreBuffer.CLASS;

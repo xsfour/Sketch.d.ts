@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLabelViewCell<T = any> extends NSActionCell {
+  export interface NSLabelViewCell<T0 = void, T1 = void, T2 = void> extends NSActionCell {
     mouseExited_withFrame_inView<R = void, P0 = unknown, P1 = CGRect, P2 = unknown>(_mouseExited: P0, _withFrame: P1, _inView: P2): R;
     mouseEntered_withFrame_inView<R = void, P0 = unknown, P1 = CGRect, P2 = unknown>(_mouseEntered: P0, _withFrame: P1, _inView: P2): R;
     _handleMouseMovedForEvent_withFrame_inView<R = void, P0 = unknown, P1 = CGRect, P2 = unknown>(__handleMouseMovedForEvent: P0, _withFrame: P1, _inView: P2): R;
@@ -42,12 +42,12 @@ declare namespace cocoa {
     diskLabelValues<R = number>(): R;
     setDiskLabelValues<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSLabelViewCell<T = any> extends NSActionCell {
+  namespace NSLabelViewCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSActionCell {
       alloc<R = NSLabelViewCell>(): R;
       new: <R = NSLabelViewCell>() => R;
     }
   }
 }
 
-declare const NSLabelViewCell: cocoa.classes.NSLabelViewCell;
+declare const NSLabelViewCell: cocoa.NSLabelViewCell.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorPickerMatrixView<T = any> extends NSView {
+  export interface NSColorPickerMatrixView<T0 = void, T1 = void, T2 = void> extends NSView {
     _accessibilityAttributeValue_forIndexedChild<R = unknown, P0 = unknown, P1 = unknown>(__accessibilityAttributeValue: P0, _forIndexedChild: P1): R;
     accessibilityArrayAttributeValues_index_maxCount<R = unknown, P0 = unknown, P1 = number, P2 = number>(_accessibilityArrayAttributeValues: P0, _index: P1, _maxCount: P2): R;
     accessibilityArrayAttributeCount<R = number, P0 = unknown>(_accessibilityArrayAttributeCount: P0): R;
@@ -30,8 +30,8 @@ declare namespace cocoa {
     setNumberOfColumns<R = void, P0 = number>(_v: P0): R;
     color<R = NSColor>(): R;
   }
-  namespace classes {
-    export interface NSColorPickerMatrixView<T = any> extends NSView {
+  namespace NSColorPickerMatrixView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSColorPickerMatrixView>(): R;
       new: <R = NSColorPickerMatrixView>() => R;
       hasEmptyColorForDefaultList<R = boolean>(): R;
@@ -40,4 +40,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSColorPickerMatrixView: cocoa.classes.NSColorPickerMatrixView;
+declare const NSColorPickerMatrixView: cocoa.NSColorPickerMatrixView.CLASS;

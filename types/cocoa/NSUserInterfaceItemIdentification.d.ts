@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUserInterfaceItemIdentification<T = any> {}
-  namespace classes {
-    export interface NSUserInterfaceItemIdentification<T = any> {  }
+  export interface NSUserInterfaceItemIdentification<T0 = void, T1 = void, T2 = void> {}
+  namespace NSUserInterfaceItemIdentification {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSUserInterfaceItemIdentification: cocoa.classes.NSUserInterfaceItemIdentification;
+declare const NSUserInterfaceItemIdentification: cocoa.NSUserInterfaceItemIdentification.CLASS;

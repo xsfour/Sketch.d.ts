@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSLayerArray<T = any> extends NSObject, MSLayerContainmentProtocol, NSFastEnumerationProtocol {
+  export interface MSLayerArray<T0 = void, T1 = void, T2 = void> extends NSObject, MSLayerContainmentProtocol, NSFastEnumerationProtocol {
     cxx_destruct<R = void>(): R;
     hash<R = number>(): R;
     description<R = unknown>(): R;
@@ -25,8 +25,8 @@ declare namespace cocoa {
     layers<R = NSArray>(): R;
     setLayers<R = void, P0 = NSArray>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSLayerArray<T = any> extends NSObject, MSLayerContainmentProtocol, NSFastEnumerationProtocol {
+  namespace MSLayerArray {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, MSLayerContainmentProtocol, NSFastEnumerationProtocol {
       alloc<R = MSLayerArray>(): R;
       new: <R = MSLayerArray>() => R;
       emptyArray<R = unknown>(): R;
@@ -36,4 +36,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSLayerArray: cocoa.classes.MSLayerArray;
+declare const MSLayerArray: cocoa.MSLayerArray.CLASS;

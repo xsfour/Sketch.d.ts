@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDateIntervalFormatter<T = any> extends NSFormatter {
+  export interface NSDateIntervalFormatter<T0 = void, T1 = void, T2 = void> extends NSFormatter {
     _stringFromDate_toDate<R = unknown, P0 = unknown, P1 = unknown>(__stringFromDate: P0, _toDate: P1): R;
     stringFromDateInterval<R = unknown, P0 = unknown>(_stringFromDateInterval: P0): R;
     stringFromDate_toDate<R = unknown, P0 = unknown, P1 = unknown>(_stringFromDate: P0, _toDate: P1): R;
@@ -22,12 +22,12 @@ declare namespace cocoa {
     locale<R = NSLocale>(): R;
     setLocale<R = void, P0 = NSLocale>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSDateIntervalFormatter<T = any> extends NSFormatter {
+  namespace NSDateIntervalFormatter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSFormatter {
       alloc<R = NSDateIntervalFormatter>(): R;
       new: <R = NSDateIntervalFormatter>() => R;
     }
   }
 }
 
-declare const NSDateIntervalFormatter: cocoa.classes.NSDateIntervalFormatter;
+declare const NSDateIntervalFormatter: cocoa.NSDateIntervalFormatter.CLASS;

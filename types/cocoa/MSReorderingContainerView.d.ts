@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSReorderingContainerView<T = any> extends NSView {
+  export interface MSReorderingContainerView<T0 = void, T1 = void, T2 = void> extends NSView {
     cxx_destruct<R = void>(): R;
     startOffsetForStacking<R = number>(): R;
     destinationFramesForSubviews<R = unknown>(): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     delegate<R = MSReorderingContainerDelegate>(): R;
     setDelegate<R = void, P0 = MSReorderingContainerDelegate>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSReorderingContainerView<T = any> extends NSView {
+  namespace MSReorderingContainerView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = MSReorderingContainerView>(): R;
       new: <R = MSReorderingContainerView>() => R;
     }
   }
 }
 
-declare const MSReorderingContainerView: cocoa.classes.MSReorderingContainerView;
+declare const MSReorderingContainerView: cocoa.MSReorderingContainerView.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPasteboardManager<T = any> extends NSObject {
+  export interface MSPasteboardManager<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     registerViewForSupportedDraggedTypes<R = void, P0 = unknown>(_registerViewForSupportedDraggedTypes: P0): R;
     registerReader<R = void, P0 = unknown>(_registerReader: P0): R;
@@ -16,8 +16,8 @@ declare namespace cocoa {
     readers<R = NSMutableArray>(): R;
     setReaders<R = void, P0 = NSMutableArray>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSPasteboardManager<T = any> extends NSObject {
+  namespace MSPasteboardManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSPasteboardManager>(): R;
       new: <R = MSPasteboardManager>() => R;
       applicationPasteboardManager<R = unknown>(): R;
@@ -25,4 +25,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSPasteboardManager: cocoa.classes.MSPasteboardManager;
+declare const MSPasteboardManager: cocoa.MSPasteboardManager.CLASS;

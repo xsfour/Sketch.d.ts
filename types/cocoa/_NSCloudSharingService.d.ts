@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSCloudSharingService<T = any> extends NSSharingService, NSPopoverDelegateProtocol, NSWindowDelegateProtocol {
+  export interface _NSCloudSharingService<T0 = void, T1 = void, T2 = void> extends NSSharingService, NSPopoverDelegateProtocol, NSWindowDelegateProtocol {
     _showParticipantListService<R = void>(): R;
     _showInvitationService<R = void>(): R;
     _showParticipantListServiceInSheetAttachedToWindow_withItems<R = void, P0 = unknown, P1 = unknown>(__showParticipantListServiceInSheetAttachedToWindow: P0, _withItems: P1): R;
@@ -24,8 +24,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSCloudSharingService<T = any> extends NSSharingService, NSPopoverDelegateProtocol, NSWindowDelegateProtocol {
+  namespace _NSCloudSharingService {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSSharingService, NSPopoverDelegateProtocol, NSWindowDelegateProtocol {
       alloc<R = _NSCloudSharingService>(): R;
       new: <R = _NSCloudSharingService>() => R;
       _matchingItemsFromItems<R = unknown, P0 = unknown>(__matchingItemsFromItems: P0): R;

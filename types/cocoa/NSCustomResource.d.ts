@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCustomResource<T = any> extends NSObject, NSCodingProtocol {
+  export interface NSCustomResource<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
     awakeAfterUsingCoder<R = unknown, P0 = unknown>(_awakeAfterUsingCoder: P0): R;
     loadSoundWithName<R = unknown, P0 = unknown>(_loadSoundWithName: P0): R;
     loadCIImageWithName<R = unknown, P0 = unknown>(_loadCIImageWithName: P0): R;
@@ -13,8 +13,8 @@ declare namespace cocoa {
     className<R = unknown>(): R;
     dealloc<R = void>(): R;
   }
-  namespace classes {
-    export interface NSCustomResource<T = any> extends NSObject, NSCodingProtocol {
+  namespace NSCustomResource {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
       alloc<R = NSCustomResource>(): R;
       new: <R = NSCustomResource>() => R;
       bundleForImageSearch<R = unknown>(): R;
@@ -26,4 +26,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSCustomResource: cocoa.classes.NSCustomResource;
+declare const NSCustomResource: cocoa.NSCustomResource.CLASS;

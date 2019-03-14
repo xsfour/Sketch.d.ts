@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface QLPreviewPanel<T = any> {}
-  namespace classes {
-    export interface QLPreviewPanel<T = any> {  }
+  export interface QLPreviewPanel<T0 = void, T1 = void, T2 = void> {}
+  namespace QLPreviewPanel {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const QLPreviewPanel: cocoa.classes.QLPreviewPanel;
+declare const QLPreviewPanel: cocoa.QLPreviewPanel.CLASS;

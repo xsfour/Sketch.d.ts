@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSRulerView<T = any> extends NSView {
+  export interface MSRulerView<T0 = void, T1 = void, T2 = void> extends NSView {
     cxx_destruct<R = void>(): R;
     rulerHeight<R = number>(): R;
     rulerLength<R = number>(): R;
@@ -66,8 +66,8 @@ declare namespace cocoa {
     rulerData<R = MSRulerData>(): R;
     setRulerData<R = void, P0 = MSRulerData>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSRulerView<T = any> extends NSView {
+  namespace MSRulerView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = MSRulerView>(): R;
       new: <R = MSRulerView>() => R;
       rulerDraggingLocked<R = boolean>(): R;
@@ -76,4 +76,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSRulerView: cocoa.classes.MSRulerView;
+declare const MSRulerView: cocoa.MSRulerView.CLASS;

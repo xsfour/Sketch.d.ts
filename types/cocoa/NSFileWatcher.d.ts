@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFileWatcher<T = any> extends NSObject {
+  export interface NSFileWatcher<T0 = void, T1 = void, T2 = void> extends NSObject {
     stop<R = void>(): R;
     settle<R = void>(): R;
     _coalesceSubitemObservations<R = void>(): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     initWithQueue_auditToken<R = unknown, P0 = unknown, P1 = unknown>(_initWithQueue: P0, _auditToken: P1): R;
   }
-  namespace classes {
-    export interface NSFileWatcher<T = any> extends NSObject {
+  namespace NSFileWatcher {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSFileWatcher>(): R;
       new: <R = NSFileWatcher>() => R;
     }
   }
 }
 
-declare const NSFileWatcher: cocoa.classes.NSFileWatcher;
+declare const NSFileWatcher: cocoa.NSFileWatcher.CLASS;

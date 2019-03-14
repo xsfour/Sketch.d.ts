@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface FBEdgeOverlapRun<T = any> extends NSObject {
+  export interface FBEdgeOverlapRun<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     debugQuickLookObject<R = unknown>(): R;
     edgeOverlapsWithBlock<R = void, P0 = CDUnknownBlockType>(_edgeOverlapsWithBlock: P0): R;
@@ -32,8 +32,8 @@ declare namespace cocoa {
     startIsInsideContour2<R = boolean>(): R;
     startIsInsideContour1<R = boolean>(): R;
   }
-  namespace classes {
-    export interface FBEdgeOverlapRun<T = any> extends NSObject {
+  namespace FBEdgeOverlapRun {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = FBEdgeOverlapRun>(): R;
       new: <R = FBEdgeOverlapRun>() => R;
       overlapRun<R = unknown>(): R;
@@ -41,4 +41,4 @@ declare namespace cocoa {
   }
 }
 
-declare const FBEdgeOverlapRun: cocoa.classes.FBEdgeOverlapRun;
+declare const FBEdgeOverlapRun: cocoa.FBEdgeOverlapRun.CLASS;

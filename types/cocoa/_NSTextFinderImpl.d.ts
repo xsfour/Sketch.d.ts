@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSTextFinderImpl<T = any> extends NSObject, NSWindowDelegateProtocol, NSComboBoxDelegateProtocol, NSFindPatternManagerProtocol {
+  export interface _NSTextFinderImpl<T0 = void, T1 = void, T2 = void> extends NSObject, NSWindowDelegateProtocol, NSComboBoxDelegateProtocol, NSFindPatternManagerProtocol {
     _asynchronousDocumentFindOptions<R = number, P0 = boolean>(__asynchronousDocumentFindOptions: P0): R;
     _didFindAsynchronousDocumentMatch_wrapped_forward<R = void, P0 = unknown, P1 = boolean, P2 = boolean>(__didFindAsynchronousDocumentMatch: P0, _wrapped: P1, _forward: P2): R;
     incremental_nextAsynchronousDocumentFindMatchForward_wrap_completionHandler<R = void, P0 = boolean, P1 = boolean, P2 = CDUnknownBlockType>(_incremental_nextAsynchronousDocumentFindMatchForward: P0, _wrap: P1, _completionHandler: P2): R;
@@ -121,8 +121,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSTextFinderImpl<T = any> extends NSObject, NSWindowDelegateProtocol, NSComboBoxDelegateProtocol, NSFindPatternManagerProtocol {
+  namespace _NSTextFinderImpl {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSWindowDelegateProtocol, NSComboBoxDelegateProtocol, NSFindPatternManagerProtocol {
       alloc<R = _NSTextFinderImpl>(): R;
       new: <R = _NSTextFinderImpl>() => R;
       _indicatorDelayIntervalForSearchString<R = number, P0 = unknown>(__indicatorDelayIntervalForSearchString: P0): R;

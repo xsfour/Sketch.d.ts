@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCZipableFile<T = any> extends NSObject {
+  export interface BCZipableFile<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     filePathMatches<R = boolean, P0 = unknown>(_filePathMatches: P0): R;
     initWithObject_subPath_asJSON<R = unknown, P0 = unknown, P1 = unknown, P2 = boolean>(_initWithObject: P0, _subPath: P1, _asJSON: P2): R;
@@ -11,8 +11,8 @@ declare namespace cocoa {
     objectToEncode<R = NSObject>(): R;
     subPath<R = NSString>(): R;
   }
-  namespace classes {
-    export interface BCZipableFile<T = any> extends NSObject {
+  namespace BCZipableFile {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = BCZipableFile>(): R;
       new: <R = BCZipableFile>() => R;
       dataZipableForObject_withSubPath<R = unknown, P0 = unknown, P1 = unknown>(_dataZipableForObject: P0, _withSubPath: P1): R;
@@ -21,4 +21,4 @@ declare namespace cocoa {
   }
 }
 
-declare const BCZipableFile: cocoa.classes.BCZipableFile;
+declare const BCZipableFile: cocoa.BCZipableFile.CLASS;

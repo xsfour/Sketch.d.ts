@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSObjectController<T = any> extends NSController {
+  export interface NSObjectController<T0 = void, T1 = void, T2 = void> extends NSController {
     validateMenuItem<R = boolean, P0 = unknown>(_validateMenuItem: P0): R;
     validateUserInterfaceItem<R = boolean, P0 = unknown>(_validateUserInterfaceItem: P0): R;
     _explicitlyCannotRemove<R = boolean>(): R;
@@ -62,8 +62,8 @@ declare namespace cocoa {
     usesLazyFetching<R = boolean>(): R;
     setUsesLazyFetching<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSObjectController<T = any> extends NSController {
+  namespace NSObjectController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSController {
       alloc<R = NSObjectController>(): R;
       new: <R = NSObjectController>() => R;
       _defaultObjectClassName<R = unknown>(): R;
@@ -72,4 +72,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSObjectController: cocoa.classes.NSObjectController;
+declare const NSObjectController: cocoa.NSObjectController.CLASS;

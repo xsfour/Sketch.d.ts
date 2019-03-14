@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSnapItem<T = any> extends NSObject, MSSnappableProtocol {
+  export interface MSSnapItem<T0 = void, T1 = void, T2 = void> extends NSObject, MSSnappableProtocol {
     cxx_destruct<R = void>(): R;
     shouldDrawDistanceOnSnapTo<R = boolean, P0 = unknown>(_shouldDrawDistanceOnSnapTo: P0): R;
     rotation<R = number>(): R;
@@ -37,8 +37,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSSnapItem<T = any> extends NSObject, MSSnappableProtocol {
+  namespace MSSnapItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, MSSnappableProtocol {
       alloc<R = MSSnapItem>(): R;
       new: <R = MSSnapItem>() => R;
       candidateSpacingsBetweenLayers_alongAxis<R = unknown, P0 = unknown, P1 = number>(_candidateSpacingsBetweenLayers: P0, _alongAxis: P1): R;
@@ -47,4 +47,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSSnapItem: cocoa.classes.MSSnapItem;
+declare const MSSnapItem: cocoa.MSSnapItem.CLASS;

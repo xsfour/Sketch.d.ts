@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAlignmentEngine<T = any> extends NSObject {
+  export interface MSAlignmentEngine<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     roundPoint<R = CGPoint, P0 = CGPoint>(_roundPoint: P0): R;
     applyDelegateAlignment_snappedAxes<R = CGPoint, P0 = CGPoint, P1 = number>(_applyDelegateAlignment: P0, _snappedAxes: P1): R;
@@ -24,8 +24,8 @@ declare namespace cocoa {
     setSnapDistance<R = void, P0 = number>(_v: P0): R;
     alignmentResult<R = MSAlignmentEngineResult>(): R;
   }
-  namespace classes {
-    export interface MSAlignmentEngine<T = any> extends NSObject {
+  namespace MSAlignmentEngine {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSAlignmentEngine>(): R;
       new: <R = MSAlignmentEngine>() => R;
       enumeratorForPossibleSnapTargetLayersInGroup<R = unknown, P0 = unknown>(_enumeratorForPossibleSnapTargetLayersInGroup: P0): R;
@@ -34,4 +34,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSAlignmentEngine: cocoa.classes.MSAlignmentEngine;
+declare const MSAlignmentEngine: cocoa.MSAlignmentEngine.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSLayerPaster<T = any> extends NSObject {
+  export interface MSLayerPaster<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     removeDisconnectedFlowsFromLayers<R = void, P0 = unknown>(_removeDisconnectedFlowsFromLayers: P0): R;
     propertiesAreEqualBetweenPasteboardSymbol_andSymbol<R = boolean, P0 = unknown, P1 = unknown>(_propertiesAreEqualBetweenPasteboardSymbol: P0, _andSymbol: P1): R;
@@ -34,8 +34,8 @@ declare namespace cocoa {
     insertedSymbolMasters<R = NSMutableArray>(): R;
     objectIDMap<R = NSMutableDictionary>(): R;
   }
-  namespace classes {
-    export interface MSLayerPaster<T = any> extends NSObject {
+  namespace MSLayerPaster {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSLayerPaster>(): R;
       new: <R = MSLayerPaster>() => R;
       duplicateLayers<R = unknown, P0 = unknown>(_duplicateLayers: P0): R;
@@ -49,4 +49,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSLayerPaster: cocoa.classes.MSLayerPaster;
+declare const MSLayerPaster: cocoa.MSLayerPaster.CLASS;

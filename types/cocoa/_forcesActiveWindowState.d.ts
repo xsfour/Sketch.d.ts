@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _forcesActiveWindowState<T = any> {}
-  namespace classes {
-    export interface _forcesActiveWindowState<T = any> {  }
+  export interface _forcesActiveWindowState<T0 = void, T1 = void, T2 = void> {}
+  namespace _forcesActiveWindowState {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

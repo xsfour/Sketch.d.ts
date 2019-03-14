@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTabViewControllerUIProviderProtocol<T = any> extends NSObjectProtocol, NSCodingProtocol {
+  export interface NSTabViewControllerUIProviderProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol, NSCodingProtocol {
     tearDown<R = void>(): R;
     setUpForTabView_inContainer<R = void, P0 = NSTabView, P1 = NSView>(_setUpForTabView: P0, _inContainer: P1): R;
     _associatedTabStyle<R = number>(): R;
@@ -13,7 +13,7 @@ declare namespace cocoa {
     tabViewController<R = NSTabViewController>(): R;
     setTabViewController<R = void, P0 = NSTabViewController>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTabViewControllerUIProviderProtocol<T = any> extends NSObjectProtocol, NSCodingProtocol {  }
+  namespace NSTabViewControllerUIProviderProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol, NSCodingProtocol {}
   }
 }

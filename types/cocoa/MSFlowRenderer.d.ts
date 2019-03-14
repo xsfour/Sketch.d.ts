@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFlowRenderer<T = any> extends MSOverlayRenderer {
+  export interface MSFlowRenderer<T0 = void, T1 = void, T2 = void> extends MSOverlayRenderer {
     drawDotInContext<R = void, P0 = unknown>(_drawDotInContext: P0): R;
     drawTipInContext<R = void, P0 = unknown>(_drawTipInContext: P0): R;
     drawLineAndTipInContext<R = void, P0 = unknown>(_drawLineAndTipInContext: P0): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     flowInfluencingLayerIDs<R = NSArray>(): R;
     setFlowInfluencingLayerIDs<R = void, P0 = NSArray>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSFlowRenderer<T = any> extends MSOverlayRenderer {
+  namespace MSFlowRenderer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSOverlayRenderer {
       alloc<R = MSFlowRenderer>(): R;
       new: <R = MSFlowRenderer>() => R;
     }
   }
 }
 
-declare const MSFlowRenderer: cocoa.classes.MSFlowRenderer;
+declare const MSFlowRenderer: cocoa.MSFlowRenderer.CLASS;

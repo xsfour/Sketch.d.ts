@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutableLayer<T = any> extends _MSImmutableLayer, MSInterfaceImageOwnerProtocol, MSImmutableLayerPreviewabilityProtocol, MSLayerContainmentProtocol, MSFlowContainmentCheckProtocol, MSLayerProtocol, MSLayerTraitsProtocol {
+  export interface MSImmutableLayer<T0 = void, T1 = void, T2 = void> extends _MSImmutableLayer, MSInterfaceImageOwnerProtocol, MSImmutableLayerPreviewabilityProtocol, MSLayerContainmentProtocol, MSFlowContainmentCheckProtocol, MSLayerProtocol, MSLayerTraitsProtocol {
     parentShapeInAncestors<R = unknown, P0 = unknown>(_parentShapeInAncestors: P0): R;
     canSkipAdvancedClipForStrokes<R = boolean>(): R;
     calculateInfluenceRectForBoundsInDocument_visitedSymbols<R = CGRect, P0 = unknown, P1 = unknown>(_calculateInfluenceRectForBoundsInDocument: P0, _visitedSymbols: P1): R;
@@ -92,12 +92,12 @@ declare namespace cocoa {
     rotation<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSImmutableLayer<T = any> extends _MSImmutableLayer, MSInterfaceImageOwnerProtocol, MSImmutableLayerPreviewabilityProtocol, MSLayerContainmentProtocol, MSFlowContainmentCheckProtocol, MSLayerProtocol, MSLayerTraitsProtocol {
+  namespace MSImmutableLayer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSImmutableLayer, MSInterfaceImageOwnerProtocol, MSImmutableLayerPreviewabilityProtocol, MSLayerContainmentProtocol, MSFlowContainmentCheckProtocol, MSLayerProtocol, MSLayerTraitsProtocol {
       alloc<R = MSImmutableLayer>(): R;
       new: <R = MSImmutableLayer>() => R;
     }
   }
 }
 
-declare const MSImmutableLayer: cocoa.classes.MSImmutableLayer;
+declare const MSImmutableLayer: cocoa.MSImmutableLayer.CLASS;

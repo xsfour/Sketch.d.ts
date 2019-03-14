@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCPasteboardMock<T = any> extends NSObject {
+  export interface BCPasteboardMock<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     clearContents<R = void>(): R;
     writeObjects<R = boolean, P0 = unknown>(_writeObjects: P0): R;
@@ -22,8 +22,8 @@ declare namespace cocoa {
     setName<R = void, P0 = NSString>(_v: P0): R;
     changeCount<R = number>(): R;
   }
-  namespace classes {
-    export interface BCPasteboardMock<T = any> extends NSObject {
+  namespace BCPasteboardMock {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = BCPasteboardMock>(): R;
       new: <R = BCPasteboardMock>() => R;
       pasteboardWithName<R = unknown, P0 = unknown>(_pasteboardWithName: P0): R;
@@ -32,4 +32,4 @@ declare namespace cocoa {
   }
 }
 
-declare const BCPasteboardMock: cocoa.classes.BCPasteboardMock;
+declare const BCPasteboardMock: cocoa.BCPasteboardMock.CLASS;

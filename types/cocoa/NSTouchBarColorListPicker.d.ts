@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarColorListPicker<T = any> extends NSControl, NSScrubberDelegateProtocol, NSScrubberDataSourceProtocol, NSTouchBarColorListPickerPressAndHoldPopUpDelegateProtocol, NSGestureRecognizerDelegateProtocol, NSTouchBarColorPickerViewProtocol {
+  export interface NSTouchBarColorListPicker<T0 = void, T1 = void, T2 = void> extends NSControl, NSScrubberDelegateProtocol, NSScrubberDataSourceProtocol, NSTouchBarColorListPickerPressAndHoldPopUpDelegateProtocol, NSGestureRecognizerDelegateProtocol, NSTouchBarColorPickerViewProtocol {
     setContinuous<R = void, P0 = boolean>(_setContinuous: P0): R;
     isContinuous<R = boolean>(): R;
     longPress<R = void, P0 = unknown>(_longPress: P0): R;
@@ -34,8 +34,8 @@ declare namespace cocoa {
     target<R = unknown>(): R;
     setTarget<R = void, P0 = unknown>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTouchBarColorListPicker<T = any> extends NSControl, NSScrubberDelegateProtocol, NSScrubberDataSourceProtocol, NSTouchBarColorListPickerPressAndHoldPopUpDelegateProtocol, NSGestureRecognizerDelegateProtocol, NSTouchBarColorPickerViewProtocol {
+  namespace NSTouchBarColorListPicker {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSControl, NSScrubberDelegateProtocol, NSScrubberDataSourceProtocol, NSTouchBarColorListPickerPressAndHoldPopUpDelegateProtocol, NSGestureRecognizerDelegateProtocol, NSTouchBarColorPickerViewProtocol {
       alloc<R = NSTouchBarColorListPicker>(): R;
       new: <R = NSTouchBarColorListPicker>() => R;
       thumbnailWithSize_inView<R = unknown, P0 = CGSize, P1 = unknown>(_thumbnailWithSize: P0, _inView: P1): R;
@@ -46,4 +46,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTouchBarColorListPicker: cocoa.classes.NSTouchBarColorListPicker;
+declare const NSTouchBarColorListPicker: cocoa.NSTouchBarColorListPicker.CLASS;

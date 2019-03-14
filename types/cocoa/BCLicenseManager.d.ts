@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCLicenseManager<T = any> extends NSObject {
+  export interface BCLicenseManager<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     apiURLForMethod_queryItems<R = unknown, P0 = unknown, P1 = unknown>(_apiURLForMethod: P0, _queryItems: P1): R;
     apiURL<R = unknown>(): R;
@@ -55,12 +55,12 @@ declare namespace cocoa {
     setLicense<R = void, P0 = BCLicense>(_v: P0): R;
     canUseCloud<R = boolean>(): R;
   }
-  namespace classes {
-    export interface BCLicenseManager<T = any> extends NSObject {
+  namespace BCLicenseManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = BCLicenseManager>(): R;
       new: <R = BCLicenseManager>() => R;
     }
   }
 }
 
-declare const BCLicenseManager: cocoa.classes.BCLicenseManager;
+declare const BCLicenseManager: cocoa.BCLicenseManager.CLASS;

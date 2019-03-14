@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSGroupTouchBarItem<T = any> extends NSTouchBarItem, NSTouchBarItemTypeGroupProtocol {
+  export interface NSGroupTouchBarItem<T0 = void, T1 = void, T2 = void> extends NSTouchBarItem, NSTouchBarItemTypeGroupProtocol {
     observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
     item_minSize_maxSize_preferredSize<R = void, P0 = unknown, P1 = CGSize, P2 = CGSize, P3 = CGSize>(_item: P0, _minSize: P1, _maxSize: P2, _preferredSize: P3): R;
     _defaultCompressionOptionOrder<R = unknown>(): R;
@@ -34,8 +34,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSGroupTouchBarItem<T = any> extends NSTouchBarItem, NSTouchBarItemTypeGroupProtocol {
+  namespace NSGroupTouchBarItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTouchBarItem, NSTouchBarItemTypeGroupProtocol {
       alloc<R = NSGroupTouchBarItem>(): R;
       new: <R = NSGroupTouchBarItem>() => R;
       keyPathsForValuesAffecting_requiresReducedMetricAppearance<R = unknown>(): R;
@@ -47,4 +47,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSGroupTouchBarItem: cocoa.classes.NSGroupTouchBarItem;
+declare const NSGroupTouchBarItem: cocoa.NSGroupTouchBarItem.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPersistentUIBucket<T = any> extends NSObject {
+  export interface NSPersistentUIBucket<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     isMenuBar<R = boolean>(): R;
     isGlobal<R = boolean>(): R;
@@ -17,12 +17,12 @@ declare namespace cocoa {
     setFrameString<R = void, P0 = NSString>(_v: P0): R;
     state<R = NSMutableDictionary>(): R;
   }
-  namespace classes {
-    export interface NSPersistentUIBucket<T = any> extends NSObject {
+  namespace NSPersistentUIBucket {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSPersistentUIBucket>(): R;
       new: <R = NSPersistentUIBucket>() => R;
     }
   }
 }
 
-declare const NSPersistentUIBucket: cocoa.classes.NSPersistentUIBucket;
+declare const NSPersistentUIBucket: cocoa.NSPersistentUIBucket.CLASS;

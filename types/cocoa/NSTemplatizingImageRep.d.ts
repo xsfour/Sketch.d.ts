@@ -1,15 +1,15 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTemplatizingImageRep<T = any> extends NSImageRep {
+  export interface NSTemplatizingImageRep<T0 = void, T1 = void, T2 = void> extends NSImageRep {
     initWithSourceImage<R = unknown, P0 = unknown>(_initWithSourceImage: P0): R;
   }
-  namespace classes {
-    export interface NSTemplatizingImageRep<T = any> extends NSImageRep {
+  namespace NSTemplatizingImageRep {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSImageRep {
       alloc<R = NSTemplatizingImageRep>(): R;
       new: <R = NSTemplatizingImageRep>() => R;
     }
   }
 }
 
-declare const NSTemplatizingImageRep: cocoa.classes.NSTemplatizingImageRep;
+declare const NSTemplatizingImageRep: cocoa.NSTemplatizingImageRep.CLASS;

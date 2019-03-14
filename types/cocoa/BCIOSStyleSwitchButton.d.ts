@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCIOSStyleSwitchButton<T = any> extends NSButton {
+  export interface BCIOSStyleSwitchButton<T0 = void, T1 = void, T2 = void> extends NSButton {
     cxx_destruct<R = void>(): R;
     moveLayer_toX<R = void, P0 = unknown, P1 = number>(_moveLayer: P0, _toX: P1): R;
     performAnimated_block<R = void, P0 = boolean, P1 = CDUnknownBlockType>(_performAnimated: P0, _block: P1): R;
@@ -18,12 +18,12 @@ declare namespace cocoa {
     backgroundOn<R = CALayer>(): R;
     setBackgroundOn<R = void, P0 = CALayer>(_v: P0): R;
   }
-  namespace classes {
-    export interface BCIOSStyleSwitchButton<T = any> extends NSButton {
+  namespace BCIOSStyleSwitchButton {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSButton {
       alloc<R = BCIOSStyleSwitchButton>(): R;
       new: <R = BCIOSStyleSwitchButton>() => R;
     }
   }
 }
 
-declare const BCIOSStyleSwitchButton: cocoa.classes.BCIOSStyleSwitchButton;
+declare const BCIOSStyleSwitchButton: cocoa.BCIOSStyleSwitchButton.CLASS;

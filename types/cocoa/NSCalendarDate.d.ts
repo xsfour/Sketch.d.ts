@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCalendarDate<T = any> extends NSDate {
+  export interface NSCalendarDate<T0 = void, T1 = void, T2 = void> extends NSDate {
     initWithString_calendarFormat_locale<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_initWithString: P0, _calendarFormat: P1, _locale: P2): R;
     descriptionWithCalendarFormat_locale<R = unknown, P0 = unknown, P1 = unknown>(_descriptionWithCalendarFormat: P0, _locale: P1): R;
     initWithString_calendarFormat<R = unknown, P0 = unknown, P1 = unknown>(_initWithString: P0, _calendarFormat: P1): R;
@@ -39,8 +39,8 @@ declare namespace cocoa {
     initWithString<R = unknown, P0 = unknown>(_initWithString: P0): R;
     replacementObjectForPortCoder<R = unknown, P0 = unknown>(_replacementObjectForPortCoder: P0): R;
   }
-  namespace classes {
-    export interface NSCalendarDate<T = any> extends NSDate {
+  namespace NSCalendarDate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSDate {
       dateWithString_calendarFormat_locale<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_dateWithString: P0, _calendarFormat: P1, _locale: P2): R;
       dateWithString_calendarFormat<R = unknown, P0 = unknown, P1 = unknown>(_dateWithString: P0, _calendarFormat: P1): R;
       supportsSecureCoding<R = boolean>(): R;
@@ -54,4 +54,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSCalendarDate: cocoa.classes.NSCalendarDate;
+declare const NSCalendarDate: cocoa.NSCalendarDate.CLASS;

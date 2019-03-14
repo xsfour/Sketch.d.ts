@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLegacyExternalColorPickerHostViewController<T = any> extends NSViewController, NSLegacyExternalColorPickerHostViewControllerProtocol, NSRemoteViewDelegateProtocol, NSColorPickingInternalProtocol {
+  export interface NSLegacyExternalColorPickerHostViewController<T0 = void, T1 = void, T2 = void> extends NSViewController, NSLegacyExternalColorPickerHostViewControllerProtocol, NSRemoteViewDelegateProtocol, NSColorPickingInternalProtocol {
     preparePickerWithSandboxExtension_completionHandler<R = void, P0 = boolean, P1 = CDUnknownBlockType>(_preparePickerWithSandboxExtension: P0, _completionHandler: P1): R;
     remoteView<R = unknown>(): R;
     description<R = unknown>(): R;
@@ -13,8 +13,8 @@ declare namespace cocoa {
     setIsActivePicker<R = void, P0 = boolean>(_v: P0): R;
     shouldRetainExportedObject<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSLegacyExternalColorPickerHostViewController<T = any> extends NSViewController, NSLegacyExternalColorPickerHostViewControllerProtocol, NSRemoteViewDelegateProtocol, NSColorPickingInternalProtocol {
+  namespace NSLegacyExternalColorPickerHostViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController, NSLegacyExternalColorPickerHostViewControllerProtocol, NSRemoteViewDelegateProtocol, NSColorPickingInternalProtocol {
       alloc<R = NSLegacyExternalColorPickerHostViewController>(): R;
       new: <R = NSLegacyExternalColorPickerHostViewController>() => R;
       warmup<R = void>(): R;
@@ -22,4 +22,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSLegacyExternalColorPickerHostViewController: cocoa.classes.NSLegacyExternalColorPickerHostViewController;
+declare const NSLegacyExternalColorPickerHostViewController: cocoa.NSLegacyExternalColorPickerHostViewController.CLASS;

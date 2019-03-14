@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSForeignObjectMenuBuilder<T = any> extends MSSortableObjectMenuBuilder {
+  export interface MSForeignObjectMenuBuilder<T0 = void, T1 = void, T2 = void> extends MSSortableObjectMenuBuilder {
     buildMenuItemsForMenu_withAction<R = unknown, P0 = unknown, P1 = unknown>(_buildMenuItemsForMenu: P0, _withAction: P1): R;
     buildMenuItemsForMenu_withTarget_selector<R = unknown, P0 = unknown, P1 = unknown, P2 = string>(_buildMenuItemsForMenu: P0, _withTarget: P1, _selector: P2): R;
     menuItemForLibrary_mainMenu_target_selector<R = unknown, P0 = unknown, P1 = boolean, P2 = unknown, P3 = string>(_menuItemForLibrary: P0, _mainMenu: P1, _target: P2, _selector: P3): R;
@@ -15,8 +15,8 @@ declare namespace cocoa {
     filter<R = CDUnknownBlockType>(): R;
     setFilter<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSForeignObjectMenuBuilder<T = any> extends MSSortableObjectMenuBuilder {
+  namespace MSForeignObjectMenuBuilder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSSortableObjectMenuBuilder {
       alloc<R = MSForeignObjectMenuBuilder>(): R;
       new: <R = MSForeignObjectMenuBuilder>() => R;
       filterForReplacingSymbolInstances<R = CDUnknownBlockType, P0 = unknown>(_filterForReplacingSymbolInstances: P0): R;
@@ -24,4 +24,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSForeignObjectMenuBuilder: cocoa.classes.MSForeignObjectMenuBuilder;
+declare const MSForeignObjectMenuBuilder: cocoa.MSForeignObjectMenuBuilder.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSRectSet<T = any> extends NSObject {
+  export interface NSRectSet<T0 = void, T1 = void, T2 = void> extends NSObject {
     strokeExactInterior<R = void>(): R;
     fillExactInterior<R = void>(): R;
     stroke<R = void>(): R;
@@ -23,8 +23,8 @@ declare namespace cocoa {
     initWithRegion<R = unknown, P0 = unknown>(_initWithRegion: P0): R;
     initWithRect<R = unknown, P0 = CGRect>(_initWithRect: P0): R;
   }
-  namespace classes {
-    export interface NSRectSet<T = any> extends NSObject {
+  namespace NSRectSet {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSRectSet>(): R;
       new: <R = NSRectSet>() => R;
       emptyRectSet<R = unknown>(): R;
@@ -33,4 +33,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSRectSet: cocoa.classes.NSRectSet;
+declare const NSRectSet: cocoa.NSRectSet.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSStoryboardSegue<T = any> extends NSObject {
+  export interface NSStoryboardSegue<T0 = void, T1 = void, T2 = void> extends NSObject {
     description<R = unknown>(): R;
     perform<R = void>(): R;
     _prepare<R = void>(): R;
@@ -15,8 +15,8 @@ declare namespace cocoa {
     sourceController<R = unknown>(): R;
     identifier<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSStoryboardSegue<T = any> extends NSObject {
+  namespace NSStoryboardSegue {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSStoryboardSegue>(): R;
       new: <R = NSStoryboardSegue>() => R;
       segueWithIdentifier_source_destination_performHandler<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = CDUnknownBlockType>(_segueWithIdentifier: P0, _source: P1, _destination: P2, _performHandler: P3): R;
@@ -24,4 +24,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSStoryboardSegue: cocoa.classes.NSStoryboardSegue;
+declare const NSStoryboardSegue: cocoa.NSStoryboardSegue.CLASS;

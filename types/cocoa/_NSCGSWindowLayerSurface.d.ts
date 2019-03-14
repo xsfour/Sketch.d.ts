@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSCGSWindowLayerSurface<T = any> extends NSCGSWindowLayerSurface {
+  export interface _NSCGSWindowLayerSurface<T0 = void, T1 = void, T2 = void> extends NSCGSWindowLayerSurface {
     setLayer<R = void, P0 = unknown>(_setLayer: P0): R;
     layer<R = unknown>(): R;
     setDisplayNumber<R = void, P0 = number>(_setDisplayNumber: P0): R;
@@ -21,8 +21,8 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     initWithWindow<R = unknown, P0 = unknown>(_initWithWindow: P0): R;
   }
-  namespace classes {
-    export interface _NSCGSWindowLayerSurface<T = any> extends NSCGSWindowLayerSurface {
+  namespace _NSCGSWindowLayerSurface {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSCGSWindowLayerSurface {
       alloc<R = _NSCGSWindowLayerSurface>(): R;
       new: <R = _NSCGSWindowLayerSurface>() => R;
     }

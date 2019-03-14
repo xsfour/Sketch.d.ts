@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFileAccessArbiterProtocol<T = any> extends NSObjectProtocol {
+  export interface NSFileAccessArbiterProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     tiePresenterForID_toItemAtURL<R = void, P0 = unknown, P1 = NSURLPromisePair>(_tiePresenterForID: P0, _toItemAtURL: P1): R;
     writerWithPurposeID_didVersionChangeOfKind_toItemAtURL_withClientID_name<R = void, P0 = unknown, P1 = NSString, P2 = NSURLPromisePair, P3 = NSString, P4 = NSString>(_writerWithPurposeID: P0, _didVersionChangeOfKind: P1, _toItemAtURL: P2, _withClientID: P3, _name: P4): R;
     writerWithPurposeID_didChangeItemAtURL<R = void, P0 = unknown, P1 = NSURLPromisePair>(_writerWithPurposeID: P0, _didChangeItemAtURL: P1): R;
@@ -16,7 +16,7 @@ declare namespace cocoa {
     revokeSubarbitrationClaimForID<R = void, P0 = unknown>(_revokeSubarbitrationClaimForID: P0): R;
     revokeAccessClaimForID<R = void, P0 = unknown>(_revokeAccessClaimForID: P0): R;
   }
-  namespace classes {
-    export interface NSFileAccessArbiterProtocol<T = any> extends NSObjectProtocol {  }
+  namespace NSFileAccessArbiterProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

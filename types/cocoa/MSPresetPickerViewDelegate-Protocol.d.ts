@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPresetPickerViewDelegateProtocol<T = any> extends NSObjectProtocol {
+  export interface MSPresetPickerViewDelegateProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     pickerView_didPickPresetAtIndex<R = void, P0 = MSAssetPickerView, P1 = number>(_pickerView: P0, _didPickPresetAtIndex: P1): R;
     pickerView_removePresetAtIndex<R = void, P0 = MSAssetPickerView, P1 = number>(_pickerView: P0, _removePresetAtIndex: P1): R;
     addPresetForPickerView<R = void, P0 = MSAssetPickerView>(_addPresetForPickerView: P0): R;
@@ -19,7 +19,7 @@ declare namespace cocoa {
     shouldShowAddPresetButton<R = boolean, P0 = MSAssetPickerView>(_shouldShowAddPresetButton: P0): R;
     drawContentForCellInPickerView_withFrame_atIndex_inRect<R = void, P0 = MSAssetPickerView, P1 = boolean, P2 = number, P3 = CGRect>(_drawContentForCellInPickerView: P0, _withFrame: P1, _atIndex: P2, _inRect: P3): R;
   }
-  namespace classes {
-    export interface MSPresetPickerViewDelegateProtocol<T = any> extends NSObjectProtocol {  }
+  namespace MSPresetPickerViewDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMassFormatter<T = any> extends NSFormatter, NSObservableProtocol, NSObserverProtocol {
+  export interface NSMassFormatter<T0 = void, T1 = void, T2 = void> extends NSFormatter, NSObservableProtocol, NSObserverProtocol {
     stringFromValue_unit<R = unknown, P0 = number, P1 = number>(_stringFromValue: P0, _unit: P1): R;
     stringFromKilograms<R = unknown, P0 = number>(_stringFromKilograms: P0): R;
     unitStringFromValue_unit<R = unknown, P0 = number, P1 = number>(_unitStringFromValue: P0, _unit: P1): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSMassFormatter<T = any> extends NSFormatter, NSObservableProtocol, NSObserverProtocol {
+  namespace NSMassFormatter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSFormatter, NSObservableProtocol, NSObserverProtocol {
       alloc<R = NSMassFormatter>(): R;
       new: <R = NSMassFormatter>() => R;
     }
   }
 }
 
-declare const NSMassFormatter: cocoa.classes.NSMassFormatter;
+declare const NSMassFormatter: cocoa.NSMassFormatter.CLASS;

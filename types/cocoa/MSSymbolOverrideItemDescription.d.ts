@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSymbolOverrideItemDescription<T = any> {}
-  namespace classes {
-    export interface MSSymbolOverrideItemDescription<T = any> {  }
+  export interface MSSymbolOverrideItemDescription<T0 = void, T1 = void, T2 = void> {}
+  namespace MSSymbolOverrideItemDescription {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const MSSymbolOverrideItemDescription: cocoa.classes.MSSymbolOverrideItemDescription;
+declare const MSSymbolOverrideItemDescription: cocoa.MSSymbolOverrideItemDescription.CLASS;

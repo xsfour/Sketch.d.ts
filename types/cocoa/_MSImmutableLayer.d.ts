@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSImmutableLayer<T = any> extends MSImmutableModelObject {
+  export interface _MSImmutableLayer<T0 = void, T1 = void, T2 = void> extends MSImmutableModelObject {
     hasDefaultValues<R = boolean>(): R;
     frame<R = MSImmutableRect>(): R;
     setFrame<R = void, P0 = MSImmutableRect>(_v: P0): R;
@@ -40,8 +40,8 @@ declare namespace cocoa {
     booleanOperation<R = number>(): R;
     setBooleanOperation<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface _MSImmutableLayer<T = any> extends MSImmutableModelObject {
+  namespace _MSImmutableLayer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSImmutableModelObject {
       alloc<R = _MSImmutableLayer>(): R;
       new: <R = _MSImmutableLayer>() => R;
     }

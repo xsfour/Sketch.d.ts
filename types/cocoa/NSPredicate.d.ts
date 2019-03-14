@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPredicate<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
+  export interface NSPredicate<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
     description<R = unknown>(): R;
     predicateWithSubstitutionVariables<R = unknown, P0 = unknown>(_predicateWithSubstitutionVariables: P0): R;
     acceptVisitor_flags<R = void, P0 = unknown, P1 = number>(_acceptVisitor: P0, _flags: P1): R;
@@ -15,8 +15,8 @@ declare namespace cocoa {
     _validateForMetadataQueryScopes<R = void, P0 = unknown>(__validateForMetadataQueryScopes: P0): R;
     predicateFormat<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSPredicate<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
+  namespace NSPredicate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
       alloc<R = NSPredicate>(): R;
       new: <R = NSPredicate>() => R;
       predicateFromMetadataQueryString<R = unknown, P0 = unknown>(_predicateFromMetadataQueryString: P0): R;
@@ -32,4 +32,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPredicate: cocoa.classes.NSPredicate;
+declare const NSPredicate: cocoa.NSPredicate.CLASS;

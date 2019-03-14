@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface SMKMirrorController<T = any> extends NSObject, SMKCommunicationResponseInterfaceProtocol {
+  export interface SMKMirrorController<T0 = void, T1 = void, T2 = void> extends NSObject, SMKCommunicationResponseInterfaceProtocol {
     cxx_destruct<R = void>(): R;
     connectionInfo_didReceiveURLRequest<R = void, P0 = unknown, P1 = unknown>(_connectionInfo: P0, _didReceiveURLRequest: P1): R;
     connectionInfo_didReceiveMessage<R = void, P0 = unknown, P1 = unknown>(_connectionInfo: P0, _didReceiveMessage: P1): R;
@@ -56,12 +56,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface SMKMirrorController<T = any> extends NSObject, SMKCommunicationResponseInterfaceProtocol {
+  namespace SMKMirrorController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, SMKCommunicationResponseInterfaceProtocol {
       alloc<R = SMKMirrorController>(): R;
       new: <R = SMKMirrorController>() => R;
     }
   }
 }
 
-declare const SMKMirrorController: cocoa.classes.SMKMirrorController;
+declare const SMKMirrorController: cocoa.SMKMirrorController.CLASS;

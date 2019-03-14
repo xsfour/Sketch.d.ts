@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLayoutAnchor<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
+  export interface NSLayoutAnchor<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
     constraintLessThanOrEqualToAnchor<R = unknown, P0 = unknown>(_constraintLessThanOrEqualToAnchor: P0): R;
     constraintGreaterThanOrEqualToAnchor<R = unknown, P0 = unknown>(_constraintGreaterThanOrEqualToAnchor: P0): R;
     constraintEqualToAnchor<R = unknown, P0 = unknown>(_constraintEqualToAnchor: P0): R;
@@ -63,11 +63,11 @@ declare namespace cocoa {
     ruleLessThanOrEqualToAnchor<R = unknown, P0 = unknown>(_ruleLessThanOrEqualToAnchor: P0): R;
     ruleGreaterThanOrEqualToAnchor<R = unknown, P0 = unknown>(_ruleGreaterThanOrEqualToAnchor: P0): R;
     ruleEqualToAnchor<R = unknown, P0 = unknown>(_ruleEqualToAnchor: P0): R;
-    // + NSLayoutAnchor(MidpointAnchor):
+    // + NSLayoutAnchor(MidpointAnchor): 
     _anchorAtMidpointToAnchor<R = unknown, P0 = unknown>(__anchorAtMidpointToAnchor: P0): R;
   }
-  namespace classes {
-    export interface NSLayoutAnchor<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
+  namespace NSLayoutAnchor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
       alloc<R = NSLayoutAnchor>(): R;
       new: <R = NSLayoutAnchor>() => R;
       anchorNamed_inItem_symbolicAttribute<R = unknown, P0 = unknown, P1 = unknown, P2 = number>(_anchorNamed: P0, _inItem: P1, _symbolicAttribute: P2): R;
@@ -78,10 +78,9 @@ declare namespace cocoa {
       anchorWithItem_attribute<R = unknown, P0 = unknown, P1 = number>(_anchorWithItem: P0, _attribute: P1): R;
       layoutAnchorWithItem_attribute<R = unknown, P0 = unknown, P1 = number>(_layoutAnchorWithItem: P0, _attribute: P1): R;
       _anchorForItem_attribute<R = unknown, P0 = unknown, P1 = number>(__anchorForItem: P0, _attribute: P1): R;
-      // + NSLayoutAnchor(MidpointAnchor):
-      
-    }
+  
+  }
   }
 }
 
-declare const NSLayoutAnchor: cocoa.classes.NSLayoutAnchor;
+declare const NSLayoutAnchor: cocoa.NSLayoutAnchor.CLASS;

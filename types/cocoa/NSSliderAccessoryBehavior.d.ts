@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSliderAccessoryBehavior<T = any> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
+  export interface NSSliderAccessoryBehavior<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
     repeatsOnLongPressForAccessory<R = boolean, P0 = unknown>(_repeatsOnLongPressForAccessory: P0): R;
     handleAction<R = void, P0 = unknown>(_handleAction: P0): R;
   }
-  namespace classes {
-    export interface NSSliderAccessoryBehavior<T = any> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
+  namespace NSSliderAccessoryBehavior {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
       alloc<R = NSSliderAccessoryBehavior>(): R;
       new: <R = NSSliderAccessoryBehavior>() => R;
       behaviorWithTarget_action<R = unknown, P0 = unknown, P1 = string>(_behaviorWithTarget: P0, _action: P1): R;
@@ -18,4 +18,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSSliderAccessoryBehavior: cocoa.classes.NSSliderAccessoryBehavior;
+declare const NSSliderAccessoryBehavior: cocoa.NSSliderAccessoryBehavior.CLASS;

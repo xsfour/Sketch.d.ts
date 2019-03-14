@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFileAccessArbiterProxy<T = any> extends NSObject, NSFileAccessClientLocalArbiterInterfaceProtocol, NSXPCListenerDelegateProtocol, NSXPCConnectionDelegateProtocol {
+  export interface NSFileAccessArbiterProxy<T0 = void, T1 = void, T2 = void> extends NSObject, NSFileAccessClientLocalArbiterInterfaceProtocol, NSXPCListenerDelegateProtocol, NSXPCConnectionDelegateProtocol {
     handleCanceledServer<R = void>(): R;
     performBarrierAsync<R = void, P0 = CDUnknownBlockType>(_performBarrierAsync: P0): R;
     performBarrier<R = void>(): R;
@@ -23,8 +23,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSFileAccessArbiterProxy<T = any> extends NSObject, NSFileAccessClientLocalArbiterInterfaceProtocol, NSXPCListenerDelegateProtocol, NSXPCConnectionDelegateProtocol {
+  namespace NSFileAccessArbiterProxy {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSFileAccessClientLocalArbiterInterfaceProtocol, NSXPCListenerDelegateProtocol, NSXPCConnectionDelegateProtocol {
       alloc<R = NSFileAccessArbiterProxy>(): R;
       new: <R = NSFileAccessArbiterProxy>() => R;
       _fileReactorDebuggingInformation<R = unknown>(): R;
@@ -37,4 +37,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSFileAccessArbiterProxy: cocoa.classes.NSFileAccessArbiterProxy;
+declare const NSFileAccessArbiterProxy: cocoa.NSFileAccessArbiterProxy.CLASS;

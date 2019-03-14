@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSImmutableAssetCollection<T = any> extends MSImmutableModelObject {
+  export interface _MSImmutableAssetCollection<T0 = void, T1 = void, T2 = void> extends MSImmutableModelObject {
     hasDefaultValues<R = boolean>(): R;
     imageCollection<R = MSImmutableImageCollection>(): R;
     setImageCollection<R = void, P0 = MSImmutableImageCollection>(_v: P0): R;
@@ -14,8 +14,8 @@ declare namespace cocoa {
     images<R = NSArray>(): R;
     setImages<R = void, P0 = NSArray>(_v: P0): R;
   }
-  namespace classes {
-    export interface _MSImmutableAssetCollection<T = any> extends MSImmutableModelObject {
+  namespace _MSImmutableAssetCollection {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSImmutableModelObject {
       alloc<R = _MSImmutableAssetCollection>(): R;
       new: <R = _MSImmutableAssetCollection>() => R;
     }

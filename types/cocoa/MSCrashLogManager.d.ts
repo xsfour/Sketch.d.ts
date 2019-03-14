@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSCrashLogManager<T = any> extends NSObject, MSActionObserverProtocol, BITHockeyManagerDelegateProtocol, BITCrashManagerDelegateProtocol {
+  export interface MSCrashLogManager<T0 = void, T1 = void, T2 = void> extends NSObject, MSActionObserverProtocol, BITHockeyManagerDelegateProtocol, BITCrashManagerDelegateProtocol {
     cxx_destruct<R = void>(): R;
     setup<R = boolean>(): R;
     environmentText<R = unknown>(): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSCrashLogManager<T = any> extends NSObject, MSActionObserverProtocol, BITHockeyManagerDelegateProtocol, BITCrashManagerDelegateProtocol {
+  namespace MSCrashLogManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, MSActionObserverProtocol, BITHockeyManagerDelegateProtocol, BITCrashManagerDelegateProtocol {
       alloc<R = MSCrashLogManager>(): R;
       new: <R = MSCrashLogManager>() => R;
     }
   }
 }
 
-declare const MSCrashLogManager: cocoa.classes.MSCrashLogManager;
+declare const MSCrashLogManager: cocoa.MSCrashLogManager.CLASS;

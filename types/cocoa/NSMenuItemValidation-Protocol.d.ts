@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMenuItemValidationProtocol<T = any> extends NSObjectProtocol {
+  export interface NSMenuItemValidationProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     validateMenuItem<R = boolean, P0 = NSMenuItem>(_validateMenuItem: P0): R;
   }
-  namespace classes {
-    export interface NSMenuItemValidationProtocol<T = any> extends NSObjectProtocol {  }
+  namespace NSMenuItemValidationProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

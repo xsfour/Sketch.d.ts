@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSTabViewControllerPrivateData<T = any> extends NSObject {
+  export interface _NSTabViewControllerPrivateData<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     UIProvider<R = NSTabViewControllerUIProvider>(): R;
     setUIProvider<R = void, P0 = NSTabViewControllerUIProvider>(_v: P0): R;
@@ -14,8 +14,8 @@ declare namespace cocoa {
     tabViewItems<R = NSMutableArray>(): R;
     setTabViewItems<R = void, P0 = NSMutableArray>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSTabViewControllerPrivateData<T = any> extends NSObject {
+  namespace _NSTabViewControllerPrivateData {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSTabViewControllerPrivateData>(): R;
       new: <R = _NSTabViewControllerPrivateData>() => R;
     }

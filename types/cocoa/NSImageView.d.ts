@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSImageView<T = any> extends NSControl, _NSAsynchronousPreparationDelegateProtocol, NSAccessibilityImageProtocol, NSMenuItemValidationProtocol {
+  export interface NSImageView<T0 = void, T1 = void, T2 = void> extends NSControl, _NSAsynchronousPreparationDelegateProtocol, NSAccessibilityImageProtocol, NSMenuItemValidationProtocol {
     registerForDrags<R = void>(): R;
     setEnabled<R = void, P0 = boolean>(_setEnabled: P0): R;
     delete<R = void, P0 = unknown>(_delete: P0): R;
@@ -51,8 +51,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSImageView<T = any> extends NSControl, _NSAsynchronousPreparationDelegateProtocol, NSAccessibilityImageProtocol, NSMenuItemValidationProtocol {
+  namespace NSImageView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSControl, _NSAsynchronousPreparationDelegateProtocol, NSAccessibilityImageProtocol, NSMenuItemValidationProtocol {
       alloc<R = NSImageView>(): R;
       new: <R = NSImageView>() => R;
       imageWellWithImage_target_action<R = unknown, P0 = unknown, P1 = unknown, P2 = string>(_imageWellWithImage: P0, _target: P1, _action: P2): R;
@@ -61,4 +61,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSImageView: cocoa.classes.NSImageView;
+declare const NSImageView: cocoa.NSImageView.CLASS;

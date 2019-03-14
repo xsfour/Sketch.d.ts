@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSColorInspectorSectionColor<T = any> extends MSColorInspectorSection {
+  export interface MSColorInspectorSectionColor<T0 = void, T1 = void, T2 = void> extends MSColorInspectorSection {
     hasAdvancedSettingsNib<R = boolean>(): R;
     setStyleParts<R = void, P0 = unknown>(_setStyleParts: P0): R;
     highlightCurrentColor_forPicker<R = void, P0 = unknown, P1 = unknown>(_highlightCurrentColor: P0, _forPicker: P1): R;
@@ -9,12 +9,12 @@ declare namespace cocoa {
     pickedColor<R = MSColor>(): R;
     setPickedColor<R = void, P0 = MSColor>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSColorInspectorSectionColor<T = any> extends MSColorInspectorSection {
+  namespace MSColorInspectorSectionColor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSColorInspectorSection {
       alloc<R = MSColorInspectorSectionColor>(): R;
       new: <R = MSColorInspectorSectionColor>() => R;
     }
   }
 }
 
-declare const MSColorInspectorSectionColor: cocoa.classes.MSColorInspectorSectionColor;
+declare const MSColorInspectorSectionColor: cocoa.MSColorInspectorSectionColor.CLASS;

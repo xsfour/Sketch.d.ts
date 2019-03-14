@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCOutlineViewDataControllerDelegateProtocol<T = any> extends NSObjectProtocol {
+  export interface BCOutlineViewDataControllerDelegateProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     dataController_refreshPreviewsOnNode<R = void, P0 = BCOutlineViewDataController, P1 = unknown>(_dataController: P0, _refreshPreviewsOnNode: P1): R;
     dataController_handleBadgePressedOnNode_withAltState<R = void, P0 = BCOutlineViewDataController, P1 = unknown, P2 = boolean>(_dataController: P0, _handleBadgePressedOnNode: P1, _withAltState: P2): R;
     dataController_copyFromPasteboard_toParent_after<R = boolean, P0 = BCOutlineViewDataController, P1 = NSPasteboard, P2 = unknown, P3 = unknown>(_dataController: P0, _copyFromPasteboard: P1, _toParent: P2, _after: P3): R;
@@ -26,7 +26,7 @@ declare namespace cocoa {
     dataController_menuItemsForSelectedObjects<R = NSArray, P0 = BCOutlineViewDataController, P1 = NSArray>(_dataController: P0, _menuItemsForSelectedObjects: P1): R;
     defaultFirstResponder<R = NSView>(): R;
   }
-  namespace classes {
-    export interface BCOutlineViewDataControllerDelegateProtocol<T = any> extends NSObjectProtocol {  }
+  namespace BCOutlineViewDataControllerDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

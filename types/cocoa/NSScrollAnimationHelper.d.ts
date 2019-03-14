@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScrollAnimationHelper<T = any> extends NSAnimationHelper {
+  export interface NSScrollAnimationHelper<T0 = void, T1 = void, T2 = void> extends NSAnimationHelper {
     setIsScrollDueToUserAction<R = void, P0 = boolean>(_setIsScrollDueToUserAction: P0): R;
     setLogPerformanceAnalysis<R = void, P0 = boolean>(_setLogPerformanceAnalysis: P0): R;
     targetOrigin<R = CGPoint>(): R;
@@ -12,12 +12,12 @@ declare namespace cocoa {
     completionHandler<R = CDUnknownBlockType>(): R;
     setCompletionHandler<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSScrollAnimationHelper<T = any> extends NSAnimationHelper {
+  namespace NSScrollAnimationHelper {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSAnimationHelper {
       alloc<R = NSScrollAnimationHelper>(): R;
       new: <R = NSScrollAnimationHelper>() => R;
     }
   }
 }
 
-declare const NSScrollAnimationHelper: cocoa.classes.NSScrollAnimationHelper;
+declare const NSScrollAnimationHelper: cocoa.NSScrollAnimationHelper.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSShapePath<T = any> extends MSModelObject {
+  export interface _MSShapePath<T0 = void, T1 = void, T2 = void> extends MSModelObject {
     moveCurvePointIndex_toIndex<R = void, P0 = number, P1 = number>(_moveCurvePointIndex: P0, _toIndex: P1): R;
     removeAllCurvePoints<R = void>(): R;
     removeCurvePointsAtIndexes<R = void, P0 = unknown>(_removeCurvePointsAtIndexes: P0): R;
@@ -22,8 +22,8 @@ declare namespace cocoa {
     isClosed<R = boolean>(): R;
     setIsClosed<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface _MSShapePath<T = any> extends MSModelObject {
+  namespace _MSShapePath {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSModelObject {
       alloc<R = _MSShapePath>(): R;
       new: <R = _MSShapePath>() => R;
     }

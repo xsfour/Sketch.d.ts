@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSVectorRounding<T = any> extends NSObject {}
-  namespace classes {
-    export interface MSVectorRounding<T = any> extends NSObject {
+  export interface MSVectorRounding<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace MSVectorRounding {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSVectorRounding>(): R;
       new: <R = MSVectorRounding>() => R;
       roundPoint<R = CGPoint, P0 = CGPoint>(_roundPoint: P0): R;
@@ -13,4 +13,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSVectorRounding: cocoa.classes.MSVectorRounding;
+declare const MSVectorRounding: cocoa.MSVectorRounding.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSRuleEditorViewSlice<T = any> extends NSView, NSCodingProtocol {
+  export interface NSRuleEditorViewSlice<T0 = void, T1 = void, T2 = void> extends NSView, NSCodingProtocol {
     _animationTargetRect<R = CGRect>(): R;
     _setAnimationTargetRect<R = void, P0 = CGRect>(__setAnimationTargetRect: P0): R;
     _setHideNonPartDrawing<R = void, P0 = boolean>(__setHideNonPartDrawing: P0): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     _curveColorForIndentation<R = unknown, P0 = number>(__curveColorForIndentation: P0): R;
     initWithFrame_ruleEditorView<R = unknown, P0 = CGRect, P1 = unknown>(_initWithFrame: P0, _ruleEditorView: P1): R;
   }
-  namespace classes {
-    export interface NSRuleEditorViewSlice<T = any> extends NSView, NSCodingProtocol {
+  namespace NSRuleEditorViewSlice {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView, NSCodingProtocol {
       alloc<R = NSRuleEditorViewSlice>(): R;
       new: <R = NSRuleEditorViewSlice>() => R;
     }
   }
 }
 
-declare const NSRuleEditorViewSlice: cocoa.classes.NSRuleEditorViewSlice;
+declare const NSRuleEditorViewSlice: cocoa.NSRuleEditorViewSlice.CLASS;

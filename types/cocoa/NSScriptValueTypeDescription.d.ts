@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScriptValueTypeDescription<T = any> extends NSScriptTypeDescription {
+  export interface NSScriptValueTypeDescription<T0 = void, T1 = void, T2 = void> extends NSScriptTypeDescription {
     objcDescriptorCreationMethodSelector2ForClass<R = string, P0 = unknown>(_objcDescriptorCreationMethodSelector2ForClass: P0): R;
     objcCreationMethodSelector2<R = string>(): R;
     _oldStyleOneWordName<R = unknown>(): R;
@@ -13,8 +13,8 @@ declare namespace cocoa {
     appendObjectClassDeclarationToAETEData<R = void, P0 = unknown>(_appendObjectClassDeclarationToAETEData: P0): R;
     _descriptionWithTabCount<R = unknown, P0 = number>(__descriptionWithTabCount: P0): R;
   }
-  namespace classes {
-    export interface NSScriptValueTypeDescription<T = any> extends NSScriptTypeDescription {
+  namespace NSScriptValueTypeDescription {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSScriptTypeDescription {
       alloc<R = NSScriptValueTypeDescription>(): R;
       new: <R = NSScriptValueTypeDescription>() => R;
       valueTypeDescriptionFromName_declaration<R = unknown, P0 = unknown, P1 = unknown>(_valueTypeDescriptionFromName: P0, _declaration: P1): R;
@@ -22,4 +22,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSScriptValueTypeDescription: cocoa.classes.NSScriptValueTypeDescription;
+declare const NSScriptValueTypeDescription: cocoa.NSScriptValueTypeDescription.CLASS;

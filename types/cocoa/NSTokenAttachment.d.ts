@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTokenAttachment<T = any> extends NSTextAttachment {
+  export interface NSTokenAttachment<T0 = void, T1 = void, T2 = void> extends NSTextAttachment {
     _immediateActionAnimationControllerForRepresentedObject_inTextView<R = unknown, P0 = unknown, P1 = unknown>(__immediateActionAnimationControllerForRepresentedObject: P0, _inTextView: P1): R;
     _immediateActionAnimationControllerForCharacterAtIndex_inTextView<R = unknown, P0 = number, P1 = unknown>(__immediateActionAnimationControllerForCharacterAtIndex: P0, _inTextView: P1): R;
     _setNeedsSeparator<R = void, P0 = boolean>(__setNeedsSeparator: P0): R;
@@ -14,9 +14,9 @@ declare namespace cocoa {
     delegate<R = unknown>(): R;
     setDelegate<R = void, P0 = unknown>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTokenAttachment<T = any> extends NSTextAttachment {  }
+  namespace NSTokenAttachment {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTextAttachment {}
   }
 }
 
-declare const NSTokenAttachment: cocoa.classes.NSTokenAttachment;
+declare const NSTokenAttachment: cocoa.NSTokenAttachment.CLASS;

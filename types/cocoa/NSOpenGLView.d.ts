@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSOpenGLView<T = any> extends NSView {
+  export interface NSOpenGLView<T0 = void, T1 = void, T2 = void> extends NSView {
     setLayer<R = void, P0 = unknown>(_setLayer: P0): R;
     _surfaceNeedsUpdate<R = void, P0 = unknown>(__surfaceNeedsUpdate: P0): R;
     update<R = void>(): R;
@@ -22,8 +22,8 @@ declare namespace cocoa {
     setAnimates<R = void, P0 = boolean>(_v: P0): R;
     openGLSurfaceSize<R = CGSize>(): R;
   }
-  namespace classes {
-    export interface NSOpenGLView<T = any> extends NSView {
+  namespace NSOpenGLView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSOpenGLView>(): R;
       new: <R = NSOpenGLView>() => R;
       defaultPixelFormat<R = unknown>(): R;
@@ -31,4 +31,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSOpenGLView: cocoa.classes.NSOpenGLView;
+declare const NSOpenGLView: cocoa.NSOpenGLView.CLASS;

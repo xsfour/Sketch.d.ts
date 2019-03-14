@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSBoxMaterialCapableCustomView<T = any> extends NSView, _NSBoxCustomViewProtocol {
+  export interface _NSBoxMaterialCapableCustomView<T0 = void, T1 = void, T2 = void> extends NSView, _NSBoxCustomViewProtocol {
     _updateSubviews<R = void>(): R;
     cornerRadius<R = number>(): R;
     setCornerRadius<R = void, P0 = number>(_v: P0): R;
@@ -16,8 +16,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSBoxMaterialCapableCustomView<T = any> extends NSView, _NSBoxCustomViewProtocol {
+  namespace _NSBoxMaterialCapableCustomView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView, _NSBoxCustomViewProtocol {
       alloc<R = _NSBoxMaterialCapableCustomView>(): R;
       new: <R = _NSBoxMaterialCapableCustomView>() => R;
     }

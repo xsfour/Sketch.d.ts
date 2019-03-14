@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSViewAnimator__NSSliderTouchBarItemView<T = any> extends _NSViewAnimator, CAAnimationDelegateProtocol {
+  export interface _NSViewAnimator__NSSliderTouchBarItemView<T0 = void, T1 = void, T2 = void> extends _NSViewAnimator, CAAnimationDelegateProtocol {
     stopAndCleanupCollapseAnimation<R = void>(): R;
     setCollapsed<R = void, P0 = boolean>(_setCollapsed: P0): R;
     sliderItemViewTarget<R = unknown>(): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     valueAccessoryWidth<R = number>(): R;
     setValueAccessoryWidth<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSViewAnimator__NSSliderTouchBarItemView<T = any> extends _NSViewAnimator, CAAnimationDelegateProtocol {  }
+  namespace _NSViewAnimator__NSSliderTouchBarItemView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _NSViewAnimator, CAAnimationDelegateProtocol {}
   }
 }

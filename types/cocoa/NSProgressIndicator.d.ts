@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSProgressIndicator<T = any> extends NSView, NSAccessibilityProgressIndicatorProtocol {
+  export interface NSProgressIndicator<T0 = void, T1 = void, T2 = void> extends NSView, NSAccessibilityProgressIndicatorProtocol {
     _updateHeartBeat<R = void>(): R;
     sizeToFit<R = void>(): R;
     stopAnimation<R = void, P0 = unknown>(_stopAnimation: P0): R;
@@ -67,12 +67,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSProgressIndicator<T = any> extends NSView, NSAccessibilityProgressIndicatorProtocol {
+  namespace NSProgressIndicator {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView, NSAccessibilityProgressIndicatorProtocol {
       alloc<R = NSProgressIndicator>(): R;
       new: <R = NSProgressIndicator>() => R;
     }
   }
 }
 
-declare const NSProgressIndicator: cocoa.classes.NSProgressIndicator;
+declare const NSProgressIndicator: cocoa.NSProgressIndicator.CLASS;

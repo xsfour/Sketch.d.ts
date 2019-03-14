@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCPopoverContentView<T = any> extends NSView {
+  export interface BCPopoverContentView<T0 = void, T1 = void, T2 = void> extends NSView {
     cxx_destruct<R = void>(): R;
     backgroundPath<R = unknown>(): R;
     availableContentRect<R = CGRect>(): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     backgroundColor<R = NSColor>(): R;
     setBackgroundColor<R = void, P0 = NSColor>(_v: P0): R;
   }
-  namespace classes {
-    export interface BCPopoverContentView<T = any> extends NSView {
+  namespace BCPopoverContentView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = BCPopoverContentView>(): R;
       new: <R = BCPopoverContentView>() => R;
     }
   }
 }
 
-declare const BCPopoverContentView: cocoa.classes.BCPopoverContentView;
+declare const BCPopoverContentView: cocoa.BCPopoverContentView.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCSideBarViewController<T = any> extends NSViewController, NSSplitViewDelegateProtocol {
+  export interface BCSideBarViewController<T0 = void, T1 = void, T2 = void> extends NSViewController, NSSplitViewDelegateProtocol {
     cxx_destruct<R = void>(): R;
     pageListToggleButtonTooltip<R = unknown>(): R;
     onTogglePageList<R = void, P0 = unknown>(_onTogglePageList: P0): R;
@@ -62,12 +62,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface BCSideBarViewController<T = any> extends NSViewController, NSSplitViewDelegateProtocol {
+  namespace BCSideBarViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController, NSSplitViewDelegateProtocol {
       alloc<R = BCSideBarViewController>(): R;
       new: <R = BCSideBarViewController>() => R;
     }
   }
 }
 
-declare const BCSideBarViewController: cocoa.classes.BCSideBarViewController;
+declare const BCSideBarViewController: cocoa.BCSideBarViewController.CLASS;

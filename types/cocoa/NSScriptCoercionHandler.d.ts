@@ -1,21 +1,21 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScriptCoercionHandler<T = any> extends NSObject {
+  export interface NSScriptCoercionHandler<T0 = void, T1 = void, T2 = void> extends NSObject {
     registerCoercer_selector_toConvertFromClass_toClass<R = void, P0 = unknown, P1 = string, P2 = unknown, P3 = unknown>(_registerCoercer: P0, _selector: P1, _toConvertFromClass: P2, _toClass: P3): R;
     coerceValue_toClass<R = unknown, P0 = unknown, P1 = unknown>(_coerceValue: P0, _toClass: P1): R;
     _findCoercerFromClass_toClass<R = unknown, P0 = unknown, P1 = unknown>(__findCoercerFromClass: P0, _toClass: P1): R;
     dealloc<R = void>(): R;
     _setUpFoundationCoercions<R = void>(): R;
-    // + NSScriptCoercionHandler(NSAppKitCoercions):
+    // + NSScriptCoercionHandler(NSAppKitCoercions): 
     _setUpAppKitCoercions<R = void>(): R;
   }
-  namespace classes {
-    export interface NSScriptCoercionHandler<T = any> extends NSObject {
+  namespace NSScriptCoercionHandler {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSScriptCoercionHandler>(): R;
       new: <R = NSScriptCoercionHandler>() => R;
       sharedCoercionHandler<R = unknown>(): R;
-      // + NSScriptCoercionHandler(NSAppKitCoercions):
+      // + NSScriptCoercionHandler(NSAppKitCoercions): 
       coerceTextStorage_toData<R = unknown, P0 = unknown, P1 = unknown>(_coerceTextStorage: P0, _toData: P1): R;
       coerceData_toTextStorage<R = unknown, P0 = unknown, P1 = unknown>(_coerceData: P0, _toTextStorage: P1): R;
       coerceTextStorage_toString<R = unknown, P0 = unknown, P1 = unknown>(_coerceTextStorage: P0, _toString: P1): R;
@@ -30,4 +30,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSScriptCoercionHandler: cocoa.classes.NSScriptCoercionHandler;
+declare const NSScriptCoercionHandler: cocoa.NSScriptCoercionHandler.CLASS;

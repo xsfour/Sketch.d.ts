@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorPanel<T = any> extends NSPanel, NSTouchBarColorPickerViewControllerDelegateProtocol {
+  export interface NSColorPanel<T0 = void, T1 = void, T2 = void> extends NSPanel, NSTouchBarColorPickerViewControllerDelegateProtocol {
     _middleViewFrameChanged<R = void, P0 = unknown>(__middleViewFrameChanged: P0): R;
     _colorWellAcceptedColor<R = void, P0 = unknown>(__colorWellAcceptedColor: P0): R;
     _set<R = void, P0 = unknown>(__set: P0): R;
@@ -11,6 +11,7 @@ declare namespace cocoa {
     _forceSendAction_notification_firstResponder<R = void, P0 = boolean, P1 = boolean, P2 = boolean>(__forceSendAction: P0, _notification: P1, _firstResponder: P2): R;
     _withColorSettingDisabled<R = void, P0 = CDUnknownBlockType>(__withColorSettingDisabled: P0): R;
     _allowsColorSetting<R = boolean>(): R;
+    _startingWindowForSendAction<R = unknown, P0 = string>(__startingWindowForSendAction: P0): R;
     detachColorList<R = void, P0 = unknown>(_detachColorList: P0): R;
     attachColorList<R = void, P0 = unknown>(_attachColorList: P0): R;
     magnifierDidFailToSelectColor<R = void, P0 = unknown>(_magnifierDidFailToSelectColor: P0): R;
@@ -31,6 +32,7 @@ declare namespace cocoa {
     _pinViews_resizeFlagsToLeaveAlone<R = unknown, P0 = unknown, P1 = number>(__pinViews: P0, _resizeFlagsToLeaveAlone: P1): R;
     _unpinViews<R = void, P0 = unknown>(__unpinViews: P0): R;
     _pinViews<R = void, P0 = unknown>(__pinViews: P0): R;
+    _endLiveResize<R = void>(): R;
     _savedMode<R = number>(): R;
     _setupButtonImageAndToolTips<R = void>(): R;
     _removeColorPicker<R = void, P0 = unknown>(__removeColorPicker: P0): R;
@@ -42,7 +44,11 @@ declare namespace cocoa {
     _timedAdjustTextControl<R = void, P0 = unknown>(__timedAdjustTextControl: P0): R;
     _setShowAlpha_andForce<R = void, P0 = boolean, P1 = boolean>(__setShowAlpha: P0, _andForce: P1): R;
     insertNewline<R = void, P0 = unknown>(_insertNewline: P0): R;
+    _cancelKey<R = void, P0 = unknown>(__cancelKey: P0): R;
     _stopModal<R = void, P0 = unknown>(__stopModal: P0): R;
+    _adjustedFrameForSaving<R = CGRect, P0 = CGRect>(__adjustedFrameForSaving: P0): R;
+    _adjustedFrameFromDefaults<R = CGRect, P0 = CGRect>(__adjustedFrameFromDefaults: P0): R;
+    _setUtilityWindow<R = void, P0 = boolean>(__setUtilityWindow: P0): R;
     _setUseModalAppearance<R = void, P0 = boolean>(__setUseModalAppearance: P0): R;
     _changeMinColorPanelSizeByDelta_setWindowFrame<R = void, P0 = CGSize, P1 = boolean>(__changeMinColorPanelSizeByDelta: P0, _setWindowFrame: P1): R;
     _changeMinColorPanelSizeByDelta_compareWithOldMinSize_oldMinSize_setWindowFrame<R = void, P0 = CGSize, P1 = boolean, P2 = CGSize, P3 = boolean>(__changeMinColorPanelSizeByDelta: P0, _compareWithOldMinSize: P1, _oldMinSize: P2, _setWindowFrame: P3): R;
@@ -66,6 +72,8 @@ declare namespace cocoa {
     _keyViewFollowingPickerViews<R = unknown>(): R;
     _keyViewPrecedingPickerViews<R = unknown>(): R;
     _pickerView<R = unknown>(): R;
+    _selectFirstKeyView<R = void>(): R;
+    becomeKeyWindow<R = void>(): R;
     changeWindowFrameSizeByDelta_display_animate<R = void, P0 = CGSize, P1 = boolean, P2 = boolean>(_changeWindowFrameSizeByDelta: P0, _display: P1, _animate: P2): R;
     _setTitleFixedPointWindowFrame_display_animate<R = void, P0 = CGSize, P1 = boolean, P2 = boolean>(__setTitleFixedPointWindowFrame: P0, _display: P1, _animate: P2): R;
     setHidesOnDeactivate<R = void, P0 = boolean>(_setHidesOnDeactivate: P0): R;
@@ -96,13 +104,13 @@ declare namespace cocoa {
     description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
-    // + NSColorPanel(NSColorPanelSetColor):
+    // + NSColorPanel(NSColorPanelSetColor): 
     setColorWithoutNotifying<R = void, P0 = unknown>(_setColorWithoutNotifying: P0): R;
     shouldIgnoreNonInteractiveChangeColorMessage<R = boolean>(): R;
     shouldIgnoreChangeColorMessage<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSColorPanel<T = any> extends NSPanel, NSTouchBarColorPickerViewControllerDelegateProtocol {
+  namespace NSColorPanel {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSPanel, NSTouchBarColorPickerViewControllerDelegateProtocol {
       alloc<R = NSColorPanel>(): R;
       new: <R = NSColorPanel>() => R;
       _dragColor_withEvent_fromView_source<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown>(__dragColor: P0, _withEvent: P1, _fromView: P2, _source: P3): R;
@@ -118,10 +126,9 @@ declare namespace cocoa {
       sharedColorPanel<R = unknown>(): R;
       warmupExternalColorPickersIfNecessary<R = void>(): R;
       keyPathsForValuesAffectingTouchBar<R = unknown>(): R;
-      // + NSColorPanel(NSColorPanelSetColor):
-      
-    }
+  
+  }
   }
 }
 
-declare const NSColorPanel: cocoa.classes.NSColorPanel;
+declare const NSColorPanel: cocoa.NSColorPanel.CLASS;

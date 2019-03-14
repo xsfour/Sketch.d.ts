@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSDisplayOperationStack<T = any> extends NSObject {
+  export interface _NSDisplayOperationStack<T0 = void, T1 = void, T2 = void> extends NSObject {
     setThreadIsViewDrawOperationThread<R = void, P0 = boolean>(_setThreadIsViewDrawOperationThread: P0): R;
     threadIsViewDrawOperationThread<R = boolean>(): R;
     blockOnDrawOperationsForAncestorsOfView<R = void, P0 = unknown>(_blockOnDrawOperationsForAncestorsOfView: P0): R;
@@ -24,8 +24,8 @@ declare namespace cocoa {
     enterDisplayOperationForWindow_windowRegion<R = void, P0 = unknown, P1 = unknown>(_enterDisplayOperationForWindow: P0, _windowRegion: P1): R;
     dealloc<R = void>(): R;
   }
-  namespace classes {
-    export interface _NSDisplayOperationStack<T = any> extends NSObject {
+  namespace _NSDisplayOperationStack {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSDisplayOperationStack>(): R;
       new: <R = _NSDisplayOperationStack>() => R;
       anyThreadHasActiveDisplayOperationForWindow<R = boolean, P0 = unknown>(_anyThreadHasActiveDisplayOperationForWindow: P0): R;

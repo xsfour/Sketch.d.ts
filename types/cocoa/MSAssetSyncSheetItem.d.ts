@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAssetSyncSheetItem<T = any> {}
-  namespace classes {
-    export interface MSAssetSyncSheetItem<T = any> {  }
+  export interface MSAssetSyncSheetItem<T0 = void, T1 = void, T2 = void> {}
+  namespace MSAssetSyncSheetItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const MSAssetSyncSheetItem: cocoa.classes.MSAssetSyncSheetItem;
+declare const MSAssetSyncSheetItem: cocoa.MSAssetSyncSheetItem.CLASS;

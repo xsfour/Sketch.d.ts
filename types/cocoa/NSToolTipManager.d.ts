@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSToolTipManager<T = any> extends NSObject {
+  export interface NSToolTipManager<T0 = void, T1 = void, T2 = void> extends NSObject {
     orderOutOnlyExpansionToolTip<R = void>(): R;
     isRegularToolTipVisible<R = boolean>(): R;
     isExpansionToolTipVisible<R = boolean>(): R;
@@ -65,8 +65,8 @@ declare namespace cocoa {
     _displayTemporaryToolTipForView_withDisplayDelegate_displayInfo<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(__displayTemporaryToolTipForView: P0, _withDisplayDelegate: P1, _displayInfo: P2): R;
     _displayTemporaryToolTipForView_withString<R = void, P0 = unknown, P1 = unknown>(__displayTemporaryToolTipForView: P0, _withString: P1): R;
   }
-  namespace classes {
-    export interface NSToolTipManager<T = any> extends NSObject {
+  namespace NSToolTipManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSToolTipManager>(): R;
       new: <R = NSToolTipManager>() => R;
       isCurrentMouseLocationAboveWindow<R = boolean, P0 = unknown>(_isCurrentMouseLocationAboveWindow: P0): R;
@@ -75,4 +75,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSToolTipManager: cocoa.classes.NSToolTipManager;
+declare const NSToolTipManager: cocoa.NSToolTipManager.CLASS;

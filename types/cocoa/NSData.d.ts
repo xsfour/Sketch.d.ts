@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSData<T = any> {
-    // + NSData(NSData,NSDataObjCTypeDeserialization,NSDataPortCoding,NSDeserialization,NSKindOfAdditions,NSScriptAppleEventConversion,NSURLExtras,BCReceiptUtilities,Base64,MSBaseArchiver,SHA1,TreeAsDictionarySupport):
+  export interface NSData<T0 = void, T1 = void, T2 = void> {
+    // + NSData(NSData): 
     _providesConcreteBacking<R = boolean>(): R;
     base64Encoding<R = unknown>(): R;
     initWithBase64Encoding<R = unknown, P0 = unknown>(_initWithBase64Encoding: P0): R;
@@ -60,35 +60,47 @@ declare namespace cocoa {
     _cfTypeID<R = number>(): R;
     bytes<R = void>(): R;
     length<R = number>(): R;
+    // + NSData(NSDataObjCTypeDeserialization): 
     deserializeDataAt_ofObjCType_atCursor_context<R = void, P0 = void, P1 = string, P2 = number, P3 = unknown>(_deserializeDataAt: P0, _ofObjCType: P1, _atCursor: P2, _context: P3): R;
+    // + NSData(NSDataPortCoding): 
     replacementObjectForPortCoder<R = unknown, P0 = unknown>(_replacementObjectForPortCoder: P0): R;
+    // + NSData(NSDeserialization): 
     deserializeBytes_length_atCursor<R = void, P0 = void, P1 = number, P2 = number>(_deserializeBytes: P0, _length: P1, _atCursor: P2): R;
     deserializeAlignedBytesLengthAtCursor<R = number, P0 = number>(_deserializeAlignedBytesLengthAtCursor: P0): R;
     deserializeInts_count_atCursor<R = void, P0 = number, P1 = number, P2 = number>(_deserializeInts: P0, _count: P1, _atCursor: P2): R;
     deserializeIntAtCursor<R = number, P0 = number>(_deserializeIntAtCursor: P0): R;
     deserializeInts_count_atIndex<R = void, P0 = number, P1 = number, P2 = number>(_deserializeInts: P0, _count: P1, _atIndex: P2): R;
     deserializeIntAtIndex<R = number, P0 = number>(_deserializeIntAtIndex: P0): R;
+    // + NSData(NSKindOfAdditions): 
     isNSData__<R = boolean>(): R;
+    // + NSData(NSScriptAppleEventConversion): 
     _scriptingRectangleDescriptor<R = unknown>(): R;
     _scriptingPointDescriptor<R = unknown>(): R;
     _scriptingDebugDescription<R = unknown>(): R;
+    // + NSData(NSURLExtras): 
     _replaceCString_withCString<R = unknown, P0 = string, P1 = string>(__replaceCString: P0, _withCString: P1): R;
     _web_parseRFC822HeaderFields<R = unknown>(): R;
     _web_guessedMIMETypeForExtension<R = unknown, P0 = unknown>(__web_guessedMIMETypeForExtension: P0): R;
     _web_guessedMIMEType<R = unknown>(): R;
     _web_guessedMIMETypeForXML<R = unknown>(): R;
+    // + NSData(BCReceiptUtilities): 
     hexString<R = unknown>(): R;
+    // + NSData(Base64): 
     base64Encoding_xcd<R = unknown>(): R;
+    // + NSData(MSBaseArchiver): 
     initWithUnarchiver<R = unknown, P0 = unknown>(_initWithUnarchiver: P0): R;
     encodeWithArchiver<R = void, P0 = unknown>(_encodeWithArchiver: P0): R;
+    // + NSData(SHA1): 
     sha1AsString<R = unknown>(): R;
     sha1<R = unknown>(): R;
+    // + NSData(TreeAsDictionarySupport): 
     treeAsDictionary<R = unknown>(): R;
+    // + NSData(MSBaseArchiver):
     archiveReferenceIdentifier_bc<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSData<T = any> {
-      // + NSData(NSData,NSDataObjCTypeDeserialization,NSDataPortCoding,NSDeserialization,NSKindOfAdditions,NSScriptAppleEventConversion,NSURLExtras,BCReceiptUtilities,Base64,MSBaseArchiver,SHA1,TreeAsDictionarySupport):
+  namespace NSData {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {
+      // + NSData(NSData): 
       _base64DecodingAlwaysSucceedsForOptions<R = boolean, P0 = number>(__base64DecodingAlwaysSucceedsForOptions: P0): R;
       _newZeroingDataWithBytesNoCopy_length_deallocator<R = unknown, P0 = void, P1 = number, P2 = CDUnknownBlockType>(__newZeroingDataWithBytesNoCopy: P0, _length: P1, _deallocator: P2): R;
       _newZeroingDataWithBytes_length<R = unknown, P0 = void, P1 = number>(__newZeroingDataWithBytes: P0, _length: P1): R;
@@ -104,11 +116,13 @@ declare namespace cocoa {
       dataWithBytes_length<R = unknown, P0 = void, P1 = number>(_dataWithBytes: P0, _length: P1): R;
       data<R = unknown>(): R;
       allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
+      // + NSData(NSScriptAppleEventConversion): 
       _scriptingRectangleWithDescriptor<R = unknown, P0 = unknown>(__scriptingRectangleWithDescriptor: P0): R;
       _scriptingPointWithDescriptor<R = unknown, P0 = unknown>(__scriptingPointWithDescriptor: P0): R;
+      // + NSData(Base64): 
       dataWithBase64Encoding_xcd<R = unknown, P0 = unknown>(_dataWithBase64Encoding_xcd: P0): R;
     }
   }
 }
 
-declare const NSData: cocoa.classes.NSData;
+declare const NSData: cocoa.NSData.CLASS;

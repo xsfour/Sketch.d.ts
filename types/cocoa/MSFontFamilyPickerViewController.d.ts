@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFontFamilyPickerViewController<T = any> extends NSViewController, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol {
+  export interface MSFontFamilyPickerViewController<T0 = void, T1 = void, T2 = void> extends NSViewController, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol {
     cxx_destruct<R = void>(): R;
     controlTextDidChange<R = void, P0 = unknown>(_controlTextDidChange: P0): R;
     doubleClickTableView<R = void, P0 = unknown>(_doubleClickTableView: P0): R;
@@ -17,12 +17,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSFontFamilyPickerViewController<T = any> extends NSViewController, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol {
+  namespace MSFontFamilyPickerViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol {
       alloc<R = MSFontFamilyPickerViewController>(): R;
       new: <R = MSFontFamilyPickerViewController>() => R;
     }
   }
 }
 
-declare const MSFontFamilyPickerViewController: cocoa.classes.MSFontFamilyPickerViewController;
+declare const MSFontFamilyPickerViewController: cocoa.MSFontFamilyPickerViewController.CLASS;

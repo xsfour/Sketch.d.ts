@@ -1,15 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAKSerializerStream<T = any> extends NSObject, NSSerializerStreamProtocol {
-    writeToPath_safely<R = boolean, P0 = unknown, P1 = boolean>(_writeToPath: P0, _safely: P1): R;
-  }
-  namespace classes {
-    export interface NSAKSerializerStream<T = any> extends NSObject, NSSerializerStreamProtocol {
+  export interface NSAKSerializerStream<T0 = void, T1 = void, T2 = void> extends NSObject, NSSerializerStreamProtocol {}
+  namespace NSAKSerializerStream {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSerializerStreamProtocol {
       alloc<R = NSAKSerializerStream>(): R;
       new: <R = NSAKSerializerStream>() => R;
     }
   }
 }
 
-declare const NSAKSerializerStream: cocoa.classes.NSAKSerializerStream;
+declare const NSAKSerializerStream: cocoa.NSAKSerializerStream.CLASS;

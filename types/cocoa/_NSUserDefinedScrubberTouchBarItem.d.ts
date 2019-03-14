@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSUserDefinedScrubberTouchBarItem<T = any> extends NSTouchBarItem, NSScrubberDataSourceProtocol, NSScrubberDelegateProtocol {
+  export interface _NSUserDefinedScrubberTouchBarItem<T0 = void, T1 = void, T2 = void> extends NSTouchBarItem, NSScrubberDataSourceProtocol, NSScrubberDelegateProtocol {
     _validateUserDefinedTouchBarItem<R = void>(): R;
     customizationLabel<R = unknown>(): R;
     view<R = unknown>(): R;
@@ -11,8 +11,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSUserDefinedScrubberTouchBarItem<T = any> extends NSTouchBarItem, NSScrubberDataSourceProtocol, NSScrubberDelegateProtocol {
+  namespace _NSUserDefinedScrubberTouchBarItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTouchBarItem, NSScrubberDataSourceProtocol, NSScrubberDelegateProtocol {
       alloc<R = _NSUserDefinedScrubberTouchBarItem>(): R;
       new: <R = _NSUserDefinedScrubberTouchBarItem>() => R;
     }

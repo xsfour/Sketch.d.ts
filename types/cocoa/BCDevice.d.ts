@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCDevice<T = any> extends NSObject {}
-  namespace classes {
-    export interface BCDevice<T = any> extends NSObject {
+  export interface BCDevice<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace BCDevice {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = BCDevice>(): R;
       new: <R = BCDevice>() => R;
       macModel<R = unknown>(): R;
@@ -12,4 +12,4 @@ declare namespace cocoa {
   }
 }
 
-declare const BCDevice: cocoa.classes.BCDevice;
+declare const BCDevice: cocoa.BCDevice.CLASS;

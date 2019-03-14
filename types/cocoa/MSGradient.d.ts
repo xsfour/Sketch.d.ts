@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSGradient<T = any> extends _MSGradient, MSAssetProtocol {
+  export interface MSGradient<T0 = void, T1 = void, T2 = void> extends _MSGradient, MSAssetProtocol {
     hasOpacity<R = boolean>(): R;
     setGradientType<R = void, P0 = number>(_setGradientType: P0): R;
     convertPointToPosition<R = number, P0 = CGPoint>(_convertPointToPosition: P0): R;
@@ -35,12 +35,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSGradient<T = any> extends _MSGradient, MSAssetProtocol {
+  namespace MSGradient {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSGradient, MSAssetProtocol {
       alloc<R = MSGradient>(): R;
       new: <R = MSGradient>() => R;
     }
   }
 }
 
-declare const MSGradient: cocoa.classes.MSGradient;
+declare const MSGradient: cocoa.MSGradient.CLASS;

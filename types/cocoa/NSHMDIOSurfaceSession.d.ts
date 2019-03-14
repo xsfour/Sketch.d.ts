@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSHMDIOSurfaceSession<T = any> extends NSObject {
+  export interface NSHMDIOSurfaceSession<T0 = void, T1 = void, T2 = void> extends NSObject {
     observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
     dealloc<R = void>(): R;
     initWithDevice_error<R = unknown, P0 = unknown, P1 = unknown>(_initWithDevice: P0, _error: P1): R;
@@ -25,12 +25,12 @@ declare namespace cocoa {
     setDrawableSize<R = void, P0 = CGSize>(_v: P0): R;
     device<R = NSHMDDevice>(): R;
   }
-  namespace classes {
-    export interface NSHMDIOSurfaceSession<T = any> extends NSObject {
+  namespace NSHMDIOSurfaceSession {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSHMDIOSurfaceSession>(): R;
       new: <R = NSHMDIOSurfaceSession>() => R;
     }
   }
 }
 
-declare const NSHMDIOSurfaceSession: cocoa.classes.NSHMDIOSurfaceSession;
+declare const NSHMDIOSurfaceSession: cocoa.NSHMDIOSurfaceSession.CLASS;

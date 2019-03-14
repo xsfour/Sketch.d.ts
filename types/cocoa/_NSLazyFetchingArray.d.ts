@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSLazyFetchingArray<T = any> extends NSMutableArray {
+  export interface _NSLazyFetchingArray<T0 = void, T1 = void, T2 = void> extends NSMutableArray {
     replaceObjectAtIndex_withObject<R = void, P0 = number, P1 = unknown>(_replaceObjectAtIndex: P0, _withObject: P1): R;
     removeLastObject<R = void>(): R;
     filterUsingPredicate<R = void, P0 = unknown>(_filterUsingPredicate: P0): R;
@@ -33,7 +33,7 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     init<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSLazyFetchingArray<T = any> extends NSMutableArray {  }
+  namespace _NSLazyFetchingArray {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSMutableArray {}
   }
 }

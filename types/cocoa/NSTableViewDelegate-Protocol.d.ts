@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableViewDelegateProtocol<T = any> {
+  export interface NSTableViewDelegateProtocol<T0 = void, T1 = void, T2 = void> {
     tableViewSelectionIsChanging<R = void, P0 = NSNotification>(_tableViewSelectionIsChanging: P0): R;
     tableViewColumnDidResize<R = void, P0 = NSNotification>(_tableViewColumnDidResize: P0): R;
     tableViewColumnDidMove<R = void, P0 = NSNotification>(_tableViewColumnDidMove: P0): R;
@@ -32,7 +32,7 @@ declare namespace cocoa {
     tableView_rowViewForRow<R = NSTableRowView, P0 = NSTableView, P1 = number>(_tableView: P0, _rowViewForRow: P1): R;
     tableView_viewForTableColumn_row<R = NSView, P0 = NSTableView, P1 = NSTableColumn, P2 = number>(_tableView: P0, _viewForTableColumn: P1, _row: P2): R;
   }
-  namespace classes {
-    export interface NSTableViewDelegateProtocol<T = any> {  }
+  namespace NSTableViewDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

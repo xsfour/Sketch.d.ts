@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSRecentDocumentInfo<T = any> extends NSObject, NSRecentDocumentInfoProtocol {
+  export interface _NSRecentDocumentInfo<T0 = void, T1 = void, T2 = void> extends NSObject, NSRecentDocumentInfoProtocol {
     transferSecurityScope<R = void>(): R;
     resolveByMountingVolumesIfNecessary_queue_completionHandler<R = void, P0 = boolean, P1 = unknown, P2 = CDUnknownBlockType>(_resolveByMountingVolumesIfNecessary: P0, _queue: P1, _completionHandler: P2): R;
     dealloc<R = void>(): R;
@@ -24,8 +24,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSRecentDocumentInfo<T = any> extends NSObject, NSRecentDocumentInfoProtocol {
+  namespace _NSRecentDocumentInfo {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSRecentDocumentInfoProtocol {
       alloc<R = _NSRecentDocumentInfo>(): R;
       new: <R = _NSRecentDocumentInfo>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSOpacityKeyboardShortcutRecognizer<T = any> extends NSObject {
+  export interface MSOpacityKeyboardShortcutRecognizer<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     discardAccumulatedEvents<R = void>(): R;
     opacityFromCharacters<R = number, P0 = unknown>(_opacityFromCharacters: P0): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     target<R = unknown>(): R;
     setTarget<R = void, P0 = unknown>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSOpacityKeyboardShortcutRecognizer<T = any> extends NSObject {
+  namespace MSOpacityKeyboardShortcutRecognizer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSOpacityKeyboardShortcutRecognizer>(): R;
       new: <R = MSOpacityKeyboardShortcutRecognizer>() => R;
     }
   }
 }
 
-declare const MSOpacityKeyboardShortcutRecognizer: cocoa.classes.MSOpacityKeyboardShortcutRecognizer;
+declare const MSOpacityKeyboardShortcutRecognizer: cocoa.MSOpacityKeyboardShortcutRecognizer.CLASS;

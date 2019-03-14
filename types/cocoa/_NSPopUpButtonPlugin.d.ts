@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSPopUpButtonPlugin<T = any> extends _NSSelectionBinderPlugin {
+  export interface _NSPopUpButtonPlugin<T0 = void, T1 = void, T2 = void> extends _NSSelectionBinderPlugin {
     _shouldCreateSelectionItemInControl<R = boolean, P0 = unknown>(__shouldCreateSelectionItemInControl: P0): R;
     _clearUnneccessaryItems<R = void, P0 = unknown>(__clearUnneccessaryItems: P0): R;
     _supposedNumberOfItems<R = number>(): R;
@@ -11,8 +11,8 @@ declare namespace cocoa {
     forgetDynamicallyGeneratedMenuItem<R = void, P0 = unknown>(_forgetDynamicallyGeneratedMenuItem: P0): R;
     recordDynamicallyGeneratedMenuItem<R = void, P0 = unknown>(_recordDynamicallyGeneratedMenuItem: P0): R;
   }
-  namespace classes {
-    export interface _NSPopUpButtonPlugin<T = any> extends _NSSelectionBinderPlugin {
+  namespace _NSPopUpButtonPlugin {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _NSSelectionBinderPlugin {
       alloc<R = _NSPopUpButtonPlugin>(): R;
       new: <R = _NSPopUpButtonPlugin>() => R;
     }

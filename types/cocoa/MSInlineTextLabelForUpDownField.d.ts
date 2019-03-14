@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInlineTextLabelForUpDownField<T = any> extends MSTextLabelForUpDownField {
+  export interface MSInlineTextLabelForUpDownField<T0 = void, T1 = void, T2 = void> extends MSTextLabelForUpDownField {
     image<R = NSImage>(): R;
     setImage<R = void, P0 = NSImage>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSInlineTextLabelForUpDownField<T = any> extends MSTextLabelForUpDownField {
+  namespace MSInlineTextLabelForUpDownField {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSTextLabelForUpDownField {
       alloc<R = MSInlineTextLabelForUpDownField>(): R;
       new: <R = MSInlineTextLabelForUpDownField>() => R;
       labelWithImage<R = unknown, P0 = unknown>(_labelWithImage: P0): R;
@@ -14,4 +14,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSInlineTextLabelForUpDownField: cocoa.classes.MSInlineTextLabelForUpDownField;
+declare const MSInlineTextLabelForUpDownField: cocoa.MSInlineTextLabelForUpDownField.CLASS;

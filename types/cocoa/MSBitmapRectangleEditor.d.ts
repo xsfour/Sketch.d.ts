@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBitmapRectangleEditor<T = any> extends MSBitmapEditor {
+  export interface MSBitmapRectangleEditor<T0 = void, T1 = void, T2 = void> extends MSBitmapEditor {
     rectFromDraggingPoints<R = CGRect>(): R;
     sizeForLabel<R = CGSize>(): R;
     resetDraggingPoints<R = void>(): R;
@@ -16,8 +16,8 @@ declare namespace cocoa {
     dragMode<R = number>(): R;
     setDragMode<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSBitmapRectangleEditor<T = any> extends MSBitmapEditor {
+  namespace MSBitmapRectangleEditor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSBitmapEditor {
       alloc<R = MSBitmapRectangleEditor>(): R;
       new: <R = MSBitmapRectangleEditor>() => R;
       accumulateSelectionWithPrevious_draggingRect_dragMode<R = unknown, P0 = unknown, P1 = unknown, P2 = number>(_accumulateSelectionWithPrevious: P0, _draggingRect: P1, _dragMode: P2): R;
@@ -25,4 +25,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSBitmapRectangleEditor: cocoa.classes.MSBitmapRectangleEditor;
+declare const MSBitmapRectangleEditor: cocoa.MSBitmapRectangleEditor.CLASS;

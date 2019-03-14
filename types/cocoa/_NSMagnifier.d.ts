@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSMagnifier<T = any> extends NSObject, NSWindowDelegateProtocol {
+  export interface _NSMagnifier<T0 = void, T1 = void, T2 = void> extends NSObject, NSWindowDelegateProtocol {
     trackMagnifierWithDelegate<R = void, P0 = unknown>(_trackMagnifierWithDelegate: P0): R;
     _createMagnifyingGlassWindow<R = void>(): R;
     magnifyingGlassContentViewClass<R = unknown>(): R;
@@ -13,8 +13,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSMagnifier<T = any> extends NSObject, NSWindowDelegateProtocol {
+  namespace _NSMagnifier {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSWindowDelegateProtocol {
       alloc<R = _NSMagnifier>(): R;
       new: <R = _NSMagnifier>() => R;
       sharedMagnifier<R = unknown>(): R;

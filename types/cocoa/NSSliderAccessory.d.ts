@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSliderAccessory<T = any> extends NSObject, NSCodingProtocol, NSAccessibilityProtocol, NSAccessibilityElementProtocol {
+  export interface NSSliderAccessory<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol, NSAccessibilityProtocol, NSAccessibilityElementProtocol {
     setAccessibilityContentSiblingBelow<R = void, P0 = unknown>(_setAccessibilityContentSiblingBelow: P0): R;
     accessibilityContentSiblingBelow<R = unknown>(): R;
     setAccessibilityContentSiblingAbove<R = void, P0 = unknown>(_setAccessibilityContentSiblingAbove: P0): R;
@@ -289,8 +289,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSSliderAccessory<T = any> extends NSObject, NSCodingProtocol, NSAccessibilityProtocol, NSAccessibilityElementProtocol {
+  namespace NSSliderAccessory {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol, NSAccessibilityProtocol, NSAccessibilityElementProtocol {
       alloc<R = NSSliderAccessory>(): R;
       new: <R = NSSliderAccessory>() => R;
       accessoryWithImage<R = unknown, P0 = unknown>(_accessoryWithImage: P0): R;
@@ -299,4 +299,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSSliderAccessory: cocoa.classes.NSSliderAccessory;
+declare const NSSliderAccessory: cocoa.NSSliderAccessory.CLASS;

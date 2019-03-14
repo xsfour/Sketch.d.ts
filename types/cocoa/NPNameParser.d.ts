@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NPNameParser<T = any> {}
-  namespace classes {
-    export interface NPNameParser<T = any> {  }
+  export interface NPNameParser<T0 = void, T1 = void, T2 = void> {}
+  namespace NPNameParser {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NPNameParser: cocoa.classes.NPNameParser;
+declare const NPNameParser: cocoa.NPNameParser.CLASS;

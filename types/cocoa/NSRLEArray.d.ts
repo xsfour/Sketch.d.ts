@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSRLEArray<T = any> extends NSObject, NSCopyingProtocol, NSMutableCopyingProtocol {
+  export interface NSRLEArray<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSMutableCopyingProtocol {
     description<R = unknown>(): R;
     count<R = number>(): R;
     objectAtRunIndex_length<R = unknown, P0 = number, P1 = number>(_objectAtRunIndex: P0, _length: P1): R;
@@ -12,12 +12,12 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     initWithRefCountedRunArray<R = unknown, P0 = _NSRefCountedRunArray>(_initWithRefCountedRunArray: P0): R;
   }
-  namespace classes {
-    export interface NSRLEArray<T = any> extends NSObject, NSCopyingProtocol, NSMutableCopyingProtocol {
+  namespace NSRLEArray {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSMutableCopyingProtocol {
       alloc<R = NSRLEArray>(): R;
       new: <R = NSRLEArray>() => R;
     }
   }
 }
 
-declare const NSRLEArray: cocoa.classes.NSRLEArray;
+declare const NSRLEArray: cocoa.NSRLEArray.CLASS;

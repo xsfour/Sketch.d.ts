@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUserInterfaceCompressionOptions<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol, NSCodingProtocol {
+  export interface NSUserInterfaceCompressionOptions<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol, NSCodingProtocol {
     description<R = unknown>(): R;
     optionsByAddingOptions<R = unknown, P0 = unknown>(_optionsByAddingOptions: P0): R;
     optionsByRemovingOptions<R = unknown, P0 = unknown>(_optionsByRemovingOptions: P0): R;
@@ -13,8 +13,8 @@ declare namespace cocoa {
     initWithIdentifier<R = unknown, P0 = unknown>(_initWithIdentifier: P0): R;
     empty<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSUserInterfaceCompressionOptions<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol, NSCodingProtocol {
+  namespace NSUserInterfaceCompressionOptions {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol, NSCodingProtocol {
       alloc<R = NSUserInterfaceCompressionOptions>(): R;
       new: <R = NSUserInterfaceCompressionOptions>() => R;
       standardOptions<R = unknown>(): R;
@@ -26,4 +26,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSUserInterfaceCompressionOptions: cocoa.classes.NSUserInterfaceCompressionOptions;
+declare const NSUserInterfaceCompressionOptions: cocoa.NSUserInterfaceCompressionOptions.CLASS;

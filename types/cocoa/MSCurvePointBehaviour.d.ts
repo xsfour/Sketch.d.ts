@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSCurvePointBehaviour<T = any> extends NSObject {}
-  namespace classes {
-    export interface MSCurvePointBehaviour<T = any> extends NSObject {
+  export interface MSCurvePointBehaviour<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace MSCurvePointBehaviour {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSCurvePointBehaviour>(): R;
       new: <R = MSCurvePointBehaviour>() => R;
       curveToChangedInPoint<R = void, P0 = unknown>(_curveToChangedInPoint: P0): R;
@@ -13,4 +13,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSCurvePointBehaviour: cocoa.classes.MSCurvePointBehaviour;
+declare const MSCurvePointBehaviour: cocoa.MSCurvePointBehaviour.CLASS;

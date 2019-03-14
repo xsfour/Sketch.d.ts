@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSConstantBaselineTypesetter<T = any> extends NSATSTypesetter {
+  export interface MSConstantBaselineTypesetter<T0 = void, T1 = void, T2 = void> extends NSATSTypesetter {
     cxx_destruct<R = void>(): R;
     setLineFragmentRect_forGlyphRange_usedRect_baselineOffset<R = void, P0 = CGRect, P1 = _NSRange, P2 = CGRect, P3 = number>(_setLineFragmentRect: P0, _forGlyphRange: P1, _usedRect: P2, _baselineOffset: P3): R;
     willSetLineFragmentRect_forGlyphRange_usedRect_baselineOffset<R = void, P0 = CGRect, P1 = _NSRange, P2 = CGRect, P3 = number>(_willSetLineFragmentRect: P0, _forGlyphRange: P1, _usedRect: P2, _baselineOffset: P3): R;
@@ -14,9 +14,9 @@ declare namespace cocoa {
     rangeMap<R = BCRangeMap>(): R;
     setRangeMap<R = void, P0 = BCRangeMap>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSConstantBaselineTypesetter<T = any> extends NSATSTypesetter {  }
+  namespace MSConstantBaselineTypesetter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSATSTypesetter {}
   }
 }
 
-declare const MSConstantBaselineTypesetter: cocoa.classes.MSConstantBaselineTypesetter;
+declare const MSConstantBaselineTypesetter: cocoa.MSConstantBaselineTypesetter.CLASS;

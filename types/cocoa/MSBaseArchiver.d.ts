@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBaseArchiver<T = any> extends NSObject {
+  export interface MSBaseArchiver<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     encodeSize_forKey<R = void, P0 = CGSize, P1 = unknown>(_encodeSize: P0, _forKey: P1): R;
     encodeInteger_forKey<R = void, P0 = number, P1 = unknown>(_encodeInteger: P0, _forKey: P1): R;
@@ -19,8 +19,8 @@ declare namespace cocoa {
     archiveObjectIDs<R = boolean>(): R;
     setArchiveObjectIDs<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSBaseArchiver<T = any> extends NSObject {
+  namespace MSBaseArchiver {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSBaseArchiver>(): R;
       new: <R = MSBaseArchiver>() => R;
       archivedDataWithHeaderAndRootObject<R = unknown, P0 = unknown>(_archivedDataWithHeaderAndRootObject: P0): R;
@@ -28,4 +28,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSBaseArchiver: cocoa.classes.MSBaseArchiver;
+declare const MSBaseArchiver: cocoa.MSBaseArchiver.CLASS;

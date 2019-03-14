@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSnapperData<T = any> extends NSObject {
+  export interface MSSnapperData<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     hash<R = number>(): R;
     drawSpacingRect_zoomScale_coordinateSpace<R = void, P0 = CGRect, P1 = number, P2 = unknown>(_drawSpacingRect: P0, _zoomScale: P1, _coordinateSpace: P2): R;
@@ -30,12 +30,12 @@ declare namespace cocoa {
     dimensionAxes<R = number>(): R;
     item<R = MSSnapItem>(): R;
   }
-  namespace classes {
-    export interface MSSnapperData<T = any> extends NSObject {
+  namespace MSSnapperData {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSSnapperData>(): R;
       new: <R = MSSnapperData>() => R;
     }
   }
 }
 
-declare const MSSnapperData: cocoa.classes.MSSnapperData;
+declare const MSSnapperData: cocoa.MSSnapperData.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSISVariable<T = any> extends NSObject, NSCodingProtocol {
+  export interface NSISVariable<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
     markedConstraint<R = unknown>(): R;
     valueIsUserVisible<R = boolean>(): R;
     markedConstraintIsEligibleForIntegralizationAdjustment<R = boolean>(): R;
@@ -21,8 +21,8 @@ declare namespace cocoa {
     orientationHint<R = number>(): R;
     engines<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface NSISVariable<T = any> extends NSObject, NSCodingProtocol {
+  namespace NSISVariable {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
       alloc<R = NSISVariable>(): R;
       new: <R = NSISVariable>() => R;
       variableWithName_valueRestriction_shouldBeMinimized_valueIsUserObservable<R = unknown, P0 = unknown, P1 = number, P2 = boolean, P3 = boolean>(_variableWithName: P0, _valueRestriction: P1, _shouldBeMinimized: P2, _valueIsUserObservable: P3): R;
@@ -33,4 +33,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSISVariable: cocoa.classes.NSISVariable;
+declare const NSISVariable: cocoa.NSISVariable.CLASS;

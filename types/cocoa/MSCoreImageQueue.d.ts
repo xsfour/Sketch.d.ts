@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSCoreImageQueue<T = any> extends NSObject {}
-  namespace classes {
-    export interface MSCoreImageQueue<T = any> extends NSObject {
+  export interface MSCoreImageQueue<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace MSCoreImageQueue {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSCoreImageQueue>(): R;
       new: <R = MSCoreImageQueue>() => R;
       averageLuminanceOfImage<R = number, P0 = CGImage>(_averageLuminanceOfImage: P0): R;
@@ -16,4 +16,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSCoreImageQueue: cocoa.classes.MSCoreImageQueue;
+declare const MSCoreImageQueue: cocoa.MSCoreImageQueue.CLASS;

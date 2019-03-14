@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSLayerListController<T = any> extends MSSidebarListController, BCOutlineViewDataControllerDataSourceProtocol, BCOutlineViewDataControllerDelegateProtocol {
+  export interface MSLayerListController<T0 = void, T1 = void, T2 = void> extends MSSidebarListController, BCOutlineViewDataControllerDataSourceProtocol, BCOutlineViewDataControllerDelegateProtocol {
     pasteboardWriterClass<R = unknown>(): R;
     mapExpandedStateToLayerListStatus<R = number, P0 = number>(_mapExpandedStateToLayerListStatus: P0): R;
     itemForNode<R = unknown, P0 = unknown>(_itemForNode: P0): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSLayerListController<T = any> extends MSSidebarListController, BCOutlineViewDataControllerDataSourceProtocol, BCOutlineViewDataControllerDelegateProtocol {
+  namespace MSLayerListController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSSidebarListController, BCOutlineViewDataControllerDataSourceProtocol, BCOutlineViewDataControllerDelegateProtocol {
       alloc<R = MSLayerListController>(): R;
       new: <R = MSLayerListController>() => R;
     }
   }
 }
 
-declare const MSLayerListController: cocoa.classes.MSLayerListController;
+declare const MSLayerListController: cocoa.MSLayerListController.CLASS;

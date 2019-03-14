@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSVGFilter<T = any> extends MSXMLElementWrapper {
+  export interface MSSVGFilter<T0 = void, T1 = void, T2 = void> extends MSXMLElementWrapper {
     close<R = void>(): R;
     addFilterOutput<R = void, P0 = unknown>(_addFilterOutput: P0): R;
     addFilterItem<R = void, P0 = unknown>(_addFilterItem: P0): R;
@@ -25,8 +25,8 @@ declare namespace cocoa {
     y<R = NSString>(): R;
     setY<R = void, P0 = NSString>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSSVGFilter<T = any> extends MSXMLElementWrapper {
+  namespace MSSVGFilter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSXMLElementWrapper {
       alloc<R = MSSVGFilter>(): R;
       new: <R = MSSVGFilter>() => R;
       filter<R = unknown>(): R;
@@ -34,4 +34,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSSVGFilter: cocoa.classes.MSSVGFilter;
+declare const MSSVGFilter: cocoa.MSSVGFilter.CLASS;

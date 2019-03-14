@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXPCDecoder<T = any> extends NSXPCCoder {
+  export interface NSXPCDecoder<T0 = void, T1 = void, T2 = void> extends NSXPCCoder {
     _decodeCStringForKey<R = string, P0 = unknown>(__decodeCStringForKey: P0): R;
     _decodeArrayOfObjectsForKey<R = unknown, P0 = unknown>(__decodeArrayOfObjectsForKey: P0): R;
     __decodeXPCObject_allowingSimpleMessageSend_outInvocation_outArguments_outArgumentsMaxCount_outMethodSignature_outSelector_isReply_replySelector_interface<R = number, P0 = unknown, P1 = boolean, P2 = unknown, P3 = unknown, P4 = number, P5 = unknown, P6 = string, P7 = boolean, P8 = string, P9 = unknown>(___decodeXPCObject: P0, _allowingSimpleMessageSend: P1, _outInvocation: P2, _outArguments: P3, _outArgumentsMaxCount: P4, _outMethodSignature: P5, _outSelector: P6, _isReply: P7, _replySelector: P8, _interface: P9): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     _connection<R = NSXPCConnection>(): R;
     set_connection<R = void, P0 = NSXPCConnection>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSXPCDecoder<T = any> extends NSXPCCoder {
+  namespace NSXPCDecoder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSXPCCoder {
       alloc<R = NSXPCDecoder>(): R;
       new: <R = NSXPCDecoder>() => R;
     }
   }
 }
 
-declare const NSXPCDecoder: cocoa.classes.NSXPCDecoder;
+declare const NSXPCDecoder: cocoa.NSXPCDecoder.CLASS;

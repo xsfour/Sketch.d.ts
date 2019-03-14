@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTrackingInfoImpl<T = any> extends NSObject, NSMenuTrackingInfoProtocol {
+  export interface NSTrackingInfoImpl<T0 = void, T1 = void, T2 = void> extends NSObject, NSMenuTrackingInfoProtocol {
     dealloc<R = void>(): R;
     targetedItemFrame<R = CGRect>(): R;
     targetedItem<R = NSMenuItem>(): R;
@@ -12,12 +12,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSTrackingInfoImpl<T = any> extends NSObject, NSMenuTrackingInfoProtocol {
+  namespace NSTrackingInfoImpl {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSMenuTrackingInfoProtocol {
       alloc<R = NSTrackingInfoImpl>(): R;
       new: <R = NSTrackingInfoImpl>() => R;
     }
   }
 }
 
-declare const NSTrackingInfoImpl: cocoa.classes.NSTrackingInfoImpl;
+declare const NSTrackingInfoImpl: cocoa.NSTrackingInfoImpl.CLASS;

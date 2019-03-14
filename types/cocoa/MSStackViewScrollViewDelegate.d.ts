@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSStackViewScrollViewDelegate<T = any> {}
-  namespace classes {
-    export interface MSStackViewScrollViewDelegate<T = any> {  }
+  export interface MSStackViewScrollViewDelegate<T0 = void, T1 = void, T2 = void> {}
+  namespace MSStackViewScrollViewDelegate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const MSStackViewScrollViewDelegate: cocoa.classes.MSStackViewScrollViewDelegate;
+declare const MSStackViewScrollViewDelegate: cocoa.MSStackViewScrollViewDelegate.CLASS;

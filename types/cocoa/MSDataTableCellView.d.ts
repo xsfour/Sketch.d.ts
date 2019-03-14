@@ -1,7 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDataTableCellView<T = any> extends NSTableCellView {
+  export interface MSDataTableCellView<T0 = void, T1 = void, T2 = void> extends NSTableCellView {
+    cxx_destruct<R = void>(): R;
     setObjectValue<R = void, P0 = unknown>(_setObjectValue: P0): R;
     awakeFromNib<R = void>(): R;
     revealButton<R = NSButton>(): R;
@@ -16,12 +17,12 @@ declare namespace cocoa {
     setPrimaryTextField<R = void, P0 = NSTextField>(_v: P0): R;
     dataPreferenceItem<R = MSDataPreferenceItem>(): R;
   }
-  namespace classes {
-    export interface MSDataTableCellView<T = any> extends NSTableCellView {
+  namespace MSDataTableCellView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTableCellView {
       alloc<R = MSDataTableCellView>(): R;
       new: <R = MSDataTableCellView>() => R;
     }
   }
 }
 
-declare const MSDataTableCellView: cocoa.classes.MSDataTableCellView;
+declare const MSDataTableCellView: cocoa.MSDataTableCellView.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarColorPickerFavorites<T = any> extends NSControl, NSCollectionViewDelegateProtocol, NSCollectionViewDataSourceProtocol, NSTouchBarColorPickerViewProtocol {
+  export interface NSTouchBarColorPickerFavorites<T0 = void, T1 = void, T2 = void> extends NSControl, NSCollectionViewDelegateProtocol, NSCollectionViewDataSourceProtocol, NSTouchBarColorPickerViewProtocol {
     _favoritesDidChange<R = void, P0 = unknown>(__favoritesDidChange: P0): R;
     setSavedColors<R = void, P0 = unknown>(_setSavedColors: P0): R;
     savedColors<R = unknown>(): R;
@@ -21,12 +21,12 @@ declare namespace cocoa {
     target<R = unknown>(): R;
     setTarget<R = void, P0 = unknown>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTouchBarColorPickerFavorites<T = any> extends NSControl, NSCollectionViewDelegateProtocol, NSCollectionViewDataSourceProtocol, NSTouchBarColorPickerViewProtocol {
+  namespace NSTouchBarColorPickerFavorites {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSControl, NSCollectionViewDelegateProtocol, NSCollectionViewDataSourceProtocol, NSTouchBarColorPickerViewProtocol {
       alloc<R = NSTouchBarColorPickerFavorites>(): R;
       new: <R = NSTouchBarColorPickerFavorites>() => R;
     }
   }
 }
 
-declare const NSTouchBarColorPickerFavorites: cocoa.classes.NSTouchBarColorPickerFavorites;
+declare const NSTouchBarColorPickerFavorites: cocoa.NSTouchBarColorPickerFavorites.CLASS;

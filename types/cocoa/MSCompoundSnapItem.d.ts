@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSCompoundSnapItem<T = any> extends MSSnapItem {
+  export interface MSCompoundSnapItem<T0 = void, T1 = void, T2 = void> extends MSSnapItem {
     setRectForSnapping<R = void, P0 = CGRect>(_setRectForSnapping: P0): R;
     rectForSnapping<R = CGRect>(): R;
     shouldConstrainProportions<R = boolean>(): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     relativeRects<R = NSArray>(): R;
     setRelativeRects<R = void, P0 = NSArray>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSCompoundSnapItem<T = any> extends MSSnapItem {
+  namespace MSCompoundSnapItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSSnapItem {
       alloc<R = MSCompoundSnapItem>(): R;
       new: <R = MSCompoundSnapItem>() => R;
     }
   }
 }
 
-declare const MSCompoundSnapItem: cocoa.classes.MSCompoundSnapItem;
+declare const MSCompoundSnapItem: cocoa.MSCompoundSnapItem.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTabViewController<T = any> extends NSViewController, NSTabViewDelegateProtocol, NSToolbarDelegateProtocol {
+  export interface NSTabViewController<T0 = void, T1 = void, T2 = void> extends NSViewController, NSTabViewDelegateProtocol, NSToolbarDelegateProtocol {
     _associatedTabStyleForUIProvider<R = number, P0 = unknown>(__associatedTabStyleForUIProvider: P0): R;
     _implicitUIProviderForTabStyle<R = unknown, P0 = number>(__implicitUIProviderForTabStyle: P0): R;
     setUIProvider<R = void, P0 = unknown>(_setUIProvider: P0): R;
@@ -61,8 +61,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSTabViewController<T = any> extends NSViewController, NSTabViewDelegateProtocol, NSToolbarDelegateProtocol {
+  namespace NSTabViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController, NSTabViewDelegateProtocol, NSToolbarDelegateProtocol {
       alloc<R = NSTabViewController>(): R;
       new: <R = NSTabViewController>() => R;
       _findWindowTabViewControllerInWindow<R = unknown, P0 = unknown>(__findWindowTabViewControllerInWindow: P0): R;
@@ -72,4 +72,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTabViewController: cocoa.classes.NSTabViewController;
+declare const NSTabViewController: cocoa.NSTabViewController.CLASS;

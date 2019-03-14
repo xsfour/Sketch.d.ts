@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MOPropertyDescription<T = any> extends NSObject {
+  export interface MOPropertyDescription<T0 = void, T1 = void, T2 = void> extends NSObject {
     name<R = NSString>(): R;
     setName<R = void, P0 = NSString>(_v: P0): R;
     typeEncoding<R = NSString>(): R;
@@ -23,12 +23,12 @@ declare namespace cocoa {
     weak<R = boolean>(): R;
     setWeak<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface MOPropertyDescription<T = any> extends NSObject {
+  namespace MOPropertyDescription {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MOPropertyDescription>(): R;
       new: <R = MOPropertyDescription>() => R;
     }
   }
 }
 
-declare const MOPropertyDescription: cocoa.classes.MOPropertyDescription;
+declare const MOPropertyDescription: cocoa.MOPropertyDescription.CLASS;

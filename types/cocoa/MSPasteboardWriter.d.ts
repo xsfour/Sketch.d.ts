@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPasteboardWriter<T = any> {}
-  namespace classes {
-    export interface MSPasteboardWriter<T = any> {  }
+  export interface MSPasteboardWriter<T0 = void, T1 = void, T2 = void> {}
+  namespace MSPasteboardWriter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const MSPasteboardWriter: cocoa.classes.MSPasteboardWriter;
+declare const MSPasteboardWriter: cocoa.MSPasteboardWriter.CLASS;

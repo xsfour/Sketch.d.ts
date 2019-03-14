@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSLocalDataSupplier<T = any> extends MSDataSupplier {
+  export interface MSLocalDataSupplier<T0 = void, T1 = void, T2 = void> extends MSDataSupplier {
     respondToContentChanged<R = void>(): R;
     shuffleArray_truncateToLength<R = unknown, P0 = unknown, P1 = number>(_shuffleArray: P0, _truncateToLength: P1): R;
     shuffledArrayWithCount_fromArray<R = unknown, P0 = number, P1 = unknown>(_shuffledArrayWithCount: P0, _fromArray: P1): R;
@@ -18,8 +18,8 @@ declare namespace cocoa {
     dataSource<R = NSURL>(): R;
     isBuiltin<R = boolean>(): R;
   }
-  namespace classes {
-    export interface MSLocalDataSupplier<T = any> extends MSDataSupplier {
+  namespace MSLocalDataSupplier {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSDataSupplier {
       alloc<R = MSLocalDataSupplier>(): R;
       new: <R = MSLocalDataSupplier>() => R;
       validImageFileUTIs<R = unknown>(): R;
@@ -29,4 +29,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSLocalDataSupplier: cocoa.classes.MSLocalDataSupplier;
+declare const MSLocalDataSupplier: cocoa.MSLocalDataSupplier.CLASS;

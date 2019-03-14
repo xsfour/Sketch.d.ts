@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSOverrideRepresentationBase<T = any> extends NSObject {
+  export interface MSOverrideRepresentationBase<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     updateAfterSelectingChild<R = void>(): R;
     modifiedMasterForInstanceInMaster<R = unknown, P0 = unknown>(_modifiedMasterForInstanceInMaster: P0): R;
@@ -18,12 +18,12 @@ declare namespace cocoa {
     transformForConvertingToInstance<R = NSAffineTransform>(): R;
     isExpanded<R = boolean>(): R;
   }
-  namespace classes {
-    export interface MSOverrideRepresentationBase<T = any> extends NSObject {
+  namespace MSOverrideRepresentationBase {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSOverrideRepresentationBase>(): R;
       new: <R = MSOverrideRepresentationBase>() => R;
     }
   }
 }
 
-declare const MSOverrideRepresentationBase: cocoa.classes.MSOverrideRepresentationBase;
+declare const MSOverrideRepresentationBase: cocoa.MSOverrideRepresentationBase.CLASS;

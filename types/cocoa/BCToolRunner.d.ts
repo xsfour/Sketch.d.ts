@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCToolRunner<T = any> {}
-  namespace classes {
-    export interface BCToolRunner<T = any> {  }
+  export interface BCToolRunner<T0 = void, T1 = void, T2 = void> {}
+  namespace BCToolRunner {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const BCToolRunner: cocoa.classes.BCToolRunner;
+declare const BCToolRunner: cocoa.BCToolRunner.CLASS;

@@ -1,17 +1,17 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSConstraintResetAction<T = any> extends MSDocumentAction {
+  export interface MSConstraintResetAction<T0 = void, T1 = void, T2 = void> extends MSDocumentAction {
     label<R = unknown>(): R;
     validate<R = boolean>(): R;
     resetConstraintAction<R = void, P0 = unknown>(_resetConstraintAction: P0): R;
   }
-  namespace classes {
-    export interface MSConstraintResetAction<T = any> extends MSDocumentAction {
+  namespace MSConstraintResetAction {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSDocumentAction {
       alloc<R = MSConstraintResetAction>(): R;
       new: <R = MSConstraintResetAction>() => R;
     }
   }
 }
 
-declare const MSConstraintResetAction: cocoa.classes.MSConstraintResetAction;
+declare const MSConstraintResetAction: cocoa.MSConstraintResetAction.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSnapper<T = any> extends NSObject {
+  export interface MSSnapper<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     snappableAnchorsOfItems_exceptLayers<R = unknown, P0 = unknown, P1 = unknown>(_snappableAnchorsOfItems: P0, _exceptLayers: P1): R;
     snapToLines_axis_adjustableAxes_mayResize_originalRect<R = void, P0 = unknown, P1 = number, P2 = number, P3 = boolean, P4 = CGRect>(_snapToLines: P0, _axis: P1, _adjustableAxes: P2, _mayResize: P3, _originalRect: P4): R;
@@ -22,12 +22,12 @@ declare namespace cocoa {
     enabled<R = boolean>(): R;
     setEnabled<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSSnapper<T = any> extends NSObject {
+  namespace MSSnapper {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSSnapper>(): R;
       new: <R = MSSnapper>() => R;
     }
   }
 }
 
-declare const MSSnapper: cocoa.classes.MSSnapper;
+declare const MSSnapper: cocoa.MSSnapper.CLASS;

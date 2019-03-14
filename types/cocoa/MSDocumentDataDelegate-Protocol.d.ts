@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDocumentDataDelegateProtocol<T = any> extends NSObjectProtocol {
+  export interface MSDocumentDataDelegateProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     visibleCanvasRectForDocumentData<R = CGRect, P0 = MSDocumentData>(_visibleCanvasRectForDocumentData: P0): R;
     determineCurrentArtboard<R = void>(): R;
     refreshOverlay<R = void>(): R;
@@ -14,7 +14,7 @@ declare namespace cocoa {
     documentData_temporarilyHideSelectionForLayers<R = void, P0 = MSDocumentData, P1 = NSArray>(_documentData: P0, _temporarilyHideSelectionForLayers: P1): R;
     documentData_didChangeToPage<R = void, P0 = MSDocumentData, P1 = MSPage>(_documentData: P0, _didChangeToPage: P1): R;
   }
-  namespace classes {
-    export interface MSDocumentDataDelegateProtocol<T = any> extends NSObjectProtocol {  }
+  namespace MSDocumentDataDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

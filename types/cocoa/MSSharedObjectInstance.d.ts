@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSharedObjectInstance<T = any> {}
-  namespace classes {
-    export interface MSSharedObjectInstance<T = any> {  }
+  export interface MSSharedObjectInstance<T0 = void, T1 = void, T2 = void> {}
+  namespace MSSharedObjectInstance {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const MSSharedObjectInstance: cocoa.classes.MSSharedObjectInstance;
+declare const MSSharedObjectInstance: cocoa.MSSharedObjectInstance.CLASS;

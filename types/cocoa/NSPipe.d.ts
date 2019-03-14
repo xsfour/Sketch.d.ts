@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPipe<T = any> extends NSObject {
+  export interface NSPipe<T0 = void, T1 = void, T2 = void> extends NSObject {
     _closeOnDealloc<R = void>(): R;
     fileHandleForWriting<R = NSFileHandle>(): R;
     fileHandleForReading<R = NSFileHandle>(): R;
   }
-  namespace classes {
-    export interface NSPipe<T = any> extends NSObject {
+  namespace NSPipe {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSPipe>(): R;
       new: <R = NSPipe>() => R;
       pipe<R = unknown>(): R;
@@ -16,4 +16,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPipe: cocoa.classes.NSPipe;
+declare const NSPipe: cocoa.NSPipe.CLASS;

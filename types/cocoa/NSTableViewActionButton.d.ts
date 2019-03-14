@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableViewActionButton<T = any> extends NSControl, NSAccessibilityButtonProtocol {
+  export interface NSTableViewActionButton<T0 = void, T1 = void, T2 = void> extends NSControl, NSAccessibilityButtonProtocol {
     isFlipped<R = boolean>(): R;
     layoutStateForBounds<R = unknown, P0 = CGRect>(_layoutStateForBounds: P0): R;
     wantsLayer<R = boolean>(): R;
@@ -24,12 +24,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSTableViewActionButton<T = any> extends NSControl, NSAccessibilityButtonProtocol {
+  namespace NSTableViewActionButton {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSControl, NSAccessibilityButtonProtocol {
       alloc<R = NSTableViewActionButton>(): R;
       new: <R = NSTableViewActionButton>() => R;
     }
   }
 }
 
-declare const NSTableViewActionButton: cocoa.classes.NSTableViewActionButton;
+declare const NSTableViewActionButton: cocoa.NSTableViewActionButton.CLASS;

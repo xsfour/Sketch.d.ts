@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSViewControllerPresentationAnimatorObject<T = any> extends NSObject, NSViewControllerPresentationAnimatorProtocol {
+  export interface NSViewControllerPresentationAnimatorObject<T0 = void, T1 = void, T2 = void> extends NSObject, NSViewControllerPresentationAnimatorProtocol {
     dealloc<R = void>(): R;
     completionHandler<R = CDUnknownBlockType>(): R;
     setCompletionHandler<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSViewControllerPresentationAnimatorObject<T = any> extends NSObject, NSViewControllerPresentationAnimatorProtocol {
+  namespace NSViewControllerPresentationAnimatorObject {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSViewControllerPresentationAnimatorProtocol {
       alloc<R = NSViewControllerPresentationAnimatorObject>(): R;
       new: <R = NSViewControllerPresentationAnimatorObject>() => R;
     }
   }
 }
 
-declare const NSViewControllerPresentationAnimatorObject: cocoa.classes.NSViewControllerPresentationAnimatorObject;
+declare const NSViewControllerPresentationAnimatorObject: cocoa.NSViewControllerPresentationAnimatorObject.CLASS;

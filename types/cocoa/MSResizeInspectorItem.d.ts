@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSResizeInspectorItem<T = any> extends MSInspectorItem {
+  export interface MSResizeInspectorItem<T0 = void, T1 = void, T2 = void> extends MSInspectorItem {
     resetConstraints<R = void, P0 = unknown>(_resetConstraints: P0): R;
     toggleBoth<R = void, P0 = unknown>(_toggleBoth: P0): R;
     resizeConstraintsAction<R = void, P0 = unknown>(_resizeConstraintsAction: P0): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     fixHorizontalButton<R = NSButton>(): R;
     setFixHorizontalButton<R = void, P0 = NSButton>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSResizeInspectorItem<T = any> extends MSInspectorItem {
+  namespace MSResizeInspectorItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSInspectorItem {
       alloc<R = MSResizeInspectorItem>(): R;
       new: <R = MSResizeInspectorItem>() => R;
     }
   }
 }
 
-declare const MSResizeInspectorItem: cocoa.classes.MSResizeInspectorItem;
+declare const MSResizeInspectorItem: cocoa.MSResizeInspectorItem.CLASS;

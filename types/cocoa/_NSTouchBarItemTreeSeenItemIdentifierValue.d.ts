@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSTouchBarItemTreeSeenItemIdentifierValue<T = any> extends NSObject {
+  export interface _NSTouchBarItemTreeSeenItemIdentifierValue<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     nodeList<R = NSMutableArray>(): R;
     setNodeList<R = void, P0 = NSMutableArray>(_v: P0): R;
@@ -12,8 +12,8 @@ declare namespace cocoa {
     parentNode<R = NSTouchBarItemTreeParentNode>(): R;
     setParentNode<R = void, P0 = NSTouchBarItemTreeParentNode>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSTouchBarItemTreeSeenItemIdentifierValue<T = any> extends NSObject {
+  namespace _NSTouchBarItemTreeSeenItemIdentifierValue {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSTouchBarItemTreeSeenItemIdentifierValue>(): R;
       new: <R = _NSTouchBarItemTreeSeenItemIdentifierValue>() => R;
     }

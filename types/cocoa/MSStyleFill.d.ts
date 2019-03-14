@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSStyleFill<T = any> extends _MSStyleFill, MSImageOwnerProtocol {
+  export interface MSStyleFill<T0 = void, T1 = void, T2 = void> extends _MSStyleFill, MSImageOwnerProtocol {
     NSImage<R = unknown>(): R;
     setOpacity<R = void, P0 = number>(_setOpacity: P0): R;
     hasOpacity<R = boolean>(): R;
@@ -14,8 +14,8 @@ declare namespace cocoa {
     image<R = MSImageData>(): R;
     setImage<R = void, P0 = MSImageData>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSStyleFill<T = any> extends _MSStyleFill, MSImageOwnerProtocol {
+  namespace MSStyleFill {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSStyleFill, MSImageOwnerProtocol {
       alloc<R = MSStyleFill>(): R;
       new: <R = MSStyleFill>() => R;
       keyPathsForValuesAffectingInterfaceOpacity<R = unknown>(): R;
@@ -23,4 +23,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSStyleFill: cocoa.classes.MSStyleFill;
+declare const MSStyleFill: cocoa.MSStyleFill.CLASS;

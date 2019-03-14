@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFilePresenterXPCMessenger<T = any> extends NSObject, NSFilePresenterXPCInterfaceProtocol {
+  export interface NSFilePresenterXPCMessenger<T0 = void, T1 = void, T2 = void> extends NSObject, NSFilePresenterXPCInterfaceProtocol {
     _makePresenter_validateRelinquishmentToSubitemAtURL_completionHandler<R = void, P0 = unknown, P1 = unknown, P2 = CDUnknownBlockType>(__makePresenter: P0, _validateRelinquishmentToSubitemAtURL: P1, _completionHandler: P2): R;
     _makePresenter_relinquishToWritingClaimWithID_options_purposeID_subitemURL_completionHandler<R = void, P0 = unknown, P1 = unknown, P2 = number, P3 = unknown, P4 = unknown, P5 = CDUnknownBlockType>(__makePresenter: P0, _relinquishToWritingClaimWithID: P1, _options: P2, _purposeID: P3, _subitemURL: P4, _completionHandler: P5): R;
     _makePresenter_relinquishToReadingClaimWithID_purposeID_options_completionHandler<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = number, P4 = CDUnknownBlockType>(__makePresenter: P0, _relinquishToReadingClaimWithID: P1, _purposeID: P2, _options: P3, _completionHandler: P4): R;
@@ -32,12 +32,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSFilePresenterXPCMessenger<T = any> extends NSObject, NSFilePresenterXPCInterfaceProtocol {
+  namespace NSFilePresenterXPCMessenger {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSFilePresenterXPCInterfaceProtocol {
       alloc<R = NSFilePresenterXPCMessenger>(): R;
       new: <R = NSFilePresenterXPCMessenger>() => R;
     }
   }
 }
 
-declare const NSFilePresenterXPCMessenger: cocoa.classes.NSFilePresenterXPCMessenger;
+declare const NSFilePresenterXPCMessenger: cocoa.NSFilePresenterXPCMessenger.CLASS;

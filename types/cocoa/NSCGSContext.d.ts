@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCGSContext<T = any> extends NSGraphicsContext {
+  export interface NSCGSContext<T0 = void, T1 = void, T2 = void> extends NSGraphicsContext {
     isFlipped<R = boolean>(): R;
     _invalidate<R = void>(): R;
     windowID<R = number>(): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     _shouldEnforcePixelAlignment<R = boolean>(): R;
     _setShouldEnforcePixelAlignment<R = void, P0 = boolean>(__setShouldEnforcePixelAlignment: P0): R;
   }
-  namespace classes {
-    export interface NSCGSContext<T = any> extends NSGraphicsContext {
+  namespace NSCGSContext {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSGraphicsContext {
       alloc<R = NSCGSContext>(): R;
       new: <R = NSCGSContext>() => R;
     }
   }
 }
 
-declare const NSCGSContext: cocoa.classes.NSCGSContext;
+declare const NSCGSContext: cocoa.NSCGSContext.CLASS;

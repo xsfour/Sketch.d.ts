@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPersonNameComponents<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  export interface NSPersonNameComponents<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
     hash<R = number>(): R;
     isEqualToComponents<R = boolean, P0 = unknown>(_isEqualToComponents: P0): R;
     description<R = unknown>(): R;
@@ -25,8 +25,8 @@ declare namespace cocoa {
     givenName<R = NSString>(): R;
     setGivenName<R = void, P0 = NSString>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSPersonNameComponents<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  namespace NSPersonNameComponents {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
       alloc<R = NSPersonNameComponents>(): R;
       new: <R = NSPersonNameComponents>() => R;
       __componentsRequiredForScriptDetectionWithPhoneticDesired<R = unknown, P0 = boolean>(___componentsRequiredForScriptDetectionWithPhoneticDesired: P0): R;
@@ -36,4 +36,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPersonNameComponents: cocoa.classes.NSPersonNameComponents;
+declare const NSPersonNameComponents: cocoa.NSPersonNameComponents.CLASS;

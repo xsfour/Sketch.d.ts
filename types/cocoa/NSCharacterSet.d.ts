@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCharacterSet<T = any> extends NSObject, NSCopyingProtocol, NSMutableCopyingProtocol, NSSecureCodingProtocol {
+  export interface NSCharacterSet<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSMutableCopyingProtocol, NSSecureCodingProtocol {
     _retainedBitmapRepresentation<R = unknown>(): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
@@ -20,8 +20,8 @@ declare namespace cocoa {
     bitmapRepresentation<R = NSData>(): R;
     invertedSet<R = NSCharacterSet>(): R;
   }
-  namespace classes {
-    export interface NSCharacterSet<T = any> extends NSObject, NSCopyingProtocol, NSMutableCopyingProtocol, NSSecureCodingProtocol {
+  namespace NSCharacterSet {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSMutableCopyingProtocol, NSSecureCodingProtocol {
       alloc<R = NSCharacterSet>(): R;
       new: <R = NSCharacterSet>() => R;
       characterSetWithBitmapRepresentation<R = unknown, P0 = unknown>(_characterSetWithBitmapRepresentation: P0): R;
@@ -54,4 +54,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSCharacterSet: cocoa.classes.NSCharacterSet;
+declare const NSCharacterSet: cocoa.NSCharacterSet.CLASS;

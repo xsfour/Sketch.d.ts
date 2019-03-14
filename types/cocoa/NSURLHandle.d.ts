@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSURLHandle<T = any> extends NSObject {
+  export interface NSURLHandle<T0 = void, T1 = void, T2 = void> extends NSObject {
     didLoadBytes_loadComplete<R = void, P0 = unknown, P1 = boolean>(_didLoadBytes: P0, _loadComplete: P1): R;
     backgroundLoadDidFailWithReason<R = void, P0 = unknown>(_backgroundLoadDidFailWithReason: P0): R;
     endLoadInBackground<R = void>(): R;
@@ -28,8 +28,8 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     initWithURL_cached<R = unknown, P0 = unknown, P1 = boolean>(_initWithURL: P0, _cached: P1): R;
   }
-  namespace classes {
-    export interface NSURLHandle<T = any> extends NSObject {
+  namespace NSURLHandle {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSURLHandle>(): R;
       new: <R = NSURLHandle>() => R;
       _subclassManagesData<R = boolean>(): R;
@@ -42,4 +42,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSURLHandle: cocoa.classes.NSURLHandle;
+declare const NSURLHandle: cocoa.NSURLHandle.CLASS;

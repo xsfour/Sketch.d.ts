@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSOverridePoint<T = any> extends NSObject {
+  export interface MSOverridePoint<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     distanceToOverridePoint<R = number, P0 = unknown>(_distanceToOverridePoint: P0): R;
     comparisonScoreAgainst<R = number, P0 = unknown>(_comparisonScoreAgainst: P0): R;
@@ -18,12 +18,12 @@ declare namespace cocoa {
     pathComponents<R = NSArray>(): R;
     path<R = NSString>(): R;
   }
-  namespace classes {
-    export interface MSOverridePoint<T = any> extends NSObject {
+  namespace MSOverridePoint {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSOverridePoint>(): R;
       new: <R = MSOverridePoint>() => R;
     }
   }
 }
 
-declare const MSOverridePoint: cocoa.classes.MSOverridePoint;
+declare const MSOverridePoint: cocoa.MSOverridePoint.CLASS;

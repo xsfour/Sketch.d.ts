@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSplitViewDelegateProtocol<T = any> {
+  export interface NSSplitViewDelegateProtocol<T0 = void, T1 = void, T2 = void> {
     splitViewDidResizeSubviews<R = void, P0 = NSNotification>(_splitViewDidResizeSubviews: P0): R;
     splitViewWillResizeSubviews<R = void, P0 = NSNotification>(_splitViewWillResizeSubviews: P0): R;
     splitView_additionalEffectiveRectOfDividerAtIndex<R = CGRect, P0 = NSSplitView, P1 = number>(_splitView: P0, _additionalEffectiveRectOfDividerAtIndex: P1): R;
@@ -15,7 +15,7 @@ declare namespace cocoa {
     splitView_shouldCollapseSubview_forDoubleClickOnDividerAtIndex<R = boolean, P0 = NSSplitView, P1 = NSView, P2 = number>(_splitView: P0, _shouldCollapseSubview: P1, _forDoubleClickOnDividerAtIndex: P2): R;
     splitView_canCollapseSubview<R = boolean, P0 = NSSplitView, P1 = NSView>(_splitView: P0, _canCollapseSubview: P1): R;
   }
-  namespace classes {
-    export interface NSSplitViewDelegateProtocol<T = any> {  }
+  namespace NSSplitViewDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCoder<T = any> extends NSObject {
+  export interface NSCoder<T0 = void, T1 = void, T2 = void> extends NSObject {
     _validateAllowedClass_forKey_allowingInvocations<R = boolean, P0 = unknown, P1 = unknown, P2 = boolean>(__validateAllowedClass: P0, _forKey: P1, _allowingInvocations: P2): R;
     _validateAllowedClassesContainsClass_forKey<R = boolean, P0 = unknown, P1 = unknown>(__validateAllowedClassesContainsClass: P0, _forKey: P1): R;
     validateClassSupportsSecureCoding<R = boolean, P0 = unknown>(_validateClassSupportsSecureCoding: P0): R;
@@ -88,22 +88,22 @@ declare namespace cocoa {
     encodePoint_forKey<R = void, P0 = CGPoint, P1 = unknown>(_encodePoint: P0, _forKey: P1): R;
     decodeNXObject<R = unknown>(): R;
     encodeNXObject<R = void, P0 = unknown>(_encodeNXObject: P0): R;
-    // + NSCoder(NSAppKitCoderExtensions,NSAppKitColorExtensions):
+    // + NSCoder(NSAppKitCoderExtensions): 
     _decodeDepth<R = number>(): R;
     _encodeDepth<R = void, P0 = number>(__encodeDepth: P0): R;
     _decodeByte<R = number>(): R;
     _encodeByte<R = void, P0 = number>(__encodeByte: P0): R;
+    // + NSCoder(NSAppKitColorExtensions): 
     decodeNXColor<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSCoder<T = any> extends NSObject {
+  namespace NSCoder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSCoder>(): R;
       new: <R = NSCoder>() => R;
       __categorizeException_intoError<R = boolean, P0 = unknown, P1 = unknown>(___categorizeException: P0, _intoError: P1): R;
-      // + NSCoder(NSAppKitCoderExtensions,NSAppKitColorExtensions):
-      
-    }
+  
+  }
   }
 }
 
-declare const NSCoder: cocoa.classes.NSCoder;
+declare const NSCoder: cocoa.NSCoder.CLASS;

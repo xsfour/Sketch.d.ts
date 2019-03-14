@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSWindowBatchOrdering<T = any> extends NSObject {
+  export interface NSWindowBatchOrdering<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     deallocateAllWindows<R = void>(): R;
     performRelativeToWindow<R = void, P0 = number>(_performRelativeToWindow: P0): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     initWithCapacity<R = unknown, P0 = number>(_initWithCapacity: P0): R;
     ensureCapacity<R = void, P0 = number>(_ensureCapacity: P0): R;
   }
-  namespace classes {
-    export interface NSWindowBatchOrdering<T = any> extends NSObject {
+  namespace NSWindowBatchOrdering {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSWindowBatchOrdering>(): R;
       new: <R = NSWindowBatchOrdering>() => R;
     }
   }
 }
 
-declare const NSWindowBatchOrdering: cocoa.classes.NSWindowBatchOrdering;
+declare const NSWindowBatchOrdering: cocoa.NSWindowBatchOrdering.CLASS;

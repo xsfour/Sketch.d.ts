@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAccessibilityCustomRotorItemSearchDelegate<T = any> {}
-  namespace classes {
-    export interface NSAccessibilityCustomRotorItemSearchDelegate<T = any> {  }
+  export interface NSAccessibilityCustomRotorItemSearchDelegate<T0 = void, T1 = void, T2 = void> {}
+  namespace NSAccessibilityCustomRotorItemSearchDelegate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSAccessibilityCustomRotorItemSearchDelegate: cocoa.classes.NSAccessibilityCustomRotorItemSearchDelegate;
+declare const NSAccessibilityCustomRotorItemSearchDelegate: cocoa.NSAccessibilityCustomRotorItemSearchDelegate.CLASS;

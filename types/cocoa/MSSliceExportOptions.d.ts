@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSliceExportOptions<T = any> extends NSViewController {
+  export interface MSSliceExportOptions<T0 = void, T1 = void, T2 = void> extends NSViewController {
     cxx_destruct<R = void>(): R;
     setExtensions<R = void, P0 = unknown>(_setExtensions: P0): R;
     optionsViewPNG<R = NSView>(): R;
@@ -13,8 +13,8 @@ declare namespace cocoa {
     optionsViewJPG<R = NSView>(): R;
     setOptionsViewJPG<R = void, P0 = NSView>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSSliceExportOptions<T = any> extends NSViewController {
+  namespace MSSliceExportOptions {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController {
       alloc<R = MSSliceExportOptions>(): R;
       new: <R = MSSliceExportOptions>() => R;
       exportOptionsForRequests<R = unknown, P0 = unknown>(_exportOptionsForRequests: P0): R;
@@ -22,4 +22,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSSliceExportOptions: cocoa.classes.MSSliceExportOptions;
+declare const MSSliceExportOptions: cocoa.MSSliceExportOptions.CLASS;

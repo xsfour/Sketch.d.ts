@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAssetSyncSheetHeader<T = any> extends NSObject, MSAssetSyncSheetItemProtocol {
+  export interface MSAssetSyncSheetHeader<T0 = void, T1 = void, T2 = void> extends NSObject, MSAssetSyncSheetItemProtocol {
     cxx_destruct<R = void>(): R;
     library<R = MSAssetLibrary>(): R;
     setLibrary<R = void, P0 = MSAssetLibrary>(_v: P0): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSAssetSyncSheetHeader<T = any> extends NSObject, MSAssetSyncSheetItemProtocol {
+  namespace MSAssetSyncSheetHeader {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, MSAssetSyncSheetItemProtocol {
       alloc<R = MSAssetSyncSheetHeader>(): R;
       new: <R = MSAssetSyncSheetHeader>() => R;
     }
   }
 }
 
-declare const MSAssetSyncSheetHeader: cocoa.classes.MSAssetSyncSheetHeader;
+declare const MSAssetSyncSheetHeader: cocoa.MSAssetSyncSheetHeader.CLASS;

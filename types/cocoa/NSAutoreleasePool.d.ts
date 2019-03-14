@@ -1,14 +1,14 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAutoreleasePool<T = any> extends NSObject {
+  export interface NSAutoreleasePool<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     addObject<R = void, P0 = unknown>(_addObject: P0): R;
     initWithCapacity<R = unknown, P0 = number>(_initWithCapacity: P0): R;
     drain<R = void>(): R;
   }
-  namespace classes {
-    export interface NSAutoreleasePool<T = any> extends NSObject {
+  namespace NSAutoreleasePool {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSAutoreleasePool>(): R;
       new: <R = NSAutoreleasePool>() => R;
       resetTotalAutoreleasedObjects<R = void>(): R;
@@ -29,4 +29,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSAutoreleasePool: cocoa.classes.NSAutoreleasePool;
+declare const NSAutoreleasePool: cocoa.NSAutoreleasePool.CLASS;

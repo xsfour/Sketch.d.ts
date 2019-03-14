@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface AFHTTPBodyPart<T = any> extends NSObject, NSCopyingProtocol {
+  export interface AFHTTPBodyPart<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     cxx_destruct<R = void>(): R;
     transitionToNextPhase<R = boolean>(): R;
     readData_intoBuffer_maxLength<R = number, P0 = unknown, P1 = string, P2 = number>(_readData: P0, _intoBuffer: P1, _maxLength: P2): R;
@@ -27,12 +27,12 @@ declare namespace cocoa {
     bytesAvailable<R = boolean>(): R;
     contentLength<R = number>(): R;
   }
-  namespace classes {
-    export interface AFHTTPBodyPart<T = any> extends NSObject, NSCopyingProtocol {
+  namespace AFHTTPBodyPart {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = AFHTTPBodyPart>(): R;
       new: <R = AFHTTPBodyPart>() => R;
     }
   }
 }
 
-declare const AFHTTPBodyPart: cocoa.classes.AFHTTPBodyPart;
+declare const AFHTTPBodyPart: cocoa.AFHTTPBodyPart.CLASS;

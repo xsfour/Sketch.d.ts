@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSArtboardPresetStore<T = any> extends NSObject {
+  export interface MSArtboardPresetStore<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     presetWithName_matchingSize<R = unknown, P0 = unknown, P1 = CGSize>(_presetWithName: P0, _matchingSize: P1): R;
     suggestedNameForUserPreset<R = unknown>(): R;
@@ -18,8 +18,8 @@ declare namespace cocoa {
     customPresetsCategory<R = MSArtboardPresetsCategory>(): R;
     categories<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface MSArtboardPresetStore<T = any> extends NSObject {
+  namespace MSArtboardPresetStore {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSArtboardPresetStore>(): R;
       new: <R = MSArtboardPresetStore>() => R;
       setIndexOfLastSelectedCategory<R = void, P0 = number>(_setIndexOfLastSelectedCategory: P0): R;
@@ -29,4 +29,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSArtboardPresetStore: cocoa.classes.MSArtboardPresetStore;
+declare const MSArtboardPresetStore: cocoa.MSArtboardPresetStore.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPDFImporter<T = any> extends NSObject, MSImporterProtocol {
+  export interface MSPDFImporter<T0 = void, T1 = void, T2 = void> extends NSObject, MSImporterProtocol {
     cxx_destruct<R = void>(): R;
     unwrappedLayer<R = unknown, P0 = unknown>(_unwrappedLayer: P0): R;
     name<R = unknown>(): R;
@@ -16,8 +16,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSPDFImporter<T = any> extends NSObject, MSImporterProtocol {
+  namespace MSPDFImporter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, MSImporterProtocol {
       alloc<R = MSPDFImporter>(): R;
       new: <R = MSPDFImporter>() => R;
       epsImporter<R = unknown>(): R;
@@ -26,4 +26,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSPDFImporter: cocoa.classes.MSPDFImporter;
+declare const MSPDFImporter: cocoa.MSPDFImporter.CLASS;

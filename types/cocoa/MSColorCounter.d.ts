@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSColorCounter<T = any> extends NSObject {
+  export interface MSColorCounter<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     compareArtboardCounts<R = number, P0 = unknown>(_compareArtboardCounts: P0): R;
     compareTextCounts<R = number, P0 = unknown>(_compareTextCounts: P0): R;
@@ -32,8 +32,8 @@ declare namespace cocoa {
     title<R = NSString>(): R;
     totalCount<R = number>(): R;
   }
-  namespace classes {
-    export interface MSColorCounter<T = any> extends NSObject {
+  namespace MSColorCounter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSColorCounter>(): R;
       new: <R = MSColorCounter>() => R;
       initialize<R = void>(): R;
@@ -41,4 +41,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSColorCounter: cocoa.classes.MSColorCounter;
+declare const MSColorCounter: cocoa.MSColorCounter.CLASS;

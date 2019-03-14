@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorPickerPencilView<T = any> extends NSView {
+  export interface NSColorPickerPencilView<T0 = void, T1 = void, T2 = void> extends NSView {
     _updateFramesForPencils_duration<R = void, P0 = unknown, P1 = number>(__updateFramesForPencils: P0, _duration: P1): R;
     _removeAllPencilLayers<R = void>(): R;
     _setLayer_forPencil<R = void, P0 = unknown, P1 = unknown>(__setLayer: P0, _forPencil: P1): R;
@@ -57,12 +57,12 @@ declare namespace cocoa {
     _hasFocusRing<R = boolean>(): R;
     _focusedPencil<R = NSColoredPencil>(): R;
   }
-  namespace classes {
-    export interface NSColorPickerPencilView<T = any> extends NSView {
+  namespace NSColorPickerPencilView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSColorPickerPencilView>(): R;
       new: <R = NSColorPickerPencilView>() => R;
     }
   }
 }
 
-declare const NSColorPickerPencilView: cocoa.classes.NSColorPickerPencilView;
+declare const NSColorPickerPencilView: cocoa.NSColorPickerPencilView.CLASS;

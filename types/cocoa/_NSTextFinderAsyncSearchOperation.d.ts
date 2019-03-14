@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSTextFinderAsyncSearchOperation<T = any> extends NSOperation {
+  export interface _NSTextFinderAsyncSearchOperation<T0 = void, T1 = void, T2 = void> extends NSOperation {
     _sendUpdate<R = void>(): R;
     searchFinished<R = boolean>(): R;
     waitUntilSearchCompletedForRanges_orTimeout<R = boolean, P0 = unknown, P1 = number>(_waitUntilSearchCompletedForRanges: P0, _orTimeout: P1): R;
@@ -23,8 +23,8 @@ declare namespace cocoa {
     searchController<R = NSTextFinderAsyncSearch>(): R;
     setSearchController<R = void, P0 = NSTextFinderAsyncSearch>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSTextFinderAsyncSearchOperation<T = any> extends NSOperation {
+  namespace _NSTextFinderAsyncSearchOperation {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSOperation {
       alloc<R = _NSTextFinderAsyncSearchOperation>(): R;
       new: <R = _NSTextFinderAsyncSearchOperation>() => R;
     }

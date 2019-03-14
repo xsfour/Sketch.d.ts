@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSScreenSharedInfo<T = any> extends NSObject {
+  export interface _NSScreenSharedInfo<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     _finishUpdating<R = void>(): R;
     _copyForUpdating<R = unknown>(): R;
@@ -20,8 +20,8 @@ declare namespace cocoa {
     _dock<R = NSCGSDock>(): R;
     set_dock<R = void, P0 = NSCGSDock>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSScreenSharedInfo<T = any> extends NSObject {
+  namespace _NSScreenSharedInfo {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSScreenSharedInfo>(): R;
       new: <R = _NSScreenSharedInfo>() => R;
     }

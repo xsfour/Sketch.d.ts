@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCGSDockNotifications<T = any> extends NSObject {}
-  namespace classes {
-    export interface NSCGSDockNotifications<T = any> extends NSObject {
+  export interface NSCGSDockNotifications<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace NSCGSDockNotifications {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSCGSDockNotifications>(): R;
       new: <R = NSCGSDockNotifications>() => R;
       addSelectWindowHandler<R = void, P0 = CDUnknownBlockType>(_addSelectWindowHandler: P0): R;
@@ -24,4 +24,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSCGSDockNotifications: cocoa.classes.NSCGSDockNotifications;
+declare const NSCGSDockNotifications: cocoa.NSCGSDockNotifications.CLASS;

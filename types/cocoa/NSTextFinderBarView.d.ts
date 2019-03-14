@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTextFinderBarView<T = any> extends NSView {
+  export interface NSTextFinderBarView<T0 = void, T1 = void, T2 = void> extends NSView {
     _insertFindPattern<R = void, P0 = unknown>(__insertFindPattern: P0): R;
     validateUserInterfaceItem<R = boolean, P0 = unknown>(_validateUserInterfaceItem: P0): R;
     performTextFinderAction<R = void, P0 = unknown>(_performTextFinderAction: P0): R;
@@ -30,12 +30,12 @@ declare namespace cocoa {
     _actionResponderFromView<R = unknown, P0 = unknown>(__actionResponderFromView: P0): R;
     _updateNextKeyViews<R = void>(): R;
   }
-  namespace classes {
-    export interface NSTextFinderBarView<T = any> extends NSView {
+  namespace NSTextFinderBarView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSTextFinderBarView>(): R;
       new: <R = NSTextFinderBarView>() => R;
     }
   }
 }
 
-declare const NSTextFinderBarView: cocoa.classes.NSTextFinderBarView;
+declare const NSTextFinderBarView: cocoa.NSTextFinderBarView.CLASS;

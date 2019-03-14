@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSCloudPreferencePane<T = any> extends MSPreferencePane {
+  export interface MSCloudPreferencePane<T0 = void, T1 = void, T2 = void> extends MSPreferencePane {
     cloudURLDidOpenNotification<R = void, P0 = unknown>(_cloudURLDidOpenNotification: P0): R;
     applicationDidOpenURL<R = void, P0 = unknown>(_applicationDidOpenURL: P0): R;
     platformDidChangeNotification<R = void, P0 = unknown>(_platformDidChangeNotification: P0): R;
@@ -17,8 +17,8 @@ declare namespace cocoa {
     cloudStoryboard<R = NSStoryboard>(): R;
     setCloudStoryboard<R = void, P0 = NSStoryboard>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSCloudPreferencePane<T = any> extends MSPreferencePane {
+  namespace MSCloudPreferencePane {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSPreferencePane {
       alloc<R = MSCloudPreferencePane>(): R;
       new: <R = MSCloudPreferencePane>() => R;
       cloudLoginOverrideBehavior<R = number>(): R;
@@ -28,4 +28,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSCloudPreferencePane: cocoa.classes.MSCloudPreferencePane;
+declare const MSCloudPreferencePane: cocoa.MSCloudPreferencePane.CLASS;

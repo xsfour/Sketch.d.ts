@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarCustomizationPalettePreset<T = any> extends NSObject, NSCopyingProtocol {
+  export interface NSTouchBarCustomizationPalettePreset<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     cleanUpPaletteViewAfterSnapshot<R = void, P0 = unknown>(_cleanUpPaletteViewAfterSnapshot: P0): R;
     makePaletteViewForSnapshot<R = unknown>(): R;
     maxSize<R = CGSize>(): R;
@@ -12,8 +12,8 @@ declare namespace cocoa {
     representedItemTree<R = NSTouchBarItemTree>(): R;
     presetSnapshot<R = NSImage>(): R;
   }
-  namespace classes {
-    export interface NSTouchBarCustomizationPalettePreset<T = any> extends NSObject, NSCopyingProtocol {
+  namespace NSTouchBarCustomizationPalettePreset {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = NSTouchBarCustomizationPalettePreset>(): R;
       new: <R = NSTouchBarCustomizationPalettePreset>() => R;
       presetForItemTree_inBarWithSize<R = unknown, P0 = unknown, P1 = CGSize>(_presetForItemTree: P0, _inBarWithSize: P1): R;
@@ -21,4 +21,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTouchBarCustomizationPalettePreset: cocoa.classes.NSTouchBarCustomizationPalettePreset;
+declare const NSTouchBarCustomizationPalettePreset: cocoa.NSTouchBarCustomizationPalettePreset.CLASS;

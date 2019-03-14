@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSNamedInterfaceImageOwner<T = any> extends NSObject, MSInterfaceImageOwnerProtocol {
+  export interface MSNamedInterfaceImageOwner<T0 = void, T1 = void, T2 = void> extends NSObject, MSInterfaceImageOwnerProtocol {
     cxx_destruct<R = void>(): R;
     initWithImage_cacheOwner<R = unknown, P0 = unknown, P1 = unknown>(_initWithImage: P0, _cacheOwner: P1): R;
     owner<R = unknown>(): R;
@@ -11,12 +11,12 @@ declare namespace cocoa {
     cacheOwner<R = unknown>(): R;
     interfaceImageIdentifier<R = NSString>(): R;
   }
-  namespace classes {
-    export interface MSNamedInterfaceImageOwner<T = any> extends NSObject, MSInterfaceImageOwnerProtocol {
+  namespace MSNamedInterfaceImageOwner {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, MSInterfaceImageOwnerProtocol {
       alloc<R = MSNamedInterfaceImageOwner>(): R;
       new: <R = MSNamedInterfaceImageOwner>() => R;
     }
   }
 }
 
-declare const MSNamedInterfaceImageOwner: cocoa.classes.MSNamedInterfaceImageOwner;
+declare const MSNamedInterfaceImageOwner: cocoa.MSNamedInterfaceImageOwner.CLASS;

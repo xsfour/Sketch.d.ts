@@ -1,17 +1,17 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSKeyedUnarchiveHelper<T = any> extends NSKeyedUnarchiver {
+  export interface MSKeyedUnarchiveHelper<T0 = void, T1 = void, T2 = void> extends NSKeyedUnarchiver {
     cxx_destruct<R = void>(): R;
     unarchiver<R = MSKeyedUnarchiver>(): R;
     setUnarchiver<R = void, P0 = MSKeyedUnarchiver>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSKeyedUnarchiveHelper<T = any> extends NSKeyedUnarchiver {
+  namespace MSKeyedUnarchiveHelper {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSKeyedUnarchiver {
       alloc<R = MSKeyedUnarchiveHelper>(): R;
       new: <R = MSKeyedUnarchiveHelper>() => R;
     }
   }
 }
 
-declare const MSKeyedUnarchiveHelper: cocoa.classes.MSKeyedUnarchiveHelper;
+declare const MSKeyedUnarchiveHelper: cocoa.MSKeyedUnarchiveHelper.CLASS;

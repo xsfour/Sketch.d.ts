@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSConcreteUserNotificationCenter<T = any> extends NSUserNotificationCenter {
+  export interface _NSConcreteUserNotificationCenter<T0 = void, T1 = void, T2 = void> extends NSUserNotificationCenter {
     _preventApplicationLaunching<R = boolean>(): R;
     delegate<R = unknown>(): R;
     _connectToServerIfNecessary<R = void>(): R;
@@ -52,8 +52,8 @@ declare namespace cocoa {
     _appDelegate<R = _NSUserNotificationCenterAppKitDelegatePrivate>(): R;
     set_appDelegate<R = void, P0 = _NSUserNotificationCenterAppKitDelegatePrivate>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSConcreteUserNotificationCenter<T = any> extends NSUserNotificationCenter {
+  namespace _NSConcreteUserNotificationCenter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSUserNotificationCenter {
       alloc<R = _NSConcreteUserNotificationCenter>(): R;
       new: <R = _NSConcreteUserNotificationCenter>() => R;
     }

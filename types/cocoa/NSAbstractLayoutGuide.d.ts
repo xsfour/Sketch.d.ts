@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAbstractLayoutGuide<T = any> extends NSObject, NSLayoutItemProtocol, NSISVariableDelegateProtocol, NSCodingProtocol {
+  export interface NSAbstractLayoutGuide<T0 = void, T1 = void, T2 = void> extends NSObject, NSLayoutItemProtocol, NSISVariableDelegateProtocol, NSCodingProtocol {
     nsis_shouldIntegralizeVariable<R = boolean, P0 = unknown>(_nsis_shouldIntegralizeVariable: P0): R;
     _isDescendantOf<R = boolean, P0 = unknown>(__isDescendantOf: P0): R;
     _snipReferencingConstraints<R = void>(): R;
@@ -24,12 +24,12 @@ declare namespace cocoa {
     setNsli_piercingToken<R = void, P0 = number>(_v: P0): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSAbstractLayoutGuide<T = any> extends NSObject, NSLayoutItemProtocol, NSISVariableDelegateProtocol, NSCodingProtocol {
+  namespace NSAbstractLayoutGuide {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSLayoutItemProtocol, NSISVariableDelegateProtocol, NSCodingProtocol {
       alloc<R = NSAbstractLayoutGuide>(): R;
       new: <R = NSAbstractLayoutGuide>() => R;
     }
   }
 }
 
-declare const NSAbstractLayoutGuide: cocoa.classes.NSAbstractLayoutGuide;
+declare const NSAbstractLayoutGuide: cocoa.NSAbstractLayoutGuide.CLASS;

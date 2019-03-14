@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSHeaderInspectorItem<T = any> extends MSInspectorItem {
+  export interface MSHeaderInspectorItem<T0 = void, T1 = void, T2 = void> extends MSInspectorItem {
     setButtonTarget_action_image_alternate<R = void, P0 = unknown, P1 = string, P2 = unknown, P3 = unknown>(_setButtonTarget: P0, _action: P1, _image: P2, _alternate: P3): R;
     action<R = string>(): R;
     setAction<R = void, P0 = string>(_v: P0): R;
@@ -28,12 +28,12 @@ declare namespace cocoa {
     labelText<R = NSString>(): R;
     setLabelText<R = void, P0 = NSString>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSHeaderInspectorItem<T = any> extends MSInspectorItem {
+  namespace MSHeaderInspectorItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSInspectorItem {
       alloc<R = MSHeaderInspectorItem>(): R;
       new: <R = MSHeaderInspectorItem>() => R;
     }
   }
 }
 
-declare const MSHeaderInspectorItem: cocoa.classes.MSHeaderInspectorItem;
+declare const MSHeaderInspectorItem: cocoa.MSHeaderInspectorItem.CLASS;

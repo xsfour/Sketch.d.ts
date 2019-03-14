@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface __objectParameterBinderFlags<T = any> {}
-  namespace classes {
-    export interface __objectParameterBinderFlags<T = any> {  }
+  export interface __objectParameterBinderFlags<T0 = void, T1 = void, T2 = void> {}
+  namespace __objectParameterBinderFlags {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSImmutableColor<T = any> extends MSImmutableModelObject {
+  export interface _MSImmutableColor<T0 = void, T1 = void, T2 = void> extends MSImmutableModelObject {
     hasDefaultValues<R = boolean>(): R;
     red<R = number>(): R;
     setRed<R = void, P0 = number>(_v: P0): R;
@@ -12,8 +12,8 @@ declare namespace cocoa {
     alpha<R = number>(): R;
     setAlpha<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface _MSImmutableColor<T = any> extends MSImmutableModelObject {
+  namespace _MSImmutableColor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSImmutableModelObject {
       alloc<R = _MSImmutableColor>(): R;
       new: <R = _MSImmutableColor>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSKeyValueProperty<T = any> extends NSObject, NSCopyingProtocol {
+  export interface NSKeyValueProperty<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     matchesWithoutOperatorComponentsKeyPath<R = boolean, P0 = unknown>(_matchesWithoutOperatorComponentsKeyPath: P0): R;
     restOfKeyPathIfContainedByValueForKeyPath<R = unknown, P0 = unknown>(_restOfKeyPathIfContainedByValueForKeyPath: P0): R;
     dependentValueKeyOrKeysIsASet<R = unknown, P0 = string>(_dependentValueKeyOrKeysIsASet: P0): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     _initWithContainerClass_keyPath_propertiesBeingInitialized<R = unknown, P0 = unknown, P1 = unknown, P2 = __CFSet>(__initWithContainerClass: P0, _keyPath: P1, _propertiesBeingInitialized: P2): R;
   }
-  namespace classes {
-    export interface NSKeyValueProperty<T = any> extends NSObject, NSCopyingProtocol {
+  namespace NSKeyValueProperty {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = NSKeyValueProperty>(): R;
       new: <R = NSKeyValueProperty>() => R;
     }
   }
 }
 
-declare const NSKeyValueProperty: cocoa.classes.NSKeyValueProperty;
+declare const NSKeyValueProperty: cocoa.NSKeyValueProperty.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarColorPickerSliders<T = any> extends NSControl, NSTouchBarColorPickerSliderMinimizationDelegateProtocol, NSTouchBarColorPickerViewProtocol {
+  export interface NSTouchBarColorPickerSliders<T0 = void, T1 = void, T2 = void> extends NSControl, NSTouchBarColorPickerSliderMinimizationDelegateProtocol, NSTouchBarColorPickerViewProtocol {
     _sliderDidEndTracking<R = void>(): R;
     _sliderWillBeginTracking<R = void>(): R;
     _selectComponentValueFrom<R = void, P0 = unknown>(__selectComponentValueFrom: P0): R;
@@ -27,8 +27,8 @@ declare namespace cocoa {
     target<R = unknown>(): R;
     setTarget<R = void, P0 = unknown>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTouchBarColorPickerSliders<T = any> extends NSControl, NSTouchBarColorPickerSliderMinimizationDelegateProtocol, NSTouchBarColorPickerViewProtocol {
+  namespace NSTouchBarColorPickerSliders {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSControl, NSTouchBarColorPickerSliderMinimizationDelegateProtocol, NSTouchBarColorPickerViewProtocol {
       alloc<R = NSTouchBarColorPickerSliders>(): R;
       new: <R = NSTouchBarColorPickerSliders>() => R;
       thumbnailWithSize_inView<R = unknown, P0 = CGSize, P1 = unknown>(_thumbnailWithSize: P0, _inView: P1): R;
@@ -49,4 +49,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTouchBarColorPickerSliders: cocoa.classes.NSTouchBarColorPickerSliders;
+declare const NSTouchBarColorPickerSliders: cocoa.NSTouchBarColorPickerSliders.CLASS;

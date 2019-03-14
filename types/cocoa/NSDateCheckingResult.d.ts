@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDateCheckingResult<T = any> extends NSTextCheckingResult {
+  export interface NSDateCheckingResult<T0 = void, T1 = void, T2 = void> extends NSTextCheckingResult {
     range<R = _NSRange>(): R;
     resultType<R = number>(): R;
     dealloc<R = void>(): R;
@@ -20,12 +20,12 @@ declare namespace cocoa {
     duration<R = number>(): R;
     timeZone<R = NSTimeZone>(): R;
   }
-  namespace classes {
-    export interface NSDateCheckingResult<T = any> extends NSTextCheckingResult {
+  namespace NSDateCheckingResult {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTextCheckingResult {
       alloc<R = NSDateCheckingResult>(): R;
       new: <R = NSDateCheckingResult>() => R;
     }
   }
 }
 
-declare const NSDateCheckingResult: cocoa.classes.NSDateCheckingResult;
+declare const NSDateCheckingResult: cocoa.NSDateCheckingResult.CLASS;

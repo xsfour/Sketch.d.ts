@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCTableCellViewDelegateProtocol<T = any> extends NSObjectProtocol {
+  export interface BCTableCellViewDelegateProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     tableCellOutlineView<R = BCOutlineView, P0 = BCTableCellView>(_tableCellOutlineView: P0): R;
     tableCellViewDestinationWindow<R = NSWindow, P0 = BCTableCellView>(_tableCellViewDestinationWindow: P0): R;
     tableCellViewNodeRequiresRefresh<R = void, P0 = BCTableCellView>(_tableCellViewNodeRequiresRefresh: P0): R;
@@ -14,7 +14,7 @@ declare namespace cocoa {
     isTableCellViewNodeHiddenOnCanvas<R = boolean, P0 = BCTableCellView>(_isTableCellViewNodeHiddenOnCanvas: P0): R;
     isTableCellViewNodeSelected<R = boolean, P0 = BCTableCellView>(_isTableCellViewNodeSelected: P0): R;
   }
-  namespace classes {
-    export interface BCTableCellViewDelegateProtocol<T = any> extends NSObjectProtocol {  }
+  namespace BCTableCellViewDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

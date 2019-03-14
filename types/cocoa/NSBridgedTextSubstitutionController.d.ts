@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSBridgedTextSubstitutionController<T = any> extends NSObject, NSTextViewDelegateProtocol, NSTextStorageDelegateProtocol {
+  export interface NSBridgedTextSubstitutionController<T0 = void, T1 = void, T2 = void> extends NSObject, NSTextViewDelegateProtocol, NSTextStorageDelegateProtocol {
     convertToHalfWidth<R = void, P0 = unknown>(_convertToHalfWidth: P0): R;
     convertToFullWidth<R = void, P0 = unknown>(_convertToFullWidth: P0): R;
     convertToTraditionalChinese<R = void, P0 = unknown>(_convertToTraditionalChinese: P0): R;
@@ -46,8 +46,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSBridgedTextSubstitutionController<T = any> extends NSObject, NSTextViewDelegateProtocol, NSTextStorageDelegateProtocol {
+  namespace NSBridgedTextSubstitutionController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSTextViewDelegateProtocol, NSTextStorageDelegateProtocol {
       alloc<R = NSBridgedTextSubstitutionController>(): R;
       new: <R = NSBridgedTextSubstitutionController>() => R;
       keyPathsForValuesAffectingEnabledTextCheckingTypes<R = unknown>(): R;
@@ -55,4 +55,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSBridgedTextSubstitutionController: cocoa.classes.NSBridgedTextSubstitutionController;
+declare const NSBridgedTextSubstitutionController: cocoa.NSBridgedTextSubstitutionController.CLASS;

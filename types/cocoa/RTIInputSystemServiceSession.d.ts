@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface RTIInputSystemServiceSession<T = any> {}
-  namespace classes {
-    export interface RTIInputSystemServiceSession<T = any> {  }
+  export interface RTIInputSystemServiceSession<T0 = void, T1 = void, T2 = void> {}
+  namespace RTIInputSystemServiceSession {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const RTIInputSystemServiceSession: cocoa.classes.RTIInputSystemServiceSession;
+declare const RTIInputSystemServiceSession: cocoa.RTIInputSystemServiceSession.CLASS;

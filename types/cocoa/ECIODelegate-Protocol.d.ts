@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface ECIODelegateProtocol<T = any> extends NSObjectProtocol {
+  export interface ECIODelegateProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     closeInfoGroup<R = void>(): R;
     openInfoGroupWithKey<R = void, P0 = NSString>(_openInfoGroupWithKey: P0): R;
     outputInfo_withKey<R = void, P0 = unknown, P1 = NSString>(_outputInfo: P0, _withKey: P1): R;
@@ -15,7 +15,7 @@ declare namespace cocoa {
     stringOptionForKey<R = NSString, P0 = NSString>(_stringOptionForKey: P0): R;
     optionForKey<R = unknown, P0 = NSString>(_optionForKey: P0): R;
   }
-  namespace classes {
-    export interface ECIODelegateProtocol<T = any> extends NSObjectProtocol {  }
+  namespace ECIODelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

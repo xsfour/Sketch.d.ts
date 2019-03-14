@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSServicesMenuUpdater<T = any> extends NSObject, NSMenuDelegateProtocol {
+  export interface _NSServicesMenuUpdater<T0 = void, T1 = void, T2 = void> extends NSObject, NSMenuDelegateProtocol {
     _processRequest<R = void, P0 = unknown>(__processRequest: P0): R;
     performServiceFromEntry<R = void, P0 = unknown>(_performServiceFromEntry: P0): R;
     isPluggedIntoMenuRef<R = boolean, P0 = OpaqueMenuRef>(_isPluggedIntoMenuRef: P0): R;
@@ -27,8 +27,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSServicesMenuUpdater<T = any> extends NSObject, NSMenuDelegateProtocol {
+  namespace _NSServicesMenuUpdater {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSMenuDelegateProtocol {
       alloc<R = _NSServicesMenuUpdater>(): R;
       new: <R = _NSServicesMenuUpdater>() => R;
     }

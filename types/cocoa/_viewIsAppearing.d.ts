@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _viewIsAppearing<T = any> {}
-  namespace classes {
-    export interface _viewIsAppearing<T = any> {  }
+  export interface _viewIsAppearing<T0 = void, T1 = void, T2 = void> {}
+  namespace _viewIsAppearing {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

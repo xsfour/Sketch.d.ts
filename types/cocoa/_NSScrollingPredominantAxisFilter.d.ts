@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSScrollingPredominantAxisFilter<T = any> extends NSObject {
+  export interface _NSScrollingPredominantAxisFilter<T0 = void, T1 = void, T2 = void> extends NSObject {
     resetIfOutOfDate<R = boolean, P0 = number>(_resetIfOutOfDate: P0): R;
     reset<R = void>(): R;
     filterInputScrollEvent_outputDelta_velocity<R = void, P0 = unknown, P1 = CGPoint, P2 = CGPoint>(_filterInputScrollEvent: P0, _outputDelta: P1, _velocity: P2): R;
@@ -10,8 +10,8 @@ declare namespace cocoa {
     predominantAxisMode<R = number>(): R;
     setPredominantAxisMode<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSScrollingPredominantAxisFilter<T = any> extends NSObject {
+  namespace _NSScrollingPredominantAxisFilter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSScrollingPredominantAxisFilter>(): R;
       new: <R = _NSScrollingPredominantAxisFilter>() => R;
       initialize<R = void>(): R;

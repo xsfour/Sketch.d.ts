@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTabViewControllerToolbarUIProvider<T = any> extends NSObject, NSTabViewControllerUIProviderProtocol, NSToolbarDelegateProtocol {
+  export interface NSTabViewControllerToolbarUIProvider<T0 = void, T1 = void, T2 = void> extends NSObject, NSTabViewControllerUIProviderProtocol, NSToolbarDelegateProtocol {
     _toolbarSelectableItemIdentifiers<R = unknown, P0 = unknown>(__toolbarSelectableItemIdentifiers: P0): R;
     _toolbarAllowedItemIdentifiers<R = unknown, P0 = unknown>(__toolbarAllowedItemIdentifiers: P0): R;
     _toolbarDefaultItemIdentifiers<R = unknown, P0 = unknown>(__toolbarDefaultItemIdentifiers: P0): R;
@@ -23,12 +23,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSTabViewControllerToolbarUIProvider<T = any> extends NSObject, NSTabViewControllerUIProviderProtocol, NSToolbarDelegateProtocol {
+  namespace NSTabViewControllerToolbarUIProvider {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSTabViewControllerUIProviderProtocol, NSToolbarDelegateProtocol {
       alloc<R = NSTabViewControllerToolbarUIProvider>(): R;
       new: <R = NSTabViewControllerToolbarUIProvider>() => R;
     }
   }
 }
 
-declare const NSTabViewControllerToolbarUIProvider: cocoa.classes.NSTabViewControllerToolbarUIProvider;
+declare const NSTabViewControllerToolbarUIProvider: cocoa.NSTabViewControllerToolbarUIProvider.CLASS;

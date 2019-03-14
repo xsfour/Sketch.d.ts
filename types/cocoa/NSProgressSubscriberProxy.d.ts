@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSProgressSubscriberProxy<T = any> extends NSObject, NSProgressSubscriberProtocol {
+  export interface NSProgressSubscriberProxy<T0 = void, T1 = void, T2 = void> extends NSObject, NSProgressSubscriberProtocol {
     isFromConnection<R = boolean, P0 = unknown>(_isFromConnection: P0): R;
     descriptionWithIndenting<R = unknown, P0 = unknown>(_descriptionWithIndenting: P0): R;
     appBundleID<R = unknown>(): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSProgressSubscriberProxy<T = any> extends NSObject, NSProgressSubscriberProtocol {
+  namespace NSProgressSubscriberProxy {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSProgressSubscriberProtocol {
       alloc<R = NSProgressSubscriberProxy>(): R;
       new: <R = NSProgressSubscriberProxy>() => R;
     }
   }
 }
 
-declare const NSProgressSubscriberProxy: cocoa.classes.NSProgressSubscriberProxy;
+declare const NSProgressSubscriberProxy: cocoa.NSProgressSubscriberProxy.CLASS;

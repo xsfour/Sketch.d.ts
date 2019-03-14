@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutableSymbolMaster<T = any> extends _MSImmutableSymbolMaster {
+  export interface MSImmutableSymbolMaster<T0 = void, T1 = void, T2 = void> extends _MSImmutableSymbolMaster {
     availableOverridesWithDocument<R = unknown, P0 = unknown>(_availableOverridesWithDocument: P0): R;
     influenceRectPaddingForInstancesInDocument_visitedSymbols<R = BCEdgePaddings, P0 = unknown, P1 = unknown>(_influenceRectPaddingForInstancesInDocument: P0, _visitedSymbols: P1): R;
     preserveFlexibleWidthTextLayersInMutableMaster_inBlock<R = void, P0 = unknown, P1 = CDUnknownBlockType>(_preserveFlexibleWidthTextLayersInMutableMaster: P0, _inBlock: P1): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     modifiedMasterCache<R = BCCache>(): R;
     changeIdentifier<R = number>(): R;
   }
-  namespace classes {
-    export interface MSImmutableSymbolMaster<T = any> extends _MSImmutableSymbolMaster {
+  namespace MSImmutableSymbolMaster {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSImmutableSymbolMaster {
       alloc<R = MSImmutableSymbolMaster>(): R;
       new: <R = MSImmutableSymbolMaster>() => R;
     }
   }
 }
 
-declare const MSImmutableSymbolMaster: cocoa.classes.MSImmutableSymbolMaster;
+declare const MSImmutableSymbolMaster: cocoa.MSImmutableSymbolMaster.CLASS;

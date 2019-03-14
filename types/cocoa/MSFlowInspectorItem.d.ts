@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFlowInspectorItem<T = any> extends MSInspectorItem, MSInspectorFlowHandlerDelegateProtocol {
+  export interface MSFlowInspectorItem<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, MSInspectorFlowHandlerDelegateProtocol {
     flowAnimationButtons<R = unknown>(): R;
     flowAnimationTypes<R = unknown>(): R;
     validateFlowAnimationButtonForFlow<R = void, P0 = unknown>(_validateFlowAnimationButtonForFlow: P0): R;
@@ -22,12 +22,12 @@ declare namespace cocoa {
     flowDestinationButton<R = NSPopUpButton>(): R;
     setFlowDestinationButton<R = void, P0 = NSPopUpButton>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSFlowInspectorItem<T = any> extends MSInspectorItem, MSInspectorFlowHandlerDelegateProtocol {
+  namespace MSFlowInspectorItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, MSInspectorFlowHandlerDelegateProtocol {
       alloc<R = MSFlowInspectorItem>(): R;
       new: <R = MSFlowInspectorItem>() => R;
     }
   }
 }
 
-declare const MSFlowInspectorItem: cocoa.classes.MSFlowInspectorItem;
+declare const MSFlowInspectorItem: cocoa.MSFlowInspectorItem.CLASS;

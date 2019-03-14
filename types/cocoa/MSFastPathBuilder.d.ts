@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFastPathBuilder<T = any> extends NSObject {
+  export interface MSFastPathBuilder<T0 = void, T1 = void, T2 = void> extends NSObject {
     flushPath_cachedPoint2<R = void, P0 = unknown, P1 = CGPoint>(_flushPath: P0, _cachedPoint2: P1): R;
     addPoint_toPath_cachedPoint1_cachedPoint2<R = void, P0 = CGPoint, P1 = unknown, P2 = CGPoint, P3 = CGPoint>(_addPoint: P0, _toPath: P1, _cachedPoint1: P2, _cachedPoint2: P3): R;
     removeSegment_fromSegmentPath<R = void, P0 = unknown, P1 = unknown>(_removeSegment: P0, _fromSegmentPath: P1): R;
@@ -15,8 +15,8 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     initWithMask<R = unknown, P0 = CGImage>(_initWithMask: P0): R;
   }
-  namespace classes {
-    export interface MSFastPathBuilder<T = any> extends NSObject {
+  namespace MSFastPathBuilder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSFastPathBuilder>(): R;
       new: <R = MSFastPathBuilder>() => R;
       pathForMaskImage<R = unknown, P0 = unknown>(_pathForMaskImage: P0): R;
@@ -24,4 +24,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSFastPathBuilder: cocoa.classes.MSFastPathBuilder;
+declare const MSFastPathBuilder: cocoa.MSFastPathBuilder.CLASS;

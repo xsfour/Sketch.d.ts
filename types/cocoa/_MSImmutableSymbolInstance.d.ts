@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSImmutableSymbolInstance<T = any> extends MSImmutableStyledLayer {
+  export interface _MSImmutableSymbolInstance<T0 = void, T1 = void, T2 = void> extends MSImmutableStyledLayer {
     overrideValues<R = NSArray>(): R;
     setOverrideValues<R = void, P0 = NSArray>(_v: P0): R;
     verticalSpacing<R = number>(): R;
@@ -13,8 +13,8 @@ declare namespace cocoa {
     horizontalSpacing<R = number>(): R;
     setHorizontalSpacing<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface _MSImmutableSymbolInstance<T = any> extends MSImmutableStyledLayer {
+  namespace _MSImmutableSymbolInstance {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSImmutableStyledLayer {
       alloc<R = _MSImmutableSymbolInstance>(): R;
       new: <R = _MSImmutableSymbolInstance>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSToggleToolbarVisibilityAction<T = any> extends MSToggleVisibilityAction {
+  export interface MSToggleToolbarVisibilityAction<T0 = void, T1 = void, T2 = void> extends MSToggleVisibilityAction {
     label<R = unknown>(): R;
     isFullscreen<R = boolean>(): R;
     toolbarHeight<R = number>(): R;
@@ -9,12 +9,12 @@ declare namespace cocoa {
     isActive<R = boolean>(): R;
     toggleToolbarVisibility<R = void, P0 = unknown>(_toggleToolbarVisibility: P0): R;
   }
-  namespace classes {
-    export interface MSToggleToolbarVisibilityAction<T = any> extends MSToggleVisibilityAction {
+  namespace MSToggleToolbarVisibilityAction {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSToggleVisibilityAction {
       alloc<R = MSToggleToolbarVisibilityAction>(): R;
       new: <R = MSToggleToolbarVisibilityAction>() => R;
     }
   }
 }
 
-declare const MSToggleToolbarVisibilityAction: cocoa.classes.MSToggleToolbarVisibilityAction;
+declare const MSToggleToolbarVisibilityAction: cocoa.MSToggleToolbarVisibilityAction.CLASS;

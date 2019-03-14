@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCGSWindowOpenGLSurface<T = any> extends NSCGSWindowSurface {
+  export interface NSCGSWindowOpenGLSurface<T0 = void, T1 = void, T2 = void> extends NSCGSWindowSurface {
     detachCGLContext<R = void, P0 = _CGLContextObject>(_detachCGLContext: P0): R;
     attachCGLContext<R = void, P0 = _CGLContextObject>(_attachCGLContext: P0): R;
     colorSpace<R = CGColorSpace>(): R;
@@ -11,12 +11,12 @@ declare namespace cocoa {
     scale<R = number>(): R;
     setScale<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSCGSWindowOpenGLSurface<T = any> extends NSCGSWindowSurface {
+  namespace NSCGSWindowOpenGLSurface {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSCGSWindowSurface {
       alloc<R = NSCGSWindowOpenGLSurface>(): R;
       new: <R = NSCGSWindowOpenGLSurface>() => R;
     }
   }
 }
 
-declare const NSCGSWindowOpenGLSurface: cocoa.classes.NSCGSWindowOpenGLSurface;
+declare const NSCGSWindowOpenGLSurface: cocoa.NSCGSWindowOpenGLSurface.CLASS;

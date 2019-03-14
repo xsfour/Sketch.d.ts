@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSTitlebarAccessoryAnimator<T = any> extends _NSObjectAnimator {
+  export interface _NSTitlebarAccessoryAnimator<T0 = void, T1 = void, T2 = void> extends _NSObjectAnimator {
     setHidden<R = void, P0 = boolean>(_setHidden: P0): R;
   }
-  namespace classes {
-    export interface _NSTitlebarAccessoryAnimator<T = any> extends _NSObjectAnimator {  }
+  namespace _NSTitlebarAccessoryAnimator {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _NSObjectAnimator {}
   }
 }

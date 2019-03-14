@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSClassDescription<T = any> extends NSObject {
+  export interface NSClassDescription<T0 = void, T1 = void, T2 = void> extends NSObject {
     inverseForRelationshipKey<R = unknown, P0 = unknown>(_inverseForRelationshipKey: P0): R;
     validateValue_forKey<R = unknown, P0 = unknown, P1 = unknown>(_validateValue: P0, _forKey: P1): R;
     ownsDestinationObjectsForRelationshipKey<R = boolean, P0 = unknown>(_ownsDestinationObjectsForRelationshipKey: P0): R;
@@ -17,8 +17,8 @@ declare namespace cocoa {
     toOneRelationshipKeys<R = NSArray>(): R;
     attributeKeys<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface NSClassDescription<T = any> extends NSObject {
+  namespace NSClassDescription {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSClassDescription>(): R;
       new: <R = NSClassDescription>() => R;
       classDescriptionForClass<R = unknown, P0 = unknown>(_classDescriptionForClass: P0): R;
@@ -30,4 +30,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSClassDescription: cocoa.classes.NSClassDescription;
+declare const NSClassDescription: cocoa.NSClassDescription.CLASS;

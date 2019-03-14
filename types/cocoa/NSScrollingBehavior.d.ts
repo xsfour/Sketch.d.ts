@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScrollingBehavior<T = any> extends NSObject {
+  export interface NSScrollingBehavior<T0 = void, T1 = void, T2 = void> extends NSObject {
     automateLiveScrollOfScrollView<R = void, P0 = unknown>(_automateLiveScrollOfScrollView: P0): R;
     scrollView_boundsChangedForClipView<R = void, P0 = unknown, P1 = unknown>(_scrollView: P0, _boundsChangedForClipView: P1): R;
     snapRubberBandOfScrollView<R = void, P0 = unknown>(_snapRubberBandOfScrollView: P0): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     scrollView_responderToForwardMayBeginScrollEvent<R = unknown, P0 = unknown, P1 = unknown>(_scrollView: P0, _responderToForwardMayBeginScrollEvent: P1): R;
     supportsConcurrentScrolling<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSScrollingBehavior<T = any> extends NSObject {
+  namespace NSScrollingBehavior {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSScrollingBehavior>(): R;
       new: <R = NSScrollingBehavior>() => R;
     }
   }
 }
 
-declare const NSScrollingBehavior: cocoa.classes.NSScrollingBehavior;
+declare const NSScrollingBehavior: cocoa.NSScrollingBehavior.CLASS;

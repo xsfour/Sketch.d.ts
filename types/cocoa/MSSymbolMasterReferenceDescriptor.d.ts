@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSymbolMasterReferenceDescriptor<T = any> extends NSObject, NSPasteboardWritingProtocol, NSPasteboardReadingProtocol {
+  export interface MSSymbolMasterReferenceDescriptor<T0 = void, T1 = void, T2 = void> extends NSObject, NSPasteboardWritingProtocol, NSPasteboardReadingProtocol {
     cxx_destruct<R = void>(): R;
     symbolID<R = NSString>(): R;
     setSymbolID<R = void, P0 = NSString>(_v: P0): R;
@@ -12,8 +12,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSSymbolMasterReferenceDescriptor<T = any> extends NSObject, NSPasteboardWritingProtocol, NSPasteboardReadingProtocol {
+  namespace MSSymbolMasterReferenceDescriptor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSPasteboardWritingProtocol, NSPasteboardReadingProtocol {
       alloc<R = MSSymbolMasterReferenceDescriptor>(): R;
       new: <R = MSSymbolMasterReferenceDescriptor>() => R;
       pasteboardType<R = unknown>(): R;
@@ -21,4 +21,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSSymbolMasterReferenceDescriptor: cocoa.classes.MSSymbolMasterReferenceDescriptor;
+declare const MSSymbolMasterReferenceDescriptor: cocoa.MSSymbolMasterReferenceDescriptor.CLASS;

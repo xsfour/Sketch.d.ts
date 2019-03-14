@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSBezierPath<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  export interface NSBezierPath<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     containsPoint<R = boolean, P0 = CGPoint>(_containsPoint: P0): R;
@@ -77,11 +77,12 @@ declare namespace cocoa {
     setLineCapStyle<R = void, P0 = number>(_v: P0): R;
     lineWidth<R = number>(): R;
     setLineWidth<R = void, P0 = number>(_v: P0): R;
-    // + NSBezierPath(Boolean,CHBezierPathAdditions,Clockwise,DebugTools,EPS,FBUtilities,FitCurve,FitCurvePrivate,Fitting,GIF,JSON,MSPath,NSBezierPath_BooleanBridge,NSBezierPath_Enumerator,NSBezierPath_Slopes,NSBezierPath_Various,NaNChecks,SVGBezierPath,Simplify):
+    // + NSBezierPath(Boolean): 
     fb_xor<R = unknown, P0 = unknown>(_fb_xor: P0): R;
     fb_difference<R = unknown, P0 = unknown>(_fb_difference: P0): R;
     fb_intersect<R = unknown, P0 = unknown>(_fb_intersect: P0): R;
     fb_union<R = unknown, P0 = unknown>(_fb_union: P0): R;
+    // + NSBezierPath(CHBezierPathAdditions): 
     writeDebugFileNamed<R = void, P0 = unknown>(_writeDebugFileNamed: P0): R;
     isClosed<R = boolean>(): R;
     safeBounds<R = CGRect>(): R;
@@ -94,21 +95,26 @@ declare namespace cocoa {
     clipInBlock<R = void, P0 = CDUnknownBlockType>(_clipInBlock: P0): R;
     strokeInside<R = void>(): R;
     strokeOutside<R = void>(): R;
+    // + NSBezierPath(Clockwise): 
     subPathsOrderedBySizeAfterOutlining<R = unknown>(): R;
     direction<R = number>(): R;
     bezierPathByMakingAntiClockwiseIfNecessary<R = unknown>(): R;
     bezierPathByMakingClockwiseIfNecessary<R = unknown>(): R;
+    // + NSBezierPath(DebugTools): 
     appendArrowAtPoint_ms_tangent_size_scale<R = void, P0 = CGPoint, P1 = MSLine, P2 = number, P3 = number>(_appendArrowAtPoint_ms: P0, _tangent: P1, _size: P2, _scale: P3): R;
     appendCircleAtPoint_ms_radius_scale<R = void, P0 = CGPoint, P1 = number, P2 = number>(_appendCircleAtPoint_ms: P0, _radius: P1, _scale: P2): R;
     appendSquareAtPoint_ms_size_scale<R = void, P0 = CGPoint, P1 = number, P2 = number>(_appendSquareAtPoint_ms: P0, _size: P1, _scale: P2): R;
     debugScale_ms<R = number>(): R;
+    // + NSBezierPath(FBUtilities): 
     fb_appendElement<R = void, P0 = NSBezierElement>(_fb_appendElement: P0): R;
     fb_appendPath<R = void, P0 = unknown>(_fb_appendPath: P0): R;
     fb_copyAttributesFrom<R = void, P0 = unknown>(_fb_copyAttributesFrom: P0): R;
     fb_subpathWithRange<R = unknown, P0 = _NSRange>(_fb_subpathWithRange: P0): R;
     fb_elementAtIndex<R = NSBezierElement, P0 = number>(_fb_elementAtIndex: P0): R;
     fb_pointAtIndex<R = CGPoint, P0 = number>(_fb_pointAtIndex: P0): R;
+    // + NSBezierPath(FitCurve): 
     fb_fitCurve<R = unknown, P0 = number>(_fb_fitCurve: P0): R;
+    // + NSBezierPath(FitCurvePrivate): 
     fb_computeCenterTangentAtIndex<R = CGPoint, P0 = number>(_fb_computeCenterTangentAtIndex: P0): R;
     fb_computeRightTangentAtIndex<R = CGPoint, P0 = number>(_fb_computeRightTangentAtIndex: P0): R;
     fb_computeLeftTangentAtIndex<R = CGPoint, P0 = number>(_fb_computeLeftTangentAtIndex: P0): R;
@@ -118,10 +124,14 @@ declare namespace cocoa {
     fb_findMaximumErrorForBezier_inRange_parameters_maximumIndex<R = number, P0 = unknown, P1 = _NSRange, P2 = unknown, P3 = number>(_fb_findMaximumErrorForBezier: P0, _inRange: P1, _parameters: P2, _maximumIndex: P3): R;
     fb_refineParameters_forRange_bezier<R = unknown, P0 = unknown, P1 = _NSRange, P2 = unknown>(_fb_refineParameters: P0, _forRange: P1, _bezier: P2): R;
     fb_fitCubicToRange_leftTangent_rightTangent_errorThreshold<R = unknown, P0 = _NSRange, P1 = CGPoint, P2 = CGPoint, P3 = number>(_fb_fitCubicToRange: P0, _leftTangent: P1, _rightTangent: P2, _errorThreshold: P3): R;
+    // + NSBezierPath(Fitting): 
     bezierPathByCurveFitting<R = unknown>(): R;
+    // + NSBezierPath(GIF): 
     animatedGIFRepresentation_ms<R = unknown>(): R;
+    // + NSBezierPath(JSON): 
     JSONDescription_ms<R = unknown>(): R;
     JSONRepresetation_ms<R = unknown>(): R;
+    // + NSBezierPath(NSBezierPath_BooleanBridge): 
     bezierPathBySubtractingPaths<R = unknown, P0 = unknown>(_bezierPathBySubtractingPaths: P0): R;
     booleanExclusiveOrWith<R = unknown, P0 = unknown>(_booleanExclusiveOrWith: P0): R;
     booleanSubtractWith<R = unknown, P0 = unknown>(_booleanSubtractWith: P0): R;
@@ -129,6 +139,7 @@ declare namespace cocoa {
     booleanUnionWith<R = unknown, P0 = unknown>(_booleanUnionWith: P0): R;
     debugWriteBooleanOp_withPath<R = void, P0 = number, P1 = unknown>(_debugWriteBooleanOp: P0, _withPath: P1): R;
     booleanOp_withPath<R = unknown, P0 = number, P1 = unknown>(_booleanOp: P0, _withPath: P1): R;
+    // + NSBezierPath(NSBezierPath_Enumerator): 
     customIsEqual<R = boolean, P0 = unknown>(_customIsEqual: P0): R;
     appendBezierPathItem<R = void, P0 = unknown>(_appendBezierPathItem: P0): R;
     lastItem<R = unknown>(): R;
@@ -136,6 +147,7 @@ declare namespace cocoa {
     bezierCurves<R = unknown>(): R;
     reverseEnumerator<R = unknown>(): R;
     enumerator<R = unknown>(): R;
+    // + NSBezierPath(NSBezierPath_Slopes): 
     bezierPathByApplyingModifierBlock<R = unknown, P0 = CDUnknownBlockType>(_bezierPathByApplyingModifierBlock: P0): R;
     subDivideAtPoint<R = unknown, P0 = CGPoint>(_subDivideAtPoint: P0): R;
     drawDebugWithZoom<R = void, P0 = number>(_drawDebugWithZoom: P0): R;
@@ -155,6 +167,7 @@ declare namespace cocoa {
     slopeOnPathAtLength<R = number, P0 = number>(_slopeOnPathAtLength: P0): R;
     firstPoint<R = CGPoint>(): R;
     lastPoint<R = CGPoint>(): R;
+    // + NSBezierPath(NSBezierPath_Various): 
     setDashPattern<R = void, P0 = unknown>(_setDashPattern: P0): R;
     clampDashPattern_count<R = void, P0 = number, P1 = number>(_clampDashPattern: P0, _count: P1): R;
     strokeWithWidth<R = void, P0 = number>(_strokeWithWidth: P0): R;
@@ -172,15 +185,18 @@ declare namespace cocoa {
     simplify<R = unknown>(): R;
     subPaths<R = unknown>(): R;
     scaleBy<R = unknown, P0 = number>(_scaleBy: P0): R;
+    // + NSBezierPath(NaNChecks): 
     bc_nan_curveToPoint_controlPoint1_controlPoint2<R = void, P0 = CGPoint, P1 = CGPoint, P2 = CGPoint>(_bc_nan_curveToPoint: P0, _controlPoint1: P1, _controlPoint2: P2): R;
     bc_nan_lineToPoint<R = void, P0 = CGPoint>(_bc_nan_lineToPoint: P0): R;
     bc_nan_moveToPoint<R = void, P0 = CGPoint>(_bc_nan_moveToPoint: P0): R;
+    // + NSBezierPath(SVGBezierPath): 
     svgPathAttribute<R = unknown>(): R;
     addSVGArcWithAngle_radius_from_to_largeArc_sweep<R = void, P0 = number, P1 = CGSize, P2 = CGPoint, P3 = CGPoint, P4 = boolean, P5 = boolean>(_addSVGArcWithAngle: P0, _radius: P1, _from: P2, _to: P3, _largeArc: P4, _sweep: P5): R;
+    // + NSBezierPath(Simplify): 
     fb_simplify<R = unknown, P0 = number>(_fb_simplify: P0): R;
   }
-  namespace classes {
-    export interface NSBezierPath<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  namespace NSBezierPath {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
       alloc<R = NSBezierPath>(): R;
       new: <R = NSBezierPath>() => R;
       defaultLineWidth<R = number>(): R;
@@ -217,25 +233,31 @@ declare namespace cocoa {
       setFlatness<R = void, P0 = number>(_setFlatness: P0): R;
       miterLimit<R = number>(): R;
       setMiterLimit<R = void, P0 = number>(_setMiterLimit: P0): R;
-      // + NSBezierPath(Boolean,CHBezierPathAdditions,Clockwise,DebugTools,EPS,FBUtilities,FitCurve,FitCurvePrivate,Fitting,GIF,JSON,MSPath,NSBezierPath_BooleanBridge,NSBezierPath_Enumerator,NSBezierPath_Slopes,NSBezierPath_Various,NaNChecks,SVGBezierPath,Simplify):
+      // + NSBezierPath(CHBezierPathAdditions): 
       bezierCurveFromPoint_toPoint_controlPoint1_controlPoint2<R = unknown, P0 = CGPoint, P1 = CGPoint, P2 = CGPoint, P3 = CGPoint>(_bezierCurveFromPoint: P0, _toPoint: P1, _controlPoint1: P2, _controlPoint2: P3): R;
       bezierPathFromPoint_toPoint<R = unknown, P0 = CGPoint, P1 = CGPoint>(_bezierPathFromPoint: P0, _toPoint: P1): R;
       bezierPathWithCGPath_bc<R = unknown, P0 = CGPath>(_bezierPathWithCGPath_bc: P0): R;
+      // + NSBezierPath(EPS): 
       bezierPathFromEPSString<R = unknown, P0 = unknown>(_bezierPathFromEPSString: P0): R;
       epsStringByTrimmingHeaderAndFooter<R = unknown, P0 = unknown>(_epsStringByTrimmingHeaderAndFooter: P0): R;
+      // + NSBezierPath(JSON): 
       bezierPathWithJSONString_ms<R = unknown, P0 = unknown>(_bezierPathWithJSONString_ms: P0): R;
       bezierPathWithJSON_ms<R = unknown, P0 = unknown>(_bezierPathWithJSON_ms: P0): R;
+      // + NSBezierPath(MSPath): 
       bezierPathWithPath<R = unknown, P0 = unknown>(_bezierPathWithPath: P0): R;
+      // + NSBezierPath(NSBezierPath_Various): 
       impliedDashPatternFromDashPattern_paddingToLength<R = unknown, P0 = unknown, P1 = number>(_impliedDashPatternFromDashPattern: P0, _paddingToLength: P1): R;
       validDashPatternFromProposedDashPattern_padIfNeeded<R = unknown, P0 = unknown, P1 = boolean>(_validDashPatternFromProposedDashPattern: P0, _padIfNeeded: P1): R;
       validDashLengthFromProposedDashLength<R = number, P0 = number>(_validDashLengthFromProposedDashLength: P0): R;
       validGapLengthFromProposedGapLength<R = number, P0 = number>(_validGapLengthFromProposedGapLength: P0): R;
       bezierPathWithSubPaths<R = unknown, P0 = unknown>(_bezierPathWithSubPaths: P0): R;
+      // + NSBezierPath(NaNChecks): 
       nanSafeSwizzleSelector_overrideSelector<R = void, P0 = string, P1 = string>(_nanSafeSwizzleSelector: P0, _overrideSelector: P1): R;
       load<R = void>(): R;
+      // + NSBezierPath(SVGBezierPath): 
       bezierPathFromSVGString<R = unknown, P0 = unknown>(_bezierPathFromSVGString: P0): R;
     }
   }
 }
 
-declare const NSBezierPath: cocoa.classes.NSBezierPath;
+declare const NSBezierPath: cocoa.NSBezierPath.CLASS;

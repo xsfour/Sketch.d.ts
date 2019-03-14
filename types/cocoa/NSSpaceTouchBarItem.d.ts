@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSpaceTouchBarItem<T = any> extends NSTouchBarItem, NSTouchBarItemTypeSpaceProtocol {
+  export interface NSSpaceTouchBarItem<T0 = void, T1 = void, T2 = void> extends NSTouchBarItem, NSTouchBarItemTypeSpaceProtocol {
     customizationLabel<R = unknown>(): R;
     initWithIdentifier_minimumWidth_maximumWidth<R = unknown, P0 = unknown, P1 = number, P2 = number>(_initWithIdentifier: P0, _minimumWidth: P1, _maximumWidth: P2): R;
     preferredSizeForCustomizationPalette<R = CGSize>(): R;
@@ -14,8 +14,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSSpaceTouchBarItem<T = any> extends NSTouchBarItem, NSTouchBarItemTypeSpaceProtocol {
+  namespace NSSpaceTouchBarItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTouchBarItem, NSTouchBarItemTypeSpaceProtocol {
       alloc<R = NSSpaceTouchBarItem>(): R;
       new: <R = NSSpaceTouchBarItem>() => R;
       standardLargeSpace<R = number>(): R;
@@ -27,4 +27,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSSpaceTouchBarItem: cocoa.classes.NSSpaceTouchBarItem;
+declare const NSSpaceTouchBarItem: cocoa.NSSpaceTouchBarItem.CLASS;

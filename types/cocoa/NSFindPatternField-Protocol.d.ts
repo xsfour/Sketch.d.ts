@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFindPatternFieldProtocol<T = any> extends NSObjectProtocol {
+  export interface NSFindPatternFieldProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     menuForFindPatternAttachment<R = NSMenu, P0 = NSFindPatternAttachmentCell>(_menuForFindPatternAttachment: P0): R;
     plainTextValue<R = NSString>(): R;
     setFindPatternPropertyList<R = void, P0 = unknown>(_setFindPatternPropertyList: P0): R;
@@ -16,7 +16,7 @@ declare namespace cocoa {
     findPatternManager<R = NSFindPatternManager>(): R;
     setFindPatternManager<R = void, P0 = NSFindPatternManager>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSFindPatternFieldProtocol<T = any> extends NSObjectProtocol {  }
+  namespace NSFindPatternFieldProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

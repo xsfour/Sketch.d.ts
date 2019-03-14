@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSEditableBinder<T = any> extends NSBinder {
+  export interface NSEditableBinder<T0 = void, T1 = void, T2 = void> extends NSBinder {
     _setStatesImmediatelyInObject_mode_triggerRedisplay<R = void, P0 = unknown, P1 = __NSKeyValueCodingControllerModeType, P2 = boolean>(__setStatesImmediatelyInObject: P0, _mode: P1, _triggerRedisplay: P2): R;
     _hiddenStateWithMode<R = boolean, P0 = __NSKeyValueCodingControllerModeType>(__hiddenStateWithMode: P0): R;
     hiddenStateAtIndexPath<R = boolean, P0 = unknown>(_hiddenStateAtIndexPath: P0): R;
@@ -23,8 +23,8 @@ declare namespace cocoa {
     _requestEditableState<R = void, P0 = boolean>(__requestEditableState: P0): R;
     _countBindings<R = void>(): R;
   }
-  namespace classes {
-    export interface NSEditableBinder<T = any> extends NSBinder {
+  namespace NSEditableBinder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSBinder {
       alloc<R = NSEditableBinder>(): R;
       new: <R = NSEditableBinder>() => R;
       _enumeratedHiddenBindings<R = unknown, P0 = number>(__enumeratedHiddenBindings: P0): R;
@@ -34,4 +34,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSEditableBinder: cocoa.classes.NSEditableBinder;
+declare const NSEditableBinder: cocoa.NSEditableBinder.CLASS;

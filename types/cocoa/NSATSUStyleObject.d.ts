@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSATSUStyleObject<T = any> extends NSObject {
+  export interface NSATSUStyleObject<T0 = void, T1 = void, T2 = void> extends NSObject {
     convertToDictionary<R = unknown>(): R;
     isTypeNotExclusive<R = boolean, P0 = number>(_isTypeNotExclusive: P0): R;
     typeIsNotExclusive<R = void, P0 = number>(_typeIsNotExclusive: P0): R;
@@ -22,12 +22,12 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     initWithStyle<R = unknown, P0 = OpaqueATSUStyle>(_initWithStyle: P0): R;
   }
-  namespace classes {
-    export interface NSATSUStyleObject<T = any> extends NSObject {
+  namespace NSATSUStyleObject {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSATSUStyleObject>(): R;
       new: <R = NSATSUStyleObject>() => R;
     }
   }
 }
 
-declare const NSATSUStyleObject: cocoa.classes.NSATSUStyleObject;
+declare const NSATSUStyleObject: cocoa.NSATSUStyleObject.CLASS;

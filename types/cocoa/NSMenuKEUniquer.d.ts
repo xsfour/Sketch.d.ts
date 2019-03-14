@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMenuKEUniquer<T = any> extends NSObject {
+  export interface NSMenuKEUniquer<T0 = void, T1 = void, T2 = void> extends NSObject {
     items<R = unknown>(): R;
     removeAllItems<R = void>(): R;
     removeItems<R = void, P0 = unknown>(_removeItems: P0): R;
@@ -14,8 +14,8 @@ declare namespace cocoa {
     _debugContents<R = unknown>(): R;
     dealloc<R = void>(): R;
   }
-  namespace classes {
-    export interface NSMenuKEUniquer<T = any> extends NSObject {
+  namespace NSMenuKEUniquer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSMenuKEUniquer>(): R;
       new: <R = NSMenuKEUniquer>() => R;
       mainMenuUniquer<R = unknown>(): R;
@@ -23,4 +23,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSMenuKEUniquer: cocoa.classes.NSMenuKEUniquer;
+declare const NSMenuKEUniquer: cocoa.NSMenuKEUniquer.CLASS;

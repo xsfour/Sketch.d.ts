@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSBackgroundActivityScheduler<T = any> extends NSObject {
+  export interface NSBackgroundActivityScheduler<T0 = void, T1 = void, T2 = void> extends NSObject {
     invalidate<R = void>(): R;
     scheduleWithBlock<R = void, P0 = CDUnknownBlockType>(_scheduleWithBlock: P0): R;
     _updateCriteriaForCompletedActivity<R = void, P0 = unknown>(__updateCriteriaForCompletedActivity: P0): R;
@@ -28,12 +28,12 @@ declare namespace cocoa {
     setQualityOfService<R = void, P0 = number>(_v: P0): R;
     identifier<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSBackgroundActivityScheduler<T = any> extends NSObject {
+  namespace NSBackgroundActivityScheduler {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSBackgroundActivityScheduler>(): R;
       new: <R = NSBackgroundActivityScheduler>() => R;
     }
   }
 }
 
-declare const NSBackgroundActivityScheduler: cocoa.classes.NSBackgroundActivityScheduler;
+declare const NSBackgroundActivityScheduler: cocoa.NSBackgroundActivityScheduler.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSRunCustomScriptSheet<T = any> extends CHSheetController, NSTextViewDelegateProtocol {
+  export interface MSRunCustomScriptSheet<T0 = void, T1 = void, T2 = void> extends CHSheetController, NSTextViewDelegateProtocol {
     redoAction<R = void, P0 = unknown>(_redoAction: P0): R;
     undoAction<R = void, P0 = unknown>(_undoAction: P0): R;
     scriptingMenuAction<R = void, P0 = unknown>(_scriptingMenuAction: P0): R;
@@ -11,6 +11,7 @@ declare namespace cocoa {
     showHelp<R = void, P0 = unknown>(_showHelp: P0): R;
     runScript<R = void, P0 = unknown>(_runScript: P0): R;
     observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
+    windowDidLoad<R = void>(): R;
     commandToRunWithName<R = unknown, P0 = unknown>(_commandToRunWithName: P0): R;
     awakeFromNib<R = void>(): R;
     touchBarRun<R = NSButton>(): R;
@@ -26,12 +27,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSRunCustomScriptSheet<T = any> extends CHSheetController, NSTextViewDelegateProtocol {
+  namespace MSRunCustomScriptSheet {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends CHSheetController, NSTextViewDelegateProtocol {
       alloc<R = MSRunCustomScriptSheet>(): R;
       new: <R = MSRunCustomScriptSheet>() => R;
     }
   }
 }
 
-declare const MSRunCustomScriptSheet: cocoa.classes.MSRunCustomScriptSheet;
+declare const MSRunCustomScriptSheet: cocoa.MSRunCustomScriptSheet.CLASS;

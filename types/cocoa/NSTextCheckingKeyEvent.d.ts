@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTextCheckingKeyEvent<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  export interface NSTextCheckingKeyEvent<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     description<R = unknown>(): R;
@@ -17,12 +17,12 @@ declare namespace cocoa {
     keyboardType<R = number>(): R;
     keyboardLayoutType<R = number>(): R;
   }
-  namespace classes {
-    export interface NSTextCheckingKeyEvent<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  namespace NSTextCheckingKeyEvent {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
       alloc<R = NSTextCheckingKeyEvent>(): R;
       new: <R = NSTextCheckingKeyEvent>() => R;
     }
   }
 }
 
-declare const NSTextCheckingKeyEvent: cocoa.classes.NSTextCheckingKeyEvent;
+declare const NSTextCheckingKeyEvent: cocoa.NSTextCheckingKeyEvent.CLASS;

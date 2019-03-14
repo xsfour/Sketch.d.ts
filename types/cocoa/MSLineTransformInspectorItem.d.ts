@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSLineTransformInspectorItem<T = any> extends MSInspectorItem, MSInspectorMathValueAdaptorDelegateProtocol {
+  export interface MSLineTransformInspectorItem<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, MSInspectorMathValueAdaptorDelegateProtocol {
     updateButtonState<R = void, P0 = unknown>(_updateButtonState: P0): R;
     rotationAdaptor<R = MSMathInspectorValueAdaptor>(): R;
     setRotationAdaptor<R = void, P0 = MSMathInspectorValueAdaptor>(_v: P0): R;
@@ -20,12 +20,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSLineTransformInspectorItem<T = any> extends MSInspectorItem, MSInspectorMathValueAdaptorDelegateProtocol {
+  namespace MSLineTransformInspectorItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, MSInspectorMathValueAdaptorDelegateProtocol {
       alloc<R = MSLineTransformInspectorItem>(): R;
       new: <R = MSLineTransformInspectorItem>() => R;
     }
   }
 }
 
-declare const MSLineTransformInspectorItem: cocoa.classes.MSLineTransformInspectorItem;
+declare const MSLineTransformInspectorItem: cocoa.MSLineTransformInspectorItem.CLASS;

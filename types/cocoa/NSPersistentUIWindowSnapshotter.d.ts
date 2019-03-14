@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPersistentUIWindowSnapshotter<T = any> extends NSObject {
+  export interface NSPersistentUIWindowSnapshotter<T0 = void, T1 = void, T2 = void> extends NSObject {
     writeWindowSnapshot_length_width_height_bytesPerRow_toFile_inDirectory_encryptingWithKey_uuid_checksum_fd<R = boolean, P0 = void, P1 = number, P2 = number, P3 = number, P4 = number, P5 = unknown, P6 = unknown, P7 = unknown, P8 = unknown, P9 = number, P10 = number>(_writeWindowSnapshot: P0, _length: P1, _width: P2, _height: P3, _bytesPerRow: P4, _toFile: P5, _inDirectory: P6, _encryptingWithKey: P7, _uuid: P8, _checksum: P9, _fd: P10): R;
     captureAndWriteSnapshotForWindowNumber_forWindowID_waitUntilDone<R = void, P0 = number, P1 = number, P2 = boolean>(_captureAndWriteSnapshotForWindowNumber: P0, _forWindowID: P1, _waitUntilDone: P2): R;
     deleteSnapshotForWindowID<R = void, P0 = number>(_deleteSnapshotForWindowID: P0): R;
@@ -24,12 +24,12 @@ declare namespace cocoa {
     cryptoUUID<R = NSData>(): R;
     setCryptoUUID<R = void, P0 = NSData>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSPersistentUIWindowSnapshotter<T = any> extends NSObject {
+  namespace NSPersistentUIWindowSnapshotter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSPersistentUIWindowSnapshotter>(): R;
       new: <R = NSPersistentUIWindowSnapshotter>() => R;
     }
   }
 }
 
-declare const NSPersistentUIWindowSnapshotter: cocoa.classes.NSPersistentUIWindowSnapshotter;
+declare const NSPersistentUIWindowSnapshotter: cocoa.NSPersistentUIWindowSnapshotter.CLASS;

@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _isContentViewController<T = any> {}
-  namespace classes {
-    export interface _isContentViewController<T = any> {  }
+  export interface _isContentViewController<T0 = void, T1 = void, T2 = void> {}
+  namespace _isContentViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

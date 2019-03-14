@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSStackView<T = any> extends NSView {
+  export interface NSStackView<T0 = void, T1 = void, T2 = void> extends NSView {
     setArrangedSubviews<R = void, P0 = unknown>(_setArrangedSubviews: P0): R;
     insertArrangedSubview_atIndex<R = void, P0 = unknown, P1 = number>(_insertArrangedSubview: P0, _atIndex: P1): R;
     removeArrangedSubview<R = void, P0 = unknown>(_removeArrangedSubview: P0): R;
@@ -117,8 +117,8 @@ declare namespace cocoa {
     baselineRelativeArrangement<R = boolean>(): R;
     setBaselineRelativeArrangement<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSStackView<T = any> extends NSView {
+  namespace NSStackView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSStackView>(): R;
       new: <R = NSStackView>() => R;
       keyPathsForValuesAffectingArrangedSubviews<R = unknown>(): R;
@@ -128,4 +128,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSStackView: cocoa.classes.NSStackView;
+declare const NSStackView: cocoa.NSStackView.CLASS;

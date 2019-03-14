@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSStatusBar<T = any> extends NSObject {
+  export interface NSStatusBar<T0 = void, T1 = void, T2 = void> extends NSObject {
     _statusItemIsDeallocing<R = void, P0 = unknown>(__statusItemIsDeallocing: P0): R;
     _performKeyEquivalent<R = boolean, P0 = unknown>(__performKeyEquivalent: P0): R;
     _requestStatusBarAdjustmentWithCompletionHandler<R = void, P0 = CDUnknownBlockType>(__requestStatusBarAdjustmentWithCompletionHandler: P0): R;
@@ -51,8 +51,8 @@ declare namespace cocoa {
     thickness<R = number>(): R;
     vertical<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSStatusBar<T = any> extends NSObject {
+  namespace NSStatusBar {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSStatusBar>(): R;
       new: <R = NSStatusBar>() => R;
       systemStatusBar<R = unknown>(): R;
@@ -60,4 +60,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSStatusBar: cocoa.classes.NSStatusBar;
+declare const NSStatusBar: cocoa.NSStatusBar.CLASS;

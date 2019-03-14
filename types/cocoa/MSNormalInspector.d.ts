@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSNormalInspector<T = any> extends NSViewController, MSStackViewScrollViewDelegateProtocol, MSStylePartInspectorDelegateProtocol, MSInspectorChildControllerProtocol {
+  export interface MSNormalInspector<T0 = void, T1 = void, T2 = void> extends NSViewController, MSStackViewScrollViewDelegateProtocol, MSStylePartInspectorDelegateProtocol, MSInspectorChildControllerProtocol {
     cxx_destruct<R = void>(): R;
     fixNextResponder<R = void>(): R;
     scheduleNextResponderFixing<R = void>(): R;
@@ -24,12 +24,12 @@ declare namespace cocoa {
     stackView<R = MSInspectorStackView>(): R;
     setStackView<R = void, P0 = MSInspectorStackView>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSNormalInspector<T = any> extends NSViewController, MSStackViewScrollViewDelegateProtocol, MSStylePartInspectorDelegateProtocol, MSInspectorChildControllerProtocol {
+  namespace MSNormalInspector {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController, MSStackViewScrollViewDelegateProtocol, MSStylePartInspectorDelegateProtocol, MSInspectorChildControllerProtocol {
       alloc<R = MSNormalInspector>(): R;
       new: <R = MSNormalInspector>() => R;
     }
   }
 }
 
-declare const MSNormalInspector: cocoa.classes.MSNormalInspector;
+declare const MSNormalInspector: cocoa.MSNormalInspector.CLASS;

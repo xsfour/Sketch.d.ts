@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSZoomTool<T = any> extends NSObject {
+  export interface MSZoomTool<T0 = void, T1 = void, T2 = void> extends NSObject {
     zoomValueAfterZoomOutUnCapped<R = number>(): R;
     zoomValueAfterZoomOut<R = number>(): R;
     zoomValueAfterZoomInUnCapped<R = number>(): R;
@@ -23,12 +23,12 @@ declare namespace cocoa {
     zoomValue<R = number>(): R;
     setZoomValue<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSZoomTool<T = any> extends NSObject {
+  namespace MSZoomTool {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSZoomTool>(): R;
       new: <R = MSZoomTool>() => R;
     }
   }
 }
 
-declare const MSZoomTool: cocoa.classes.MSZoomTool;
+declare const MSZoomTool: cocoa.MSZoomTool.CLASS;

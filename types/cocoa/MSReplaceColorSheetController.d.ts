@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSReplaceColorSheetController<T = any> extends CHSheetController, NSWindowDelegateProtocol, NSMenuDelegateProtocol, MSColorInspectorDelegateProtocol {
+  export interface MSReplaceColorSheetController<T0 = void, T1 = void, T2 = void> extends CHSheetController, NSWindowDelegateProtocol, NSMenuDelegateProtocol, MSColorInspectorDelegateProtocol {
     disableUI<R = void>(): R;
     validateUI<R = void>(): R;
     validateReplaceButton<R = void>(): R;
@@ -16,6 +16,7 @@ declare namespace cocoa {
     updateFrequentColorsMenu<R = void>(): R;
     toggleIgnoreAlpha<R = void, P0 = unknown>(_toggleIgnoreAlpha: P0): R;
     currentDocument<R = unknown>(): R;
+    windowDidLoad<R = void>(): R;
     popover<R = BCPopover>(): R;
     setPopover<R = void, P0 = BCPopover>(_v: P0): R;
     frequentColorsMenu<R = NSMenu>(): R;
@@ -39,12 +40,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSReplaceColorSheetController<T = any> extends CHSheetController, NSWindowDelegateProtocol, NSMenuDelegateProtocol, MSColorInspectorDelegateProtocol {
+  namespace MSReplaceColorSheetController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends CHSheetController, NSWindowDelegateProtocol, NSMenuDelegateProtocol, MSColorInspectorDelegateProtocol {
       alloc<R = MSReplaceColorSheetController>(): R;
       new: <R = MSReplaceColorSheetController>() => R;
     }
   }
 }
 
-declare const MSReplaceColorSheetController: cocoa.classes.MSReplaceColorSheetController;
+declare const MSReplaceColorSheetController: cocoa.MSReplaceColorSheetController.CLASS;

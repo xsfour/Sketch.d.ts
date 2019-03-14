@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSCornerView<T = any> extends NSView {
+  export interface _NSCornerView<T0 = void, T1 = void, T2 = void> extends NSView {
     cxx_destruct<R = void>(): R;
     isOpaque<R = boolean>(): R;
     _drawingEndSeparator<R = boolean>(): R;
@@ -14,8 +14,8 @@ declare namespace cocoa {
     setHidden<R = void, P0 = boolean>(_setHidden: P0): R;
     setFrame<R = void, P0 = CGRect>(_setFrame: P0): R;
   }
-  namespace classes {
-    export interface _NSCornerView<T = any> extends NSView {
+  namespace _NSCornerView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = _NSCornerView>(): R;
       new: <R = _NSCornerView>() => R;
     }

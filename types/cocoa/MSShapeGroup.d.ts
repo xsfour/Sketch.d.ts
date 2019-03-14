@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSShapeGroup<T = any> extends _MSShapeGroup, MSLayerPreviewabilityProtocol, MSShapeGroupProtocol, MSPathLayerProtocol {
+  export interface MSShapeGroup<T0 = void, T1 = void, T2 = void> extends _MSShapeGroup, MSLayerPreviewabilityProtocol, MSShapeGroupProtocol, MSPathLayerProtocol {
     canRotate<R = boolean>(): R;
     isVerticalLine<R = boolean>(): R;
     isHorizontalLine<R = boolean>(): R;
@@ -49,8 +49,8 @@ declare namespace cocoa {
     rotation<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSShapeGroup<T = any> extends _MSShapeGroup, MSLayerPreviewabilityProtocol, MSShapeGroupProtocol, MSPathLayerProtocol {
+  namespace MSShapeGroup {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSShapeGroup, MSLayerPreviewabilityProtocol, MSShapeGroupProtocol, MSPathLayerProtocol {
       alloc<R = MSShapeGroup>(): R;
       new: <R = MSShapeGroup>() => R;
       shapeWithRect<R = unknown, P0 = CGRect>(_shapeWithRect: P0): R;
@@ -60,4 +60,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSShapeGroup: cocoa.classes.MSShapeGroup;
+declare const MSShapeGroup: cocoa.MSShapeGroup.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableBinder<T = any> extends NSBinder {
+  export interface NSTableBinder<T0 = void, T1 = void, T2 = void> extends NSBinder {
     _visibleColumnIndexesForKeyPath<R = unknown, P0 = unknown>(__visibleColumnIndexesForKeyPath: P0): R;
     _visibleRowIndexesForObject<R = unknown, P0 = unknown>(__visibleRowIndexesForObject: P0): R;
     _preparedContentRectForTableView<R = CGRect, P0 = unknown>(__preparedContentRectForTableView: P0): R;
@@ -20,8 +20,8 @@ declare namespace cocoa {
     _isTableColumn_boundWithKeyPath<R = boolean, P0 = unknown, P1 = unknown>(__isTableColumn: P0, _boundWithKeyPath: P1): R;
     _scrollSelectionToVisible<R = void>(): R;
   }
-  namespace classes {
-    export interface NSTableBinder<T = any> extends NSBinder {
+  namespace NSTableBinder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSBinder {
       alloc<R = NSTableBinder>(): R;
       new: <R = NSTableBinder>() => R;
       _editableBinderAtIndex_forTableView<R = unknown, P0 = number, P1 = unknown>(__editableBinderAtIndex: P0, _forTableView: P1): R;
@@ -30,4 +30,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTableBinder: cocoa.classes.NSTableBinder;
+declare const NSTableBinder: cocoa.NSTableBinder.CLASS;

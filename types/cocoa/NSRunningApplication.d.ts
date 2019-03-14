@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSRunningApplication<T = any> extends NSObject {
+  export interface NSRunningApplication<T0 = void, T1 = void, T2 = void> extends NSObject {
     terminate<R = boolean>(): R;
     forceTerminate<R = boolean>(): R;
     _isLSStopped<R = boolean>(): R;
@@ -57,8 +57,8 @@ declare namespace cocoa {
     finishedLaunching<R = boolean>(): R;
     terminated<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSRunningApplication<T = any> extends NSObject {
+  namespace NSRunningApplication {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSRunningApplication>(): R;
       new: <R = NSRunningApplication>() => R;
       terminateAutomaticallyTerminableApplications<R = void>(): R;
@@ -77,4 +77,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSRunningApplication: cocoa.classes.NSRunningApplication;
+declare const NSRunningApplication: cocoa.NSRunningApplication.CLASS;

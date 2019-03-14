@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDataSupplierManager<T = any> extends NSObject, MSDataSupplierDelegateProtocol {
+  export interface MSDataSupplierManager<T0 = void, T1 = void, T2 = void> extends NSObject, MSDataSupplierDelegateProtocol {
     cxx_destruct<R = void>(): R;
     loadPluginData<R = void>(): R;
     localDataForDefaultsKey<R = unknown, P0 = unknown>(_localDataForDefaultsKey: P0): R;
@@ -45,8 +45,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSDataSupplierManager<T = any> extends NSObject, MSDataSupplierDelegateProtocol {
+  namespace MSDataSupplierManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, MSDataSupplierDelegateProtocol {
       alloc<R = MSDataSupplierManager>(): R;
       new: <R = MSDataSupplierManager>() => R;
       validLocalDataFileSystemURL<R = boolean, P0 = unknown>(_validLocalDataFileSystemURL: P0): R;
@@ -58,4 +58,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSDataSupplierManager: cocoa.classes.MSDataSupplierManager;
+declare const MSDataSupplierManager: cocoa.MSDataSupplierManager.CLASS;

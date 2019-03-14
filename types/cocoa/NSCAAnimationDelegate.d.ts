@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCAAnimationDelegate<T = any> extends NSObject, CAAnimationDelegateProtocol {
+  export interface NSCAAnimationDelegate<T0 = void, T1 = void, T2 = void> extends NSObject, CAAnimationDelegateProtocol {
     cxx_destruct<R = void>(): R;
     initWithDidEndHandler<R = unknown, P0 = CDUnknownBlockType>(_initWithDidEndHandler: P0): R;
     initWithDidStartHandler<R = unknown, P0 = CDUnknownBlockType>(_initWithDidStartHandler: P0): R;
@@ -11,12 +11,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSCAAnimationDelegate<T = any> extends NSObject, CAAnimationDelegateProtocol {
+  namespace NSCAAnimationDelegate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, CAAnimationDelegateProtocol {
       alloc<R = NSCAAnimationDelegate>(): R;
       new: <R = NSCAAnimationDelegate>() => R;
     }
   }
 }
 
-declare const NSCAAnimationDelegate: cocoa.classes.NSCAAnimationDelegate;
+declare const NSCAAnimationDelegate: cocoa.NSCAAnimationDelegate.CLASS;

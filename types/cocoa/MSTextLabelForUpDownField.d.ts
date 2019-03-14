@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSTextLabelForUpDownField<T = any> extends NSTextField {
+  export interface MSTextLabelForUpDownField<T0 = void, T1 = void, T2 = void> extends NSTextField {
     cxx_destruct<R = void>(): R;
     canScrub<R = boolean>(): R;
     userClickedWithMouseDownEvent_mouseUpEvent<R = void, P0 = unknown, P1 = unknown>(_userClickedWithMouseDownEvent: P0, _mouseUpEvent: P1): R;
@@ -23,8 +23,8 @@ declare namespace cocoa {
     upDownTextField<R = MSUpDownProtocol>(): R;
     setUpDownTextField<R = void, P0 = MSUpDownProtocol>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSTextLabelForUpDownField<T = any> extends NSTextField {
+  namespace MSTextLabelForUpDownField {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTextField {
       alloc<R = MSTextLabelForUpDownField>(): R;
       new: <R = MSTextLabelForUpDownField>() => R;
       resizeCursorForFlags<R = unknown, P0 = number>(_resizeCursorForFlags: P0): R;
@@ -32,4 +32,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSTextLabelForUpDownField: cocoa.classes.MSTextLabelForUpDownField;
+declare const MSTextLabelForUpDownField: cocoa.MSTextLabelForUpDownField.CLASS;

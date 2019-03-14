@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUserScriptTask<T = any> extends NSObject {
+  export interface NSUserScriptTask<T0 = void, T1 = void, T2 = void> extends NSObject {
     executeWithInterpreter_arguments<R = void, P0 = unknown, P1 = unknown>(_executeWithInterpreter: P0, _arguments: P1): R;
     interpretErrorStatus_withOutput<R = unknown, P0 = number, P1 = unknown>(_interpretErrorStatus: P0, _withOutput: P1): R;
     executeWithCompletionHandler<R = void, P0 = CDUnknownBlockType>(_executeWithCompletionHandler: P0): R;
@@ -17,8 +17,8 @@ declare namespace cocoa {
     setShowsProgressInMenuBar<R = void, P0 = boolean>(_v: P0): R;
     scriptURL<R = NSURL>(): R;
   }
-  namespace classes {
-    export interface NSUserScriptTask<T = any> extends NSObject {
+  namespace NSUserScriptTask {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSUserScriptTask>(): R;
       new: <R = NSUserScriptTask>() => R;
       badFileError<R = unknown, P0 = unknown>(_badFileError: P0): R;
@@ -27,4 +27,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSUserScriptTask: cocoa.classes.NSUserScriptTask;
+declare const NSUserScriptTask: cocoa.NSUserScriptTask.CLASS;

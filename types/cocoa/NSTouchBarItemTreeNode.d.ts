@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarItemTreeNode<T = any> extends NSObject, NSCopyingProtocol {
+  export interface NSTouchBarItemTreeNode<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     flatFilterWithOrder_handler<R = unknown, P0 = number, P1 = CDUnknownBlockType>(_flatFilterWithOrder: P0, _handler: P1): R;
     enumerateWithOrder_handler<R = void, P0 = number, P1 = CDUnknownBlockType>(_enumerateWithOrder: P0, _handler: P1): R;
     enumerateWithOrder_descentHandler<R = void, P0 = number, P1 = CDUnknownBlockType>(_enumerateWithOrder: P0, _descentHandler: P1): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     setChildNodes<R = void, P0 = NSArray>(_v: P0): R;
     leafNodes<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface NSTouchBarItemTreeNode<T = any> extends NSObject, NSCopyingProtocol {
+  namespace NSTouchBarItemTreeNode {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = NSTouchBarItemTreeNode>(): R;
       new: <R = NSTouchBarItemTreeNode>() => R;
     }
   }
 }
 
-declare const NSTouchBarItemTreeNode: cocoa.classes.NSTouchBarItemTreeNode;
+declare const NSTouchBarItemTreeNode: cocoa.NSTouchBarItemTreeNode.CLASS;

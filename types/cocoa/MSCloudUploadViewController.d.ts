@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSCloudUploadViewController<T = any> extends MSCloudBaseViewController {
+  export interface MSCloudUploadViewController<T0 = void, T1 = void, T2 = void> extends MSCloudBaseViewController {
     updateProgress<R = void>(): R;
     cancel<R = void, P0 = unknown>(_cancel: P0): R;
     progressDidChangeNotification<R = void, P0 = unknown>(_progressDidChangeNotification: P0): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     buttonStackView<R = NSStackView>(): R;
     setButtonStackView<R = void, P0 = NSStackView>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSCloudUploadViewController<T = any> extends MSCloudBaseViewController {
+  namespace MSCloudUploadViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSCloudBaseViewController {
       alloc<R = MSCloudUploadViewController>(): R;
       new: <R = MSCloudUploadViewController>() => R;
     }
   }
 }
 
-declare const MSCloudUploadViewController: cocoa.classes.MSCloudUploadViewController;
+declare const MSCloudUploadViewController: cocoa.MSCloudUploadViewController.CLASS;

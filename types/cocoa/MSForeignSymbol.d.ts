@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSForeignSymbol<T = any> extends _MSForeignSymbol {
+  export interface MSForeignSymbol<T0 = void, T1 = void, T2 = void> extends _MSForeignSymbol {
     syncRemoteStyleOverrides<R = void, P0 = unknown>(_syncRemoteStyleOverrides: P0): R;
     remoteShareID<R = unknown>(): R;
     setLocalObject<R = void, P0 = unknown>(_setLocalObject: P0): R;
@@ -10,8 +10,8 @@ declare namespace cocoa {
     type_MSAssetSyncSheetObject<R = number>(): R;
     remoteSymbolID<R = NSString>(): R;
   }
-  namespace classes {
-    export interface MSForeignSymbol<T = any> extends _MSForeignSymbol {
+  namespace MSForeignSymbol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSForeignSymbol {
       alloc<R = MSForeignSymbol>(): R;
       new: <R = MSForeignSymbol>() => R;
       foreignSymbolWithMaster_inLibrary<R = unknown, P0 = unknown, P1 = unknown>(_foreignSymbolWithMaster: P0, _inLibrary: P1): R;
@@ -19,4 +19,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSForeignSymbol: cocoa.classes.MSForeignSymbol;
+declare const MSForeignSymbol: cocoa.MSForeignSymbol.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFileAttributes<T = any> extends NSDictionary {
+  export interface NSFileAttributes<T0 = void, T1 = void, T2 = void> extends NSDictionary {
     isDirectory<R = boolean>(): R;
     fileSystemFileNumber<R = number>(): R;
     fileSystemNumber<R = number>(): R;
@@ -20,8 +20,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     dealloc<R = void>(): R;
   }
-  namespace classes {
-    export interface NSFileAttributes<T = any> extends NSDictionary {
+  namespace NSFileAttributes {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSDictionary {
       attributesWithStat<R = unknown, P0 = stat>(_attributesWithStat: P0): R;
       _attributesAtURL_partialReturn_filterResourceFork_error<R = unknown, P0 = unknown, P1 = boolean, P2 = boolean, P3 = unknown>(__attributesAtURL: P0, _partialReturn: P1, _filterResourceFork: P2, _error: P3): R;
       _attributesAtPath_partialReturn_filterResourceFork_error<R = unknown, P0 = unknown, P1 = boolean, P2 = boolean, P3 = unknown>(__attributesAtPath: P0, _partialReturn: P1, _filterResourceFork: P2, _error: P3): R;
@@ -31,4 +31,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSFileAttributes: cocoa.classes.NSFileAttributes;
+declare const NSFileAttributes: cocoa.NSFileAttributes.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSStatusBarButtonCell<T = any> extends NSButtonCell {
+  export interface NSStatusBarButtonCell<T0 = void, T1 = void, T2 = void> extends NSButtonCell {
     dismiss<R = void>(): R;
     _isExitFullScreenButton<R = boolean>(): R;
     setDoubleAction<R = void, P0 = string>(_setDoubleAction: P0): R;
@@ -19,8 +19,8 @@ declare namespace cocoa {
     looksDisabled<R = boolean>(): R;
     setLooksDisabled<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSStatusBarButtonCell<T = any> extends NSButtonCell {
+  namespace NSStatusBarButtonCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSButtonCell {
       alloc<R = NSStatusBarButtonCell>(): R;
       new: <R = NSStatusBarButtonCell>() => R;
       popupStatusBarMenu_inRect_ofView_withEvent<R = void, P0 = unknown, P1 = CGRect, P2 = unknown, P3 = unknown>(_popupStatusBarMenu: P0, _inRect: P1, _ofView: P2, _withEvent: P3): R;
@@ -30,4 +30,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSStatusBarButtonCell: cocoa.classes.NSStatusBarButtonCell;
+declare const NSStatusBarButtonCell: cocoa.NSStatusBarButtonCell.CLASS;

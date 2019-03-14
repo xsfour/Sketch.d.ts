@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDistantObject<T = any> extends NSProxy, NSCodingProtocol {
+  export interface NSDistantObject<T0 = void, T1 = void, T2 = void> extends NSProxy, NSCodingProtocol {
     appendFormat<R = void, P0 = unknown>(_appendFormat: P0): R;
     stringByAppendingFormat<R = unknown, P0 = unknown>(_stringByAppendingFormat: P0): R;
     classForCoder<R = unknown>(): R;
@@ -13,8 +13,8 @@ declare namespace cocoa {
     initWithTarget_connection<R = unknown, P0 = unknown, P1 = unknown>(_initWithTarget: P0, _connection: P1): R;
     connectionForProxy<R = NSConnection>(): R;
   }
-  namespace classes {
-    export interface NSDistantObject<T = any> extends NSProxy, NSCodingProtocol {
+  namespace NSDistantObject {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSProxy, NSCodingProtocol {
       newDistantObjectWithCoder<R = unknown, P0 = unknown>(_newDistantObjectWithCoder: P0): R;
       proxyWithLocal_connection<R = unknown, P0 = unknown, P1 = unknown>(_proxyWithLocal: P0, _connection: P1): R;
       proxyWithTarget_connection<R = unknown, P0 = unknown, P1 = unknown>(_proxyWithTarget: P0, _connection: P1): R;
@@ -23,4 +23,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSDistantObject: cocoa.classes.NSDistantObject;
+declare const NSDistantObject: cocoa.NSDistantObject.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCollectionViewAccessibilityHelper<T = any> extends NSAccessibilityElement {
+  export interface NSCollectionViewAccessibilityHelper<T0 = void, T1 = void, T2 = void> extends NSAccessibilityElement {
     accessibilitySelectedChildrenDidChange<R = void>(): R;
     _dequeueSectionWithIndex<R = unknown, P0 = number>(__dequeueSectionWithIndex: P0): R;
     _trimSectionCacheToVisibleSections<R = void, P0 = unknown>(__trimSectionCacheToVisibleSections: P0): R;
@@ -38,12 +38,12 @@ declare namespace cocoa {
     accessibilitySelectedCells<R = NSArray>(): R;
     setAccessibilitySelectedCells<R = void, P0 = NSArray>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSCollectionViewAccessibilityHelper<T = any> extends NSAccessibilityElement {
+  namespace NSCollectionViewAccessibilityHelper {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSAccessibilityElement {
       alloc<R = NSCollectionViewAccessibilityHelper>(): R;
       new: <R = NSCollectionViewAccessibilityHelper>() => R;
     }
   }
 }
 
-declare const NSCollectionViewAccessibilityHelper: cocoa.classes.NSCollectionViewAccessibilityHelper;
+declare const NSCollectionViewAccessibilityHelper: cocoa.NSCollectionViewAccessibilityHelper.CLASS;

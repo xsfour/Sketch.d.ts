@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarItemPositionAnimationDelegateProtocol<T = any> extends NSObjectProtocol {
+  export interface NSTouchBarItemPositionAnimationDelegateProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     runPositionAnimation<R = void>(): R;
   }
-  namespace classes {
-    export interface NSTouchBarItemPositionAnimationDelegateProtocol<T = any> extends NSObjectProtocol {  }
+  namespace NSTouchBarItemPositionAnimationDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSEventHandler<T = any> extends NSResponder, NSDraggingDestinationProtocol, NSTouchBarDelegateProtocol {
+  export interface MSEventHandler<T0 = void, T1 = void, T2 = void> extends NSResponder, NSDraggingDestinationProtocol, NSTouchBarDelegateProtocol {
     cxx_destruct<R = void>(): R;
     willStartExporting<R = void>(): R;
     documentWindow<R = unknown>(): R;
@@ -173,8 +173,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSEventHandler<T = any> extends NSResponder, NSDraggingDestinationProtocol, NSTouchBarDelegateProtocol {
+  namespace MSEventHandler {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSResponder, NSDraggingDestinationProtocol, NSTouchBarDelegateProtocol {
       alloc<R = MSEventHandler>(): R;
       new: <R = MSEventHandler>() => R;
       eventHandlerWithManager<R = unknown, P0 = unknown>(_eventHandlerWithManager: P0): R;
@@ -182,4 +182,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSEventHandler: cocoa.classes.MSEventHandler;
+declare const MSEventHandler: cocoa.MSEventHandler.CLASS;

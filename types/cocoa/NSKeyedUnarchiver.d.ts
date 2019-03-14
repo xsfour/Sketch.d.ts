@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSKeyedUnarchiver<T = any> extends NSCoder {
+  export interface NSKeyedUnarchiver<T0 = void, T1 = void, T2 = void> extends NSCoder {
     _containsNextUnkeyedObject<R = boolean>(): R;
     _currentUniqueIdentifier<R = number>(): R;
     _decodePropertyListForKey<R = unknown, P0 = unknown>(__decodePropertyListForKey: P0): R;
@@ -30,8 +30,8 @@ declare namespace cocoa {
     delegate<R = NSKeyedUnarchiverDelegate>(): R;
     setDelegate<R = void, P0 = NSKeyedUnarchiverDelegate>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSKeyedUnarchiver<T = any> extends NSCoder {
+  namespace NSKeyedUnarchiver {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSCoder {
       alloc<R = NSKeyedUnarchiver>(): R;
       new: <R = NSKeyedUnarchiver>() => R;
       unarchiveTopLevelObjectWithData_error<R = unknown, P0 = unknown, P1 = unknown>(_unarchiveTopLevelObjectWithData: P0, _error: P1): R;
@@ -45,4 +45,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSKeyedUnarchiver: cocoa.classes.NSKeyedUnarchiver;
+declare const NSKeyedUnarchiver: cocoa.NSKeyedUnarchiver.CLASS;

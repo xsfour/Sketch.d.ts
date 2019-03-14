@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBezierFillet<T = any> extends NSObject {
+  export interface MSBezierFillet<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     debugQuickLookObject<R = unknown>(): R;
     addArcToBezierPath_orCGPath<R = void, P0 = unknown, P1 = CGPath>(_addArcToBezierPath: P0, _orCGPath: P1): R;
@@ -22,8 +22,8 @@ declare namespace cocoa {
     endAngle<R = number>(): R;
     startAngle<R = number>(): R;
   }
-  namespace classes {
-    export interface MSBezierFillet<T = any> extends NSObject {
+  namespace MSBezierFillet {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSBezierFillet>(): R;
       new: <R = MSBezierFillet>() => R;
       bezierFilletWithSegment1_segment2_filletRadius<R = unknown, P0 = unknown, P1 = unknown, P2 = number>(_bezierFilletWithSegment1: P0, _segment2: P1, _filletRadius: P2): R;
@@ -37,4 +37,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSBezierFillet: cocoa.classes.MSBezierFillet;
+declare const MSBezierFillet: cocoa.MSBezierFillet.CLASS;

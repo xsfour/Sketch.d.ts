@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface addrinfo<T = any> {}
-  namespace classes {
-    export interface addrinfo<T = any> {  }
+  export interface addrinfo<T0 = void, T1 = void, T2 = void> {}
+  namespace addrinfo {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const addrinfo: cocoa.classes.addrinfo;
+declare const addrinfo: cocoa.addrinfo.CLASS;

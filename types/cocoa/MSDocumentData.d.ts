@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDocumentData<T = any> extends _MSDocumentData, MSLayerContainmentProtocol, MSDocumentDataProtocol {
+  export interface MSDocumentData<T0 = void, T1 = void, T2 = void> extends _MSDocumentData, MSLayerContainmentProtocol, MSDocumentDataProtocol {
     determineCurrentArtboard<R = void>(): R;
     refreshOverlay<R = void>(): R;
     refreshOverlayInRect<R = void, P0 = CGRect>(_refreshOverlayInRect: P0): R;
@@ -75,8 +75,8 @@ declare namespace cocoa {
     setCurrentPage<R = void, P0 = MSPage>(_v: P0): R;
     pages<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface MSDocumentData<T = any> extends _MSDocumentData, MSLayerContainmentProtocol, MSDocumentDataProtocol {
+  namespace MSDocumentData {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSDocumentData, MSLayerContainmentProtocol, MSDocumentDataProtocol {
       alloc<R = MSDocumentData>(): R;
       new: <R = MSDocumentData>() => R;
       initialize<R = void>(): R;
@@ -84,4 +84,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSDocumentData: cocoa.classes.MSDocumentData;
+declare const MSDocumentData: cocoa.MSDocumentData.CLASS;

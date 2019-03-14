@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInsertMenuAction<T = any> extends MSDocumentAction {
+  export interface MSInsertMenuAction<T0 = void, T1 = void, T2 = void> extends MSDocumentAction {
     addInsertMenuItemsFor_usingMenuBuilder_forMenu<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(_addInsertMenuItemsFor: P0, _usingMenuBuilder: P1, _forMenu: P2): R;
     addInsertSharedTextToMenu<R = void, P0 = unknown>(_addInsertSharedTextToMenu: P0): R;
     addInsertSymbolsToMenu<R = void, P0 = unknown>(_addInsertSymbolsToMenu: P0): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     documentCloseObserver<R = NSObject>(): R;
     setDocumentCloseObserver<R = void, P0 = NSObject>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSInsertMenuAction<T = any> extends MSDocumentAction {
+  namespace MSInsertMenuAction {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSDocumentAction {
       alloc<R = MSInsertMenuAction>(): R;
       new: <R = MSInsertMenuAction>() => R;
     }
   }
 }
 
-declare const MSInsertMenuAction: cocoa.classes.MSInsertMenuAction;
+declare const MSInsertMenuAction: cocoa.MSInsertMenuAction.CLASS;

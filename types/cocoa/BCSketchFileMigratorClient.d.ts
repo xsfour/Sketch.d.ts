@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCSketchFileMigratorClient<T = any> extends NSObject {
+  export interface BCSketchFileMigratorClient<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     handleXPCError<R = void, P0 = unknown>(_handleXPCError: P0): R;
     waitUntilDoneIfSynchronous<R = void>(): R;
@@ -20,12 +20,12 @@ declare namespace cocoa {
     connection<R = NSXPCConnection>(): R;
     setConnection<R = void, P0 = NSXPCConnection>(_v: P0): R;
   }
-  namespace classes {
-    export interface BCSketchFileMigratorClient<T = any> extends NSObject {
+  namespace BCSketchFileMigratorClient {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = BCSketchFileMigratorClient>(): R;
       new: <R = BCSketchFileMigratorClient>() => R;
     }
   }
 }
 
-declare const BCSketchFileMigratorClient: cocoa.classes.BCSketchFileMigratorClient;
+declare const BCSketchFileMigratorClient: cocoa.BCSketchFileMigratorClient.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDictionaryController<T = any> extends NSArrayController {
+  export interface NSDictionaryController<T0 = void, T1 = void, T2 = void> extends NSArrayController {
     _noteKeyValuePairChangedValue<R = void, P0 = unknown>(__noteKeyValuePairChangedValue: P0): R;
     _noteKeyValuePairChangedKey<R = void, P0 = unknown>(__noteKeyValuePairChangedKey: P0): R;
     _buildAndAssignNewContentDictionary<R = void>(): R;
@@ -33,12 +33,12 @@ declare namespace cocoa {
     initialKey<R = NSString>(): R;
     setInitialKey<R = void, P0 = NSString>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSDictionaryController<T = any> extends NSArrayController {
+  namespace NSDictionaryController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSArrayController {
       alloc<R = NSDictionaryController>(): R;
       new: <R = NSDictionaryController>() => R;
     }
   }
 }
 
-declare const NSDictionaryController: cocoa.classes.NSDictionaryController;
+declare const NSDictionaryController: cocoa.NSDictionaryController.CLASS;

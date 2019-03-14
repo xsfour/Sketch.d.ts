@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSScrollingMomentumCalculatorBase<T = any> extends _NSScrollingMomentumCalculator {
+  export interface _NSScrollingMomentumCalculatorBase<T0 = void, T1 = void, T2 = void> extends _NSScrollingMomentumCalculator {
     setDecelerationRate<R = void, P0 = number>(_setDecelerationRate: P0): R;
     decelerationRate<R = number>(): R;
     setTolerance<R = void, P0 = CGSize>(_setTolerance: P0): R;
@@ -24,8 +24,8 @@ declare namespace cocoa {
     horizontalScrollDecelerationFactor<R = number>(): R;
     dealloc<R = void>(): R;
   }
-  namespace classes {
-    export interface _NSScrollingMomentumCalculatorBase<T = any> extends _NSScrollingMomentumCalculator {
+  namespace _NSScrollingMomentumCalculatorBase {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _NSScrollingMomentumCalculator {
       alloc<R = _NSScrollingMomentumCalculatorBase>(): R;
       new: <R = _NSScrollingMomentumCalculatorBase>() => R;
     }

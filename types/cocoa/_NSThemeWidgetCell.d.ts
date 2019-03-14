@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSThemeWidgetCell<T = any> extends NSButtonCell {
+  export interface _NSThemeWidgetCell<T0 = void, T1 = void, T2 = void> extends NSButtonCell {
     update<R = void>(): R;
     getState<R = number, P0 = unknown>(_getState: P0): R;
     _drawCustomImage_withFrame_inView<R = void, P0 = unknown, P1 = CGRect, P2 = unknown>(__drawCustomImage: P0, _withFrame: P1, _inView: P2): R;
@@ -30,8 +30,8 @@ declare namespace cocoa {
     temporarilyDisabled<R = boolean>(): R;
     setTemporarilyDisabled<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSThemeWidgetCell<T = any> extends NSButtonCell {
+  namespace _NSThemeWidgetCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSButtonCell {
       alloc<R = _NSThemeWidgetCell>(): R;
       new: <R = _NSThemeWidgetCell>() => R;
     }

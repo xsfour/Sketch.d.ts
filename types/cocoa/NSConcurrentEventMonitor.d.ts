@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSConcurrentEventMonitor<T = any> extends NSObject {
+  export interface NSConcurrentEventMonitor<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     callback<R = CDUnknownBlockType>(): R;
     setCallback<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     isValid<R = boolean>(): R;
     setIsValid<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSConcurrentEventMonitor<T = any> extends NSObject {
+  namespace NSConcurrentEventMonitor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSConcurrentEventMonitor>(): R;
       new: <R = NSConcurrentEventMonitor>() => R;
     }
   }
 }
 
-declare const NSConcurrentEventMonitor: cocoa.classes.NSConcurrentEventMonitor;
+declare const NSConcurrentEventMonitor: cocoa.NSConcurrentEventMonitor.CLASS;

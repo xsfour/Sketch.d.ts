@@ -1,17 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTitlebarAccessoryClipView<T = any> extends NSClipView {
-    cxx_destruct<R = void>(): R;
-    accessoryViewController<R = NSTitlebarAccessoryViewController>(): R;
-    setAccessoryViewController<R = void, P0 = NSTitlebarAccessoryViewController>(_v: P0): R;
-  }
-  namespace classes {
-    export interface NSTitlebarAccessoryClipView<T = any> extends NSClipView {
+  export interface NSTitlebarAccessoryClipView<T0 = void, T1 = void, T2 = void> extends NSClipView {}
+  namespace NSTitlebarAccessoryClipView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSClipView {
       alloc<R = NSTitlebarAccessoryClipView>(): R;
       new: <R = NSTitlebarAccessoryClipView>() => R;
     }
   }
 }
 
-declare const NSTitlebarAccessoryClipView: cocoa.classes.NSTitlebarAccessoryClipView;
+declare const NSTitlebarAccessoryClipView: cocoa.NSTitlebarAccessoryClipView.CLASS;

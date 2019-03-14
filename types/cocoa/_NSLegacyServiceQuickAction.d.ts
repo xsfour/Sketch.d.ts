@@ -1,21 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSLegacyServiceQuickAction<T = any> extends _NSQuickAction {
-    canMoveToTrash<R = boolean>(): R;
-    _bundleURL<R = unknown>(): R;
-    _preferencesClass<R = unknown>(): R;
-    _validationClass<R = unknown>(): R;
-    needsItemSource<R = boolean>(): R;
-    type<R = number>(): R;
-    hasColor<R = boolean>(): R;
-    hasIcon<R = boolean>(): R;
-    title<R = unknown>(): R;
-    initForPresentation_legacyServiceAction<R = unknown, P0 = unknown, P1 = unknown>(_initForPresentation: P0, _legacyServiceAction: P1): R;
-    _legacyServiceAction<R = _NSServiceAction>(): R;
-  }
-  namespace classes {
-    export interface _NSLegacyServiceQuickAction<T = any> extends _NSQuickAction {
+  export interface _NSLegacyServiceQuickAction<T0 = void, T1 = void, T2 = void> extends _NSQuickAction {}
+  namespace _NSLegacyServiceQuickAction {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _NSQuickAction {
       alloc<R = _NSLegacyServiceQuickAction>(): R;
       new: <R = _NSLegacyServiceQuickAction>() => R;
       quickActionForPresentation_serviceAction<R = unknown, P0 = unknown, P1 = unknown>(_quickActionForPresentation: P0, _serviceAction: P1): R;

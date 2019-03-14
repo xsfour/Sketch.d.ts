@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPreferencesPluginInfo<T = any> extends NSObject {
+  export interface MSPreferencesPluginInfo<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     pluginManager<R = unknown>(): R;
     latestPluginUpdate<R = unknown>(): R;
@@ -28,8 +28,8 @@ declare namespace cocoa {
     icon<R = NSImage>(): R;
     attributedTitle<R = NSAttributedString>(): R;
   }
-  namespace classes {
-    export interface MSPreferencesPluginInfo<T = any> extends NSObject {
+  namespace MSPreferencesPluginInfo {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSPreferencesPluginInfo>(): R;
       new: <R = MSPreferencesPluginInfo>() => R;
       pluginInfoWithName<R = unknown, P0 = unknown>(_pluginInfoWithName: P0): R;
@@ -38,4 +38,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSPreferencesPluginInfo: cocoa.classes.MSPreferencesPluginInfo;
+declare const MSPreferencesPluginInfo: cocoa.MSPreferencesPluginInfo.CLASS;

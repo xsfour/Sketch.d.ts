@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSViewAnimator<T = any> extends _NSObjectAnimator {
+  export interface _NSViewAnimator<T0 = void, T1 = void, T2 = void> extends _NSObjectAnimator {
     setValue_forKeyPath<R = void, P0 = unknown, P1 = unknown>(_setValue: P0, _forKeyPath: P1): R;
     subviews<R = unknown>(): R;
     superview<R = unknown>(): R;
@@ -34,7 +34,7 @@ declare namespace cocoa {
     _shouldDoLayerAnimation<R = boolean>(): R;
     _shouldDoAnimation<R = boolean>(): R;
   }
-  namespace classes {
-    export interface _NSViewAnimator<T = any> extends _NSObjectAnimator {  }
+  namespace _NSViewAnimator {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _NSObjectAnimator {}
   }
 }

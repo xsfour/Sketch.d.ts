@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCollectionViewDelegateDFRCustomizationLayout<T = any> {}
-  namespace classes {
-    export interface NSCollectionViewDelegateDFRCustomizationLayout<T = any> {  }
+  export interface NSCollectionViewDelegateDFRCustomizationLayout<T0 = void, T1 = void, T2 = void> {}
+  namespace NSCollectionViewDelegateDFRCustomizationLayout {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSCollectionViewDelegateDFRCustomizationLayout: cocoa.classes.NSCollectionViewDelegateDFRCustomizationLayout;
+declare const NSCollectionViewDelegateDFRCustomizationLayout: cocoa.NSCollectionViewDelegateDFRCustomizationLayout.CLASS;

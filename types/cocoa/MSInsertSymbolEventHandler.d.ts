@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInsertSymbolEventHandler<T = any> extends MSEventHandler {
+  export interface MSInsertSymbolEventHandler<T0 = void, T1 = void, T2 = void> extends MSEventHandler {
     generatePreviewAndRefreshWhenDone<R = void>(): R;
     pasteboardContainsSymbolInfo<R = boolean, P0 = unknown>(_pasteboardContainsSymbolInfo: P0): R;
     previewImage<R = unknown>(): R;
@@ -23,12 +23,12 @@ declare namespace cocoa {
     symbolReference<R = MSSymbolMasterReference>(): R;
     setSymbolReference<R = void, P0 = MSSymbolMasterReference>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSInsertSymbolEventHandler<T = any> extends MSEventHandler {
+  namespace MSInsertSymbolEventHandler {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSEventHandler {
       alloc<R = MSInsertSymbolEventHandler>(): R;
       new: <R = MSInsertSymbolEventHandler>() => R;
     }
   }
 }
 
-declare const MSInsertSymbolEventHandler: cocoa.classes.MSInsertSymbolEventHandler;
+declare const MSInsertSymbolEventHandler: cocoa.MSInsertSymbolEventHandler.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSValue<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  export interface NSValue<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
     initWithBytes_objCType<R = unknown, P0 = void, P1 = string>(_initWithBytes: P0, _objCType: P1): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
@@ -24,11 +24,11 @@ declare namespace cocoa {
     isNSValue__<R = boolean>(): R;
     replacementObjectForPortCoder<R = unknown, P0 = unknown>(_replacementObjectForPortCoder: P0): R;
     objCType<R = string>(): R;
-    // + NSValue(NSValueUIGeometryExtensions,UIKitStubs,TreeAsDictionarySupport):
+    // + NSValue(TreeAsDictionarySupport): 
     treeAsDictionary<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSValue<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  namespace NSValue {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
       alloc<R = NSValue>(): R;
       new: <R = NSValue>() => R;
       valueWithEdgeInsets<R = unknown, P0 = NSEdgeInsets>(_valueWithEdgeInsets: P0): R;
@@ -43,11 +43,12 @@ declare namespace cocoa {
       value_withObjCType<R = unknown, P0 = void, P1 = string>(_value: P0, _withObjCType: P1): R;
       allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
       initialize<R = void>(): R;
-      // + NSValue(NSValueUIGeometryExtensions,UIKitStubs,TreeAsDictionarySupport):
+      // + NSValue(NSValueUIGeometryExtensions): 
       _valueWithCGPoint<R = unknown, P0 = CGPoint>(__valueWithCGPoint: P0): R;
+      // + NSValue(UIKitStubs): 
       _valueWithCGRect<R = unknown, P0 = CGRect>(__valueWithCGRect: P0): R;
     }
   }
 }
 
-declare const NSValue: cocoa.classes.NSValue;
+declare const NSValue: cocoa.NSValue.CLASS;

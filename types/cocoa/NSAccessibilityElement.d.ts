@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAccessibilityElement<T = any> extends NSObject, NSAccessibilityProtocol, NSAccessibilityElementProtocol {
+  export interface NSAccessibilityElement<T0 = void, T1 = void, T2 = void> extends NSObject, NSAccessibilityProtocol, NSAccessibilityElementProtocol {
     dealloc<R = void>(): R;
     accessibilityHitTest<R = unknown, P0 = CGPoint>(_accessibilityHitTest: P0): R;
     accessibilityShouldUseUniqueId<R = boolean>(): R;
@@ -284,8 +284,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSAccessibilityElement<T = any> extends NSObject, NSAccessibilityProtocol, NSAccessibilityElementProtocol {
+  namespace NSAccessibilityElement {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSAccessibilityProtocol, NSAccessibilityElementProtocol {
       alloc<R = NSAccessibilityElement>(): R;
       new: <R = NSAccessibilityElement>() => R;
       accessibilityElementWithRole_frame_label_parent<R = unknown, P0 = unknown, P1 = CGRect, P2 = unknown, P3 = unknown>(_accessibilityElementWithRole: P0, _frame: P1, _label: P2, _parent: P3): R;
@@ -293,4 +293,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSAccessibilityElement: cocoa.classes.NSAccessibilityElement;
+declare const NSAccessibilityElement: cocoa.NSAccessibilityElement.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPath<T = any> extends NSObject, NSCopyingProtocol {
+  export interface MSPath<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     cxx_destruct<R = void>(): R;
     isEqualToPath_epsilon<R = boolean, P0 = unknown, P1 = number>(_isEqualToPath: P0, _epsilon: P1): R;
     isEqualToPath<R = boolean, P0 = unknown>(_isEqualToPath: P0): R;
@@ -85,8 +85,8 @@ declare namespace cocoa {
     bounds<R = CGRect>(): R;
     safeBounds<R = CGRect>(): R;
   }
-  namespace classes {
-    export interface MSPath<T = any> extends NSObject, NSCopyingProtocol {
+  namespace MSPath {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = MSPath>(): R;
       new: <R = MSPath>() => R;
       pathWithPoints_pointCount_close<R = unknown, P0 = CGPoint, P1 = number, P2 = boolean>(_pathWithPoints: P0, _pointCount: P1, _close: P2): R;
@@ -102,4 +102,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSPath: cocoa.classes.MSPath;
+declare const MSPath: cocoa.MSPath.CLASS;

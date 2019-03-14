@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDiff<T = any> extends NSObject {
+  export interface MSDiff<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     description<R = unknown>(): R;
     overlayDirtyDiffRectForPage<R = CGRect, P0 = unknown>(_overlayDirtyDiffRectForPage: P0): R;
@@ -12,12 +12,12 @@ declare namespace cocoa {
     firstObjectRoot<R = MSSubtreeRoot>(): R;
     setFirstObjectRoot<R = void, P0 = MSSubtreeRoot>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSDiff<T = any> extends NSObject {
+  namespace MSDiff {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSDiff>(): R;
       new: <R = MSDiff>() => R;
     }
   }
 }
 
-declare const MSDiff: cocoa.classes.MSDiff;
+declare const MSDiff: cocoa.MSDiff.CLASS;

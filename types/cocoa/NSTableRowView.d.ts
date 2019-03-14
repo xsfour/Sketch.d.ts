@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableRowView<T = any> extends NSView, NSAccessibilityRowProtocol {
+  export interface NSTableRowView<T0 = void, T1 = void, T2 = void> extends NSView, NSAccessibilityRowProtocol {
     removeViewAtUnknownColumn<R = void, P0 = unknown>(_removeViewAtUnknownColumn: P0): R;
     associatedViewsForColumn<R = unknown, P0 = number>(_associatedViewsForColumn: P0): R;
     performHandler_onAssociatedViewsWithColumn<R = void, P0 = CDUnknownBlockType, P1 = number>(_performHandler: P0, _onAssociatedViewsWithColumn: P1): R;
@@ -183,12 +183,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSTableRowView<T = any> extends NSView, NSAccessibilityRowProtocol {
+  namespace NSTableRowView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView, NSAccessibilityRowProtocol {
       alloc<R = NSTableRowView>(): R;
       new: <R = NSTableRowView>() => R;
     }
   }
 }
 
-declare const NSTableRowView: cocoa.classes.NSTableRowView;
+declare const NSTableRowView: cocoa.NSTableRowView.CLASS;

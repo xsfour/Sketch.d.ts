@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSGridConstructor<T = any> extends NSObject {
+  export interface MSGridConstructor<T0 = void, T1 = void, T2 = void> extends NSObject {
     duplicateLayers<R = unknown, P0 = unknown>(_duplicateLayers: P0): R;
     makeAllLayers<R = unknown, P0 = unknown>(_makeAllLayers: P0): R;
     distributionRectForLayer<R = CGRect, P0 = unknown>(_distributionRectForLayer: P0): R;
@@ -11,12 +11,12 @@ declare namespace cocoa {
     options<R = unknown>(): R;
     setOptions<R = void, P0 = unknown>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSGridConstructor<T = any> extends NSObject {
+  namespace MSGridConstructor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSGridConstructor>(): R;
       new: <R = MSGridConstructor>() => R;
     }
   }
 }
 
-declare const MSGridConstructor: cocoa.classes.MSGridConstructor;
+declare const MSGridConstructor: cocoa.MSGridConstructor.CLASS;

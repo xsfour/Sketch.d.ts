@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSToolbarImageRepView<T = any> extends NSView {
+  export interface _NSToolbarImageRepView<T0 = void, T1 = void, T2 = void> extends NSView {
     _itemIdentifiers<R = unknown>(): R;
     _inactiveImageRep<R = unknown>(): R;
     _activeImageRep<R = unknown>(): R;
@@ -22,8 +22,8 @@ declare namespace cocoa {
     logicalImageSize<R = CGSize>(): R;
     setLogicalImageSize<R = void, P0 = CGSize>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSToolbarImageRepView<T = any> extends NSView {
+  namespace _NSToolbarImageRepView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = _NSToolbarImageRepView>(): R;
       new: <R = _NSToolbarImageRepView>() => R;
     }

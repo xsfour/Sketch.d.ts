@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSFullScreenSpace<T = any> extends NSObject, NSAnimationDelegateProtocol {
+  export interface _NSFullScreenSpace<T0 = void, T1 = void, T2 = void> extends NSObject, NSAnimationDelegateProtocol {
     _showTileDividerWindows<R = void>(): R;
     _hideTileDividerWindows<R = void>(): R;
     _removeEastTileDividerWindow<R = void>(): R;
@@ -98,8 +98,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSFullScreenSpace<T = any> extends NSObject, NSAnimationDelegateProtocol {
+  namespace _NSFullScreenSpace {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSAnimationDelegateProtocol {
       alloc<R = _NSFullScreenSpace>(): R;
       new: <R = _NSFullScreenSpace>() => R;
       tileRectForSpaceWithID<R = CGRect, P0 = number>(_tileRectForSpaceWithID: P0): R;

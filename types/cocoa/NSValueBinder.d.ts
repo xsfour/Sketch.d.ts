@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSValueBinder<T = any> extends NSEditorBinder, NSEditorProtocol {
+  export interface NSValueBinder<T0 = void, T1 = void, T2 = void> extends NSEditorBinder, NSEditorProtocol {
     _didPresentDiscardEditingSheetWithRecovery_contextInfo<R = void, P0 = boolean, P1 = unknown>(__didPresentDiscardEditingSheetWithRecovery: P0, _contextInfo: P1): R;
     _presentDiscardEditingSheetWithError_discardEditingCallback_otherCallback_callbackContextInfo_relatedToBinding<R = void, P0 = unknown, P1 = string, P2 = string, P3 = void, P4 = unknown>(__presentDiscardEditingSheetWithError: P0, _discardEditingCallback: P1, _otherCallback: P2, _callbackContextInfo: P3, _relatedToBinding: P4): R;
     _presentDiscardEditingAlertPanelWithError_relatedToBinding<R = boolean, P0 = unknown, P1 = unknown>(__presentDiscardEditingAlertPanelWithError: P0, _relatedToBinding: P1): R;
@@ -56,8 +56,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSValueBinder<T = any> extends NSEditorBinder, NSEditorProtocol {
+  namespace NSValueBinder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSEditorBinder, NSEditorProtocol {
       alloc<R = NSValueBinder>(): R;
       new: <R = NSValueBinder>() => R;
       initialize<R = void>(): R;
@@ -65,4 +65,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSValueBinder: cocoa.classes.NSValueBinder;
+declare const NSValueBinder: cocoa.NSValueBinder.CLASS;

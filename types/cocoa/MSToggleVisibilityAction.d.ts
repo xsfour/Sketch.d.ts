@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSToggleVisibilityAction<T = any> extends MSDocumentAction {
+  export interface MSToggleVisibilityAction<T0 = void, T1 = void, T2 = void> extends MSDocumentAction {
     tabbedWindows<R = unknown>(): R;
     shouldRunForAllTabsInWindow<R = boolean>(): R;
     prepareForNewWindow<R = void>(): R;
@@ -10,12 +10,12 @@ declare namespace cocoa {
     show<R = void>(): R;
     isActive<R = boolean>(): R;
   }
-  namespace classes {
-    export interface MSToggleVisibilityAction<T = any> extends MSDocumentAction {
+  namespace MSToggleVisibilityAction {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSDocumentAction {
       alloc<R = MSToggleVisibilityAction>(): R;
       new: <R = MSToggleVisibilityAction>() => R;
     }
   }
 }
 
-declare const MSToggleVisibilityAction: cocoa.classes.MSToggleVisibilityAction;
+declare const MSToggleVisibilityAction: cocoa.MSToggleVisibilityAction.CLASS;

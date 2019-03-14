@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSBundleResourceRequest<T = any> extends NSObject, NSProgressReportingProtocol {
+  export interface NSBundleResourceRequest<T0 = void, T1 = void, T2 = void> extends NSObject, NSProgressReportingProtocol {
     endAccessingResources<R = void>(): R;
     conditionallyBeginAccessingResourcesWithCompletionHandler<R = void, P0 = CDUnknownBlockType>(_conditionallyBeginAccessingResourcesWithCompletionHandler: P0): R;
     beginAccessingResourcesWithCompletionHandler<R = void, P0 = CDUnknownBlockType>(_beginAccessingResourcesWithCompletionHandler: P0): R;
@@ -17,8 +17,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSBundleResourceRequest<T = any> extends NSObject, NSProgressReportingProtocol {
+  namespace NSBundleResourceRequest {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSProgressReportingProtocol {
       alloc<R = NSBundleResourceRequest>(): R;
       new: <R = NSBundleResourceRequest>() => R;
       _assetPackBundleForBundle_withAssetPackID<R = unknown, P0 = unknown, P1 = unknown>(__assetPackBundleForBundle: P0, _withAssetPackID: P1): R;
@@ -29,4 +29,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSBundleResourceRequest: cocoa.classes.NSBundleResourceRequest;
+declare const NSBundleResourceRequest: cocoa.NSBundleResourceRequest.CLASS;

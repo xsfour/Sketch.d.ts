@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDocumentControllerOpening<T = any> extends NSObject {
+  export interface NSDocumentControllerOpening<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     error<R = NSError>(): R;
     setError<R = void, P0 = NSError>(_v: P0): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     url<R = NSURL>(): R;
     setUrl<R = void, P0 = NSURL>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSDocumentControllerOpening<T = any> extends NSObject {
+  namespace NSDocumentControllerOpening {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSDocumentControllerOpening>(): R;
       new: <R = NSDocumentControllerOpening>() => R;
     }
   }
 }
 
-declare const NSDocumentControllerOpening: cocoa.classes.NSDocumentControllerOpening;
+declare const NSDocumentControllerOpening: cocoa.NSDocumentControllerOpening.CLASS;

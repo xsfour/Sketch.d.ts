@@ -1,11 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSHUDWindowController<T = any> extends NSWindowController, NSWindowDelegateProtocol {
+  export interface MSHUDWindowController<T0 = void, T1 = void, T2 = void> extends NSWindowController, NSWindowDelegateProtocol {
+    cxx_destruct<R = void>(): R;
     toggle<R = void>(): R;
     trackIfDocumentWindow<R = void, P0 = unknown>(_trackIfDocumentWindow: P0): R;
     unregisterForNotifications<R = void>(): R;
     registerForNotifications<R = void>(): R;
+    windowDidLoad<R = void>(): R;
     hudViewController<R = MSHUDViewController>(): R;
     setHudViewController<R = void, P0 = MSHUDViewController>(_v: P0): R;
     hudView<R = NSView>(): R;
@@ -16,8 +18,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSHUDWindowController<T = any> extends NSWindowController, NSWindowDelegateProtocol {
+  namespace MSHUDWindowController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSWindowController, NSWindowDelegateProtocol {
       alloc<R = MSHUDWindowController>(): R;
       new: <R = MSHUDWindowController>() => R;
       makeHUD<R = unknown>(): R;
@@ -25,4 +27,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSHUDWindowController: cocoa.classes.MSHUDWindowController;
+declare const MSHUDWindowController: cocoa.MSHUDWindowController.CLASS;

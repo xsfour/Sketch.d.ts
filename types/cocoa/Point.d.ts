@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface Point<T = any> {}
-  namespace classes {
-    export interface Point<T = any> {  }
+  export interface Point<T0 = void, T1 = void, T2 = void> {}
+  namespace Point {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const Point: cocoa.classes.Point;
+declare const Point: cocoa.Point.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFileCoordinator<T = any> extends NSObject {
+  export interface NSFileCoordinator<T0 = void, T1 = void, T2 = void> extends NSObject {
     cancel<R = void>(): R;
     itemAtURL_didChangeUbiquityAttributes<R = void, P0 = unknown, P1 = unknown>(_itemAtURL: P0, _didChangeUbiquityAttributes: P1): R;
     _isValidUbiquityAttribute<R = boolean, P0 = unknown>(__isValidUbiquityAttribute: P0): R;
@@ -48,8 +48,8 @@ declare namespace cocoa {
     purposeIdentifier<R = NSString>(): R;
     setPurposeIdentifier<R = void, P0 = NSString>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSFileCoordinator<T = any> extends NSObject {
+  namespace NSFileCoordinator {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSFileCoordinator>(): R;
       new: <R = NSFileCoordinator>() => R;
       _canonicalURLForURL<R = unknown, P0 = unknown>(__canonicalURLForURL: P0): R;
@@ -101,4 +101,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSFileCoordinator: cocoa.classes.NSFileCoordinator;
+declare const NSFileCoordinator: cocoa.NSFileCoordinator.CLASS;

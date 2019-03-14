@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAKLayoutItem<T = any> {}
-  namespace classes {
-    export interface NSAKLayoutItem<T = any> {  }
+  export interface NSAKLayoutItem<T0 = void, T1 = void, T2 = void> {}
+  namespace NSAKLayoutItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSAKLayoutItem: cocoa.classes.NSAKLayoutItem;
+declare const NSAKLayoutItem: cocoa.NSAKLayoutItem.CLASS;

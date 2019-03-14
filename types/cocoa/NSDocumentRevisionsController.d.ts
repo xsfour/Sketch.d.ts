@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDocumentRevisionsController<T = any> extends NSObject, NSFilePresenterProtocol {
+  export interface NSDocumentRevisionsController<T0 = void, T1 = void, T2 = void> extends NSObject, NSFilePresenterProtocol {
     startDownloadingCurrentVersion<R = void, P0 = unknown>(_startDownloadingCurrentVersion: P0): R;
     _startDownloadingStackItem_completionHandler<R = void, P0 = unknown, P1 = CDUnknownBlockType>(__startDownloadingStackItem: P0, _completionHandler: P1): R;
     _finishedDownloadingNonLocalStackItem<R = void, P0 = unknown>(__finishedDownloadingNonLocalStackItem: P0): R;
@@ -142,8 +142,8 @@ declare namespace cocoa {
     primaryPresentedItemURL<R = NSURL>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSDocumentRevisionsController<T = any> extends NSObject, NSFilePresenterProtocol {
+  namespace NSDocumentRevisionsController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSFilePresenterProtocol {
       alloc<R = NSDocumentRevisionsController>(): R;
       new: <R = NSDocumentRevisionsController>() => R;
       _windowForDocument<R = unknown, P0 = unknown>(__windowForDocument: P0): R;
@@ -159,4 +159,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSDocumentRevisionsController: cocoa.classes.NSDocumentRevisionsController;
+declare const NSDocumentRevisionsController: cocoa.NSDocumentRevisionsController.CLASS;

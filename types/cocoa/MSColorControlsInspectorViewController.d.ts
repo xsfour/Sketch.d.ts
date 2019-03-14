@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSColorControlsInspectorViewController<T = any> extends MSStylePartInspectorViewController {
+  export interface MSColorControlsInspectorViewController<T0 = void, T1 = void, T2 = void> extends MSStylePartInspectorViewController {
     reset<R = void, P0 = unknown>(_reset: P0): R;
     contrastField<R = MSUpDownTextField>(): R;
     setContrastField<R = void, P0 = MSUpDownTextField>(_v: P0): R;
@@ -20,8 +20,8 @@ declare namespace cocoa {
     hueAdaptor<R = MSMathInspectorValueAdaptor>(): R;
     setHueAdaptor<R = void, P0 = MSMathInspectorValueAdaptor>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSColorControlsInspectorViewController<T = any> extends MSStylePartInspectorViewController {
+  namespace MSColorControlsInspectorViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSStylePartInspectorViewController {
       alloc<R = MSColorControlsInspectorViewController>(): R;
       new: <R = MSColorControlsInspectorViewController>() => R;
       setupTextField_adaptor_valueTransformer<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(_setupTextField: P0, _adaptor: P1, _valueTransformer: P2): R;
@@ -29,4 +29,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSColorControlsInspectorViewController: cocoa.classes.MSColorControlsInspectorViewController;
+declare const MSColorControlsInspectorViewController: cocoa.MSColorControlsInspectorViewController.CLASS;

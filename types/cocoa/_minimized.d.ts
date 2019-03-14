@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _minimized<T = any> {}
-  namespace classes {
-    export interface _minimized<T = any> {  }
+  export interface _minimized<T0 = void, T1 = void, T2 = void> {}
+  namespace _minimized {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

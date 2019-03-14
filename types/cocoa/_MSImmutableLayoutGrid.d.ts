@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSImmutableLayoutGrid<T = any> extends MSImmutableBaseGrid {
+  export interface _MSImmutableLayoutGrid<T0 = void, T1 = void, T2 = void> extends MSImmutableBaseGrid {
     totalWidth<R = number>(): R;
     setTotalWidth<R = void, P0 = number>(_v: P0): R;
     rowHeightMultiplication<R = number>(): R;
@@ -25,8 +25,8 @@ declare namespace cocoa {
     columnWidth<R = number>(): R;
     setColumnWidth<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface _MSImmutableLayoutGrid<T = any> extends MSImmutableBaseGrid {
+  namespace _MSImmutableLayoutGrid {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSImmutableBaseGrid {
       alloc<R = _MSImmutableLayoutGrid>(): R;
       new: <R = _MSImmutableLayoutGrid>() => R;
     }

@@ -1,8 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSWindowScaleAnimation<T = any> extends NSAnimation {
+  export interface NSWindowScaleAnimation<T0 = void, T1 = void, T2 = void> extends NSAnimation {
     setCurrentProgress<R = void, P0 = number>(_setCurrentProgress: P0): R;
+    startAnimation<R = void>(): R;
+    dealloc<R = void>(): R;
+    _screen<R = unknown>(): R;
     tag<R = number>(): R;
     setTag<R = void, P0 = number>(_v: P0): R;
     endScale<R = number>(): R;
@@ -12,12 +15,12 @@ declare namespace cocoa {
     window<R = NSWindow>(): R;
     setWindow<R = void, P0 = NSWindow>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSWindowScaleAnimation<T = any> extends NSAnimation {
+  namespace NSWindowScaleAnimation {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSAnimation {
       alloc<R = NSWindowScaleAnimation>(): R;
       new: <R = NSWindowScaleAnimation>() => R;
     }
   }
 }
 
-declare const NSWindowScaleAnimation: cocoa.classes.NSWindowScaleAnimation;
+declare const NSWindowScaleAnimation: cocoa.NSWindowScaleAnimation.CLASS;

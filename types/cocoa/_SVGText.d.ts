@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _SVGText<T = any> extends SVGDrawableElement {
+  export interface _SVGText<T0 = void, T1 = void, T2 = void> extends SVGDrawableElement {
     y<R = number>(): R;
     setY<R = void, P0 = number>(_v: P0): R;
     x<R = number>(): R;
@@ -21,8 +21,8 @@ declare namespace cocoa {
     adjustSpacingAndGlyphs<R = boolean>(): R;
     setAdjustSpacingAndGlyphs<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface _SVGText<T = any> extends SVGDrawableElement {
+  namespace _SVGText {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends SVGDrawableElement {
       alloc<R = _SVGText>(): R;
       new: <R = _SVGText>() => R;
     }

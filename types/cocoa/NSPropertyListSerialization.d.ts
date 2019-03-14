@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPropertyListSerialization<T = any> extends NSObject {}
-  namespace classes {
-    export interface NSPropertyListSerialization<T = any> extends NSObject {
+  export interface NSPropertyListSerialization<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace NSPropertyListSerialization {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSPropertyListSerialization>(): R;
       new: <R = NSPropertyListSerialization>() => R;
       propertyListWithStream_options_format_error<R = unknown, P0 = unknown, P1 = number, P2 = number, P3 = unknown>(_propertyListWithStream: P0, _options: P1, _format: P2, _error: P3): R;
@@ -18,4 +18,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPropertyListSerialization: cocoa.classes.NSPropertyListSerialization;
+declare const NSPropertyListSerialization: cocoa.NSPropertyListSerialization.CLASS;

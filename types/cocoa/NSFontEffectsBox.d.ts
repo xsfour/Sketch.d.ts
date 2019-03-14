@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFontEffectsBox<T = any> extends NSBox, NSToolbarDelegateProtocol {
+  export interface NSFontEffectsBox<T0 = void, T1 = void, T2 = void> extends NSBox, NSToolbarDelegateProtocol {
     _validateShadowEffect<R = void, P0 = boolean>(__validateShadowEffect: P0): R;
     _validateDocumentColor<R = void, P0 = boolean>(__validateDocumentColor: P0): R;
     _validateTextColor<R = void, P0 = boolean>(__validateTextColor: P0): R;
@@ -37,12 +37,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSFontEffectsBox<T = any> extends NSBox, NSToolbarDelegateProtocol {
+  namespace NSFontEffectsBox {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSBox, NSToolbarDelegateProtocol {
       alloc<R = NSFontEffectsBox>(): R;
       new: <R = NSFontEffectsBox>() => R;
     }
   }
 }
 
-declare const NSFontEffectsBox: cocoa.classes.NSFontEffectsBox;
+declare const NSFontEffectsBox: cocoa.NSFontEffectsBox.CLASS;

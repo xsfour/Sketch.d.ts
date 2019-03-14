@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPluginsPreferenceIconView<T = any> extends NSView {
+  export interface MSPluginsPreferenceIconView<T0 = void, T1 = void, T2 = void> extends NSView {
     cxx_destruct<R = void>(): R;
     previewFrame<R = CGRect>(): R;
     contentPath<R = unknown>(): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     setIcon<R = void, P0 = NSImage>(_v: P0): R;
     placeHolderImage<R = NSImage>(): R;
   }
-  namespace classes {
-    export interface MSPluginsPreferenceIconView<T = any> extends NSView {
+  namespace MSPluginsPreferenceIconView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = MSPluginsPreferenceIconView>(): R;
       new: <R = MSPluginsPreferenceIconView>() => R;
     }
   }
 }
 
-declare const MSPluginsPreferenceIconView: cocoa.classes.MSPluginsPreferenceIconView;
+declare const MSPluginsPreferenceIconView: cocoa.MSPluginsPreferenceIconView.CLASS;

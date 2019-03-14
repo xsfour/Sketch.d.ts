@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPDFScanner<T = any> extends PDFScanner {
+  export interface MSPDFScanner<T0 = void, T1 = void, T2 = void> extends PDFScanner {
     setTextTransform_resettingLineTransform<R = void, P0 = unknown, P1 = boolean>(_setTextTransform: P0, _resettingLineTransform: P1): R;
     gradientForLayer_pattern<R = unknown, P0 = unknown, P1 = unknown>(_gradientForLayer: P0, _pattern: P1): R;
     transformedPath<R = unknown>(): R;
@@ -27,12 +27,12 @@ declare namespace cocoa {
     rootLayer<R = MSLayerGroup>(): R;
     setRootLayer<R = void, P0 = MSLayerGroup>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSPDFScanner<T = any> extends PDFScanner {
+  namespace MSPDFScanner {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends PDFScanner {
       alloc<R = MSPDFScanner>(): R;
       new: <R = MSPDFScanner>() => R;
     }
   }
 }
 
-declare const MSPDFScanner: cocoa.classes.MSPDFScanner;
+declare const MSPDFScanner: cocoa.MSPDFScanner.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSToolbarConstructor<T = any> extends NSObject, NSToolbarDelegateProtocol {
+  export interface MSToolbarConstructor<T0 = void, T1 = void, T2 = void> extends NSObject, NSToolbarDelegateProtocol {
     cxx_destruct<R = void>(): R;
     validateToolbarItems<R = void>(): R;
     constructToolbarForWindow<R = void, P0 = unknown>(_constructToolbarForWindow: P0): R;
@@ -21,12 +21,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSToolbarConstructor<T = any> extends NSObject, NSToolbarDelegateProtocol {
+  namespace MSToolbarConstructor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSToolbarDelegateProtocol {
       alloc<R = MSToolbarConstructor>(): R;
       new: <R = MSToolbarConstructor>() => R;
     }
   }
 }
 
-declare const MSToolbarConstructor: cocoa.classes.MSToolbarConstructor;
+declare const MSToolbarConstructor: cocoa.MSToolbarConstructor.CLASS;

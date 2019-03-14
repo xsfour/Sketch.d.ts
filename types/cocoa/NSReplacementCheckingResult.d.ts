@@ -1,15 +1,15 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSReplacementCheckingResult<T = any> extends NSSubstitutionCheckingResult {
+  export interface NSReplacementCheckingResult<T0 = void, T1 = void, T2 = void> extends NSSubstitutionCheckingResult {
     resultType<R = number>(): R;
   }
-  namespace classes {
-    export interface NSReplacementCheckingResult<T = any> extends NSSubstitutionCheckingResult {
+  namespace NSReplacementCheckingResult {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSSubstitutionCheckingResult {
       alloc<R = NSReplacementCheckingResult>(): R;
       new: <R = NSReplacementCheckingResult>() => R;
     }
   }
 }
 
-declare const NSReplacementCheckingResult: cocoa.classes.NSReplacementCheckingResult;
+declare const NSReplacementCheckingResult: cocoa.NSReplacementCheckingResult.CLASS;

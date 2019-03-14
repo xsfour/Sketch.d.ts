@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMenuItemCell<T = any> extends NSButtonCell {
+  export interface NSMenuItemCell<T0 = void, T1 = void, T2 = void> extends NSButtonCell {
     state<R = number>(): R;
     representedObject<R = unknown>(): R;
     setRepresentedObject<R = void, P0 = unknown>(_setRepresentedObject: P0): R;
@@ -42,8 +42,8 @@ declare namespace cocoa {
     menuItem<R = NSMenuItem>(): R;
     setMenuItem<R = void, P0 = NSMenuItem>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSMenuItemCell<T = any> extends NSButtonCell {
+  namespace NSMenuItemCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSButtonCell {
       alloc<R = NSMenuItemCell>(): R;
       new: <R = NSMenuItemCell>() => R;
       _systemColorsChanged<R = void, P0 = unknown>(__systemColorsChanged: P0): R;
@@ -52,4 +52,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSMenuItemCell: cocoa.classes.NSMenuItemCell;
+declare const NSMenuItemCell: cocoa.NSMenuItemCell.CLASS;

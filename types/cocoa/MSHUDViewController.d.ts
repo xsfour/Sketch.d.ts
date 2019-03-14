@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSHUDViewController<T = any> extends NSViewController {
+  export interface MSHUDViewController<T0 = void, T1 = void, T2 = void> extends NSViewController {
     cxx_destruct<R = void>(): R;
     updateAverage<R = void, P0 = number>(_updateAverage: P0): R;
     updateSelection<R = void, P0 = unknown>(_updateSelection: P0): R;
@@ -30,12 +30,12 @@ declare namespace cocoa {
     fps<R = NSTextField>(): R;
     setFps<R = void, P0 = NSTextField>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSHUDViewController<T = any> extends NSViewController {
+  namespace MSHUDViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController {
       alloc<R = MSHUDViewController>(): R;
       new: <R = MSHUDViewController>() => R;
     }
   }
 }
 
-declare const MSHUDViewController: cocoa.classes.MSHUDViewController;
+declare const MSHUDViewController: cocoa.MSHUDViewController.CLASS;

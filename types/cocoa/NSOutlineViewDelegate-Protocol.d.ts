@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSOutlineViewDelegateProtocol<T = any> extends NSControlTextEditingDelegateProtocol {
+  export interface NSOutlineViewDelegateProtocol<T0 = void, T1 = void, T2 = void> extends NSControlTextEditingDelegateProtocol {
     outlineViewItemDidCollapse<R = void, P0 = NSNotification>(_outlineViewItemDidCollapse: P0): R;
     outlineViewItemWillCollapse<R = void, P0 = NSNotification>(_outlineViewItemWillCollapse: P0): R;
     outlineViewItemDidExpand<R = void, P0 = NSNotification>(_outlineViewItemDidExpand: P0): R;
@@ -39,7 +39,7 @@ declare namespace cocoa {
     outlineView_rowViewForItem<R = NSTableRowView, P0 = NSOutlineView, P1 = unknown>(_outlineView: P0, _rowViewForItem: P1): R;
     outlineView_viewForTableColumn_item<R = NSView, P0 = NSOutlineView, P1 = NSTableColumn, P2 = unknown>(_outlineView: P0, _viewForTableColumn: P1, _item: P2): R;
   }
-  namespace classes {
-    export interface NSOutlineViewDelegateProtocol<T = any> extends NSControlTextEditingDelegateProtocol {  }
+  namespace NSOutlineViewDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSControlTextEditingDelegateProtocol {}
   }
 }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface AFAmazonS3RequestSerializer<T = any> extends AFHTTPRequestSerializer {
+  export interface AFAmazonS3RequestSerializer<T0 = void, T1 = void, T2 = void> extends AFHTTPRequestSerializer {
     preSignedRequestWithRequest_expiration_error<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_preSignedRequestWithRequest: P0, _expiration: P1, _error: P2): R;
     requestBySettingAuthorizationHeadersForRequest_error<R = unknown, P0 = unknown, P1 = unknown>(_requestBySettingAuthorizationHeadersForRequest: P0, _error: P1): R;
     setAccessKeyID_secret<R = void, P0 = unknown, P1 = unknown>(_setAccessKeyID: P0, _secret: P1): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     setBucket<R = void, P0 = NSString>(_v: P0): R;
     endpointURL<R = NSURL>(): R;
   }
-  namespace classes {
-    export interface AFAmazonS3RequestSerializer<T = any> extends AFHTTPRequestSerializer {
+  namespace AFAmazonS3RequestSerializer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends AFHTTPRequestSerializer {
       alloc<R = AFAmazonS3RequestSerializer>(): R;
       new: <R = AFAmazonS3RequestSerializer>() => R;
     }
   }
 }
 
-declare const AFAmazonS3RequestSerializer: cocoa.classes.AFAmazonS3RequestSerializer;
+declare const AFAmazonS3RequestSerializer: cocoa.AFAmazonS3RequestSerializer.CLASS;

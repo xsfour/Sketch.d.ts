@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSliderCell<T = any> extends NSActionCell {
+  export interface NSSliderCell<T0 = void, T1 = void, T2 = void> extends NSActionCell {
     _drawCustomTrackWithTrackRect_inView<R = void, P0 = CGRect, P1 = unknown>(__drawCustomTrackWithTrackRect: P0, _inView: P1): R;
     _usesCustomTrackImage<R = boolean>(): R;
     titleCell<R = unknown>(): R;
@@ -133,12 +133,12 @@ declare namespace cocoa {
     _orthogonalTickMarkInset<R = number>(): R;
     _primaryTickMarkInset<R = number>(): R;
   }
-  namespace classes {
-    export interface NSSliderCell<T = any> extends NSActionCell {
+  namespace NSSliderCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSActionCell {
       alloc<R = NSSliderCell>(): R;
       new: <R = NSSliderCell>() => R;
     }
   }
 }
 
-declare const NSSliderCell: cocoa.classes.NSSliderCell;
+declare const NSSliderCell: cocoa.NSSliderCell.CLASS;

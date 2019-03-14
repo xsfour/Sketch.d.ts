@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSHMDMetalSession<T = any> extends NSObject {
+  export interface NSHMDMetalSession<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     initWithDevice_error<R = unknown, P0 = unknown, P1 = unknown>(_initWithDevice: P0, _error: P1): R;
     invalidate<R = void>(): R;
@@ -22,8 +22,8 @@ declare namespace cocoa {
     setDrawableSize<R = void, P0 = CGSize>(_v: P0): R;
     device<R = NSHMDDevice>(): R;
   }
-  namespace classes {
-    export interface NSHMDMetalSession<T = any> extends NSObject {
+  namespace NSHMDMetalSession {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSHMDMetalSession>(): R;
       new: <R = NSHMDMetalSession>() => R;
       keyPathsForValuesAffectingValid<R = unknown>(): R;
@@ -31,4 +31,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSHMDMetalSession: cocoa.classes.NSHMDMetalSession;
+declare const NSHMDMetalSession: cocoa.NSHMDMetalSession.CLASS;

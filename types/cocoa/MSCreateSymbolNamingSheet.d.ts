@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSCreateSymbolNamingSheet<T = any> extends CHSheetController {
+  export interface MSCreateSymbolNamingSheet<T0 = void, T1 = void, T2 = void> extends CHSheetController {
     validateConfirmButton<R = void>(): R;
     controlTextDidChange<R = void, P0 = unknown>(_controlTextDidChange: P0): R;
     setShouldShowMoveCheckbox<R = void, P0 = boolean>(_setShouldShowMoveCheckbox: P0): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     moveSymbolToPageCheckbox<R = NSButton>(): R;
     setMoveSymbolToPageCheckbox<R = void, P0 = NSButton>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSCreateSymbolNamingSheet<T = any> extends CHSheetController {
+  namespace MSCreateSymbolNamingSheet {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends CHSheetController {
       alloc<R = MSCreateSymbolNamingSheet>(): R;
       new: <R = MSCreateSymbolNamingSheet>() => R;
     }
   }
 }
 
-declare const MSCreateSymbolNamingSheet: cocoa.classes.MSCreateSymbolNamingSheet;
+declare const MSCreateSymbolNamingSheet: cocoa.MSCreateSymbolNamingSheet.CLASS;

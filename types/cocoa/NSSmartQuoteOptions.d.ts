@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSmartQuoteOptions<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  export interface NSSmartQuoteOptions<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     description<R = unknown>(): R;
@@ -14,8 +14,8 @@ declare namespace cocoa {
     rightSingleQuote<R = NSString>(): R;
     leftSingleQuote<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSSmartQuoteOptions<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  namespace NSSmartQuoteOptions {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
       alloc<R = NSSmartQuoteOptions>(): R;
       new: <R = NSSmartQuoteOptions>() => R;
       smartQuoteOptionsForLocale<R = unknown, P0 = unknown>(_smartQuoteOptionsForLocale: P0): R;
@@ -23,4 +23,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSSmartQuoteOptions: cocoa.classes.NSSmartQuoteOptions;
+declare const NSSmartQuoteOptions: cocoa.NSSmartQuoteOptions.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDownloadController<T = any> extends NSObject {
+  export interface NSDownloadController<T0 = void, T1 = void, T2 = void> extends NSObject {
     window<R = unknown>(): R;
     informativeText<R = unknown>(): R;
     setInformativeText<R = void, P0 = unknown>(_setInformativeText: P0): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     initWithDictionary<R = unknown, P0 = unknown>(_initWithDictionary: P0): R;
     _setMessageAndInformativeText<R = void>(): R;
   }
-  namespace classes {
-    export interface NSDownloadController<T = any> extends NSObject {
+  namespace NSDownloadController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSDownloadController>(): R;
       new: <R = NSDownloadController>() => R;
     }
   }
 }
 
-declare const NSDownloadController: cocoa.classes.NSDownloadController;
+declare const NSDownloadController: cocoa.NSDownloadController.CLASS;

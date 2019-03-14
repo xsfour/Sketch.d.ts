@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPointsEventHandler<T = any> extends MSEventHandler {
+  export interface MSPointsEventHandler<T0 = void, T1 = void, T2 = void> extends MSEventHandler {
     convertPointToAbsoluteCoordinates<R = CGPoint, P0 = CGPoint>(_convertPointToAbsoluteCoordinates: P0): R;
     snapPoint_toLines<R = CGPoint, P0 = CGPoint, P1 = unknown>(_snapPoint: P0, _toLines: P1): R;
     pointsToSnap<R = unknown>(): R;
@@ -30,12 +30,12 @@ declare namespace cocoa {
     setLayer<R = void, P0 = MSStyledLayer>(_v: P0): R;
     coordinateSpace<R = MSLayer>(): R;
   }
-  namespace classes {
-    export interface MSPointsEventHandler<T = any> extends MSEventHandler {
+  namespace MSPointsEventHandler {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSEventHandler {
       alloc<R = MSPointsEventHandler>(): R;
       new: <R = MSPointsEventHandler>() => R;
     }
   }
 }
 
-declare const MSPointsEventHandler: cocoa.classes.MSPointsEventHandler;
+declare const MSPointsEventHandler: cocoa.MSPointsEventHandler.CLASS;

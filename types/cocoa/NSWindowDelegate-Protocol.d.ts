@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSWindowDelegateProtocol<T = any> {
+  export interface NSWindowDelegateProtocol<T0 = void, T1 = void, T2 = void> {
     windowDidChangeOcclusionState<R = void, P0 = NSNotification>(_windowDidChangeOcclusionState: P0): R;
     windowDidExitVersionBrowser<R = void, P0 = NSNotification>(_windowDidExitVersionBrowser: P0): R;
     windowWillExitVersionBrowser<R = void, P0 = NSNotification>(_windowWillExitVersionBrowser: P0): R;
@@ -54,7 +54,7 @@ declare namespace cocoa {
     windowWillReturnFieldEditor_toObject<R = unknown, P0 = NSWindow, P1 = unknown>(_windowWillReturnFieldEditor: P0, _toObject: P1): R;
     windowShouldClose<R = boolean, P0 = NSWindow>(_windowShouldClose: P0): R;
   }
-  namespace classes {
-    export interface NSWindowDelegateProtocol<T = any> {  }
+  namespace NSWindowDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

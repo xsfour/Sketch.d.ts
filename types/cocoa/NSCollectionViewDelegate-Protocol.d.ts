@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCollectionViewDelegateProtocol<T = any> {
+  export interface NSCollectionViewDelegateProtocol<T0 = void, T1 = void, T2 = void> {
     collectionView_transitionLayoutForOldLayout_newLayout<R = NSCollectionViewTransitionLayout, P0 = NSCollectionView, P1 = NSCollectionViewLayout, P2 = NSCollectionViewLayout>(_collectionView: P0, _transitionLayoutForOldLayout: P1, _newLayout: P2): R;
     collectionView_didEndDisplayingSupplementaryView_forElementOfKind_atIndexPath<R = void, P0 = NSCollectionView, P1 = NSView, P2 = NSString, P3 = NSIndexPath>(_collectionView: P0, _didEndDisplayingSupplementaryView: P1, _forElementOfKind: P2, _atIndexPath: P3): R;
     collectionView_didEndDisplayingItem_forRepresentedObjectAtIndexPath<R = void, P0 = NSCollectionView, P1 = NSCollectionViewItem, P2 = NSIndexPath>(_collectionView: P0, _didEndDisplayingItem: P1, _forRepresentedObjectAtIndexPath: P2): R;
@@ -32,7 +32,7 @@ declare namespace cocoa {
     collectionView_canDragItemsAtIndexes_withEvent<R = boolean, P0 = NSCollectionView, P1 = NSIndexSet, P2 = NSEvent>(_collectionView: P0, _canDragItemsAtIndexes: P1, _withEvent: P2): R;
     collectionView_canDragItemsAtIndexPaths_withEvent<R = boolean, P0 = NSCollectionView, P1 = NSSet, P2 = NSEvent>(_collectionView: P0, _canDragItemsAtIndexPaths: P1, _withEvent: P2): R;
   }
-  namespace classes {
-    export interface NSCollectionViewDelegateProtocol<T = any> {  }
+  namespace NSCollectionViewDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

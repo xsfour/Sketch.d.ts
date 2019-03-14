@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSInspectorBar<T = any> extends NSObject, NSCodingProtocol {
+  export interface NSInspectorBar<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
     convertAttributes<R = unknown, P0 = unknown>(_convertAttributes: P0): R;
     convertFont<R = unknown, P0 = unknown>(_convertFont: P0): R;
     _setIsOwnedByTextView<R = void, P0 = boolean>(__setIsOwnedByTextView: P0): R;
@@ -32,8 +32,8 @@ declare namespace cocoa {
     defaultItemIdentifiers<R = NSArray>(): R;
     setDefaultItemIdentifiers<R = void, P0 = NSArray>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSInspectorBar<T = any> extends NSObject, NSCodingProtocol {
+  namespace NSInspectorBar {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
       alloc<R = NSInspectorBar>(): R;
       new: <R = NSInspectorBar>() => R;
       _sharedSpacerItem<R = unknown>(): R;
@@ -43,4 +43,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSInspectorBar: cocoa.classes.NSInspectorBar;
+declare const NSInspectorBar: cocoa.NSInspectorBar.CLASS;

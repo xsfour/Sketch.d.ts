@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSCGContextPool<T = any> extends BCObjectPool {
+  export interface MSCGContextPool<T0 = void, T1 = void, T2 = void> extends BCObjectPool {
     recycleContext<R = void, P0 = CGContext>(_recycleContext: P0): R;
     vendOrCreateContextOfSize<R = CGContext, P0 = CGSize>(_vendOrCreateContextOfSize: P0): R;
     vendsSize_colorSpace<R = boolean, P0 = CGSize, P1 = CGColorSpace>(_vendsSize: P0, _colorSpace: P1): R;
@@ -12,9 +12,9 @@ declare namespace cocoa {
     colorSpace<R = CGColorSpace>(): R;
     setColorSpace<R = void, P0 = CGColorSpace>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSCGContextPool<T = any> extends BCObjectPool {  }
+  namespace MSCGContextPool {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends BCObjectPool {}
   }
 }
 
-declare const MSCGContextPool: cocoa.classes.MSCGContextPool;
+declare const MSCGContextPool: cocoa.MSCGContextPool.CLASS;

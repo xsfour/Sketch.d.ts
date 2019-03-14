@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColor<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol, NSPasteboardReadingProtocol, NSPasteboardWritingProtocol {
+  export interface NSColor<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol, NSPasteboardReadingProtocol, NSPasteboardWritingProtocol {
     _getSemanticallyEquivalentVisualEffectMaterial<R = boolean, P0 = number>(__getSemanticallyEquivalentVisualEffectMaterial: P0): R;
     colorWithSystemEffect<R = unknown, P0 = number>(_colorWithSystemEffect: P0): R;
     shadowWithLevel<R = unknown, P0 = number>(_shadowWithLevel: P0): R;
@@ -68,23 +68,28 @@ declare namespace cocoa {
     debugDescription<R = NSString>(): R;
     description<R = NSString>(): R;
     superclass<R = unknown>(): R;
-    // + NSColor(CHColorExtensions,ColorTranslationWithoutConversion,MSTheme,Manifest,NSColor_String,TreeAsDictionarySupport):
+    // + NSColor(CHColorExtensions): 
     isWhite<R = boolean>(): R;
     fuzzyIsEqual<R = boolean, P0 = unknown>(_fuzzyIsEqual: P0): R;
     newCGColor<R = CGColor>(): R;
+    // + NSColor(ColorTranslationWithoutConversion): 
     colorTranslatedToColorSpace<R = unknown, P0 = unknown>(_colorTranslatedToColorSpace: P0): R;
+    // + NSColor(MSTheme): 
     setThemeCachingKey<R = void, P0 = unknown>(_setThemeCachingKey: P0): R;
     themeCachingKey<R = unknown>(): R;
     highlightedColor<R = unknown>(): R;
     colorByApplyingModifier<R = unknown, P0 = unknown>(_colorByApplyingModifier: P0): R;
     colorByApplyingModifiers<R = unknown, P0 = unknown>(_colorByApplyingModifiers: P0): R;
+    // + NSColor(NSColor_String): 
     stringValueWithAlpha<R = unknown, P0 = boolean>(_stringValueWithAlpha: P0): R;
     hexValue<R = unknown>(): R;
+    // + NSColor(TreeAsDictionarySupport): 
     treeAsDictionary<R = unknown>(): R;
+    // + NSColor(Manifest):
     manifestComponents<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface NSColor<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol, NSPasteboardReadingProtocol, NSPasteboardWritingProtocol {
+  namespace NSColor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol, NSPasteboardReadingProtocol, NSPasteboardWritingProtocol {
       alloc<R = NSColor>(): R;
       new: <R = NSColor>() => R;
       currentControlTint<R = number>(): R;
@@ -278,9 +283,10 @@ declare namespace cocoa {
       controlFillColor<R = unknown>(): R;
       scriptingColorWithDescriptor<R = unknown, P0 = unknown>(_scriptingColorWithDescriptor: P0): R;
       transparencyCheckboardPatternColor<R = unknown>(): R;
-      // + NSColor(CHColorExtensions,ColorTranslationWithoutConversion,MSTheme,Manifest,NSColor_String,TreeAsDictionarySupport):
+      // + NSColor(CHColorExtensions): 
       colorWithGray_alpha<R = unknown, P0 = number, P1 = number>(_colorWithGray: P0, _alpha: P1): R;
       colorWithGray<R = unknown, P0 = number>(_colorWithGray: P0): R;
+      // + NSColor(MSTheme): 
       tintColorMildDark<R = unknown>(): R;
       tintColorMild<R = unknown>(): R;
       tintColorNormalDark<R = unknown>(): R;
@@ -291,4 +297,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSColor: cocoa.classes.NSColor;
+declare const NSColor: cocoa.NSColor.CLASS;

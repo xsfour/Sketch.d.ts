@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLayoutRule<T = any> {}
-  namespace classes {
-    export interface NSLayoutRule<T = any> {  }
+  export interface NSLayoutRule<T0 = void, T1 = void, T2 = void> {}
+  namespace NSLayoutRule {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSLayoutRule: cocoa.classes.NSLayoutRule;
+declare const NSLayoutRule: cocoa.NSLayoutRule.CLASS;

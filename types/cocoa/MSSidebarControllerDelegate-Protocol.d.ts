@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSidebarControllerDelegateProtocol<T = any> {
+  export interface MSSidebarControllerDelegateProtocol<T0 = void, T1 = void, T2 = void> {
     layerHasHoverStateInCanvas<R = boolean, P0 = unknown>(_layerHasHoverStateInCanvas: P0): R;
     sidebarController_hoveredLayerDidChangeTo<R = void, P0 = MSSidebarListController, P1 = MSHoverableItem>(_sidebarController: P0, _hoveredLayerDidChangeTo: P1): R;
     sidebarControllerContextMenuItemsForCurrentSelection<R = NSArray, P0 = MSSidebarListController>(_sidebarControllerContextMenuItemsForCurrentSelection: P0): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     documentData<R = MSDocumentData>(): R;
     defaultFirstResponder<R = NSResponder>(): R;
   }
-  namespace classes {
-    export interface MSSidebarControllerDelegateProtocol<T = any> {  }
+  namespace MSSidebarControllerDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

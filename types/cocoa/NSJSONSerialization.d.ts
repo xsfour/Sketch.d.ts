@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSJSONSerialization<T = any> extends NSObject {}
-  namespace classes {
-    export interface NSJSONSerialization<T = any> extends NSObject {
+  export interface NSJSONSerialization<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace NSJSONSerialization {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSJSONSerialization>(): R;
       new: <R = NSJSONSerialization>() => R;
       JSONObjectWithStream_options_error<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_JSONObjectWithStream: P0, _options: P1, _error: P2): R;
@@ -16,4 +16,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSJSONSerialization: cocoa.classes.NSJSONSerialization;
+declare const NSJSONSerialization: cocoa.NSJSONSerialization.CLASS;

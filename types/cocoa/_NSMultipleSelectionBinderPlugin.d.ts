@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSMultipleSelectionBinderPlugin<T = any> {}
-  namespace classes {
-    export interface _NSMultipleSelectionBinderPlugin<T = any> {  }
+  export interface _NSMultipleSelectionBinderPlugin<T0 = void, T1 = void, T2 = void> {}
+  namespace _NSMultipleSelectionBinderPlugin {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

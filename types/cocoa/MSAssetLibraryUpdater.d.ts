@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAssetLibraryUpdater<T = any> extends NSObject {
+  export interface MSAssetLibraryUpdater<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     dictionaryValueForDownloadTaskWithIdentifier_key<R = unknown, P0 = unknown, P1 = unknown>(_dictionaryValueForDownloadTaskWithIdentifier: P0, _key: P1): R;
     completionHandlerForIdentifier<R = CDUnknownBlockType, P0 = unknown>(_completionHandlerForIdentifier: P0): R;
@@ -21,8 +21,8 @@ declare namespace cocoa {
     downloadManager<R = BCDownloadManager>(): R;
     setDownloadManager<R = void, P0 = BCDownloadManager>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSAssetLibraryUpdater<T = any> extends NSObject {
+  namespace MSAssetLibraryUpdater {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSAssetLibraryUpdater>(): R;
       new: <R = MSAssetLibraryUpdater>() => R;
       downloadManagerSessionConfiguration<R = unknown>(): R;
@@ -30,4 +30,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSAssetLibraryUpdater: cocoa.classes.MSAssetLibraryUpdater;
+declare const MSAssetLibraryUpdater: cocoa.MSAssetLibraryUpdater.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSTextLayer<T = any> extends MSStyledLayer {
+  export interface _MSTextLayer<T0 = void, T1 = void, T2 = void> extends MSStyledLayer {
     textBehaviour<R = number>(): R;
     setTextBehaviour<R = void, P0 = number>(_v: P0): R;
     preview<R = MSImageData>(): R;
@@ -17,8 +17,8 @@ declare namespace cocoa {
     attributedString<R = MSAttributedString>(): R;
     setAttributedString<R = void, P0 = MSAttributedString>(_v: P0): R;
   }
-  namespace classes {
-    export interface _MSTextLayer<T = any> extends MSStyledLayer {
+  namespace _MSTextLayer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSStyledLayer {
       alloc<R = _MSTextLayer>(): R;
       new: <R = _MSTextLayer>() => R;
     }

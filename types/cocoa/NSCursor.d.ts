@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCursor<T = any> extends NSObject, NSCodingProtocol {
+  export interface NSCursor<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
     pop<R = void>(): R;
     push<R = void>(): R;
     awakeAfterUsingCoder<R = unknown, P0 = unknown>(_awakeAfterUsingCoder: P0): R;
@@ -24,11 +24,10 @@ declare namespace cocoa {
     setOnMouseExited<R = boolean>(): R;
     hotSpot<R = CGPoint>(): R;
     image<R = NSImage>(): R;
-    // + NSCursor(CHCursorExtensions,NSCursorResizeExtensions):
-    
-  }
-  namespace classes {
-    export interface NSCursor<T = any> extends NSObject, NSCodingProtocol {
+  
+}
+  namespace NSCursor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
       alloc<R = NSCursor>(): R;
       new: <R = NSCursor>() => R;
       _overrideHelpCursor<R = unknown>(): R;
@@ -95,9 +94,10 @@ declare namespace cocoa {
       arrowCursor<R = unknown>(): R;
       _buildCursor_cursorData<R = unknown, P0 = unknown, P1 = CGPoint>(__buildCursor: P0, _cursorData: P1): R;
       initialize<R = void>(): R;
-      // + NSCursor(CHCursorExtensions,NSCursorResizeExtensions):
+      // + NSCursor(CHCursorExtensions): 
       cursorWithImageNamed_hotSpot<R = unknown, P0 = unknown, P1 = CGPoint>(_cursorWithImageNamed: P0, _hotSpot: P1): R;
       cursorWithImageNamed<R = unknown, P0 = unknown>(_cursorWithImageNamed: P0): R;
+      // + NSCursor(NSCursorResizeExtensions): 
       rotateBottomCursor<R = unknown>(): R;
       rotateTopCursor<R = unknown>(): R;
       rotateRightCursor<R = unknown>(): R;
@@ -120,4 +120,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSCursor: cocoa.classes.NSCursor;
+declare const NSCursor: cocoa.NSCursor.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface FBEdgeCrossing<T = any> extends NSObject {
+  export interface FBEdgeCrossing<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     debugQuickLookObject<R = unknown>(): R;
     description<R = unknown>(): R;
@@ -40,8 +40,8 @@ declare namespace cocoa {
     next<R = FBEdgeCrossing>(): R;
     order<R = number>(): R;
   }
-  namespace classes {
-    export interface FBEdgeCrossing<T = any> extends NSObject {
+  namespace FBEdgeCrossing {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = FBEdgeCrossing>(): R;
       new: <R = FBEdgeCrossing>() => R;
       crossingWithIntersection<R = unknown, P0 = unknown>(_crossingWithIntersection: P0): R;
@@ -49,4 +49,4 @@ declare namespace cocoa {
   }
 }
 
-declare const FBEdgeCrossing: cocoa.classes.FBEdgeCrossing;
+declare const FBEdgeCrossing: cocoa.FBEdgeCrossing.CLASS;

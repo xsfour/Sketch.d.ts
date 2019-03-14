@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAccessibilityRadioButton<T = any> {}
-  namespace classes {
-    export interface NSAccessibilityRadioButton<T = any> {  }
+  export interface NSAccessibilityRadioButton<T0 = void, T1 = void, T2 = void> {}
+  namespace NSAccessibilityRadioButton {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSAccessibilityRadioButton: cocoa.classes.NSAccessibilityRadioButton;
+declare const NSAccessibilityRadioButton: cocoa.NSAccessibilityRadioButton.CLASS;

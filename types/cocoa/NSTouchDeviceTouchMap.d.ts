@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchDeviceTouchMap<T = any> extends NSObject {
+  export interface NSTouchDeviceTouchMap<T0 = void, T1 = void, T2 = void> extends NSObject {
     touchIdentitiesAssociatedWithGestureRecognizer<R = unknown, P0 = unknown>(_touchIdentitiesAssociatedWithGestureRecognizer: P0): R;
     updateActiveGestureRecognizers<R = void>(): R;
     removeGestureRecognizerFromAllKeys<R = void, P0 = unknown>(_removeGestureRecognizerFromAllKeys: P0): R;
@@ -24,12 +24,12 @@ declare namespace cocoa {
     touches<R = NSMutableSet>(): R;
     setTouches<R = void, P0 = NSMutableSet>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTouchDeviceTouchMap<T = any> extends NSObject {
+  namespace NSTouchDeviceTouchMap {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSTouchDeviceTouchMap>(): R;
       new: <R = NSTouchDeviceTouchMap>() => R;
     }
   }
 }
 
-declare const NSTouchDeviceTouchMap: cocoa.classes.NSTouchDeviceTouchMap;
+declare const NSTouchDeviceTouchMap: cocoa.NSTouchDeviceTouchMap.CLASS;

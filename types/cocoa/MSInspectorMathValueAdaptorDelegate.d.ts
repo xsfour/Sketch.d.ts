@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInspectorMathValueAdaptorDelegate<T = any> {}
-  namespace classes {
-    export interface MSInspectorMathValueAdaptorDelegate<T = any> {  }
+  export interface MSInspectorMathValueAdaptorDelegate<T0 = void, T1 = void, T2 = void> {}
+  namespace MSInspectorMathValueAdaptorDelegate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const MSInspectorMathValueAdaptorDelegate: cocoa.classes.MSInspectorMathValueAdaptorDelegate;
+declare const MSInspectorMathValueAdaptorDelegate: cocoa.MSInspectorMathValueAdaptorDelegate.CLASS;

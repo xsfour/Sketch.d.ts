@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCPopover<T = any> extends NSObject, NSWindowDelegateProtocol, NSViewControllerPresentationAnimatorProtocol {
+  export interface BCPopover<T0 = void, T1 = void, T2 = void> extends NSObject, NSWindowDelegateProtocol, NSViewControllerPresentationAnimatorProtocol {
     cxx_destruct<R = void>(): R;
     dealloc<R = void>(): R;
     closeIgnoringViewControllerPresentations<R = void>(): R;
@@ -47,12 +47,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface BCPopover<T = any> extends NSObject, NSWindowDelegateProtocol, NSViewControllerPresentationAnimatorProtocol {
+  namespace BCPopover {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSWindowDelegateProtocol, NSViewControllerPresentationAnimatorProtocol {
       alloc<R = BCPopover>(): R;
       new: <R = BCPopover>() => R;
     }
   }
 }
 
-declare const BCPopover: cocoa.classes.BCPopover;
+declare const BCPopover: cocoa.BCPopover.CLASS;

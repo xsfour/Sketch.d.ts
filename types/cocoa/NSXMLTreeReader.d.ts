@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXMLTreeReader<T = any> extends NSObject {
+  export interface NSXMLTreeReader<T0 = void, T1 = void, T2 = void> extends NSObject {
     DTDString<R = unknown>(): R;
     _addEntity<R = void, P0 = unknown>(__addEntity: P0): R;
     _addContent<R = void>(): R;
@@ -43,8 +43,8 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     url<R = NSURL>(): R;
   }
-  namespace classes {
-    export interface NSXMLTreeReader<T = any> extends NSObject {
+  namespace NSXMLTreeReader {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSXMLTreeReader>(): R;
       new: <R = NSXMLTreeReader>() => R;
       currentReader<R = unknown>(): R;
@@ -53,4 +53,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSXMLTreeReader: cocoa.classes.NSXMLTreeReader;
+declare const NSXMLTreeReader: cocoa.NSXMLTreeReader.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSymbolPreviewGeneratorOperation<T = any> extends NSOperation, MSRenderingContextCacheProviderProtocol {
+  export interface MSSymbolPreviewGeneratorOperation<T0 = void, T1 = void, T2 = void> extends NSOperation, MSRenderingContextCacheProviderProtocol {
     cxx_destruct<R = void>(): R;
     renderingCache<R = BCCache>(): R;
     setRenderingCache<R = void, P0 = BCCache>(_v: P0): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSSymbolPreviewGeneratorOperation<T = any> extends NSOperation, MSRenderingContextCacheProviderProtocol {
+  namespace MSSymbolPreviewGeneratorOperation {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSOperation, MSRenderingContextCacheProviderProtocol {
       alloc<R = MSSymbolPreviewGeneratorOperation>(): R;
       new: <R = MSSymbolPreviewGeneratorOperation>() => R;
     }
   }
 }
 
-declare const MSSymbolPreviewGeneratorOperation: cocoa.classes.MSSymbolPreviewGeneratorOperation;
+declare const MSSymbolPreviewGeneratorOperation: cocoa.MSSymbolPreviewGeneratorOperation.CLASS;

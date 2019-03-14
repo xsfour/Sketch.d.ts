@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSViewDynamicToolTipManager<T = any> extends NSObject {
+  export interface NSViewDynamicToolTipManager<T0 = void, T1 = void, T2 = void> extends NSObject {
     _currentLocalMousePoint<R = CGPoint>(): R;
     _restartMovementTracking<R = void>(): R;
     _continueMovementTracking<R = void>(): R;
@@ -45,8 +45,8 @@ declare namespace cocoa {
     _removeVisibleViewTrackingRectIfNecessary<R = void>(): R;
     _removeToolTipTrackingRectIfNecessary<R = void>(): R;
   }
-  namespace classes {
-    export interface NSViewDynamicToolTipManager<T = any> extends NSObject {
+  namespace NSViewDynamicToolTipManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSViewDynamicToolTipManager>(): R;
       new: <R = NSViewDynamicToolTipManager>() => R;
       abortAllToolTips<R = void>(): R;
@@ -57,4 +57,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSViewDynamicToolTipManager: cocoa.classes.NSViewDynamicToolTipManager;
+declare const NSViewDynamicToolTipManager: cocoa.NSViewDynamicToolTipManager.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSTreeDiff<T = any> extends NSObject {
+  export interface MSTreeDiff<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     containsLayerWithTraits<R = boolean, P0 = number>(_containsLayerWithTraits: P0): R;
     someChangedPropertiesExhibitTrait_allKeysWereCompared<R = boolean, P0 = number, P1 = string>(_someChangedPropertiesExhibitTrait: P0, _allKeysWereCompared: P1): R;
@@ -36,12 +36,12 @@ declare namespace cocoa {
     firstDoc<R = MSImmutableDocumentData>(): R;
     setFirstDoc<R = void, P0 = MSImmutableDocumentData>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSTreeDiff<T = any> extends NSObject {
+  namespace MSTreeDiff {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSTreeDiff>(): R;
       new: <R = MSTreeDiff>() => R;
     }
   }
 }
 
-declare const MSTreeDiff: cocoa.classes.MSTreeDiff;
+declare const MSTreeDiff: cocoa.MSTreeDiff.CLASS;

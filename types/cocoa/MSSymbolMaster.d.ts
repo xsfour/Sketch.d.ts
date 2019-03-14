@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSymbolMaster<T = any> extends _MSSymbolMaster, MSPreviewGenerationProtocol, MSLayerPreviewabilityProtocol, MSSharedObjectStylingProtocol, BCSortableProtocol {
+  export interface MSSymbolMaster<T0 = void, T1 = void, T2 = void> extends _MSSymbolMaster, MSPreviewGenerationProtocol, MSLayerPreviewabilityProtocol, MSSharedObjectStylingProtocol, BCSortableProtocol {
     limitsSelectionToBounds<R = boolean>(): R;
     parentSymbol<R = unknown>(): R;
     ancestorIDsForLayerNamed_skip<R = unknown, P0 = unknown, P1 = unknown>(_ancestorIDsForLayerNamed: P0, _skip: P1): R;
@@ -35,8 +35,8 @@ declare namespace cocoa {
     name<R = NSString>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSSymbolMaster<T = any> extends _MSSymbolMaster, MSPreviewGenerationProtocol, MSLayerPreviewabilityProtocol, MSSharedObjectStylingProtocol, BCSortableProtocol {
+  namespace MSSymbolMaster {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSSymbolMaster, MSPreviewGenerationProtocol, MSLayerPreviewabilityProtocol, MSSharedObjectStylingProtocol, BCSortableProtocol {
       alloc<R = MSSymbolMaster>(): R;
       new: <R = MSSymbolMaster>() => R;
       copyPropertiesFrom_to<R = void, P0 = unknown, P1 = unknown>(_copyPropertiesFrom: P0, _to: P1): R;
@@ -46,4 +46,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSSymbolMaster: cocoa.classes.MSSymbolMaster;
+declare const MSSymbolMaster: cocoa.MSSymbolMaster.CLASS;

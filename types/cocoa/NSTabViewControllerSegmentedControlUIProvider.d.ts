@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTabViewControllerSegmentedControlUIProvider<T = any> extends NSObject, NSTabViewControllerUIProviderProtocol {
+  export interface NSTabViewControllerSegmentedControlUIProvider<T0 = void, T1 = void, T2 = void> extends NSObject, NSTabViewControllerUIProviderProtocol {
     observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
     _stopObservingTabViewItem<R = void, P0 = unknown>(__stopObservingTabViewItem: P0): R;
     _startObservingTabViewItem<R = void, P0 = unknown>(__startObservingTabViewItem: P0): R;
@@ -22,12 +22,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSTabViewControllerSegmentedControlUIProvider<T = any> extends NSObject, NSTabViewControllerUIProviderProtocol {
+  namespace NSTabViewControllerSegmentedControlUIProvider {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSTabViewControllerUIProviderProtocol {
       alloc<R = NSTabViewControllerSegmentedControlUIProvider>(): R;
       new: <R = NSTabViewControllerSegmentedControlUIProvider>() => R;
     }
   }
 }
 
-declare const NSTabViewControllerSegmentedControlUIProvider: cocoa.classes.NSTabViewControllerSegmentedControlUIProvider;
+declare const NSTabViewControllerSegmentedControlUIProvider: cocoa.NSTabViewControllerSegmentedControlUIProvider.CLASS;

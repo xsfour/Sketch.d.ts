@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSCurvePoint<T = any> extends _MSCurvePoint, MSCurvePointProtocol, NSCopyingProtocol {
+  export interface MSCurvePoint<T0 = void, T1 = void, T2 = void> extends _MSCurvePoint, MSCurvePointProtocol, NSCopyingProtocol {
     multiplyBy<R = void, P0 = number>(_multiplyBy: P0): R;
     moveCurveFromTo<R = void, P0 = CGPoint>(_moveCurveFromTo: P0): R;
     moveCurveToTo<R = void, P0 = CGPoint>(_moveCurveToTo: P0): R;
@@ -20,8 +20,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSCurvePoint<T = any> extends _MSCurvePoint, MSCurvePointProtocol, NSCopyingProtocol {
+  namespace MSCurvePoint {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSCurvePoint, MSCurvePointProtocol, NSCopyingProtocol {
       alloc<R = MSCurvePoint>(): R;
       new: <R = MSCurvePoint>() => R;
       pointWithPoint_curveTo_curveFrom<R = unknown, P0 = CGPoint, P1 = CGPoint, P2 = CGPoint>(_pointWithPoint: P0, _curveTo: P1, _curveFrom: P2): R;
@@ -31,4 +31,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSCurvePoint: cocoa.classes.MSCurvePoint;
+declare const MSCurvePoint: cocoa.MSCurvePoint.CLASS;

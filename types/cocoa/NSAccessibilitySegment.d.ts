@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAccessibilitySegment<T = any> extends NSAccessibilityIndexedMockUIElement {
+  export interface NSAccessibilitySegment<T0 = void, T1 = void, T2 = void> extends NSAccessibilityIndexedMockUIElement {
     _accessibilityPerformClickAction<R = void, P0 = unknown>(__accessibilityPerformClickAction: P0): R;
     accessibilityIsChildrenAttributeSettable<R = boolean>(): R;
     accessibilityChildrenAttribute<R = unknown>(): R;
@@ -17,8 +17,8 @@ declare namespace cocoa {
     segmentedCell<R = unknown>(): R;
     initWithIndex_parent<R = unknown, P0 = number, P1 = unknown>(_initWithIndex: P0, _parent: P1): R;
   }
-  namespace classes {
-    export interface NSAccessibilitySegment<T = any> extends NSAccessibilityIndexedMockUIElement {
+  namespace NSAccessibilitySegment {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSAccessibilityIndexedMockUIElement {
       alloc<R = NSAccessibilitySegment>(): R;
       new: <R = NSAccessibilitySegment>() => R;
       segmentWithIndex_parent<R = unknown, P0 = number, P1 = unknown>(_segmentWithIndex: P0, _parent: P1): R;
@@ -26,4 +26,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSAccessibilitySegment: cocoa.classes.NSAccessibilitySegment;
+declare const NSAccessibilitySegment: cocoa.NSAccessibilitySegment.CLASS;

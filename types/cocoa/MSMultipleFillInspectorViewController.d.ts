@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSMultipleFillInspectorViewController<T = any> extends MSMultipleColorStylePartInspectorViewController, MSInspectorSectionProtocol, BCPopoverDelegateProtocol {
+  export interface MSMultipleFillInspectorViewController<T0 = void, T1 = void, T2 = void> extends MSMultipleColorStylePartInspectorViewController, MSInspectorSectionProtocol, BCPopoverDelegateProtocol {
     traitsForAvancedOptions<R = number>(): R;
     shouldHideAddStylePartButton<R = boolean>(): R;
     showAdvancedOptionsAction<R = void, P0 = unknown>(_showAdvancedOptionsAction: P0): R;
@@ -18,12 +18,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSMultipleFillInspectorViewController<T = any> extends MSMultipleColorStylePartInspectorViewController, MSInspectorSectionProtocol, BCPopoverDelegateProtocol {
+  namespace MSMultipleFillInspectorViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSMultipleColorStylePartInspectorViewController, MSInspectorSectionProtocol, BCPopoverDelegateProtocol {
       alloc<R = MSMultipleFillInspectorViewController>(): R;
       new: <R = MSMultipleFillInspectorViewController>() => R;
     }
   }
 }
 
-declare const MSMultipleFillInspectorViewController: cocoa.classes.MSMultipleFillInspectorViewController;
+declare const MSMultipleFillInspectorViewController: cocoa.MSMultipleFillInspectorViewController.CLASS;

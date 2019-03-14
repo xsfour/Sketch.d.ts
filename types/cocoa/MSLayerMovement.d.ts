@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSLayerMovement<T = any> extends NSObject {}
-  namespace classes {
-    export interface MSLayerMovement<T = any> extends NSObject {
+  export interface MSLayerMovement<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace MSLayerMovement {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSLayerMovement>(): R;
       new: <R = MSLayerMovement>() => R;
       moveToBack<R = void, P0 = unknown>(_moveToBack: P0): R;
@@ -21,4 +21,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSLayerMovement: cocoa.classes.MSLayerMovement;
+declare const MSLayerMovement: cocoa.MSLayerMovement.CLASS;

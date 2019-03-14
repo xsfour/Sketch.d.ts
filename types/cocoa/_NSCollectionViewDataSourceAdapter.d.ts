@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSCollectionViewDataSourceAdapter<T = any> extends NSObject, NSCollectionViewDataSourceProtocol {
+  export interface _NSCollectionViewDataSourceAdapter<T0 = void, T1 = void, T2 = void> extends NSObject, NSCollectionViewDataSourceProtocol {
     dealloc<R = void>(): R;
     moveItemAtIndexPath_toIndexPath<R = void, P0 = unknown, P1 = unknown>(_moveItemAtIndexPath: P0, _toIndexPath: P1): R;
     reloadItemsAtIndexPaths<R = void, P0 = unknown>(_reloadItemsAtIndexPaths: P0): R;
@@ -43,8 +43,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSCollectionViewDataSourceAdapter<T = any> extends NSObject, NSCollectionViewDataSourceProtocol {
+  namespace _NSCollectionViewDataSourceAdapter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCollectionViewDataSourceProtocol {
       alloc<R = _NSCollectionViewDataSourceAdapter>(): R;
       new: <R = _NSCollectionViewDataSourceAdapter>() => R;
     }

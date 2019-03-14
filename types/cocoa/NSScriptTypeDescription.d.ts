@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScriptTypeDescription<T = any> extends NSObject {
+  export interface NSScriptTypeDescription<T0 = void, T1 = void, T2 = void> extends NSObject {
     errorExpectedTypeDescriptor<R = unknown>(): R;
     coercedValue<R = unknown, P0 = unknown>(_coercedValue: P0): R;
     matchesAppleEventCode<R = boolean, P0 = number>(_matchesAppleEventCode: P0): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     reconcileToSuiteRegistry_suiteName<R = void, P0 = unknown, P1 = unknown>(_reconcileToSuiteRegistry: P0, _suiteName: P1): R;
     description<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSScriptTypeDescription<T = any> extends NSObject {
+  namespace NSScriptTypeDescription {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSScriptTypeDescription>(): R;
       new: <R = NSScriptTypeDescription>() => R;
     }
   }
 }
 
-declare const NSScriptTypeDescription: cocoa.classes.NSScriptTypeDescription;
+declare const NSScriptTypeDescription: cocoa.NSScriptTypeDescription.CLASS;

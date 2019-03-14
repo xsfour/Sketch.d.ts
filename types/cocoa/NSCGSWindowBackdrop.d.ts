@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCGSWindowBackdrop<T = any> extends NSObject {
+  export interface NSCGSWindowBackdrop<T0 = void, T1 = void, T2 = void> extends NSObject {
     blendMode<R = NSString>(): R;
     setBlendMode<R = void, P0 = NSString>(_v: P0): R;
     frame<R = CGRect>(): R;
@@ -20,12 +20,12 @@ declare namespace cocoa {
     setTintColor<R = void, P0 = CGColor>(_v: P0): R;
     window<R = NSCGSWindow>(): R;
   }
-  namespace classes {
-    export interface NSCGSWindowBackdrop<T = any> extends NSObject {
+  namespace NSCGSWindowBackdrop {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSCGSWindowBackdrop>(): R;
       new: <R = NSCGSWindowBackdrop>() => R;
     }
   }
 }
 
-declare const NSCGSWindowBackdrop: cocoa.classes.NSCGSWindowBackdrop;
+declare const NSCGSWindowBackdrop: cocoa.NSCGSWindowBackdrop.CLASS;

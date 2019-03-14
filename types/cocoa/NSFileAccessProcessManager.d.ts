@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFileAccessProcessManager<T = any> extends NSObject {
+  export interface NSFileAccessProcessManager<T0 = void, T1 = void, T2 = void> extends NSObject {
     invalidate<R = void>(): R;
     allowSuspension<R = void>(): R;
     preventSuspensionWithActivityName<R = void, P0 = unknown>(_preventSuspensionWithActivityName: P0): R;
@@ -15,8 +15,8 @@ declare namespace cocoa {
     suspensionHandler<R = CDUnknownBlockType>(): R;
     setSuspensionHandler<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSFileAccessProcessManager<T = any> extends NSObject {
+  namespace NSFileAccessProcessManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSFileAccessProcessManager>(): R;
       new: <R = NSFileAccessProcessManager>() => R;
       needToManageConnection_forURLs<R = boolean, P0 = unknown, P1 = unknown>(_needToManageConnection: P0, _forURLs: P1): R;
@@ -24,4 +24,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSFileAccessProcessManager: cocoa.classes.NSFileAccessProcessManager;
+declare const NSFileAccessProcessManager: cocoa.NSFileAccessProcessManager.CLASS;

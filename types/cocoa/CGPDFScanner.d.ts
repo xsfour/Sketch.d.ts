@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface CGPDFScanner<T = any> {}
-  namespace classes {
-    export interface CGPDFScanner<T = any> {  }
+  export interface CGPDFScanner<T0 = void, T1 = void, T2 = void> {}
+  namespace CGPDFScanner {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const CGPDFScanner: cocoa.classes.CGPDFScanner;
+declare const CGPDFScanner: cocoa.CGPDFScanner.CLASS;

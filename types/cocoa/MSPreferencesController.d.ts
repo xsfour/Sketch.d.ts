@@ -1,7 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPreferencesController<T = any> extends NSWindowController, NSToolbarDelegateProtocol, NSWindowDelegateProtocol {
+  export interface MSPreferencesController<T0 = void, T1 = void, T2 = void> extends NSWindowController, NSToolbarDelegateProtocol, NSWindowDelegateProtocol {
+    cxx_destruct<R = void>(): R;
     dismissAnyAlertSheet<R = void>(): R;
     validateToolbarItem<R = boolean, P0 = unknown>(_validateToolbarItem: P0): R;
     updateWindowFrame<R = void>(): R;
@@ -27,8 +28,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSPreferencesController<T = any> extends NSWindowController, NSToolbarDelegateProtocol, NSWindowDelegateProtocol {
+  namespace MSPreferencesController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSWindowController, NSToolbarDelegateProtocol, NSWindowDelegateProtocol {
       alloc<R = MSPreferencesController>(): R;
       new: <R = MSPreferencesController>() => R;
       sharedController<R = unknown>(): R;
@@ -36,4 +37,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSPreferencesController: cocoa.classes.MSPreferencesController;
+declare const MSPreferencesController: cocoa.MSPreferencesController.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface SVGElement<T = any> extends _SVGElement {
+  export interface SVGElement<T0 = void, T1 = void, T2 = void> extends _SVGElement {
     makeLayerWithParentLayer_progress<R = unknown, P0 = unknown, P1 = CDUnknownBlockType>(_makeLayerWithParentLayer: P0, _progress: P1): R;
     adjustOwnLayer_parentLayer<R = unknown, P0 = unknown, P1 = unknown>(_adjustOwnLayer: P0, _parentLayer: P1): R;
     nameLayer<R = void, P0 = unknown>(_nameLayer: P0): R;
@@ -34,8 +34,8 @@ declare namespace cocoa {
     setXml<R = void, P0 = NSXMLElement>(_v: P0): R;
     effectiveLayerName<R = NSString>(): R;
   }
-  namespace classes {
-    export interface SVGElement<T = any> extends _SVGElement {
+  namespace SVGElement {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _SVGElement {
       alloc<R = SVGElement>(): R;
       new: <R = SVGElement>() => R;
       elementOfType_xml_importer_parent<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown>(_elementOfType: P0, _xml: P1, _importer: P2, _parent: P3): R;
@@ -43,4 +43,4 @@ declare namespace cocoa {
   }
 }
 
-declare const SVGElement: cocoa.classes.SVGElement;
+declare const SVGElement: cocoa.SVGElement.CLASS;

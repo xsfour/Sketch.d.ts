@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTextLayer<T = any> extends _NSBackingLayer, CALinearMaskLayerDelegateProtocol {
+  export interface NSTextLayer<T0 = void, T1 = void, T2 = void> extends _NSBackingLayer, CALinearMaskLayerDelegateProtocol {
     setSublayerTransform<R = void, P0 = CATransform3D>(_setSublayerTransform: P0): R;
     _renderForegroundInContext<R = void, P0 = CGContext>(__renderForegroundInContext: P0): R;
     renderInContext<R = void, P0 = CGContext>(_renderInContext: P0): R;
@@ -18,9 +18,9 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSTextLayer<T = any> extends _NSBackingLayer, CALinearMaskLayerDelegateProtocol {  }
+  namespace NSTextLayer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _NSBackingLayer, CALinearMaskLayerDelegateProtocol {}
   }
 }
 
-declare const NSTextLayer: cocoa.classes.NSTextLayer;
+declare const NSTextLayer: cocoa.NSTextLayer.CLASS;

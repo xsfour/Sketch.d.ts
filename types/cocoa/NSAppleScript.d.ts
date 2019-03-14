@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAppleScript<T = any> extends NSObject, NSCopyingProtocol {
+  export interface NSAppleScript<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     executeAppleEvent_error<R = unknown, P0 = unknown, P1 = unknown>(_executeAppleEvent: P0, _error: P1): R;
     executeAndReturnError<R = unknown, P0 = unknown>(_executeAndReturnError: P0): R;
     compileAndReturnError<R = boolean, P0 = unknown>(_compileAndReturnError: P0): R;
@@ -19,16 +19,16 @@ declare namespace cocoa {
     // + NSAppleScript(NSExtensions):
     richTextSource<R = NSAttributedString>(): R;
   }
-  namespace classes {
-    export interface NSAppleScript<T = any> extends NSObject, NSCopyingProtocol {
+  namespace NSAppleScript {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = NSAppleScript>(): R;
       new: <R = NSAppleScript>() => R;
       _infoForOSAError<R = unknown, P0 = number>(__infoForOSAError: P0): R;
       _defaultScriptingComponent<R = ComponentInstanceRecord>(): R;
-      // + NSAppleScript(NSExtensions):
+      // + NSAppleScript(NSExtensions): 
       _attributedStringFromDescriptor<R = unknown, P0 = unknown>(__attributedStringFromDescriptor: P0): R;
     }
   }
 }
 
-declare const NSAppleScript: cocoa.classes.NSAppleScript;
+declare const NSAppleScript: cocoa.NSAppleScript.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAssetLibraryController<T = any> extends NSObject, MSAssetLibraryDelegateProtocol {
+  export interface MSAssetLibraryController<T0 = void, T1 = void, T2 = void> extends NSObject, MSAssetLibraryDelegateProtocol {
     cxx_destruct<R = void>(): R;
     loadVersionZeroLibrariesWithDispatchGroup<R = void, P0 = unknown>(_loadVersionZeroLibrariesWithDispatchGroup: P0): R;
     loadVersionZeroLibrariesFromUnarchiver_forKey_dispatchGroup<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_loadVersionZeroLibrariesFromUnarchiver: P0, _forKey: P1, _dispatchGroup: P2): R;
@@ -54,12 +54,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSAssetLibraryController<T = any> extends NSObject, MSAssetLibraryDelegateProtocol {
+  namespace MSAssetLibraryController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, MSAssetLibraryDelegateProtocol {
       alloc<R = MSAssetLibraryController>(): R;
       new: <R = MSAssetLibraryController>() => R;
     }
   }
 }
 
-declare const MSAssetLibraryController: cocoa.classes.MSAssetLibraryController;
+declare const MSAssetLibraryController: cocoa.MSAssetLibraryController.CLASS;

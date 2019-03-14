@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMessagePort<T = any> extends NSPort {
+  export interface NSMessagePort<T0 = void, T1 = void, T2 = void> extends NSPort {
     dealloc<R = void>(): R;
     _tryRetain<R = boolean>(): R;
     _isDeallocating<R = boolean>(): R;
@@ -12,8 +12,8 @@ declare namespace cocoa {
     name<R = unknown>(): R;
     isValid<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSMessagePort<T = any> extends NSPort {
+  namespace NSMessagePort {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSPort {
       alloc<R = NSMessagePort>(): R;
       new: <R = NSMessagePort>() => R;
       _fixNSMessagePortLeak<R = void>(): R;
@@ -22,4 +22,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSMessagePort: cocoa.classes.NSMessagePort;
+declare const NSMessagePort: cocoa.NSMessagePort.CLASS;

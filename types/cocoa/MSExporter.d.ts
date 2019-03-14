@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSExporter<T = any> extends NSObject, MSRenderingContextCacheProviderProtocol {
+  export interface MSExporter<T0 = void, T1 = void, T2 = void> extends NSObject, MSRenderingContextCacheProviderProtocol {
     cxx_destruct<R = void>(): R;
     exportToFileURL<R = boolean, P0 = unknown>(_exportToFileURL: P0): R;
     drawRect_context<R = void, P0 = CGRect, P1 = CGContext>(_drawRect: P0, _context: P1): R;
@@ -34,8 +34,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSExporter<T = any> extends NSObject, MSRenderingContextCacheProviderProtocol {
+  namespace MSExporter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, MSRenderingContextCacheProviderProtocol {
       alloc<R = MSExporter>(): R;
       new: <R = MSExporter>() => R;
       exporterForRequest_colorSpace_driver<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_exporterForRequest: P0, _colorSpace: P1, _driver: P2): R;
@@ -46,4 +46,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSExporter: cocoa.classes.MSExporter;
+declare const MSExporter: cocoa.MSExporter.CLASS;

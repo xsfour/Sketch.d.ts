@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCFCharacterSet<T = any> extends NSMutableCharacterSet {
+  export interface NSCFCharacterSet<T0 = void, T1 = void, T2 = void> extends NSMutableCharacterSet {
     classForKeyedArchiver<R = unknown>(): R;
     classForArchiver<R = unknown>(): R;
     makeCharacterSetFast<R = void>(): R;
@@ -11,8 +11,8 @@ declare namespace cocoa {
     retainWeakReference<R = boolean>(): R;
     allowsWeakReference<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSCFCharacterSet<T = any> extends NSMutableCharacterSet {
+  namespace NSCFCharacterSet {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSMutableCharacterSet {
       alloc<R = NSCFCharacterSet>(): R;
       new: <R = NSCFCharacterSet>() => R;
       automaticallyNotifiesObserversForKey<R = boolean, P0 = unknown>(_automaticallyNotifiesObserversForKey: P0): R;
@@ -20,4 +20,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSCFCharacterSet: cocoa.classes.NSCFCharacterSet;
+declare const NSCFCharacterSet: cocoa.NSCFCharacterSet.CLASS;

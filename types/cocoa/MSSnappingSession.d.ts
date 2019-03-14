@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSnappingSession<T = any> extends NSObject {
+  export interface MSSnappingSession<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     initWithType_item<R = unknown, P0 = number, P1 = unknown>(_initWithType: P0, _item: P1): R;
     snappableGuidesMask<R = number>(): R;
@@ -24,8 +24,8 @@ declare namespace cocoa {
     effectiveSnapDistance<R = number>(): R;
     layers<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface MSSnappingSession<T = any> extends NSObject {
+  namespace MSSnappingSession {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSSnappingSession>(): R;
       new: <R = MSSnappingSession>() => R;
       keySnappingSessionWithItem<R = unknown, P0 = unknown>(_keySnappingSessionWithItem: P0): R;
@@ -35,4 +35,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSSnappingSession: cocoa.classes.MSSnappingSession;
+declare const MSSnappingSession: cocoa.MSSnappingSession.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFunctionRowActionTracker<T = any> extends NSObject {
+  export interface NSFunctionRowActionTracker<T0 = void, T1 = void, T2 = void> extends NSObject {
     _ns_logAction_ns<R = void, P0 = unknown>(__ns_logAction_ns: P0): R;
     _log<R = void>(): R;
     dealloc<R = void>(): R;
@@ -16,8 +16,8 @@ declare namespace cocoa {
     touch<R = NSTouch>(): R;
     setTouch<R = void, P0 = NSTouch>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSFunctionRowActionTracker<T = any> extends NSObject {
+  namespace NSFunctionRowActionTracker {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSFunctionRowActionTracker>(): R;
       new: <R = NSFunctionRowActionTracker>() => R;
       _frameForElement<R = CGRect, P0 = unknown>(__frameForElement: P0): R;
@@ -26,4 +26,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSFunctionRowActionTracker: cocoa.classes.NSFunctionRowActionTracker;
+declare const NSFunctionRowActionTracker: cocoa.NSFunctionRowActionTracker.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSViewControllerPrivateData<T = any> extends NSObject {
+  export interface _NSViewControllerPrivateData<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     constrainServiceScreenFrameBlock<R = CDUnknownBlockType>(): R;
     setConstrainServiceScreenFrameBlock<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
@@ -28,8 +28,8 @@ declare namespace cocoa {
     parentViewController<R = NSViewController>(): R;
     setParentViewController<R = void, P0 = NSViewController>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSViewControllerPrivateData<T = any> extends NSObject {
+  namespace _NSViewControllerPrivateData {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSViewControllerPrivateData>(): R;
       new: <R = _NSViewControllerPrivateData>() => R;
     }

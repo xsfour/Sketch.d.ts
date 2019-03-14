@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTextView<T = any> extends NSText, NSColorChangingProtocol, NSMenuItemValidationProtocol, NSUserInterfaceValidationsProtocol, NSTextInputClientProtocol, NSTextLayoutOrientationProviderProtocol, NSDraggingSourceProtocol, NSStandardKeyBindingRespondingProtocol, NSTextInputProtocol, NSAccessibilityNavigableStaticTextProtocol {
+  export interface NSTextView<T0 = void, T1 = void, T2 = void> extends NSText, NSColorChangingProtocol, NSMenuItemValidationProtocol, NSUserInterfaceValidationsProtocol, NSTextInputClientProtocol, NSTextLayoutOrientationProviderProtocol, NSDraggingSourceProtocol, NSStandardKeyBindingRespondingProtocol, NSTextInputProtocol, NSAccessibilityNavigableStaticTextProtocol {
     changeLayoutOrientation<R = void, P0 = unknown>(_changeLayoutOrientation: P0): R;
     setLayoutOrientation<R = void, P0 = number>(_setLayoutOrientation: P0): R;
     visibleCharacterRanges<R = unknown>(): R;
@@ -744,11 +744,11 @@ declare namespace cocoa {
     debugDescription<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
-    // + NSTextView(PopoverDismissal):
+    // + NSTextView(PopoverDismissal): 
     clickShouldDismissPopover<R = boolean, P0 = unknown>(_clickShouldDismissPopover: P0): R;
   }
-  namespace classes {
-    export interface NSTextView<T = any> extends NSText, NSColorChangingProtocol, NSMenuItemValidationProtocol, NSUserInterfaceValidationsProtocol, NSTextInputClientProtocol, NSTextLayoutOrientationProviderProtocol, NSDraggingSourceProtocol, NSStandardKeyBindingRespondingProtocol, NSTextInputProtocol, NSAccessibilityNavigableStaticTextProtocol {
+  namespace NSTextView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSText, NSColorChangingProtocol, NSMenuItemValidationProtocol, NSUserInterfaceValidationsProtocol, NSTextInputClientProtocol, NSTextLayoutOrientationProviderProtocol, NSDraggingSourceProtocol, NSStandardKeyBindingRespondingProtocol, NSTextInputProtocol, NSAccessibilityNavigableStaticTextProtocol {
       alloc<R = NSTextView>(): R;
       new: <R = NSTextView>() => R;
       mapsDocumentColorForColorPickers<R = boolean>(): R;
@@ -766,10 +766,9 @@ declare namespace cocoa {
       _insertionPointDisabled<R = boolean>(): R;
       _setInsertionPointDisabled<R = void, P0 = boolean>(__setInsertionPointDisabled: P0): R;
       keyPathsForValuesAffectingTouchBar<R = unknown>(): R;
-      // + NSTextView(PopoverDismissal):
-      
-    }
+  
+  }
   }
 }
 
-declare const NSTextView: cocoa.classes.NSTextView;
+declare const NSTextView: cocoa.NSTextView.CLASS;

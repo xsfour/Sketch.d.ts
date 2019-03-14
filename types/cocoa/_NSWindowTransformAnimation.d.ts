@@ -1,10 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSWindowTransformAnimation<T = any> extends NSAnimation {
+  export interface _NSWindowTransformAnimation<T0 = void, T1 = void, T2 = void> extends NSAnimation {
+    dealloc<R = void>(): R;
     _duplicateAnimationStopped<R = void>(): R;
+    _stopAnimation_withDisplayLink<R = void, P0 = number, P1 = unknown>(__stopAnimation: P0, _withDisplayLink: P1): R;
     _cleanUpAnimation<R = void>(): R;
     setCurrentProgress<R = void, P0 = number>(_setCurrentProgress: P0): R;
+    startAnimation<R = void>(): R;
     finishConfiguration<R = void>(): R;
     _configureAnimationBlock<R = CDUnknownBlockType>(): R;
     _windowBaseAlphas<R = unknown>(): R;
@@ -18,6 +21,7 @@ declare namespace cocoa {
     isOrderFrontAnimation<R = boolean>(): R;
     setCompletionBlock<R = void, P0 = CDUnknownBlockType>(_setCompletionBlock: P0): R;
     initWithWindow_type_interruptingAnimation<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_initWithWindow: P0, _type: P1, _interruptingAnimation: P2): R;
+    _screen<R = unknown>(): R;
     normalizedAnchorPoint<R = CGPoint>(): R;
     setNormalizedAnchorPoint<R = void, P0 = CGPoint>(_v: P0): R;
     startPoint<R = CGPoint>(): R;
@@ -31,8 +35,8 @@ declare namespace cocoa {
     _scaleAmount<R = number>(): R;
     set_scaleAmount<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSWindowTransformAnimation<T = any> extends NSAnimation {
+  namespace _NSWindowTransformAnimation {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSAnimation {
       alloc<R = _NSWindowTransformAnimation>(): R;
       new: <R = _NSWindowTransformAnimation>() => R;
       windowTransformAnimationWithWindow_type_interruptingAnimation<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_windowTransformAnimationWithWindow: P0, _type: P1, _interruptingAnimation: P2): R;

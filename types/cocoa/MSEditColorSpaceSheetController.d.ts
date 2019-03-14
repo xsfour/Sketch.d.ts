@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSEditColorSpaceSheetController<T = any> extends CHSheetController {
+  export interface MSEditColorSpaceSheetController<T0 = void, T1 = void, T2 = void> extends CHSheetController {
     viewDocumentation<R = void, P0 = unknown>(_viewDocumentation: P0): R;
     disableUI<R = void>(): R;
     showOptionsViewIfAppropriate<R = void>(): R;
@@ -9,6 +9,7 @@ declare namespace cocoa {
     validateConfirmButton<R = void>(): R;
     pickChangeLogic<R = void, P0 = unknown>(_pickChangeLogic: P0): R;
     pickColorSpace<R = void, P0 = unknown>(_pickColorSpace: P0): R;
+    windowDidLoad<R = void>(): R;
     optionsViewHeight<R = number>(): R;
     optionsViewBottomMargin<R = number>(): R;
     convertDescriptionTextField<R = NSTextField>(): R;
@@ -31,12 +32,12 @@ declare namespace cocoa {
     currentColorSpace<R = number>(): R;
     currentDocument<R = MSDocument>(): R;
   }
-  namespace classes {
-    export interface MSEditColorSpaceSheetController<T = any> extends CHSheetController {
+  namespace MSEditColorSpaceSheetController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends CHSheetController {
       alloc<R = MSEditColorSpaceSheetController>(): R;
       new: <R = MSEditColorSpaceSheetController>() => R;
     }
   }
 }
 
-declare const MSEditColorSpaceSheetController: cocoa.classes.MSEditColorSpaceSheetController;
+declare const MSEditColorSpaceSheetController: cocoa.MSEditColorSpaceSheetController.CLASS;

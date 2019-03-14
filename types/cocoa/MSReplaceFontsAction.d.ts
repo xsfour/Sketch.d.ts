@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSReplaceFontsAction<T = any> extends MSDocumentAction, MSWindowBadgeActionProtocol {
+  export interface MSReplaceFontsAction<T0 = void, T1 = void, T2 = void> extends MSDocumentAction, MSWindowBadgeActionProtocol {
     label<R = unknown>(): R;
     validate<R = boolean>(): R;
     replaceMissingFonts<R = void, P0 = unknown>(_replaceMissingFonts: P0): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSReplaceFontsAction<T = any> extends MSDocumentAction, MSWindowBadgeActionProtocol {
+  namespace MSReplaceFontsAction {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSDocumentAction, MSWindowBadgeActionProtocol {
       alloc<R = MSReplaceFontsAction>(): R;
       new: <R = MSReplaceFontsAction>() => R;
     }
   }
 }
 
-declare const MSReplaceFontsAction: cocoa.classes.MSReplaceFontsAction;
+declare const MSReplaceFontsAction: cocoa.MSReplaceFontsAction.CLASS;

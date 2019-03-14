@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXMLSAXParser<T = any> extends NSObject {
+  export interface NSXMLSAXParser<T0 = void, T1 = void, T2 = void> extends NSObject {
     _createElementContent<R = unknown, P0 = _xmlElementContent>(__createElementContent: P0): R;
     isSingleDTDNode<R = boolean>(): R;
     afterEntityLookup<R = boolean>(): R;
@@ -26,12 +26,12 @@ declare namespace cocoa {
     initWithContentsOfURL_options_error<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_initWithContentsOfURL: P0, _options: P1, _error: P2): R;
     dealloc<R = void>(): R;
   }
-  namespace classes {
-    export interface NSXMLSAXParser<T = any> extends NSObject {
+  namespace NSXMLSAXParser {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSXMLSAXParser>(): R;
       new: <R = NSXMLSAXParser>() => R;
     }
   }
 }
 
-declare const NSXMLSAXParser: cocoa.classes.NSXMLSAXParser;
+declare const NSXMLSAXParser: cocoa.NSXMLSAXParser.CLASS;

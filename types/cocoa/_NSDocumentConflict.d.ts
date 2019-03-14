@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSDocumentConflict<T = any> extends NSObject {
+  export interface _NSDocumentConflict<T0 = void, T1 = void, T2 = void> extends NSObject {
     previewItemTitle<R = unknown>(): R;
     previewItemURL<R = unknown>(): R;
     dealloc<R = void>(): R;
@@ -21,8 +21,8 @@ declare namespace cocoa {
     selected<R = boolean>(): R;
     setSelected<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSDocumentConflict<T = any> extends NSObject {
+  namespace _NSDocumentConflict {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSDocumentConflict>(): R;
       new: <R = _NSDocumentConflict>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSScrollingRubberbandFilter<T = any> extends NSObject {
+  export interface _NSScrollingRubberbandFilter<T0 = void, T1 = void, T2 = void> extends NSObject {
     addDelta_velocity<R = void, P0 = CGPoint, P1 = CGPoint>(_addDelta: P0, _velocity: P1): R;
     threadSafeAccess<R = void, P0 = CDUnknownBlockType>(_threadSafeAccess: P0): R;
     dealloc<R = void>(): R;
@@ -30,8 +30,8 @@ declare namespace cocoa {
     flipped<R = boolean>(): R;
     setFlipped<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSScrollingRubberbandFilter<T = any> extends NSObject {
+  namespace _NSScrollingRubberbandFilter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSScrollingRubberbandFilter>(): R;
       new: <R = _NSScrollingRubberbandFilter>() => R;
       initialize<R = void>(): R;

@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAssetPreferenceItemDelegate<T = any> {}
-  namespace classes {
-    export interface MSAssetPreferenceItemDelegate<T = any> {  }
+  export interface MSAssetPreferenceItemDelegate<T0 = void, T1 = void, T2 = void> {}
+  namespace MSAssetPreferenceItemDelegate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const MSAssetPreferenceItemDelegate: cocoa.classes.MSAssetPreferenceItemDelegate;
+declare const MSAssetPreferenceItemDelegate: cocoa.MSAssetPreferenceItemDelegate.CLASS;

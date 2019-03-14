@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCustomToolTipDrawView<T = any> extends NSView {
+  export interface NSCustomToolTipDrawView<T0 = void, T1 = void, T2 = void> extends NSView {
     allowsVibrancy<R = boolean>(): R;
     isFlipped<R = boolean>(): R;
     margin<R = CGSize>(): R;
@@ -11,12 +11,12 @@ declare namespace cocoa {
     toolTipObject<R = NSToolTip>(): R;
     setToolTipObject<R = void, P0 = NSToolTip>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSCustomToolTipDrawView<T = any> extends NSView {
+  namespace NSCustomToolTipDrawView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSCustomToolTipDrawView>(): R;
       new: <R = NSCustomToolTipDrawView>() => R;
     }
   }
 }
 
-declare const NSCustomToolTipDrawView: cocoa.classes.NSCustomToolTipDrawView;
+declare const NSCustomToolTipDrawView: cocoa.NSCustomToolTipDrawView.CLASS;

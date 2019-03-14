@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPointerArray<T = any> extends NSObject, NSFastEnumerationProtocol, NSCopyingProtocol, NSSecureCodingProtocol {
+  export interface NSPointerArray<T0 = void, T1 = void, T2 = void> extends NSObject, NSFastEnumerationProtocol, NSCopyingProtocol, NSSecureCodingProtocol {
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     compact<R = void>(): R;
     replacePointerAtIndex_withPointer<R = void, P0 = number, P1 = void>(_replacePointerAtIndex: P0, _withPointer: P1): R;
@@ -18,8 +18,8 @@ declare namespace cocoa {
     setCount<R = void, P0 = number>(_v: P0): R;
     pointerFunctions<R = NSPointerFunctions>(): R;
   }
-  namespace classes {
-    export interface NSPointerArray<T = any> extends NSObject, NSFastEnumerationProtocol, NSCopyingProtocol, NSSecureCodingProtocol {
+  namespace NSPointerArray {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSFastEnumerationProtocol, NSCopyingProtocol, NSSecureCodingProtocol {
       alloc<R = NSPointerArray>(): R;
       new: <R = NSPointerArray>() => R;
       allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
@@ -33,4 +33,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPointerArray: cocoa.classes.NSPointerArray;
+declare const NSPointerArray: cocoa.NSPointerArray.CLASS;

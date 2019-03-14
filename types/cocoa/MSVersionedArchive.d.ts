@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSVersionedArchive<T = any> extends NSObject {
+  export interface MSVersionedArchive<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     cleanupAfterTesting<R = void>(): R;
     archiveRootObject_error<R = boolean, P0 = unknown, P1 = unknown>(_archiveRootObject: P0, _error: P1): R;
@@ -23,8 +23,8 @@ declare namespace cocoa {
     url<R = NSURL>(): R;
     setUrl<R = void, P0 = NSURL>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSVersionedArchive<T = any> extends NSObject {
+  namespace MSVersionedArchive {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSVersionedArchive>(): R;
       new: <R = MSVersionedArchive>() => R;
       versionedURLWithBase_extension_version<R = unknown, P0 = unknown, P1 = unknown, P2 = number>(_versionedURLWithBase: P0, _extension: P1, _version: P2): R;
@@ -35,4 +35,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSVersionedArchive: cocoa.classes.MSVersionedArchive;
+declare const MSVersionedArchive: cocoa.MSVersionedArchive.CLASS;

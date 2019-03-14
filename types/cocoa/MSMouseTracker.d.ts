@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSMouseTracker<T = any> extends NSObject {
+  export interface MSMouseTracker<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     sendAction<R = void>(): R;
     removeTrackingState<R = void, P0 = number>(_removeTrackingState: P0): R;
@@ -26,12 +26,12 @@ declare namespace cocoa {
     setTarget<R = void, P0 = unknown>(_v: P0): R;
     canUpdateCursor<R = boolean>(): R;
   }
-  namespace classes {
-    export interface MSMouseTracker<T = any> extends NSObject {
+  namespace MSMouseTracker {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSMouseTracker>(): R;
       new: <R = MSMouseTracker>() => R;
     }
   }
 }
 
-declare const MSMouseTracker: cocoa.classes.MSMouseTracker;
+declare const MSMouseTracker: cocoa.MSMouseTracker.CLASS;

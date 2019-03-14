@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLayoutPoint<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
+  export interface NSLayoutPoint<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
     constraintsEqualToPoint<R = unknown, P0 = unknown>(_constraintsEqualToPoint: P0): R;
     pointByOffsettingWithXOffsetDimension_yOffsetDimension<R = unknown, P0 = unknown, P1 = unknown>(_pointByOffsettingWithXOffsetDimension: P0, _yOffsetDimension: P1): R;
     pointByOffsettingWithXOffset_yOffset<R = unknown, P0 = number, P1 = number>(_pointByOffsettingWithXOffset: P0, _yOffset: P1): R;
@@ -15,8 +15,8 @@ declare namespace cocoa {
     yAxisAnchor<R = NSLayoutYAxisAnchor>(): R;
     xAxisAnchor<R = NSLayoutXAxisAnchor>(): R;
   }
-  namespace classes {
-    export interface NSLayoutPoint<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
+  namespace NSLayoutPoint {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
       alloc<R = NSLayoutPoint>(): R;
       new: <R = NSLayoutPoint>() => R;
       pointWithXAxisAnchor_yAxisAnchor<R = unknown, P0 = unknown, P1 = unknown>(_pointWithXAxisAnchor: P0, _yAxisAnchor: P1): R;
@@ -25,4 +25,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSLayoutPoint: cocoa.classes.NSLayoutPoint;
+declare const NSLayoutPoint: cocoa.NSLayoutPoint.CLASS;

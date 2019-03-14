@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface CGDataProvider<T = any> {}
-  namespace classes {
-    export interface CGDataProvider<T = any> {  }
+  export interface CGDataProvider<T0 = void, T1 = void, T2 = void> {}
+  namespace CGDataProvider {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const CGDataProvider: cocoa.classes.CGDataProvider;
+declare const CGDataProvider: cocoa.CGDataProvider.CLASS;

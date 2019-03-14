@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSNormalResizeEventHandler<T = any> extends MSNormalBaseEventHandler {
+  export interface MSNormalResizeEventHandler<T0 = void, T1 = void, T2 = void> extends MSNormalBaseEventHandler {
     finishResizing<R = void>(): R;
     oppositeCorner<R = number>(): R;
     updateResize<R = void, P0 = unknown>(_updateResize: P0): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     snappingSession<R = MSSnappingSession>(): R;
     setSnappingSession<R = void, P0 = MSSnappingSession>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSNormalResizeEventHandler<T = any> extends MSNormalBaseEventHandler {
+  namespace MSNormalResizeEventHandler {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSNormalBaseEventHandler {
       alloc<R = MSNormalResizeEventHandler>(): R;
       new: <R = MSNormalResizeEventHandler>() => R;
     }
   }
 }
 
-declare const MSNormalResizeEventHandler: cocoa.classes.MSNormalResizeEventHandler;
+declare const MSNormalResizeEventHandler: cocoa.MSNormalResizeEventHandler.CLASS;

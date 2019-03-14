@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _mouseInsideVisibleTrackingRect<T = any> {}
-  namespace classes {
-    export interface _mouseInsideVisibleTrackingRect<T = any> {  }
+  export interface _mouseInsideVisibleTrackingRect<T0 = void, T1 = void, T2 = void> {}
+  namespace _mouseInsideVisibleTrackingRect {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

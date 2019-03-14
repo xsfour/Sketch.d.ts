@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSToolbarSpace<T = any> extends NSView {
+  export interface _NSToolbarSpace<T0 = void, T1 = void, T2 = void> extends NSView {
     _shouldDrawSpace<R = boolean>(): R;
     _drawToolbarSpaceInRect<R = void, P0 = CGRect>(__drawToolbarSpaceInRect: P0): R;
     _currentCoreUIWidget<R = __CFString>(): R;
@@ -14,8 +14,8 @@ declare namespace cocoa {
     spaceItem<R = NSToolbarSpaceItem>(): R;
     setSpaceItem<R = void, P0 = NSToolbarSpaceItem>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSToolbarSpace<T = any> extends NSView {
+  namespace _NSToolbarSpace {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = _NSToolbarSpace>(): R;
       new: <R = _NSToolbarSpace>() => R;
     }

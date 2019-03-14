@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSTouchBarCustomizationPaletteCheckboxBox<T = any> extends NSView {
+  export interface _NSTouchBarCustomizationPaletteCheckboxBox<T0 = void, T1 = void, T2 = void> extends NSView {
     allowsVibrancy<R = boolean>(): R;
     wantsUpdateLayer<R = boolean>(): R;
     wantsLayer<R = boolean>(): R;
@@ -14,8 +14,8 @@ declare namespace cocoa {
     highlighted<R = boolean>(): R;
     setHighlighted<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSTouchBarCustomizationPaletteCheckboxBox<T = any> extends NSView {
+  namespace _NSTouchBarCustomizationPaletteCheckboxBox {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = _NSTouchBarCustomizationPaletteCheckboxBox>(): R;
       new: <R = _NSTouchBarCustomizationPaletteCheckboxBox>() => R;
     }

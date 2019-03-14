@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPopUpButtonCell<T = any> extends NSMenuItemCell, NSMenuItemValidationProtocol {
+  export interface NSPopUpButtonCell<T0 = void, T1 = void, T2 = void> extends NSMenuItemCell, NSMenuItemValidationProtocol {
     _highlightTextColor<R = unknown>(): R;
     _highlightColor<R = unknown>(): R;
     _drawCircumscribedFocusRingMaskWithFrame_inView<R = void, P0 = CGRect, P1 = unknown>(__drawCircumscribedFocusRingMaskWithFrame: P0, _inView: P1): R;
@@ -135,8 +135,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSPopUpButtonCell<T = any> extends NSMenuItemCell, NSMenuItemValidationProtocol {
+  namespace NSPopUpButtonCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSMenuItemCell, NSMenuItemValidationProtocol {
       alloc<R = NSPopUpButtonCell>(): R;
       new: <R = NSPopUpButtonCell>() => R;
       _attachedCell<R = unknown>(): R;
@@ -144,4 +144,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPopUpButtonCell: cocoa.classes.NSPopUpButtonCell;
+declare const NSPopUpButtonCell: cocoa.NSPopUpButtonCell.CLASS;

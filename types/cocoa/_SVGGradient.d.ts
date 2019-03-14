@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _SVGGradient<T = any> extends SVGElement {
+  export interface _SVGGradient<T0 = void, T1 = void, T2 = void> extends SVGElement {
     primitiveRemoveUsedByStrokesObject<R = void, P0 = unknown>(_primitiveRemoveUsedByStrokesObject: P0): R;
     primitiveAddUsedByStrokesObject<R = void, P0 = unknown>(_primitiveAddUsedByStrokesObject: P0): R;
     removeUsedByStrokesObject<R = void, P0 = unknown>(_removeUsedByStrokesObject: P0): R;
@@ -36,8 +36,8 @@ declare namespace cocoa {
     linkedFrom<R = NSSet>(): R;
     setLinkedFrom<R = void, P0 = NSSet>(_v: P0): R;
   }
-  namespace classes {
-    export interface _SVGGradient<T = any> extends SVGElement {
+  namespace _SVGGradient {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends SVGElement {
       alloc<R = _SVGGradient>(): R;
       new: <R = _SVGGradient>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCGSFence<T = any> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
+  export interface NSCGSFence<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
     invalidate<R = void>(): R;
     set<R = void>(): R;
     dealloc<R = void>(): R;
@@ -9,8 +9,8 @@ declare namespace cocoa {
     sendRight<R = _mach_right_send>(): R;
     valid<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSCGSFence<T = any> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
+  namespace NSCGSFence {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
       alloc<R = NSCGSFence>(): R;
       new: <R = NSCGSFence>() => R;
       supportsSecureCoding<R = boolean>(): R;
@@ -19,4 +19,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSCGSFence: cocoa.classes.NSCGSFence;
+declare const NSCGSFence: cocoa.NSCGSFence.CLASS;

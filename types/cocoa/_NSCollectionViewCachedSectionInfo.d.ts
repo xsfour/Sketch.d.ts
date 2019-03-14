@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSCollectionViewCachedSectionInfo<T = any> extends NSObject {
+  export interface _NSCollectionViewCachedSectionInfo<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     description<R = unknown>(): R;
     enumerateObjectsUsingBlock<R = void, P0 = CDUnknownBlockType>(_enumerateObjectsUsingBlock: P0): R;
@@ -22,8 +22,8 @@ declare namespace cocoa {
     itemCount<R = number>(): R;
     setItemCount<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSCollectionViewCachedSectionInfo<T = any> extends NSObject {
+  namespace _NSCollectionViewCachedSectionInfo {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSCollectionViewCachedSectionInfo>(): R;
       new: <R = _NSCollectionViewCachedSectionInfo>() => R;
     }

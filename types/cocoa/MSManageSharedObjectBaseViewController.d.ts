@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSManageSharedObjectBaseViewController<T = any> extends NSViewController, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol {
+  export interface MSManageSharedObjectBaseViewController<T0 = void, T1 = void, T2 = void> extends NSViewController, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol {
     cxx_destruct<R = void>(): R;
     deleteSelectedObjects<R = void, P0 = unknown>(_deleteSelectedObjects: P0): R;
     removeSharedObject<R = void, P0 = unknown>(_removeSharedObject: P0): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSManageSharedObjectBaseViewController<T = any> extends NSViewController, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol {
+  namespace MSManageSharedObjectBaseViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol {
       alloc<R = MSManageSharedObjectBaseViewController>(): R;
       new: <R = MSManageSharedObjectBaseViewController>() => R;
     }
   }
 }
 
-declare const MSManageSharedObjectBaseViewController: cocoa.classes.MSManageSharedObjectBaseViewController;
+declare const MSManageSharedObjectBaseViewController: cocoa.MSManageSharedObjectBaseViewController.CLASS;

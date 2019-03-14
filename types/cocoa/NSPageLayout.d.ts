@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPageLayout<T = any> extends NSObject {
+  export interface NSPageLayout<T0 = void, T1 = void, T2 = void> extends NSObject {
     runModal<R = number>(): R;
     runModalWithPrintInfo<R = number, P0 = unknown>(_runModalWithPrintInfo: P0): R;
     _sheet_didEndWithResult_contextInfo<R = void, P0 = unknown, P1 = number, P2 = void>(__sheet: P0, _didEndWithResult: P1, _contextInfo: P2): R;
@@ -23,8 +23,8 @@ declare namespace cocoa {
     printInfo<R = NSPrintInfo>(): R;
     accessoryControllers<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface NSPageLayout<T = any> extends NSObject {
+  namespace NSPageLayout {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSPageLayout>(): R;
       new: <R = NSPageLayout>() => R;
       pageLayout<R = unknown>(): R;
@@ -32,4 +32,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPageLayout: cocoa.classes.NSPageLayout;
+declare const NSPageLayout: cocoa.NSPageLayout.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPICTImageRep<T = any> extends NSImageRep {
+  export interface NSPICTImageRep<T0 = void, T1 = void, T2 = void> extends NSImageRep {
     bitsPerSample<R = number>(): R;
     setBitsPerSample<R = void, P0 = number>(_setBitsPerSample: P0): R;
     isOpaque<R = boolean>(): R;
@@ -15,8 +15,8 @@ declare namespace cocoa {
     PICTRepresentation<R = NSData>(): R;
     boundingBox<R = CGRect>(): R;
   }
-  namespace classes {
-    export interface NSPICTImageRep<T = any> extends NSImageRep {
+  namespace NSPICTImageRep {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSImageRep {
       alloc<R = NSPICTImageRep>(): R;
       new: <R = NSPICTImageRep>() => R;
       _imageDataFromPICTData_toType<R = unknown, P0 = unknown, P1 = unknown>(__imageDataFromPICTData: P0, _toType: P1): R;
@@ -27,4 +27,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPICTImageRep: cocoa.classes.NSPICTImageRep;
+declare const NSPICTImageRep: cocoa.NSPICTImageRep.CLASS;

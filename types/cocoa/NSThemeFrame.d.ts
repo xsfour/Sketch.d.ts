@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSThemeFrame<T = any> extends NSTitledFrame, NSViewLayerContentScaleDelegateProtocol {
+  export interface NSThemeFrame<T0 = void, T1 = void, T2 = void> extends NSTitledFrame, NSViewLayerContentScaleDelegateProtocol {
     animationDidStop<R = void, P0 = unknown>(_animationDidStop: P0): R;
     animationDidEnd<R = void, P0 = unknown>(_animationDidEnd: P0): R;
     _animateFromStartingTitleControlState<R = void>(): R;
@@ -371,8 +371,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSThemeFrame<T = any> extends NSTitledFrame, NSViewLayerContentScaleDelegateProtocol {
+  namespace NSThemeFrame {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTitledFrame, NSViewLayerContentScaleDelegateProtocol {
       alloc<R = NSThemeFrame>(): R;
       new: <R = NSThemeFrame>() => R;
       _prepareRenameField_forEditingMode<R = void, P0 = unknown, P1 = number>(__prepareRenameField: P0, _forEditingMode: P1): R;
@@ -391,4 +391,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSThemeFrame: cocoa.classes.NSThemeFrame;
+declare const NSThemeFrame: cocoa.NSThemeFrame.CLASS;

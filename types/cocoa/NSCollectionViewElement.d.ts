@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCollectionViewElement<T = any> {}
-  namespace classes {
-    export interface NSCollectionViewElement<T = any> {  }
+  export interface NSCollectionViewElement<T0 = void, T1 = void, T2 = void> {}
+  namespace NSCollectionViewElement {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSCollectionViewElement: cocoa.classes.NSCollectionViewElement;
+declare const NSCollectionViewElement: cocoa.NSCollectionViewElement.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDraggingDestinationView<T = any> extends NSView {
+  export interface NSDraggingDestinationView<T0 = void, T1 = void, T2 = void> extends NSView {
     isFlipped<R = boolean>(): R;
     isOpaque<R = boolean>(): R;
     backgroundStyle<R = number>(): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     flashing<R = boolean>(): R;
     setFlashing<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSDraggingDestinationView<T = any> extends NSView {
+  namespace NSDraggingDestinationView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSDraggingDestinationView>(): R;
       new: <R = NSDraggingDestinationView>() => R;
     }
   }
 }
 
-declare const NSDraggingDestinationView: cocoa.classes.NSDraggingDestinationView;
+declare const NSDraggingDestinationView: cocoa.NSDraggingDestinationView.CLASS;

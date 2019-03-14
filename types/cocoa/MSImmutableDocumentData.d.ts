@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutableDocumentData<T = any> extends _MSImmutableDocumentData, MSLayerContainmentProtocol, MSDocumentDataProtocol {
+  export interface MSImmutableDocumentData<T0 = void, T1 = void, T2 = void> extends _MSImmutableDocumentData, MSLayerContainmentProtocol, MSDocumentDataProtocol {
     pagesAndArtboardsMetadata<R = unknown>(): R;
     allSymbols<R = unknown>(): R;
     localSymbols<R = unknown>(): R;
@@ -48,8 +48,8 @@ declare namespace cocoa {
     fontNames<R = NSSet>(): R;
     pages<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface MSImmutableDocumentData<T = any> extends _MSImmutableDocumentData, MSLayerContainmentProtocol, MSDocumentDataProtocol {
+  namespace MSImmutableDocumentData {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSImmutableDocumentData, MSLayerContainmentProtocol, MSDocumentDataProtocol {
       alloc<R = MSImmutableDocumentData>(): R;
       new: <R = MSImmutableDocumentData>() => R;
       loadDocumentDataWithMetadata_loadBlock<R = unknown, P0 = unknown, P1 = CDUnknownBlockType>(_loadDocumentDataWithMetadata: P0, _loadBlock: P1): R;
@@ -57,4 +57,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSImmutableDocumentData: cocoa.classes.MSImmutableDocumentData;
+declare const MSImmutableDocumentData: cocoa.MSImmutableDocumentData.CLASS;

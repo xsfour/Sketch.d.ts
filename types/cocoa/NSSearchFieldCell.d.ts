@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSearchFieldCell<T = any> extends NSTextFieldCell, CALayerDelegateProtocol {
+  export interface NSSearchFieldCell<T0 = void, T1 = void, T2 = void> extends NSTextFieldCell, CALayerDelegateProtocol {
     _textLayerRectForBounds<R = CGRect, P0 = CGRect>(__textLayerRectForBounds: P0): R;
     _setCancelButtonVisible_animate<R = void, P0 = boolean, P1 = boolean>(__setCancelButtonVisible: P0, _animate: P1): R;
     _transitionInRect_ofView_becomeFirstResponder_completion<R = void, P0 = CGRect, P1 = unknown, P2 = boolean, P3 = CDUnknownBlockType>(__transitionInRect: P0, _ofView: P1, _becomeFirstResponder: P2, _completion: P3): R;
@@ -90,8 +90,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSSearchFieldCell<T = any> extends NSTextFieldCell, CALayerDelegateProtocol {
+  namespace NSSearchFieldCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTextFieldCell, CALayerDelegateProtocol {
       alloc<R = NSSearchFieldCell>(): R;
       new: <R = NSSearchFieldCell>() => R;
       automaticTextCompletionEnabled<R = boolean>(): R;
@@ -100,4 +100,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSSearchFieldCell: cocoa.classes.NSSearchFieldCell;
+declare const NSSearchFieldCell: cocoa.NSSearchFieldCell.CLASS;

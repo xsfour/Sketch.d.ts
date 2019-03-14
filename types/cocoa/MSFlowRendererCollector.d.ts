@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFlowRendererCollector<T = any> extends NSObject {
+  export interface MSFlowRendererCollector<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     pushSymbolMaster_onStackInBlock<R = void, P0 = unknown, P1 = CDUnknownBlockType>(_pushSymbolMaster: P0, _onStackInBlock: P1): R;
     clipPathForFlowFromLayer_toArtboard_path<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_clipPathForFlowFromLayer: P0, _toArtboard: P1, _path: P2): R;
@@ -28,12 +28,12 @@ declare namespace cocoa {
     setPage<R = void, P0 = MSImmutablePage>(_v: P0): R;
     flowRenderers<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface MSFlowRendererCollector<T = any> extends NSObject {
+  namespace MSFlowRendererCollector {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSFlowRendererCollector>(): R;
       new: <R = MSFlowRendererCollector>() => R;
     }
   }
 }
 
-declare const MSFlowRendererCollector: cocoa.classes.MSFlowRendererCollector;
+declare const MSFlowRendererCollector: cocoa.MSFlowRendererCollector.CLASS;

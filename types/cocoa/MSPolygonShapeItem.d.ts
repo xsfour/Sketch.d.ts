@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPolygonShapeItem<T = any> extends MSCustomShapeItem, MSInspectorMathValueAdaptorDelegateProtocol {
+  export interface MSPolygonShapeItem<T0 = void, T1 = void, T2 = void> extends MSCustomShapeItem, MSInspectorMathValueAdaptorDelegateProtocol {
     sidesField<R = MSUpDownTextField>(): R;
     setSidesField<R = void, P0 = MSUpDownTextField>(_v: P0): R;
     layersController<R = NSArrayController>(): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSPolygonShapeItem<T = any> extends MSCustomShapeItem, MSInspectorMathValueAdaptorDelegateProtocol {
+  namespace MSPolygonShapeItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSCustomShapeItem, MSInspectorMathValueAdaptorDelegateProtocol {
       alloc<R = MSPolygonShapeItem>(): R;
       new: <R = MSPolygonShapeItem>() => R;
     }
   }
 }
 
-declare const MSPolygonShapeItem: cocoa.classes.MSPolygonShapeItem;
+declare const MSPolygonShapeItem: cocoa.MSPolygonShapeItem.CLASS;

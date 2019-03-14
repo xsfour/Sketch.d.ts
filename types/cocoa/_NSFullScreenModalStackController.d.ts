@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSFullScreenModalStackController<T = any> extends NSObject, _NSFullScreenModalDimmingWindowDelegateProtocol {
+  export interface _NSFullScreenModalStackController<T0 = void, T1 = void, T2 = void> extends NSObject, _NSFullScreenModalDimmingWindowDelegateProtocol {
     windowDidEndDraggingNotification<R = void, P0 = unknown>(_windowDidEndDraggingNotification: P0): R;
     windowWillStartDraggingNotification<R = void, P0 = unknown>(_windowWillStartDraggingNotification: P0): R;
     _actuallyBeginDraggingFrontWindow<R = void>(): R;
@@ -49,8 +49,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSFullScreenModalStackController<T = any> extends NSObject, _NSFullScreenModalDimmingWindowDelegateProtocol {
+  namespace _NSFullScreenModalStackController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, _NSFullScreenModalDimmingWindowDelegateProtocol {
       alloc<R = _NSFullScreenModalStackController>(): R;
       new: <R = _NSFullScreenModalStackController>() => R;
     }

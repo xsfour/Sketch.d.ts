@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSCurvePoint<T = any> extends MSModelObject {
+  export interface _MSCurvePoint<T0 = void, T1 = void, T2 = void> extends MSModelObject {
     hasDefaultValues<R = boolean>(): R;
     point<R = CGPoint>(): R;
     setPoint<R = void, P0 = CGPoint>(_v: P0): R;
@@ -18,8 +18,8 @@ declare namespace cocoa {
     cornerRadius<R = number>(): R;
     setCornerRadius<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface _MSCurvePoint<T = any> extends MSModelObject {
+  namespace _MSCurvePoint {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSModelObject {
       alloc<R = _MSCurvePoint>(): R;
       new: <R = _MSCurvePoint>() => R;
     }

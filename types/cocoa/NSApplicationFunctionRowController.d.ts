@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSApplicationFunctionRowController<T = any> extends NSObject, NSTouchBarFinderObserverProtocol {
+  export interface NSApplicationFunctionRowController<T0 = void, T1 = void, T2 = void> extends NSObject, NSTouchBarFinderObserverProtocol {
     observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
     _refreshTouchBarView<R = void, P0 = unknown>(__refreshTouchBarView: P0): R;
     dealloc<R = void>(): R;
@@ -18,8 +18,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSApplicationFunctionRowController<T = any> extends NSObject, NSTouchBarFinderObserverProtocol {
+  namespace NSApplicationFunctionRowController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSTouchBarFinderObserverProtocol {
       alloc<R = NSApplicationFunctionRowController>(): R;
       new: <R = NSApplicationFunctionRowController>() => R;
       sharedApplicationFunctionRowController<R = unknown>(): R;
@@ -29,4 +29,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSApplicationFunctionRowController: cocoa.classes.NSApplicationFunctionRowController;
+declare const NSApplicationFunctionRowController: cocoa.NSApplicationFunctionRowController.CLASS;

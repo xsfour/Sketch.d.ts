@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBezierInterpreter<T = any> extends NSObject {
+  export interface MSBezierInterpreter<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     points<R = unknown>(): R;
     rect<R = CGRect>(): R;
@@ -9,8 +9,8 @@ declare namespace cocoa {
     bezierPath<R = NSBezierPath>(): R;
     setBezierPath<R = void, P0 = NSBezierPath>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSBezierInterpreter<T = any> extends NSObject {
+  namespace MSBezierInterpreter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSBezierInterpreter>(): R;
       new: <R = MSBezierInterpreter>() => R;
       pointsFromBezierPath_inRect<R = unknown, P0 = unknown, P1 = CGRect>(_pointsFromBezierPath: P0, _inRect: P1): R;
@@ -18,4 +18,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSBezierInterpreter: cocoa.classes.MSBezierInterpreter;
+declare const MSBezierInterpreter: cocoa.MSBezierInterpreter.CLASS;

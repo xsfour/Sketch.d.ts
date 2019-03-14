@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSSliderCellLegacyMetrics<T = any> extends NSObject, NSSliderCellMetricsStrategyProtocol {
+  export interface _NSSliderCellLegacyMetrics<T0 = void, T1 = void, T2 = void> extends NSObject, NSSliderCellMetricsStrategyProtocol {
     _oldGetBarBounds<R = CGRect, P0 = CGRect>(__oldGetBarBounds: P0): R;
     _orthogonalTickMarkInset<R = number>(): R;
     _primaryTickMarkInset<R = number>(): R;
@@ -16,8 +16,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSSliderCellLegacyMetrics<T = any> extends NSObject, NSSliderCellMetricsStrategyProtocol {
+  namespace _NSSliderCellLegacyMetrics {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSliderCellMetricsStrategyProtocol {
       alloc<R = _NSSliderCellLegacyMetrics>(): R;
       new: <R = _NSSliderCellLegacyMetrics>() => R;
       requiresLegacyMetricsForSlider<R = boolean, P0 = unknown>(_requiresLegacyMetricsForSlider: P0): R;

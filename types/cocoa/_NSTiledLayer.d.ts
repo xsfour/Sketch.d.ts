@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSTiledLayer<T = any> extends CALayer {
+  export interface _NSTiledLayer<T0 = void, T1 = void, T2 = void> extends CALayer {
     addSublayer<R = void, P0 = unknown>(_addSublayer: P0): R;
     NS_prepareContentRect<R = void, P0 = CGRect>(_NS_prepareContentRect: P0): R;
     NS_invalidatePreparedContentRect<R = void>(): R;
@@ -43,8 +43,8 @@ declare namespace cocoa {
     tileSize<R = CGSize>(): R;
     setTileSize<R = void, P0 = CGSize>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSTiledLayer<T = any> extends CALayer {
+  namespace _NSTiledLayer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends CALayer {
       needsDisplayForKey<R = boolean, P0 = unknown>(_needsDisplayForKey: P0): R;
       defaultValueForKey<R = unknown, P0 = unknown>(_defaultValueForKey: P0): R;
       initialize<R = void>(): R;

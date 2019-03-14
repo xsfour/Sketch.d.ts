@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSStyledLayer<T = any> extends _MSStyledLayer, MSStyledLayerProtocol {
+  export interface MSStyledLayer<T0 = void, T1 = void, T2 = void> extends _MSStyledLayer, MSStyledLayerProtocol {
     hasMarkers<R = boolean>(): R;
     usedStyle<R = unknown>(): R;
     hasEnabledBackgroundBlur<R = boolean>(): R;
@@ -57,8 +57,8 @@ declare namespace cocoa {
     rotation<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSStyledLayer<T = any> extends _MSStyledLayer, MSStyledLayerProtocol {
+  namespace MSStyledLayer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSStyledLayer, MSStyledLayerProtocol {
       alloc<R = MSStyledLayer>(): R;
       new: <R = MSStyledLayer>() => R;
       layerWithImage<R = unknown, P0 = unknown>(_layerWithImage: P0): R;
@@ -74,4 +74,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSStyledLayer: cocoa.classes.MSStyledLayer;
+declare const MSStyledLayer: cocoa.MSStyledLayer.CLASS;

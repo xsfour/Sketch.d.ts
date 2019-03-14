@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSDocumentSerializationObject<T = any> extends NSObject {
+  export interface _NSDocumentSerializationObject<T0 = void, T1 = void, T2 = void> extends NSObject {
     grant<R = void>(): R;
     addBreadcrumb<R = void, P0 = unknown>(_addBreadcrumb: P0): R;
     dealloc<R = void>(): R;
@@ -19,8 +19,8 @@ declare namespace cocoa {
     synchronous<R = boolean>(): R;
     setSynchronous<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSDocumentSerializationObject<T = any> extends NSObject {
+  namespace _NSDocumentSerializationObject {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSDocumentSerializationObject>(): R;
       new: <R = _NSDocumentSerializationObject>() => R;
     }

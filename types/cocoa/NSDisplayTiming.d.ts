@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDisplayTiming<T = any> extends NSObject, NSCopyingProtocol {
+  export interface NSDisplayTiming<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     submissionTimeBeforeTime<R = number, P0 = number>(_submissionTimeBeforeTime: P0): R;
     submissionTimeAfterTime<R = number, P0 = number>(_submissionTimeAfterTime: P0): R;
     displayTimeForSubmissionTime<R = number, P0 = number>(_displayTimeForSubmissionTime: P0): R;
@@ -9,8 +9,8 @@ declare namespace cocoa {
     displayTimeBeforeTime<R = number, P0 = number>(_displayTimeBeforeTime: P0): R;
     displayTimeAfterTime<R = number, P0 = number>(_displayTimeAfterTime: P0): R;
   }
-  namespace classes {
-    export interface NSDisplayTiming<T = any> extends NSObject, NSCopyingProtocol {
+  namespace NSDisplayTiming {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = NSDisplayTiming>(): R;
       new: <R = NSDisplayTiming>() => R;
       allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
@@ -22,4 +22,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSDisplayTiming: cocoa.classes.NSDisplayTiming;
+declare const NSDisplayTiming: cocoa.NSDisplayTiming.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAccessibilityProxy<T = any> extends NSObject {
+  export interface NSAccessibilityProxy<T0 = void, T1 = void, T2 = void> extends NSObject {
     accessibilityFocusedUIElement<R = unknown>(): R;
     accessibilityHitTest<R = unknown, P0 = CGPoint>(_accessibilityHitTest: P0): R;
     _proxyForUIElement<R = unknown, P0 = unknown>(__proxyForUIElement: P0): R;
@@ -23,12 +23,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     realElement<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSAccessibilityProxy<T = any> extends NSObject {
+  namespace NSAccessibilityProxy {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSAccessibilityProxy>(): R;
       new: <R = NSAccessibilityProxy>() => R;
     }
   }
 }
 
-declare const NSAccessibilityProxy: cocoa.classes.NSAccessibilityProxy;
+declare const NSAccessibilityProxy: cocoa.NSAccessibilityProxy.CLASS;

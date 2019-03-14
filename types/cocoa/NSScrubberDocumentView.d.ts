@@ -1,130 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScrubberDocumentView<T = any> extends NSView {
-    cxx_destruct<R = void>(): R;
-    populatedItemViews<R = unknown>(): R;
-    indexForItemView<R = number, P0 = unknown>(_indexForItemView: P0): R;
-    makeSelectionPairForItemView_withIndex<R = unknown, P0 = unknown, P1 = number>(_makeSelectionPairForItemView: P0, _withIndex: P1): R;
-    selectionPairForItemAtIndex_creatingIfNeeded<R = unknown, P0 = number, P1 = boolean>(_selectionPairForItemAtIndex: P0, _creatingIfNeeded: P1): R;
-    makeItemWithIdentifier_owner<R = unknown, P0 = unknown, P1 = unknown>(_makeItemWithIdentifier: P0, _owner: P1): R;
-    registerNib_forItemIdentifier<R = void, P0 = unknown, P1 = unknown>(_registerNib: P0, _forItemIdentifier: P1): R;
-    registerClass_forItemIdentifier<R = void, P0 = unknown, P1 = unknown>(_registerClass: P0, _forItemIdentifier: P1): R;
-    recycleView<R = void, P0 = unknown>(_recycleView: P0): R;
-    addItemView_toSuperview<R = void, P0 = unknown, P1 = unknown>(_addItemView: P0, _toSuperview: P1): R;
-    createItemViewForIndex<R = unknown, P0 = number>(_createItemViewForIndex: P0): R;
-    viewForItemAtIndex_creatingIfNeeded<R = unknown, P0 = number, P1 = boolean>(_viewForItemAtIndex: P0, _creatingIfNeeded: P1): R;
-    invalidateEverythingAndReload<R = void>(): R;
-    scrollPointAligningItemAtIndex_toAlignment_forSelectedIndex_approximatedScrollPoint<R = CGPoint, P0 = number, P1 = number, P2 = number, P3 = CGPoint>(_scrollPointAligningItemAtIndex: P0, _toAlignment: P1, _forSelectedIndex: P2, _approximatedScrollPoint: P3): R;
-    scrollPointAligningItemAtIndex_toAlignment<R = CGPoint, P0 = number, P1 = number>(_scrollPointAligningItemAtIndex: P0, _toAlignment: P1): R;
-    scrollPointAligningItemAtIndex_toAlignment_forState<R = CGPoint, P0 = number, P1 = number, P2 = unknown>(_scrollPointAligningItemAtIndex: P0, _toAlignment: P1, _forState: P2): R;
-    applyPinningConfiguration<R = void, P0 = unknown>(_applyPinningConfiguration: P0): R;
-    calculatePinningConfigurationForState<R = unknown, P0 = unknown>(_calculatePinningConfigurationForState: P0): R;
-    setSuppressScrollCorrection<R = void, P0 = boolean>(_setSuppressScrollCorrection: P0): R;
-    clearPinnedItem<R = void>(): R;
-    pinItemAtIndex_toAlignment<R = void, P0 = number, P1 = number>(_pinItemAtIndex: P0, _toAlignment: P1): R;
-    contentViewInsetsForContentSize<R = NSEdgeInsets, P0 = CGSize>(_contentViewInsetsForContentSize: P0): R;
-    scrollItemAtIndex_toAlignment<R = void, P0 = number, P1 = number>(_scrollItemAtIndex: P0, _toAlignment: P1): R;
-    cachedAttributesForItemAtIndex<R = unknown, P0 = number>(_cachedAttributesForItemAtIndex: P0): R;
-    attributesNearestToPoint<R = unknown, P0 = CGPoint>(_attributesNearestToPoint: P0): R;
-    itemNearestToPoint_index_frame<R = boolean, P0 = CGPoint, P1 = number, P2 = CGRect>(_itemNearestToPoint: P0, _index: P1, _frame: P2): R;
-    itemAtPoint_index_frame<R = boolean, P0 = CGPoint, P1 = number, P2 = CGRect>(_itemAtPoint: P0, _index: P1, _frame: P2): R;
-    _preferredSuperviewForTransition<R = unknown, P0 = unknown>(__preferredSuperviewForTransition: P0): R;
-    _preferredSuperviewForAttributes<R = unknown, P0 = unknown>(__preferredSuperviewForAttributes: P0): R;
-    _presentationLayoutAttributesForItemAttributes<R = unknown, P0 = unknown>(__presentationLayoutAttributesForItemAttributes: P0): R;
-    _presentationLayoutAttributesForLayoutAttributes<R = unknown, P0 = unknown>(__presentationLayoutAttributesForLayoutAttributes: P0): R;
-    sortScrubberSubviews<R = void>(): R;
-    updateCornerMaskingForState<R = void, P0 = unknown>(_updateCornerMaskingForState: P0): R;
-    retargetSelectionPairsAnimatingOut<R = void>(): R;
-    applySelectionAttributes_startingAttributes_withState<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(_applySelectionAttributes: P0, _startingAttributes: P1, _withState: P2): R;
-    cleanupAfterSelectionTransitions<R = void, P0 = unknown>(_cleanupAfterSelectionTransitions: P0): R;
-    performSelectionTransitions_withState<R = void, P0 = unknown, P1 = unknown>(_performSelectionTransitions: P0, _withState: P1): R;
-    prepareForSelectionTransitions<R = void, P0 = unknown>(_prepareForSelectionTransitions: P0): R;
-    applyLayoutAttributes_toItemView<R = void, P0 = unknown, P1 = unknown>(_applyLayoutAttributes: P0, _toItemView: P1): R;
-    applyItemAttributes_startingAttributes_withState<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(_applyItemAttributes: P0, _startingAttributes: P1, _withState: P2): R;
-    cleanupAfterItemTransitions<R = void, P0 = unknown>(_cleanupAfterItemTransitions: P0): R;
-    performItemTransitions_withState<R = void, P0 = unknown, P1 = unknown>(_performItemTransitions: P0, _withState: P1): R;
-    prepareForItemTransitions<R = void, P0 = unknown>(_prepareForItemTransitions: P0): R;
-    performPendingTransitionsWithCompletion<R = void, P0 = CDUnknownBlockType>(_performPendingTransitionsWithCompletion: P0): R;
-    selectionTransitionsFromAttributes_toAttributes_presentationItemAttributes_newItemAttributes<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown>(_selectionTransitionsFromAttributes: P0, _toAttributes: P1, _presentationItemAttributes: P2, _newItemAttributes: P3): R;
-    itemTransitionsFromAttributes_toAttributes_withState<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_itemTransitionsFromAttributes: P0, _toAttributes: P1, _withState: P2): R;
-    layoutScrubberContentsAnimated<R = void, P0 = boolean>(_layoutScrubberContentsAnimated: P0): R;
-    setNeedsItemLayout<R = void>(): R;
-    updateForTrackingPoint_isTrackingSelection<R = void, P0 = CGPoint, P1 = boolean>(_updateForTrackingPoint: P0, _isTrackingSelection: P1): R;
-    _setHighlightedIndex<R = void, P0 = number>(__setHighlightedIndex: P0): R;
-    _setSelectedIndex<R = void, P0 = number>(__setSelectedIndex: P0): R;
-    executePendingChanges_completionHandler<R = void, P0 = unknown, P1 = CDUnknownBlockType>(_executePendingChanges: P0, _completionHandler: P1): R;
-    snapshotForPendingChanges<R = unknown>(): R;
-    updateSelectionLayoutObject<R = void>(): R;
-    updateItemLayoutObject<R = void>(): R;
-    resetSelectionPairs<R = void>(): R;
-    updateSelectionForContinuousFree<R = void>(): R;
-    visibleContentRectDidChange<R = void>(): R;
-    clipBoundsDidChange<R = void, P0 = unknown>(_clipBoundsDidChange: P0): R;
-    clipFrameDidChange<R = void, P0 = unknown>(_clipFrameDidChange: P0): R;
-    visibleContentRectForPinningConfiguration<R = CGRect, P0 = unknown>(_visibleContentRectForPinningConfiguration: P0): R;
-    calculateVisibleContentRect<R = CGRect>(): R;
-    adjustForContentSize_contentInsets<R = void, P0 = CGSize, P1 = NSEdgeInsets>(_adjustForContentSize: P0, _contentInsets: P1): R;
-    setUserInterfaceLayoutDirection<R = void, P0 = number>(_setUserInterfaceLayoutDirection: P0): R;
-    proxyState<R = unknown>(): R;
-    setProxyState<R = void, P0 = unknown>(_v: P0): R;
-    endcapCornerRadius<R = number>(): R;
-    setEndcapCornerRadius<R = void, P0 = number>(_v: P0): R;
-    selectionLayout<R = NSScrubberSelectionLayout>(): R;
-    setSelectionLayout<R = void, P0 = NSScrubberSelectionLayout>(_v: P0): R;
-    itemLayout<R = NSScrubberItemLayout>(): R;
-    setItemLayout<R = void, P0 = NSScrubberItemLayout>(_v: P0): R;
-    registeredViewNibs<R = NSDictionary>(): R;
-    registeredViewClasses<R = NSDictionary>(): R;
-    pendingSelectionLayoutAttributes<R = NSSet>(): R;
-    setPendingSelectionLayoutAttributes<R = void, P0 = NSSet>(_v: P0): R;
-    pendingItemLayoutAttributes<R = NSSet>(): R;
-    setPendingItemLayoutAttributes<R = void, P0 = NSSet>(_v: P0): R;
-    pendingSelectionTransitions<R = NSArray>(): R;
-    setPendingSelectionTransitions<R = void, P0 = NSArray>(_v: P0): R;
-    pendingItemTransitions<R = NSArray>(): R;
-    setPendingItemTransitions<R = void, P0 = NSArray>(_v: P0): R;
-    currentSelectionLayoutAttributes<R = NSSet>(): R;
-    setCurrentSelectionLayoutAttributes<R = void, P0 = NSSet>(_v: P0): R;
-    currentItemLayoutAttributes<R = NSSet>(): R;
-    setCurrentItemLayoutAttributes<R = void, P0 = NSSet>(_v: P0): R;
-    selectionPairMap<R = NSMutableDictionary>(): R;
-    setSelectionPairMap<R = void, P0 = NSMutableDictionary>(_v: P0): R;
-    itemViewMap<R = NSMutableDictionary>(): R;
-    setItemViewMap<R = void, P0 = NSMutableDictionary>(_v: P0): R;
-    contentView<R = NSView>(): R;
-    scrubber<R = NSScrubber>(): R;
-    setScrubber<R = void, P0 = NSScrubber>(_v: P0): R;
-    requiredPopulatedItemIndexes<R = NSIndexSet>(): R;
-    setRequiredPopulatedItemIndexes<R = void, P0 = NSIndexSet>(_v: P0): R;
-    highlightedIndex<R = number>(): R;
-    setHighlightedIndex<R = void, P0 = number>(_v: P0): R;
-    selectedIndex<R = number>(): R;
-    setSelectedIndex<R = void, P0 = number>(_v: P0): R;
-    selectionBackground<R = NSScrubberSelectionStyle>(): R;
-    setSelectionBackground<R = void, P0 = NSScrubberSelectionStyle>(_v: P0): R;
-    selectionOverlay<R = NSScrubberSelectionStyle>(): R;
-    setSelectionOverlay<R = void, P0 = NSScrubberSelectionStyle>(_v: P0): R;
-    floatsSelection<R = boolean>(): R;
-    setFloatsSelection<R = void, P0 = boolean>(_v: P0): R;
-    animatingSelections<R = boolean>(): R;
-    setAnimatingSelections<R = void, P0 = boolean>(_v: P0): R;
-    numberOfItems<R = number>(): R;
-    setNumberOfItems<R = void, P0 = number>(_v: P0): R;
-    pendingScrollPin<R = unknown>(): R;
-    setPendingScrollPin<R = void, P0 = unknown>(_v: P0): R;
-    modelState<R = unknown>(): R;
-    setModelState<R = void, P0 = unknown>(_v: P0): R;
-    scrubberLayout<R = NSScrubberLayout>(): R;
-    setScrubberLayout<R = void, P0 = NSScrubberLayout>(_v: P0): R;
-    rectInClip<R = CGRect>(): R;
-  }
-  namespace classes {
-    export interface NSScrubberDocumentView<T = any> extends NSView {
+  export interface NSScrubberDocumentView<T0 = void, T1 = void, T2 = void> extends NSView {}
+  namespace NSScrubberDocumentView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSScrubberDocumentView>(): R;
       new: <R = NSScrubberDocumentView>() => R;
     }
   }
 }
 
-declare const NSScrubberDocumentView: cocoa.classes.NSScrubberDocumentView;
+declare const NSScrubberDocumentView: cocoa.NSScrubberDocumentView.CLASS;

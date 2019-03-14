@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSButtonImageSource<T = any> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
+  export interface NSButtonImageSource<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
     hasImageWithAlpha<R = boolean>(): R;
     focusRingImageSize<R = CGSize>(): R;
     imageSize<R = CGSize>(): R;
@@ -19,8 +19,8 @@ declare namespace cocoa {
     _initWithName_propertyList<R = unknown, P0 = unknown, P1 = unknown>(__initWithName: P0, _propertyList: P1): R;
     _scanImages<R = void>(): R;
   }
-  namespace classes {
-    export interface NSButtonImageSource<T = any> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
+  namespace NSButtonImageSource {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
       alloc<R = NSButtonImageSource>(): R;
       new: <R = NSButtonImageSource>() => R;
       archiveButtonImageSourceWithName_toDirectory<R = boolean, P0 = unknown, P1 = unknown>(_archiveButtonImageSourceWithName: P0, _toDirectory: P1): R;
@@ -30,4 +30,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSButtonImageSource: cocoa.classes.NSButtonImageSource;
+declare const NSButtonImageSource: cocoa.NSButtonImageSource.CLASS;

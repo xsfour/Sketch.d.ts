@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScrollingBehaviorLegacy<T = any> extends NSScrollingBehavior {
+  export interface NSScrollingBehaviorLegacy<T0 = void, T1 = void, T2 = void> extends NSScrollingBehavior {
     _momentumAnimationTimerFire<R = void, P0 = unknown>(__momentumAnimationTimerFire: P0): R;
     _cancelAnyOutstandingPanAnimation<R = boolean>(): R;
     scrollView_panGestureRecognizerEndedOrFailed<R = void, P0 = unknown, P1 = unknown>(_scrollView: P0, _panGestureRecognizerEndedOrFailed: P1): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     endGestureMonitor<R = unknown>(): R;
     setEndGestureMonitor<R = void, P0 = unknown>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSScrollingBehaviorLegacy<T = any> extends NSScrollingBehavior {
+  namespace NSScrollingBehaviorLegacy {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSScrollingBehavior {
       alloc<R = NSScrollingBehaviorLegacy>(): R;
       new: <R = NSScrollingBehaviorLegacy>() => R;
     }
   }
 }
 
-declare const NSScrollingBehaviorLegacy: cocoa.classes.NSScrollingBehaviorLegacy;
+declare const NSScrollingBehaviorLegacy: cocoa.NSScrollingBehaviorLegacy.CLASS;

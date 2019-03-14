@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLevelIndicator<T = any> extends NSControl {
+  export interface NSLevelIndicator<T0 = void, T1 = void, T2 = void> extends NSControl {
     setCustomCriticalFillColor<R = void, P0 = unknown>(_setCustomCriticalFillColor: P0): R;
     customCriticalFillColor<R = unknown>(): R;
     setCustomWarningFillColor<R = void, P0 = unknown>(_setCustomWarningFillColor: P0): R;
@@ -46,12 +46,12 @@ declare namespace cocoa {
     levelIndicatorStyle<R = number>(): R;
     setLevelIndicatorStyle<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSLevelIndicator<T = any> extends NSControl {
+  namespace NSLevelIndicator {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSControl {
       alloc<R = NSLevelIndicator>(): R;
       new: <R = NSLevelIndicator>() => R;
     }
   }
 }
 
-declare const NSLevelIndicator: cocoa.classes.NSLevelIndicator;
+declare const NSLevelIndicator: cocoa.NSLevelIndicator.CLASS;

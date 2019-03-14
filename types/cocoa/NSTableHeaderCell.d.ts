@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableHeaderCell<T = any> extends NSTextFieldCell {
+  export interface NSTableHeaderCell<T0 = void, T1 = void, T2 = void> extends NSTextFieldCell {
     _indicatorImage<R = unknown>(): R;
     _setIndicatorImage<R = void, P0 = unknown>(__setIndicatorImage: P0): R;
     _canSupportTallerHeight<R = boolean>(): R;
@@ -33,12 +33,12 @@ declare namespace cocoa {
     accessibilitySubroleAttribute<R = unknown>(): R;
     accessibilityIsSortButton<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSTableHeaderCell<T = any> extends NSTextFieldCell {
+  namespace NSTableHeaderCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTextFieldCell {
       alloc<R = NSTableHeaderCell>(): R;
       new: <R = NSTableHeaderCell>() => R;
     }
   }
 }
 
-declare const NSTableHeaderCell: cocoa.classes.NSTableHeaderCell;
+declare const NSTableHeaderCell: cocoa.NSTableHeaderCell.CLASS;

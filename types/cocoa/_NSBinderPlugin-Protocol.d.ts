@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSBinderPluginProtocol<T = any> extends NSObjectProtocol {
+  export interface _NSBinderPluginProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     shouldUseInvalidationForObject<R = boolean, P0 = unknown>(_shouldUseInvalidationForObject: P0): R;
     acceptsMarker_binding_overrideWithPlaceholderIfDefined<R = boolean, P0 = unknown, P1 = NSString, P2 = string>(_acceptsMarker: P0, _binding: P1, _overrideWithPlaceholderIfDefined: P2): R;
     defaultPlaceholderLookupClassForBinding_object<R = unknown, P0 = NSString, P1 = unknown>(_defaultPlaceholderLookupClassForBinding: P0, _object: P1): R;
@@ -11,8 +11,8 @@ declare namespace cocoa {
     handleObservingRefresh<R = boolean, P0 = unknown>(_handleObservingRefresh: P0): R;
     initWithBinder_object<R = unknown, P0 = unknown, P1 = unknown>(_initWithBinder: P0, _object: P1): R;
   }
-  namespace classes {
-    export interface _NSBinderPluginProtocol<T = any> extends NSObjectProtocol {
+  namespace _NSBinderPluginProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
       _deprecatedBindings<R = NSArray>(): R;
       objectMechanismsRequiredForObject<R = NSArray, P0 = unknown>(_objectMechanismsRequiredForObject: P0): R;
       isUsableWithObject<R = boolean, P0 = unknown>(_isUsableWithObject: P0): R;

@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface AEDesc<T = any> {}
-  namespace classes {
-    export interface AEDesc<T = any> {  }
+  export interface AEDesc<T0 = void, T1 = void, T2 = void> {}
+  namespace AEDesc {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const AEDesc: cocoa.classes.AEDesc;
+declare const AEDesc: cocoa.AEDesc.CLASS;

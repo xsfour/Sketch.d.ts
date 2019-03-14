@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSEditArtboardPresetViewController<T = any> extends NSViewController, NSTouchBarDelegateProtocol {
+  export interface MSEditArtboardPresetViewController<T0 = void, T1 = void, T2 = void> extends NSViewController, NSTouchBarDelegateProtocol {
     cxx_destruct<R = void>(): R;
     confirm<R = void, P0 = unknown>(_confirm: P0): R;
     cancel<R = void, P0 = unknown>(_cancel: P0): R;
@@ -18,12 +18,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSEditArtboardPresetViewController<T = any> extends NSViewController, NSTouchBarDelegateProtocol {
+  namespace MSEditArtboardPresetViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController, NSTouchBarDelegateProtocol {
       alloc<R = MSEditArtboardPresetViewController>(): R;
       new: <R = MSEditArtboardPresetViewController>() => R;
     }
   }
 }
 
-declare const MSEditArtboardPresetViewController: cocoa.classes.MSEditArtboardPresetViewController;
+declare const MSEditArtboardPresetViewController: cocoa.MSEditArtboardPresetViewController.CLASS;

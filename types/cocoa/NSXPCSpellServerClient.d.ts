@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXPCSpellServerClient<T = any> extends NSObject {
+  export interface NSXPCSpellServerClient<T0 = void, T1 = void, T2 = void> extends NSObject {
     _invalidateDictionary_newTime<R = void, P0 = unknown, P1 = number>(__invalidateDictionary: P0, _newTime: P1): R;
     _setWords_inDictionary<R = void, P0 = unknown, P1 = unknown>(__setWords: P0, _inDictionary: P1): R;
     _wordsInDictionary<R = unknown, P0 = unknown>(__wordsInDictionary: P0): R;
@@ -37,12 +37,12 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     initWithServerName<R = unknown, P0 = unknown>(_initWithServerName: P0): R;
   }
-  namespace classes {
-    export interface NSXPCSpellServerClient<T = any> extends NSObject {
+  namespace NSXPCSpellServerClient {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSXPCSpellServerClient>(): R;
       new: <R = NSXPCSpellServerClient>() => R;
     }
   }
 }
 
-declare const NSXPCSpellServerClient: cocoa.classes.NSXPCSpellServerClient;
+declare const NSXPCSpellServerClient: cocoa.NSXPCSpellServerClient.CLASS;

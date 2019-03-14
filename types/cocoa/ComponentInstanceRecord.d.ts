@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface ComponentInstanceRecord<T = any> {}
-  namespace classes {
-    export interface ComponentInstanceRecord<T = any> {  }
+  export interface ComponentInstanceRecord<T0 = void, T1 = void, T2 = void> {}
+  namespace ComponentInstanceRecord {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const ComponentInstanceRecord: cocoa.classes.ComponentInstanceRecord;
+declare const ComponentInstanceRecord: cocoa.ComponentInstanceRecord.CLASS;

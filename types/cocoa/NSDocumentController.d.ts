@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDocumentController<T = any> extends NSObject, NSCodingProtocol, NSMenuItemValidationProtocol, NSUserInterfaceValidationsProtocol {
+  export interface NSDocumentController<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol, NSMenuItemValidationProtocol, NSUserInterfaceValidationsProtocol {
     displayNameForType<R = unknown, P0 = unknown>(_displayNameForType: P0): R;
     documentClassForType<R = unknown, P0 = unknown>(_documentClassForType: P0): R;
     typeForContentsOfURL_error<R = unknown, P0 = unknown, P1 = unknown>(_typeForContentsOfURL: P0, _error: P1): R;
@@ -208,11 +208,10 @@ declare namespace cocoa {
     description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
-    // + NSDocumentController(Enumeration):
-    
-  }
-  namespace classes {
-    export interface NSDocumentController<T = any> extends NSObject, NSCodingProtocol, NSMenuItemValidationProtocol, NSUserInterfaceValidationsProtocol {
+  
+}
+  namespace NSDocumentController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol, NSMenuItemValidationProtocol, NSUserInterfaceValidationsProtocol {
       alloc<R = NSDocumentController>(): R;
       new: <R = NSDocumentController>() => R;
       restoreWindowWithIdentifier_state_completionHandler<R = void, P0 = unknown, P1 = unknown, P2 = CDUnknownBlockType>(_restoreWindowWithIdentifier: P0, _state: P1, _completionHandler: P2): R;
@@ -228,10 +227,10 @@ declare namespace cocoa {
       _recentMenuItemTitlesFromLocationComponentChains_includingIcons<R = unknown, P0 = unknown, P1 = boolean>(__recentMenuItemTitlesFromLocationComponentChains: P0, _includingIcons: P1): R;
       _recentMenuItemTitlesFromRecentDocumentInfos_includingIcons<R = unknown, P0 = unknown, P1 = boolean>(__recentMenuItemTitlesFromRecentDocumentInfos: P0, _includingIcons: P1): R;
       _isJavaSubclass<R = boolean>(): R;
-      // + NSDocumentController(Enumeration):
+      // + NSDocumentController(Enumeration): 
       enumerateOpenDocuments<R = void, P0 = CDUnknownBlockType>(_enumerateOpenDocuments: P0): R;
     }
   }
 }
 
-declare const NSDocumentController: cocoa.classes.NSDocumentController;
+declare const NSDocumentController: cocoa.NSDocumentController.CLASS;

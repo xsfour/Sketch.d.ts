@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSToggleInterfaceAction<T = any> extends MSDocumentAction {
+  export interface MSToggleInterfaceAction<T0 = void, T1 = void, T2 = void> extends MSDocumentAction {
     isToolbarVisible<R = boolean>(): R;
     isInterfaceHidden<R = boolean>(): R;
     documentWillClose<R = void>(): R;
@@ -20,12 +20,12 @@ declare namespace cocoa {
     didHideLayerList<R = boolean>(): R;
     setDidHideLayerList<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSToggleInterfaceAction<T = any> extends MSDocumentAction {
+  namespace MSToggleInterfaceAction {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSDocumentAction {
       alloc<R = MSToggleInterfaceAction>(): R;
       new: <R = MSToggleInterfaceAction>() => R;
     }
   }
 }
 
-declare const MSToggleInterfaceAction: cocoa.classes.MSToggleInterfaceAction;
+declare const MSToggleInterfaceAction: cocoa.MSToggleInterfaceAction.CLASS;

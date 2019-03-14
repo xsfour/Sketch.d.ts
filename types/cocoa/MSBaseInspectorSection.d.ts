@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBaseInspectorSection<T = any> extends NSViewController, MSInspectorSectionProtocol, MSInspectorItemDelegateProtocol {
+  export interface MSBaseInspectorSection<T0 = void, T1 = void, T2 = void> extends NSViewController, MSInspectorSectionProtocol, MSInspectorItemDelegateProtocol {
     cxx_destruct<R = void>(): R;
     doUpdateDisplayedValues<R = void>(): R;
     scheduleUpdate<R = void>(): R;
@@ -26,12 +26,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSBaseInspectorSection<T = any> extends NSViewController, MSInspectorSectionProtocol, MSInspectorItemDelegateProtocol {
+  namespace MSBaseInspectorSection {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController, MSInspectorSectionProtocol, MSInspectorItemDelegateProtocol {
       alloc<R = MSBaseInspectorSection>(): R;
       new: <R = MSBaseInspectorSection>() => R;
     }
   }
 }
 
-declare const MSBaseInspectorSection: cocoa.classes.MSBaseInspectorSection;
+declare const MSBaseInspectorSection: cocoa.MSBaseInspectorSection.CLASS;

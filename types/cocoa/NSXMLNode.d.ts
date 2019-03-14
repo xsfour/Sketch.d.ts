@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXMLNode<T = any> extends NSObject, NSCopyingProtocol {
+  export interface NSXMLNode<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     _setParent<R = void, P0 = unknown>(__setParent: P0): R;
     _setKind<R = void, P0 = number>(__setKind: P0): R;
     _setIndex<R = void, P0 = number>(__setIndex: P0): R;
@@ -44,7 +44,7 @@ declare namespace cocoa {
     children<R = NSArray>(): R;
     parent<R = NSXMLNode>(): R;
     kind<R = number>(): R;
-    // + NSXMLNode(SVG):
+    // + NSXMLNode(SVG): 
     cssClassNamesWithBase<R = unknown, P0 = unknown>(_cssClassNamesWithBase: P0): R;
     simplifyAttributesIgnoringElements_attributes<R = unknown, P0 = unknown, P1 = unknown>(_simplifyAttributesIgnoringElements: P0, _attributes: P1): R;
     numberValuesWithScale<R = unknown, P0 = number>(_numberValuesWithScale: P0): R;
@@ -57,8 +57,8 @@ declare namespace cocoa {
     numberValue<R = unknown>(): R;
     doubleValueFromAttributeWithName<R = number, P0 = unknown>(_doubleValueFromAttributeWithName: P0): R;
   }
-  namespace classes {
-    export interface NSXMLNode<T = any> extends NSObject, NSCopyingProtocol {
+  namespace NSXMLNode {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = NSXMLNode>(): R;
       new: <R = NSXMLNode>() => R;
       _contentsOfHTMLData_encoding_strippingTagsSeparatedByString<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(__contentsOfHTMLData: P0, _encoding: P1, _strippingTagsSeparatedByString: P2): R;
@@ -89,7 +89,7 @@ declare namespace cocoa {
       document<R = unknown>(): R;
       allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
       _alloc<R = unknown>(): R;
-      // + NSXMLNode(SVG):
+      // + NSXMLNode(SVG): 
       attributeWithName_percentageFractionalValue<R = unknown, P0 = unknown, P1 = number>(_attributeWithName: P0, _percentageFractionalValue: P1): R;
       attributeWithName_percentageValue<R = unknown, P0 = unknown, P1 = number>(_attributeWithName: P0, _percentageValue: P1): R;
       attributeWithName_numberValue<R = unknown, P0 = unknown, P1 = number>(_attributeWithName: P0, _numberValue: P1): R;
@@ -101,4 +101,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSXMLNode: cocoa.classes.NSXMLNode;
+declare const NSXMLNode: cocoa.NSXMLNode.CLASS;

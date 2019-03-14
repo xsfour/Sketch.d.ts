@@ -1,7 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSWelcomeWindowController<T = any> extends CHWindowController, NSMenuDelegateProtocol, NSWindowDelegateProtocol, MSWelcomeCollectionViewDelegateProtocol {
+  export interface MSWelcomeWindowController<T0 = void, T1 = void, T2 = void> extends CHWindowController, NSMenuDelegateProtocol, NSWindowDelegateProtocol, MSWelcomeCollectionViewDelegateProtocol {
+    cxx_destruct<R = void>(): R;
     scrollViewDidScrollNotification<R = void, P0 = unknown>(_scrollViewDidScrollNotification: P0): R;
     cloudSharesController_didFailLoadingWithError<R = void, P0 = unknown, P1 = unknown>(_cloudSharesController: P0, _didFailLoadingWithError: P1): R;
     cloudSharesController_didFinishLoadingShares<R = void, P0 = unknown, P1 = unknown>(_cloudSharesController: P0, _didFinishLoadingShares: P1): R;
@@ -20,6 +21,7 @@ declare namespace cocoa {
     subscribeToNewsletter<R = void, P0 = unknown>(_subscribeToNewsletter: P0): R;
     visitPluginsPage<R = void, P0 = unknown>(_visitPluginsPage: P0): R;
     visitLearnPage<R = void, P0 = unknown>(_visitLearnPage: P0): R;
+    close<R = void, P0 = unknown>(_close: P0): R;
     confirm<R = void, P0 = unknown>(_confirm: P0): R;
     openDocument<R = void, P0 = unknown>(_openDocument: P0): R;
     refreshScrollability<R = void>(): R;
@@ -31,6 +33,7 @@ declare namespace cocoa {
     clearCaches<R = void>(): R;
     centerWindowIfAppropriate<R = void>(): R;
     updateCollectionSegments<R = void>(): R;
+    windowDidLoad<R = void>(): R;
     cloudSharesController<R = MSCloudSharesController>(): R;
     setCloudSharesController<R = void, P0 = MSCloudSharesController>(_v: P0): R;
     cachedTemplateItems<R = NSArray>(): R;
@@ -72,8 +75,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSWelcomeWindowController<T = any> extends CHWindowController, NSMenuDelegateProtocol, NSWindowDelegateProtocol, MSWelcomeCollectionViewDelegateProtocol {
+  namespace MSWelcomeWindowController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends CHWindowController, NSMenuDelegateProtocol, NSWindowDelegateProtocol, MSWelcomeCollectionViewDelegateProtocol {
       alloc<R = MSWelcomeWindowController>(): R;
       new: <R = MSWelcomeWindowController>() => R;
       templateURLsAtDirectoryURL<R = unknown, P0 = unknown>(_templateURLsAtDirectoryURL: P0): R;
@@ -84,4 +87,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSWelcomeWindowController: cocoa.classes.MSWelcomeWindowController;
+declare const MSWelcomeWindowController: cocoa.MSWelcomeWindowController.CLASS;

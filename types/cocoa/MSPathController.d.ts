@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPathController<T = any> extends NSObject {
+  export interface MSPathController<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     remove<R = void, P0 = unknown>(_remove: P0): R;
     changeCurveMode<R = void, P0 = number>(_changeCurveMode: P0): R;
@@ -20,8 +20,8 @@ declare namespace cocoa {
     selectionIndexPaths<R = NSArray>(): R;
     setSelectionIndexPaths<R = void, P0 = NSArray>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSPathController<T = any> extends NSObject {
+  namespace MSPathController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSPathController>(): R;
       new: <R = MSPathController>() => R;
       keyPathsForValuesAffectingSelectedObjects<R = unknown>(): R;
@@ -29,4 +29,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSPathController: cocoa.classes.MSPathController;
+declare const MSPathController: cocoa.MSPathController.CLASS;

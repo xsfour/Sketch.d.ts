@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSContentDrawView<T = any> extends NSView, MSOverlayRenderingDelegateProtocol, MSEventHandlerManagerDelegateProtocol, MSTiledRendererHostViewProtocol {
+  export interface MSContentDrawView<T0 = void, T1 = void, T2 = void> extends NSView, MSOverlayRenderingDelegateProtocol, MSEventHandlerManagerDelegateProtocol, MSTiledRendererHostViewProtocol {
     cxx_destruct<R = void>(): R;
     zoomPoint<R = CGPoint, P0 = CGPoint>(_zoomPoint: P0): R;
     convertSizeToPage<R = CGSize, P0 = CGSize>(_convertSizeToPage: P0): R;
@@ -170,8 +170,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSContentDrawView<T = any> extends NSView, MSOverlayRenderingDelegateProtocol, MSEventHandlerManagerDelegateProtocol, MSTiledRendererHostViewProtocol {
+  namespace MSContentDrawView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView, MSOverlayRenderingDelegateProtocol, MSEventHandlerManagerDelegateProtocol, MSTiledRendererHostViewProtocol {
       alloc<R = MSContentDrawView>(): R;
       new: <R = MSContentDrawView>() => R;
       absoluteCoordinatesFromViewCoordinates_forViewPort<R = CGPoint, P0 = CGPoint, P1 = unknown>(_absoluteCoordinatesFromViewCoordinates: P0, _forViewPort: P1): R;
@@ -182,4 +182,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSContentDrawView: cocoa.classes.MSContentDrawView;
+declare const MSContentDrawView: cocoa.MSContentDrawView.CLASS;

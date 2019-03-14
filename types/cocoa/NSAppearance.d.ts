@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAppearance<T = any> extends NSObject, NSSecureCodingProtocol {
+  export interface NSAppearance<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol {
     bestMatchFromAppearancesWithNames<R = unknown, P0 = unknown>(_bestMatchFromAppearancesWithNames: P0): R;
     _resolvesToFunctionRowAppearanceForWidget<R = boolean, P0 = unknown>(__resolvesToFunctionRowAppearanceForWidget: P0): R;
     _isFunctionRowAppearance<R = boolean>(): R;
@@ -78,8 +78,8 @@ declare namespace cocoa {
     // + NSAppearance(Chocolat):
     isDark_bc<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSAppearance<T = any> extends NSObject, NSSecureCodingProtocol {
+  namespace NSAppearance {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol {
       alloc<R = NSAppearance>(): R;
       new: <R = NSAppearance>() => R;
       _isLightTintColor<R = boolean, P0 = unknown>(__isLightTintColor: P0): R;
@@ -108,10 +108,10 @@ declare namespace cocoa {
       currentAppearance<R = unknown>(): R;
       _initializeCoreUI<R = void>(): R;
       _setSystemAppearanceTestingOverride<R = void, P0 = number>(__setSystemAppearanceTestingOverride: P0): R;
-      // + NSAppearance(Chocolat):
+      // + NSAppearance(Chocolat): 
       sketchDefaultDarkAppearance<R = unknown>(): R;
     }
   }
 }
 
-declare const NSAppearance: cocoa.classes.NSAppearance;
+declare const NSAppearance: cocoa.NSAppearance.CLASS;

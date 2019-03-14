@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTearOffTabWindowDelegate<T = any> {}
-  namespace classes {
-    export interface NSTearOffTabWindowDelegate<T = any> {  }
+  export interface NSTearOffTabWindowDelegate<T0 = void, T1 = void, T2 = void> {}
+  namespace NSTearOffTabWindowDelegate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSTearOffTabWindowDelegate: cocoa.classes.NSTearOffTabWindowDelegate;
+declare const NSTearOffTabWindowDelegate: cocoa.NSTearOffTabWindowDelegate.CLASS;

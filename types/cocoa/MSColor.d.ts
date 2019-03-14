@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSColor<T = any> extends _MSColor, MSAssetProtocol, MSColorProtocol {
+  export interface MSColor<T0 = void, T1 = void, T2 = void> extends _MSColor, MSAssetProtocol, MSColorProtocol {
     colorWithAlphaComponent<R = unknown, P0 = number>(_colorWithAlphaComponent: P0): R;
     fuzzyIsEqualExcludingAlpha_precision<R = boolean, P0 = unknown, P1 = number>(_fuzzyIsEqualExcludingAlpha: P0, _precision: P1): R;
     fuzzyIsEqualExcludingAlpha<R = boolean, P0 = unknown>(_fuzzyIsEqualExcludingAlpha: P0): R;
@@ -25,8 +25,8 @@ declare namespace cocoa {
     red<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSColor<T = any> extends _MSColor, MSAssetProtocol, MSColorProtocol {
+  namespace MSColor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSColor, MSAssetProtocol, MSColorProtocol {
       alloc<R = MSColor>(): R;
       new: <R = MSColor>() => R;
       rgbColorRed_green_blue<R = unknown, P0 = number, P1 = number, P2 = number>(_rgbColorRed: P0, _green: P1, _blue: P2): R;
@@ -40,4 +40,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSColor: cocoa.classes.MSColor;
+declare const MSColor: cocoa.MSColor.CLASS;

@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface FILocationPopUp<T = any> {}
-  namespace classes {
-    export interface FILocationPopUp<T = any> {  }
+  export interface FILocationPopUp<T0 = void, T1 = void, T2 = void> {}
+  namespace FILocationPopUp {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const FILocationPopUp: cocoa.classes.FILocationPopUp;
+declare const FILocationPopUp: cocoa.FILocationPopUp.CLASS;

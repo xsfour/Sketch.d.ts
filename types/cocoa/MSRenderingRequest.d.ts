@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSRenderingRequest<T = any> extends NSObject {
+  export interface MSRenderingRequest<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     dealloc<R = void>(): R;
     requestWithOptions<R = unknown, P0 = number>(_requestWithOptions: P0): R;
@@ -24,12 +24,12 @@ declare namespace cocoa {
     drawingMask<R = boolean>(): R;
     exporting<R = boolean>(): R;
   }
-  namespace classes {
-    export interface MSRenderingRequest<T = any> extends NSObject {
+  namespace MSRenderingRequest {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSRenderingRequest>(): R;
       new: <R = MSRenderingRequest>() => R;
     }
   }
 }
 
-declare const MSRenderingRequest: cocoa.classes.MSRenderingRequest;
+declare const MSRenderingRequest: cocoa.MSRenderingRequest.CLASS;

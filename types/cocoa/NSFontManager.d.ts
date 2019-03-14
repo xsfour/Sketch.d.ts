@@ -1,129 +1,14 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFontManager<T = any> extends NSObject, NSMenuItemValidationProtocol {
-    _collectionWithName<R = unknown, P0 = unknown>(__collectionWithName: P0): R;
-    _createFontPanelRepFromCollection_removingHidden<R = unknown, P0 = unknown, P1 = boolean>(__createFontPanelRepFromCollection: P0, _removingHidden: P1): R;
-    _renameCollection_to<R = number, P0 = unknown, P1 = unknown>(__renameCollection: P0, _to: P1): R;
-    _collection_setHidden_save<R = void, P0 = unknown, P1 = boolean, P2 = boolean>(__collection: P0, _setHidden: P1, _save: P2): R;
-    _removeFontDescriptor_fromCollection_save<R = void, P0 = unknown, P1 = unknown, P2 = boolean>(__removeFontDescriptor: P0, _fromCollection: P1, _save: P2): R;
-    _replaceFontDescriptor_withDescriptor_inCollection<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(__replaceFontDescriptor: P0, _withDescriptor: P1, _inCollection: P2): R;
-    _addCollection_options_sender<R = void, P0 = unknown, P1 = number, P2 = unknown>(__addCollection: P0, _options: P1, _sender: P2): R;
-    _openOldFavorites<R = void>(): R;
-    _openOldCollections<R = void>(): R;
-    _addDescriptorCheckingForDuplicates_toCollection<R = void, P0 = unknown, P1 = unknown>(__addDescriptorCheckingForDuplicates: P0, _toCollection: P1): R;
-    _fontSetWithName<R = unknown, P0 = unknown>(__fontSetWithName: P0): R;
-    _openRegularCollections<R = void>(): R;
-    _availableFontSetNames<R = unknown>(): R;
-    _collectionWithName_index<R = unknown, P0 = unknown, P1 = number>(__collectionWithName: P0, _index: P1): R;
-    _sortCollections<R = void>(): R;
-    _openCollections<R = unknown>(): R;
-    _oldFontSetNames<R = unknown>(): R;
-    _oldFontSetWithName<R = unknown, P0 = unknown>(__oldFontSetWithName: P0): R;
-    _collections<R = unknown>(): R;
-    saveFontCollection<R = void, P0 = unknown>(_saveFontCollection: P0): R;
-    saveFontCollection_withName<R = void, P0 = unknown, P1 = unknown>(_saveFontCollection: P0, _withName: P1): R;
-    _nameForCollection<R = unknown, P0 = unknown>(__nameForCollection: P0): R;
-    _filenameForCollection<R = unknown, P0 = unknown>(__filenameForCollection: P0): R;
-    noteFontCollectionsChanged<R = void>(): R;
-    _descStringForFont<R = unknown, P0 = unknown>(__descStringForFont: P0): R;
-    _displayName<R = unknown, P0 = unknown>(__displayName: P0): R;
-    _fontFromDescriptor<R = unknown, P0 = unknown>(__fontFromDescriptor: P0): R;
-    _createDefaultCollectionRep<R = unknown>(): R;
-    noteFontFavoritesChanged<R = void>(): R;
-    _isInternalFontName<R = boolean, P0 = unknown>(__isInternalFontName: P0): R;
-    _defaultFontSet<R = unknown>(): R;
-    _reloadFontInfoIfNecessary<R = number, P0 = unknown>(__reloadFontInfoIfNecessary: P0): R;
-    _loadFontFiles<R = void>(): R;
-    availableFontNamesMatchingFontDescriptor<R = unknown, P0 = unknown>(_availableFontNamesMatchingFontDescriptor: P0): R;
-    orderFrontFontOptionsPanel<R = void, P0 = unknown>(_orderFrontFontOptionsPanel: P0): R;
-    modifyFontTrait<R = unknown, P0 = unknown>(_modifyFontTrait: P0): R;
-    _menu<R = unknown>(): R;
-    _faceForFamily_fontName<R = unknown, P0 = unknown, P1 = unknown>(__faceForFamily: P0, _fontName: P1): R;
-    _fontNameForFamily_face<R = unknown, P0 = unknown, P1 = unknown>(__fontNameForFamily: P0, _face: P1): R;
-    _renameFontDescriptorWithName_to_in<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(__renameFontDescriptorWithName: P0, _to: P1, _in: P2): R;
-    _setFilteringSearchString<R = boolean, P0 = unknown>(__setFilteringSearchString: P0): R;
-    _fontDescriptorsForFamily_inCollection<R = unknown, P0 = unknown, P1 = unknown>(__fontDescriptorsForFamily: P0, _inCollection: P1): R;
-    _familyNamesForCollection<R = unknown, P0 = unknown>(__familyNamesForCollection: P0): R;
-    _availableFontFamiliesForCollectionName<R = unknown, P0 = unknown>(__availableFontFamiliesForCollectionName: P0): R;
-    _releaseFamilyCache<R = void>(): R;
-    _setFamilyCache_forCollectionName<R = void, P0 = unknown, P1 = unknown>(__setFamilyCache: P0, _forCollectionName: P1): R;
-    _familyCacheForCollectionName<R = unknown, P0 = unknown>(__familyCacheForCollectionName: P0): R;
-    _renameCollectionWithName_to<R = boolean, P0 = unknown, P1 = unknown>(__renameCollectionWithName: P0, _to: P1): R;
-    _collection_setHidden<R = void, P0 = unknown, P1 = boolean>(__collection: P0, _setHidden: P1): R;
-    displayNameForCollectionWithName<R = unknown, P0 = unknown>(_displayNameForCollectionWithName: P0): R;
-    removeFontDescriptors_fromCollection<R = void, P0 = unknown, P1 = unknown>(_removeFontDescriptors: P0, _fromCollection: P1): R;
-    removeFontDescriptor_fromCollection<R = void, P0 = unknown, P1 = unknown>(_removeFontDescriptor: P0, _fromCollection: P1): R;
-    addFontDescriptors_toCollection<R = void, P0 = unknown, P1 = unknown>(_addFontDescriptors: P0, _toCollection: P1): R;
-    removeCollection<R = boolean, P0 = unknown>(_removeCollection: P0): R;
-    addCollection_options<R = boolean, P0 = unknown, P1 = number>(_addCollection: P0, _options: P1): R;
-    fontDescriptorsInCollection<R = unknown, P0 = unknown>(_fontDescriptorsInCollection: P0): R;
-    _notifyObserversWithUserInfo<R = void, P0 = unknown>(__notifyObserversWithUserInfo: P0): R;
-    convertFont_toApproximateTraits<R = unknown, P0 = unknown, P1 = number>(_convertFont: P0, _toApproximateTraits: P1): R;
-    orderFrontStylesPanel<R = void, P0 = unknown>(_orderFrontStylesPanel: P0): R;
-    orderFrontFontPanel<R = void, P0 = unknown>(_orderFrontFontPanel: P0): R;
-    toggleFontPanelShown<R = void, P0 = unknown>(_toggleFontPanelShown: P0): R;
-    validateUserInterfaceItem<R = boolean, P0 = unknown>(_validateUserInterfaceItem: P0): R;
-    worksWhenModal<R = boolean>(): R;
-    modifyFontViaPanel<R = void, P0 = unknown>(_modifyFontViaPanel: P0): R;
-    modifyFont<R = void, P0 = unknown>(_modifyFont: P0): R;
-    removeFontTrait<R = void, P0 = unknown>(_removeFontTrait: P0): R;
-    addFontTrait<R = void, P0 = unknown>(_addFontTrait: P0): R;
-    convertWeight_ofFont<R = unknown, P0 = boolean, P1 = unknown>(_convertWeight: P0, _ofFont: P1): R;
-    convertFont_toNotHaveTrait<R = unknown, P0 = unknown, P1 = number>(_convertFont: P0, _toNotHaveTrait: P1): R;
-    convertFont_toHaveTrait<R = unknown, P0 = unknown, P1 = number>(_convertFont: P0, _toHaveTrait: P1): R;
-    convertFont_toFamily<R = unknown, P0 = unknown, P1 = unknown>(_convertFont: P0, _toFamily: P1): R;
-    convertFont_toFace<R = unknown, P0 = unknown, P1 = unknown>(_convertFont: P0, _toFace: P1): R;
-    convertFont_toSize<R = unknown, P0 = unknown, P1 = number>(_convertFont: P0, _toSize: P1): R;
-    fontWithFamily_traits_weight_size<R = unknown, P0 = unknown, P1 = number, P2 = number, P3 = number>(_fontWithFamily: P0, _traits: P1, _weight: P2, _size: P3): R;
-    fontNameWithFamily_traits_weight<R = unknown, P0 = unknown, P1 = number, P2 = number>(_fontNameWithFamily: P0, _traits: P1, _weight: P2): R;
-    fontNamed_hasTraits<R = boolean, P0 = unknown, P1 = number>(_fontNamed: P0, _hasTraits: P1): R;
-    localizedNameForFamily_face<R = unknown, P0 = unknown, P1 = unknown>(_localizedNameForFamily: P0, _face: P1): R;
-    weightOfFont<R = number, P0 = unknown>(_weightOfFont: P0): R;
-    traitsOfFont<R = number, P0 = unknown>(_traitsOfFont: P0): R;
-    availableFontNamesWithTraits<R = unknown, P0 = number>(_availableFontNamesWithTraits: P0): R;
-    availableMembersOfFontFamily<R = unknown, P0 = unknown>(_availableMembersOfFontFamily: P0): R;
-    _reactToFontSetChange<R = void>(): R;
-    convertFontTraits<R = number, P0 = number>(_convertFontTraits: P0): R;
-    convertAttributes<R = unknown, P0 = unknown>(_convertAttributes: P0): R;
-    convertFont<R = unknown, P0 = unknown>(_convertFont: P0): R;
-    setSelectedAttributes_isMultiple<R = void, P0 = unknown, P1 = boolean>(_setSelectedAttributes: P0, _isMultiple: P1): R;
-    setSelectedFont_isMultiple<R = void, P0 = unknown, P1 = boolean>(_setSelectedFont: P0, _isMultiple: P1): R;
-    sendAction<R = boolean>(): R;
-    fontPanel<R = unknown, P0 = boolean>(_fontPanel: P0): R;
-    _setFontPanel<R = void, P0 = unknown>(__setFontPanel: P0): R;
-    setFontMenu<R = void, P0 = unknown>(_setFontMenu: P0): R;
-    fontMenu<R = unknown, P0 = boolean>(_fontMenu: P0): R;
-    _init<R = unknown>(): R;
-    collectionNames<R = NSArray>(): R;
-    availableFontFamilies<R = NSArray>(): R;
-    availableFonts<R = NSArray>(): R;
-    currentFontAction<R = number>(): R;
-    selectedFont<R = NSFont>(): R;
-    multiple<R = boolean>(): R;
-    delegate<R = unknown>(): R;
-    setDelegate<R = void, P0 = unknown>(_v: P0): R;
-    target<R = unknown>(): R;
-    setTarget<R = void, P0 = unknown>(_v: P0): R;
-    action<R = string>(): R;
-    setAction<R = void, P0 = string>(_v: P0): R;
-    enabled<R = boolean>(): R;
-    setEnabled<R = void, P0 = boolean>(_v: P0): R;
-    debugDescription<R = NSString>(): R;
-    description<R = NSString>(): R;
-    hash<R = number>(): R;
-    superclass<R = unknown>(): R;
-  }
-  namespace classes {
-    export interface NSFontManager<T = any> extends NSObject, NSMenuItemValidationProtocol {
+  export interface NSFontManager<T0 = void, T1 = void, T2 = void> extends NSObject, NSMenuItemValidationProtocol {}
+  namespace NSFontManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSMenuItemValidationProtocol {
       alloc<R = NSFontManager>(): R;
       new: <R = NSFontManager>() => R;
       setFontManagerFactory<R = void, P0 = unknown>(_setFontManagerFactory: P0): R;
-      setFontPanelFactory<R = void, P0 = unknown>(_setFontPanelFactory: P0): R;
-      sharedFontManager<R = unknown>(): R;
-      initialize<R = void>(): R;
     }
   }
 }
 
-declare const NSFontManager: cocoa.classes.NSFontManager;
+declare const NSFontManager: cocoa.NSFontManager.CLASS;

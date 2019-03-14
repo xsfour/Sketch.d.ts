@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface GCDWebServer<T = any> {}
-  namespace classes {
-    export interface GCDWebServer<T = any> {  }
+  export interface GCDWebServer<T0 = void, T1 = void, T2 = void> {}
+  namespace GCDWebServer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const GCDWebServer: cocoa.classes.GCDWebServer;
+declare const GCDWebServer: cocoa.GCDWebServer.CLASS;

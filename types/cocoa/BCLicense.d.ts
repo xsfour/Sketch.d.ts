@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCLicense<T = any> extends NSObject {
+  export interface BCLicense<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     variants<R = unknown>(): R;
     updatesHaveExpired<R = boolean>(): R;
@@ -47,12 +47,12 @@ declare namespace cocoa {
     currentDate<R = NSDate>(): R;
     systemStartupTime<R = number>(): R;
   }
-  namespace classes {
-    export interface BCLicense<T = any> extends NSObject {
+  namespace BCLicense {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = BCLicense>(): R;
       new: <R = BCLicense>() => R;
     }
   }
 }
 
-declare const BCLicense: cocoa.classes.BCLicense;
+declare const BCLicense: cocoa.BCLicense.CLASS;

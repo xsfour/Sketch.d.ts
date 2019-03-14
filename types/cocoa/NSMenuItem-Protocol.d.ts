@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMenuItemProtocol<T = any> extends NSObjectProtocol, NSCopyingProtocol, NSCodingProtocol, NSValidatedUserInterfaceItemProtocol {
+  export interface NSMenuItemProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol, NSCopyingProtocol, NSCodingProtocol, NSValidatedUserInterfaceItemProtocol {
     toolTip<R = NSString>(): R;
     setToolTip<R = void, P0 = NSString>(_setToolTip: P0): R;
     representedObject<R = unknown>(): R;
@@ -50,8 +50,8 @@ declare namespace cocoa {
     setMenu<R = void, P0 = NSMenu>(_setMenu: P0): R;
     initWithTitle_action_keyEquivalent<R = unknown, P0 = NSString, P1 = string, P2 = NSString>(_initWithTitle: P0, _action: P1, _keyEquivalent: P2): R;
   }
-  namespace classes {
-    export interface NSMenuItemProtocol<T = any> extends NSObjectProtocol, NSCopyingProtocol, NSCodingProtocol, NSValidatedUserInterfaceItemProtocol {
+  namespace NSMenuItemProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol, NSCopyingProtocol, NSCodingProtocol, NSValidatedUserInterfaceItemProtocol {
       separatorItem<R = NSMenuItem>(): R;
       usesUserKeyEquivalents<R = boolean>(): R;
       setUsesUserKeyEquivalents<R = void, P0 = boolean>(_setUsesUserKeyEquivalents: P0): R;

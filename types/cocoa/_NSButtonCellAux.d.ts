@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSButtonCellAux<T = any> extends NSObject {
+  export interface _NSButtonCellAux<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     copyWithZone<R = unknown, P0 = _NSZone>(_copyWithZone: P0): R;
     animatingOutTextFields<R = NSMutableArray>(): R;
@@ -17,8 +17,8 @@ declare namespace cocoa {
     animator<R = _NSButtonAnimationView>(): R;
     setAnimator<R = void, P0 = _NSButtonAnimationView>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSButtonCellAux<T = any> extends NSObject {
+  namespace _NSButtonCellAux {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSButtonCellAux>(): R;
       new: <R = _NSButtonCellAux>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXMLParser<T = any> extends NSObject {
+  export interface NSXMLParser<T0 = void, T1 = void, T2 = void> extends NSObject {
     _initializeSAX2Callbacks<R = void>(): R;
     _popNamespaces<R = void>(): R;
     _pushNamespaces<R = void, P0 = unknown>(__pushNamespaces: P0): R;
@@ -39,8 +39,8 @@ declare namespace cocoa {
     delegate<R = NSXMLParserDelegate>(): R;
     setDelegate<R = void, P0 = NSXMLParserDelegate>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSXMLParser<T = any> extends NSObject {
+  namespace NSXMLParser {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSXMLParser>(): R;
       new: <R = NSXMLParser>() => R;
       currentParser<R = unknown>(): R;
@@ -49,4 +49,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSXMLParser: cocoa.classes.NSXMLParser;
+declare const NSXMLParser: cocoa.NSXMLParser.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDirectoryTraversalOperation<T = any> extends NSOperation {
+  export interface NSDirectoryTraversalOperation<T0 = void, T1 = void, T2 = void> extends NSOperation {
     _validatePaths<R = boolean, P0 = unknown>(__validatePaths: P0): R;
     _handleFTSEntry<R = void, P0 = _ftsent>(__handleFTSEntry: P0): R;
     shouldProceedAfterError<R = boolean, P0 = unknown>(_shouldProceedAfterError: P0): R;
@@ -13,8 +13,8 @@ declare namespace cocoa {
     delegate<R = unknown>(): R;
     initWithPath<R = unknown, P0 = unknown>(_initWithPath: P0): R;
   }
-  namespace classes {
-    export interface NSDirectoryTraversalOperation<T = any> extends NSOperation {
+  namespace NSDirectoryTraversalOperation {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSOperation {
       alloc<R = NSDirectoryTraversalOperation>(): R;
       new: <R = NSDirectoryTraversalOperation>() => R;
       directoryTraversalOperationAtPath<R = unknown, P0 = unknown>(_directoryTraversalOperationAtPath: P0): R;
@@ -24,4 +24,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSDirectoryTraversalOperation: cocoa.classes.NSDirectoryTraversalOperation;
+declare const NSDirectoryTraversalOperation: cocoa.NSDirectoryTraversalOperation.CLASS;

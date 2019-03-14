@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSXMLElementWrapper<T = any> extends NSObject {
+  export interface MSXMLElementWrapper<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     addChildWrapper<R = void, P0 = unknown>(_addChildWrapper: P0): R;
     addChild<R = void, P0 = unknown>(_addChild: P0): R;
@@ -23,8 +23,8 @@ declare namespace cocoa {
     svgId<R = NSString>(): R;
     setSvgId<R = void, P0 = NSString>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSXMLElementWrapper<T = any> extends NSObject {
+  namespace MSXMLElementWrapper {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSXMLElementWrapper>(): R;
       new: <R = MSXMLElementWrapper>() => R;
       resolveInstanceMethod<R = boolean, P0 = string>(_resolveInstanceMethod: P0): R;
@@ -34,4 +34,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSXMLElementWrapper: cocoa.classes.MSXMLElementWrapper;
+declare const MSXMLElementWrapper: cocoa.MSXMLElementWrapper.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMenuItem<T = any> extends NSObject, NSImmediateActionAnimationControllerProtocol, NSMenuItemProtocol, NSCopyingProtocol, NSCodingProtocol, NSValidatedUserInterfaceItemProtocol, NSUserInterfaceItemIdentificationProtocol, NSAccessibilityElementProtocol, NSAccessibilityProtocol {
+  export interface NSMenuItem<T0 = void, T1 = void, T2 = void> extends NSObject, NSImmediateActionAnimationControllerProtocol, NSMenuItemProtocol, NSCopyingProtocol, NSCodingProtocol, NSValidatedUserInterfaceItemProtocol, NSUserInterfaceItemIdentificationProtocol, NSAccessibilityElementProtocol, NSAccessibilityProtocol {
     setUserInterfaceItemIdentifier<R = void, P0 = unknown>(_setUserInterfaceItemIdentifier: P0): R;
     userInterfaceItemIdentifier<R = unknown>(): R;
     _bindingAdaptor<R = unknown>(): R;
@@ -425,17 +425,19 @@ declare namespace cocoa {
     debugDescription<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
-    // + NSMenuItem(CHMenuItemAdditions,SharedObjects):
+    // + NSMenuItem(CHMenuItemAdditions): 
     isInMainMenu<R = boolean>(): R;
     setSmallCenteredFont<R = void>(): R;
     setSmallFont<R = void>(): R;
+    // + NSMenuItem(SharedObjects): 
     generatePreviewWithColorSpace_backingScale_completionHandler<R = boolean, P0 = unknown, P1 = number, P2 = CDUnknownBlockType>(_generatePreviewWithColorSpace: P0, _backingScale: P1, _completionHandler: P2): R;
+    // + NSMenuItem(SharedObjects):
     shareableObjectReferences<R = NSArray>(): R;
     setShareableObjectReferences<R = void, P0 = NSArray>(_v: P0): R;
     symbolMasterReferences<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface NSMenuItem<T = any> extends NSObject, NSImmediateActionAnimationControllerProtocol, NSMenuItemProtocol, NSCopyingProtocol, NSCodingProtocol, NSValidatedUserInterfaceItemProtocol, NSUserInterfaceItemIdentificationProtocol, NSAccessibilityElementProtocol, NSAccessibilityProtocol {
+  namespace NSMenuItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSImmediateActionAnimationControllerProtocol, NSMenuItemProtocol, NSCopyingProtocol, NSCodingProtocol, NSValidatedUserInterfaceItemProtocol, NSUserInterfaceItemIdentificationProtocol, NSAccessibilityElementProtocol, NSAccessibilityProtocol {
       alloc<R = NSMenuItem>(): R;
       new: <R = NSMenuItem>() => R;
       _menuItemViewerHIViewClassName<R = __CFString>(): R;
@@ -457,7 +459,7 @@ declare namespace cocoa {
       _menuItemForItem_view_itemFrame_aimFrame_options<R = unknown, P0 = unknown, P1 = unknown, P2 = CGRect, P3 = CGRect, P4 = unknown>(__menuItemForItem: P0, _view: P1, _itemFrame: P2, _aimFrame: P3, _options: P4): R;
       _dispatchActionBlockFor<R = void, P0 = unknown>(__dispatchActionBlockFor: P0): R;
       _menuItemWithTitle_handler<R = unknown, P0 = unknown, P1 = CDUnknownBlockType>(__menuItemWithTitle: P0, _handler: P1): R;
-      // + NSMenuItem(CHMenuItemAdditions,SharedObjects):
+      // + NSMenuItem(CHMenuItemAdditions): 
       menuItemWithTruncatedTitle_target_action<R = unknown, P0 = unknown, P1 = unknown, P2 = string>(_menuItemWithTruncatedTitle: P0, _target: P1, _action: P2): R;
       itemWithTitle_small_target_action<R = unknown, P0 = unknown, P1 = boolean, P2 = unknown, P3 = string>(_itemWithTitle: P0, _small: P1, _target: P2, _action: P3): R;
       itemWithTitle_target_action<R = unknown, P0 = unknown, P1 = unknown, P2 = string>(_itemWithTitle: P0, _target: P1, _action: P2): R;
@@ -466,4 +468,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSMenuItem: cocoa.classes.NSMenuItem;
+declare const NSMenuItem: cocoa.NSMenuItem.CLASS;

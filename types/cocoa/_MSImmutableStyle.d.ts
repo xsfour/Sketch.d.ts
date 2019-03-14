@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSImmutableStyle<T = any> extends MSImmutableModelObject {
+  export interface _MSImmutableStyle<T0 = void, T1 = void, T2 = void> extends MSImmutableModelObject {
     hasDefaultValues<R = boolean>(): R;
     textStyle<R = MSImmutableTextStyle>(): R;
     setTextStyle<R = void, P0 = MSImmutableTextStyle>(_v: P0): R;
@@ -30,8 +30,8 @@ declare namespace cocoa {
     endMarkerType<R = number>(): R;
     setEndMarkerType<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface _MSImmutableStyle<T = any> extends MSImmutableModelObject {
+  namespace _MSImmutableStyle {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSImmutableModelObject {
       alloc<R = _MSImmutableStyle>(): R;
       new: <R = _MSImmutableStyle>() => R;
     }

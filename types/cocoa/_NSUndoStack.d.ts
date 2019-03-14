@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSUndoStack<T = any> extends NSObject {
+  export interface _NSUndoStack<T0 = void, T1 = void, T2 = void> extends NSObject {
     description<R = unknown>(): R;
     removeObject<R = void, P0 = unknown>(_removeObject: P0): R;
     removeAllObjectsWithTarget<R = void, P0 = unknown>(_removeAllObjectsWithTarget: P0): R;
@@ -24,8 +24,8 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     _removeBottom<R = void>(): R;
   }
-  namespace classes {
-    export interface _NSUndoStack<T = any> extends NSObject {
+  namespace _NSUndoStack {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSUndoStack>(): R;
       new: <R = _NSUndoStack>() => R;
     }

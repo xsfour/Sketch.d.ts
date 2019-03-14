@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSWorkflowsBar<T = any> extends NSObject {
+  export interface NSWorkflowsBar<T0 = void, T1 = void, T2 = void> extends NSObject {
     _presentationModeConfigurationDidChange<R = void>(): R;
     _placementVisibilityDidChange<R = void>(): R;
     dealloc<R = void>(): R;
@@ -10,8 +10,8 @@ declare namespace cocoa {
     touchBar<R = NSTouchBar>(): R;
     setTouchBar<R = void, P0 = NSTouchBar>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSWorkflowsBar<T = any> extends NSObject {
+  namespace NSWorkflowsBar {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSWorkflowsBar>(): R;
       new: <R = NSWorkflowsBar>() => R;
       automaticallyNotifiesObserversOfEnabled<R = boolean>(): R;
@@ -23,4 +23,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSWorkflowsBar: cocoa.classes.NSWorkflowsBar;
+declare const NSWorkflowsBar: cocoa.NSWorkflowsBar.CLASS;

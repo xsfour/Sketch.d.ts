@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPredicateEditorRowTemplate<T = any> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
+  export interface NSPredicateEditorRowTemplate<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
     description<R = unknown>(): R;
     _setTemplateViews<R = void, P0 = unknown>(__setTemplateViews: P0): R;
     dealloc<R = void>(): R;
@@ -40,8 +40,8 @@ declare namespace cocoa {
     leftExpressions<R = NSArray>(): R;
     operators<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface NSPredicateEditorRowTemplate<T = any> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
+  namespace NSPredicateEditorRowTemplate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
       alloc<R = NSPredicateEditorRowTemplate>(): R;
       new: <R = NSPredicateEditorRowTemplate>() => R;
       _bestMatchForPredicate_inTemplates_quality<R = unknown, P0 = unknown, P1 = unknown, P2 = number>(__bestMatchForPredicate: P0, _inTemplates: P1, _quality: P2): R;
@@ -52,4 +52,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPredicateEditorRowTemplate: cocoa.classes.NSPredicateEditorRowTemplate;
+declare const NSPredicateEditorRowTemplate: cocoa.NSPredicateEditorRowTemplate.CLASS;

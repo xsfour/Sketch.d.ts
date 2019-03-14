@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTextFinderBarContainer<T = any> {}
-  namespace classes {
-    export interface NSTextFinderBarContainer<T = any> {  }
+  export interface NSTextFinderBarContainer<T0 = void, T1 = void, T2 = void> {}
+  namespace NSTextFinderBarContainer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSTextFinderBarContainer: cocoa.classes.NSTextFinderBarContainer;
+declare const NSTextFinderBarContainer: cocoa.NSTextFinderBarContainer.CLASS;

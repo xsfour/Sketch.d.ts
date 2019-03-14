@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSplitDividerView<T = any> extends NSView {
+  export interface NSSplitDividerView<T0 = void, T1 = void, T2 = void> extends NSView {
     _coreUIState<R = __CFString>(): R;
     _coreUIOrientation<R = __CFString>(): R;
     _coreUIDimpleVariant<R = __CFString>(): R;
@@ -23,12 +23,12 @@ declare namespace cocoa {
     style<R = number>(): R;
     setStyle<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSSplitDividerView<T = any> extends NSView {
+  namespace NSSplitDividerView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSSplitDividerView>(): R;
       new: <R = NSSplitDividerView>() => R;
     }
   }
 }
 
-declare const NSSplitDividerView: cocoa.classes.NSSplitDividerView;
+declare const NSSplitDividerView: cocoa.NSSplitDividerView.CLASS;

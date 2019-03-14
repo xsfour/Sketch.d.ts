@@ -1,19 +1,16 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarSharingServicePickerViewController<T = any> extends NSViewController {
-    cxx_destruct<R = void>(): R;
-    _showAppExtensionsPref<R = void, P0 = unknown>(__showAppExtensionsPref: P0): R;
-    _loadContents<R = void>(): R;
+  export interface NSTouchBarSharingServicePickerViewController<T0 = void, T1 = void, T2 = void> extends NSViewController {
     delegate<R = NSSharingServicePickerTouchBarItemDelegate>(): R;
     setDelegate<R = void, P0 = NSSharingServicePickerTouchBarItemDelegate>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTouchBarSharingServicePickerViewController<T = any> extends NSViewController {
+  namespace NSTouchBarSharingServicePickerViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController {
       alloc<R = NSTouchBarSharingServicePickerViewController>(): R;
       new: <R = NSTouchBarSharingServicePickerViewController>() => R;
     }
   }
 }
 
-declare const NSTouchBarSharingServicePickerViewController: cocoa.classes.NSTouchBarSharingServicePickerViewController;
+declare const NSTouchBarSharingServicePickerViewController: cocoa.NSTouchBarSharingServicePickerViewController.CLASS;

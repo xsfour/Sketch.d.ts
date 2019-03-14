@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSAssetCollection<T = any> extends MSModelObject {
+  export interface _MSAssetCollection<T0 = void, T1 = void, T2 = void> extends MSModelObject {
     moveGradientIndex_toIndex<R = void, P0 = number, P1 = number>(_moveGradientIndex: P0, _toIndex: P1): R;
     removeAllGradients<R = void>(): R;
     removeGradientsAtIndexes<R = void, P0 = unknown>(_removeGradientsAtIndexes: P0): R;
@@ -50,8 +50,8 @@ declare namespace cocoa {
     images<R = NSArray>(): R;
     setImages<R = void, P0 = NSArray>(_v: P0): R;
   }
-  namespace classes {
-    export interface _MSAssetCollection<T = any> extends MSModelObject {
+  namespace _MSAssetCollection {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSModelObject {
       alloc<R = _MSAssetCollection>(): R;
       new: <R = _MSAssetCollection>() => R;
     }

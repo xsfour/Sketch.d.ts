@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface FBBezierContour<T = any> extends NSObject, NSCopyingProtocol {
+  export interface FBBezierContour<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     cxx_destruct<R = void>(): R;
     debugQuickLookObject<R = unknown>(): R;
     debugDrawColor_scale<R = void, P0 = unknown, P1 = number>(_debugDrawColor: P0, _scale: P1): R;
@@ -78,8 +78,8 @@ declare namespace cocoa {
     overlaps_<R = NSMutableArray>(): R;
     overlaps<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface FBBezierContour<T = any> extends NSObject, NSCopyingProtocol {
+  namespace FBBezierContour {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = FBBezierContour>(): R;
       new: <R = FBBezierContour>() => R;
       bezierContourWithCurve<R = unknown, P0 = unknown>(_bezierContourWithCurve: P0): R;
@@ -87,4 +87,4 @@ declare namespace cocoa {
   }
 }
 
-declare const FBBezierContour: cocoa.classes.FBBezierContour;
+declare const FBBezierContour: cocoa.FBBezierContour.CLASS;

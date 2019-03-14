@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSMeasurementDrawing<T = any> extends MSSmartGuideDrawing {
+  export interface MSMeasurementDrawing<T0 = void, T1 = void, T2 = void> extends MSSmartGuideDrawing {
     cxx_destruct<R = void>(): R;
     frameForMeasuringSizeOfRect_zoomScale<R = CGRect, P0 = CGRect, P1 = number>(_frameForMeasuringSizeOfRect: P0, _zoomScale: P1): R;
     performLabelTransformInRect_block<R = void, P0 = CGRect, P1 = CDUnknownBlockType>(_performLabelTransformInRect: P0, _block: P1): R;
@@ -19,8 +19,8 @@ declare namespace cocoa {
     orientation<R = number>(): R;
     setOrientation<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSMeasurementDrawing<T = any> extends MSSmartGuideDrawing {
+  namespace MSMeasurementDrawing {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSSmartGuideDrawing {
       alloc<R = MSMeasurementDrawing>(): R;
       new: <R = MSMeasurementDrawing>() => R;
       minFrameSizeAtZoomScale<R = number, P0 = number>(_minFrameSizeAtZoomScale: P0): R;
@@ -28,4 +28,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSMeasurementDrawing: cocoa.classes.MSMeasurementDrawing;
+declare const MSMeasurementDrawing: cocoa.MSMeasurementDrawing.CLASS;

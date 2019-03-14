@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFileAccessArbiter<T = any> extends NSObject, NSXPCListenerDelegateProtocol, NSFileAccessArbiterXPCInterfaceProtocol, NSFileAccessArbiterProtocol {
+  export interface NSFileAccessArbiter<T0 = void, T1 = void, T2 = void> extends NSObject, NSXPCListenerDelegateProtocol, NSFileAccessArbiterXPCInterfaceProtocol, NSFileAccessArbiterProtocol {
     _registerForDebugInfoRequests<R = void>(): R;
     getDebugInformationIncludingEverything_withString_fromPid_thenContinue<R = void, P0 = boolean, P1 = unknown, P2 = number, P3 = CDUnknownBlockType>(_getDebugInformationIncludingEverything: P0, _withString: P1, _fromPid: P2, _thenContinue: P3): R;
     _handleCanceledClient<R = void, P0 = unknown>(__handleCanceledClient: P0): R;
@@ -25,8 +25,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSFileAccessArbiter<T = any> extends NSObject, NSXPCListenerDelegateProtocol, NSFileAccessArbiterXPCInterfaceProtocol, NSFileAccessArbiterProtocol {
+  namespace NSFileAccessArbiter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSXPCListenerDelegateProtocol, NSFileAccessArbiterXPCInterfaceProtocol, NSFileAccessArbiterProtocol {
       alloc<R = NSFileAccessArbiter>(): R;
       new: <R = NSFileAccessArbiter>() => R;
       _lostBirdProvider<R = void, P0 = unknown>(__lostBirdProvider: P0): R;
@@ -37,4 +37,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSFileAccessArbiter: cocoa.classes.NSFileAccessArbiter;
+declare const NSFileAccessArbiter: cocoa.NSFileAccessArbiter.CLASS;

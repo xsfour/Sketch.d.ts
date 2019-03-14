@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFlashViewController<T = any> extends NSViewController {
+  export interface MSFlashViewController<T0 = void, T1 = void, T2 = void> extends NSViewController {
     cxx_destruct<R = void>(): R;
     helpPressed<R = void, P0 = unknown>(_helpPressed: P0): R;
     closeFlash<R = void, P0 = unknown>(_closeFlash: P0): R;
@@ -16,8 +16,8 @@ declare namespace cocoa {
     message<R = NSTextField>(): R;
     setMessage<R = void, P0 = NSTextField>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSFlashViewController<T = any> extends NSViewController {
+  namespace MSFlashViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController {
       alloc<R = MSFlashViewController>(): R;
       new: <R = MSFlashViewController>() => R;
       flashViewControllerWithMessage_closeBlock_helpBlock<R = unknown, P0 = unknown, P1 = CDUnknownBlockType, P2 = CDUnknownBlockType>(_flashViewControllerWithMessage: P0, _closeBlock: P1, _helpBlock: P2): R;
@@ -25,4 +25,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSFlashViewController: cocoa.classes.MSFlashViewController;
+declare const MSFlashViewController: cocoa.MSFlashViewController.CLASS;

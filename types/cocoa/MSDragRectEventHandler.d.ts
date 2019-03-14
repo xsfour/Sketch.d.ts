@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDragRectEventHandler<T = any> extends MSEventHandler, MSAlignmentEngineDelegateProtocol {
+  export interface MSDragRectEventHandler<T0 = void, T1 = void, T2 = void> extends MSEventHandler, MSAlignmentEngineDelegateProtocol {
     addSnapTargetsToEngine<R = void, P0 = unknown>(_addSnapTargetsToEngine: P0): R;
     snapAndAlignPoint_modifierFlags<R = unknown, P0 = CGPoint, P1 = number>(_snapAndAlignPoint: P0, _modifierFlags: P1): R;
     drawRectPreview<R = void>(): R;
@@ -27,12 +27,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSDragRectEventHandler<T = any> extends MSEventHandler, MSAlignmentEngineDelegateProtocol {
+  namespace MSDragRectEventHandler {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSEventHandler, MSAlignmentEngineDelegateProtocol {
       alloc<R = MSDragRectEventHandler>(): R;
       new: <R = MSDragRectEventHandler>() => R;
     }
   }
 }
 
-declare const MSDragRectEventHandler: cocoa.classes.MSDragRectEventHandler;
+declare const MSDragRectEventHandler: cocoa.MSDragRectEventHandler.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSStyleOverridePopupButton<T = any> extends NSPopUpButton {
+  export interface MSStyleOverridePopupButton<T0 = void, T1 = void, T2 = void> extends NSPopUpButton {
     cxx_destruct<R = void>(): R;
     buildMenuForOverride_withMenuBuilder_document_imageCallback<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = CDUnknownBlockType>(_buildMenuForOverride: P0, _withMenuBuilder: P1, _document: P2, _imageCallback: P3): R;
     setupResetMenuForPrimaryOverride_document<R = void, P0 = unknown, P1 = unknown>(_setupResetMenuForPrimaryOverride: P0, _document: P1): R;
@@ -12,12 +12,12 @@ declare namespace cocoa {
     menuBuilder<R = MSForeignObjectMenuBuilder>(): R;
     setMenuBuilder<R = void, P0 = MSForeignObjectMenuBuilder>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSStyleOverridePopupButton<T = any> extends NSPopUpButton {
+  namespace MSStyleOverridePopupButton {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSPopUpButton {
       alloc<R = MSStyleOverridePopupButton>(): R;
       new: <R = MSStyleOverridePopupButton>() => R;
     }
   }
 }
 
-declare const MSStyleOverridePopupButton: cocoa.classes.MSStyleOverridePopupButton;
+declare const MSStyleOverridePopupButton: cocoa.MSStyleOverridePopupButton.CLASS;

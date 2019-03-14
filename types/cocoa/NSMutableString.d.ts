@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMutableString<T = any> extends NSString {
+  export interface NSMutableString<T0 = void, T1 = void, T2 = void> extends NSString {
     initWithCapacity<R = unknown, P0 = number>(_initWithCapacity: P0): R;
     applyTransform_reverse_range_updatedRange<R = boolean, P0 = unknown, P1 = boolean, P2 = _NSRange, P3 = _NSRange>(_applyTransform: P0, _reverse: P1, _range: P2, _updatedRange: P3): R;
     replaceOccurrencesOfString_withString_options_range<R = number, P0 = unknown, P1 = unknown, P2 = number, P3 = _NSRange>(_replaceOccurrencesOfString: P0, _withString: P1, _options: P2, _range: P3): R;
@@ -29,8 +29,8 @@ declare namespace cocoa {
     __oldnf_deleteAllCharactersFromSet<R = void, P0 = unknown>(___oldnf_deleteAllCharactersFromSet: P0): R;
     _replaceOccurrencesOfRegularExpressionPattern_withTemplate_options_range<R = number, P0 = unknown, P1 = unknown, P2 = number, P3 = _NSRange>(__replaceOccurrencesOfRegularExpressionPattern: P0, _withTemplate: P1, _options: P2, _range: P3): R;
   }
-  namespace classes {
-    export interface NSMutableString<T = any> extends NSString {
+  namespace NSMutableString {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSString {
       alloc<R = NSMutableString>(): R;
       new: <R = NSMutableString>() => R;
       stringWithCapacity<R = unknown, P0 = number>(_stringWithCapacity: P0): R;
@@ -38,4 +38,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSMutableString: cocoa.classes.NSMutableString;
+declare const NSMutableString: cocoa.NSMutableString.CLASS;

@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAccessibilityTable<T = any> {}
-  namespace classes {
-    export interface NSAccessibilityTable<T = any> {  }
+  export interface NSAccessibilityTable<T0 = void, T1 = void, T2 = void> {}
+  namespace NSAccessibilityTable {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSAccessibilityTable: cocoa.classes.NSAccessibilityTable;
+declare const NSAccessibilityTable: cocoa.NSAccessibilityTable.CLASS;

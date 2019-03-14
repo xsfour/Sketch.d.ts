@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSOrthography<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  export interface NSOrthography<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
     allLanguages<R = unknown>(): R;
     allScripts<R = unknown>(): R;
     dominantLanguage<R = unknown>(): R;
@@ -18,8 +18,8 @@ declare namespace cocoa {
     languageMap<R = NSDictionary>(): R;
     dominantScript<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSOrthography<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  namespace NSOrthography {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
       alloc<R = NSOrthography>(): R;
       new: <R = NSOrthography>() => R;
       defaultOrthographyForLanguage<R = unknown, P0 = unknown>(_defaultOrthographyForLanguage: P0): R;
@@ -32,4 +32,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSOrthography: cocoa.classes.NSOrthography;
+declare const NSOrthography: cocoa.NSOrthography.CLASS;

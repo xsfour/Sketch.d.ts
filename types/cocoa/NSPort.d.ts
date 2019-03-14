@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPort<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
+  export interface NSPort<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
     removeConnection_fromRunLoop_forMode<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(_removeConnection: P0, _fromRunLoop: P1, _forMode: P2): R;
     addConnection_toRunLoop_forMode<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(_addConnection: P0, _toRunLoop: P1, _forMode: P2): R;
     removeFromRunLoop_forMode<R = void, P0 = unknown, P1 = unknown>(_removeFromRunLoop: P0, _forMode: P1): R;
@@ -20,8 +20,8 @@ declare namespace cocoa {
     reservedSpaceLength<R = number>(): R;
     valid<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSPort<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
+  namespace NSPort {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
       alloc<R = NSPort>(): R;
       new: <R = NSPort>() => R;
       portWithMachPort<R = unknown, P0 = number>(_portWithMachPort: P0): R;
@@ -31,4 +31,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPort: cocoa.classes.NSPort;
+declare const NSPort: cocoa.NSPort.CLASS;

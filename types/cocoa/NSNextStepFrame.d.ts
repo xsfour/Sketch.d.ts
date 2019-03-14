@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSNextStepFrame<T = any> extends NSView {
+  export interface NSNextStepFrame<T0 = void, T1 = void, T2 = void> extends NSView {
     _autosaveButtonSeparatorField<R = unknown>(): R;
     autosaveButton<R = unknown>(): R;
     fileButton<R = unknown>(): R;
@@ -74,8 +74,8 @@ declare namespace cocoa {
     _canHaveToolbar<R = boolean>(): R;
     dragRectForFrameRect<R = CGRect, P0 = CGRect>(_dragRectForFrameRect: P0): R;
   }
-  namespace classes {
-    export interface NSNextStepFrame<T = any> extends NSView {
+  namespace NSNextStepFrame {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSNextStepFrame>(): R;
       new: <R = NSNextStepFrame>() => R;
       _validateStyleMask<R = number, P0 = number>(__validateStyleMask: P0): R;
@@ -86,4 +86,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSNextStepFrame: cocoa.classes.NSNextStepFrame;
+declare const NSNextStepFrame: cocoa.NSNextStepFrame.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSDocumentFileAccess<T = any> extends _NSDocumentSerializationObject {
+  export interface _NSDocumentFileAccess<T0 = void, T1 = void, T2 = void> extends _NSDocumentSerializationObject {
     whenFileAccessCanContinueInvokeBlock<R = void, P0 = CDUnknownBlockType>(_whenFileAccessCanContinueInvokeBlock: P0): R;
     removedFileURLOnlyAccess<R = void>(): R;
     addedFileURLOnlyAccess<R = void>(): R;
@@ -21,8 +21,8 @@ declare namespace cocoa {
     fileURLStabilized<R = boolean>(): R;
     canFinishFileAccess<R = boolean>(): R;
   }
-  namespace classes {
-    export interface _NSDocumentFileAccess<T = any> extends _NSDocumentSerializationObject {
+  namespace _NSDocumentFileAccess {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _NSDocumentSerializationObject {
       alloc<R = _NSDocumentFileAccess>(): R;
       new: <R = _NSDocumentFileAccess>() => R;
     }

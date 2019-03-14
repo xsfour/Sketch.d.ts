@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSRulerViewLayer<T = any> extends CALayer {
+  export interface MSRulerViewLayer<T0 = void, T1 = void, T2 = void> extends CALayer {
     cxx_destruct<R = void>(): R;
     isFlipped<R = boolean>(): R;
     rulerHeight<R = number>(): R;
@@ -42,9 +42,9 @@ declare namespace cocoa {
     axis<R = number>(): R;
     setAxis<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSRulerViewLayer<T = any> extends CALayer {  }
+  namespace MSRulerViewLayer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends CALayer {}
   }
 }
 
-declare const MSRulerViewLayer: cocoa.classes.MSRulerViewLayer;
+declare const MSRulerViewLayer: cocoa.MSRulerViewLayer.CLASS;

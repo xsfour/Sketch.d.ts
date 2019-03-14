@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDocumentRevisionsPlaceholderView<T = any> extends NSView {
+  export interface NSDocumentRevisionsPlaceholderView<T0 = void, T1 = void, T2 = void> extends NSView {
     setElementsHidden<R = void, P0 = boolean>(_setElementsHidden: P0): R;
     _hasButtonOrProgress<R = boolean>(): R;
     makeMessageTextField<R = unknown, P0 = boolean>(_makeMessageTextField: P0): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     message1<R = NSString>(): R;
     setMessage1<R = void, P0 = NSString>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSDocumentRevisionsPlaceholderView<T = any> extends NSView {
+  namespace NSDocumentRevisionsPlaceholderView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSDocumentRevisionsPlaceholderView>(): R;
       new: <R = NSDocumentRevisionsPlaceholderView>() => R;
     }
   }
 }
 
-declare const NSDocumentRevisionsPlaceholderView: cocoa.classes.NSDocumentRevisionsPlaceholderView;
+declare const NSDocumentRevisionsPlaceholderView: cocoa.NSDocumentRevisionsPlaceholderView.CLASS;

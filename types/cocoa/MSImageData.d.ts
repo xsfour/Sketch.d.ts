@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImageData<T = any> extends NSObject, NSCopyingProtocol, MSCodingProtocol, MSJSONArchiverAlternativeFileReferenceProtocol {
+  export interface MSImageData<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, MSCodingProtocol, MSJSONArchiverAlternativeFileReferenceProtocol {
     cxx_destruct<R = void>(): R;
     CGImageAtLevelOfDetail<R = CGImage, P0 = number>(_CGImageAtLevelOfDetail: P0): R;
     generateCGImageAtLevelOfDetail<R = CGImage, P0 = number>(_generateCGImageAtLevelOfDetail: P0): R;
@@ -36,8 +36,8 @@ declare namespace cocoa {
     description<R = NSString>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSImageData<T = any> extends NSObject, NSCopyingProtocol, MSCodingProtocol, MSJSONArchiverAlternativeFileReferenceProtocol {
+  namespace MSImageData {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, MSCodingProtocol, MSJSONArchiverAlternativeFileReferenceProtocol {
       alloc<R = MSImageData>(): R;
       new: <R = MSImageData>() => R;
       errorImage<R = unknown>(): R;
@@ -45,4 +45,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSImageData: cocoa.classes.MSImageData;
+declare const MSImageData: cocoa.MSImageData.CLASS;

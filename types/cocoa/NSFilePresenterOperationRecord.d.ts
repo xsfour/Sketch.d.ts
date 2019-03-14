@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFilePresenterOperationRecord<T = any> extends NSObject {
+  export interface NSFilePresenterOperationRecord<T0 = void, T1 = void, T2 = void> extends NSObject {
     description<R = unknown>(): R;
     _reactorQueue<R = unknown>(): R;
     didEnd<R = void>(): R;
@@ -13,8 +13,8 @@ declare namespace cocoa {
     state<R = number>(): R;
     operationDescription<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSFilePresenterOperationRecord<T = any> extends NSObject {
+  namespace NSFilePresenterOperationRecord {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSFilePresenterOperationRecord>(): R;
       new: <R = NSFilePresenterOperationRecord>() => R;
       operationRecordWithDescription<R = unknown, P0 = unknown>(_operationRecordWithDescription: P0): R;
@@ -22,4 +22,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSFilePresenterOperationRecord: cocoa.classes.NSFilePresenterOperationRecord;
+declare const NSFilePresenterOperationRecord: cocoa.NSFilePresenterOperationRecord.CLASS;

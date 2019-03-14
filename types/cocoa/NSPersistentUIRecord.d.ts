@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPersistentUIRecord<T = any> extends NSObject {
+  export interface NSPersistentUIRecord<T0 = void, T1 = void, T2 = void> extends NSObject {
     _setSecurityScopedBookmarks<R = void, P0 = unknown>(__setSecurityScopedBookmarks: P0): R;
     addSecurityScopedBookmarks<R = void, P0 = unknown>(_addSecurityScopedBookmarks: P0): R;
     openedPushStateUnarchivers<R = unknown>(): R;
@@ -33,8 +33,8 @@ declare namespace cocoa {
     setArchivedState<R = void, P0 = NSData>(_v: P0): R;
     securityScopedBookmarks<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface NSPersistentUIRecord<T = any> extends NSObject {
+  namespace NSPersistentUIRecord {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSPersistentUIRecord>(): R;
       new: <R = NSPersistentUIRecord>() => R;
       coalesceRecords<R = void, P0 = unknown>(_coalesceRecords: P0): R;
@@ -43,4 +43,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPersistentUIRecord: cocoa.classes.NSPersistentUIRecord;
+declare const NSPersistentUIRecord: cocoa.NSPersistentUIRecord.CLASS;

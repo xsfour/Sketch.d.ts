@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXMLParserDelegateProtocol<T = any> extends NSObjectProtocol {
+  export interface NSXMLParserDelegateProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     parser_validationErrorOccurred<R = void, P0 = NSXMLParser, P1 = NSError>(_parser: P0, _validationErrorOccurred: P1): R;
     parser_parseErrorOccurred<R = void, P0 = NSXMLParser, P1 = NSError>(_parser: P0, _parseErrorOccurred: P1): R;
     parser_resolveExternalEntityName_systemID<R = NSData, P0 = NSXMLParser, P1 = NSString, P2 = NSString>(_parser: P0, _resolveExternalEntityName: P1, _systemID: P2): R;
@@ -23,7 +23,7 @@ declare namespace cocoa {
     parserDidEndDocument<R = void, P0 = NSXMLParser>(_parserDidEndDocument: P0): R;
     parserDidStartDocument<R = void, P0 = NSXMLParser>(_parserDidStartDocument: P0): R;
   }
-  namespace classes {
-    export interface NSXMLParserDelegateProtocol<T = any> extends NSObjectProtocol {  }
+  namespace NSXMLParserDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMenu<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol, NSUserInterfaceItemIdentificationProtocol, NSAccessibilityElementProtocol, NSAccessibilityProtocol {
+  export interface NSMenu<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSCodingProtocol, NSUserInterfaceItemIdentificationProtocol, NSAccessibilityElementProtocol, NSAccessibilityProtocol {
     setUserInterfaceItemIdentifier<R = void, P0 = unknown>(_setUserInterfaceItemIdentifier: P0): R;
     userInterfaceItemIdentifier<R = unknown>(): R;
     _menuItem_didChangeRequiresModifiersToBeVisibleFrom_to<R = void, P0 = unknown, P1 = boolean, P2 = boolean>(__menuItem: P0, _didChangeRequiresModifiersToBeVisibleFrom: P1, _to: P2): R;
@@ -477,7 +477,7 @@ declare namespace cocoa {
     debugDescription<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
-    // + NSMenu(CHMenuAdditions,MenuItem,NSMenu_Blocks):
+    // + NSMenu(CHMenuAdditions): 
     showPopUpMenuForEvent_relativeToRect_ofView_deferred_triggerControlViewActionOnZeroItems<R = void, P0 = unknown, P1 = CGRect, P2 = unknown, P3 = boolean, P4 = boolean>(_showPopUpMenuForEvent: P0, _relativeToRect: P1, _ofView: P2, _deferred: P3, _triggerControlViewActionOnZeroItems: P4): R;
     showPopUpMenuForEvent_relativeToRect_ofView_deferred<R = void, P0 = unknown, P1 = CGRect, P2 = unknown, P3 = boolean>(_showPopUpMenuForEvent: P0, _relativeToRect: P1, _ofView: P2, _deferred: P3): R;
     showPopUpMenuForEvent_relativeToRect_ofView<R = void, P0 = unknown, P1 = CGRect, P2 = unknown>(_showPopUpMenuForEvent: P0, _relativeToRect: P1, _ofView: P2): R;
@@ -495,12 +495,14 @@ declare namespace cocoa {
     addItemWithTitle_target_action<R = unknown, P0 = unknown, P1 = unknown, P2 = string>(_addItemWithTitle: P0, _target: P1, _action: P2): R;
     addItemWithTitle_small_target_action<R = unknown, P0 = unknown, P1 = boolean, P2 = unknown, P3 = string>(_addItemWithTitle: P0, _small: P1, _target: P2, _action: P3): R;
     addItemWithTitle_action<R = unknown, P0 = unknown, P1 = string>(_addItemWithTitle: P0, _action: P1): R;
+    // + NSMenu(MenuItem): 
     parentMenuItem_bc<R = unknown>(): R;
+    // + NSMenu(CHMenuAdditions):
     isDarkMode_ms<R = boolean>(): R;
     isInMainMenu<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSMenu<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol, NSUserInterfaceItemIdentificationProtocol, NSAccessibilityElementProtocol, NSAccessibilityProtocol {
+  namespace NSMenu {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSCodingProtocol, NSUserInterfaceItemIdentificationProtocol, NSAccessibilityElementProtocol, NSAccessibilityProtocol {
       alloc<R = NSMenu>(): R;
       new: <R = NSMenu>() => R;
       _revealedMenuBarHeight<R = number>(): R;
@@ -545,10 +547,10 @@ declare namespace cocoa {
       _registerOneMenuForKeyEquivalentUniquing<R = void, P0 = unknown>(__registerOneMenuForKeyEquivalentUniquing: P0): R;
       _unregisterMenuForKeyEquivalentUniquing<R = void, P0 = unknown>(__unregisterMenuForKeyEquivalentUniquing: P0): R;
       _registerMenuForKeyEquivalentUniquing<R = void, P0 = unknown>(__registerMenuForKeyEquivalentUniquing: P0): R;
-      // + NSMenu(CHMenuAdditions,MenuItem,NSMenu_Blocks):
+      // + NSMenu(NSMenu_Blocks): 
       menuWithItems<R = unknown, P0 = unknown>(_menuWithItems: P0): R;
     }
   }
 }
 
-declare const NSMenu: cocoa.classes.NSMenu;
+declare const NSMenu: cocoa.NSMenu.CLASS;

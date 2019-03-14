@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSProgressPanel<T = any> extends NSPanel {
+  export interface NSProgressPanel<T0 = void, T1 = void, T2 = void> extends NSPanel {
     cancelButtonPressed<R = void, P0 = unknown>(_cancelButtonPressed: P0): R;
     setCancellationDelegate_wasCancelledSelector_contextInfo<R = void, P0 = unknown, P1 = string, P2 = void>(_setCancellationDelegate: P0, _wasCancelledSelector: P1, _contextInfo: P2): R;
     cancelButton<R = NSButton>(): R;
@@ -11,8 +11,8 @@ declare namespace cocoa {
     captionTextField<R = NSTextField>(): R;
     setCaptionTextField<R = void, P0 = NSTextField>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSProgressPanel<T = any> extends NSPanel {
+  namespace NSProgressPanel {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSPanel {
       alloc<R = NSProgressPanel>(): R;
       new: <R = NSProgressPanel>() => R;
       progressPanelWithNibName<R = unknown, P0 = unknown>(_progressPanelWithNibName: P0): R;
@@ -20,4 +20,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSProgressPanel: cocoa.classes.NSProgressPanel;
+declare const NSProgressPanel: cocoa.NSProgressPanel.CLASS;

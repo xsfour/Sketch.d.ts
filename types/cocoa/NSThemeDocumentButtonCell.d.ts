@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSThemeDocumentButtonCell<T = any> extends NSButtonCell {}
-  namespace classes {
-    export interface NSThemeDocumentButtonCell<T = any> extends NSButtonCell {
+  export interface NSThemeDocumentButtonCell<T0 = void, T1 = void, T2 = void> extends NSButtonCell {}
+  namespace NSThemeDocumentButtonCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSButtonCell {
       alloc<R = NSThemeDocumentButtonCell>(): R;
       new: <R = NSThemeDocumentButtonCell>() => R;
     }
   }
 }
 
-declare const NSThemeDocumentButtonCell: cocoa.classes.NSThemeDocumentButtonCell;
+declare const NSThemeDocumentButtonCell: cocoa.NSThemeDocumentButtonCell.CLASS;

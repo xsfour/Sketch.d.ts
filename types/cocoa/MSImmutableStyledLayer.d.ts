@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutableStyledLayer<T = any> extends _MSImmutableStyledLayer, MSImmutableLayerPreviewabilityProtocol, MSStyledLayerProtocol {
+  export interface MSImmutableStyledLayer<T0 = void, T1 = void, T2 = void> extends _MSImmutableStyledLayer, MSImmutableLayerPreviewabilityProtocol, MSStyledLayerProtocol {
     hasMarkers<R = boolean>(): R;
     decoratedPathInBoundsInDocument_asSubpath<R = unknown, P0 = unknown, P1 = boolean>(_decoratedPathInBoundsInDocument: P0, _asSubpath: P1): R;
     influenceRectEdgePaddingsThatDoNotCascade<R = BCEdgePaddings>(): R;
@@ -40,8 +40,8 @@ declare namespace cocoa {
     rotation<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSImmutableStyledLayer<T = any> extends _MSImmutableStyledLayer, MSImmutableLayerPreviewabilityProtocol, MSStyledLayerProtocol {
+  namespace MSImmutableStyledLayer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSImmutableStyledLayer, MSImmutableLayerPreviewabilityProtocol, MSStyledLayerProtocol {
       alloc<R = MSImmutableStyledLayer>(): R;
       new: <R = MSImmutableStyledLayer>() => R;
       initialize<R = void>(): R;
@@ -68,4 +68,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSImmutableStyledLayer: cocoa.classes.MSImmutableStyledLayer;
+declare const MSImmutableStyledLayer: cocoa.MSImmutableStyledLayer.CLASS;

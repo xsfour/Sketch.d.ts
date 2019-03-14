@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSLayerProtocol<T = any> extends NSObjectProtocol {
+  export interface MSLayerProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     childrenIncludingSelf<R = NSArray, P0 = boolean>(_childrenIncludingSelf: P0): R;
     children<R = NSArray>(): R;
     layerWithID<R = unknown, P0 = NSString>(_layerWithID: P0): R;
@@ -19,7 +19,7 @@ declare namespace cocoa {
     isFlippedHorizontal<R = boolean>(): R;
     isVisible<R = boolean>(): R;
   }
-  namespace classes {
-    export interface MSLayerProtocol<T = any> extends NSObjectProtocol {  }
+  namespace MSLayerProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

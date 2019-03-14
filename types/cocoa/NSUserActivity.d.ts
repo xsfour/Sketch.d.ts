@@ -1,131 +1,14 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUserActivity<T = any> extends NSObject {
-    cxx_destruct<R = void>(): R;
-    setWebPageURL<R = void, P0 = unknown>(_setWebPageURL: P0): R;
-    webPageURL<R = unknown>(): R;
-    initWithTypeIdentifier<R = unknown, P0 = unknown>(_initWithTypeIdentifier: P0): R;
-    typeIdentifier<R = unknown>(): R;
-    hash<R = number>(): R;
-    getContinuationStreamsWithCompletionHandler<R = void, P0 = CDUnknownBlockType>(_getContinuationStreamsWithCompletionHandler: P0): R;
-    invalidate<R = void>(): R;
-    resignCurrent<R = void>(): R;
-    becomeCurrent<R = void>(): R;
-    setContentUserAction<R = void, P0 = unknown>(_setContentUserAction: P0): R;
-    contentUserAction<R = unknown>(): R;
-    setContentAttributes<R = void, P0 = unknown>(_setContentAttributes: P0): R;
-    contentAttributes<R = unknown>(): R;
-    setContentType<R = void, P0 = unknown>(_setContentType: P0): R;
-    contentType<R = unknown>(): R;
-    addUserInfoEntriesFromDictionary<R = void, P0 = unknown>(_addUserInfoEntriesFromDictionary: P0): R;
-    dealloc<R = void>(): R;
-    initWithActivityType<R = unknown, P0 = unknown>(_initWithActivityType: P0): R;
-    initWithInternalUserActivity<R = unknown, P0 = unknown>(_initWithInternalUserActivity: P0): R;
-    didReceiveInputStream_outputStream<R = void, P0 = unknown, P1 = unknown>(_didReceiveInputStream: P0, _outputStream: P1): R;
-    didSynchronizeActivity<R = void>(): R;
-    willSynchronizeActivity<R = void>(): R;
-    _setParentUserActivity<R = void, P0 = unknown>(__setParentUserActivity: P0): R;
-    _parentUserActivity<R = unknown>(): R;
-    _addKeywordsFromArray<R = void, P0 = unknown>(__addKeywordsFromArray: P0): R;
-    _createUserActivityStringsWithOptions_completionHandler<R = boolean, P0 = unknown, P1 = CDUnknownBlockType>(__createUserActivityStringsWithOptions: P0, _completionHandler: P1): R;
-    _createUserActivityDataWithOptions_completionHandler<R = boolean, P0 = unknown, P1 = CDUnknownBlockType>(__createUserActivityDataWithOptions: P0, _completionHandler: P1): R;
-    _initWithUserActivityStrings_secondaryString_optionalData<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(__initWithUserActivityStrings: P0, _secondaryString: P1, _optionalData: P2): R;
-    _initWithUserActivityData<R = unknown, P0 = unknown>(__initWithUserActivityData: P0): R;
-    _prepareUserActivityForLaunchingWithOptions_completionHandler<R = void, P0 = unknown, P1 = CDUnknownBlockType>(__prepareUserActivityForLaunchingWithOptions: P0, _completionHandler: P1): R;
-    _determineMatchingApplicationBundleIdentfierWithOptions<R = unknown, P0 = unknown>(__determineMatchingApplicationBundleIdentfierWithOptions: P0): R;
-    _determineMatchingApplicationBundleIdentifierWithOptions<R = unknown, P0 = unknown>(__determineMatchingApplicationBundleIdentifierWithOptions: P0): R;
-    _resignCurrent<R = void>(): R;
-    _setLastActivityDate<R = void, P0 = unknown>(__setLastActivityDate: P0): R;
-    _removeFrameworkPayloadValueForKey<R = void, P0 = unknown>(__removeFrameworkPayloadValueForKey: P0): R;
-    _updateFrameworkPayloadValue_forKey<R = void, P0 = unknown, P1 = unknown>(__updateFrameworkPayloadValue: P0, _forKey: P1): R;
-    _removeUserInfoValueForKey<R = void, P0 = unknown>(__removeUserInfoValueForKey: P0): R;
-    _updateUserInfoValue_forKey<R = void, P0 = unknown, P1 = unknown>(__updateUserInfoValue: P0, _forKey: P1): R;
-    _initWithUserActivityType_dynamicActivityType_options<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(__initWithUserActivityType: P0, _dynamicActivityType: P1, _options: P2): R;
-    _initWithTypeIdentifier_suggestedActionType_options<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(__initWithTypeIdentifier: P0, _suggestedActionType: P1, _options: P2): R;
-    setContentAttributeSet<R = void, P0 = unknown>(_setContentAttributeSet: P0): R;
-    contentAttributeSet<R = unknown>(): R;
-    eligibleForPrediction<R = boolean>(): R;
-    setEligibleForPrediction<R = void, P0 = boolean>(_v: P0): R;
-    _internalUserActivity<R = UAUserActivity>(): R;
-    eligibleForPublicIndexing<R = boolean>(): R;
-    setEligibleForPublicIndexing<R = void, P0 = boolean>(_v: P0): R;
-    eligibleForSearch<R = boolean>(): R;
-    setEligibleForSearch<R = void, P0 = boolean>(_v: P0): R;
-    eligibleForHandoff<R = boolean>(): R;
-    setEligibleForHandoff<R = void, P0 = boolean>(_v: P0): R;
-    keywords<R = NSSet>(): R;
-    setKeywords<R = void, P0 = NSSet>(_v: P0): R;
-    expirationDate<R = NSDate>(): R;
-    setExpirationDate<R = void, P0 = NSDate>(_v: P0): R;
-    requiredUserInfoKeys<R = NSSet>(): R;
-    setRequiredUserInfoKeys<R = void, P0 = NSSet>(_v: P0): R;
-    supportsContinuationStreams<R = boolean>(): R;
-    setSupportsContinuationStreams<R = void, P0 = boolean>(_v: P0): R;
-    delegate<R = NSUserActivityDelegate>(): R;
-    setDelegate<R = void, P0 = NSUserActivityDelegate>(_v: P0): R;
-    referrerURL<R = NSURL>(): R;
-    setReferrerURL<R = void, P0 = NSURL>(_v: P0): R;
-    webpageURL<R = NSURL>(): R;
-    setWebpageURL<R = void, P0 = NSURL>(_v: P0): R;
-    needsSave<R = boolean>(): R;
-    setNeedsSave<R = void, P0 = boolean>(_v: P0): R;
-    userInfo<R = NSDictionary>(): R;
-    setUserInfo<R = void, P0 = NSDictionary>(_v: P0): R;
-    title<R = NSString>(): R;
-    setTitle<R = void, P0 = NSString>(_v: P0): R;
-    activityType<R = NSString>(): R;
-    _eligibleForUserActivityPublicIndexing<R = boolean>(): R;
-    set_eligibleForUserActivityPublicIndexing<R = void, P0 = boolean>(_v: P0): R;
-    _eligibleForUserActivityReminders<R = boolean>(): R;
-    set_eligibleForUserActivityReminders<R = void, P0 = boolean>(_v: P0): R;
-    _eligibleForUserActivityIndexing<R = boolean>(): R;
-    set_eligibleForUserActivityIndexing<R = void, P0 = boolean>(_v: P0): R;
-    _eligibleForUserActivityHandoff<R = boolean>(): R;
-    set_eligibleForUserActivityHandoff<R = void, P0 = boolean>(_v: P0): R;
-    _keywords<R = NSSet>(): R;
-    set_keywords<R = void, P0 = NSSet>(_v: P0): R;
-    _expirationDate<R = NSDate>(): R;
-    set_expirationDate<R = void, P0 = NSDate>(_v: P0): R;
-    _contentAttributes<R = NSDictionary>(): R;
-    set_contentAttributes<R = void, P0 = NSDictionary>(_v: P0): R;
-    _contentIdentifier<R = NSString>(): R;
-    set_contentIdentifier<R = void, P0 = NSString>(_v: P0): R;
-    _contentUserAction<R = NSString>(): R;
-    set_contentUserAction<R = void, P0 = NSString>(_v: P0): R;
-    _contentType<R = NSString>(): R;
-    set_contentType<R = void, P0 = NSString>(_v: P0): R;
-    _minimalRequiredUserInfoKeys<R = NSSet>(): R;
-    set_minimalRequiredUserInfoKeys<R = void, P0 = NSSet>(_v: P0): R;
-    _subtitle<R = NSString>(): R;
-    set_subtitle<R = void, P0 = NSString>(_v: P0): R;
-    _teamIdentifier<R = NSString>(): R;
-    _frameworkDelegate<R = NSUserActivityDelegate>(): R;
-    set_frameworkDelegate<R = void, P0 = NSUserActivityDelegate>(_v: P0): R;
-    _options<R = NSDictionary>(): R;
-    set_options<R = void, P0 = NSDictionary>(_v: P0): R;
-    _lastActivityDate<R = NSDate>(): R;
-    _suggestedActionType<R = number>(): R;
-    _uniqueIdentifier<R = NSUUID>(): R;
-    _frameworkPayload<R = NSDictionary>(): R;
-    set_frameworkPayload<R = void, P0 = NSDictionary>(_v: P0): R;
-    persistentIdentifier<R = NSString>(): R;
-    setPersistentIdentifier<R = void, P0 = NSString>(_v: P0): R;
-  }
-  namespace classes {
-    export interface NSUserActivity<T = any> extends NSObject {
+  export interface NSUserActivity<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace NSUserActivity {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSUserActivity>(): R;
       new: <R = NSUserActivity>() => R;
       _supportsUserActivityAppLinks<R = boolean>(): R;
-      _currentUserActivityUUIDWithOptions_completionHandler<R = boolean, P0 = unknown, P1 = CDUnknownBlockType>(__currentUserActivityUUIDWithOptions: P0, _completionHandler: P1): R;
-      _currentUserActivityUUID<R = unknown>(): R;
-      _unregisterUserActivityType_dynamicActivityType<R = void, P0 = unknown, P1 = unknown>(__unregisterUserActivityType: P0, _dynamicActivityType: P1): R;
-      _registerUserActivityType_dynamicActivityType<R = void, P0 = unknown, P1 = unknown>(__registerUserActivityType: P0, _dynamicActivityType: P1): R;
-      _fetchUserActivityWithUUID_completionHandler<R = void, P0 = unknown, P1 = CDUnknownBlockType>(__fetchUserActivityWithUUID: P0, _completionHandler: P1): R;
-      _fetchUserActivityWithUUID_intervalToWaitForDocumentSynchronizationToComplete_completionHandler<R = unknown, P0 = unknown, P1 = number, P2 = CDUnknownBlockType>(__fetchUserActivityWithUUID: P0, _intervalToWaitForDocumentSynchronizationToComplete: P1, _completionHandler: P2): R;
-      _userFacingErrorForLaunchServicesError_userInfo<R = unknown, P0 = unknown, P1 = unknown>(__userFacingErrorForLaunchServicesError: P0, _userInfo: P1): R;
     }
   }
 }
 
-declare const NSUserActivity: cocoa.classes.NSUserActivity;
+declare const NSUserActivity: cocoa.NSUserActivity.CLASS;

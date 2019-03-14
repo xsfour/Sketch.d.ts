@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBackgroundBlurInspectorItem<T = any> extends MSBaseBlurInspectorItem {
+  export interface MSBackgroundBlurInspectorItem<T0 = void, T1 = void, T2 = void> extends MSBaseBlurInspectorItem {
     saturationAdapter<R = MSMathInspectorValueAdaptor>(): R;
     setSaturationAdapter<R = void, P0 = MSMathInspectorValueAdaptor>(_v: P0): R;
     saturationSlider<R = NSSlider>(): R;
@@ -9,12 +9,12 @@ declare namespace cocoa {
     saturationField<R = MSUpDownTextField>(): R;
     setSaturationField<R = void, P0 = MSUpDownTextField>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSBackgroundBlurInspectorItem<T = any> extends MSBaseBlurInspectorItem {
+  namespace MSBackgroundBlurInspectorItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSBaseBlurInspectorItem {
       alloc<R = MSBackgroundBlurInspectorItem>(): R;
       new: <R = MSBackgroundBlurInspectorItem>() => R;
     }
   }
 }
 
-declare const MSBackgroundBlurInspectorItem: cocoa.classes.MSBackgroundBlurInspectorItem;
+declare const MSBackgroundBlurInspectorItem: cocoa.MSBackgroundBlurInspectorItem.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSWorkspace<T = any> extends NSObject {
+  export interface NSWorkspace<T0 = void, T1 = void, T2 = void> extends NSObject {
     automaticallyTerminatedApplications<R = unknown>(): R;
     unterminatedApplications<R = unknown>(): R;
     runningApplications<R = unknown>(): R;
@@ -112,23 +112,22 @@ declare namespace cocoa {
     accessibilityDisplayShouldInvertColors<R = boolean>(): R;
     switchControlEnabled<R = boolean>(): R;
     voiceOverEnabled<R = boolean>(): R;
-    // + NSWorkspace(CHWorkspaceAdditions):
+    // + NSWorkspace(CHWorkspaceAdditions): 
     applicationSupportDirectoryWithSubDirectory_createIfNeeded<R = unknown, P0 = unknown, P1 = boolean>(_applicationSupportDirectoryWithSubDirectory: P0, _createIfNeeded: P1): R;
     applicationSupportDirectory<R = unknown>(): R;
     setApplicationSupportDirectory<R = void, P0 = unknown>(_setApplicationSupportDirectory: P0): R;
     sharedApplicationSupportDirectory<R = unknown>(): R;
     applicationSupportDirectoryName<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSWorkspace<T = any> extends NSObject {
+  namespace NSWorkspace {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSWorkspace>(): R;
       new: <R = NSWorkspace>() => R;
       sharedWorkspace<R = unknown>(): R;
       _invalidateAccessibilityDisplayValues<R = void>(): R;
-      // + NSWorkspace(CHWorkspaceAdditions):
-      
-    }
+  
+  }
   }
 }
 
-declare const NSWorkspace: cocoa.classes.NSWorkspace;
+declare const NSWorkspace: cocoa.NSWorkspace.CLASS;

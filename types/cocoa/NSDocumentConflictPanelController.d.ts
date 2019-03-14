@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDocumentConflictPanelController<T = any> extends NSObject, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol, QLPreviewPanelDelegateProtocol, QLPreviewPanelDataSourceProtocol, NSFilePresenterProtocol {
+  export interface NSDocumentConflictPanelController<T0 = void, T1 = void, T2 = void> extends NSObject, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol, QLPreviewPanelDelegateProtocol, QLPreviewPanelDataSourceProtocol, NSFilePresenterProtocol {
     previewPanel_shouldShowShareButtonForItem<R = boolean, P0 = unknown, P1 = unknown>(_previewPanel: P0, _shouldShowShareButtonForItem: P1): R;
     previewPanel_shouldOpenURL_forPreviewItem<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown>(_previewPanel: P0, _shouldOpenURL: P1, _forPreviewItem: P2): R;
     previewPanel_shouldShowOpenButtonForItem<R = boolean, P0 = unknown, P1 = unknown>(_previewPanel: P0, _shouldShowOpenButtonForItem: P1): R;
@@ -42,12 +42,12 @@ declare namespace cocoa {
     primaryPresentedItemURL<R = NSURL>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSDocumentConflictPanelController<T = any> extends NSObject, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol, QLPreviewPanelDelegateProtocol, QLPreviewPanelDataSourceProtocol, NSFilePresenterProtocol {
+  namespace NSDocumentConflictPanelController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol, QLPreviewPanelDelegateProtocol, QLPreviewPanelDataSourceProtocol, NSFilePresenterProtocol {
       alloc<R = NSDocumentConflictPanelController>(): R;
       new: <R = NSDocumentConflictPanelController>() => R;
     }
   }
 }
 
-declare const NSDocumentConflictPanelController: cocoa.classes.NSDocumentConflictPanelController;
+declare const NSDocumentConflictPanelController: cocoa.NSDocumentConflictPanelController.CLASS;

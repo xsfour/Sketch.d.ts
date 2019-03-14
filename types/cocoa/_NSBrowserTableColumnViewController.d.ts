@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSBrowserTableColumnViewController<T = any> extends NSBrowserColumnViewController, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol {
+  export interface _NSBrowserTableColumnViewController<T0 = void, T1 = void, T2 = void> extends NSBrowserColumnViewController, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol {
     _autoExpandItemUnderCursor<R = boolean>(): R;
     _expandItemUnderMouse<R = void, P0 = unknown>(__expandItemUnderMouse: P0): R;
     _cancelExpandItemUnderMouse<R = void>(): R;
@@ -28,8 +28,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSBrowserTableColumnViewController<T = any> extends NSBrowserColumnViewController, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol {
+  namespace _NSBrowserTableColumnViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSBrowserColumnViewController, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol {
       alloc<R = _NSBrowserTableColumnViewController>(): R;
       new: <R = _NSBrowserTableColumnViewController>() => R;
     }

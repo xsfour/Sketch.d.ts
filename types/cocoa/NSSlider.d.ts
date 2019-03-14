@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSlider<T = any> extends NSControl, NSSliderAccessoryContainerProtocol, NSSliderCellControlViewProtocol, NSSliderTickMarksDelegateProtocol, NSAccessibilitySliderProtocol {
+  export interface NSSlider<T0 = void, T1 = void, T2 = void> extends NSControl, NSSliderAccessoryContainerProtocol, NSSliderCellControlViewProtocol, NSSliderTickMarksDelegateProtocol, NSAccessibilitySliderProtocol {
     _preferredAppearance<R = unknown>(): R;
     _layoutComponentSubviewsIfNecessary<R = void>(): R;
     _clearComponentSubviewsAndRemoveFromSuperview<R = void, P0 = boolean>(__clearComponentSubviewsAndRemoveFromSuperview: P0): R;
@@ -92,11 +92,11 @@ declare namespace cocoa {
     description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
-    // + NSSlider(NextKeyViewSupport):
+    // + NSSlider(NextKeyViewSupport): 
     canBeKeyView<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSSlider<T = any> extends NSControl, NSSliderAccessoryContainerProtocol, NSSliderCellControlViewProtocol, NSSliderTickMarksDelegateProtocol, NSAccessibilitySliderProtocol {
+  namespace NSSlider {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSControl, NSSliderAccessoryContainerProtocol, NSSliderCellControlViewProtocol, NSSliderTickMarksDelegateProtocol, NSAccessibilitySliderProtocol {
       alloc<R = NSSlider>(): R;
       new: <R = NSSlider>() => R;
       verticalSliderWithMinValue_maxValue_initialValue_target_action<R = unknown, P0 = number, P1 = number, P2 = number, P3 = unknown, P4 = string>(_verticalSliderWithMinValue: P0, _maxValue: P1, _initialValue: P2, _target: P3, _action: P4): R;
@@ -109,10 +109,9 @@ declare namespace cocoa {
       sliderWithTarget_action<R = unknown, P0 = unknown, P1 = string>(_sliderWithTarget: P0, _action: P1): R;
       _sliderWithMinValue_maxValue_initialValue_target_action<R = unknown, P0 = number, P1 = number, P2 = number, P3 = unknown, P4 = string>(__sliderWithMinValue: P0, _maxValue: P1, _initialValue: P2, _target: P3, _action: P4): R;
       keyPathsForValuesAffecting_hasStepBehaviorContext<R = unknown>(): R;
-      // + NSSlider(NextKeyViewSupport):
-      
-    }
+  
+  }
   }
 }
 
-declare const NSSlider: cocoa.classes.NSSlider;
+declare const NSSlider: cocoa.NSSlider.CLASS;

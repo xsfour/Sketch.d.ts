@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSpecialLayerViewController<T = any> extends MSNestedInspectorSection, MSSymbolInstanceSectionDelegateProtocol, NSMenuDelegateProtocol {
+  export interface MSSpecialLayerViewController<T0 = void, T1 = void, T2 = void> extends MSNestedInspectorSection, MSSymbolInstanceSectionDelegateProtocol, NSMenuDelegateProtocol {
     regularLayerInspectorSections<R = unknown>(): R;
     externalLayerInspectorSections<R = unknown>(): R;
     inspectorsWithProperContent<R = unknown>(): R;
@@ -19,8 +19,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSSpecialLayerViewController<T = any> extends MSNestedInspectorSection, MSSymbolInstanceSectionDelegateProtocol, NSMenuDelegateProtocol {
+  namespace MSSpecialLayerViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSNestedInspectorSection, MSSymbolInstanceSectionDelegateProtocol, NSMenuDelegateProtocol {
       alloc<R = MSSpecialLayerViewController>(): R;
       new: <R = MSSpecialLayerViewController>() => R;
       sectionOrder<R = unknown>(): R;
@@ -28,4 +28,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSSpecialLayerViewController: cocoa.classes.MSSpecialLayerViewController;
+declare const MSSpecialLayerViewController: cocoa.MSSpecialLayerViewController.CLASS;

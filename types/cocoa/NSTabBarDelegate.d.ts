@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTabBarDelegate<T = any> {}
-  namespace classes {
-    export interface NSTabBarDelegate<T = any> {  }
+  export interface NSTabBarDelegate<T0 = void, T1 = void, T2 = void> {}
+  namespace NSTabBarDelegate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSTabBarDelegate: cocoa.classes.NSTabBarDelegate;
+declare const NSTabBarDelegate: cocoa.NSTabBarDelegate.CLASS;

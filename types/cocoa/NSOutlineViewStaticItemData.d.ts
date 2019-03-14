@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSOutlineViewStaticItemData<T = any> extends NSObject, NSCodingProtocol {
+  export interface NSOutlineViewStaticItemData<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
     dealloc<R = void>(): R;
     loadedFromEncoder<R = boolean>(): R;
     setLoadedFromEncoder<R = void, P0 = boolean>(_v: P0): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     children<R = NSMutableArray>(): R;
     setChildren<R = void, P0 = NSMutableArray>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSOutlineViewStaticItemData<T = any> extends NSObject, NSCodingProtocol {
+  namespace NSOutlineViewStaticItemData {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
       alloc<R = NSOutlineViewStaticItemData>(): R;
       new: <R = NSOutlineViewStaticItemData>() => R;
     }
   }
 }
 
-declare const NSOutlineViewStaticItemData: cocoa.classes.NSOutlineViewStaticItemData;
+declare const NSOutlineViewStaticItemData: cocoa.NSOutlineViewStaticItemData.CLASS;

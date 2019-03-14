@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSArtboardBackgroundColorInspectorItem<T = any> extends MSInspectorItem, MSColorInspectorDelegateProtocol, BCPopoverDelegateProtocol, MSStylePartPreviewButtonDelegateProtocol, MSStylePartPreviewButtonDisabledTargetProtocol {
+  export interface MSArtboardBackgroundColorInspectorItem<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, MSColorInspectorDelegateProtocol, BCPopoverDelegateProtocol, MSStylePartPreviewButtonDelegateProtocol, MSStylePartPreviewButtonDisabledTargetProtocol {
     documentColorSpace<R = unknown>(): R;
     canvasColorSpace<R = unknown>(): R;
     changeBackgroundColorTo<R = void, P0 = unknown>(_changeBackgroundColorTo: P0): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSArtboardBackgroundColorInspectorItem<T = any> extends MSInspectorItem, MSColorInspectorDelegateProtocol, BCPopoverDelegateProtocol, MSStylePartPreviewButtonDelegateProtocol, MSStylePartPreviewButtonDisabledTargetProtocol {
+  namespace MSArtboardBackgroundColorInspectorItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, MSColorInspectorDelegateProtocol, BCPopoverDelegateProtocol, MSStylePartPreviewButtonDelegateProtocol, MSStylePartPreviewButtonDisabledTargetProtocol {
       alloc<R = MSArtboardBackgroundColorInspectorItem>(): R;
       new: <R = MSArtboardBackgroundColorInspectorItem>() => R;
     }
   }
 }
 
-declare const MSArtboardBackgroundColorInspectorItem: cocoa.classes.MSArtboardBackgroundColorInspectorItem;
+declare const MSArtboardBackgroundColorInspectorItem: cocoa.MSArtboardBackgroundColorInspectorItem.CLASS;

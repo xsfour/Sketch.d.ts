@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _SVGElement<T = any> extends NSObject {
+  export interface _SVGElement<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     primitiveSetParent<R = void, P0 = unknown>(_primitiveSetParent: P0): R;
     primitiveRemoveLinkedObject<R = void, P0 = unknown>(_primitiveRemoveLinkedObject: P0): R;
@@ -29,8 +29,8 @@ declare namespace cocoa {
     children<R = NSSet>(): R;
     setChildren<R = void, P0 = NSSet>(_v: P0): R;
   }
-  namespace classes {
-    export interface _SVGElement<T = any> extends NSObject {
+  namespace _SVGElement {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _SVGElement>(): R;
       new: <R = _SVGElement>() => R;
       attributeNames<R = unknown>(): R;

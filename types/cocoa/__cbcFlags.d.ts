@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface __cbcFlags<T = any> {}
-  namespace classes {
-    export interface __cbcFlags<T = any> {  }
+  export interface __cbcFlags<T0 = void, T1 = void, T2 = void> {}
+  namespace __cbcFlags {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

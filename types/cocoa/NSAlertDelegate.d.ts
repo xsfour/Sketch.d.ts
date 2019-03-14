@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAlertDelegate<T = any> {}
-  namespace classes {
-    export interface NSAlertDelegate<T = any> {  }
+  export interface NSAlertDelegate<T0 = void, T1 = void, T2 = void> {}
+  namespace NSAlertDelegate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSAlertDelegate: cocoa.classes.NSAlertDelegate;
+declare const NSAlertDelegate: cocoa.NSAlertDelegate.CLASS;

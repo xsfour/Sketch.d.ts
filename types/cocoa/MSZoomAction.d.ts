@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSZoomAction<T = any> extends MSDocumentAction {
+  export interface MSZoomAction<T0 = void, T1 = void, T2 = void> extends MSDocumentAction {
     label<R = unknown>(): R;
     zoomValueString<R = unknown>(): R;
     zoomValueDidChange<R = void>(): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     zoomPopupButtonWithFrame<R = unknown, P0 = CGRect>(_zoomPopupButtonWithFrame: P0): R;
     zoomButtonWithAction_imageNamed<R = unknown, P0 = unknown, P1 = unknown>(_zoomButtonWithAction: P0, _imageNamed: P1): R;
   }
-  namespace classes {
-    export interface MSZoomAction<T = any> extends MSDocumentAction {
+  namespace MSZoomAction {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSDocumentAction {
       alloc<R = MSZoomAction>(): R;
       new: <R = MSZoomAction>() => R;
     }
   }
 }
 
-declare const MSZoomAction: cocoa.classes.MSZoomAction;
+declare const MSZoomAction: cocoa.MSZoomAction.CLASS;

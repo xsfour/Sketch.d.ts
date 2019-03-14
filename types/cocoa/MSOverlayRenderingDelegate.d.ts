@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSOverlayRenderingDelegate<T = any> {}
-  namespace classes {
-    export interface MSOverlayRenderingDelegate<T = any> {  }
+  export interface MSOverlayRenderingDelegate<T0 = void, T1 = void, T2 = void> {}
+  namespace MSOverlayRenderingDelegate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const MSOverlayRenderingDelegate: cocoa.classes.MSOverlayRenderingDelegate;
+declare const MSOverlayRenderingDelegate: cocoa.MSOverlayRenderingDelegate.CLASS;

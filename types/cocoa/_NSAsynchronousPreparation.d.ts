@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSAsynchronousPreparation<T = any> extends NSObject {
+  export interface _NSAsynchronousPreparation<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     dealloc<R = void>(): R;
     destroy<R = void>(): R;
@@ -10,8 +10,8 @@ declare namespace cocoa {
     preparedResult<R = unknown>(): R;
     parameters<R = _NSAsynchronousPreparationInputParameters>(): R;
   }
-  namespace classes {
-    export interface _NSAsynchronousPreparation<T = any> extends NSObject {
+  namespace _NSAsynchronousPreparation {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSAsynchronousPreparation>(): R;
       new: <R = _NSAsynchronousPreparation>() => R;
     }

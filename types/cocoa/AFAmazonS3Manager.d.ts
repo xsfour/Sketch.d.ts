@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface AFAmazonS3Manager<T = any> extends AFHTTPRequestOperationManager, NSSecureCodingProtocol, NSCopyingProtocol {
+  export interface AFAmazonS3Manager<T0 = void, T1 = void, T2 = void> extends AFHTTPRequestOperationManager, NSSecureCodingProtocol, NSCopyingProtocol {
     deleteObjectWithPath_success_failure<R = unknown, P0 = unknown, P1 = CDUnknownBlockType, P2 = CDUnknownBlockType>(_deleteObjectWithPath: P0, _success: P1, _failure: P2): R;
     setObjectWithMethod_file_destinationPath_parameters_progress_success_failure<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = CDUnknownBlockType, P5 = CDUnknownBlockType, P6 = CDUnknownBlockType>(_setObjectWithMethod: P0, _file: P1, _destinationPath: P2, _parameters: P3, _progress: P4, _success: P5, _failure: P6): R;
     putObjectWithFile_destinationPath_parameters_progress_success_failure<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = CDUnknownBlockType, P4 = CDUnknownBlockType, P5 = CDUnknownBlockType>(_putObjectWithFile: P0, _destinationPath: P1, _parameters: P2, _progress: P3, _success: P4, _failure: P5): R;
@@ -20,8 +20,8 @@ declare namespace cocoa {
     requestSerializer<R = AFURLRequestSerialization>(): R;
     setRequestSerializer<R = void, P0 = AFURLRequestSerialization>(_v: P0): R;
   }
-  namespace classes {
-    export interface AFAmazonS3Manager<T = any> extends AFHTTPRequestOperationManager, NSSecureCodingProtocol, NSCopyingProtocol {
+  namespace AFAmazonS3Manager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends AFHTTPRequestOperationManager, NSSecureCodingProtocol, NSCopyingProtocol {
       alloc<R = AFAmazonS3Manager>(): R;
       new: <R = AFAmazonS3Manager>() => R;
       keyPathsForValuesAffectingBaseURL<R = unknown>(): R;
@@ -29,4 +29,4 @@ declare namespace cocoa {
   }
 }
 
-declare const AFAmazonS3Manager: cocoa.classes.AFAmazonS3Manager;
+declare const AFAmazonS3Manager: cocoa.AFAmazonS3Manager.CLASS;

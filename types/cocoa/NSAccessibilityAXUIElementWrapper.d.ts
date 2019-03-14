@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAccessibilityAXUIElementWrapper<T = any> extends NSObject {
+  export interface NSAccessibilityAXUIElementWrapper<T0 = void, T1 = void, T2 = void> extends NSObject {
     hash<R = number>(): R;
     accessibilityTopLevelUIElementAttributeValueHelper<R = unknown>(): R;
     accessibilityWindowAttributeValueHelper<R = unknown>(): R;
@@ -12,12 +12,12 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     initWithAXUIElement<R = unknown, P0 = __AXUIElement>(_initWithAXUIElement: P0): R;
   }
-  namespace classes {
-    export interface NSAccessibilityAXUIElementWrapper<T = any> extends NSObject {
+  namespace NSAccessibilityAXUIElementWrapper {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSAccessibilityAXUIElementWrapper>(): R;
       new: <R = NSAccessibilityAXUIElementWrapper>() => R;
     }
   }
 }
 
-declare const NSAccessibilityAXUIElementWrapper: cocoa.classes.NSAccessibilityAXUIElementWrapper;
+declare const NSAccessibilityAXUIElementWrapper: cocoa.NSAccessibilityAXUIElementWrapper.CLASS;

@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDraggingSource<T = any> {}
-  namespace classes {
-    export interface NSDraggingSource<T = any> {  }
+  export interface NSDraggingSource<T0 = void, T1 = void, T2 = void> {}
+  namespace NSDraggingSource {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSDraggingSource: cocoa.classes.NSDraggingSource;
+declare const NSDraggingSource: cocoa.NSDraggingSource.CLASS;

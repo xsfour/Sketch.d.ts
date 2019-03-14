@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSUpdateController<T = any> extends NSObject, SUUpdaterDelegateProtocol {
+  export interface MSUpdateController<T0 = void, T1 = void, T2 = void> extends NSObject, SUUpdaterDelegateProtocol {
     checkerWithAppcast<R = unknown, P0 = unknown>(_checkerWithAppcast: P0): R;
     parseAppcast_withCompletion<R = void, P0 = unknown, P1 = CDUnknownBlockType>(_parseAppcast: P0, _withCompletion: P1): R;
     storeResultsFromChecker<R = void, P0 = unknown>(_storeResultsFromChecker: P0): R;
@@ -23,12 +23,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSUpdateController<T = any> extends NSObject, SUUpdaterDelegateProtocol {
+  namespace MSUpdateController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, SUUpdaterDelegateProtocol {
       alloc<R = MSUpdateController>(): R;
       new: <R = MSUpdateController>() => R;
     }
   }
 }
 
-declare const MSUpdateController: cocoa.classes.MSUpdateController;
+declare const MSUpdateController: cocoa.MSUpdateController.CLASS;

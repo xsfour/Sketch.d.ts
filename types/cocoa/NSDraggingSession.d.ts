@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDraggingSession<T = any> extends NSObject {
+  export interface NSDraggingSession<T0 = void, T1 = void, T2 = void> extends NSObject {
     enumerateDraggingItemsWithOptions_forView_classes_searchOptions_usingBlock<R = void, P0 = number, P1 = unknown, P2 = unknown, P3 = unknown, P4 = CDUnknownBlockType>(_enumerateDraggingItemsWithOptions: P0, _forView: P1, _classes: P2, _searchOptions: P3, _usingBlock: P4): R;
     enumerateDraggingItemsForClass_view_usingBlock<R = void, P0 = unknown, P1 = unknown, P2 = CDUnknownBlockType>(_enumerateDraggingItemsForClass: P0, _view: P1, _usingBlock: P2): R;
     setDraggingLocation<R = CGPoint>(): R;
@@ -35,12 +35,12 @@ declare namespace cocoa {
     draggingFormation<R = number>(): R;
     setDraggingFormation<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSDraggingSession<T = any> extends NSObject {
+  namespace NSDraggingSession {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSDraggingSession>(): R;
       new: <R = NSDraggingSession>() => R;
     }
   }
 }
 
-declare const NSDraggingSession: cocoa.classes.NSDraggingSession;
+declare const NSDraggingSession: cocoa.NSDraggingSession.CLASS;

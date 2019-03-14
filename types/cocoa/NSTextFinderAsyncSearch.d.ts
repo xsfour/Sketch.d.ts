@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTextFinderAsyncSearch<T = any> extends NSObject {
+  export interface NSTextFinderAsyncSearch<T0 = void, T1 = void, T2 = void> extends NSObject {
     _scheduleFirstMatchOperation<R = void>(): R;
     _locateFirstMatchIfNecessary<R = void>(): R;
     waitUntilSearchCompletedForRanges_orTimeout<R = boolean, P0 = unknown, P1 = boolean>(_waitUntilSearchCompletedForRanges: P0, _orTimeout: P1): R;
@@ -20,8 +20,8 @@ declare namespace cocoa {
     completionBlock<R = CDUnknownBlockType>(): R;
     setCompletionBlock<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTextFinderAsyncSearch<T = any> extends NSObject {
+  namespace NSTextFinderAsyncSearch {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSTextFinderAsyncSearch>(): R;
       new: <R = NSTextFinderAsyncSearch>() => R;
       queue<R = unknown>(): R;
@@ -29,4 +29,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTextFinderAsyncSearch: cocoa.classes.NSTextFinderAsyncSearch;
+declare const NSTextFinderAsyncSearch: cocoa.NSTextFinderAsyncSearch.CLASS;

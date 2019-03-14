@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTabPickerDelegateProtocol<T = any> extends NSObjectProtocol {
+  export interface NSTabPickerDelegateProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     tabPickerDidClose<R = void, P0 = NSTabPickerViewController>(_tabPickerDidClose: P0): R;
     tabPickerWillClose<R = void, P0 = NSTabPickerViewController>(_tabPickerWillClose: P0): R;
     tabPickerDidOpen<R = void, P0 = NSTabPickerViewController>(_tabPickerDidOpen: P0): R;
@@ -15,7 +15,7 @@ declare namespace cocoa {
     tabPicker_closeTabBarItem<R = void, P0 = NSTabPickerViewController, P1 = NSTabBarItem>(_tabPicker: P0, _closeTabBarItem: P1): R;
     tabPicker_didSelectTabItemWhenClosing<R = void, P0 = NSTabPickerViewController, P1 = NSTabBarItem>(_tabPicker: P0, _didSelectTabItemWhenClosing: P1): R;
   }
-  namespace classes {
-    export interface NSTabPickerDelegateProtocol<T = any> extends NSObjectProtocol {  }
+  namespace NSTabPickerDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

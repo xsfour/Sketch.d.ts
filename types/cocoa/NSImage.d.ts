@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSImage<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol, NSPasteboardReadingProtocol, NSPasteboardWritingProtocol {
+  export interface NSImage<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol, NSPasteboardReadingProtocol, NSPasteboardWritingProtocol {
     layerContentsForContentsScale<R = unknown, P0 = number>(_layerContentsForContentsScale: P0): R;
     recommendedLayerContentsScale<R = number, P0 = number>(_recommendedLayerContentsScale: P0): R;
     TIFFRepresentationUsingCompression_factor<R = unknown, P0 = number, P1 = number>(_TIFFRepresentationUsingCompression: P0, _factor: P1): R;
@@ -172,10 +172,12 @@ declare namespace cocoa {
     debugDescription<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
-    // + NSImage(Alpha,Asset,Chocolat,LayerListPreviewIconBadging,MSSmallerArchiving,NSImageBlocksDrawing,SidebarTinting,SketchSVG,TreeAsDictionarySupport,WebP):
+    // + NSImage(Alpha): 
     imageHasAlpha<R = boolean>(): R;
+    // + NSImage(Asset): 
     isAssetEqual<R = boolean, P0 = unknown>(_isAssetEqual: P0): R;
     assetType<R = number>(): R;
+    // + NSImage(Chocolat): 
     thumbWithSize_cornerRadius<R = unknown, P0 = CGSize, P1 = number>(_thumbWithSize: P0, _cornerRadius: P1): R;
     imageWithShadow_padding<R = unknown, P0 = unknown, P1 = number>(_imageWithShadow: P0, _padding: P1): R;
     pixelSize<R = CGSize>(): R;
@@ -205,24 +207,29 @@ declare namespace cocoa {
     drawInRect_fraction<R = void, P0 = CGRect, P1 = number>(_drawInRect: P0, _fraction: P1): R;
     drawAtPoint_fraction<R = void, P0 = CGPoint, P1 = number>(_drawAtPoint: P0, _fraction: P1): R;
     drawAtPoint<R = void, P0 = CGPoint>(_drawAtPoint: P0): R;
+    // + NSImage(LayerListPreviewIconBadging): 
     badgedWithImage_maskImage_offset_forOwner<R = unknown, P0 = unknown, P1 = unknown, P2 = CGPoint, P3 = unknown>(_badgedWithImage: P0, _maskImage: P1, _offset: P2, _forOwner: P3): R;
     badgedWithImageNamed_maskImageNamed_offset_forOwner<R = unknown, P0 = unknown, P1 = unknown, P2 = CGPoint, P3 = unknown>(_badgedWithImageNamed: P0, _maskImageNamed: P1, _offset: P2, _forOwner: P3): R;
     badgedAs_forOwner<R = unknown, P0 = number, P1 = unknown>(_badgedAs: P0, _forOwner: P1): R;
+    // + NSImage(MSSmallerArchiving): 
     PDFImageRep<R = unknown>(): R;
     EPSImageRep<R = unknown>(): R;
     hasEPSData<R = boolean>(): R;
     bitmapData<R = unknown>(): R;
     hasPDFData<R = boolean>(): R;
     dataForArchiving<R = unknown>(): R;
+    // + NSImage(SidebarTinting): 
     tintedAsMenuItemImageForOwner<R = unknown, P0 = unknown>(_tintedAsMenuItemImageForOwner: P0): R;
     tintedAsSelectedImageForOwner_inActiveWindow<R = unknown, P0 = unknown, P1 = boolean>(_tintedAsSelectedImageForOwner: P0, _inActiveWindow: P1): R;
     tintedAsUnselectedImageForOwner_isSharedObject<R = unknown, P0 = unknown, P1 = boolean>(_tintedAsUnselectedImageForOwner: P0, _isSharedObject: P1): R;
     tintedAsUnselectedImageForOwner<R = unknown, P0 = unknown>(_tintedAsUnselectedImageForOwner: P0): R;
+    // + NSImage(SketchSVG): 
     embeddedXlinkValue<R = unknown>(): R;
+    // + NSImage(TreeAsDictionarySupport): 
     treeAsDictionary<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSImage<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol, NSPasteboardReadingProtocol, NSPasteboardWritingProtocol {
+  namespace NSImage {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol, NSPasteboardReadingProtocol, NSPasteboardWritingProtocol {
       alloc<R = NSImage>(): R;
       new: <R = NSImage>() => R;
       imageUnfilteredPasteboardTypes<R = unknown>(): R;
@@ -252,19 +259,22 @@ declare namespace cocoa {
       initialize<R = void>(): R;
       _templateImageWithImage<R = unknown, P0 = unknown>(__templateImageWithImage: P0): R;
       _emblemForCount<R = unknown, P0 = number>(__emblemForCount: P0): R;
-      // + NSImage(Alpha,Asset,Chocolat,LayerListPreviewIconBadging,MSSmallerArchiving,NSImageBlocksDrawing,SidebarTinting,SketchSVG,TreeAsDictionarySupport,WebP):
+      // + NSImage(Chocolat): 
       pngDataByFixingInvalidGamma<R = unknown, P0 = unknown>(_pngDataByFixingInvalidGamma: P0): R;
       pngDataByInvertingGammaInData<R = unknown, P0 = unknown>(_pngDataByInvertingGammaInData: P0): R;
       PDFImageWithSize_flipped_drawingHandler<R = unknown, P0 = CGSize, P1 = boolean, P2 = CDUnknownBlockType>(_PDFImageWithSize: P0, _flipped: P1, _drawingHandler: P2): R;
       bundledImageNamed<R = unknown, P0 = unknown>(_bundledImageNamed: P0): R;
+      // + NSImage(MSSmallerArchiving): 
       imageFromDataArchive<R = unknown, P0 = unknown>(_imageFromDataArchive: P0): R;
+      // + NSImage(NSImageBlocksDrawing): 
       drawImageFlipped_withSize_withBlock<R = unknown, P0 = boolean, P1 = CGSize, P2 = CDUnknownBlockType>(_drawImageFlipped: P0, _withSize: P1, _withBlock: P2): R;
       drawImageFlippedWithSize_withBlock<R = unknown, P0 = CGSize, P1 = CDUnknownBlockType>(_drawImageFlippedWithSize: P0, _withBlock: P1): R;
       drawImageWithSize_withBlock<R = unknown, P0 = CGSize, P1 = CDUnknownBlockType>(_drawImageWithSize: P0, _withBlock: P1): R;
+      // + NSImage(WebP): 
       imageWithWebPURL<R = unknown, P0 = unknown>(_imageWithWebPURL: P0): R;
       imageWithWebPData<R = unknown, P0 = unknown>(_imageWithWebPData: P0): R;
     }
   }
 }
 
-declare const NSImage: cocoa.classes.NSImage;
+declare const NSImage: cocoa.NSImage.CLASS;

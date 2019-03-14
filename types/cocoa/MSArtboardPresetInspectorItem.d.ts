@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSArtboardPresetInspectorItem<T = any> extends MSInspectorItem, MSArtboardPresetsViewControllerDelegateProtocol, MSEditArtboardPresetViewControllerDelegateProtocol {
+  export interface MSArtboardPresetInspectorItem<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, MSArtboardPresetsViewControllerDelegateProtocol, MSEditArtboardPresetViewControllerDelegateProtocol {
     dismissAllPresentedViewControllers<R = void>(): R;
     observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
     orientationOfArtboard<R = unknown, P0 = unknown>(_orientationOfArtboard: P0): R;
@@ -25,12 +25,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSArtboardPresetInspectorItem<T = any> extends MSInspectorItem, MSArtboardPresetsViewControllerDelegateProtocol, MSEditArtboardPresetViewControllerDelegateProtocol {
+  namespace MSArtboardPresetInspectorItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, MSArtboardPresetsViewControllerDelegateProtocol, MSEditArtboardPresetViewControllerDelegateProtocol {
       alloc<R = MSArtboardPresetInspectorItem>(): R;
       new: <R = MSArtboardPresetInspectorItem>() => R;
     }
   }
 }
 
-declare const MSArtboardPresetInspectorItem: cocoa.classes.MSArtboardPresetInspectorItem;
+declare const MSArtboardPresetInspectorItem: cocoa.MSArtboardPresetInspectorItem.CLASS;

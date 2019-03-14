@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutableLayerAncestry<T = any> extends NSObject {
+  export interface MSImmutableLayerAncestry<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     absoluteRect<R = CGRect>(): R;
     ancestorsForLayerInGroup_array<R = boolean, P0 = unknown, P1 = unknown>(_ancestorsForLayerInGroup: P0, _array: P1): R;
@@ -18,8 +18,8 @@ declare namespace cocoa {
     parentGroup<R = MSImmutableLayerGroup>(): R;
     ancestorsAndSelf<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface MSImmutableLayerAncestry<T = any> extends NSObject {
+  namespace MSImmutableLayerAncestry {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSImmutableLayerAncestry>(): R;
       new: <R = MSImmutableLayerAncestry>() => R;
       ancestryWithMSLayer<R = unknown, P0 = unknown>(_ancestryWithMSLayer: P0): R;
@@ -27,4 +27,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSImmutableLayerAncestry: cocoa.classes.MSImmutableLayerAncestry;
+declare const MSImmutableLayerAncestry: cocoa.MSImmutableLayerAncestry.CLASS;

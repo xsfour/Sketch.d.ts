@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSNumberFormatter<T = any> extends NSFormatter, NSObservableProtocol, NSObserverProtocol {
+  export interface NSNumberFormatter<T0 = void, T1 = void, T2 = void> extends NSFormatter, NSObservableProtocol, NSObserverProtocol {
     _setUsesCharacterDirection<R = void, P0 = boolean>(__setUsesCharacterDirection: P0): R;
     _usesCharacterDirection<R = boolean>(): R;
     _hasSetInternationalCurrencySymbol<R = boolean>(): R;
@@ -170,11 +170,10 @@ declare namespace cocoa {
     description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
-    // + NSNumberFormatter(NSColorPickerAdditions):
-    
-  }
-  namespace classes {
-    export interface NSNumberFormatter<T = any> extends NSFormatter, NSObservableProtocol, NSObserverProtocol {
+  
+}
+  namespace NSNumberFormatter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSFormatter, NSObservableProtocol, NSObserverProtocol {
       alloc<R = NSNumberFormatter>(): R;
       new: <R = NSNumberFormatter>() => R;
       localizedStringFromNumber_numberStyle<R = unknown, P0 = unknown, P1 = number>(_localizedStringFromNumber: P0, _numberStyle: P1): R;
@@ -182,11 +181,11 @@ declare namespace cocoa {
       setDefaultFormatterBehavior<R = void, P0 = number>(_setDefaultFormatterBehavior: P0): R;
       defaultFormatterBehavior<R = number>(): R;
       _setDefaultRedColor<R = void, P0 = unknown>(__setDefaultRedColor: P0): R;
-      // + NSNumberFormatter(NSColorPickerAdditions):
+      // + NSNumberFormatter(NSColorPickerAdditions): 
       _percentageColorValueTransformer<R = unknown>(): R;
       _hueColorValueFormatter<R = unknown>(): R;
     }
   }
 }
 
-declare const NSNumberFormatter: cocoa.classes.NSNumberFormatter;
+declare const NSNumberFormatter: cocoa.NSNumberFormatter.CLASS;

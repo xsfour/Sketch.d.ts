@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSUnderlineAction<T = any> extends MSDocumentAction {
+  export interface MSUnderlineAction<T0 = void, T1 = void, T2 = void> extends MSDocumentAction {
     label<R = unknown>(): R;
     isActive<R = boolean>(): R;
     validate<R = boolean>(): R;
@@ -9,12 +9,12 @@ declare namespace cocoa {
     selectedTextLayers<R = unknown>(): R;
     underline<R = void, P0 = unknown>(_underline: P0): R;
   }
-  namespace classes {
-    export interface MSUnderlineAction<T = any> extends MSDocumentAction {
+  namespace MSUnderlineAction {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSDocumentAction {
       alloc<R = MSUnderlineAction>(): R;
       new: <R = MSUnderlineAction>() => R;
     }
   }
 }
 
-declare const MSUnderlineAction: cocoa.classes.MSUnderlineAction;
+declare const MSUnderlineAction: cocoa.MSUnderlineAction.CLASS;

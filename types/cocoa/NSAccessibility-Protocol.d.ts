@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAccessibilityProtocol<T = any> extends NSObjectProtocol {
+  export interface NSAccessibilityProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     isAccessibilitySelectorAllowed<R = boolean, P0 = string>(_isAccessibilitySelectorAllowed: P0): R;
     accessibilityPerformShowMenu<R = boolean>(): R;
     accessibilityPerformShowDefaultUI<R = boolean>(): R;
@@ -273,7 +273,7 @@ declare namespace cocoa {
     accessibilityElement<R = boolean>(): R;
     setAccessibilityElement<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSAccessibilityProtocol<T = any> extends NSObjectProtocol {  }
+  namespace NSAccessibilityProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCustomTouchBarItem<T = any> extends NSTouchBarItem {
+  export interface NSCustomTouchBarItem<T0 = void, T1 = void, T2 = void> extends NSTouchBarItem {
     setPreferredZOrder<R = void, P0 = number>(_setPreferredZOrder: P0): R;
     preferredPopoverTransposerClass<R = unknown>(): R;
     setPreferredPopoverTransposerClass<R = void, P0 = unknown>(_v: P0): R;
@@ -20,8 +20,8 @@ declare namespace cocoa {
     viewForCustomizationPalette<R = NSView>(): R;
     setViewForCustomizationPalette<R = void, P0 = NSView>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSCustomTouchBarItem<T = any> extends NSTouchBarItem {
+  namespace NSCustomTouchBarItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTouchBarItem {
       alloc<R = NSCustomTouchBarItem>(): R;
       new: <R = NSCustomTouchBarItem>() => R;
       automaticallyNotifiesObserversOfViewController<R = boolean>(): R;
@@ -30,4 +30,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSCustomTouchBarItem: cocoa.classes.NSCustomTouchBarItem;
+declare const NSCustomTouchBarItem: cocoa.NSCustomTouchBarItem.CLASS;

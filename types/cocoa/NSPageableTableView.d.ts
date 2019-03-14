@@ -1,9 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPageableTableView<T = any> extends NSTableView, NSTableViewDelegateProtocol {
+  export interface NSPageableTableView<T0 = void, T1 = void, T2 = void> extends NSTableView, NSTableViewDelegateProtocol {
+    dragImageForRowsWithIndexes_tableColumns_event_offset<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = CGPoint>(_dragImageForRowsWithIndexes: P0, _tableColumns: P1, _event: P2, _offset: P3): R;
+    selectRowIndexes_byExtendingSelection<R = void, P0 = unknown, P1 = boolean>(_selectRowIndexes: P0, _byExtendingSelection: P1): R;
     setDelegate<R = void, P0 = unknown>(_setDelegate: P0): R;
     preservesContentDuringLiveResize<R = boolean>(): R;
+    tile<R = void>(): R;
     _updateMinimumHeightConstraint<R = void>(): R;
     scrollToPage<R = void>(): R;
     _updateLastVisibleHeightIfNeeded<R = void>(): R;
@@ -20,12 +23,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSPageableTableView<T = any> extends NSTableView, NSTableViewDelegateProtocol {
+  namespace NSPageableTableView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTableView, NSTableViewDelegateProtocol {
       alloc<R = NSPageableTableView>(): R;
       new: <R = NSPageableTableView>() => R;
     }
   }
 }
 
-declare const NSPageableTableView: cocoa.classes.NSPageableTableView;
+declare const NSPageableTableView: cocoa.NSPageableTableView.CLASS;

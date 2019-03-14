@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPreferencePane<T = any> extends NSViewController {
+  export interface MSPreferencePane<T0 = void, T1 = void, T2 = void> extends NSViewController {
     cxx_destruct<R = void>(): R;
     didSwitchToPane<R = void>(): R;
     dismissAlertSheet<R = void>(): R;
@@ -9,8 +9,8 @@ declare namespace cocoa {
     initWithPreferencesController<R = unknown, P0 = unknown>(_initWithPreferencesController: P0): R;
     preferencesController<R = MSPreferencesController>(): R;
   }
-  namespace classes {
-    export interface MSPreferencePane<T = any> extends NSViewController {
+  namespace MSPreferencePane {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController {
       alloc<R = MSPreferencePane>(): R;
       new: <R = MSPreferencePane>() => R;
       nibName<R = unknown>(): R;
@@ -21,4 +21,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSPreferencePane: cocoa.classes.MSPreferencePane;
+declare const MSPreferencePane: cocoa.MSPreferencePane.CLASS;

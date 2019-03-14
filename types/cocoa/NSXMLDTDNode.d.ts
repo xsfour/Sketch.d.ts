@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXMLDTDNode<T = any> extends NSXMLNode {
+  export interface NSXMLDTDNode<T0 = void, T1 = void, T2 = void> extends NSXMLNode {
     _addToLibxml2TreeRepresentationWithDoc_dtd_context<R = void, P0 = _xmlDoc, P1 = _xmlDtd, P2 = _xmlValidCtxt>(__addToLibxml2TreeRepresentationWithDoc: P0, _dtd: P1, _context: P2): R;
     XPath<R = unknown>(): R;
     setObjectValue<R = void, P0 = unknown>(_setObjectValue: P0): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     DTDKind<R = number>(): R;
     setDTDKind<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSXMLDTDNode<T = any> extends NSXMLNode {
+  namespace NSXMLDTDNode {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSXMLNode {
       alloc<R = NSXMLDTDNode>(): R;
       new: <R = NSXMLDTDNode>() => R;
     }
   }
 }
 
-declare const NSXMLDTDNode: cocoa.classes.NSXMLDTDNode;
+declare const NSXMLDTDNode: cocoa.NSXMLDTDNode.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScrubberLayoutAttributes<T = any> extends NSObject, NSCopyingProtocol {
+  export interface NSScrubberLayoutAttributes<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     _layoutAttributesByBlendingFraction_ofAttributes<R = unknown, P0 = number, P1 = unknown>(__layoutAttributesByBlendingFraction: P0, _ofAttributes: P1): R;
     setEscapesFromScrollView<R = void, P0 = boolean>(_setEscapesFromScrollView: P0): R;
     escapesFromScrollView<R = boolean>(): R;
@@ -14,8 +14,8 @@ declare namespace cocoa {
     itemIndex<R = number>(): R;
     setItemIndex<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSScrubberLayoutAttributes<T = any> extends NSObject, NSCopyingProtocol {
+  namespace NSScrubberLayoutAttributes {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = NSScrubberLayoutAttributes>(): R;
       new: <R = NSScrubberLayoutAttributes>() => R;
       layoutAttributesForItemAtIndex<R = unknown, P0 = number>(_layoutAttributesForItemAtIndex: P0): R;
@@ -23,4 +23,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSScrubberLayoutAttributes: cocoa.classes.NSScrubberLayoutAttributes;
+declare const NSScrubberLayoutAttributes: cocoa.NSScrubberLayoutAttributes.CLASS;

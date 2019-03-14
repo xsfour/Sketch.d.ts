@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSStylePartInspectorViewController<T = any> extends NSViewController, MSInspectorSectionProtocol, NSWindowDelegateProtocol {
+  export interface MSStylePartInspectorViewController<T0 = void, T1 = void, T2 = void> extends NSViewController, MSInspectorSectionProtocol, NSWindowDelegateProtocol {
     cxx_destruct<R = void>(): R;
     updateDisplayedValues<R = void>(): R;
     closePopover<R = void>(): R;
@@ -26,8 +26,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSStylePartInspectorViewController<T = any> extends NSViewController, MSInspectorSectionProtocol, NSWindowDelegateProtocol {
+  namespace MSStylePartInspectorViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController, MSInspectorSectionProtocol, NSWindowDelegateProtocol {
       alloc<R = MSStylePartInspectorViewController>(): R;
       new: <R = MSStylePartInspectorViewController>() => R;
       reusableControllerArray<R = unknown>(): R;
@@ -36,4 +36,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSStylePartInspectorViewController: cocoa.classes.MSStylePartInspectorViewController;
+declare const MSStylePartInspectorViewController: cocoa.MSStylePartInspectorViewController.CLASS;

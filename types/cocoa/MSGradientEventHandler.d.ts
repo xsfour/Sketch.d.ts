@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSGradientEventHandler<T = any> extends MSPointsEventHandler, MSGradientPointArrayDelegateProtocol {
+  export interface MSGradientEventHandler<T0 = void, T1 = void, T2 = void> extends MSPointsEventHandler, MSGradientPointArrayDelegateProtocol {
     setValue_forKeyPath<R = void, P0 = unknown, P1 = unknown>(_setValue: P0, _forKeyPath: P1): R;
     cursorWithDrawingBlock<R = unknown, P0 = CDUnknownBlockType>(_cursorWithDrawingBlock: P0): R;
     shouldDisplayMessageForSelectedStop<R = boolean>(): R;
@@ -30,8 +30,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSGradientEventHandler<T = any> extends MSPointsEventHandler, MSGradientPointArrayDelegateProtocol {
+  namespace MSGradientEventHandler {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSPointsEventHandler, MSGradientPointArrayDelegateProtocol {
       alloc<R = MSGradientEventHandler>(): R;
       new: <R = MSGradientEventHandler>() => R;
       gradientHandlerForStylePart_manager<R = unknown, P0 = unknown, P1 = unknown>(_gradientHandlerForStylePart: P0, _manager: P1): R;
@@ -39,4 +39,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSGradientEventHandler: cocoa.classes.MSGradientEventHandler;
+declare const MSGradientEventHandler: cocoa.MSGradientEventHandler.CLASS;

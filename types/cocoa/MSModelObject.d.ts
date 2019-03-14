@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSModelObject<T = any> extends MSModelObjectCommon, NSCopyingProtocol, MSModelObjectProtocol {
+  export interface MSModelObject<T0 = void, T1 = void, T2 = void> extends MSModelObjectCommon, NSCopyingProtocol, MSModelObjectProtocol {
     breakConnectionWith<R = void, P0 = unknown>(_breakConnectionWith: P0): R;
     parentGroupRecursive<R = unknown>(): R;
     setAsParentOnChildren<R = void>(): R;
@@ -44,8 +44,8 @@ declare namespace cocoa {
     objectID<R = NSString>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSModelObject<T = any> extends MSModelObjectCommon, NSCopyingProtocol, MSModelObjectProtocol {
+  namespace MSModelObject {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSModelObjectCommon, NSCopyingProtocol, MSModelObjectProtocol {
       alloc<R = MSModelObject>(): R;
       new: <R = MSModelObject>() => R;
       immutableClass<R = unknown>(): R;
@@ -54,4 +54,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSModelObject: cocoa.classes.MSModelObject;
+declare const MSModelObject: cocoa.MSModelObject.CLASS;

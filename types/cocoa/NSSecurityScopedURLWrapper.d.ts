@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSecurityScopedURLWrapper<T = any> extends NSObject, NSSecureCodingProtocol {
+  export interface NSSecurityScopedURLWrapper<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol {
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     description<R = unknown>(): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     url<R = NSURL>(): R;
     _scope<R = NSData>(): R;
   }
-  namespace classes {
-    export interface NSSecurityScopedURLWrapper<T = any> extends NSObject, NSSecureCodingProtocol {
+  namespace NSSecurityScopedURLWrapper {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol {
       alloc<R = NSSecurityScopedURLWrapper>(): R;
       new: <R = NSSecurityScopedURLWrapper>() => R;
     }
   }
 }
 
-declare const NSSecurityScopedURLWrapper: cocoa.classes.NSSecurityScopedURLWrapper;
+declare const NSSecurityScopedURLWrapper: cocoa.NSSecurityScopedURLWrapper.CLASS;

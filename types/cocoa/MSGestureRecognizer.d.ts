@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSGestureRecognizer<T = any> extends NSObject {
+  export interface MSGestureRecognizer<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     locationInLayer<R = CGPoint, P0 = unknown>(_locationInLayer: P0): R;
     initWithTarget_action<R = unknown, P0 = unknown, P1 = string>(_initWithTarget: P0, _action: P1): R;
@@ -21,12 +21,12 @@ declare namespace cocoa {
     target<R = unknown>(): R;
     setTarget<R = void, P0 = unknown>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSGestureRecognizer<T = any> extends NSObject {
+  namespace MSGestureRecognizer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSGestureRecognizer>(): R;
       new: <R = MSGestureRecognizer>() => R;
     }
   }
 }
 
-declare const MSGestureRecognizer: cocoa.classes.MSGestureRecognizer;
+declare const MSGestureRecognizer: cocoa.MSGestureRecognizer.CLASS;

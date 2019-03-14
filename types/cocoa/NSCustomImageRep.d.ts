@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCustomImageRep<T = any> extends NSImageRep {
+  export interface NSCustomImageRep<T0 = void, T1 = void, T2 = void> extends NSImageRep {
     initWithSize_flipped_drawingHandler<R = unknown, P0 = CGSize, P1 = boolean, P2 = CDUnknownBlockType>(_initWithSize: P0, _flipped: P1, _drawingHandler: P2): R;
     initWithDrawSelector_delegate<R = unknown, P0 = string, P1 = unknown>(_initWithDrawSelector: P0, _delegate: P1): R;
     setFlipped<R = void, P0 = boolean>(_setFlipped: P0): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     drawSelector<R = string>(): R;
     drawingHandler<R = CDUnknownBlockType>(): R;
   }
-  namespace classes {
-    export interface NSCustomImageRep<T = any> extends NSImageRep {
+  namespace NSCustomImageRep {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSImageRep {
       alloc<R = NSCustomImageRep>(): R;
       new: <R = NSCustomImageRep>() => R;
     }
   }
 }
 
-declare const NSCustomImageRep: cocoa.classes.NSCustomImageRep;
+declare const NSCustomImageRep: cocoa.NSCustomImageRep.CLASS;

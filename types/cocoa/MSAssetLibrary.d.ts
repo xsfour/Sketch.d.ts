@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAssetLibrary<T = any> extends NSObject, QLPreviewItemProtocol, BCSortableProtocol, NSCodingProtocol, MSLibraryObjectProtocol {
+  export interface MSAssetLibrary<T0 = void, T1 = void, T2 = void> extends NSObject, QLPreviewItemProtocol, BCSortableProtocol, NSCodingProtocol, MSLibraryObjectProtocol {
     cxx_destruct<R = void>(): R;
     resolveLocationOnDisk<R = void>(): R;
     unload<R = void>(): R;
@@ -40,8 +40,8 @@ declare namespace cocoa {
     previewItemDisplayState<R = unknown>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSAssetLibrary<T = any> extends NSObject, QLPreviewItemProtocol, BCSortableProtocol, NSCodingProtocol, MSLibraryObjectProtocol {
+  namespace MSAssetLibrary {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, QLPreviewItemProtocol, BCSortableProtocol, NSCodingProtocol, MSLibraryObjectProtocol {
       alloc<R = MSAssetLibrary>(): R;
       new: <R = MSAssetLibrary>() => R;
       URLForTemplateLibraryNamed<R = unknown, P0 = unknown>(_URLForTemplateLibraryNamed: P0): R;
@@ -51,4 +51,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSAssetLibrary: cocoa.classes.MSAssetLibrary;
+declare const MSAssetLibrary: cocoa.MSAssetLibrary.CLASS;

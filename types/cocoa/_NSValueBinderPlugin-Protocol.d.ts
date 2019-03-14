@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSValueBinderPluginProtocol<T = any> extends _NSEditorBinderPluginProtocol {
+  export interface _NSValueBinderPluginProtocol<T0 = void, T1 = void, T2 = void> extends _NSEditorBinderPluginProtocol {
     applyObjectValue_forBinding_operation_needToRunAlert_error<R = boolean, P0 = unknown, P1 = NSString, P2 = number, P3 = string, P4 = unknown>(_applyObjectValue: P0, _forBinding: P1, _operation: P2, _needToRunAlert: P3, _error: P4): R;
     shouldAlwaysUpdateDisplayValue<R = boolean>(): R;
     invalidateObjectValueInObject<R = void, P0 = unknown>(_invalidateObjectValueInObject: P0): R;
@@ -34,7 +34,7 @@ declare namespace cocoa {
     canIgnoreSettingMinAndMaxForObject<R = boolean, P0 = unknown>(_canIgnoreSettingMinAndMaxForObject: P0): R;
     allowedValueBindingMask<R = number>(): R;
   }
-  namespace classes {
-    export interface _NSValueBinderPluginProtocol<T = any> extends _NSEditorBinderPluginProtocol {  }
+  namespace _NSValueBinderPluginProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _NSEditorBinderPluginProtocol {}
   }
 }

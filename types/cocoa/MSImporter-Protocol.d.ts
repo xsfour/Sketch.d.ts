@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImporterProtocol<T = any> extends NSObjectProtocol {
+  export interface MSImporterProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     importAsLayer<R = MSLayer>(): R;
     shouldCollapseSinglePage<R = boolean>(): R;
     shouldExpandPages<R = boolean>(): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     prepareToImportFromURL<R = number, P0 = NSURL>(_prepareToImportFromURL: P0): R;
     prepareToImportFromData<R = number, P0 = NSData>(_prepareToImportFromData: P0): R;
   }
-  namespace classes {
-    export interface MSImporterProtocol<T = any> extends NSObjectProtocol {  }
+  namespace MSImporterProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

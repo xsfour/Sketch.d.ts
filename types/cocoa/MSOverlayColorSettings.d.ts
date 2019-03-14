@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSOverlayColorSettings<T = any> extends NSObject {
+  export interface MSOverlayColorSettings<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     symbolTitleColor<R = NSColor>(): R;
     setSymbolTitleColor<R = void, P0 = NSColor>(_v: P0): R;
@@ -16,8 +16,8 @@ declare namespace cocoa {
     canvasBackgroundColor<R = NSColor>(): R;
     setCanvasBackgroundColor<R = void, P0 = NSColor>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSOverlayColorSettings<T = any> extends NSObject {
+  namespace MSOverlayColorSettings {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSOverlayColorSettings>(): R;
       new: <R = MSOverlayColorSettings>() => R;
       colorSettings<R = unknown>(): R;
@@ -25,4 +25,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSOverlayColorSettings: cocoa.classes.MSOverlayColorSettings;
+declare const MSOverlayColorSettings: cocoa.MSOverlayColorSettings.CLASS;

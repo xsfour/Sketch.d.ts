@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScrollerImp<T = any> extends NSObject {
+  export interface NSScrollerImp<T0 = void, T1 = void, T2 = void> extends NSObject {
     mouseExitedScroller<R = void>(): R;
     mouseEnteredScroller<R = void>(): R;
     _installDelayedRolloverAnimation<R = void>(): R;
@@ -115,8 +115,8 @@ declare namespace cocoa {
     layer<R = CALayer>(): R;
     setLayer<R = void, P0 = CALayer>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSScrollerImp<T = any> extends NSObject {
+  namespace NSScrollerImp {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSScrollerImp>(): R;
       new: <R = NSScrollerImp>() => R;
       scrollerWidth<R = number>(): R;
@@ -127,4 +127,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSScrollerImp: cocoa.classes.NSScrollerImp;
+declare const NSScrollerImp: cocoa.NSScrollerImp.CLASS;

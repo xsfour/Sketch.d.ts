@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorPickerUserView<T = any> extends NSView {
+  export interface NSColorPickerUserView<T0 = void, T1 = void, T2 = void> extends NSView {
     registerForFilenameDragTypes<R = void>(): R;
     mouseDownCanMoveWindow<R = boolean>(): R;
     _pointInPicker<R = boolean, P0 = CGPoint>(__pointInPicker: P0): R;
@@ -23,12 +23,12 @@ declare namespace cocoa {
     needsPanelToBecomeKey<R = boolean>(): R;
     acceptsFirstResponder<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSColorPickerUserView<T = any> extends NSView {
+  namespace NSColorPickerUserView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSColorPickerUserView>(): R;
       new: <R = NSColorPickerUserView>() => R;
     }
   }
 }
 
-declare const NSColorPickerUserView: cocoa.classes.NSColorPickerUserView;
+declare const NSColorPickerUserView: cocoa.NSColorPickerUserView.CLASS;

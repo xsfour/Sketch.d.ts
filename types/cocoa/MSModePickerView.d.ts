@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSModePickerView<T = any> extends NSView {
+  export interface MSModePickerView<T0 = void, T1 = void, T2 = void> extends NSView {
     cxx_destruct<R = void>(): R;
     buttons<R = unknown>(): R;
     deselectAllButtons<R = void>(): R;
@@ -32,12 +32,12 @@ declare namespace cocoa {
     pickerMode<R = number>(): R;
     setPickerMode<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSModePickerView<T = any> extends NSView {
+  namespace MSModePickerView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = MSModePickerView>(): R;
       new: <R = MSModePickerView>() => R;
     }
   }
 }
 
-declare const MSModePickerView: cocoa.classes.MSModePickerView;
+declare const MSModePickerView: cocoa.MSModePickerView.CLASS;

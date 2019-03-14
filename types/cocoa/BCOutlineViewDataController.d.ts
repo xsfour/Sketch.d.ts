@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCOutlineViewDataController<T = any> extends NSObject {
+  export interface BCOutlineViewDataController<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     refreshPreviewsOnNode<R = void, P0 = unknown>(_refreshPreviewsOnNode: P0): R;
     handleBadgePressedOnNode_withAltState<R = void, P0 = unknown, P1 = boolean>(_handleBadgePressedOnNode: P0, _withAltState: P1): R;
@@ -40,12 +40,12 @@ declare namespace cocoa {
     dragTypes<R = NSArray>(): R;
     nodeFilterPredicate<R = NSPredicate>(): R;
   }
-  namespace classes {
-    export interface BCOutlineViewDataController<T = any> extends NSObject {
+  namespace BCOutlineViewDataController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = BCOutlineViewDataController>(): R;
       new: <R = BCOutlineViewDataController>() => R;
     }
   }
 }
 
-declare const BCOutlineViewDataController: cocoa.classes.BCOutlineViewDataController;
+declare const BCOutlineViewDataController: cocoa.BCOutlineViewDataController.CLASS;

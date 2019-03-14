@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSnappingInfo<T = any> extends NSObject {
+  export interface NSSnappingInfo<T0 = void, T1 = void, T2 = void> extends NSObject {
     currentVelocity<R = CGPoint>(): R;
     lastSnappedRect<R = CGRect>(): R;
     snappedEdges<R = number>(): R;
@@ -14,8 +14,8 @@ declare namespace cocoa {
     initWithWindowNumber<R = unknown, P0 = number>(_initWithWindowNumber: P0): R;
     CGSnappingInfo<R = CGSnappingInfo>(): R;
   }
-  namespace classes {
-    export interface NSSnappingInfo<T = any> extends NSObject {
+  namespace NSSnappingInfo {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSSnappingInfo>(): R;
       new: <R = NSSnappingInfo>() => R;
       snappingInfoWithWindowNumber<R = unknown, P0 = number>(_snappingInfoWithWindowNumber: P0): R;
@@ -23,4 +23,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSSnappingInfo: cocoa.classes.NSSnappingInfo;
+declare const NSSnappingInfo: cocoa.NSSnappingInfo.CLASS;

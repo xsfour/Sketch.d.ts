@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSEnterFullScreenTransitionController<T = any> extends _NSFullScreenTransitionController {
+  export interface _NSEnterFullScreenTransitionController<T0 = void, T1 = void, T2 = void> extends _NSFullScreenTransitionController {
     _determineStartingSpaceID<R = number>(): R;
     _gatherAfterTransitionWindowNumbers<R = unknown>(): R;
     _captureAfterSnapshot<R = void>(): R;
@@ -50,8 +50,8 @@ declare namespace cocoa {
     toSpid<R = number>(): R;
     setToSpid<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSEnterFullScreenTransitionController<T = any> extends _NSFullScreenTransitionController {
+  namespace _NSEnterFullScreenTransitionController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _NSFullScreenTransitionController {
       alloc<R = _NSEnterFullScreenTransitionController>(): R;
       new: <R = _NSEnterFullScreenTransitionController>() => R;
       enterTransitionForWindow<R = unknown, P0 = unknown>(_enterTransitionForWindow: P0): R;

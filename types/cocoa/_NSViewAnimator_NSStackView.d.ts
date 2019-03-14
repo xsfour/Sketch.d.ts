@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSViewAnimator_NSStackView<T = any> extends _NSViewAnimator {
+  export interface _NSViewAnimator_NSStackView<T0 = void, T1 = void, T2 = void> extends _NSViewAnimator {
     removeArrangedSubview<R = void, P0 = unknown>(_removeArrangedSubview: P0): R;
     insertArrangedSubview_atIndex<R = void, P0 = unknown, P1 = number>(_insertArrangedSubview: P0, _atIndex: P1): R;
     addArrangedSubview<R = void, P0 = unknown>(_addArrangedSubview: P0): R;
@@ -17,7 +17,7 @@ declare namespace cocoa {
     setSpacing<R = void, P0 = number>(_setSpacing: P0): R;
     stackViewTarget<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSViewAnimator_NSStackView<T = any> extends _NSViewAnimator {  }
+  namespace _NSViewAnimator_NSStackView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _NSViewAnimator {}
   }
 }

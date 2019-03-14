@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSTransparencyLayerSavedState<T = any> extends NSObject {
+  export interface MSTransparencyLayerSavedState<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     dealloc<R = void>(): R;
     name<R = NSString>(): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     graphicsContext<R = NSGraphicsContext>(): R;
     setGraphicsContext<R = void, P0 = NSGraphicsContext>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSTransparencyLayerSavedState<T = any> extends NSObject {
+  namespace MSTransparencyLayerSavedState {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSTransparencyLayerSavedState>(): R;
       new: <R = MSTransparencyLayerSavedState>() => R;
     }
   }
 }
 
-declare const MSTransparencyLayerSavedState: cocoa.classes.MSTransparencyLayerSavedState;
+declare const MSTransparencyLayerSavedState: cocoa.MSTransparencyLayerSavedState.CLASS;

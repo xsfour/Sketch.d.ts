@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSVectorCanvas<T = any> extends NSObject, MSSelectVectorHandleGestureRecognizerDelegateProtocol, MSAlignmentEngineDelegateProtocol {
+  export interface MSVectorCanvas<T0 = void, T1 = void, T2 = void> extends NSObject, MSSelectVectorHandleGestureRecognizerDelegateProtocol, MSAlignmentEngineDelegateProtocol {
     cxx_destruct<R = void>(): R;
     setNeedsUpdateCursor<R = void>(): R;
     updateCursor<R = void>(): R;
@@ -105,12 +105,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSVectorCanvas<T = any> extends NSObject, MSSelectVectorHandleGestureRecognizerDelegateProtocol, MSAlignmentEngineDelegateProtocol {
+  namespace MSVectorCanvas {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, MSSelectVectorHandleGestureRecognizerDelegateProtocol, MSAlignmentEngineDelegateProtocol {
       alloc<R = MSVectorCanvas>(): R;
       new: <R = MSVectorCanvas>() => R;
     }
   }
 }
 
-declare const MSVectorCanvas: cocoa.classes.MSVectorCanvas;
+declare const MSVectorCanvas: cocoa.MSVectorCanvas.CLASS;

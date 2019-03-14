@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSShareButtonHandler<T = any> extends NSObject, NSSharingServiceDelegateProtocol, NSSharingServicePickerDelegateProtocol {
+  export interface MSShareButtonHandler<T0 = void, T1 = void, T2 = void> extends NSObject, NSSharingServiceDelegateProtocol, NSSharingServicePickerDelegateProtocol {
     cxx_destruct<R = void>(): R;
     itemsFromSlice<R = unknown, P0 = unknown>(_itemsFromSlice: P0): R;
     showShareMenuForLayer_sender_canvas<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(_showShareMenuForLayer: P0, _sender: P1, _canvas: P2): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSShareButtonHandler<T = any> extends NSObject, NSSharingServiceDelegateProtocol, NSSharingServicePickerDelegateProtocol {
+  namespace MSShareButtonHandler {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSharingServiceDelegateProtocol, NSSharingServicePickerDelegateProtocol {
       alloc<R = MSShareButtonHandler>(): R;
       new: <R = MSShareButtonHandler>() => R;
     }
   }
 }
 
-declare const MSShareButtonHandler: cocoa.classes.MSShareButtonHandler;
+declare const MSShareButtonHandler: cocoa.MSShareButtonHandler.CLASS;

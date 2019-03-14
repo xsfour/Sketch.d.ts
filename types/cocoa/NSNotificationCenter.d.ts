@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSNotificationCenter<T = any> extends NSObject {
+  export interface NSNotificationCenter<T0 = void, T1 = void, T2 = void> extends NSObject {
     debugDescription<R = unknown>(): R;
     isEmpty<R = boolean>(): R;
     addObserverForName_object_queue_usingBlock<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = CDUnknownBlockType>(_addObserverForName: P0, _object: P1, _queue: P2, _usingBlock: P3): R;
@@ -16,20 +16,19 @@ declare namespace cocoa {
     description<R = unknown>(): R;
     dealloc<R = void>(): R;
     _initWithCFNotificationCenter<R = unknown, P0 = __CFNotificationCenter>(__initWithCFNotificationCenter: P0): R;
-    // + NSNotificationCenter(AppKitExtensions):
+    // + NSNotificationCenter(AppKitExtensions): 
     _removeObserver_notificationNamesAndSelectorNames_object<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(__removeObserver: P0, _notificationNamesAndSelectorNames: P1, _object: P2): R;
     _addObserver_notificationNamesAndSelectorNames_object_onlyIfSelectorIsImplemented<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = boolean>(__addObserver: P0, _notificationNamesAndSelectorNames: P1, _object: P2, _onlyIfSelectorIsImplemented: P3): R;
   }
-  namespace classes {
-    export interface NSNotificationCenter<T = any> extends NSObject {
+  namespace NSNotificationCenter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSNotificationCenter>(): R;
       new: <R = NSNotificationCenter>() => R;
       _defaultCenterWithoutCreating<R = unknown>(): R;
       defaultCenter<R = unknown>(): R;
-      // + NSNotificationCenter(AppKitExtensions):
-      
-    }
+  
+  }
   }
 }
 
-declare const NSNotificationCenter: cocoa.classes.NSNotificationCenter;
+declare const NSNotificationCenter: cocoa.NSNotificationCenter.CLASS;

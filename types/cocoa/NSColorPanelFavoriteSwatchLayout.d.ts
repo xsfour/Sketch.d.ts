@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorPanelFavoriteSwatchLayout<T = any> extends NSCollectionViewLayout {
+  export interface NSColorPanelFavoriteSwatchLayout<T0 = void, T1 = void, T2 = void> extends NSCollectionViewLayout {
     layoutAttributesForInterItemGapBeforeIndexPath<R = unknown, P0 = unknown>(_layoutAttributesForInterItemGapBeforeIndexPath: P0): R;
     layoutAttributesForDropTargetAtPoint<R = unknown, P0 = CGPoint>(_layoutAttributesForDropTargetAtPoint: P0): R;
     collectionViewContentSize<R = CGSize>(): R;
@@ -19,9 +19,9 @@ declare namespace cocoa {
     itemSize<R = CGSize>(): R;
     setItemSize<R = void, P0 = CGSize>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSColorPanelFavoriteSwatchLayout<T = any> extends NSCollectionViewLayout {  }
+  namespace NSColorPanelFavoriteSwatchLayout {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSCollectionViewLayout {}
   }
 }
 
-declare const NSColorPanelFavoriteSwatchLayout: cocoa.classes.NSColorPanelFavoriteSwatchLayout;
+declare const NSColorPanelFavoriteSwatchLayout: cocoa.NSColorPanelFavoriteSwatchLayout.CLASS;

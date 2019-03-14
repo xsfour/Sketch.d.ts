@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSAutomaticFocusRingState<T = any> extends NSObject {
+  export interface _NSAutomaticFocusRingState<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     nilFocusTime<R = number>(): R;
     setNilFocusTime<R = void, P0 = number>(_v: P0): R;
@@ -32,8 +32,8 @@ declare namespace cocoa {
     automaticFocusRingShown<R = boolean>(): R;
     setAutomaticFocusRingShown<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSAutomaticFocusRingState<T = any> extends NSObject {
+  namespace _NSAutomaticFocusRingState {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSAutomaticFocusRingState>(): R;
       new: <R = _NSAutomaticFocusRingState>() => R;
     }

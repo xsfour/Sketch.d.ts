@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDesktopImageView<T = any> extends NSView {
+  export interface NSDesktopImageView<T0 = void, T1 = void, T2 = void> extends NSView {
     _setDesktopImageBaseOnWorkspace<R = void>(): R;
     _startLoadingDesktopPicture<R = void>(): R;
     _forceReloadDesktopPicture<R = void>(): R;
@@ -12,12 +12,12 @@ declare namespace cocoa {
     backgroundColor<R = NSColor>(): R;
     setBackgroundColor<R = void, P0 = NSColor>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSDesktopImageView<T = any> extends NSView {
+  namespace NSDesktopImageView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSDesktopImageView>(): R;
       new: <R = NSDesktopImageView>() => R;
     }
   }
 }
 
-declare const NSDesktopImageView: cocoa.classes.NSDesktopImageView;
+declare const NSDesktopImageView: cocoa.NSDesktopImageView.CLASS;

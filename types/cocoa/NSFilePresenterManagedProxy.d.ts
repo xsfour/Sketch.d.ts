@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFilePresenterManagedProxy<T = any> extends NSObject, NSXPCProxyCreatingProtocol {
+  export interface NSFilePresenterManagedProxy<T0 = void, T1 = void, T2 = void> extends NSObject, NSXPCProxyCreatingProtocol {
     forwardInvocation<R = void, P0 = unknown>(_forwardInvocation: P0): R;
     methodSignatureForSelector<R = unknown, P0 = string>(_methodSignatureForSelector: P0): R;
     collectDebuggingInformationWithCompletionHandler<R = void, P0 = CDUnknownBlockType>(_collectDebuggingInformationWithCompletionHandler: P0): R;
@@ -21,12 +21,12 @@ declare namespace cocoa {
     filePresenterResponses<R = number>(): R;
     setFilePresenterResponses<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSFilePresenterManagedProxy<T = any> extends NSObject, NSXPCProxyCreatingProtocol {
+  namespace NSFilePresenterManagedProxy {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSXPCProxyCreatingProtocol {
       alloc<R = NSFilePresenterManagedProxy>(): R;
       new: <R = NSFilePresenterManagedProxy>() => R;
     }
   }
 }
 
-declare const NSFilePresenterManagedProxy: cocoa.classes.NSFilePresenterManagedProxy;
+declare const NSFilePresenterManagedProxy: cocoa.NSFilePresenterManagedProxy.CLASS;

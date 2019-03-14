@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSInputAlignmentItem<T = any> {}
-  namespace classes {
-    export interface NSInputAlignmentItem<T = any> {  }
+  export interface NSInputAlignmentItem<T0 = void, T1 = void, T2 = void> {}
+  namespace NSInputAlignmentItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSInputAlignmentItem: cocoa.classes.NSInputAlignmentItem;
+declare const NSInputAlignmentItem: cocoa.NSInputAlignmentItem.CLASS;

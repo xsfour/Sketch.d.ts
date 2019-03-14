@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSNib<T = any> extends NSObject, NSCodingProtocol {
+  export interface NSNib<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
     setInheritsDecodeTimeBundlePath<R = void, P0 = boolean>(_setInheritsDecodeTimeBundlePath: P0): R;
     inheritsDecodeTimeBundlePath<R = boolean>(): R;
     _loadNibDataFromPath<R = void, P0 = unknown>(__loadNibDataFromPath: P0): R;
@@ -22,8 +22,8 @@ declare namespace cocoa {
     initWithKeyedObjectsDataSettingBundleAtDecodeTime<R = unknown, P0 = unknown>(_initWithKeyedObjectsDataSettingBundleAtDecodeTime: P0): R;
     initWithContentsOfURL<R = unknown, P0 = unknown>(_initWithContentsOfURL: P0): R;
   }
-  namespace classes {
-    export interface NSNib<T = any> extends NSObject, NSCodingProtocol {
+  namespace NSNib {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
       alloc<R = NSNib>(): R;
       new: <R = NSNib>() => R;
       _NSNibBindingHelpStringForUIItem_binding<R = unknown, P0 = unknown, P1 = unknown>(__NSNibBindingHelpStringForUIItem: P0, _binding: P1): R;
@@ -38,4 +38,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSNib: cocoa.classes.NSNib;
+declare const NSNib: cocoa.NSNib.CLASS;

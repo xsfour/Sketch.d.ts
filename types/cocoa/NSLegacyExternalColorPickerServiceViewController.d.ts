@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLegacyExternalColorPickerServiceViewController<T = any> {}
-  namespace classes {
-    export interface NSLegacyExternalColorPickerServiceViewController<T = any> {  }
+  export interface NSLegacyExternalColorPickerServiceViewController<T0 = void, T1 = void, T2 = void> {}
+  namespace NSLegacyExternalColorPickerServiceViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSLegacyExternalColorPickerServiceViewController: cocoa.classes.NSLegacyExternalColorPickerServiceViewController;
+declare const NSLegacyExternalColorPickerServiceViewController: cocoa.NSLegacyExternalColorPickerServiceViewController.CLASS;

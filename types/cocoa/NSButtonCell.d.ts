@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSButtonCell<T = any> extends NSActionCell {
+  export interface NSButtonCell<T0 = void, T1 = void, T2 = void> extends NSActionCell {
     _setShouldNotHighlightOnPerformClick<R = void, P0 = boolean>(__setShouldNotHighlightOnPerformClick: P0): R;
     _endAcceleratorPeriodicActions<R = void>(): R;
     _beginAcceleratorPeriodicActionsUsingLegacyHW<R = void, P0 = boolean>(__beginAcceleratorPeriodicActionsUsingLegacyHW: P0): R;
@@ -271,8 +271,8 @@ declare namespace cocoa {
     gradientType<R = number>(): R;
     setGradientType<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSButtonCell<T = any> extends NSActionCell {
+  namespace NSButtonCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSActionCell {
       alloc<R = NSButtonCell>(): R;
       new: <R = NSButtonCell>() => R;
       _keyEquivalentSizeWithFont<R = CGSize, P0 = unknown>(__keyEquivalentSizeWithFont: P0): R;
@@ -285,4 +285,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSButtonCell: cocoa.classes.NSButtonCell;
+declare const NSButtonCell: cocoa.NSButtonCell.CLASS;

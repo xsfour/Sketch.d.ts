@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSVGUseWrapper<T = any> extends MSXMLElementWrapper {
+  export interface MSSVGUseWrapper<T0 = void, T1 = void, T2 = void> extends MSXMLElementWrapper {
     externalResourcesRequired<R = NSString>(): R;
     setExternalResourcesRequired<R = void, P0 = NSString>(_v: P0): R;
     height<R = NSString>(): R;
@@ -17,12 +17,12 @@ declare namespace cocoa {
     y<R = NSString>(): R;
     setY<R = void, P0 = NSString>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSSVGUseWrapper<T = any> extends MSXMLElementWrapper {
+  namespace MSSVGUseWrapper {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSXMLElementWrapper {
       alloc<R = MSSVGUseWrapper>(): R;
       new: <R = MSSVGUseWrapper>() => R;
     }
   }
 }
 
-declare const MSSVGUseWrapper: cocoa.classes.MSSVGUseWrapper;
+declare const MSSVGUseWrapper: cocoa.MSSVGUseWrapper.CLASS;

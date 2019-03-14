@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSProgressReportingProtocol<T = any> extends NSObjectProtocol {
+  export interface NSProgressReportingProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     progress<R = NSProgress>(): R;
   }
-  namespace classes {
-    export interface NSProgressReportingProtocol<T = any> extends NSObjectProtocol {  }
+  namespace NSProgressReportingProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

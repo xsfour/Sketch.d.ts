@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSExpression<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
+  export interface NSExpression<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
     _expressionWithSubstitutionVariables<R = unknown, P0 = unknown>(__expressionWithSubstitutionVariables: P0): R;
     acceptVisitor_flags<R = void, P0 = unknown, P1 = number>(_acceptVisitor: P0, _flags: P1): R;
     _shouldUseParensWithDescription<R = boolean>(): R;
@@ -30,8 +30,8 @@ declare namespace cocoa {
     keyPath<R = NSString>(): R;
     expressionType<R = number>(): R;
   }
-  namespace classes {
-    export interface NSExpression<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
+  namespace NSExpression {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
       alloc<R = NSExpression>(): R;
       new: <R = NSExpression>() => R;
       expressionForAnyKey<R = unknown>(): R;
@@ -59,4 +59,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSExpression: cocoa.classes.NSExpression;
+declare const NSExpression: cocoa.NSExpression.CLASS;

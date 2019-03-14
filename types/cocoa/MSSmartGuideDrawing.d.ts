@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSmartGuideDrawing<T = any> extends NSObject {}
-  namespace classes {
-    export interface MSSmartGuideDrawing<T = any> extends NSObject {
+  export interface MSSmartGuideDrawing<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace MSSmartGuideDrawing {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSSmartGuideDrawing>(): R;
       new: <R = MSSmartGuideDrawing>() => R;
       resetSmartGuideColor<R = void>(): R;
@@ -12,4 +12,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSSmartGuideDrawing: cocoa.classes.MSSmartGuideDrawing;
+declare const MSSmartGuideDrawing: cocoa.MSSmartGuideDrawing.CLASS;

@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInspectorSection<T = any> {}
-  namespace classes {
-    export interface MSInspectorSection<T = any> {  }
+  export interface MSInspectorSection<T0 = void, T1 = void, T2 = void> {}
+  namespace MSInspectorSection {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const MSInspectorSection: cocoa.classes.MSInspectorSection;
+declare const MSInspectorSection: cocoa.MSInspectorSection.CLASS;

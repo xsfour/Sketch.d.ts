@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSOpenGLPixelFormat<T = any> extends NSObject, NSCodingProtocol {
+  export interface NSOpenGLPixelFormat<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
     setAttributes<R = void, P0 = unknown>(_setAttributes: P0): R;
     attributes<R = unknown>(): R;
     initWithData<R = unknown, P0 = unknown>(_initWithData: P0): R;
@@ -16,8 +16,8 @@ declare namespace cocoa {
     numberOfVirtualScreens<R = number>(): R;
     CGLPixelFormatObj<R = _CGLPixelFormatObject>(): R;
   }
-  namespace classes {
-    export interface NSOpenGLPixelFormat<T = any> extends NSObject, NSCodingProtocol {
+  namespace NSOpenGLPixelFormat {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
       alloc<R = NSOpenGLPixelFormat>(): R;
       new: <R = NSOpenGLPixelFormat>() => R;
       initialize<R = void>(): R;
@@ -26,4 +26,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSOpenGLPixelFormat: cocoa.classes.NSOpenGLPixelFormat;
+declare const NSOpenGLPixelFormat: cocoa.NSOpenGLPixelFormat.CLASS;

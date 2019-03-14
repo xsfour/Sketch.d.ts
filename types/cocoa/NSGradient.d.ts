@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSGradient<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  export interface NSGradient<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
     _isValidDecodedColorArray_error<R = boolean, P0 = unknown, P1 = unknown>(__isValidDecodedColorArray: P0, _error: P1): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
@@ -25,19 +25,18 @@ declare namespace cocoa {
     _colorSpaceForColorArray<R = unknown, P0 = unknown>(__colorSpaceForColorArray: P0): R;
     numberOfColorStops<R = number>(): R;
     colorSpace<R = NSColorSpace>(): R;
-    // + NSGradient(SketchModel):
+    // + NSGradient(SketchModel): 
     interpolatedGradientWithExtraStops_function<R = unknown, P0 = number, P1 = CDUnknownBlockType>(_interpolatedGradientWithExtraStops: P0, _function: P1): R;
   }
-  namespace classes {
-    export interface NSGradient<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  namespace NSGradient {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
       alloc<R = NSGradient>(): R;
       new: <R = NSGradient>() => R;
       initialize<R = void>(): R;
       _windowBorderGradientFromGrayValue_toGrayValue_colorSpace<R = unknown, P0 = number, P1 = number, P2 = unknown>(__windowBorderGradientFromGrayValue: P0, _toGrayValue: P1, _colorSpace: P2): R;
-      // + NSGradient(SketchModel):
-      
-    }
+  
+  }
   }
 }
 
-declare const NSGradient: cocoa.classes.NSGradient;
+declare const NSGradient: cocoa.NSGradient.CLASS;

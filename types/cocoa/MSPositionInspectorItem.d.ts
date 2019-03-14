@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPositionInspectorItem<T = any> extends MSInspectorItem, MSInspectorMathValueAdaptorDelegateProtocol {
+  export interface MSPositionInspectorItem<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, MSInspectorMathValueAdaptorDelegateProtocol {
     allowFloatValues<R = boolean>(): R;
     rotationAdapter<R = MSMathInspectorValueAdaptor>(): R;
     setRotationAdapter<R = void, P0 = MSMathInspectorValueAdaptor>(_v: P0): R;
@@ -20,12 +20,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSPositionInspectorItem<T = any> extends MSInspectorItem, MSInspectorMathValueAdaptorDelegateProtocol {
+  namespace MSPositionInspectorItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, MSInspectorMathValueAdaptorDelegateProtocol {
       alloc<R = MSPositionInspectorItem>(): R;
       new: <R = MSPositionInspectorItem>() => R;
     }
   }
 }
 
-declare const MSPositionInspectorItem: cocoa.classes.MSPositionInspectorItem;
+declare const MSPositionInspectorItem: cocoa.MSPositionInspectorItem.CLASS;

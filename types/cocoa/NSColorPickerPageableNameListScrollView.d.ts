@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorPickerPageableNameListScrollView<T = any> extends NSScrollView, NSColorPickerSpectrumScrollerViewDelegateProtocol, NSColorPickerSpectrumScrollerViewDataSourceProtocol {
+  export interface NSColorPickerPageableNameListScrollView<T0 = void, T1 = void, T2 = void> extends NSScrollView, NSColorPickerSpectrumScrollerViewDelegateProtocol, NSColorPickerSpectrumScrollerViewDataSourceProtocol {
     _arrowPlacement<R = number>(): R;
     _partMouseDown<R = number>(): R;
     partHit<R = number, P0 = unknown>(_partHit: P0): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSColorPickerPageableNameListScrollView<T = any> extends NSScrollView, NSColorPickerSpectrumScrollerViewDelegateProtocol, NSColorPickerSpectrumScrollerViewDataSourceProtocol {
+  namespace NSColorPickerPageableNameListScrollView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSScrollView, NSColorPickerSpectrumScrollerViewDelegateProtocol, NSColorPickerSpectrumScrollerViewDataSourceProtocol {
       alloc<R = NSColorPickerPageableNameListScrollView>(): R;
       new: <R = NSColorPickerPageableNameListScrollView>() => R;
     }
   }
 }
 
-declare const NSColorPickerPageableNameListScrollView: cocoa.classes.NSColorPickerPageableNameListScrollView;
+declare const NSColorPickerPageableNameListScrollView: cocoa.NSColorPickerPageableNameListScrollView.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSShareableObjectPopUpButton<T = any> extends NSPopUpButton, NSMenuDelegateProtocol {
+  export interface MSShareableObjectPopUpButton<T0 = void, T1 = void, T2 = void> extends NSPopUpButton, NSMenuDelegateProtocol {
     cxx_destruct<R = void>(): R;
     refreshIfNecessary<R = void, P0 = unknown>(_refreshIfNecessary: P0): R;
     libraryControllerDidChange<R = void, P0 = unknown>(_libraryControllerDidChange: P0): R;
@@ -41,12 +41,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSShareableObjectPopUpButton<T = any> extends NSPopUpButton, NSMenuDelegateProtocol {
+  namespace MSShareableObjectPopUpButton {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSPopUpButton, NSMenuDelegateProtocol {
       alloc<R = MSShareableObjectPopUpButton>(): R;
       new: <R = MSShareableObjectPopUpButton>() => R;
     }
   }
 }
 
-declare const MSShareableObjectPopUpButton: cocoa.classes.MSShareableObjectPopUpButton;
+declare const MSShareableObjectPopUpButton: cocoa.MSShareableObjectPopUpButton.CLASS;

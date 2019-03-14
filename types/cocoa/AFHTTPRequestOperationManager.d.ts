@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface AFHTTPRequestOperationManager<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
+  export interface AFHTTPRequestOperationManager<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
     cxx_destruct<R = void>(): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
@@ -37,8 +37,8 @@ declare namespace cocoa {
     baseURL<R = NSURL>(): R;
     setBaseURL<R = void, P0 = NSURL>(_v: P0): R;
   }
-  namespace classes {
-    export interface AFHTTPRequestOperationManager<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
+  namespace AFHTTPRequestOperationManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
       alloc<R = AFHTTPRequestOperationManager>(): R;
       new: <R = AFHTTPRequestOperationManager>() => R;
       manager<R = unknown>(): R;
@@ -46,4 +46,4 @@ declare namespace cocoa {
   }
 }
 
-declare const AFHTTPRequestOperationManager: cocoa.classes.AFHTTPRequestOperationManager;
+declare const AFHTTPRequestOperationManager: cocoa.AFHTTPRequestOperationManager.CLASS;

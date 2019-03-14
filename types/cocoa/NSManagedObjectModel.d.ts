@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSManagedObjectModel<T = any> {}
-  namespace classes {
-    export interface NSManagedObjectModel<T = any> {  }
+  export interface NSManagedObjectModel<T0 = void, T1 = void, T2 = void> {}
+  namespace NSManagedObjectModel {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSManagedObjectModel: cocoa.classes.NSManagedObjectModel;
+declare const NSManagedObjectModel: cocoa.NSManagedObjectModel.CLASS;

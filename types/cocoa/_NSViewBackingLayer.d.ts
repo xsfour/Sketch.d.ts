@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSViewBackingLayer<T = any> extends _NSBackingLayer {
+  export interface _NSViewBackingLayer<T0 = void, T1 = void, T2 = void> extends _NSBackingLayer {
     dealloc<R = void>(): R;
     initWithLayer<R = unknown, P0 = unknown>(_initWithLayer: P0): R;
     NS_contentsAligningEnabled<R = boolean>(): R;
@@ -22,8 +22,8 @@ declare namespace cocoa {
     NS_setView<R = void, P0 = unknown>(_NS_setView: P0): R;
     NS_view<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSViewBackingLayer<T = any> extends _NSBackingLayer {
+  namespace _NSViewBackingLayer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _NSBackingLayer {
       defaultValueForKey<R = unknown, P0 = unknown>(_defaultValueForKey: P0): R;
     }
   }

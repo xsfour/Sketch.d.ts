@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPersistentUIFileManager<T = any> extends NSObject {
+  export interface NSPersistentUIFileManager<T0 = void, T1 = void, T2 = void> extends NSObject {
     finishPendingChangesImmediatelyWithCompletionHandler<R = void, P0 = CDUnknownBlockType>(_finishPendingChangesImmediatelyWithCompletionHandler: P0): R;
     invalidateStateDirectoryAtLaunch<R = void>(): R;
     stateDirectoryAtLaunch<R = unknown>(): R;
@@ -31,8 +31,8 @@ declare namespace cocoa {
     set_rawStateDirectoryAtLaunch<R = void, P0 = NSPersistentUIPreservedStateDirectory>(_v: P0): R;
     persistentStateDirectoryURL<R = NSURL>(): R;
   }
-  namespace classes {
-    export interface NSPersistentUIFileManager<T = any> extends NSObject {
+  namespace NSPersistentUIFileManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSPersistentUIFileManager>(): R;
       new: <R = NSPersistentUIFileManager>() => R;
       persistentStateDirectoryURLForBundleID<R = unknown, P0 = unknown>(_persistentStateDirectoryURLForBundleID: P0): R;
@@ -40,4 +40,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPersistentUIFileManager: cocoa.classes.NSPersistentUIFileManager;
+declare const NSPersistentUIFileManager: cocoa.NSPersistentUIFileManager.CLASS;

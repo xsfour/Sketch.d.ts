@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCalibratedRGBColor<T = any> extends NSColor {
+  export interface NSCalibratedRGBColor<T0 = void, T1 = void, T2 = void> extends NSColor {
     encodeWithCoder_colorSpaceCode<R = void, P0 = unknown, P1 = boolean>(_encodeWithCoder: P0, _colorSpaceCode: P1): R;
     classForCoder<R = unknown>(): R;
     hash<R = number>(): R;
@@ -22,8 +22,8 @@ declare namespace cocoa {
     initWithRed_green_blue_alpha<R = unknown, P0 = number, P1 = number, P2 = number, P3 = number>(_initWithRed: P0, _green: P1, _blue: P2, _alpha: P3): R;
     initWithHue_saturation_brightness_alpha<R = unknown, P0 = number, P1 = number, P2 = number, P3 = number>(_initWithHue: P0, _saturation: P1, _brightness: P2, _alpha: P3): R;
   }
-  namespace classes {
-    export interface NSCalibratedRGBColor<T = any> extends NSColor {
+  namespace NSCalibratedRGBColor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSColor {
       alloc<R = NSCalibratedRGBColor>(): R;
       new: <R = NSCalibratedRGBColor>() => R;
       _cachedLookupWithRed_green_blue_alpha<R = unknown, P0 = number, P1 = number, P2 = number, P3 = number>(__cachedLookupWithRed: P0, _green: P1, _blue: P2, _alpha: P3): R;
@@ -32,4 +32,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSCalibratedRGBColor: cocoa.classes.NSCalibratedRGBColor;
+declare const NSCalibratedRGBColor: cocoa.NSCalibratedRGBColor.CLASS;

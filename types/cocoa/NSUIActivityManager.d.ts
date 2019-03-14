@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUIActivityManager<T = any> extends NSObject, NSUserActivityDelegateProtocol {
+  export interface NSUIActivityManager<T0 = void, T1 = void, T2 = void> extends NSObject, NSUserActivityDelegateProtocol {
     continueUserActivity<R = void, P0 = unknown>(_continueUserActivity: P0): R;
     continueUserActivityWithUUID_type<R = void, P0 = unknown, P1 = unknown>(_continueUserActivityWithUUID: P0, _type: P1): R;
     _willFetchUserActivityWithType_progress<R = boolean, P0 = unknown, P1 = unknown>(__willFetchUserActivityWithType: P0, _progress: P1): R;
@@ -20,8 +20,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSUIActivityManager<T = any> extends NSObject, NSUserActivityDelegateProtocol {
+  namespace NSUIActivityManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSUserActivityDelegateProtocol {
       alloc<R = NSUIActivityManager>(): R;
       new: <R = NSUIActivityManager>() => R;
       sharedManager<R = unknown>(): R;
@@ -29,4 +29,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSUIActivityManager: cocoa.classes.NSUIActivityManager;
+declare const NSUIActivityManager: cocoa.NSUIActivityManager.CLASS;

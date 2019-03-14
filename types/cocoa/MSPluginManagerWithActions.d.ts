@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPluginManagerWithActions<T = any> extends MSPluginManager, MSActionObserverProtocol {
+  export interface MSPluginManagerWithActions<T0 = void, T1 = void, T2 = void> extends MSPluginManager, MSActionObserverProtocol {
     pluginAndCommandIdentifiersForPlugins<R = unknown, P0 = unknown>(_pluginAndCommandIdentifiersForPlugins: P0): R;
     sendCommandActionWithID_toPlugins_withIdentifiers_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown>(_sendCommandActionWithID: P0, _toPlugins: P1, _withIdentifiers: P2, _context: P3): R;
     pluginsToSendStartupMessageToWithOldPlugins_andNewPlugins<R = unknown, P0 = unknown, P1 = unknown>(_pluginsToSendStartupMessageToWithOldPlugins: P0, _andNewPlugins: P1): R;
@@ -24,12 +24,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSPluginManagerWithActions<T = any> extends MSPluginManager, MSActionObserverProtocol {
+  namespace MSPluginManagerWithActions {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSPluginManager, MSActionObserverProtocol {
       alloc<R = MSPluginManagerWithActions>(): R;
       new: <R = MSPluginManagerWithActions>() => R;
     }
   }
 }
 
-declare const MSPluginManagerWithActions: cocoa.classes.MSPluginManagerWithActions;
+declare const MSPluginManagerWithActions: cocoa.MSPluginManagerWithActions.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScriptRecordFieldDescription<T = any> extends NSObject {
+  export interface NSScriptRecordFieldDescription<T0 = void, T1 = void, T2 = void> extends NSObject {
     matchesAppleEventCode<R = boolean, P0 = number>(_matchesAppleEventCode: P0): R;
     synonymDescriptions<R = unknown>(): R;
     presentableName<R = unknown>(): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     initWithKey_type_appleEventCode_isHidden_presentableDescription_name_synonymDescriptions<R = unknown, P0 = unknown, P1 = unknown, P2 = number, P3 = boolean, P4 = unknown, P5 = unknown, P6 = unknown>(_initWithKey: P0, _type: P1, _appleEventCode: P2, _isHidden: P3, _presentableDescription: P4, _name: P5, _synonymDescriptions: P6): R;
     appendPropertyDeclarationToAETEData<R = void, P0 = unknown>(_appendPropertyDeclarationToAETEData: P0): R;
   }
-  namespace classes {
-    export interface NSScriptRecordFieldDescription<T = any> extends NSObject {
+  namespace NSScriptRecordFieldDescription {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSScriptRecordFieldDescription>(): R;
       new: <R = NSScriptRecordFieldDescription>() => R;
     }
   }
 }
 
-declare const NSScriptRecordFieldDescription: cocoa.classes.NSScriptRecordFieldDescription;
+declare const NSScriptRecordFieldDescription: cocoa.NSScriptRecordFieldDescription.CLASS;

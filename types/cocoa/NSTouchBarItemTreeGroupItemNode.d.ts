@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarItemTreeGroupItemNode<T = any> extends NSTouchBarItemTreeItemNode, NSTouchBarItemTreeParentNodeProtocol {
+  export interface NSTouchBarItemTreeGroupItemNode<T0 = void, T1 = void, T2 = void> extends NSTouchBarItemTreeItemNode, NSTouchBarItemTreeParentNodeProtocol {
     touchBarLayoutDirection<R = number>(): R;
     touchBarContainingChildNodes<R = NSTouchBar>(): R;
     debugDescription<R = NSString>(): R;
@@ -9,12 +9,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSTouchBarItemTreeGroupItemNode<T = any> extends NSTouchBarItemTreeItemNode, NSTouchBarItemTreeParentNodeProtocol {
+  namespace NSTouchBarItemTreeGroupItemNode {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTouchBarItemTreeItemNode, NSTouchBarItemTreeParentNodeProtocol {
       alloc<R = NSTouchBarItemTreeGroupItemNode>(): R;
       new: <R = NSTouchBarItemTreeGroupItemNode>() => R;
     }
   }
 }
 
-declare const NSTouchBarItemTreeGroupItemNode: cocoa.classes.NSTouchBarItemTreeGroupItemNode;
+declare const NSTouchBarItemTreeGroupItemNode: cocoa.NSTouchBarItemTreeGroupItemNode.CLASS;

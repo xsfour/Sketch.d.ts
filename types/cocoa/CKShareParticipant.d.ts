@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface CKShareParticipant<T = any> {}
-  namespace classes {
-    export interface CKShareParticipant<T = any> {  }
+  export interface CKShareParticipant<T0 = void, T1 = void, T2 = void> {}
+  namespace CKShareParticipant {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const CKShareParticipant: cocoa.classes.CKShareParticipant;
+declare const CKShareParticipant: cocoa.CKShareParticipant.CLASS;

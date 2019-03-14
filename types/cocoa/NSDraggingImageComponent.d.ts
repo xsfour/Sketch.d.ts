@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDraggingImageComponent<T = any> extends NSObject {
+  export interface NSDraggingImageComponent<T0 = void, T1 = void, T2 = void> extends NSObject {
     animationKeyFrameBlock<R = CDUnknownBlockType>(): R;
     image<R = unknown>(): R;
     description<R = unknown>(): R;
@@ -15,8 +15,8 @@ declare namespace cocoa {
     key<R = NSString>(): R;
     setKey<R = void, P0 = NSString>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSDraggingImageComponent<T = any> extends NSObject {
+  namespace NSDraggingImageComponent {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSDraggingImageComponent>(): R;
       new: <R = NSDraggingImageComponent>() => R;
       draggingImageComponentWithKey<R = unknown, P0 = unknown>(_draggingImageComponentWithKey: P0): R;
@@ -25,4 +25,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSDraggingImageComponent: cocoa.classes.NSDraggingImageComponent;
+declare const NSDraggingImageComponent: cocoa.NSDraggingImageComponent.CLASS;

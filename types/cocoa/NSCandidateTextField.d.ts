@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCandidateTextField<T = any> extends NSTextField {
+  export interface NSCandidateTextField<T0 = void, T1 = void, T2 = void> extends NSTextField {
     setSelected<R = void, P0 = boolean>(_setSelected: P0): R;
     setAttributedCorrection<R = void, P0 = unknown>(_setAttributedCorrection: P0): R;
     trimOnRight<R = boolean>(): R;
@@ -9,12 +9,12 @@ declare namespace cocoa {
     trimOnLeft<R = boolean>(): R;
     setTrimOnLeft<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSCandidateTextField<T = any> extends NSTextField {
+  namespace NSCandidateTextField {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTextField {
       alloc<R = NSCandidateTextField>(): R;
       new: <R = NSCandidateTextField>() => R;
     }
   }
 }
 
-declare const NSCandidateTextField: cocoa.classes.NSCandidateTextField;
+declare const NSCandidateTextField: cocoa.NSCandidateTextField.CLASS;

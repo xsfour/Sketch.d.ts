@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAssetLibraryUpdatingInfo<T = any> extends NSObject, NSCodingProtocol {
+  export interface MSAssetLibraryUpdatingInfo<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
     cxx_destruct<R = void>(): R;
     isHigherVersionThan<R = boolean, P0 = unknown>(_isHigherVersionThan: P0): R;
     isEqualToAssetLibraryUpdatingInfo<R = boolean, P0 = unknown>(_isEqualToAssetLibraryUpdatingInfo: P0): R;
@@ -17,12 +17,12 @@ declare namespace cocoa {
     versionNumberForUpdate<R = NSString>(): R;
     downloadURL<R = NSURL>(): R;
   }
-  namespace classes {
-    export interface MSAssetLibraryUpdatingInfo<T = any> extends NSObject, NSCodingProtocol {
+  namespace MSAssetLibraryUpdatingInfo {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
       alloc<R = MSAssetLibraryUpdatingInfo>(): R;
       new: <R = MSAssetLibraryUpdatingInfo>() => R;
     }
   }
 }
 
-declare const MSAssetLibraryUpdatingInfo: cocoa.classes.MSAssetLibraryUpdatingInfo;
+declare const MSAssetLibraryUpdatingInfo: cocoa.MSAssetLibraryUpdatingInfo.CLASS;

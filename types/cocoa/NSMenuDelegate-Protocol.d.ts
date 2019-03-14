@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMenuDelegateProtocol<T = any> {
+  export interface NSMenuDelegateProtocol<T0 = void, T1 = void, T2 = void> {
     confinementRectForMenu_onScreen<R = CGRect, P0 = NSMenu, P1 = NSScreen>(_confinementRectForMenu: P0, _onScreen: P1): R;
     menu_willHighlightItem<R = void, P0 = NSMenu, P1 = NSMenuItem>(_menu: P0, _willHighlightItem: P1): R;
     menuDidClose<R = void, P0 = NSMenu>(_menuDidClose: P0): R;
@@ -11,7 +11,7 @@ declare namespace cocoa {
     numberOfItemsInMenu<R = number, P0 = NSMenu>(_numberOfItemsInMenu: P0): R;
     menuNeedsUpdate<R = void, P0 = NSMenu>(_menuNeedsUpdate: P0): R;
   }
-  namespace classes {
-    export interface NSMenuDelegateProtocol<T = any> {  }
+  namespace NSMenuDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

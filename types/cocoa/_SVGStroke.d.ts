@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _SVGStroke<T = any> extends SVGElement {
+  export interface _SVGStroke<T0 = void, T1 = void, T2 = void> extends SVGElement {
     primitiveRemoveUsedByObject<R = void, P0 = unknown>(_primitiveRemoveUsedByObject: P0): R;
     primitiveAddUsedByObject<R = void, P0 = unknown>(_primitiveAddUsedByObject: P0): R;
     removeUsedByObject<R = void, P0 = unknown>(_removeUsedByObject: P0): R;
@@ -25,8 +25,8 @@ declare namespace cocoa {
     gradient<R = SVGGradient>(): R;
     setGradient<R = void, P0 = SVGGradient>(_v: P0): R;
   }
-  namespace classes {
-    export interface _SVGStroke<T = any> extends SVGElement {
+  namespace _SVGStroke {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends SVGElement {
       alloc<R = _SVGStroke>(): R;
       new: <R = _SVGStroke>() => R;
     }

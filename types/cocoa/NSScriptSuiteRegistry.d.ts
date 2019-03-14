@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScriptSuiteRegistry<T = any> extends NSObject {
+  export interface NSScriptSuiteRegistry<T0 = void, T1 = void, T2 = void> extends NSObject {
     aeteResource<R = unknown, P0 = unknown>(_aeteResource: P0): R;
     commandDescriptionWithAppleEventClass_andAppleEventCode<R = unknown, P0 = number, P1 = number>(_commandDescriptionWithAppleEventClass: P0, _andAppleEventCode: P1): R;
     classDescriptionWithAppleEventCode<R = unknown, P0 = number>(_classDescriptionWithAppleEventCode: P0): R;
@@ -44,8 +44,8 @@ declare namespace cocoa {
     _isLoadingSDEFFiles<R = boolean>(): R;
     suiteNames<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface NSScriptSuiteRegistry<T = any> extends NSObject {
+  namespace NSScriptSuiteRegistry {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSScriptSuiteRegistry>(): R;
       new: <R = NSScriptSuiteRegistry>() => R;
       _isScriptingEnabled<R = boolean>(): R;
@@ -56,4 +56,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSScriptSuiteRegistry: cocoa.classes.NSScriptSuiteRegistry;
+declare const NSScriptSuiteRegistry: cocoa.NSScriptSuiteRegistry.CLASS;

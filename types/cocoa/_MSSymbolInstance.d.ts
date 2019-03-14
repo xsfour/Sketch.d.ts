@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSSymbolInstance<T = any> extends MSStyledLayer {
+  export interface _MSSymbolInstance<T0 = void, T1 = void, T2 = void> extends MSStyledLayer {
     moveOverrideValueIndex_toIndex<R = void, P0 = number, P1 = number>(_moveOverrideValueIndex: P0, _toIndex: P1): R;
     removeAllOverrideValues<R = void>(): R;
     removeOverrideValuesAtIndexes<R = void, P0 = unknown>(_removeOverrideValuesAtIndexes: P0): R;
@@ -25,8 +25,8 @@ declare namespace cocoa {
     horizontalSpacing<R = number>(): R;
     setHorizontalSpacing<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface _MSSymbolInstance<T = any> extends MSStyledLayer {
+  namespace _MSSymbolInstance {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSStyledLayer {
       alloc<R = _MSSymbolInstance>(): R;
       new: <R = _MSSymbolInstance>() => R;
     }

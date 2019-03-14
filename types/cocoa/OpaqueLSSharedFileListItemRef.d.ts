@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface OpaqueLSSharedFileListItemRef<T = any> {}
-  namespace classes {
-    export interface OpaqueLSSharedFileListItemRef<T = any> {  }
+  export interface OpaqueLSSharedFileListItemRef<T0 = void, T1 = void, T2 = void> {}
+  namespace OpaqueLSSharedFileListItemRef {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const OpaqueLSSharedFileListItemRef: cocoa.classes.OpaqueLSSharedFileListItemRef;
+declare const OpaqueLSSharedFileListItemRef: cocoa.OpaqueLSSharedFileListItemRef.CLASS;

@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface CIFilter<T = any> {}
-  namespace classes {
-    export interface CIFilter<T = any> {  }
+  export interface CIFilter<T0 = void, T1 = void, T2 = void> {}
+  namespace CIFilter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const CIFilter: cocoa.classes.CIFilter;
+declare const CIFilter: cocoa.CIFilter.CLASS;

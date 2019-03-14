@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLengthFormatter<T = any> extends NSFormatter, NSObservableProtocol, NSObserverProtocol {
+  export interface NSLengthFormatter<T0 = void, T1 = void, T2 = void> extends NSFormatter, NSObservableProtocol, NSObserverProtocol {
     stringFromValue_unit<R = unknown, P0 = number, P1 = number>(_stringFromValue: P0, _unit: P1): R;
     stringFromMeters<R = unknown, P0 = number>(_stringFromMeters: P0): R;
     unitStringFromMeters_usedUnit<R = unknown, P0 = number, P1 = number>(_unitStringFromMeters: P0, _usedUnit: P1): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSLengthFormatter<T = any> extends NSFormatter, NSObservableProtocol, NSObserverProtocol {
+  namespace NSLengthFormatter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSFormatter, NSObservableProtocol, NSObserverProtocol {
       alloc<R = NSLengthFormatter>(): R;
       new: <R = NSLengthFormatter>() => R;
     }
   }
 }
 
-declare const NSLengthFormatter: cocoa.classes.NSLengthFormatter;
+declare const NSLengthFormatter: cocoa.NSLengthFormatter.CLASS;

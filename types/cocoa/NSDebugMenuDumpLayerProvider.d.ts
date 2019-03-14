@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDebugMenuDumpLayerProvider<T = any> extends NSObject, NSMenuDelegateProtocol, NSDebugMenuItemProviderProtocol {
+  export interface NSDebugMenuDumpLayerProvider<T0 = void, T1 = void, T2 = void> extends NSObject, NSMenuDelegateProtocol, NSDebugMenuItemProviderProtocol {
     _dumpLayerForFunctionRow<R = void, P0 = unknown>(__dumpLayerForFunctionRow: P0): R;
     _dumpLayerForView<R = void, P0 = unknown>(__dumpLayerForView: P0): R;
     _dumpLayerForWindow<R = void, P0 = unknown>(__dumpLayerForWindow: P0): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSDebugMenuDumpLayerProvider<T = any> extends NSObject, NSMenuDelegateProtocol, NSDebugMenuItemProviderProtocol {
+  namespace NSDebugMenuDumpLayerProvider {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSMenuDelegateProtocol, NSDebugMenuItemProviderProtocol {
       alloc<R = NSDebugMenuDumpLayerProvider>(): R;
       new: <R = NSDebugMenuDumpLayerProvider>() => R;
     }
   }
 }
 
-declare const NSDebugMenuDumpLayerProvider: cocoa.classes.NSDebugMenuDumpLayerProvider;
+declare const NSDebugMenuDumpLayerProvider: cocoa.NSDebugMenuDumpLayerProvider.CLASS;

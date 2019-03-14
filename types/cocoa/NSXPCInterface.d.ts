@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXPCInterface<T = any> extends NSObject {
+  export interface NSXPCInterface<T0 = void, T1 = void, T2 = void> extends NSObject {
     _methodSignature_allowedClasses_forSelector_isReply<R = void, P0 = unknown, P1 = unknown, P2 = string, P3 = boolean>(__methodSignature: P0, _allowedClasses: P1, _forSelector: P2, _isReply: P3): R;
     _returnClassForSelector<R = unknown, P0 = string>(__returnClassForSelector: P0): R;
     _interfaceForArgument_ofSelector_reply<R = unknown, P0 = number, P1 = string, P2 = boolean>(__interfaceForArgument: P0, _ofSelector: P1, _reply: P2): R;
@@ -31,8 +31,8 @@ declare namespace cocoa {
     protocol<R = Protocol>(): R;
     setProtocol<R = void, P0 = Protocol>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSXPCInterface<T = any> extends NSObject {
+  namespace NSXPCInterface {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSXPCInterface>(): R;
       new: <R = NSXPCInterface>() => R;
       signatureForBlock<R = unknown, P0 = unknown>(_signatureForBlock: P0): R;
@@ -41,4 +41,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSXPCInterface: cocoa.classes.NSXPCInterface;
+declare const NSXPCInterface: cocoa.NSXPCInterface.CLASS;

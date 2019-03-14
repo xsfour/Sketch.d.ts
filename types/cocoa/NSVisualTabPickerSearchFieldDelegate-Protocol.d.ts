@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSVisualTabPickerSearchFieldDelegateProtocol<T = any> extends NSSearchFieldDelegateProtocol {
+  export interface NSVisualTabPickerSearchFieldDelegateProtocol<T0 = void, T1 = void, T2 = void> extends NSSearchFieldDelegateProtocol {
     visualTabPickerSearchFieldTextDidChange<R = void, P0 = NSVisualTabPickerSearchField>(_visualTabPickerSearchFieldTextDidChange: P0): R;
   }
-  namespace classes {
-    export interface NSVisualTabPickerSearchFieldDelegateProtocol<T = any> extends NSSearchFieldDelegateProtocol {  }
+  namespace NSVisualTabPickerSearchFieldDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSSearchFieldDelegateProtocol {}
   }
 }

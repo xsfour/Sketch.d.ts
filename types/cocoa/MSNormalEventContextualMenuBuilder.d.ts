@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSNormalEventContextualMenuBuilder<T = any> extends NSObject {
+  export interface MSNormalEventContextualMenuBuilder<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     symbolInstanceOnlyItems<R = unknown>(): R;
     symbolItems<R = unknown>(): R;
@@ -44,12 +44,12 @@ declare namespace cocoa {
     standardLayerMenu<R = NSMenu>(): R;
     setStandardLayerMenu<R = void, P0 = NSMenu>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSNormalEventContextualMenuBuilder<T = any> extends NSObject {
+  namespace MSNormalEventContextualMenuBuilder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSNormalEventContextualMenuBuilder>(): R;
       new: <R = MSNormalEventContextualMenuBuilder>() => R;
     }
   }
 }
 
-declare const MSNormalEventContextualMenuBuilder: cocoa.classes.MSNormalEventContextualMenuBuilder;
+declare const MSNormalEventContextualMenuBuilder: cocoa.MSNormalEventContextualMenuBuilder.CLASS;

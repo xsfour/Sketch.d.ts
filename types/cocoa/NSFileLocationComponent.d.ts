@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFileLocationComponent<T = any> extends NSObject {
+  export interface NSFileLocationComponent<T0 = void, T1 = void, T2 = void> extends NSObject {
     _cloudMetadata<R = unknown>(): R;
     _isUbiquityContainer<R = boolean>(): R;
     iconAsAttributedString<R = unknown>(): R;
@@ -12,8 +12,8 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     _initWithURL<R = unknown, P0 = unknown>(__initWithURL: P0): R;
   }
-  namespace classes {
-    export interface NSFileLocationComponent<T = any> extends NSObject {
+  namespace NSFileLocationComponent {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSFileLocationComponent>(): R;
       new: <R = NSFileLocationComponent>() => R;
       attributedStringForIcon<R = unknown, P0 = unknown>(_attributedStringForIcon: P0): R;
@@ -23,4 +23,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSFileLocationComponent: cocoa.classes.NSFileLocationComponent;
+declare const NSFileLocationComponent: cocoa.NSFileLocationComponent.CLASS;

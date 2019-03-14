@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPrintPreviewController<T = any> extends NSViewController {
+  export interface NSPrintPreviewController<T0 = void, T1 = void, T2 = void> extends NSViewController {
     printInfoDidChange<R = void, P0 = unknown>(_printInfoDidChange: P0): R;
     userClickedPageNumberControl<R = void, P0 = unknown>(_userClickedPageNumberControl: P0): R;
     observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
@@ -20,12 +20,12 @@ declare namespace cocoa {
     setRepresentedObject<R = void, P0 = unknown>(_setRepresentedObject: P0): R;
     initWithOperation<R = unknown, P0 = unknown>(_initWithOperation: P0): R;
   }
-  namespace classes {
-    export interface NSPrintPreviewController<T = any> extends NSViewController {
+  namespace NSPrintPreviewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController {
       alloc<R = NSPrintPreviewController>(): R;
       new: <R = NSPrintPreviewController>() => R;
     }
   }
 }
 
-declare const NSPrintPreviewController: cocoa.classes.NSPrintPreviewController;
+declare const NSPrintPreviewController: cocoa.NSPrintPreviewController.CLASS;

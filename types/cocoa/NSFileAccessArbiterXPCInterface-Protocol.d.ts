@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFileAccessArbiterXPCInterfaceProtocol<T = any> extends NSFileAccessArbiterProtocol {
+  export interface NSFileAccessArbiterXPCInterfaceProtocol<T0 = void, T1 = void, T2 = void> extends NSFileAccessArbiterProtocol {
     performBarrierWithCompletionHandler<R = void, P0 = CDUnknownBlockType>(_performBarrierWithCompletionHandler: P0): R;
     provideSubarbiterDebugInfoIncludingEverything_completionHandler<R = void, P0 = boolean, P1 = CDUnknownBlockType>(_provideSubarbiterDebugInfoIncludingEverything: P0, _completionHandler: P1): R;
     provideDebugInfoWithLocalInfo_completionHandler<R = void, P0 = NSString, P1 = CDUnknownBlockType>(_provideDebugInfoWithLocalInfo: P0, _completionHandler: P1): R;
@@ -15,7 +15,7 @@ declare namespace cocoa {
     addPresenter_withID_fileURL_lastPresentedItemEventIdentifier_ubiquityAttributes_options_responses<R = void, P0 = NSFilePresenterXPCInterface, P1 = unknown, P2 = NSURL, P3 = NSNumber, P4 = NSSet, P5 = number, P6 = number>(_addPresenter: P0, _withID: P1, _fileURL: P2, _lastPresentedItemEventIdentifier: P3, _ubiquityAttributes: P4, _options: P5, _responses: P6): R;
     grantAccessClaim_withReply<R = void, P0 = NSFileAccessClaim, P1 = CDUnknownBlockType>(_grantAccessClaim: P0, _withReply: P1): R;
   }
-  namespace classes {
-    export interface NSFileAccessArbiterXPCInterfaceProtocol<T = any> extends NSFileAccessArbiterProtocol {  }
+  namespace NSFileAccessArbiterXPCInterfaceProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSFileAccessArbiterProtocol {}
   }
 }

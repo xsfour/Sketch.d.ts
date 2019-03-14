@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSActionBinder<T = any> extends NSEditorBinder {
+  export interface NSActionBinder<T0 = void, T1 = void, T2 = void> extends NSEditorBinder {
     performAction<R = void, P0 = unknown>(_performAction: P0): R;
     _performActionWithCommitEditing<R = boolean>(): R;
     _performActionWithCommitEditing_didCommit_contextInfo<R = void, P0 = unknown, P1 = boolean, P2 = unknown>(__performActionWithCommitEditing: P0, _didCommit: P1, _contextInfo: P2): R;
@@ -20,8 +20,8 @@ declare namespace cocoa {
     _targetBindingBound<R = boolean>(): R;
     _argumentBindingCount<R = number>(): R;
   }
-  namespace classes {
-    export interface NSActionBinder<T = any> extends NSEditorBinder {
+  namespace NSActionBinder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSEditorBinder {
       alloc<R = NSActionBinder>(): R;
       new: <R = NSActionBinder>() => R;
       _enumeratedArgumentBindings<R = unknown, P0 = number>(__enumeratedArgumentBindings: P0): R;
@@ -31,4 +31,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSActionBinder: cocoa.classes.NSActionBinder;
+declare const NSActionBinder: cocoa.NSActionBinder.CLASS;

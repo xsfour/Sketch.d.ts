@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSBitmapImageRep<T = any> extends NSImageRep, NSSecureCodingProtocol {
+  export interface NSBitmapImageRep<T0 = void, T1 = void, T2 = void> extends NSImageRep, NSSecureCodingProtocol {
     colorizeByMappingGray_toColor_blackMapping_whiteMapping<R = void, P0 = number, P1 = unknown, P2 = unknown, P3 = unknown>(_colorizeByMappingGray: P0, _toColor: P1, _blackMapping: P2, _whiteMapping: P3): R;
     TIFFRepresentationUsingCompression_factor<R = unknown, P0 = number, P1 = number>(_TIFFRepresentationUsingCompression: P0, _factor: P1): R;
     setCompression_factor<R = void, P0 = number, P1 = number>(_setCompression: P0, _factor: P1): R;
@@ -69,8 +69,9 @@ declare namespace cocoa {
     numberOfPlanes<R = number>(): R;
     samplesPerPixel<R = number>(): R;
     planar<R = boolean>(): R;
-    // + NSBitmapImageRep(Alpha,CHBitmapRepAdditions,MSSmallerArchiving):
+    // + NSBitmapImageRep(Alpha): 
     repSupportsAlpha<R = boolean>(): R;
+    // + NSBitmapImageRep(CHBitmapRepAdditions): 
     hasTransparentPixels<R = boolean>(): R;
     bitSafeBitmapImageRep<R = unknown>(): R;
     bitmapImageRepByFlippingVertical<R = unknown>(): R;
@@ -80,10 +81,11 @@ declare namespace cocoa {
     PNGRepresentationWithInterlaced_includeAlpha<R = unknown, P0 = boolean, P1 = boolean>(_PNGRepresentationWithInterlaced: P0, _includeAlpha: P1): R;
     PNGRepresentationWithInterlaced<R = unknown, P0 = boolean>(_PNGRepresentationWithInterlaced: P0): R;
     JPGRepresentationWithCompression_progressive<R = unknown, P0 = number, P1 = boolean>(_JPGRepresentationWithCompression: P0, _progressive: P1): R;
+    // + NSBitmapImageRep(MSSmallerArchiving): 
     dataForArchiving<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSBitmapImageRep<T = any> extends NSImageRep, NSSecureCodingProtocol {
+  namespace NSBitmapImageRep {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSImageRep, NSSecureCodingProtocol {
       alloc<R = NSBitmapImageRep>(): R;
       new: <R = NSBitmapImageRep>() => R;
       TIFFRepresentationOfImageRepsInArray_usingCompression_factor<R = unknown, P0 = unknown, P1 = number, P2 = number>(_TIFFRepresentationOfImageRepsInArray: P0, _usingCompression: P1, _factor: P2): R;
@@ -104,11 +106,11 @@ declare namespace cocoa {
       _imagesWithData_hfsFileType_extension_zone_expandImageContentNow<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = _NSZone, P4 = boolean>(__imagesWithData: P0, _hfsFileType: P1, _extension: P2, _zone: P3, _expandImageContentNow: P4): R;
       representationOfImageRepsInArray_usingType_properties<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_representationOfImageRepsInArray: P0, _usingType: P1, _properties: P2): R;
       _setEnableFlippedImageFix<R = void, P0 = boolean>(__setEnableFlippedImageFix: P0): R;
-      // + NSBitmapImageRep(Alpha,CHBitmapRepAdditions,MSSmallerArchiving):
+      // + NSBitmapImageRep(CHBitmapRepAdditions): 
       bitmapImageRepWithSize_pixelSize_flags_colorSpace_drawingBlock<R = unknown, P0 = CGSize, P1 = CGSize, P2 = number, P3 = unknown, P4 = CDUnknownBlockType>(_bitmapImageRepWithSize: P0, _pixelSize: P1, _flags: P2, _colorSpace: P3, _drawingBlock: P4): R;
       bitmapImageRepWithSize_flags_colorSpace_drawingBlock<R = unknown, P0 = CGSize, P1 = number, P2 = unknown, P3 = CDUnknownBlockType>(_bitmapImageRepWithSize: P0, _flags: P1, _colorSpace: P2, _drawingBlock: P3): R;
     }
   }
 }
 
-declare const NSBitmapImageRep: cocoa.classes.NSBitmapImageRep;
+declare const NSBitmapImageRep: cocoa.NSBitmapImageRep.CLASS;

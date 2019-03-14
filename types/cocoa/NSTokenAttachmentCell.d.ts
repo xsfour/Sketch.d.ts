@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTokenAttachmentCell<T = any> extends NSTextAttachmentCell {
+  export interface NSTokenAttachmentCell<T0 = void, T1 = void, T2 = void> extends NSTextAttachmentCell {
     _immediateActionAnimationControllerForTokenAttachment_inTextView<R = unknown, P0 = unknown, P1 = unknown>(__immediateActionAnimationControllerForTokenAttachment: P0, _inTextView: P1): R;
     pullDownTrackingRectForBounds<R = CGRect, P0 = CGRect>(_pullDownTrackingRectForBounds: P0): R;
     isEnabled<R = boolean>(): R;
@@ -35,8 +35,8 @@ declare namespace cocoa {
     neverShowSeparator<R = boolean>(): R;
     alwaysShowBackground<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSTokenAttachmentCell<T = any> extends NSTextAttachmentCell {
+  namespace NSTokenAttachmentCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTextAttachmentCell {
       alloc<R = NSTokenAttachmentCell>(): R;
       new: <R = NSTokenAttachmentCell>() => R;
       _getLineSpacing_forTokenStyle<R = boolean, P0 = number, P1 = number>(__getLineSpacing: P0, _forTokenStyle: P1): R;
@@ -47,4 +47,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTokenAttachmentCell: cocoa.classes.NSTokenAttachmentCell;
+declare const NSTokenAttachmentCell: cocoa.NSTokenAttachmentCell.CLASS;

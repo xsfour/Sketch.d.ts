@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSBindingTree<T = any> {}
-  namespace classes {
-    export interface _NSBindingTree<T = any> {  }
+  export interface _NSBindingTree<T0 = void, T1 = void, T2 = void> {}
+  namespace _NSBindingTree {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSButton<T = any> extends NSControl, _NSAlertSensitiveViewProtocol, NSUserInterfaceValidationsProtocol, NSAccessibilityButtonProtocol, NSUserInterfaceCompressionProtocol {
+  export interface NSButton<T0 = void, T1 = void, T2 = void> extends NSControl, _NSAlertSensitiveViewProtocol, NSUserInterfaceValidationsProtocol, NSAccessibilityButtonProtocol, NSUserInterfaceCompressionProtocol {
     _preferredAppearance<R = unknown>(): R;
     _supportedOptionsFromPrioritizedOptions<R = unknown, P0 = unknown>(__supportedOptionsFromPrioritizedOptions: P0): R;
     touchBarHitTestInsets<R = NSEdgeInsets>(): R;
@@ -87,11 +87,11 @@ declare namespace cocoa {
     description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
-    // + NSButton(NextKeyViewSupport):
+    // + NSButton(NextKeyViewSupport): 
     canBeKeyView<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSButton<T = any> extends NSControl, _NSAlertSensitiveViewProtocol, NSUserInterfaceValidationsProtocol, NSAccessibilityButtonProtocol, NSUserInterfaceCompressionProtocol {
+  namespace NSButton {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSControl, _NSAlertSensitiveViewProtocol, NSUserInterfaceValidationsProtocol, NSAccessibilityButtonProtocol, NSUserInterfaceCompressionProtocol {
       alloc<R = NSButton>(): R;
       new: <R = NSButton>() => R;
       radioButtonWithTitle_target_action<R = unknown, P0 = unknown, P1 = unknown, P2 = string>(_radioButtonWithTitle: P0, _target: P1, _action: P2): R;
@@ -100,10 +100,9 @@ declare namespace cocoa {
       buttonWithImage_target_action<R = unknown, P0 = unknown, P1 = unknown, P2 = string>(_buttonWithImage: P0, _target: P1, _action: P2): R;
       buttonWithTitle_target_action<R = unknown, P0 = unknown, P1 = unknown, P2 = string>(_buttonWithTitle: P0, _target: P1, _action: P2): R;
       _buttonWithTitle_image_target_action<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = string>(__buttonWithTitle: P0, _image: P1, _target: P2, _action: P3): R;
-      // + NSButton(NextKeyViewSupport):
-      
-    }
+  
+  }
   }
 }
 
-declare const NSButton: cocoa.classes.NSButton;
+declare const NSButton: cocoa.NSButton.CLASS;

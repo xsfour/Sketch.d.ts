@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSLayerListBadgeConfigurator<T = any> extends NSObject, MSInterfaceImageOwnerProtocol, NSMenuDelegateProtocol, BCOutlineViewPopupConfiguratorProtocol {
+  export interface MSLayerListBadgeConfigurator<T0 = void, T1 = void, T2 = void> extends NSObject, MSInterfaceImageOwnerProtocol, NSMenuDelegateProtocol, BCOutlineViewPopupConfiguratorProtocol {
     cxx_destruct<R = void>(): R;
     onBooleanOperation<R = void, P0 = unknown>(_onBooleanOperation: P0): R;
     updateImagesOnMenu_withSelectedItem<R = void, P0 = unknown, P1 = unknown>(_updateImagesOnMenu: P0, _withSelectedItem: P1): R;
@@ -22,8 +22,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSLayerListBadgeConfigurator<T = any> extends NSObject, MSInterfaceImageOwnerProtocol, NSMenuDelegateProtocol, BCOutlineViewPopupConfiguratorProtocol {
+  namespace MSLayerListBadgeConfigurator {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, MSInterfaceImageOwnerProtocol, NSMenuDelegateProtocol, BCOutlineViewPopupConfiguratorProtocol {
       alloc<R = MSLayerListBadgeConfigurator>(): R;
       new: <R = MSLayerListBadgeConfigurator>() => R;
       configuratorWithLayer<R = unknown, P0 = unknown>(_configuratorWithLayer: P0): R;
@@ -31,4 +31,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSLayerListBadgeConfigurator: cocoa.classes.MSLayerListBadgeConfigurator;
+declare const MSLayerListBadgeConfigurator: cocoa.MSLayerListBadgeConfigurator.CLASS;

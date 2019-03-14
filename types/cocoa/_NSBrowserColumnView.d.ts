@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSBrowserColumnView<T = any> extends NSScrollView {
+  export interface _NSBrowserColumnView<T0 = void, T1 = void, T2 = void> extends NSScrollView {
     _markedWidthDiffersFromCurrentWidth<R = boolean>(): R;
     _clearMarkedWidth<R = void>(): R;
     _markWidth<R = void>(): R;
@@ -19,8 +19,8 @@ declare namespace cocoa {
     _drawsColumnDividerLine<R = boolean>(): R;
     _columnDividerLineRect<R = CGRect>(): R;
   }
-  namespace classes {
-    export interface _NSBrowserColumnView<T = any> extends NSScrollView {
+  namespace _NSBrowserColumnView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSScrollView {
       alloc<R = _NSBrowserColumnView>(): R;
       new: <R = _NSBrowserColumnView>() => R;
       columnResizeButtonImage<R = unknown>(): R;

@@ -1,7 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPluginsPreferenceTableCellView<T = any> extends NSTableCellView {
+  export interface MSPluginsPreferenceTableCellView<T0 = void, T1 = void, T2 = void> extends NSTableCellView {
+    cxx_destruct<R = void>(): R;
     setObjectValue<R = void, P0 = unknown>(_setObjectValue: P0): R;
     tableCellWidthConstraint<R = NSLayoutConstraint>(): R;
     setTableCellWidthConstraint<R = void, P0 = NSLayoutConstraint>(_v: P0): R;
@@ -24,12 +25,12 @@ declare namespace cocoa {
     updateAvailableContainer<R = NSView>(): R;
     setUpdateAvailableContainer<R = void, P0 = NSView>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSPluginsPreferenceTableCellView<T = any> extends NSTableCellView {
+  namespace MSPluginsPreferenceTableCellView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTableCellView {
       alloc<R = MSPluginsPreferenceTableCellView>(): R;
       new: <R = MSPluginsPreferenceTableCellView>() => R;
     }
   }
 }
 
-declare const MSPluginsPreferenceTableCellView: cocoa.classes.MSPluginsPreferenceTableCellView;
+declare const MSPluginsPreferenceTableCellView: cocoa.MSPluginsPreferenceTableCellView.CLASS;

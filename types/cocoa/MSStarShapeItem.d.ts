@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSStarShapeItem<T = any> extends MSCustomShapeItem, MSInspectorMathValueAdaptorDelegateProtocol {
+  export interface MSStarShapeItem<T0 = void, T1 = void, T2 = void> extends MSCustomShapeItem, MSInspectorMathValueAdaptorDelegateProtocol {
     pointsAdaptor<R = MSMathInspectorValueAdaptor>(): R;
     setPointsAdaptor<R = void, P0 = MSMathInspectorValueAdaptor>(_v: P0): R;
     radiusAdaptor<R = MSMathInspectorValueAdaptor>(): R;
@@ -17,12 +17,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSStarShapeItem<T = any> extends MSCustomShapeItem, MSInspectorMathValueAdaptorDelegateProtocol {
+  namespace MSStarShapeItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSCustomShapeItem, MSInspectorMathValueAdaptorDelegateProtocol {
       alloc<R = MSStarShapeItem>(): R;
       new: <R = MSStarShapeItem>() => R;
     }
   }
 }
 
-declare const MSStarShapeItem: cocoa.classes.MSStarShapeItem;
+declare const MSStarShapeItem: cocoa.MSStarShapeItem.CLASS;

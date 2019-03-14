@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSFunctionRowCustomizationDragTargetDelegate<T = any> {}
-  namespace classes {
-    export interface _NSFunctionRowCustomizationDragTargetDelegate<T = any> {  }
+  export interface _NSFunctionRowCustomizationDragTargetDelegate<T0 = void, T1 = void, T2 = void> {}
+  namespace _NSFunctionRowCustomizationDragTargetDelegate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

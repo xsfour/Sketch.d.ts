@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSThemeDocumentButton<T = any> extends NSDocumentDragButton {
+  export interface NSThemeDocumentButton<T0 = void, T1 = void, T2 = void> extends NSDocumentDragButton {
     _invalidateDocumentIcon<R = void>(): R;
     representedURL<R = unknown>(): R;
     setRepresentedURL<R = void, P0 = unknown>(_setRepresentedURL: P0): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     _containingThemeFrameFromView<R = unknown, P0 = unknown>(__containingThemeFrameFromView: P0): R;
     menuLocationForLayoutDirection<R = CGPoint, P0 = boolean>(_menuLocationForLayoutDirection: P0): R;
   }
-  namespace classes {
-    export interface NSThemeDocumentButton<T = any> extends NSDocumentDragButton {
+  namespace NSThemeDocumentButton {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSDocumentDragButton {
       alloc<R = NSThemeDocumentButton>(): R;
       new: <R = NSThemeDocumentButton>() => R;
     }
   }
 }
 
-declare const NSThemeDocumentButton: cocoa.classes.NSThemeDocumentButton;
+declare const NSThemeDocumentButton: cocoa.NSThemeDocumentButton.CLASS;

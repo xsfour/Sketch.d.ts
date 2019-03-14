@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSecureTextStorage<T = any> extends NSTextStorage {
+  export interface NSSecureTextStorage<T0 = void, T1 = void, T2 = void> extends NSTextStorage {
     nextWordFromIndex_forward<R = number, P0 = number, P1 = boolean>(_nextWordFromIndex: P0, _forward: P1): R;
     doubleClickAtIndex<R = _NSRange, P0 = number>(_doubleClickAtIndex: P0): R;
     lineBreakByHyphenatingBeforeIndex_withinRange<R = number, P0 = number, P1 = _NSRange>(_lineBreakByHyphenatingBeforeIndex: P0, _withinRange: P1): R;
@@ -24,11 +24,11 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     init<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSSecureTextStorage<T = any> extends NSTextStorage {
+  namespace NSSecureTextStorage {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTextStorage {
       initialize<R = void>(): R;
     }
   }
 }
 
-declare const NSSecureTextStorage: cocoa.classes.NSSecureTextStorage;
+declare const NSSecureTextStorage: cocoa.NSSecureTextStorage.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSnappableProtocol<T = any> extends NSObjectProtocol {
+  export interface MSSnappableProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     textCorrectionTransform<R = CGAffineTransform>(): R;
     concatAncestorsAndSelfTransforms<R = void>(): R;
     refreshOverlayWithAbsoluteMargins<R = void, P0 = CGSize>(_refreshOverlayWithAbsoluteMargins: P0): R;
@@ -25,7 +25,7 @@ declare namespace cocoa {
     coordinateSpace<R = MSLayer>(): R;
     rectForSnapping<R = CGRect>(): R;
   }
-  namespace classes {
-    export interface MSSnappableProtocol<T = any> extends NSObjectProtocol {  }
+  namespace MSSnappableProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

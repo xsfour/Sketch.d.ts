@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSForeignObject<T = any> extends _MSForeignObject {
+  export interface MSForeignObject<T0 = void, T1 = void, T2 = void> extends _MSForeignObject {
     masterFromDocument<R = unknown, P0 = unknown>(_masterFromDocument: P0): R;
     collectionInDocument<R = unknown, P0 = unknown>(_collectionInDocument: P0): R;
     unlinkFromRemote<R = unknown>(): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     localObject<R = MSModelObject>(): R;
     setLocalObject<R = void, P0 = MSModelObject>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSForeignObject<T = any> extends _MSForeignObject {
+  namespace MSForeignObject {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSForeignObject {
       alloc<R = MSForeignObject>(): R;
       new: <R = MSForeignObject>() => R;
     }
   }
 }
 
-declare const MSForeignObject: cocoa.classes.MSForeignObject;
+declare const MSForeignObject: cocoa.MSForeignObject.CLASS;

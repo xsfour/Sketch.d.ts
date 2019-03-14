@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFileAccessClaim<T = any> extends NSObject, NSSecureCodingProtocol {
+  export interface NSFileAccessClaim<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol {
     shouldCancelInsteadOfWaiting<R = boolean>(): R;
     disavowed<R = void>(): R;
     finished<R = void>(): R;
@@ -69,8 +69,8 @@ declare namespace cocoa {
     claimerWaiter<R = OS_dispatch_semaphore>(): R;
     allURLs<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface NSFileAccessClaim<T = any> extends NSObject, NSSecureCodingProtocol {
+  namespace NSFileAccessClaim {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol {
       alloc<R = NSFileAccessClaim>(): R;
       new: <R = NSFileAccessClaim>() => R;
       canWritingItemAtLocation_options_safelyOverlapWritingItemAtLocation_options<R = boolean, P0 = unknown, P1 = number, P2 = unknown, P3 = number>(_canWritingItemAtLocation: P0, _options: P1, _safelyOverlapWritingItemAtLocation: P2, _options1: P3): R;
@@ -79,4 +79,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSFileAccessClaim: cocoa.classes.NSFileAccessClaim;
+declare const NSFileAccessClaim: cocoa.NSFileAccessClaim.CLASS;

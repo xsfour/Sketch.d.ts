@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSLayerListLayerExtensions<T = any> {}
-  namespace classes {
-    export interface MSLayerListLayerExtensions<T = any> {  }
+  export interface MSLayerListLayerExtensions<T0 = void, T1 = void, T2 = void> {}
+  namespace MSLayerListLayerExtensions {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const MSLayerListLayerExtensions: cocoa.classes.MSLayerListLayerExtensions;
+declare const MSLayerListLayerExtensions: cocoa.MSLayerListLayerExtensions.CLASS;

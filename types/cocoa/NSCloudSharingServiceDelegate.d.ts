@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCloudSharingServiceDelegate<T = any> {}
-  namespace classes {
-    export interface NSCloudSharingServiceDelegate<T = any> {  }
+  export interface NSCloudSharingServiceDelegate<T0 = void, T1 = void, T2 = void> {}
+  namespace NSCloudSharingServiceDelegate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSCloudSharingServiceDelegate: cocoa.classes.NSCloudSharingServiceDelegate;
+declare const NSCloudSharingServiceDelegate: cocoa.NSCloudSharingServiceDelegate.CLASS;

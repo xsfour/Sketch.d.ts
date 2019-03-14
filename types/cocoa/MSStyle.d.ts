@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSStyle<T = any> extends _MSStyle, MSSharedObjectInstanceProtocol, NSCopyingProtocol {
+  export interface MSStyle<T0 = void, T1 = void, T2 = void> extends _MSStyle, MSSharedObjectInstanceProtocol, NSCopyingProtocol {
     addStylePartOfType<R = unknown, P0 = number>(_addStylePartOfType: P0): R;
     stylePartsOfType<R = unknown, P0 = number>(_stylePartsOfType: P0): R;
     hasTextStyle<R = boolean>(): R;
@@ -44,12 +44,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSStyle<T = any> extends _MSStyle, MSSharedObjectInstanceProtocol, NSCopyingProtocol {
+  namespace MSStyle {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSStyle, MSSharedObjectInstanceProtocol, NSCopyingProtocol {
       alloc<R = MSStyle>(): R;
       new: <R = MSStyle>() => R;
     }
   }
 }
 
-declare const MSStyle: cocoa.classes.MSStyle;
+declare const MSStyle: cocoa.MSStyle.CLASS;

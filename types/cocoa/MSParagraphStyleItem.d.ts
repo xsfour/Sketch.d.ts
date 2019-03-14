@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSParagraphStyleItem<T = any> extends MSInspectorItem {
+  export interface MSParagraphStyleItem<T0 = void, T1 = void, T2 = void> extends MSInspectorItem {
     firstOccurrenceOfAttributeWithName<R = unknown, P0 = unknown>(_firstOccurrenceOfAttributeWithName: P0): R;
     changeFontPropertiesOfTextObjectsInBlock<R = void, P0 = CDUnknownBlockType>(_changeFontPropertiesOfTextObjectsInBlock: P0): R;
     transformPopUpAction<R = void, P0 = unknown>(_transformPopUpAction: P0): R;
@@ -18,12 +18,12 @@ declare namespace cocoa {
     textItem<R = MSTextLayerItem>(): R;
     setTextItem<R = void, P0 = MSTextLayerItem>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSParagraphStyleItem<T = any> extends MSInspectorItem {
+  namespace MSParagraphStyleItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSInspectorItem {
       alloc<R = MSParagraphStyleItem>(): R;
       new: <R = MSParagraphStyleItem>() => R;
     }
   }
 }
 
-declare const MSParagraphStyleItem: cocoa.classes.MSParagraphStyleItem;
+declare const MSParagraphStyleItem: cocoa.MSParagraphStyleItem.CLASS;

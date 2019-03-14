@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPositionalSpecifier<T = any> extends NSObject {
+  export interface NSPositionalSpecifier<T0 = void, T1 = void, T2 = void> extends NSObject {
     description<R = unknown>(): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
@@ -24,8 +24,8 @@ declare namespace cocoa {
     objectSpecifier<R = NSScriptObjectSpecifier>(): R;
     position<R = number>(): R;
   }
-  namespace classes {
-    export interface NSPositionalSpecifier<T = any> extends NSObject {
+  namespace NSPositionalSpecifier {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSPositionalSpecifier>(): R;
       new: <R = NSPositionalSpecifier>() => R;
       _describedClass_isSubclassOfClass<R = boolean, P0 = unknown, P1 = unknown>(__describedClass: P0, _isSubclassOfClass: P1): R;
@@ -35,4 +35,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPositionalSpecifier: cocoa.classes.NSPositionalSpecifier;
+declare const NSPositionalSpecifier: cocoa.NSPositionalSpecifier.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSTheme<T = any> extends NSObject {
+  export interface MSTheme<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     changeApplicationAppearanceInBlock<R = void, P0 = CDUnknownBlockType>(_changeApplicationAppearanceInBlock: P0): R;
     resolvedNamesForBaseName_options<R = unknown, P0 = unknown, P1 = number>(_resolvedNamesForBaseName: P0, _options: P1): R;
@@ -130,8 +130,8 @@ declare namespace cocoa {
     inspectorAlignmentDisabledStrutColor<R = NSColor>(): R;
     inspectorAccentColor<R = NSColor>(): R;
   }
-  namespace classes {
-    export interface MSTheme<T = any> extends NSObject {
+  namespace MSTheme {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSTheme>(): R;
       new: <R = MSTheme>() => R;
       sharedTheme<R = unknown>(): R;
@@ -140,4 +140,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSTheme: cocoa.classes.MSTheme;
+declare const MSTheme: cocoa.MSTheme.CLASS;

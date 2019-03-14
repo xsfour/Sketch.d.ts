@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSGestureRecognizer<T = any> extends NSObject, NSCodingProtocol {
+  export interface NSGestureRecognizer<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
     locationInView<R = CGPoint, P0 = unknown>(_locationInView: P0): R;
     _affectedByGesture<R = boolean, P0 = unknown>(__affectedByGesture: P0): R;
     _invalidate<R = void>(): R;
@@ -144,8 +144,8 @@ declare namespace cocoa {
     target<R = unknown>(): R;
     setTarget<R = void, P0 = unknown>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSGestureRecognizer<T = any> extends NSObject, NSCodingProtocol {
+  namespace NSGestureRecognizer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
       alloc<R = NSGestureRecognizer>(): R;
       new: <R = NSGestureRecognizer>() => R;
       _mostCompatibleRecognizerFromConfigured<R = unknown, P0 = unknown>(__mostCompatibleRecognizerFromConfigured: P0): R;
@@ -153,4 +153,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSGestureRecognizer: cocoa.classes.NSGestureRecognizer;
+declare const NSGestureRecognizer: cocoa.NSGestureRecognizer.CLASS;

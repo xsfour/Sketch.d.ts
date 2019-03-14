@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAbsoluteRect<T = any> extends BCRect {
+  export interface MSAbsoluteRect<T0 = void, T1 = void, T2 = void> extends BCRect {
     cxx_destruct<R = void>(): R;
     setNilValueForKey<R = void, P0 = unknown>(_setNilValueForKey: P0): R;
     setRect<R = void, P0 = CGRect>(_setRect: P0): R;
@@ -31,9 +31,9 @@ declare namespace cocoa {
     rulerX<R = number>(): R;
     setRulerX<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSAbsoluteRect<T = any> extends BCRect {  }
+  namespace MSAbsoluteRect {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends BCRect {}
   }
 }
 
-declare const MSAbsoluteRect: cocoa.classes.MSAbsoluteRect;
+declare const MSAbsoluteRect: cocoa.MSAbsoluteRect.CLASS;

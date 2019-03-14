@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCJSONZippedEncoder<T = any> extends BCJSONEncoder {
+  export interface BCJSONZippedEncoder<T0 = void, T1 = void, T2 = void> extends BCJSONEncoder {
     cxx_destruct<R = void>(): R;
     finishWriting<R = void>(): R;
     writeData_length<R = void, P0 = void, P1 = number>(_writeData: P0, _length: P1): R;
@@ -22,11 +22,11 @@ declare namespace cocoa {
     zip<R = void>(): R;
     setZip<R = void, P0 = void>(_v: P0): R;
   }
-  namespace classes {
-    export interface BCJSONZippedEncoder<T = any> extends BCJSONEncoder {
+  namespace BCJSONZippedEncoder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends BCJSONEncoder {
       zipEncoderForWritingAtURL<R = unknown, P0 = unknown>(_zipEncoderForWritingAtURL: P0): R;
     }
   }
 }
 
-declare const BCJSONZippedEncoder: cocoa.classes.BCJSONZippedEncoder;
+declare const BCJSONZippedEncoder: cocoa.BCJSONZippedEncoder.CLASS;

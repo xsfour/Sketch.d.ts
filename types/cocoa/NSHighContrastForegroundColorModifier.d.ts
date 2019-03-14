@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSHighContrastForegroundColorModifier<T = any> extends NSObject, NSDynamicColorModifierProtocol {
+  export interface NSHighContrastForegroundColorModifier<T0 = void, T1 = void, T2 = void> extends NSObject, NSDynamicColorModifierProtocol {
     initWithLuminanceThreshold<R = unknown, P0 = number>(_initWithLuminanceThreshold: P0): R;
     luminanceThreshold<R = number>(): R;
     setLuminanceThreshold<R = void, P0 = number>(_v: P0): R;
@@ -10,12 +10,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSHighContrastForegroundColorModifier<T = any> extends NSObject, NSDynamicColorModifierProtocol {
+  namespace NSHighContrastForegroundColorModifier {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSDynamicColorModifierProtocol {
       alloc<R = NSHighContrastForegroundColorModifier>(): R;
       new: <R = NSHighContrastForegroundColorModifier>() => R;
     }
   }
 }
 
-declare const NSHighContrastForegroundColorModifier: cocoa.classes.NSHighContrastForegroundColorModifier;
+declare const NSHighContrastForegroundColorModifier: cocoa.NSHighContrastForegroundColorModifier.CLASS;

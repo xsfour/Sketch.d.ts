@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSCornerRadiusInspectorValueAdaptorContext<T = any> extends NSObject {
+  export interface MSCornerRadiusInspectorValueAdaptorContext<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     componentStringWithMathValueForModel<R = unknown, P0 = unknown>(_componentStringWithMathValueForModel: P0): R;
     value<R = NSNumber>(): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     mode<R = number>(): R;
     setMode<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSCornerRadiusInspectorValueAdaptorContext<T = any> extends NSObject {
+  namespace MSCornerRadiusInspectorValueAdaptorContext {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSCornerRadiusInspectorValueAdaptorContext>(): R;
       new: <R = MSCornerRadiusInspectorValueAdaptorContext>() => R;
     }
   }
 }
 
-declare const MSCornerRadiusInspectorValueAdaptorContext: cocoa.classes.MSCornerRadiusInspectorValueAdaptorContext;
+declare const MSCornerRadiusInspectorValueAdaptorContext: cocoa.MSCornerRadiusInspectorValueAdaptorContext.CLASS;

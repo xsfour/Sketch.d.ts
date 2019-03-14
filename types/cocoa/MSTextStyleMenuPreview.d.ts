@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSTextStyleMenuPreview<T = any> extends NSObject {}
-  namespace classes {
-    export interface MSTextStyleMenuPreview<T = any> extends NSObject {
+  export interface MSTextStyleMenuPreview<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace MSTextStyleMenuPreview {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSTextStyleMenuPreview>(): R;
       new: <R = MSTextStyleMenuPreview>() => R;
       ensureAttributes_areVisibleAgainstColor<R = unknown, P0 = unknown, P1 = unknown>(_ensureAttributes: P0, _areVisibleAgainstColor: P1): R;
@@ -17,4 +17,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSTextStyleMenuPreview: cocoa.classes.MSTextStyleMenuPreview;
+declare const MSTextStyleMenuPreview: cocoa.MSTextStyleMenuPreview.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSOverrideMapping<T = any> extends NSObject {
+  export interface MSOverrideMapping<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     compareTo<R = number, P0 = unknown>(_compareTo: P0): R;
     removeOverridePoint<R = void, P0 = unknown>(_removeOverridePoint: P0): R;
@@ -15,8 +15,8 @@ declare namespace cocoa {
     setScore<R = void, P0 = number>(_v: P0): R;
     oldOverridePoint<R = MSOverridePoint>(): R;
   }
-  namespace classes {
-    export interface MSOverrideMapping<T = any> extends NSObject {
+  namespace MSOverrideMapping {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSOverrideMapping>(): R;
       new: <R = MSOverrideMapping>() => R;
       consolidateAndFindNextMappingFrom<R = unknown, P0 = unknown>(_consolidateAndFindNextMappingFrom: P0): R;
@@ -25,4 +25,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSOverrideMapping: cocoa.classes.MSOverrideMapping;
+declare const MSOverrideMapping: cocoa.MSOverrideMapping.CLASS;

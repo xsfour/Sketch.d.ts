@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSOutlineViewDataSourceProtocol<T = any> extends NSObjectProtocol {
+  export interface NSOutlineViewDataSourceProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     outlineView_namesOfPromisedFilesDroppedAtDestination_forDraggedItems<R = NSArray, P0 = NSOutlineView, P1 = NSURL, P2 = NSArray>(_outlineView: P0, _namesOfPromisedFilesDroppedAtDestination: P1, _forDraggedItems: P2): R;
     outlineView_acceptDrop_item_childIndex<R = boolean, P0 = NSOutlineView, P1 = NSDraggingInfo, P2 = unknown, P3 = number>(_outlineView: P0, _acceptDrop: P1, _item: P2, _childIndex: P3): R;
     outlineView_validateDrop_proposedItem_proposedChildIndex<R = number, P0 = NSOutlineView, P1 = NSDraggingInfo, P2 = unknown, P3 = number>(_outlineView: P0, _validateDrop: P1, _proposedItem: P2, _proposedChildIndex: P3): R;
@@ -19,7 +19,7 @@ declare namespace cocoa {
     outlineView_child_ofItem<R = unknown, P0 = NSOutlineView, P1 = number, P2 = unknown>(_outlineView: P0, _child: P1, _ofItem: P2): R;
     outlineView_numberOfChildrenOfItem<R = number, P0 = NSOutlineView, P1 = unknown>(_outlineView: P0, _numberOfChildrenOfItem: P1): R;
   }
-  namespace classes {
-    export interface NSOutlineViewDataSourceProtocol<T = any> extends NSObjectProtocol {  }
+  namespace NSOutlineViewDataSourceProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

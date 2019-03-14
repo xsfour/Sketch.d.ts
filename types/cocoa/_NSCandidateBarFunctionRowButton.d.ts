@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSCandidateBarFunctionRowButton<T = any> extends NSButton, _NSCandidateBarFunctionRowSegment_AccessibilityDelegateProtocol {
+  export interface _NSCandidateBarFunctionRowButton<T0 = void, T1 = void, T2 = void> extends NSButton, _NSCandidateBarFunctionRowSegment_AccessibilityDelegateProtocol {
     convertLocation_toSegmentType_index<R = void, P0 = CGPoint, P1 = number, P2 = number>(_convertLocation: P0, _toSegmentType: P1, _index: P2): R;
     setFrame<R = void, P0 = CGRect>(_setFrame: P0): R;
     segments<R = unknown>(): R;
@@ -31,8 +31,8 @@ declare namespace cocoa {
     hasSplitRight<R = boolean>(): R;
     hasContent<R = boolean>(): R;
   }
-  namespace classes {
-    export interface _NSCandidateBarFunctionRowButton<T = any> extends NSButton, _NSCandidateBarFunctionRowSegment_AccessibilityDelegateProtocol {
+  namespace _NSCandidateBarFunctionRowButton {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSButton, _NSCandidateBarFunctionRowSegment_AccessibilityDelegateProtocol {
       alloc<R = _NSCandidateBarFunctionRowButton>(): R;
       new: <R = _NSCandidateBarFunctionRowButton>() => R;
     }

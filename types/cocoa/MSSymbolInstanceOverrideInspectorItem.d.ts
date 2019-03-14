@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSymbolInstanceOverrideInspectorItem<T = any> extends MSOverrideInspectorItem {
+  export interface MSSymbolInstanceOverrideInspectorItem<T0 = void, T1 = void, T2 = void> extends MSOverrideInspectorItem {
     libraryControllerDidChange<R = void, P0 = unknown>(_libraryControllerDidChange: P0): R;
     validateMenuItem<R = boolean, P0 = unknown>(_validateMenuItem: P0): R;
     valueFromSymbolMasterReference<R = unknown, P0 = unknown>(_valueFromSymbolMasterReference: P0): R;
@@ -22,12 +22,12 @@ declare namespace cocoa {
     originalMasterID<R = NSString>(): R;
     currentMasterID<R = NSString>(): R;
   }
-  namespace classes {
-    export interface MSSymbolInstanceOverrideInspectorItem<T = any> extends MSOverrideInspectorItem {
+  namespace MSSymbolInstanceOverrideInspectorItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSOverrideInspectorItem {
       alloc<R = MSSymbolInstanceOverrideInspectorItem>(): R;
       new: <R = MSSymbolInstanceOverrideInspectorItem>() => R;
     }
   }
 }
 
-declare const MSSymbolInstanceOverrideInspectorItem: cocoa.classes.MSSymbolInstanceOverrideInspectorItem;
+declare const MSSymbolInstanceOverrideInspectorItem: cocoa.MSSymbolInstanceOverrideInspectorItem.CLASS;

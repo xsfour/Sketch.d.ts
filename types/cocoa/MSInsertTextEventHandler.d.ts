@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInsertTextEventHandler<T = any> extends MSEventHandler {
+  export interface MSInsertTextEventHandler<T0 = void, T1 = void, T2 = void> extends MSEventHandler {
     rectForInsertingDirectly<R = CGRect, P0 = CGPoint>(_rectForInsertingDirectly: P0): R;
     selectTextLayerAndEdit<R = void, P0 = unknown>(_selectTextLayerAndEdit: P0): R;
     textLayerAtPoint_zoomValue<R = unknown, P0 = CGPoint, P1 = number>(_textLayerAtPoint: P0, _zoomValue: P1): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     textLayer<R = MSTextLayer>(): R;
     setTextLayer<R = void, P0 = MSTextLayer>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSInsertTextEventHandler<T = any> extends MSEventHandler {
+  namespace MSInsertTextEventHandler {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSEventHandler {
       alloc<R = MSInsertTextEventHandler>(): R;
       new: <R = MSInsertTextEventHandler>() => R;
     }
   }
 }
 
-declare const MSInsertTextEventHandler: cocoa.classes.MSInsertTextEventHandler;
+declare const MSInsertTextEventHandler: cocoa.MSInsertTextEventHandler.CLASS;

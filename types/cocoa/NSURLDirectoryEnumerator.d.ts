@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSURLDirectoryEnumerator<T = any> extends NSDirectoryEnumerator {
+  export interface NSURLDirectoryEnumerator<T0 = void, T1 = void, T2 = void> extends NSDirectoryEnumerator {
     dealloc<R = void>(): R;
     directoryAttributes<R = unknown>(): R;
     fileAttributes<R = unknown>(): R;
@@ -10,9 +10,9 @@ declare namespace cocoa {
     errorHandler<R = CDUnknownBlockType>(): R;
     setErrorHandler<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSURLDirectoryEnumerator<T = any> extends NSDirectoryEnumerator {  }
+  namespace NSURLDirectoryEnumerator {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSDirectoryEnumerator {}
   }
 }
 
-declare const NSURLDirectoryEnumerator: cocoa.classes.NSURLDirectoryEnumerator;
+declare const NSURLDirectoryEnumerator: cocoa.NSURLDirectoryEnumerator.CLASS;

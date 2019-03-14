@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSliderTickMarks<T = any> extends NSView {
+  export interface NSSliderTickMarks<T0 = void, T1 = void, T2 = void> extends NSView {
     cxx_destruct<R = void>(): R;
     isFlipped<R = boolean>(): R;
     drawingState<R = unknown>(): R;
@@ -9,12 +9,12 @@ declare namespace cocoa {
     delegate<R = NSSliderTickMarksDelegate>(): R;
     setDelegate<R = void, P0 = NSSliderTickMarksDelegate>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSSliderTickMarks<T = any> extends NSView {
+  namespace NSSliderTickMarks {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSSliderTickMarks>(): R;
       new: <R = NSSliderTickMarks>() => R;
     }
   }
 }
 
-declare const NSSliderTickMarks: cocoa.classes.NSSliderTickMarks;
+declare const NSSliderTickMarks: cocoa.NSSliderTickMarks.CLASS;

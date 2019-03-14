@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMovePanel<T = any> extends NSPanel {
+  export interface NSMovePanel<T0 = void, T1 = void, T2 = void> extends NSPanel {
     _setAlertInformativeMessage<R = void, P0 = unknown>(__setAlertInformativeMessage: P0): R;
     _setAlertMessage<R = void, P0 = unknown>(__setAlertMessage: P0): R;
     _useAlertStyle<R = boolean>(): R;
@@ -32,6 +32,7 @@ declare namespace cocoa {
     setDirectoryURL<R = void, P0 = unknown>(_setDirectoryURL: P0): R;
     directoryURL<R = unknown>(): R;
     _updateOkButtonEnabledState<R = void>(): R;
+    _selectFirstKeyView<R = void>(): R;
     finderLocationPopUpOtherLocation<R = void, P0 = unknown>(_finderLocationPopUpOtherLocation: P0): R;
     finderLocationPopUpMenuOptions<R = number, P0 = unknown>(_finderLocationPopUpMenuOptions: P0): R;
     finderLocationPopUpRequestRecentPlaces<R = unknown, P0 = unknown>(_finderLocationPopUpRequestRecentPlaces: P0): R;
@@ -51,8 +52,8 @@ declare namespace cocoa {
     initialURL<R = NSURL>(): R;
     setInitialURL<R = void, P0 = NSURL>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSMovePanel<T = any> extends NSPanel {
+  namespace NSMovePanel {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSPanel {
       alloc<R = NSMovePanel>(): R;
       new: <R = NSMovePanel>() => R;
       _minContentRectSize<R = CGSize>(): R;
@@ -62,4 +63,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSMovePanel: cocoa.classes.NSMovePanel;
+declare const NSMovePanel: cocoa.NSMovePanel.CLASS;

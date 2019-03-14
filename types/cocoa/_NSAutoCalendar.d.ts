@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSAutoCalendar<T = any> {
-    // + _NSAutoCalendar(_):
+  export interface _NSAutoCalendar<T0 = void, T1 = void, T2 = void> {
+    // + _NSAutoCalendar(_): 
     enumerateDatesStartingAfterDate_matchingComponents_options_usingBlock<R = void, P0 = unknown, P1 = unknown, P2 = number, P3 = CDUnknownBlockType>(_enumerateDatesStartingAfterDate: P0, _matchingComponents: P1, _options: P2, _usingBlock: P3): R;
     isDateInWeekend<R = boolean, P0 = unknown>(_isDateInWeekend: P0): R;
     nextWeekendStartDate_interval_options_afterDate<R = boolean, P0 = unknown, P1 = number, P2 = number, P3 = unknown>(_nextWeekendStartDate: P0, _interval: P1, _options: P2, _afterDate: P3): R;
@@ -37,9 +37,9 @@ declare namespace cocoa {
     init<R = unknown>(): R;
     _update<R = void, P0 = unknown>(__update: P0): R;
   }
-  namespace classes {
-    export interface _NSAutoCalendar<T = any> {
-      // + _NSAutoCalendar(_):
+  namespace _NSAutoCalendar {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {
+      // + _NSAutoCalendar(_): 
       supportsSecureCoding<R = boolean>(): R;
     }
   }

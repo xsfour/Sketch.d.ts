@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSStylePartInspectorItem<T = any> extends NSViewController {
+  export interface MSStylePartInspectorItem<T0 = void, T1 = void, T2 = void> extends NSViewController {
     cxx_destruct<R = void>(): R;
     sectionWithIdentifierWillCollapse<R = void, P0 = unknown>(_sectionWithIdentifierWillCollapse: P0): R;
     updateDisplayedValues<R = void>(): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     setStyleParts<R = void, P0 = NSArray>(_v: P0): R;
     layers<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface MSStylePartInspectorItem<T = any> extends NSViewController {
+  namespace MSStylePartInspectorItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController {
       alloc<R = MSStylePartInspectorItem>(): R;
       new: <R = MSStylePartInspectorItem>() => R;
     }
   }
 }
 
-declare const MSStylePartInspectorItem: cocoa.classes.MSStylePartInspectorItem;
+declare const MSStylePartInspectorItem: cocoa.MSStylePartInspectorItem.CLASS;

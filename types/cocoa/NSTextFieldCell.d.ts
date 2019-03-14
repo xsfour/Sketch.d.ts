@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTextFieldCell<T = any> extends NSActionCell {
+  export interface NSTextFieldCell<T0 = void, T1 = void, T2 = void> extends NSActionCell {
     viewDidEndLiveResize<R = void>(): R;
     viewWillStartLiveResize<R = void>(): R;
     _stringDrawingContextWithBaselineOffsetsInRect<R = unknown, P0 = CGRect>(__stringDrawingContextWithBaselineOffsetsInRect: P0): R;
@@ -73,12 +73,12 @@ declare namespace cocoa {
     drawsBackground<R = boolean>(): R;
     setDrawsBackground<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTextFieldCell<T = any> extends NSActionCell {
+  namespace NSTextFieldCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSActionCell {
       alloc<R = NSTextFieldCell>(): R;
       new: <R = NSTextFieldCell>() => R;
     }
   }
 }
 
-declare const NSTextFieldCell: cocoa.classes.NSTextFieldCell;
+declare const NSTextFieldCell: cocoa.NSTextFieldCell.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSJSONZippedArchiver<T = any> extends MSJSONArchiver {
+  export interface MSJSONZippedArchiver<T0 = void, T1 = void, T2 = void> extends MSJSONArchiver {
     encoder<R = unknown>(): R;
     encodableReferenceToOriginal<R = unknown, P0 = unknown>(_encodableReferenceToOriginal: P0): R;
     encodeReferenceObject<R = void, P0 = unknown>(_encodeReferenceObject: P0): R;
@@ -12,12 +12,12 @@ declare namespace cocoa {
     zipEncoder<R = BCJSONZippedEncoder>(): R;
     setZipEncoder<R = void, P0 = BCJSONZippedEncoder>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSJSONZippedArchiver<T = any> extends MSJSONArchiver {
+  namespace MSJSONZippedArchiver {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSJSONArchiver {
       alloc<R = MSJSONZippedArchiver>(): R;
       new: <R = MSJSONZippedArchiver>() => R;
     }
   }
 }
 
-declare const MSJSONZippedArchiver: cocoa.classes.MSJSONZippedArchiver;
+declare const MSJSONZippedArchiver: cocoa.MSJSONZippedArchiver.CLASS;

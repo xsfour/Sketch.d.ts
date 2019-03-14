@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface SVGPathInterpreter<T = any> extends NSObject {
+  export interface SVGPathInterpreter<T0 = void, T1 = void, T2 = void> extends NSObject {
     requiresInitialPointForPath<R = void, P0 = unknown>(_requiresInitialPointForPath: P0): R;
     appendAComponents_toBezierPath<R = void, P0 = unknown, P1 = unknown>(_appendAComponents: P0, _toBezierPath: P1): R;
     appendaComponents_toBezierPath<R = void, P0 = unknown, P1 = unknown>(_appendaComponents: P0, _toBezierPath: P1): R;
@@ -37,12 +37,12 @@ declare namespace cocoa {
     lastPoint<R = CGPoint>(): R;
     setLastPoint<R = void, P0 = CGPoint>(_v: P0): R;
   }
-  namespace classes {
-    export interface SVGPathInterpreter<T = any> extends NSObject {
+  namespace SVGPathInterpreter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = SVGPathInterpreter>(): R;
       new: <R = SVGPathInterpreter>() => R;
     }
   }
 }
 
-declare const SVGPathInterpreter: cocoa.classes.SVGPathInterpreter;
+declare const SVGPathInterpreter: cocoa.SVGPathInterpreter.CLASS;

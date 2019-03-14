@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPluginBundleIconInfo<T = any> extends NSObject {
+  export interface MSPluginBundleIconInfo<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     initWithImage<R = unknown, P0 = unknown>(_initWithImage: P0): R;
     initWithPath_imageData<R = unknown, P0 = unknown, P1 = unknown>(_initWithPath: P0, _imageData: P1): R;
@@ -12,12 +12,12 @@ declare namespace cocoa {
     fileWrapper<R = NSFileWrapper>(): R;
     image<R = NSImage>(): R;
   }
-  namespace classes {
-    export interface MSPluginBundleIconInfo<T = any> extends NSObject {
+  namespace MSPluginBundleIconInfo {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSPluginBundleIconInfo>(): R;
       new: <R = MSPluginBundleIconInfo>() => R;
     }
   }
 }
 
-declare const MSPluginBundleIconInfo: cocoa.classes.MSPluginBundleIconInfo;
+declare const MSPluginBundleIconInfo: cocoa.MSPluginBundleIconInfo.CLASS;

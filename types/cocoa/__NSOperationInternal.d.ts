@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface __NSOperationInternal<T = any> extends NSObject {
+  export interface __NSOperationInternal<T0 = void, T1 = void, T2 = void> extends NSObject {
     _activity<R = unknown>(): R;
     _start<R = void, P0 = unknown>(__start: P0): R;
     _dependencies<R = unknown>(): R;
@@ -27,8 +27,8 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     _invalidate<R = void>(): R;
   }
-  namespace classes {
-    export interface __NSOperationInternal<T = any> extends NSObject {
+  namespace __NSOperationInternal {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = __NSOperationInternal>(): R;
       new: <R = __NSOperationInternal>() => R;
       _observeValueForKeyPath_ofObject_changeKind_oldValue_newValue_indexes_context<R = void, P0 = unknown, P1 = unknown, P2 = number, P3 = unknown, P4 = unknown, P5 = unknown, P6 = void>(__observeValueForKeyPath: P0, _ofObject: P1, _changeKind: P2, _oldValue: P3, _newValue: P4, _indexes: P5, _context: P6): R;

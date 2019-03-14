@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSError<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  export interface NSError<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
     _cfTypeID<R = number>(): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
@@ -33,8 +33,8 @@ declare namespace cocoa {
     domain<R = NSString>(): R;
     code<R = number>(): R;
   }
-  namespace classes {
-    export interface NSError<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  namespace NSError {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
       alloc<R = NSError>(): R;
       new: <R = NSError>() => R;
       userInfoValueProviderForDomain<R = CDUnknownBlockType, P0 = unknown>(_userInfoValueProviderForDomain: P0): R;
@@ -51,4 +51,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSError: cocoa.classes.NSError;
+declare const NSError: cocoa.NSError.CLASS;

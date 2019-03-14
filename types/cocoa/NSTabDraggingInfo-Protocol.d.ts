@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTabDraggingInfoProtocol<T = any> extends NSObjectProtocol {
+  export interface NSTabDraggingInfoProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     draggingItem<R = NSTabBarItem>(): R;
     draggingSource<R = unknown>(): R;
     draggedImage<R = NSImage>(): R;
@@ -9,7 +9,7 @@ declare namespace cocoa {
     draggingSourceOperationMask<R = number>(): R;
     draggingDestinationWindow<R = NSWindow>(): R;
   }
-  namespace classes {
-    export interface NSTabDraggingInfoProtocol<T = any> extends NSObjectProtocol {  }
+  namespace NSTabDraggingInfoProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

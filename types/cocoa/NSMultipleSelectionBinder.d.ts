@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMultipleSelectionBinder<T = any> extends NSSelectionBinder {}
-  namespace classes {
-    export interface NSMultipleSelectionBinder<T = any> extends NSSelectionBinder {
+  export interface NSMultipleSelectionBinder<T0 = void, T1 = void, T2 = void> extends NSSelectionBinder {}
+  namespace NSMultipleSelectionBinder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSSelectionBinder {
       alloc<R = NSMultipleSelectionBinder>(): R;
       new: <R = NSMultipleSelectionBinder>() => R;
     }
   }
 }
 
-declare const NSMultipleSelectionBinder: cocoa.classes.NSMultipleSelectionBinder;
+declare const NSMultipleSelectionBinder: cocoa.NSMultipleSelectionBinder.CLASS;

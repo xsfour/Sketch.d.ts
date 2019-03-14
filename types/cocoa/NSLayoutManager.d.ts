@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLayoutManager<T = any> {
-    // + NSLayoutManager(NSTextViewSupport_Legacy,RulerSupport,CollectTemporaryAttributes):
+  export interface NSLayoutManager<T0 = void, T1 = void, T2 = void> {
+    // + NSLayoutManager(NSTextViewSupport_Legacy): 
     spellCheckerDidChangeDashSubstitution<R = void, P0 = unknown>(_spellCheckerDidChangeDashSubstitution: P0): R;
     spellCheckerDidChangeQuoteSubstitution<R = void, P0 = unknown>(_spellCheckerDidChangeQuoteSubstitution: P0): R;
     spellCheckerDidChangeReplacement<R = void, P0 = unknown>(_spellCheckerDidChangeReplacement: P0): R;
@@ -12,6 +12,7 @@ declare namespace cocoa {
     spellCheckerDidLearnWord<R = void, P0 = unknown>(_spellCheckerDidLearnWord: P0): R;
     showPackedGlyphs_length_glyphRange_atPoint_font_color_printingAdjustment<R = void, P0 = string, P1 = number, P2 = _NSRange, P3 = CGPoint, P4 = unknown, P5 = unknown, P6 = CGSize>(_showPackedGlyphs: P0, _length: P1, _glyphRange: P2, _atPoint: P3, _font: P4, _color: P5, _printingAdjustment: P6): R;
     layoutManagerOwnsFirstResponderInWindow<R = boolean, P0 = unknown>(_layoutManagerOwnsFirstResponderInWindow: P0): R;
+    // + NSLayoutManager(RulerSupport): 
     rulerAccessoryViewForTextView_paragraphStyle_ruler_enabled<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = boolean>(_rulerAccessoryViewForTextView: P0, _paragraphStyle: P1, _ruler: P2, _enabled: P3): R;
     _rulerAccViewDecimalTabWell<R = unknown>(): R;
     _rulerAccViewCenterTabWell<R = unknown>(): R;
@@ -39,15 +40,16 @@ declare namespace cocoa {
     _doUserParagraphStyleLineHeight_fixed<R = void, P0 = number, P1 = boolean>(__doUserParagraphStyleLineHeight: P0, _fixed: P1): R;
     _rulerAccViewSetUpLists<R = void>(): R;
     _rulerAccViewUpdateStyles<R = void, P0 = unknown>(__rulerAccViewUpdateStyles: P0): R;
+    // + NSLayoutManager(CollectTemporaryAttributes): 
     setTemporaryAttributes_forKey<R = void, P0 = unknown, P1 = unknown>(_setTemporaryAttributes: P0, _forKey: P1): R;
     temporaryAttributesForKey<R = unknown, P0 = unknown>(_temporaryAttributesForKey: P0): R;
   }
-  namespace classes {
-    export interface NSLayoutManager<T = any> {
-      // + NSLayoutManager(NSTextViewSupport_Legacy,RulerSupport,CollectTemporaryAttributes):
+  namespace NSLayoutManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {
+      // + NSLayoutManager(RulerSupport): 
       _rulerHelperClass<R = unknown>(): R;
     }
   }
 }
 
-declare const NSLayoutManager: cocoa.classes.NSLayoutManager;
+declare const NSLayoutManager: cocoa.NSLayoutManager.CLASS;

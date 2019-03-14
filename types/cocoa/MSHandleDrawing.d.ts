@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSHandleDrawing<T = any> extends NSObject {}
-  namespace classes {
-    export interface MSHandleDrawing<T = any> extends NSObject {
+  export interface MSHandleDrawing<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace MSHandleDrawing {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSHandleDrawing>(): R;
       new: <R = MSHandleDrawing>() => R;
       resetZoomValue<R = void>(): R;
@@ -23,4 +23,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSHandleDrawing: cocoa.classes.MSHandleDrawing;
+declare const MSHandleDrawing: cocoa.MSHandleDrawing.CLASS;

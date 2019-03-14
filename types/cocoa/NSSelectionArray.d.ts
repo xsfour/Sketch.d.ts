@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSelectionArray<T = any> extends NSArray {
+  export interface NSSelectionArray<T0 = void, T1 = void, T2 = void> extends NSArray {
     enumerateRangesAtIndexes_options_usingBlock<R = void, P0 = unknown, P1 = number, P2 = CDUnknownBlockType>(_enumerateRangesAtIndexes: P0, _options: P1, _usingBlock: P2): R;
     enumerateRangesWithOptions_usingBlock<R = void, P0 = number, P1 = CDUnknownBlockType>(_enumerateRangesWithOptions: P0, _usingBlock: P1): R;
     enumerateRangesUsingBlock<R = void, P0 = CDUnknownBlockType>(_enumerateRangesUsingBlock: P0): R;
@@ -20,8 +20,8 @@ declare namespace cocoa {
     initWithRange<R = unknown, P0 = _NSRange>(_initWithRange: P0): R;
     initWithRanges_count<R = unknown, P0 = _NSRange, P1 = number>(_initWithRanges: P0, _count: P1): R;
   }
-  namespace classes {
-    export interface NSSelectionArray<T = any> extends NSArray {
+  namespace NSSelectionArray {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSArray {
       arrayWithObjects_count<R = unknown, P0 = unknown, P1 = number>(_arrayWithObjects: P0, _count: P1): R;
       arrayWithArray<R = unknown, P0 = unknown>(_arrayWithArray: P0): R;
       arrayWithIndexes<R = unknown, P0 = unknown>(_arrayWithIndexes: P0): R;
@@ -37,4 +37,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSSelectionArray: cocoa.classes.NSSelectionArray;
+declare const NSSelectionArray: cocoa.NSSelectionArray.CLASS;

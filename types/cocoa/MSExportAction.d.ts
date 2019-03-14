@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSExportAction<T = any> extends MSDocumentAction {
+  export interface MSExportAction<T0 = void, T1 = void, T2 = void> extends MSDocumentAction {
     baseNameForSlice<R = unknown>(): R;
     rectForExportingEntirePage<R = CGRect>(): R;
     determineRectForInitialSliceWithCompletionHandler<R = void, P0 = CDUnknownBlockType>(_determineRectForInitialSliceWithCompletionHandler: P0): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     validate<R = boolean>(): R;
     export<R = void, P0 = unknown>(_export: P0): R;
   }
-  namespace classes {
-    export interface MSExportAction<T = any> extends MSDocumentAction {
+  namespace MSExportAction {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSDocumentAction {
       alloc<R = MSExportAction>(): R;
       new: <R = MSExportAction>() => R;
     }
   }
 }
 
-declare const MSExportAction: cocoa.classes.MSExportAction;
+declare const MSExportAction: cocoa.MSExportAction.CLASS;

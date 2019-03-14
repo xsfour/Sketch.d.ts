@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFileProviderXPCInterface<T = any> {}
-  namespace classes {
-    export interface NSFileProviderXPCInterface<T = any> {  }
+  export interface NSFileProviderXPCInterface<T0 = void, T1 = void, T2 = void> {}
+  namespace NSFileProviderXPCInterface {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSFileProviderXPCInterface: cocoa.classes.NSFileProviderXPCInterface;
+declare const NSFileProviderXPCInterface: cocoa.NSFileProviderXPCInterface.CLASS;

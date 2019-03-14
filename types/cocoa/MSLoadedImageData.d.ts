@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSLoadedImageData<T = any> extends NSObject {
+  export interface MSLoadedImageData<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     intendedDPI<R = number>(): R;
     setIntendedDPI<R = void, P0 = number>(_v: P0): R;
@@ -10,8 +10,8 @@ declare namespace cocoa {
     image<R = MSImageData>(): R;
     setImage<R = void, P0 = MSImageData>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSLoadedImageData<T = any> extends NSObject {
+  namespace MSLoadedImageData {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSLoadedImageData>(): R;
       new: <R = MSLoadedImageData>() => R;
       scalingFactorForFilename<R = number, P0 = unknown>(_scalingFactorForFilename: P0): R;
@@ -23,4 +23,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSLoadedImageData: cocoa.classes.MSLoadedImageData;
+declare const MSLoadedImageData: cocoa.MSLoadedImageData.CLASS;

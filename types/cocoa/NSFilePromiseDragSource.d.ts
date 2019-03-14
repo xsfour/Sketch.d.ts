@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFilePromiseDragSource<T = any> extends NSObject, NSDraggingSourceProtocol {
+  export interface NSFilePromiseDragSource<T0 = void, T1 = void, T2 = void> extends NSObject, NSDraggingSourceProtocol {
     pasteboard_provideDataForType<R = void, P0 = unknown, P1 = unknown>(_pasteboard: P0, _provideDataForType: P1): R;
     setTypes_onPasteboard<R = void, P0 = unknown, P1 = unknown>(_setTypes: P0, _onPasteboard: P1): R;
     pasteboard_provideDataForType_itemIdentifier<R = void, P0 = unknown, P1 = unknown, P2 = number>(_pasteboard: P0, _provideDataForType: P1, _itemIdentifier: P2): R;
@@ -21,12 +21,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSFilePromiseDragSource<T = any> extends NSObject, NSDraggingSourceProtocol {
+  namespace NSFilePromiseDragSource {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSDraggingSourceProtocol {
       alloc<R = NSFilePromiseDragSource>(): R;
       new: <R = NSFilePromiseDragSource>() => R;
     }
   }
 }
 
-declare const NSFilePromiseDragSource: cocoa.classes.NSFilePromiseDragSource;
+declare const NSFilePromiseDragSource: cocoa.NSFilePromiseDragSource.CLASS;

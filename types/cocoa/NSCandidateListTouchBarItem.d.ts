@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCandidateListTouchBarItem<T = any> extends NSTouchBarItem, NSTouchBarItemPositionAnimationDelegateProtocol {
+  export interface NSCandidateListTouchBarItem<T0 = void, T1 = void, T2 = void> extends NSTouchBarItem, NSTouchBarItemPositionAnimationDelegateProtocol {
     shouldAnimateNextLayoutPass<R = boolean>(): R;
     _setTextInputContextViewController<R = void, P0 = unknown>(__setTextInputContextViewController: P0): R;
     _textInputContextViewController<R = unknown>(): R;
@@ -38,8 +38,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSCandidateListTouchBarItem<T = any> extends NSTouchBarItem, NSTouchBarItemPositionAnimationDelegateProtocol {
+  namespace NSCandidateListTouchBarItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTouchBarItem, NSTouchBarItemPositionAnimationDelegateProtocol {
       alloc<R = NSCandidateListTouchBarItem>(): R;
       new: <R = NSCandidateListTouchBarItem>() => R;
       standardWidth<R = number>(): R;
@@ -48,4 +48,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSCandidateListTouchBarItem: cocoa.classes.NSCandidateListTouchBarItem;
+declare const NSCandidateListTouchBarItem: cocoa.NSCandidateListTouchBarItem.CLASS;

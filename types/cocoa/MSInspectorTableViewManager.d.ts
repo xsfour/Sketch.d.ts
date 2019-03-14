@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInspectorTableViewManager<T = any> extends NSObject, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol {
+  export interface MSInspectorTableViewManager<T0 = void, T1 = void, T2 = void> extends NSObject, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol {
     cxx_destruct<R = void>(): R;
     wantsSeparatorForRow<R = boolean, P0 = number>(_wantsSeparatorForRow: P0): R;
     itemIndexPathForRowIndex<R = unknown, P0 = number>(_itemIndexPathForRowIndex: P0): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSInspectorTableViewManager<T = any> extends NSObject, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol {
+  namespace MSInspectorTableViewManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol {
       alloc<R = MSInspectorTableViewManager>(): R;
       new: <R = MSInspectorTableViewManager>() => R;
     }
   }
 }
 
-declare const MSInspectorTableViewManager: cocoa.classes.MSInspectorTableViewManager;
+declare const MSInspectorTableViewManager: cocoa.MSInspectorTableViewManager.CLASS;

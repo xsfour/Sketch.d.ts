@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSTwoTextFieldInspectorItem<T = any> extends MSInspectorItem {
+  export interface MSTwoTextFieldInspectorItem<T0 = void, T1 = void, T2 = void> extends MSInspectorItem {
     interTextFieldButtonAction<R = void, P0 = unknown>(_interTextFieldButtonAction: P0): R;
     textField2Action<R = void, P0 = unknown>(_textField2Action: P0): R;
     textField1Action<R = void, P0 = unknown>(_textField1Action: P0): R;
@@ -24,12 +24,12 @@ declare namespace cocoa {
     itemLabel<R = NSTextField>(): R;
     setItemLabel<R = void, P0 = NSTextField>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSTwoTextFieldInspectorItem<T = any> extends MSInspectorItem {
+  namespace MSTwoTextFieldInspectorItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSInspectorItem {
       alloc<R = MSTwoTextFieldInspectorItem>(): R;
       new: <R = MSTwoTextFieldInspectorItem>() => R;
     }
   }
 }
 
-declare const MSTwoTextFieldInspectorItem: cocoa.classes.MSTwoTextFieldInspectorItem;
+declare const MSTwoTextFieldInspectorItem: cocoa.MSTwoTextFieldInspectorItem.CLASS;

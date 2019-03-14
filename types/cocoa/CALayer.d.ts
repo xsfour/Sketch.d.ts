@@ -1,11 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface CALayer<T = any> {
-    // + CALayer(NSBackingLayerContents,NSCanDraw,NSContentsAligning,NSDebuggingAddition,NSDefaultContentsScale,NSOpenGLInternal,NSSuggestedContentsScale,NSTileLayerAdditions,NSViewAssociation,NSVisibleRect,NSVisualTabPickerCALayerExtras,_NSTiledLayer):
+  export interface CALayer<T0 = void, T1 = void, T2 = void> {
+    // + CALayer(NSBackingLayerContents): 
     NS_backingLayerContentsClass<R = unknown>(): R;
     NS_makeContentsLayer<R = unknown>(): R;
+    // + CALayer(NSCanDraw): 
     NS_canDraw<R = boolean>(): R;
+    // + CALayer(NSContentsAligning): 
     NS_displayUsingContentsAligning<R = void>(): R;
     NS_willDisplayWithoutContentsAligning<R = void>(): R;
     NS_setNeedsDisplayInRectUsingContentsAligning<R = void, P0 = CGRect>(_NS_setNeedsDisplayInRectUsingContentsAligning: P0): R;
@@ -20,13 +22,17 @@ declare namespace cocoa {
     NS_prepareForDisplayUsingContentsAligning<R = void>(): R;
     NS_updateContentsTransformForContentsAligning<R = void>(): R;
     NS_updateOpaqueForContentsAligning<R = void>(): R;
+    // + CALayer(NSDebuggingAddition): 
     _NS_subtreeDescription<R = unknown>(): R;
     _NS_subtreeDescriptionWithIndent<R = unknown, P0 = number>(__NS_subtreeDescriptionWithIndent: P0): R;
     _NS_dumpContents<R = void>(): R;
+    // + CALayer(NSDefaultContentsScale): 
     NS_didChangeDefaultContentsScale<R = void, P0 = number>(_NS_didChangeDefaultContentsScale: P0): R;
+    // + CALayer(NSSuggestedContentsScale): 
     _NS_invalidateSuggestedContentsScale<R = void>(): R;
     _NS_accumulateSuggestedScaleBelow<R = void, P0 = number>(__NS_accumulateSuggestedScaleBelow: P0): R;
     _NS_accumulateSuggestedScale<R = void, P0 = number>(__NS_accumulateSuggestedScale: P0): R;
+    // + CALayer(NSTileLayerAdditions): 
     NS_setPreparedContentRect<R = void, P0 = CGRect>(_NS_setPreparedContentRect: P0): R;
     NS_setPresentationRect<R = void, P0 = CGRect>(_NS_setPresentationRect: P0): R;
     NS_setIsScrolling<R = void, P0 = boolean>(_NS_setIsScrolling: P0): R;
@@ -46,30 +52,37 @@ declare namespace cocoa {
     NS_isPurged<R = boolean>(): R;
     NS_setVisibleTile<R = void, P0 = boolean>(_NS_setVisibleTile: P0): R;
     NS_isVisibleTile<R = boolean>(): R;
+    // + CALayer(NSViewAssociation): 
     _setView<R = void, P0 = unknown>(__setView: P0): R;
     _view<R = unknown>(): R;
+    // + CALayer(NSVisualTabPickerCALayerExtras): 
     visualTabPicker_hitTestIgnoringTransformLayers_inRootLayer<R = unknown, P0 = CGPoint, P1 = unknown>(_visualTabPicker_hitTestIgnoringTransformLayers: P0, _inRootLayer: P1): R;
     nearestAncestorIgnoringTransformLayers<R = unknown>(): R;
+    // + CALayer(NSContentsAligning):
     NS_shouldUseContentsAligning<R = boolean>(): R;
     NS_contentsAligningEnabled<R = boolean>(): R;
     NS_contentsScaleSizeOrContentsScale<R = CGSize>(): R;
     NS_contentsScaleSize<R = CGSize>(): R;
     setNS_contentsScaleSize<R = void, P0 = CGSize>(_v: P0): R;
+    // + CALayer(NSOpenGLInternal):
     NS_managesOpenGLDrawable<R = boolean>(): R;
+    // + CALayer(NSSuggestedContentsScale):
     NS_defersTransformInvalidation<R = boolean>(): R;
     setNS_defersTransformInvalidation<R = void, P0 = boolean>(_v: P0): R;
     NS_suggestedContentsScale<R = number>(): R;
     NS_suggestedContentsScaleSize<R = CGSize>(): R;
+    // + CALayer(NSViewAssociation):
     NS_view<R = NSView>(): R;
     setNS_view<R = void, P0 = NSView>(_v: P0): R;
+    // + CALayer(NSVisibleRect):
     NS_visibleRect<R = CGRect>(): R;
   }
-  namespace classes {
-    export interface CALayer<T = any> {
-      // + CALayer(NSBackingLayerContents,NSCanDraw,NSContentsAligning,NSDebuggingAddition,NSDefaultContentsScale,NSOpenGLInternal,NSSuggestedContentsScale,NSTileLayerAdditions,NSViewAssociation,NSVisibleRect,NSVisualTabPickerCALayerExtras,_NSTiledLayer):
+  namespace CALayer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {
+      // + CALayer(_NSTiledLayer): 
       keyPathsForValuesAffectingNS_tiledLayerVisibleRect<R = unknown>(): R;
     }
   }
 }
 
-declare const CALayer: cocoa.classes.CALayer;
+declare const CALayer: cocoa.CALayer.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSCloudDocumentViewController<T = any> extends MSCloudBaseViewController {
+  export interface MSCloudDocumentViewController<T0 = void, T1 = void, T2 = void> extends MSCloudBaseViewController {
     openShareSettings<R = void, P0 = unknown>(_openShareSettings: P0): R;
     openPublicURL<R = void, P0 = unknown>(_openPublicURL: P0): R;
     update<R = void, P0 = unknown>(_update: P0): R;
@@ -32,12 +32,12 @@ declare namespace cocoa {
     canUpdateShare<R = boolean>(): R;
     share<R = SCKShare>(): R;
   }
-  namespace classes {
-    export interface MSCloudDocumentViewController<T = any> extends MSCloudBaseViewController {
+  namespace MSCloudDocumentViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSCloudBaseViewController {
       alloc<R = MSCloudDocumentViewController>(): R;
       new: <R = MSCloudDocumentViewController>() => R;
     }
   }
 }
 
-declare const MSCloudDocumentViewController: cocoa.classes.MSCloudDocumentViewController;
+declare const MSCloudDocumentViewController: cocoa.MSCloudDocumentViewController.CLASS;

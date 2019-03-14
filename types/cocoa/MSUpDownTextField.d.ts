@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSUpDownTextField<T = any> extends NSTextField, NSTextViewDelegateProtocol, MSUpDownProtocolProtocol, NSTouchBarDelegateProtocol {
+  export interface MSUpDownTextField<T0 = void, T1 = void, T2 = void> extends NSTextField, NSTextViewDelegateProtocol, MSUpDownProtocolProtocol, NSTouchBarDelegateProtocol {
     cxx_destruct<R = void>(): R;
     awakeFromNib<R = void>(): R;
     connectToValueAdapter_bindingOptions<R = void, P0 = unknown, P1 = unknown>(_connectToValueAdapter: P0, _bindingOptions: P1): R;
@@ -31,12 +31,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSUpDownTextField<T = any> extends NSTextField, NSTextViewDelegateProtocol, MSUpDownProtocolProtocol, NSTouchBarDelegateProtocol {
+  namespace MSUpDownTextField {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTextField, NSTextViewDelegateProtocol, MSUpDownProtocolProtocol, NSTouchBarDelegateProtocol {
       alloc<R = MSUpDownTextField>(): R;
       new: <R = MSUpDownTextField>() => R;
     }
   }
 }
 
-declare const MSUpDownTextField: cocoa.classes.MSUpDownTextField;
+declare const MSUpDownTextField: cocoa.MSUpDownTextField.CLASS;

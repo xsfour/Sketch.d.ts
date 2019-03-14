@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSNavNewFolderController<T = any> extends NSWindowController {
+  export interface NSNavNewFolderController<T0 = void, T1 = void, T2 = void> extends NSWindowController {
     cancel<R = void, P0 = unknown>(_cancel: P0): R;
     ok<R = void, P0 = unknown>(_ok: P0): R;
     runModalForSavePanel<R = unknown, P0 = unknown>(_runModalForSavePanel: P0): R;
@@ -11,12 +11,12 @@ declare namespace cocoa {
     _updateOkButtonEnabledStateAndErrorMessage<R = void>(): R;
     _folderPath<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSNavNewFolderController<T = any> extends NSWindowController {
+  namespace NSNavNewFolderController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSWindowController {
       alloc<R = NSNavNewFolderController>(): R;
       new: <R = NSNavNewFolderController>() => R;
     }
   }
 }
 
-declare const NSNavNewFolderController: cocoa.classes.NSNavNewFolderController;
+declare const NSNavNewFolderController: cocoa.NSNavNewFolderController.CLASS;

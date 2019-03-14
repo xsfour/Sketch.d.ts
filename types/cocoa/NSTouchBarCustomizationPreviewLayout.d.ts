@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarCustomizationPreviewLayout<T = any> extends NSCollectionViewLayout {
+  export interface NSTouchBarCustomizationPreviewLayout<T0 = void, T1 = void, T2 = void> extends NSCollectionViewLayout {
     overlappedIndexPathsForMovingItemAtIndexPath_toIndexPath_withFrame_primaryLocation<R = unknown, P0 = unknown, P1 = unknown, P2 = CGRect, P3 = CGPoint>(_overlappedIndexPathsForMovingItemAtIndexPath: P0, _toIndexPath: P1, _withFrame: P2, _primaryLocation: P3): R;
     canMoveItemAtIndexPath_toIndexPath_byRemovingItems<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_canMoveItemAtIndexPath: P0, _toIndexPath: P1, _byRemovingItems: P2): R;
     canInsertItem_atIndexPath<R = boolean, P0 = unknown, P1 = unknown>(_canInsertItem: P0, _atIndexPath: P1): R;
@@ -20,11 +20,11 @@ declare namespace cocoa {
     collectionViewContentSize<R = CGSize>(): R;
     dealloc<R = void>(): R;
   }
-  namespace classes {
-    export interface NSTouchBarCustomizationPreviewLayout<T = any> extends NSCollectionViewLayout {
+  namespace NSTouchBarCustomizationPreviewLayout {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSCollectionViewLayout {
       layoutAttributesClass<R = unknown>(): R;
     }
   }
 }
 
-declare const NSTouchBarCustomizationPreviewLayout: cocoa.classes.NSTouchBarCustomizationPreviewLayout;
+declare const NSTouchBarCustomizationPreviewLayout: cocoa.NSTouchBarCustomizationPreviewLayout.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorSpaceSliders<T = any> extends NSObject, NSSliderViewRequiredMethodsProtocol {
+  export interface NSColorSpaceSliders<T0 = void, T1 = void, T2 = void> extends NSObject, NSSliderViewRequiredMethodsProtocol {
     requiredMinSize<R = CGSize>(): R;
     dealloc<R = void>(): R;
     takeColorSpaceFrom<R = void, P0 = unknown>(_takeColorSpaceFrom: P0): R;
@@ -11,12 +11,12 @@ declare namespace cocoa {
     setMatchedColor<R = void, P0 = unknown>(_setMatchedColor: P0): R;
     fieldEditableControl<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSColorSpaceSliders<T = any> extends NSObject, NSSliderViewRequiredMethodsProtocol {
+  namespace NSColorSpaceSliders {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSliderViewRequiredMethodsProtocol {
       alloc<R = NSColorSpaceSliders>(): R;
       new: <R = NSColorSpaceSliders>() => R;
     }
   }
 }
 
-declare const NSColorSpaceSliders: cocoa.classes.NSColorSpaceSliders;
+declare const NSColorSpaceSliders: cocoa.NSColorSpaceSliders.CLASS;

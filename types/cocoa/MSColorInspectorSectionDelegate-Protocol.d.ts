@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSColorInspectorSectionDelegateProtocol<T = any> extends NSObjectProtocol {
+  export interface MSColorInspectorSectionDelegateProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     touchBar<R = NSTouchBar>(): R;
     didRemoveAssetOfType<R = void, P0 = number>(_didRemoveAssetOfType: P0): R;
     didAddAsset<R = void, P0 = MSAsset>(_didAddAsset: P0): R;
@@ -13,7 +13,7 @@ declare namespace cocoa {
     colorDidChangeTo<R = void, P0 = MSColor>(_colorDidChangeTo: P0): R;
     document<R = MSDocument>(): R;
   }
-  namespace classes {
-    export interface MSColorInspectorSectionDelegateProtocol<T = any> extends NSObjectProtocol {  }
+  namespace MSColorInspectorSectionDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

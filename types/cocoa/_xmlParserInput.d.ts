@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _xmlParserInput<T = any> {}
-  namespace classes {
-    export interface _xmlParserInput<T = any> {  }
+  export interface _xmlParserInput<T0 = void, T1 = void, T2 = void> {}
+  namespace _xmlParserInput {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSRenderingContext<T = any> extends NSObject {
+  export interface MSRenderingContext<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     shouldLog<R = boolean>(): R;
     applyShadow<R = void, P0 = unknown>(_applyShadow: P0): R;
@@ -72,12 +72,12 @@ declare namespace cocoa {
     zoomLevelForShadows<R = number>(): R;
     rootLayer<R = MSImmutableLayerGroup>(): R;
   }
-  namespace classes {
-    export interface MSRenderingContext<T = any> extends NSObject {
+  namespace MSRenderingContext {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSRenderingContext>(): R;
       new: <R = MSRenderingContext>() => R;
     }
   }
 }
 
-declare const MSRenderingContext: cocoa.classes.MSRenderingContext;
+declare const MSRenderingContext: cocoa.MSRenderingContext.CLASS;

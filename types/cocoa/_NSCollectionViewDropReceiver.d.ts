@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSCollectionViewDropReceiver<T = any> extends NSObject, NSDraggingDestinationProtocol {
+  export interface _NSCollectionViewDropReceiver<T0 = void, T1 = void, T2 = void> extends NSObject, NSDraggingDestinationProtocol {
     dealloc<R = void>(): R;
     _hoverAreaIsSameAsLast<R = boolean, P0 = unknown>(__hoverAreaIsSameAsLast: P0): R;
     _updateDragAndDropStateWithDraggingInfo_newDragOperation_newDropTargetIndexPath_newDropTargetRect_newDropOperation<R = void, P0 = unknown, P1 = number, P2 = unknown, P3 = CGRect, P4 = number>(__updateDragAndDropStateWithDraggingInfo: P0, _newDragOperation: P1, _newDropTargetIndexPath: P2, _newDropTargetRect: P3, _newDropOperation: P4): R;
@@ -16,8 +16,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSCollectionViewDropReceiver<T = any> extends NSObject, NSDraggingDestinationProtocol {
+  namespace _NSCollectionViewDropReceiver {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSDraggingDestinationProtocol {
       alloc<R = _NSCollectionViewDropReceiver>(): R;
       new: <R = _NSCollectionViewDropReceiver>() => R;
       dropReceiverWithCollectionView<R = unknown, P0 = unknown>(_dropReceiverWithCollectionView: P0): R;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableRow<T = any> extends NSObject {
+  export interface NSTableRow<T0 = void, T1 = void, T2 = void> extends NSObject {
     accessibilityHasOutlineColumnMockGroupForRow_column<R = boolean, P0 = number, P1 = number>(_accessibilityHasOutlineColumnMockGroupForRow: P0, _column: P1): R;
     _childrenCount<R = number>(): R;
     _accessibilityChildrenWithIndexes<R = unknown, P0 = unknown>(__accessibilityChildrenWithIndexes: P0): R;
@@ -54,8 +54,8 @@ declare namespace cocoa {
     accessibilityRoleAttribute<R = unknown>(): R;
     accessibilityAttributeNames<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSTableRow<T = any> extends NSObject {
+  namespace NSTableRow {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSTableRow>(): R;
       new: <R = NSTableRow>() => R;
       tableRow_ofTableView<R = unknown, P0 = number, P1 = unknown>(_tableRow: P0, _ofTableView: P1): R;
@@ -63,4 +63,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTableRow: cocoa.classes.NSTableRow;
+declare const NSTableRow: cocoa.NSTableRow.CLASS;

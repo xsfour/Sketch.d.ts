@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScrollViewDelegateProtocol<T = any> extends NSObjectProtocol {
+  export interface NSScrollViewDelegateProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     allowPanningInScrollView<R = boolean, P0 = NSScrollView>(_allowPanningInScrollView: P0): R;
     magnificationInflectionPointsForScrollView<R = NSArray, P0 = NSScrollView>(_magnificationInflectionPointsForScrollView: P0): R;
     scrollView_didChangePresentationOrigin_active<R = void, P0 = NSScrollView, P1 = CGPoint, P2 = boolean>(_scrollView: P0, _didChangePresentationOrigin: P1, _active: P2): R;
@@ -15,7 +15,7 @@ declare namespace cocoa {
     _wantsPageAlignedHorizontalAxis<R = boolean>(): R;
     set_wantsPageAlignedHorizontalAxis<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSScrollViewDelegateProtocol<T = any> extends NSObjectProtocol {  }
+  namespace NSScrollViewDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

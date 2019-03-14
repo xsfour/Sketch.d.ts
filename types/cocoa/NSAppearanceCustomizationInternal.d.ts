@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAppearanceCustomizationInternal<T = any> {}
-  namespace classes {
-    export interface NSAppearanceCustomizationInternal<T = any> {  }
+  export interface NSAppearanceCustomizationInternal<T0 = void, T1 = void, T2 = void> {}
+  namespace NSAppearanceCustomizationInternal {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSAppearanceCustomizationInternal: cocoa.classes.NSAppearanceCustomizationInternal;
+declare const NSAppearanceCustomizationInternal: cocoa.NSAppearanceCustomizationInternal.CLASS;

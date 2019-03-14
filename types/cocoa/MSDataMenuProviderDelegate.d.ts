@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDataMenuProviderDelegate<T = any> {}
-  namespace classes {
-    export interface MSDataMenuProviderDelegate<T = any> {  }
+  export interface MSDataMenuProviderDelegate<T0 = void, T1 = void, T2 = void> {}
+  namespace MSDataMenuProviderDelegate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const MSDataMenuProviderDelegate: cocoa.classes.MSDataMenuProviderDelegate;
+declare const MSDataMenuProviderDelegate: cocoa.MSDataMenuProviderDelegate.CLASS;

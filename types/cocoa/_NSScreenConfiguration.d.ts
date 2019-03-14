@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSScreenConfiguration<T = any> extends NSObject {}
-  namespace classes {
-    export interface _NSScreenConfiguration<T = any> extends NSObject {
+  export interface _NSScreenConfiguration<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace _NSScreenConfiguration {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSScreenConfiguration>(): R;
       new: <R = _NSScreenConfiguration>() => R;
       latestGreatestBackingScaleFactor<R = number>(): R;

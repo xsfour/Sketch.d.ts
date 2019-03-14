@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSStackLayoutRule<T = any> extends NSObject, NSLayoutRuleProtocol {
+  export interface NSStackLayoutRule<T0 = void, T1 = void, T2 = void> extends NSObject, NSLayoutRuleProtocol {
     dealloc<R = void>(): R;
     initWithOrientation_stackedRects_spacing<R = unknown, P0 = number, P1 = unknown, P2 = number>(_initWithOrientation: P0, _stackedRects: P1, _spacing: P2): R;
     spacing<R = number>(): R;
@@ -14,8 +14,8 @@ declare namespace cocoa {
     debugDescription<R = NSString>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSStackLayoutRule<T = any> extends NSObject, NSLayoutRuleProtocol {
+  namespace NSStackLayoutRule {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSLayoutRuleProtocol {
       alloc<R = NSStackLayoutRule>(): R;
       new: <R = NSStackLayoutRule>() => R;
       verticalStackWithRects_spacing<R = unknown, P0 = unknown, P1 = number>(_verticalStackWithRects: P0, _spacing: P1): R;
@@ -25,4 +25,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSStackLayoutRule: cocoa.classes.NSStackLayoutRule;
+declare const NSStackLayoutRule: cocoa.NSStackLayoutRule.CLASS;

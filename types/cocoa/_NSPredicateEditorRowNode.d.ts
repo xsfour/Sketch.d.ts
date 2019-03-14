@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSPredicateEditorRowNode<T = any> extends NSObject {
+  export interface _NSPredicateEditorRowNode<T0 = void, T1 = void, T2 = void> extends NSObject {
     applyTemplate_withViews_forOriginalTemplate<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown>(_applyTemplate: P0, _withViews: P1, _forOriginalTemplate: P2): R;
     dealloc<R = void>(): R;
     displayValue<R = unknown>(): R;
@@ -18,8 +18,8 @@ declare namespace cocoa {
     setCopiedTemplateContainer<R = void, P0 = NSMutableArray>(_v: P0): R;
     tree<R = _NSPredicateEditorTree>(): R;
   }
-  namespace classes {
-    export interface _NSPredicateEditorRowNode<T = any> extends NSObject {
+  namespace _NSPredicateEditorRowNode {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSPredicateEditorRowNode>(): R;
       new: <R = _NSPredicateEditorRowNode>() => R;
       rowNodeFromTree<R = unknown, P0 = unknown>(_rowNodeFromTree: P0): R;

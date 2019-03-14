@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSHelpManager<T = any> extends NSObject {
+  export interface NSHelpManager<T0 = void, T1 = void, T2 = void> extends NSObject {
     registerBooksInBundle<R = boolean, P0 = unknown>(_registerBooksInBundle: P0): R;
     findString_inBook<R = void, P0 = unknown, P1 = unknown>(_findString: P0, _inBook: P1): R;
     openHelpAnchor_inBook<R = void, P0 = unknown, P1 = unknown>(_openHelpAnchor: P0, _inBook: P1): R;
@@ -31,8 +31,8 @@ declare namespace cocoa {
     _orderOutHelpWindow<R = boolean>(): R;
     _orderFrontHelpWindow<R = void>(): R;
   }
-  namespace classes {
-    export interface NSHelpManager<T = any> extends NSObject {
+  namespace NSHelpManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSHelpManager>(): R;
       new: <R = NSHelpManager>() => R;
       isContextHelpModeActive<R = boolean>(): R;
@@ -46,4 +46,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSHelpManager: cocoa.classes.NSHelpManager;
+declare const NSHelpManager: cocoa.NSHelpManager.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarItemContainerView<T = any> extends NSView, _NSTouchBarItemLayoutWrapperProtocol {
+  export interface NSTouchBarItemContainerView<T0 = void, T1 = void, T2 = void> extends NSView, _NSTouchBarItemLayoutWrapperProtocol {
     observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
     _deferringLayoutNotifications<R = void, P0 = CDUnknownBlockType>(__deferringLayoutNotifications: P0): R;
     _updateMeasuredSizes<R = void>(): R;
@@ -32,12 +32,12 @@ declare namespace cocoa {
     preferredTrailingPosition<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSTouchBarItemContainerView<T = any> extends NSView, _NSTouchBarItemLayoutWrapperProtocol {
+  namespace NSTouchBarItemContainerView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView, _NSTouchBarItemLayoutWrapperProtocol {
       alloc<R = NSTouchBarItemContainerView>(): R;
       new: <R = NSTouchBarItemContainerView>() => R;
     }
   }
 }
 
-declare const NSTouchBarItemContainerView: cocoa.classes.NSTouchBarItemContainerView;
+declare const NSTouchBarItemContainerView: cocoa.NSTouchBarItemContainerView.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSplitViewController<T = any> extends NSViewController, NSSplitViewDelegateProtocol, NSUserInterfaceValidationsProtocol {
+  export interface NSSplitViewController<T0 = void, T1 = void, T2 = void> extends NSViewController, NSSplitViewDelegateProtocol, NSUserInterfaceValidationsProtocol {
     toggleSidebar<R = void, P0 = unknown>(_toggleSidebar: P0): R;
     _sidebarItemForToggling<R = unknown>(): R;
     _splitView_didStopOverlayingView<R = void, P0 = unknown, P1 = unknown>(__splitView: P0, _didStopOverlayingView: P1): R;
@@ -74,12 +74,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSSplitViewController<T = any> extends NSViewController, NSSplitViewDelegateProtocol, NSUserInterfaceValidationsProtocol {
+  namespace NSSplitViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController, NSSplitViewDelegateProtocol, NSUserInterfaceValidationsProtocol {
       alloc<R = NSSplitViewController>(): R;
       new: <R = NSSplitViewController>() => R;
     }
   }
 }
 
-declare const NSSplitViewController: cocoa.classes.NSSplitViewController;
+declare const NSSplitViewController: cocoa.NSSplitViewController.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDragToMoveOrCopyGestureRecognizer<T = any> extends MSDragGestureRecognizer {
+  export interface MSDragToMoveOrCopyGestureRecognizer<T0 = void, T1 = void, T2 = void> extends MSDragGestureRecognizer {
     setState<R = void, P0 = number>(_setState: P0): R;
     recalculateAlignmentAxis<R = void>(): R;
     alignmentDistance<R = number>(): R;
@@ -23,12 +23,12 @@ declare namespace cocoa {
     shouldSnap<R = boolean>(): R;
     shouldCopyDraggedItems<R = boolean>(): R;
   }
-  namespace classes {
-    export interface MSDragToMoveOrCopyGestureRecognizer<T = any> extends MSDragGestureRecognizer {
+  namespace MSDragToMoveOrCopyGestureRecognizer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSDragGestureRecognizer {
       alloc<R = MSDragToMoveOrCopyGestureRecognizer>(): R;
       new: <R = MSDragToMoveOrCopyGestureRecognizer>() => R;
     }
   }
 }
 
-declare const MSDragToMoveOrCopyGestureRecognizer: cocoa.classes.MSDragToMoveOrCopyGestureRecognizer;
+declare const MSDragToMoveOrCopyGestureRecognizer: cocoa.MSDragToMoveOrCopyGestureRecognizer.CLASS;

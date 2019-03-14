@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarRangeView<T = any> extends NSView {
+  export interface NSTouchBarRangeView<T0 = void, T1 = void, T2 = void> extends NSView {
     _coreUIDrawOptions<R = unknown>(): R;
     wantsUpdateLayer<R = boolean>(): R;
     _minWidthForSeparateHandles<R = number>(): R;
@@ -14,8 +14,8 @@ declare namespace cocoa {
     tintColor<R = NSColor>(): R;
     setTintColor<R = void, P0 = NSColor>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTouchBarRangeView<T = any> extends NSView {
+  namespace NSTouchBarRangeView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSTouchBarRangeView>(): R;
       new: <R = NSTouchBarRangeView>() => R;
       monoHandleSize<R = CGSize>(): R;
@@ -23,4 +23,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTouchBarRangeView: cocoa.classes.NSTouchBarRangeView;
+declare const NSTouchBarRangeView: cocoa.NSTouchBarRangeView.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDataMenuProviderDelegateProtocol<T = any> extends NSObjectProtocol {
+  export interface MSDataMenuProviderDelegateProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     dataMenuProviderDataIdentifier<R = NSString, P0 = MSDataMenuProvider>(_dataMenuProviderDataIdentifier: P0): R;
     dataMenuProviderRemoveDataRecord<R = void, P0 = MSDataMenuProvider>(_dataMenuProviderRemoveDataRecord: P0): R;
     dataMenuProviderRefreshMasterData<R = void, P0 = MSDataMenuProvider>(_dataMenuProviderRefreshMasterData: P0): R;
@@ -14,7 +14,7 @@ declare namespace cocoa {
     dataMenuProviderCanApplyMasterDataToInstances<R = boolean, P0 = MSDataMenuProvider>(_dataMenuProviderCanApplyMasterDataToInstances: P0): R;
     dataMenuProvider_canChooseDataOfType<R = boolean, P0 = MSDataMenuProvider, P1 = number>(_dataMenuProvider: P0, _canChooseDataOfType: P1): R;
   }
-  namespace classes {
-    export interface MSDataMenuProviderDelegateProtocol<T = any> extends NSObjectProtocol {  }
+  namespace MSDataMenuProviderDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface SVGImage<T = any> extends _SVGImage {}
-  namespace classes {
-    export interface SVGImage<T = any> extends _SVGImage {
+  export interface SVGImage<T0 = void, T1 = void, T2 = void> extends _SVGImage {}
+  namespace SVGImage {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _SVGImage {
       alloc<R = SVGImage>(): R;
       new: <R = SVGImage>() => R;
       initialize<R = void>(): R;
@@ -11,4 +11,4 @@ declare namespace cocoa {
   }
 }
 
-declare const SVGImage: cocoa.classes.SVGImage;
+declare const SVGImage: cocoa.SVGImage.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSConcreteHashTable<T = any> extends NSHashTable, NSSecureCodingProtocol {
+  export interface NSConcreteHashTable<T0 = void, T1 = void, T2 = void> extends NSHashTable, NSSecureCodingProtocol {
     dealloc<R = void>(): R;
     allObjects<R = unknown>(): R;
     insertItem<R = void, P0 = void>(_insertItem: P0): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     pointerFunctions<R = unknown>(): R;
     classForCoder<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSConcreteHashTable<T = any> extends NSHashTable, NSSecureCodingProtocol {
+  namespace NSConcreteHashTable {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSHashTable, NSSecureCodingProtocol {
       alloc<R = NSConcreteHashTable>(): R;
       new: <R = NSConcreteHashTable>() => R;
     }
   }
 }
 
-declare const NSConcreteHashTable: cocoa.classes.NSConcreteHashTable;
+declare const NSConcreteHashTable: cocoa.NSConcreteHashTable.CLASS;

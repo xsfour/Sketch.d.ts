@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface __DADisk<T = any> {}
-  namespace classes {
-    export interface __DADisk<T = any> {  }
+  export interface __DADisk<T0 = void, T1 = void, T2 = void> {}
+  namespace __DADisk {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

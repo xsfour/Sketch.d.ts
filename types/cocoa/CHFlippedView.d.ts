@@ -1,15 +1,15 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface CHFlippedView<T = any> extends NSView {
+  export interface CHFlippedView<T0 = void, T1 = void, T2 = void> extends NSView {
     isFlipped<R = boolean>(): R;
   }
-  namespace classes {
-    export interface CHFlippedView<T = any> extends NSView {
+  namespace CHFlippedView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = CHFlippedView>(): R;
       new: <R = CHFlippedView>() => R;
     }
   }
 }
 
-declare const CHFlippedView: cocoa.classes.CHFlippedView;
+declare const CHFlippedView: cocoa.CHFlippedView.CLASS;

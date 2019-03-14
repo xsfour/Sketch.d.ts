@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSplitViewSplitter<T = any> extends NSAccessibilityElement {
+  export interface NSSplitViewSplitter<T0 = void, T1 = void, T2 = void> extends NSAccessibilityElement {
     index<R = number>(): R;
     hash<R = number>(): R;
     initWithIndex_parent<R = unknown, P0 = number, P1 = unknown>(_initWithIndex: P0, _parent: P1): R;
@@ -22,8 +22,8 @@ declare namespace cocoa {
     _accessibilityPreviousSplitterMaxCoordinate<R = number>(): R;
     _accessibilitySplitterMinCoordinate<R = number>(): R;
   }
-  namespace classes {
-    export interface NSSplitViewSplitter<T = any> extends NSAccessibilityElement {
+  namespace NSSplitViewSplitter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSAccessibilityElement {
       alloc<R = NSSplitViewSplitter>(): R;
       new: <R = NSSplitViewSplitter>() => R;
       splitterWithIndex_parent<R = unknown, P0 = number, P1 = unknown>(_splitterWithIndex: P0, _parent: P1): R;
@@ -31,4 +31,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSSplitViewSplitter: cocoa.classes.NSSplitViewSplitter;
+declare const NSSplitViewSplitter: cocoa.NSSplitViewSplitter.CLASS;

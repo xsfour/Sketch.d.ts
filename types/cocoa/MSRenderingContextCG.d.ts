@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSRenderingContextCG<T = any> extends MSRenderingContext {
+  export interface MSRenderingContextCG<T0 = void, T1 = void, T2 = void> extends MSRenderingContext {
     shouldDrawFills<R = boolean>(): R;
     ifCondition_skipDrawingFillsInBlock<R = void, P0 = boolean, P1 = CDUnknownBlockType>(_ifCondition: P0, _skipDrawingFillsInBlock: P1): R;
     shouldClipFills<R = boolean>(): R;
@@ -40,12 +40,12 @@ declare namespace cocoa {
     contextRef<R = CGContext>(): R;
     contextIsVectorBacked<R = boolean>(): R;
   }
-  namespace classes {
-    export interface MSRenderingContextCG<T = any> extends MSRenderingContext {
+  namespace MSRenderingContextCG {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSRenderingContext {
       alloc<R = MSRenderingContextCG>(): R;
       new: <R = MSRenderingContextCG>() => R;
     }
   }
 }
 
-declare const MSRenderingContextCG: cocoa.classes.MSRenderingContextCG;
+declare const MSRenderingContextCG: cocoa.MSRenderingContextCG.CLASS;

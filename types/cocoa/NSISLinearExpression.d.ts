@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSISLinearExpression<T = any> extends NSObject, NSFastEnumerationProtocol {
+  export interface NSISLinearExpression<T0 = void, T1 = void, T2 = void> extends NSObject, NSFastEnumerationProtocol {
     copyContentsAndReturnToPool<R = unknown>(): R;
     returnToPool<R = void>(): R;
     initWithInlineCapacity_engine<R = unknown, P0 = number, P1 = unknown>(_initWithInlineCapacity: P0, _engine: P1): R;
@@ -34,8 +34,8 @@ declare namespace cocoa {
     setConstant<R = void, P0 = number>(_v: P0): R;
     engine<R = NSISEngine>(): R;
   }
-  namespace classes {
-    export interface NSISLinearExpression<T = any> extends NSObject, NSFastEnumerationProtocol {
+  namespace NSISLinearExpression {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSFastEnumerationProtocol {
       alloc<R = NSISLinearExpression>(): R;
       new: <R = NSISLinearExpression>() => R;
       acquireFromPoolForUseCase_engine<R = unknown, P0 = number, P1 = unknown>(_acquireFromPoolForUseCase: P0, _engine: P1): R;
@@ -47,4 +47,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSISLinearExpression: cocoa.classes.NSISLinearExpression;
+declare const NSISLinearExpression: cocoa.NSISLinearExpression.CLASS;

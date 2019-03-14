@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBitmapOverrideInspectorItem<T = any> extends MSOverrideInspectorItem, MSDataMenuProviderDelegateProtocol {
+  export interface MSBitmapOverrideInspectorItem<T0 = void, T1 = void, T2 = void> extends MSOverrideInspectorItem, MSDataMenuProviderDelegateProtocol {
     dataOverrides<R = unknown>(): R;
     overrideImage<R = unknown>(): R;
     NSImage<R = unknown>(): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSBitmapOverrideInspectorItem<T = any> extends MSOverrideInspectorItem, MSDataMenuProviderDelegateProtocol {
+  namespace MSBitmapOverrideInspectorItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSOverrideInspectorItem, MSDataMenuProviderDelegateProtocol {
       alloc<R = MSBitmapOverrideInspectorItem>(): R;
       new: <R = MSBitmapOverrideInspectorItem>() => R;
     }
   }
 }
 
-declare const MSBitmapOverrideInspectorItem: cocoa.classes.MSBitmapOverrideInspectorItem;
+declare const MSBitmapOverrideInspectorItem: cocoa.MSBitmapOverrideInspectorItem.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface AppController<T = any> extends NSObject, NSApplicationDelegateProtocol, NSWindowDelegateProtocol, NSMenuDelegateProtocol, NSUserNotificationCenterDelegateProtocol, MSDataMenuProviderDelegateProtocol, MSDataSupplierManagerDelegateProtocol {
+  export interface AppController<T0 = void, T1 = void, T2 = void> extends NSObject, NSApplicationDelegateProtocol, NSWindowDelegateProtocol, NSMenuDelegateProtocol, NSUserNotificationCenterDelegateProtocol, MSDataMenuProviderDelegateProtocol, MSDataSupplierManagerDelegateProtocol {
     cxx_destruct<R = void>(): R;
     applyAppearanceToAllWindows<R = void, P0 = unknown>(_applyAppearanceToAllWindows: P0): R;
     toggleDarkMode<R = void, P0 = unknown>(_toggleDarkMode: P0): R;
@@ -149,8 +149,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface AppController<T = any> extends NSObject, NSApplicationDelegateProtocol, NSWindowDelegateProtocol, NSMenuDelegateProtocol, NSUserNotificationCenterDelegateProtocol, MSDataMenuProviderDelegateProtocol, MSDataSupplierManagerDelegateProtocol {
+  namespace AppController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSApplicationDelegateProtocol, NSWindowDelegateProtocol, NSMenuDelegateProtocol, NSUserNotificationCenterDelegateProtocol, MSDataMenuProviderDelegateProtocol, MSDataSupplierManagerDelegateProtocol {
       alloc<R = AppController>(): R;
       new: <R = AppController>() => R;
       sharedInstance<R = unknown>(): R;
@@ -158,4 +158,4 @@ declare namespace cocoa {
   }
 }
 
-declare const AppController: cocoa.classes.AppController;
+declare const AppController: cocoa.AppController.CLASS;

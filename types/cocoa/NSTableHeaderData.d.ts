@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableHeaderData<T = any> extends NSObject {
+  export interface NSTableHeaderData<T0 = void, T1 = void, T2 = void> extends NSObject {
     updateColumnViewWidthsAnimated<R = void, P0 = boolean>(_updateColumnViewWidthsAnimated: P0): R;
     headerCellViewAtColumn<R = unknown, P0 = number>(_headerCellViewAtColumn: P0): R;
     tableHeaderViewDraggedDistanceChanged<R = void>(): R;
@@ -20,12 +20,12 @@ declare namespace cocoa {
     headerView<R = NSTableHeaderView>(): R;
     setHeaderView<R = void, P0 = NSTableHeaderView>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTableHeaderData<T = any> extends NSObject {
+  namespace NSTableHeaderData {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSTableHeaderData>(): R;
       new: <R = NSTableHeaderData>() => R;
     }
   }
 }
 
-declare const NSTableHeaderData: cocoa.classes.NSTableHeaderData;
+declare const NSTableHeaderData: cocoa.NSTableHeaderData.CLASS;

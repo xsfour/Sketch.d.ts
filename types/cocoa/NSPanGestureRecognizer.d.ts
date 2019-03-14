@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPanGestureRecognizer<T = any> extends NSGestureRecognizer, NSCodingProtocol {
+  export interface NSPanGestureRecognizer<T0 = void, T1 = void, T2 = void> extends NSGestureRecognizer, NSCodingProtocol {
     _setTranslatesContextOrigin<R = void, P0 = boolean>(__setTranslatesContextOrigin: P0): R;
     _translatesContextOrigin<R = boolean>(): R;
     _noteStateChanged<R = void>(): R;
@@ -22,12 +22,12 @@ declare namespace cocoa {
     buttonMask<R = number>(): R;
     setButtonMask<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSPanGestureRecognizer<T = any> extends NSGestureRecognizer, NSCodingProtocol {
+  namespace NSPanGestureRecognizer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSGestureRecognizer, NSCodingProtocol {
       alloc<R = NSPanGestureRecognizer>(): R;
       new: <R = NSPanGestureRecognizer>() => R;
     }
   }
 }
 
-declare const NSPanGestureRecognizer: cocoa.classes.NSPanGestureRecognizer;
+declare const NSPanGestureRecognizer: cocoa.NSPanGestureRecognizer.CLASS;

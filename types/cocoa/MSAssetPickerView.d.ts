@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAssetPickerView<T = any> extends NSView, NSScrubberDataSourceProtocol, NSScrubberDelegateProtocol, NSTouchBarDelegateProtocol {
+  export interface MSAssetPickerView<T0 = void, T1 = void, T2 = void> extends NSView, NSScrubberDataSourceProtocol, NSScrubberDelegateProtocol, NSTouchBarDelegateProtocol {
     cxx_destruct<R = void>(): R;
     scrubber<R = unknown>(): R;
     delegateInsertPresetFromPasteboardData_atIndex<R = boolean, P0 = unknown, P1 = number>(_delegateInsertPresetFromPasteboardData: P0, _atIndex: P1): R;
@@ -56,12 +56,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSAssetPickerView<T = any> extends NSView, NSScrubberDataSourceProtocol, NSScrubberDelegateProtocol, NSTouchBarDelegateProtocol {
+  namespace MSAssetPickerView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView, NSScrubberDataSourceProtocol, NSScrubberDelegateProtocol, NSTouchBarDelegateProtocol {
       alloc<R = MSAssetPickerView>(): R;
       new: <R = MSAssetPickerView>() => R;
     }
   }
 }
 
-declare const MSAssetPickerView: cocoa.classes.MSAssetPickerView;
+declare const MSAssetPickerView: cocoa.MSAssetPickerView.CLASS;

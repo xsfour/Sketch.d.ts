@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableBackgroundView<T = any> extends NSView {
+  export interface NSTableBackgroundView<T0 = void, T1 = void, T2 = void> extends NSView {
     _preferredAppearance<R = unknown>(): R;
     setLayer<R = void, P0 = unknown>(_setLayer: P0): R;
     _drawAlternatingBackgroundAndGridInRect<R = void, P0 = CGRect>(__drawAlternatingBackgroundAndGridInRect: P0): R;
@@ -27,12 +27,12 @@ declare namespace cocoa {
     opaque<R = boolean>(): R;
     setOpaque<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTableBackgroundView<T = any> extends NSView {
+  namespace NSTableBackgroundView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSTableBackgroundView>(): R;
       new: <R = NSTableBackgroundView>() => R;
     }
   }
 }
 
-declare const NSTableBackgroundView: cocoa.classes.NSTableBackgroundView;
+declare const NSTableBackgroundView: cocoa.NSTableBackgroundView.CLASS;

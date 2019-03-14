@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSerializer<T = any> extends NSObject {}
-  namespace classes {
-    export interface NSSerializer<T = any> extends NSObject {
+  export interface NSSerializer<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace NSSerializer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSSerializer>(): R;
       new: <R = NSSerializer>() => R;
       serializePropertyList<R = unknown, P0 = unknown>(_serializePropertyList: P0): R;
@@ -12,4 +12,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSSerializer: cocoa.classes.NSSerializer;
+declare const NSSerializer: cocoa.NSSerializer.CLASS;

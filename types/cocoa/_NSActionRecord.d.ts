@@ -1,18 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSActionRecord<T = any> extends NSObject {
-    cxx_destruct<R = void>(): R;
-    dealloc<R = void>(): R;
-    initWithAction_target_sender<R = unknown, P0 = string, P1 = unknown, P2 = unknown>(_initWithAction: P0, _target: P1, _sender: P2): R;
+  export interface _NSActionRecord<T0 = void, T1 = void, T2 = void> extends NSObject {
     fromMainMenu<R = boolean>(): R;
-    canUseResponderChain<R = boolean>(): R;
-    actionTitle<R = NSString>(): R;
-    tag<R = number>(): R;
-    action<R = string>(): R;
   }
-  namespace classes {
-    export interface _NSActionRecord<T = any> extends NSObject {
+  namespace _NSActionRecord {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSActionRecord>(): R;
       new: <R = _NSActionRecord>() => R;
     }

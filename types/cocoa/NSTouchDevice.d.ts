@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchDevice<T = any> extends NSObject, NSHapticFeedbackPerformerProtocol {
+  export interface NSTouchDevice<T0 = void, T1 = void, T2 = void> extends NSObject, NSHapticFeedbackPerformerProtocol {
     supportsForce<R = boolean>(): R;
     hasActuation<R = boolean>(): R;
     _cancelledTouches<R = unknown>(): R;
@@ -45,8 +45,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSTouchDevice<T = any> extends NSObject, NSHapticFeedbackPerformerProtocol {
+  namespace NSTouchDevice {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSHapticFeedbackPerformerProtocol {
       alloc<R = NSTouchDevice>(): R;
       new: <R = NSTouchDevice>() => R;
       _touchDeviceRemoved<R = void, P0 = unknown>(__touchDeviceRemoved: P0): R;
@@ -65,4 +65,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTouchDevice: cocoa.classes.NSTouchDevice;
+declare const NSTouchDevice: cocoa.NSTouchDevice.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSExportInspectorViewController<T = any> extends MSInspectorItem {
+  export interface MSExportInspectorViewController<T0 = void, T1 = void, T2 = void> extends MSInspectorItem {
     firstResponderIgnoringFieldEditor<R = unknown>(): R;
     editExportPresets<R = void, P0 = unknown>(_editExportPresets: P0): R;
     addExportPreset<R = void, P0 = unknown>(_addExportPreset: P0): R;
@@ -41,12 +41,12 @@ declare namespace cocoa {
     views<R = NSArray>(): R;
     hasExports<R = boolean>(): R;
   }
-  namespace classes {
-    export interface MSExportInspectorViewController<T = any> extends MSInspectorItem {
+  namespace MSExportInspectorViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSInspectorItem {
       alloc<R = MSExportInspectorViewController>(): R;
       new: <R = MSExportInspectorViewController>() => R;
     }
   }
 }
 
-declare const MSExportInspectorViewController: cocoa.classes.MSExportInspectorViewController;
+declare const MSExportInspectorViewController: cocoa.MSExportInspectorViewController.CLASS;

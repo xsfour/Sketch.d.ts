@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _cachedWantsToPrefetchContent<T = any> {}
-  namespace classes {
-    export interface _cachedWantsToPrefetchContent<T = any> {  }
+  export interface _cachedWantsToPrefetchContent<T0 = void, T1 = void, T2 = void> {}
+  namespace _cachedWantsToPrefetchContent {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

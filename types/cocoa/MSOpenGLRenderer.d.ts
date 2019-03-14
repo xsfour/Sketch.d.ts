@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSOpenGLRenderer<T = any> extends NSObject, MSGPURendererProtocol {
+  export interface MSOpenGLRenderer<T0 = void, T1 = void, T2 = void> extends NSObject, MSGPURendererProtocol {
     cxx_destruct<R = void>(): R;
     _endDrawCall<R = void>(): R;
     _beginDrawCall<R = void>(): R;
@@ -20,8 +20,8 @@ declare namespace cocoa {
     openGLLayer<R = MSOpenGLLayer>(): R;
     setOpenGLLayer<R = void, P0 = MSOpenGLLayer>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSOpenGLRenderer<T = any> extends NSObject, MSGPURendererProtocol {
+  namespace MSOpenGLRenderer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, MSGPURendererProtocol {
       alloc<R = MSOpenGLRenderer>(): R;
       new: <R = MSOpenGLRenderer>() => R;
       createWithCompletionHandler<R = unknown, P0 = CDUnknownBlockType>(_createWithCompletionHandler: P0): R;
@@ -29,4 +29,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSOpenGLRenderer: cocoa.classes.MSOpenGLRenderer;
+declare const MSOpenGLRenderer: cocoa.MSOpenGLRenderer.CLASS;

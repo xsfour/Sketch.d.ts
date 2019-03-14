@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBaseAlignLayersAction<T = any> extends MSDocumentAction, MSAltButtonTargetProtocol {
+  export interface MSBaseAlignLayersAction<T0 = void, T1 = void, T2 = void> extends MSDocumentAction, MSAltButtonTargetProtocol {
     label<R = unknown>(): R;
     validate<R = boolean>(): R;
     alignVectorPointsToKey<R = void, P0 = unknown>(_alignVectorPointsToKey: P0): R;
@@ -12,12 +12,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSBaseAlignLayersAction<T = any> extends MSDocumentAction, MSAltButtonTargetProtocol {
+  namespace MSBaseAlignLayersAction {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSDocumentAction, MSAltButtonTargetProtocol {
       alloc<R = MSBaseAlignLayersAction>(): R;
       new: <R = MSBaseAlignLayersAction>() => R;
     }
   }
 }
 
-declare const MSBaseAlignLayersAction: cocoa.classes.MSBaseAlignLayersAction;
+declare const MSBaseAlignLayersAction: cocoa.MSBaseAlignLayersAction.CLASS;

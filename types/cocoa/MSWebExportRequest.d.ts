@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSWebExportRequest<T = any> extends MSExportRequest {
+  export interface MSWebExportRequest<T0 = void, T1 = void, T2 = void> extends MSExportRequest {
     includedLayerIDs<R = unknown>(): R;
     includedLayerIDsFromLayer_ancestors<R = unknown, P0 = unknown, P1 = unknown>(_includedLayerIDsFromLayer: P0, _ancestors: P1): R;
     layerBehavior<R = number>(): R;
@@ -9,8 +9,8 @@ declare namespace cocoa {
     rootLayer<R = MSWebExportableRootLayer>(): R;
     setRootLayer<R = void, P0 = MSWebExportableRootLayer>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSWebExportRequest<T = any> extends MSExportRequest {
+  namespace MSWebExportRequest {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSExportRequest {
       alloc<R = MSWebExportRequest>(): R;
       new: <R = MSWebExportRequest>() => R;
       webExportRequestForRootLayer_inDocument_atScale<R = unknown, P0 = unknown, P1 = unknown, P2 = number>(_webExportRequestForRootLayer: P0, _inDocument: P1, _atScale: P2): R;
@@ -18,4 +18,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSWebExportRequest: cocoa.classes.MSWebExportRequest;
+declare const MSWebExportRequest: cocoa.MSWebExportRequest.CLASS;

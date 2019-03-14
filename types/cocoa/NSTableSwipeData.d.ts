@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableSwipeData<T = any> extends NSObject {
+  export interface NSTableSwipeData<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     hasMoreThanOneButtonAndAConsumer<R = boolean>(): R;
     setHasMoreThanOneButtonAndAConsumer<R = void, P0 = boolean>(_v: P0): R;
@@ -32,12 +32,12 @@ declare namespace cocoa {
     swipeToDeleteRow<R = number>(): R;
     setSwipeToDeleteRow<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTableSwipeData<T = any> extends NSObject {
+  namespace NSTableSwipeData {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSTableSwipeData>(): R;
       new: <R = NSTableSwipeData>() => R;
     }
   }
 }
 
-declare const NSTableSwipeData: cocoa.classes.NSTableSwipeData;
+declare const NSTableSwipeData: cocoa.NSTableSwipeData.CLASS;

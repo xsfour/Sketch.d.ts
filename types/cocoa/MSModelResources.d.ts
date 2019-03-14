@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSModelResources<T = any> extends BCSingleton {
+  export interface MSModelResources<T0 = void, T1 = void, T2 = void> extends BCSingleton {
     cxx_destruct<R = void>(): R;
     resourcesNeedingMigration<R = unknown>(): R;
     loadNoiseImageWithIndex<R = unknown, P0 = number>(_loadNoiseImageWithIndex: P0): R;
@@ -16,9 +16,9 @@ declare namespace cocoa {
     bundle<R = NSBundle>(): R;
     setBundle<R = void, P0 = NSBundle>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSModelResources<T = any> extends BCSingleton {  }
+  namespace MSModelResources {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends BCSingleton {}
   }
 }
 
-declare const MSModelResources: cocoa.classes.MSModelResources;
+declare const MSModelResources: cocoa.MSModelResources.CLASS;

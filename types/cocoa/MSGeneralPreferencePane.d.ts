@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSGeneralPreferencePane<T = any> extends MSPreferencePane {
+  export interface MSGeneralPreferencePane<T0 = void, T1 = void, T2 = void> extends MSPreferencePane {
     pickDefaultColorSpace<R = void, P0 = unknown>(_pickDefaultColorSpace: P0): R;
     refreshColorSpaceDescription<R = void>(): R;
     analyticsAction<R = void, P0 = unknown>(_analyticsAction: P0): R;
@@ -10,12 +10,12 @@ declare namespace cocoa {
     defaultColorSpaceDescriptionLabel<R = NSTextField>(): R;
     setDefaultColorSpaceDescriptionLabel<R = void, P0 = NSTextField>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSGeneralPreferencePane<T = any> extends MSPreferencePane {
+  namespace MSGeneralPreferencePane {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSPreferencePane {
       alloc<R = MSGeneralPreferencePane>(): R;
       new: <R = MSGeneralPreferencePane>() => R;
     }
   }
 }
 
-declare const MSGeneralPreferencePane: cocoa.classes.MSGeneralPreferencePane;
+declare const MSGeneralPreferencePane: cocoa.MSGeneralPreferencePane.CLASS;

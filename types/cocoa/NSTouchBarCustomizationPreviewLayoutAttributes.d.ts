@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarCustomizationPreviewLayoutAttributes<T = any> extends NSCollectionViewLayoutAttributes {
+  export interface NSTouchBarCustomizationPreviewLayoutAttributes<T0 = void, T1 = void, T2 = void> extends NSCollectionViewLayoutAttributes {
     isEqual<R = boolean, P0 = unknown>(_isEqual: P0): R;
     copyWithZone<R = unknown, P0 = _NSZone>(_copyWithZone: P0): R;
     description<R = unknown>(): R;
@@ -14,9 +14,9 @@ declare namespace cocoa {
     editable<R = boolean>(): R;
     setEditable<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTouchBarCustomizationPreviewLayoutAttributes<T = any> extends NSCollectionViewLayoutAttributes {  }
+  namespace NSTouchBarCustomizationPreviewLayoutAttributes {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSCollectionViewLayoutAttributes {}
   }
 }
 
-declare const NSTouchBarCustomizationPreviewLayoutAttributes: cocoa.classes.NSTouchBarCustomizationPreviewLayoutAttributes;
+declare const NSTouchBarCustomizationPreviewLayoutAttributes: cocoa.NSTouchBarCustomizationPreviewLayoutAttributes.CLASS;

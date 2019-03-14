@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPopoverAction<T = any> extends MSDocumentAction, BCPopoverDelegateProtocol {
+  export interface MSPopoverAction<T0 = void, T1 = void, T2 = void> extends MSDocumentAction, BCPopoverDelegateProtocol {
     windowDidResignMain<R = void, P0 = unknown>(_windowDidResignMain: P0): R;
     viewForAttachingPopover<R = unknown, P0 = unknown>(_viewForAttachingPopover: P0): R;
     closePopover<R = void>(): R;
@@ -16,8 +16,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSPopoverAction<T = any> extends MSDocumentAction, BCPopoverDelegateProtocol {
+  namespace MSPopoverAction {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSDocumentAction, BCPopoverDelegateProtocol {
       alloc<R = MSPopoverAction>(): R;
       new: <R = MSPopoverAction>() => R;
       popoverClass<R = unknown>(): R;
@@ -25,4 +25,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSPopoverAction: cocoa.classes.MSPopoverAction;
+declare const MSPopoverAction: cocoa.MSPopoverAction.CLASS;

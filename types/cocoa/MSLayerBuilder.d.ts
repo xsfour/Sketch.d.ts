@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSLayerBuilder<T = any> extends NSObject {}
-  namespace classes {
-    export interface MSLayerBuilder<T = any> extends NSObject {
+  export interface MSLayerBuilder<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace MSLayerBuilder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSLayerBuilder>(): R;
       new: <R = MSLayerBuilder>() => R;
       layerTreeWithContentsOfURL_error<R = unknown, P0 = unknown, P1 = unknown>(_layerTreeWithContentsOfURL: P0, _error: P1): R;
@@ -14,4 +14,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSLayerBuilder: cocoa.classes.MSLayerBuilder;
+declare const MSLayerBuilder: cocoa.MSLayerBuilder.CLASS;

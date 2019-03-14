@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAlignmentLayoutRule<T = any> extends NSObject, NSLayoutRuleProtocol {
+  export interface NSAlignmentLayoutRule<T0 = void, T1 = void, T2 = void> extends NSObject, NSLayoutRuleProtocol {
     dealloc<R = void>(): R;
     initWithAlignedAnchors<R = unknown, P0 = unknown>(_initWithAlignedAnchors: P0): R;
     alignedAnchors<R = NSArray>(): R;
@@ -12,8 +12,8 @@ declare namespace cocoa {
     debugDescription<R = NSString>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSAlignmentLayoutRule<T = any> extends NSObject, NSLayoutRuleProtocol {
+  namespace NSAlignmentLayoutRule {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSLayoutRuleProtocol {
       alloc<R = NSAlignmentLayoutRule>(): R;
       new: <R = NSAlignmentLayoutRule>() => R;
       alignmentWithAnchors<R = unknown, P0 = unknown>(_alignmentWithAnchors: P0): R;
@@ -21,4 +21,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSAlignmentLayoutRule: cocoa.classes.NSAlignmentLayoutRule;
+declare const NSAlignmentLayoutRule: cocoa.NSAlignmentLayoutRule.CLASS;

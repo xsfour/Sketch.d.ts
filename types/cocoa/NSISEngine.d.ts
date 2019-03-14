@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSISEngine<T = any> extends NSObject, NSISVariableDelegateProtocol {
+  export interface NSISEngine<T0 = void, T1 = void, T2 = void> extends NSObject, NSISVariableDelegateProtocol {
     exerciseAmbiguityInVariable<R = boolean, P0 = unknown>(_exerciseAmbiguityInVariable: P0): R;
     valueOfVariableIsAmbiguous<R = boolean, P0 = unknown>(_valueOfVariableIsAmbiguous: P0): R;
     incoming_andOutgoing_foundOutgoing_rowHeadsThatMakeValueAmbiguousForVariable<R = boolean, P0 = unknown, P1 = unknown, P2 = string, P3 = unknown>(_incoming: P0, _andOutgoing: P1, _foundOutgoing: P2, _rowHeadsThatMakeValueAmbiguousForVariable: P3): R;
@@ -113,8 +113,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSISEngine<T = any> extends NSObject, NSISVariableDelegateProtocol {
+  namespace NSISEngine {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSISVariableDelegateProtocol {
       alloc<R = NSISEngine>(): R;
       new: <R = NSISEngine>() => R;
       setLogOnInvalidUseFromBGThread<R = void, P0 = boolean>(_setLogOnInvalidUseFromBGThread: P0): R;
@@ -127,4 +127,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSISEngine: cocoa.classes.NSISEngine;
+declare const NSISEngine: cocoa.NSISEngine.CLASS;

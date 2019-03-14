@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMetadataQuery<T = any> extends NSObject {
+  export interface NSMetadataQuery<T0 = void, T1 = void, T2 = void> extends NSObject {
     _isMDQuery<R = boolean>(): R;
     removeObserver_forKeyPath<R = void, P0 = unknown, P1 = unknown>(_removeObserver: P0, _forKeyPath: P1): R;
     _pendingChangeNotificationsArrayForKey_create<R = unknown, P0 = unknown, P1 = boolean>(__pendingChangeNotificationsArrayForKey: P0, _create: P1): R;
@@ -65,8 +65,8 @@ declare namespace cocoa {
     delegate<R = NSMetadataQueryDelegate>(): R;
     setDelegate<R = void, P0 = NSMetadataQueryDelegate>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSMetadataQuery<T = any> extends NSObject {
+  namespace NSMetadataQuery {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSMetadataQuery>(): R;
       new: <R = NSMetadataQuery>() => R;
       automaticallyNotifiesObserversForKey<R = boolean, P0 = unknown>(_automaticallyNotifiesObserversForKey: P0): R;
@@ -80,4 +80,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSMetadataQuery: cocoa.classes.NSMetadataQuery;
+declare const NSMetadataQuery: cocoa.NSMetadataQuery.CLASS;

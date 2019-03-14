@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTextAttachmentCellProtocol<T = any> extends NSObjectProtocol {
+  export interface NSTextAttachmentCellProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     cellFrameForTextContainer_proposedLineFragment_glyphPosition_characterIndex<R = CGRect, P0 = NSTextContainer, P1 = CGRect, P2 = CGPoint, P3 = number>(_cellFrameForTextContainer: P0, _proposedLineFragment: P1, _glyphPosition: P2, _characterIndex: P3): R;
     trackMouse_inRect_ofView_atCharacterIndex_untilMouseUp<R = boolean, P0 = NSEvent, P1 = CGRect, P2 = NSView, P3 = number, P4 = boolean>(_trackMouse: P0, _inRect: P1, _ofView: P2, _atCharacterIndex: P3, _untilMouseUp: P4): R;
     wantsToTrackMouseForEvent_inRect_ofView_atCharacterIndex<R = boolean, P0 = NSEvent, P1 = CGRect, P2 = NSView, P3 = number>(_wantsToTrackMouseForEvent: P0, _inRect: P1, _ofView: P2, _atCharacterIndex: P3): R;
@@ -16,7 +16,7 @@ declare namespace cocoa {
     attachment<R = NSTextAttachment>(): R;
     setAttachment<R = void, P0 = NSTextAttachment>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTextAttachmentCellProtocol<T = any> extends NSObjectProtocol {  }
+  namespace NSTextAttachmentCellProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

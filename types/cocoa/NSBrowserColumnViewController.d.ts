@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSBrowserColumnViewController<T = any> extends NSViewController {
+  export interface NSBrowserColumnViewController<T0 = void, T1 = void, T2 = void> extends NSViewController {
     noteHeightOfRowsWithIndexesChanged<R = void, P0 = unknown>(_noteHeightOfRowsWithIndexesChanged: P0): R;
     rowHeight<R = number>(): R;
     setRowHeight<R = void, P0 = number>(_setRowHeight: P0): R;
@@ -57,12 +57,12 @@ declare namespace cocoa {
     allowsMultipleSelection<R = boolean>(): R;
     setAllowsMultipleSelection<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSBrowserColumnViewController<T = any> extends NSViewController {
+  namespace NSBrowserColumnViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController {
       alloc<R = NSBrowserColumnViewController>(): R;
       new: <R = NSBrowserColumnViewController>() => R;
     }
   }
 }
 
-declare const NSBrowserColumnViewController: cocoa.classes.NSBrowserColumnViewController;
+declare const NSBrowserColumnViewController: cocoa.NSBrowserColumnViewController.CLASS;

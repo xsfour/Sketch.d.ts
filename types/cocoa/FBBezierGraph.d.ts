@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface FBBezierGraph<T = any> extends NSObject {
+  export interface FBBezierGraph<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     debugQuickLookObject<R = unknown>(): R;
     bezierGraphBySplittingSelfCrossingContours<R = unknown, P0 = unknown>(_bezierGraphBySplittingSelfCrossingContours: P0): R;
@@ -91,8 +91,8 @@ declare namespace cocoa {
     nonEmptyContours<R = NSArray>(): R;
     bounds<R = CGRect>(): R;
   }
-  namespace classes {
-    export interface FBBezierGraph<T = any> extends NSObject {
+  namespace FBBezierGraph {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = FBBezierGraph>(): R;
       new: <R = FBBezierGraph>() => R;
       bezierGraph<R = unknown>(): R;
@@ -103,4 +103,4 @@ declare namespace cocoa {
   }
 }
 
-declare const FBBezierGraph: cocoa.classes.FBBezierGraph;
+declare const FBBezierGraph: cocoa.FBBezierGraph.CLASS;

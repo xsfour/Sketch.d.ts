@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface USet<T = any> {}
-  namespace classes {
-    export interface USet<T = any> {  }
+  export interface USet<T0 = void, T1 = void, T2 = void> {}
+  namespace USet {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const USet: cocoa.classes.USet;
+declare const USet: cocoa.USet.CLASS;

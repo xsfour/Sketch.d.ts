@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPersonNameComponentsFormatter<T = any> extends NSFormatter, NSObservableProtocol, NSObserverProtocol, NSSecureCodingProtocol, NSCopyingProtocol {
+  export interface NSPersonNameComponentsFormatter<T0 = void, T1 = void, T2 = void> extends NSFormatter, NSObservableProtocol, NSObserverProtocol, NSSecureCodingProtocol, NSCopyingProtocol {
     isEqualToFormatter<R = boolean, P0 = unknown>(_isEqualToFormatter: P0): R;
     personNameComponentsFromString<R = unknown, P0 = unknown>(_personNameComponentsFromString: P0): R;
     _nameOrderWithOverridesForComponents<R = number, P0 = unknown>(__nameOrderWithOverridesForComponents: P0): R;
@@ -32,8 +32,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSPersonNameComponentsFormatter<T = any> extends NSFormatter, NSObservableProtocol, NSObserverProtocol, NSSecureCodingProtocol, NSCopyingProtocol {
+  namespace NSPersonNameComponentsFormatter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSFormatter, NSObservableProtocol, NSObserverProtocol, NSSecureCodingProtocol, NSCopyingProtocol {
       alloc<R = NSPersonNameComponentsFormatter>(): R;
       new: <R = NSPersonNameComponentsFormatter>() => R;
       __stringValueForShortStyle<R = unknown, P0 = number>(___stringValueForShortStyle: P0): R;
@@ -98,4 +98,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPersonNameComponentsFormatter: cocoa.classes.NSPersonNameComponentsFormatter;
+declare const NSPersonNameComponentsFormatter: cocoa.NSPersonNameComponentsFormatter.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAccessibilityAttributeAccessorInfo<T = any> extends NSObject {
+  export interface NSAccessibilityAttributeAccessorInfo<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     debuggingDictionary<R = unknown>(): R;
     setAttributeValueForObject_withValue<R = boolean, P0 = unknown, P1 = unknown>(_setAttributeValueForObject: P0, _withValue: P1): R;
@@ -31,8 +31,8 @@ declare namespace cocoa {
     action<R = string>(): R;
     setAction<R = void, P0 = string>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSAccessibilityAttributeAccessorInfo<T = any> extends NSObject {
+  namespace NSAccessibilityAttributeAccessorInfo {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSAccessibilityAttributeAccessorInfo>(): R;
       new: <R = NSAccessibilityAttributeAccessorInfo>() => R;
       _stringForAttributeType<R = unknown, P0 = number>(__stringForAttributeType: P0): R;
@@ -41,4 +41,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSAccessibilityAttributeAccessorInfo: cocoa.classes.NSAccessibilityAttributeAccessorInfo;
+declare const NSAccessibilityAttributeAccessorInfo: cocoa.NSAccessibilityAttributeAccessorInfo.CLASS;

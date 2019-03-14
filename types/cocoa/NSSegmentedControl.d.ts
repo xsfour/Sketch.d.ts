@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSegmentedControl<T = any> extends NSControl, NSUserInterfaceCompressionProtocol {
+  export interface NSSegmentedControl<T0 = void, T1 = void, T2 = void> extends NSControl, NSUserInterfaceCompressionProtocol {
     touchBarHitTestInsets<R = NSEdgeInsets>(): R;
     _supportedOptionsFromPrioritizedOptions<R = unknown, P0 = unknown>(__supportedOptionsFromPrioritizedOptions: P0): R;
     setHidesUnselectedLabelsWhenNecessary<R = void, P0 = boolean>(_setHidesUnselectedLabelsWhenNecessary: P0): R;
@@ -70,8 +70,8 @@ declare namespace cocoa {
     segmentCount<R = number>(): R;
     setSegmentCount<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSSegmentedControl<T = any> extends NSControl, NSUserInterfaceCompressionProtocol {
+  namespace NSSegmentedControl {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSControl, NSUserInterfaceCompressionProtocol {
       alloc<R = NSSegmentedControl>(): R;
       new: <R = NSSegmentedControl>() => R;
       segmentedControlWithSegmentImages_trackingMode_target_action<R = unknown, P0 = unknown, P1 = number, P2 = unknown, P3 = string>(_segmentedControlWithSegmentImages: P0, _trackingMode: P1, _target: P2, _action: P3): R;
@@ -83,4 +83,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSSegmentedControl: cocoa.classes.NSSegmentedControl;
+declare const NSSegmentedControl: cocoa.NSSegmentedControl.CLASS;

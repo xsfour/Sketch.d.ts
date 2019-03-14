@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImporter<T = any> {}
-  namespace classes {
-    export interface MSImporter<T = any> {  }
+  export interface MSImporter<T0 = void, T1 = void, T2 = void> {}
+  namespace MSImporter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const MSImporter: cocoa.classes.MSImporter;
+declare const MSImporter: cocoa.MSImporter.CLASS;

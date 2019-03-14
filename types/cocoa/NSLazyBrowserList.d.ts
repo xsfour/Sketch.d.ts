@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLazyBrowserList<T = any> extends NSMutableArray {
+  export interface NSLazyBrowserList<T0 = void, T1 = void, T2 = void> extends NSMutableArray {
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     getObjects_range<R = void, P0 = unknown, P1 = _NSRange>(_getObjects: P0, _range: P1): R;
@@ -15,9 +15,9 @@ declare namespace cocoa {
     objectAtIndex<R = unknown, P0 = number>(_objectAtIndex: P0): R;
     count<R = number>(): R;
   }
-  namespace classes {
-    export interface NSLazyBrowserList<T = any> extends NSMutableArray {  }
+  namespace NSLazyBrowserList {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSMutableArray {}
   }
 }
 
-declare const NSLazyBrowserList: cocoa.classes.NSLazyBrowserList;
+declare const NSLazyBrowserList: cocoa.NSLazyBrowserList.CLASS;

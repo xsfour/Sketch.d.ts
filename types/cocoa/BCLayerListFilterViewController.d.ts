@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCLayerListFilterViewController<T = any> extends NSViewController, NSMenuDelegateProtocol, NSSearchFieldDelegateProtocol, NSTextViewDelegateProtocol {
+  export interface BCLayerListFilterViewController<T0 = void, T1 = void, T2 = void> extends NSViewController, NSMenuDelegateProtocol, NSSearchFieldDelegateProtocol, NSTextViewDelegateProtocol {
     cxx_destruct<R = void>(): R;
     refreshFilterTokens<R = void>(): R;
     dropLastFilterToken<R = void>(): R;
@@ -51,12 +51,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface BCLayerListFilterViewController<T = any> extends NSViewController, NSMenuDelegateProtocol, NSSearchFieldDelegateProtocol, NSTextViewDelegateProtocol {
+  namespace BCLayerListFilterViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController, NSMenuDelegateProtocol, NSSearchFieldDelegateProtocol, NSTextViewDelegateProtocol {
       alloc<R = BCLayerListFilterViewController>(): R;
       new: <R = BCLayerListFilterViewController>() => R;
     }
   }
 }
 
-declare const BCLayerListFilterViewController: cocoa.classes.BCLayerListFilterViewController;
+declare const BCLayerListFilterViewController: cocoa.BCLayerListFilterViewController.CLASS;

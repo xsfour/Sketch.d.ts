@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBezierCurveCurveJoin<T = any> extends MSBezierLineCurveJoin {}
-  namespace classes {
-    export interface MSBezierCurveCurveJoin<T = any> extends MSBezierLineCurveJoin {
+  export interface MSBezierCurveCurveJoin<T0 = void, T1 = void, T2 = void> extends MSBezierLineCurveJoin {}
+  namespace MSBezierCurveCurveJoin {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSBezierLineCurveJoin {
       alloc<R = MSBezierCurveCurveJoin>(): R;
       new: <R = MSBezierCurveCurveJoin>() => R;
       segmentsWithIntersectionOfExtendTangentFromCurve_withExtendedTangentFromCurve<R = unknown, P0 = unknown, P1 = unknown>(_segmentsWithIntersectionOfExtendTangentFromCurve: P0, _withExtendedTangentFromCurve: P1): R;
@@ -15,4 +15,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSBezierCurveCurveJoin: cocoa.classes.MSBezierCurveCurveJoin;
+declare const MSBezierCurveCurveJoin: cocoa.MSBezierCurveCurveJoin.CLASS;

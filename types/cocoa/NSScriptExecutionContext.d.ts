@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScriptExecutionContext<T = any> extends NSObject {
+  export interface NSScriptExecutionContext<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     _debugLoggingLevel<R = number>(): R;
     _resetErrorInfo<R = void>(): R;
@@ -24,18 +24,17 @@ declare namespace cocoa {
     setObjectBeingTested<R = void, P0 = unknown>(_v: P0): R;
     topLevelObject<R = unknown>(): R;
     setTopLevelObject<R = void, P0 = unknown>(_v: P0): R;
-    // + NSScriptExecutionContext(NSAppKitScripting):
+    // + NSScriptExecutionContext(NSAppKitScripting): 
     _setUpDefaultTopLevelObject<R = void>(): R;
   }
-  namespace classes {
-    export interface NSScriptExecutionContext<T = any> extends NSObject {
+  namespace NSScriptExecutionContext {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSScriptExecutionContext>(): R;
       new: <R = NSScriptExecutionContext>() => R;
       sharedScriptExecutionContext<R = unknown>(): R;
-      // + NSScriptExecutionContext(NSAppKitScripting):
-      
-    }
+  
+  }
   }
 }
 
-declare const NSScriptExecutionContext: cocoa.classes.NSScriptExecutionContext;
+declare const NSScriptExecutionContext: cocoa.NSScriptExecutionContext.CLASS;

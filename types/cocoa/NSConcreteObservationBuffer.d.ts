@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSConcreteObservationBuffer<T = any> extends NSObservationBuffer {
+  export interface NSConcreteObservationBuffer<T0 = void, T1 = void, T2 = void> extends NSObservationBuffer {
     setMemoryPressureSensitive<R = void, P0 = boolean>(_setMemoryPressureSensitive: P0): R;
     isMemoryPressureSensitive<R = boolean>(): R;
     setAutomaticallyEmitsObjects<R = void, P0 = boolean>(_setAutomaticallyEmitsObjects: P0): R;
@@ -13,8 +13,8 @@ declare namespace cocoa {
     _alreadyOnQueueEmitAllObjects<R = void>(): R;
     _alreadyOnQueueEmitObject<R = void>(): R;
   }
-  namespace classes {
-    export interface NSConcreteObservationBuffer<T = any> extends NSObservationBuffer {
+  namespace NSConcreteObservationBuffer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObservationBuffer {
       alloc<R = NSConcreteObservationBuffer>(): R;
       new: <R = NSConcreteObservationBuffer>() => R;
       initialize<R = void>(): R;
@@ -22,4 +22,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSConcreteObservationBuffer: cocoa.classes.NSConcreteObservationBuffer;
+declare const NSConcreteObservationBuffer: cocoa.NSConcreteObservationBuffer.CLASS;

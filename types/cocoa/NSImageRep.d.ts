@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSImageRep<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol, NSCodingProtocol {
+  export interface NSImageRep<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol, NSCodingProtocol {
     _bitmapImageRepsForTIFFRepresentation<R = unknown>(): R;
     _imageRepsForEncodingWithCoder<R = unknown, P0 = unknown>(__imageRepsForEncodingWithCoder: P0): R;
     _bitmapImageReps<R = unknown>(): R;
@@ -53,14 +53,15 @@ declare namespace cocoa {
     setColorSpaceName<R = void, P0 = NSString>(_v: P0): R;
     size<R = CGSize>(): R;
     setSize<R = void, P0 = CGSize>(_v: P0): R;
-    // + NSImageRep(Alpha,MSSmallerArchiving):
+    // + NSImageRep(Alpha): 
     repSupportsAlpha<R = boolean>(): R;
+    // + NSImageRep(MSSmallerArchiving): 
     dataForArchiving<R = unknown>(): R;
     hasEPSRepresentation<R = boolean>(): R;
     hasPDFRepresentation<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSImageRep<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol, NSCodingProtocol {
+  namespace NSImageRep {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol, NSCodingProtocol {
       alloc<R = NSImageRep>(): R;
       new: <R = NSImageRep>() => R;
       _deprecated_hasReversedFlippednessInFlippedImages<R = boolean>(): R;
@@ -95,10 +96,9 @@ declare namespace cocoa {
       imageUnfilteredTypes<R = unknown>(): R;
       canInitWithData<R = boolean, P0 = unknown>(_canInitWithData: P0): R;
       initialize<R = void>(): R;
-      // + NSImageRep(Alpha,MSSmallerArchiving):
-      
-    }
+  
+  }
   }
 }
 
-declare const NSImageRep: cocoa.classes.NSImageRep;
+declare const NSImageRep: cocoa.NSImageRep.CLASS;

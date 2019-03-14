@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDocumentImporter<T = any> extends NSObject {
+  export interface MSDocumentImporter<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     showProgressSheet<R = unknown>(): R;
     importerDidFinish<R = void>(): R;
@@ -23,8 +23,8 @@ declare namespace cocoa {
     setGroup<R = void, P0 = MSLayerGroup>(_v: P0): R;
     view<R = MSContentDrawView>(): R;
   }
-  namespace classes {
-    export interface MSDocumentImporter<T = any> extends NSObject {
+  namespace MSDocumentImporter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSDocumentImporter>(): R;
       new: <R = MSDocumentImporter>() => R;
       importFromURL_inPage_importer<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(_importFromURL: P0, _inPage: P1, _importer: P2): R;
@@ -32,4 +32,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSDocumentImporter: cocoa.classes.MSDocumentImporter;
+declare const MSDocumentImporter: cocoa.MSDocumentImporter.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPathRendererCG<T = any> extends NSObject, MSPathRendererProtocol {
+  export interface MSPathRendererCG<T0 = void, T1 = void, T2 = void> extends NSObject, MSPathRendererProtocol {
     drawInnerShadowsForPath_style_layer_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown>(_drawInnerShadowsForPath: P0, _style: P1, _layer: P2, _context: P3): R;
     shadowFillShouldClipForStyle<R = boolean, P0 = unknown>(_shadowFillShouldClipForStyle: P0): R;
     drawShadowsForPath_style_layer_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown>(_drawShadowsForPath: P0, _style: P1, _layer: P2, _context: P3): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSPathRendererCG<T = any> extends NSObject, MSPathRendererProtocol {
+  namespace MSPathRendererCG {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, MSPathRendererProtocol {
       alloc<R = MSPathRendererCG>(): R;
       new: <R = MSPathRendererCG>() => R;
     }
   }
 }
 
-declare const MSPathRendererCG: cocoa.classes.MSPathRendererCG;
+declare const MSPathRendererCG: cocoa.MSPathRendererCG.CLASS;

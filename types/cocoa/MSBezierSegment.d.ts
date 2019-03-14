@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBezierSegment<T = any> extends NSObject {
+  export interface MSBezierSegment<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     debugQuickLookObject<R = unknown>(): R;
     description<R = unknown>(): R;
@@ -63,8 +63,8 @@ declare namespace cocoa {
     arcLength<R = number>(): R;
     lineLength<R = number>(): R;
   }
-  namespace classes {
-    export interface MSBezierSegment<T = any> extends NSObject {
+  namespace MSBezierSegment {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSBezierSegment>(): R;
       new: <R = MSBezierSegment>() => R;
       cubicSegmentWithEndPoint1_endPoint2_controlPoint1_controlPoint2<R = unknown, P0 = CGPoint, P1 = CGPoint, P2 = CGPoint, P3 = CGPoint>(_cubicSegmentWithEndPoint1: P0, _endPoint2: P1, _controlPoint1: P2, _controlPoint2: P3): R;
@@ -74,4 +74,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSBezierSegment: cocoa.classes.MSBezierSegment;
+declare const MSBezierSegment: cocoa.MSBezierSegment.CLASS;

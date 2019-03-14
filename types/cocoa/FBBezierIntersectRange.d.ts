@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface FBBezierIntersectRange<T = any> extends NSObject {
+  export interface FBBezierIntersectRange<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     description<R = unknown>(): R;
     clearCache<R = void>(): R;
@@ -29,8 +29,8 @@ declare namespace cocoa {
     curve1OverlappingBezier<R = FBBezierCurve>(): R;
     curve1LeftBezier<R = FBBezierCurve>(): R;
   }
-  namespace classes {
-    export interface FBBezierIntersectRange<T = any> extends NSObject {
+  namespace FBBezierIntersectRange {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = FBBezierIntersectRange>(): R;
       new: <R = FBBezierIntersectRange>() => R;
       intersectRangeWithCurve1_parameterRange1_curve2_parameterRange2_reversed<R = unknown, P0 = unknown, P1 = FBRange, P2 = unknown, P3 = FBRange, P4 = boolean>(_intersectRangeWithCurve1: P0, _parameterRange1: P1, _curve2: P2, _parameterRange2: P3, _reversed: P4): R;
@@ -38,4 +38,4 @@ declare namespace cocoa {
   }
 }
 
-declare const FBBezierIntersectRange: cocoa.classes.FBBezierIntersectRange;
+declare const FBBezierIntersectRange: cocoa.FBBezierIntersectRange.CLASS;

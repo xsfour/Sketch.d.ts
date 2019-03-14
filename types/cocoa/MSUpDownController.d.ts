@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSUpDownController<T = any> extends NSResponder {
+  export interface MSUpDownController<T0 = void, T1 = void, T2 = void> extends NSResponder {
     cxx_destruct<R = void>(): R;
     isEditable<R = boolean>(): R;
     isEnabled<R = boolean>(): R;
@@ -33,8 +33,8 @@ declare namespace cocoa {
     incrementDecrementDelegate<R = MSIncrementDecrementDelegate>(): R;
     setIncrementDecrementDelegate<R = void, P0 = MSIncrementDecrementDelegate>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSUpDownController<T = any> extends NSResponder {
+  namespace MSUpDownController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSResponder {
       alloc<R = MSUpDownController>(): R;
       new: <R = MSUpDownController>() => R;
       stepperClass<R = unknown>(): R;
@@ -42,4 +42,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSUpDownController: cocoa.classes.MSUpDownController;
+declare const MSUpDownController: cocoa.MSUpDownController.CLASS;

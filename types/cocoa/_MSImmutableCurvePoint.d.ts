@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSImmutableCurvePoint<T = any> extends MSImmutableModelObject {
+  export interface _MSImmutableCurvePoint<T0 = void, T1 = void, T2 = void> extends MSImmutableModelObject {
     hasDefaultValues<R = boolean>(): R;
     point<R = CGPoint>(): R;
     setPoint<R = void, P0 = CGPoint>(_v: P0): R;
@@ -18,8 +18,8 @@ declare namespace cocoa {
     cornerRadius<R = number>(): R;
     setCornerRadius<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface _MSImmutableCurvePoint<T = any> extends MSImmutableModelObject {
+  namespace _MSImmutableCurvePoint {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSImmutableModelObject {
       alloc<R = _MSImmutableCurvePoint>(): R;
       new: <R = _MSImmutableCurvePoint>() => R;
     }

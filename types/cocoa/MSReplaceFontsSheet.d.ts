@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSReplaceFontsSheet<T = any> extends CHSheetController, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol, BCPopoverDelegateProtocol, NSWindowDelegateProtocol {
+  export interface MSReplaceFontsSheet<T0 = void, T1 = void, T2 = void> extends CHSheetController, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol, BCPopoverDelegateProtocol, NSWindowDelegateProtocol {
     closePopover<R = boolean>(): R;
     displayNameForSystemFontname<R = unknown, P0 = unknown>(_displayNameForSystemFontname: P0): R;
     fontFamilyAction<R = void, P0 = unknown>(_fontFamilyAction: P0): R;
@@ -11,6 +11,7 @@ declare namespace cocoa {
     updateFonts<R = void>(): R;
     setObject<R = void, P0 = unknown>(_setObject: P0): R;
     systemFontsChanged<R = void, P0 = unknown>(_systemFontsChanged: P0): R;
+    windowDidLoad<R = void>(): R;
     popover<R = BCPopover>(): R;
     setPopover<R = void, P0 = BCPopover>(_v: P0): R;
     viewController<R = NSViewController>(): R;
@@ -24,8 +25,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSReplaceFontsSheet<T = any> extends CHSheetController, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol, BCPopoverDelegateProtocol, NSWindowDelegateProtocol {
+  namespace MSReplaceFontsSheet {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends CHSheetController, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol, BCPopoverDelegateProtocol, NSWindowDelegateProtocol {
       alloc<R = MSReplaceFontsSheet>(): R;
       new: <R = MSReplaceFontsSheet>() => R;
       dontReplaceFontLabel<R = unknown>(): R;
@@ -33,4 +34,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSReplaceFontsSheet: cocoa.classes.MSReplaceFontsSheet;
+declare const MSReplaceFontsSheet: cocoa.MSReplaceFontsSheet.CLASS;

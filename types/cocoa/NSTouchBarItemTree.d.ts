@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarItemTree<T = any> extends NSObject, NSCopyingProtocol {
+  export interface NSTouchBarItemTree<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     debugDescription<R = unknown>(): R;
     parentItemNodeForNode<R = unknown, P0 = unknown>(_parentItemNodeForNode: P0): R;
     parentNodeForNode<R = unknown, P0 = unknown>(_parentNodeForNode: P0): R;
@@ -39,8 +39,8 @@ declare namespace cocoa {
     layoutOrderedLeafNodes<R = NSArray>(): R;
     leafNodes<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface NSTouchBarItemTree<T = any> extends NSObject, NSCopyingProtocol {
+  namespace NSTouchBarItemTree {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = NSTouchBarItemTree>(): R;
       new: <R = NSTouchBarItemTree>() => R;
       itemTreeWithDefaultPresetTouchBars<R = unknown, P0 = unknown>(_itemTreeWithDefaultPresetTouchBars: P0): R;
@@ -49,4 +49,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTouchBarItemTree: cocoa.classes.NSTouchBarItemTree;
+declare const NSTouchBarItemTree: cocoa.NSTouchBarItemTree.CLASS;

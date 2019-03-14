@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarColorListPickerPressAndHoldPopUpDelegate<T = any> {}
-  namespace classes {
-    export interface NSTouchBarColorListPickerPressAndHoldPopUpDelegate<T = any> {  }
+  export interface NSTouchBarColorListPickerPressAndHoldPopUpDelegate<T0 = void, T1 = void, T2 = void> {}
+  namespace NSTouchBarColorListPickerPressAndHoldPopUpDelegate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSTouchBarColorListPickerPressAndHoldPopUpDelegate: cocoa.classes.NSTouchBarColorListPickerPressAndHoldPopUpDelegate;
+declare const NSTouchBarColorListPickerPressAndHoldPopUpDelegate: cocoa.NSTouchBarColorListPickerPressAndHoldPopUpDelegate.CLASS;

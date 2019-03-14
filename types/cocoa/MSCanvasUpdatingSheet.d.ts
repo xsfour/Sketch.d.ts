@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSCanvasUpdatingSheet<T = any> extends CHSheetController {
+  export interface MSCanvasUpdatingSheet<T0 = void, T1 = void, T2 = void> extends CHSheetController {
     doc<R = unknown>(): R;
     restoreState<R = void>(): R;
     storeState<R = void>(): R;
@@ -10,6 +10,7 @@ declare namespace cocoa {
     performOperation<R = void>(): R;
     triggerPerformOperation<R = void>(): R;
     schedulePerformOperation<R = void>(): R;
+    windowDidLoad<R = void>(): R;
     selectedLayerIDs<R = NSSet>(): R;
     setSelectedLayerIDs<R = void, P0 = NSSet>(_v: P0): R;
     selectedPageID<R = NSString>(): R;
@@ -19,12 +20,12 @@ declare namespace cocoa {
     oldDocumentState<R = MSImmutableDocumentData>(): R;
     setOldDocumentState<R = void, P0 = MSImmutableDocumentData>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSCanvasUpdatingSheet<T = any> extends CHSheetController {
+  namespace MSCanvasUpdatingSheet {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends CHSheetController {
       alloc<R = MSCanvasUpdatingSheet>(): R;
       new: <R = MSCanvasUpdatingSheet>() => R;
     }
   }
 }
 
-declare const MSCanvasUpdatingSheet: cocoa.classes.MSCanvasUpdatingSheet;
+declare const MSCanvasUpdatingSheet: cocoa.MSCanvasUpdatingSheet.CLASS;

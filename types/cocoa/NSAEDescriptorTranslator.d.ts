@@ -1,18 +1,18 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAEDescriptorTranslator<T = any> extends NSObject {
+  export interface NSAEDescriptorTranslator<T0 = void, T1 = void, T2 = void> extends NSObject {
     descriptorByTranslatingObject_ofType_inSuite<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_descriptorByTranslatingObject: P0, _ofType: P1, _inSuite: P2): R;
     objectByTranslatingDescriptor_toType_inSuite<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_objectByTranslatingDescriptor: P0, _toType: P1, _inSuite: P2): R;
     registerTranslator_selector_toTranslateFromClass<R = void, P0 = unknown, P1 = string, P2 = unknown>(_registerTranslator: P0, _selector: P1, _toTranslateFromClass: P2): R;
     registerTranslator_selector_toTranslateFromDescriptorType<R = void, P0 = unknown, P1 = string, P2 = number>(_registerTranslator: P0, _selector: P1, _toTranslateFromDescriptorType: P2): R;
     dealloc<R = void>(): R;
     _setUpFoundationTranslations<R = void>(): R;
-    // + NSAEDescriptorTranslator(NSAppKitTranslations):
+    // + NSAEDescriptorTranslator(NSAppKitTranslations): 
     _setUpAppKitTranslations<R = void>(): R;
   }
-  namespace classes {
-    export interface NSAEDescriptorTranslator<T = any> extends NSObject {
+  namespace NSAEDescriptorTranslator {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSAEDescriptorTranslator>(): R;
       new: <R = NSAEDescriptorTranslator>() => R;
       sharedAEDescriptorTranslator<R = unknown>(): R;
@@ -32,7 +32,7 @@ declare namespace cocoa {
       _dictionaryByTranslatingAERecord_toType_inSuite<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(__dictionaryByTranslatingAERecord: P0, _toType: P1, _inSuite: P2): R;
       _propertyContainerClassDescriptionFromDictionaryType_inSuite<R = unknown, P0 = unknown, P1 = unknown>(__propertyContainerClassDescriptionFromDictionaryType: P0, _inSuite: P1): R;
       _descriptorByTranslatingNull_ofType_inSuite<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(__descriptorByTranslatingNull: P0, _ofType: P1, _inSuite: P2): R;
-      // + NSAEDescriptorTranslator(NSAppKitTranslations):
+      // + NSAEDescriptorTranslator(NSAppKitTranslations): 
       _descriptorByTranslatingTextStorage_ofType_inSuite<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(__descriptorByTranslatingTextStorage: P0, _ofType: P1, _inSuite: P2): R;
       _textStorageByTranslatingRTFDescriptor_toType_inSuite<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(__textStorageByTranslatingRTFDescriptor: P0, _toType: P1, _inSuite: P2): R;
       _descriptorByTranslatingColor_ofType_inSuite<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(__descriptorByTranslatingColor: P0, _ofType: P1, _inSuite: P2): R;
@@ -41,4 +41,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSAEDescriptorTranslator: cocoa.classes.NSAEDescriptorTranslator;
+declare const NSAEDescriptorTranslator: cocoa.NSAEDescriptorTranslator.CLASS;

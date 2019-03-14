@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface SLMPopUpMenuContext_t<T = any> {}
-  namespace classes {
-    export interface SLMPopUpMenuContext_t<T = any> {  }
+  export interface SLMPopUpMenuContext_t<T0 = void, T1 = void, T2 = void> {}
+  namespace SLMPopUpMenuContext_t {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const SLMPopUpMenuContext_t: cocoa.classes.SLMPopUpMenuContext_t;
+declare const SLMPopUpMenuContext_t: cocoa.SLMPopUpMenuContext_t.CLASS;

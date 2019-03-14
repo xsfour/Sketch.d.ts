@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMutableAttributedString<T = any> extends NSAttributedString {
+  export interface NSMutableAttributedString<T0 = void, T1 = void, T2 = void> extends NSAttributedString {
     endEditing<R = void>(): R;
     beginEditing<R = void>(): R;
     setAttributedString<R = void, P0 = unknown>(_setAttributedString: P0): R;
@@ -16,9 +16,11 @@ declare namespace cocoa {
     mutableString<R = unknown>(): R;
     setAttributes_range<R = void, P0 = unknown, P1 = _NSRange>(_setAttributes: P0, _range: P1): R;
     replaceCharactersInRange_withString<R = void, P0 = _NSRange, P1 = unknown>(_replaceCharactersInRange: P0, _withString: P1): R;
-    // + NSMutableAttributedString(NSMutableAttributedStringAttachmentConveniences,CHMutableAttributedStringAdditions,MSList,Stripping):
+    // + NSMutableAttributedString(NSMutableAttributedStringAttachmentConveniences): 
     updateAttachmentsFromPath<R = void, P0 = unknown>(_updateAttachmentsFromPath: P0): R;
+    // + NSMutableAttributedString(CHMutableAttributedStringAdditions): 
     appendString_attributes<R = void, P0 = unknown, P1 = unknown>(_appendString: P0, _attributes: P1): R;
+    // + NSMutableAttributedString(MSList): 
     paragraphStyle<R = unknown>(): R;
     stringByStrippingMarkers_oldList_index<R = unknown, P0 = unknown, P1 = unknown, P2 = number>(_stringByStrippingMarkers: P0, _oldList: P1, _index: P2): R;
     stringByStrippingNewlinesSpacesAndTabs<R = unknown, P0 = unknown>(_stringByStrippingNewlinesSpacesAndTabs: P0): R;
@@ -29,16 +31,16 @@ declare namespace cocoa {
     listTabStops<R = unknown>(): R;
     updateListFrom_toList<R = void, P0 = unknown, P1 = unknown>(_updateListFrom: P0, _toList: P1): R;
     updateListStyle<R = void, P0 = unknown>(_updateListStyle: P0): R;
+    // + NSMutableAttributedString(Stripping): 
     removeUnsupportedAttributes<R = void>(): R;
   }
-  namespace classes {
-    export interface NSMutableAttributedString<T = any> extends NSAttributedString {
+  namespace NSMutableAttributedString {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSAttributedString {
       alloc<R = NSMutableAttributedString>(): R;
       new: <R = NSMutableAttributedString>() => R;
-      // + NSMutableAttributedString(NSMutableAttributedStringAttachmentConveniences,CHMutableAttributedStringAdditions,MSList,Stripping):
-      
-    }
+  
+  }
   }
 }
 
-declare const NSMutableAttributedString: cocoa.classes.NSMutableAttributedString;
+declare const NSMutableAttributedString: cocoa.NSMutableAttributedString.CLASS;

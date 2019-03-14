@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTabBarDelegateProtocol<T = any> extends NSObjectProtocol {
+  export interface NSTabBarDelegateProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     tabBar_acceptDrop_index<R = boolean, P0 = NSTabBar, P1 = NSDraggingInfo, P2 = number>(_tabBar: P0, _acceptDrop: P1, _index: P2): R;
     tabBar_validateDrop<R = number, P0 = NSTabBar, P1 = NSDraggingInfo>(_tabBar: P0, _validateDrop: P1): R;
     tabBar_didFinishTransitionAnimationForWindow<R = void, P0 = NSTabBar, P1 = NSWindow>(_tabBar: P0, _didFinishTransitionAnimationForWindow: P1): R;
@@ -25,7 +25,7 @@ declare namespace cocoa {
     tabBarCanDragItems<R = boolean, P0 = NSTabBar>(_tabBarCanDragItems: P0): R;
     tabBar_droppedWindowTabShouldMoveToSpace<R = boolean, P0 = NSTabBar, P1 = number>(_tabBar: P0, _droppedWindowTabShouldMoveToSpace: P1): R;
   }
-  namespace classes {
-    export interface NSTabBarDelegateProtocol<T = any> extends NSObjectProtocol {  }
+  namespace NSTabBarDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

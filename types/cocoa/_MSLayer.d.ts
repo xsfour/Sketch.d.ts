@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSLayer<T = any> extends MSModelObject {
+  export interface _MSLayer<T0 = void, T1 = void, T2 = void> extends MSModelObject {
     hasDefaultValues<R = boolean>(): R;
     frame<R = MSRect>(): R;
     setFrame<R = void, P0 = MSRect>(_v: P0): R;
@@ -40,8 +40,8 @@ declare namespace cocoa {
     booleanOperation<R = number>(): R;
     setBooleanOperation<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface _MSLayer<T = any> extends MSModelObject {
+  namespace _MSLayer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSModelObject {
       alloc<R = _MSLayer>(): R;
       new: <R = _MSLayer>() => R;
     }

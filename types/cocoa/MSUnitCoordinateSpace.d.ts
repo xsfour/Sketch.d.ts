@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSUnitCoordinateSpace<T = any> extends NSObject {
+  export interface MSUnitCoordinateSpace<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     transformForConvertingToCoordinateSpace<R = CGAffineTransform, P0 = unknown>(_transformForConvertingToCoordinateSpace: P0): R;
     transformForConvertingFromCoordinateSpace<R = CGAffineTransform, P0 = unknown>(_transformForConvertingFromCoordinateSpace: P0): R;
@@ -17,8 +17,8 @@ declare namespace cocoa {
     transformForConvertingToParentCoordinateSpace<R = CGAffineTransform>(): R;
     bounds<R = CGRect>(): R;
   }
-  namespace classes {
-    export interface MSUnitCoordinateSpace<T = any> extends NSObject {
+  namespace MSUnitCoordinateSpace {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSUnitCoordinateSpace>(): R;
       new: <R = MSUnitCoordinateSpace>() => R;
       convertPoint_toBounds<R = CGPoint, P0 = CGPoint, P1 = CGRect>(_convertPoint: P0, _toBounds: P1): R;
@@ -27,4 +27,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSUnitCoordinateSpace: cocoa.classes.MSUnitCoordinateSpace;
+declare const MSUnitCoordinateSpace: cocoa.MSUnitCoordinateSpace.CLASS;

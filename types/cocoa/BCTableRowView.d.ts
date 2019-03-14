@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCTableRowView<T = any> extends NSTableRowView {
+  export interface BCTableRowView<T0 = void, T1 = void, T2 = void> extends NSTableRowView {
     cxx_destruct<R = void>(): R;
     relayoutNow<R = void>(): R;
     doDrawHighlight<R = void>(): R;
@@ -38,12 +38,12 @@ declare namespace cocoa {
     nodeExpanded<R = boolean>(): R;
     nodeSelected<R = boolean>(): R;
   }
-  namespace classes {
-    export interface BCTableRowView<T = any> extends NSTableRowView {
+  namespace BCTableRowView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTableRowView {
       alloc<R = BCTableRowView>(): R;
       new: <R = BCTableRowView>() => R;
     }
   }
 }
 
-declare const BCTableRowView: cocoa.classes.BCTableRowView;
+declare const BCTableRowView: cocoa.BCTableRowView.CLASS;

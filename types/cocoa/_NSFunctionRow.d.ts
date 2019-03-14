@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSFunctionRow<T = any> extends NSFunctionRow {
+  export interface _NSFunctionRow<T0 = void, T1 = void, T2 = void> extends NSFunctionRow {
     description<R = unknown>(): R;
     CAContext<R = unknown>(): R;
     frame<R = CGRect>(): R;
@@ -34,8 +34,8 @@ declare namespace cocoa {
     accessibilityIsIgnored<R = boolean>(): R;
     accessibilityAttributeNames<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSFunctionRow<T = any> extends NSFunctionRow {
+  namespace _NSFunctionRow {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSFunctionRow {
       alloc<R = _NSFunctionRow>(): R;
       new: <R = _NSFunctionRow>() => R;
     }

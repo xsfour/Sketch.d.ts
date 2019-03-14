@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSIntegratedStepper<T = any> extends NSView {
+  export interface MSIntegratedStepper<T0 = void, T1 = void, T2 = void> extends NSView {
     cxx_destruct<R = void>(): R;
     isFlipped<R = boolean>(): R;
     stepWithEvent<R = void, P0 = unknown>(_stepWithEvent: P0): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     target<R = MSUpDownController>(): R;
     setTarget<R = void, P0 = MSUpDownController>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSIntegratedStepper<T = any> extends NSView {
+  namespace MSIntegratedStepper {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = MSIntegratedStepper>(): R;
       new: <R = MSIntegratedStepper>() => R;
     }
   }
 }
 
-declare const MSIntegratedStepper: cocoa.classes.MSIntegratedStepper;
+declare const MSIntegratedStepper: cocoa.MSIntegratedStepper.CLASS;

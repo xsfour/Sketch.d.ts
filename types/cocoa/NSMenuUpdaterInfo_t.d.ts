@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMenuUpdaterInfo_t<T = any> {}
-  namespace classes {
-    export interface NSMenuUpdaterInfo_t<T = any> {  }
+  export interface NSMenuUpdaterInfo_t<T0 = void, T1 = void, T2 = void> {}
+  namespace NSMenuUpdaterInfo_t {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSMenuUpdaterInfo_t: cocoa.classes.NSMenuUpdaterInfo_t;
+declare const NSMenuUpdaterInfo_t: cocoa.NSMenuUpdaterInfo_t.CLASS;

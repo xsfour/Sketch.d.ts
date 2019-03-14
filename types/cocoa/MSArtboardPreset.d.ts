@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSArtboardPreset<T = any> extends NSObject, NSCopyingProtocol {
+  export interface MSArtboardPreset<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     cxx_destruct<R = void>(): R;
     description<R = unknown>(): R;
     hash<R = number>(): R;
@@ -31,8 +31,8 @@ declare namespace cocoa {
     setSize<R = void, P0 = CGSize>(_v: P0): R;
     layerName<R = NSString>(): R;
   }
-  namespace classes {
-    export interface MSArtboardPreset<T = any> extends NSObject, NSCopyingProtocol {
+  namespace MSArtboardPreset {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = MSArtboardPreset>(): R;
       new: <R = MSArtboardPreset>() => R;
       sizeToFitPresetWithName_size<R = unknown, P0 = unknown, P1 = CGSize>(_sizeToFitPresetWithName: P0, _size: P1): R;
@@ -42,4 +42,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSArtboardPreset: cocoa.classes.MSArtboardPreset;
+declare const MSArtboardPreset: cocoa.MSArtboardPreset.CLASS;

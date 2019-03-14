@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLayoutDimension<T = any> extends NSLayoutAnchor {
+  export interface NSLayoutDimension<T0 = void, T1 = void, T2 = void> extends NSLayoutAnchor {
     constraintLessThanOrEqualToAnchor_multiplier_constant<R = unknown, P0 = unknown, P1 = number, P2 = number>(_constraintLessThanOrEqualToAnchor: P0, _multiplier: P1, _constant: P2): R;
     constraintGreaterThanOrEqualToAnchor_multiplier_constant<R = unknown, P0 = unknown, P1 = number, P2 = number>(_constraintGreaterThanOrEqualToAnchor: P0, _multiplier: P1, _constant: P2): R;
     constraintEqualToAnchor_multiplier_constant<R = unknown, P0 = unknown, P1 = number, P2 = number>(_constraintEqualToAnchor: P0, _multiplier: P1, _constant: P2): R;
@@ -26,12 +26,12 @@ declare namespace cocoa {
     anchorByAddingConstant<R = unknown, P0 = number>(_anchorByAddingConstant: P0): R;
     anchorByMultiplyingByConstant<R = unknown, P0 = number>(_anchorByMultiplyingByConstant: P0): R;
   }
-  namespace classes {
-    export interface NSLayoutDimension<T = any> extends NSLayoutAnchor {
+  namespace NSLayoutDimension {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSLayoutAnchor {
       alloc<R = NSLayoutDimension>(): R;
       new: <R = NSLayoutDimension>() => R;
     }
   }
 }
 
-declare const NSLayoutDimension: cocoa.classes.NSLayoutDimension;
+declare const NSLayoutDimension: cocoa.NSLayoutDimension.CLASS;

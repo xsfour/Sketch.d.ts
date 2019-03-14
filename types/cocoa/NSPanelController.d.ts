@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPanelController<T = any> extends NSObject {
+  export interface NSPanelController<T0 = void, T1 = void, T2 = void> extends NSObject {
     controlTextDidChange<R = void, P0 = unknown>(_controlTextDidChange: P0): R;
     ok<R = void, P0 = unknown>(_ok: P0): R;
     control_textView_doCommandBySelector<R = boolean, P0 = unknown, P1 = unknown, P2 = string>(_control: P0, _textView: P1, _doCommandBySelector: P2): R;
@@ -12,12 +12,12 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     _setTextFieldStringValue<R = void, P0 = unknown>(__setTextFieldStringValue: P0): R;
   }
-  namespace classes {
-    export interface NSPanelController<T = any> extends NSObject {
+  namespace NSPanelController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSPanelController>(): R;
       new: <R = NSPanelController>() => R;
     }
   }
 }
 
-declare const NSPanelController: cocoa.classes.NSPanelController;
+declare const NSPanelController: cocoa.NSPanelController.CLASS;

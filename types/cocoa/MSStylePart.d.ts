@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSStylePart<T = any> extends _MSStylePart, NSCopyingProtocol, MSStylePartProtocol {
+  export interface MSStylePart<T0 = void, T1 = void, T2 = void> extends _MSStylePart, NSCopyingProtocol, MSStylePartProtocol {
     parentLayer<R = unknown>(): R;
     parentStyle<R = unknown>(): R;
     multiplyBy<R = void, P0 = number>(_multiplyBy: P0): R;
@@ -14,8 +14,8 @@ declare namespace cocoa {
     hasEqualAppearance<R = boolean, P0 = unknown>(_hasEqualAppearance: P0): R;
     isEnabled<R = boolean>(): R;
   }
-  namespace classes {
-    export interface MSStylePart<T = any> extends _MSStylePart, NSCopyingProtocol, MSStylePartProtocol {
+  namespace MSStylePart {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSStylePart, NSCopyingProtocol, MSStylePartProtocol {
       alloc<R = MSStylePart>(): R;
       new: <R = MSStylePart>() => R;
       defaultStylePartForStyle<R = unknown, P0 = unknown>(_defaultStylePartForStyle: P0): R;
@@ -24,4 +24,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSStylePart: cocoa.classes.MSStylePart;
+declare const MSStylePart: cocoa.MSStylePart.CLASS;

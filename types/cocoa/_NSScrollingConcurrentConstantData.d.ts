@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSScrollingConcurrentConstantData<T = any> extends NSData {
+  export interface _NSScrollingConcurrentConstantData<T0 = void, T1 = void, T2 = void> extends NSData {
     dealloc<R = void>(): R;
     decelerationRate<R = number>(): R;
     setDecelerationRate<R = void, P0 = number>(_v: P0): R;
@@ -68,8 +68,8 @@ declare namespace cocoa {
     window<R = NSWindow>(): R;
     setWindow<R = void, P0 = NSWindow>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSScrollingConcurrentConstantData<T = any> extends NSData {
+  namespace _NSScrollingConcurrentConstantData {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSData {
       constantDataWithScrollView_forwardingAxis<R = unknown, P0 = unknown, P1 = number>(_constantDataWithScrollView: P0, _forwardingAxis: P1): R;
     }
   }

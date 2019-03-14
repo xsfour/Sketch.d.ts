@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSGridSheetBase<T = any> extends CHSheetController, NSWindowDelegateProtocol {
+  export interface MSGridSheetBase<T0 = void, T1 = void, T2 = void> extends CHSheetController, NSWindowDelegateProtocol {
     lightColorUpdated<R = void, P0 = unknown>(_lightColorUpdated: P0): R;
     darkColorUpdated<R = void, P0 = unknown>(_darkColorUpdated: P0): R;
     prepareColorPickers<R = void>(): R;
@@ -34,12 +34,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSGridSheetBase<T = any> extends CHSheetController, NSWindowDelegateProtocol {
+  namespace MSGridSheetBase {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends CHSheetController, NSWindowDelegateProtocol {
       alloc<R = MSGridSheetBase>(): R;
       new: <R = MSGridSheetBase>() => R;
     }
   }
 }
 
-declare const MSGridSheetBase: cocoa.classes.MSGridSheetBase;
+declare const MSGridSheetBase: cocoa.MSGridSheetBase.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFindPatternAttachmentCell<T = any> extends NSTextAttachmentCell {
+  export interface NSFindPatternAttachmentCell<T0 = void, T1 = void, T2 = void> extends NSTextAttachmentCell {
     drawTokenWithFrame_inView<R = void, P0 = CGRect, P1 = unknown>(_drawTokenWithFrame: P0, _inView: P1): R;
     drawTokenInRect_withOptions<R = void, P0 = CGRect, P1 = unknown>(_drawTokenInRect: P0, _withOptions: P1): R;
     pullDownRectForBounds<R = CGRect, P0 = CGRect>(_pullDownRectForBounds: P0): R;
@@ -21,12 +21,12 @@ declare namespace cocoa {
     findPattern<R = NSFindPattern>(): R;
     setFindPattern<R = void, P0 = NSFindPattern>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSFindPatternAttachmentCell<T = any> extends NSTextAttachmentCell {
+  namespace NSFindPatternAttachmentCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTextAttachmentCell {
       alloc<R = NSFindPatternAttachmentCell>(): R;
       new: <R = NSFindPatternAttachmentCell>() => R;
     }
   }
 }
 
-declare const NSFindPatternAttachmentCell: cocoa.classes.NSFindPatternAttachmentCell;
+declare const NSFindPatternAttachmentCell: cocoa.NSFindPatternAttachmentCell.CLASS;

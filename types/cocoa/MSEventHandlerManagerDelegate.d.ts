@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSEventHandlerManagerDelegate<T = any> {}
-  namespace classes {
-    export interface MSEventHandlerManagerDelegate<T = any> {  }
+  export interface MSEventHandlerManagerDelegate<T0 = void, T1 = void, T2 = void> {}
+  namespace MSEventHandlerManagerDelegate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const MSEventHandlerManagerDelegate: cocoa.classes.MSEventHandlerManagerDelegate;
+declare const MSEventHandlerManagerDelegate: cocoa.MSEventHandlerManagerDelegate.CLASS;

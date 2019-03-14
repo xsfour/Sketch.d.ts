@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSToolbarSplitViewPartitionAdapter<T = any> extends NSObject {
+  export interface _NSToolbarSplitViewPartitionAdapter<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     _setListenToViewGeometryInWindowDidChange_forView<R = void, P0 = boolean, P1 = unknown>(__setListenToViewGeometryInWindowDidChange: P0, _forView: P1): R;
     splitViewGeometryInWindowDidChange<R = void, P0 = unknown>(_splitViewGeometryInWindowDidChange: P0): R;
@@ -16,8 +16,8 @@ declare namespace cocoa {
     splitViewDividerIndex<R = number>(): R;
     setSplitViewDividerIndex<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSToolbarSplitViewPartitionAdapter<T = any> extends NSObject {
+  namespace _NSToolbarSplitViewPartitionAdapter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSToolbarSplitViewPartitionAdapter>(): R;
       new: <R = _NSToolbarSplitViewPartitionAdapter>() => R;
     }

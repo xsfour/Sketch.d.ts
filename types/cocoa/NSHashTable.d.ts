@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSHashTable<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol, NSFastEnumerationProtocol {
+  export interface NSHashTable<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol, NSFastEnumerationProtocol {
     mutableCopyWithZone<R = unknown, P0 = _NSZone>(_mutableCopyWithZone: P0): R;
     mutableSet<R = unknown>(): R;
     minusHashTable<R = void, P0 = unknown>(_minusHashTable: P0): R;
@@ -34,8 +34,8 @@ declare namespace cocoa {
     allObjects<R = NSArray>(): R;
     count<R = number>(): R;
   }
-  namespace classes {
-    export interface NSHashTable<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol, NSFastEnumerationProtocol {
+  namespace NSHashTable {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol, NSFastEnumerationProtocol {
       alloc<R = NSHashTable>(): R;
       new: <R = NSHashTable>() => R;
       hashTableWithOptions<R = unknown, P0 = number>(_hashTableWithOptions: P0): R;
@@ -47,4 +47,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSHashTable: cocoa.classes.NSHashTable;
+declare const NSHashTable: cocoa.NSHashTable.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAnimationHelper<T = any> extends NSObject {
+  export interface NSAnimationHelper<T0 = void, T1 = void, T2 = void> extends NSObject {
     _doAnimationStep<R = void>(): R;
     _resetTimer<R = void>(): R;
     _progress<R = number>(): R;
@@ -18,12 +18,12 @@ declare namespace cocoa {
     _doRunLoop<R = void>(): R;
     _createTimer<R = void>(): R;
   }
-  namespace classes {
-    export interface NSAnimationHelper<T = any> extends NSObject {
+  namespace NSAnimationHelper {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSAnimationHelper>(): R;
       new: <R = NSAnimationHelper>() => R;
     }
   }
 }
 
-declare const NSAnimationHelper: cocoa.classes.NSAnimationHelper;
+declare const NSAnimationHelper: cocoa.NSAnimationHelper.CLASS;

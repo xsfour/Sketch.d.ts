@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSortedArray<T = any> extends NSMutableArray {
+  export interface NSSortedArray<T0 = void, T1 = void, T2 = void> extends NSMutableArray {
     sortUsingSelector<R = void, P0 = string>(_sortUsingSelector: P0): R;
     sortUsingFunction_context<R = void, P0 = CDUnknownFunctionPointerType, P1 = void>(_sortUsingFunction: P0, _context: P1): R;
     setArray<R = void, P0 = unknown>(_setArray: P0): R;
@@ -29,11 +29,11 @@ declare namespace cocoa {
     compareSelector<R = string>(): R;
     setCompareSelector<R = void, P0 = string>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSSortedArray<T = any> extends NSMutableArray {
+  namespace NSSortedArray {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSMutableArray {
       initialize<R = void>(): R;
     }
   }
 }
 
-declare const NSSortedArray: cocoa.classes.NSSortedArray;
+declare const NSSortedArray: cocoa.NSSortedArray.CLASS;

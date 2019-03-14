@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDebugMenuActionRecorderProvider<T = any> extends NSObject, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol, NSDebugMenuItemProviderProtocol {
+  export interface NSDebugMenuActionRecorderProvider<T0 = void, T1 = void, T2 = void> extends NSObject, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol, NSDebugMenuItemProviderProtocol {
     _createActionRecordWindow<R = unknown>(): R;
     _toggleFilter<R = void, P0 = unknown>(__toggleFilter: P0): R;
     _toggleActionRecorder<R = void, P0 = unknown>(__toggleActionRecorder: P0): R;
@@ -12,12 +12,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSDebugMenuActionRecorderProvider<T = any> extends NSObject, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol, NSDebugMenuItemProviderProtocol {
+  namespace NSDebugMenuActionRecorderProvider {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol, NSDebugMenuItemProviderProtocol {
       alloc<R = NSDebugMenuActionRecorderProvider>(): R;
       new: <R = NSDebugMenuActionRecorderProvider>() => R;
     }
   }
 }
 
-declare const NSDebugMenuActionRecorderProvider: cocoa.classes.NSDebugMenuActionRecorderProvider;
+declare const NSDebugMenuActionRecorderProvider: cocoa.NSDebugMenuActionRecorderProvider.CLASS;

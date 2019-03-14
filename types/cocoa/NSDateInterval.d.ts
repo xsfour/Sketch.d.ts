@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDateInterval<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  export interface NSDateInterval<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     containsDate<R = boolean, P0 = unknown>(_containsDate: P0): R;
@@ -17,8 +17,8 @@ declare namespace cocoa {
     endDate<R = NSDate>(): R;
     startDate<R = NSDate>(): R;
   }
-  namespace classes {
-    export interface NSDateInterval<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  namespace NSDateInterval {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
       alloc<R = NSDateInterval>(): R;
       new: <R = NSDateInterval>() => R;
       allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
@@ -26,4 +26,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSDateInterval: cocoa.classes.NSDateInterval;
+declare const NSDateInterval: cocoa.NSDateInterval.CLASS;

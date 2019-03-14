@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarCustomizableConfiguration<T = any> extends NSObject, NSCopyingProtocol {
+  export interface NSTouchBarCustomizableConfiguration<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     debugDescription<R = unknown>(): R;
     description<R = unknown>(): R;
     _resetCustomization<R = void>(): R;
@@ -23,8 +23,8 @@ declare namespace cocoa {
     identifier<R = NSString>(): R;
     setIdentifier<R = void, P0 = NSString>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTouchBarCustomizableConfiguration<T = any> extends NSObject, NSCopyingProtocol {
+  namespace NSTouchBarCustomizableConfiguration {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = NSTouchBarCustomizableConfiguration>(): R;
       new: <R = NSTouchBarCustomizableConfiguration>() => R;
       keyPathsForValuesAffectingPresentedItemIdentifiers<R = unknown>(): R;
@@ -32,4 +32,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTouchBarCustomizableConfiguration: cocoa.classes.NSTouchBarCustomizableConfiguration;
+declare const NSTouchBarCustomizableConfiguration: cocoa.NSTouchBarCustomizableConfiguration.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSText<T = any> extends NSView, NSChangeSpellingProtocol, NSIgnoreMisspelledWordsProtocol {
+  export interface NSText<T0 = void, T1 = void, T2 = void> extends NSView, NSChangeSpellingProtocol, NSIgnoreMisspelledWordsProtocol {
     scrollRangeToVisible<R = void, P0 = _NSRange>(_scrollRangeToVisible: P0): R;
     toggleRuler<R = void, P0 = unknown>(_toggleRuler: P0): R;
     checkSpelling<R = void, P0 = unknown>(_checkSpelling: P0): R;
@@ -98,8 +98,8 @@ declare namespace cocoa {
     string<R = NSString>(): R;
     setString<R = void, P0 = NSString>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSText<T = any> extends NSView, NSChangeSpellingProtocol, NSIgnoreMisspelledWordsProtocol {
+  namespace NSText {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView, NSChangeSpellingProtocol, NSIgnoreMisspelledWordsProtocol {
       alloc<R = NSText>(): R;
       new: <R = NSText>() => R;
       allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
@@ -107,4 +107,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSText: cocoa.classes.NSText;
+declare const NSText: cocoa.NSText.CLASS;

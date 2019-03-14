@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSBrowserCell<T = any> extends NSCell {
+  export interface NSBrowserCell<T0 = void, T1 = void, T2 = void> extends NSCell {
     interiorBackgroundStyle<R = number>(): R;
     _drawFillWithFrame_inView<R = void, P0 = CGRect, P1 = unknown>(__drawFillWithFrame: P0, _inView: P1): R;
     _drawLiveResizeHighlightWithFrame_inView<R = void, P0 = CGRect, P1 = unknown>(__drawLiveResizeHighlightWithFrame: P0, _inView: P1): R;
@@ -35,8 +35,8 @@ declare namespace cocoa {
     image<R = NSImage>(): R;
     setImage<R = void, P0 = NSImage>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSBrowserCell<T = any> extends NSCell {
+  namespace NSBrowserCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSCell {
       alloc<R = NSBrowserCell>(): R;
       new: <R = NSBrowserCell>() => R;
       highlightedBranchImage<R = unknown>(): R;
@@ -45,4 +45,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSBrowserCell: cocoa.classes.NSBrowserCell;
+declare const NSBrowserCell: cocoa.NSBrowserCell.CLASS;

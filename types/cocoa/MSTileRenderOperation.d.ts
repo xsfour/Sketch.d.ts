@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSTileRenderOperation<T = any> extends NSOperation {
+  export interface MSTileRenderOperation<T0 = void, T1 = void, T2 = void> extends NSOperation {
     cxx_destruct<R = void>(): R;
     renderComplete<R = void, P0 = unknown>(_renderComplete: P0): R;
     renderNextPass_image<R = void, P0 = unknown, P1 = CGImage>(_renderNextPass: P0, _image: P1): R;
@@ -35,8 +35,8 @@ declare namespace cocoa {
     renderedImage<R = NSBitmapImageRep>(): R;
     setRenderedImage<R = void, P0 = NSBitmapImageRep>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSTileRenderOperation<T = any> extends NSOperation {
+  namespace MSTileRenderOperation {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSOperation {
       alloc<R = MSTileRenderOperation>(): R;
       new: <R = MSTileRenderOperation>() => R;
       renderOperationWithPage_inDocument_visibleContentRect_backingScaleFactor_pixelViewSize_zoomValue_pixelated_pageOverlayRenderOptions_cacheProvider_canvasColorSpace_colorSettings<R = unknown, P0 = unknown, P1 = unknown, P2 = CGRect, P3 = number, P4 = CGSize, P5 = number, P6 = boolean, P7 = number, P8 = unknown, P9 = unknown, P10 = unknown>(_renderOperationWithPage: P0, _inDocument: P1, _visibleContentRect: P2, _backingScaleFactor: P3, _pixelViewSize: P4, _zoomValue: P5, _pixelated: P6, _pageOverlayRenderOptions: P7, _cacheProvider: P8, _canvasColorSpace: P9, _colorSettings: P10): R;
@@ -47,4 +47,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSTileRenderOperation: cocoa.classes.MSTileRenderOperation;
+declare const MSTileRenderOperation: cocoa.MSTileRenderOperation.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSRect<T = any> extends _MSRect, MSRectProtocol {
+  export interface MSRect<T0 = void, T1 = void, T2 = void> extends _MSRect, MSRectProtocol {
     isIntegral<R = boolean>(): R;
     setRectByIgnoringProportions<R = void, P0 = CGRect>(_setRectByIgnoringProportions: P0): R;
     setConstrainProportions<R = void, P0 = boolean>(_setConstrainProportions: P0): R;
@@ -54,8 +54,8 @@ declare namespace cocoa {
     rect<R = CGRect>(): R;
     setRect<R = void, P0 = CGRect>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSRect<T = any> extends _MSRect, MSRectProtocol {
+  namespace MSRect {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSRect, MSRectProtocol {
       alloc<R = MSRect>(): R;
       new: <R = MSRect>() => R;
       rectWithUnionOfRects<R = unknown, P0 = unknown>(_rectWithUnionOfRects: P0): R;
@@ -65,4 +65,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSRect: cocoa.classes.MSRect;
+declare const MSRect: cocoa.MSRect.CLASS;

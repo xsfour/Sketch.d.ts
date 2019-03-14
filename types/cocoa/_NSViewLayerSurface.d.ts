@@ -1,15 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSViewLayerSurface<T = any> extends NSObject {
-    cxx_destruct<R = void>(): R;
-    dealloc<R = void>(): R;
-    invalidate<R = void>(): R;
-    update<R = void>(): R;
-    initWithView<R = unknown, P0 = unknown>(_initWithView: P0): R;
-  }
-  namespace classes {
-    export interface _NSViewLayerSurface<T = any> extends NSObject {
+  export interface _NSViewLayerSurface<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace _NSViewLayerSurface {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSViewLayerSurface>(): R;
       new: <R = _NSViewLayerSurface>() => R;
       initialize<R = void>(): R;

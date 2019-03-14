@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface AFHTTPSessionManager<T = any> extends AFURLSessionManager, NSSecureCodingProtocol, NSCopyingProtocol {
+  export interface AFHTTPSessionManager<T0 = void, T1 = void, T2 = void> extends AFURLSessionManager, NSSecureCodingProtocol, NSCopyingProtocol {
     description<R = unknown>(): R;
     dataTaskWithHTTPMethod_URLString_parameters_success_failure<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = CDUnknownBlockType, P4 = CDUnknownBlockType>(_dataTaskWithHTTPMethod: P0, _URLString: P1, _parameters: P2, _success: P3, _failure: P4): R;
     DELETE_parameters_success_failure<R = unknown, P0 = unknown, P1 = unknown, P2 = CDUnknownBlockType, P3 = CDUnknownBlockType>(_DELETE: P0, _parameters: P1, _success: P2, _failure: P3): R;
@@ -20,8 +20,8 @@ declare namespace cocoa {
     responseSerializer<R = AFURLResponseSerialization>(): R;
     setResponseSerializer<R = void, P0 = AFURLResponseSerialization>(_v: P0): R;
   }
-  namespace classes {
-    export interface AFHTTPSessionManager<T = any> extends AFURLSessionManager, NSSecureCodingProtocol, NSCopyingProtocol {
+  namespace AFHTTPSessionManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends AFURLSessionManager, NSSecureCodingProtocol, NSCopyingProtocol {
       alloc<R = AFHTTPSessionManager>(): R;
       new: <R = AFHTTPSessionManager>() => R;
       manager<R = unknown>(): R;
@@ -29,4 +29,4 @@ declare namespace cocoa {
   }
 }
 
-declare const AFHTTPSessionManager: cocoa.classes.AFHTTPSessionManager;
+declare const AFHTTPSessionManager: cocoa.AFHTTPSessionManager.CLASS;

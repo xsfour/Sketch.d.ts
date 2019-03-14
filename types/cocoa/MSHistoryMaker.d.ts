@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSHistoryMaker<T = any> extends NSObject {
+  export interface MSHistoryMaker<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     installedFontsChanged<R = void>(): R;
     ignoreDocumentChangesInBlock<R = boolean, P0 = CDUnknownBlockType>(_ignoreDocumentChangesInBlock: P0): R;
@@ -33,12 +33,12 @@ declare namespace cocoa {
     history<R = MSHistory>(): R;
     document<R = MSDocument>(): R;
   }
-  namespace classes {
-    export interface MSHistoryMaker<T = any> extends NSObject {
+  namespace MSHistoryMaker {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSHistoryMaker>(): R;
       new: <R = MSHistoryMaker>() => R;
     }
   }
 }
 
-declare const MSHistoryMaker: cocoa.classes.MSHistoryMaker;
+declare const MSHistoryMaker: cocoa.MSHistoryMaker.CLASS;

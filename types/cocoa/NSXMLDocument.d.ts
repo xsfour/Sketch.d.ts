@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXMLDocument<T = any> extends NSXMLNode {
+  export interface NSXMLDocument<T0 = void, T1 = void, T2 = void> extends NSXMLNode {
     _setContentKindAndEncoding<R = void>(): R;
     _initWithLibTidyDoc_child_encoding<R = void, P0 = _TidyDoc, P1 = _TidyNode, P2 = number>(__initWithLibTidyDoc: P0, _child: P1, _encoding: P2): R;
     _libxml2TreeRepresentation<R = _xmlDoc>(): R;
@@ -57,14 +57,14 @@ declare namespace cocoa {
     setVersion<R = void, P0 = NSString>(_v: P0): R;
     characterEncoding<R = NSString>(): R;
     setCharacterEncoding<R = void, P0 = NSString>(_v: P0): R;
-    // + NSXMLDocument(SVGDocument):
+    // + NSXMLDocument(SVGDocument): 
     bezierPathElement<R = unknown, P0 = unknown>(_bezierPathElement: P0): R;
     data<R = unknown>(): R;
     description<R = unknown>(): R;
     createSVGForBezierPath<R = unknown, P0 = unknown>(_createSVGForBezierPath: P0): R;
   }
-  namespace classes {
-    export interface NSXMLDocument<T = any> extends NSXMLNode {
+  namespace NSXMLDocument {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSXMLNode {
       alloc<R = NSXMLDocument>(): R;
       new: <R = NSXMLDocument>() => R;
       _loadXSLT<R = void>(): R;
@@ -72,10 +72,10 @@ declare namespace cocoa {
       _setXMLTagsAllowableInHTML<R = void, P0 = unknown>(__setXMLTagsAllowableInHTML: P0): R;
       _instancesShouldLoadExternalEntities<R = boolean>(): R;
       _setInstancesShouldLoadExternalEntities<R = void, P0 = boolean>(__setInstancesShouldLoadExternalEntities: P0): R;
-      // + NSXMLDocument(SVGDocument):
+      // + NSXMLDocument(SVGDocument): 
       SVGDocumentWithBezierPath<R = unknown, P0 = unknown>(_SVGDocumentWithBezierPath: P0): R;
     }
   }
 }
 
-declare const NSXMLDocument: cocoa.classes.NSXMLDocument;
+declare const NSXMLDocument: cocoa.NSXMLDocument.CLASS;

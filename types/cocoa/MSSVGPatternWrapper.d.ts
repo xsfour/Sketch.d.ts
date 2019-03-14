@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSVGPatternWrapper<T = any> extends MSXMLElementWrapper {
+  export interface MSSVGPatternWrapper<T0 = void, T1 = void, T2 = void> extends MSXMLElementWrapper {
     height<R = NSString>(): R;
     setHeight<R = void, P0 = NSString>(_v: P0): R;
     href<R = NSString>(): R;
@@ -21,12 +21,12 @@ declare namespace cocoa {
     y<R = NSString>(): R;
     setY<R = void, P0 = NSString>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSSVGPatternWrapper<T = any> extends MSXMLElementWrapper {
+  namespace MSSVGPatternWrapper {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSXMLElementWrapper {
       alloc<R = MSSVGPatternWrapper>(): R;
       new: <R = MSSVGPatternWrapper>() => R;
     }
   }
 }
 
-declare const MSSVGPatternWrapper: cocoa.classes.MSSVGPatternWrapper;
+declare const MSSVGPatternWrapper: cocoa.MSSVGPatternWrapper.CLASS;

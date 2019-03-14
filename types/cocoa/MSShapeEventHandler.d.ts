@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSShapeEventHandler<T = any> extends MSEventHandler, MSVectorCanvasDelegateProtocol, NSTextDelegateProtocol, NSMenuDelegateProtocol, MSGestureRecognizerDelegateProtocol {
+  export interface MSShapeEventHandler<T0 = void, T1 = void, T2 = void> extends MSEventHandler, MSVectorCanvasDelegateProtocol, NSTextDelegateProtocol, NSMenuDelegateProtocol, MSGestureRecognizerDelegateProtocol {
     observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
     performPathControllerUpdate<R = void, P0 = CDUnknownBlockType>(_performPathControllerUpdate: P0): R;
     refreshCloseOrOpenPathUI<R = void>(): R;
@@ -30,12 +30,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSShapeEventHandler<T = any> extends MSEventHandler, MSVectorCanvasDelegateProtocol, NSTextDelegateProtocol, NSMenuDelegateProtocol, MSGestureRecognizerDelegateProtocol {
+  namespace MSShapeEventHandler {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSEventHandler, MSVectorCanvasDelegateProtocol, NSTextDelegateProtocol, NSMenuDelegateProtocol, MSGestureRecognizerDelegateProtocol {
       alloc<R = MSShapeEventHandler>(): R;
       new: <R = MSShapeEventHandler>() => R;
     }
   }
 }
 
-declare const MSShapeEventHandler: cocoa.classes.MSShapeEventHandler;
+declare const MSShapeEventHandler: cocoa.MSShapeEventHandler.CLASS;

@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface OpaqueIconRef<T = any> {}
-  namespace classes {
-    export interface OpaqueIconRef<T = any> {  }
+  export interface OpaqueIconRef<T0 = void, T1 = void, T2 = void> {}
+  namespace OpaqueIconRef {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const OpaqueIconRef: cocoa.classes.OpaqueIconRef;
+declare const OpaqueIconRef: cocoa.OpaqueIconRef.CLASS;

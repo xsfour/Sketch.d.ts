@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSUserDefinedTouchBarItem<T = any> extends NSTouchBarItem, NSValidatedUserInterfaceItemProtocol {
+  export interface _NSUserDefinedTouchBarItem<T0 = void, T1 = void, T2 = void> extends NSTouchBarItem, NSValidatedUserInterfaceItemProtocol {
     _validateUserDefinedTouchBarItem<R = void>(): R;
     _handleAction<R = void, P0 = unknown>(__handleAction: P0): R;
     _longPress<R = void, P0 = unknown>(__longPress: P0): R;
@@ -21,8 +21,8 @@ declare namespace cocoa {
     action<R = string>(): R;
     setAction<R = void, P0 = string>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSUserDefinedTouchBarItem<T = any> extends NSTouchBarItem, NSValidatedUserInterfaceItemProtocol {
+  namespace _NSUserDefinedTouchBarItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTouchBarItem, NSValidatedUserInterfaceItemProtocol {
       alloc<R = _NSUserDefinedTouchBarItem>(): R;
       new: <R = _NSUserDefinedTouchBarItem>() => R;
     }

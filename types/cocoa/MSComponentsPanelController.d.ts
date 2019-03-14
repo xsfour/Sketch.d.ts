@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSComponentsPanelController<T = any> {}
-  namespace classes {
-    export interface MSComponentsPanelController<T = any> {  }
+  export interface MSComponentsPanelController<T0 = void, T1 = void, T2 = void> {}
+  namespace MSComponentsPanelController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const MSComponentsPanelController: cocoa.classes.MSComponentsPanelController;
+declare const MSComponentsPanelController: cocoa.MSComponentsPanelController.CLASS;

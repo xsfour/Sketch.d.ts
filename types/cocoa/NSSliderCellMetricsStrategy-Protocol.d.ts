@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSliderCellMetricsStrategyProtocol<T = any> extends NSObjectProtocol, NSCopyingProtocol {
+  export interface NSSliderCellMetricsStrategyProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol, NSCopyingProtocol {
     rectOfMaxValueImageFlipped<R = CGRect, P0 = boolean>(_rectOfMaxValueImageFlipped: P0): R;
     rectOfMinValueImageFlipped<R = CGRect, P0 = boolean>(_rectOfMinValueImageFlipped: P0): R;
     rectOfTickMarkForValue_knobRect_barRect<R = CGRect, P0 = number, P1 = CGRect, P2 = CGRect>(_rectOfTickMarkForValue: P0, _knobRect: P1, _barRect: P2): R;
@@ -14,7 +14,7 @@ declare namespace cocoa {
     state<R = unknown>(): R;
     setState<R = void, P0 = unknown>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSSliderCellMetricsStrategyProtocol<T = any> extends NSObjectProtocol, NSCopyingProtocol {  }
+  namespace NSSliderCellMetricsStrategyProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol, NSCopyingProtocol {}
   }
 }

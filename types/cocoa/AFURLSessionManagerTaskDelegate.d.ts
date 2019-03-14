@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface AFURLSessionManagerTaskDelegate<T = any> extends NSObject, NSURLSessionTaskDelegateProtocol, NSURLSessionDataDelegateProtocol, NSURLSessionDownloadDelegateProtocol {
+  export interface AFURLSessionManagerTaskDelegate<T0 = void, T1 = void, T2 = void> extends NSObject, NSURLSessionTaskDelegateProtocol, NSURLSessionDataDelegateProtocol, NSURLSessionDownloadDelegateProtocol {
     cxx_destruct<R = void>(): R;
     completionHandler<R = CDUnknownBlockType>(): R;
     setCompletionHandler<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
@@ -20,12 +20,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface AFURLSessionManagerTaskDelegate<T = any> extends NSObject, NSURLSessionTaskDelegateProtocol, NSURLSessionDataDelegateProtocol, NSURLSessionDownloadDelegateProtocol {
+  namespace AFURLSessionManagerTaskDelegate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSURLSessionTaskDelegateProtocol, NSURLSessionDataDelegateProtocol, NSURLSessionDownloadDelegateProtocol {
       alloc<R = AFURLSessionManagerTaskDelegate>(): R;
       new: <R = AFURLSessionManagerTaskDelegate>() => R;
     }
   }
 }
 
-declare const AFURLSessionManagerTaskDelegate: cocoa.classes.AFURLSessionManagerTaskDelegate;
+declare const AFURLSessionManagerTaskDelegate: cocoa.AFURLSessionManagerTaskDelegate.CLASS;

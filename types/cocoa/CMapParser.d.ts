@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface CMapParser<T = any> extends NSObject {
+  export interface CMapParser<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     parseData<R = void>(): R;
     parseCmap<R = void>(): R;
@@ -33,12 +33,12 @@ declare namespace cocoa {
     map<R = NSMutableDictionary>(): R;
     setMap<R = void, P0 = NSMutableDictionary>(_v: P0): R;
   }
-  namespace classes {
-    export interface CMapParser<T = any> extends NSObject {
+  namespace CMapParser {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = CMapParser>(): R;
       new: <R = CMapParser>() => R;
     }
   }
 }
 
-declare const CMapParser: cocoa.classes.CMapParser;
+declare const CMapParser: cocoa.CMapParser.CLASS;

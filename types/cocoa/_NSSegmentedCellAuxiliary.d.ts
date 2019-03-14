@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSSegmentedCellAuxiliary<T = any> extends NSObject {
+  export interface _NSSegmentedCellAuxiliary<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     compressibleOptions<R = NSUserInterfaceCompressionOptions>(): R;
     setCompressibleOptions<R = void, P0 = NSUserInterfaceCompressionOptions>(_v: P0): R;
@@ -28,8 +28,8 @@ declare namespace cocoa {
     segmentTrackingRectCount<R = number>(): R;
     setSegmentTrackingRectCount<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSSegmentedCellAuxiliary<T = any> extends NSObject {
+  namespace _NSSegmentedCellAuxiliary {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSSegmentedCellAuxiliary>(): R;
       new: <R = _NSSegmentedCellAuxiliary>() => R;
     }

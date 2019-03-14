@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSOpenGLOffscreenBuffer<T = any> extends NSObject {
+  export interface MSOpenGLOffscreenBuffer<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     endRendering<R = void>(): R;
     beginRendering_height<R = void, P0 = number, P1 = number>(_beginRendering: P0, _height: P1): R;
@@ -22,12 +22,12 @@ declare namespace cocoa {
     context<R = NSOpenGLContext>(): R;
     setContext<R = void, P0 = NSOpenGLContext>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSOpenGLOffscreenBuffer<T = any> extends NSObject {
+  namespace MSOpenGLOffscreenBuffer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSOpenGLOffscreenBuffer>(): R;
       new: <R = MSOpenGLOffscreenBuffer>() => R;
     }
   }
 }
 
-declare const MSOpenGLOffscreenBuffer: cocoa.classes.MSOpenGLOffscreenBuffer;
+declare const MSOpenGLOffscreenBuffer: cocoa.MSOpenGLOffscreenBuffer.CLASS;

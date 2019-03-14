@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSColorInspector<T = any> extends NSViewController, MSColorInspectorSectionDelegateProtocol, MSModeModePickerDelegateProtocol, BCPopoverDelegateProtocol, NSTouchBarDelegateProtocol, BCHSBColorPickerDelegateProtocol, MSStylePartPreviewButtonDelegateProtocol {
+  export interface MSColorInspector<T0 = void, T1 = void, T2 = void> extends NSViewController, MSColorInspectorSectionDelegateProtocol, MSModeModePickerDelegateProtocol, BCPopoverDelegateProtocol, NSTouchBarDelegateProtocol, BCHSBColorPickerDelegateProtocol, MSStylePartPreviewButtonDelegateProtocol {
     cxx_destruct<R = void>(): R;
     touchBarColorAction<R = void, P0 = unknown>(_touchBarColorAction: P0): R;
     customTouchBarItemIdentifiers<R = unknown>(): R;
@@ -85,8 +85,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSColorInspector<T = any> extends NSViewController, MSColorInspectorSectionDelegateProtocol, MSModeModePickerDelegateProtocol, BCPopoverDelegateProtocol, NSTouchBarDelegateProtocol, BCHSBColorPickerDelegateProtocol, MSStylePartPreviewButtonDelegateProtocol {
+  namespace MSColorInspector {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController, MSColorInspectorSectionDelegateProtocol, MSModeModePickerDelegateProtocol, BCPopoverDelegateProtocol, NSTouchBarDelegateProtocol, BCHSBColorPickerDelegateProtocol, MSStylePartPreviewButtonDelegateProtocol {
       alloc<R = MSColorInspector>(): R;
       new: <R = MSColorInspector>() => R;
       presentColorInspectorPopoverForViewController_document_globalAssets_relativeToView_colorInspectorSetupHandler<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = CDUnknownBlockType>(_presentColorInspectorPopoverForViewController: P0, _document: P1, _globalAssets: P2, _relativeToView: P3, _colorInspectorSetupHandler: P4): R;
@@ -95,4 +95,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSColorInspector: cocoa.classes.MSColorInspector;
+declare const MSColorInspector: cocoa.MSColorInspector.CLASS;

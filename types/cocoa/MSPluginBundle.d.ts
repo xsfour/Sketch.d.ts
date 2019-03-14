@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPluginBundle<T = any> extends NSObject {
+  export interface MSPluginBundle<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     debugDescription<R = unknown>(): R;
     urlForResourceNamed<R = unknown, P0 = unknown>(_urlForResourceNamed: P0): R;
@@ -36,8 +36,8 @@ declare namespace cocoa {
     icon<R = NSImage>(): R;
     compatible<R = boolean>(): R;
   }
-  namespace classes {
-    export interface MSPluginBundle<T = any> extends NSObject {
+  namespace MSPluginBundle {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSPluginBundle>(): R;
       new: <R = MSPluginBundle>() => R;
       scriptDefaultTitle<R = unknown>(): R;
@@ -47,4 +47,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSPluginBundle: cocoa.classes.MSPluginBundle;
+declare const MSPluginBundle: cocoa.MSPluginBundle.CLASS;

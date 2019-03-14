@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSplitViewItem<T = any> extends NSObject, NSAppearanceCustomizationProtocol, NSAnimatablePropertyContainerProtocol, NSCodingProtocol {
+  export interface NSSplitViewItem<T0 = void, T1 = void, T2 = void> extends NSObject, NSAppearanceCustomizationProtocol, NSAnimatablePropertyContainerProtocol, NSCodingProtocol {
     _animatorClass<R = unknown>(): R;
     _setForceWithinWindowBlending<R = void, P0 = boolean>(__setForceWithinWindowBlending: P0): R;
     _forceWithinWindowBlending<R = boolean>(): R;
@@ -81,8 +81,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSSplitViewItem<T = any> extends NSObject, NSAppearanceCustomizationProtocol, NSAnimatablePropertyContainerProtocol, NSCodingProtocol {
+  namespace NSSplitViewItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSAppearanceCustomizationProtocol, NSAnimatablePropertyContainerProtocol, NSCodingProtocol {
       alloc<R = NSSplitViewItem>(): R;
       new: <R = NSSplitViewItem>() => R;
       keyPathsForValuesAffectingEffectiveCollapseBehavior<R = unknown>(): R;
@@ -95,4 +95,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSSplitViewItem: cocoa.classes.NSSplitViewItem;
+declare const NSSplitViewItem: cocoa.NSSplitViewItem.CLASS;

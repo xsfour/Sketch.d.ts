@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSBarTextFinder<T = any> extends _NSTextFinderImpl, NSSearchFieldDelegateProtocol {
+  export interface _NSBarTextFinder<T0 = void, T1 = void, T2 = void> extends _NSTextFinderImpl, NSSearchFieldDelegateProtocol {
     _findPatternSelected<R = void, P0 = unknown>(__findPatternSelected: P0): R;
     _performFindBarAction<R = void, P0 = unknown>(__performFindBarAction: P0): R;
     control_textView_doCommandBySelector<R = boolean, P0 = unknown, P1 = unknown, P2 = string>(_control: P0, _textView: P1, _doCommandBySelector: P2): R;
@@ -32,8 +32,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSBarTextFinder<T = any> extends _NSTextFinderImpl, NSSearchFieldDelegateProtocol {
+  namespace _NSBarTextFinder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _NSTextFinderImpl, NSSearchFieldDelegateProtocol {
       alloc<R = _NSBarTextFinder>(): R;
       new: <R = _NSBarTextFinder>() => R;
     }

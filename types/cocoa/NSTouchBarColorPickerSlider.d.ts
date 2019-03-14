@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarColorPickerSlider<T = any> extends NSControl, NSGestureRecognizerDelegateProtocol {
+  export interface NSTouchBarColorPickerSlider<T0 = void, T1 = void, T2 = void> extends NSControl, NSGestureRecognizerDelegateProtocol {
     setHighlighted<R = void, P0 = boolean>(_setHighlighted: P0): R;
     isHighlighted<R = boolean>(): R;
     _valueAtLocation<R = number, P0 = number>(__valueAtLocation: P0): R;
@@ -69,8 +69,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSTouchBarColorPickerSlider<T = any> extends NSControl, NSGestureRecognizerDelegateProtocol {
+  namespace NSTouchBarColorPickerSlider {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSControl, NSGestureRecognizerDelegateProtocol {
       alloc<R = NSTouchBarColorPickerSlider>(): R;
       new: <R = NSTouchBarColorPickerSlider>() => R;
       keyPathsForValuesAffectingKnobIsPressed<R = unknown>(): R;
@@ -80,4 +80,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTouchBarColorPickerSlider: cocoa.classes.NSTouchBarColorPickerSlider;
+declare const NSTouchBarColorPickerSlider: cocoa.NSTouchBarColorPickerSlider.CLASS;

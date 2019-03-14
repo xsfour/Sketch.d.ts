@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXMLFidelityNode<T = any> extends NSXMLNode {
+  export interface NSXMLFidelityNode<T0 = void, T1 = void, T2 = void> extends NSXMLNode {
     isCDATA<R = boolean>(): R;
     setNames<R = void, P0 = unknown>(_setNames: P0): R;
     setRanges<R = void, P0 = unknown>(_setRanges: P0): R;
@@ -14,8 +14,8 @@ declare namespace cocoa {
     whitespace<R = unknown>(): R;
     setWhitespace<R = void, P0 = unknown>(_setWhitespace: P0): R;
   }
-  namespace classes {
-    export interface NSXMLFidelityNode<T = any> extends NSXMLNode {
+  namespace NSXMLFidelityNode {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSXMLNode {
       alloc<R = NSXMLFidelityNode>(): R;
       new: <R = NSXMLFidelityNode>() => R;
       charRefToUnicode<R = number, P0 = string>(_charRefToUnicode: P0): R;
@@ -25,4 +25,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSXMLFidelityNode: cocoa.classes.NSXMLFidelityNode;
+declare const NSXMLFidelityNode: cocoa.NSXMLFidelityNode.CLASS;

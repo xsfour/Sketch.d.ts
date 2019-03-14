@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScriptCommand<T = any> extends NSObject, NSCodingProtocol {
+  export interface NSScriptCommand<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
     description<R = unknown>(): R;
     replacementObjectForPortCoder<R = unknown, P0 = unknown>(_replacementObjectForPortCoder: P0): R;
     resumeExecutionWithResult<R = void, P0 = unknown>(_resumeExecutionWithResult: P0): R;
@@ -45,8 +45,8 @@ declare namespace cocoa {
     setDirectParameter<R = void, P0 = unknown>(_v: P0): R;
     commandDescription<R = NSScriptCommandDescription>(): R;
   }
-  namespace classes {
-    export interface NSScriptCommand<T = any> extends NSObject, NSCodingProtocol {
+  namespace NSScriptCommand {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
       alloc<R = NSScriptCommand>(): R;
       new: <R = NSScriptCommand>() => R;
       currentCommand<R = unknown>(): R;
@@ -59,4 +59,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSScriptCommand: cocoa.classes.NSScriptCommand;
+declare const NSScriptCommand: cocoa.NSScriptCommand.CLASS;

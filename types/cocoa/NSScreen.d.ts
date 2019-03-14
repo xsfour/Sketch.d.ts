@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScreen<T = any> extends NSObject {
+  export interface NSScreen<T0 = void, T1 = void, T2 = void> extends NSObject {
     _isActiveScreen<R = boolean>(): R;
     _currentSpace<R = number>(): R;
     imageInRect_underWindow<R = unknown, P0 = CGRect, P1 = unknown>(_imageInRect: P0, _underWindow: P1): R;
@@ -48,11 +48,11 @@ declare namespace cocoa {
     frame<R = CGRect>(): R;
     colorSpace<R = NSColorSpace>(): R;
     depth<R = number>(): R;
-    // + NSScreen(MSRetina):
+    // + NSScreen(MSRetina): 
     isOnRetinaScreen<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSScreen<T = any> extends NSObject {
+  namespace NSScreen {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSScreen>(): R;
       new: <R = NSScreen>() => R;
       _cgScreenPointForPoint<R = CGPoint, P0 = CGPoint>(__cgScreenPointForPoint: P0): R;
@@ -71,10 +71,10 @@ declare namespace cocoa {
       _shieldingWindowLevel<R = number>(): R;
       _releaseAllCapturedScreens<R = boolean, P0 = unknown>(__releaseAllCapturedScreens: P0): R;
       _captureAllScreens<R = boolean, P0 = unknown>(__captureAllScreens: P0): R;
-      // + NSScreen(MSRetina):
+      // + NSScreen(MSRetina): 
       highestBackingScale_bc<R = number>(): R;
     }
   }
 }
 
-declare const NSScreen: cocoa.classes.NSScreen;
+declare const NSScreen: cocoa.NSScreen.CLASS;

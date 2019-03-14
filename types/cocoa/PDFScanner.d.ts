@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface PDFScanner<T = any> extends NSObject {
+  export interface PDFScanner<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     operatorglyphBoundsWithInfo<R = void, P0 = unknown>(_operatorglyphBoundsWithInfo: P0): R;
     registerOperatorglyphBounds<R = void>(): R;
@@ -264,8 +264,8 @@ declare namespace cocoa {
     dictionary<R = NSDictionary>(): R;
     setDictionary<R = void, P0 = NSDictionary>(_v: P0): R;
   }
-  namespace classes {
-    export interface PDFScanner<T = any> extends NSObject {
+  namespace PDFScanner {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = PDFScanner>(): R;
       new: <R = PDFScanner>() => R;
       convertObject<R = unknown, P0 = CGPDFObject>(_convertObject: P0): R;
@@ -275,4 +275,4 @@ declare namespace cocoa {
   }
 }
 
-declare const PDFScanner: cocoa.classes.PDFScanner;
+declare const PDFScanner: cocoa.PDFScanner.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLeafProxy<T = any> {
+  export interface NSLeafProxy<T0 = void, T1 = void, T2 = void> {
     isProxy<R = boolean>(): R;
     dealloc<R = void>(): R;
     retainCount<R = number>(): R;
@@ -17,12 +17,12 @@ declare namespace cocoa {
     methodSignatureForSelector<R = unknown, P0 = string>(_methodSignatureForSelector: P0): R;
     forwardInvocation<R = void, P0 = unknown>(_forwardInvocation: P0): R;
   }
-  namespace classes {
-    export interface NSLeafProxy<T = any> {
+  namespace NSLeafProxy {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {
       alloc<R = unknown>(): R;
       allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
     }
   }
 }
 
-declare const NSLeafProxy: cocoa.classes.NSLeafProxy;
+declare const NSLeafProxy: cocoa.NSLeafProxy.CLASS;

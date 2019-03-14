@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSRotationBar<T = any> extends NSControl {
+  export interface MSRotationBar<T0 = void, T1 = void, T2 = void> extends NSControl {
     cxx_destruct<R = void>(): R;
     isFlipped<R = boolean>(): R;
     endInertialScrolling<R = void>(): R;
@@ -34,8 +34,8 @@ declare namespace cocoa {
     rotation<R = number>(): R;
     setRotation<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSRotationBar<T = any> extends NSControl {
+  namespace MSRotationBar {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSControl {
       alloc<R = MSRotationBar>(): R;
       new: <R = MSRotationBar>() => R;
       shouldContinueInertialScrollingAtSpeed<R = boolean, P0 = number>(_shouldContinueInertialScrollingAtSpeed: P0): R;
@@ -43,4 +43,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSRotationBar: cocoa.classes.MSRotationBar;
+declare const MSRotationBar: cocoa.MSRotationBar.CLASS;

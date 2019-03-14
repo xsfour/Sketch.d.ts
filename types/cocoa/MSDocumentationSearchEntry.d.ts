@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDocumentationSearchEntry<T = any> extends NSObject {
+  export interface MSDocumentationSearchEntry<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     show<R = void>(): R;
     matchesSearchQuery<R = boolean, P0 = unknown>(_matchesSearchQuery: P0): R;
@@ -11,8 +11,8 @@ declare namespace cocoa {
     data<R = NSDictionary>(): R;
     setData<R = void, P0 = NSDictionary>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSDocumentationSearchEntry<T = any> extends NSObject {
+  namespace MSDocumentationSearchEntry {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSDocumentationSearchEntry>(): R;
       new: <R = MSDocumentationSearchEntry>() => R;
       markSearchEntriesAsDuplicates<R = void, P0 = unknown>(_markSearchEntriesAsDuplicates: P0): R;
@@ -21,4 +21,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSDocumentationSearchEntry: cocoa.classes.MSDocumentationSearchEntry;
+declare const MSDocumentationSearchEntry: cocoa.MSDocumentationSearchEntry.CLASS;

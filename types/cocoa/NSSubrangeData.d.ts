@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSubrangeData<T = any> extends NSData {
+  export interface NSSubrangeData<T0 = void, T1 = void, T2 = void> extends NSData {
     dealloc<R = void>(): R;
     initWithData_range<R = unknown, P0 = unknown, P1 = _NSRange>(_initWithData: P0, _range: P1): R;
     init<R = unknown>(): R;
@@ -13,9 +13,9 @@ declare namespace cocoa {
     bytes<R = void>(): R;
     length<R = number>(): R;
   }
-  namespace classes {
-    export interface NSSubrangeData<T = any> extends NSData {  }
+  namespace NSSubrangeData {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSData {}
   }
 }
 
-declare const NSSubrangeData: cocoa.classes.NSSubrangeData;
+declare const NSSubrangeData: cocoa.NSSubrangeData.CLASS;

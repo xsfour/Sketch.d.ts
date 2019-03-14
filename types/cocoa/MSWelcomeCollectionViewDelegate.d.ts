@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSWelcomeCollectionViewDelegate<T = any> {}
-  namespace classes {
-    export interface MSWelcomeCollectionViewDelegate<T = any> {  }
+  export interface MSWelcomeCollectionViewDelegate<T0 = void, T1 = void, T2 = void> {}
+  namespace MSWelcomeCollectionViewDelegate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const MSWelcomeCollectionViewDelegate: cocoa.classes.MSWelcomeCollectionViewDelegate;
+declare const MSWelcomeCollectionViewDelegate: cocoa.MSWelcomeCollectionViewDelegate.CLASS;

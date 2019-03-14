@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScrollerImpPair<T = any> extends NSObject {
+  export interface NSScrollerImpPair<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     updateTrackingAreas<R = void>(): R;
     _addRemoveTrackingAreasAsNeeded<R = void>(): R;
@@ -57,8 +57,8 @@ declare namespace cocoa {
     flipped<R = boolean>(): R;
     setFlipped<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSScrollerImpPair<T = any> extends NSObject {
+  namespace NSScrollerImpPair {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSScrollerImpPair>(): R;
       new: <R = NSScrollerImpPair>() => R;
       scrollerLayoutDirection<R = number>(): R;
@@ -70,4 +70,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSScrollerImpPair: cocoa.classes.NSScrollerImpPair;
+declare const NSScrollerImpPair: cocoa.NSScrollerImpPair.CLASS;

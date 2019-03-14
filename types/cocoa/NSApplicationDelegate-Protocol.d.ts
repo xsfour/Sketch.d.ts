@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSApplicationDelegateProtocol<T = any> extends NSObjectProtocol {
+  export interface NSApplicationDelegateProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     applicationDidChangeOcclusionState<R = void, P0 = NSNotification>(_applicationDidChangeOcclusionState: P0): R;
     applicationDidChangeScreenParameters<R = void, P0 = NSNotification>(_applicationDidChangeScreenParameters: P0): R;
     applicationWillTerminate<R = void, P0 = NSNotification>(_applicationWillTerminate: P0): R;
@@ -43,7 +43,7 @@ declare namespace cocoa {
     application_openURLs<R = void, P0 = NSApplication, P1 = NSArray>(_application: P0, _openURLs: P1): R;
     applicationShouldTerminate<R = number, P0 = NSApplication>(_applicationShouldTerminate: P0): R;
   }
-  namespace classes {
-    export interface NSApplicationDelegateProtocol<T = any> extends NSObjectProtocol {  }
+  namespace NSApplicationDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

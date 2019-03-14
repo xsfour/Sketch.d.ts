@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXPCCoder<T = any> extends NSCoder {
+  export interface NSXPCCoder<T0 = void, T1 = void, T2 = void> extends NSCoder {
     dealloc<R = void>(): R;
     decodeXPCObjectOfType_forKey<R = unknown, P0 = _xpc_type_s, P1 = unknown>(_decodeXPCObjectOfType: P0, _forKey: P1): R;
     decodeXPCObjectForKey<R = unknown, P0 = unknown>(_decodeXPCObjectForKey: P0): R;
@@ -10,8 +10,8 @@ declare namespace cocoa {
     setUserInfo<R = void, P0 = NSObject>(_v: P0): R;
     connection<R = NSXPCConnection>(): R;
   }
-  namespace classes {
-    export interface NSXPCCoder<T = any> extends NSCoder {
+  namespace NSXPCCoder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSCoder {
       alloc<R = NSXPCCoder>(): R;
       new: <R = NSXPCCoder>() => R;
       _testEncodeAndDecodeInvocation_interface<R = unknown, P0 = unknown, P1 = unknown>(__testEncodeAndDecodeInvocation: P0, _interface: P1): R;
@@ -21,4 +21,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSXPCCoder: cocoa.classes.NSXPCCoder;
+declare const NSXPCCoder: cocoa.NSXPCCoder.CLASS;

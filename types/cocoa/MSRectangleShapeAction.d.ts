@@ -1,15 +1,15 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSRectangleShapeAction<T = any> extends MSBaseShapeAction {
+  export interface MSRectangleShapeAction<T0 = void, T1 = void, T2 = void> extends MSBaseShapeAction {
     rectangleShape<R = void, P0 = unknown>(_rectangleShape: P0): R;
   }
-  namespace classes {
-    export interface MSRectangleShapeAction<T = any> extends MSBaseShapeAction {
+  namespace MSRectangleShapeAction {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSBaseShapeAction {
       alloc<R = MSRectangleShapeAction>(): R;
       new: <R = MSRectangleShapeAction>() => R;
     }
   }
 }
 
-declare const MSRectangleShapeAction: cocoa.classes.MSRectangleShapeAction;
+declare const MSRectangleShapeAction: cocoa.MSRectangleShapeAction.CLASS;

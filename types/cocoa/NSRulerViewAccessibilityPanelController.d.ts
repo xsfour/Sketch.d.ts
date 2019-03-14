@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSRulerViewAccessibilityPanelController<T = any> extends NSObject {
+  export interface NSRulerViewAccessibilityPanelController<T0 = void, T1 = void, T2 = void> extends NSObject {
     _cancelAddMarker<R = void, P0 = unknown>(__cancelAddMarker: P0): R;
     _addMarker<R = void, P0 = unknown>(__addMarker: P0): R;
     _markerTypeButton<R = unknown>(): R;
@@ -12,12 +12,12 @@ declare namespace cocoa {
     _accessibilityPanel<R = NSWindow>(): R;
     set_accessibilityPanel<R = void, P0 = NSWindow>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSRulerViewAccessibilityPanelController<T = any> extends NSObject {
+  namespace NSRulerViewAccessibilityPanelController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSRulerViewAccessibilityPanelController>(): R;
       new: <R = NSRulerViewAccessibilityPanelController>() => R;
     }
   }
 }
 
-declare const NSRulerViewAccessibilityPanelController: cocoa.classes.NSRulerViewAccessibilityPanelController;
+declare const NSRulerViewAccessibilityPanelController: cocoa.NSRulerViewAccessibilityPanelController.CLASS;

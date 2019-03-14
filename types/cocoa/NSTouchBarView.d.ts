@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarView<T = any> extends NSView, NSCodingProtocol {
+  export interface NSTouchBarView<T0 = void, T1 = void, T2 = void> extends NSView, NSCodingProtocol {
     fadeFromAlpha_toAlpha_afterDelay_withDuration<R = unknown, P0 = number, P1 = number, P2 = number, P3 = number>(_fadeFromAlpha: P0, _toAlpha: P1, _afterDelay: P2, _withDuration: P3): R;
     adjustFromFrame_toFrame_afterDelay_withDuration<R = unknown, P0 = CGRect, P1 = CGRect, P2 = number, P3 = number>(_adjustFromFrame: P0, _toFrame: P1, _afterDelay: P2, _withDuration: P3): R;
     adjustFromSize_toSize_afterDelay_withDuration<R = unknown, P0 = CGSize, P1 = CGSize, P2 = number, P3 = number>(_adjustFromSize: P0, _toSize: P1, _afterDelay: P2, _withDuration: P3): R;
@@ -41,12 +41,12 @@ declare namespace cocoa {
     layingOut<R = boolean>(): R;
     visualCenterXAnchor<R = NSLayoutXAxisAnchor>(): R;
   }
-  namespace classes {
-    export interface NSTouchBarView<T = any> extends NSView, NSCodingProtocol {
+  namespace NSTouchBarView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView, NSCodingProtocol {
       alloc<R = NSTouchBarView>(): R;
       new: <R = NSTouchBarView>() => R;
     }
   }
 }
 
-declare const NSTouchBarView: cocoa.classes.NSTouchBarView;
+declare const NSTouchBarView: cocoa.NSTouchBarView.CLASS;

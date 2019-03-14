@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSLayerMeasurementRenderer<T = any> extends MSOverlayRenderer {
+  export interface MSLayerMeasurementRenderer<T0 = void, T1 = void, T2 = void> extends MSOverlayRenderer {
     isMeasuringDistance<R = boolean>(): R;
     clear<R = void>(): R;
     drawDistanceFromRect_toLargerRect_zoomScale<R = void, P0 = CGRect, P1 = CGRect, P2 = number>(_drawDistanceFromRect: P0, _toLargerRect: P1, _zoomScale: P2): R;
@@ -28,12 +28,12 @@ declare namespace cocoa {
     selectedLayers<R = MSLayerArray>(): R;
     setSelectedLayers<R = void, P0 = MSLayerArray>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSLayerMeasurementRenderer<T = any> extends MSOverlayRenderer {
+  namespace MSLayerMeasurementRenderer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSOverlayRenderer {
       alloc<R = MSLayerMeasurementRenderer>(): R;
       new: <R = MSLayerMeasurementRenderer>() => R;
     }
   }
 }
 
-declare const MSLayerMeasurementRenderer: cocoa.classes.MSLayerMeasurementRenderer;
+declare const MSLayerMeasurementRenderer: cocoa.MSLayerMeasurementRenderer.CLASS;

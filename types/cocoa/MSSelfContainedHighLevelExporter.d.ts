@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSelfContainedHighLevelExporter<T = any> extends MSHighLevelExporter, MSHighLevelExportDelegateProtocol {
+  export interface MSSelfContainedHighLevelExporter<T0 = void, T1 = void, T2 = void> extends MSHighLevelExporter, MSHighLevelExportDelegateProtocol {
     initWithOptions_driver<R = unknown, P0 = unknown, P1 = unknown>(_initWithOptions: P0, _driver: P1): R;
     initWithOptions<R = unknown, P0 = unknown>(_initWithOptions: P0): R;
     infoStack<R = NSMutableArray>(): R;
@@ -20,12 +20,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSSelfContainedHighLevelExporter<T = any> extends MSHighLevelExporter, MSHighLevelExportDelegateProtocol {
+  namespace MSSelfContainedHighLevelExporter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSHighLevelExporter, MSHighLevelExportDelegateProtocol {
       alloc<R = MSSelfContainedHighLevelExporter>(): R;
       new: <R = MSSelfContainedHighLevelExporter>() => R;
     }
   }
 }
 
-declare const MSSelfContainedHighLevelExporter: cocoa.classes.MSSelfContainedHighLevelExporter;
+declare const MSSelfContainedHighLevelExporter: cocoa.MSSelfContainedHighLevelExporter.CLASS;

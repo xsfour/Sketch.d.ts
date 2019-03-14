@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSRuleEditorCache<T = any> extends NSObject {
+  export interface _NSRuleEditorCache<T0 = void, T1 = void, T2 = void> extends NSObject {
     description<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSRuleEditorCache<T = any> extends NSObject {
+  namespace _NSRuleEditorCache {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSRuleEditorCache>(): R;
       new: <R = _NSRuleEditorCache>() => R;
     }

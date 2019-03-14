@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSRulerGuides<T = any> extends NSObject {}
-  namespace classes {
-    export interface MSRulerGuides<T = any> extends NSObject {
+  export interface MSRulerGuides<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace MSRulerGuides {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSRulerGuides>(): R;
       new: <R = MSRulerGuides>() => R;
       absoluteFrameOfSelectedLayersOnPage<R = CGRect, P0 = unknown>(_absoluteFrameOfSelectedLayersOnPage: P0): R;
@@ -19,4 +19,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSRulerGuides: cocoa.classes.MSRulerGuides;
+declare const MSRulerGuides: cocoa.MSRulerGuides.CLASS;

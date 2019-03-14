@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScanner<T = any> extends NSObject, NSCopyingProtocol {
+  export interface NSScanner<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     isAtEnd<R = boolean>(): R;
     scanUpToString_intoString<R = boolean, P0 = unknown, P1 = unknown>(_scanUpToString: P0, _intoString: P1): R;
     scanString_intoString<R = boolean, P0 = unknown, P1 = unknown>(_scanString: P0, _intoString: P1): R;
@@ -33,8 +33,8 @@ declare namespace cocoa {
     setScanLocation<R = void, P0 = number>(_v: P0): R;
     string<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSScanner<T = any> extends NSObject, NSCopyingProtocol {
+  namespace NSScanner {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = NSScanner>(): R;
       new: <R = NSScanner>() => R;
       localizedScannerWithString<R = unknown, P0 = unknown>(_localizedScannerWithString: P0): R;
@@ -44,4 +44,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSScanner: cocoa.classes.NSScanner;
+declare const NSScanner: cocoa.NSScanner.CLASS;

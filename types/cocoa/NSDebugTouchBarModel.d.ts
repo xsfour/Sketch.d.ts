@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDebugTouchBarModel<T = any> extends NSObject {
+  export interface NSDebugTouchBarModel<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     description<R = unknown>(): R;
     addWarning<R = void, P0 = unknown>(_addWarning: P0): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     setAddress<R = void, P0 = void>(_v: P0): R;
     prettyDescription<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSDebugTouchBarModel<T = any> extends NSObject {
+  namespace NSDebugTouchBarModel {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSDebugTouchBarModel>(): R;
       new: <R = NSDebugTouchBarModel>() => R;
     }
   }
 }
 
-declare const NSDebugTouchBarModel: cocoa.classes.NSDebugTouchBarModel;
+declare const NSDebugTouchBarModel: cocoa.NSDebugTouchBarModel.CLASS;

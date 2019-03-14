@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPPDParse<T = any> extends NSObject {
+  export interface NSPPDParse<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     readFromFile<R = unknown, P0 = unknown>(_readFromFile: P0): R;
     endInputStream<R = unknown>(): R;
@@ -16,8 +16,8 @@ declare namespace cocoa {
     delegate<R = unknown>(): R;
     setDelegate<R = void, P0 = unknown>(_setDelegate: P0): R;
   }
-  namespace classes {
-    export interface NSPPDParse<T = any> extends NSObject {
+  namespace NSPPDParse {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSPPDParse>(): R;
       new: <R = NSPPDParse>() => R;
       findPPDFileName<R = unknown, P0 = unknown>(_findPPDFileName: P0): R;
@@ -28,4 +28,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPPDParse: cocoa.classes.NSPPDParse;
+declare const NSPPDParse: cocoa.NSPPDParse.CLASS;

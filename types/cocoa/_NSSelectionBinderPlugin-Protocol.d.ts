@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSSelectionBinderPluginProtocol<T = any> extends NSObjectProtocol, _NSValueBinderPluginProtocol {
+  export interface _NSSelectionBinderPluginProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol, _NSValueBinderPluginProtocol {
     shouldRefreshDisplayAfterSelectionMechanismWasDismissed<R = boolean, P0 = unknown>(_shouldRefreshDisplayAfterSelectionMechanismWasDismissed: P0): R;
     storeModeWhenIgnoringObjectPopulation<R = void, P0 = __NSKeyValueCodingControllerModeType>(_storeModeWhenIgnoringObjectPopulation: P0): R;
     canIgnorePopulatingObject<R = boolean, P0 = unknown>(_canIgnorePopulatingObject: P0): R;
@@ -10,7 +10,7 @@ declare namespace cocoa {
     canPopulateWithPlaceholders<R = boolean>(): R;
     allowedContentBindingMask<R = number>(): R;
   }
-  namespace classes {
-    export interface _NSSelectionBinderPluginProtocol<T = any> extends NSObjectProtocol, _NSValueBinderPluginProtocol {  }
+  namespace _NSSelectionBinderPluginProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol, _NSValueBinderPluginProtocol {}
   }
 }

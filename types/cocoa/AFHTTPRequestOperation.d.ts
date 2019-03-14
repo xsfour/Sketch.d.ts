@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface AFHTTPRequestOperation<T = any> extends AFURLConnectionOperation {
+  export interface AFHTTPRequestOperation<T0 = void, T1 = void, T2 = void> extends AFURLConnectionOperation {
     setCompletionBlockWithSuccess_failure<R = void, P0 = CDUnknownBlockType, P1 = CDUnknownBlockType>(_setCompletionBlockWithSuccess: P0, _failure: P1): R;
     error<R = unknown>(): R;
     responseSerializationError<R = NSError>(): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     response<R = NSHTTPURLResponse>(): R;
     setResponse<R = void, P0 = NSHTTPURLResponse>(_v: P0): R;
   }
-  namespace classes {
-    export interface AFHTTPRequestOperation<T = any> extends AFURLConnectionOperation {
+  namespace AFHTTPRequestOperation {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends AFURLConnectionOperation {
       alloc<R = AFHTTPRequestOperation>(): R;
       new: <R = AFHTTPRequestOperation>() => R;
     }
   }
 }
 
-declare const AFHTTPRequestOperation: cocoa.classes.AFHTTPRequestOperation;
+declare const AFHTTPRequestOperation: cocoa.AFHTTPRequestOperation.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSharedStylesInspectorItem<T = any> extends MSInspectorItem, MSSharedStylesPopUpButtonCellDelegateProtocol, NSMenuDelegateProtocol {
+  export interface MSSharedStylesInspectorItem<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, MSSharedStylesPopUpButtonCellDelegateProtocol, NSMenuDelegateProtocol {
     renameSharedObjectAction<R = void, P0 = unknown>(_renameSharedObjectAction: P0): R;
     renameSharedObject<R = void, P0 = unknown>(_renameSharedObject: P0): R;
     refreshIfNecessary<R = void, P0 = unknown>(_refreshIfNecessary: P0): R;
@@ -21,12 +21,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSSharedStylesInspectorItem<T = any> extends MSInspectorItem, MSSharedStylesPopUpButtonCellDelegateProtocol, NSMenuDelegateProtocol {
+  namespace MSSharedStylesInspectorItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, MSSharedStylesPopUpButtonCellDelegateProtocol, NSMenuDelegateProtocol {
       alloc<R = MSSharedStylesInspectorItem>(): R;
       new: <R = MSSharedStylesInspectorItem>() => R;
     }
   }
 }
 
-declare const MSSharedStylesInspectorItem: cocoa.classes.MSSharedStylesInspectorItem;
+declare const MSSharedStylesInspectorItem: cocoa.MSSharedStylesInspectorItem.CLASS;

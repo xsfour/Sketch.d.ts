@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSCloudPreferencesIntroViewController<T = any> extends MSCloudPreferencesViewController, MSCloudLoginWindowControllerDelegateProtocol {
+  export interface MSCloudPreferencesIntroViewController<T0 = void, T1 = void, T2 = void> extends MSCloudPreferencesViewController, MSCloudLoginWindowControllerDelegateProtocol {
     cxx_destruct<R = void>(): R;
     cloudEnvironmentDidChangeNotification<R = void, P0 = unknown>(_cloudEnvironmentDidChangeNotification: P0): R;
     updateTitleLabelValue<R = void>(): R;
@@ -25,12 +25,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSCloudPreferencesIntroViewController<T = any> extends MSCloudPreferencesViewController, MSCloudLoginWindowControllerDelegateProtocol {
+  namespace MSCloudPreferencesIntroViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSCloudPreferencesViewController, MSCloudLoginWindowControllerDelegateProtocol {
       alloc<R = MSCloudPreferencesIntroViewController>(): R;
       new: <R = MSCloudPreferencesIntroViewController>() => R;
     }
   }
 }
 
-declare const MSCloudPreferencesIntroViewController: cocoa.classes.MSCloudPreferencesIntroViewController;
+declare const MSCloudPreferencesIntroViewController: cocoa.MSCloudPreferencesIntroViewController.CLASS;

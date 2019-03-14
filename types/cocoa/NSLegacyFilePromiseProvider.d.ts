@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLegacyFilePromiseProvider<T = any> extends NSObject {
+  export interface NSLegacyFilePromiseProvider<T0 = void, T1 = void, T2 = void> extends NSObject {
     draggingCancelled<R = void, P0 = unknown>(_draggingCancelled: P0): R;
     draggingEnded<R = void, P0 = unknown>(_draggingEnded: P0): R;
     pasteboardFinishedWithDataProvider<R = void, P0 = unknown>(_pasteboardFinishedWithDataProvider: P0): R;
@@ -11,12 +11,12 @@ declare namespace cocoa {
     filePromiseProviders<R = NSArray>(): R;
     setFilePromiseProviders<R = void, P0 = NSArray>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSLegacyFilePromiseProvider<T = any> extends NSObject {
+  namespace NSLegacyFilePromiseProvider {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSLegacyFilePromiseProvider>(): R;
       new: <R = NSLegacyFilePromiseProvider>() => R;
     }
   }
 }
 
-declare const NSLegacyFilePromiseProvider: cocoa.classes.NSLegacyFilePromiseProvider;
+declare const NSLegacyFilePromiseProvider: cocoa.NSLegacyFilePromiseProvider.CLASS;

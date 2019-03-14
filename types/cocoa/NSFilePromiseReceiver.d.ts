@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFilePromiseReceiver<T = any> extends NSObject, NSPasteboardReadingProtocol {
+  export interface NSFilePromiseReceiver<T0 = void, T1 = void, T2 = void> extends NSObject, NSPasteboardReadingProtocol {
     draggingCancelled<R = void, P0 = unknown>(_draggingCancelled: P0): R;
     draggingEnded<R = void, P0 = unknown>(_draggingEnded: P0): R;
     receivePromisedFilesAtDestination_options_operationQueue_reader<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = CDUnknownBlockType>(_receivePromisedFilesAtDestination: P0, _options: P1, _operationQueue: P2, _reader: P3): R;
@@ -19,8 +19,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSFilePromiseReceiver<T = any> extends NSObject, NSPasteboardReadingProtocol {
+  namespace NSFilePromiseReceiver {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSPasteboardReadingProtocol {
       alloc<R = NSFilePromiseReceiver>(): R;
       new: <R = NSFilePromiseReceiver>() => R;
       acceptableDragTypes<R = unknown>(): R;
@@ -29,4 +29,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSFilePromiseReceiver: cocoa.classes.NSFilePromiseReceiver;
+declare const NSFilePromiseReceiver: cocoa.NSFilePromiseReceiver.CLASS;

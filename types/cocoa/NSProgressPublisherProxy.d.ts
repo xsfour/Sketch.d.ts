@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSProgressPublisherProxy<T = any> extends NSObject, NSProgressPublisherProtocol {
+  export interface NSProgressPublisherProxy<T0 = void, T1 = void, T2 = void> extends NSObject, NSProgressPublisherProtocol {
     observeValues_forKeys<R = void, P0 = unknown, P1 = unknown>(_observeValues: P0, _forKeys: P1): R;
     observeUserInfoValue_forKey<R = void, P0 = unknown, P1 = unknown>(_observeUserInfoValue: P0, _forKey: P1): R;
     descriptionWithIndenting<R = unknown, P0 = unknown>(_descriptionWithIndenting: P0): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSProgressPublisherProxy<T = any> extends NSObject, NSProgressPublisherProtocol {
+  namespace NSProgressPublisherProxy {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSProgressPublisherProtocol {
       alloc<R = NSProgressPublisherProxy>(): R;
       new: <R = NSProgressPublisherProxy>() => R;
     }
   }
 }
 
-declare const NSProgressPublisherProxy: cocoa.classes.NSProgressPublisherProxy;
+declare const NSProgressPublisherProxy: cocoa.NSProgressPublisherProxy.CLASS;

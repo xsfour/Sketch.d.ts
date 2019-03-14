@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _SVGFill<T = any> extends SVGElement {
+  export interface _SVGFill<T0 = void, T1 = void, T2 = void> extends SVGElement {
     primitiveRemoveUsedByObject<R = void, P0 = unknown>(_primitiveRemoveUsedByObject: P0): R;
     primitiveAddUsedByObject<R = void, P0 = unknown>(_primitiveAddUsedByObject: P0): R;
     removeUsedByObject<R = void, P0 = unknown>(_removeUsedByObject: P0): R;
@@ -21,8 +21,8 @@ declare namespace cocoa {
     gradient<R = SVGGradient>(): R;
     setGradient<R = void, P0 = SVGGradient>(_v: P0): R;
   }
-  namespace classes {
-    export interface _SVGFill<T = any> extends SVGElement {
+  namespace _SVGFill {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends SVGElement {
       alloc<R = _SVGFill>(): R;
       new: <R = _SVGFill>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSidebarListController<T = any> extends NSObject {
+  export interface MSSidebarListController<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     dataController_exportNodes_toFolder<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_dataController: P0, _exportNodes: P1, _toFolder: P2): R;
     dataController_copyFromPasteboard_toParent_after<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown>(_dataController: P0, _copyFromPasteboard: P1, _toParent: P2, _after: P3): R;
@@ -23,12 +23,12 @@ declare namespace cocoa {
     pasteboardWriterClass<R = unknown>(): R;
     documentData<R = MSDocumentData>(): R;
   }
-  namespace classes {
-    export interface MSSidebarListController<T = any> extends NSObject {
+  namespace MSSidebarListController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSSidebarListController>(): R;
       new: <R = MSSidebarListController>() => R;
     }
   }
 }
 
-declare const MSSidebarListController: cocoa.classes.MSSidebarListController;
+declare const MSSidebarListController: cocoa.MSSidebarListController.CLASS;

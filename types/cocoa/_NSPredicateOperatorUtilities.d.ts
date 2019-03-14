@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSPredicateOperatorUtilities<T = any> extends NSObject {}
-  namespace classes {
-    export interface _NSPredicateOperatorUtilities<T = any> extends NSObject {
+  export interface _NSPredicateOperatorUtilities<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace _NSPredicateOperatorUtilities {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSPredicateOperatorUtilities>(): R;
       new: <R = _NSPredicateOperatorUtilities>() => R;
       escapeFullwidthRegexChars<R = void, P0 = unknown>(_escapeFullwidthRegexChars: P0): R;

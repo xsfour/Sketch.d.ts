@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSQuickActionTouchBarCollectionViewControllerDelegateProtocol<T = any> extends NSObjectProtocol {
+  export interface _NSQuickActionTouchBarCollectionViewControllerDelegateProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     invokeQuickActionForDataSource<R = void, P0 = _NSQuickActionTouchBarItemDataSource>(_invokeQuickActionForDataSource: P0): R;
   }
-  namespace classes {
-    export interface _NSQuickActionTouchBarCollectionViewControllerDelegateProtocol<T = any> extends NSObjectProtocol {  }
+  namespace _NSQuickActionTouchBarCollectionViewControllerDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSXMLChildren<T = any> extends NSMutableArray {
+  export interface NSXMLChildren<T0 = void, T1 = void, T2 = void> extends NSMutableArray {
     makeStale<R = void>(): R;
     reallyRemoveAllObjects<R = unknown>(): R;
     reallyRemoveObject<R = unknown, P0 = unknown>(_reallyRemoveObject: P0): R;
@@ -38,9 +38,9 @@ declare namespace cocoa {
     init<R = unknown>(): R;
     dealloc<R = void>(): R;
   }
-  namespace classes {
-    export interface NSXMLChildren<T = any> extends NSMutableArray {  }
+  namespace NSXMLChildren {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSMutableArray {}
   }
 }
 
-declare const NSXMLChildren: cocoa.classes.NSXMLChildren;
+declare const NSXMLChildren: cocoa.NSXMLChildren.CLASS;

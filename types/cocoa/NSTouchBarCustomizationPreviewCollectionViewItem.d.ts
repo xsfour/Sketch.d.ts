@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarCustomizationPreviewCollectionViewItem<T = any> extends NSCollectionViewItem, NSGestureRecognizerDelegateProtocol {
+  export interface NSTouchBarCustomizationPreviewCollectionViewItem<T0 = void, T1 = void, T2 = void> extends NSCollectionViewItem, NSGestureRecognizerDelegateProtocol {
     _shouldTrailingJiggle<R = boolean>(): R;
     _shouldLeadingJiggle<R = boolean>(): R;
     _updateJiggle<R = void>(): R;
@@ -13,6 +13,9 @@ declare namespace cocoa {
     accessibilityHiddenAttribute<R = unknown>(): R;
     accessibilityPerformAction<R = void, P0 = unknown>(_accessibilityPerformAction: P0): R;
     accessibilityActionNames<R = unknown>(): R;
+    accessibilityHitTest<R = unknown, P0 = CGPoint>(_accessibilityHitTest: P0): R;
+    accessibilityChildrenAttribute<R = unknown>(): R;
+    accessibilityRoleAttribute<R = unknown>(): R;
     state<R = number>(): R;
     jiggleIndex<R = number>(): R;
     panHandler<R = CDUnknownBlockType>(): R;
@@ -28,12 +31,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSTouchBarCustomizationPreviewCollectionViewItem<T = any> extends NSCollectionViewItem, NSGestureRecognizerDelegateProtocol {
+  namespace NSTouchBarCustomizationPreviewCollectionViewItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSCollectionViewItem, NSGestureRecognizerDelegateProtocol {
       alloc<R = NSTouchBarCustomizationPreviewCollectionViewItem>(): R;
       new: <R = NSTouchBarCustomizationPreviewCollectionViewItem>() => R;
     }
   }
 }
 
-declare const NSTouchBarCustomizationPreviewCollectionViewItem: cocoa.classes.NSTouchBarCustomizationPreviewCollectionViewItem;
+declare const NSTouchBarCustomizationPreviewCollectionViewItem: cocoa.NSTouchBarCustomizationPreviewCollectionViewItem.CLASS;

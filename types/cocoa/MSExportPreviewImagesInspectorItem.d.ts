@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSExportPreviewImagesInspectorItem<T = any> extends MSInspectorItem, MSLayerChangeObserverProtocol {
+  export interface MSExportPreviewImagesInspectorItem<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, MSLayerChangeObserverProtocol {
     setPreviewsWithViewModels<R = void, P0 = unknown>(_setPreviewsWithViewModels: P0): R;
     reloadPreviewViews<R = void>(): R;
     removeAllPreviewViews<R = void>(): R;
@@ -16,8 +16,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSExportPreviewImagesInspectorItem<T = any> extends MSInspectorItem, MSLayerChangeObserverProtocol {
+  namespace MSExportPreviewImagesInspectorItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, MSLayerChangeObserverProtocol {
       alloc<R = MSExportPreviewImagesInspectorItem>(): R;
       new: <R = MSExportPreviewImagesInspectorItem>() => R;
       setFrameOfViewModels_withInspectorWidth<R = void, P0 = unknown, P1 = number>(_setFrameOfViewModels: P0, _withInspectorWidth: P1): R;
@@ -28,4 +28,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSExportPreviewImagesInspectorItem: cocoa.classes.MSExportPreviewImagesInspectorItem;
+declare const MSExportPreviewImagesInspectorItem: cocoa.MSExportPreviewImagesInspectorItem.CLASS;

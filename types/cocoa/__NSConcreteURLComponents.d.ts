@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface __NSConcreteURLComponents<T = any> extends NSURLComponents, NSCopyingProtocol {
+  export interface __NSConcreteURLComponents<T0 = void, T1 = void, T2 = void> extends NSURLComponents, NSCopyingProtocol {
     setPercentEncodedQueryItems<R = void, P0 = unknown>(_setPercentEncodedQueryItems: P0): R;
     percentEncodedQueryItems<R = unknown>(): R;
     setQueryItems<R = void, P0 = unknown>(_setQueryItems: P0): R;
@@ -49,8 +49,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     __cfComponents<R = __CFURLComponents>(): R;
   }
-  namespace classes {
-    export interface __NSConcreteURLComponents<T = any> extends NSURLComponents, NSCopyingProtocol {
+  namespace __NSConcreteURLComponents {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSURLComponents, NSCopyingProtocol {
       alloc<R = __NSConcreteURLComponents>(): R;
       new: <R = __NSConcreteURLComponents>() => R;
       automaticallyNotifiesObserversForKey<R = boolean, P0 = unknown>(_automaticallyNotifiesObserversForKey: P0): R;

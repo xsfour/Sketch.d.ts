@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSCloudViewController<T = any> extends NSViewController {
+  export interface MSCloudViewController<T0 = void, T1 = void, T2 = void> extends NSViewController {
     cxx_destruct<R = void>(): R;
     refreshLicenseIfIneligible<R = void>(): R;
     resetContentViewController<R = void, P0 = unknown>(_resetContentViewController: P0): R;
@@ -21,12 +21,12 @@ declare namespace cocoa {
     contentViewController<R = MSCloudBaseViewController>(): R;
     setContentViewController<R = void, P0 = MSCloudBaseViewController>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSCloudViewController<T = any> extends NSViewController {
+  namespace MSCloudViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController {
       alloc<R = MSCloudViewController>(): R;
       new: <R = MSCloudViewController>() => R;
     }
   }
 }
 
-declare const MSCloudViewController: cocoa.classes.MSCloudViewController;
+declare const MSCloudViewController: cocoa.MSCloudViewController.CLASS;

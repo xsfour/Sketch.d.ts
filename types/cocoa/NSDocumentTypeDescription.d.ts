@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDocumentTypeDescription<T = any> extends NSObject {
+  export interface NSDocumentTypeDescription<T0 = void, T1 = void, T2 = void> extends NSObject {
     userActivityType<R = unknown>(): R;
     description<R = unknown>(): R;
     persistentStoreType<R = unknown>(): R;
@@ -20,8 +20,8 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     _initWithDeclaration_cachedNamesByAlias<R = unknown, P0 = unknown, P1 = unknown>(__initWithDeclaration: P0, _cachedNamesByAlias: P1): R;
   }
-  namespace classes {
-    export interface NSDocumentTypeDescription<T = any> extends NSObject {
+  namespace NSDocumentTypeDescription {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSDocumentTypeDescription>(): R;
       new: <R = NSDocumentTypeDescription>() => R;
       _noneOrQuotingOfText<R = unknown, P0 = unknown>(__noneOrQuotingOfText: P0): R;
@@ -36,4 +36,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSDocumentTypeDescription: cocoa.classes.NSDocumentTypeDescription;
+declare const NSDocumentTypeDescription: cocoa.NSDocumentTypeDescription.CLASS;

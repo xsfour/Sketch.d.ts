@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSMultipleBorderInspectorViewController<T = any> extends MSMultipleColorStylePartInspectorViewController, BCPopoverDelegateProtocol {
+  export interface MSMultipleBorderInspectorViewController<T0 = void, T1 = void, T2 = void> extends MSMultipleColorStylePartInspectorViewController, BCPopoverDelegateProtocol {
     views<R = unknown>(): R;
     advancedOptionsApplicable<R = boolean>(): R;
     shouldHideAddStylePartButton<R = boolean>(): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSMultipleBorderInspectorViewController<T = any> extends MSMultipleColorStylePartInspectorViewController, BCPopoverDelegateProtocol {
+  namespace MSMultipleBorderInspectorViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSMultipleColorStylePartInspectorViewController, BCPopoverDelegateProtocol {
       alloc<R = MSMultipleBorderInspectorViewController>(): R;
       new: <R = MSMultipleBorderInspectorViewController>() => R;
     }
   }
 }
 
-declare const MSMultipleBorderInspectorViewController: cocoa.classes.MSMultipleBorderInspectorViewController;
+declare const MSMultipleBorderInspectorViewController: cocoa.MSMultipleBorderInspectorViewController.CLASS;

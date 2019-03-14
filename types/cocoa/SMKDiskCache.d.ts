@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface SMKDiskCache<T = any> extends NSObject {
+  export interface SMKDiskCache<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     setObject_forKeyedSubscript<R = void, P0 = unknown, P1 = unknown>(_setObject: P0, _forKeyedSubscript: P1): R;
     objectForKeyedSubscript<R = unknown, P0 = unknown>(_objectForKeyedSubscript: P0): R;
@@ -20,12 +20,12 @@ declare namespace cocoa {
     delegate<R = SMKDiskCacheDelegate>(): R;
     setDelegate<R = void, P0 = SMKDiskCacheDelegate>(_v: P0): R;
   }
-  namespace classes {
-    export interface SMKDiskCache<T = any> extends NSObject {
+  namespace SMKDiskCache {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = SMKDiskCache>(): R;
       new: <R = SMKDiskCache>() => R;
     }
   }
 }
 
-declare const SMKDiskCache: cocoa.classes.SMKDiskCache;
+declare const SMKDiskCache: cocoa.SMKDiskCache.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSOverrideRepresentationContainer<T = any> extends MSOverrideRepresentationBase {
+  export interface MSOverrideRepresentationContainer<T0 = void, T1 = void, T2 = void> extends MSOverrideRepresentationBase {
     isEditable<R = boolean>(): R;
     description<R = unknown>(): R;
     transformForConvertingToInstance<R = unknown>(): R;
@@ -10,8 +10,8 @@ declare namespace cocoa {
     setAppliedInstance<R = void, P0 = MSImmutableSymbolInstance>(_v: P0): R;
     selectedOverrides<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface MSOverrideRepresentationContainer<T = any> extends MSOverrideRepresentationBase {
+  namespace MSOverrideRepresentationContainer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSOverrideRepresentationBase {
       alloc<R = MSOverrideRepresentationContainer>(): R;
       new: <R = MSOverrideRepresentationContainer>() => R;
       rootRepresentationForSymbolInstance<R = unknown, P0 = unknown>(_rootRepresentationForSymbolInstance: P0): R;
@@ -19,4 +19,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSOverrideRepresentationContainer: cocoa.classes.MSOverrideRepresentationContainer;
+declare const MSOverrideRepresentationContainer: cocoa.MSOverrideRepresentationContainer.CLASS;

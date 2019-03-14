@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDocumentError<T = any> extends NSError {
+  export interface MSDocumentError<T0 = void, T1 = void, T2 = void> extends NSError {
     localizedFailureReason<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSDocumentError<T = any> extends NSError {
+  namespace MSDocumentError {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSError {
       alloc<R = MSDocumentError>(): R;
       new: <R = MSDocumentError>() => R;
       errorWithCode<R = unknown, P0 = number>(_errorWithCode: P0): R;
@@ -13,4 +13,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSDocumentError: cocoa.classes.MSDocumentError;
+declare const MSDocumentError: cocoa.MSDocumentError.CLASS;

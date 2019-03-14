@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCFData<T = any> extends NSMutableData {
+  export interface NSCFData<T0 = void, T1 = void, T2 = void> extends NSMutableData {
     _providesConcreteBacking<R = boolean>(): R;
     setLength<R = void, P0 = number>(_setLength: P0): R;
     mutableBytes<R = void>(): R;
@@ -18,11 +18,11 @@ declare namespace cocoa {
     hash<R = number>(): R;
     isEqual<R = boolean, P0 = unknown>(_isEqual: P0): R;
   }
-  namespace classes {
-    export interface NSCFData<T = any> extends NSMutableData {
+  namespace NSCFData {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSMutableData {
       automaticallyNotifiesObserversForKey<R = boolean, P0 = unknown>(_automaticallyNotifiesObserversForKey: P0): R;
     }
   }
 }
 
-declare const NSCFData: cocoa.classes.NSCFData;
+declare const NSCFData: cocoa.NSCFData.CLASS;

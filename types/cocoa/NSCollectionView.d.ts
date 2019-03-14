@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCollectionView<T = any> extends NSView, NSDraggingSourceProtocol, NSDraggingDestinationProtocol {
+  export interface NSCollectionView<T0 = void, T1 = void, T2 = void> extends NSView, NSDraggingSourceProtocol, NSDraggingDestinationProtocol {
     _reuseSupplementaryView<R = void, P0 = unknown>(__reuseSupplementaryView: P0): R;
     collectionView_transitionLayoutForOldLayout_newLayout<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_collectionView: P0, _transitionLayoutForOldLayout: P1, _newLayout: P2): R;
     collectionView_didEndDisplayingSupplementaryView_forElementOfKind_atIndexPath<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown>(_collectionView: P0, _didEndDisplayingSupplementaryView: P1, _forElementOfKind: P2, _atIndexPath: P3): R;
@@ -338,8 +338,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSCollectionView<T = any> extends NSView, NSDraggingSourceProtocol, NSDraggingDestinationProtocol {
+  namespace NSCollectionView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView, NSDraggingSourceProtocol, NSDraggingDestinationProtocol {
       alloc<R = NSCollectionView>(): R;
       new: <R = NSCollectionView>() => R;
       _dropHighlightWidthForSections<R = number>(): R;
@@ -348,4 +348,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSCollectionView: cocoa.classes.NSCollectionView;
+declare const NSCollectionView: cocoa.NSCollectionView.CLASS;

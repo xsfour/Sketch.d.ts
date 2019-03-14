@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSelectionBinder<T = any> extends NSValueBinder {
+  export interface NSSelectionBinder<T0 = void, T1 = void, T2 = void> extends NSValueBinder {
     contentValueWithEditedMode_selectedObject<R = unknown, P0 = __NSKeyValueCodingControllerModeType, P1 = unknown>(_contentValueWithEditedMode: P0, _selectedObject: P1): R;
     contentCountWithEditedMode<R = number, P0 = __NSKeyValueCodingControllerModeType>(_contentCountWithEditedMode: P0): R;
     contentObjectWithEditedMode_contentIndex<R = unknown, P0 = __NSKeyValueCodingControllerModeType, P1 = number>(_contentObjectWithEditedMode: P0, _contentIndex: P1): R;
@@ -18,12 +18,12 @@ declare namespace cocoa {
     insertsNullPlaceholder<R = boolean>(): R;
     setInsertsNullPlaceholder<R = void, P0 = boolean>(_setInsertsNullPlaceholder: P0): R;
   }
-  namespace classes {
-    export interface NSSelectionBinder<T = any> extends NSValueBinder {
+  namespace NSSelectionBinder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSValueBinder {
       alloc<R = NSSelectionBinder>(): R;
       new: <R = NSSelectionBinder>() => R;
     }
   }
 }
 
-declare const NSSelectionBinder: cocoa.classes.NSSelectionBinder;
+declare const NSSelectionBinder: cocoa.NSSelectionBinder.CLASS;

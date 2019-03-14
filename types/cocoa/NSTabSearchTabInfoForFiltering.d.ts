@@ -1,13 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTabSearchTabInfoForFiltering<T = any> extends NSObject {
-    cxx_destruct<R = void>(): R;
-    initWithTitle<R = unknown, P0 = unknown>(_initWithTitle: P0): R;
-    title<R = NSString>(): R;
-  }
-  namespace classes {
-    export interface NSTabSearchTabInfoForFiltering<T = any> extends NSObject {
+  export interface NSTabSearchTabInfoForFiltering<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace NSTabSearchTabInfoForFiltering {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSTabSearchTabInfoForFiltering>(): R;
       new: <R = NSTabSearchTabInfoForFiltering>() => R;
       infoWithTitle<R = unknown, P0 = unknown>(_infoWithTitle: P0): R;
@@ -15,4 +11,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTabSearchTabInfoForFiltering: cocoa.classes.NSTabSearchTabInfoForFiltering;
+declare const NSTabSearchTabInfoForFiltering: cocoa.NSTabSearchTabInfoForFiltering.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCell<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol, NSUserInterfaceItemIdentificationProtocol, NSAccessibilityElementProtocol, NSAccessibilityProtocol {
+  export interface NSCell<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSCodingProtocol, NSUserInterfaceItemIdentificationProtocol, NSAccessibilityElementProtocol, NSAccessibilityProtocol {
     setAccessibilityContentSiblingBelow<R = void, P0 = unknown>(_setAccessibilityContentSiblingBelow: P0): R;
     accessibilityContentSiblingBelow<R = unknown>(): R;
     setAccessibilityContentSiblingAbove<R = void, P0 = unknown>(_setAccessibilityContentSiblingAbove: P0): R;
@@ -683,8 +683,9 @@ declare namespace cocoa {
     description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
-    // + NSCell(Chocolat,Inspector):
+    // + NSCell(Chocolat): 
     inheritedBackgroundStyle<R = number>(): R;
+    // + NSCell(Inspector): 
     inspectorFocusRingMaskBoundsForFrame_inView<R = CGRect, P0 = CGRect, P1 = unknown>(_inspectorFocusRingMaskBoundsForFrame: P0, _inView: P1): R;
     drawInspectorFocusRingMaskWithWithPath<R = void, P0 = unknown>(_drawInspectorFocusRingMaskWithWithPath: P0): R;
     drawInspectorTextFieldBackgroundWithPath<R = void, P0 = unknown>(_drawInspectorTextFieldBackgroundWithPath: P0): R;
@@ -696,8 +697,8 @@ declare namespace cocoa {
     currentInspectorAccentColor<R = unknown>(): R;
     currentInspectorIconColor<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSCell<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol, NSUserInterfaceItemIdentificationProtocol, NSAccessibilityElementProtocol, NSAccessibilityProtocol {
+  namespace NSCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSCodingProtocol, NSUserInterfaceItemIdentificationProtocol, NSAccessibilityElementProtocol, NSAccessibilityProtocol {
       alloc<R = NSCell>(): R;
       new: <R = NSCell>() => R;
       defaultMenu<R = unknown>(): R;
@@ -706,8 +707,9 @@ declare namespace cocoa {
       defaultFocusRingType<R = number>(): R;
       prefersTrackingUntilMouseUp<R = boolean>(): R;
       initialize<R = void>(): R;
-      // + NSCell(Chocolat,Inspector):
+      // + NSCell(Chocolat): 
       drawBaselineAlignedAttributedTitle_forCell_controlView<R = CGRect, P0 = unknown, P1 = unknown, P2 = unknown>(_drawBaselineAlignedAttributedTitle: P0, _forCell: P1, _controlView: P2): R;
+      // + NSCell(Inspector): 
       drawInspectorButtonImage_centeredInRect_withColor<R = void, P0 = unknown, P1 = CGRect, P2 = unknown>(_drawInspectorButtonImage: P0, _centeredInRect: P1, _withColor: P2): R;
       inspectorAccentColorForCellHighlighted<R = unknown, P0 = boolean>(_inspectorAccentColorForCellHighlighted: P0): R;
       inspectorIconColorForCellEnabled_highlighted<R = unknown, P0 = boolean, P1 = boolean>(_inspectorIconColorForCellEnabled: P0, _highlighted: P1): R;
@@ -715,4 +717,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSCell: cocoa.classes.NSCell;
+declare const NSCell: cocoa.NSCell.CLASS;

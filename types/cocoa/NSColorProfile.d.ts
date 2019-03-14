@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorProfile<T = any> extends NSObject, NSCodingProtocol {
+  export interface NSColorProfile<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
     awakeAfterUsingCoder<R = unknown, P0 = unknown>(_awakeAfterUsingCoder: P0): R;
     hash<R = number>(): R;
     _isGenericProfile<R = number>(): R;
@@ -18,8 +18,8 @@ declare namespace cocoa {
     initWithICCProfileData<R = unknown, P0 = unknown>(_initWithICCProfileData: P0): R;
     initWithColorSyncProfile<R = unknown, P0 = void>(_initWithColorSyncProfile: P0): R;
   }
-  namespace classes {
-    export interface NSColorProfile<T = any> extends NSObject, NSCodingProtocol {
+  namespace NSColorProfile {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
       alloc<R = NSColorProfile>(): R;
       new: <R = NSColorProfile>() => R;
       availableProfiles<R = unknown>(): R;
@@ -27,4 +27,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSColorProfile: cocoa.classes.NSColorProfile;
+declare const NSColorProfile: cocoa.NSColorProfile.CLASS;

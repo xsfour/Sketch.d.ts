@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarLayoutItem<T = any> extends NSObject, _NSTouchBarItemLayoutWrapperProtocol {
+  export interface NSTouchBarLayoutItem<T0 = void, T1 = void, T2 = void> extends NSObject, _NSTouchBarItemLayoutWrapperProtocol {
     visibilityPriority<R = number>(): R;
     initWithTouchBarItem<R = unknown, P0 = unknown>(_initWithTouchBarItem: P0): R;
     isSpace<R = boolean>(): R;
@@ -18,12 +18,12 @@ declare namespace cocoa {
     priorityIndex<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSTouchBarLayoutItem<T = any> extends NSObject, _NSTouchBarItemLayoutWrapperProtocol {
+  namespace NSTouchBarLayoutItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, _NSTouchBarItemLayoutWrapperProtocol {
       alloc<R = NSTouchBarLayoutItem>(): R;
       new: <R = NSTouchBarLayoutItem>() => R;
     }
   }
 }
 
-declare const NSTouchBarLayoutItem: cocoa.classes.NSTouchBarLayoutItem;
+declare const NSTouchBarLayoutItem: cocoa.NSTouchBarLayoutItem.CLASS;

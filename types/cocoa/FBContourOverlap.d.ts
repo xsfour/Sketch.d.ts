@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface FBContourOverlap<T = any> extends NSObject {
+  export interface FBContourOverlap<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     debugQuickLookObject<R = unknown>(): R;
     description<R = unknown>(): R;
@@ -18,8 +18,8 @@ declare namespace cocoa {
     overlapRuns<R = NSArray>(): R;
     runs_<R = NSMutableArray>(): R;
   }
-  namespace classes {
-    export interface FBContourOverlap<T = any> extends NSObject {
+  namespace FBContourOverlap {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = FBContourOverlap>(): R;
       new: <R = FBContourOverlap>() => R;
       contourOverlap<R = unknown>(): R;
@@ -27,4 +27,4 @@ declare namespace cocoa {
   }
 }
 
-declare const FBContourOverlap: cocoa.classes.FBContourOverlap;
+declare const FBContourOverlap: cocoa.FBContourOverlap.CLASS;

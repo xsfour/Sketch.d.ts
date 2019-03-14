@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSubtreeRoot<T = any> extends NSObject {
+  export interface MSSubtreeRoot<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     page<R = unknown>(): R;
     overlayDirtyDiffRectForPage<R = CGRect, P0 = unknown>(_overlayDirtyDiffRectForPage: P0): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     setObject<R = void, P0 = MSImmutableModelObject>(_v: P0): R;
     webExportableRootLayer<R = MSWebExportableRootLayer>(): R;
   }
-  namespace classes {
-    export interface MSSubtreeRoot<T = any> extends NSObject {
+  namespace MSSubtreeRoot {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSSubtreeRoot>(): R;
       new: <R = MSSubtreeRoot>() => R;
     }
   }
 }
 
-declare const MSSubtreeRoot: cocoa.classes.MSSubtreeRoot;
+declare const MSSubtreeRoot: cocoa.MSSubtreeRoot.CLASS;

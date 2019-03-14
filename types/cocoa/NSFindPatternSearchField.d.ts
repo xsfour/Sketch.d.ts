@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFindPatternSearchField<T = any> extends NSTextFinderBarSearchField, NSFindPatternFieldProtocol {
+  export interface NSFindPatternSearchField<T0 = void, T1 = void, T2 = void> extends NSTextFinderBarSearchField, NSFindPatternFieldProtocol {
     _selectedFindPattern<R = void, P0 = unknown>(__selectedFindPattern: P0): R;
     _uniquePatterns<R = unknown>(): R;
     _rangesOfFindPattern<R = unknown, P0 = unknown>(__rangesOfFindPattern: P0): R;
@@ -25,12 +25,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSFindPatternSearchField<T = any> extends NSTextFinderBarSearchField, NSFindPatternFieldProtocol {
+  namespace NSFindPatternSearchField {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTextFinderBarSearchField, NSFindPatternFieldProtocol {
       alloc<R = NSFindPatternSearchField>(): R;
       new: <R = NSFindPatternSearchField>() => R;
     }
   }
 }
 
-declare const NSFindPatternSearchField: cocoa.classes.NSFindPatternSearchField;
+declare const NSFindPatternSearchField: cocoa.NSFindPatternSearchField.CLASS;

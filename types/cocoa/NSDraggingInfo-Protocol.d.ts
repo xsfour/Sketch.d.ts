@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDraggingInfoProtocol<T = any> extends NSObjectProtocol {
+  export interface NSDraggingInfoProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     resetSpringLoading<R = void>(): R;
     enumerateDraggingItemsWithOptions_forView_classes_searchOptions_usingBlock<R = void, P0 = number, P1 = NSView, P2 = NSArray, P3 = NSDictionary, P4 = CDUnknownBlockType>(_enumerateDraggingItemsWithOptions: P0, _forView: P1, _classes: P2, _searchOptions: P3, _usingBlock: P4): R;
     namesOfPromisedFilesDroppedAtDestination<R = NSArray, P0 = NSURL>(_namesOfPromisedFilesDroppedAtDestination: P0): R;
@@ -22,7 +22,7 @@ declare namespace cocoa {
     draggingSourceOperationMask<R = number>(): R;
     draggingDestinationWindow<R = NSWindow>(): R;
   }
-  namespace classes {
-    export interface NSDraggingInfoProtocol<T = any> extends NSObjectProtocol {  }
+  namespace NSDraggingInfoProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

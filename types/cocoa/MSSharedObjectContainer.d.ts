@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSharedObjectContainer<T = any> extends _MSSharedObjectContainer {
+  export interface MSSharedObjectContainer<T0 = void, T1 = void, T2 = void> extends _MSSharedObjectContainer {
     objectsSortedByName<R = unknown>(): R;
     numberOfSharedObjects<R = number>(): R;
     indexOfSharedObject<R = number, P0 = unknown>(_indexOfSharedObject: P0): R;
@@ -11,12 +11,12 @@ declare namespace cocoa {
     removeSharedObjects<R = void, P0 = unknown>(_removeSharedObjects: P0): R;
     sharedObjectClass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSSharedObjectContainer<T = any> extends _MSSharedObjectContainer {
+  namespace MSSharedObjectContainer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSSharedObjectContainer {
       alloc<R = MSSharedObjectContainer>(): R;
       new: <R = MSSharedObjectContainer>() => R;
     }
   }
 }
 
-declare const MSSharedObjectContainer: cocoa.classes.MSSharedObjectContainer;
+declare const MSSharedObjectContainer: cocoa.MSSharedObjectContainer.CLASS;

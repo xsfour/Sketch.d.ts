@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDocumentDragButton<T = any> extends NSButton, NSDraggingSourceProtocol {
+  export interface NSDocumentDragButton<T0 = void, T1 = void, T2 = void> extends NSButton, NSDraggingSourceProtocol {
     _draggingItemFromPasteboardItem<R = unknown, P0 = unknown>(__draggingItemFromPasteboardItem: P0): R;
     _filenameWindowDragPoint<R = CGPoint>(): R;
     _textViewForDragging<R = unknown>(): R;
@@ -17,12 +17,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSDocumentDragButton<T = any> extends NSButton, NSDraggingSourceProtocol {
+  namespace NSDocumentDragButton {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSButton, NSDraggingSourceProtocol {
       alloc<R = NSDocumentDragButton>(): R;
       new: <R = NSDocumentDragButton>() => R;
     }
   }
 }
 
-declare const NSDocumentDragButton: cocoa.classes.NSDocumentDragButton;
+declare const NSDocumentDragButton: cocoa.NSDocumentDragButton.CLASS;

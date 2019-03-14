@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCGSWindowBackingStore<T = any> extends NSObject {
+  export interface NSCGSWindowBackingStore<T0 = void, T1 = void, T2 = void> extends NSObject {
     makeDrawingContext<R = CGContext>(): R;
     revalidateWithDrawingHandler<R = void, P0 = CDUnknownBlockType>(_revalidateWithDrawingHandler: P0): R;
     invalidateRect<R = void, P0 = CGRect>(_invalidateRect: P0): R;
@@ -23,8 +23,8 @@ declare namespace cocoa {
     workingDepth<R = number>(): R;
     setWorkingDepth<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSCGSWindowBackingStore<T = any> extends NSObject {
+  namespace NSCGSWindowBackingStore {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSCGSWindowBackingStore>(): R;
       new: <R = NSCGSWindowBackingStore>() => R;
       backingStoreWithWindowID<R = unknown, P0 = number>(_backingStoreWithWindowID: P0): R;
@@ -32,4 +32,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSCGSWindowBackingStore: cocoa.classes.NSCGSWindowBackingStore;
+declare const NSCGSWindowBackingStore: cocoa.NSCGSWindowBackingStore.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDefaultArchive<T = any> extends BCSingleton {
+  export interface MSDefaultArchive<T0 = void, T1 = void, T2 = void> extends BCSingleton {
     cxx_destruct<R = void>(): R;
     newObject<R = unknown>(): R;
     archivesNeedingMigration<R = unknown>(): R;
@@ -13,9 +13,9 @@ declare namespace cocoa {
     defaultObject<R = unknown>(): R;
     setDefaultObject<R = void, P0 = unknown>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSDefaultArchive<T = any> extends BCSingleton {  }
+  namespace MSDefaultArchive {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends BCSingleton {}
   }
 }
 
-declare const MSDefaultArchive: cocoa.classes.MSDefaultArchive;
+declare const MSDefaultArchive: cocoa.MSDefaultArchive.CLASS;

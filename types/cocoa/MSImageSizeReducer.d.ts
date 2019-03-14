@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImageSizeReducer<T = any> extends NSObject {}
-  namespace classes {
-    export interface MSImageSizeReducer<T = any> extends NSObject {
+  export interface MSImageSizeReducer<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace MSImageSizeReducer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSImageSizeReducer>(): R;
       new: <R = MSImageSizeReducer>() => R;
       showImageReductionWarningForWindow_fileSizeDifference_completionBlock<R = unknown, P0 = unknown, P1 = number, P2 = CDUnknownBlockType>(_showImageReductionWarningForWindow: P0, _fileSizeDifference: P1, _completionBlock: P2): R;
@@ -16,4 +16,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSImageSizeReducer: cocoa.classes.MSImageSizeReducer;
+declare const MSImageSizeReducer: cocoa.MSImageSizeReducer.CLASS;

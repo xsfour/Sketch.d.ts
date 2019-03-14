@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSWindowFullScreenStorage<T = any> extends _NSFullScreenStorage {
+  export interface _NSWindowFullScreenStorage<T0 = void, T1 = void, T2 = void> extends _NSFullScreenStorage {
     windowJoinedTileOnCreation<R = boolean>(): R;
     setWindowJoinedTileOnCreation<R = void, P0 = boolean>(_v: P0): R;
     userTilePreferredSize<R = CGSize>(): R;
@@ -17,8 +17,8 @@ declare namespace cocoa {
     savedFrame<R = CGRect>(): R;
     setSavedFrame<R = void, P0 = CGRect>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSWindowFullScreenStorage<T = any> extends _NSFullScreenStorage {
+  namespace _NSWindowFullScreenStorage {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _NSFullScreenStorage {
       alloc<R = _NSWindowFullScreenStorage>(): R;
       new: <R = _NSWindowFullScreenStorage>() => R;
     }

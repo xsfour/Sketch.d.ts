@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSTreeNodeObservingTracker<T = any> extends NSObject {
+  export interface _NSTreeNodeObservingTracker<T0 = void, T1 = void, T2 = void> extends NSObject {
     stopObservingModelObject<R = void, P0 = unknown>(_stopObservingModelObject: P0): R;
     startObservingModelObject<R = void, P0 = unknown>(_startObservingModelObject: P0): R;
     stopAllModeObjectObserving<R = void>(): R;
@@ -20,8 +20,8 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     initWithModelObserver_availableModelAndProxyKeys<R = unknown, P0 = unknown, P1 = unknown>(_initWithModelObserver: P0, _availableModelAndProxyKeys: P1): R;
   }
-  namespace classes {
-    export interface _NSTreeNodeObservingTracker<T = any> extends NSObject {
+  namespace _NSTreeNodeObservingTracker {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSTreeNodeObservingTracker>(): R;
       new: <R = _NSTreeNodeObservingTracker>() => R;
     }

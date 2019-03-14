@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface DKDistortionTransform<T = any> extends NSObject {
+  export interface DKDistortionTransform<T0 = void, T1 = void, T2 = void> extends NSObject {
     transformPath_inRect<R = unknown, P0 = unknown, P1 = CGRect>(_transformPath: P0, _inRect: P1): R;
     transformPoint_fromRect<R = CGPoint, P0 = CGPoint, P1 = CGRect>(_transformPoint: P0, _fromRect: P1): R;
     invert<R = void>(): R;
@@ -15,8 +15,8 @@ declare namespace cocoa {
     initWithEnvelope<R = unknown, P0 = CGPoint>(_initWithEnvelope: P0): R;
     initWithRect<R = unknown, P0 = CGRect>(_initWithRect: P0): R;
   }
-  namespace classes {
-    export interface DKDistortionTransform<T = any> extends NSObject {
+  namespace DKDistortionTransform {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = DKDistortionTransform>(): R;
       new: <R = DKDistortionTransform>() => R;
       transformWithInitialRect<R = unknown, P0 = CGRect>(_transformWithInitialRect: P0): R;
@@ -24,4 +24,4 @@ declare namespace cocoa {
   }
 }
 
-declare const DKDistortionTransform: cocoa.classes.DKDistortionTransform;
+declare const DKDistortionTransform: cocoa.DKDistortionTransform.CLASS;

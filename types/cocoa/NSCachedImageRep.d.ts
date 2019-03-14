@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCachedImageRep<T = any> extends NSImageRep {
+  export interface NSCachedImageRep<T0 = void, T1 = void, T2 = void> extends NSImageRep {
     pixelsHigh<R = number>(): R;
     pixelsWide<R = number>(): R;
     bitsPerSample<R = number>(): R;
@@ -30,12 +30,12 @@ declare namespace cocoa {
     _initWithSharedKitWindow_rect<R = unknown, P0 = number, P1 = CGRect>(__initWithSharedKitWindow: P0, _rect: P1): R;
     initWithWindow_rect<R = unknown, P0 = unknown, P1 = CGRect>(_initWithWindow: P0, _rect: P1): R;
   }
-  namespace classes {
-    export interface NSCachedImageRep<T = any> extends NSImageRep {
+  namespace NSCachedImageRep {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSImageRep {
       alloc<R = NSCachedImageRep>(): R;
       new: <R = NSCachedImageRep>() => R;
     }
   }
 }
 
-declare const NSCachedImageRep: cocoa.classes.NSCachedImageRep;
+declare const NSCachedImageRep: cocoa.NSCachedImageRep.CLASS;

@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSymbolPreviewGenerator<T = any> extends NSObject {}
-  namespace classes {
-    export interface MSSymbolPreviewGenerator<T = any> extends NSObject {
+  export interface MSSymbolPreviewGenerator<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace MSSymbolPreviewGenerator {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSSymbolPreviewGenerator>(): R;
       new: <R = MSSymbolPreviewGenerator>() => R;
       imageForSymbolAncestry_withSize_colorSpace_trimmed<R = unknown, P0 = unknown, P1 = CGSize, P2 = unknown, P3 = boolean>(_imageForSymbolAncestry: P0, _withSize: P1, _colorSpace: P2, _trimmed: P3): R;
@@ -12,4 +12,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSSymbolPreviewGenerator: cocoa.classes.MSSymbolPreviewGenerator;
+declare const MSSymbolPreviewGenerator: cocoa.MSSymbolPreviewGenerator.CLASS;

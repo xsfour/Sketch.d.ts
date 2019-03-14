@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFileCoordinatorUploadFilePreparing<T = any> {}
-  namespace classes {
-    export interface NSFileCoordinatorUploadFilePreparing<T = any> {  }
+  export interface NSFileCoordinatorUploadFilePreparing<T0 = void, T1 = void, T2 = void> {}
+  namespace NSFileCoordinatorUploadFilePreparing {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSFileCoordinatorUploadFilePreparing: cocoa.classes.NSFileCoordinatorUploadFilePreparing;
+declare const NSFileCoordinatorUploadFilePreparing: cocoa.NSFileCoordinatorUploadFilePreparing.CLASS;

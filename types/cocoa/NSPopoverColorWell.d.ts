@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPopoverColorWell<T = any> extends NSColorWell, NSPopoverDelegateProtocol {
+  export interface NSPopoverColorWell<T0 = void, T1 = void, T2 = void> extends NSColorWell, NSPopoverDelegateProtocol {
     setColor<R = void, P0 = unknown>(_setColor: P0): R;
     _showPopover<R = void>(): R;
     _drawColor<R = boolean, P0 = boolean>(__drawColor: P0): R;
@@ -23,8 +23,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSPopoverColorWell<T = any> extends NSColorWell, NSPopoverDelegateProtocol {
+  namespace NSPopoverColorWell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSColorWell, NSPopoverDelegateProtocol {
       alloc<R = NSPopoverColorWell>(): R;
       new: <R = NSPopoverColorWell>() => R;
       nullColor<R = unknown>(): R;
@@ -36,4 +36,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPopoverColorWell: cocoa.classes.NSPopoverColorWell;
+declare const NSPopoverColorWell: cocoa.NSPopoverColorWell.CLASS;

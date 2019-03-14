@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarProviderProtocol<T = any> extends NSObjectProtocol {
+  export interface NSTouchBarProviderProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     touchBar<R = NSTouchBar>(): R;
   }
-  namespace classes {
-    export interface NSTouchBarProviderProtocol<T = any> extends NSObjectProtocol {  }
+  namespace NSTouchBarProviderProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

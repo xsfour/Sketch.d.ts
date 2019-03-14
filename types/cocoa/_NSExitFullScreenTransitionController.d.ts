@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSExitFullScreenTransitionController<T = any> extends _NSFullScreenTransitionController {
+  export interface _NSExitFullScreenTransitionController<T0 = void, T1 = void, T2 = void> extends _NSFullScreenTransitionController {
     configureBeforeStarting<R = void>(): R;
     _gatherAfterTransitionWindowNumbers<R = unknown>(): R;
     _swapOriginalWindowWithOverlayWindow<R = void>(): R;
@@ -52,8 +52,8 @@ declare namespace cocoa {
     doInProcessAnimation<R = boolean>(): R;
     setDoInProcessAnimation<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSExitFullScreenTransitionController<T = any> extends _NSFullScreenTransitionController {
+  namespace _NSExitFullScreenTransitionController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _NSFullScreenTransitionController {
       alloc<R = _NSExitFullScreenTransitionController>(): R;
       new: <R = _NSExitFullScreenTransitionController>() => R;
       exitTransitionForWindow<R = unknown, P0 = unknown>(_exitTransitionForWindow: P0): R;

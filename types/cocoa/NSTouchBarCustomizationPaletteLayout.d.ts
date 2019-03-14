@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarCustomizationPaletteLayout<T = any> extends NSCollectionViewLayout {
+  export interface NSTouchBarCustomizationPaletteLayout<T0 = void, T1 = void, T2 = void> extends NSCollectionViewLayout {
     layoutAttributesForDecorationViewOfKind_atIndexPath<R = unknown, P0 = unknown, P1 = unknown>(_layoutAttributesForDecorationViewOfKind: P0, _atIndexPath: P1): R;
     layoutAttributesForItemAtIndexPath<R = unknown, P0 = unknown>(_layoutAttributesForItemAtIndexPath: P0): R;
     layoutAttributesForElementsInRect<R = unknown, P0 = CGRect>(_layoutAttributesForElementsInRect: P0): R;
@@ -37,11 +37,11 @@ declare namespace cocoa {
     scaleFactor<R = number>(): R;
     setScaleFactor<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTouchBarCustomizationPaletteLayout<T = any> extends NSCollectionViewLayout {
+  namespace NSTouchBarCustomizationPaletteLayout {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSCollectionViewLayout {
       layoutAttributesClass<R = unknown>(): R;
     }
   }
 }
 
-declare const NSTouchBarCustomizationPaletteLayout: cocoa.classes.NSTouchBarCustomizationPaletteLayout;
+declare const NSTouchBarCustomizationPaletteLayout: cocoa.NSTouchBarCustomizationPaletteLayout.CLASS;

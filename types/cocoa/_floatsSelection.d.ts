@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _floatsSelection<T = any> {}
-  namespace classes {
-    export interface _floatsSelection<T = any> {  }
+  export interface _floatsSelection<T0 = void, T1 = void, T2 = void> {}
+  namespace _floatsSelection {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

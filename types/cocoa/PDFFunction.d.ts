@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface PDFFunction<T = any> extends NSObject {
+  export interface PDFFunction<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     mapInputs_toOutputs<R = void, P0 = number, P1 = number>(_mapInputs: P0, _toOutputs: P1): R;
     setupStitchedWithDictionary<R = void, P0 = unknown>(_setupStitchedWithDictionary: P0): R;
@@ -33,8 +33,8 @@ declare namespace cocoa {
     samples<R = NSData>(): R;
     setSamples<R = void, P0 = NSData>(_v: P0): R;
   }
-  namespace classes {
-    export interface PDFFunction<T = any> extends NSObject {
+  namespace PDFFunction {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = PDFFunction>(): R;
       new: <R = PDFFunction>() => R;
       functionWithInfo<R = unknown, P0 = unknown>(_functionWithInfo: P0): R;
@@ -42,4 +42,4 @@ declare namespace cocoa {
   }
 }
 
-declare const PDFFunction: cocoa.classes.PDFFunction;
+declare const PDFFunction: cocoa.PDFFunction.CLASS;

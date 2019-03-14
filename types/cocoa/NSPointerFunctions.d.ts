@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPointerFunctions<T = any> extends NSObject, NSCopyingProtocol {
+  export interface NSPointerFunctions<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     initWithOptions<R = unknown, P0 = number>(_initWithOptions: P0): R;
     usesWeakReadAndWriteBarriers<R = boolean>(): R;
     setUsesWeakReadAndWriteBarriers<R = void, P0 = boolean>(_v: P0): R;
@@ -20,8 +20,8 @@ declare namespace cocoa {
     sizeFunction<R = CDUnknownFunctionPointerType>(): R;
     setSizeFunction<R = void, P0 = CDUnknownFunctionPointerType>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSPointerFunctions<T = any> extends NSObject, NSCopyingProtocol {
+  namespace NSPointerFunctions {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = NSPointerFunctions>(): R;
       new: <R = NSPointerFunctions>() => R;
       pointerFunctionsWithOptions<R = unknown, P0 = number>(_pointerFunctionsWithOptions: P0): R;
@@ -30,4 +30,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPointerFunctions: cocoa.classes.NSPointerFunctions;
+declare const NSPointerFunctions: cocoa.NSPointerFunctions.CLASS;

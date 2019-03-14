@@ -1,6 +1,8 @@
 /// <reference path="./cocoa/index.d.ts" />
 
 declare namespace cocoa {
+
+  // structures
   export interface CGPoint {
     /** `float` */
     x: number;
@@ -20,10 +22,12 @@ declare namespace cocoa {
     size: CGSize;
   }
 
+  // interfaces
+
   /**
    * NOTE: Function `map` is overwritten
    */
-  export interface NSArray<T> extends Array<T> {}
+  export interface NSArray<T0> extends Array<T0> {}
 
   export interface NSString extends String {}
 
@@ -62,14 +66,5 @@ declare namespace cocoa {
   }
 }
 
-declare const NSUTF8StringEncoding: number;
-declare const NSViewWidthSizable: number;
-declare const NSViewHeightSizable: number;
-declare const NSTitledWindowMask: number;
-declare const NSWindowStyleMaskClosable: number;
-declare const NSResizableWindowMask: number;
-declare const NSBackingStoreBuffered: number;
-declare const NSLayoutAttributeHeight: number;
-declare const NSLayoutRelationEqual: number;
-declare const NSLayoutAttributeTop: any;
-declare const NSPasteboardTypeString: unique symbol;
+// global constants
+declare const coscript: cocoa.COScript;

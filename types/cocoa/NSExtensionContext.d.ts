@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSExtensionContext<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol, NSXPCListenerDelegateProtocol, _NSExtensionAuxHostingBaseProtocol {
+  export interface NSExtensionContext<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol, NSXPCListenerDelegateProtocol, _NSExtensionAuxHostingBaseProtocol {
     didConnectToVendor<R = void, P0 = unknown>(_didConnectToVendor: P0): R;
     _willPerformHostCallback<R = void, P0 = CDUnknownBlockType>(__willPerformHostCallback: P0): R;
     _openURL_completion<R = void, P0 = unknown, P1 = CDUnknownBlockType>(__openURL: P0, _completion: P1): R;
@@ -49,8 +49,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSExtensionContext<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol, NSXPCListenerDelegateProtocol, _NSExtensionAuxHostingBaseProtocol {
+  namespace NSExtensionContext {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol, NSXPCListenerDelegateProtocol, _NSExtensionAuxHostingBaseProtocol {
       alloc<R = NSExtensionContext>(): R;
       new: <R = NSExtensionContext>() => R;
       _allowedErrorClasses<R = unknown>(): R;
@@ -66,4 +66,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSExtensionContext: cocoa.classes.NSExtensionContext;
+declare const NSExtensionContext: cocoa.NSExtensionContext.CLASS;

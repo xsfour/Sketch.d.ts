@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarColorListPickerBlurContainerView<T = any> extends NSView, NSTouchBarColorListPickerContainerViewProtocol {
+  export interface NSTouchBarColorListPickerBlurContainerView<T0 = void, T1 = void, T2 = void> extends NSView, NSTouchBarColorListPickerContainerViewProtocol {
     wantsLayer<R = boolean>(): R;
     _contentAffineTransform<R = CGAffineTransform>(): R;
     active<R = boolean>(): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSTouchBarColorListPickerBlurContainerView<T = any> extends NSView, NSTouchBarColorListPickerContainerViewProtocol {
+  namespace NSTouchBarColorListPickerBlurContainerView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView, NSTouchBarColorListPickerContainerViewProtocol {
       alloc<R = NSTouchBarColorListPickerBlurContainerView>(): R;
       new: <R = NSTouchBarColorListPickerBlurContainerView>() => R;
     }
   }
 }
 
-declare const NSTouchBarColorListPickerBlurContainerView: cocoa.classes.NSTouchBarColorListPickerBlurContainerView;
+declare const NSTouchBarColorListPickerBlurContainerView: cocoa.NSTouchBarColorListPickerBlurContainerView.CLASS;

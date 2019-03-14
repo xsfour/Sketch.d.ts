@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorPopoverController<T = any> extends NSViewController, NSColorPickerMatrixViewDelegateProtocol {
+  export interface NSColorPopoverController<T0 = void, T1 = void, T2 = void> extends NSViewController, NSColorPickerMatrixViewDelegateProtocol {
     _showColorPanel<R = void, P0 = unknown>(__showColorPanel: P0): R;
     _loadViewIfNecessary<R = void>(): R;
     popover<R = NSPopover>(): R;
@@ -19,8 +19,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSColorPopoverController<T = any> extends NSViewController, NSColorPickerMatrixViewDelegateProtocol {
+  namespace NSColorPopoverController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController, NSColorPickerMatrixViewDelegateProtocol {
       alloc<R = NSColorPopoverController>(): R;
       new: <R = NSColorPopoverController>() => R;
       defaultTopBarColorList<R = unknown>(): R;
@@ -28,4 +28,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSColorPopoverController: cocoa.classes.NSColorPopoverController;
+declare const NSColorPopoverController: cocoa.NSColorPopoverController.CLASS;

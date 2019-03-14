@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAccessibilityRulerMarker<T = any> extends NSAccessibilityMockUIElement {
+  export interface NSAccessibilityRulerMarker<T0 = void, T1 = void, T2 = void> extends NSAccessibilityMockUIElement {
     accessibilitySetValueAttribute<R = void, P0 = unknown>(_accessibilitySetValueAttribute: P0): R;
     accessibilityIsValueAttributeSettable<R = boolean>(): R;
     accessibilityValueAttribute<R = unknown>(): R;
@@ -12,8 +12,8 @@ declare namespace cocoa {
     marker<R = unknown>(): R;
     initWithRulerMarker_parent<R = unknown, P0 = unknown, P1 = unknown>(_initWithRulerMarker: P0, _parent: P1): R;
   }
-  namespace classes {
-    export interface NSAccessibilityRulerMarker<T = any> extends NSAccessibilityMockUIElement {
+  namespace NSAccessibilityRulerMarker {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSAccessibilityMockUIElement {
       alloc<R = NSAccessibilityRulerMarker>(): R;
       new: <R = NSAccessibilityRulerMarker>() => R;
       markerWithRulerMarker_parent<R = unknown, P0 = unknown, P1 = unknown>(_markerWithRulerMarker: P0, _parent: P1): R;
@@ -21,4 +21,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSAccessibilityRulerMarker: cocoa.classes.NSAccessibilityRulerMarker;
+declare const NSAccessibilityRulerMarker: cocoa.NSAccessibilityRulerMarker.CLASS;

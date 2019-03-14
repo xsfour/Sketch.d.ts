@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSStoryboardSegueTemplate<T = any> extends NSObject, NSCodingProtocol {
+  export interface NSStoryboardSegueTemplate<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
     perform<R = void, P0 = unknown>(_perform: P0): R;
     _perform<R = void, P0 = unknown>(__perform: P0): R;
     segueWithDestinationViewController<R = unknown, P0 = unknown>(_segueWithDestinationViewController: P0): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     setStoryboard<R = void, P0 = NSStoryboard>(_v: P0): R;
     identifier<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSStoryboardSegueTemplate<T = any> extends NSObject, NSCodingProtocol {
+  namespace NSStoryboardSegueTemplate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
       alloc<R = NSStoryboardSegueTemplate>(): R;
       new: <R = NSStoryboardSegueTemplate>() => R;
     }
   }
 }
 
-declare const NSStoryboardSegueTemplate: cocoa.classes.NSStoryboardSegueTemplate;
+declare const NSStoryboardSegueTemplate: cocoa.NSStoryboardSegueTemplate.CLASS;

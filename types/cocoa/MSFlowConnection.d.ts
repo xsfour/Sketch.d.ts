@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFlowConnection<T = any> extends _MSFlowConnection {
+  export interface MSFlowConnection<T0 = void, T1 = void, T2 = void> extends _MSFlowConnection {
     bezierPathForRenderingFlowAtZoomLevel<R = unknown, P0 = number>(_bezierPathForRenderingFlowAtZoomLevel: P0): R;
     isValidFlowConnection<R = boolean>(): R;
     destinationArtboard<R = MSArtboardGroup>(): R;
@@ -9,8 +9,8 @@ declare namespace cocoa {
     isBackAction<R = boolean>(): R;
     setIsBackAction<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSFlowConnection<T = any> extends _MSFlowConnection {
+  namespace MSFlowConnection {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSFlowConnection {
       alloc<R = MSFlowConnection>(): R;
       new: <R = MSFlowConnection>() => R;
       defaultAnimationType<R = number>(): R;
@@ -20,4 +20,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSFlowConnection: cocoa.classes.MSFlowConnection;
+declare const MSFlowConnection: cocoa.MSFlowConnection.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSURLQueryItem<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
+  export interface NSURLQueryItem<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     description<R = unknown>(): R;
@@ -11,8 +11,8 @@ declare namespace cocoa {
     value<R = NSString>(): R;
     name<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSURLQueryItem<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
+  namespace NSURLQueryItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
       alloc<R = NSURLQueryItem>(): R;
       new: <R = NSURLQueryItem>() => R;
       automaticallyNotifiesObserversForKey<R = boolean, P0 = unknown>(_automaticallyNotifiesObserversForKey: P0): R;
@@ -21,4 +21,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSURLQueryItem: cocoa.classes.NSURLQueryItem;
+declare const NSURLQueryItem: cocoa.NSURLQueryItem.CLASS;

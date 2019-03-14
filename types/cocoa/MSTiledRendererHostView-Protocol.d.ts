@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSTiledRendererHostViewProtocol<T = any> {
+  export interface MSTiledRendererHostViewProtocol<T0 = void, T1 = void, T2 = void> {
     driver<R = MSRenderingDriver>(): R;
     scheduleRedraw<R = void>(): R;
   }
-  namespace classes {
-    export interface MSTiledRendererHostViewProtocol<T = any> {  }
+  namespace MSTiledRendererHostViewProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

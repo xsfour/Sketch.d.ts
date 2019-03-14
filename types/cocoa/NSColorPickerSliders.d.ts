@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorPickerSliders<T = any> extends NSColorPicker, NSColorPickingCustomProtocol {
+  export interface NSColorPickerSliders<T0 = void, T1 = void, T2 = void> extends NSColorPicker, NSColorPickingCustomProtocol {
     _restoreMode<R = void>(): R;
     _savedMode<R = number>(): R;
     _saveMode<R = void>(): R;
@@ -28,12 +28,12 @@ declare namespace cocoa {
     slidersView<R = NSView>(): R;
     setSlidersView<R = void, P0 = NSView>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSColorPickerSliders<T = any> extends NSColorPicker, NSColorPickingCustomProtocol {
+  namespace NSColorPickerSliders {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSColorPicker, NSColorPickingCustomProtocol {
       alloc<R = NSColorPickerSliders>(): R;
       new: <R = NSColorPickerSliders>() => R;
     }
   }
 }
 
-declare const NSColorPickerSliders: cocoa.classes.NSColorPickerSliders;
+declare const NSColorPickerSliders: cocoa.NSColorPickerSliders.CLASS;

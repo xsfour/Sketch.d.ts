@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScrubberSelectionLayout<T = any> {}
-  namespace classes {
-    export interface NSScrubberSelectionLayout<T = any> {  }
+  export interface NSScrubberSelectionLayout<T0 = void, T1 = void, T2 = void> {}
+  namespace NSScrubberSelectionLayout {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSScrubberSelectionLayout: cocoa.classes.NSScrubberSelectionLayout;
+declare const NSScrubberSelectionLayout: cocoa.NSScrubberSelectionLayout.CLASS;

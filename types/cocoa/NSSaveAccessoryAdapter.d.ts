@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSaveAccessoryAdapter<T = any> extends NSView {
+  export interface NSSaveAccessoryAdapter<T0 = void, T1 = void, T2 = void> extends NSView {
     _updateConstrainedSize<R = void, P0 = CGSize>(__updateConstrainedSize: P0): R;
     _createHeightConstraint<R = unknown, P0 = number>(__createHeightConstraint: P0): R;
     _createWidthConstraint<R = unknown, P0 = number>(__createWidthConstraint: P0): R;
@@ -10,8 +10,8 @@ declare namespace cocoa {
     widthConstraint<R = NSLayoutConstraint>(): R;
     setWidthConstraint<R = void, P0 = NSLayoutConstraint>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSSaveAccessoryAdapter<T = any> extends NSView {
+  namespace NSSaveAccessoryAdapter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSSaveAccessoryAdapter>(): R;
       new: <R = NSSaveAccessoryAdapter>() => R;
       checkAllowedSize_atPriority_ofView<R = CGSize, P0 = CGSize, P1 = number, P2 = unknown>(_checkAllowedSize: P0, _atPriority: P1, _ofView: P2): R;
@@ -24,4 +24,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSSaveAccessoryAdapter: cocoa.classes.NSSaveAccessoryAdapter;
+declare const NSSaveAccessoryAdapter: cocoa.NSSaveAccessoryAdapter.CLASS;

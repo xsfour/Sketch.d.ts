@@ -1,16 +1,16 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTextFinderBarTextField<T = any> extends NSTextField {
+  export interface NSTextFinderBarTextField<T0 = void, T1 = void, T2 = void> extends NSTextField {
     statusString<R = NSString>(): R;
     setStatusString<R = void, P0 = NSString>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTextFinderBarTextField<T = any> extends NSTextField {
+  namespace NSTextFinderBarTextField {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTextField {
       alloc<R = NSTextFinderBarTextField>(): R;
       new: <R = NSTextFinderBarTextField>() => R;
     }
   }
 }
 
-declare const NSTextFinderBarTextField: cocoa.classes.NSTextFinderBarTextField;
+declare const NSTextFinderBarTextField: cocoa.NSTextFinderBarTextField.CLASS;

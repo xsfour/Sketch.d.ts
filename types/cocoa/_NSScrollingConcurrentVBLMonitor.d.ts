@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSScrollingConcurrentVBLMonitor<T = any> extends NSObject {
+  export interface _NSScrollingConcurrentVBLMonitor<T0 = void, T1 = void, T2 = void> extends NSObject {
     remove<R = void>(): R;
     suspend<R = void>(): R;
     resume<R = void>(): R;
@@ -23,8 +23,8 @@ declare namespace cocoa {
     cursorTargetFrame<R = CGRect>(): R;
     setCursorTargetFrame<R = void, P0 = CGRect>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSScrollingConcurrentVBLMonitor<T = any> extends NSObject {
+  namespace _NSScrollingConcurrentVBLMonitor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSScrollingConcurrentVBLMonitor>(): R;
       new: <R = _NSScrollingConcurrentVBLMonitor>() => R;
     }

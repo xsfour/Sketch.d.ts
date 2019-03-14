@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSPredicateEditorTree<T = any> extends NSObject {
+  export interface _NSPredicateEditorTree<T0 = void, T1 = void, T2 = void> extends NSObject {
     description<R = unknown>(): R;
     dealloc<R = void>(): R;
     menuItemIndex<R = number>(): R;
@@ -15,8 +15,8 @@ declare namespace cocoa {
     template<R = NSPredicateEditorRowTemplate>(): R;
     setTemplate<R = void, P0 = NSPredicateEditorRowTemplate>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSPredicateEditorTree<T = any> extends NSObject {
+  namespace _NSPredicateEditorTree {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSPredicateEditorTree>(): R;
       new: <R = _NSPredicateEditorTree>() => R;
     }

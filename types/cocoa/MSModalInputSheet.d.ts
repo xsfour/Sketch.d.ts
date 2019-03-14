@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSModalInputSheet<T = any> extends NSObject, NSWindowDelegateProtocol {
+  export interface MSModalInputSheet<T0 = void, T1 = void, T2 = void> extends NSObject, NSWindowDelegateProtocol {
     cxx_destruct<R = void>(): R;
     cancel<R = void, P0 = unknown>(_cancel: P0): R;
     ok<R = void, P0 = unknown>(_ok: P0): R;
@@ -18,12 +18,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSModalInputSheet<T = any> extends NSObject, NSWindowDelegateProtocol {
+  namespace MSModalInputSheet {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSWindowDelegateProtocol {
       alloc<R = MSModalInputSheet>(): R;
       new: <R = MSModalInputSheet>() => R;
     }
   }
 }
 
-declare const MSModalInputSheet: cocoa.classes.MSModalInputSheet;
+declare const MSModalInputSheet: cocoa.MSModalInputSheet.CLASS;

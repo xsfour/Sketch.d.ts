@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface FBBezierCurve<T = any> extends NSObject {
+  export interface FBBezierCurve<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     debugQuickLookObject<R = unknown>(): R;
     debugDrawColor_controlPointColor_scale<R = void, P0 = unknown, P1 = unknown, P2 = number>(_debugDrawColor: P0, _controlPointColor: P1, _scale: P2): R;
@@ -83,8 +83,8 @@ declare namespace cocoa {
     controlPoint1<R = CGPoint>(): R;
     endPoint1<R = CGPoint>(): R;
   }
-  namespace classes {
-    export interface FBBezierCurve<T = any> extends NSObject {
+  namespace FBBezierCurve {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = FBBezierCurve>(): R;
       new: <R = FBBezierCurve>() => R;
       bezierCurveWithBezierCurveData<R = unknown, P0 = FBBezierCurveData>(_bezierCurveWithBezierCurveData: P0): R;
@@ -95,4 +95,4 @@ declare namespace cocoa {
   }
 }
 
-declare const FBBezierCurve: cocoa.classes.FBBezierCurve;
+declare const FBBezierCurve: cocoa.FBBezierCurve.CLASS;

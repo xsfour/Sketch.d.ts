@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutableArtboardGroup<T = any> extends _MSImmutableArtboardGroup, MSWebExportableRootLayerProtocol, MSColorUserProtocol, MSLayerWithBackgroundColorProtocol, MSArtboardGroupProtocol, MSImmutableRootLayerProtocol {
+  export interface MSImmutableArtboardGroup<T0 = void, T1 = void, T2 = void> extends _MSImmutableArtboardGroup, MSWebExportableRootLayerProtocol, MSColorUserProtocol, MSLayerWithBackgroundColorProtocol, MSArtboardGroupProtocol, MSImmutableRootLayerProtocol {
     rulerBase<R = CGPoint>(): R;
     migratePropertiesFromV100OrEarlierWithUnarchiver<R = void, P0 = unknown>(_migratePropertiesFromV100OrEarlierWithUnarchiver: P0): R;
     migratePropertiesFromV79OrEarlierWithUnarchiver<R = void, P0 = unknown>(_migratePropertiesFromV79OrEarlierWithUnarchiver: P0): R;
@@ -36,12 +36,12 @@ declare namespace cocoa {
     superclass<R = unknown>(): R;
     verticalRulerData<R = MSImmutableRulerData>(): R;
   }
-  namespace classes {
-    export interface MSImmutableArtboardGroup<T = any> extends _MSImmutableArtboardGroup, MSWebExportableRootLayerProtocol, MSColorUserProtocol, MSLayerWithBackgroundColorProtocol, MSArtboardGroupProtocol, MSImmutableRootLayerProtocol {
+  namespace MSImmutableArtboardGroup {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSImmutableArtboardGroup, MSWebExportableRootLayerProtocol, MSColorUserProtocol, MSLayerWithBackgroundColorProtocol, MSArtboardGroupProtocol, MSImmutableRootLayerProtocol {
       alloc<R = MSImmutableArtboardGroup>(): R;
       new: <R = MSImmutableArtboardGroup>() => R;
     }
   }
 }
 
-declare const MSImmutableArtboardGroup: cocoa.classes.MSImmutableArtboardGroup;
+declare const MSImmutableArtboardGroup: cocoa.MSImmutableArtboardGroup.CLASS;

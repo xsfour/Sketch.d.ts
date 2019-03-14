@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSpeechRecognizerVars<T = any> extends NSObject {
+  export interface NSSpeechRecognizerVars<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     locale<R = NSLocale>(): R;
     setLocale<R = void, P0 = NSLocale>(_v: P0): R;
@@ -18,12 +18,12 @@ declare namespace cocoa {
     delegate<R = NSSpeechRecognizerDelegate>(): R;
     setDelegate<R = void, P0 = NSSpeechRecognizerDelegate>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSSpeechRecognizerVars<T = any> extends NSObject {
+  namespace NSSpeechRecognizerVars {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSSpeechRecognizerVars>(): R;
       new: <R = NSSpeechRecognizerVars>() => R;
     }
   }
 }
 
-declare const NSSpeechRecognizerVars: cocoa.classes.NSSpeechRecognizerVars;
+declare const NSSpeechRecognizerVars: cocoa.NSSpeechRecognizerVars.CLASS;

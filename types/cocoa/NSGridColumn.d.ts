@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSGridColumn<T = any> extends NSObject, NSCodingProtocol {
+  export interface NSGridColumn<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
     _previousVisibleColumn<R = unknown>(): R;
     _nextVisibleColumn<R = unknown>(): R;
     _trailingContentAnchor<R = unknown>(): R;
@@ -33,12 +33,12 @@ declare namespace cocoa {
     xPlacement<R = number>(): R;
     setXPlacement<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSGridColumn<T = any> extends NSObject, NSCodingProtocol {
+  namespace NSGridColumn {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
       alloc<R = NSGridColumn>(): R;
       new: <R = NSGridColumn>() => R;
     }
   }
 }
 
-declare const NSGridColumn: cocoa.classes.NSGridColumn;
+declare const NSGridColumn: cocoa.NSGridColumn.CLASS;

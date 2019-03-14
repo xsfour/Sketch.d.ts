@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPathControlDelegate<T = any> {}
-  namespace classes {
-    export interface NSPathControlDelegate<T = any> {  }
+  export interface NSPathControlDelegate<T0 = void, T1 = void, T2 = void> {}
+  namespace NSPathControlDelegate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSPathControlDelegate: cocoa.classes.NSPathControlDelegate;
+declare const NSPathControlDelegate: cocoa.NSPathControlDelegate.CLASS;

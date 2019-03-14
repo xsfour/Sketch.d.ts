@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSStepper<T = any> extends NSControl, NSAccessibilityStepperProtocol {
+  export interface NSStepper<T0 = void, T1 = void, T2 = void> extends NSControl, NSAccessibilityStepperProtocol {
     moveDown<R = void, P0 = unknown>(_moveDown: P0): R;
     moveUp<R = void, P0 = unknown>(_moveUp: P0): R;
     autorepeat<R = boolean>(): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSStepper<T = any> extends NSControl, NSAccessibilityStepperProtocol {
+  namespace NSStepper {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSControl, NSAccessibilityStepperProtocol {
       alloc<R = NSStepper>(): R;
       new: <R = NSStepper>() => R;
     }
   }
 }
 
-declare const NSStepper: cocoa.classes.NSStepper;
+declare const NSStepper: cocoa.NSStepper.CLASS;

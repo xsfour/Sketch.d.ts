@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDataAsset<T = any> extends NSObject, NSCopyingProtocol {
+  export interface NSDataAsset<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     description<R = unknown>(): R;
     hash<R = number>(): R;
     dealloc<R = void>(): R;
@@ -11,12 +11,12 @@ declare namespace cocoa {
     data<R = NSData>(): R;
     name<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSDataAsset<T = any> extends NSObject, NSCopyingProtocol {
+  namespace NSDataAsset {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = NSDataAsset>(): R;
       new: <R = NSDataAsset>() => R;
     }
   }
 }
 
-declare const NSDataAsset: cocoa.classes.NSDataAsset;
+declare const NSDataAsset: cocoa.NSDataAsset.CLASS;

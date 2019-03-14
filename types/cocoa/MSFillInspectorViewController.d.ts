@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFillInspectorViewController<T = any> extends MSColorStylePartInspectorViewController, MSColorHexStringTransformerDelegateProtocol {
+  export interface MSFillInspectorViewController<T0 = void, T1 = void, T2 = void> extends MSColorStylePartInspectorViewController, MSColorHexStringTransformerDelegateProtocol {
     hexFieldAction<R = void, P0 = unknown>(_hexFieldAction: P0): R;
     updateFillPropertyPopUp<R = void>(): R;
     hexTransformer<R = MSColorHexStringTransformer>(): R;
@@ -25,12 +25,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSFillInspectorViewController<T = any> extends MSColorStylePartInspectorViewController, MSColorHexStringTransformerDelegateProtocol {
+  namespace MSFillInspectorViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSColorStylePartInspectorViewController, MSColorHexStringTransformerDelegateProtocol {
       alloc<R = MSFillInspectorViewController>(): R;
       new: <R = MSFillInspectorViewController>() => R;
     }
   }
 }
 
-declare const MSFillInspectorViewController: cocoa.classes.MSFillInspectorViewController;
+declare const MSFillInspectorViewController: cocoa.MSFillInspectorViewController.CLASS;

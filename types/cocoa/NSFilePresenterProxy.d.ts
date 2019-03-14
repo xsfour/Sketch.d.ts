@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFilePresenterProxy<T = any> extends NSFileReactorProxy {
+  export interface NSFilePresenterProxy<T0 = void, T1 = void, T2 = void> extends NSFileReactorProxy {
     localFileWasEvicted<R = void>(): R;
     promisedFileWasFulfilled<R = void>(): R;
     disconnect<R = void>(): R;
@@ -38,8 +38,8 @@ declare namespace cocoa {
     setInSubarbiter<R = void, P0 = boolean>(_v: P0): R;
     disconnected<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSFilePresenterProxy<T = any> extends NSFileReactorProxy {
+  namespace NSFilePresenterProxy {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSFileReactorProxy {
       alloc<R = NSFilePresenterProxy>(): R;
       new: <R = NSFilePresenterProxy>() => R;
       urlWithItemURL_subitemPath<R = unknown, P0 = unknown, P1 = unknown>(_urlWithItemURL: P0, _subitemPath: P1): R;
@@ -47,4 +47,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSFilePresenterProxy: cocoa.classes.NSFilePresenterProxy;
+declare const NSFilePresenterProxy: cocoa.NSFilePresenterProxy.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSHMDDevice<T = any> extends NSObject {
+  export interface NSHMDDevice<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     initWithSLSHMD<R = unknown, P0 = unknown>(_initWithSLSHMD: P0): R;
     productID<R = number>(): R;
@@ -11,8 +11,8 @@ declare namespace cocoa {
     available<R = boolean>(): R;
     attached<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSHMDDevice<T = any> extends NSObject {
+  namespace NSHMDDevice {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSHMDDevice>(): R;
       new: <R = NSHMDDevice>() => R;
       keyPathsForValuesAffectingAttached<R = unknown>(): R;
@@ -22,4 +22,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSHMDDevice: cocoa.classes.NSHMDDevice;
+declare const NSHMDDevice: cocoa.NSHMDDevice.CLASS;

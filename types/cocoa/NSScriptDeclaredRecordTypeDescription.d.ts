@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScriptDeclaredRecordTypeDescription<T = any> extends NSScriptRecordTypeDescription {
+  export interface NSScriptDeclaredRecordTypeDescription<T0 = void, T1 = void, T2 = void> extends NSScriptRecordTypeDescription {
     presentableDescription<R = unknown>(): R;
     isHidden<R = boolean>(): R;
     fieldDescriptions<R = unknown>(): R;
@@ -11,12 +11,12 @@ declare namespace cocoa {
     hasHiddenParts<R = boolean>(): R;
     _descriptionWithTabCount<R = unknown, P0 = number>(__descriptionWithTabCount: P0): R;
   }
-  namespace classes {
-    export interface NSScriptDeclaredRecordTypeDescription<T = any> extends NSScriptRecordTypeDescription {
+  namespace NSScriptDeclaredRecordTypeDescription {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSScriptRecordTypeDescription {
       alloc<R = NSScriptDeclaredRecordTypeDescription>(): R;
       new: <R = NSScriptDeclaredRecordTypeDescription>() => R;
     }
   }
 }
 
-declare const NSScriptDeclaredRecordTypeDescription: cocoa.classes.NSScriptDeclaredRecordTypeDescription;
+declare const NSScriptDeclaredRecordTypeDescription: cocoa.NSScriptDeclaredRecordTypeDescription.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSNormalResizeLineEventHandler<T = any> extends MSNormalBaseEventHandler, MSAlignmentEngineDelegateProtocol {
+  export interface MSNormalResizeLineEventHandler<T0 = void, T1 = void, T2 = void> extends MSNormalBaseEventHandler, MSAlignmentEngineDelegateProtocol {
     cursorForRadians<R = unknown, P0 = number>(_cursorForRadians: P0): R;
     displayResizeCursor<R = void>(): R;
     addSnapTargetsToEngine<R = void, P0 = unknown>(_addSnapTargetsToEngine: P0): R;
@@ -21,12 +21,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSNormalResizeLineEventHandler<T = any> extends MSNormalBaseEventHandler, MSAlignmentEngineDelegateProtocol {
+  namespace MSNormalResizeLineEventHandler {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSNormalBaseEventHandler, MSAlignmentEngineDelegateProtocol {
       alloc<R = MSNormalResizeLineEventHandler>(): R;
       new: <R = MSNormalResizeLineEventHandler>() => R;
     }
   }
 }
 
-declare const MSNormalResizeLineEventHandler: cocoa.classes.MSNormalResizeLineEventHandler;
+declare const MSNormalResizeLineEventHandler: cocoa.MSNormalResizeLineEventHandler.CLASS;

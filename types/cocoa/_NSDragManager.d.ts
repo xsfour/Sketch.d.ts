@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSDragManager<T = any> extends NSObject {
+  export interface _NSDragManager<T0 = void, T1 = void, T2 = void> extends NSObject {
     _enumerateDraggingItemsForDrag_pasteboard_withOptions_view_classes_searchOptions_isSource_usingBlock<R = void, P0 = void, P1 = unknown, P2 = number, P3 = unknown, P4 = unknown, P5 = unknown, P6 = boolean, P7 = CDUnknownBlockType>(__enumerateDraggingItemsForDrag: P0, _pasteboard: P1, _withOptions: P2, _view: P3, _classes: P4, _searchOptions: P5, _isSource: P6, _usingBlock: P7): R;
     _enumerateDraggingItemsForDrag_pasteboard_class_view_isSource_usingBlock<R = void, P0 = void, P1 = unknown, P2 = unknown, P3 = unknown, P4 = boolean, P5 = CDUnknownBlockType>(__enumerateDraggingItemsForDrag: P0, _pasteboard: P1, _class: P2, _view: P3, _isSource: P4, _usingBlock: P5): R;
     draggingSessionWithSequenceNumber<R = unknown, P0 = number>(_draggingSessionWithSequenceNumber: P0): R;
@@ -19,8 +19,8 @@ declare namespace cocoa {
     switchWindow_dragRegistrationToRemoteContext<R = boolean, P0 = unknown, P1 = number>(_switchWindow: P0, _dragRegistrationToRemoteContext: P1): R;
     registerDragTypes_forWindow<R = number, P0 = unknown, P1 = unknown>(_registerDragTypes: P0, _forWindow: P1): R;
   }
-  namespace classes {
-    export interface _NSDragManager<T = any> extends NSObject {
+  namespace _NSDragManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSDragManager>(): R;
       new: <R = _NSDragManager>() => R;
       sharedDragManager<R = unknown>(): R;

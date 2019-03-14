@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInlineUpDownTextField<T = any> extends MSUpDownTextField {
+  export interface MSInlineUpDownTextField<T0 = void, T1 = void, T2 = void> extends MSUpDownTextField {
     updateCursor<R = void>(): R;
     updateUpDownLabel<R = void>(): R;
     inlineToolTip<R = NSString>(): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     upDownController<R = MSUpDownController>(): R;
     setUpDownController<R = void, P0 = MSUpDownController>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSInlineUpDownTextField<T = any> extends MSUpDownTextField {
+  namespace MSInlineUpDownTextField {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSUpDownTextField {
       alloc<R = MSInlineUpDownTextField>(): R;
       new: <R = MSInlineUpDownTextField>() => R;
     }
   }
 }
 
-declare const MSInlineUpDownTextField: cocoa.classes.MSInlineUpDownTextField;
+declare const MSInlineUpDownTextField: cocoa.MSInlineUpDownTextField.CLASS;

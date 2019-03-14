@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSSplitViewItemViewWrapper<T = any> extends NSView {
+  export interface _NSSplitViewItemViewWrapper<T0 = void, T1 = void, T2 = void> extends NSView {
     _shouldConsumeMouseEvents<R = boolean>(): R;
     disengageBreadthConstraint<R = void>(): R;
     updateBreadthConstraintPriority<R = void>(): R;
@@ -33,8 +33,8 @@ declare namespace cocoa {
     splitViewItem<R = NSSplitViewItem>(): R;
     setSplitViewItem<R = void, P0 = NSSplitViewItem>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSSplitViewItemViewWrapper<T = any> extends NSView {
+  namespace _NSSplitViewItemViewWrapper {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = _NSSplitViewItemViewWrapper>(): R;
       new: <R = _NSSplitViewItemViewWrapper>() => R;
     }

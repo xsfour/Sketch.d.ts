@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPersistentDocument<T = any> extends NSDocument {
+  export interface NSPersistentDocument<T0 = void, T1 = void, T2 = void> extends NSDocument {
     _movePersistentStore_fromURL_toURL_attributes_error<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown>(__movePersistentStore: P0, _fromURL: P1, _toURL: P2, _attributes: P3, _error: P4): R;
     backupFileURL<R = unknown>(): R;
     isEntireFileLoaded<R = boolean>(): R;
@@ -24,8 +24,8 @@ declare namespace cocoa {
     managedObjectContext<R = NSManagedObjectContext>(): R;
     setManagedObjectContext<R = void, P0 = NSManagedObjectContext>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSPersistentDocument<T = any> extends NSDocument {
+  namespace NSPersistentDocument {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSDocument {
       alloc<R = NSPersistentDocument>(): R;
       new: <R = NSPersistentDocument>() => R;
       _hasOverrideForSelector_fromBaseClass<R = boolean, P0 = string, P1 = unknown>(__hasOverrideForSelector: P0, _fromBaseClass: P1): R;
@@ -33,4 +33,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPersistentDocument: cocoa.classes.NSPersistentDocument;
+declare const NSPersistentDocument: cocoa.NSPersistentDocument.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMutableRangeArray<T = any> extends NSMutableArray {
+  export interface NSMutableRangeArray<T0 = void, T1 = void, T2 = void> extends NSMutableArray {
     replaceObjectAtIndex_withObject<R = void, P0 = number, P1 = unknown>(_replaceObjectAtIndex: P0, _withObject: P1): R;
     replaceRangeAtIndex_withRange<R = void, P0 = number, P1 = _NSRange>(_replaceRangeAtIndex: P0, _withRange: P1): R;
     removeAllObjects<R = void>(): R;
@@ -36,8 +36,8 @@ declare namespace cocoa {
     initWithRanges_count<R = unknown, P0 = _NSRange, P1 = number>(_initWithRanges: P0, _count: P1): R;
     initWithCapacity<R = unknown, P0 = number>(_initWithCapacity: P0): R;
   }
-  namespace classes {
-    export interface NSMutableRangeArray<T = any> extends NSMutableArray {
+  namespace NSMutableRangeArray {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSMutableArray {
       array<R = unknown>(): R;
       arrayWithRange<R = unknown, P0 = _NSRange>(_arrayWithRange: P0): R;
       arrayWithRanges_count<R = unknown, P0 = _NSRange, P1 = number>(_arrayWithRanges: P0, _count: P1): R;
@@ -45,4 +45,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSMutableRangeArray: cocoa.classes.NSMutableRangeArray;
+declare const NSMutableRangeArray: cocoa.NSMutableRangeArray.CLASS;

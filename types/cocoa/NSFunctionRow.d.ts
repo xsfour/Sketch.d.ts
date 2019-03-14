@@ -1,15 +1,15 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFunctionRow<T = any> extends NSObject {
+  export interface NSFunctionRow<T0 = void, T1 = void, T2 = void> extends NSObject {
     device<R = unknown>(): R;
     touches<R = unknown>(): R;
     convertPointFromDevice<R = CGPoint, P0 = CGPoint>(_convertPointFromDevice: P0): R;
     convertPointToDevice<R = CGPoint, P0 = CGPoint>(_convertPointToDevice: P0): R;
     _dumpLayer<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSFunctionRow<T = any> extends NSObject {
+  namespace NSFunctionRow {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSFunctionRow>(): R;
       new: <R = NSFunctionRow>() => R;
       defaultFrameForType<R = CGRect, P0 = number>(_defaultFrameForType: P0): R;
@@ -29,4 +29,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSFunctionRow: cocoa.classes.NSFunctionRow;
+declare const NSFunctionRow: cocoa.NSFunctionRow.CLASS;

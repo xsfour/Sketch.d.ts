@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUnitElectricResistance<T = any> extends NSDimension, NSSecureCodingProtocol {}
-  namespace classes {
-    export interface NSUnitElectricResistance<T = any> extends NSDimension, NSSecureCodingProtocol {
+  export interface NSUnitElectricResistance<T0 = void, T1 = void, T2 = void> extends NSDimension, NSSecureCodingProtocol {}
+  namespace NSUnitElectricResistance {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSDimension, NSSecureCodingProtocol {
       alloc<R = NSUnitElectricResistance>(): R;
       new: <R = NSUnitElectricResistance>() => R;
       microohms<R = unknown>(): R;
@@ -15,4 +15,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSUnitElectricResistance: cocoa.classes.NSUnitElectricResistance;
+declare const NSUnitElectricResistance: cocoa.NSUnitElectricResistance.CLASS;

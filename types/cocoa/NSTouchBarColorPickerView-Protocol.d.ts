@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarColorPickerViewProtocol<T = any> extends NSObjectProtocol {
+  export interface NSTouchBarColorPickerViewProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     showMostRecentSavedColor<R = void>(): R;
     action<R = string>(): R;
     setAction<R = void, P0 = string>(_v: P0): R;
@@ -12,8 +12,8 @@ declare namespace cocoa {
     currentColor<R = NSColor>(): R;
     setCurrentColor<R = void, P0 = NSColor>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTouchBarColorPickerViewProtocol<T = any> extends NSObjectProtocol {
+  namespace NSTouchBarColorPickerViewProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
       preferredColorSwatchType<R = number>(): R;
     }
   }

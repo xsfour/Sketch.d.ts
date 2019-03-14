@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSImmutableRect<T = any> extends MSImmutableModelObject {
+  export interface _MSImmutableRect<T0 = void, T1 = void, T2 = void> extends MSImmutableModelObject {
     hasDefaultValues<R = boolean>(): R;
     y<R = number>(): R;
     setY<R = void, P0 = number>(_v: P0): R;
@@ -14,8 +14,8 @@ declare namespace cocoa {
     constrainProportions<R = boolean>(): R;
     setConstrainProportions<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface _MSImmutableRect<T = any> extends MSImmutableModelObject {
+  namespace _MSImmutableRect {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSImmutableModelObject {
       alloc<R = _MSImmutableRect>(): R;
       new: <R = _MSImmutableRect>() => R;
     }

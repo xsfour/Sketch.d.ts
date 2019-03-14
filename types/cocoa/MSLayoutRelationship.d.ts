@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSLayoutRelationship<T = any> extends NSObject {
+  export interface MSLayoutRelationship<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     description<R = unknown>(): R;
     hash<R = number>(): R;
@@ -16,8 +16,8 @@ declare namespace cocoa {
     firstAnchor<R = MSLayoutAnchor>(): R;
     rect<R = CGRect>(): R;
   }
-  namespace classes {
-    export interface MSLayoutRelationship<T = any> extends NSObject {
+  namespace MSLayoutRelationship {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSLayoutRelationship>(): R;
       new: <R = MSLayoutRelationship>() => R;
       spacingMeasurementWithItem_toItem_onAxis<R = unknown, P0 = unknown, P1 = unknown, P2 = number>(_spacingMeasurementWithItem: P0, _toItem: P1, _onAxis: P2): R;
@@ -26,4 +26,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSLayoutRelationship: cocoa.classes.MSLayoutRelationship;
+declare const MSLayoutRelationship: cocoa.MSLayoutRelationship.CLASS;

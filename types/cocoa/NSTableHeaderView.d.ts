@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableHeaderView<T = any> extends NSView, NSViewToolTipOwnerProtocol {
+  export interface NSTableHeaderView<T0 = void, T1 = void, T2 = void> extends NSView, NSViewToolTipOwnerProtocol {
     cxx_destruct<R = void>(): R;
     _updateColumnViewWidthsAnimated<R = void, P0 = boolean>(__updateColumnViewWidthsAnimated: P0): R;
     _endDraggingColumn_animated<R = void, P0 = number, P1 = boolean>(__endDraggingColumn: P0, _animated: P1): R;
@@ -110,12 +110,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSTableHeaderView<T = any> extends NSView, NSViewToolTipOwnerProtocol {
+  namespace NSTableHeaderView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView, NSViewToolTipOwnerProtocol {
       alloc<R = NSTableHeaderView>(): R;
       new: <R = NSTableHeaderView>() => R;
     }
   }
 }
 
-declare const NSTableHeaderView: cocoa.classes.NSTableHeaderView;
+declare const NSTableHeaderView: cocoa.NSTableHeaderView.CLASS;

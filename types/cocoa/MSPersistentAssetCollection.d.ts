@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPersistentAssetCollection<T = any> extends MSAssetCollection {
+  export interface MSPersistentAssetCollection<T0 = void, T1 = void, T2 = void> extends MSAssetCollection {
     applyDefaultExportPresetsIfNeeded<R = void>(): R;
     resourceNeedingMigration<R = unknown>(): R;
     cleanupAfterTesting<R = void>(): R;
@@ -9,8 +9,8 @@ declare namespace cocoa {
     archive<R = MSVersionedArchive>(): R;
     setArchive<R = void, P0 = MSVersionedArchive>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSPersistentAssetCollection<T = any> extends MSAssetCollection {
+  namespace MSPersistentAssetCollection {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSAssetCollection {
       alloc<R = MSPersistentAssetCollection>(): R;
       new: <R = MSPersistentAssetCollection>() => R;
       defaultExportPresets<R = unknown>(): R;
@@ -22,4 +22,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSPersistentAssetCollection: cocoa.classes.MSPersistentAssetCollection;
+declare const MSPersistentAssetCollection: cocoa.MSPersistentAssetCollection.CLASS;

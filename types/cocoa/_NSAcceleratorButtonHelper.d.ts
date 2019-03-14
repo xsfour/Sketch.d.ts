@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSAcceleratorButtonHelper<T = any> extends NSObject {
+  export interface _NSAcceleratorButtonHelper<T0 = void, T1 = void, T2 = void> extends NSObject {
     _scheduleTimer<R = void>(): R;
     _acceleratorTimerFired<R = void, P0 = unknown>(__acceleratorTimerFired: P0): R;
     accelerationChanged<R = void, P0 = number>(_accelerationChanged: P0): R;
@@ -14,8 +14,8 @@ declare namespace cocoa {
     setTimer<R = void, P0 = NSTimer>(_v: P0): R;
     cell<R = _NSAcceleratorCell>(): R;
   }
-  namespace classes {
-    export interface _NSAcceleratorButtonHelper<T = any> extends NSObject {
+  namespace _NSAcceleratorButtonHelper {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSAcceleratorButtonHelper>(): R;
       new: <R = _NSAcceleratorButtonHelper>() => R;
       defaultPeriodicInterval<R = number>(): R;

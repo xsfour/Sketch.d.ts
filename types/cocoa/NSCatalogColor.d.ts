@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCatalogColor<T = any> extends NSColor {
+  export interface NSCatalogColor<T0 = void, T1 = void, T2 = void> extends NSColor {
     dealloc<R = void>(): R;
     hash<R = number>(): R;
     classForCoder<R = unknown>(): R;
@@ -17,8 +17,8 @@ declare namespace cocoa {
     CGColor<R = CGColor>(): R;
     initWithCatalogName_colorName_genericColor<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_initWithCatalogName: P0, _colorName: P1, _genericColor: P2): R;
   }
-  namespace classes {
-    export interface NSCatalogColor<T = any> extends NSColor {
+  namespace NSCatalogColor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSColor {
       alloc<R = NSCatalogColor>(): R;
       new: <R = NSCatalogColor>() => R;
       newWithCoder_zone<R = unknown, P0 = unknown, P1 = _NSZone>(_newWithCoder: P0, _zone: P1): R;
@@ -26,4 +26,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSCatalogColor: cocoa.classes.NSCatalogColor;
+declare const NSCatalogColor: cocoa.NSCatalogColor.CLASS;

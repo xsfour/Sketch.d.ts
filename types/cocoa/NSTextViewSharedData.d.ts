@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTextViewSharedData<T = any> extends NSObject, NSCodingProtocol {
+  export interface NSTextViewSharedData<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
     _flushInspectorBarItemIdentifiers<R = void>(): R;
     inputContextForFirstTextView<R = unknown, P0 = unknown>(_inputContextForFirstTextView: P0): R;
     wantsNotificationForMarkedText<R = boolean>(): R;
@@ -32,8 +32,8 @@ declare namespace cocoa {
     _commonInit<R = void>(): R;
     delegate<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSTextViewSharedData<T = any> extends NSObject, NSCodingProtocol {
+  namespace NSTextViewSharedData {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
       alloc<R = NSTextViewSharedData>(): R;
       new: <R = NSTextViewSharedData>() => R;
       initialize<R = void>(): R;
@@ -41,4 +41,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTextViewSharedData: cocoa.classes.NSTextViewSharedData;
+declare const NSTextViewSharedData: cocoa.NSTextViewSharedData.CLASS;

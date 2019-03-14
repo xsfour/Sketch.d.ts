@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCColorPickerBaseView<T = any> extends NSControl {
+  export interface BCColorPickerBaseView<T0 = void, T1 = void, T2 = void> extends NSControl {
     cxx_destruct<R = void>(): R;
     drawMarkerInRect<R = void, P0 = CGRect>(_drawMarkerInRect: P0): R;
     markerShadow<R = unknown>(): R;
@@ -20,8 +20,8 @@ declare namespace cocoa {
     hideSelection<R = boolean>(): R;
     setHideSelection<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface BCColorPickerBaseView<T = any> extends NSControl {
+  namespace BCColorPickerBaseView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSControl {
       alloc<R = BCColorPickerBaseView>(): R;
       new: <R = BCColorPickerBaseView>() => R;
       darkShadow<R = unknown>(): R;
@@ -31,4 +31,4 @@ declare namespace cocoa {
   }
 }
 
-declare const BCColorPickerBaseView: cocoa.classes.BCColorPickerBaseView;
+declare const BCColorPickerBaseView: cocoa.BCColorPickerBaseView.CLASS;

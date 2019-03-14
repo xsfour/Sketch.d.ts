@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSnappingTarget<T = any> extends NSObject, NSCopyingProtocol {
+  export interface MSSnappingTarget<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     description<R = unknown>(): R;
     targetByApplyingTransform<R = unknown, P0 = CGAffineTransform>(_targetByApplyingTransform: P0): R;
     initWithPoint_directionVector_guideType<R = unknown, P0 = CGPoint, P1 = CGVector, P2 = number>(_initWithPoint: P0, _directionVector: P1, _guideType: P2): R;
@@ -14,8 +14,8 @@ declare namespace cocoa {
     lineSegment<R = MSLineSegment>(): R;
     line<R = MSLine>(): R;
   }
-  namespace classes {
-    export interface MSSnappingTarget<T = any> extends NSObject, NSCopyingProtocol {
+  namespace MSSnappingTarget {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = MSSnappingTarget>(): R;
       new: <R = MSSnappingTarget>() => R;
       targetsForEdgesOfRect_includeCenter<R = unknown, P0 = CGRect, P1 = boolean>(_targetsForEdgesOfRect: P0, _includeCenter: P1): R;
@@ -23,4 +23,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSSnappingTarget: cocoa.classes.MSSnappingTarget;
+declare const MSSnappingTarget: cocoa.MSSnappingTarget.CLASS;

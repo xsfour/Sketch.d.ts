@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUndoTextOperation<T = any> extends NSObject {
+  export interface NSUndoTextOperation<T0 = void, T1 = void, T2 = void> extends NSObject {
     isSupportingCoalescing<R = boolean>(): R;
     firstTextViewForTextStorage<R = unknown, P0 = unknown>(_firstTextViewForTextStorage: P0): R;
     undoRedo<R = void, P0 = unknown>(_undoRedo: P0): R;
@@ -12,12 +12,12 @@ declare namespace cocoa {
     undoManager<R = NSUndoManager>(): R;
     setUndoManager<R = void, P0 = NSUndoManager>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSUndoTextOperation<T = any> extends NSObject {
+  namespace NSUndoTextOperation {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSUndoTextOperation>(): R;
       new: <R = NSUndoTextOperation>() => R;
     }
   }
 }
 
-declare const NSUndoTextOperation: cocoa.classes.NSUndoTextOperation;
+declare const NSUndoTextOperation: cocoa.NSUndoTextOperation.CLASS;

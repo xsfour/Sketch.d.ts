@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSConcreteSetChanges<T = any> extends NSSetChanges {
+  export interface NSConcreteSetChanges<T0 = void, T1 = void, T2 = void> extends NSSetChanges {
     dealloc<R = void>(): R;
     description<R = unknown>(): R;
     _fault<R = void>(): R;
@@ -23,9 +23,9 @@ declare namespace cocoa {
     member<R = unknown, P0 = unknown>(_member: P0): R;
     count<R = number>(): R;
   }
-  namespace classes {
-    export interface NSConcreteSetChanges<T = any> extends NSSetChanges {  }
+  namespace NSConcreteSetChanges {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSSetChanges {}
   }
 }
 
-declare const NSConcreteSetChanges: cocoa.classes.NSConcreteSetChanges;
+declare const NSConcreteSetChanges: cocoa.NSConcreteSetChanges.CLASS;

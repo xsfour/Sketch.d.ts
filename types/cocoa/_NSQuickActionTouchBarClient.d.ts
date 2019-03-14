@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSQuickActionTouchBarClient<T = any> extends NSObject, _NSQuickActionProviderObserverProtocol, _NSQuickActionValidatorObserverProtocol, _NSQuickActionTouchBarClientProtocolProtocol {
+  export interface _NSQuickActionTouchBarClient<T0 = void, T1 = void, T2 = void> extends NSObject, _NSQuickActionProviderObserverProtocol, _NSQuickActionValidatorObserverProtocol, _NSQuickActionTouchBarClientProtocolProtocol {
     cxx_destruct<R = void>(): R;
     dealloc<R = void>(): R;
     deactivate<R = void>(): R;
@@ -12,8 +12,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSQuickActionTouchBarClient<T = any> extends NSObject, _NSQuickActionProviderObserverProtocol, _NSQuickActionValidatorObserverProtocol, _NSQuickActionTouchBarClientProtocolProtocol {
+  namespace _NSQuickActionTouchBarClient {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, _NSQuickActionProviderObserverProtocol, _NSQuickActionValidatorObserverProtocol, _NSQuickActionTouchBarClientProtocolProtocol {
       alloc<R = _NSQuickActionTouchBarClient>(): R;
       new: <R = _NSQuickActionTouchBarClient>() => R;
     }

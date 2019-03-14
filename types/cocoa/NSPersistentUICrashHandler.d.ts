@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPersistentUICrashHandler<T = any> extends NSObject {
+  export interface NSPersistentUICrashHandler<T0 = void, T1 = void, T2 = void> extends NSObject {
     crashBlameCounter<R = number>(): R;
     clearCrashCountFileIfNecessary<R = void>(): R;
     inspectCrashDataWithModification_handler<R = void, P0 = boolean, P1 = CDUnknownBlockType>(_inspectCrashDataWithModification: P0, _handler: P1): R;
@@ -9,12 +9,12 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     initWithRestorationCountFileURL<R = unknown, P0 = unknown>(_initWithRestorationCountFileURL: P0): R;
   }
-  namespace classes {
-    export interface NSPersistentUICrashHandler<T = any> extends NSObject {
+  namespace NSPersistentUICrashHandler {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSPersistentUICrashHandler>(): R;
       new: <R = NSPersistentUICrashHandler>() => R;
     }
   }
 }
 
-declare const NSPersistentUICrashHandler: cocoa.classes.NSPersistentUICrashHandler;
+declare const NSPersistentUICrashHandler: cocoa.NSPersistentUICrashHandler.CLASS;

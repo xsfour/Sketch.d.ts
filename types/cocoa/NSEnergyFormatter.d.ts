@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSEnergyFormatter<T = any> extends NSFormatter, NSObservableProtocol, NSObserverProtocol {
+  export interface NSEnergyFormatter<T0 = void, T1 = void, T2 = void> extends NSFormatter, NSObservableProtocol, NSObserverProtocol {
     stringFromJoules<R = unknown, P0 = number>(_stringFromJoules: P0): R;
     stringFromValue_unit<R = unknown, P0 = number, P1 = number>(_stringFromValue: P0, _unit: P1): R;
     unitStringFromJoules_usedUnit<R = unknown, P0 = number, P1 = number>(_unitStringFromJoules: P0, _usedUnit: P1): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSEnergyFormatter<T = any> extends NSFormatter, NSObservableProtocol, NSObserverProtocol {
+  namespace NSEnergyFormatter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSFormatter, NSObservableProtocol, NSObserverProtocol {
       alloc<R = NSEnergyFormatter>(): R;
       new: <R = NSEnergyFormatter>() => R;
     }
   }
 }
 
-declare const NSEnergyFormatter: cocoa.classes.NSEnergyFormatter;
+declare const NSEnergyFormatter: cocoa.NSEnergyFormatter.CLASS;

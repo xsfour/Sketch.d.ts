@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPasteboard<T = any> extends NSObject {
+  export interface NSPasteboard<T0 = void, T1 = void, T2 = void> extends NSObject {
     stringForType<R = unknown, P0 = unknown>(_stringForType: P0): R;
     setString_forType<R = boolean, P0 = unknown, P1 = unknown>(_setString: P0, _forType: P1): R;
     _propertyListForType_securityScoped<R = unknown, P0 = unknown, P1 = boolean>(__propertyListForType: P0, _securityScoped: P1): R;
@@ -59,8 +59,8 @@ declare namespace cocoa {
     changeCount<R = number>(): R;
     name<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSPasteboard<T = any> extends NSObject {
+  namespace NSPasteboard {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSPasteboard>(): R;
       new: <R = NSPasteboard>() => R;
       _propertyListForType_fromData<R = unknown, P0 = unknown, P1 = unknown>(__propertyListForType: P0, _fromData: P1): R;
@@ -95,4 +95,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPasteboard: cocoa.classes.NSPasteboard;
+declare const NSPasteboard: cocoa.NSPasteboard.CLASS;

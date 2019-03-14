@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBorderOptionsInspectorViewController<T = any> extends MSStylePartInspectorViewController {
+  export interface MSBorderOptionsInspectorViewController<T0 = void, T1 = void, T2 = void> extends MSStylePartInspectorViewController {
     dashFields<R = unknown>(): R;
     fillDashPlaceholderFields<R = void>(): R;
     fillDashFields<R = void>(): R;
@@ -34,12 +34,12 @@ declare namespace cocoa {
     startDecorationButton<R = NSPopUpButton>(): R;
     setStartDecorationButton<R = void, P0 = NSPopUpButton>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSBorderOptionsInspectorViewController<T = any> extends MSStylePartInspectorViewController {
+  namespace MSBorderOptionsInspectorViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSStylePartInspectorViewController {
       alloc<R = MSBorderOptionsInspectorViewController>(): R;
       new: <R = MSBorderOptionsInspectorViewController>() => R;
     }
   }
 }
 
-declare const MSBorderOptionsInspectorViewController: cocoa.classes.MSBorderOptionsInspectorViewController;
+declare const MSBorderOptionsInspectorViewController: cocoa.MSBorderOptionsInspectorViewController.CLASS;

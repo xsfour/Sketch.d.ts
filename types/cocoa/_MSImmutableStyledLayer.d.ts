@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSImmutableStyledLayer<T = any> extends MSImmutableLayer {
+  export interface _MSImmutableStyledLayer<T0 = void, T1 = void, T2 = void> extends MSImmutableLayer {
     style<R = MSImmutableStyle>(): R;
     setStyle<R = void, P0 = MSImmutableStyle>(_v: P0): R;
     sharedStyleID<R = NSString>(): R;
@@ -11,8 +11,8 @@ declare namespace cocoa {
     clippingMaskMode<R = number>(): R;
     setClippingMaskMode<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface _MSImmutableStyledLayer<T = any> extends MSImmutableLayer {
+  namespace _MSImmutableStyledLayer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSImmutableLayer {
       alloc<R = _MSImmutableStyledLayer>(): R;
       new: <R = _MSImmutableStyledLayer>() => R;
     }

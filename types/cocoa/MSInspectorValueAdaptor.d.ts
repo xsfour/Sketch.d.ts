@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInspectorValueAdaptor<T = any> extends NSObject {
+  export interface MSInspectorValueAdaptor<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     removeChangeObserver<R = void, P0 = unknown>(_removeChangeObserver: P0): R;
     addChangeObserver<R = void, P0 = unknown>(_addChangeObserver: P0): R;
@@ -34,12 +34,12 @@ declare namespace cocoa {
     value<R = unknown>(): R;
     setValue<R = void, P0 = unknown>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSInspectorValueAdaptor<T = any> extends NSObject {
+  namespace MSInspectorValueAdaptor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSInspectorValueAdaptor>(): R;
       new: <R = MSInspectorValueAdaptor>() => R;
     }
   }
 }
 
-declare const MSInspectorValueAdaptor: cocoa.classes.MSInspectorValueAdaptor;
+declare const MSInspectorValueAdaptor: cocoa.MSInspectorValueAdaptor.CLASS;

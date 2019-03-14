@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPersistentUIManager<T = any> extends NSObject, NSPersistentUIFlushHandlerProtocol {
+  export interface NSPersistentUIManager<T0 = void, T1 = void, T2 = void> extends NSObject, NSPersistentUIFlushHandlerProtocol {
     shouldRestoreStateOnLaunch<R = boolean>(): R;
     writePublicPlistWithOpenWindowIDs<R = void, P0 = unknown>(_writePublicPlistWithOpenWindowIDs: P0): R;
     promptToIgnorePersistentState<R = boolean>(): R;
@@ -54,8 +54,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSPersistentUIManager<T = any> extends NSObject, NSPersistentUIFlushHandlerProtocol {
+  namespace NSPersistentUIManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSPersistentUIFlushHandlerProtocol {
       alloc<R = NSPersistentUIManager>(): R;
       new: <R = NSPersistentUIManager>() => R;
       unarchiver_didDecodeObject<R = unknown, P0 = unknown, P1 = unknown>(_unarchiver: P0, _didDecodeObject: P1): R;
@@ -75,4 +75,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPersistentUIManager: cocoa.classes.NSPersistentUIManager;
+declare const NSPersistentUIManager: cocoa.NSPersistentUIManager.CLASS;

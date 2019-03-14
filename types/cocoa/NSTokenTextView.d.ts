@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTokenTextView<T = any> extends NSTextView {
+  export interface NSTokenTextView<T0 = void, T1 = void, T2 = void> extends NSTextView {
     _characterAtIndex_shouldTerminateString<R = boolean, P0 = number, P1 = unknown>(__characterAtIndex: P0, _shouldTerminateString: P1): R;
     readablePasteboardTypes<R = unknown>(): R;
     writablePasteboardTypes<R = unknown>(): R;
@@ -10,8 +10,8 @@ declare namespace cocoa {
     setDelegate<R = void, P0 = unknown>(_setDelegate: P0): R;
     _detachFieldEditorFromWindow<R = void, P0 = unknown>(__detachFieldEditorFromWindow: P0): R;
   }
-  namespace classes {
-    export interface NSTokenTextView<T = any> extends NSTextView {
+  namespace NSTokenTextView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTextView {
       alloc<R = NSTokenTextView>(): R;
       new: <R = NSTokenTextView>() => R;
       tokenTextViewForWindow<R = unknown, P0 = unknown>(_tokenTextViewForWindow: P0): R;
@@ -20,4 +20,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTokenTextView: cocoa.classes.NSTokenTextView;
+declare const NSTokenTextView: cocoa.NSTokenTextView.CLASS;

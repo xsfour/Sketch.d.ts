@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSExportSheet<T = any> extends CHSheetController {
+  export interface MSExportSheet<T0 = void, T1 = void, T2 = void> extends CHSheetController {
     toggleItemSelectedForExportState<R = void, P0 = unknown>(_toggleItemSelectedForExportState: P0): R;
     isItemSelectedForExport<R = boolean, P0 = unknown>(_isItemSelectedForExport: P0): R;
     document<R = unknown>(): R;
@@ -26,12 +26,12 @@ declare namespace cocoa {
     setCollectionView<R = void, P0 = NSCollectionView>(_v: P0): R;
     slicesCheckBoxState<R = number>(): R;
   }
-  namespace classes {
-    export interface MSExportSheet<T = any> extends CHSheetController {
+  namespace MSExportSheet {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends CHSheetController {
       alloc<R = MSExportSheet>(): R;
       new: <R = MSExportSheet>() => R;
     }
   }
 }
 
-declare const MSExportSheet: cocoa.classes.MSExportSheet;
+declare const MSExportSheet: cocoa.MSExportSheet.CLASS;

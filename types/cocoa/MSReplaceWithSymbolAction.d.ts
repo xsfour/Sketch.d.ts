@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSReplaceWithSymbolAction<T = any> extends MSSharedSymbolAction {
+  export interface MSReplaceWithSymbolAction<T0 = void, T1 = void, T2 = void> extends MSSharedSymbolAction {
     label<R = unknown>(): R;
     removeDocumentCloseObserver<R = void>(): R;
     validate<R = boolean>(): R;
@@ -10,12 +10,12 @@ declare namespace cocoa {
     documentCloseObserver<R = NSObject>(): R;
     setDocumentCloseObserver<R = void, P0 = NSObject>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSReplaceWithSymbolAction<T = any> extends MSSharedSymbolAction {
+  namespace MSReplaceWithSymbolAction {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSSharedSymbolAction {
       alloc<R = MSReplaceWithSymbolAction>(): R;
       new: <R = MSReplaceWithSymbolAction>() => R;
     }
   }
 }
 
-declare const MSReplaceWithSymbolAction: cocoa.classes.MSReplaceWithSymbolAction;
+declare const MSReplaceWithSymbolAction: cocoa.MSReplaceWithSymbolAction.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSTouchBarColorPickerContainerView<T = any> extends NSView, _NSTouchBarItemLayoutWrapperProtocol {
+  export interface _NSTouchBarColorPickerContainerView<T0 = void, T1 = void, T2 = void> extends NSView, _NSTouchBarItemLayoutWrapperProtocol {
     colorSwatch<R = NSView>(): R;
     setColorSwatch<R = void, P0 = NSView>(_v: P0): R;
     switcherView<R = NSTouchBarColorPickerSwitcher>(): R;
@@ -22,8 +22,8 @@ declare namespace cocoa {
     priorityIndex<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSTouchBarColorPickerContainerView<T = any> extends NSView, _NSTouchBarItemLayoutWrapperProtocol {
+  namespace _NSTouchBarColorPickerContainerView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView, _NSTouchBarItemLayoutWrapperProtocol {
       alloc<R = _NSTouchBarColorPickerContainerView>(): R;
       new: <R = _NSTouchBarColorPickerContainerView>() => R;
     }

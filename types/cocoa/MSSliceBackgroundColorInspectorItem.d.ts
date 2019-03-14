@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSliceBackgroundColorInspectorItem<T = any> extends MSInspectorItem, MSColorInspectorDelegateProtocol, BCPopoverDelegateProtocol, MSStylePartPreviewButtonDelegateProtocol, MSStylePartPreviewButtonDisabledTargetProtocol, MSLayerChangeObserverProtocol {
+  export interface MSSliceBackgroundColorInspectorItem<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, MSColorInspectorDelegateProtocol, BCPopoverDelegateProtocol, MSStylePartPreviewButtonDelegateProtocol, MSStylePartPreviewButtonDisabledTargetProtocol, MSLayerChangeObserverProtocol {
     documentColorSpace<R = unknown>(): R;
     canvasColorSpace<R = unknown>(): R;
     changeBackgroundColorTo<R = void, P0 = unknown>(_changeBackgroundColorTo: P0): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSSliceBackgroundColorInspectorItem<T = any> extends MSInspectorItem, MSColorInspectorDelegateProtocol, BCPopoverDelegateProtocol, MSStylePartPreviewButtonDelegateProtocol, MSStylePartPreviewButtonDisabledTargetProtocol, MSLayerChangeObserverProtocol {
+  namespace MSSliceBackgroundColorInspectorItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, MSColorInspectorDelegateProtocol, BCPopoverDelegateProtocol, MSStylePartPreviewButtonDelegateProtocol, MSStylePartPreviewButtonDisabledTargetProtocol, MSLayerChangeObserverProtocol {
       alloc<R = MSSliceBackgroundColorInspectorItem>(): R;
       new: <R = MSSliceBackgroundColorInspectorItem>() => R;
     }
   }
 }
 
-declare const MSSliceBackgroundColorInspectorItem: cocoa.classes.MSSliceBackgroundColorInspectorItem;
+declare const MSSliceBackgroundColorInspectorItem: cocoa.MSSliceBackgroundColorInspectorItem.CLASS;

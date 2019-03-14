@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDocumentRevisionsView<T = any> extends NSView {
+  export interface NSDocumentRevisionsView<T0 = void, T1 = void, T2 = void> extends NSView {
     updateControls<R = void>(): R;
     shouldUnfocusWindowWithMouseDownAtWindowPoint<R = boolean, P0 = CGPoint>(_shouldUnfocusWindowWithMouseDownAtWindowPoint: P0): R;
     _controlsEnabled<R = boolean>(): R;
@@ -76,8 +76,8 @@ declare namespace cocoa {
     currentStackItemIndex<R = number>(): R;
     setCurrentStackItemIndex<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSDocumentRevisionsView<T = any> extends NSView {
+  namespace NSDocumentRevisionsView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSDocumentRevisionsView>(): R;
       new: <R = NSDocumentRevisionsView>() => R;
       _remoteViewClass<R = unknown>(): R;
@@ -85,4 +85,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSDocumentRevisionsView: cocoa.classes.NSDocumentRevisionsView;
+declare const NSDocumentRevisionsView: cocoa.NSDocumentRevisionsView.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTileLayer<T = any> extends CALayer {
+  export interface NSTileLayer<T0 = void, T1 = void, T2 = void> extends CALayer {
     NS_hasPrefetchedContents<R = boolean>(): R;
     setNeedsDisplayInRect<R = void, P0 = CGRect>(_setNeedsDisplayInRect: P0): R;
     setBounds<R = void, P0 = CGRect>(_setBounds: P0): R;
@@ -16,9 +16,9 @@ declare namespace cocoa {
     NS_isVisibleTile<R = boolean>(): R;
     init<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSTileLayer<T = any> extends CALayer {  }
+  namespace NSTileLayer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends CALayer {}
   }
 }
 
-declare const NSTileLayer: cocoa.classes.NSTileLayer;
+declare const NSTileLayer: cocoa.NSTileLayer.CLASS;

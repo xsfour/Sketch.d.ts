@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSEventTracker<T = any> extends NSObject {
+  export interface NSEventTracker<T0 = void, T1 = void, T2 = void> extends NSObject {
     trackEvent_usingHandler<R = void, P0 = unknown, P1 = CDUnknownBlockType>(_trackEvent: P0, _usingHandler: P1): R;
     dealloc<R = void>(): R;
     modifierFlags<R = number>(): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     wantsEventCoalescing<R = boolean>(): R;
     setWantsEventCoalescing<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSEventTracker<T = any> extends NSObject {
+  namespace NSEventTracker {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSEventTracker>(): R;
       new: <R = NSEventTracker>() => R;
     }
   }
 }
 
-declare const NSEventTracker: cocoa.classes.NSEventTracker;
+declare const NSEventTracker: cocoa.NSEventTracker.CLASS;

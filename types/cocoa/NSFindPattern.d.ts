@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFindPattern<T = any> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
+  export interface NSFindPattern<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
     backreferenceExpression<R = unknown>(): R;
     replaceExpression<R = unknown>(): R;
     initWithPropertyListRepresentation<R = unknown, P0 = unknown>(_initWithPropertyListRepresentation: P0): R;
@@ -29,8 +29,8 @@ declare namespace cocoa {
     regularExpression<R = NSString>(): R;
     setRegularExpression<R = void, P0 = NSString>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSFindPattern<T = any> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
+  namespace NSFindPattern {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
       alloc<R = NSFindPattern>(): R;
       new: <R = NSFindPattern>() => R;
       placeholderFindPattern<R = unknown>(): R;
@@ -40,4 +40,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSFindPattern: cocoa.classes.NSFindPattern;
+declare const NSFindPattern: cocoa.NSFindPattern.CLASS;

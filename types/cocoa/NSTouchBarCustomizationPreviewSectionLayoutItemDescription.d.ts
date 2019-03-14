@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarCustomizationPreviewSectionLayoutItemDescription<T = any> extends NSObject, _NSTouchBarItemLayoutWrapperProtocol {
+  export interface NSTouchBarCustomizationPreviewSectionLayoutItemDescription<T0 = void, T1 = void, T2 = void> extends NSObject, _NSTouchBarItemLayoutWrapperProtocol {
     dealloc<R = void>(): R;
     backupDragSize<R = CGSize>(): R;
     setBackupDragSize<R = void, P0 = CGSize>(_v: P0): R;
@@ -41,12 +41,12 @@ declare namespace cocoa {
     preferredZOrder<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSTouchBarCustomizationPreviewSectionLayoutItemDescription<T = any> extends NSObject, _NSTouchBarItemLayoutWrapperProtocol {
+  namespace NSTouchBarCustomizationPreviewSectionLayoutItemDescription {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, _NSTouchBarItemLayoutWrapperProtocol {
       alloc<R = NSTouchBarCustomizationPreviewSectionLayoutItemDescription>(): R;
       new: <R = NSTouchBarCustomizationPreviewSectionLayoutItemDescription>() => R;
     }
   }
 }
 
-declare const NSTouchBarCustomizationPreviewSectionLayoutItemDescription: cocoa.classes.NSTouchBarCustomizationPreviewSectionLayoutItemDescription;
+declare const NSTouchBarCustomizationPreviewSectionLayoutItemDescription: cocoa.NSTouchBarCustomizationPreviewSectionLayoutItemDescription.CLASS;

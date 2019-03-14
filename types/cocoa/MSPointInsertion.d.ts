@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPointInsertion<T = any> extends NSObject {}
-  namespace classes {
-    export interface MSPointInsertion<T = any> extends NSObject {
+  export interface MSPointInsertion<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace MSPointInsertion {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSPointInsertion>(): R;
       new: <R = MSPointInsertion>() => R;
       bezierPathOfSegmentAtIndex_layer<R = unknown, P0 = number, P1 = unknown>(_bezierPathOfSegmentAtIndex: P0, _layer: P1): R;
@@ -15,4 +15,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSPointInsertion: cocoa.classes.MSPointInsertion;
+declare const MSPointInsertion: cocoa.MSPointInsertion.CLASS;

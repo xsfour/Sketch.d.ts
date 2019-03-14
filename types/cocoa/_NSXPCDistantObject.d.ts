@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSXPCDistantObject<T = any> extends NSObject, NSXPCProxyCreatingProtocol, NSSecureCodingProtocol {
+  export interface _NSXPCDistantObject<T0 = void, T1 = void, T2 = void> extends NSObject, NSXPCProxyCreatingProtocol, NSSecureCodingProtocol {
     remoteObjectProxyWithTimeout_errorHandler<R = unknown, P0 = number, P1 = CDUnknownBlockType>(_remoteObjectProxyWithTimeout: P0, _errorHandler: P1): R;
     remoteObjectProxyWithUserInfo_errorHandler<R = unknown, P0 = unknown, P1 = CDUnknownBlockType>(_remoteObjectProxyWithUserInfo: P0, _errorHandler: P1): R;
     _unboostingRemoteObjectProxy<R = unknown>(): R;
@@ -27,8 +27,8 @@ declare namespace cocoa {
     _noImportance<R = boolean>(): R;
     _exported<R = boolean>(): R;
   }
-  namespace classes {
-    export interface _NSXPCDistantObject<T = any> extends NSObject, NSXPCProxyCreatingProtocol, NSSecureCodingProtocol {
+  namespace _NSXPCDistantObject {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSXPCProxyCreatingProtocol, NSSecureCodingProtocol {
       alloc<R = _NSXPCDistantObject>(): R;
       new: <R = _NSXPCDistantObject>() => R;
     }

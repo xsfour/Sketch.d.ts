@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSLayerGroup<T = any> extends _MSLayerGroup, MSLayerGroupProtocol {
+  export interface MSLayerGroup<T0 = void, T1 = void, T2 = void> extends _MSLayerGroup, MSLayerGroupProtocol {
     candidatesForMasking<R = unknown>(): R;
     layerDidEndResize<R = void>(): R;
     layerWillStartResize<R = void>(): R;
@@ -45,8 +45,8 @@ declare namespace cocoa {
     isAutomaticScalingEnabled<R = boolean>(): R;
     layers<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface MSLayerGroup<T = any> extends _MSLayerGroup, MSLayerGroupProtocol {
+  namespace MSLayerGroup {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSLayerGroup, MSLayerGroupProtocol {
       alloc<R = MSLayerGroup>(): R;
       new: <R = MSLayerGroup>() => R;
       groupBoundsShouldBeIntegral<R = boolean>(): R;
@@ -57,4 +57,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSLayerGroup: cocoa.classes.MSLayerGroup;
+declare const MSLayerGroup: cocoa.MSLayerGroup.CLASS;

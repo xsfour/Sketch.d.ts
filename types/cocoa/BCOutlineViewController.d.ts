@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCOutlineViewController<T = any> extends NSViewController, NSMenuDelegateProtocol, NSTextFieldDelegateProtocol, BCTableCellViewDelegateProtocol, BCTableRowViewDelegateProtocol, NSOutlineViewDataSourceProtocol, BCOutlineViewDelegateProtocol {
+  export interface BCOutlineViewController<T0 = void, T1 = void, T2 = void> extends NSViewController, NSMenuDelegateProtocol, NSTextFieldDelegateProtocol, BCTableCellViewDelegateProtocol, BCTableRowViewDelegateProtocol, NSOutlineViewDataSourceProtocol, BCOutlineViewDelegateProtocol {
     cxx_destruct<R = void>(): R;
     handleTabFromControl_forward<R = void, P0 = unknown, P1 = boolean>(_handleTabFromControl: P0, _forward: P1): R;
     performNecessaryRefreshOperations<R = void>(): R;
@@ -85,8 +85,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface BCOutlineViewController<T = any> extends NSViewController, NSMenuDelegateProtocol, NSTextFieldDelegateProtocol, BCTableCellViewDelegateProtocol, BCTableRowViewDelegateProtocol, NSOutlineViewDataSourceProtocol, BCOutlineViewDelegateProtocol {
+  namespace BCOutlineViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController, NSMenuDelegateProtocol, NSTextFieldDelegateProtocol, BCTableCellViewDelegateProtocol, BCTableRowViewDelegateProtocol, NSOutlineViewDataSourceProtocol, BCOutlineViewDelegateProtocol {
       alloc<R = BCOutlineViewController>(): R;
       new: <R = BCOutlineViewController>() => R;
       itemRowCanFloat<R = boolean, P0 = unknown>(_itemRowCanFloat: P0): R;
@@ -94,4 +94,4 @@ declare namespace cocoa {
   }
 }
 
-declare const BCOutlineViewController: cocoa.classes.BCOutlineViewController;
+declare const BCOutlineViewController: cocoa.BCOutlineViewController.CLASS;

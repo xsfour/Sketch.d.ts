@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSMenuServicesView<T = any> extends NSView {
+  export interface _NSMenuServicesView<T0 = void, T1 = void, T2 = void> extends NSView {
     sizeToFit<R = void>(): R;
     drawKeyEquivalentForItem_inRect_highlighted_backgroundStyle_clipRect<R = void, P0 = unknown, P1 = CGRect, P2 = boolean, P3 = number, P4 = CGRect>(_drawKeyEquivalentForItem: P0, _inRect: P1, _highlighted: P2, _backgroundStyle: P3, _clipRect: P4): R;
     drawTitle_inRect_highlighted_enabled_backgroundStyle_clipRect<R = void, P0 = unknown, P1 = CGRect, P2 = boolean, P3 = boolean, P4 = number, P5 = CGRect>(_drawTitle: P0, _inRect: P1, _highlighted: P2, _enabled: P3, _backgroundStyle: P4, _clipRect: P5): R;
@@ -42,8 +42,8 @@ declare namespace cocoa {
     shouldDrawCategoryName<R = boolean>(): R;
     setShouldDrawCategoryName<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSMenuServicesView<T = any> extends NSView {
+  namespace _NSMenuServicesView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = _NSMenuServicesView>(): R;
       new: <R = _NSMenuServicesView>() => R;
     }

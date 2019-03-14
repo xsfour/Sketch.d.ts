@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutableGradient<T = any> extends _MSImmutableGradient {
+  export interface MSImmutableGradient<T0 = void, T1 = void, T2 = void> extends _MSImmutableGradient {
     ellipseTransformInRect<R = CGAffineTransform, P0 = CGRect>(_ellipseTransformInRect: P0): R;
     NSGradientWithColorSpace<R = unknown, P0 = unknown>(_NSGradientWithColorSpace: P0): R;
     newCGGradientForColorSpace<R = CGGradient, P0 = CGColorSpace>(_newCGGradientForColorSpace: P0): R;
@@ -24,8 +24,8 @@ declare namespace cocoa {
     angularGradientImageInRect_colorSpace<R = unknown, P0 = CGRect, P1 = unknown>(_angularGradientImageInRect: P0, _colorSpace: P1): R;
     hasOpacity<R = boolean>(): R;
   }
-  namespace classes {
-    export interface MSImmutableGradient<T = any> extends _MSImmutableGradient {
+  namespace MSImmutableGradient {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSImmutableGradient {
       alloc<R = MSImmutableGradient>(): R;
       new: <R = MSImmutableGradient>() => R;
       gradientFromStops_colorSpace<R = unknown, P0 = unknown, P1 = unknown>(_gradientFromStops: P0, _colorSpace: P1): R;
@@ -34,4 +34,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSImmutableGradient: cocoa.classes.MSImmutableGradient;
+declare const MSImmutableGradient: cocoa.MSImmutableGradient.CLASS;

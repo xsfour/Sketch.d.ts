@@ -1,7 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSLicenseRegistrationWindowController<T = any> extends NSWindowController, NSWindowDelegateProtocol {
+  export interface MSLicenseRegistrationWindowController<T0 = void, T1 = void, T2 = void> extends NSWindowController, NSWindowDelegateProtocol {
+    cxx_destruct<R = void>(): R;
     openLicenseManager<R = void, P0 = unknown>(_openLicenseManager: P0): R;
     renewLicense<R = void, P0 = unknown>(_renewLicense: P0): R;
     downloadPreviousVersion<R = void, P0 = unknown>(_downloadPreviousVersion: P0): R;
@@ -16,6 +17,7 @@ declare namespace cocoa {
     showCopyForActiveLicense<R = void>(): R;
     showCopyForTrialExpired<R = void>(): R;
     loadInitialView<R = void>(): R;
+    windowDidLoad<R = void>(): R;
     licenseChanged<R = void, P0 = unknown>(_licenseChanged: P0): R;
     transformToModal<R = void>(): R;
     initWithWindowNibName_modal_quitOnClose<R = unknown, P0 = unknown, P1 = boolean, P2 = boolean>(_initWithWindowNibName: P0, _modal: P1, _quitOnClose: P2): R;
@@ -63,8 +65,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSLicenseRegistrationWindowController<T = any> extends NSWindowController, NSWindowDelegateProtocol {
+  namespace MSLicenseRegistrationWindowController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSWindowController, NSWindowDelegateProtocol {
       alloc<R = MSLicenseRegistrationWindowController>(): R;
       new: <R = MSLicenseRegistrationWindowController>() => R;
       registerWithKey<R = void, P0 = unknown>(_registerWithKey: P0): R;
@@ -74,4 +76,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSLicenseRegistrationWindowController: cocoa.classes.MSLicenseRegistrationWindowController;
+declare const MSLicenseRegistrationWindowController: cocoa.MSLicenseRegistrationWindowController.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSImageTextFieldCell<T = any> extends NSTextFieldCell, NSOutlineViewInlineOutlineCellProtocol {
+  export interface NSImageTextFieldCell<T0 = void, T1 = void, T2 = void> extends NSTextFieldCell, NSOutlineViewInlineOutlineCellProtocol {
     _spacingFromImageToText<R = number>(): R;
     _currentFontSize<R = number>(): R;
     outlineCellFrame<R = CGRect>(): R;
@@ -16,8 +16,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSImageTextFieldCell<T = any> extends NSTextFieldCell, NSOutlineViewInlineOutlineCellProtocol {
+  namespace NSImageTextFieldCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTextFieldCell, NSOutlineViewInlineOutlineCellProtocol {
       alloc<R = NSImageTextFieldCell>(): R;
       new: <R = NSImageTextFieldCell>() => R;
       _sourceListFont<R = unknown>(): R;
@@ -25,4 +25,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSImageTextFieldCell: cocoa.classes.NSImageTextFieldCell;
+declare const NSImageTextFieldCell: cocoa.NSImageTextFieldCell.CLASS;

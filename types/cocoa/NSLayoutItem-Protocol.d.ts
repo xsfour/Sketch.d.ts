@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLayoutItemProtocol<T = any> extends NSObjectProtocol {
+  export interface NSLayoutItemProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     nsli_isFlipped<R = boolean>(): R;
     nsli_autoresizingMask<R = number>(): R;
     nsli_descriptionIncludesPointer<R = boolean>(): R;
@@ -35,7 +35,7 @@ declare namespace cocoa {
     nsli_piercingToken<R = number>(): R;
     setNsli_piercingToken<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSLayoutItemProtocol<T = any> extends NSObjectProtocol {  }
+  namespace NSLayoutItemProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

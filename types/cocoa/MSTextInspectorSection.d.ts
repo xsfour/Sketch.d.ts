@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSTextInspectorSection<T = any> extends MSBaseInspectorSection, MSTextHeaderInspectorItemDelegateProtocol {
+  export interface MSTextInspectorSection<T0 = void, T1 = void, T2 = void> extends MSBaseInspectorSection, MSTextHeaderInspectorItemDelegateProtocol {
     paragraphStyleItem<R = MSParagraphStyleItem>(): R;
     setParagraphStyleItem<R = void, P0 = MSParagraphStyleItem>(_v: P0): R;
     missingFontItem<R = MSMissingFontItem>(): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSTextInspectorSection<T = any> extends MSBaseInspectorSection, MSTextHeaderInspectorItemDelegateProtocol {
+  namespace MSTextInspectorSection {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSBaseInspectorSection, MSTextHeaderInspectorItemDelegateProtocol {
       alloc<R = MSTextInspectorSection>(): R;
       new: <R = MSTextInspectorSection>() => R;
     }
   }
 }
 
-declare const MSTextInspectorSection: cocoa.classes.MSTextInspectorSection;
+declare const MSTextInspectorSection: cocoa.MSTextInspectorSection.CLASS;

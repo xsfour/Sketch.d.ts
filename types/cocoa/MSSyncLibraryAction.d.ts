@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSyncLibraryAction<T = any> extends MSDocumentAction, MSWindowBadgeActionProtocol {
+  export interface MSSyncLibraryAction<T0 = void, T1 = void, T2 = void> extends MSDocumentAction, MSWindowBadgeActionProtocol {
     label<R = unknown>(): R;
     areForeignObjectsOutOfDate<R = boolean>(): R;
     numberOfBadges<R = number>(): R;
@@ -12,12 +12,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSSyncLibraryAction<T = any> extends MSDocumentAction, MSWindowBadgeActionProtocol {
+  namespace MSSyncLibraryAction {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSDocumentAction, MSWindowBadgeActionProtocol {
       alloc<R = MSSyncLibraryAction>(): R;
       new: <R = MSSyncLibraryAction>() => R;
     }
   }
 }
 
-declare const MSSyncLibraryAction: cocoa.classes.MSSyncLibraryAction;
+declare const MSSyncLibraryAction: cocoa.MSSyncLibraryAction.CLASS;

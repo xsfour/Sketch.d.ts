@@ -1,16 +1,16 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPreviousPageAction<T = any> extends MSChangePageAction {
+  export interface MSPreviousPageAction<T0 = void, T1 = void, T2 = void> extends MSChangePageAction {
     label<R = unknown>(): R;
     previousPage<R = void, P0 = unknown>(_previousPage: P0): R;
   }
-  namespace classes {
-    export interface MSPreviousPageAction<T = any> extends MSChangePageAction {
+  namespace MSPreviousPageAction {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSChangePageAction {
       alloc<R = MSPreviousPageAction>(): R;
       new: <R = MSPreviousPageAction>() => R;
     }
   }
 }
 
-declare const MSPreviousPageAction: cocoa.classes.MSPreviousPageAction;
+declare const MSPreviousPageAction: cocoa.MSPreviousPageAction.CLASS;

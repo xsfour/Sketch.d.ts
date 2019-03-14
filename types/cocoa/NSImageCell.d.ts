@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSImageCell<T = any> extends NSCell, NSCopyingProtocol, NSCodingProtocol {
+  export interface NSImageCell<T0 = void, T1 = void, T2 = void> extends NSCell, NSCopyingProtocol, NSCodingProtocol {
     _animationTimerCallback<R = void, P0 = unknown>(__animationTimerCallback: P0): R;
     _stopAnimation<R = void>(): R;
     _startAnimation<R = void>(): R;
@@ -37,8 +37,8 @@ declare namespace cocoa {
     imageAlignment<R = number>(): R;
     setImageAlignment<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSImageCell<T = any> extends NSCell, NSCopyingProtocol, NSCodingProtocol {
+  namespace NSImageCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSCell, NSCopyingProtocol, NSCodingProtocol {
       alloc<R = NSImageCell>(): R;
       new: <R = NSImageCell>() => R;
       _imageRectForDrawingImageOfAlignmentRectSize_inFrame_scaling_alignment_flipped<R = CGRect, P0 = CGSize, P1 = CGRect, P2 = number, P3 = number, P4 = boolean>(__imageRectForDrawingImageOfAlignmentRectSize: P0, _inFrame: P1, _scaling: P2, _alignment: P3, _flipped: P4): R;
@@ -48,4 +48,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSImageCell: cocoa.classes.NSImageCell;
+declare const NSImageCell: cocoa.NSImageCell.CLASS;

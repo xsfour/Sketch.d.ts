@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFileHandle<T = any> extends NSObject, NSSecureCodingProtocol {
+  export interface NSFileHandle<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol {
     _closeOnDealloc<R = void>(): R;
     setReadabilityHandler<R = void, P0 = CDUnknownBlockType>(_setReadabilityHandler: P0): R;
     readabilityHandler<R = CDUnknownBlockType>(): R;
@@ -27,8 +27,8 @@ declare namespace cocoa {
     offsetInFile<R = number>(): R;
     availableData<R = NSData>(): R;
   }
-  namespace classes {
-    export interface NSFileHandle<T = any> extends NSObject, NSSecureCodingProtocol {
+  namespace NSFileHandle {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol {
       alloc<R = NSFileHandle>(): R;
       new: <R = NSFileHandle>() => R;
       fileHandleForUpdatingURL_mode_error<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_fileHandleForUpdatingURL: P0, _mode: P1, _error: P2): R;
@@ -50,4 +50,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSFileHandle: cocoa.classes.NSFileHandle;
+declare const NSFileHandle: cocoa.NSFileHandle.CLASS;

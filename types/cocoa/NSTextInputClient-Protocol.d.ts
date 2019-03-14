@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTextInputClientProtocol<T = any> {
+  export interface NSTextInputClientProtocol<T0 = void, T1 = void, T2 = void> {
     characterIndexForPoint<R = number, P0 = CGPoint>(_characterIndexForPoint: P0): R;
     firstRectForCharacterRange_actualRange<R = CGRect, P0 = _NSRange, P1 = _NSRange>(_firstRectForCharacterRange: P0, _actualRange: P1): R;
     validAttributesForMarkedText<R = NSArray>(): R;
@@ -19,7 +19,7 @@ declare namespace cocoa {
     fractionOfDistanceThroughGlyphForPoint<R = number, P0 = CGPoint>(_fractionOfDistanceThroughGlyphForPoint: P0): R;
     attributedString<R = NSAttributedString>(): R;
   }
-  namespace classes {
-    export interface NSTextInputClientProtocol<T = any> {  }
+  namespace NSTextInputClientProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

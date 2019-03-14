@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPerspectiveInstructions<T = any> extends NSObject {
+  export interface MSPerspectiveInstructions<T0 = void, T1 = void, T2 = void> extends NSObject {
     applyToImage<R = unknown, P0 = unknown>(_applyToImage: P0): R;
     bottomRight<R = CGPoint>(): R;
     setBottomRight<R = void, P0 = CGPoint>(_v: P0): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     rect<R = CGRect>(): R;
     setRect<R = void, P0 = CGRect>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSPerspectiveInstructions<T = any> extends NSObject {
+  namespace MSPerspectiveInstructions {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSPerspectiveInstructions>(): R;
       new: <R = MSPerspectiveInstructions>() => R;
     }
   }
 }
 
-declare const MSPerspectiveInstructions: cocoa.classes.MSPerspectiveInstructions;
+declare const MSPerspectiveInstructions: cocoa.MSPerspectiveInstructions.CLASS;

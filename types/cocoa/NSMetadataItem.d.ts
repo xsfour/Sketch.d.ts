@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMetadataItem<T = any> extends NSObject {
+  export interface NSMetadataItem<T0 = void, T1 = void, T2 = void> extends NSObject {
     valuesForAttributes<R = unknown, P0 = unknown>(_valuesForAttributes: P0): R;
     valueForAttribute<R = unknown, P0 = unknown>(_valueForAttribute: P0): R;
     valueForKey<R = unknown, P0 = unknown>(_valueForKey: P0): R;
@@ -12,12 +12,12 @@ declare namespace cocoa {
     initWithURL<R = unknown, P0 = unknown>(_initWithURL: P0): R;
     attributes<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface NSMetadataItem<T = any> extends NSObject {
+  namespace NSMetadataItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSMetadataItem>(): R;
       new: <R = NSMetadataItem>() => R;
     }
   }
 }
 
-declare const NSMetadataItem: cocoa.classes.NSMetadataItem;
+declare const NSMetadataItem: cocoa.NSMetadataItem.CLASS;

@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFileCoordinatorAccessorBlockCompletion<T = any> extends NSObject {
+  export interface NSFileCoordinatorAccessorBlockCompletion<T0 = void, T1 = void, T2 = void> extends NSObject {
     decrement<R = void>(): R;
     increment<R = void>(): R;
     dealloc<R = void>(): R;
   }
-  namespace classes {
-    export interface NSFileCoordinatorAccessorBlockCompletion<T = any> extends NSObject {
+  namespace NSFileCoordinatorAccessorBlockCompletion {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSFileCoordinatorAccessorBlockCompletion>(): R;
       new: <R = NSFileCoordinatorAccessorBlockCompletion>() => R;
       completionWithBlock<R = unknown, P0 = CDUnknownBlockType>(_completionWithBlock: P0): R;
@@ -15,4 +15,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSFileCoordinatorAccessorBlockCompletion: cocoa.classes.NSFileCoordinatorAccessorBlockCompletion;
+declare const NSFileCoordinatorAccessorBlockCompletion: cocoa.NSFileCoordinatorAccessorBlockCompletion.CLASS;

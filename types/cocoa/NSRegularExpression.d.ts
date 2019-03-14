@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSRegularExpression<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  export interface NSRegularExpression<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
     _captureGroupNumberWithName<R = number, P0 = unknown>(__captureGroupNumberWithName: P0): R;
     description<R = unknown>(): R;
     dealloc<R = void>(): R;
@@ -21,8 +21,8 @@ declare namespace cocoa {
     options<R = number>(): R;
     pattern<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSRegularExpression<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  namespace NSRegularExpression {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
       alloc<R = NSRegularExpression>(): R;
       new: <R = NSRegularExpression>() => R;
       escapedPatternForString<R = unknown, P0 = unknown>(_escapedPatternForString: P0): R;
@@ -33,4 +33,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSRegularExpression: cocoa.classes.NSRegularExpression;
+declare const NSRegularExpression: cocoa.NSRegularExpression.CLASS;

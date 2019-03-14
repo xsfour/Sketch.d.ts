@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSExtension<T = any> extends NSObject, _NSExtensionContextHostingProtocol {
+  export interface NSExtension<T0 = void, T1 = void, T2 = void> extends NSObject, _NSExtensionContextHostingProtocol {
     _dropAssertion<R = void>(): R;
     extensionContexts<R = unknown>(): R;
     _kill<R = void, P0 = number>(__kill: P0): R;
@@ -92,11 +92,10 @@ declare namespace cocoa {
     set_extensionState<R = void, P0 = NSDictionary>(_v: P0): R;
     debugDescription<R = NSString>(): R;
     superclass<R = unknown>(): R;
-    // + NSExtension(NSExtension_AppKitAdditions):
-    
-  }
-  namespace classes {
-    export interface NSExtension<T = any> extends NSObject, _NSExtensionContextHostingProtocol {
+  
+}
+  namespace NSExtension {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, _NSExtensionContextHostingProtocol {
       alloc<R = NSExtension>(): R;
       new: <R = NSExtension>() => R;
       endMatchingExtensions<R = void, P0 = unknown>(_endMatchingExtensions: P0): R;
@@ -113,11 +112,11 @@ declare namespace cocoa {
       predicateForActivationRule<R = unknown, P0 = unknown>(_predicateForActivationRule: P0): R;
       evaluateActivationRule_withExtensionItemsRepresentation<R = boolean, P0 = unknown, P1 = unknown>(_evaluateActivationRule: P0, _withExtensionItemsRepresentation: P1): R;
       initializeFiltering<R = void>(): R;
-      // + NSExtension(NSExtension_AppKitAdditions):
+      // + NSExtension(NSExtension_AppKitAdditions): 
       numberOfNewItems<R = number>(): R;
       initialize<R = void>(): R;
     }
   }
 }
 
-declare const NSExtension: cocoa.classes.NSExtension;
+declare const NSExtension: cocoa.NSExtension.CLASS;

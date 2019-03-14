@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSServicesMenuRequestor<T = any> {}
-  namespace classes {
-    export interface NSServicesMenuRequestor<T = any> {  }
+  export interface NSServicesMenuRequestor<T0 = void, T1 = void, T2 = void> {}
+  namespace NSServicesMenuRequestor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSServicesMenuRequestor: cocoa.classes.NSServicesMenuRequestor;
+declare const NSServicesMenuRequestor: cocoa.NSServicesMenuRequestor.CLASS;

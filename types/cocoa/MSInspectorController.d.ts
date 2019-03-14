@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInspectorController<T = any> extends NSViewController, NSTouchBarDelegateProtocol {
+  export interface MSInspectorController<T0 = void, T1 = void, T2 = void> extends NSViewController, NSTouchBarDelegateProtocol {
     cxx_destruct<R = void>(): R;
     reloadTouchBars<R = void>(): R;
     closeAnyColorPopover<R = void>(): R;
@@ -55,12 +55,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSInspectorController<T = any> extends NSViewController, NSTouchBarDelegateProtocol {
+  namespace MSInspectorController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController, NSTouchBarDelegateProtocol {
       alloc<R = MSInspectorController>(): R;
       new: <R = MSInspectorController>() => R;
     }
   }
 }
 
-declare const MSInspectorController: cocoa.classes.MSInspectorController;
+declare const MSInspectorController: cocoa.MSInspectorController.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFunctionRowBackgroundColorView<T = any> extends NSView, NSCollectionViewElementProtocol {
+  export interface NSFunctionRowBackgroundColorView<T0 = void, T1 = void, T2 = void> extends NSView, NSCollectionViewElementProtocol {
     _systemColorsDidChange<R = void, P0 = unknown>(__systemColorsDidChange: P0): R;
     ignoresTouchEvents<R = boolean>(): R;
     setIgnoresTouchEvents<R = void, P0 = boolean>(_v: P0): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     setIdentifier<R = void, P0 = NSString>(_v: P0): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSFunctionRowBackgroundColorView<T = any> extends NSView, NSCollectionViewElementProtocol {
+  namespace NSFunctionRowBackgroundColorView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView, NSCollectionViewElementProtocol {
       alloc<R = NSFunctionRowBackgroundColorView>(): R;
       new: <R = NSFunctionRowBackgroundColorView>() => R;
     }
   }
 }
 
-declare const NSFunctionRowBackgroundColorView: cocoa.classes.NSFunctionRowBackgroundColorView;
+declare const NSFunctionRowBackgroundColorView: cocoa.NSFunctionRowBackgroundColorView.CLASS;

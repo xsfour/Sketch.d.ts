@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSBoxCustomView<T = any> extends NSView, _NSBoxCustomViewProtocol {
+  export interface _NSBoxCustomView<T0 = void, T1 = void, T2 = void> extends NSView, _NSBoxCustomViewProtocol {
     mouseDownCanMoveWindow<R = boolean>(): R;
     isOpaque<R = boolean>(): R;
     allowsVibrancy<R = boolean>(): R;
@@ -19,8 +19,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSBoxCustomView<T = any> extends NSView, _NSBoxCustomViewProtocol {
+  namespace _NSBoxCustomView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView, _NSBoxCustomViewProtocol {
       alloc<R = _NSBoxCustomView>(): R;
       new: <R = _NSBoxCustomView>() => R;
     }

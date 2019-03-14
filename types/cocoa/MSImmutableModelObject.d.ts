@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutableModelObject<T = any> extends MSModelObjectCommon, MSModelObjectProtocol, MSCodingProtocol {
+  export interface MSImmutableModelObject<T0 = void, T1 = void, T2 = void> extends MSModelObjectCommon, MSModelObjectProtocol, MSCodingProtocol {
     migrationsInList<R = unknown, P0 = string>(_migrationsInList: P0): R;
     migrationListForClass<R = string, P0 = unknown>(_migrationListForClass: P0): R;
     allocateMigrationListForClass<R = string, P0 = unknown>(_allocateMigrationListForClass: P0): R;
@@ -33,8 +33,8 @@ declare namespace cocoa {
     objectID<R = NSString>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSImmutableModelObject<T = any> extends MSModelObjectCommon, MSModelObjectProtocol, MSCodingProtocol {
+  namespace MSImmutableModelObject {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSModelObjectCommon, MSModelObjectProtocol, MSCodingProtocol {
       alloc<R = MSImmutableModelObject>(): R;
       new: <R = MSImmutableModelObject>() => R;
       traitsForPropertyName<R = number, P0 = unknown>(_traitsForPropertyName: P0): R;
@@ -43,4 +43,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSImmutableModelObject: cocoa.classes.MSImmutableModelObject;
+declare const MSImmutableModelObject: cocoa.MSImmutableModelObject.CLASS;

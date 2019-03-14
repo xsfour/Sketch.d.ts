@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSegmentItem<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
+  export interface NSSegmentItem<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
     description<R = unknown>(): R;
     _setToolTipTag<R = void, P0 = number>(__setToolTipTag: P0): R;
     _toolTipTag<R = number>(): R;
@@ -66,12 +66,12 @@ declare namespace cocoa {
     index<R = number>(): R;
     setIndex<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSSegmentItem<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
+  namespace NSSegmentItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
       alloc<R = NSSegmentItem>(): R;
       new: <R = NSSegmentItem>() => R;
     }
   }
 }
 
-declare const NSSegmentItem: cocoa.classes.NSSegmentItem;
+declare const NSSegmentItem: cocoa.NSSegmentItem.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPluginsPreferencePane<T = any> extends MSPreferencePane, NSTableViewDelegateProtocol, MSDropableViewDelegateProtocol, NSTextFieldDelegateProtocol {
+  export interface MSPluginsPreferencePane<T0 = void, T1 = void, T2 = void> extends MSPreferencePane, NSTableViewDelegateProtocol, MSDropableViewDelegateProtocol, NSTextFieldDelegateProtocol {
     installPluginsWithURLArray<R = void, P0 = unknown>(_installPluginsWithURLArray: P0): R;
     draggedURLsFromPasteboard<R = unknown, P0 = unknown>(_draggedURLsFromPasteboard: P0): R;
     updateAndReloadPluginsWithBlock<R = void, P0 = CDUnknownBlockType>(_updateAndReloadPluginsWithBlock: P0): R;
@@ -97,8 +97,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSPluginsPreferencePane<T = any> extends MSPreferencePane, NSTableViewDelegateProtocol, MSDropableViewDelegateProtocol, NSTextFieldDelegateProtocol {
+  namespace MSPluginsPreferencePane {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSPreferencePane, NSTableViewDelegateProtocol, MSDropableViewDelegateProtocol, NSTextFieldDelegateProtocol {
       alloc<R = MSPluginsPreferencePane>(): R;
       new: <R = MSPluginsPreferencePane>() => R;
       openWithPluginToHighlight<R = void, P0 = unknown>(_openWithPluginToHighlight: P0): R;
@@ -106,4 +106,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSPluginsPreferencePane: cocoa.classes.MSPluginsPreferencePane;
+declare const MSPluginsPreferencePane: cocoa.MSPluginsPreferencePane.CLASS;

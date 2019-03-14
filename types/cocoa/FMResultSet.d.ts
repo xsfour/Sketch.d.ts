@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface FMResultSet<T = any> extends NSObject {
+  export interface FMResultSet<T0 = void, T1 = void, T2 = void> extends NSObject {
     objectForKeyedSubscript<R = unknown, P0 = unknown>(_objectForKeyedSubscript: P0): R;
     objectAtIndexedSubscript<R = unknown, P0 = number>(_objectAtIndexedSubscript: P0): R;
     setParentDB<R = void, P0 = unknown>(_setParentDB: P0): R;
@@ -48,8 +48,8 @@ declare namespace cocoa {
     setQuery<R = void, P0 = NSString>(_v: P0): R;
     columnNameToIndexMap<R = NSMutableDictionary>(): R;
   }
-  namespace classes {
-    export interface FMResultSet<T = any> extends NSObject {
+  namespace FMResultSet {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = FMResultSet>(): R;
       new: <R = FMResultSet>() => R;
       resultSetWithStatement_usingParentDatabase<R = unknown, P0 = unknown, P1 = unknown>(_resultSetWithStatement: P0, _usingParentDatabase: P1): R;
@@ -57,4 +57,4 @@ declare namespace cocoa {
   }
 }
 
-declare const FMResultSet: cocoa.classes.FMResultSet;
+declare const FMResultSet: cocoa.FMResultSet.CLASS;

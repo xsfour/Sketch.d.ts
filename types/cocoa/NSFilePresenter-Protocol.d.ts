@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFilePresenterProtocol<T = any> extends NSObjectProtocol {
+  export interface NSFilePresenterProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     presentedSubitemAtURL_didResolveConflictVersion<R = void, P0 = NSURL, P1 = NSFileVersion>(_presentedSubitemAtURL: P0, _didResolveConflictVersion: P1): R;
     presentedSubitemAtURL_didLoseVersion<R = void, P0 = NSURL, P1 = NSFileVersion>(_presentedSubitemAtURL: P0, _didLoseVersion: P1): R;
     presentedSubitemAtURL_didGainVersion<R = void, P0 = NSURL, P1 = NSFileVersion>(_presentedSubitemAtURL: P0, _didGainVersion: P1): R;
@@ -24,7 +24,7 @@ declare namespace cocoa {
     observedPresentedItemUbiquityAttributes<R = NSSet>(): R;
     primaryPresentedItemURL<R = NSURL>(): R;
   }
-  namespace classes {
-    export interface NSFilePresenterProtocol<T = any> extends NSObjectProtocol {  }
+  namespace NSFilePresenterProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

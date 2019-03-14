@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSWebExporter<T = any> extends NSObject {
+  export interface MSWebExporter<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     saveManifestFile_withError<R = boolean, P0 = unknown, P1 = unknown>(_saveManifestFile: P0, _withError: P1): R;
     exportedImageDataForRequest<R = unknown, P0 = unknown>(_exportedImageDataForRequest: P0): R;
@@ -29,8 +29,8 @@ declare namespace cocoa {
     setDocumentData<R = void, P0 = MSDocumentData>(_v: P0): R;
     documentFileSize<R = number>(): R;
   }
-  namespace classes {
-    export interface MSWebExporter<T = any> extends NSObject {
+  namespace MSWebExporter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSWebExporter>(): R;
       new: <R = MSWebExporter>() => R;
       exportViewportBitmapImageForRequest<R = unknown, P0 = unknown>(_exportViewportBitmapImageForRequest: P0): R;
@@ -43,4 +43,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSWebExporter: cocoa.classes.MSWebExporter;
+declare const MSWebExporter: cocoa.MSWebExporter.CLASS;

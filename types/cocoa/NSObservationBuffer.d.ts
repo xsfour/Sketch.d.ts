@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSObservationBuffer<T = any> extends NSObservationTransformer {
+  export interface NSObservationBuffer<T0 = void, T1 = void, T2 = void> extends NSObservationTransformer {
     emitAllObjects<R = void>(): R;
     emitObject<R = void>(): R;
     initWithMaximumObjectCount_fullPolicy_outputQueue<R = unknown, P0 = number, P1 = number, P2 = unknown>(_initWithMaximumObjectCount: P0, _fullPolicy: P1, _outputQueue: P2): R;
@@ -12,8 +12,8 @@ declare namespace cocoa {
     memoryPressureSensitive<R = boolean>(): R;
     setMemoryPressureSensitive<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSObservationBuffer<T = any> extends NSObservationTransformer {
+  namespace NSObservationBuffer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObservationTransformer {
       alloc<R = NSObservationBuffer>(): R;
       new: <R = NSObservationBuffer>() => R;
       bufferWithMaximumObjectCount_fullPolicy_outputQueue<R = unknown, P0 = number, P1 = number, P2 = unknown>(_bufferWithMaximumObjectCount: P0, _fullPolicy: P1, _outputQueue: P2): R;
@@ -23,4 +23,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSObservationBuffer: cocoa.classes.NSObservationBuffer;
+declare const NSObservationBuffer: cocoa.NSObservationBuffer.CLASS;

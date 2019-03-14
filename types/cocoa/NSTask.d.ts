@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTask<T = any> extends NSObject {
+  export interface NSTask<T0 = void, T1 = void, T2 = void> extends NSObject {
     currentDirectoryPath<R = unknown>(): R;
     launchPath<R = unknown>(): R;
     suspendCount<R = number>(): R;
@@ -36,8 +36,8 @@ declare namespace cocoa {
     terminationHandler<R = CDUnknownBlockType>(): R;
     setTerminationHandler<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTask<T = any> extends NSObject {
+  namespace NSTask {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSTask>(): R;
       new: <R = NSTask>() => R;
       launchedTaskWithExecutableURL_arguments_error_terminationHandler<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = CDUnknownBlockType>(_launchedTaskWithExecutableURL: P0, _arguments: P1, _error: P2, _terminationHandler: P3): R;
@@ -49,4 +49,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTask: cocoa.classes.NSTask;
+declare const NSTask: cocoa.NSTask.CLASS;

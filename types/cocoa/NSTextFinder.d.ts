@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTextFinder<T = any> extends NSObject, NSCodingProtocol {
+  export interface NSTextFinder<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
     _isSearchingAsynchronousDocument<R = boolean>(): R;
     _webViews<R = unknown>(): R;
     _isSearchingWebViews<R = boolean>(): R;
@@ -32,8 +32,8 @@ declare namespace cocoa {
     client<R = NSTextFinderClient>(): R;
     setClient<R = void, P0 = NSTextFinderClient>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTextFinder<T = any> extends NSObject, NSCodingProtocol {
+  namespace NSTextFinder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
       alloc<R = NSTextFinder>(): R;
       new: <R = NSTextFinder>() => R;
       drawIncrementalMatchHighlightInRect<R = void, P0 = CGRect>(_drawIncrementalMatchHighlightInRect: P0): R;
@@ -53,4 +53,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTextFinder: cocoa.classes.NSTextFinder;
+declare const NSTextFinder: cocoa.NSTextFinder.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSViewHierarchyLock<T = any> extends NSObject, NSLockingProtocol {
+  export interface NSViewHierarchyLock<T0 = void, T1 = void, T2 = void> extends NSObject, NSLockingProtocol {
     description<R = unknown>(): R;
     unlockTopMostReader<R = void>(): R;
     unlockWithExceptionHandler<R = void, P0 = boolean>(_unlockWithExceptionHandler: P0): R;
@@ -19,8 +19,8 @@ declare namespace cocoa {
     _invalidate<R = void>(): R;
     dealloc<R = void>(): R;
   }
-  namespace classes {
-    export interface NSViewHierarchyLock<T = any> extends NSObject, NSLockingProtocol {
+  namespace NSViewHierarchyLock {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSLockingProtocol {
       alloc<R = NSViewHierarchyLock>(): R;
       new: <R = NSViewHierarchyLock>() => R;
       allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
@@ -30,4 +30,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSViewHierarchyLock: cocoa.classes.NSViewHierarchyLock;
+declare const NSViewHierarchyLock: cocoa.NSViewHierarchyLock.CLASS;

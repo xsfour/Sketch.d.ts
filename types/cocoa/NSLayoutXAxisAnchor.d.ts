@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLayoutXAxisAnchor<T = any> extends NSLayoutAnchor {
+  export interface NSLayoutXAxisAnchor<T0 = void, T1 = void, T2 = void> extends NSLayoutAnchor {
     _validateOtherXAxisAnchorDirectionAbstraction<R = boolean, P0 = number>(__validateOtherXAxisAnchorDirectionAbstraction: P0): R;
     _directionAbstraction<R = number>(): R;
     offsetBy<R = unknown, P0 = number>(_offsetBy: P0): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     anchorByOffsettingWithDimension<R = unknown, P0 = unknown>(_anchorByOffsettingWithDimension: P0): R;
     anchorWithOffsetToAnchor<R = unknown, P0 = unknown>(_anchorWithOffsetToAnchor: P0): R;
   }
-  namespace classes {
-    export interface NSLayoutXAxisAnchor<T = any> extends NSLayoutAnchor {
+  namespace NSLayoutXAxisAnchor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSLayoutAnchor {
       alloc<R = NSLayoutXAxisAnchor>(): R;
       new: <R = NSLayoutXAxisAnchor>() => R;
     }
   }
 }
 
-declare const NSLayoutXAxisAnchor: cocoa.classes.NSLayoutXAxisAnchor;
+declare const NSLayoutXAxisAnchor: cocoa.NSLayoutXAxisAnchor.CLASS;

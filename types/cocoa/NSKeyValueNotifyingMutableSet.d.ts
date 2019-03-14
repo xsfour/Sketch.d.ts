@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSKeyValueNotifyingMutableSet<T = any> extends NSKeyValueMutableSet {
+  export interface NSKeyValueNotifyingMutableSet<T0 = void, T1 = void, T2 = void> extends NSKeyValueMutableSet {
     unionSet<R = void, P0 = unknown>(_unionSet: P0): R;
     setSet<R = void, P0 = unknown>(_setSet: P0): R;
     removeObject<R = void, P0 = unknown>(_removeObject: P0): R;
@@ -14,9 +14,9 @@ declare namespace cocoa {
     member<R = unknown, P0 = unknown>(_member: P0): R;
     count<R = number>(): R;
   }
-  namespace classes {
-    export interface NSKeyValueNotifyingMutableSet<T = any> extends NSKeyValueMutableSet {  }
+  namespace NSKeyValueNotifyingMutableSet {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSKeyValueMutableSet {}
   }
 }
 
-declare const NSKeyValueNotifyingMutableSet: cocoa.classes.NSKeyValueNotifyingMutableSet;
+declare const NSKeyValueNotifyingMutableSet: cocoa.NSKeyValueNotifyingMutableSet.CLASS;

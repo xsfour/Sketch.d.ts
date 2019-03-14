@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUserNotification<T = any> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
+  export interface NSUserNotification<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
     _secureEncodedUserInfo<R = unknown>(): R;
     _setIdentityImage_withIdentifier<R = void, P0 = unknown, P1 = unknown>(__setIdentityImage: P0, _withIdentifier: P1): R;
     _areIdentifiersEqual<R = boolean, P0 = unknown>(__areIdentifiersEqual: P0): R;
@@ -116,8 +116,8 @@ declare namespace cocoa {
     userInfo<R = NSDictionary>(): R;
     setUserInfo<R = void, P0 = NSDictionary>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSUserNotification<T = any> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
+  namespace NSUserNotification {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol, NSCopyingProtocol {
       alloc<R = NSUserNotification>(): R;
       new: <R = NSUserNotification>() => R;
       _closestDatesForStartDate_earliestDate_timeZone_deliveryRepeatInterval_returnDateBefore_returnDateAfter<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown, P5 = unknown>(__closestDatesForStartDate: P0, _earliestDate: P1, _timeZone: P2, _deliveryRepeatInterval: P3, _returnDateBefore: P4, _returnDateAfter: P5): R;
@@ -128,4 +128,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSUserNotification: cocoa.classes.NSUserNotification;
+declare const NSUserNotification: cocoa.NSUserNotification.CLASS;

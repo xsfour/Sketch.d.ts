@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSWorkspaceFileOperation<T = any> extends NSObject {
+  export interface _NSWorkspaceFileOperation<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     operationRefDidComplete_newPath_error_status<R = void, P0 = __FSFileOperation, P1 = string, P2 = number, P3 = __CFDictionary>(_operationRefDidComplete: P0, _newPath: P1, _error: P2, _status: P3): R;
     operationRef_didHaveImmediateError<R = void, P0 = __FSFileOperation, P1 = number>(_operationRef: P0, _didHaveImmediateError: P1): R;
@@ -19,8 +19,8 @@ declare namespace cocoa {
     copyNextPathToTryForURL<R = unknown, P0 = unknown>(_copyNextPathToTryForURL: P0): R;
     whichOperation<R = number>(): R;
   }
-  namespace classes {
-    export interface _NSWorkspaceFileOperation<T = any> extends NSObject {
+  namespace _NSWorkspaceFileOperation {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSWorkspaceFileOperation>(): R;
       new: <R = _NSWorkspaceFileOperation>() => R;
     }

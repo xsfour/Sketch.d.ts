@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDataPreferenceItem<T = any> extends NSObject {
+  export interface MSDataPreferenceItem<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     dataTypeString<R = unknown>(): R;
     initWithData<R = unknown, P0 = unknown>(_initWithData: P0): R;
@@ -26,8 +26,8 @@ declare namespace cocoa {
     pluginData<R = MSPluginDataSupplier>(): R;
     localData<R = MSLocalDataSupplier>(): R;
   }
-  namespace classes {
-    export interface MSDataPreferenceItem<T = any> extends NSObject {
+  namespace MSDataPreferenceItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSDataPreferenceItem>(): R;
       new: <R = MSDataPreferenceItem>() => R;
       keyPathsForValuesAffectingSecondaryTitle<R = unknown>(): R;
@@ -38,4 +38,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSDataPreferenceItem: cocoa.classes.MSDataPreferenceItem;
+declare const MSDataPreferenceItem: cocoa.MSDataPreferenceItem.CLASS;

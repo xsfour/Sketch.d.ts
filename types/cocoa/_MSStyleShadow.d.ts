@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSStyleShadow<T = any> extends MSStylePart {
+  export interface _MSStyleShadow<T0 = void, T1 = void, T2 = void> extends MSStylePart {
     contextSettings<R = MSGraphicsContextSettings>(): R;
     setContextSettings<R = void, P0 = MSGraphicsContextSettings>(_v: P0): R;
     color<R = MSColor>(): R;
@@ -15,8 +15,8 @@ declare namespace cocoa {
     blurRadius<R = number>(): R;
     setBlurRadius<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface _MSStyleShadow<T = any> extends MSStylePart {
+  namespace _MSStyleShadow {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSStylePart {
       alloc<R = _MSStyleShadow>(): R;
       new: <R = _MSStyleShadow>() => R;
     }

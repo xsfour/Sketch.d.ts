@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSOverrideRepresentation<T = any> extends MSOverrideRepresentationBase, BCOutlineViewNodeProtocol, MSLayerListLayerExtensionsProtocol, MSInterfaceImageOwnerProtocol, MSHoverableItemProtocol {
+  export interface MSOverrideRepresentation<T0 = void, T1 = void, T2 = void> extends MSOverrideRepresentationBase, BCOutlineViewNodeProtocol, MSLayerListLayerExtensionsProtocol, MSInterfaceImageOwnerProtocol, MSHoverableItemProtocol {
     updateExpandedStateAfterSelection<R = void>(): R;
     transformForConvertingToInstance<R = unknown>(): R;
     calculateTransformAndPath<R = void>(): R;
@@ -51,12 +51,12 @@ declare namespace cocoa {
     isExpanded<R = boolean>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSOverrideRepresentation<T = any> extends MSOverrideRepresentationBase, BCOutlineViewNodeProtocol, MSLayerListLayerExtensionsProtocol, MSInterfaceImageOwnerProtocol, MSHoverableItemProtocol {
+  namespace MSOverrideRepresentation {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSOverrideRepresentationBase, BCOutlineViewNodeProtocol, MSLayerListLayerExtensionsProtocol, MSInterfaceImageOwnerProtocol, MSHoverableItemProtocol {
       alloc<R = MSOverrideRepresentation>(): R;
       new: <R = MSOverrideRepresentation>() => R;
     }
   }
 }
 
-declare const MSOverrideRepresentation: cocoa.classes.MSOverrideRepresentation;
+declare const MSOverrideRepresentation: cocoa.MSOverrideRepresentation.CLASS;

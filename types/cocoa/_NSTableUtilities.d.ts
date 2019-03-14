@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSTableUtilities<T = any> extends NSObject {}
-  namespace classes {
-    export interface _NSTableUtilities<T = any> extends NSObject {
+  export interface _NSTableUtilities<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace _NSTableUtilities {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSTableUtilities>(): R;
       new: <R = _NSTableUtilities>() => R;
       _referenceBinderAtIndex_forTableView<R = unknown, P0 = number, P1 = unknown>(__referenceBinderAtIndex: P0, _forTableView: P1): R;

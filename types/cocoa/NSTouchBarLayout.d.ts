@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarLayout<T = any> extends NSObject {
+  export interface NSTouchBarLayout<T0 = void, T1 = void, T2 = void> extends NSObject {
     _calculateLayoutOfItems_withAvailableSize_startingWidth_xOrigin_sharesLeftEdge_sharesRightEdge_accountsForWidgetSpace_itemsToFrames<R = void, P0 = unknown, P1 = CGSize, P2 = number, P3 = number, P4 = boolean, P5 = boolean, P6 = boolean, P7 = unknown>(__calculateLayoutOfItems: P0, _withAvailableSize: P1, _startingWidth: P2, _xOrigin: P3, _sharesLeftEdge: P4, _sharesRightEdge: P5, _accountsForWidgetSpace: P6, _itemsToFrames: P7): R;
     _divideAndCalculateLayoutOfItems_withAvailableSize_startingWidth_xOrigin_sharesLeftEdge_sharesRightEdge_accountsForWidgetSpace_itemsToFrames<R = void, P0 = unknown, P1 = CGSize, P2 = number, P3 = number, P4 = boolean, P5 = boolean, P6 = boolean, P7 = unknown>(__divideAndCalculateLayoutOfItems: P0, _withAvailableSize: P1, _startingWidth: P2, _xOrigin: P3, _sharesLeftEdge: P4, _sharesRightEdge: P5, _accountsForWidgetSpace: P6, _itemsToFrames: P7): R;
     _adjustedHeightForItem_availableHeight<R = number, P0 = unknown, P1 = number>(__adjustedHeightForItem: P0, _availableHeight: P1): R;
@@ -41,8 +41,8 @@ declare namespace cocoa {
     leadingWidgetWidth<R = number>(): R;
     setLeadingWidgetWidth<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTouchBarLayout<T = any> extends NSObject {
+  namespace NSTouchBarLayout {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSTouchBarLayout>(): R;
       new: <R = NSTouchBarLayout>() => R;
       toolbarLayoutWithVisualCenterX<R = unknown, P0 = number>(_toolbarLayoutWithVisualCenterX: P0): R;
@@ -51,4 +51,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTouchBarLayout: cocoa.classes.NSTouchBarLayout;
+declare const NSTouchBarLayout: cocoa.NSTouchBarLayout.CLASS;

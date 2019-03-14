@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSController<T = any> extends NSObject, NSCodingProtocol, NSEditorProtocol, NSEditorRegistrationProtocol {
+  export interface NSController<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol, NSEditorProtocol, NSEditorRegistrationProtocol {
     _refreshesAllModelKeys<R = boolean>(): R;
     _setRefreshesAllModelKeys<R = void, P0 = boolean>(__setRefreshesAllModelKeys: P0): R;
     _modelKeysTriggeringChangeNotificationsForDependentKey<R = unknown, P0 = unknown>(__modelKeysTriggeringChangeNotificationsForDependentKey: P0): R;
@@ -50,8 +50,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSController<T = any> extends NSObject, NSCodingProtocol, NSEditorProtocol, NSEditorRegistrationProtocol {
+  namespace NSController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol, NSEditorProtocol, NSEditorRegistrationProtocol {
       alloc<R = NSController>(): R;
       new: <R = NSController>() => R;
       _modelAndProxyKeys<R = unknown>(): R;
@@ -64,4 +64,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSController: cocoa.classes.NSController;
+declare const NSController: cocoa.NSController.CLASS;

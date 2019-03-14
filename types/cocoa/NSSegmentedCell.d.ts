@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSegmentedCell<T = any> extends NSActionCell {
+  export interface NSSegmentedCell<T0 = void, T1 = void, T2 = void> extends NSActionCell {
     _setSelectedSegmentBezelColor<R = void, P0 = unknown>(__setSelectedSegmentBezelColor: P0): R;
     _selectedSegmentBezelColor<R = unknown>(): R;
     _applicableTrackingModeForSegment<R = number, P0 = number>(__applicableTrackingModeForSegment: P0): R;
@@ -207,8 +207,8 @@ declare namespace cocoa {
     segmentCount<R = number>(): R;
     setSegmentCount<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSSegmentedCell<T = any> extends NSActionCell {
+  namespace NSSegmentedCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSActionCell {
       alloc<R = NSSegmentedCell>(): R;
       new: <R = NSSegmentedCell>() => R;
       _labelCell<R = unknown>(): R;
@@ -242,4 +242,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSSegmentedCell: cocoa.classes.NSSegmentedCell;
+declare const NSSegmentedCell: cocoa.NSSegmentedCell.CLASS;

@@ -1,7 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCTableCellView<T = any> extends NSTableCellView, NSMenuDelegateProtocol {
+  export interface BCTableCellView<T0 = void, T1 = void, T2 = void> extends NSTableCellView, NSMenuDelegateProtocol {
+    cxx_destruct<R = void>(): R;
     cancelOperation<R = void, P0 = unknown>(_cancelOperation: P0): R;
     drawDragImageInRect<R = void, P0 = CGRect>(_drawDragImageInRect: P0): R;
     renameNode<R = void>(): R;
@@ -63,12 +64,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface BCTableCellView<T = any> extends NSTableCellView, NSMenuDelegateProtocol {
+  namespace BCTableCellView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTableCellView, NSMenuDelegateProtocol {
       alloc<R = BCTableCellView>(): R;
       new: <R = BCTableCellView>() => R;
     }
   }
 }
 
-declare const BCTableCellView: cocoa.classes.BCTableCellView;
+declare const BCTableCellView: cocoa.BCTableCellView.CLASS;

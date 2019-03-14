@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSArrayDetailBinder<T = any> extends NSObjectDetailBinder {
+  export interface NSArrayDetailBinder<T0 = void, T1 = void, T2 = void> extends NSObjectDetailBinder {
     removeObjectsFromMasterArrayRelationshipAtIndexes_selectionMode<R = boolean, P0 = unknown, P1 = number>(_removeObjectsFromMasterArrayRelationshipAtIndexes: P0, _selectionMode: P1): R;
     removeObjectFromMasterArrayRelationshipAtIndex_selectionMode<R = boolean, P0 = number, P1 = number>(_removeObjectFromMasterArrayRelationshipAtIndex: P0, _selectionMode: P1): R;
     insertObjectsIntoMasterArrayRelationship_atIndexes_selectionMode<R = boolean, P0 = unknown, P1 = unknown, P2 = number>(_insertObjectsIntoMasterArrayRelationship: P0, _atIndexes: P1, _selectionMode: P2): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     setSelectsAllWhenSettingContent<R = void, P0 = boolean>(_setSelectsAllWhenSettingContent: P0): R;
     _handlesSelectAll<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSArrayDetailBinder<T = any> extends NSObjectDetailBinder {
+  namespace NSArrayDetailBinder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectDetailBinder {
       alloc<R = NSArrayDetailBinder>(): R;
       new: <R = NSArrayDetailBinder>() => R;
     }
   }
 }
 
-declare const NSArrayDetailBinder: cocoa.classes.NSArrayDetailBinder;
+declare const NSArrayDetailBinder: cocoa.NSArrayDetailBinder.CLASS;

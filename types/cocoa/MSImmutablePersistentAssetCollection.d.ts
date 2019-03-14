@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutablePersistentAssetCollection<T = any> extends MSImmutableAssetCollection {}
-  namespace classes {
-    export interface MSImmutablePersistentAssetCollection<T = any> extends MSImmutableAssetCollection {
+  export interface MSImmutablePersistentAssetCollection<T0 = void, T1 = void, T2 = void> extends MSImmutableAssetCollection {}
+  namespace MSImmutablePersistentAssetCollection {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSImmutableAssetCollection {
       alloc<R = MSImmutablePersistentAssetCollection>(): R;
       new: <R = MSImmutablePersistentAssetCollection>() => R;
     }
   }
 }
 
-declare const MSImmutablePersistentAssetCollection: cocoa.classes.MSImmutablePersistentAssetCollection;
+declare const MSImmutablePersistentAssetCollection: cocoa.MSImmutablePersistentAssetCollection.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSViewController<T = any> extends NSResponder, NSExtensionRequestHandlingProtocol, NSNibFinishedLoadingDependentProtocol, NSEditorProtocol, NSSeguePerformingProtocol, NSUserInterfaceItemIdentificationProtocol {
+  export interface NSViewController<T0 = void, T1 = void, T2 = void> extends NSResponder, NSExtensionRequestHandlingProtocol, NSNibFinishedLoadingDependentProtocol, NSEditorProtocol, NSSeguePerformingProtocol, NSUserInterfaceItemIdentificationProtocol {
     endAppearanceTransition<R = void>(): R;
     _sendViewDidDisappear<R = void>(): R;
     _sendViewDidAppear<R = void>(): R;
@@ -138,24 +138,27 @@ declare namespace cocoa {
     description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
-    // + NSViewController(BCPopover,Chocolat,MSInspectorController,MSInspectorSectionProvider,MSNormalInspector):
+    // + NSViewController(BCPopover): 
     presentViewController_asBCPopoverRelativeToView_preferredEdge_screenEdgeBehaviour<R = unknown, P0 = unknown, P1 = unknown, P2 = number, P3 = number>(_presentViewController: P0, _asBCPopoverRelativeToView: P1, _preferredEdge: P2, _screenEdgeBehaviour: P3): R;
+    // + NSViewController(Chocolat): 
     ensureLoaded<R = void>(): R;
     rootViewController<R = unknown>(): R;
     targetViewControllerForAction_sender<R = unknown, P0 = string, P1 = unknown>(_targetViewControllerForAction: P0, _sender: P1): R;
+    // + NSViewController(MSInspectorController): 
     inspectorController<R = unknown>(): R;
+    // + NSViewController(MSInspectorSectionProvider): 
     sections<R = unknown>(): R;
+    // + NSViewController(MSNormalInspector): 
     reloadInspectorStack<R = void, P0 = unknown>(_reloadInspectorStack: P0): R;
   }
-  namespace classes {
-    export interface NSViewController<T = any> extends NSResponder, NSExtensionRequestHandlingProtocol, NSNibFinishedLoadingDependentProtocol, NSEditorProtocol, NSSeguePerformingProtocol, NSUserInterfaceItemIdentificationProtocol {
+  namespace NSViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSResponder, NSExtensionRequestHandlingProtocol, NSNibFinishedLoadingDependentProtocol, NSEditorProtocol, NSSeguePerformingProtocol, NSUserInterfaceItemIdentificationProtocol {
       alloc<R = NSViewController>(): R;
       new: <R = NSViewController>() => R;
       requiresConstraintBasedLayout<R = boolean>(): R;
-      // + NSViewController(BCPopover,Chocolat,MSInspectorController,MSInspectorSectionProvider,MSNormalInspector):
-      
-    }
+  
+  }
   }
 }
 
-declare const NSViewController: cocoa.classes.NSViewController;
+declare const NSViewController: cocoa.NSViewController.CLASS;

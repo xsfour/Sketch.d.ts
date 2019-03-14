@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorSpaceColor<T = any> extends NSColor {
+  export interface NSColorSpaceColor<T0 = void, T1 = void, T2 = void> extends NSColor {
     whiteComponent<R = number>(): R;
     blackComponent<R = number>(): R;
     yellowComponent<R = number>(): R;
@@ -26,8 +26,8 @@ declare namespace cocoa {
     initWithColorSpace_components_count<R = unknown, P0 = unknown, P1 = number, P2 = number>(_initWithColorSpace: P0, _components: P1, _count: P2): R;
     _release<R = void>(): R;
   }
-  namespace classes {
-    export interface NSColorSpaceColor<T = any> extends NSColor {
+  namespace NSColorSpaceColor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSColor {
       alloc<R = NSColorSpaceColor>(): R;
       new: <R = NSColorSpaceColor>() => R;
       newWithCoder_zone<R = unknown, P0 = unknown, P1 = _NSZone>(_newWithCoder: P0, _zone: P1): R;
@@ -37,4 +37,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSColorSpaceColor: cocoa.classes.NSColorSpaceColor;
+declare const NSColorSpaceColor: cocoa.NSColorSpaceColor.CLASS;

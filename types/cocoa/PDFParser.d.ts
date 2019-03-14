@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface PDFParser<T = any> extends NSObject, PDFParserProtocol {
+  export interface PDFParser<T0 = void, T1 = void, T2 = void> extends NSObject, PDFParserProtocol {
     cxx_destruct<R = void>(): R;
     parseWithProgress_isPasted<R = void, P0 = CDUnknownBlockType, P1 = boolean>(_parseWithProgress: P0, _isPasted: P1): R;
     document<R = CGPDFDocument>(): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface PDFParser<T = any> extends NSObject, PDFParserProtocol {
+  namespace PDFParser {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, PDFParserProtocol {
       alloc<R = PDFParser>(): R;
       new: <R = PDFParser>() => R;
     }
   }
 }
 
-declare const PDFParser: cocoa.classes.PDFParser;
+declare const PDFParser: cocoa.PDFParser.CLASS;

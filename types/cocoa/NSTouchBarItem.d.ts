@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarItem<T = any> extends NSObject, NSCodingProtocol {
+  export interface NSTouchBarItem<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
     description<R = unknown>(): R;
     preferredZOrder<R = number>(): R;
     _contentClippingSize<R = CGSize>(): R;
@@ -31,8 +31,8 @@ declare namespace cocoa {
     preferredPopoverTransposerClass<R = unknown>(): R;
     preferredPopoverTransposerPriority<R = number>(): R;
   }
-  namespace classes {
-    export interface NSTouchBarItem<T = any> extends NSObject, NSCodingProtocol {
+  namespace NSTouchBarItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
       alloc<R = NSTouchBarItem>(): R;
       new: <R = NSTouchBarItem>() => R;
       keyPathsForValuesAffectingView<R = unknown>(): R;
@@ -45,4 +45,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTouchBarItem: cocoa.classes.NSTouchBarItem;
+declare const NSTouchBarItem: cocoa.NSTouchBarItem.CLASS;

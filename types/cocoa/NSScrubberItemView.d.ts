@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScrubberItemView<T = any> extends NSScrubberArrangedView {
+  export interface NSScrubberItemView<T0 = void, T1 = void, T2 = void> extends NSScrubberArrangedView {
     _layoutMaskLayers<R = void>(): R;
     _createMaskLayersIfNeeded<R = void>(): R;
     _clearMaskLayers<R = void>(): R;
@@ -24,8 +24,8 @@ declare namespace cocoa {
     selectionBackgroundView<R = NSScrubberSelectionView>(): R;
     setSelectionBackgroundView<R = void, P0 = NSScrubberSelectionView>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSScrubberItemView<T = any> extends NSScrubberArrangedView {
+  namespace NSScrubberItemView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSScrubberArrangedView {
       alloc<R = NSScrubberItemView>(): R;
       new: <R = NSScrubberItemView>() => R;
       createTouchBarColorListPickerSelectionOverlayView<R = unknown>(): R;
@@ -33,4 +33,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSScrubberItemView: cocoa.classes.NSScrubberItemView;
+declare const NSScrubberItemView: cocoa.NSScrubberItemView.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSortDescriptor<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
+  export interface NSSortDescriptor<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
     _isEqualToSortDescriptor<R = boolean, P0 = unknown>(__isEqualToSortDescriptor: P0): R;
     compareObject_toObject<R = number, P0 = unknown, P1 = unknown>(_compareObject: P0, _toObject: P1): R;
     description<R = unknown>(): R;
@@ -24,8 +24,8 @@ declare namespace cocoa {
     ascending<R = boolean>(): R;
     key<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSSortDescriptor<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
+  namespace NSSortDescriptor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
       alloc<R = NSSortDescriptor>(): R;
       new: <R = NSSortDescriptor>() => R;
       _defaultSelectorName<R = unknown>(): R;
@@ -37,4 +37,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSSortDescriptor: cocoa.classes.NSSortDescriptor;
+declare const NSSortDescriptor: cocoa.NSSortDescriptor.CLASS;

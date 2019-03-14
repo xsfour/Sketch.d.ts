@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSBundle<T = any> extends NSObject {
+  export interface NSBundle<T0 = void, T1 = void, T2 = void> extends NSObject {
     preflightAndReturnError<R = boolean, P0 = unknown>(_preflightAndReturnError: P0): R;
     pathsForResourcesOfType_inDirectory_forLanguage<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_pathsForResourcesOfType: P0, _inDirectory: P1, _forLanguage: P2): R;
     pathForResource_ofType_inDirectory_forLanguage<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown>(_pathForResource: P0, _ofType: P1, _inDirectory: P2, _forLanguage: P3): R;
@@ -65,20 +65,24 @@ declare namespace cocoa {
     bundleURL<R = NSURL>(): R;
     bundlePath<R = NSString>(): R;
     loaded<R = boolean>(): R;
-    // + NSBundle(NSBundleHelpExtension,NSBundleImageExtension,NSBundleSoundExtensions,NSNibLoading,NSNibLoadingInternal):
+    // + NSBundle(NSBundleHelpExtension): 
     contextHelpForKey<R = unknown, P0 = unknown>(_contextHelpForKey: P0): R;
+    // + NSBundle(NSBundleImageExtension): 
     imageForResource<R = unknown, P0 = unknown>(_imageForResource: P0): R;
     _newImageForResourceWithProspectiveName_imageClass<R = unknown, P0 = unknown, P1 = unknown>(__newImageForResourceWithProspectiveName: P0, _imageClass: P1): R;
     pathForImageResource<R = unknown, P0 = unknown>(_pathForImageResource: P0): R;
     URLForImageResource<R = unknown, P0 = unknown>(_URLForImageResource: P0): R;
     URLsForImageResource<R = unknown, P0 = unknown>(_URLsForImageResource: P0): R;
+    // + NSBundle(NSBundleSoundExtensions): 
     pathForSoundResource<R = unknown, P0 = unknown>(_pathForSoundResource: P0): R;
+    // + NSBundle(NSNibLoading): 
     loadNibNamed_owner_topLevelObjects<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown>(_loadNibNamed: P0, _owner: P1, _topLevelObjects: P2): R;
     loadNibFile_externalNameTable_withZone<R = boolean, P0 = unknown, P1 = unknown, P2 = _NSZone>(_loadNibFile: P0, _externalNameTable: P1, _withZone: P2): R;
+    // + NSBundle(NSNibLoadingInternal): 
     loadNibFile_externalNameTable_options_withZone<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown, P3 = _NSZone>(_loadNibFile: P0, _externalNameTable: P1, _options: P2, _withZone: P3): R;
   }
-  namespace classes {
-    export interface NSBundle<T = any> extends NSObject {
+  namespace NSBundle {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSBundle>(): R;
       new: <R = NSBundle>() => R;
       preferredLocalizationsFromArray_forPreferences<R = unknown, P0 = unknown, P1 = unknown>(_preferredLocalizationsFromArray: P0, _forPreferences: P1): R;
@@ -97,10 +101,11 @@ declare namespace cocoa {
       URLForResource_withExtension_subdirectory_inBundleWithURL<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown>(_URLForResource: P0, _withExtension: P1, _subdirectory: P2, _inBundleWithURL: P3): R;
       findBundleResourceURLsCallingMethod_baseURL_passingTest<R = unknown, P0 = string, P1 = unknown, P2 = CDUnknownBlockType>(_findBundleResourceURLsCallingMethod: P0, _baseURL: P1, _passingTest: P2): R;
       findBundleResources_callingMethod_directory_languages_name_types_limit<R = unknown, P0 = unknown, P1 = string, P2 = unknown, P3 = unknown, P4 = unknown, P5 = unknown, P6 = number>(_findBundleResources: P0, _callingMethod: P1, _directory: P2, _languages: P3, _name: P4, _types: P5, _limit: P6): R;
-      // + NSBundle(NSBundleHelpExtension,NSBundleImageExtension,NSBundleSoundExtensions,NSNibLoading,NSNibLoadingInternal):
+      // + NSBundle(NSNibLoading): 
       _loadNibFile_nameTable_options_withZone_ownerBundle<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown, P3 = _NSZone, P4 = unknown>(__loadNibFile: P0, _nameTable: P1, _options: P2, _withZone: P3, _ownerBundle: P4): R;
       loadNibNamed_owner<R = boolean, P0 = unknown, P1 = unknown>(_loadNibNamed: P0, _owner: P1): R;
       load<R = void>(): R;
+      // + NSBundle(NSNibLoadingInternal): 
       _loadNibFile_externalNameTable_options_withZone<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown, P3 = _NSZone>(__loadNibFile: P0, _externalNameTable: P1, _options: P2, _withZone: P3): R;
       currentNibLocalizedStringsBundle<R = unknown>(): R;
       popNibLocalizedStringsBundle<R = void>(): R;
@@ -117,4 +122,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSBundle: cocoa.classes.NSBundle;
+declare const NSBundle: cocoa.NSBundle.CLASS;

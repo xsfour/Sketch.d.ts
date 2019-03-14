@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSVisualTabPickerDelegateProtocol<T = any> extends NSObjectProtocol {
+  export interface NSVisualTabPickerDelegateProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     visualTabPickerControllerDidEndHiding<R = void, P0 = NSVisualTabPickerRootViewController>(_visualTabPickerControllerDidEndHiding: P0): R;
     visualTabPickerControllerDidBeginHiding<R = void, P0 = NSVisualTabPickerRootViewController>(_visualTabPickerControllerDidBeginHiding: P0): R;
     visualTabPickerControllerWillClose<R = void, P0 = NSVisualTabPickerRootViewController>(_visualTabPickerControllerWillClose: P0): R;
@@ -14,7 +14,7 @@ declare namespace cocoa {
     frameForVisualTabPickerController<R = CGRect, P0 = NSVisualTabPickerRootViewController>(_frameForVisualTabPickerController: P0): R;
     visualTabPicker_thumbnailViewForTabItem<R = NSView, P0 = NSVisualTabPickerRootViewController, P1 = NSTabBarItem>(_visualTabPicker: P0, _thumbnailViewForTabItem: P1): R;
   }
-  namespace classes {
-    export interface NSVisualTabPickerDelegateProtocol<T = any> extends NSObjectProtocol {  }
+  namespace NSVisualTabPickerDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

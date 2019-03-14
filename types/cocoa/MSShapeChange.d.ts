@@ -1,12 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSShapeChange<T = any> extends NSObject {
+  export interface MSShapeChange<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     executeWithContext<R = void, P0 = unknown>(_executeWithContext: P0): R;
   }
-  namespace classes {
-    export interface MSShapeChange<T = any> extends NSObject {
+  namespace MSShapeChange {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSShapeChange>(): R;
       new: <R = MSShapeChange>() => R;
       customActionWithBlock<R = unknown, P0 = CDUnknownBlockType>(_customActionWithBlock: P0): R;
@@ -25,4 +25,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSShapeChange: cocoa.classes.MSShapeChange;
+declare const MSShapeChange: cocoa.MSShapeChange.CLASS;

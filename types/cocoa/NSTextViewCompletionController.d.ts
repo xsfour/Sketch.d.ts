@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTextViewCompletionController<T = any> extends NSObject, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol {
+  export interface NSTextViewCompletionController<T0 = void, T1 = void, T2 = void> extends NSObject, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol {
     tableAction<R = void, P0 = unknown>(_tableAction: P0): R;
     sessionTerminatingEvent<R = unknown>(): R;
     completionWindow<R = unknown>(): R;
@@ -21,8 +21,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSTextViewCompletionController<T = any> extends NSObject, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol {
+  namespace NSTextViewCompletionController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol {
       alloc<R = NSTextViewCompletionController>(): R;
       new: <R = NSTextViewCompletionController>() => R;
       sharedController<R = unknown>(): R;
@@ -30,4 +30,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTextViewCompletionController: cocoa.classes.NSTextViewCompletionController;
+declare const NSTextViewCompletionController: cocoa.NSTextViewCompletionController.CLASS;

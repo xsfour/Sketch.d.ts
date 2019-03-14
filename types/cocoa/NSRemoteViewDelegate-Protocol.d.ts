@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSRemoteViewDelegateProtocol<T = any> {
+  export interface NSRemoteViewDelegateProtocol<T0 = void, T1 = void, T2 = void> {
     constraintsDidChangeInFrameOfAccessoryWindowOfView<R = void, P0 = NSRemoteView>(_constraintsDidChangeInFrameOfAccessoryWindowOfView: P0): R;
     accessoryWindowOfViewWillUpdateConstraintsIfNeeded<R = void, P0 = NSRemoteView>(_accessoryWindowOfViewWillUpdateConstraintsIfNeeded: P0): R;
     windowOfViewShouldResignKey<R = boolean, P0 = NSRemoteView>(_windowOfViewShouldResignKey: P0): R;
@@ -20,7 +20,7 @@ declare namespace cocoa {
     serviceViewControllerInterface<R = NSXPCInterface>(): R;
     shouldRetainExportedObject<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSRemoteViewDelegateProtocol<T = any> {  }
+  namespace NSRemoteViewDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

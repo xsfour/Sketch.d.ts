@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSStandardKeyBindingResponding<T = any> {}
-  namespace classes {
-    export interface NSStandardKeyBindingResponding<T = any> {  }
+  export interface NSStandardKeyBindingResponding<T0 = void, T1 = void, T2 = void> {}
+  namespace NSStandardKeyBindingResponding {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSStandardKeyBindingResponding: cocoa.classes.NSStandardKeyBindingResponding;
+declare const NSStandardKeyBindingResponding: cocoa.NSStandardKeyBindingResponding.CLASS;

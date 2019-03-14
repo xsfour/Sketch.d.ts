@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSGradientView<T = any> extends NSView {
+  export interface MSGradientView<T0 = void, T1 = void, T2 = void> extends NSView {
     cxx_destruct<R = void>(): R;
     awakeFromNib<R = void>(): R;
     prepareForDisplay<R = void>(): R;
@@ -27,12 +27,12 @@ declare namespace cocoa {
     topColour<R = NSColor>(): R;
     setTopColour<R = void, P0 = NSColor>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSGradientView<T = any> extends NSView {
+  namespace MSGradientView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = MSGradientView>(): R;
       new: <R = MSGradientView>() => R;
     }
   }
 }
 
-declare const MSGradientView: cocoa.classes.MSGradientView;
+declare const MSGradientView: cocoa.MSGradientView.CLASS;

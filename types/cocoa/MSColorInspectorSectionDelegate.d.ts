@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSColorInspectorSectionDelegate<T = any> {}
-  namespace classes {
-    export interface MSColorInspectorSectionDelegate<T = any> {  }
+  export interface MSColorInspectorSectionDelegate<T0 = void, T1 = void, T2 = void> {}
+  namespace MSColorInspectorSectionDelegate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const MSColorInspectorSectionDelegate: cocoa.classes.MSColorInspectorSectionDelegate;
+declare const MSColorInspectorSectionDelegate: cocoa.MSColorInspectorSectionDelegate.CLASS;

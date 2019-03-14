@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLayerContentsFacet<T = any> extends NSObject {
+  export interface NSLayerContentsFacet<T0 = void, T1 = void, T2 = void> extends NSObject {
     totalSize<R = number>(): R;
     dropToImage<R = void>(): R;
     dealloc<R = void>(): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     contents<R = unknown>(): R;
     setContents<R = void, P0 = unknown>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSLayerContentsFacet<T = any> extends NSObject {
+  namespace NSLayerContentsFacet {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSLayerContentsFacet>(): R;
       new: <R = NSLayerContentsFacet>() => R;
     }
   }
 }
 
-declare const NSLayerContentsFacet: cocoa.classes.NSLayerContentsFacet;
+declare const NSLayerContentsFacet: cocoa.NSLayerContentsFacet.CLASS;

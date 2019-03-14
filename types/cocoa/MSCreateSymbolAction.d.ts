@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSCreateSymbolAction<T = any> extends MSDocumentAction {
+  export interface MSCreateSymbolAction<T0 = void, T1 = void, T2 = void> extends MSDocumentAction {
     hasDynamicTitle<R = boolean>(): R;
     historyMomentTitle<R = unknown>(): R;
     tooltip<R = unknown>(): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     validate<R = boolean>(): R;
     createSymbolAction<R = void, P0 = unknown>(_createSymbolAction: P0): R;
   }
-  namespace classes {
-    export interface MSCreateSymbolAction<T = any> extends MSDocumentAction {
+  namespace MSCreateSymbolAction {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSDocumentAction {
       alloc<R = MSCreateSymbolAction>(): R;
       new: <R = MSCreateSymbolAction>() => R;
     }
   }
 }
 
-declare const MSCreateSymbolAction: cocoa.classes.MSCreateSymbolAction;
+declare const MSCreateSymbolAction: cocoa.MSCreateSymbolAction.CLASS;

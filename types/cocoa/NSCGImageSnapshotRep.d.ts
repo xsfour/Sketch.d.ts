@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCGImageSnapshotRep<T = any> extends NSImageRep {
+  export interface NSCGImageSnapshotRep<T0 = void, T1 = void, T2 = void> extends NSImageRep {
     hasAlpha<R = boolean>(): R;
     pixelsHigh<R = number>(): R;
     pixelsWide<R = number>(): R;
@@ -15,8 +15,8 @@ declare namespace cocoa {
     initWithCGImage_snapshotContextSignature<R = unknown, P0 = CGImage, P1 = unknown>(_initWithCGImage: P0, _snapshotContextSignature: P1): R;
     _snapshotRep_commonSetupWithWithCGImage_snapshotContextSignature<R = boolean, P0 = CGImage, P1 = unknown>(__snapshotRep_commonSetupWithWithCGImage: P0, _snapshotContextSignature: P1): R;
   }
-  namespace classes {
-    export interface NSCGImageSnapshotRep<T = any> extends NSImageRep {
+  namespace NSCGImageSnapshotRep {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSImageRep {
       alloc<R = NSCGImageSnapshotRep>(): R;
       new: <R = NSCGImageSnapshotRep>() => R;
       unlockFocusCreatingCGImageSnapshotRep<R = unknown>(): R;
@@ -30,4 +30,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSCGImageSnapshotRep: cocoa.classes.NSCGImageSnapshotRep;
+declare const NSCGImageSnapshotRep: cocoa.NSCGImageSnapshotRep.CLASS;

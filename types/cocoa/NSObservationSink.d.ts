@@ -1,14 +1,14 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSObservationSink<T = any> extends NSObject, NSObserverProtocol {
+  export interface NSObservationSink<T0 = void, T1 = void, T2 = void> extends NSObject, NSObserverProtocol {
     debugDescription<R = NSString>(): R;
     description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSObservationSink<T = any> extends NSObject, NSObserverProtocol {
+  namespace NSObservationSink {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSObserverProtocol {
       alloc<R = NSObservationSink>(): R;
       new: <R = NSObservationSink>() => R;
       handleErrorsWithBlock<R = unknown, P0 = CDUnknownBlockType>(_handleErrorsWithBlock: P0): R;
@@ -17,4 +17,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSObservationSink: cocoa.classes.NSObservationSink;
+declare const NSObservationSink: cocoa.NSObservationSink.CLASS;

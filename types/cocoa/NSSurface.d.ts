@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSurface<T = any> extends NSObject {
+  export interface NSSurface<T0 = void, T1 = void, T2 = void> extends NSObject {
     displayIfNeeded<R = void>(): R;
     setNeedsDisplay<R = void>(): R;
     needsDisplay<R = boolean>(): R;
@@ -64,12 +64,12 @@ declare namespace cocoa {
     initWithView<R = unknown, P0 = unknown>(_initWithView: P0): R;
     description<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSSurface<T = any> extends NSObject {
+  namespace NSSurface {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSSurface>(): R;
       new: <R = NSSurface>() => R;
     }
   }
 }
 
-declare const NSSurface: cocoa.classes.NSSurface;
+declare const NSSurface: cocoa.NSSurface.CLASS;

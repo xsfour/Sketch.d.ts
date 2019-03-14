@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSString<T = any> extends NSObject, NSItemProviderReadingProtocol, NSItemProviderWritingProtocol, NSCopyingProtocol, NSMutableCopyingProtocol, NSSecureCodingProtocol {
+  export interface NSString<T0 = void, T1 = void, T2 = void> extends NSObject, NSItemProviderReadingProtocol, NSItemProviderWritingProtocol, NSCopyingProtocol, NSMutableCopyingProtocol, NSSecureCodingProtocol {
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     _allowsDirectEncoding<R = boolean>(): R;
@@ -240,17 +240,23 @@ declare namespace cocoa {
     stringByRemovingPercentEncoding<R = NSString>(): R;
     debugDescription<R = NSString>(): R;
     superclass<R = unknown>(): R;
-    // + NSString(NSPasteboardSupport,NSSafariPrefixThingy,NSStringKitExtensions,NSStringTextExtras,NSTextFinderAdditions,MSBaseArchiver,Math,ModelSupport,NSIntegerString,NSString_Color,SHA1,SVG,SVGTransformImporter,Slug,TreeAsDictionarySupport,UIStringDrawingCompatibility,WordRanges):
+    // + NSString(NSPasteboardSupport): 
     pasteboardPropertyListForType<R = unknown, P0 = unknown>(_pasteboardPropertyListForType: P0): R;
     writableTypesForPasteboard<R = unknown, P0 = unknown>(_writableTypesForPasteboard: P0): R;
     initWithPasteboardPropertyList_ofType<R = unknown, P0 = unknown, P1 = unknown>(_initWithPasteboardPropertyList: P0, _ofType: P1): R;
+    // + NSString(NSSafariPrefixThingy): 
     _hasLocalizedCaseInsensitivePrefix<R = boolean, P0 = unknown>(__hasLocalizedCaseInsensitivePrefix: P0): R;
+    // + NSString(NSStringKitExtensions): 
     stringWithoutAmpersand<R = unknown>(): R;
+    // + NSString(NSStringTextExtras): 
     rangeOfGraphicalSegmentAtIndex<R = _NSRange, P0 = number>(_rangeOfGraphicalSegmentAtIndex: P0): R;
     _endOfParagraphAtIndex<R = number, P0 = number>(__endOfParagraphAtIndex: P0): R;
+    // + NSString(NSTextFinderAdditions): 
     _textfinder_firstMatchForRegularExpression_inRange<R = _NSRange, P0 = unknown, P1 = _NSRange>(__textfinder_firstMatchForRegularExpression: P0, _inRange: P1): R;
+    // + NSString(MSBaseArchiver): 
     initWithUnarchiver<R = unknown, P0 = unknown>(_initWithUnarchiver: P0): R;
     encodeWithArchiver<R = void, P0 = unknown>(_encodeWithArchiver: P0): R;
+    // + NSString(Math): 
     mathSet<R = unknown>(): R;
     containsMathSymbols<R = boolean>(): R;
     mathPrefix<R = unknown>(): R;
@@ -260,32 +266,44 @@ declare namespace cocoa {
     stringBySanitizingForNumberFormatter<R = unknown, P0 = unknown>(_stringBySanitizingForNumberFormatter: P0): R;
     stringByCalculatingPercentagesInContextOfSize_onAxis<R = unknown, P0 = CGRect, P1 = number>(_stringByCalculatingPercentagesInContextOfSize: P0, _onAxis: P1): R;
     numberValueInContextOfSize_onAxis<R = unknown, P0 = CGRect, P1 = number>(_numberValueInContextOfSize: P0, _onAxis: P1): R;
+    // + NSString(ModelSupport): 
     hasDefaultValues<R = boolean>(): R;
+    // + NSString(NSString_Color): 
     colorFromHSL<R = unknown>(): R;
     sRGBColorFromHexColor<R = unknown>(): R;
     colorFromHex<R = unknown>(): R;
     colorFromRGB<R = unknown, P0 = unknown>(_colorFromRGB: P0): R;
     colorValue<R = unknown>(): R;
+    // + NSString(SHA1): 
     sha1<R = unknown>(): R;
+    // + NSString(SVG): 
     svgURL<R = unknown>(): R;
+    // + NSString(SVGTransformImporter): 
     transformTrimmedName<R = unknown>(): R;
+    // + NSString(Slug): 
     uniqueSlugUsingEarlierSlugs_atIndex<R = unknown, P0 = unknown, P1 = number>(_uniqueSlugUsingEarlierSlugs: P0, _atIndex: P1): R;
     uniqueSlugUsingEarlierSlugs<R = unknown, P0 = unknown>(_uniqueSlugUsingEarlierSlugs: P0): R;
+    // + NSString(TreeAsDictionarySupport): 
     treeAsDictionary<R = unknown>(): R;
+    // + NSString(UIStringDrawingCompatibility): 
     sizeWithFont<R = CGSize, P0 = unknown>(_sizeWithFont: P0): R;
     drawCenteredAtPoint_withFont_color<R = void, P0 = CGPoint, P1 = unknown, P2 = unknown>(_drawCenteredAtPoint: P0, _withFont: P1, _color: P2): R;
     drawAtPoint_withFont<R = void, P0 = CGPoint, P1 = unknown>(_drawAtPoint: P0, _withFont: P1): R;
+    // + NSString(WordRanges): 
     wordRanges<R = unknown>(): R;
     enumerateWordRanges<R = void, P0 = CDUnknownBlockType>(_enumerateWordRanges: P0): R;
+    // + NSString(NSPasteboardSupport):
     debugDescription<R = NSString>(): R;
     description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
+    // + NSString(MSBaseArchiver):
     archiveReferenceIdentifier_bc<R = NSString>(): R;
+    // + NSString(Slug):
     slug<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSString<T = any> extends NSObject, NSItemProviderReadingProtocol, NSItemProviderWritingProtocol, NSCopyingProtocol, NSMutableCopyingProtocol, NSSecureCodingProtocol {
+  namespace NSString {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSItemProviderReadingProtocol, NSItemProviderWritingProtocol, NSCopyingProtocol, NSMutableCopyingProtocol, NSSecureCodingProtocol {
       alloc<R = NSString>(): R;
       new: <R = NSString>() => R;
       stringWithContentsOfFile_usedEncoding_error<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_stringWithContentsOfFile: P0, _usedEncoding: P1, _error: P2): R;
@@ -321,13 +339,19 @@ declare namespace cocoa {
       availableStringEncodings<R = number>(): R;
       defaultCStringEncoding<R = number>(): R;
       _web_stringRepresentationForBytes<R = unknown, P0 = number>(__web_stringRepresentationForBytes: P0): R;
-      // + NSString(NSPasteboardSupport,NSSafariPrefixThingy,NSStringKitExtensions,NSStringTextExtras,NSTextFinderAdditions,MSBaseArchiver,Math,ModelSupport,NSIntegerString,NSString_Color,SHA1,SVG,SVGTransformImporter,Slug,TreeAsDictionarySupport,UIStringDrawingCompatibility,WordRanges):
+      // + NSString(NSPasteboardSupport): 
       readableTypesForPasteboard<R = unknown, P0 = unknown>(_readableTypesForPasteboard: P0): R;
+      // + NSString(JSTExtras): 
+      stringWithUUID<R = unknown>(): R;
+      // + NSString(Math): 
       mathStringWithOperand1_operator_operand2<R = unknown, P0 = number, P1 = unknown, P2 = number>(_mathStringWithOperand1: P0, _operator: P1, _operand2: P2): R;
       nativeDecimalSeparator<R = unknown>(): R;
       numberFormatter<R = unknown>(): R;
+      // + NSString(NSIntegerString): 
       stringWithInt_suffix<R = unknown, P0 = number, P1 = unknown>(_stringWithInt: P0, _suffix: P1): R;
+      // + NSString(NSString_Color): 
       staticColorDictionary<R = unknown>(): R;
+      // + NSString(SVG): 
       svgStringWithPercentageFractionalValue<R = unknown, P0 = number>(_svgStringWithPercentageFractionalValue: P0): R;
       svgStringWithPercentageValue<R = unknown, P0 = number>(_svgStringWithPercentageValue: P0): R;
       svgStringWithNumberValue<R = unknown, P0 = number>(_svgStringWithNumberValue: P0): R;
@@ -336,4 +360,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSString: cocoa.classes.NSString;
+declare const NSString: cocoa.NSString.CLASS;

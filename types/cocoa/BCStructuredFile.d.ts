@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCStructuredFile<T = any> extends NSObject {
+  export interface BCStructuredFile<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     checkDatabaseIsOpen<R = boolean, P0 = unknown>(_checkDatabaseIsOpen: P0): R;
     readMetaData<R = boolean, P0 = unknown>(_readMetaData: P0): R;
@@ -18,8 +18,8 @@ declare namespace cocoa {
     url<R = NSURL>(): R;
     setUrl<R = void, P0 = NSURL>(_v: P0): R;
   }
-  namespace classes {
-    export interface BCStructuredFile<T = any> extends NSObject {
+  namespace BCStructuredFile {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = BCStructuredFile>(): R;
       new: <R = BCStructuredFile>() => R;
       errorWithCode<R = unknown, P0 = number>(_errorWithCode: P0): R;
@@ -27,4 +27,4 @@ declare namespace cocoa {
   }
 }
 
-declare const BCStructuredFile: cocoa.classes.BCStructuredFile;
+declare const BCStructuredFile: cocoa.BCStructuredFile.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSColorInspectorSectionGradient<T = any> extends MSColorInspectorSection, MSGradientEventHandlerDelegateProtocol, MSGradientBarViewDelegateProtocol {
+  export interface MSColorInspectorSectionGradient<T0 = void, T1 = void, T2 = void> extends MSColorInspectorSection, MSGradientEventHandlerDelegateProtocol, MSGradientBarViewDelegateProtocol {
     closeGradientHandler<R = void>(): R;
     gradients<R = unknown>(): R;
     rotateGradientAction<R = void, P0 = unknown>(_rotateGradientAction: P0): R;
@@ -26,12 +26,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSColorInspectorSectionGradient<T = any> extends MSColorInspectorSection, MSGradientEventHandlerDelegateProtocol, MSGradientBarViewDelegateProtocol {
+  namespace MSColorInspectorSectionGradient {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSColorInspectorSection, MSGradientEventHandlerDelegateProtocol, MSGradientBarViewDelegateProtocol {
       alloc<R = MSColorInspectorSectionGradient>(): R;
       new: <R = MSColorInspectorSectionGradient>() => R;
     }
   }
 }
 
-declare const MSColorInspectorSectionGradient: cocoa.classes.MSColorInspectorSectionGradient;
+declare const MSColorInspectorSectionGradient: cocoa.MSColorInspectorSectionGradient.CLASS;

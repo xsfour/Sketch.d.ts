@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDocumentAction<T = any> extends MSAction, NSMenuDelegateProtocol, NSTouchBarDelegateProtocol {
+  export interface MSDocumentAction<T0 = void, T1 = void, T2 = void> extends MSAction, NSMenuDelegateProtocol, NSTouchBarDelegateProtocol {
     refreshOverlay<R = void>(): R;
     contentDrawView<R = unknown>(): R;
     currentPage<R = unknown>(): R;
@@ -36,12 +36,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSDocumentAction<T = any> extends MSAction, NSMenuDelegateProtocol, NSTouchBarDelegateProtocol {
+  namespace MSDocumentAction {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSAction, NSMenuDelegateProtocol, NSTouchBarDelegateProtocol {
       alloc<R = MSDocumentAction>(): R;
       new: <R = MSDocumentAction>() => R;
     }
   }
 }
 
-declare const MSDocumentAction: cocoa.classes.MSDocumentAction;
+declare const MSDocumentAction: cocoa.MSDocumentAction.CLASS;

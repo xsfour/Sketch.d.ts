@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLockingProtocol<T = any> {
+  export interface NSLockingProtocol<T0 = void, T1 = void, T2 = void> {
     unlock<R = void>(): R;
     lock<R = void>(): R;
   }
-  namespace classes {
-    export interface NSLockingProtocol<T = any> {  }
+  namespace NSLockingProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

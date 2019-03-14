@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSItemProviderRepresentation<T = any> extends NSObject {
+  export interface NSItemProviderRepresentation<T0 = void, T1 = void, T2 = void> extends NSObject {
     loadOpenInPlaceWithOptions_completionHandler<R = unknown, P0 = unknown, P1 = CDUnknownBlockType>(_loadOpenInPlaceWithOptions: P0, _completionHandler: P1): R;
     loadOpenInPlaceWithOptions_v2_completionHandler<R = unknown, P0 = unknown, P1 = CDUnknownBlockType>(_loadOpenInPlaceWithOptions_v2: P0, _completionHandler: P1): R;
     loadFileCopyWithOptions_completionHandler<R = unknown, P0 = unknown, P1 = CDUnknownBlockType>(_loadFileCopyWithOptions: P0, _completionHandler: P1): R;
@@ -24,12 +24,12 @@ declare namespace cocoa {
     setVisibility<R = void, P0 = number>(_v: P0): R;
     typeIdentifier<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSItemProviderRepresentation<T = any> extends NSObject {
+  namespace NSItemProviderRepresentation {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSItemProviderRepresentation>(): R;
       new: <R = NSItemProviderRepresentation>() => R;
     }
   }
 }
 
-declare const NSItemProviderRepresentation: cocoa.classes.NSItemProviderRepresentation;
+declare const NSItemProviderRepresentation: cocoa.NSItemProviderRepresentation.CLASS;

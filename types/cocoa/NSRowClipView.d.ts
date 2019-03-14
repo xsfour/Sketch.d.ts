@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSRowClipView<T = any> extends NSClipView, CAAnimationDelegateProtocol {
+  export interface NSRowClipView<T0 = void, T1 = void, T2 = void> extends NSClipView, CAAnimationDelegateProtocol {
     _updateBoundsForSize<R = void, P0 = CGSize>(__updateBoundsForSize: P0): R;
     _useZinLayerBacking<R = boolean>(): R;
     shouldAdjustBounds<R = boolean>(): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSRowClipView<T = any> extends NSClipView, CAAnimationDelegateProtocol {
+  namespace NSRowClipView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSClipView, CAAnimationDelegateProtocol {
       alloc<R = NSRowClipView>(): R;
       new: <R = NSRowClipView>() => R;
     }
   }
 }
 
-declare const NSRowClipView: cocoa.classes.NSRowClipView;
+declare const NSRowClipView: cocoa.NSRowClipView.CLASS;

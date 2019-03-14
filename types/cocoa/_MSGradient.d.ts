@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSGradient<T = any> extends MSModelObject {
+  export interface _MSGradient<T0 = void, T1 = void, T2 = void> extends MSModelObject {
     moveGradientStopIndex_toIndex<R = void, P0 = number, P1 = number>(_moveGradientStopIndex: P0, _toIndex: P1): R;
     removeAllGradientStops<R = void>(): R;
     removeGradientStopsAtIndexes<R = void, P0 = unknown>(_removeGradientStopsAtIndexes: P0): R;
@@ -26,8 +26,8 @@ declare namespace cocoa {
     elipseLength<R = number>(): R;
     setElipseLength<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface _MSGradient<T = any> extends MSModelObject {
+  namespace _MSGradient {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSModelObject {
       alloc<R = _MSGradient>(): R;
       new: <R = _MSGradient>() => R;
     }

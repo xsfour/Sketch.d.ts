@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPage<T = any> extends _MSPage, MSRootLayerProtocol {
+  export interface MSPage<T0 = void, T1 = void, T2 = void> extends _MSPage, MSRootLayerProtocol {
     setIsLocked<R = void, P0 = boolean>(_setIsLocked: P0): R;
     isLocked<R = boolean>(): R;
     setIsVisible<R = void, P0 = boolean>(_setIsVisible: P0): R;
@@ -85,8 +85,8 @@ declare namespace cocoa {
     verticalRulerData<R = MSRulerData>(): R;
     setVerticalRulerData<R = void, P0 = MSRulerData>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSPage<T = any> extends _MSPage, MSRootLayerProtocol {
+  namespace MSPage {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSPage, MSRootLayerProtocol {
       alloc<R = MSPage>(): R;
       new: <R = MSPage>() => R;
       defaultSymbolsPageName<R = unknown>(): R;
@@ -95,4 +95,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSPage: cocoa.classes.MSPage;
+declare const MSPage: cocoa.MSPage.CLASS;

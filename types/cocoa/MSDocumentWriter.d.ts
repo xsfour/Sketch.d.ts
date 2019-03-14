@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDocumentWriter<T = any> extends NSObject, MSDocumentPreviewGenerationProtocol {
+  export interface MSDocumentWriter<T0 = void, T1 = void, T2 = void> extends NSObject, MSDocumentPreviewGenerationProtocol {
     cxx_destruct<R = void>(): R;
     writeDocumentData_isAutosave_error<R = boolean, P0 = unknown, P1 = boolean, P2 = unknown>(_writeDocumentData: P0, _isAutosave: P1, _error: P2): R;
     initWithFileURL<R = unknown, P0 = unknown>(_initWithFileURL: P0): R;
@@ -22,8 +22,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSDocumentWriter<T = any> extends NSObject, MSDocumentPreviewGenerationProtocol {
+  namespace MSDocumentWriter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, MSDocumentPreviewGenerationProtocol {
       alloc<R = MSDocumentWriter>(): R;
       new: <R = MSDocumentWriter>() => R;
       metadataForNewFile<R = unknown>(): R;
@@ -31,4 +31,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSDocumentWriter: cocoa.classes.MSDocumentWriter;
+declare const MSDocumentWriter: cocoa.MSDocumentWriter.CLASS;

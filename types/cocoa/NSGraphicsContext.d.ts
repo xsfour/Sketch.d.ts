@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSGraphicsContext<T = any> extends NSObject {
+  export interface NSGraphicsContext<T0 = void, T1 = void, T2 = void> extends NSObject {
     _releaseCIContext<R = void>(): R;
     CIContext<R = unknown>(): R;
     setColorRenderingIntent<R = void, P0 = number>(_setColorRenderingIntent: P0): R;
@@ -27,8 +27,8 @@ declare namespace cocoa {
     drawingToScreen<R = boolean>(): R;
     attributes<R = NSDictionary>(): R;
   }
-  namespace classes {
-    export interface NSGraphicsContext<T = any> extends NSObject {
+  namespace NSGraphicsContext {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSGraphicsContext>(): R;
       new: <R = NSGraphicsContext>() => R;
       setGraphicsState<R = void, P0 = number>(_setGraphicsState: P0): R;
@@ -48,4 +48,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSGraphicsContext: cocoa.classes.NSGraphicsContext;
+declare const NSGraphicsContext: cocoa.NSGraphicsContext.CLASS;

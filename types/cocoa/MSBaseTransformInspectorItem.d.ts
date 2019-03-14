@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBaseTransformInspectorItem<T = any> extends MSInspectorItem {
+  export interface MSBaseTransformInspectorItem<T0 = void, T1 = void, T2 = void> extends MSInspectorItem {
     areAllLayersFlippedVertically<R = boolean>(): R;
     areAllLayersFlippedHorizontally<R = boolean>(): R;
     clearFlipSegmentedControl<R = void>(): R;
@@ -23,12 +23,12 @@ declare namespace cocoa {
     textField<R = MSUpDownTextField>(): R;
     setTextField<R = void, P0 = MSUpDownTextField>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSBaseTransformInspectorItem<T = any> extends MSInspectorItem {
+  namespace MSBaseTransformInspectorItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSInspectorItem {
       alloc<R = MSBaseTransformInspectorItem>(): R;
       new: <R = MSBaseTransformInspectorItem>() => R;
     }
   }
 }
 
-declare const MSBaseTransformInspectorItem: cocoa.classes.MSBaseTransformInspectorItem;
+declare const MSBaseTransformInspectorItem: cocoa.MSBaseTransformInspectorItem.CLASS;

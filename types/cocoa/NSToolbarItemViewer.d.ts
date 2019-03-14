@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSToolbarItemViewer<T = any> extends NSView, _NSTouchBarItemLayoutWrapperProtocol {
+  export interface NSToolbarItemViewer<T0 = void, T1 = void, T2 = void> extends NSView, _NSTouchBarItemLayoutWrapperProtocol {
     _toolbarView<R = unknown>(): R;
     _menuFormRepresentationChanged<R = void>(): R;
     _scalableMaxIconSize<R = CGSize>(): R;
@@ -131,12 +131,12 @@ declare namespace cocoa {
     preferredZOrder<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSToolbarItemViewer<T = any> extends NSView, _NSTouchBarItemLayoutWrapperProtocol {
+  namespace NSToolbarItemViewer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView, _NSTouchBarItemLayoutWrapperProtocol {
       alloc<R = NSToolbarItemViewer>(): R;
       new: <R = NSToolbarItemViewer>() => R;
     }
   }
 }
 
-declare const NSToolbarItemViewer: cocoa.classes.NSToolbarItemViewer;
+declare const NSToolbarItemViewer: cocoa.NSToolbarItemViewer.CLASS;

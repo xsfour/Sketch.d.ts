@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSCGSWindow<T = any> extends NSCGSWindow {
+  export interface _NSCGSWindow<T0 = void, T1 = void, T2 = void> extends NSCGSWindow {
     setChameleonOverrideColor<R = void, P0 = CGColor>(_setChameleonOverrideColor: P0): R;
     chameleonOverrideColor<R = CGColor>(): R;
     movementChildren<R = unknown>(): R;
@@ -50,8 +50,8 @@ declare namespace cocoa {
     initWithWindowID<R = unknown, P0 = number>(_initWithWindowID: P0): R;
     initWithConnectionID<R = unknown, P0 = number>(_initWithConnectionID: P0): R;
   }
-  namespace classes {
-    export interface _NSCGSWindow<T = any> extends NSCGSWindow {
+  namespace _NSCGSWindow {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSCGSWindow {
       alloc<R = _NSCGSWindow>(): R;
       new: <R = _NSCGSWindow>() => R;
     }

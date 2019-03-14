@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScrubberItemLayoutDiscrete<T = any> extends NSObject, NSScrubberItemLayoutProtocol {
+  export interface NSScrubberItemLayoutDiscrete<T0 = void, T1 = void, T2 = void> extends NSObject, NSScrubberItemLayoutProtocol {
     dealloc<R = void>(): R;
     cleanState<R = unknown>(): R;
     setCleanState<R = void, P0 = unknown>(_v: P0): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSScrubberItemLayoutDiscrete<T = any> extends NSObject, NSScrubberItemLayoutProtocol {
+  namespace NSScrubberItemLayoutDiscrete {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSScrubberItemLayoutProtocol {
       alloc<R = NSScrubberItemLayoutDiscrete>(): R;
       new: <R = NSScrubberItemLayoutDiscrete>() => R;
     }
   }
 }
 
-declare const NSScrubberItemLayoutDiscrete: cocoa.classes.NSScrubberItemLayoutDiscrete;
+declare const NSScrubberItemLayoutDiscrete: cocoa.NSScrubberItemLayoutDiscrete.CLASS;

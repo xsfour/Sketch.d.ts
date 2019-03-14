@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAssetLibrariesPreferencePane<T = any> extends MSPreferencePane, MSAssetPreferenceItemDelegateProtocol, MSDropableViewDelegateProtocol, QLPreviewPanelDataSourceProtocol, QLPreviewPanelDelegateProtocol, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol, NSTextFieldDelegateProtocol {
+  export interface MSAssetLibrariesPreferencePane<T0 = void, T1 = void, T2 = void> extends MSPreferencePane, MSAssetPreferenceItemDelegateProtocol, MSDropableViewDelegateProtocol, QLPreviewPanelDataSourceProtocol, QLPreviewPanelDelegateProtocol, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol, NSTextFieldDelegateProtocol {
     libraryControllerDidChange<R = void, P0 = unknown>(_libraryControllerDidChange: P0): R;
     learnMoreAboutLibraries<R = void, P0 = unknown>(_learnMoreAboutLibraries: P0): R;
     updateQLPreview<R = void>(): R;
@@ -78,12 +78,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSAssetLibrariesPreferencePane<T = any> extends MSPreferencePane, MSAssetPreferenceItemDelegateProtocol, MSDropableViewDelegateProtocol, QLPreviewPanelDataSourceProtocol, QLPreviewPanelDelegateProtocol, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol, NSTextFieldDelegateProtocol {
+  namespace MSAssetLibrariesPreferencePane {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSPreferencePane, MSAssetPreferenceItemDelegateProtocol, MSDropableViewDelegateProtocol, QLPreviewPanelDataSourceProtocol, QLPreviewPanelDelegateProtocol, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol, NSTextFieldDelegateProtocol {
       alloc<R = MSAssetLibrariesPreferencePane>(): R;
       new: <R = MSAssetLibrariesPreferencePane>() => R;
     }
   }
 }
 
-declare const MSAssetLibrariesPreferencePane: cocoa.classes.MSAssetLibrariesPreferencePane;
+declare const MSAssetLibrariesPreferencePane: cocoa.MSAssetLibrariesPreferencePane.CLASS;

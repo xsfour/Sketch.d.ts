@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSWindowMoveData<T = any> extends NSObject {
+  export interface _NSWindowMoveData<T0 = void, T1 = void, T2 = void> extends NSObject {
     catchupSize<R = CGSize>(): R;
     setCatchupSize<R = void, P0 = CGSize>(_v: P0): R;
     newEventLocation<R = CGPoint>(): R;
@@ -15,8 +15,8 @@ declare namespace cocoa {
     startingOrigin<R = CGPoint>(): R;
     setStartingOrigin<R = void, P0 = CGPoint>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSWindowMoveData<T = any> extends NSObject {
+  namespace _NSWindowMoveData {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSWindowMoveData>(): R;
       new: <R = _NSWindowMoveData>() => R;
     }

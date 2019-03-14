@@ -1,7 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSMirrorWindowController<T = any> extends NSWindowController, MSMirrorWindowControllerContentProtocol, NSWindowDelegateProtocol, WKNavigationDelegateProtocol, WKScriptMessageHandlerProtocol {
+  export interface MSMirrorWindowController<T0 = void, T1 = void, T2 = void> extends NSWindowController, MSMirrorWindowControllerContentProtocol, NSWindowDelegateProtocol, WKNavigationDelegateProtocol, WKScriptMessageHandlerProtocol {
+    cxx_destruct<R = void>(): R;
     relayResponderAction_with<R = void, P0 = string, P1 = unknown>(_relayResponderAction: P0, _with: P1): R;
     showContextualMenuWithEvent<R = void, P0 = unknown>(_showContextualMenuWithEvent: P0): R;
     goWithTheFlow<R = void, P0 = unknown>(_goWithTheFlow: P0): R;
@@ -22,6 +23,10 @@ declare namespace cocoa {
     whitelistClientID<R = void>(): R;
     startLoading<R = void>(): R;
     validateMenuItem<R = boolean, P0 = unknown>(_validateMenuItem: P0): R;
+    windowDidLoad<R = void>(): R;
+    showWindow<R = void, P0 = unknown>(_showWindow: P0): R;
+    loadWindow<R = void>(): R;
+    initWithWindowNibName<R = unknown, P0 = unknown>(_initWithWindowNibName: P0): R;
     transitionToArtboardID_animatedBy<R = void, P0 = unknown, P1 = number>(_transitionToArtboardID: P0, _animatedBy: P1): R;
     changeVisibleArtboardID<R = void, P0 = unknown>(_changeVisibleArtboardID: P0): R;
     sortedArtboards<R = unknown, P0 = unknown>(_sortedArtboards: P0): R;
@@ -55,14 +60,15 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSMirrorWindowController<T = any> extends NSWindowController, MSMirrorWindowControllerContentProtocol, NSWindowDelegateProtocol, WKNavigationDelegateProtocol, WKScriptMessageHandlerProtocol {
+  namespace MSMirrorWindowController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSWindowController, MSMirrorWindowControllerContentProtocol, NSWindowDelegateProtocol, WKNavigationDelegateProtocol, WKScriptMessageHandlerProtocol {
       alloc<R = MSMirrorWindowController>(): R;
       new: <R = MSMirrorWindowController>() => R;
+      close<R = void>(): R;
       show<R = void>(): R;
       sharedController<R = unknown>(): R;
     }
   }
 }
 
-declare const MSMirrorWindowController: cocoa.classes.MSMirrorWindowController;
+declare const MSMirrorWindowController: cocoa.MSMirrorWindowController.CLASS;

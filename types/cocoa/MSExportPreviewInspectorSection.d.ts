@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSExportPreviewInspectorSection<T = any> extends MSBaseInspectorSection, MSInspectorItemDelegateProtocol {
+  export interface MSExportPreviewInspectorSection<T0 = void, T1 = void, T2 = void> extends MSBaseInspectorSection, MSInspectorItemDelegateProtocol {
     addExportFormat<R = void, P0 = unknown>(_addExportFormat: P0): R;
     exportSelectedItem<R = MSExportSelectedInspectorItem>(): R;
     setExportSelectedItem<R = void, P0 = MSExportSelectedInspectorItem>(_v: P0): R;
@@ -29,12 +29,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSExportPreviewInspectorSection<T = any> extends MSBaseInspectorSection, MSInspectorItemDelegateProtocol {
+  namespace MSExportPreviewInspectorSection {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSBaseInspectorSection, MSInspectorItemDelegateProtocol {
       alloc<R = MSExportPreviewInspectorSection>(): R;
       new: <R = MSExportPreviewInspectorSection>() => R;
     }
   }
 }
 
-declare const MSExportPreviewInspectorSection: cocoa.classes.MSExportPreviewInspectorSection;
+declare const MSExportPreviewInspectorSection: cocoa.MSExportPreviewInspectorSection.CLASS;

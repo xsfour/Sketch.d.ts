@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPluginDataSupplierContext<T = any> extends NSObject {
+  export interface MSPluginDataSupplierContext<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     initWithOverrides<R = unknown, P0 = unknown>(_initWithOverrides: P0): R;
     initWithLayers<R = unknown, P0 = unknown>(_initWithLayers: P0): R;
@@ -12,12 +12,12 @@ declare namespace cocoa {
     requestedCount<R = number>(): R;
     dictionaryRepresentation<R = NSDictionary>(): R;
   }
-  namespace classes {
-    export interface MSPluginDataSupplierContext<T = any> extends NSObject {
+  namespace MSPluginDataSupplierContext {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSPluginDataSupplierContext>(): R;
       new: <R = MSPluginDataSupplierContext>() => R;
     }
   }
 }
 
-declare const MSPluginDataSupplierContext: cocoa.classes.MSPluginDataSupplierContext;
+declare const MSPluginDataSupplierContext: cocoa.MSPluginDataSupplierContext.CLASS;

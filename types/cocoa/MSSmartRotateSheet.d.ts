@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSmartRotateSheet<T = any> extends CHSheetController {
+  export interface MSSmartRotateSheet<T0 = void, T1 = void, T2 = void> extends CHSheetController {
     doc<R = unknown>(): R;
     setNilValueForKey<R = void, P0 = unknown>(_setNilValueForKey: P0): R;
     awakeFromNib<R = void>(): R;
@@ -10,12 +10,12 @@ declare namespace cocoa {
     explanationLabel<R = NSTextField>(): R;
     setExplanationLabel<R = void, P0 = NSTextField>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSSmartRotateSheet<T = any> extends CHSheetController {
+  namespace MSSmartRotateSheet {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends CHSheetController {
       alloc<R = MSSmartRotateSheet>(): R;
       new: <R = MSSmartRotateSheet>() => R;
     }
   }
 }
 
-declare const MSSmartRotateSheet: cocoa.classes.MSSmartRotateSheet;
+declare const MSSmartRotateSheet: cocoa.MSSmartRotateSheet.CLASS;

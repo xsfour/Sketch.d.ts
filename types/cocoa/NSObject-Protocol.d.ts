@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSObjectProtocol<T = any> {
+  export interface NSObjectProtocol<T0 = void, T1 = void, T2 = void> {
     zone<R = _NSZone>(): R;
     retainCount<R = number>(): R;
     autorelease<R = unknown>(): R;
@@ -23,7 +23,7 @@ declare namespace cocoa {
     hash<R = number>(): R;
     debugDescription<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSObjectProtocol<T = any> {  }
+  namespace NSObjectProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSBigMutableString<T = any> extends NSMutableString {
+  export interface NSBigMutableString<T0 = void, T1 = void, T2 = void> extends NSMutableString {
     _newBigSubstringWithRange_wantsMutable_zone<R = unknown, P0 = _NSRange, P1 = boolean, P2 = _NSZone>(__newBigSubstringWithRange: P0, _wantsMutable: P1, _zone: P2): R;
     _newSmallImmutableSubstringWithRange_zone<R = unknown, P0 = _NSRange, P1 = _NSZone>(__newSmallImmutableSubstringWithRange: P0, _zone: P1): R;
     length<R = number>(): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     initWithStorage_length_isUnicode<R = unknown, P0 = __CFStorage, P1 = number, P2 = boolean>(_initWithStorage: P0, _length: P1, _isUnicode: P2): R;
   }
-  namespace classes {
-    export interface NSBigMutableString<T = any> extends NSMutableString {
+  namespace NSBigMutableString {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSMutableString {
       alloc<R = NSBigMutableString>(): R;
       new: <R = NSBigMutableString>() => R;
     }
   }
 }
 
-declare const NSBigMutableString: cocoa.classes.NSBigMutableString;
+declare const NSBigMutableString: cocoa.NSBigMutableString.CLASS;

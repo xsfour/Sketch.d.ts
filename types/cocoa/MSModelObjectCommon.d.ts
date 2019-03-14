@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSModelObjectCommon<T = any> extends NSObject, MSModelObjectCommonProtocol {
+  export interface MSModelObjectCommon<T0 = void, T1 = void, T2 = void> extends NSObject, MSModelObjectCommonProtocol {
     cxx_destruct<R = void>(): R;
     propertiesAreEqual<R = boolean, P0 = unknown>(_propertiesAreEqual: P0): R;
     traits<R = number>(): R;
@@ -35,12 +35,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSModelObjectCommon<T = any> extends NSObject, MSModelObjectCommonProtocol {
+  namespace MSModelObjectCommon {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, MSModelObjectCommonProtocol {
       alloc<R = MSModelObjectCommon>(): R;
       new: <R = MSModelObjectCommon>() => R;
     }
   }
 }
 
-declare const MSModelObjectCommon: cocoa.classes.MSModelObjectCommon;
+declare const MSModelObjectCommon: cocoa.MSModelObjectCommon.CLASS;

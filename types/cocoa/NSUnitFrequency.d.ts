@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUnitFrequency<T = any> extends NSDimension, NSSecureCodingProtocol {}
-  namespace classes {
-    export interface NSUnitFrequency<T = any> extends NSDimension, NSSecureCodingProtocol {
+  export interface NSUnitFrequency<T0 = void, T1 = void, T2 = void> extends NSDimension, NSSecureCodingProtocol {}
+  namespace NSUnitFrequency {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSDimension, NSSecureCodingProtocol {
       alloc<R = NSUnitFrequency>(): R;
       new: <R = NSUnitFrequency>() => R;
       nanohertz<R = unknown>(): R;
@@ -18,4 +18,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSUnitFrequency: cocoa.classes.NSUnitFrequency;
+declare const NSUnitFrequency: cocoa.NSUnitFrequency.CLASS;

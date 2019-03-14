@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSScrollingMomentumCalculator<T = any> extends NSObject {
+  export interface _NSScrollingMomentumCalculator<T0 = void, T1 = void, T2 = void> extends NSObject {
     calculateToReachDestination<R = void>(): R;
     calculateDestination<R = void>(): R;
     positionAfterDuration<R = CGPoint, P0 = number>(_positionAfterDuration: P0): R;
@@ -33,8 +33,8 @@ declare namespace cocoa {
     verticalScrollDecelerationFactor<R = number>(): R;
     setVerticalScrollDecelerationFactor<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSScrollingMomentumCalculator<T = any> extends NSObject {
+  namespace _NSScrollingMomentumCalculator {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSScrollingMomentumCalculator>(): R;
       new: <R = _NSScrollingMomentumCalculator>() => R;
     }

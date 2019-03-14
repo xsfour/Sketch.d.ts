@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSCloudSharingDescriptor<T = any> extends NSObject, NSSecureCodingProtocol {
+  export interface _NSCloudSharingDescriptor<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol {
     _variantSubstrings<R = unknown>(): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
@@ -17,8 +17,8 @@ declare namespace cocoa {
     operation<R = number>(): R;
     setOperation<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSCloudSharingDescriptor<T = any> extends NSObject, NSSecureCodingProtocol {
+  namespace _NSCloudSharingDescriptor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol {
       alloc<R = _NSCloudSharingDescriptor>(): R;
       new: <R = _NSCloudSharingDescriptor>() => R;
     }

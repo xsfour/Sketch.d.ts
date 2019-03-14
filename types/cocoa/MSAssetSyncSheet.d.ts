@@ -1,9 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAssetSyncSheet<T = any> extends CHSheetController, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol, NSSplitViewDelegateProtocol {
+  export interface MSAssetSyncSheet<T0 = void, T1 = void, T2 = void> extends CHSheetController, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol, NSSplitViewDelegateProtocol {
     updateSelectedForSync<R = void, P0 = unknown>(_updateSelectedForSync: P0): R;
     updateSymbols<R = void, P0 = unknown>(_updateSymbols: P0): R;
+    windowDidLoad<R = void>(): R;
     compareSyncSheetItem_toItem<R = number, P0 = unknown, P1 = unknown>(_compareSyncSheetItem: P0, _toItem: P1): R;
     buildTableViewData<R = void>(): R;
     hasSyncableItems<R = boolean>(): R;
@@ -21,12 +22,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSAssetSyncSheet<T = any> extends CHSheetController, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol, NSSplitViewDelegateProtocol {
+  namespace MSAssetSyncSheet {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends CHSheetController, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol, NSSplitViewDelegateProtocol {
       alloc<R = MSAssetSyncSheet>(): R;
       new: <R = MSAssetSyncSheet>() => R;
     }
   }
 }
 
-declare const MSAssetSyncSheet: cocoa.classes.MSAssetSyncSheet;
+declare const MSAssetSyncSheet: cocoa.MSAssetSyncSheet.CLASS;

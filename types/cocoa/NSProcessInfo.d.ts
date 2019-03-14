@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSProcessInfo<T = any> extends NSObject {
+  export interface NSProcessInfo<T0 = void, T1 = void, T2 = void> extends NSObject {
     _reactivateActivity<R = void, P0 = unknown>(__reactivateActivity: P0): R;
     _supportsAutomaticTermination<R = boolean>(): R;
     _setShouldRelaunchDueToAutomaticTerminationStateChangedHandler<R = void, P0 = CDUnknownBlockType>(__setShouldRelaunchDueToAutomaticTerminationStateChangedHandler: P0): R;
@@ -54,8 +54,8 @@ declare namespace cocoa {
     environment<R = NSDictionary>(): R;
     fullUserName<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSProcessInfo<T = any> extends NSObject {
+  namespace NSProcessInfo {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSProcessInfo>(): R;
       new: <R = NSProcessInfo>() => R;
       processInfo<R = unknown>(): R;
@@ -63,4 +63,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSProcessInfo: cocoa.classes.NSProcessInfo;
+declare const NSProcessInfo: cocoa.NSProcessInfo.CLASS;

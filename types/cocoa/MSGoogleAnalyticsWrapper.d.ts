@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSGoogleAnalyticsWrapper<T = any> extends NSObject, WebFrameLoadDelegateProtocol, WebResourceLoadDelegateProtocol, WebUIDelegateProtocol {
+  export interface MSGoogleAnalyticsWrapper<T0 = void, T1 = void, T2 = void> extends NSObject, WebFrameLoadDelegateProtocol, WebResourceLoadDelegateProtocol, WebUIDelegateProtocol {
     cxx_destruct<R = void>(): R;
     webView_addMessageToConsole<R = void, P0 = unknown, P1 = unknown>(_webView: P0, _addMessageToConsole: P1): R;
     callMethod_arguments<R = void, P0 = unknown, P1 = unknown>(_callMethod: P0, _arguments: P1): R;
@@ -21,12 +21,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSGoogleAnalyticsWrapper<T = any> extends NSObject, WebFrameLoadDelegateProtocol, WebResourceLoadDelegateProtocol, WebUIDelegateProtocol {
+  namespace MSGoogleAnalyticsWrapper {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, WebFrameLoadDelegateProtocol, WebResourceLoadDelegateProtocol, WebUIDelegateProtocol {
       alloc<R = MSGoogleAnalyticsWrapper>(): R;
       new: <R = MSGoogleAnalyticsWrapper>() => R;
     }
   }
 }
 
-declare const MSGoogleAnalyticsWrapper: cocoa.classes.MSGoogleAnalyticsWrapper;
+declare const MSGoogleAnalyticsWrapper: cocoa.MSGoogleAnalyticsWrapper.CLASS;

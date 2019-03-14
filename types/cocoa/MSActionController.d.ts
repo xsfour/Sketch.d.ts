@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSActionController<T = any> extends NSResponder {
+  export interface MSActionController<T0 = void, T1 = void, T2 = void> extends NSResponder {
     cxx_destruct<R = void>(): R;
     firstActionToHandleKeyEvent<R = unknown, P0 = unknown>(_firstActionToHandleKeyEvent: P0): R;
     forwardKeyEvent<R = boolean, P0 = unknown>(_forwardKeyEvent: P0): R;
@@ -26,12 +26,12 @@ declare namespace cocoa {
     singleKeyShortcuts<R = NSDictionary>(): R;
     setSingleKeyShortcuts<R = void, P0 = NSDictionary>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSActionController<T = any> extends NSResponder {
+  namespace MSActionController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSResponder {
       alloc<R = MSActionController>(): R;
       new: <R = MSActionController>() => R;
     }
   }
 }
 
-declare const MSActionController: cocoa.classes.MSActionController;
+declare const MSActionController: cocoa.MSActionController.CLASS;

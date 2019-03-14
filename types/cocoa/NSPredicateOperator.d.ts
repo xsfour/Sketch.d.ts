@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPredicateOperator<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
+  export interface NSPredicateOperator<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
     _setModifier<R = void, P0 = number>(__setModifier: P0): R;
     options<R = number>(): R;
     _setOptions<R = void, P0 = number>(__setOptions: P0): R;
@@ -21,8 +21,8 @@ declare namespace cocoa {
     initWithOperatorType_modifier<R = unknown, P0 = number, P1 = number>(_initWithOperatorType: P0, _modifier: P1): R;
     initWithOperatorType<R = unknown, P0 = number>(_initWithOperatorType: P0): R;
   }
-  namespace classes {
-    export interface NSPredicateOperator<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
+  namespace NSPredicateOperator {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
       alloc<R = NSPredicateOperator>(): R;
       new: <R = NSPredicateOperator>() => R;
       operatorWithCustomSelector_modifier<R = unknown, P0 = string, P1 = number>(_operatorWithCustomSelector: P0, _modifier: P1): R;
@@ -34,4 +34,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPredicateOperator: cocoa.classes.NSPredicateOperator;
+declare const NSPredicateOperator: cocoa.NSPredicateOperator.CLASS;

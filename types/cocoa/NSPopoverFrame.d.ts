@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPopoverFrame<T = any> extends NSVisualEffectView {
+  export interface NSPopoverFrame<T0 = void, T1 = void, T2 = void> extends NSVisualEffectView {
     _verticalRangesForAreasOfInterest<R = unknown>(): R;
     setRangeOfInterest_sourceRange<R = void, P0 = unknown, P1 = unknown>(_setRangeOfInterest: P0, _sourceRange: P1): R;
     _closeButtonPressed<R = void, P0 = unknown>(__closeButtonPressed: P0): R;
@@ -80,8 +80,8 @@ declare namespace cocoa {
     anchorEdge<R = number>(): R;
     setAnchorEdge<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSPopoverFrame<T = any> extends NSVisualEffectView {
+  namespace NSPopoverFrame {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSVisualEffectView {
       alloc<R = NSPopoverFrame>(): R;
       new: <R = NSPopoverFrame>() => R;
       contentRectForFrameRect_appearance_anchorSize_contentInset_hasTitlebar<R = CGRect, P0 = CGRect, P1 = unknown, P2 = CGSize, P3 = NSEdgeInsets, P4 = boolean>(_contentRectForFrameRect: P0, _appearance: P1, _anchorSize: P2, _contentInset: P3, _hasTitlebar: P4): R;
@@ -94,4 +94,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPopoverFrame: cocoa.classes.NSPopoverFrame;
+declare const NSPopoverFrame: cocoa.NSPopoverFrame.CLASS;

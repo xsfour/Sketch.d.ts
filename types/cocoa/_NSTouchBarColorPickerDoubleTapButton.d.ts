@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSTouchBarColorPickerDoubleTapButton<T = any> extends NSView {
+  export interface _NSTouchBarColorPickerDoubleTapButton<T0 = void, T1 = void, T2 = void> extends NSView {
     handlePress<R = void, P0 = unknown>(_handlePress: P0): R;
     engage<R = void>(): R;
     highlight<R = void, P0 = boolean>(_highlight: P0): R;
@@ -20,8 +20,8 @@ declare namespace cocoa {
     prearmed<R = boolean>(): R;
     setPrearmed<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSTouchBarColorPickerDoubleTapButton<T = any> extends NSView {
+  namespace _NSTouchBarColorPickerDoubleTapButton {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = _NSTouchBarColorPickerDoubleTapButton>(): R;
       new: <R = _NSTouchBarColorPickerDoubleTapButton>() => R;
     }

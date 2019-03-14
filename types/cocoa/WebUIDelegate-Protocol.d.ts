@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface WebUIDelegateProtocol<T = any> extends NSObjectProtocol {
+  export interface WebUIDelegateProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     webViewContentRect<R = CGRect, P0 = WebView>(_webViewContentRect: P0): R;
     webView_setContentRect<R = void, P0 = WebView, P1 = CGRect>(_webView: P0, _setContentRect: P1): R;
     webView_runJavaScriptTextInputPanelWithPrompt_defaultText<R = NSString, P0 = WebView, P1 = NSString, P2 = NSString>(_webView: P0, _runJavaScriptTextInputPanelWithPrompt: P1, _defaultText: P2): R;
@@ -46,7 +46,7 @@ declare namespace cocoa {
     webViewShow<R = void, P0 = WebView>(_webViewShow: P0): R;
     webView_createWebViewWithRequest<R = WebView, P0 = WebView, P1 = NSURLRequest>(_webView: P0, _createWebViewWithRequest: P1): R;
   }
-  namespace classes {
-    export interface WebUIDelegateProtocol<T = any> extends NSObjectProtocol {  }
+  namespace WebUIDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

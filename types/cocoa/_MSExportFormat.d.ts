@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSExportFormat<T = any> extends MSModelObject {
+  export interface _MSExportFormat<T0 = void, T1 = void, T2 = void> extends MSModelObject {
     hasDefaultValues<R = boolean>(): R;
     visibleScaleType<R = number>(): R;
     setVisibleScaleType<R = void, P0 = number>(_v: P0): R;
@@ -16,8 +16,8 @@ declare namespace cocoa {
     absoluteSize<R = number>(): R;
     setAbsoluteSize<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface _MSExportFormat<T = any> extends MSModelObject {
+  namespace _MSExportFormat {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSModelObject {
       alloc<R = _MSExportFormat>(): R;
       new: <R = _MSExportFormat>() => R;
     }

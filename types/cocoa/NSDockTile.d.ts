@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDockTile<T = any> extends NSObject {
+  export interface NSDockTile<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     _dockIsAlive<R = void, P0 = boolean>(__dockIsAlive: P0): R;
     _updateDockWindowIDAndDisplayIfNeeded<R = void, P0 = boolean>(__updateDockWindowIDAndDisplayIfNeeded: P0): R;
@@ -38,12 +38,12 @@ declare namespace cocoa {
     miniView<R = NSView>(): R;
     setMiniView<R = void, P0 = NSView>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSDockTile<T = any> extends NSObject {
+  namespace NSDockTile {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSDockTile>(): R;
       new: <R = NSDockTile>() => R;
     }
   }
 }
 
-declare const NSDockTile: cocoa.classes.NSDockTile;
+declare const NSDockTile: cocoa.NSDockTile.CLASS;

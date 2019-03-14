@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCGSWindowLayerSurface<T = any> extends NSCGSWindowSurface {
+  export interface NSCGSWindowLayerSurface<T0 = void, T1 = void, T2 = void> extends NSCGSWindowSurface {
     locallyRendered<R = boolean>(): R;
     colorSpace<R = CGColorSpace>(): R;
     setColorSpace<R = void, P0 = CGColorSpace>(_v: P0): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     scale<R = number>(): R;
     setScale<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSCGSWindowLayerSurface<T = any> extends NSCGSWindowSurface {
+  namespace NSCGSWindowLayerSurface {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSCGSWindowSurface {
       alloc<R = NSCGSWindowLayerSurface>(): R;
       new: <R = NSCGSWindowLayerSurface>() => R;
     }
   }
 }
 
-declare const NSCGSWindowLayerSurface: cocoa.classes.NSCGSWindowLayerSurface;
+declare const NSCGSWindowLayerSurface: cocoa.NSCGSWindowLayerSurface.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface FBTangentIterator<T = any> extends NSObject {
+  export interface FBTangentIterator<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     updateCurves<R = void>(): R;
     next<R = boolean, P0 = CGPoint>(_next: P0): R;
@@ -21,8 +21,8 @@ declare namespace cocoa {
     rightOffset<R = number>(): R;
     leftOffset<R = number>(): R;
   }
-  namespace classes {
-    export interface FBTangentIterator<T = any> extends NSObject {
+  namespace FBTangentIterator {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = FBTangentIterator>(): R;
       new: <R = FBTangentIterator>() => R;
       tangentIteratorWithIntersection_onCurve<R = unknown, P0 = unknown, P1 = unknown>(_tangentIteratorWithIntersection: P0, _onCurve: P1): R;
@@ -30,4 +30,4 @@ declare namespace cocoa {
   }
 }
 
-declare const FBTangentIterator: cocoa.classes.FBTangentIterator;
+declare const FBTangentIterator: cocoa.FBTangentIterator.CLASS;

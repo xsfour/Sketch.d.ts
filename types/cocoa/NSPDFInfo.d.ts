@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPDFInfo<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
+  export interface NSPDFInfo<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
     dealloc<R = void>(): R;
     attributes<R = NSMutableDictionary>(): R;
     paperSize<R = CGSize>(): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     fileExtensionHidden<R = boolean>(): R;
     setFileExtensionHidden<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSPDFInfo<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
+  namespace NSPDFInfo {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
       alloc<R = NSPDFInfo>(): R;
       new: <R = NSPDFInfo>() => R;
     }
   }
 }
 
-declare const NSPDFInfo: cocoa.classes.NSPDFInfo;
+declare const NSPDFInfo: cocoa.NSPDFInfo.CLASS;

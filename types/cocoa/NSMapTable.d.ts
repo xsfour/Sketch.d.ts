@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMapTable<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol, NSFastEnumerationProtocol {
+  export interface NSMapTable<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol, NSFastEnumerationProtocol {
     mutableCopyWithZone<R = unknown, P0 = _NSZone>(_mutableCopyWithZone: P0): R;
     dictionaryRepresentation<R = unknown>(): R;
     mutableDictionary<R = unknown>(): R;
@@ -32,11 +32,11 @@ declare namespace cocoa {
     valuePointerFunctions<R = NSPointerFunctions>(): R;
     keyPointerFunctions<R = NSPointerFunctions>(): R;
     count<R = number>(): R;
-    // + NSMapTable(UIElementChildCacheExtension):
+    // + NSMapTable(UIElementChildCacheExtension): 
     _flushChildCache<R = void, P0 = unknown>(__flushChildCache: P0): R;
   }
-  namespace classes {
-    export interface NSMapTable<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol, NSFastEnumerationProtocol {
+  namespace NSMapTable {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol, NSFastEnumerationProtocol {
       alloc<R = NSMapTable>(): R;
       new: <R = NSMapTable>() => R;
       weakToWeakObjectsMapTable<R = unknown>(): R;
@@ -50,10 +50,9 @@ declare namespace cocoa {
       mapTableWithKeyOptions_valueOptions<R = unknown, P0 = number, P1 = number>(_mapTableWithKeyOptions: P0, _valueOptions: P1): R;
       allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
       alloc<R = unknown>(): R;
-      // + NSMapTable(UIElementChildCacheExtension):
-      
-    }
+  
+  }
   }
 }
 
-declare const NSMapTable: cocoa.classes.NSMapTable;
+declare const NSMapTable: cocoa.NSMapTable.CLASS;

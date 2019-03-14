@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSharingService<T = any> extends NSObject {
+  export interface NSSharingService<T0 = void, T1 = void, T2 = void> extends NSObject {
     _touchBarImage<R = unknown>(): R;
     _blocksActionWhenModal<R = boolean, P0 = string>(__blocksActionWhenModal: P0): R;
     _preProcessingJavaScriptURL<R = unknown>(): R;
@@ -46,8 +46,8 @@ declare namespace cocoa {
     delegate<R = NSSharingServiceDelegate>(): R;
     setDelegate<R = void, P0 = NSSharingServiceDelegate>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSSharingService<T = any> extends NSObject {
+  namespace NSSharingService {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSSharingService>(): R;
       new: <R = NSSharingService>() => R;
       _addRecentEmailServiceToDefaultsWithSubject_recipients<R = void, P0 = unknown, P1 = unknown>(__addRecentEmailServiceToDefaultsWithSubject: P0, _recipients: P1): R;
@@ -68,4 +68,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSSharingService: cocoa.classes.NSSharingService;
+declare const NSSharingService: cocoa.NSSharingService.CLASS;

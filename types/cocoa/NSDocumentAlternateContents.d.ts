@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDocumentAlternateContents<T = any> {}
-  namespace classes {
-    export interface NSDocumentAlternateContents<T = any> {  }
+  export interface NSDocumentAlternateContents<T0 = void, T1 = void, T2 = void> {}
+  namespace NSDocumentAlternateContents {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSDocumentAlternateContents: cocoa.classes.NSDocumentAlternateContents;
+declare const NSDocumentAlternateContents: cocoa.NSDocumentAlternateContents.CLASS;

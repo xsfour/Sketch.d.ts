@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutableStyle<T = any> extends _MSImmutableStyle {
+  export interface MSImmutableStyle<T0 = void, T1 = void, T2 = void> extends _MSImmutableStyle {
     migratePropertiesFromV104OrEarlierWithUnarchiver<R = void, P0 = unknown>(_migratePropertiesFromV104OrEarlierWithUnarchiver: P0): R;
     migratePropertiesFromV103OrEarlierWithUnarchiver<R = void, P0 = unknown>(_migratePropertiesFromV103OrEarlierWithUnarchiver: P0): R;
     boundsForPath<R = CGRect, P0 = unknown>(_boundsForPath: P0): R;
@@ -50,12 +50,12 @@ declare namespace cocoa {
     renderableFills<R = NSArray>(): R;
     hasEnabledOpaqueFill<R = boolean>(): R;
   }
-  namespace classes {
-    export interface MSImmutableStyle<T = any> extends _MSImmutableStyle {
+  namespace MSImmutableStyle {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSImmutableStyle {
       alloc<R = MSImmutableStyle>(): R;
       new: <R = MSImmutableStyle>() => R;
     }
   }
 }
 
-declare const MSImmutableStyle: cocoa.classes.MSImmutableStyle;
+declare const MSImmutableStyle: cocoa.MSImmutableStyle.CLASS;

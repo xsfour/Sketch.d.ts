@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface SMKURLResponse<T = any> extends NSObject, NSSecureCodingProtocol {
+  export interface SMKURLResponse<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol {
     cxx_destruct<R = void>(): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     request<R = NSURLRequest>(): R;
     setRequest<R = void, P0 = NSURLRequest>(_v: P0): R;
   }
-  namespace classes {
-    export interface SMKURLResponse<T = any> extends NSObject, NSSecureCodingProtocol {
+  namespace SMKURLResponse {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol {
       alloc<R = SMKURLResponse>(): R;
       new: <R = SMKURLResponse>() => R;
     }
   }
 }
 
-declare const SMKURLResponse: cocoa.classes.SMKURLResponse;
+declare const SMKURLResponse: cocoa.SMKURLResponse.CLASS;

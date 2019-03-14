@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSRootLayerProtocol<T = any> extends MSLayerTraitsProtocol {
+  export interface MSRootLayerProtocol<T0 = void, T1 = void, T2 = void> extends MSLayerTraitsProtocol {
     rect<R = CGRect>(): R;
     contentBounds<R = CGRect>(): R;
     rulerBase<R = CGPoint>(): R;
@@ -15,7 +15,7 @@ declare namespace cocoa {
     grid<R = MSSimpleGrid>(): R;
     setGrid<R = void, P0 = MSSimpleGrid>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSRootLayerProtocol<T = any> extends MSLayerTraitsProtocol {  }
+  namespace MSRootLayerProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSLayerTraitsProtocol {}
   }
 }

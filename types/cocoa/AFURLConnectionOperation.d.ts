@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface AFURLConnectionOperation<T = any> extends NSOperation, NSURLConnectionDelegateProtocol, NSURLConnectionDataDelegateProtocol, NSSecureCodingProtocol, NSCopyingProtocol {
+  export interface AFURLConnectionOperation<T0 = void, T1 = void, T2 = void> extends NSOperation, NSURLConnectionDelegateProtocol, NSURLConnectionDataDelegateProtocol, NSSecureCodingProtocol, NSCopyingProtocol {
     cxx_destruct<R = void>(): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
@@ -78,8 +78,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface AFURLConnectionOperation<T = any> extends NSOperation, NSURLConnectionDelegateProtocol, NSURLConnectionDataDelegateProtocol, NSSecureCodingProtocol, NSCopyingProtocol {
+  namespace AFURLConnectionOperation {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSOperation, NSURLConnectionDelegateProtocol, NSURLConnectionDataDelegateProtocol, NSSecureCodingProtocol, NSCopyingProtocol {
       alloc<R = AFURLConnectionOperation>(): R;
       new: <R = AFURLConnectionOperation>() => R;
       batchOfRequestOperations_progressBlock_completionBlock<R = unknown, P0 = unknown, P1 = CDUnknownBlockType, P2 = CDUnknownBlockType>(_batchOfRequestOperations: P0, _progressBlock: P1, _completionBlock: P2): R;
@@ -89,4 +89,4 @@ declare namespace cocoa {
   }
 }
 
-declare const AFURLConnectionOperation: cocoa.classes.AFURLConnectionOperation;
+declare const AFURLConnectionOperation: cocoa.AFURLConnectionOperation.CLASS;

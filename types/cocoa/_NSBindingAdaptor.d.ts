@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSBindingAdaptor<T = any> extends NSObject {
+  export interface _NSBindingAdaptor<T0 = void, T1 = void, T2 = void> extends NSObject {
     controller_didChangeToFilterPredicate<R = void, P0 = unknown, P1 = unknown>(_controller: P0, _didChangeToFilterPredicate: P1): R;
     controller_didChangeToSortDescriptors<R = void, P0 = unknown, P1 = unknown>(_controller: P0, _didChangeToSortDescriptors: P1): R;
     controller_didChangeToSelectionIndexPaths<R = void, P0 = unknown, P1 = unknown>(_controller: P0, _didChangeToSelectionIndexPaths: P1): R;
@@ -63,8 +63,8 @@ declare namespace cocoa {
     addBinder<R = void, P0 = unknown>(_addBinder: P0): R;
     dealloc<R = void>(): R;
   }
-  namespace classes {
-    export interface _NSBindingAdaptor<T = any> extends NSObject {
+  namespace _NSBindingAdaptor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSBindingAdaptor>(): R;
       new: <R = _NSBindingAdaptor>() => R;
       reconnectBindings<R = void, P0 = unknown>(_reconnectBindings: P0): R;

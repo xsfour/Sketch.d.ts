@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFontPanel<T = any> extends NSPanel {
+  export interface NSFontPanel<T0 = void, T1 = void, T2 = void> extends NSPanel {
     _fontPanelDescriptorsDictionaryFromFromPasteboard<R = unknown, P0 = unknown>(__fontPanelDescriptorsDictionaryFromFromPasteboard: P0): R;
     removeItemForTableView_pasteboard_operation<R = boolean, P0 = unknown, P1 = unknown, P2 = number>(_removeItemForTableView: P0, _pasteboard: P1, _operation: P2): R;
     draggingSourceOperationMaskForTableView<R = number, P0 = unknown>(_draggingSourceOperationMaskForTableView: P0): R;
@@ -94,8 +94,8 @@ declare namespace cocoa {
     accessoryView<R = NSView>(): R;
     setAccessoryView<R = void, P0 = NSView>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSFontPanel<T = any> extends NSPanel {
+  namespace NSFontPanel {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSPanel {
       alloc<R = NSFontPanel>(): R;
       new: <R = NSFontPanel>() => R;
       restoreWindowWithIdentifier_state_completionHandler<R = void, P0 = unknown, P1 = unknown, P2 = CDUnknownBlockType>(_restoreWindowWithIdentifier: P0, _state: P1, _completionHandler: P2): R;
@@ -105,4 +105,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSFontPanel: cocoa.classes.NSFontPanel;
+declare const NSFontPanel: cocoa.NSFontPanel.CLASS;

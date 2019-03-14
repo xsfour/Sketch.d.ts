@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBitmapEditEventHandler<T = any> extends MSEventHandler {
+  export interface MSBitmapEditEventHandler<T0 = void, T1 = void, T2 = void> extends MSEventHandler {
     updateMeasurementLabel<R = void>(): R;
     crossHairCursorRemove<R = unknown>(): R;
     crossHairCursorAdd<R = unknown>(): R;
@@ -44,12 +44,12 @@ declare namespace cocoa {
     setCurrentMode<R = void, P0 = number>(_v: P0): R;
     inspectorViewController<R = MSBitmapEditInspectorViewController>(): R;
   }
-  namespace classes {
-    export interface MSBitmapEditEventHandler<T = any> extends MSEventHandler {
+  namespace MSBitmapEditEventHandler {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSEventHandler {
       alloc<R = MSBitmapEditEventHandler>(): R;
       new: <R = MSBitmapEditEventHandler>() => R;
     }
   }
 }
 
-declare const MSBitmapEditEventHandler: cocoa.classes.MSBitmapEditEventHandler;
+declare const MSBitmapEditEventHandler: cocoa.MSBitmapEditEventHandler.CLASS;

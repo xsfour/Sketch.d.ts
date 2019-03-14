@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorList<T = any> extends NSObject, NSSecureCodingProtocol {
+  export interface NSColorList<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol {
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     _encodeWithoutNameWithCoder_newStyle<R = void, P0 = unknown, P1 = boolean>(__encodeWithoutNameWithCoder: P0, _newStyle: P1): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
@@ -49,8 +49,8 @@ declare namespace cocoa {
     name<R = NSString>(): R;
     allKeys<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface NSColorList<T = any> extends NSObject, NSSecureCodingProtocol {
+  namespace NSColorList {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol {
       alloc<R = NSColorList>(): R;
       new: <R = NSColorList>() => R;
       colorListNamed<R = unknown, P0 = unknown>(_colorListNamed: P0): R;
@@ -64,4 +64,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSColorList: cocoa.classes.NSColorList;
+declare const NSColorList: cocoa.NSColorList.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDictationManager<T = any> extends NSObject, NSMenuItemValidationProtocol {
+  export interface NSDictationManager<T0 = void, T1 = void, T2 = void> extends NSObject, NSMenuItemValidationProtocol {
     _inputSourceRef<R = __TISInputSource>(): R;
     _dictationIsAllowed<R = boolean>(): R;
     _dictationIsEnabled<R = boolean>(): R;
@@ -15,8 +15,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSDictationManager<T = any> extends NSObject, NSMenuItemValidationProtocol {
+  namespace NSDictationManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSMenuItemValidationProtocol {
       alloc<R = NSDictationManager>(): R;
       new: <R = NSDictationManager>() => R;
       createDictationMenuItem<R = unknown>(): R;
@@ -26,4 +26,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSDictationManager: cocoa.classes.NSDictationManager;
+declare const NSDictationManager: cocoa.NSDictationManager.CLASS;

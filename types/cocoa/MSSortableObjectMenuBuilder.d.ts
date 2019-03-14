@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSortableObjectMenuBuilder<T = any> extends NSObject, NSMenuDelegateProtocol {
+  export interface MSSortableObjectMenuBuilder<T0 = void, T1 = void, T2 = void> extends NSObject, NSMenuDelegateProtocol {
     cxx_destruct<R = void>(): R;
     validateMenuItem<R = boolean, P0 = unknown>(_validateMenuItem: P0): R;
     applyStyleToMenuItem<R = void, P0 = unknown>(_applyStyleToMenuItem: P0): R;
@@ -22,12 +22,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSSortableObjectMenuBuilder<T = any> extends NSObject, NSMenuDelegateProtocol {
+  namespace MSSortableObjectMenuBuilder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSMenuDelegateProtocol {
       alloc<R = MSSortableObjectMenuBuilder>(): R;
       new: <R = MSSortableObjectMenuBuilder>() => R;
     }
   }
 }
 
-declare const MSSortableObjectMenuBuilder: cocoa.classes.MSSortableObjectMenuBuilder;
+declare const MSSortableObjectMenuBuilder: cocoa.MSSortableObjectMenuBuilder.CLASS;

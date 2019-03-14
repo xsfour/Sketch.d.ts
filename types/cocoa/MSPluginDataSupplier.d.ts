@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPluginDataSupplier<T = any> extends MSDataSupplier {
+  export interface MSPluginDataSupplier<T0 = void, T1 = void, T2 = void> extends MSDataSupplier {
     valid<R = boolean>(): R;
     initWithPluginIdentifier_commandIdentifier_dataName_dataTypeStringRepresentation_dynamicDataKey<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown>(_initWithPluginIdentifier: P0, _commandIdentifier: P1, _dataName: P2, _dataTypeStringRepresentation: P3, _dynamicDataKey: P4): R;
     registered<R = boolean>(): R;
@@ -10,8 +10,8 @@ declare namespace cocoa {
     commandIdentifier<R = NSString>(): R;
     pluginIdentifier<R = NSString>(): R;
   }
-  namespace classes {
-    export interface MSPluginDataSupplier<T = any> extends MSDataSupplier {
+  namespace MSPluginDataSupplier {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSDataSupplier {
       alloc<R = MSPluginDataSupplier>(): R;
       new: <R = MSPluginDataSupplier>() => R;
       identifierWithPluginIdentifier_commandIdentifier_dynamicDataKey<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_identifierWithPluginIdentifier: P0, _commandIdentifier: P1, _dynamicDataKey: P2): R;
@@ -19,4 +19,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSPluginDataSupplier: cocoa.classes.MSPluginDataSupplier;
+declare const MSPluginDataSupplier: cocoa.MSPluginDataSupplier.CLASS;

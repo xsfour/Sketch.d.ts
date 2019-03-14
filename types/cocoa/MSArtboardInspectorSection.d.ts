@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSArtboardInspectorSection<T = any> extends MSBaseInspectorSection {
+  export interface MSArtboardInspectorSection<T0 = void, T1 = void, T2 = void> extends MSBaseInspectorSection {
     observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
     setLayers<R = void, P0 = unknown>(_setLayers: P0): R;
     colorEnabled<R = boolean>(): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     resizeItem<R = MSArtboardContentResizeInspectorItem>(): R;
     setResizeItem<R = void, P0 = MSArtboardContentResizeInspectorItem>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSArtboardInspectorSection<T = any> extends MSBaseInspectorSection {
+  namespace MSArtboardInspectorSection {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSBaseInspectorSection {
       alloc<R = MSArtboardInspectorSection>(): R;
       new: <R = MSArtboardInspectorSection>() => R;
     }
   }
 }
 
-declare const MSArtboardInspectorSection: cocoa.classes.MSArtboardInspectorSection;
+declare const MSArtboardInspectorSection: cocoa.MSArtboardInspectorSection.CLASS;

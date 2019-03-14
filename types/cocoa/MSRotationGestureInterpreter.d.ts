@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSRotationGestureInterpreter<T = any> extends NSObject {
+  export interface MSRotationGestureInterpreter<T0 = void, T1 = void, T2 = void> extends NSObject {
     convertRotation_toLayer<R = number, P0 = number, P1 = unknown>(_convertRotation: P0, _toLayer: P1): R;
     angleOfPoint_inLayer<R = number, P0 = CGPoint, P1 = unknown>(_angleOfPoint: P0, _inLayer: P1): R;
     rotationInDegreesInLayer<R = number, P0 = unknown>(_rotationInDegreesInLayer: P0): R;
@@ -11,12 +11,12 @@ declare namespace cocoa {
     centerPoint<R = CGPoint>(): R;
     setCenterPoint<R = void, P0 = CGPoint>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSRotationGestureInterpreter<T = any> extends NSObject {
+  namespace MSRotationGestureInterpreter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSRotationGestureInterpreter>(): R;
       new: <R = MSRotationGestureInterpreter>() => R;
     }
   }
 }
 
-declare const MSRotationGestureInterpreter: cocoa.classes.MSRotationGestureInterpreter;
+declare const MSRotationGestureInterpreter: cocoa.MSRotationGestureInterpreter.CLASS;

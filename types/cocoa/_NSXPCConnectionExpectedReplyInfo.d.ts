@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSXPCConnectionExpectedReplyInfo<T = any> extends NSObject {
+  export interface _NSXPCConnectionExpectedReplyInfo<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     proxyNumber<R = number>(): R;
     setProxyNumber<R = void, P0 = number>(_v: P0): R;
@@ -18,8 +18,8 @@ declare namespace cocoa {
     selector<R = string>(): R;
     setSelector<R = void, P0 = string>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSXPCConnectionExpectedReplyInfo<T = any> extends NSObject {
+  namespace _NSXPCConnectionExpectedReplyInfo {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSXPCConnectionExpectedReplyInfo>(): R;
       new: <R = _NSXPCConnectionExpectedReplyInfo>() => R;
     }

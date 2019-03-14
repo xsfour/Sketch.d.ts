@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface SVGFont<T = any> extends _SVGFont {
+  export interface SVGFont<T0 = void, T1 = void, T2 = void> extends _SVGFont {
     representedFont<R = unknown>(): R;
   }
-  namespace classes {
-    export interface SVGFont<T = any> extends _SVGFont {
+  namespace SVGFont {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _SVGFont {
       alloc<R = SVGFont>(): R;
       new: <R = SVGFont>() => R;
       fontForXML_element_parent<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_fontForXML: P0, _element: P1, _parent: P2): R;
@@ -14,4 +14,4 @@ declare namespace cocoa {
   }
 }
 
-declare const SVGFont: cocoa.classes.SVGFont;
+declare const SVGFont: cocoa.SVGFont.CLASS;

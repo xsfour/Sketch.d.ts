@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableViewCellProxy<T = any> extends NSAccessibilityProxy, NSTableViewCellElementProtocol {
+  export interface NSTableViewCellProxy<T0 = void, T1 = void, T2 = void> extends NSAccessibilityProxy, NSTableViewCellElementProtocol {
     accessibilityChildrenInNavigationOrderAttribute<R = unknown>(): R;
     accessibilityCurrentEditor<R = unknown>(): R;
     accessibilityWindowPointForShowMenu<R = CGPoint>(): R;
@@ -32,12 +32,12 @@ declare namespace cocoa {
     debugDescription<R = NSString>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSTableViewCellProxy<T = any> extends NSAccessibilityProxy, NSTableViewCellElementProtocol {
+  namespace NSTableViewCellProxy {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSAccessibilityProxy, NSTableViewCellElementProtocol {
       alloc<R = NSTableViewCellProxy>(): R;
       new: <R = NSTableViewCellProxy>() => R;
     }
   }
 }
 
-declare const NSTableViewCellProxy: cocoa.classes.NSTableViewCellProxy;
+declare const NSTableViewCellProxy: cocoa.NSTableViewCellProxy.CLASS;

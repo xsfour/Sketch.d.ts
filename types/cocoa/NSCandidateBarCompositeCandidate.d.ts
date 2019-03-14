@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCandidateBarCompositeCandidate<T = any> extends NSObject, NSCopyingProtocol {
+  export interface NSCandidateBarCompositeCandidate<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     isEmojiCandidate<R = boolean>(): R;
     isSimpleCandidate<R = boolean>(): R;
     hasContent<R = boolean>(): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     attributedString<R = NSAttributedString>(): R;
     image<R = NSImage>(): R;
   }
-  namespace classes {
-    export interface NSCandidateBarCompositeCandidate<T = any> extends NSObject, NSCopyingProtocol {
+  namespace NSCandidateBarCompositeCandidate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = NSCandidateBarCompositeCandidate>(): R;
       new: <R = NSCandidateBarCompositeCandidate>() => R;
     }
   }
 }
 
-declare const NSCandidateBarCompositeCandidate: cocoa.classes.NSCandidateBarCompositeCandidate;
+declare const NSCandidateBarCompositeCandidate: cocoa.NSCandidateBarCompositeCandidate.CLASS;

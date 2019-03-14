@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSBackgroundActivityInternal<T = any> extends NSObject {
+  export interface _NSBackgroundActivityInternal<T0 = void, T1 = void, T2 = void> extends NSObject {
     setAdditionalProperties<R = void, P0 = unknown>(_setAdditionalProperties: P0): R;
     additionalProperties<R = unknown>(): R;
     setCurrentActivity<R = void, P0 = unknown>(_setCurrentActivity: P0): R;
@@ -28,8 +28,8 @@ declare namespace cocoa {
     identifier<R = NSString>(): R;
     setIdentifier<R = void, P0 = NSString>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSBackgroundActivityInternal<T = any> extends NSObject {
+  namespace _NSBackgroundActivityInternal {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSBackgroundActivityInternal>(): R;
       new: <R = _NSBackgroundActivityInternal>() => R;
     }

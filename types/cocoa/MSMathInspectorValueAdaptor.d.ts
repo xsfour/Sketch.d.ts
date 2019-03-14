@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSMathInspectorValueAdaptor<T = any> extends MSInspectorValueAdaptor, MSIncrementDecrementDelegateProtocol {
+  export interface MSMathInspectorValueAdaptor<T0 = void, T1 = void, T2 = void> extends MSInspectorValueAdaptor, MSIncrementDecrementDelegateProtocol {
     forceRelativeMathForBlock<R = void, P0 = CDUnknownBlockType>(_forceRelativeMathForBlock: P0): R;
     currentAdjustOptions<R = number>(): R;
     errorWithUnparsableString<R = unknown, P0 = unknown>(_errorWithUnparsableString: P0): R;
@@ -29,12 +29,12 @@ declare namespace cocoa {
     delegate<R = MSInspectorMathValueAdaptorDelegate>(): R;
     setDelegate<R = void, P0 = MSInspectorMathValueAdaptorDelegate>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSMathInspectorValueAdaptor<T = any> extends MSInspectorValueAdaptor, MSIncrementDecrementDelegateProtocol {
+  namespace MSMathInspectorValueAdaptor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSInspectorValueAdaptor, MSIncrementDecrementDelegateProtocol {
       alloc<R = MSMathInspectorValueAdaptor>(): R;
       new: <R = MSMathInspectorValueAdaptor>() => R;
     }
   }
 }
 
-declare const MSMathInspectorValueAdaptor: cocoa.classes.MSMathInspectorValueAdaptor;
+declare const MSMathInspectorValueAdaptor: cocoa.MSMathInspectorValueAdaptor.CLASS;

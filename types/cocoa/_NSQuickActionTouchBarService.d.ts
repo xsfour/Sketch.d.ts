@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSQuickActionTouchBarService<T = any> extends NSObject, _NSQuickActionTouchBarControllerDelegateProtocol, _NSQuickActionTouchBarServiceProtocolProtocol {
+  export interface _NSQuickActionTouchBarService<T0 = void, T1 = void, T2 = void> extends NSObject, _NSQuickActionTouchBarControllerDelegateProtocol, _NSQuickActionTouchBarServiceProtocolProtocol {
     cxx_destruct<R = void>(): R;
     handleShowPopoverNotification<R = void>(): R;
     unregisterClientForApp<R = void, P0 = unknown>(_unregisterClientForApp: P0): R;
@@ -12,8 +12,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSQuickActionTouchBarService<T = any> extends NSObject, _NSQuickActionTouchBarControllerDelegateProtocol, _NSQuickActionTouchBarServiceProtocolProtocol {
+  namespace _NSQuickActionTouchBarService {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, _NSQuickActionTouchBarControllerDelegateProtocol, _NSQuickActionTouchBarServiceProtocolProtocol {
       alloc<R = _NSQuickActionTouchBarService>(): R;
       new: <R = _NSQuickActionTouchBarService>() => R;
     }

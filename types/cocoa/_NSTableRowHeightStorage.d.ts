@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSTableRowHeightStorage<T = any> extends NSObject, NSCopyingProtocol {
+  export interface _NSTableRowHeightStorage<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     deleteRowsInRange<R = void, P0 = _NSRange>(_deleteRowsInRange: P0): R;
     _variableDeleteRowsWithRange<R = void, P0 = _NSRange>(__variableDeleteRowsWithRange: P0): R;
     _normalDeleteRowsWithRange<R = void, P0 = _NSRange>(__normalDeleteRowsWithRange: P0): R;
@@ -48,8 +48,8 @@ declare namespace cocoa {
     numberOfRows<R = number>(): R;
     valid<R = boolean>(): R;
   }
-  namespace classes {
-    export interface _NSTableRowHeightStorage<T = any> extends NSObject, NSCopyingProtocol {
+  namespace _NSTableRowHeightStorage {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = _NSTableRowHeightStorage>(): R;
       new: <R = _NSTableRowHeightStorage>() => R;
     }

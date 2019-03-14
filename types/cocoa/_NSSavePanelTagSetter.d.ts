@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSSavePanelTagSetter<T = any> extends NSObject, NSFilePresenterProtocol {
+  export interface _NSSavePanelTagSetter<T0 = void, T1 = void, T2 = void> extends NSObject, NSFilePresenterProtocol {
     _setTagsForURL<R = void, P0 = unknown>(__setTagsForURL: P0): R;
     _stopWatching<R = void>(): R;
     _scheduleStopWatching<R = void>(): R;
@@ -26,8 +26,8 @@ declare namespace cocoa {
     primaryPresentedItemURL<R = NSURL>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSSavePanelTagSetter<T = any> extends NSObject, NSFilePresenterProtocol {
+  namespace _NSSavePanelTagSetter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSFilePresenterProtocol {
       alloc<R = _NSSavePanelTagSetter>(): R;
       new: <R = _NSSavePanelTagSetter>() => R;
       _relevantFileAttributesForURL_cached<R = unknown, P0 = unknown, P1 = boolean>(__relevantFileAttributesForURL: P0, _cached: P1): R;

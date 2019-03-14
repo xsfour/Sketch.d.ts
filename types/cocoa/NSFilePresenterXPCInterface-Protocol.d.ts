@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFilePresenterXPCInterfaceProtocol<T = any> extends NSFileCoordinationDebugInfoXPCIntefaceProtocol {
+  export interface NSFilePresenterXPCInterfaceProtocol<T0 = void, T1 = void, T2 = void> extends NSFileCoordinationDebugInfoXPCIntefaceProtocol {
     logSuspensionWarning<R = void>(): R;
     setProviderPurposeIdentifier<R = void, P0 = NSString>(_setProviderPurposeIdentifier: P0): R;
     updateLastEventID<R = void, P0 = number>(_updateLastEventID: P0): R;
@@ -21,7 +21,7 @@ declare namespace cocoa {
     reacquireFromReadingClaimForID<R = void, P0 = unknown>(_reacquireFromReadingClaimForID: P0): R;
     relinquishToReadingClaimWithID_options_purposeID_completionHandler<R = void, P0 = unknown, P1 = number, P2 = unknown, P3 = CDUnknownBlockType>(_relinquishToReadingClaimWithID: P0, _options: P1, _purposeID: P2, _completionHandler: P3): R;
   }
-  namespace classes {
-    export interface NSFilePresenterXPCInterfaceProtocol<T = any> extends NSFileCoordinationDebugInfoXPCIntefaceProtocol {  }
+  namespace NSFilePresenterXPCInterfaceProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSFileCoordinationDebugInfoXPCIntefaceProtocol {}
   }
 }

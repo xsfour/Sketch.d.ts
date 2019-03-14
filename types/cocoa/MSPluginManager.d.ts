@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPluginManager<T = any> extends NSObject {
+  export interface MSPluginManager<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     removePluginVersionsNotInIdentifiers<R = void, P0 = unknown>(_removePluginVersionsNotInIdentifiers: P0): R;
     addDownloadAndDecompressPluginError<R = void, P0 = unknown>(_addDownloadAndDecompressPluginError: P0): R;
@@ -94,8 +94,8 @@ declare namespace cocoa {
     setPlugins<R = void, P0 = NSDictionary>(_v: P0): R;
     mainPluginsFolderURL<R = NSURL>(): R;
   }
-  namespace classes {
-    export interface MSPluginManager<T = any> extends NSObject {
+  namespace MSPluginManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSPluginManager>(): R;
       new: <R = MSPluginManager>() => R;
       warehousePluginFolderForIdentifier_withVersion<R = unknown, P0 = unknown, P1 = unknown>(_warehousePluginFolderForIdentifier: P0, _withVersion: P1): R;
@@ -108,4 +108,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSPluginManager: cocoa.classes.MSPluginManager;
+declare const MSPluginManager: cocoa.MSPluginManager.CLASS;

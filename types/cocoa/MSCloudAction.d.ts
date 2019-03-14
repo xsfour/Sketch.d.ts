@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSCloudAction<T = any> extends MSPopoverAction, MSCloudShareUploadControllerDelegateProtocol {
+  export interface MSCloudAction<T0 = void, T1 = void, T2 = void> extends MSPopoverAction, MSCloudShareUploadControllerDelegateProtocol {
     performCloseSelector_withDelegate_shouldClose_contextInfo<R = void, P0 = string, P1 = unknown, P2 = boolean, P3 = void>(_performCloseSelector: P0, _withDelegate: P1, _shouldClose: P2, _contextInfo: P3): R;
     document_shouldClose_contextInfo<R = void, P0 = unknown, P1 = boolean, P2 = void>(_document: P0, _shouldClose: P1, _contextInfo: P2): R;
     prepareCloseWithHandler<R = void, P0 = CDUnknownBlockType>(_prepareCloseWithHandler: P0): R;
@@ -31,8 +31,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSCloudAction<T = any> extends MSPopoverAction, MSCloudShareUploadControllerDelegateProtocol {
+  namespace MSCloudAction {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSPopoverAction, MSCloudShareUploadControllerDelegateProtocol {
       alloc<R = MSCloudAction>(): R;
       new: <R = MSCloudAction>() => R;
       prepareClosingActions_withHandler<R = void, P0 = unknown, P1 = CDUnknownBlockType>(_prepareClosingActions: P0, _withHandler: P1): R;
@@ -49,4 +49,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSCloudAction: cocoa.classes.MSCloudAction;
+declare const MSCloudAction: cocoa.MSCloudAction.CLASS;

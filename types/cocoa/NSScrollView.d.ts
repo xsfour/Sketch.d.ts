@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScrollView<T = any> extends NSView, NSScrollerImpPairDelegateProtocol, NSGestureRecognizerDelegateProtocol, NSTextFinderBarContainerProtocol {
+  export interface NSScrollView<T0 = void, T1 = void, T2 = void> extends NSView, NSScrollerImpPairDelegateProtocol, NSGestureRecognizerDelegateProtocol, NSTextFinderBarContainerProtocol {
     _forcesContentInsetsLayout<R = boolean>(): R;
     _setForcesContentInsetsLayout<R = void, P0 = boolean>(__setForcesContentInsetsLayout: P0): R;
     setMagnification_centeredAtPoint<R = void, P0 = number, P1 = CGPoint>(_setMagnification: P0, _centeredAtPoint: P1): R;
@@ -273,8 +273,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSScrollView<T = any> extends NSView, NSScrollerImpPairDelegateProtocol, NSGestureRecognizerDelegateProtocol, NSTextFinderBarContainerProtocol {
+  namespace NSScrollView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView, NSScrollerImpPairDelegateProtocol, NSGestureRecognizerDelegateProtocol, NSTextFinderBarContainerProtocol {
       alloc<R = NSScrollView>(): R;
       new: <R = NSScrollView>() => R;
       _drawCornerWidgetInRect_withSmallSize<R = void, P0 = CGRect, P1 = boolean>(__drawCornerWidgetInRect: P0, _withSmallSize: P1): R;
@@ -295,4 +295,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSScrollView: cocoa.classes.NSScrollView;
+declare const NSScrollView: cocoa.NSScrollView.CLASS;

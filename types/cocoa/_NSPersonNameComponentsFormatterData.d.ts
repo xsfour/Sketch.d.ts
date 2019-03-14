@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSPersonNameComponentsFormatterData<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  export interface _NSPersonNameComponentsFormatterData<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
     dealloc<R = void>(): R;
     isEqualToFormatterData<R = boolean, P0 = unknown>(_isEqualToFormatterData: P0): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
@@ -19,8 +19,8 @@ declare namespace cocoa {
     style<R = number>(): R;
     setStyle<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSPersonNameComponentsFormatterData<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  namespace _NSPersonNameComponentsFormatterData {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
       alloc<R = _NSPersonNameComponentsFormatterData>(): R;
       new: <R = _NSPersonNameComponentsFormatterData>() => R;
     }

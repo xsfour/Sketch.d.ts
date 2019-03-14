@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSharedObject<T = any> extends _MSSharedObject, BCSortableProtocol {
+  export interface MSSharedObject<T0 = void, T1 = void, T2 = void> extends _MSSharedObject, BCSortableProtocol {
     parentGroup<R = unknown>(): R;
     type<R = number>(): R;
     isOutOfSyncWithInstance<R = boolean, P0 = MSModelObject>(_isOutOfSyncWithInstance: P0): R;
@@ -12,12 +12,12 @@ declare namespace cocoa {
     name<R = NSString>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSSharedObject<T = any> extends _MSSharedObject, BCSortableProtocol {
+  namespace MSSharedObject {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSSharedObject, BCSortableProtocol {
       alloc<R = MSSharedObject>(): R;
       new: <R = MSSharedObject>() => R;
     }
   }
 }
 
-declare const MSSharedObject: cocoa.classes.MSSharedObject;
+declare const MSSharedObject: cocoa.MSSharedObject.CLASS;

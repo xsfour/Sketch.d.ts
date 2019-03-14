@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSTextStyle<T = any> extends _MSTextStyle {
+  export interface MSTextStyle<T0 = void, T1 = void, T2 = void> extends _MSTextStyle {
     resetDecodedAttributes<R = void>(): R;
     syncOwningTextLayerWithThisStyle<R = void>(): R;
     updateAttributesWithoutSyncingOwningTextLayer<R = void, P0 = unknown>(_updateAttributesWithoutSyncingOwningTextLayer: P0): R;
@@ -13,8 +13,8 @@ declare namespace cocoa {
     fontPostscriptName<R = NSString>(): R;
     isRequiredFontAvailable<R = boolean>(): R;
   }
-  namespace classes {
-    export interface MSTextStyle<T = any> extends _MSTextStyle {
+  namespace MSTextStyle {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSTextStyle {
       alloc<R = MSTextStyle>(): R;
       new: <R = MSTextStyle>() => R;
       styleWithAttributes<R = unknown, P0 = unknown>(_styleWithAttributes: P0): R;
@@ -22,4 +22,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSTextStyle: cocoa.classes.MSTextStyle;
+declare const MSTextStyle: cocoa.MSTextStyle.CLASS;

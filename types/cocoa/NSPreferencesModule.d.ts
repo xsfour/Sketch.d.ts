@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPreferencesModule<T = any> extends NSObject, NSPreferencesModuleProtocol {
+  export interface NSPreferencesModule<T0 = void, T1 = void, T2 = void> extends NSObject, NSPreferencesModuleProtocol {
     isResizable<R = boolean>(): R;
     setMinSize<R = void, P0 = CGSize>(_setMinSize: P0): R;
     minSize<R = CGSize>(): R;
@@ -12,8 +12,8 @@ declare namespace cocoa {
     preferencesView<R = NSBox>(): R;
     setPreferencesView<R = void, P0 = NSBox>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSPreferencesModule<T = any> extends NSObject, NSPreferencesModuleProtocol {
+  namespace NSPreferencesModule {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSPreferencesModuleProtocol {
       alloc<R = NSPreferencesModule>(): R;
       new: <R = NSPreferencesModule>() => R;
       sharedInstance<R = unknown>(): R;
@@ -21,4 +21,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPreferencesModule: cocoa.classes.NSPreferencesModule;
+declare const NSPreferencesModule: cocoa.NSPreferencesModule.CLASS;

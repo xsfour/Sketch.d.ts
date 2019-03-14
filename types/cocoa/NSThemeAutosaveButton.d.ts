@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSThemeAutosaveButton<T = any> extends NSButton, NSPopoverDelegateProtocol {
+  export interface NSThemeAutosaveButton<T0 = void, T1 = void, T2 = void> extends NSButton, NSPopoverDelegateProtocol {
     documentEditingState<R = number>(): R;
     setDocumentEditingState_animate<R = void, P0 = number, P1 = boolean>(_setDocumentEditingState: P0, _animate: P1): R;
     _shouldColorTextForAlertPopover<R = boolean>(): R;
@@ -39,8 +39,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSThemeAutosaveButton<T = any> extends NSButton, NSPopoverDelegateProtocol {
+  namespace NSThemeAutosaveButton {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSButton, NSPopoverDelegateProtocol {
       alloc<R = NSThemeAutosaveButton>(): R;
       new: <R = NSThemeAutosaveButton>() => R;
       _textColorForDisplayingAlertPopover<R = unknown>(): R;
@@ -48,4 +48,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSThemeAutosaveButton: cocoa.classes.NSThemeAutosaveButton;
+declare const NSThemeAutosaveButton: cocoa.NSThemeAutosaveButton.CLASS;

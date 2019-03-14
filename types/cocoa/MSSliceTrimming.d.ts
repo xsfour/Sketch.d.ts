@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSliceTrimming<T = any> extends NSObject {}
-  namespace classes {
-    export interface MSSliceTrimming<T = any> extends NSObject {
+  export interface MSSliceTrimming<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace MSSliceTrimming {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSSliceTrimming>(): R;
       new: <R = MSSliceTrimming>() => R;
       simpleSafeRectFromLayerAncestry<R = CGRect, P0 = unknown>(_simpleSafeRectFromLayerAncestry: P0): R;
@@ -16,4 +16,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSSliceTrimming: cocoa.classes.MSSliceTrimming;
+declare const MSSliceTrimming: cocoa.MSSliceTrimming.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAttachmentTextStorage<T = any> extends NSTextStorage {
+  export interface NSAttachmentTextStorage<T0 = void, T1 = void, T2 = void> extends NSTextStorage {
     setUrl<R = void, P0 = unknown>(_setUrl: P0): R;
     url<R = unknown>(): R;
     setFilename<R = void, P0 = unknown>(_setFilename: P0): R;
@@ -13,9 +13,9 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     init<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSAttachmentTextStorage<T = any> extends NSTextStorage {  }
+  namespace NSAttachmentTextStorage {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTextStorage {}
   }
 }
 
-declare const NSAttachmentTextStorage: cocoa.classes.NSAttachmentTextStorage;
+declare const NSAttachmentTextStorage: cocoa.NSAttachmentTextStorage.CLASS;

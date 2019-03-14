@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAttributedString<T = any> extends NSObject, MSCodingProtocol, NSCopyingProtocol {
+  export interface MSAttributedString<T0 = void, T1 = void, T2 = void> extends NSObject, MSCodingProtocol, NSCopyingProtocol {
     cxx_destruct<R = void>(): R;
     propertiesAreEqual<R = boolean, P0 = unknown>(_propertiesAreEqual: P0): R;
     debugDescription<R = unknown>(): R;
@@ -27,8 +27,8 @@ declare namespace cocoa {
     string<R = NSString>(): R;
     archiveReferenceIdentifier_bc<R = NSString>(): R;
   }
-  namespace classes {
-    export interface MSAttributedString<T = any> extends NSObject, MSCodingProtocol, NSCopyingProtocol {
+  namespace MSAttributedString {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, MSCodingProtocol, NSCopyingProtocol {
       alloc<R = MSAttributedString>(): R;
       new: <R = MSAttributedString>() => R;
       isRequiredFontAvailableInDictionary<R = boolean, P0 = unknown>(_isRequiredFontAvailableInDictionary: P0): R;
@@ -43,4 +43,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSAttributedString: cocoa.classes.MSAttributedString;
+declare const MSAttributedString: cocoa.MSAttributedString.CLASS;

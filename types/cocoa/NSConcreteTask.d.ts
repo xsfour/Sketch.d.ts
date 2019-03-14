@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSConcreteTask<T = any> extends NSTask {
+  export interface NSConcreteTask<T0 = void, T1 = void, T2 = void> extends NSTask {
     setStartsNewProcessGroup<R = void, P0 = boolean>(_setStartsNewProcessGroup: P0): R;
     processIdentifier<R = number>(): R;
     _procid<R = number>(): R;
@@ -34,12 +34,12 @@ declare namespace cocoa {
     setQualityOfService<R = void, P0 = number>(_setQualityOfService: P0): R;
     qualityOfService<R = number>(): R;
   }
-  namespace classes {
-    export interface NSConcreteTask<T = any> extends NSTask {
+  namespace NSConcreteTask {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTask {
       alloc<R = NSConcreteTask>(): R;
       new: <R = NSConcreteTask>() => R;
     }
   }
 }
 
-declare const NSConcreteTask: cocoa.classes.NSConcreteTask;
+declare const NSConcreteTask: cocoa.NSConcreteTask.CLASS;

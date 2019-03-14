@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSNormalEventData<T = any> extends NSObject {
+  export interface MSNormalEventData<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     snapperData<R = MSSnapperData>(): R;
     setSnapperData<R = void, P0 = MSSnapperData>(_v: P0): R;
@@ -22,12 +22,12 @@ declare namespace cocoa {
     hasMultipleTouches<R = boolean>(): R;
     setHasMultipleTouches<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSNormalEventData<T = any> extends NSObject {
+  namespace MSNormalEventData {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSNormalEventData>(): R;
       new: <R = MSNormalEventData>() => R;
     }
   }
 }
 
-declare const MSNormalEventData: cocoa.classes.MSNormalEventData;
+declare const MSNormalEventData: cocoa.MSNormalEventData.CLASS;

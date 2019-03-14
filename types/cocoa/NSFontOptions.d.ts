@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFontOptions<T = any> extends NSObject {
+  export interface NSFontOptions<T0 = void, T1 = void, T2 = void> extends NSObject {
     selectAllInView_selectionOnly_fontFamily_font_characterStyle_paragraphStyle<R = void, P0 = unknown, P1 = boolean, P2 = boolean, P3 = boolean, P4 = boolean, P5 = boolean>(_selectAllInView: P0, _selectionOnly: P1, _fontFamily: P2, _font: P3, _characterStyle: P4, _paragraphStyle: P5): R;
     sheetDidEnd_returnCode_contextInfo<R = void, P0 = unknown, P1 = number, P2 = void>(_sheetDidEnd: P0, _returnCode: P1, _contextInfo: P2): R;
     removeFavoriteInWindow<R = void, P0 = unknown>(_removeFavoriteInWindow: P0): R;
@@ -44,8 +44,8 @@ declare namespace cocoa {
     saveFavoritesToDefaults<R = void>(): R;
     storedAttributes<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSFontOptions<T = any> extends NSObject {
+  namespace NSFontOptions {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSFontOptions>(): R;
       new: <R = NSFontOptions>() => R;
       sharedFontOptions<R = unknown>(): R;
@@ -53,4 +53,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSFontOptions: cocoa.classes.NSFontOptions;
+declare const NSFontOptions: cocoa.NSFontOptions.CLASS;

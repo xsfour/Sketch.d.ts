@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableOptions<T = any> extends NSWindowController {
+  export interface NSTableOptions<T0 = void, T1 = void, T2 = void> extends NSWindowController {
     worksWhenModal<R = boolean>(): R;
     removeClient<R = void, P0 = unknown>(_removeClient: P0): R;
     setClient<R = void, P0 = unknown>(_setClient: P0): R;
@@ -32,9 +32,11 @@ declare namespace cocoa {
     textView_shouldSetColor<R = boolean, P0 = unknown, P1 = unknown>(_textView: P0, _shouldSetColor: P1): R;
     tableOptionsPanel<R = unknown, P0 = boolean>(_tableOptionsPanel: P0): R;
     shouldCascadeWindows<R = boolean>(): R;
+    windowDidLoad<R = void>(): R;
+    initWithWindow<R = unknown, P0 = unknown>(_initWithWindow: P0): R;
   }
-  namespace classes {
-    export interface NSTableOptions<T = any> extends NSWindowController {
+  namespace NSTableOptions {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSWindowController {
       alloc<R = NSTableOptions>(): R;
       new: <R = NSTableOptions>() => R;
       sharedTableOptions<R = unknown>(): R;
@@ -42,4 +44,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTableOptions: cocoa.classes.NSTableOptions;
+declare const NSTableOptions: cocoa.NSTableOptions.CLASS;

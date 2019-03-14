@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSavePanel<T = any> extends NSPanel, FIFinderViewDelegateProtocol, NSTouchBarDelegateProtocol {
+  export interface NSSavePanel<T0 = void, T1 = void, T2 = void> extends NSPanel, FIFinderViewDelegateProtocol, NSTouchBarDelegateProtocol {
     _setTagsIfNecessary<R = void>(): R;
     _registerTagsWithFinder<R = void>(): R;
     _commitPendingTags<R = void>(): R;
@@ -133,6 +133,7 @@ declare namespace cocoa {
     beginForDirectory_file_types_modelessDelegate_didEndSelector_contextInfo<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = string, P5 = void>(_beginForDirectory: P0, _file: P1, _types: P2, _modelessDelegate: P3, _didEndSelector: P4, _contextInfo: P5): R;
     beginSheetForDirectory_file_types_modalForWindow_modalDelegate_didEndSelector_contextInfo<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown, P5 = string, P6 = void>(_beginSheetForDirectory: P0, _file: P1, _types: P2, _modalForWindow: P3, _modalDelegate: P4, _didEndSelector: P5, _contextInfo: P6): R;
     _finderKitMinimumViewSize<R = CGSize>(): R;
+    orderWindow_relativeTo<R = void, P0 = number, P1 = number>(_orderWindow: P0, _relativeTo: P1): R;
     runModalForDirectory_file_types<R = number, P0 = unknown, P1 = unknown, P2 = unknown>(_runModalForDirectory: P0, _file: P1, _types: P2): R;
     _selectFilePath<R = void, P0 = unknown>(__selectFilePath: P0): R;
     _setBeginWithFileNames<R = void, P0 = unknown>(__setBeginWithFileNames: P0): R;
@@ -167,7 +168,13 @@ declare namespace cocoa {
     _sendShouldEnableURL_toDelegate<R = boolean, P0 = unknown, P1 = unknown>(__sendShouldEnableURL: P0, _toDelegate: P1): R;
     hidesSharedSection<R = boolean>(): R;
     setHidesSharedSection<R = void, P0 = boolean>(_setHidesSharedSection: P0): R;
+    selectKeyViewPrecedingView<R = void, P0 = unknown>(_selectKeyViewPrecedingView: P0): R;
+    selectKeyViewFollowingView<R = void, P0 = unknown>(_selectKeyViewFollowingView: P0): R;
+    fieldEditor_forObject<R = unknown, P0 = boolean, P1 = unknown>(_fieldEditor: P0, _forObject: P1): R;
+    performDragOperation<R = boolean, P0 = unknown>(_performDragOperation: P0): R;
     _selectURL<R = boolean, P0 = unknown>(__selectURL: P0): R;
+    prepareForDragOperation<R = boolean, P0 = unknown>(_prepareForDragOperation: P0): R;
+    draggingEntered<R = number, P0 = unknown>(_draggingEntered: P0): R;
     _registerForDragTypes<R = void>(): R;
     _handleFileListConfirmedSelection<R = boolean, P0 = unknown>(__handleFileListConfirmedSelection: P0): R;
     _handleFileListSelectionChanged<R = void, P0 = unknown>(__handleFileListSelectionChanged: P0): R;
@@ -196,6 +203,7 @@ declare namespace cocoa {
     _fetchUserSetHideExtensionButtonState<R = boolean>(): R;
     _storeExpandedFrameSize<R = void>(): R;
     _storeExpandedFrameSizeValue<R = void, P0 = CGSize>(__storeExpandedFrameSizeValue: P0): R;
+    center<R = void>(): R;
     _fetchExpandedFrameSize<R = CGSize, P0 = CGSize>(__fetchExpandedFrameSize: P0): R;
     _storeExpandedState<R = void>(): R;
     _fetchExpandedState<R = boolean>(): R;
@@ -203,6 +211,7 @@ declare namespace cocoa {
     _readFileListMode<R = void>(): R;
     _setMessageTextFieldValueNoLayout<R = boolean, P0 = unknown>(__setMessageTextFieldValueNoLayout: P0): R;
     _defaultMessageAttributes<R = unknown>(): R;
+    observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
     _commitPendingEditsIn_nameField<R = void>(): R;
     _setNameFieldValueLastSet<R = void, P0 = unknown>(__setNameFieldValueLastSet: P0): R;
     setAllowsMultipleSelection<R = void, P0 = boolean>(_setAllowsMultipleSelection: P0): R;
@@ -229,6 +238,7 @@ declare namespace cocoa {
     _markExpandAnimationStart<R = void>(): R;
     shouldForceSize_andRunBlock<R = void, P0 = boolean, P1 = CDUnknownBlockType>(_shouldForceSize: P0, _andRunBlock: P1): R;
     createFakeConstraintsForStoredExpandedSize<R = unknown>(): R;
+    _preserveAnimatingFrames<R = boolean>(): R;
     _setIsExpanded_andStoreState<R = void, P0 = boolean, P1 = boolean>(__setIsExpanded: P0, _andStoreState: P1): R;
     _configureAll<R = void>(): R;
     _setIsExpanded<R = void, P0 = boolean>(__setIsExpanded: P0): R;
@@ -289,6 +299,8 @@ declare namespace cocoa {
     directory<R = unknown>(): R;
     _directoryPreferringURL<R = unknown, P0 = boolean>(__directoryPreferringURL: P0): R;
     _isSaveFilenameLengthLegal<R = boolean>(): R;
+    _allowsRootLayerBacking<R = boolean>(): R;
+    _shouldDoLayerPerformanceUpdates<R = boolean>(): R;
     _filenamesAlwaysIncludingDirectories<R = unknown>(): R;
     filenames<R = unknown>(): R;
     _filenamesWithAlwaysIncludingDirectories_wantRawURLs<R = unknown, P0 = boolean, P1 = boolean>(__filenamesWithAlwaysIncludingDirectories: P0, _wantRawURLs: P1): R;
@@ -336,12 +348,18 @@ declare namespace cocoa {
     _restoreDefaultSettingsForSaveMode<R = void>(): R;
     _restoreDefaultSettingsCommon<R = void>(): R;
     _orderRemoteWindow_sender<R = void, P0 = number, P1 = unknown>(__orderRemoteWindow: P0, _sender: P1): R;
+    orderOut<R = void, P0 = unknown>(_orderOut: P0): R;
     _navViewWindowOrderedOut<R = void>(): R;
     _navViewWindowOrderedIn<R = void>(): R;
     canBecomeMainWindow<R = boolean>(): R;
     newFolderControllerClass<R = unknown>(): R;
+    _selectFirstKeyView<R = void>(): R;
+    _isTitleHidden<R = boolean>(): R;
     _useRemotePanel<R = boolean>(): R;
     initWithOptions<R = unknown, P0 = unknown>(_initWithOptions: P0): R;
+    _shouldUseTexturedAppearanceForSegmentedCellInView<R = boolean, P0 = unknown>(__shouldUseTexturedAppearanceForSegmentedCellInView: P0): R;
+    _contentSizeRespectsLayoutAnchors<R = boolean>(): R;
+    startRectForSheet<R = CGRect, P0 = unknown>(_startRectForSheet: P0): R;
     _startRectForSheetHeightOffset<R = number>(): R;
     _finderKitView<R = unknown>(): R;
     _initializeiCloudOpenPanelBehavior<R = void>(): R;
@@ -356,6 +374,7 @@ declare namespace cocoa {
     _runningAsASheet<R = boolean>(): R;
     _runningAsAService<R = boolean>(): R;
     _setRunningAsAService<R = void, P0 = boolean>(__setRunningAsAService: P0): R;
+    setFrame_display<R = void, P0 = CGRect, P1 = boolean>(_setFrame: P0, _display: P1): R;
     _itemFromButton_withIdentifier_alsoBindHidden<R = unknown, P0 = unknown, P1 = unknown, P2 = boolean>(__itemFromButton: P0, _withIdentifier: P1, _alsoBindHidden: P2): R;
     _itemFromButton_withIdentifier<R = unknown, P0 = unknown, P1 = unknown>(__itemFromButton: P0, _withIdentifier: P1): R;
     _makeBaseTouchBarWithIdentifier<R = unknown, P0 = unknown>(__makeBaseTouchBarWithIdentifier: P0): R;
@@ -384,10 +403,12 @@ declare namespace cocoa {
     _setupFileBrowserView<R = void>(): R;
     _makeFinderKitView<R = unknown>(): R;
     setContentView<R = void, P0 = unknown>(_setContentView: P0): R;
+    saveFrameUsingName<R = void, P0 = unknown>(_saveFrameUsingName: P0): R;
     _titlebarAuxiliaryHeight<R = number>(): R;
     setMinSize<R = void, P0 = CGSize>(_setMinSize: P0): R;
     accessibilityIsDescriptionAttributeSettable<R = boolean>(): R;
     accessibilityDescriptionAttribute<R = unknown>(): R;
+    accessibilityAttributeNames<R = unknown>(): R;
     _unregisterKey_withViewBridgeService_onBridge_shouldRemoveObserversFromBridge_shouldRemoveObserversFromPanel<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = boolean, P4 = boolean>(__unregisterKey: P0, _withViewBridgeService: P1, _onBridge: P2, _shouldRemoveObserversFromBridge: P3, _shouldRemoveObserversFromPanel: P4): R;
     _registerKey_withViewBridgeService_onBridge_defaultObject_owner_assertOnNULLForKeys_shouldObserveBridge_bridgeShouldObservePanel<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = number, P5 = unknown, P6 = boolean, P7 = boolean>(__registerKey: P0, _withViewBridgeService: P1, _onBridge: P2, _defaultObject: P3, _owner: P4, _assertOnNULLForKeys: P5, _shouldObserveBridge: P6, _bridgeShouldObservePanel: P7): R;
     valueforUndefinedKey<R = unknown, P0 = unknown>(_valueforUndefinedKey: P0): R;
@@ -443,8 +464,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSSavePanel<T = any> extends NSPanel, FIFinderViewDelegateProtocol, NSTouchBarDelegateProtocol {
+  namespace NSSavePanel {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSPanel, FIFinderViewDelegateProtocol, NSTouchBarDelegateProtocol {
       alloc<R = NSSavePanel>(): R;
       new: <R = NSSavePanel>() => R;
       _waitForURL_useSecurityScopedURL_withNameFieldString_thenSetTags<R = void, P0 = unknown, P1 = boolean, P2 = unknown, P3 = unknown>(__waitForURL: P0, _useSecurityScopedURL: P1, _withNameFieldString: P2, _thenSetTags: P3): R;
@@ -480,6 +501,7 @@ declare namespace cocoa {
       _warmUp<R = void>(): R;
       _applicationContextHasEntitlement<R = boolean, P0 = string>(__applicationContextHasEntitlement: P0): R;
       _clientWithSecurityTaskRef_hasEntitlement_sandboxPermissions<R = boolean, P0 = __SecTask, P1 = string, P2 = string>(__clientWithSecurityTaskRef: P0, _hasEntitlement: P1, _sandboxPermissions: P2): R;
+      _tracksDirtyRegions<R = boolean>(): R;
       _resolvedSymLinkedURL<R = unknown, P0 = unknown>(__resolvedSymLinkedURL: P0): R;
       _filenameHasAcceptableFileType_allowedFileTypes_allowsOtherFileTypes<R = boolean, P0 = unknown, P1 = unknown, P2 = boolean>(__filenameHasAcceptableFileType: P0, _allowedFileTypes: P1, _allowsOtherFileTypes: P2): R;
       _filenameHasNonEmptyAcceptableFileType_allowedFileTypes_allowsOtherFileTypes<R = boolean, P0 = unknown, P1 = unknown, P2 = boolean>(__filenameHasNonEmptyAcceptableFileType: P0, _allowedFileTypes: P1, _allowsOtherFileTypes: P2): R;
@@ -496,6 +518,7 @@ declare namespace cocoa {
       kvoKeysForType<R = unknown, P0 = number>(_kvoKeysForType: P0): R;
       keyPathsForValuesAffectingValueForKey<R = unknown, P0 = unknown>(_keyPathsForValuesAffectingValueForKey: P0): R;
       _fileBrowserKVOKeys<R = unknown>(): R;
+      automaticallyNotifiesObserversForKey<R = boolean, P0 = unknown>(_automaticallyNotifiesObserversForKey: P0): R;
       _supportedDelegateMethodsFromDelegate<R = unknown, P0 = unknown>(__supportedDelegateMethodsFromDelegate: P0): R;
       _addToDefaultsCurrentDirectoryToRecentPlaces<R = void, P0 = unknown>(__addToDefaultsCurrentDirectoryToRecentPlaces: P0): R;
       _storeUserSetHideExtensionButtonState_toDefaultsUsingKey_forPanelType<R = void, P0 = boolean, P1 = unknown, P2 = boolean>(__storeUserSetHideExtensionButtonState: P0, _toDefaultsUsingKey: P1, _forPanelType: P2): R;
@@ -519,4 +542,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSSavePanel: cocoa.classes.NSSavePanel;
+declare const NSSavePanel: cocoa.NSSavePanel.CLASS;

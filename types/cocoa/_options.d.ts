@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _options<T = any> {}
-  namespace classes {
-    export interface _options<T = any> {  }
+  export interface _options<T0 = void, T1 = void, T2 = void> {}
+  namespace _options {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

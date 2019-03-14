@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSTextStoragePool<T = any> extends BCObjectPool, MSFirstLineTypesetterDelegateProtocol {
+  export interface MSTextStoragePool<T0 = void, T1 = void, T2 = void> extends BCObjectPool, MSFirstLineTypesetterDelegateProtocol {
     recycleTextStorage<R = void, P0 = unknown>(_recycleTextStorage: P0): R;
     vendTextStorage<R = unknown>(): R;
     initWithTextLayer<R = unknown, P0 = unknown>(_initWithTextLayer: P0): R;
@@ -12,9 +12,9 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSTextStoragePool<T = any> extends BCObjectPool, MSFirstLineTypesetterDelegateProtocol {  }
+  namespace MSTextStoragePool {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends BCObjectPool, MSFirstLineTypesetterDelegateProtocol {}
   }
 }
 
-declare const MSTextStoragePool: cocoa.classes.MSTextStoragePool;
+declare const MSTextStoragePool: cocoa.MSTextStoragePool.CLASS;

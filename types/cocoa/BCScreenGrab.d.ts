@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCScreenGrab<T = any> extends NSObject {
+  export interface BCScreenGrab<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     bitmapImageRepCroppingToRect<R = unknown, P0 = CGRect>(_bitmapImageRepCroppingToRect: P0): R;
     currentScreen<R = unknown>(): R;
@@ -15,8 +15,8 @@ declare namespace cocoa {
     isRetinaScreen<R = boolean>(): R;
     screenFrame<R = CGRect>(): R;
   }
-  namespace classes {
-    export interface BCScreenGrab<T = any> extends NSObject {
+  namespace BCScreenGrab {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = BCScreenGrab>(): R;
       new: <R = BCScreenGrab>() => R;
       screenGrabForDisplay_belowWindowWithID<R = unknown, P0 = number, P1 = number>(_screenGrabForDisplay: P0, _belowWindowWithID: P1): R;
@@ -25,4 +25,4 @@ declare namespace cocoa {
   }
 }
 
-declare const BCScreenGrab: cocoa.classes.BCScreenGrab;
+declare const BCScreenGrab: cocoa.BCScreenGrab.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSWindowTemplate<T = any> extends NSObject, NSCodingProtocol, NSUserInterfaceItemIdentificationProtocol {
+  export interface NSWindowTemplate<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol, NSUserInterfaceItemIdentificationProtocol {
     setUserInterfaceItemIdentifier<R = void, P0 = unknown>(_setUserInterfaceItemIdentifier: P0): R;
     userInterfaceItemIdentifier<R = unknown>(): R;
     nibInstantiate<R = unknown>(): R;
@@ -90,8 +90,8 @@ declare namespace cocoa {
     minFullScreenContentSize<R = CGSize>(): R;
     setMinFullScreenContentSize<R = void, P0 = CGSize>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSWindowTemplate<T = any> extends NSObject, NSCodingProtocol, NSUserInterfaceItemIdentificationProtocol {
+  namespace NSWindowTemplate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol, NSUserInterfaceItemIdentificationProtocol {
       alloc<R = NSWindowTemplate>(): R;
       new: <R = NSWindowTemplate>() => R;
       initialize<R = void>(): R;
@@ -99,4 +99,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSWindowTemplate: cocoa.classes.NSWindowTemplate;
+declare const NSWindowTemplate: cocoa.NSWindowTemplate.CLASS;

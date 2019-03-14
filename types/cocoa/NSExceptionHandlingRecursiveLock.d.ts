@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSExceptionHandlingRecursiveLock<T = any> extends NSRecursiveLock {}
-  namespace classes {
-    export interface NSExceptionHandlingRecursiveLock<T = any> extends NSRecursiveLock {
+  export interface NSExceptionHandlingRecursiveLock<T0 = void, T1 = void, T2 = void> extends NSRecursiveLock {}
+  namespace NSExceptionHandlingRecursiveLock {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSRecursiveLock {
       alloc<R = NSExceptionHandlingRecursiveLock>(): R;
       new: <R = NSExceptionHandlingRecursiveLock>() => R;
     }
   }
 }
 
-declare const NSExceptionHandlingRecursiveLock: cocoa.classes.NSExceptionHandlingRecursiveLock;
+declare const NSExceptionHandlingRecursiveLock: cocoa.NSExceptionHandlingRecursiveLock.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSURLComponents<T = any> extends NSObject, NSCopyingProtocol {
+  export interface NSURLComponents<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     URLRelativeToURL<R = unknown, P0 = unknown>(_URLRelativeToURL: P0): R;
     initWithString<R = unknown, P0 = unknown>(_initWithString: P0): R;
     initWithURL_resolvingAgainstBaseURL<R = unknown, P0 = unknown, P1 = boolean>(_initWithURL: P0, _resolvingAgainstBaseURL: P1): R;
@@ -48,8 +48,8 @@ declare namespace cocoa {
     string<R = NSString>(): R;
     URL<R = NSURL>(): R;
   }
-  namespace classes {
-    export interface NSURLComponents<T = any> extends NSObject, NSCopyingProtocol {
+  namespace NSURLComponents {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = NSURLComponents>(): R;
       new: <R = NSURLComponents>() => R;
       componentsWithString<R = unknown, P0 = unknown>(_componentsWithString: P0): R;
@@ -59,4 +59,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSURLComponents: cocoa.classes.NSURLComponents;
+declare const NSURLComponents: cocoa.NSURLComponents.CLASS;

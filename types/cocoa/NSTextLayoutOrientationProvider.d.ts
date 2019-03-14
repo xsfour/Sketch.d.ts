@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTextLayoutOrientationProvider<T = any> {}
-  namespace classes {
-    export interface NSTextLayoutOrientationProvider<T = any> {  }
+  export interface NSTextLayoutOrientationProvider<T0 = void, T1 = void, T2 = void> {}
+  namespace NSTextLayoutOrientationProvider {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSTextLayoutOrientationProvider: cocoa.classes.NSTextLayoutOrientationProvider;
+declare const NSTextLayoutOrientationProvider: cocoa.NSTextLayoutOrientationProvider.CLASS;

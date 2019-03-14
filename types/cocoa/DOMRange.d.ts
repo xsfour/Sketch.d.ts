@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface DOMRange<T = any> {}
-  namespace classes {
-    export interface DOMRange<T = any> {  }
+  export interface DOMRange<T0 = void, T1 = void, T2 = void> {}
+  namespace DOMRange {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const DOMRange: cocoa.classes.DOMRange;
+declare const DOMRange: cocoa.DOMRange.CLASS;

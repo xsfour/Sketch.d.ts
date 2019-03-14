@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAlert<T = any> extends NSObject, NSTouchBarProviderProtocol {
+  export interface NSAlert<T0 = void, T1 = void, T2 = void> extends NSObject, NSTouchBarProviderProtocol {
     _setSuppressionButton<R = void, P0 = unknown>(__setSuppressionButton: P0): R;
     _suppressionButton<R = unknown>(): R;
     _setDidDismissSelector<R = void, P0 = string>(__setDidDismissSelector: P0): R;
@@ -82,11 +82,10 @@ declare namespace cocoa {
     description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
-    // + NSAlert(Chocolat):
-    
-  }
-  namespace classes {
-    export interface NSAlert<T = any> extends NSObject, NSTouchBarProviderProtocol {
+  
+}
+  namespace NSAlert {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSTouchBarProviderProtocol {
       alloc<R = NSAlert>(): R;
       new: <R = NSAlert>() => R;
       _stopTimerForSpeakingForAlert<R = void, P0 = unknown>(__stopTimerForSpeakingForAlert: P0): R;
@@ -96,7 +95,7 @@ declare namespace cocoa {
       _dontSaveButtonTitle<R = unknown>(): R;
       alertWithError<R = unknown, P0 = unknown>(_alertWithError: P0): R;
       alertWithMessageText_defaultButton_alternateButton_otherButton_informativeTextWithFormat<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown>(_alertWithMessageText: P0, _defaultButton: P1, _alternateButton: P2, _otherButton: P3, _informativeTextWithFormat: P4): R;
-      // + NSAlert(Chocolat):
+      // + NSAlert(Chocolat): 
       runSheetWithMessage_info<R = void, P0 = unknown, P1 = unknown>(_runSheetWithMessage: P0, _info: P1): R;
       runModalSessionWithMessage_info_buttons<R = number, P0 = unknown, P1 = unknown, P2 = unknown>(_runModalSessionWithMessage: P0, _info: P1, _buttons: P2): R;
       runModalWithMessage_info_buttons<R = number, P0 = unknown, P1 = unknown, P2 = unknown>(_runModalWithMessage: P0, _info: P1, _buttons: P2): R;
@@ -106,4 +105,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSAlert: cocoa.classes.NSAlert;
+declare const NSAlert: cocoa.NSAlert.CLASS;

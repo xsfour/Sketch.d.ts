@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFindIndicator<T = any> extends NSObject, NSImmediateActionAnimationControllerProtocol {
+  export interface NSFindIndicator<T0 = void, T1 = void, T2 = void> extends NSObject, NSImmediateActionAnimationControllerProtocol {
     focusUAZoom<R = void>(): R;
     _cancel<R = void>(): R;
     _fade<R = void, P0 = number>(__fade: P0): R;
@@ -44,8 +44,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSFindIndicator<T = any> extends NSObject, NSImmediateActionAnimationControllerProtocol {
+  namespace NSFindIndicator {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSImmediateActionAnimationControllerProtocol {
       alloc<R = NSFindIndicator>(): R;
       new: <R = NSFindIndicator>() => R;
       endDrawing<R = void>(): R;
@@ -55,4 +55,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSFindIndicator: cocoa.classes.NSFindIndicator;
+declare const NSFindIndicator: cocoa.NSFindIndicator.CLASS;

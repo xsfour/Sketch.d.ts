@@ -1,7 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSToolbarCollectionViewItem<T = any> extends NSCollectionViewItem {
+  export interface NSToolbarCollectionViewItem<T0 = void, T1 = void, T2 = void> extends NSCollectionViewItem {
+    accessibilityAttributeValue<R = unknown, P0 = unknown>(_accessibilityAttributeValue: P0): R;
     observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
     setRepresentedObject<R = void, P0 = unknown>(_setRepresentedObject: P0): R;
     snapShotItemWithAvailableSize_isActive<R = unknown, P0 = CGSize, P1 = boolean>(_snapShotItemWithAvailableSize: P0, _isActive: P1): R;
@@ -11,8 +12,8 @@ declare namespace cocoa {
     snapshotWindow<R = NSToolbarSnapshotWindow>(): R;
     setSnapshotWindow<R = void, P0 = NSToolbarSnapshotWindow>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSToolbarCollectionViewItem<T = any> extends NSCollectionViewItem {
+  namespace NSToolbarCollectionViewItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSCollectionViewItem {
       alloc<R = NSToolbarCollectionViewItem>(): R;
       new: <R = NSToolbarCollectionViewItem>() => R;
       labelForPaletteLabelString<R = unknown, P0 = unknown>(_labelForPaletteLabelString: P0): R;
@@ -21,4 +22,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSToolbarCollectionViewItem: cocoa.classes.NSToolbarCollectionViewItem;
+declare const NSToolbarCollectionViewItem: cocoa.NSToolbarCollectionViewItem.CLASS;

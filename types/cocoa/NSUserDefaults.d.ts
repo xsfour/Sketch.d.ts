@@ -1,10 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUserDefaults<T = any> {
-    // + NSUserDefaults(NSKeyValueCoding,NSUserDefaults,NSUserDefaults_NSURLExtras,NSUserDefaultsAdditions):
+  export interface NSUserDefaults<T0 = void, T1 = void, T2 = void> {
+    // + NSUserDefaults(NSKeyValueCoding): 
     setValue_forKey<R = void, P0 = unknown, P1 = unknown>(_setValue: P0, _forKey: P1): R;
     valueForKey<R = unknown, P0 = unknown>(_valueForKey: P0): R;
+    // + NSUserDefaults(NSUserDefaults): 
     objectIsForcedForKey_inDomain<R = boolean, P0 = unknown, P1 = unknown>(_objectIsForcedForKey: P0, _inDomain: P1): R;
     objectIsForcedForKey<R = boolean, P0 = unknown>(_objectIsForcedForKey: P0): R;
     synchronize<R = boolean>(): R;
@@ -53,16 +54,18 @@ declare namespace cocoa {
     removeObjectForKey<R = void, P0 = unknown>(_removeObjectForKey: P0): R;
     setObject_forKey<R = void, P0 = unknown, P1 = unknown>(_setObject: P0, _forKey: P1): R;
     objectForKey<R = unknown, P0 = unknown>(_objectForKey: P0): R;
+    // + NSUserDefaults(NSUserDefaultsAdditions): 
     colorForKey<R = unknown, P0 = unknown>(_colorForKey: P0): R;
     setColor_forKey<R = void, P0 = unknown, P1 = unknown>(_setColor: P0, _forKey: P1): R;
   }
-  namespace classes {
-    export interface NSUserDefaults<T = any> {
-      // + NSUserDefaults(NSKeyValueCoding,NSUserDefaults,NSUserDefaults_NSURLExtras,NSUserDefaultsAdditions):
+  namespace NSUserDefaults {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {
+      // + NSUserDefaults(NSUserDefaults): 
       standardUserDefaults<R = unknown>(): R;
       _copyStandardUserDefaultsIfPresent<R = unknown>(): R;
       resetStandardUserDefaults<R = void>(): R;
       setStandardUserDefaults<R = void, P0 = unknown>(_setStandardUserDefaults: P0): R;
+      // + NSUserDefaults(NSUserDefaults_NSURLExtras): 
       _web_preferredLanguageCode<R = unknown>(): R;
       _web_addDefaultsChangeObserver<R = void>(): R;
       _web_defaultsDidChange<R = void>(): R;
@@ -71,4 +74,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSUserDefaults: cocoa.classes.NSUserDefaults;
+declare const NSUserDefaults: cocoa.NSUserDefaults.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSEncodingDetector<T = any> extends NSObject {
+  export interface NSEncodingDetector<T0 = void, T1 = void, T2 = void> extends NSObject {
     recognizeString_withDataLength_intoBuffer<R = number, P0 = string, P1 = number, P2 = unknown>(_recognizeString: P0, _withDataLength: P1, _intoBuffer: P2): R;
     multiBytesRatio<R = number>(): R;
     confidenceWith2Chars<R = number>(): R;
@@ -14,8 +14,8 @@ declare namespace cocoa {
     cfEncoding<R = number>(): R;
     nsEncoding<R = number>(): R;
   }
-  namespace classes {
-    export interface NSEncodingDetector<T = any> extends NSObject {
+  namespace NSEncodingDetector {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSEncodingDetector>(): R;
       new: <R = NSEncodingDetector>() => R;
       detectorForCFStringEncoding_allowBackupDetectors<R = unknown, P0 = number, P1 = boolean>(_detectorForCFStringEncoding: P0, _allowBackupDetectors: P1): R;
@@ -24,4 +24,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSEncodingDetector: cocoa.classes.NSEncodingDetector;
+declare const NSEncodingDetector: cocoa.NSEncodingDetector.CLASS;

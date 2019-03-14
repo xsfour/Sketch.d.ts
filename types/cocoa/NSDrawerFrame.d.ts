@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDrawerFrame<T = any> extends NSFrameView {
+  export interface NSDrawerFrame<T0 = void, T1 = void, T2 = void> extends NSFrameView {
     resizeWithEvent<R = void, P0 = unknown>(_resizeWithEvent: P0): R;
     drawerDidClose<R = void, P0 = unknown>(_drawerDidClose: P0): R;
     drawerDidOpen<R = void, P0 = unknown>(_drawerDidOpen: P0): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     registerForEdgeChanges<R = void, P0 = unknown>(_registerForEdgeChanges: P0): R;
     isOpaque<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSDrawerFrame<T = any> extends NSFrameView {
+  namespace NSDrawerFrame {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSFrameView {
       alloc<R = NSDrawerFrame>(): R;
       new: <R = NSDrawerFrame>() => R;
     }
   }
 }
 
-declare const NSDrawerFrame: cocoa.classes.NSDrawerFrame;
+declare const NSDrawerFrame: cocoa.NSDrawerFrame.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSEventHandlerManager<T = any> extends NSObject {
+  export interface MSEventHandlerManager<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     recordEvent<R = void, P0 = unknown>(_recordEvent: P0): R;
     sendMouseMovedEvent<R = void, P0 = unknown>(_sendMouseMovedEvent: P0): R;
@@ -27,12 +27,12 @@ declare namespace cocoa {
     document<R = MSDocument>(): R;
     setDocument<R = void, P0 = MSDocument>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSEventHandlerManager<T = any> extends NSObject {
+  namespace MSEventHandlerManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSEventHandlerManager>(): R;
       new: <R = MSEventHandlerManager>() => R;
     }
   }
 }
 
-declare const MSEventHandlerManager: cocoa.classes.MSEventHandlerManager;
+declare const MSEventHandlerManager: cocoa.MSEventHandlerManager.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSLayerListLayerExtensionsProtocol<T = any> extends BCOutlineViewNodeProtocol {
+  export interface MSLayerListLayerExtensionsProtocol<T0 = void, T1 = void, T2 = void> extends BCOutlineViewNodeProtocol {
     childrenForLayerList<R = NSArray>(): R;
     updateLayerListPreviewIfRequiredWithCompletionHandler<R = void, P0 = CDUnknownBlockType>(_updateLayerListPreviewIfRequiredWithCompletionHandler: P0): R;
     handleBadgeClickWithAltState<R = void, P0 = boolean>(_handleBadgeClickWithAltState: P0): R;
@@ -19,7 +19,7 @@ declare namespace cocoa {
     selectedInLayerList<R = boolean>(): R;
     expandableInLayerList<R = boolean>(): R;
   }
-  namespace classes {
-    export interface MSLayerListLayerExtensionsProtocol<T = any> extends BCOutlineViewNodeProtocol {  }
+  namespace MSLayerListLayerExtensionsProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends BCOutlineViewNodeProtocol {}
   }
 }

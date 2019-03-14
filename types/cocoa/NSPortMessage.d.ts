@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPortMessage<T = any> extends NSObject {
+  export interface NSPortMessage<T0 = void, T1 = void, T2 = void> extends NSObject {
     copyWithZone<R = unknown, P0 = _NSZone>(_copyWithZone: P0): R;
     sendBeforeDate<R = boolean, P0 = unknown>(_sendBeforeDate: P0): R;
     dealloc<R = void>(): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     receivePort<R = NSPort>(): R;
     sendPort<R = NSPort>(): R;
   }
-  namespace classes {
-    export interface NSPortMessage<T = any> extends NSObject {
+  namespace NSPortMessage {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSPortMessage>(): R;
       new: <R = NSPortMessage>() => R;
     }
   }
 }
 
-declare const NSPortMessage: cocoa.classes.NSPortMessage;
+declare const NSPortMessage: cocoa.NSPortMessage.CLASS;

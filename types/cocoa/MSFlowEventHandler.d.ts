@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFlowEventHandler<T = any> extends MSEventHandler, MSFlowMenuBuilderTargetProtocol {
+  export interface MSFlowEventHandler<T0 = void, T1 = void, T2 = void> extends MSEventHandler, MSFlowMenuBuilderTargetProtocol {
     findTargetLayerForMouse<R = unknown, P0 = CGPoint>(_findTargetLayerForMouse: P0): R;
     positionOfOtherPageImageIndicatorForArtboard<R = CGPoint, P0 = unknown>(_positionOfOtherPageImageIndicatorForArtboard: P0): R;
     parentArtboards<R = unknown>(): R;
@@ -28,12 +28,12 @@ declare namespace cocoa {
     layers<R = MSLayerArray>(): R;
     setLayers<R = void, P0 = MSLayerArray>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSFlowEventHandler<T = any> extends MSEventHandler, MSFlowMenuBuilderTargetProtocol {
+  namespace MSFlowEventHandler {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSEventHandler, MSFlowMenuBuilderTargetProtocol {
       alloc<R = MSFlowEventHandler>(): R;
       new: <R = MSFlowEventHandler>() => R;
     }
   }
 }
 
-declare const MSFlowEventHandler: cocoa.classes.MSFlowEventHandler;
+declare const MSFlowEventHandler: cocoa.MSFlowEventHandler.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTextInputContext<T = any> extends NSObject {
+  export interface NSTextInputContext<T0 = void, T1 = void, T2 = void> extends NSObject {
     doCommandBySelector_completionHandlerWithResult<R = void, P0 = string, P1 = CDUnknownBlockType>(_doCommandBySelector: P0, _completionHandlerWithResult: P1): R;
     incrementalSearchClientGeometry<R = number>(): R;
     drawsVerticallyForCharacterAtIndex<R = boolean, P0 = number>(_drawsVerticallyForCharacterAtIndex: P0): R;
@@ -191,8 +191,8 @@ declare namespace cocoa {
     setRtiSelectedTextRange<R = void, P0 = _NSRange>(_v: P0): R;
     hasActiveTextInputFunctionRowItem<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSTextInputContext<T = any> extends NSObject {
+  namespace NSTextInputContext {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSTextInputContext>(): R;
       new: <R = NSTextInputContext>() => R;
       localeForInputSource<R = unknown, P0 = unknown>(_localeForInputSource: P0): R;
@@ -213,4 +213,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTextInputContext: cocoa.classes.NSTextInputContext;
+declare const NSTextInputContext: cocoa.NSTextInputContext.CLASS;

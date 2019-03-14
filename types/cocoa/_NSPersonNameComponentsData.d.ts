@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSPersonNameComponentsData<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  export interface _NSPersonNameComponentsData<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
     dealloc<R = void>(): R;
     _freeIvars<R = void>(): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
@@ -21,8 +21,8 @@ declare namespace cocoa {
     givenName<R = NSString>(): R;
     setGivenName<R = void, P0 = NSString>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSPersonNameComponentsData<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  namespace _NSPersonNameComponentsData {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
       alloc<R = _NSPersonNameComponentsData>(): R;
       new: <R = _NSPersonNameComponentsData>() => R;
     }

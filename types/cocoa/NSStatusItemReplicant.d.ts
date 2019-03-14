@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSStatusItemReplicant<T = any> extends NSStatusItem {
+  export interface NSStatusItemReplicant<T0 = void, T1 = void, T2 = void> extends NSStatusItem {
     setDrawBlock<R = void, P0 = CDUnknownBlockType>(_setDrawBlock: P0): R;
     replicantView<R = unknown>(): R;
     isVisible<R = boolean>(): R;
@@ -9,12 +9,12 @@ declare namespace cocoa {
     parentItem<R = NSStatusItem>(): R;
     setParentItem<R = void, P0 = NSStatusItem>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSStatusItemReplicant<T = any> extends NSStatusItem {
+  namespace NSStatusItemReplicant {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSStatusItem {
       alloc<R = NSStatusItemReplicant>(): R;
       new: <R = NSStatusItemReplicant>() => R;
     }
   }
 }
 
-declare const NSStatusItemReplicant: cocoa.classes.NSStatusItemReplicant;
+declare const NSStatusItemReplicant: cocoa.NSStatusItemReplicant.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSControllerObjectProxy<T = any> extends NSObject {
+  export interface _NSControllerObjectProxy<T0 = void, T1 = void, T2 = void> extends NSObject {
     validateValue_forKeyPath_error<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown>(_validateValue: P0, _forKeyPath: P1, _error: P2): R;
     validateValue_forKey_error<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown>(_validateValue: P0, _forKey: P1, _error: P2): R;
     _invokeSelector_withArguments_onKeyPath<R = void, P0 = string, P1 = unknown, P2 = unknown>(__invokeSelector: P0, _withArguments: P1, _onKeyPath: P2): R;
@@ -18,8 +18,8 @@ declare namespace cocoa {
     clearController<R = void>(): R;
     initWithController<R = unknown, P0 = unknown>(_initWithController: P0): R;
   }
-  namespace classes {
-    export interface _NSControllerObjectProxy<T = any> extends NSObject {
+  namespace _NSControllerObjectProxy {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSControllerObjectProxy>(): R;
       new: <R = _NSControllerObjectProxy>() => R;
     }

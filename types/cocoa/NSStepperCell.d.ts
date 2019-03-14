@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSStepperCell<T = any> extends NSActionCell {
+  export interface NSStepperCell<T0 = void, T1 = void, T2 = void> extends NSActionCell {
     _updateMouseTracking<R = void>(): R;
     _coreUIDrawOptionsWithView<R = unknown, P0 = unknown>(__coreUIDrawOptionsWithView: P0): R;
     _stepperImageSizeForControlSize<R = CGSize, P0 = number>(__stepperImageSizeForControlSize: P0): R;
@@ -52,12 +52,12 @@ declare namespace cocoa {
     minValue<R = number>(): R;
     setMinValue<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSStepperCell<T = any> extends NSActionCell {
+  namespace NSStepperCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSActionCell {
       alloc<R = NSStepperCell>(): R;
       new: <R = NSStepperCell>() => R;
     }
   }
 }
 
-declare const NSStepperCell: cocoa.classes.NSStepperCell;
+declare const NSStepperCell: cocoa.NSStepperCell.CLASS;

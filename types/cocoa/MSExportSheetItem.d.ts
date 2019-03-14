@@ -1,7 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSExportSheetItem<T = any> extends NSCollectionViewItem {
+  export interface MSExportSheetItem<T0 = void, T1 = void, T2 = void> extends NSCollectionViewItem {
+    cxx_destruct<R = void>(): R;
     subTitle<R = unknown>(): R;
     exportPreviewOperationDidFinish<R = void, P0 = unknown>(_exportPreviewOperationDidFinish: P0): R;
     loadUI<R = void>(): R;
@@ -23,12 +24,12 @@ declare namespace cocoa {
     isExportable<R = boolean>(): R;
     setIsExportable<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSExportSheetItem<T = any> extends NSCollectionViewItem {
+  namespace MSExportSheetItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSCollectionViewItem {
       alloc<R = MSExportSheetItem>(): R;
       new: <R = MSExportSheetItem>() => R;
     }
   }
 }
 
-declare const MSExportSheetItem: cocoa.classes.MSExportSheetItem;
+declare const MSExportSheetItem: cocoa.MSExportSheetItem.CLASS;

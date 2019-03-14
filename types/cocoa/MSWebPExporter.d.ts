@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSWebPExporter<T = any> extends MSExporter {}
-  namespace classes {
-    export interface MSWebPExporter<T = any> extends MSExporter {
+  export interface MSWebPExporter<T0 = void, T1 = void, T2 = void> extends MSExporter {}
+  namespace MSWebPExporter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSExporter {
       alloc<R = MSWebPExporter>(): R;
       new: <R = MSWebPExporter>() => R;
     }
   }
 }
 
-declare const MSWebPExporter: cocoa.classes.MSWebPExporter;
+declare const MSWebPExporter: cocoa.MSWebPExporter.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScriptPropertyDescription<T = any> extends NSObject {
+  export interface NSScriptPropertyDescription<T0 = void, T1 = void, T2 = void> extends NSObject {
     addAccessGroups<R = void, P0 = unknown>(_addAccessGroups: P0): R;
     addWriteAccessGroup<R = void, P0 = unknown>(_addWriteAccessGroup: P0): R;
     writeAccessGroups<R = unknown>(): R;
@@ -23,8 +23,8 @@ declare namespace cocoa {
     presentableRelationshipClassName<R = unknown>(): R;
     description<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSScriptPropertyDescription<T = any> extends NSObject {
+  namespace NSScriptPropertyDescription {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSScriptPropertyDescription>(): R;
       new: <R = NSScriptPropertyDescription>() => R;
       propertyDescriptionFromKey_implDeclaration_presoDeclaration_suiteName_className<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown>(_propertyDescriptionFromKey: P0, _implDeclaration: P1, _presoDeclaration: P2, _suiteName: P3, _className: P4): R;
@@ -32,4 +32,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSScriptPropertyDescription: cocoa.classes.NSScriptPropertyDescription;
+declare const NSScriptPropertyDescription: cocoa.NSScriptPropertyDescription.CLASS;

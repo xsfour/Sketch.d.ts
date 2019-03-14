@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSArrayController<T = any> extends NSObjectController {
+  export interface NSArrayController<T0 = void, T1 = void, T2 = void> extends NSObjectController {
     _validateMultipleValue_forKeyPath_atIndex_error<R = boolean, P0 = unknown, P1 = unknown, P2 = number, P3 = unknown>(__validateMultipleValue: P0, _forKeyPath: P1, _atIndex: P2, _error: P3): R;
     _invokeMultipleSelector_withArguments_onKeyPath_atIndex<R = void, P0 = string, P1 = unknown, P2 = unknown, P3 = number>(__invokeMultipleSelector: P0, _withArguments: P1, _onKeyPath: P2, _atIndex: P3): R;
     _setMultipleValue_forKeyPath_atIndex<R = void, P0 = unknown, P1 = unknown, P2 = number>(__setMultipleValue: P0, _forKeyPath: P1, _atIndex: P2): R;
@@ -107,12 +107,12 @@ declare namespace cocoa {
     filterPredicate<R = NSPredicate>(): R;
     setFilterPredicate<R = void, P0 = NSPredicate>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSArrayController<T = any> extends NSObjectController {
+  namespace NSArrayController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectController {
       alloc<R = NSArrayController>(): R;
       new: <R = NSArrayController>() => R;
     }
   }
 }
 
-declare const NSArrayController: cocoa.classes.NSArrayController;
+declare const NSArrayController: cocoa.NSArrayController.CLASS;

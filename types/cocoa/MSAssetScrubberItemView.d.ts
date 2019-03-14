@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAssetScrubberItemView<T = any> extends NSScrubberItemView {
+  export interface MSAssetScrubberItemView<T0 = void, T1 = void, T2 = void> extends NSScrubberItemView {
     cxx_destruct<R = void>(): R;
     patternPreviewImageWithDrawingBounds<R = unknown, P0 = CGRect>(_patternPreviewImageWithDrawingBounds: P0): R;
     gradientPreviewImageWithDrawingBounds<R = unknown, P0 = CGRect>(_gradientPreviewImageWithDrawingBounds: P0): R;
@@ -23,12 +23,12 @@ declare namespace cocoa {
     canvasColorSpace<R = NSColorSpace>(): R;
     color<R = MSColor>(): R;
   }
-  namespace classes {
-    export interface MSAssetScrubberItemView<T = any> extends NSScrubberItemView {
+  namespace MSAssetScrubberItemView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSScrubberItemView {
       alloc<R = MSAssetScrubberItemView>(): R;
       new: <R = MSAssetScrubberItemView>() => R;
     }
   }
 }
 
-declare const MSAssetScrubberItemView: cocoa.classes.MSAssetScrubberItemView;
+declare const MSAssetScrubberItemView: cocoa.MSAssetScrubberItemView.CLASS;

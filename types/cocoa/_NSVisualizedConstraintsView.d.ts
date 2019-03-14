@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSVisualizedConstraintsView<T = any> extends NSView {
+  export interface _NSVisualizedConstraintsView<T0 = void, T1 = void, T2 = void> extends NSView {
     isFlipped<R = boolean>(): R;
     showMoreInfo<R = void, P0 = unknown>(_showMoreInfo: P0): R;
     exerciseAmbiguity<R = void, P0 = unknown>(_exerciseAmbiguity: P0): R;
@@ -16,8 +16,8 @@ declare namespace cocoa {
     constraintsToBeVisualized<R = NSSet>(): R;
     setConstraintsToBeVisualized<R = void, P0 = NSSet>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSVisualizedConstraintsView<T = any> extends NSView {
+  namespace _NSVisualizedConstraintsView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = _NSVisualizedConstraintsView>(): R;
       new: <R = _NSVisualizedConstraintsView>() => R;
       visualizationViewForConstraint_targetView<R = unknown, P0 = unknown, P1 = unknown>(_visualizationViewForConstraint: P0, _targetView: P1): R;

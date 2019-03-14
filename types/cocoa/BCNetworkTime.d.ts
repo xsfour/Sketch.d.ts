@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCNetworkTime<T = any> extends NSObject {
+  export interface BCNetworkTime<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     sendCompletion<R = void, P0 = unknown>(_sendCompletion: P0): R;
     requestNTPTime<R = void>(): R;
@@ -26,8 +26,8 @@ declare namespace cocoa {
     setCompletion<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
     isSocketOpen<R = boolean>(): R;
   }
-  namespace classes {
-    export interface BCNetworkTime<T = any> extends NSObject {
+  namespace BCNetworkTime {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = BCNetworkTime>(): R;
       new: <R = BCNetworkTime>() => R;
       requestTimeFromHost_timeout_completionBlock<R = void, P0 = unknown, P1 = number, P2 = CDUnknownBlockType>(_requestTimeFromHost: P0, _timeout: P1, _completionBlock: P2): R;
@@ -35,4 +35,4 @@ declare namespace cocoa {
   }
 }
 
-declare const BCNetworkTime: cocoa.classes.BCNetworkTime;
+declare const BCNetworkTime: cocoa.BCNetworkTime.CLASS;

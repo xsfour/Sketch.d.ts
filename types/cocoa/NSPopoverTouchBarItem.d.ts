@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPopoverTouchBarItem<T = any> extends NSTouchBarItem, NSGestureRecognizerDelegateProtocol, NSTouchBarItemTypePopoverProtocol {
+  export interface NSPopoverTouchBarItem<T0 = void, T1 = void, T2 = void> extends NSTouchBarItem, NSGestureRecognizerDelegateProtocol, NSTouchBarItemTypePopoverProtocol {
     fingerBias<R = number>(): R;
     setCollapsedRepresentationChevronBehavior<R = void, P0 = number>(_setCollapsedRepresentationChevronBehavior: P0): R;
     collapsedRepresentationChevronBehavior<R = number>(): R;
@@ -42,8 +42,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSPopoverTouchBarItem<T = any> extends NSTouchBarItem, NSGestureRecognizerDelegateProtocol, NSTouchBarItemTypePopoverProtocol {
+  namespace NSPopoverTouchBarItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTouchBarItem, NSGestureRecognizerDelegateProtocol, NSTouchBarItemTypePopoverProtocol {
       alloc<R = NSPopoverTouchBarItem>(): R;
       new: <R = NSPopoverTouchBarItem>() => R;
       keyPathsForValuesAffectingPresented<R = unknown>(): R;
@@ -51,4 +51,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPopoverTouchBarItem: cocoa.classes.NSPopoverTouchBarItem;
+declare const NSPopoverTouchBarItem: cocoa.NSPopoverTouchBarItem.CLASS;

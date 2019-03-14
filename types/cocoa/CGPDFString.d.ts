@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface CGPDFString<T = any> {}
-  namespace classes {
-    export interface CGPDFString<T = any> {  }
+  export interface CGPDFString<T0 = void, T1 = void, T2 = void> {}
+  namespace CGPDFString {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const CGPDFString: cocoa.classes.CGPDFString;
+declare const CGPDFString: cocoa.CGPDFString.CLASS;

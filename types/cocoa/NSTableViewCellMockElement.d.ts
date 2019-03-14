@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableViewCellMockElement<T = any> extends NSObject, NSTableViewCellElementProtocol {
+  export interface NSTableViewCellMockElement<T0 = void, T1 = void, T2 = void> extends NSObject, NSTableViewCellElementProtocol {
     deepestAccessibilityDescendants<R = unknown>(): R;
     accessibilityPerformAction<R = void, P0 = unknown>(_accessibilityPerformAction: P0): R;
     accessibilityActionDescription<R = unknown, P0 = unknown>(_accessibilityActionDescription: P0): R;
@@ -57,12 +57,12 @@ declare namespace cocoa {
     description<R = NSString>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSTableViewCellMockElement<T = any> extends NSObject, NSTableViewCellElementProtocol {
+  namespace NSTableViewCellMockElement {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSTableViewCellElementProtocol {
       alloc<R = NSTableViewCellMockElement>(): R;
       new: <R = NSTableViewCellMockElement>() => R;
     }
   }
 }
 
-declare const NSTableViewCellMockElement: cocoa.classes.NSTableViewCellMockElement;
+declare const NSTableViewCellMockElement: cocoa.NSTableViewCellMockElement.CLASS;

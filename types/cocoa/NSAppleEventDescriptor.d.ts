@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAppleEventDescriptor<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  export interface NSAppleEventDescriptor<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
     coerceToDescriptorType<R = unknown, P0 = number>(_coerceToDescriptorType: P0): R;
     keywordForDescriptorAtIndex<R = number, P0 = number>(_keywordForDescriptorAtIndex: P0): R;
     removeDescriptorWithKeyword<R = void, P0 = number>(_removeDescriptorWithKeyword: P0): R;
@@ -67,8 +67,8 @@ declare namespace cocoa {
     descriptorType<R = number>(): R;
     aeDesc<R = AEDesc>(): R;
   }
-  namespace classes {
-    export interface NSAppleEventDescriptor<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  namespace NSAppleEventDescriptor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
       alloc<R = NSAppleEventDescriptor>(): R;
       new: <R = NSAppleEventDescriptor>() => R;
       recordDescriptor<R = unknown>(): R;
@@ -97,4 +97,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSAppleEventDescriptor: cocoa.classes.NSAppleEventDescriptor;
+declare const NSAppleEventDescriptor: cocoa.NSAppleEventDescriptor.CLASS;

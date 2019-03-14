@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarCustomizationPaletteCheckbox<T = any> extends NSControl, NSAccessibilityCheckBoxProtocol {
+  export interface NSTouchBarCustomizationPaletteCheckbox<T0 = void, T1 = void, T2 = void> extends NSControl, NSAccessibilityCheckBoxProtocol {
     _accessibilityDisplayOptionsDidChange<R = void, P0 = unknown>(__accessibilityDisplayOptionsDidChange: P0): R;
     _labelTextColor<R = unknown>(): R;
     _autounbinder<R = unknown>(): R;
@@ -21,8 +21,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSTouchBarCustomizationPaletteCheckbox<T = any> extends NSControl, NSAccessibilityCheckBoxProtocol {
+  namespace NSTouchBarCustomizationPaletteCheckbox {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSControl, NSAccessibilityCheckBoxProtocol {
       alloc<R = NSTouchBarCustomizationPaletteCheckbox>(): R;
       new: <R = NSTouchBarCustomizationPaletteCheckbox>() => R;
       keyPathsForValuesAffecting_stackViewSpacing<R = unknown>(): R;
@@ -33,4 +33,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTouchBarCustomizationPaletteCheckbox: cocoa.classes.NSTouchBarCustomizationPaletteCheckbox;
+declare const NSTouchBarCustomizationPaletteCheckbox: cocoa.NSTouchBarCustomizationPaletteCheckbox.CLASS;

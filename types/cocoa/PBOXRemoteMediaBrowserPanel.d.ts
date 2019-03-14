@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface PBOXRemoteMediaBrowserPanel<T = any> {}
-  namespace classes {
-    export interface PBOXRemoteMediaBrowserPanel<T = any> {  }
+  export interface PBOXRemoteMediaBrowserPanel<T0 = void, T1 = void, T2 = void> {}
+  namespace PBOXRemoteMediaBrowserPanel {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const PBOXRemoteMediaBrowserPanel: cocoa.classes.PBOXRemoteMediaBrowserPanel;
+declare const PBOXRemoteMediaBrowserPanel: cocoa.PBOXRemoteMediaBrowserPanel.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSImageViewAsynchronousPreparationInputParameters<T = any> extends NSObject, _NSAsynchronousPreparationInputParametersProtocol {
+  export interface _NSImageViewAsynchronousPreparationInputParameters<T0 = void, T1 = void, T2 = void> extends NSObject, _NSAsynchronousPreparationInputParametersProtocol {
     dealloc<R = void>(): R;
     flipped<R = boolean>(): R;
     setFlipped<R = void, P0 = boolean>(_v: P0): R;
@@ -32,8 +32,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSImageViewAsynchronousPreparationInputParameters<T = any> extends NSObject, _NSAsynchronousPreparationInputParametersProtocol {
+  namespace _NSImageViewAsynchronousPreparationInputParameters {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, _NSAsynchronousPreparationInputParametersProtocol {
       alloc<R = _NSImageViewAsynchronousPreparationInputParameters>(): R;
       new: <R = _NSImageViewAsynchronousPreparationInputParameters>() => R;
     }

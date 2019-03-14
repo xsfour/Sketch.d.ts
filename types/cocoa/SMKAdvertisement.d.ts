@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface SMKAdvertisement<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  export interface SMKAdvertisement<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
     cxx_destruct<R = void>(): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     setIdentifier<R = void, P0 = NSUUID>(_v: P0): R;
     dictionaryRepresentation<R = NSDictionary>(): R;
   }
-  namespace classes {
-    export interface SMKAdvertisement<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  namespace SMKAdvertisement {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
       alloc<R = SMKAdvertisement>(): R;
       new: <R = SMKAdvertisement>() => R;
     }
   }
 }
 
-declare const SMKAdvertisement: cocoa.classes.SMKAdvertisement;
+declare const SMKAdvertisement: cocoa.SMKAdvertisement.CLASS;

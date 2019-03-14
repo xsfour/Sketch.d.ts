@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAssetLibraryPreview<T = any> extends NSView {
+  export interface MSAssetLibraryPreview<T0 = void, T1 = void, T2 = void> extends NSView {
     cxx_destruct<R = void>(): R;
     centeredThumbFromImage<R = unknown, P0 = unknown>(_centeredThumbFromImage: P0): R;
     preview<R = NSImage>(): R;
@@ -11,12 +11,12 @@ declare namespace cocoa {
     contentPath<R = NSBezierPath>(): R;
     previewFrame<R = CGRect>(): R;
   }
-  namespace classes {
-    export interface MSAssetLibraryPreview<T = any> extends NSView {
+  namespace MSAssetLibraryPreview {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = MSAssetLibraryPreview>(): R;
       new: <R = MSAssetLibraryPreview>() => R;
     }
   }
 }
 
-declare const MSAssetLibraryPreview: cocoa.classes.MSAssetLibraryPreview;
+declare const MSAssetLibraryPreview: cocoa.MSAssetLibraryPreview.CLASS;

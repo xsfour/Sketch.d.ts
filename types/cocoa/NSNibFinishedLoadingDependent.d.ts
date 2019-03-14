@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSNibFinishedLoadingDependent<T = any> {}
-  namespace classes {
-    export interface NSNibFinishedLoadingDependent<T = any> {  }
+  export interface NSNibFinishedLoadingDependent<T0 = void, T1 = void, T2 = void> {}
+  namespace NSNibFinishedLoadingDependent {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSNibFinishedLoadingDependent: cocoa.classes.NSNibFinishedLoadingDependent;
+declare const NSNibFinishedLoadingDependent: cocoa.NSNibFinishedLoadingDependent.CLASS;

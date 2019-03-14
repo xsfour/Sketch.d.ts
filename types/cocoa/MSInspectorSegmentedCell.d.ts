@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInspectorSegmentedCell<T = any> extends NSSegmentedCell {
+  export interface MSInspectorSegmentedCell<T0 = void, T1 = void, T2 = void> extends NSSegmentedCell {
     cxx_destruct<R = void>(): R;
     alternateImage3<R = NSImage>(): R;
     setAlternateImage3<R = void, P0 = NSImage>(_v: P0): R;
@@ -20,12 +20,12 @@ declare namespace cocoa {
     highlightLocation<R = CGPoint>(): R;
     setHighlightLocation<R = void, P0 = CGPoint>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSInspectorSegmentedCell<T = any> extends NSSegmentedCell {
+  namespace MSInspectorSegmentedCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSSegmentedCell {
       alloc<R = MSInspectorSegmentedCell>(): R;
       new: <R = MSInspectorSegmentedCell>() => R;
     }
   }
 }
 
-declare const MSInspectorSegmentedCell: cocoa.classes.MSInspectorSegmentedCell;
+declare const MSInspectorSegmentedCell: cocoa.MSInspectorSegmentedCell.CLASS;

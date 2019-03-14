@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSViewAnimator_NSCollectionView<T = any> extends _NSViewAnimator {
+  export interface _NSViewAnimator_NSCollectionView<T0 = void, T1 = void, T2 = void> extends _NSViewAnimator {
     reloadItemsAtIndexes_inSectionObject<R = void, P0 = unknown, P1 = unknown>(_reloadItemsAtIndexes: P0, _inSectionObject: P1): R;
     deleteItemsAtIndexes_inSectionObject<R = void, P0 = unknown, P1 = unknown>(_deleteItemsAtIndexes: P0, _inSectionObject: P1): R;
     insertItemsAtIndexes_inSectionObject<R = void, P0 = unknown, P1 = unknown>(_insertItemsAtIndexes: P0, _inSectionObject: P1): R;
@@ -17,7 +17,7 @@ declare namespace cocoa {
     setSelectionIndexPaths<R = void, P0 = unknown>(_setSelectionIndexPaths: P0): R;
     setCollectionViewLayout<R = void, P0 = unknown>(_setCollectionViewLayout: P0): R;
   }
-  namespace classes {
-    export interface _NSViewAnimator_NSCollectionView<T = any> extends _NSViewAnimator {  }
+  namespace _NSViewAnimator_NSCollectionView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _NSViewAnimator {}
   }
 }

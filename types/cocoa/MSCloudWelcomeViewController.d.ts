@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSCloudWelcomeViewController<T = any> extends MSCloudBaseViewController {
+  export interface MSCloudWelcomeViewController<T0 = void, T1 = void, T2 = void> extends MSCloudBaseViewController {
     learnMore<R = void, P0 = unknown>(_learnMore: P0): R;
     signIn<R = void, P0 = unknown>(_signIn: P0): R;
     signUp<R = void, P0 = unknown>(_signUp: P0): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     signupButton<R = NSButton>(): R;
     signinButton<R = NSButton>(): R;
   }
-  namespace classes {
-    export interface MSCloudWelcomeViewController<T = any> extends MSCloudBaseViewController {
+  namespace MSCloudWelcomeViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSCloudBaseViewController {
       alloc<R = MSCloudWelcomeViewController>(): R;
       new: <R = MSCloudWelcomeViewController>() => R;
     }
   }
 }
 
-declare const MSCloudWelcomeViewController: cocoa.classes.MSCloudWelcomeViewController;
+declare const MSCloudWelcomeViewController: cocoa.MSCloudWelcomeViewController.CLASS;

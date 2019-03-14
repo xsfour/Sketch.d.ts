@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSColorConverter<T = any> {}
-  namespace classes {
-    export interface MSColorConverter<T = any> {  }
+  export interface MSColorConverter<T0 = void, T1 = void, T2 = void> {}
+  namespace MSColorConverter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const MSColorConverter: cocoa.classes.MSColorConverter;
+declare const MSColorConverter: cocoa.MSColorConverter.CLASS;

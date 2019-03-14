@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCorrectionTextView<T = any> extends NSView {
+  export interface NSCorrectionTextView<T0 = void, T1 = void, T2 = void> extends NSView {
     accessibilityElements<R = unknown>(): R;
     selectPreviousCandidate<R = boolean>(): R;
     selectNextCandidate<R = boolean>(): R;
@@ -23,12 +23,12 @@ declare namespace cocoa {
     hasSelection<R = boolean>(): R;
     correction<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSCorrectionTextView<T = any> extends NSView {
+  namespace NSCorrectionTextView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSCorrectionTextView>(): R;
       new: <R = NSCorrectionTextView>() => R;
     }
   }
 }
 
-declare const NSCorrectionTextView: cocoa.classes.NSCorrectionTextView;
+declare const NSCorrectionTextView: cocoa.NSCorrectionTextView.CLASS;

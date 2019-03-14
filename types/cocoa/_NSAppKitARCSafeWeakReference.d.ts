@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSAppKitARCSafeWeakReference<T = any> extends NSObject {
+  export interface _NSAppKitARCSafeWeakReference<T0 = void, T1 = void, T2 = void> extends NSObject {
     isUnsafeUnretained<R = boolean>(): R;
     set<R = void, P0 = unknown>(_set: P0): R;
     getUnretained<R = unknown>(): R;
@@ -9,8 +9,8 @@ declare namespace cocoa {
     getRetained<R = unknown>(): R;
     dealloc<R = void>(): R;
   }
-  namespace classes {
-    export interface _NSAppKitARCSafeWeakReference<T = any> extends NSObject {
+  namespace _NSAppKitARCSafeWeakReference {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSAppKitARCSafeWeakReference>(): R;
       new: <R = _NSAppKitARCSafeWeakReference>() => R;
       safeWeaklyLoadUnretainedValueFrom_helperObject<R = unknown, P0 = unknown, P1 = unknown>(_safeWeaklyLoadUnretainedValueFrom: P0, _helperObject: P1): R;

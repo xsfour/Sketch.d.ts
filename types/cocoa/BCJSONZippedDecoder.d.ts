@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCJSONZippedDecoder<T = any> extends BCJSONDecoder {
+  export interface BCJSONZippedDecoder<T0 = void, T1 = void, T2 = void> extends BCJSONDecoder {
     decodeFileAtSubpath_error<R = unknown, P0 = unknown, P1 = unknown>(_decodeFileAtSubpath: P0, _error: P1): R;
     rawDataAtSubpath_error<R = unknown, P0 = unknown, P1 = unknown>(_rawDataAtSubpath: P0, _error: P1): R;
     containsFileAtSubpath<R = boolean, P0 = unknown>(_containsFileAtSubpath: P0): R;
@@ -10,9 +10,9 @@ declare namespace cocoa {
     zip<R = void>(): R;
     setZip<R = void, P0 = void>(_v: P0): R;
   }
-  namespace classes {
-    export interface BCJSONZippedDecoder<T = any> extends BCJSONDecoder {  }
+  namespace BCJSONZippedDecoder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends BCJSONDecoder {}
   }
 }
 
-declare const BCJSONZippedDecoder: cocoa.classes.BCJSONZippedDecoder;
+declare const BCJSONZippedDecoder: cocoa.BCJSONZippedDecoder.CLASS;

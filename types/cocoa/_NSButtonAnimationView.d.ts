@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSButtonAnimationView<T = any> extends NSView {
+  export interface _NSButtonAnimationView<T0 = void, T1 = void, T2 = void> extends NSView {
     terminate<R = void>(): R;
     shortCircuitDeferredAnimationConfigurationIfNeeded<R = void>(): R;
     _deferredConfigureTriggered<R = void>(): R;
@@ -23,8 +23,8 @@ declare namespace cocoa {
     controlView<R = NSView>(): R;
     setControlView<R = void, P0 = NSView>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSButtonAnimationView<T = any> extends NSView {
+  namespace _NSButtonAnimationView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = _NSButtonAnimationView>(): R;
       new: <R = _NSButtonAnimationView>() => R;
     }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFilesystemItemRemoveOperation<T = any> extends NSOperation {
+  export interface NSFilesystemItemRemoveOperation<T0 = void, T1 = void, T2 = void> extends NSOperation {
     initWithPath<R = unknown, P0 = unknown>(_initWithPath: P0): R;
     _filtersUnderbars<R = boolean>(): R;
     _setFilterUnderbars<R = void, P0 = boolean>(__setFilterUnderbars: P0): R;
@@ -10,8 +10,8 @@ declare namespace cocoa {
     setDelegate<R = void, P0 = unknown>(_setDelegate: P0): R;
     delegate<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSFilesystemItemRemoveOperation<T = any> extends NSOperation {
+  namespace NSFilesystemItemRemoveOperation {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSOperation {
       alloc<R = NSFilesystemItemRemoveOperation>(): R;
       new: <R = NSFilesystemItemRemoveOperation>() => R;
       filesystemItemRemoveOperationWithPath<R = unknown, P0 = unknown>(_filesystemItemRemoveOperationWithPath: P0): R;
@@ -20,4 +20,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSFilesystemItemRemoveOperation: cocoa.classes.NSFilesystemItemRemoveOperation;
+declare const NSFilesystemItemRemoveOperation: cocoa.NSFilesystemItemRemoveOperation.CLASS;

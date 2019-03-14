@@ -1,7 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface CHSheetController<T = any> extends CHWindowController, NSTouchBarDelegateProtocol {
+  export interface CHSheetController<T0 = void, T1 = void, T2 = void> extends CHWindowController, NSTouchBarDelegateProtocol {
+    cxx_destruct<R = void>(): R;
     sheetWillClose<R = void>(): R;
     _init<R = unknown>(): R;
     selectorForTouchbarItemIdentifier<R = string, P0 = unknown>(_selectorForTouchbarItemIdentifier: P0): R;
@@ -24,8 +25,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface CHSheetController<T = any> extends CHWindowController, NSTouchBarDelegateProtocol {
+  namespace CHSheetController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends CHWindowController, NSTouchBarDelegateProtocol {
       alloc<R = CHSheetController>(): R;
       new: <R = CHSheetController>() => R;
       findSuitableWindowForSheet<R = unknown>(): R;
@@ -35,4 +36,4 @@ declare namespace cocoa {
   }
 }
 
-declare const CHSheetController: cocoa.classes.CHSheetController;
+declare const CHSheetController: cocoa.CHSheetController.CLASS;

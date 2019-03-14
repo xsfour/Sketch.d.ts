@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTextDragInfo<T = any> extends NSObject {
+  export interface NSTextDragInfo<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     dragAnimationOverlay<R = NSView>(): R;
     setDragAnimationOverlay<R = void, P0 = NSView>(_v: P0): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     indicatorViewRect<R = CGRect>(): R;
     setIndicatorViewRect<R = void, P0 = CGRect>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTextDragInfo<T = any> extends NSObject {
+  namespace NSTextDragInfo {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSTextDragInfo>(): R;
       new: <R = NSTextDragInfo>() => R;
     }
   }
 }
 
-declare const NSTextDragInfo: cocoa.classes.NSTextDragInfo;
+declare const NSTextDragInfo: cocoa.NSTextDragInfo.CLASS;

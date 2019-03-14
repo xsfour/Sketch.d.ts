@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBeepSuppressor<T = any> extends NSObject {}
-  namespace classes {
-    export interface MSBeepSuppressor<T = any> extends NSObject {
+  export interface MSBeepSuppressor<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace MSBeepSuppressor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSBeepSuppressor>(): R;
       new: <R = MSBeepSuppressor>() => R;
       failSilentlyInBlock<R = void, P0 = CDUnknownBlockType>(_failSilentlyInBlock: P0): R;
@@ -13,4 +13,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSBeepSuppressor: cocoa.classes.MSBeepSuppressor;
+declare const MSBeepSuppressor: cocoa.MSBeepSuppressor.CLASS;

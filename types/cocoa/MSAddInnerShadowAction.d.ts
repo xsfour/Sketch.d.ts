@@ -1,15 +1,15 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAddInnerShadowAction<T = any> extends MSBaseStyleAction {
+  export interface MSAddInnerShadowAction<T0 = void, T1 = void, T2 = void> extends MSBaseStyleAction {
     addInnerShadow<R = void, P0 = unknown>(_addInnerShadow: P0): R;
   }
-  namespace classes {
-    export interface MSAddInnerShadowAction<T = any> extends MSBaseStyleAction {
+  namespace MSAddInnerShadowAction {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSBaseStyleAction {
       alloc<R = MSAddInnerShadowAction>(): R;
       new: <R = MSAddInnerShadowAction>() => R;
     }
   }
 }
 
-declare const MSAddInnerShadowAction: cocoa.classes.MSAddInnerShadowAction;
+declare const MSAddInnerShadowAction: cocoa.MSAddInnerShadowAction.CLASS;

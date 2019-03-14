@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarCustomizationPalettePushButton<T = any> extends NSControl, NSAccessibilityButtonProtocol {
+  export interface NSTouchBarCustomizationPalettePushButton<T0 = void, T1 = void, T2 = void> extends NSControl, NSAccessibilityButtonProtocol {
     _accessibilityDisplayOptionsDidChange<R = void, P0 = unknown>(__accessibilityDisplayOptionsDidChange: P0): R;
     wantsLayer<R = boolean>(): R;
     _autounbinder<R = unknown>(): R;
@@ -20,8 +20,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSTouchBarCustomizationPalettePushButton<T = any> extends NSControl, NSAccessibilityButtonProtocol {
+  namespace NSTouchBarCustomizationPalettePushButton {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSControl, NSAccessibilityButtonProtocol {
       alloc<R = NSTouchBarCustomizationPalettePushButton>(): R;
       new: <R = NSTouchBarCustomizationPalettePushButton>() => R;
       keyPathsForValuesAffecting_labelFontAttributedString<R = unknown>(): R;
@@ -31,4 +31,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTouchBarCustomizationPalettePushButton: cocoa.classes.NSTouchBarCustomizationPalettePushButton;
+declare const NSTouchBarCustomizationPalettePushButton: cocoa.NSTouchBarCustomizationPalettePushButton.CLASS;

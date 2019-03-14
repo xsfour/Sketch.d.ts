@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSColorStylePartInspectorViewController<T = any> extends MSStylePartInspectorViewController, NSPopoverDelegateProtocol, MSStylePartPreviewButtonDisabledTargetProtocol, MSColorInspectorDelegateProtocol, MSStylePartPreviewButtonDelegateProtocol {
+  export interface MSColorStylePartInspectorViewController<T0 = void, T1 = void, T2 = void> extends MSStylePartInspectorViewController, NSPopoverDelegateProtocol, MSStylePartPreviewButtonDisabledTargetProtocol, MSColorInspectorDelegateProtocol, MSStylePartPreviewButtonDelegateProtocol {
     setBlendMode_forPreviewButton<R = void, P0 = number, P1 = unknown>(_setBlendMode: P0, _forPreviewButton: P1): R;
     refreshAction<R = void, P0 = unknown>(_refreshAction: P0): R;
     updateBlendMode<R = void>(): R;
@@ -20,8 +20,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSColorStylePartInspectorViewController<T = any> extends MSStylePartInspectorViewController, NSPopoverDelegateProtocol, MSStylePartPreviewButtonDisabledTargetProtocol, MSColorInspectorDelegateProtocol, MSStylePartPreviewButtonDelegateProtocol {
+  namespace MSColorStylePartInspectorViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSStylePartInspectorViewController, NSPopoverDelegateProtocol, MSStylePartPreviewButtonDisabledTargetProtocol, MSColorInspectorDelegateProtocol, MSStylePartPreviewButtonDelegateProtocol {
       alloc<R = MSColorStylePartInspectorViewController>(): R;
       new: <R = MSColorStylePartInspectorViewController>() => R;
       fillTypeStringForFillType<R = unknown, P0 = number>(_fillTypeStringForFillType: P0): R;
@@ -29,4 +29,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSColorStylePartInspectorViewController: cocoa.classes.MSColorStylePartInspectorViewController;
+declare const MSColorStylePartInspectorViewController: cocoa.MSColorStylePartInspectorViewController.CLASS;

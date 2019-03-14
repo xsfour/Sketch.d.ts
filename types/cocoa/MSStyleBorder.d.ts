@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSStyleBorder<T = any> extends _MSStyleBorder, MSColorConvertibleProtocol {
+  export interface MSStyleBorder<T0 = void, T1 = void, T2 = void> extends _MSStyleBorder, MSColorConvertibleProtocol {
     asFill<R = unknown>(): R;
     supportsAdvancedBorderSettings<R = boolean>(): R;
     patternFillType<R = number>(): R;
@@ -12,12 +12,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSStyleBorder<T = any> extends _MSStyleBorder, MSColorConvertibleProtocol {
+  namespace MSStyleBorder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSStyleBorder, MSColorConvertibleProtocol {
       alloc<R = MSStyleBorder>(): R;
       new: <R = MSStyleBorder>() => R;
     }
   }
 }
 
-declare const MSStyleBorder: cocoa.classes.MSStyleBorder;
+declare const MSStyleBorder: cocoa.MSStyleBorder.CLASS;

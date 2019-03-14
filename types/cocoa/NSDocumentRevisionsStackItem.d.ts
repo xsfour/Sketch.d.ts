@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDocumentRevisionsStackItem<T = any> extends NSObject {
+  export interface NSDocumentRevisionsStackItem<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     applyParameters<R = void, P0 = unknown>(_applyParameters: P0): R;
     _setupLayerAsPlaceholder<R = void, P0 = boolean>(__setupLayerAsPlaceholder: P0): R;
@@ -20,8 +20,8 @@ declare namespace cocoa {
     placeholderView<R = NSDocumentRevisionsPlaceholderView>(): R;
     setPlaceholderView<R = void, P0 = NSDocumentRevisionsPlaceholderView>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSDocumentRevisionsStackItem<T = any> extends NSObject {
+  namespace NSDocumentRevisionsStackItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSDocumentRevisionsStackItem>(): R;
       new: <R = NSDocumentRevisionsStackItem>() => R;
       itemWithVersion<R = unknown, P0 = unknown>(_itemWithVersion: P0): R;
@@ -29,4 +29,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSDocumentRevisionsStackItem: cocoa.classes.NSDocumentRevisionsStackItem;
+declare const NSDocumentRevisionsStackItem: cocoa.NSDocumentRevisionsStackItem.CLASS;

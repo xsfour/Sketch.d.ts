@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorSwatchScrubberItemView<T = any> extends NSScrubberItemView {
+  export interface NSColorSwatchScrubberItemView<T0 = void, T1 = void, T2 = void> extends NSScrubberItemView {
     forceOutline<R = boolean>(): R;
     setForceOutline<R = void, P0 = boolean>(_v: P0): R;
     isRightmostItem<R = boolean>(): R;
@@ -11,12 +11,12 @@ declare namespace cocoa {
     color<R = NSColor>(): R;
     setColor<R = void, P0 = NSColor>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSColorSwatchScrubberItemView<T = any> extends NSScrubberItemView {
+  namespace NSColorSwatchScrubberItemView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSScrubberItemView {
       alloc<R = NSColorSwatchScrubberItemView>(): R;
       new: <R = NSColorSwatchScrubberItemView>() => R;
     }
   }
 }
 
-declare const NSColorSwatchScrubberItemView: cocoa.classes.NSColorSwatchScrubberItemView;
+declare const NSColorSwatchScrubberItemView: cocoa.NSColorSwatchScrubberItemView.CLASS;

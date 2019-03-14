@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSMirrorDataProvider<T = any> extends NSObject, SMKMirrorDataSourceProtocol {
+  export interface MSMirrorDataProvider<T0 = void, T1 = void, T2 = void> extends NSObject, SMKMirrorDataSourceProtocol {
     cxx_destruct<R = void>(): R;
     currentArtboard<R = unknown>(): R;
     lookupUpdateTypeWithHandler<R = void, P0 = CDUnknownBlockType>(_lookupUpdateTypeWithHandler: P0): R;
@@ -46,12 +46,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSMirrorDataProvider<T = any> extends NSObject, SMKMirrorDataSourceProtocol {
+  namespace MSMirrorDataProvider {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, SMKMirrorDataSourceProtocol {
       alloc<R = MSMirrorDataProvider>(): R;
       new: <R = MSMirrorDataProvider>() => R;
     }
   }
 }
 
-declare const MSMirrorDataProvider: cocoa.classes.MSMirrorDataProvider;
+declare const MSMirrorDataProvider: cocoa.MSMirrorDataProvider.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSOperationQueue<T = any> extends NSObject {
+  export interface NSOperationQueue<T0 = void, T1 = void, T2 = void> extends NSObject {
     removeObserver_forKeyPath<R = void, P0 = unknown, P1 = unknown>(_removeObserver: P0, _forKeyPath: P1): R;
     addObserver_forKeyPath_options_context<R = void, P0 = unknown, P1 = unknown, P2 = number, P3 = void>(_addObserver: P0, _forKeyPath: P1, _options: P2, _context: P3): R;
     description<R = unknown>(): R;
@@ -29,8 +29,8 @@ declare namespace cocoa {
     operationCount<R = number>(): R;
     operations<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface NSOperationQueue<T = any> extends NSObject {
+  namespace NSOperationQueue {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSOperationQueue>(): R;
       new: <R = NSOperationQueue>() => R;
       mainQueue<R = unknown>(): R;
@@ -40,4 +40,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSOperationQueue: cocoa.classes.NSOperationQueue;
+declare const NSOperationQueue: cocoa.NSOperationQueue.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSApplicationBundlePresenter<T = any> extends NSObject, NSFilePresenterProtocol {
+  export interface NSApplicationBundlePresenter<T0 = void, T1 = void, T2 = void> extends NSObject, NSFilePresenterProtocol {
     presentedItemOperationQueue<R = NSOperationQueue>(): R;
     presentedItemURL<R = NSURL>(): R;
     debugDescription<R = NSString>(): R;
@@ -11,12 +11,12 @@ declare namespace cocoa {
     primaryPresentedItemURL<R = NSURL>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSApplicationBundlePresenter<T = any> extends NSObject, NSFilePresenterProtocol {
+  namespace NSApplicationBundlePresenter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSFilePresenterProtocol {
       alloc<R = NSApplicationBundlePresenter>(): R;
       new: <R = NSApplicationBundlePresenter>() => R;
     }
   }
 }
 
-declare const NSApplicationBundlePresenter: cocoa.classes.NSApplicationBundlePresenter;
+declare const NSApplicationBundlePresenter: cocoa.NSApplicationBundlePresenter.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMagnifierWindowContentViewProtocol<T = any> extends NSObjectProtocol {
+  export interface NSMagnifierWindowContentViewProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     setNextMode<R = void>(): R;
     color<R = NSColor>(): R;
     magnifyingGlassRadius<R = number>(): R;
@@ -10,8 +10,8 @@ declare namespace cocoa {
     contentImageRep<R = NSBitmapImageRep>(): R;
     setContentImageRep<R = void, P0 = NSBitmapImageRep>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSMagnifierWindowContentViewProtocol<T = any> extends NSObjectProtocol {
+  namespace NSMagnifierWindowContentViewProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
       magnifierViewSize<R = CGSize>(): R;
     }
   }

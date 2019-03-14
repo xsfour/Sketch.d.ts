@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSGPURendererProtocol<T = any> {
+  export interface MSGPURendererProtocol<T0 = void, T1 = void, T2 = void> {
     unlockTextures<R = void>(): R;
     lockTextures<R = void>(): R;
     requiresSynchronousRendering<R = boolean>(): R;
@@ -18,7 +18,7 @@ declare namespace cocoa {
     beginFrameWithClearColor_drawableSize_backingScaleFactor_colorSpace<R = boolean, P0 = NSColor, P1 = CGSize, P2 = number, P3 = CGColorSpace>(_beginFrameWithClearColor: P0, _drawableSize: P1, _backingScaleFactor: P2, _colorSpace: P3): R;
     scheduleDrawBlock<R = void, P0 = CDUnknownBlockType>(_scheduleDrawBlock: P0): R;
   }
-  namespace classes {
-    export interface MSGPURendererProtocol<T = any> {  }
+  namespace MSGPURendererProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

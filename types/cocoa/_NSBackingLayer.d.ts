@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSBackingLayer<T = any> extends CALayer {
+  export interface _NSBackingLayer<T0 = void, T1 = void, T2 = void> extends CALayer {
     setObservationInfo<R = void, P0 = void>(_setObservationInfo: P0): R;
     observationInfo<R = void>(): R;
     NS_setPreparedContentRect<R = void, P0 = CGRect>(_NS_setPreparedContentRect: P0): R;
@@ -25,8 +25,8 @@ declare namespace cocoa {
     didChangeValueForKey<R = void, P0 = unknown>(_didChangeValueForKey: P0): R;
     init<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSBackingLayer<T = any> extends CALayer {
+  namespace _NSBackingLayer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends CALayer {
       initialize<R = void>(): R;
     }
   }

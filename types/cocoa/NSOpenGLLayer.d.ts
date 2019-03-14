@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSOpenGLLayer<T = any> extends CAOpenGLLayer {
+  export interface NSOpenGLLayer<T0 = void, T1 = void, T2 = void> extends CAOpenGLLayer {
     didChangeValueForKey<R = void, P0 = unknown>(_didChangeValueForKey: P0): R;
     willChangeValueForKey<R = void, P0 = unknown>(_willChangeValueForKey: P0): R;
     _NS_invalidateSuggestedContentsScale<R = void>(): R;
@@ -25,11 +25,11 @@ declare namespace cocoa {
     openGLPixelFormat<R = NSOpenGLPixelFormat>(): R;
     setOpenGLPixelFormat<R = void, P0 = NSOpenGLPixelFormat>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSOpenGLLayer<T = any> extends CAOpenGLLayer {
+  namespace NSOpenGLLayer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends CAOpenGLLayer {
       defaultValueForKey<R = unknown, P0 = unknown>(_defaultValueForKey: P0): R;
     }
   }
 }
 
-declare const NSOpenGLLayer: cocoa.classes.NSOpenGLLayer;
+declare const NSOpenGLLayer: cocoa.NSOpenGLLayer.CLASS;

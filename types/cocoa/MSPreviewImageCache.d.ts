@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPreviewImageCache<T = any> extends NSObject {
+  export interface MSPreviewImageCache<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     exportPreviewImageForDocumentFileURL_maximumPixelSize_handler<R = void, P0 = unknown, P1 = number, P2 = CDUnknownBlockType>(_exportPreviewImageForDocumentFileURL: P0, _maximumPixelSize: P1, _handler: P2): R;
     cachedPreviewImageForDocumentFileURL_maximumPixelSize_error<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_cachedPreviewImageForDocumentFileURL: P0, _maximumPixelSize: P1, _error: P2): R;
@@ -14,8 +14,8 @@ declare namespace cocoa {
     fetchQueue<R = NSOperationQueue>(): R;
     directoryURL<R = NSURL>(): R;
   }
-  namespace classes {
-    export interface MSPreviewImageCache<T = any> extends NSObject {
+  namespace MSPreviewImageCache {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSPreviewImageCache>(): R;
       new: <R = MSPreviewImageCache>() => R;
       bundledSketchToolURL<R = unknown>(): R;
@@ -23,4 +23,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSPreviewImageCache: cocoa.classes.MSPreviewImageCache;
+declare const MSPreviewImageCache: cocoa.MSPreviewImageCache.CLASS;

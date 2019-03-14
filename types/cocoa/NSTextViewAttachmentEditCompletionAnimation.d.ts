@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTextViewAttachmentEditCompletionAnimation<T = any> extends NSObject, NSAnimationDelegateProtocol {
+  export interface NSTextViewAttachmentEditCompletionAnimation<T0 = void, T1 = void, T2 = void> extends NSObject, NSAnimationDelegateProtocol {
     finishWithSuccess<R = void, P0 = boolean>(_finishWithSuccess: P0): R;
     startAnimation<R = void>(): R;
     dealloc<R = void>(): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSTextViewAttachmentEditCompletionAnimation<T = any> extends NSObject, NSAnimationDelegateProtocol {
+  namespace NSTextViewAttachmentEditCompletionAnimation {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSAnimationDelegateProtocol {
       alloc<R = NSTextViewAttachmentEditCompletionAnimation>(): R;
       new: <R = NSTextViewAttachmentEditCompletionAnimation>() => R;
     }
   }
 }
 
-declare const NSTextViewAttachmentEditCompletionAnimation: cocoa.classes.NSTextViewAttachmentEditCompletionAnimation;
+declare const NSTextViewAttachmentEditCompletionAnimation: cocoa.NSTextViewAttachmentEditCompletionAnimation.CLASS;

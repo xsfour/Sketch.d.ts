@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSView<T = any> extends NSResponder, NSAppearanceCustomizationInternalProtocol, NSAnimatablePropertyContainerProtocol, NSUserInterfaceItemIdentificationProtocol, NSDraggingDestinationProtocol, NSAppearanceCustomizationProtocol, NSAccessibilityElementProtocol, NSAccessibilityProtocol {
+  export interface NSView<T0 = void, T1 = void, T2 = void> extends NSResponder, NSAppearanceCustomizationInternalProtocol, NSAnimatablePropertyContainerProtocol, NSUserInterfaceItemIdentificationProtocol, NSDraggingDestinationProtocol, NSAppearanceCustomizationProtocol, NSAccessibilityElementProtocol, NSAccessibilityProtocol {
     _isFirstResponder<R = boolean>(): R;
     _nearestAncestorOfClass<R = unknown, P0 = unknown>(__nearestAncestorOfClass: P0): R;
     colorSpace<R = unknown>(): R;
@@ -1495,7 +1495,7 @@ declare namespace cocoa {
     description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
-    // + NSView(Autolayout,Block_Animation,CHViewAdditions,History,InspectorStackViewFinding,MSDropableView,MSPreferredNextKeyView,NextKeyViewSupport,PopoverDismissal,Separator):
+    // + NSView(Autolayout): 
     widthConstraint<R = unknown>(): R;
     constraintsWithView_attributeMatcher<R = unknown, P0 = unknown, P1 = CDUnknownBlockType>(_constraintsWithView: P0, _attributeMatcher: P1): R;
     verticalConstraintsWithView<R = unknown, P0 = unknown>(_verticalConstraintsWithView: P0): R;
@@ -1513,9 +1513,11 @@ declare namespace cocoa {
     constrainHeight<R = void, P0 = number>(_constrainHeight: P0): R;
     addSubview_constrainedBy_priority<R = void, P0 = unknown, P1 = NSEdgeInsets, P2 = number>(_addSubview: P0, _constrainedBy: P1, _priority: P2): R;
     constraintWithSelfAsFirstItemBoundToAttribute<R = unknown, P0 = number>(_constraintWithSelfAsFirstItemBoundToAttribute: P0): R;
+    // + NSView(Block_Animation): 
     animateToFrameOriginX_completionBlock<R = void, P0 = number, P1 = CDUnknownBlockType>(_animateToFrameOriginX: P0, _completionBlock: P1): R;
     animateToFrameOrigin_completionBlock<R = void, P0 = CGPoint, P1 = CDUnknownBlockType>(_animateToFrameOrigin: P0, _completionBlock: P1): R;
     animateToFrameOriginX<R = void, P0 = number>(_animateToFrameOriginX: P0): R;
+    // + NSView(CHViewAdditions): 
     nestedSubviewWithIdentifier<R = unknown, P0 = unknown>(_nestedSubviewWithIdentifier: P0): R;
     isContainedByCollapsedSplitViewSubview<R = boolean>(): R;
     containingAncestorViewOfClass<R = unknown, P0 = unknown>(_containingAncestorViewOfClass: P0): R;
@@ -1527,8 +1529,11 @@ declare namespace cocoa {
     setFrameOriginX<R = void, P0 = number>(_setFrameOriginX: P0): R;
     setFrameWidth<R = void, P0 = number>(_setFrameWidth: P0): R;
     setFrameHeight<R = void, P0 = number>(_setFrameHeight: P0): R;
+    // + NSView(History): 
     viewHistoryMaker<R = unknown>(): R;
+    // + NSView(InspectorStackViewFinding): 
     enclosingStackView<R = unknown>(): R;
+    // + NSView(MSDropableView): 
     updateDraggingItemsForDrag<R = void, P0 = unknown>(_updateDraggingItemsForDrag: P0): R;
     wantsPeriodicDraggingUpdates<R = boolean>(): R;
     draggingEnded<R = void, P0 = unknown>(_draggingEnded: P0): R;
@@ -1539,18 +1544,25 @@ declare namespace cocoa {
     draggingEntered<R = number, P0 = unknown>(_draggingEntered: P0): R;
     defaultDragOperation<R = number, P0 = unknown>(_defaultDragOperation: P0): R;
     performDragOperation<R = boolean, P0 = unknown>(_performDragOperation: P0): R;
+    // + NSView(MSPreferredNextKeyView): 
     preferredNextKeyView<R = unknown>(): R;
+    // + NSView(PopoverDismissal): 
     clickShouldDismissPopover<R = boolean, P0 = unknown>(_clickShouldDismissPopover: P0): R;
+    // + NSView(Separator): 
     separatorInsetBetweenSelfAndView<R = NSEdgeInsets, P0 = unknown>(_separatorInsetBetweenSelfAndView: P0): R;
     wantsSeparatorBetweenSelfAndView<R = boolean, P0 = unknown>(_wantsSeparatorBetweenSelfAndView: P0): R;
+    // + NSView(CHViewAdditions):
     allSubviews<R = NSArray>(): R;
+    // + NSView(MSDropableView):
     dropDelegate_bc<R = MSDropableViewDelegate>(): R;
     setDropDelegate_bc<R = void, P0 = MSDropableViewDelegate>(_v: P0): R;
+    // + NSView(NextKeyViewSupport):
     canBeKeyView<R = boolean>(): R;
+    // + NSView(Separator):
     wantsSeparator<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSView<T = any> extends NSResponder, NSAppearanceCustomizationInternalProtocol, NSAnimatablePropertyContainerProtocol, NSUserInterfaceItemIdentificationProtocol, NSDraggingDestinationProtocol, NSAppearanceCustomizationProtocol, NSAccessibilityElementProtocol, NSAccessibilityProtocol {
+  namespace NSView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSResponder, NSAppearanceCustomizationInternalProtocol, NSAnimatablePropertyContainerProtocol, NSUserInterfaceItemIdentificationProtocol, NSDraggingDestinationProtocol, NSAppearanceCustomizationProtocol, NSAccessibilityElementProtocol, NSAccessibilityProtocol {
       alloc<R = NSView>(): R;
       new: <R = NSView>() => R;
       isCompatibleWithResponsiveScrolling<R = boolean>(): R;
@@ -1582,10 +1594,9 @@ declare namespace cocoa {
       keyPathsForValuesInvalidatingLayout<R = unknown>(): R;
       keyPathsForValuesInvalidatingIntrinsicContentSize<R = unknown>(): R;
       keyPathsForValuesInvalidatingConstraints<R = unknown>(): R;
-      // + NSView(Autolayout,Block_Animation,CHViewAdditions,History,InspectorStackViewFinding,MSDropableView,MSPreferredNextKeyView,NextKeyViewSupport,PopoverDismissal,Separator):
-      
-    }
+  
+  }
   }
 }
 
-declare const NSView: cocoa.classes.NSView;
+declare const NSView: cocoa.NSView.CLASS;

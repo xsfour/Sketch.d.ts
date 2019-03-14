@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface WebFrame<T = any> {}
-  namespace classes {
-    export interface WebFrame<T = any> {  }
+  export interface WebFrame<T0 = void, T1 = void, T2 = void> {}
+  namespace WebFrame {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const WebFrame: cocoa.classes.WebFrame;
+declare const WebFrame: cocoa.WebFrame.CLASS;

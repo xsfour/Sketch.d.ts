@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface FMDatabasePool<T = any> extends NSObject {
+  export interface FMDatabasePool<T0 = void, T1 = void, T2 = void> extends NSObject {
     inSavePoint<R = unknown, P0 = CDUnknownBlockType>(_inSavePoint: P0): R;
     inTransaction<R = void, P0 = CDUnknownBlockType>(_inTransaction: P0): R;
     inDeferredTransaction<R = void, P0 = CDUnknownBlockType>(_inDeferredTransaction: P0): R;
@@ -25,8 +25,8 @@ declare namespace cocoa {
     path<R = NSString>(): R;
     setPath<R = void, P0 = NSString>(_v: P0): R;
   }
-  namespace classes {
-    export interface FMDatabasePool<T = any> extends NSObject {
+  namespace FMDatabasePool {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = FMDatabasePool>(): R;
       new: <R = FMDatabasePool>() => R;
       databasePoolWithPath_flags<R = unknown, P0 = unknown, P1 = number>(_databasePoolWithPath: P0, _flags: P1): R;
@@ -35,4 +35,4 @@ declare namespace cocoa {
   }
 }
 
-declare const FMDatabasePool: cocoa.classes.FMDatabasePool;
+declare const FMDatabasePool: cocoa.FMDatabasePool.CLASS;

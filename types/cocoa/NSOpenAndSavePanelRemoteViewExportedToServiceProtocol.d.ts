@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSOpenAndSavePanelRemoteViewExportedToServiceProtocol<T = any> {}
-  namespace classes {
-    export interface NSOpenAndSavePanelRemoteViewExportedToServiceProtocol<T = any> {  }
+  export interface NSOpenAndSavePanelRemoteViewExportedToServiceProtocol<T0 = void, T1 = void, T2 = void> {}
+  namespace NSOpenAndSavePanelRemoteViewExportedToServiceProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSOpenAndSavePanelRemoteViewExportedToServiceProtocol: cocoa.classes.NSOpenAndSavePanelRemoteViewExportedToServiceProtocol;
+declare const NSOpenAndSavePanelRemoteViewExportedToServiceProtocol: cocoa.NSOpenAndSavePanelRemoteViewExportedToServiceProtocol.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScrubberChangeTransition<T = any> extends NSObject {
+  export interface NSScrubberChangeTransition<T0 = void, T1 = void, T2 = void> extends NSObject {
     description<R = unknown>(): R;
     dealloc<R = void>(): R;
     initWithView<R = unknown, P0 = unknown>(_initWithView: P0): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     fromAttr<R = NSScrubberLayoutAttributes>(): R;
     setFromAttr<R = void, P0 = NSScrubberLayoutAttributes>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSScrubberChangeTransition<T = any> extends NSObject {
+  namespace NSScrubberChangeTransition {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSScrubberChangeTransition>(): R;
       new: <R = NSScrubberChangeTransition>() => R;
     }
   }
 }
 
-declare const NSScrubberChangeTransition: cocoa.classes.NSScrubberChangeTransition;
+declare const NSScrubberChangeTransition: cocoa.NSScrubberChangeTransition.CLASS;

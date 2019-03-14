@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPathComponentCell<T = any> extends NSTextFieldCell {
+  export interface NSPathComponentCell<T0 = void, T1 = void, T2 = void> extends NSTextFieldCell {
     titleRectForBounds_imageRect<R = CGRect, P0 = CGRect, P1 = CGRect>(_titleRectForBounds: P0, _imageRect: P1): R;
     _effectiveArrowBackgroundStyleInView<R = number, P0 = unknown>(__effectiveArrowBackgroundStyleInView: P0): R;
     _shouldDrawRTL<R = boolean>(): R;
@@ -34,8 +34,8 @@ declare namespace cocoa {
     image<R = NSImage>(): R;
     setImage<R = void, P0 = NSImage>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSPathComponentCell<T = any> extends NSTextFieldCell {
+  namespace NSPathComponentCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTextFieldCell {
       alloc<R = NSPathComponentCell>(): R;
       new: <R = NSPathComponentCell>() => R;
       _iconSizeForControlSize<R = CGSize, P0 = number>(__iconSizeForControlSize: P0): R;
@@ -43,4 +43,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPathComponentCell: cocoa.classes.NSPathComponentCell;
+declare const NSPathComponentCell: cocoa.NSPathComponentCell.CLASS;

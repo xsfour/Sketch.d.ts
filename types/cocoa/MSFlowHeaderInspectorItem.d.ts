@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFlowHeaderInspectorItem<T = any> extends MSCollapsibleHeaderInspectorItem, MSInspectorFlowHandlerDelegateProtocol {
+  export interface MSFlowHeaderInspectorItem<T0 = void, T1 = void, T2 = void> extends MSCollapsibleHeaderInspectorItem, MSInspectorFlowHandlerDelegateProtocol {
     isInFlowEventHandler<R = boolean>(): R;
     validateHeaderButtonsForFlow<R = void, P0 = unknown>(_validateHeaderButtonsForFlow: P0): R;
     convertFlowToHotspotAction<R = void, P0 = unknown>(_convertFlowToHotspotAction: P0): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     addFlowButton<R = NSButton>(): R;
     setAddFlowButton<R = void, P0 = NSButton>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSFlowHeaderInspectorItem<T = any> extends MSCollapsibleHeaderInspectorItem, MSInspectorFlowHandlerDelegateProtocol {
+  namespace MSFlowHeaderInspectorItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSCollapsibleHeaderInspectorItem, MSInspectorFlowHandlerDelegateProtocol {
       alloc<R = MSFlowHeaderInspectorItem>(): R;
       new: <R = MSFlowHeaderInspectorItem>() => R;
     }
   }
 }
 
-declare const MSFlowHeaderInspectorItem: cocoa.classes.MSFlowHeaderInspectorItem;
+declare const MSFlowHeaderInspectorItem: cocoa.MSFlowHeaderInspectorItem.CLASS;

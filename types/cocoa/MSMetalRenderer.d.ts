@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSMetalRenderer<T = any> extends NSObject, MSGPURendererProtocol {
+  export interface MSMetalRenderer<T0 = void, T1 = void, T2 = void> extends NSObject, MSGPURendererProtocol {
     cxx_destruct<R = void>(): R;
     _setupScissorRect_forTargetTexture<R = void, P0 = unknown, P1 = unknown>(__setupScissorRect: P0, _forTargetTexture: P1): R;
     dealloc<R = void>(): R;
@@ -30,8 +30,8 @@ declare namespace cocoa {
     metalLayer<R = CAMetalLayer>(): R;
     setMetalLayer<R = void, P0 = CAMetalLayer>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSMetalRenderer<T = any> extends NSObject, MSGPURendererProtocol {
+  namespace MSMetalRenderer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, MSGPURendererProtocol {
       alloc<R = MSMetalRenderer>(): R;
       new: <R = MSMetalRenderer>() => R;
       createWithCompletionHandler<R = unknown, P0 = CDUnknownBlockType>(_createWithCompletionHandler: P0): R;
@@ -39,4 +39,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSMetalRenderer: cocoa.classes.MSMetalRenderer;
+declare const MSMetalRenderer: cocoa.MSMetalRenderer.CLASS;

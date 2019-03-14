@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDocument<T = any> extends NSObject, NSUIActivityProviderProtocol, NSEditorRegistrationProtocol, NSFilePresenterProtocol, NSMenuItemValidationProtocol, NSUserInterfaceValidationsProtocol {
+  export interface NSDocument<T0 = void, T1 = void, T2 = void> extends NSObject, NSUIActivityProviderProtocol, NSEditorRegistrationProtocol, NSFilePresenterProtocol, NSMenuItemValidationProtocol, NSUserInterfaceValidationsProtocol {
     revertToAlternateContents_ofType_error<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown>(_revertToAlternateContents: P0, _ofType: P1, _error: P2): R;
     readFromAlternateContents_ofType_error<R = boolean, P0 = unknown, P1 = unknown, P2 = unknown>(_readFromAlternateContents: P0, _ofType: P1, _error: P2): R;
     alternateContentsDisassociationReason<R = number>(): R;
@@ -540,8 +540,8 @@ declare namespace cocoa {
     primaryPresentedItemURL<R = NSURL>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSDocument<T = any> extends NSObject, NSUIActivityProviderProtocol, NSEditorRegistrationProtocol, NSFilePresenterProtocol, NSMenuItemValidationProtocol, NSUserInterfaceValidationsProtocol {
+  namespace NSDocument {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSUIActivityProviderProtocol, NSEditorRegistrationProtocol, NSFilePresenterProtocol, NSMenuItemValidationProtocol, NSUserInterfaceValidationsProtocol {
       alloc<R = NSDocument>(): R;
       new: <R = NSDocument>() => R;
       isNativeType<R = boolean, P0 = unknown>(_isNativeType: P0): R;
@@ -613,4 +613,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSDocument: cocoa.classes.NSDocument;
+declare const NSDocument: cocoa.NSDocument.CLASS;

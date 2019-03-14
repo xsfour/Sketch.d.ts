@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFontList<T = any> extends NSObject {
+  export interface MSFontList<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     prepareForDealloc<R = void>(): R;
     stopCachingFonts<R = void>(): R;
@@ -26,8 +26,8 @@ declare namespace cocoa {
     documentFontFamilyNames<R = NSArray>(): R;
     setDocumentFontFamilyNames<R = void, P0 = NSArray>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSFontList<T = any> extends NSObject {
+  namespace MSFontList {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSFontList>(): R;
       new: <R = MSFontList>() => R;
       initialize<R = void>(): R;
@@ -35,4 +35,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSFontList: cocoa.classes.MSFontList;
+declare const MSFontList: cocoa.MSFontList.CLASS;

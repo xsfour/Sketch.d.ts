@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSOperation<T = any> extends NSObject {
+  export interface NSOperation<T0 = void, T1 = void, T2 = void> extends NSObject {
     __graphDescription<R = unknown, P0 = number>(___graphDescription: P0): R;
     debugDescription<R = unknown>(): R;
     removeObserver_forKeyPath<R = void, P0 = unknown, P1 = unknown>(_removeObserver: P0, _forKeyPath: P1): R;
@@ -39,8 +39,8 @@ declare namespace cocoa {
     executing<R = boolean>(): R;
     cancelled<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSOperation<T = any> extends NSObject {
+  namespace NSOperation {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSOperation>(): R;
       new: <R = NSOperation>() => R;
       _removesDependenciesAfterFinish<R = boolean>(): R;
@@ -58,4 +58,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSOperation: cocoa.classes.NSOperation;
+declare const NSOperation: cocoa.NSOperation.CLASS;

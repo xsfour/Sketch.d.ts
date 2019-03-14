@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCMagnifier<T = any> extends NSObject {}
-  namespace classes {
-    export interface BCMagnifier<T = any> extends NSObject {
+  export interface BCMagnifier<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace BCMagnifier {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = BCMagnifier>(): R;
       new: <R = BCMagnifier>() => R;
       displayIDForScreenPoint<R = number, P0 = CGPoint>(_displayIDForScreenPoint: P0): R;
@@ -17,4 +17,4 @@ declare namespace cocoa {
   }
 }
 
-declare const BCMagnifier: cocoa.classes.BCMagnifier;
+declare const BCMagnifier: cocoa.BCMagnifier.CLASS;

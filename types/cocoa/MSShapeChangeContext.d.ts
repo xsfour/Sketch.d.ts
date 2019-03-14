@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSShapeChangeContext<T = any> extends NSObject, NSCopyingProtocol {
+  export interface MSShapeChangeContext<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     cxx_destruct<R = void>(): R;
     description<R = unknown>(): R;
     rectOfSelectedPoints<R = CGRect>(): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     layers<R = NSArray>(): R;
     orderedHandleIndexPaths<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface MSShapeChangeContext<T = any> extends NSObject, NSCopyingProtocol {
+  namespace MSShapeChangeContext {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = MSShapeChangeContext>(): R;
       new: <R = MSShapeChangeContext>() => R;
     }
   }
 }
 
-declare const MSShapeChangeContext: cocoa.classes.MSShapeChangeContext;
+declare const MSShapeChangeContext: cocoa.MSShapeChangeContext.CLASS;

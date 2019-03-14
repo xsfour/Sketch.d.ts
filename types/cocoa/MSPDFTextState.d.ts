@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPDFTextState<T = any> extends NSObject, NSCopyingProtocol {
+  export interface MSPDFTextState<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     cxx_destruct<R = void>(): R;
     appendText<R = void, P0 = unknown>(_appendText: P0): R;
     attributes<R = unknown>(): R;
@@ -43,8 +43,8 @@ declare namespace cocoa {
     characterSpacing<R = number>(): R;
     setCharacterSpacing<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSPDFTextState<T = any> extends NSObject, NSCopyingProtocol {
+  namespace MSPDFTextState {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = MSPDFTextState>(): R;
       new: <R = MSPDFTextState>() => R;
       textStateWithState<R = unknown, P0 = unknown>(_textStateWithState: P0): R;
@@ -52,4 +52,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSPDFTextState: cocoa.classes.MSPDFTextState;
+declare const MSPDFTextState: cocoa.MSPDFTextState.CLASS;

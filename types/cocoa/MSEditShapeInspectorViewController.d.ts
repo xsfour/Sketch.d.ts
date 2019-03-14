@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSEditShapeInspectorViewController<T = any> extends NSViewController, MSInspectorChildControllerProtocol {
+  export interface MSEditShapeInspectorViewController<T0 = void, T1 = void, T2 = void> extends NSViewController, MSInspectorChildControllerProtocol {
     cxx_destruct<R = void>(): R;
     observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
     changeTool<R = void, P0 = unknown>(_changeTool: P0): R;
@@ -49,12 +49,12 @@ declare namespace cocoa {
     pathController<R = MSPathController>(): R;
     setPathController<R = void, P0 = MSPathController>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSEditShapeInspectorViewController<T = any> extends NSViewController, MSInspectorChildControllerProtocol {
+  namespace MSEditShapeInspectorViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController, MSInspectorChildControllerProtocol {
       alloc<R = MSEditShapeInspectorViewController>(): R;
       new: <R = MSEditShapeInspectorViewController>() => R;
     }
   }
 }
 
-declare const MSEditShapeInspectorViewController: cocoa.classes.MSEditShapeInspectorViewController;
+declare const MSEditShapeInspectorViewController: cocoa.MSEditShapeInspectorViewController.CLASS;

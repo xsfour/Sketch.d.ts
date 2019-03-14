@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSGradientBarView<T = any> extends BCColorPickerBaseView {
+  export interface MSGradientBarView<T0 = void, T1 = void, T2 = void> extends BCColorPickerBaseView {
     canDoAdvancedGradientStopModifications<R = boolean>(): R;
     centerStopBetween<R = void>(): R;
     setSelectedStopToPercentage<R = void, P0 = number>(_setSelectedStopToPercentage: P0): R;
@@ -33,12 +33,12 @@ declare namespace cocoa {
     delegate<R = MSGradientBarViewDelegate>(): R;
     setDelegate<R = void, P0 = MSGradientBarViewDelegate>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSGradientBarView<T = any> extends BCColorPickerBaseView {
+  namespace MSGradientBarView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends BCColorPickerBaseView {
       alloc<R = MSGradientBarView>(): R;
       new: <R = MSGradientBarView>() => R;
     }
   }
 }
 
-declare const MSGradientBarView: cocoa.classes.MSGradientBarView;
+declare const MSGradientBarView: cocoa.MSGradientBarView.CLASS;

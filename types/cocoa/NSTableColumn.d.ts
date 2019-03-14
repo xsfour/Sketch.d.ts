@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTableColumn<T = any> extends NSObject, NSCodingProtocol, NSUserInterfaceItemIdentificationProtocol {
+  export interface NSTableColumn<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol, NSUserInterfaceItemIdentificationProtocol {
     cxx_destruct<R = void>(): R;
     _bindingAdaptor<R = unknown>(): R;
     _setBindingAdaptor<R = void, P0 = unknown>(__setBindingAdaptor: P0): R;
@@ -97,12 +97,12 @@ declare namespace cocoa {
     hidden<R = boolean>(): R;
     setHidden<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTableColumn<T = any> extends NSObject, NSCodingProtocol, NSUserInterfaceItemIdentificationProtocol {
+  namespace NSTableColumn {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol, NSUserInterfaceItemIdentificationProtocol {
       alloc<R = NSTableColumn>(): R;
       new: <R = NSTableColumn>() => R;
     }
   }
 }
 
-declare const NSTableColumn: cocoa.classes.NSTableColumn;
+declare const NSTableColumn: cocoa.NSTableColumn.CLASS;

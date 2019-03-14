@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAnalytics<T = any> extends BCSingleton, MSActionObserverProtocol {
+  export interface MSAnalytics<T0 = void, T1 = void, T2 = void> extends BCSingleton, MSActionObserverProtocol {
     cxx_destruct<R = void>(): R;
     trackEvent_withInterval_conditional<R = void, P0 = unknown, P1 = number, P2 = CDUnknownBlockType>(_trackEvent: P0, _withInterval: P1, _conditional: P2): R;
     trackEvent_withValue<R = void, P0 = unknown, P1 = unknown>(_trackEvent: P0, _withValue: P1): R;
@@ -26,9 +26,9 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSAnalytics<T = any> extends BCSingleton, MSActionObserverProtocol {  }
+  namespace MSAnalytics {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends BCSingleton, MSActionObserverProtocol {}
   }
 }
 
-declare const MSAnalytics: cocoa.classes.MSAnalytics;
+declare const MSAnalytics: cocoa.MSAnalytics.CLASS;

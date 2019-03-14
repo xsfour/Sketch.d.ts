@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSCacheManager<T = any> extends NSObject, MSRenderingContextCacheProviderProtocol {
+  export interface MSCacheManager<T0 = void, T1 = void, T2 = void> extends NSObject, MSRenderingContextCacheProviderProtocol {
     cxx_destruct<R = void>(): R;
     clearAllCaches<R = void>(): R;
     clearCachesExceptForOwners<R = void, P0 = unknown>(_clearCachesExceptForOwners: P0): R;
@@ -18,12 +18,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSCacheManager<T = any> extends NSObject, MSRenderingContextCacheProviderProtocol {
+  namespace MSCacheManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, MSRenderingContextCacheProviderProtocol {
       alloc<R = MSCacheManager>(): R;
       new: <R = MSCacheManager>() => R;
     }
   }
 }
 
-declare const MSCacheManager: cocoa.classes.MSCacheManager;
+declare const MSCacheManager: cocoa.MSCacheManager.CLASS;

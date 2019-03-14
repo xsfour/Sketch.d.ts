@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface SMKWebServer<T = any> extends NSObject, GCDWebServerDelegateProtocol, SMKDiskCacheDelegateProtocol {
+  export interface SMKWebServer<T0 = void, T1 = void, T2 = void> extends NSObject, GCDWebServerDelegateProtocol, SMKDiskCacheDelegateProtocol {
     cxx_destruct<R = void>(): R;
     dataFromImage<R = unknown, P0 = unknown>(_dataFromImage: P0): R;
     artboardThumbnailFromPath_constrainedToSize<R = unknown, P0 = unknown, P1 = CGSize>(_artboardThumbnailFromPath: P0, _constrainedToSize: P1): R;
@@ -38,12 +38,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface SMKWebServer<T = any> extends NSObject, GCDWebServerDelegateProtocol, SMKDiskCacheDelegateProtocol {
+  namespace SMKWebServer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, GCDWebServerDelegateProtocol, SMKDiskCacheDelegateProtocol {
       alloc<R = SMKWebServer>(): R;
       new: <R = SMKWebServer>() => R;
     }
   }
 }
 
-declare const SMKWebServer: cocoa.classes.SMKWebServer;
+declare const SMKWebServer: cocoa.SMKWebServer.CLASS;

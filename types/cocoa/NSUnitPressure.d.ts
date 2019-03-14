@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUnitPressure<T = any> extends NSDimension, NSSecureCodingProtocol {}
-  namespace classes {
-    export interface NSUnitPressure<T = any> extends NSDimension, NSSecureCodingProtocol {
+  export interface NSUnitPressure<T0 = void, T1 = void, T2 = void> extends NSDimension, NSSecureCodingProtocol {}
+  namespace NSUnitPressure {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSDimension, NSSecureCodingProtocol {
       alloc<R = NSUnitPressure>(): R;
       new: <R = NSUnitPressure>() => R;
       poundsForcePerSquareInch<R = unknown>(): R;
@@ -20,4 +20,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSUnitPressure: cocoa.classes.NSUnitPressure;
+declare const NSUnitPressure: cocoa.NSUnitPressure.CLASS;

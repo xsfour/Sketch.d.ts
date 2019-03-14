@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPopover<T = any> extends NSResponder, _NSTransientUIElementProtocol, NSAppearanceCustomizationProtocol, NSAccessibilityElementProtocol, NSAccessibilityProtocol {
+  export interface NSPopover<T0 = void, T1 = void, T2 = void> extends NSResponder, _NSTransientUIElementProtocol, NSAppearanceCustomizationProtocol, NSAccessibilityElementProtocol, NSAccessibilityProtocol {
     _removeAllForbiddenRects<R = void>(): R;
     _addForbiddenRectForBoundsOfView<R = void, P0 = unknown>(__addForbiddenRectForBoundsOfView: P0): R;
     _dragWithEvent<R = void, P0 = unknown>(__dragWithEvent: P0): R;
@@ -378,12 +378,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSPopover<T = any> extends NSResponder, _NSTransientUIElementProtocol, NSAppearanceCustomizationProtocol, NSAccessibilityElementProtocol, NSAccessibilityProtocol {
+  namespace NSPopover {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSResponder, _NSTransientUIElementProtocol, NSAppearanceCustomizationProtocol, NSAccessibilityElementProtocol, NSAccessibilityProtocol {
       alloc<R = NSPopover>(): R;
       new: <R = NSPopover>() => R;
     }
   }
 }
 
-declare const NSPopover: cocoa.classes.NSPopover;
+declare const NSPopover: cocoa.NSPopover.CLASS;

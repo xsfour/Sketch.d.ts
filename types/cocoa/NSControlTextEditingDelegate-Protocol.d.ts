@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSControlTextEditingDelegateProtocol<T = any> {
+  export interface NSControlTextEditingDelegateProtocol<T0 = void, T1 = void, T2 = void> {
     control_textView_completions_forPartialWordRange_indexOfSelectedItem<R = NSArray, P0 = NSControl, P1 = NSTextView, P2 = NSArray, P3 = _NSRange, P4 = number>(_control: P0, _textView: P1, _completions: P2, _forPartialWordRange: P3, _indexOfSelectedItem: P4): R;
     control_textView_doCommandBySelector<R = boolean, P0 = NSControl, P1 = NSTextView, P2 = string>(_control: P0, _textView: P1, _doCommandBySelector: P2): R;
     control_isValidObject<R = boolean, P0 = NSControl, P1 = unknown>(_control: P0, _isValidObject: P1): R;
@@ -13,7 +13,7 @@ declare namespace cocoa {
     controlTextDidEndEditing<R = void, P0 = NSNotification>(_controlTextDidEndEditing: P0): R;
     controlTextDidBeginEditing<R = void, P0 = NSNotification>(_controlTextDidBeginEditing: P0): R;
   }
-  namespace classes {
-    export interface NSControlTextEditingDelegateProtocol<T = any> {  }
+  namespace NSControlTextEditingDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

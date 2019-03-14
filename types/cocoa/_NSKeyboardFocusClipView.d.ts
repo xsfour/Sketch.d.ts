@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSKeyboardFocusClipView<T = any> extends NSClipView {
+  export interface _NSKeyboardFocusClipView<T0 = void, T1 = void, T2 = void> extends NSClipView {
     _getFocusRingFrame<R = CGRect>(): R;
     _clearFocusForView<R = void>(): R;
     _adjustFocusRingLocation<R = void, P0 = CGPoint>(__adjustFocusRingLocation: P0): R;
@@ -11,8 +11,8 @@ declare namespace cocoa {
     _drawKeyboardFocusRingWithFrame<R = void, P0 = CGRect>(__drawKeyboardFocusRingWithFrame: P0): R;
     _setKeyboardFocusRingNeedsDisplay<R = void>(): R;
   }
-  namespace classes {
-    export interface _NSKeyboardFocusClipView<T = any> extends NSClipView {
+  namespace _NSKeyboardFocusClipView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSClipView {
       alloc<R = _NSKeyboardFocusClipView>(): R;
       new: <R = _NSKeyboardFocusClipView>() => R;
     }

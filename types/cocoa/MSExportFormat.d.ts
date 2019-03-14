@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSExportFormat<T = any> extends _MSExportFormat {
+  export interface MSExportFormat<T0 = void, T1 = void, T2 = void> extends _MSExportFormat {
     exportScaleInRect<R = number, P0 = CGRect>(_exportScaleInRect: P0): R;
     description<R = unknown>(): R;
     remove<R = void>(): R;
@@ -12,8 +12,8 @@ declare namespace cocoa {
     isScalableExport<R = boolean>(): R;
     baseFileName<R = NSString>(): R;
   }
-  namespace classes {
-    export interface MSExportFormat<T = any> extends _MSExportFormat {
+  namespace MSExportFormat {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSExportFormat {
       alloc<R = MSExportFormat>(): R;
       new: <R = MSExportFormat>() => R;
       exportableFilenameForLayerName_exportFormat<R = unknown, P0 = unknown, P1 = unknown>(_exportableFilenameForLayerName: P0, _exportFormat: P1): R;
@@ -25,4 +25,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSExportFormat: cocoa.classes.MSExportFormat;
+declare const MSExportFormat: cocoa.MSExportFormat.CLASS;

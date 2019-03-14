@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFlashController<T = any> extends NSObject {
+  export interface MSFlashController<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     clearFlash<R = void>(): R;
     removeMessage<R = void, P0 = unknown>(_removeMessage: P0): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     stackView<R = NSStackView>(): R;
     setStackView<R = void, P0 = NSStackView>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSFlashController<T = any> extends NSObject {
+  namespace MSFlashController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSFlashController>(): R;
       new: <R = MSFlashController>() => R;
     }
   }
 }
 
-declare const MSFlashController: cocoa.classes.MSFlashController;
+declare const MSFlashController: cocoa.MSFlashController.CLASS;

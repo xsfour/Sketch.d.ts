@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAvailableOverride<T = any> extends NSObject {
+  export interface MSAvailableOverride<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     initWithOverridePoint_master_affectedLayer_overrideValue_otherOverrides_inParent_document_editable<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown, P5 = unknown, P6 = unknown, P7 = boolean>(_initWithOverridePoint: P0, _master: P1, _affectedLayer: P2, _overrideValue: P3, _otherOverrides: P4, _inParent: P5, _document: P6, _editable: P7): R;
     affectedLayerDefault<R = unknown>(): R;
@@ -18,8 +18,8 @@ declare namespace cocoa {
     currentValue<R = unknown>(): R;
     children<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface MSAvailableOverride<T = any> extends NSObject {
+  namespace MSAvailableOverride {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSAvailableOverride>(): R;
       new: <R = MSAvailableOverride>() => R;
       enumerateOverrides_withBlock<R = void, P0 = unknown, P1 = CDUnknownBlockType>(_enumerateOverrides: P0, _withBlock: P1): R;
@@ -29,4 +29,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSAvailableOverride: cocoa.classes.MSAvailableOverride;
+declare const MSAvailableOverride: cocoa.MSAvailableOverride.CLASS;

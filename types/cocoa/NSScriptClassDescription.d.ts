@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScriptClassDescription<T = any> extends NSClassDescription {
+  export interface NSScriptClassDescription<T0 = void, T1 = void, T2 = void> extends NSClassDescription {
     toManyRelationshipKeys<R = unknown>(): R;
     toOneRelationshipKeys<R = unknown>(): R;
     attributeKeys<R = unknown>(): R;
@@ -64,8 +64,8 @@ declare namespace cocoa {
     className<R = NSString>(): R;
     suiteName<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSScriptClassDescription<T = any> extends NSClassDescription {
+  namespace NSScriptClassDescription {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSClassDescription {
       alloc<R = NSScriptClassDescription>(): R;
       new: <R = NSScriptClassDescription>() => R;
       _propertyDescriptionsOfClass_fromImplDeclarations_presoDeclarations_suiteName_className<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown>(__propertyDescriptionsOfClass: P0, _fromImplDeclarations: P1, _presoDeclarations: P2, _suiteName: P3, _className: P4): R;
@@ -75,4 +75,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSScriptClassDescription: cocoa.classes.NSScriptClassDescription;
+declare const NSScriptClassDescription: cocoa.NSScriptClassDescription.CLASS;

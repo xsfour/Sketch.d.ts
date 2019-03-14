@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSystemAppearanceProxy<T = any> extends NSObject, NSAppearanceCustomizationInternalProtocol, NSAppearanceCustomizationProtocol {
+  export interface NSSystemAppearanceProxy<T0 = void, T1 = void, T2 = void> extends NSObject, NSAppearanceCustomizationInternalProtocol, NSAppearanceCustomizationProtocol {
     _menuBarAppearanceChanged<R = void, P0 = unknown>(__menuBarAppearanceChanged: P0): R;
     _increaseContrastChanged<R = void, P0 = unknown>(__increaseContrastChanged: P0): R;
     _controlTintChanged<R = void, P0 = unknown>(__controlTintChanged: P0): R;
@@ -19,8 +19,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSSystemAppearanceProxy<T = any> extends NSObject, NSAppearanceCustomizationInternalProtocol, NSAppearanceCustomizationProtocol {
+  namespace NSSystemAppearanceProxy {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSAppearanceCustomizationInternalProtocol, NSAppearanceCustomizationProtocol {
       alloc<R = NSSystemAppearanceProxy>(): R;
       new: <R = NSSystemAppearanceProxy>() => R;
       keyPathsForValuesAffectingEffectiveAppearance<R = unknown>(): R;
@@ -29,4 +29,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSSystemAppearanceProxy: cocoa.classes.NSSystemAppearanceProxy;
+declare const NSSystemAppearanceProxy: cocoa.NSSystemAppearanceProxy.CLASS;

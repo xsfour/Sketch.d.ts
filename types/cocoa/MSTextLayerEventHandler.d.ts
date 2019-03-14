@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSTextLayerEventHandler<T = any> extends MSEventHandler, NSLayoutManagerDelegateProtocol, NSTextViewDelegateProtocol, NSTextStorageDelegateProtocol, NSWindowDelegateProtocol, MSTextLayerEditingDelegateProtocol, MSTextLayerTextViewDelegateProtocol, MSFirstLineTypesetterDelegateProtocol {
+  export interface MSTextLayerEventHandler<T0 = void, T1 = void, T2 = void> extends MSEventHandler, NSLayoutManagerDelegateProtocol, NSTextViewDelegateProtocol, NSTextStorageDelegateProtocol, NSWindowDelegateProtocol, MSTextLayerEditingDelegateProtocol, MSTextLayerTextViewDelegateProtocol, MSFirstLineTypesetterDelegateProtocol {
     selectionTouchBar<R = unknown>(): R;
     shouldExitOnContentViewResize<R = boolean>(): R;
     validateMenuItem<R = boolean, P0 = unknown>(_validateMenuItem: P0): R;
@@ -49,12 +49,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSTextLayerEventHandler<T = any> extends MSEventHandler, NSLayoutManagerDelegateProtocol, NSTextViewDelegateProtocol, NSTextStorageDelegateProtocol, NSWindowDelegateProtocol, MSTextLayerEditingDelegateProtocol, MSTextLayerTextViewDelegateProtocol, MSFirstLineTypesetterDelegateProtocol {
+  namespace MSTextLayerEventHandler {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSEventHandler, NSLayoutManagerDelegateProtocol, NSTextViewDelegateProtocol, NSTextStorageDelegateProtocol, NSWindowDelegateProtocol, MSTextLayerEditingDelegateProtocol, MSTextLayerTextViewDelegateProtocol, MSFirstLineTypesetterDelegateProtocol {
       alloc<R = MSTextLayerEventHandler>(): R;
       new: <R = MSTextLayerEventHandler>() => R;
     }
   }
 }
 
-declare const MSTextLayerEventHandler: cocoa.classes.MSTextLayerEventHandler;
+declare const MSTextLayerEventHandler: cocoa.MSTextLayerEventHandler.CLASS;

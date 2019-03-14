@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCGSWindowSurface<T = any> extends NSObject {
+  export interface NSCGSWindowSurface<T0 = void, T1 = void, T2 = void> extends NSObject {
     orderOut<R = void>(): R;
     orderBelowWindow<R = void>(): R;
     orderAboveWindow<R = void>(): R;
@@ -13,8 +13,8 @@ declare namespace cocoa {
     surfaceID<R = number>(): R;
     window<R = NSCGSWindow>(): R;
   }
-  namespace classes {
-    export interface NSCGSWindowSurface<T = any> extends NSObject {
+  namespace NSCGSWindowSurface {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSCGSWindowSurface>(): R;
       new: <R = NSCGSWindowSurface>() => R;
       synchronize<R = void>(): R;
@@ -22,4 +22,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSCGSWindowSurface: cocoa.classes.NSCGSWindowSurface;
+declare const NSCGSWindowSurface: cocoa.NSCGSWindowSurface.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDraggingItem<T = any> extends NSObject {
+  export interface NSDraggingItem<T0 = void, T1 = void, T2 = void> extends NSObject {
     description<R = unknown>(): R;
     setDraggingFrame_contents<R = void, P0 = CGRect, P1 = unknown>(_setDraggingFrame: P0, _contents: P1): R;
     dealloc<R = void>(): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     draggingFrame<R = CGRect>(): R;
     setDraggingFrame<R = void, P0 = CGRect>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSDraggingItem<T = any> extends NSObject {
+  namespace NSDraggingItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSDraggingItem>(): R;
       new: <R = NSDraggingItem>() => R;
     }
   }
 }
 
-declare const NSDraggingItem: cocoa.classes.NSDraggingItem;
+declare const NSDraggingItem: cocoa.NSDraggingItem.CLASS;

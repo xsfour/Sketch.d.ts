@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCalibratedWhiteColor<T = any> extends NSColor {
+  export interface NSCalibratedWhiteColor<T0 = void, T1 = void, T2 = void> extends NSColor {
     encodeWithCoder_colorSpaceCode<R = void, P0 = unknown, P1 = boolean>(_encodeWithCoder: P0, _colorSpaceCode: P1): R;
     classForCoder<R = unknown>(): R;
     hash<R = number>(): R;
@@ -16,8 +16,8 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     initWithWhite_alpha<R = unknown, P0 = number, P1 = number>(_initWithWhite: P0, _alpha: P1): R;
   }
-  namespace classes {
-    export interface NSCalibratedWhiteColor<T = any> extends NSColor {
+  namespace NSCalibratedWhiteColor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSColor {
       alloc<R = NSCalibratedWhiteColor>(): R;
       new: <R = NSCalibratedWhiteColor>() => R;
       _cachedLookupWithWhite_alpha<R = unknown, P0 = number, P1 = number>(__cachedLookupWithWhite: P0, _alpha: P1): R;
@@ -26,4 +26,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSCalibratedWhiteColor: cocoa.classes.NSCalibratedWhiteColor;
+declare const NSCalibratedWhiteColor: cocoa.NSCalibratedWhiteColor.CLASS;

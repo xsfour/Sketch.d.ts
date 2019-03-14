@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCGSWindowBuffer<T = any> extends NSObject {
+  export interface NSCGSWindowBuffer<T0 = void, T1 = void, T2 = void> extends NSObject {
     bitmapInfo<R = number>(): R;
     bitsPerComponent<R = number>(): R;
     bitsPerPixel<R = number>(): R;
@@ -12,8 +12,8 @@ declare namespace cocoa {
     scale<R = number>(): R;
     width<R = number>(): R;
   }
-  namespace classes {
-    export interface NSCGSWindowBuffer<T = any> extends NSObject {
+  namespace NSCGSWindowBuffer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSCGSWindowBuffer>(): R;
       new: <R = NSCGSWindowBuffer>() => R;
       allocWithZone<R = unknown, P0 = _NSZone>(_allocWithZone: P0): R;
@@ -21,4 +21,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSCGSWindowBuffer: cocoa.classes.NSCGSWindowBuffer;
+declare const NSCGSWindowBuffer: cocoa.NSCGSWindowBuffer.CLASS;

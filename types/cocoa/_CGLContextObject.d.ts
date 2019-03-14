@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _CGLContextObject<T = any> {}
-  namespace classes {
-    export interface _CGLContextObject<T = any> {  }
+  export interface _CGLContextObject<T0 = void, T1 = void, T2 = void> {}
+  namespace _CGLContextObject {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

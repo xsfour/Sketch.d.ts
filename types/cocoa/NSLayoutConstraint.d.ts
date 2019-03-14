@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLayoutConstraint<T = any> extends NSObject, NSISConstraintProtocol {
+  export interface NSLayoutConstraint<T0 = void, T1 = void, T2 = void> extends NSObject, NSISConstraintProtocol {
     _setActive_mutuallyExclusiveConstraints<R = void, P0 = boolean, P1 = unknown>(__setActive: P0, _mutuallyExclusiveConstraints: P1): R;
     _nsib_isRedundant<R = boolean>(): R;
     _nsib_isRedundantInEngine<R = boolean, P0 = unknown>(__nsib_isRedundantInEngine: P0): R;
@@ -109,20 +109,26 @@ declare namespace cocoa {
     debugDescription<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
-    // + NSLayoutConstraint(NSAnimation,NSConsistentLayoutIntegralization,NSConstraintSourceDetection,NSLayoutConstraintConveniences,NSLayoutConstraintVisualization,NSSymbolicConstantResolution,NSTabBarExtras,Utility):
+    // + NSLayoutConstraint(NSAnimation): 
     animationForKey<R = unknown, P0 = unknown>(_animationForKey: P0): R;
     animator<R = unknown>(): R;
+    // + NSLayoutConstraint(NSConsistentLayoutIntegralization): 
     _usingConsistentIntegralization<R = boolean>(): R;
+    // + NSLayoutConstraint(NSConstraintSourceDetection): 
     _isPrototypingConstraint<R = boolean>(): R;
+    // + NSLayoutConstraint(NSLayoutConstraintVisualization): 
     _geometricCompare<R = number, P0 = unknown>(__geometricCompare: P0): R;
     _visualCenterInWindowSpace<R = CGPoint>(): R;
     _orientation<R = number>(): R;
+    // + NSLayoutConstraint(NSSymbolicConstantResolution): 
     defaultResolvedValue_forSymbolicConstant_error<R = boolean, P0 = number, P1 = unknown, P2 = unknown>(_defaultResolvedValue: P0, _forSymbolicConstant: P1, _error: P2): R;
+    // + NSLayoutConstraint(NSTabBarExtras): 
     _setConstant_animated<R = void, P0 = number, P1 = boolean>(__setConstant: P0, _animated: P1): R;
+    // + NSLayoutConstraint(Utility): 
     isRequired<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSLayoutConstraint<T = any> extends NSObject, NSISConstraintProtocol {
+  namespace NSLayoutConstraint {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSISConstraintProtocol {
       alloc<R = NSLayoutConstraint>(): R;
       new: <R = NSLayoutConstraint>() => R;
       constraintWithAnchor_relatedBy_constant<R = unknown, P0 = unknown, P1 = number, P2 = number>(_constraintWithAnchor: P0, _relatedBy: P1, _constant: P2): R;
@@ -141,12 +147,15 @@ declare namespace cocoa {
       activateConstraints<R = void, P0 = unknown>(_activateConstraints: P0): R;
       _setLegacyDecodingOnly<R = void, P0 = boolean>(__setLegacyDecodingOnly: P0): R;
       _constraintConstantLimit<R = number>(): R;
-      // + NSLayoutConstraint(NSAnimation,NSConsistentLayoutIntegralization,NSConstraintSourceDetection,NSLayoutConstraintConveniences,NSLayoutConstraintVisualization,NSSymbolicConstantResolution,NSTabBarExtras,Utility):
+      // + NSLayoutConstraint(NSAnimation): 
       defaultAnimationForKey<R = unknown, P0 = unknown>(_defaultAnimationForKey: P0): R;
+      // + NSLayoutConstraint(NSConsistentLayoutIntegralization): 
       _constraintConstantLimit<R = number>(): R;
+      // + NSLayoutConstraint(NSLayoutConstraintConveniences): 
       _ns_constraintsWithItem_attribute_toItem_attribute_inequalityRelation_inequalityIdentifier_inequalityPriority_inequalityConstant_equivalencePriority_equivalenceIdentifier_equalityConstant_layoutDirection<R = unknown, P0 = unknown, P1 = number, P2 = unknown, P3 = number, P4 = number, P5 = unknown, P6 = number, P7 = number, P8 = number, P9 = unknown, P10 = number, P11 = number>(__ns_constraintsWithItem: P0, _attribute: P1, _toItem: P2, _attribute1: P3, _inequalityRelation: P4, _inequalityIdentifier: P5, _inequalityPriority: P6, _inequalityConstant: P7, _equivalencePriority: P8, _equivalenceIdentifier: P9, _equalityConstant: P10, _layoutDirection: P11): R;
       _ns_constraintsWithItem_attribute_toItem_attribute_constant_inequalityRelation_inequalityIdentifier_inequalityPriority_equivalencePriority_equivalenceIdentifier_layoutDirection<R = unknown, P0 = unknown, P1 = number, P2 = unknown, P3 = number, P4 = number, P5 = number, P6 = unknown, P7 = number, P8 = number, P9 = unknown, P10 = number>(__ns_constraintsWithItem: P0, _attribute: P1, _toItem: P2, _attribute1: P3, _constant: P4, _inequalityRelation: P5, _inequalityIdentifier: P6, _inequalityPriority: P7, _equivalencePriority: P8, _equivalenceIdentifier: P9, _layoutDirection: P10): R;
       _ns_constraintWithItem_attribute_relatedBy_toItem_attribute_multiplier_constant_layoutDirection_priority_identifier<R = unknown, P0 = unknown, P1 = number, P2 = number, P3 = unknown, P4 = number, P5 = number, P6 = number, P7 = number, P8 = number, P9 = unknown>(__ns_constraintWithItem: P0, _attribute: P1, _relatedBy: P2, _toItem: P3, _attribute1: P4, _multiplier: P5, _constant: P6, _layoutDirection: P7, _priority: P8, _identifier: P9): R;
+      // + NSLayoutConstraint(NSTabBarExtras): 
       _constraintsMatchingFrameOfView_withFrameOfView_edgeInsets_priority<R = unknown, P0 = unknown, P1 = unknown, P2 = NSEdgeInsets, P3 = number>(__constraintsMatchingFrameOfView: P0, _withFrameOfView: P1, _edgeInsets: P2, _priority: P3): R;
       _constraintsMatchingFrameOfView_withFrameOfView_edgeInsets<R = unknown, P0 = unknown, P1 = unknown, P2 = NSEdgeInsets>(__constraintsMatchingFrameOfView: P0, _withFrameOfView: P1, _edgeInsets: P2): R;
       _constraintsMatchingFrameOfView_withFrameOfView<R = unknown, P0 = unknown, P1 = unknown>(__constraintsMatchingFrameOfView: P0, _withFrameOfView: P1): R;
@@ -156,4 +165,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSLayoutConstraint: cocoa.classes.NSLayoutConstraint;
+declare const NSLayoutConstraint: cocoa.NSLayoutConstraint.CLASS;

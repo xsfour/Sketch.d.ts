@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSpellChecker<T = any> extends NSObject {
+  export interface NSSpellChecker<T0 = void, T1 = void, T2 = void> extends NSObject {
     _setTestCorrectionDictionary<R = void, P0 = unknown>(__setTestCorrectionDictionary: P0): R;
     insertsAutospaceAfterString_language<R = boolean, P0 = unknown, P1 = unknown>(_insertsAutospaceAfterString: P0, _language: P1): R;
     deletesAutospaceBeforeString_language<R = boolean, P0 = unknown, P1 = unknown>(_deletesAutospaceBeforeString: P0, _language: P1): R;
@@ -215,8 +215,8 @@ declare namespace cocoa {
     userPreferredLanguages<R = NSArray>(): R;
     availableLanguages<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface NSSpellChecker<T = any> extends NSObject {
+  namespace NSSpellChecker {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSSpellChecker>(): R;
       new: <R = NSSpellChecker>() => R;
       _doubleSpaceReplacementAfterString<R = unknown, P0 = unknown>(__doubleSpaceReplacementAfterString: P0): R;
@@ -240,4 +240,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSSpellChecker: cocoa.classes.NSSpellChecker;
+declare const NSSpellChecker: cocoa.NSSpellChecker.CLASS;

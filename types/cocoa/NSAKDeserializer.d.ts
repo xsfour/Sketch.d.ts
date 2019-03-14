@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAKDeserializer<T = any> extends NSObject {
+  export interface NSAKDeserializer<T0 = void, T1 = void, T2 = void> extends NSObject {
     deserializePListValueIn_key_length<R = unknown, P0 = unknown, P1 = unknown, P2 = number>(_deserializePListValueIn: P0, _key: P1, _length: P2): R;
     deserializePListKeyIn<R = unknown, P0 = unknown>(_deserializePListKeyIn: P0): R;
     deserializePList<R = unknown, P0 = unknown>(_deserializePList: P0): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     initForDeserializerStream<R = unknown, P0 = unknown>(_initForDeserializerStream: P0): R;
   }
-  namespace classes {
-    export interface NSAKDeserializer<T = any> extends NSObject {
+  namespace NSAKDeserializer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSAKDeserializer>(): R;
       new: <R = NSAKDeserializer>() => R;
     }
   }
 }
 
-declare const NSAKDeserializer: cocoa.classes.NSAKDeserializer;
+declare const NSAKDeserializer: cocoa.NSAKDeserializer.CLASS;

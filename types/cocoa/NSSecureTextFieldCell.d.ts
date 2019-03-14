@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSecureTextFieldCell<T = any> extends NSTextFieldCell {
+  export interface NSSecureTextFieldCell<T0 = void, T1 = void, T2 = void> extends NSTextFieldCell {
     _bulletStringForString<R = unknown, P0 = unknown>(__bulletStringForString: P0): R;
     _bulletCharacter<R = number>(): R;
     _setBulletCharacter<R = void, P0 = number>(__setBulletCharacter: P0): R;
@@ -18,8 +18,8 @@ declare namespace cocoa {
     kernelSecureMode<R = boolean>(): R;
     setKernelSecureMode<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSSecureTextFieldCell<T = any> extends NSTextFieldCell {
+  namespace NSSecureTextFieldCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTextFieldCell {
       alloc<R = NSSecureTextFieldCell>(): R;
       new: <R = NSSecureTextFieldCell>() => R;
       _sharedSecureFieldEditor<R = unknown>(): R;
@@ -27,4 +27,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSSecureTextFieldCell: cocoa.classes.NSSecureTextFieldCell;
+declare const NSSecureTextFieldCell: cocoa.NSSecureTextFieldCell.CLASS;

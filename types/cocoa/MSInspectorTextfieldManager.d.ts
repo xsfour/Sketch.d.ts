@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInspectorTextfieldManager<T = any> extends NSObject, MSInspectorValueAdaptorChangeObserverProtocol {
+  export interface MSInspectorTextfieldManager<T0 = void, T1 = void, T2 = void> extends NSObject, MSInspectorValueAdaptorChangeObserverProtocol {
     cxx_destruct<R = void>(): R;
     handleValueDidChange<R = void>(): R;
     initWithItem_textField_adaptor_identifier_inlineToolTip_touchBarItems<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown, P5 = unknown>(_initWithItem: P0, _textField: P1, _adaptor: P2, _identifier: P3, _inlineToolTip: P4, _touchBarItems: P5): R;
@@ -23,8 +23,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSInspectorTextfieldManager<T = any> extends NSObject, MSInspectorValueAdaptorChangeObserverProtocol {
+  namespace MSInspectorTextfieldManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, MSInspectorValueAdaptorChangeObserverProtocol {
       alloc<R = MSInspectorTextfieldManager>(): R;
       new: <R = MSInspectorTextfieldManager>() => R;
       managerWithItem_textField_adaptor_identifier_inlineToolTip_touchBarItems<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown, P5 = unknown>(_managerWithItem: P0, _textField: P1, _adaptor: P2, _identifier: P3, _inlineToolTip: P4, _touchBarItems: P5): R;
@@ -32,4 +32,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSInspectorTextfieldManager: cocoa.classes.MSInspectorTextfieldManager;
+declare const MSInspectorTextfieldManager: cocoa.MSInspectorTextfieldManager.CLASS;

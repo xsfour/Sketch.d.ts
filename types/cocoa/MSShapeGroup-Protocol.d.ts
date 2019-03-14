@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSShapeGroupProtocol<T = any> {
+  export interface MSShapeGroupProtocol<T0 = void, T1 = void, T2 = void> {
     isPartOfClippingMask<R = boolean>(): R;
     hasMarkers<R = boolean>(): R;
   }
-  namespace classes {
-    export interface MSShapeGroupProtocol<T = any> {  }
+  namespace MSShapeGroupProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

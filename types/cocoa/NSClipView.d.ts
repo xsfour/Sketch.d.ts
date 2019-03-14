@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSClipView<T = any> extends NSView {
+  export interface NSClipView<T0 = void, T1 = void, T2 = void> extends NSView {
     valueForKey<R = unknown, P0 = unknown>(_valueForKey: P0): R;
     _setDocumentViewAlignment<R = void, P0 = number>(__setDocumentViewAlignment: P0): R;
     _documentViewAlignment<R = number>(): R;
@@ -110,8 +110,8 @@ declare namespace cocoa {
     documentView<R = NSView>(): R;
     setDocumentView<R = void, P0 = NSView>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSClipView<T = any> extends NSView {
+  namespace NSClipView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSClipView>(): R;
       new: <R = NSClipView>() => R;
       _contentShadow<R = unknown>(): R;
@@ -122,4 +122,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSClipView: cocoa.classes.NSClipView;
+declare const NSClipView: cocoa.NSClipView.CLASS;

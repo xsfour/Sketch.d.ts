@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSStyleInspectorSection<T = any> extends MSNestedInspectorSection, MSStylePartInspectorDelegateProtocol {
+  export interface MSStyleInspectorSection<T0 = void, T1 = void, T2 = void> extends MSNestedInspectorSection, MSStylePartInspectorDelegateProtocol {
     showBorderOptionsAction<R = void, P0 = unknown>(_showBorderOptionsAction: P0): R;
     showFillOptionsAction<R = void, P0 = unknown>(_showFillOptionsAction: P0): R;
     restorePopover<R = void>(): R;
@@ -33,12 +33,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSStyleInspectorSection<T = any> extends MSNestedInspectorSection, MSStylePartInspectorDelegateProtocol {
+  namespace MSStyleInspectorSection {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSNestedInspectorSection, MSStylePartInspectorDelegateProtocol {
       alloc<R = MSStyleInspectorSection>(): R;
       new: <R = MSStyleInspectorSection>() => R;
     }
   }
 }
 
-declare const MSStyleInspectorSection: cocoa.classes.MSStyleInspectorSection;
+declare const MSStyleInspectorSection: cocoa.MSStyleInspectorSection.CLASS;

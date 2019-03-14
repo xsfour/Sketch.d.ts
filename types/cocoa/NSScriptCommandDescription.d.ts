@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScriptCommandDescription<T = any> extends NSObject, NSCodingProtocol {
+  export interface NSScriptCommandDescription<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
     replacementObjectForPortCoder<R = unknown, P0 = unknown>(_replacementObjectForPortCoder: P0): R;
     createCommandInstanceWithZone<R = unknown, P0 = _NSZone>(_createCommandInstanceWithZone: P0): R;
     createCommandInstance<R = unknown>(): R;
@@ -42,8 +42,8 @@ declare namespace cocoa {
     commandName<R = NSString>(): R;
     suiteName<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSScriptCommandDescription<T = any> extends NSObject, NSCodingProtocol {
+  namespace NSScriptCommandDescription {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
       alloc<R = NSScriptCommandDescription>(): R;
       new: <R = NSScriptCommandDescription>() => R;
       _argumentDescriptionsFromUnnamedImplDeclaration_presoDeclaration_namedImplDeclarations_presoDeclarations_suiteName_commandName<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown, P5 = unknown>(__argumentDescriptionsFromUnnamedImplDeclaration: P0, _presoDeclaration: P1, _namedImplDeclarations: P2, _presoDeclarations: P3, _suiteName: P4, _commandName: P5): R;
@@ -51,4 +51,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSScriptCommandDescription: cocoa.classes.NSScriptCommandDescription;
+declare const NSScriptCommandDescription: cocoa.NSScriptCommandDescription.CLASS;

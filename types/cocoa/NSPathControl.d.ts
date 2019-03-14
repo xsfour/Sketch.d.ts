@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPathControl<T = any> extends NSControl {
+  export interface NSPathControl<T0 = void, T1 = void, T2 = void> extends NSControl {
     _cleanUpTransientDragState<R = void>(): R;
     _updateDropTargetForDraggingInfo<R = void, P0 = unknown>(__updateDropTargetForDraggingInfo: P0): R;
     _updateDropTargetToCell<R = void, P0 = unknown>(__updateDropTargetToCell: P0): R;
@@ -52,12 +52,12 @@ declare namespace cocoa {
     editable<R = boolean>(): R;
     setEditable<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSPathControl<T = any> extends NSControl {
+  namespace NSPathControl {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSControl {
       alloc<R = NSPathControl>(): R;
       new: <R = NSPathControl>() => R;
     }
   }
 }
 
-declare const NSPathControl: cocoa.classes.NSPathControl;
+declare const NSPathControl: cocoa.NSPathControl.CLASS;

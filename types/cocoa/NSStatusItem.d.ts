@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSStatusItem<T = any> extends NSObject {
+  export interface NSStatusItem<T0 = void, T1 = void, T2 = void> extends NSObject {
     setAllowsVibrancy<R = void, P0 = boolean>(_setAllowsVibrancy: P0): R;
     allowsVibrancy<R = boolean>(): R;
     setDelegate<R = void, P0 = unknown>(_setDelegate: P0): R;
@@ -124,8 +124,8 @@ declare namespace cocoa {
     setLength<R = void, P0 = number>(_v: P0): R;
     statusBar<R = NSStatusBar>(): R;
   }
-  namespace classes {
-    export interface NSStatusItem<T = any> extends NSObject {
+  namespace NSStatusItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSStatusItem>(): R;
       new: <R = NSStatusItem>() => R;
       _itemInStatusBar_withLength_withPriority_systemInsertOrder<R = unknown, P0 = unknown, P1 = number, P2 = number, P3 = number>(__itemInStatusBar: P0, _withLength: P1, _withPriority: P2, _systemInsertOrder: P3): R;
@@ -134,4 +134,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSStatusItem: cocoa.classes.NSStatusItem;
+declare const NSStatusItem: cocoa.NSStatusItem.CLASS;

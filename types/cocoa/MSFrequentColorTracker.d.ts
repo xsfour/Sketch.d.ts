@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFrequentColorTracker<T = any> extends NSObject {
+  export interface MSFrequentColorTracker<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     frequentColors<R = unknown>(): R;
     registerColors_fromSource<R = void, P0 = unknown, P1 = unknown>(_registerColors: P0, _fromSource: P1): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     maximumColorCount<R = number>(): R;
     colorUse<R = number>(): R;
   }
-  namespace classes {
-    export interface MSFrequentColorTracker<T = any> extends NSObject {
+  namespace MSFrequentColorTracker {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSFrequentColorTracker>(): R;
       new: <R = MSFrequentColorTracker>() => R;
     }
   }
 }
 
-declare const MSFrequentColorTracker: cocoa.classes.MSFrequentColorTracker;
+declare const MSFrequentColorTracker: cocoa.MSFrequentColorTracker.CLASS;

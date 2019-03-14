@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSServicesMonitorObserverProtocol<T = any> extends NSObjectProtocol {
+  export interface NSServicesMonitorObserverProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     servicesDidChange<R = void>(): R;
   }
-  namespace classes {
-    export interface NSServicesMonitorObserverProtocol<T = any> extends NSObjectProtocol {  }
+  namespace NSServicesMonitorObserverProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

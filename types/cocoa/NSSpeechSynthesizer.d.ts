@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSpeechSynthesizer<T = any> extends NSObject {
+  export interface NSSpeechSynthesizer<T0 = void, T1 = void, T2 = void> extends NSObject {
     _setObject_forProperty_usingDataSize<R = boolean, P0 = unknown, P1 = number, P2 = number>(__setObject: P0, _forProperty: P1, _usingDataSize: P2): R;
     _objectForProperty_usingDataSize_withRequestedObjectClass<R = unknown, P0 = number, P1 = number, P2 = unknown>(__objectForProperty: P0, _usingDataSize: P1, _withRequestedObjectClass: P2): R;
     _continueSpeaking<R = void>(): R;
@@ -47,8 +47,8 @@ declare namespace cocoa {
     setDelegate<R = void, P0 = NSSpeechSynthesizerDelegate>(_v: P0): R;
     speaking<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSSpeechSynthesizer<T = any> extends NSObject {
+  namespace NSSpeechSynthesizer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSSpeechSynthesizer>(): R;
       new: <R = NSSpeechSynthesizer>() => R;
       attributesForVoice<R = unknown, P0 = unknown>(_attributesForVoice: P0): R;
@@ -59,4 +59,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSSpeechSynthesizer: cocoa.classes.NSSpeechSynthesizer;
+declare const NSSpeechSynthesizer: cocoa.NSSpeechSynthesizer.CLASS;

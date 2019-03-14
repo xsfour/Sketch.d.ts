@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSGreySliders<T = any> extends NSColorSpaceSliders {
+  export interface NSGreySliders<T0 = void, T1 = void, T2 = void> extends NSColorSpaceSliders {
     worksWhenModal<R = boolean>(): R;
     jumpSlider<R = void, P0 = unknown>(_jumpSlider: P0): R;
     setGreyButton5<R = void, P0 = unknown>(_setGreyButton5: P0): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     greyButton0<R = unknown>(): R;
     setGreyButton0<R = void, P0 = unknown>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSGreySliders<T = any> extends NSColorSpaceSliders {
+  namespace NSGreySliders {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSColorSpaceSliders {
       alloc<R = NSGreySliders>(): R;
       new: <R = NSGreySliders>() => R;
     }
   }
 }
 
-declare const NSGreySliders: cocoa.classes.NSGreySliders;
+declare const NSGreySliders: cocoa.NSGreySliders.CLASS;

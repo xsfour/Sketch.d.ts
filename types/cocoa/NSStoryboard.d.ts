@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSStoryboard<T = any> extends NSObject {
+  export interface NSStoryboard<T0 = void, T1 = void, T2 = void> extends NSObject {
     debugDescription<R = unknown>(): R;
     description<R = unknown>(): R;
     _hasInitialController<R = boolean>(): R;
@@ -22,8 +22,8 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     initWithBundle_storyboardFileName_identifierToNibNameMap_identifierToExternalStoryboardReferenceMap_identifierToUUIDMap_designatedEntryPointIdentifier_mainMenu<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown, P5 = unknown, P6 = unknown>(_initWithBundle: P0, _storyboardFileName: P1, _identifierToNibNameMap: P2, _identifierToExternalStoryboardReferenceMap: P3, _identifierToUUIDMap: P4, _designatedEntryPointIdentifier: P5, _mainMenu: P6): R;
   }
-  namespace classes {
-    export interface NSStoryboard<T = any> extends NSObject {
+  namespace NSStoryboard {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSStoryboard>(): R;
       new: <R = NSStoryboard>() => R;
       mainStoryboard<R = unknown>(): R;
@@ -32,4 +32,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSStoryboard: cocoa.classes.NSStoryboard;
+declare const NSStoryboard: cocoa.NSStoryboard.CLASS;

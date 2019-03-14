@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMoveHelper<T = any> extends NSObject {
+  export interface NSMoveHelper<T0 = void, T1 = void, T2 = void> extends NSObject {
     _stopAnimation<R = void>(): R;
     _doAnimation<R = void>(): R;
     _resizeWindow_toFrame_display<R = void, P0 = unknown, P1 = CGRect, P2 = boolean>(__resizeWindow: P0, _toFrame: P1, _display: P2): R;
@@ -21,8 +21,8 @@ declare namespace cocoa {
     _parentFrameDeltaForCurrentProgress<R = CGSize>(): R;
     _startMove<R = void>(): R;
   }
-  namespace classes {
-    export interface NSMoveHelper<T = any> extends NSObject {
+  namespace NSMoveHelper {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSMoveHelper>(): R;
       new: <R = NSMoveHelper>() => R;
       _windowAnimationVelocity<R = number>(): R;
@@ -30,4 +30,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSMoveHelper: cocoa.classes.NSMoveHelper;
+declare const NSMoveHelper: cocoa.NSMoveHelper.CLASS;

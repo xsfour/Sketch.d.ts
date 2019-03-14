@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutableSliceLayer<T = any> extends _MSImmutableSliceLayer, MSImmutableLayerPreviewabilityProtocol, MSLayerWithBackgroundColorProtocol {
+  export interface MSImmutableSliceLayer<T0 = void, T1 = void, T2 = void> extends _MSImmutableSliceLayer, MSImmutableLayerPreviewabilityProtocol, MSLayerWithBackgroundColorProtocol {
     shouldBeIncludedInParentPath<R = boolean>(): R;
     isLayerExportable<R = boolean>(): R;
     interfaceImageIdentifier<R = unknown>(): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSImmutableSliceLayer<T = any> extends _MSImmutableSliceLayer, MSImmutableLayerPreviewabilityProtocol, MSLayerWithBackgroundColorProtocol {
+  namespace MSImmutableSliceLayer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSImmutableSliceLayer, MSImmutableLayerPreviewabilityProtocol, MSLayerWithBackgroundColorProtocol {
       alloc<R = MSImmutableSliceLayer>(): R;
       new: <R = MSImmutableSliceLayer>() => R;
     }
   }
 }
 
-declare const MSImmutableSliceLayer: cocoa.classes.MSImmutableSliceLayer;
+declare const MSImmutableSliceLayer: cocoa.MSImmutableSliceLayer.CLASS;

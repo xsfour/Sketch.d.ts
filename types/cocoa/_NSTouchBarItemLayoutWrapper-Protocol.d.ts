@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSTouchBarItemLayoutWrapperProtocol<T = any> extends NSObjectProtocol {
+  export interface _NSTouchBarItemLayoutWrapperProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     isSpace<R = boolean>(): R;
     maxSize<R = CGSize>(): R;
     minSize<R = CGSize>(): R;
@@ -12,7 +12,7 @@ declare namespace cocoa {
     contentClippingSize<R = CGSize>(): R;
     preferredSize<R = CGSize>(): R;
   }
-  namespace classes {
-    export interface _NSTouchBarItemLayoutWrapperProtocol<T = any> extends NSObjectProtocol {  }
+  namespace _NSTouchBarItemLayoutWrapperProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

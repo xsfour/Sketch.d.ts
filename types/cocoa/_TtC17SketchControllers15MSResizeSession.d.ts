@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _TtC17SketchControllers15MSResizeSession<T = any> extends NSObject {
+  export interface _TtC17SketchControllers15MSResizeSession<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = CDUnknownBlockType>(): R;
     updateModel<R = unknown>(): R;
     locationInCoordinateSpace<R = CGPoint, P0 = unknown>(_locationInCoordinateSpace: P0): R;
@@ -28,15 +28,13 @@ declare namespace cocoa {
     setZoomScale<R = void, P0 = number>(_v: P0): R;
     handle<R = number>(): R;
     layers<R = NSArray>(): R;
-    // + _TtC17SketchControllers15MSResizeSession(SketchControllers):
-    
-  }
-  namespace classes {
-    export interface _TtC17SketchControllers15MSResizeSession<T = any> extends NSObject {
+  
+}
+  namespace _TtC17SketchControllers15MSResizeSession {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _TtC17SketchControllers15MSResizeSession>(): R;
       new: <R = _TtC17SketchControllers15MSResizeSession>() => R;
-      // + _TtC17SketchControllers15MSResizeSession(SketchControllers):
-      
-    }
+  
+  }
   }
 }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPreferences<T = any> extends NSObject, NSWindowRestorationProtocol {
+  export interface NSPreferences<T0 = void, T1 = void, T2 = void> extends NSObject, NSWindowRestorationProtocol {
     toolbarSelectableItemIdentifiers<R = unknown, P0 = unknown>(_toolbarSelectableItemIdentifiers: P0): R;
     toolbarAllowedItemIdentifiers<R = unknown, P0 = unknown>(_toolbarAllowedItemIdentifiers: P0): R;
     toolbarDefaultItemIdentifiers<R = unknown, P0 = unknown>(_toolbarDefaultItemIdentifiers: P0): R;
@@ -34,8 +34,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSPreferences<T = any> extends NSObject, NSWindowRestorationProtocol {
+  namespace NSPreferences {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSWindowRestorationProtocol {
       alloc<R = NSPreferences>(): R;
       new: <R = NSPreferences>() => R;
       defaultPreferencesClass<R = unknown>(): R;
@@ -45,4 +45,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPreferences: cocoa.classes.NSPreferences;
+declare const NSPreferences: cocoa.NSPreferences.CLASS;

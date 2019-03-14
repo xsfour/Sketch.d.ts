@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSColorWell<T = any> extends NSControl {
+  export interface NSColorWell<T0 = void, T1 = void, T2 = void> extends NSControl {
     _old_initWithCoder_NSColorWell<R = unknown, P0 = unknown>(__old_initWithCoder_NSColorWell: P0): R;
     refusesFirstResponder<R = boolean>(): R;
     setRefusesFirstResponder<R = void, P0 = boolean>(_setRefusesFirstResponder: P0): R;
@@ -37,8 +37,8 @@ declare namespace cocoa {
     bordered<R = boolean>(): R;
     setBordered<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSColorWell<T = any> extends NSControl {
+  namespace NSColorWell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSControl {
       alloc<R = NSColorWell>(): R;
       new: <R = NSColorWell>() => R;
       _delayedDeactiveWindowlessWell<R = void, P0 = unknown>(__delayedDeactiveWindowlessWell: P0): R;
@@ -50,4 +50,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSColorWell: cocoa.classes.NSColorWell;
+declare const NSColorWell: cocoa.NSColorWell.CLASS;

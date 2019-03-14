@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSliceExportGroupContentsOnlyInspectorItem<T = any> extends MSInspectorItem, MSLayerChangeObserverProtocol {
+  export interface MSSliceExportGroupContentsOnlyInspectorItem<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, MSLayerChangeObserverProtocol {
     groupContentsOnlyAction<R = void, P0 = unknown>(_groupContentsOnlyAction: P0): R;
     setLayers<R = void, P0 = unknown>(_setLayers: P0): R;
     groupContentsOnlyButton<R = NSButton>(): R;
@@ -11,12 +11,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSSliceExportGroupContentsOnlyInspectorItem<T = any> extends MSInspectorItem, MSLayerChangeObserverProtocol {
+  namespace MSSliceExportGroupContentsOnlyInspectorItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, MSLayerChangeObserverProtocol {
       alloc<R = MSSliceExportGroupContentsOnlyInspectorItem>(): R;
       new: <R = MSSliceExportGroupContentsOnlyInspectorItem>() => R;
     }
   }
 }
 
-declare const MSSliceExportGroupContentsOnlyInspectorItem: cocoa.classes.MSSliceExportGroupContentsOnlyInspectorItem;
+declare const MSSliceExportGroupContentsOnlyInspectorItem: cocoa.MSSliceExportGroupContentsOnlyInspectorItem.CLASS;

@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSMovie<T = any> extends NSObject, NSCodingProtocol {
+  export interface NSMovie<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
     QTMovie<R = unknown>(): R;
     dealloc<R = void>(): R;
     initWithMovie<R = unknown, P0 = unknown>(_initWithMovie: P0): R;
   }
-  namespace classes {
-    export interface NSMovie<T = any> extends NSObject, NSCodingProtocol {
+  namespace NSMovie {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
       alloc<R = NSMovie>(): R;
       new: <R = NSMovie>() => R;
       _QTMovieClass<R = unknown>(): R;
@@ -16,4 +16,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSMovie: cocoa.classes.NSMovie;
+declare const NSMovie: cocoa.NSMovie.CLASS;

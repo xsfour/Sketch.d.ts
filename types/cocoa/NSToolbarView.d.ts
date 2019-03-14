@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSToolbarView<T = any> extends NSView {
+  export interface NSToolbarView<T0 = void, T1 = void, T2 = void> extends NSView {
     _setLayoutInProgress<R = void, P0 = boolean>(__setLayoutInProgress: P0): R;
     _layoutInProgress<R = boolean>(): R;
     _hasTransparentBackground<R = boolean>(): R;
@@ -173,8 +173,8 @@ declare namespace cocoa {
     accessibilityIsOverflowButtonAttributeSettable<R = boolean>(): R;
     accessibilityOverflowButtonAttribute<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSToolbarView<T = any> extends NSView {
+  namespace NSToolbarView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSToolbarView>(): R;
       new: <R = NSToolbarView>() => R;
       newViewForToolbar_inWindow_attachedToEdge<R = unknown, P0 = unknown, P1 = unknown, P2 = number>(_newViewForToolbar: P0, _inWindow: P1, _attachedToEdge: P2): R;
@@ -182,4 +182,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSToolbarView: cocoa.classes.NSToolbarView;
+declare const NSToolbarView: cocoa.NSToolbarView.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSDocumentSharingServiceDelegate<T = any> extends NSObject, NSCloudSharingServiceDelegateProtocol {
+  export interface _NSDocumentSharingServiceDelegate<T0 = void, T1 = void, T2 = void> extends NSObject, NSCloudSharingServiceDelegateProtocol {
     cxx_destruct<R = void>(): R;
     dealloc<R = void>(): R;
     initWithAnchoringView<R = unknown, P0 = unknown>(_initWithAnchoringView: P0): R;
@@ -11,8 +11,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSDocumentSharingServiceDelegate<T = any> extends NSObject, NSCloudSharingServiceDelegateProtocol {
+  namespace _NSDocumentSharingServiceDelegate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCloudSharingServiceDelegateProtocol {
       alloc<R = _NSDocumentSharingServiceDelegate>(): R;
       new: <R = _NSDocumentSharingServiceDelegate>() => R;
     }

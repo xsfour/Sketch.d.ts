@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBitmapMagicWandEditor<T = any> extends MSBitmapEditor {
+  export interface MSBitmapMagicWandEditor<T0 = void, T1 = void, T2 = void> extends MSBitmapEditor {
     isValidRect<R = boolean, P0 = CGRect>(_isValidRect: P0): R;
     drawOvals<R = void>(): R;
     drawMask<R = void>(): R;
@@ -22,12 +22,12 @@ declare namespace cocoa {
     dragCirclePageBounds<R = CGRect>(): R;
     dragCircleBounds<R = CGRect>(): R;
   }
-  namespace classes {
-    export interface MSBitmapMagicWandEditor<T = any> extends MSBitmapEditor {
+  namespace MSBitmapMagicWandEditor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSBitmapEditor {
       alloc<R = MSBitmapMagicWandEditor>(): R;
       new: <R = MSBitmapMagicWandEditor>() => R;
     }
   }
 }
 
-declare const MSBitmapMagicWandEditor: cocoa.classes.MSBitmapMagicWandEditor;
+declare const MSBitmapMagicWandEditor: cocoa.MSBitmapMagicWandEditor.CLASS;

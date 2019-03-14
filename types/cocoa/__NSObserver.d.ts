@@ -1,14 +1,14 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface __NSObserver<T = any> extends NSObject {
+  export interface __NSObserver<T0 = void, T1 = void, T2 = void> extends NSObject {
     _doit<R = void, P0 = unknown>(__doit: P0): R;
     object<R = unknown>(): R;
     name<R = unknown>(): R;
     dealloc<R = void>(): R;
   }
-  namespace classes {
-    export interface __NSObserver<T = any> extends NSObject {
+  namespace __NSObserver {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = __NSObserver>(): R;
       new: <R = __NSObserver>() => R;
       forgetObserver<R = void, P0 = unknown>(_forgetObserver: P0): R;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface SMKMessage<T = any> extends NSObject, SMKMessageCodingProtocol {
+  export interface SMKMessage<T0 = void, T1 = void, T2 = void> extends NSObject, SMKMessageCodingProtocol {
     cxx_destruct<R = void>(): R;
     initWithType<R = unknown, P0 = unknown>(_initWithType: P0): R;
     content<R = SMKMessageCoding>(): R;
@@ -16,8 +16,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface SMKMessage<T = any> extends NSObject, SMKMessageCodingProtocol {
+  namespace SMKMessage {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, SMKMessageCodingProtocol {
       alloc<R = SMKMessage>(): R;
       new: <R = SMKMessage>() => R;
       classForType<R = unknown, P0 = unknown>(_classForType: P0): R;
@@ -26,4 +26,4 @@ declare namespace cocoa {
   }
 }
 
-declare const SMKMessage: cocoa.classes.SMKMessage;
+declare const SMKMessage: cocoa.SMKMessage.CLASS;

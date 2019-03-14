@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSScrollerStyleRecommender<T = any> extends NSObject, NSMachPortDelegateProtocol {
+  export interface _NSScrollerStyleRecommender<T0 = void, T1 = void, T2 = void> extends NSObject, NSMachPortDelegateProtocol {
     dealloc<R = void>(): R;
     _cleanup<R = void>(): R;
     pointingDeviceGestureScrollSettingChanged<R = void, P0 = unknown>(_pointingDeviceGestureScrollSettingChanged: P0): R;
@@ -21,8 +21,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSScrollerStyleRecommender<T = any> extends NSObject, NSMachPortDelegateProtocol {
+  namespace _NSScrollerStyleRecommender {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSMachPortDelegateProtocol {
       alloc<R = _NSScrollerStyleRecommender>(): R;
       new: <R = _NSScrollerStyleRecommender>() => R;
       sharedScrollerStyleRecommender<R = unknown>(): R;

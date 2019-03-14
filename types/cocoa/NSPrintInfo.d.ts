@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPrintInfo<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
+  export interface NSPrintInfo<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
     takeSettingsFromPDFInfo<R = void, P0 = unknown>(_takeSettingsFromPDFInfo: P0): R;
     _compatibility_initWithUnkeyedCoder<R = unknown, P0 = unknown>(__compatibility_initWithUnkeyedCoder: P0): R;
     description<R = unknown>(): R;
@@ -79,8 +79,8 @@ declare namespace cocoa {
     paperName<R = NSString>(): R;
     setPaperName<R = void, P0 = NSString>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSPrintInfo<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
+  namespace NSPrintInfo {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
       alloc<R = NSPrintInfo>(): R;
       new: <R = NSPrintInfo>() => R;
       defaultPrinter<R = unknown>(): R;
@@ -110,4 +110,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPrintInfo: cocoa.classes.NSPrintInfo;
+declare const NSPrintInfo: cocoa.NSPrintInfo.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDateFormatter<T = any> extends NSFormatter, NSObservableProtocol, NSObserverProtocol {
+  export interface NSDateFormatter<T0 = void, T1 = void, T2 = void> extends NSFormatter, NSObservableProtocol, NSObserverProtocol {
     _setUsesCharacterDirection<R = void, P0 = boolean>(__setUsesCharacterDirection: P0): R;
     _usesCharacterDirection<R = boolean>(): R;
     _setIsLenient<R = void, P0 = boolean>(__setIsLenient: P0): R;
@@ -95,8 +95,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSDateFormatter<T = any> extends NSFormatter, NSObservableProtocol, NSObserverProtocol {
+  namespace NSDateFormatter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSFormatter, NSObservableProtocol, NSObserverProtocol {
       alloc<R = NSDateFormatter>(): R;
       new: <R = NSDateFormatter>() => R;
       dateFormatFromTemplate_options_locale<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_dateFormatFromTemplate: P0, _options: P1, _locale: P2): R;
@@ -110,4 +110,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSDateFormatter: cocoa.classes.NSDateFormatter;
+declare const NSDateFormatter: cocoa.NSDateFormatter.CLASS;

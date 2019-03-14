@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBitmapEditInspectorViewController<T = any> extends NSViewController, BCPopoverDelegateProtocol, MSColorInspectorDelegateProtocol, MSInspectorChildControllerProtocol {
+  export interface MSBitmapEditInspectorViewController<T0 = void, T1 = void, T2 = void> extends NSViewController, BCPopoverDelegateProtocol, MSColorInspectorDelegateProtocol, MSInspectorChildControllerProtocol {
     cxx_destruct<R = void>(): R;
     views<R = unknown>(): R;
     colorMagnifierAction<R = void, P0 = unknown>(_colorMagnifierAction: P0): R;
@@ -48,12 +48,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSBitmapEditInspectorViewController<T = any> extends NSViewController, BCPopoverDelegateProtocol, MSColorInspectorDelegateProtocol, MSInspectorChildControllerProtocol {
+  namespace MSBitmapEditInspectorViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController, BCPopoverDelegateProtocol, MSColorInspectorDelegateProtocol, MSInspectorChildControllerProtocol {
       alloc<R = MSBitmapEditInspectorViewController>(): R;
       new: <R = MSBitmapEditInspectorViewController>() => R;
     }
   }
 }
 
-declare const MSBitmapEditInspectorViewController: cocoa.classes.MSBitmapEditInspectorViewController;
+declare const MSBitmapEditInspectorViewController: cocoa.MSBitmapEditInspectorViewController.CLASS;

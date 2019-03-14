@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCHSBColorPicker<T = any> extends NSControl, BCColorPreviewDelegateProtocol, BCMagnifierButtonDelegateProtocol {
+  export interface BCHSBColorPicker<T0 = void, T1 = void, T2 = void> extends NSControl, BCColorPreviewDelegateProtocol, BCMagnifierButtonDelegateProtocol {
     cxx_destruct<R = void>(): R;
     setFrequentColors<R = void, P0 = unknown>(_setFrequentColors: P0): R;
     frequentColorPicked<R = void, P0 = unknown>(_frequentColorPicked: P0): R;
@@ -71,12 +71,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface BCHSBColorPicker<T = any> extends NSControl, BCColorPreviewDelegateProtocol, BCMagnifierButtonDelegateProtocol {
+  namespace BCHSBColorPicker {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSControl, BCColorPreviewDelegateProtocol, BCMagnifierButtonDelegateProtocol {
       alloc<R = BCHSBColorPicker>(): R;
       new: <R = BCHSBColorPicker>() => R;
     }
   }
 }
 
-declare const BCHSBColorPicker: cocoa.classes.BCHSBColorPicker;
+declare const BCHSBColorPicker: cocoa.BCHSBColorPicker.CLASS;

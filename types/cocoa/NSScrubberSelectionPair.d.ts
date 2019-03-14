@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScrubberSelectionPair<T = any> extends NSObject {
+  export interface NSScrubberSelectionPair<T0 = void, T1 = void, T2 = void> extends NSObject {
     _forEachContainer<R = void, P0 = CDUnknownBlockType>(__forEachContainer: P0): R;
     setContainerAlphaValue<R = void, P0 = number>(_setContainerAlphaValue: P0): R;
     applyLayoutAttributes_relativeToContentView<R = void, P0 = unknown, P1 = unknown>(_applyLayoutAttributes: P0, _relativeToContentView: P1): R;
@@ -24,12 +24,12 @@ declare namespace cocoa {
     setItemIndex<R = void, P0 = number>(_v: P0): R;
     preferredItemCornerRadius<R = number>(): R;
   }
-  namespace classes {
-    export interface NSScrubberSelectionPair<T = any> extends NSObject {
+  namespace NSScrubberSelectionPair {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSScrubberSelectionPair>(): R;
       new: <R = NSScrubberSelectionPair>() => R;
     }
   }
 }
 
-declare const NSScrubberSelectionPair: cocoa.classes.NSScrubberSelectionPair;
+declare const NSScrubberSelectionPair: cocoa.NSScrubberSelectionPair.CLASS;

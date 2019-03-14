@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLevelIndicatorCell<T = any> extends NSActionCell, CALayerDelegateProtocol {
+  export interface NSLevelIndicatorCell<T0 = void, T1 = void, T2 = void> extends NSActionCell, CALayerDelegateProtocol {
     _drawRatingWithFrame_inView<R = void, P0 = CGRect, P1 = unknown>(__drawRatingWithFrame: P0, _inView: P1): R;
     _rankIndicatorSize<R = CGSize>(): R;
     _coreUIDrawOptionsForMajorTickMark<R = unknown>(): R;
@@ -113,8 +113,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSLevelIndicatorCell<T = any> extends NSActionCell, CALayerDelegateProtocol {
+  namespace NSLevelIndicatorCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSActionCell, CALayerDelegateProtocol {
       alloc<R = NSLevelIndicatorCell>(): R;
       new: <R = NSLevelIndicatorCell>() => R;
       coreForLevelIndicatorStyle<R = unknown, P0 = number>(_coreForLevelIndicatorStyle: P0): R;
@@ -122,4 +122,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSLevelIndicatorCell: cocoa.classes.NSLevelIndicatorCell;
+declare const NSLevelIndicatorCell: cocoa.NSLevelIndicatorCell.CLASS;

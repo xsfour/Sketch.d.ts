@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCarbonMenuImpl<T = any> extends NSObject, NSMenuImplProtocol {
+  export interface NSCarbonMenuImpl<T0 = void, T1 = void, T2 = void> extends NSObject, NSMenuImplProtocol {
     _boundsIfOpen<R = CGRect>(): R;
     _privateFlagsForMenuDirectionInView<R = number, P0 = unknown>(__privateFlagsForMenuDirectionInView: P0): R;
     _popUpMenuPositioningItem_atCocoaIndex_atLocation_inView_withPrivateFlags_appearance<R = boolean, P0 = unknown, P1 = number, P2 = CGPoint, P3 = unknown, P4 = number, P5 = unknown>(__popUpMenuPositioningItem: P0, _atCocoaIndex: P1, _atLocation: P2, _inView: P3, _withPrivateFlags: P4, _appearance: P5): R;
@@ -152,8 +152,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSCarbonMenuImpl<T = any> extends NSObject, NSMenuImplProtocol {
+  namespace NSCarbonMenuImpl {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSMenuImplProtocol {
       alloc<R = NSCarbonMenuImpl>(): R;
       new: <R = NSCarbonMenuImpl>() => R;
       _menuItemWithKeyEquivalentMatchingEventRef_inMenu_includingDisabledItems<R = _NSCarbonMenuSearchReturn, P0 = OpaqueEventRef, P1 = unknown, P2 = boolean>(__menuItemWithKeyEquivalentMatchingEventRef: P0, _inMenu: P1, _includingDisabledItems: P2): R;
@@ -169,4 +169,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSCarbonMenuImpl: cocoa.classes.NSCarbonMenuImpl;
+declare const NSCarbonMenuImpl: cocoa.NSCarbonMenuImpl.CLASS;

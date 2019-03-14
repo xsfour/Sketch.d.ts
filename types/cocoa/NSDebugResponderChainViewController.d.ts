@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDebugResponderChainViewController<T = any> extends NSViewController, NSDebugResponderChainUIDelegateProtocol, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol {
+  export interface NSDebugResponderChainViewController<T0 = void, T1 = void, T2 = void> extends NSViewController, NSDebugResponderChainUIDelegateProtocol, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol {
     logDisplayedItemsToConsole<R = void, P0 = unknown>(_logDisplayedItemsToConsole: P0): R;
     displayedItems<R = NSArray>(): R;
     setDisplayedItems<R = void, P0 = NSArray>(_v: P0): R;
@@ -10,12 +10,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSDebugResponderChainViewController<T = any> extends NSViewController, NSDebugResponderChainUIDelegateProtocol, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol {
+  namespace NSDebugResponderChainViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController, NSDebugResponderChainUIDelegateProtocol, NSTableViewDelegateProtocol, NSTableViewDataSourceProtocol {
       alloc<R = NSDebugResponderChainViewController>(): R;
       new: <R = NSDebugResponderChainViewController>() => R;
     }
   }
 }
 
-declare const NSDebugResponderChainViewController: cocoa.classes.NSDebugResponderChainViewController;
+declare const NSDebugResponderChainViewController: cocoa.NSDebugResponderChainViewController.CLASS;

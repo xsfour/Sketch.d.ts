@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSCorrectionTextFieldContainer<T = any> extends NSView {
+  export interface NSCorrectionTextFieldContainer<T0 = void, T1 = void, T2 = void> extends NSView {
     textFieldAtIndex<R = unknown, P0 = number>(_textFieldAtIndex: P0): R;
     selectPreviousCandidate<R = boolean>(): R;
     selectNextCandidate<R = boolean>(): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     hasSelection<R = boolean>(): R;
     numberOfCandidates<R = number>(): R;
   }
-  namespace classes {
-    export interface NSCorrectionTextFieldContainer<T = any> extends NSView {
+  namespace NSCorrectionTextFieldContainer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSCorrectionTextFieldContainer>(): R;
       new: <R = NSCorrectionTextFieldContainer>() => R;
     }
   }
 }
 
-declare const NSCorrectionTextFieldContainer: cocoa.classes.NSCorrectionTextFieldContainer;
+declare const NSCorrectionTextFieldContainer: cocoa.NSCorrectionTextFieldContainer.CLASS;

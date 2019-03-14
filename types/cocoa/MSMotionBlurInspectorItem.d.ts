@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSMotionBlurInspectorItem<T = any> extends MSBaseBlurInspectorItem {
+  export interface MSMotionBlurInspectorItem<T0 = void, T1 = void, T2 = void> extends MSBaseBlurInspectorItem {
     angleTextField<R = MSUpDownTextField>(): R;
     setAngleTextField<R = void, P0 = MSUpDownTextField>(_v: P0): R;
     angleAdapter<R = MSMathInspectorValueAdaptor>(): R;
@@ -9,12 +9,12 @@ declare namespace cocoa {
     angleSlider<R = NSSlider>(): R;
     setAngleSlider<R = void, P0 = NSSlider>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSMotionBlurInspectorItem<T = any> extends MSBaseBlurInspectorItem {
+  namespace MSMotionBlurInspectorItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSBaseBlurInspectorItem {
       alloc<R = MSMotionBlurInspectorItem>(): R;
       new: <R = MSMotionBlurInspectorItem>() => R;
     }
   }
 }
 
-declare const MSMotionBlurInspectorItem: cocoa.classes.MSMotionBlurInspectorItem;
+declare const MSMotionBlurInspectorItem: cocoa.MSMotionBlurInspectorItem.CLASS;

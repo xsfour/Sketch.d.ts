@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFileManagerDelegateProtocol<T = any> extends NSObjectProtocol {
+  export interface NSFileManagerDelegateProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     fileManager_shouldProceedAfterError_removingItemAtURL<R = boolean, P0 = NSFileManager, P1 = NSError, P2 = NSURL>(_fileManager: P0, _shouldProceedAfterError: P1, _removingItemAtURL: P2): R;
     fileManager_shouldProceedAfterError_removingItemAtPath<R = boolean, P0 = NSFileManager, P1 = NSError, P2 = NSString>(_fileManager: P0, _shouldProceedAfterError: P1, _removingItemAtPath: P2): R;
     fileManager_shouldRemoveItemAtURL<R = boolean, P0 = NSFileManager, P1 = NSURL>(_fileManager: P0, _shouldRemoveItemAtURL: P1): R;
@@ -19,7 +19,7 @@ declare namespace cocoa {
     fileManager_shouldCopyItemAtURL_toURL<R = boolean, P0 = NSFileManager, P1 = NSURL, P2 = NSURL>(_fileManager: P0, _shouldCopyItemAtURL: P1, _toURL: P2): R;
     fileManager_shouldCopyItemAtPath_toPath<R = boolean, P0 = NSFileManager, P1 = NSString, P2 = NSString>(_fileManager: P0, _shouldCopyItemAtPath: P1, _toPath: P2): R;
   }
-  namespace classes {
-    export interface NSFileManagerDelegateProtocol<T = any> extends NSObjectProtocol {  }
+  namespace NSFileManagerDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTreeController<T = any> extends NSObjectController {
+  export interface NSTreeController<T0 = void, T1 = void, T2 = void> extends NSObjectController {
     removeSelectionIndexPaths<R = boolean, P0 = unknown>(_removeSelectionIndexPaths: P0): R;
     _removeSelectionIndexPathsBelowNode<R = void, P0 = unknown>(__removeSelectionIndexPathsBelowNode: P0): R;
     addSelectionIndexPaths<R = boolean, P0 = unknown>(_addSelectionIndexPaths: P0): R;
@@ -96,12 +96,12 @@ declare namespace cocoa {
     setChildrenKeyPath<R = void, P0 = NSString>(_v: P0): R;
     arrangedObjects<R = NSTreeNode>(): R;
   }
-  namespace classes {
-    export interface NSTreeController<T = any> extends NSObjectController {
+  namespace NSTreeController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectController {
       alloc<R = NSTreeController>(): R;
       new: <R = NSTreeController>() => R;
     }
   }
 }
 
-declare const NSTreeController: cocoa.classes.NSTreeController;
+declare const NSTreeController: cocoa.NSTreeController.CLASS;

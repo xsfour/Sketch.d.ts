@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCOutlineViewNodeProtocol<T = any> extends NSObjectProtocol {
+  export interface BCOutlineViewNodeProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     badgeMenuConfigurator<R = BCOutlineViewPopupConfigurator>(): R;
     maskIconWithState<R = NSImage, P0 = number>(_maskIconWithState: P0): R;
     previewIconWithState<R = NSImage, P0 = number>(_previewIconWithState: P0): R;
@@ -15,7 +15,7 @@ declare namespace cocoa {
     filterTypeMask<R = number>(): R;
     displayType<R = number>(): R;
   }
-  namespace classes {
-    export interface BCOutlineViewNodeProtocol<T = any> extends NSObjectProtocol {  }
+  namespace BCOutlineViewNodeProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

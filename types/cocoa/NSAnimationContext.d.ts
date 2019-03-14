@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAnimationContext<T = any> extends NSObject {
+  export interface NSAnimationContext<T0 = void, T1 = void, T2 = void> extends NSObject {
     endPerformanceMeasurementForIdentifier<R = void, P0 = unknown>(_endPerformanceMeasurementForIdentifier: P0): R;
     beginPerformanceMeasurementForIdentifier<R = void, P0 = unknown>(_beginPerformanceMeasurementForIdentifier: P0): R;
     setAllowsAsynchronousAnimation<R = void, P0 = boolean>(_setAllowsAsynchronousAnimation: P0): R;
@@ -20,8 +20,8 @@ declare namespace cocoa {
     allowsImplicitAnimation<R = boolean>(): R;
     setAllowsImplicitAnimation<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSAnimationContext<T = any> extends NSObject {
+  namespace NSAnimationContext {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSAnimationContext>(): R;
       new: <R = NSAnimationContext>() => R;
       runAnimationGroup_completionHandler<R = void, P0 = CDUnknownBlockType, P1 = CDUnknownBlockType>(_runAnimationGroup: P0, _completionHandler: P1): R;
@@ -41,4 +41,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSAnimationContext: cocoa.classes.NSAnimationContext;
+declare const NSAnimationContext: cocoa.NSAnimationContext.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSLayoutAnchorRule<T = any> extends NSObject, NSLayoutRuleProtocol {
+  export interface NSLayoutAnchorRule<T0 = void, T1 = void, T2 = void> extends NSObject, NSLayoutRuleProtocol {
     makeLayoutConstraint<R = unknown>(): R;
     dealloc<R = void>(): R;
     initWithFirstAnchor_secondAnchor_relation_multiplier_constant_priority_identifier<R = unknown, P0 = unknown, P1 = unknown, P2 = number, P3 = number, P4 = number, P5 = number, P6 = unknown>(_initWithFirstAnchor: P0, _secondAnchor: P1, _relation: P2, _multiplier: P3, _constant: P4, _priority: P5, _identifier: P6): R;
@@ -18,12 +18,12 @@ declare namespace cocoa {
     debugDescription<R = NSString>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSLayoutAnchorRule<T = any> extends NSObject, NSLayoutRuleProtocol {
+  namespace NSLayoutAnchorRule {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSLayoutRuleProtocol {
       alloc<R = NSLayoutAnchorRule>(): R;
       new: <R = NSLayoutAnchorRule>() => R;
     }
   }
 }
 
-declare const NSLayoutAnchorRule: cocoa.classes.NSLayoutAnchorRule;
+declare const NSLayoutAnchorRule: cocoa.NSLayoutAnchorRule.CLASS;

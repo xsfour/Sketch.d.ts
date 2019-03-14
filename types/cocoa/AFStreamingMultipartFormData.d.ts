@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface AFStreamingMultipartFormData<T = any> extends NSObject, AFMultipartFormDataProtocol {
+  export interface AFStreamingMultipartFormData<T0 = void, T1 = void, T2 = void> extends NSObject, AFMultipartFormDataProtocol {
     cxx_destruct<R = void>(): R;
     requestByFinalizingMultipartFormData<R = unknown>(): R;
     initWithURLRequest_stringEncoding<R = unknown, P0 = unknown, P1 = number>(_initWithURLRequest: P0, _stringEncoding: P1): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     request<R = NSMutableURLRequest>(): R;
     setRequest<R = void, P0 = NSMutableURLRequest>(_v: P0): R;
   }
-  namespace classes {
-    export interface AFStreamingMultipartFormData<T = any> extends NSObject, AFMultipartFormDataProtocol {
+  namespace AFStreamingMultipartFormData {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, AFMultipartFormDataProtocol {
       alloc<R = AFStreamingMultipartFormData>(): R;
       new: <R = AFStreamingMultipartFormData>() => R;
     }
   }
 }
 
-declare const AFStreamingMultipartFormData: cocoa.classes.AFStreamingMultipartFormData;
+declare const AFStreamingMultipartFormData: cocoa.AFStreamingMultipartFormData.CLASS;

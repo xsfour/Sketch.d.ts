@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUndoManager<T = any> extends NSObject {
+  export interface NSUndoManager<T0 = void, T1 = void, T2 = void> extends NSObject {
     redoMenuTitleForUndoActionName<R = unknown, P0 = unknown>(_redoMenuTitleForUndoActionName: P0): R;
     undoMenuTitleForUndoActionName<R = unknown, P0 = unknown>(_undoMenuTitleForUndoActionName: P0): R;
     setActionIsDiscardable<R = void, P0 = boolean>(_setActionIsDiscardable: P0): R;
@@ -53,8 +53,8 @@ declare namespace cocoa {
     undoRegistrationEnabled<R = boolean>(): R;
     groupingLevel<R = number>(): R;
   }
-  namespace classes {
-    export interface NSUndoManager<T = any> extends NSObject {
+  namespace NSUndoManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSUndoManager>(): R;
       new: <R = NSUndoManager>() => R;
       _endTopLevelGroupings<R = void>(): R;
@@ -63,4 +63,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSUndoManager: cocoa.classes.NSUndoManager;
+declare const NSUndoManager: cocoa.NSUndoManager.CLASS;

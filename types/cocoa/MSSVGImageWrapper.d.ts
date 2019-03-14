@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSVGImageWrapper<T = any> extends MSXMLElementWrapper {
+  export interface MSSVGImageWrapper<T0 = void, T1 = void, T2 = void> extends MSXMLElementWrapper {
     externalResourcesRequired<R = NSString>(): R;
     setExternalResourcesRequired<R = void, P0 = NSString>(_v: P0): R;
     height<R = NSString>(): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     y<R = NSString>(): R;
     setY<R = void, P0 = NSString>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSSVGImageWrapper<T = any> extends MSXMLElementWrapper {
+  namespace MSSVGImageWrapper {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSXMLElementWrapper {
       alloc<R = MSSVGImageWrapper>(): R;
       new: <R = MSSVGImageWrapper>() => R;
     }
   }
 }
 
-declare const MSSVGImageWrapper: cocoa.classes.MSSVGImageWrapper;
+declare const MSSVGImageWrapper: cocoa.MSSVGImageWrapper.CLASS;

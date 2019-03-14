@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUnit<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  export interface NSUnit<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     description<R = unknown>(): R;
@@ -9,8 +9,8 @@ declare namespace cocoa {
     initWithSymbol<R = unknown, P0 = unknown>(_initWithSymbol: P0): R;
     symbol<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSUnit<T = any> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
+  namespace NSUnit {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSSecureCodingProtocol {
       alloc<R = NSUnit>(): R;
       new: <R = NSUnit>() => R;
       new<R = unknown>(): R;
@@ -18,4 +18,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSUnit: cocoa.classes.NSUnit;
+declare const NSUnit: cocoa.NSUnit.CLASS;

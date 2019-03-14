@@ -1,11 +1,11 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSecureUnarchiveFromDataTransformer<T = any> extends NSValueTransformer {
+  export interface NSSecureUnarchiveFromDataTransformer<T0 = void, T1 = void, T2 = void> extends NSValueTransformer {
     description<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSSecureUnarchiveFromDataTransformer<T = any> extends NSValueTransformer {
+  namespace NSSecureUnarchiveFromDataTransformer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSValueTransformer {
       alloc<R = NSSecureUnarchiveFromDataTransformer>(): R;
       new: <R = NSSecureUnarchiveFromDataTransformer>() => R;
       allowedTopLevelClasses<R = unknown>(): R;
@@ -13,4 +13,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSSecureUnarchiveFromDataTransformer: cocoa.classes.NSSecureUnarchiveFromDataTransformer;
+declare const NSSecureUnarchiveFromDataTransformer: cocoa.NSSecureUnarchiveFromDataTransformer.CLASS;

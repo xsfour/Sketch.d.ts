@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSNormalMultipleResizeEventHandler<T = any> extends MSNormalBaseEventHandler {
+  export interface MSNormalMultipleResizeEventHandler<T0 = void, T1 = void, T2 = void> extends MSNormalBaseEventHandler {
     oppositeCorner<R = number>(): R;
     placeRectInOppositeCorner<R = CGRect, P0 = CGRect>(_placeRectInOppositeCorner: P0): R;
     makeRectConform_toProportions<R = CGRect, P0 = CGRect, P1 = boolean>(_makeRectConform: P0, _toProportions: P1): R;
@@ -35,12 +35,12 @@ declare namespace cocoa {
     layers<R = NSArray>(): R;
     setLayers<R = void, P0 = NSArray>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSNormalMultipleResizeEventHandler<T = any> extends MSNormalBaseEventHandler {
+  namespace MSNormalMultipleResizeEventHandler {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSNormalBaseEventHandler {
       alloc<R = MSNormalMultipleResizeEventHandler>(): R;
       new: <R = MSNormalMultipleResizeEventHandler>() => R;
     }
   }
 }
 
-declare const MSNormalMultipleResizeEventHandler: cocoa.classes.MSNormalMultipleResizeEventHandler;
+declare const MSNormalMultipleResizeEventHandler: cocoa.MSNormalMultipleResizeEventHandler.CLASS;

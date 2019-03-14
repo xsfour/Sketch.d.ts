@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSCGSWindowBackingStore<T = any> extends NSCGSWindowBackingStore {
+  export interface _NSCGSWindowBackingStore<T0 = void, T1 = void, T2 = void> extends NSCGSWindowBackingStore {
     flushBackBufferInRect<R = void, P0 = CGRect>(_flushBackBufferInRect: P0): R;
     flushBackBufferInRegion<R = void, P0 = CGSRegionObject>(_flushBackBufferInRegion: P0): R;
     dirtyBackBufferInRect<R = void, P0 = CGRect>(_dirtyBackBufferInRect: P0): R;
@@ -31,8 +31,8 @@ declare namespace cocoa {
     dealloc<R = void>(): R;
     initWithWindowID<R = unknown, P0 = number>(_initWithWindowID: P0): R;
   }
-  namespace classes {
-    export interface _NSCGSWindowBackingStore<T = any> extends NSCGSWindowBackingStore {
+  namespace _NSCGSWindowBackingStore {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSCGSWindowBackingStore {
       alloc<R = _NSCGSWindowBackingStore>(): R;
       new: <R = _NSCGSWindowBackingStore>() => R;
     }

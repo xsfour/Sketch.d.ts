@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSShapePathLayer<T = any> extends _MSShapePathLayer, MSLayerPreviewabilityProtocol, MSPathLayerProtocol {
+  export interface MSShapePathLayer<T0 = void, T1 = void, T2 = void> extends _MSShapePathLayer, MSLayerPreviewabilityProtocol, MSPathLayerProtocol {
     resizeWithOldGroupSize<R = void, P0 = CGSize>(_resizeWithOldGroupSize: P0): R;
     adjustmentHandleAtPoint_zoomScale_resizing<R = number, P0 = CGPoint, P1 = number, P2 = boolean>(_adjustmentHandleAtPoint: P0, _zoomScale: P1, _resizing: P2): R;
     didChangeValueForKey<R = void, P0 = unknown>(_didChangeValueForKey: P0): R;
@@ -88,8 +88,8 @@ declare namespace cocoa {
     rotation<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSShapePathLayer<T = any> extends _MSShapePathLayer, MSLayerPreviewabilityProtocol, MSPathLayerProtocol {
+  namespace MSShapePathLayer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSShapePathLayer, MSLayerPreviewabilityProtocol, MSPathLayerProtocol {
       alloc<R = MSShapePathLayer>(): R;
       new: <R = MSShapePathLayer>() => R;
       performBatchEdits<R = void, P0 = CDUnknownBlockType>(_performBatchEdits: P0): R;
@@ -100,4 +100,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSShapePathLayer: cocoa.classes.MSShapePathLayer;
+declare const MSShapePathLayer: cocoa.MSShapePathLayer.CLASS;

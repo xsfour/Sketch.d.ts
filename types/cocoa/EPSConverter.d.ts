@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface EPSConverter<T = any> extends NSObject {
+  export interface EPSConverter<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     converterReleased<R = void>(): R;
     converterMessage<R = void, P0 = unknown>(_converterMessage: P0): R;
@@ -17,12 +17,12 @@ declare namespace cocoa {
     progressBlock<R = CDUnknownBlockType>(): R;
     setProgressBlock<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
   }
-  namespace classes {
-    export interface EPSConverter<T = any> extends NSObject {
+  namespace EPSConverter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = EPSConverter>(): R;
       new: <R = EPSConverter>() => R;
     }
   }
 }
 
-declare const EPSConverter: cocoa.classes.EPSConverter;
+declare const EPSConverter: cocoa.EPSConverter.CLASS;

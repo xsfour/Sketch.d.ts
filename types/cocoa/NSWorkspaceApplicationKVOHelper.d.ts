@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSWorkspaceApplicationKVOHelper<T = any> extends NSObject {
+  export interface NSWorkspaceApplicationKVOHelper<T0 = void, T1 = void, T2 = void> extends NSObject {
     applications<R = unknown>(): R;
     _installStalenessObserver<R = void>(): R;
     unobservedAppsPropertyBecameStale<R = void>(): R;
@@ -21,12 +21,12 @@ declare namespace cocoa {
     keyPath<R = unknown>(): R;
     data<R = WorkspaceKVOData_t>(): R;
   }
-  namespace classes {
-    export interface NSWorkspaceApplicationKVOHelper<T = any> extends NSObject {
+  namespace NSWorkspaceApplicationKVOHelper {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSWorkspaceApplicationKVOHelper>(): R;
       new: <R = NSWorkspaceApplicationKVOHelper>() => R;
     }
   }
 }
 
-declare const NSWorkspaceApplicationKVOHelper: cocoa.classes.NSWorkspaceApplicationKVOHelper;
+declare const NSWorkspaceApplicationKVOHelper: cocoa.NSWorkspaceApplicationKVOHelper.CLASS;

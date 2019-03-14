@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBitmapEditor<T = any> extends NSObject {
+  export interface MSBitmapEditor<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     imageBounds<R = CGRect>(): R;
     imageSize<R = CGSize>(): R;
@@ -19,12 +19,12 @@ declare namespace cocoa {
     setAccumulatedSelection<R = void, P0 = NSBezierPath>(_v: P0): R;
     bitmapEditableLayer<R = MSBitmapEditable>(): R;
   }
-  namespace classes {
-    export interface MSBitmapEditor<T = any> extends NSObject {
+  namespace MSBitmapEditor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSBitmapEditor>(): R;
       new: <R = MSBitmapEditor>() => R;
     }
   }
 }
 
-declare const MSBitmapEditor: cocoa.classes.MSBitmapEditor;
+declare const MSBitmapEditor: cocoa.MSBitmapEditor.CLASS;

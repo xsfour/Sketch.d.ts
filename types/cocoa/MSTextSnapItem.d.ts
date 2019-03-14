@@ -1,15 +1,15 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSTextSnapItem<T = any> extends MSSnapItem {
+  export interface MSTextSnapItem<T0 = void, T1 = void, T2 = void> extends MSSnapItem {
     supportsResizingForSnapping<R = boolean>(): R;
   }
-  namespace classes {
-    export interface MSTextSnapItem<T = any> extends MSSnapItem {
+  namespace MSTextSnapItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSSnapItem {
       alloc<R = MSTextSnapItem>(): R;
       new: <R = MSTextSnapItem>() => R;
     }
   }
 }
 
-declare const MSTextSnapItem: cocoa.classes.MSTextSnapItem;
+declare const MSTextSnapItem: cocoa.MSTextSnapItem.CLASS;

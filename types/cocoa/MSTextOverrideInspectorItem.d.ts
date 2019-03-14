@@ -1,13 +1,13 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSTextOverrideInspectorItem<T = any> extends MSOverrideInspectorItem {
+  export interface MSTextOverrideInspectorItem<T0 = void, T1 = void, T2 = void> extends MSOverrideInspectorItem {
     dataOverrides<R = unknown>(): R;
     overrideTextField<R = NSTextField>(): R;
     setOverrideTextField<R = void, P0 = NSTextField>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSTextOverrideInspectorItem<T = any> extends MSOverrideInspectorItem {
+  namespace MSTextOverrideInspectorItem {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSOverrideInspectorItem {
       alloc<R = MSTextOverrideInspectorItem>(): R;
       new: <R = MSTextOverrideInspectorItem>() => R;
       textFieldHeightForNumberOfLines<R = number, P0 = number>(_textFieldHeightForNumberOfLines: P0): R;
@@ -18,4 +18,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSTextOverrideInspectorItem: cocoa.classes.MSTextOverrideInspectorItem;
+declare const MSTextOverrideInspectorItem: cocoa.MSTextOverrideInspectorItem.CLASS;

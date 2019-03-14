@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSInlineTextLabelImageCell<T = any> extends NSTextFieldCell {
+  export interface MSInlineTextLabelImageCell<T0 = void, T1 = void, T2 = void> extends NSTextFieldCell {
     cxx_destruct<R = void>(): R;
     font<R = unknown>(): R;
     textColor<R = unknown>(): R;
@@ -10,8 +10,8 @@ declare namespace cocoa {
     customFittingSize<R = NSValue>(): R;
     setCustomFittingSize<R = void, P0 = NSValue>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSInlineTextLabelImageCell<T = any> extends NSTextFieldCell {
+  namespace MSInlineTextLabelImageCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTextFieldCell {
       alloc<R = MSInlineTextLabelImageCell>(): R;
       new: <R = MSInlineTextLabelImageCell>() => R;
       inlineTextLabelFont<R = unknown>(): R;
@@ -19,4 +19,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSInlineTextLabelImageCell: cocoa.classes.MSInlineTextLabelImageCell;
+declare const MSInlineTextLabelImageCell: cocoa.MSInlineTextLabelImageCell.CLASS;

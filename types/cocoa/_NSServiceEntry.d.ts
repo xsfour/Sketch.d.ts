@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSServiceEntry<T = any> extends NSObject, _NSServiceActionProtocol {
+  export interface _NSServiceEntry<T0 = void, T1 = void, T2 = void> extends NSObject, _NSServiceActionProtocol {
     internalRunService_flags_cancelledHint<R = unknown, P0 = unknown, P1 = number, P2 = string>(_internalRunService: P0, _flags: P1, _cancelledHint: P2): R;
     enableStatus<R = number>(): R;
     compareServiceEntryByLocalizedTitle<R = number, P0 = unknown>(_compareServiceEntryByLocalizedTitle: P0): R;
@@ -53,8 +53,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface _NSServiceEntry<T = any> extends NSObject, _NSServiceActionProtocol {
+  namespace _NSServiceEntry {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, _NSServiceActionProtocol {
       alloc<R = _NSServiceEntry>(): R;
       new: <R = _NSServiceEntry>() => R;
     }

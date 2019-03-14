@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSCGSWindowOrderingStateProtocol<T = any> extends NSObjectProtocol {
+  export interface _NSCGSWindowOrderingStateProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
     orderApplicationWindowsFront<R = void>(): R;
     conditionallyOrderGroupFront_withTimestamp<R = void, P0 = NSCGSWindow, P1 = number>(_conditionallyOrderGroupFront: P0, _withTimestamp: P1): R;
     orderGroup_op_againstWindow<R = void, P0 = NSCGSWindow, P1 = number, P2 = NSCGSWindow>(_orderGroup: P0, _op: P1, _againstWindow: P2): R;
@@ -18,7 +18,7 @@ declare namespace cocoa {
     orderWindow_op_againstWindow<R = void, P0 = NSCGSWindow, P1 = number, P2 = NSCGSWindow>(_orderWindow: P0, _op: P1, _againstWindow: P2): R;
     applyOperations<R = void, P0 = NSArray>(_applyOperations: P0): R;
   }
-  namespace classes {
-    export interface _NSCGSWindowOrderingStateProtocol<T = any> extends NSObjectProtocol {  }
+  namespace _NSCGSWindowOrderingStateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}
   }
 }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSManifestMaker<T = any> extends NSObject {
+  export interface MSManifestMaker<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     metadataForFlow<R = unknown, P0 = unknown>(_metadataForFlow: P0): R;
     dictForRect_inRootLayer<R = unknown, P0 = CGRect, P1 = unknown>(_dictForRect: P0, _inRootLayer: P1): R;
@@ -29,8 +29,8 @@ declare namespace cocoa {
     setCacheManager<R = void, P0 = MSCacheManager>(_v: P0): R;
     documentData<R = MSImmutableDocumentData>(): R;
   }
-  namespace classes {
-    export interface MSManifestMaker<T = any> extends NSObject {
+  namespace MSManifestMaker {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSManifestMaker>(): R;
       new: <R = MSManifestMaker>() => R;
       keyForFlowAnimationType<R = unknown, P0 = number>(_keyForFlowAnimationType: P0): R;
@@ -39,4 +39,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSManifestMaker: cocoa.classes.MSManifestMaker;
+declare const MSManifestMaker: cocoa.MSManifestMaker.CLASS;

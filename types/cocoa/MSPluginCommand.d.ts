@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPluginCommand<T = any> extends NSObject, COPrintControllerProtocol {
+  export interface MSPluginCommand<T0 = void, T1 = void, T2 = void> extends NSObject, COPrintControllerProtocol {
     cxx_destruct<R = void>(): R;
     setValue_forKey_onDocument<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(_setValue: P0, _forKey: P1, _onDocument: P2): R;
     valueForKey_onDocument<R = unknown, P0 = unknown, P1 = unknown>(_valueForKey: P0, _onDocument: P1): R;
@@ -85,8 +85,8 @@ declare namespace cocoa {
     performanceData<R = NSDictionary>(): R;
     setPerformanceData<R = void, P0 = NSDictionary>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSPluginCommand<T = any> extends NSObject, COPrintControllerProtocol {
+  namespace MSPluginCommand {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, COPrintControllerProtocol {
       alloc<R = MSPluginCommand>(): R;
       new: <R = MSPluginCommand>() => R;
       commandWithJSON_scripts_scriptsURL<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_commandWithJSON: P0, _scripts: P1, _scriptsURL: P2): R;
@@ -95,4 +95,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSPluginCommand: cocoa.classes.MSPluginCommand;
+declare const MSPluginCommand: cocoa.MSPluginCommand.CLASS;

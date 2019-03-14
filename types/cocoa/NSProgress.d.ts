@@ -1,127 +1,14 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSProgress<T = any> extends NSObject, NSProgressPublisherProtocol {
-    cxx_destruct<R = void>(): R;
-    _remoteFractionCompleted<R = number>(): R;
-    _setRemoteValues_forKeys<R = void, P0 = unknown, P1 = unknown>(__setRemoteValues: P0, _forKeys: P1): R;
-    _setRemoteUserInfoValue_forKey<R = void, P0 = unknown, P1 = unknown>(__setRemoteUserInfoValue: P0, _forKey: P1): R;
-    _initWithValues<R = unknown, P0 = unknown>(__initWithValues: P0): R;
-    handleAcknowledgementByAppWithBundleIdentifier_usingBlock<R = void, P0 = unknown, P1 = CDUnknownBlockType>(_handleAcknowledgementByAppWithBundleIdentifier: P0, _usingBlock: P1): R;
-    prioritizationHandler<R = CDUnknownBlockType>(): R;
-    setPrioritizationHandler<R = void, P0 = CDUnknownBlockType>(_setPrioritizationHandler: P0): R;
-    isPrioritizable<R = boolean>(): R;
-    setPrioritizable<R = void, P0 = boolean>(_setPrioritizable: P0): R;
-    _publishingAppBundleIdentifier<R = unknown>(): R;
-    acknowledgeWithSuccess<R = void, P0 = boolean>(_acknowledgeWithSuccess: P0): R;
-    _acknowledgementHandlerForAppBundleIdentifier<R = CDUnknownBlockType, P0 = unknown>(__acknowledgementHandlerForAppBundleIdentifier: P0): R;
-    acknowledgementHandlerForAppBundleIdentifier<R = CDUnknownBlockType, P0 = unknown>(_acknowledgementHandlerForAppBundleIdentifier: P0): R;
-    _setAcknowledgementHandler_forAppBundleIdentifier<R = void, P0 = CDUnknownBlockType, P1 = unknown>(__setAcknowledgementHandler: P0, _forAppBundleIdentifier: P1): R;
-    setAcknowledgementHandler_forAppBundleIdentifier<R = void, P0 = CDUnknownBlockType, P1 = unknown>(_setAcknowledgementHandler: P0, _forAppBundleIdentifier: P1): R;
-    _unpublish<R = void>(): R;
-    unpublish<R = void>(): R;
-    _publish<R = void>(): R;
-    publish<R = void>(): R;
-    setByteCompletedCount<R = void, P0 = unknown>(_setByteCompletedCount: P0): R;
-    byteCompletedCount<R = unknown>(): R;
-    setByteTotalCount<R = void, P0 = unknown>(_setByteTotalCount: P0): R;
-    byteTotalCount<R = unknown>(): R;
-    ownedDictionaryObjectForKey<R = unknown, P0 = unknown>(_ownedDictionaryObjectForKey: P0): R;
-    ownedDictionaryKeyEnumerator<R = unknown>(): R;
-    ownedDictionaryCount<R = number>(): R;
-    _indentedDescription<R = unknown, P0 = number>(__indentedDescription: P0): R;
-    setUserInfoObject_forKey<R = void, P0 = unknown, P1 = unknown>(_setUserInfoObject: P0, _forKey: P1): R;
-    _setUserInfoValue_forKey_fromChild<R = void, P0 = unknown, P1 = unknown, P2 = boolean>(__setUserInfoValue: P0, _forKey: P1, _fromChild: P2): R;
-    _updateChild_fraction_portion<R = void, P0 = unknown, P1 = unknown, P2 = number>(__updateChild: P0, _fraction: P1, _portion: P2): R;
-    _setCompletedUnitCount_totalUnitCount<R = void, P0 = number, P1 = number>(__setCompletedUnitCount: P0, _totalUnitCount: P1): R;
-    _addCompletedUnitCount<R = void, P0 = number>(__addCompletedUnitCount: P0): R;
-    _updateFractionCompleted<R = void, P0 = unknown>(__updateFractionCompleted: P0): R;
-    _setValueForKeys_settingBlock<R = unknown, P0 = CDUnknownBlockType, P1 = CDUnknownBlockType>(__setValueForKeys: P0, _settingBlock: P1): R;
-    _notifyRemoteObserversOfValueForKeys<R = void, P0 = unknown>(__notifyRemoteObserversOfValueForKeys: P0): R;
-    _notifyRemoteObserversOfUserInfoValueForKey<R = void, P0 = unknown>(__notifyRemoteObserversOfUserInfoValueForKey: P0): R;
-    set_adoptChildUserInfo<R = void, P0 = boolean>(_set_adoptChildUserInfo: P0): R;
-    _adoptChildUserInfo<R = boolean>(): R;
-    becomeCurrentWithPendingUnitCount_inBlock<R = void, P0 = number, P1 = CDUnknownBlockType>(_becomeCurrentWithPendingUnitCount: P0, _inBlock: P1): R;
-    performAsCurrentWithPendingUnitCount_usingBlock<R = void, P0 = number, P1 = CDUnknownBlockType>(_performAsCurrentWithPendingUnitCount: P0, _usingBlock: P1): R;
-    resignCurrent<R = void>(): R;
-    _addImplicitChild<R = void, P0 = unknown>(__addImplicitChild: P0): R;
-    addChild_withPendingUnitCount<R = void, P0 = unknown, P1 = number>(_addChild: P0, _withPendingUnitCount: P1): R;
-    _parent<R = unknown>(): R;
-    _setParent_portion<R = void, P0 = unknown, P1 = number>(__setParent: P0, _portion: P1): R;
-    becomeCurrentWithPendingUnitCount<R = void, P0 = number>(_becomeCurrentWithPendingUnitCount: P0): R;
-    dealloc<R = void>(): R;
-    initWithParent_userInfo<R = unknown, P0 = unknown, P1 = unknown>(_initWithParent: P0, _userInfo: P1): R;
-    acknowledge<R = void>(): R;
-    handleAcknowledgementByAppWithBundleIdentifer_usingBlock<R = void, P0 = unknown, P1 = CDUnknownBlockType>(_handleAcknowledgementByAppWithBundleIdentifer: P0, _usingBlock: P1): R;
-    _receiveProgressMessage_forSequence<R = void, P0 = unknown, P1 = number>(__receiveProgressMessage: P0, _forSequence: P1): R;
-    old<R = boolean>(): R;
-    kind<R = NSString>(): R;
-    setKind<R = void, P0 = NSString>(_v: P0): R;
-    fileCompletedCount<R = NSNumber>(): R;
-    setFileCompletedCount<R = void, P0 = NSNumber>(_v: P0): R;
-    fileTotalCount<R = NSNumber>(): R;
-    setFileTotalCount<R = void, P0 = NSNumber>(_v: P0): R;
-    fileURL<R = NSURL>(): R;
-    setFileURL<R = void, P0 = NSURL>(_v: P0): R;
-    fileOperationKind<R = NSString>(): R;
-    setFileOperationKind<R = void, P0 = NSString>(_v: P0): R;
-    throughput<R = NSNumber>(): R;
-    setThroughput<R = void, P0 = NSNumber>(_v: P0): R;
-    estimatedTimeRemaining<R = NSNumber>(): R;
-    setEstimatedTimeRemaining<R = void, P0 = NSNumber>(_v: P0): R;
-    userInfo<R = NSDictionary>(): R;
-    fractionCompleted<R = number>(): R;
-    indeterminate<R = boolean>(): R;
-    description<R = NSString>(): R;
-    resumingHandler<R = CDUnknownBlockType>(): R;
-    setResumingHandler<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
-    pausingHandler<R = CDUnknownBlockType>(): R;
-    setPausingHandler<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
-    cancellationHandler<R = CDUnknownBlockType>(): R;
-    setCancellationHandler<R = void, P0 = CDUnknownBlockType>(_v: P0): R;
-    paused<R = boolean>(): R;
-    cancelled<R = boolean>(): R;
-    pausable<R = boolean>(): R;
-    setPausable<R = void, P0 = boolean>(_v: P0): R;
-    cancellable<R = boolean>(): R;
-    setCancellable<R = void, P0 = boolean>(_v: P0): R;
-    finished<R = boolean>(): R;
-    localizedAdditionalDescription<R = NSString>(): R;
-    setLocalizedAdditionalDescription<R = void, P0 = NSString>(_v: P0): R;
-    localizedDescription<R = NSString>(): R;
-    setLocalizedDescription<R = void, P0 = NSString>(_v: P0): R;
-    completedUnitCount<R = number>(): R;
-    setCompletedUnitCount<R = void, P0 = number>(_v: P0): R;
-    totalUnitCount<R = number>(): R;
-    setTotalUnitCount<R = void, P0 = number>(_v: P0): R;
-    debugDescription<R = NSString>(): R;
-    hash<R = number>(): R;
-    superclass<R = unknown>(): R;
-  }
-  namespace classes {
-    export interface NSProgress<T = any> extends NSObject, NSProgressPublisherProtocol {
+  export interface NSProgress<T0 = void, T1 = void, T2 = void> extends NSObject, NSProgressPublisherProtocol {}
+  namespace NSProgress {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSProgressPublisherProtocol {
       alloc<R = NSProgress>(): R;
       new: <R = NSProgress>() => R;
       _serverConnection<R = unknown>(): R;
-      _registrarInterface<R = unknown>(): R;
-      _subscriberInterface<R = unknown>(): R;
-      _publisherInterface<R = unknown>(): R;
-      _addSubscriberForFileURL_usingBlock<R = unknown, P0 = unknown, P1 = CDUnknownBlockType>(__addSubscriberForFileURL: P0, _usingBlock: P1): R;
-      addSubscriberForFileURL_usingBlock<R = unknown, P0 = unknown, P1 = CDUnknownBlockType>(_addSubscriberForFileURL: P0, _usingBlock: P1): R;
-      _addSubscriberForCategory_usingPublishingHandler<R = unknown, P0 = unknown, P1 = CDUnknownBlockType>(__addSubscriberForCategory: P0, _usingPublishingHandler: P1): R;
-      _removeSubscriber<R = void, P0 = unknown>(__removeSubscriber: P0): R;
-      removeSubscriber<R = void, P0 = unknown>(_removeSubscriber: P0): R;
-      _addSubscriberForFileURL_withPublishingHandler<R = unknown, P0 = unknown, P1 = CDUnknownBlockType>(__addSubscriberForFileURL: P0, _withPublishingHandler: P1): R;
-      addSubscriberForFileURL_withPublishingHandler<R = unknown, P0 = unknown, P1 = CDUnknownBlockType>(_addSubscriberForFileURL: P0, _withPublishingHandler: P1): R;
-      keyPathsForValuesAffectingLocalizedAdditionalDescription<R = unknown>(): R;
-      keyPathsForValuesAffectingLocalizedDescription<R = unknown>(): R;
-      automaticallyNotifiesObserversForKey<R = boolean, P0 = unknown>(_automaticallyNotifiesObserversForKey: P0): R;
-      progressWithTotalUnitCount_parent_pendingUnitCount<R = unknown, P0 = number, P1 = unknown, P2 = number>(_progressWithTotalUnitCount: P0, _parent: P1, _pendingUnitCount: P2): R;
-      discreteProgressWithTotalUnitCount<R = unknown, P0 = number>(_discreteProgressWithTotalUnitCount: P0): R;
-      progressWithTotalUnitCount<R = unknown, P0 = number>(_progressWithTotalUnitCount: P0): R;
-      currentProgress<R = unknown>(): R;
     }
   }
 }
 
-declare const NSProgress: cocoa.classes.NSProgress;
+declare const NSProgress: cocoa.NSProgress.CLASS;

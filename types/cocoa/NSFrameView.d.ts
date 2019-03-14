@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFrameView<T = any> extends NSView {
+  export interface NSFrameView<T0 = void, T1 = void, T2 = void> extends NSView {
     shouldUseStyledTextInTitleCell<R = boolean, P0 = unknown>(_shouldUseStyledTextInTitleCell: P0): R;
     customizedBackgroundTypeForTitleCell<R = __CFString, P0 = unknown>(_customizedBackgroundTypeForTitleCell: P0): R;
     _edgeResizingTrackingAreas<R = unknown>(): R;
@@ -76,8 +76,8 @@ declare namespace cocoa {
     shapeWindow<R = void>(): R;
     initWithFrame_styleMask_owner<R = unknown, P0 = CGRect, P1 = number, P2 = unknown>(_initWithFrame: P0, _styleMask: P1, _owner: P2): R;
   }
-  namespace classes {
-    export interface NSFrameView<T = any> extends NSView {
+  namespace NSFrameView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSFrameView>(): R;
       new: <R = NSFrameView>() => R;
       _validateStyleMask<R = number, P0 = number>(__validateStyleMask: P0): R;
@@ -89,4 +89,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSFrameView: cocoa.classes.NSFrameView;
+declare const NSFrameView: cocoa.NSFrameView.CLASS;

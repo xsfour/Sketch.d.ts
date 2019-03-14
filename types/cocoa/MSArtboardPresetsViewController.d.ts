@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSArtboardPresetsViewController<T = any> extends NSViewController, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol, MSEditArtboardPresetViewControllerDelegateProtocol, NSUserInterfaceValidationsProtocol, BCPopoverDelegateProtocol {
+  export interface MSArtboardPresetsViewController<T0 = void, T1 = void, T2 = void> extends NSViewController, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol, MSEditArtboardPresetViewControllerDelegateProtocol, NSUserInterfaceValidationsProtocol, BCPopoverDelegateProtocol {
     cxx_destruct<R = void>(): R;
     viewForGroupRow<R = unknown, P0 = number>(_viewForGroupRow: P0): R;
     deleteRowAction<R = void, P0 = unknown>(_deleteRowAction: P0): R;
@@ -49,12 +49,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSArtboardPresetsViewController<T = any> extends NSViewController, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol, MSEditArtboardPresetViewControllerDelegateProtocol, NSUserInterfaceValidationsProtocol, BCPopoverDelegateProtocol {
+  namespace MSArtboardPresetsViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController, NSTableViewDataSourceProtocol, NSTableViewDelegateProtocol, MSEditArtboardPresetViewControllerDelegateProtocol, NSUserInterfaceValidationsProtocol, BCPopoverDelegateProtocol {
       alloc<R = MSArtboardPresetsViewController>(): R;
       new: <R = MSArtboardPresetsViewController>() => R;
     }
   }
 }
 
-declare const MSArtboardPresetsViewController: cocoa.classes.MSArtboardPresetsViewController;
+declare const MSArtboardPresetsViewController: cocoa.MSArtboardPresetsViewController.CLASS;

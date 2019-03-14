@@ -1,7 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSMissingFontsDialog<T = any> extends NSWindowController, NSTableViewDataSourceProtocol {
+  export interface MSMissingFontsDialog<T0 = void, T1 = void, T2 = void> extends NSWindowController, NSTableViewDataSourceProtocol {
+    cxx_destruct<R = void>(): R;
+    close<R = void, P0 = unknown>(_close: P0): R;
     openAnyway<R = void, P0 = unknown>(_openAnyway: P0): R;
     runPanelWithMissingFonts_savingWillChangeFonts<R = boolean, P0 = unknown, P1 = boolean>(_runPanelWithMissingFonts: P0, _savingWillChangeFonts: P1): R;
     openButton<R = NSButton>(): R;
@@ -17,12 +19,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSMissingFontsDialog<T = any> extends NSWindowController, NSTableViewDataSourceProtocol {
+  namespace MSMissingFontsDialog {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSWindowController, NSTableViewDataSourceProtocol {
       alloc<R = MSMissingFontsDialog>(): R;
       new: <R = MSMissingFontsDialog>() => R;
     }
   }
 }
 
-declare const MSMissingFontsDialog: cocoa.classes.MSMissingFontsDialog;
+declare const MSMissingFontsDialog: cocoa.MSMissingFontsDialog.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarCustomizationPreviewInteractionCoordinator<T = any> extends NSObject {
+  export interface NSTouchBarCustomizationPreviewInteractionCoordinator<T0 = void, T1 = void, T2 = void> extends NSObject {
     cancelDragOfItem_isRemoval<R = void, P0 = unknown, P1 = boolean>(_cancelDragOfItem: P0, _isRemoval: P1): R;
     endDragOfItem_isRemoval<R = void, P0 = unknown, P1 = boolean>(_endDragOfItem: P0, _isRemoval: P1): R;
     updateDragOfItem_toPoint<R = void, P0 = unknown, P1 = CGPoint>(_updateDragOfItem: P0, _toPoint: P1): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     setInteractionStartTime<R = void, P0 = NSDate>(_v: P0): R;
     cursorDragRecord<R = _NSTouchBarCustomizationDragRecord>(): R;
   }
-  namespace classes {
-    export interface NSTouchBarCustomizationPreviewInteractionCoordinator<T = any> extends NSObject {
+  namespace NSTouchBarCustomizationPreviewInteractionCoordinator {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSTouchBarCustomizationPreviewInteractionCoordinator>(): R;
       new: <R = NSTouchBarCustomizationPreviewInteractionCoordinator>() => R;
     }
   }
 }
 
-declare const NSTouchBarCustomizationPreviewInteractionCoordinator: cocoa.classes.NSTouchBarCustomizationPreviewInteractionCoordinator;
+declare const NSTouchBarCustomizationPreviewInteractionCoordinator: cocoa.NSTouchBarCustomizationPreviewInteractionCoordinator.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFavoriteColorStoreEntry<T = any> extends NSObject, NSCopyingProtocol {
+  export interface NSFavoriteColorStoreEntry<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
     description<R = unknown>(): R;
     hash<R = number>(): R;
     dealloc<R = void>(): R;
@@ -10,8 +10,8 @@ declare namespace cocoa {
     customColorClassName<R = NSString>(): R;
     color<R = NSColor>(): R;
   }
-  namespace classes {
-    export interface NSFavoriteColorStoreEntry<T = any> extends NSObject, NSCopyingProtocol {
+  namespace NSFavoriteColorStoreEntry {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
       alloc<R = NSFavoriteColorStoreEntry>(): R;
       new: <R = NSFavoriteColorStoreEntry>() => R;
       customEntryWithColorClassName_data_backstopColor<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_customEntryWithColorClassName: P0, _data: P1, _backstopColor: P2): R;
@@ -20,4 +20,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSFavoriteColorStoreEntry: cocoa.classes.NSFavoriteColorStoreEntry;
+declare const NSFavoriteColorStoreEntry: cocoa.NSFavoriteColorStoreEntry.CLASS;

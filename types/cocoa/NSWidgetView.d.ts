@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSWidgetView<T = any> extends NSView {
+  export interface NSWidgetView<T0 = void, T1 = void, T2 = void> extends NSView {
     _queryWidgetMetrics<R = unknown, P0 = unknown>(__queryWidgetMetrics: P0): R;
     allowsVibrancy<R = boolean>(): R;
     wantsUpdateLayer<R = boolean>(): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     contentInsets<R = NSEdgeInsets>(): R;
     baseWidgetKeys<R = NSDictionary>(): R;
   }
-  namespace classes {
-    export interface NSWidgetView<T = any> extends NSView {
+  namespace NSWidgetView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSWidgetView>(): R;
       new: <R = NSWidgetView>() => R;
     }
   }
 }
 
-declare const NSWidgetView: cocoa.classes.NSWidgetView;
+declare const NSWidgetView: cocoa.NSWidgetView.CLASS;

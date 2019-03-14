@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCColorPreview<T = any> extends NSPopUpButton, NSMenuDelegateProtocol {
+  export interface BCColorPreview<T0 = void, T1 = void, T2 = void> extends NSPopUpButton, NSMenuDelegateProtocol {
     cxx_destruct<R = void>(): R;
     contentBounds<R = CGRect>(): R;
     drawCheckerboard<R = void>(): R;
@@ -22,8 +22,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface BCColorPreview<T = any> extends NSPopUpButton, NSMenuDelegateProtocol {
+  namespace BCColorPreview {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSPopUpButton, NSMenuDelegateProtocol {
       alloc<R = BCColorPreview>(): R;
       new: <R = BCColorPreview>() => R;
       menuItemForColorCounter_target_action_documentColorSpace_useHSB<R = unknown, P0 = unknown, P1 = unknown, P2 = string, P3 = unknown, P4 = boolean>(_menuItemForColorCounter: P0, _target: P1, _action: P2, _documentColorSpace: P3, _useHSB: P4): R;
@@ -34,4 +34,4 @@ declare namespace cocoa {
   }
 }
 
-declare const BCColorPreview: cocoa.classes.BCColorPreview;
+declare const BCColorPreview: cocoa.BCColorPreview.CLASS;

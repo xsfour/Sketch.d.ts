@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSColorInspectorSectionPattern<T = any> extends MSColorInspectorSection {
+  export interface MSColorInspectorSectionPattern<T0 = void, T1 = void, T2 = void> extends MSColorInspectorSection {
     updatePatternWellImage<R = void>(): R;
     patternWellAction<R = void, P0 = unknown>(_patternWellAction: P0): R;
     choosePatternImage<R = void, P0 = unknown>(_choosePatternImage: P0): R;
@@ -14,12 +14,12 @@ declare namespace cocoa {
     patternWell<R = NSImageView>(): R;
     setPatternWell<R = void, P0 = NSImageView>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSColorInspectorSectionPattern<T = any> extends MSColorInspectorSection {
+  namespace MSColorInspectorSectionPattern {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSColorInspectorSection {
       alloc<R = MSColorInspectorSectionPattern>(): R;
       new: <R = MSColorInspectorSectionPattern>() => R;
     }
   }
 }
 
-declare const MSColorInspectorSectionPattern: cocoa.classes.MSColorInspectorSectionPattern;
+declare const MSColorInspectorSectionPattern: cocoa.MSColorInspectorSectionPattern.CLASS;

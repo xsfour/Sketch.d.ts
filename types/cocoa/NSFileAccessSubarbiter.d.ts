@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFileAccessSubarbiter<T = any> extends NSObject, NSFileAccessClientLocalArbiterInterfaceProtocol, NSXPCListenerDelegateProtocol {
+  export interface NSFileAccessSubarbiter<T0 = void, T1 = void, T2 = void> extends NSObject, NSFileAccessClientLocalArbiterInterfaceProtocol, NSXPCListenerDelegateProtocol {
     stopArbitrating<R = void>(): R;
     dealloc<R = void>(): R;
     initWithQueue_listener<R = unknown, P0 = unknown, P1 = unknown>(_initWithQueue: P0, _listener: P1): R;
@@ -10,12 +10,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSFileAccessSubarbiter<T = any> extends NSObject, NSFileAccessClientLocalArbiterInterfaceProtocol, NSXPCListenerDelegateProtocol {
+  namespace NSFileAccessSubarbiter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSFileAccessClientLocalArbiterInterfaceProtocol, NSXPCListenerDelegateProtocol {
       alloc<R = NSFileAccessSubarbiter>(): R;
       new: <R = NSFileAccessSubarbiter>() => R;
     }
   }
 }
 
-declare const NSFileAccessSubarbiter: cocoa.classes.NSFileAccessSubarbiter;
+declare const NSFileAccessSubarbiter: cocoa.NSFileAccessSubarbiter.CLASS;

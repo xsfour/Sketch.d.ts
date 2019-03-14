@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPrintOperation<T = any> extends NSObject {
+  export interface NSPrintOperation<T0 = void, T1 = void, T2 = void> extends NSObject {
     cleanUpOperation<R = void>(): R;
     deliverResult<R = boolean>(): R;
     destroyContext<R = void>(): R;
@@ -60,8 +60,8 @@ declare namespace cocoa {
     preferredRenderingQuality<R = number>(): R;
     copyingOperation<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSPrintOperation<T = any> extends NSObject {
+  namespace NSPrintOperation {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSPrintOperation>(): R;
       new: <R = NSPrintOperation>() => R;
       setCurrentOperation<R = void, P0 = unknown>(_setCurrentOperation: P0): R;
@@ -79,4 +79,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPrintOperation: cocoa.classes.NSPrintOperation;
+declare const NSPrintOperation: cocoa.NSPrintOperation.CLASS;

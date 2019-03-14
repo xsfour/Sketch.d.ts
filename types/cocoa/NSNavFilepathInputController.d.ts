@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSNavFilepathInputController<T = any> extends NSWindowController {
+  export interface NSNavFilepathInputController<T0 = void, T1 = void, T2 = void> extends NSWindowController {
     controlTextDidEndEditing<R = void, P0 = unknown>(_controlTextDidEndEditing: P0): R;
     controlTextDidChange<R = void, P0 = unknown>(_controlTextDidChange: P0): R;
     control_textShouldBeginEditing<R = boolean, P0 = unknown, P1 = unknown>(_control: P0, _textShouldBeginEditing: P1): R;
@@ -37,19 +37,21 @@ declare namespace cocoa {
     setAction<R = void, P0 = string>(_setAction: P0): R;
     target<R = unknown>(): R;
     setTarget<R = void, P0 = unknown>(_setTarget: P0): R;
+    loadWindow<R = void>(): R;
     _loadUIIfNecessary<R = void>(): R;
     _updateUIToMatchCachedValues<R = void>(): R;
     _scheduleDelayedAutocomplete<R = void>(): R;
     _cancelDelayedAutocomplete<R = void>(): R;
+    initWithWindow<R = unknown, P0 = unknown>(_initWithWindow: P0): R;
     errorMessage<R = NSString>(): R;
     setErrorMessage<R = void, P0 = NSString>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSNavFilepathInputController<T = any> extends NSWindowController {
+  namespace NSNavFilepathInputController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSWindowController {
       alloc<R = NSNavFilepathInputController>(): R;
       new: <R = NSNavFilepathInputController>() => R;
     }
   }
 }
 
-declare const NSNavFilepathInputController: cocoa.classes.NSNavFilepathInputController;
+declare const NSNavFilepathInputController: cocoa.NSNavFilepathInputController.CLASS;

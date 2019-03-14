@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarCustomizationController<T = any> extends NSObject, NSTouchBarCustomizationPreviewViewControllerDelegateProtocol, NSTouchBarCustomizationCursorManagerDelegateProtocol, NSDraggingSourceProtocol, NSTouchBarCustomizationPaletteViewControllerDelegateProtocol, _NSFunctionRowCustomizationDragTargetDelegateProtocol, NSAppExceptionListenerProtocol, NSWindowDelegateProtocol {
+  export interface NSTouchBarCustomizationController<T0 = void, T1 = void, T2 = void> extends NSObject, NSTouchBarCustomizationPreviewViewControllerDelegateProtocol, NSTouchBarCustomizationCursorManagerDelegateProtocol, NSDraggingSourceProtocol, NSTouchBarCustomizationPaletteViewControllerDelegateProtocol, _NSFunctionRowCustomizationDragTargetDelegateProtocol, NSAppExceptionListenerProtocol, NSWindowDelegateProtocol {
     _closeWithoutAnimating<R = void>(): R;
     _closeCustomizationPalette<R = void>(): R;
     validateTouchBarCustomizationPaletteItem<R = boolean, P0 = unknown>(_validateTouchBarCustomizationPaletteItem: P0): R;
@@ -31,8 +31,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSTouchBarCustomizationController<T = any> extends NSObject, NSTouchBarCustomizationPreviewViewControllerDelegateProtocol, NSTouchBarCustomizationCursorManagerDelegateProtocol, NSDraggingSourceProtocol, NSTouchBarCustomizationPaletteViewControllerDelegateProtocol, _NSFunctionRowCustomizationDragTargetDelegateProtocol, NSAppExceptionListenerProtocol, NSWindowDelegateProtocol {
+  namespace NSTouchBarCustomizationController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSTouchBarCustomizationPreviewViewControllerDelegateProtocol, NSTouchBarCustomizationCursorManagerDelegateProtocol, NSDraggingSourceProtocol, NSTouchBarCustomizationPaletteViewControllerDelegateProtocol, _NSFunctionRowCustomizationDragTargetDelegateProtocol, NSAppExceptionListenerProtocol, NSWindowDelegateProtocol {
       alloc<R = NSTouchBarCustomizationController>(): R;
       new: <R = NSTouchBarCustomizationController>() => R;
       keyPathsForValuesAffectingItemTree<R = unknown>(): R;
@@ -40,4 +40,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTouchBarCustomizationController: cocoa.classes.NSTouchBarCustomizationController;
+declare const NSTouchBarCustomizationController: cocoa.NSTouchBarCustomizationController.CLASS;

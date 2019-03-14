@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPluginUpdaterImplementation<T = any> extends NSObject {
+  export interface MSPluginUpdaterImplementation<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     makeDecompressError_withDescription<R = boolean, P0 = unknown, P1 = unknown>(_makeDecompressError: P0, _withDescription: P1): R;
     decompressCurrentFile_toURL_error<R = boolean, P0 = void, P1 = unknown, P2 = unknown>(_decompressCurrentFile: P0, _toURL: P1, _error: P2): R;
@@ -18,12 +18,12 @@ declare namespace cocoa {
     downloadingAppcastsStatus<R = number>(): R;
     setDownloadingAppcastsStatus<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSPluginUpdaterImplementation<T = any> extends NSObject {
+  namespace MSPluginUpdaterImplementation {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSPluginUpdaterImplementation>(): R;
       new: <R = MSPluginUpdaterImplementation>() => R;
     }
   }
 }
 
-declare const MSPluginUpdaterImplementation: cocoa.classes.MSPluginUpdaterImplementation;
+declare const MSPluginUpdaterImplementation: cocoa.MSPluginUpdaterImplementation.CLASS;

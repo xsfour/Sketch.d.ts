@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSBinder<T = any> extends NSObject, NSCodingProtocol {
+  export interface NSBinder<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
     _markAutoCreated<R = void, P0 = boolean>(__markAutoCreated: P0): R;
     _isAutoCreated<R = boolean>(): R;
     description<R = unknown>(): R;
@@ -114,8 +114,8 @@ declare namespace cocoa {
     updateTableColumnDataCell_forDisplayAtIndex<R = void, P0 = unknown, P1 = number>(_updateTableColumnDataCell: P0, _forDisplayAtIndex: P1): R;
     _noticeTextColorPeerBinder<R = void, P0 = unknown>(__noticeTextColorPeerBinder: P0): R;
   }
-  namespace classes {
-    export interface NSBinder<T = any> extends NSObject, NSCodingProtocol {
+  namespace NSBinder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
       alloc<R = NSBinder>(): R;
       new: <R = NSBinder>() => R;
       _autoCreateBinderForObject_withController<R = boolean, P0 = unknown, P1 = unknown>(__autoCreateBinderForObject: P0, _withController: P1): R;
@@ -139,4 +139,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSBinder: cocoa.classes.NSBinder;
+declare const NSBinder: cocoa.NSBinder.CLASS;

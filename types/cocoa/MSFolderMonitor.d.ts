@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFolderMonitor<T = any> extends NSObject {
+  export interface MSFolderMonitor<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     dealloc<R = void>(): R;
     flush<R = void>(): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     folderURL<R = NSURL>(): R;
     setFolderURL<R = void, P0 = NSURL>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSFolderMonitor<T = any> extends NSObject {
+  namespace MSFolderMonitor {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSFolderMonitor>(): R;
       new: <R = MSFolderMonitor>() => R;
     }
   }
 }
 
-declare const MSFolderMonitor: cocoa.classes.MSFolderMonitor;
+declare const MSFolderMonitor: cocoa.MSFolderMonitor.CLASS;

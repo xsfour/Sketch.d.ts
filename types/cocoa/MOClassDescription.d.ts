@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MOClassDescription<T = any> extends NSObject {
+  export interface MOClassDescription<T0 = void, T1 = void, T2 = void> extends NSObject {
     registerClass<R = unknown>(): R;
     addInstanceVariableWithName_typeEncoding<R = boolean, P0 = NSString, P1 = NSString>(_addInstanceVariableWithName: P0, _typeEncoding: P1): R;
     addClassMethodWithSelector_typeEncoding_block<R = boolean, P0 = string, P1 = NSString, P2 = unknown>(_addClassMethodWithSelector: P0, _typeEncoding: P1, _block: P2): R;
@@ -25,8 +25,8 @@ declare namespace cocoa {
     protocols<R = NSArray>(): R;
     protocolsWithAncestors<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface MOClassDescription<T = any> extends NSObject {
+  namespace MOClassDescription {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MOClassDescription>(): R;
       new: <R = MOClassDescription>() => R;
       descriptionForClassWithName<R = MOClassDescription, P0 = NSString>(_descriptionForClassWithName: P0): R;
@@ -36,4 +36,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MOClassDescription: cocoa.classes.MOClassDescription;
+declare const MOClassDescription: cocoa.MOClassDescription.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScrollingBehaviorConcurrentVBL<T = any> extends NSScrollingBehavior, _NSScrollStateEventListenerProtocol {
+  export interface NSScrollingBehaviorConcurrentVBL<T0 = void, T1 = void, T2 = void> extends NSScrollingBehavior, _NSScrollStateEventListenerProtocol {
     _animateFreeMomentum<R = void>(): R;
     _animateSwipePageAlignment<R = void>(): R;
     _asynchronouslyAllowDelegateToModifyProposedPageAlignedOrigin_onAxis_withInitialOrigin_velocity_synchronousTimeout_gestureToken<R = void, P0 = number, P1 = number, P2 = number, P3 = number, P4 = number, P5 = number>(__asynchronouslyAllowDelegateToModifyProposedPageAlignedOrigin: P0, _onAxis: P1, _withInitialOrigin: P2, _velocity: P3, _synchronousTimeout: P4, _gestureToken: P5): R;
@@ -36,12 +36,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSScrollingBehaviorConcurrentVBL<T = any> extends NSScrollingBehavior, _NSScrollStateEventListenerProtocol {
+  namespace NSScrollingBehaviorConcurrentVBL {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSScrollingBehavior, _NSScrollStateEventListenerProtocol {
       alloc<R = NSScrollingBehaviorConcurrentVBL>(): R;
       new: <R = NSScrollingBehaviorConcurrentVBL>() => R;
     }
   }
 }
 
-declare const NSScrollingBehaviorConcurrentVBL: cocoa.classes.NSScrollingBehaviorConcurrentVBL;
+declare const NSScrollingBehaviorConcurrentVBL: cocoa.NSScrollingBehaviorConcurrentVBL.CLASS;

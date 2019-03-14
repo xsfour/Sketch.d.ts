@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFirstLineTypesetterDelegate<T = any> {}
-  namespace classes {
-    export interface MSFirstLineTypesetterDelegate<T = any> {  }
+  export interface MSFirstLineTypesetterDelegate<T0 = void, T1 = void, T2 = void> {}
+  namespace MSFirstLineTypesetterDelegate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const MSFirstLineTypesetterDelegate: cocoa.classes.MSFirstLineTypesetterDelegate;
+declare const MSFirstLineTypesetterDelegate: cocoa.MSFirstLineTypesetterDelegate.CLASS;

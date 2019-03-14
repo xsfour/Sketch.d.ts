@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSSpellServerPrivateNewDOProtocol<T = any> {
+  export interface NSSpellServerPrivateNewDOProtocol<T0 = void, T1 = void, T2 = void> {
     _invalidateDictionary_newTime<R = void, P0 = NSString, P1 = number>(__invalidateDictionary: P0, _newTime: P1): R;
     _setWords_inDictionary<R = void, P0 = NSArray, P1 = NSString>(__setWords: P0, _inDictionary: P1): R;
     _wordsInDictionary<R = NSArray, P0 = NSString>(__wordsInDictionary: P0): R;
@@ -31,7 +31,7 @@ declare namespace cocoa {
     _checkGrammarInString_language_details<R = _NSRange, P0 = NSString, P1 = NSString, P2 = unknown>(__checkGrammarInString: P0, _language: P1, _details: P2): R;
     _findMisspelledWordInString_language_learnedDictionaries_wordCount_countOnly<R = _NSRange, P0 = NSString, P1 = NSString, P2 = NSArray, P3 = number, P4 = string>(__findMisspelledWordInString: P0, _language: P1, _learnedDictionaries: P2, _wordCount: P3, _countOnly: P4): R;
   }
-  namespace classes {
-    export interface NSSpellServerPrivateNewDOProtocol<T = any> {  }
+  namespace NSSpellServerPrivateNewDOProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

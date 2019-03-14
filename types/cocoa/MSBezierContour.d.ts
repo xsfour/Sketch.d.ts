@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBezierContour<T = any> extends NSObject {
+  export interface MSBezierContour<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     debugQuickLookObject<R = unknown>(): R;
     intersectionsWithSegment<R = unknown, P0 = unknown>(_intersectionsWithSegment: P0): R;
@@ -32,8 +32,8 @@ declare namespace cocoa {
     isRectangular<R = boolean>(): R;
     bounds<R = CGRect>(): R;
   }
-  namespace classes {
-    export interface MSBezierContour<T = any> extends NSObject {
+  namespace MSBezierContour {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSBezierContour>(): R;
       new: <R = MSBezierContour>() => R;
       contourWithPolygonAtPoint_radius_sides<R = unknown, P0 = CGPoint, P1 = number, P2 = number>(_contourWithPolygonAtPoint: P0, _radius: P1, _sides: P2): R;
@@ -42,4 +42,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSBezierContour: cocoa.classes.MSBezierContour;
+declare const MSBezierContour: cocoa.MSBezierContour.CLASS;

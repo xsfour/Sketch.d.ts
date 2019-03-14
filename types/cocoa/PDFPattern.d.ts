@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface PDFPattern<T = any> extends NSObject {
+  export interface PDFPattern<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     setupFromDictionary<R = void, P0 = unknown>(_setupFromDictionary: P0): R;
     setupFromStream<R = void, P0 = unknown>(_setupFromStream: P0): R;
@@ -15,8 +15,8 @@ declare namespace cocoa {
     shadingType<R = number>(): R;
     setShadingType<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface PDFPattern<T = any> extends NSObject {
+  namespace PDFPattern {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = PDFPattern>(): R;
       new: <R = PDFPattern>() => R;
       patternWithResource<R = unknown, P0 = unknown>(_patternWithResource: P0): R;
@@ -24,4 +24,4 @@ declare namespace cocoa {
   }
 }
 
-declare const PDFPattern: cocoa.classes.PDFPattern;
+declare const PDFPattern: cocoa.PDFPattern.CLASS;

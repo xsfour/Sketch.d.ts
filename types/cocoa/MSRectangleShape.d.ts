@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSRectangleShape<T = any> extends _MSRectangleShape {
+  export interface MSRectangleShape<T0 = void, T1 = void, T2 = void> extends _MSRectangleShape {
     canFlatten<R = boolean>(): R;
     resetPointsIfNecessary<R = void>(): R;
     resetPathsToRoundedRect<R = void>(): R;
@@ -26,8 +26,8 @@ declare namespace cocoa {
     normalizedExponentialCornerRadius<R = number>(): R;
     setNormalizedExponentialCornerRadius<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSRectangleShape<T = any> extends _MSRectangleShape {
+  namespace MSRectangleShape {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSRectangleShape {
       alloc<R = MSRectangleShape>(): R;
       new: <R = MSRectangleShape>() => R;
       validateComponentString<R = boolean, P0 = unknown>(_validateComponentString: P0): R;
@@ -39,4 +39,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSRectangleShape: cocoa.classes.MSRectangleShape;
+declare const MSRectangleShape: cocoa.MSRectangleShape.CLASS;

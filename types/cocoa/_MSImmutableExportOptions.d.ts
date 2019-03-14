@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSImmutableExportOptions<T = any> extends MSImmutableModelObject {
+  export interface _MSImmutableExportOptions<T0 = void, T1 = void, T2 = void> extends MSImmutableModelObject {
     hasDefaultValues<R = boolean>(): R;
     exportFormats<R = NSArray>(): R;
     setExportFormats<R = void, P0 = NSArray>(_v: P0): R;
@@ -12,8 +12,8 @@ declare namespace cocoa {
     includedLayerIds<R = NSArray>(): R;
     setIncludedLayerIds<R = void, P0 = NSArray>(_v: P0): R;
   }
-  namespace classes {
-    export interface _MSImmutableExportOptions<T = any> extends MSImmutableModelObject {
+  namespace _MSImmutableExportOptions {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSImmutableModelObject {
       alloc<R = _MSImmutableExportOptions>(): R;
       new: <R = _MSImmutableExportOptions>() => R;
     }

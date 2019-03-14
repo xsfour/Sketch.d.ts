@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface AFNetworkReachabilityManager<T = any> extends NSObject {
+  export interface AFNetworkReachabilityManager<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     setReachabilityStatusChangeBlock<R = void, P0 = CDUnknownBlockType>(_setReachabilityStatusChangeBlock: P0): R;
     localizedNetworkReachabilityStatusString<R = unknown>(): R;
@@ -19,8 +19,8 @@ declare namespace cocoa {
     reachableViaWWAN<R = boolean>(): R;
     reachable<R = boolean>(): R;
   }
-  namespace classes {
-    export interface AFNetworkReachabilityManager<T = any> extends NSObject {
+  namespace AFNetworkReachabilityManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = AFNetworkReachabilityManager>(): R;
       new: <R = AFNetworkReachabilityManager>() => R;
       keyPathsForValuesAffectingValueForKey<R = unknown, P0 = unknown>(_keyPathsForValuesAffectingValueForKey: P0): R;
@@ -31,4 +31,4 @@ declare namespace cocoa {
   }
 }
 
-declare const AFNetworkReachabilityManager: cocoa.classes.AFNetworkReachabilityManager;
+declare const AFNetworkReachabilityManager: cocoa.AFNetworkReachabilityManager.CLASS;

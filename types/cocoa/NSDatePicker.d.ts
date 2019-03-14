@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDatePicker<T = any> extends NSControl {
+  export interface NSDatePicker<T0 = void, T1 = void, T2 = void> extends NSControl {
     _setWrapsDateComponentArithmetic<R = void, P0 = boolean>(__setWrapsDateComponentArithmetic: P0): R;
     _wrapsDateComponentArithmetic<R = boolean>(): R;
     _setForcesLeadingZeroes<R = void, P0 = boolean>(__setForcesLeadingZeroes: P0): R;
@@ -45,12 +45,12 @@ declare namespace cocoa {
     datePickerStyle<R = number>(): R;
     setDatePickerStyle<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSDatePicker<T = any> extends NSControl {
+  namespace NSDatePicker {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSControl {
       alloc<R = NSDatePicker>(): R;
       new: <R = NSDatePicker>() => R;
     }
   }
 }
 
-declare const NSDatePicker: cocoa.classes.NSDatePicker;
+declare const NSDatePicker: cocoa.NSDatePicker.CLASS;

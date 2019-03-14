@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSImmutableSymbolInstance<T = any> extends _MSImmutableSymbolInstance, MSFlowContainmentCheckProtocol {
+  export interface MSImmutableSymbolInstance<T0 = void, T1 = void, T2 = void> extends _MSImmutableSymbolInstance, MSFlowContainmentCheckProtocol {
     modifiedMasterInDocument<R = unknown, P0 = unknown>(_modifiedMasterInDocument: P0): R;
     prepareModifiedMasterInDocument<R = unknown, P0 = unknown>(_prepareModifiedMasterInDocument: P0): R;
     modifiedMasterCacheKey<R = unknown>(): R;
@@ -31,12 +31,12 @@ declare namespace cocoa {
     masterRefreshCounter<R = number>(): R;
     overrides<R = NSDictionary>(): R;
   }
-  namespace classes {
-    export interface MSImmutableSymbolInstance<T = any> extends _MSImmutableSymbolInstance, MSFlowContainmentCheckProtocol {
+  namespace MSImmutableSymbolInstance {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSImmutableSymbolInstance, MSFlowContainmentCheckProtocol {
       alloc<R = MSImmutableSymbolInstance>(): R;
       new: <R = MSImmutableSymbolInstance>() => R;
     }
   }
 }
 
-declare const MSImmutableSymbolInstance: cocoa.classes.MSImmutableSymbolInstance;
+declare const MSImmutableSymbolInstance: cocoa.MSImmutableSymbolInstance.CLASS;

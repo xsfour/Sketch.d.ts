@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDataPreview<T = any> extends NSView {
+  export interface MSDataPreview<T0 = void, T1 = void, T2 = void> extends NSView {
     cxx_destruct<R = void>(): R;
     firstFourDataImages<R = unknown>(): R;
     firstThreeDataTextItems<R = unknown>(): R;
@@ -22,12 +22,12 @@ declare namespace cocoa {
     contentPath<R = NSBezierPath>(): R;
     previewFrame<R = CGRect>(): R;
   }
-  namespace classes {
-    export interface MSDataPreview<T = any> extends NSView {
+  namespace MSDataPreview {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = MSDataPreview>(): R;
       new: <R = MSDataPreview>() => R;
     }
   }
 }
 
-declare const MSDataPreview: cocoa.classes.MSDataPreview;
+declare const MSDataPreview: cocoa.MSDataPreview.CLASS;

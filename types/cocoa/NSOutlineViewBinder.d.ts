@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSOutlineViewBinder<T = any> extends NSBinder {
+  export interface NSOutlineViewBinder<T0 = void, T1 = void, T2 = void> extends NSBinder {
     outlineView_child_ofItem<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_outlineView: P0, _child: P1, _ofItem: P2): R;
     outlineView_numberOfChildrenOfItem<R = number, P0 = unknown, P1 = unknown>(_outlineView: P0, _numberOfChildrenOfItem: P1): R;
     outlineView_isItemExpandable<R = boolean, P0 = unknown, P1 = unknown>(_outlineView: P0, _isItemExpandable: P1): R;
@@ -25,12 +25,12 @@ declare namespace cocoa {
     endIgnoreChanges<R = void>(): R;
     beginIgnoreChanges<R = void>(): R;
   }
-  namespace classes {
-    export interface NSOutlineViewBinder<T = any> extends NSBinder {
+  namespace NSOutlineViewBinder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSBinder {
       alloc<R = NSOutlineViewBinder>(): R;
       new: <R = NSOutlineViewBinder>() => R;
     }
   }
 }
 
-declare const NSOutlineViewBinder: cocoa.classes.NSOutlineViewBinder;
+declare const NSOutlineViewBinder: cocoa.NSOutlineViewBinder.CLASS;

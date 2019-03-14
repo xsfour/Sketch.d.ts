@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSDrawer<T = any> extends NSResponder, NSAccessibilityElementProtocol, NSAccessibilityProtocol {
+  export interface NSDrawer<T0 = void, T1 = void, T2 = void> extends NSResponder, NSAccessibilityElementProtocol, NSAccessibilityProtocol {
     autosaveName<R = unknown>(): R;
     setAutosaveName<R = void, P0 = unknown>(_setAutosaveName: P0): R;
     isOpen<R = boolean>(): R;
@@ -340,8 +340,8 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSDrawer<T = any> extends NSResponder, NSAccessibilityElementProtocol, NSAccessibilityProtocol {
+  namespace NSDrawer {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSResponder, NSAccessibilityElementProtocol, NSAccessibilityProtocol {
       alloc<R = NSDrawer>(): R;
       new: <R = NSDrawer>() => R;
       _usesCorrectContentSize<R = boolean>(): R;
@@ -353,4 +353,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSDrawer: cocoa.classes.NSDrawer;
+declare const NSDrawer: cocoa.NSDrawer.CLASS;

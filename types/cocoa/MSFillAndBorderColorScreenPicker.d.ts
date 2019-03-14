@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSFillAndBorderColorScreenPicker<T = any> extends NSObject {}
-  namespace classes {
-    export interface MSFillAndBorderColorScreenPicker<T = any> extends NSObject {
+  export interface MSFillAndBorderColorScreenPicker<T0 = void, T1 = void, T2 = void> extends NSObject {}
+  namespace MSFillAndBorderColorScreenPicker {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSFillAndBorderColorScreenPicker>(): R;
       new: <R = MSFillAndBorderColorScreenPicker>() => R;
       setPreferredStylePartName<R = void, P0 = unknown>(_setPreferredStylePartName: P0): R;
@@ -13,4 +13,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSFillAndBorderColorScreenPicker: cocoa.classes.MSFillAndBorderColorScreenPicker;
+declare const MSFillAndBorderColorScreenPicker: cocoa.MSFillAndBorderColorScreenPicker.CLASS;

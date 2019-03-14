@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface SHKSharingServicePicker<T = any> {}
-  namespace classes {
-    export interface SHKSharingServicePicker<T = any> {  }
+  export interface SHKSharingServicePicker<T0 = void, T1 = void, T2 = void> {}
+  namespace SHKSharingServicePicker {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const SHKSharingServicePicker: cocoa.classes.SHKSharingServicePicker;
+declare const SHKSharingServicePicker: cocoa.SHKSharingServicePicker.CLASS;

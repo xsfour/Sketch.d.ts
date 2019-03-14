@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarCustomizationPreviewDeletionLabel<T = any> extends NSView, NSCollectionViewElementProtocol {
+  export interface NSTouchBarCustomizationPreviewDeletionLabel<T0 = void, T1 = void, T2 = void> extends NSView, NSCollectionViewElementProtocol {
     wantsLayer<R = boolean>(): R;
     wantsUpdateLayer<R = boolean>(): R;
     labelTransform<R = CGAffineTransform>(): R;
@@ -15,12 +15,12 @@ declare namespace cocoa {
     setIdentifier<R = void, P0 = NSString>(_v: P0): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSTouchBarCustomizationPreviewDeletionLabel<T = any> extends NSView, NSCollectionViewElementProtocol {
+  namespace NSTouchBarCustomizationPreviewDeletionLabel {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView, NSCollectionViewElementProtocol {
       alloc<R = NSTouchBarCustomizationPreviewDeletionLabel>(): R;
       new: <R = NSTouchBarCustomizationPreviewDeletionLabel>() => R;
     }
   }
 }
 
-declare const NSTouchBarCustomizationPreviewDeletionLabel: cocoa.classes.NSTouchBarCustomizationPreviewDeletionLabel;
+declare const NSTouchBarCustomizationPreviewDeletionLabel: cocoa.NSTouchBarCustomizationPreviewDeletionLabel.CLASS;

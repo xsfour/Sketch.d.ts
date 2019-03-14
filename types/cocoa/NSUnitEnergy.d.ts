@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUnitEnergy<T = any> extends NSDimension, NSSecureCodingProtocol {}
-  namespace classes {
-    export interface NSUnitEnergy<T = any> extends NSDimension, NSSecureCodingProtocol {
+  export interface NSUnitEnergy<T0 = void, T1 = void, T2 = void> extends NSDimension, NSSecureCodingProtocol {}
+  namespace NSUnitEnergy {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSDimension, NSSecureCodingProtocol {
       alloc<R = NSUnitEnergy>(): R;
       new: <R = NSUnitEnergy>() => R;
       kilowattHours<R = unknown>(): R;
@@ -15,4 +15,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSUnitEnergy: cocoa.classes.NSUnitEnergy;
+declare const NSUnitEnergy: cocoa.NSUnitEnergy.CLASS;

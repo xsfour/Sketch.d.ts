@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSArtboardGroup<T = any> extends _MSArtboardGroup, MSArtboardGroupProtocol, MSRootLayerProtocol, MSLayerWithMutableBackgroundColorProtocol, MSColorConvertibleProtocol {
+  export interface MSArtboardGroup<T0 = void, T1 = void, T2 = void> extends _MSArtboardGroup, MSArtboardGroupProtocol, MSRootLayerProtocol, MSLayerWithMutableBackgroundColorProtocol, MSColorConvertibleProtocol {
     setShouldBreakMaskChain<R = void, P0 = boolean>(_setShouldBreakMaskChain: P0): R;
     closestClippingLayer<R = unknown>(): R;
     rootForNameUniquing<R = unknown>(): R;
@@ -69,8 +69,8 @@ declare namespace cocoa {
     verticalRulerData<R = MSRulerData>(): R;
     setVerticalRulerData<R = void, P0 = MSRulerData>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSArtboardGroup<T = any> extends _MSArtboardGroup, MSArtboardGroupProtocol, MSRootLayerProtocol, MSLayerWithMutableBackgroundColorProtocol, MSColorConvertibleProtocol {
+  namespace MSArtboardGroup {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSArtboardGroup, MSArtboardGroupProtocol, MSRootLayerProtocol, MSLayerWithMutableBackgroundColorProtocol, MSColorConvertibleProtocol {
       alloc<R = MSArtboardGroup>(): R;
       new: <R = MSArtboardGroup>() => R;
       artboardRectFromLayersInArray<R = CGRect, P0 = unknown>(_artboardRectFromLayersInArray: P0): R;
@@ -78,4 +78,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSArtboardGroup: cocoa.classes.MSArtboardGroup;
+declare const MSArtboardGroup: cocoa.MSArtboardGroup.CLASS;

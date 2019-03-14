@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSCandidateBarFunctionRowSegment<T = any> extends NSObject {
+  export interface _NSCandidateBarFunctionRowSegment<T0 = void, T1 = void, T2 = void> extends NSObject {
     drawWithForegroundOpacity<R = void, P0 = number>(_drawWithForegroundOpacity: P0): R;
     description<R = unknown>(): R;
     dealloc<R = void>(): R;
@@ -44,8 +44,8 @@ declare namespace cocoa {
     segmentType<R = number>(): R;
     setSegmentType<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface _NSCandidateBarFunctionRowSegment<T = any> extends NSObject {
+  namespace _NSCandidateBarFunctionRowSegment {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSCandidateBarFunctionRowSegment>(): R;
       new: <R = _NSCandidateBarFunctionRowSegment>() => R;
       segmentWithType_candidate_rect<R = unknown, P0 = number, P1 = unknown, P2 = CGRect>(_segmentWithType: P0, _candidate: P1, _rect: P2): R;

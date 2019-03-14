@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSWindowControllerMoreIVars<T = any> extends NSObject {
+  export interface NSWindowControllerMoreIVars<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     contentViewController<R = NSViewController>(): R;
     setContentViewController<R = void, P0 = NSViewController>(_v: P0): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     externalObjectEntryTableForWindowLoading<R = NSDictionary>(): R;
     setExternalObjectEntryTableForWindowLoading<R = void, P0 = NSDictionary>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSWindowControllerMoreIVars<T = any> extends NSObject {
+  namespace NSWindowControllerMoreIVars {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSWindowControllerMoreIVars>(): R;
       new: <R = NSWindowControllerMoreIVars>() => R;
     }
   }
 }
 
-declare const NSWindowControllerMoreIVars: cocoa.classes.NSWindowControllerMoreIVars;
+declare const NSWindowControllerMoreIVars: cocoa.NSWindowControllerMoreIVars.CLASS;

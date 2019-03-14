@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarCustomizationPreviewItemContainerView<T = any> extends NSView {
+  export interface NSTouchBarCustomizationPreviewItemContainerView<T0 = void, T1 = void, T2 = void> extends NSView {
     _updatePresentationForCurrentStateAnimated<R = void, P0 = boolean>(__updatePresentationForCurrentStateAnimated: P0): R;
     setState_animated<R = void, P0 = number, P1 = boolean>(_setState: P0, _animated: P1): R;
     itemTransform<R = CGAffineTransform>(): R;
@@ -13,12 +13,12 @@ declare namespace cocoa {
     contentView<R = NSView>(): R;
     setContentView<R = void, P0 = NSView>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSTouchBarCustomizationPreviewItemContainerView<T = any> extends NSView {
+  namespace NSTouchBarCustomizationPreviewItemContainerView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSView {
       alloc<R = NSTouchBarCustomizationPreviewItemContainerView>(): R;
       new: <R = NSTouchBarCustomizationPreviewItemContainerView>() => R;
     }
   }
 }
 
-declare const NSTouchBarCustomizationPreviewItemContainerView: cocoa.classes.NSTouchBarCustomizationPreviewItemContainerView;
+declare const NSTouchBarCustomizationPreviewItemContainerView: cocoa.NSTouchBarCustomizationPreviewItemContainerView.CLASS;

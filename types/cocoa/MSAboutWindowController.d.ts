@@ -1,7 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSAboutWindowController<T = any> extends NSWindowController {
+  export interface MSAboutWindowController<T0 = void, T1 = void, T2 = void> extends NSWindowController {
+    cxx_destruct<R = void>(): R;
     fetchRemoteUpdateExpiratonDate<R = void>(): R;
     unlinkDevice<R = void, P0 = unknown>(_unlinkDevice: P0): R;
     registerLicense<R = void, P0 = unknown>(_registerLicense: P0): R;
@@ -13,6 +14,7 @@ declare namespace cocoa {
     refreshLicenseStatusViewWithLicenseManager<R = void, P0 = unknown>(_refreshLicenseStatusViewWithLicenseManager: P0): R;
     refreshRegisteredToView<R = void, P0 = unknown>(_refreshRegisteredToView: P0): R;
     refresh<R = void>(): R;
+    windowDidLoad<R = void>(): R;
     remoteUpdateExpirationDate<R = NSDate>(): R;
     setRemoteUpdateExpirationDate<R = void, P0 = NSDate>(_v: P0): R;
     versionTextField<R = NSTextField>(): R;
@@ -40,8 +42,8 @@ declare namespace cocoa {
     backgroundImageView<R = MSThemeImageView>(): R;
     setBackgroundImageView<R = void, P0 = MSThemeImageView>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSAboutWindowController<T = any> extends NSWindowController {
+  namespace MSAboutWindowController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSWindowController {
       alloc<R = MSAboutWindowController>(): R;
       new: <R = MSAboutWindowController>() => R;
       showAboutWindow<R = void>(): R;
@@ -49,4 +51,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSAboutWindowController: cocoa.classes.MSAboutWindowController;
+declare const MSAboutWindowController: cocoa.MSAboutWindowController.CLASS;

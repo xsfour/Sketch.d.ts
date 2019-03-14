@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSVectorHandleStateDecider<T = any> extends NSObject {
+  export interface MSVectorHandleStateDecider<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     debugDescription<R = unknown>(): R;
     indexPathOfHandleAtPoint_tolerance<R = unknown, P0 = CGPoint, P1 = number>(_indexPathOfHandleAtPoint: P0, _tolerance: P1): R;
@@ -25,12 +25,12 @@ declare namespace cocoa {
     visibilityAroundSelectedHandles<R = number>(): R;
     setVisibilityAroundSelectedHandles<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSVectorHandleStateDecider<T = any> extends NSObject {
+  namespace MSVectorHandleStateDecider {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSVectorHandleStateDecider>(): R;
       new: <R = MSVectorHandleStateDecider>() => R;
     }
   }
 }
 
-declare const MSVectorHandleStateDecider: cocoa.classes.MSVectorHandleStateDecider;
+declare const MSVectorHandleStateDecider: cocoa.MSVectorHandleStateDecider.CLASS;

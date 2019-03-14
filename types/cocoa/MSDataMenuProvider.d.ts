@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDataMenuProvider<T = any> extends NSObject, NSMenuDelegateProtocol {
+  export interface MSDataMenuProvider<T0 = void, T1 = void, T2 = void> extends NSObject, NSMenuDelegateProtocol {
     cxx_destruct<R = void>(): R;
     pluginKeysDictionaryFromDataSuppliers<R = unknown, P0 = unknown>(_pluginKeysDictionaryFromDataSuppliers: P0): R;
     pluginNameForIdentifier<R = unknown, P0 = unknown>(_pluginNameForIdentifier: P0): R;
@@ -35,12 +35,12 @@ declare namespace cocoa {
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
-  namespace classes {
-    export interface MSDataMenuProvider<T = any> extends NSObject, NSMenuDelegateProtocol {
+  namespace MSDataMenuProvider {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSMenuDelegateProtocol {
       alloc<R = MSDataMenuProvider>(): R;
       new: <R = MSDataMenuProvider>() => R;
     }
   }
 }
 
-declare const MSDataMenuProvider: cocoa.classes.MSDataMenuProvider;
+declare const MSDataMenuProvider: cocoa.MSDataMenuProvider.CLASS;

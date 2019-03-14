@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSComparisonPredicate<T = any> extends NSPredicate {
+  export interface NSComparisonPredicate<T0 = void, T1 = void, T2 = void> extends NSPredicate {
     _acceptExpressions_flags<R = void, P0 = unknown, P1 = number>(__acceptExpressions: P0, _flags: P1): R;
     _acceptOperator_flags<R = void, P0 = unknown, P1 = number>(__acceptOperator: P0, _flags: P1): R;
     hash<R = number>(): R;
@@ -22,8 +22,8 @@ declare namespace cocoa {
     comparisonPredicateModifier<R = number>(): R;
     predicateOperatorType<R = number>(): R;
   }
-  namespace classes {
-    export interface NSComparisonPredicate<T = any> extends NSPredicate {
+  namespace NSComparisonPredicate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSPredicate {
       alloc<R = NSComparisonPredicate>(): R;
       new: <R = NSComparisonPredicate>() => R;
       predicateWithPredicateOperator_leftExpression_rightExpression<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_predicateWithPredicateOperator: P0, _leftExpression: P1, _rightExpression: P2): R;
@@ -35,4 +35,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSComparisonPredicate: cocoa.classes.NSComparisonPredicate;
+declare const NSComparisonPredicate: cocoa.NSComparisonPredicate.CLASS;

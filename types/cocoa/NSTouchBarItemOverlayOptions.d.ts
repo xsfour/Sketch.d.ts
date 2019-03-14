@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTouchBarItemOverlayOptions<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
+  export interface NSTouchBarItemOverlayOptions<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
     description<R = unknown>(): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
@@ -10,8 +10,8 @@ declare namespace cocoa {
     point<R = CGPoint>(): R;
     type<R = number>(): R;
   }
-  namespace classes {
-    export interface NSTouchBarItemOverlayOptions<T = any> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
+  namespace NSTouchBarItemOverlayOptions {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol, NSCopyingProtocol {
       alloc<R = NSTouchBarItemOverlayOptions>(): R;
       new: <R = NSTouchBarItemOverlayOptions>() => R;
       popoverOptionsWithPoint_edge<R = unknown, P0 = CGPoint, P1 = number>(_popoverOptionsWithPoint: P0, _edge: P1): R;
@@ -21,4 +21,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSTouchBarItemOverlayOptions: cocoa.classes.NSTouchBarItemOverlayOptions;
+declare const NSTouchBarItemOverlayOptions: cocoa.NSTouchBarItemOverlayOptions.CLASS;

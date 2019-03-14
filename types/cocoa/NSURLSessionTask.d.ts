@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSURLSessionTask<T = any> {}
-  namespace classes {
-    export interface NSURLSessionTask<T = any> {  }
+  export interface NSURLSessionTask<T0 = void, T1 = void, T2 = void> {}
+  namespace NSURLSessionTask {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSURLSessionTask: cocoa.classes.NSURLSessionTask;
+declare const NSURLSessionTask: cocoa.NSURLSessionTask.CLASS;

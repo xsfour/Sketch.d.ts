@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSFileWrapper<T = any> extends NSObject, NSSecureCodingProtocol {
+  export interface NSFileWrapper<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol {
     initWithCoder<R = unknown, P0 = unknown>(_initWithCoder: P0): R;
     encodeWithCoder<R = void, P0 = unknown>(_encodeWithCoder: P0): R;
     keyForFileWrapper<R = unknown, P0 = unknown>(_keyForFileWrapper: P0): R;
@@ -61,16 +61,17 @@ declare namespace cocoa {
     symbolicLink<R = boolean>(): R;
     regularFile<R = boolean>(): R;
     directory<R = boolean>(): R;
-    // + NSFileWrapper(NSExtensions):
+    // + NSFileWrapper(NSExtensions): 
     _iconData<R = unknown>(): R;
     _hasIcon<R = boolean>(): R;
     _initIconWithData<R = void, P0 = unknown>(__initIconWithData: P0): R;
     _initIcon<R = void, P0 = unknown>(__initIcon: P0): R;
+    // + NSFileWrapper(NSExtensions):
     icon<R = NSImage>(): R;
     setIcon<R = void, P0 = NSImage>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSFileWrapper<T = any> extends NSObject, NSSecureCodingProtocol {
+  namespace NSFileWrapper {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSSecureCodingProtocol {
       alloc<R = NSFileWrapper>(): R;
       new: <R = NSFileWrapper>() => R;
       _newContentsAtURL_path_itemKind_oldChildrenByUniqueFileName_options_error<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = number, P5 = unknown>(__newContentsAtURL: P0, _path: P1, _itemKind: P2, _oldChildrenByUniqueFileName: P3, _options: P4, _error: P5): R;
@@ -90,10 +91,9 @@ declare namespace cocoa {
       _temporaryDirectoryURLForWritingToURL_error<R = unknown, P0 = unknown, P1 = unknown>(__temporaryDirectoryURLForWritingToURL: P0, _error: P1): R;
       _pathForURL_reading_error<R = unknown, P0 = unknown, P1 = boolean, P2 = unknown>(__pathForURL: P0, _reading: P1, _error: P2): R;
       _temporaryDirectoryPathForWritingToPath_forResaving_error<R = unknown, P0 = unknown, P1 = boolean, P2 = unknown>(__temporaryDirectoryPathForWritingToPath: P0, _forResaving: P1, _error: P2): R;
-      // + NSFileWrapper(NSExtensions):
-      
-    }
+  
+  }
   }
 }
 
-declare const NSFileWrapper: cocoa.classes.NSFileWrapper;
+declare const NSFileWrapper: cocoa.NSFileWrapper.CLASS;

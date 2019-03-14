@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSTextField<T = any> extends NSControl, NSTextViewDelegateProtocol, NSUserInterfaceValidationsProtocol, NSAccessibilityNavigableStaticTextProtocol {
+  export interface NSTextField<T0 = void, T1 = void, T2 = void> extends NSControl, NSTextViewDelegateProtocol, NSUserInterfaceValidationsProtocol, NSAccessibilityNavigableStaticTextProtocol {
     textView_prepareMenu_forCharacterAtIndex_withEvent<R = void, P0 = unknown, P1 = unknown, P2 = number, P3 = unknown>(_textView: P0, _prepareMenu: P1, _forCharacterAtIndex: P2, _withEvent: P3): R;
     _baselineOffsets<R = __NSBaselineOffsets>(): R;
     setAttributedStringValue<R = void, P0 = unknown>(_setAttributedStringValue: P0): R;
@@ -76,13 +76,15 @@ declare namespace cocoa {
     description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
-    // + NSTextField(Chocolat,NextKeyViewSupport,PopoverDismissal):
+    // + NSTextField(NextKeyViewSupport): 
     canBeKeyView<R = boolean>(): R;
+    // + NSTextField(PopoverDismissal): 
     clickShouldDismissPopover<R = boolean, P0 = unknown>(_clickShouldDismissPopover: P0): R;
+    // + NSTextField(Chocolat):
     isEditingText<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSTextField<T = any> extends NSControl, NSTextViewDelegateProtocol, NSUserInterfaceValidationsProtocol, NSAccessibilityNavigableStaticTextProtocol {
+  namespace NSTextField {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSControl, NSTextViewDelegateProtocol, NSUserInterfaceValidationsProtocol, NSAccessibilityNavigableStaticTextProtocol {
       alloc<R = NSTextField>(): R;
       new: <R = NSTextField>() => R;
       _fieldsContainingString<R = unknown, P0 = unknown>(__fieldsContainingString: P0): R;
@@ -99,10 +101,9 @@ declare namespace cocoa {
       editableTextFieldWithString<R = unknown, P0 = unknown>(_editableTextFieldWithString: P0): R;
       textFieldWithAttributedString<R = unknown, P0 = unknown>(_textFieldWithAttributedString: P0): R;
       wrappingTextFieldWithString_preferredMaxLayoutWidth<R = unknown, P0 = unknown, P1 = number>(_wrappingTextFieldWithString: P0, _preferredMaxLayoutWidth: P1): R;
-      // + NSTextField(Chocolat,NextKeyViewSupport,PopoverDismissal):
-      
-    }
+  
+  }
   }
 }
 
-declare const NSTextField: cocoa.classes.NSTextField;
+declare const NSTextField: cocoa.NSTextField.CLASS;

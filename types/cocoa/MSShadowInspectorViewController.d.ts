@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSShadowInspectorViewController<T = any> extends MSColorStylePartInspectorViewController {
+  export interface MSShadowInspectorViewController<T0 = void, T1 = void, T2 = void> extends MSColorStylePartInspectorViewController {
     sectionTitle<R = unknown>(): R;
     title<R = unknown>(): R;
     keyPath<R = unknown>(): R;
@@ -26,12 +26,12 @@ declare namespace cocoa {
     type<R = NSString>(): R;
     setType<R = void, P0 = NSString>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSShadowInspectorViewController<T = any> extends MSColorStylePartInspectorViewController {
+  namespace MSShadowInspectorViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSColorStylePartInspectorViewController {
       alloc<R = MSShadowInspectorViewController>(): R;
       new: <R = MSShadowInspectorViewController>() => R;
     }
   }
 }
 
-declare const MSShadowInspectorViewController: cocoa.classes.MSShadowInspectorViewController;
+declare const MSShadowInspectorViewController: cocoa.MSShadowInspectorViewController.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface Mocha<T = any> extends NSObject {
+  export interface Mocha<T0 = void, T1 = void, T2 = void> extends NSObject {
     evalString<R = unknown, P0 = NSString>(_evalString: P0): R;
     callFunctionWithName<R = unknown, P0 = NSString>(_callFunctionWithName: P0): R;
     callFunctionWithName_withArguments<R = unknown, P0 = NSString, P1 = unknown>(_callFunctionWithName: P0, _withArguments: P1): R;
@@ -20,8 +20,8 @@ declare namespace cocoa {
     setFrameworkSearchPaths<R = void, P0 = NSArray>(_v: P0): R;
     globalSymbolNames<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface Mocha<T = any> extends NSObject {
+  namespace Mocha {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = Mocha>(): R;
       new: <R = Mocha>() => R;
       sharedRuntime<R = Mocha>(): R;
@@ -29,4 +29,4 @@ declare namespace cocoa {
   }
 }
 
-declare const Mocha: cocoa.classes.Mocha;
+declare const Mocha: cocoa.Mocha.CLASS;

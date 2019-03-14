@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSAppleEventManager<T = any> extends NSObject {
+  export interface NSAppleEventManager<T0 = void, T1 = void, T2 = void> extends NSObject {
     resumeWithSuspensionID<R = void, P0 = __NSAppleEventManagerSuspension>(_resumeWithSuspensionID: P0): R;
     setCurrentAppleEventAndReplyEventWithSuspensionID<R = void, P0 = __NSAppleEventManagerSuspension>(_setCurrentAppleEventAndReplyEventWithSuspensionID: P0): R;
     replyAppleEventForSuspensionID<R = unknown, P0 = __NSAppleEventManagerSuspension>(_replyAppleEventForSuspensionID: P0): R;
@@ -22,8 +22,8 @@ declare namespace cocoa {
     currentReplyAppleEvent<R = NSAppleEventDescriptor>(): R;
     currentAppleEvent<R = NSAppleEventDescriptor>(): R;
   }
-  namespace classes {
-    export interface NSAppleEventManager<T = any> extends NSObject {
+  namespace NSAppleEventManager {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSAppleEventManager>(): R;
       new: <R = NSAppleEventManager>() => R;
       sharedAppleEventManager<R = unknown>(): R;
@@ -32,4 +32,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSAppleEventManager: cocoa.classes.NSAppleEventManager;
+declare const NSAppleEventManager: cocoa.NSAppleEventManager.CLASS;

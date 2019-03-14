@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _MSImmutableDocumentData<T = any> extends MSImmutableModelObject {
+  export interface _MSImmutableDocumentData<T0 = void, T1 = void, T2 = void> extends MSImmutableModelObject {
     hasDefaultValues<R = boolean>(): R;
     pages<R = NSArray>(): R;
     setPages<R = void, P0 = NSArray>(_v: P0): R;
@@ -26,8 +26,8 @@ declare namespace cocoa {
     colorSpace<R = number>(): R;
     setColorSpace<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface _MSImmutableDocumentData<T = any> extends MSImmutableModelObject {
+  namespace _MSImmutableDocumentData {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSImmutableModelObject {
       alloc<R = _MSImmutableDocumentData>(): R;
       new: <R = _MSImmutableDocumentData>() => R;
     }

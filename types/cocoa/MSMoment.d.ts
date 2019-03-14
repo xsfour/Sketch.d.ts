@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSMoment<T = any> extends NSObject {
+  export interface MSMoment<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     initWithTitle_documentData<R = unknown, P0 = unknown, P1 = unknown>(_initWithTitle: P0, _documentData: P1): R;
     pageID<R = NSString>(): R;
@@ -16,12 +16,12 @@ declare namespace cocoa {
     setTitle<R = void, P0 = NSString>(_v: P0): R;
     timestamp<R = number>(): R;
   }
-  namespace classes {
-    export interface MSMoment<T = any> extends NSObject {
+  namespace MSMoment {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSMoment>(): R;
       new: <R = MSMoment>() => R;
     }
   }
 }
 
-declare const MSMoment: cocoa.classes.MSMoment;
+declare const MSMoment: cocoa.MSMoment.CLASS;

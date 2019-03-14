@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScriptObjectSpecifier<T = any> extends NSObject, NSCodingProtocol {
+  export interface NSScriptObjectSpecifier<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
     description<R = unknown>(): R;
     replacementObjectForPortCoder<R = unknown, P0 = unknown>(_replacementObjectForPortCoder: P0): R;
     indicesOfObjectsByEvaluatingWithContainer_count<R = number, P0 = unknown, P1 = number>(_indicesOfObjectsByEvaluatingWithContainer: P0, _count: P1): R;
@@ -50,8 +50,8 @@ declare namespace cocoa {
     containerClassDescription<R = NSScriptClassDescription>(): R;
     setContainerClassDescription<R = void, P0 = NSScriptClassDescription>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSScriptObjectSpecifier<T = any> extends NSObject, NSCodingProtocol {
+  namespace NSScriptObjectSpecifier {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
       alloc<R = NSScriptObjectSpecifier>(): R;
       new: <R = NSScriptObjectSpecifier>() => R;
       objectSpecifierWithDescriptor<R = unknown, P0 = unknown>(_objectSpecifierWithDescriptor: P0): R;
@@ -66,4 +66,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSScriptObjectSpecifier: cocoa.classes.NSScriptObjectSpecifier;
+declare const NSScriptObjectSpecifier: cocoa.NSScriptObjectSpecifier.CLASS;

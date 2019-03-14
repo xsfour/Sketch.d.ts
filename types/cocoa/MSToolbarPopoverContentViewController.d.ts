@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSToolbarPopoverContentViewController<T = any> extends NSViewController {
+  export interface MSToolbarPopoverContentViewController<T0 = void, T1 = void, T2 = void> extends NSViewController {
     cxx_destruct<R = void>(): R;
     animateFrameWithCompletionHandler<R = void, P0 = CDUnknownBlockType>(_animateFrameWithCompletionHandler: P0): R;
     newActionButtonWithTitle_action<R = unknown, P0 = unknown, P1 = string>(_newActionButtonWithTitle: P0, _action: P1): R;
@@ -17,12 +17,12 @@ declare namespace cocoa {
     imageView<R = NSImageView>(): R;
     edgeInsets<R = NSEdgeInsets>(): R;
   }
-  namespace classes {
-    export interface MSToolbarPopoverContentViewController<T = any> extends NSViewController {
+  namespace MSToolbarPopoverContentViewController {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSViewController {
       alloc<R = MSToolbarPopoverContentViewController>(): R;
       new: <R = MSToolbarPopoverContentViewController>() => R;
     }
   }
 }
 
-declare const MSToolbarPopoverContentViewController: cocoa.classes.MSToolbarPopoverContentViewController;
+declare const MSToolbarPopoverContentViewController: cocoa.MSToolbarPopoverContentViewController.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSDataSupplier<T = any> extends NSObject, NSCodingProtocol {
+  export interface MSDataSupplier<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
     cxx_destruct<R = void>(): R;
     dataForItem<R = unknown, P0 = unknown>(_dataForItem: P0): R;
     resetMenuItemImage<R = void>(): R;
@@ -28,12 +28,12 @@ declare namespace cocoa {
     setDelegate<R = void, P0 = MSDataSupplierDelegate>(_v: P0): R;
     valid<R = boolean>(): R;
   }
-  namespace classes {
-    export interface MSDataSupplier<T = any> extends NSObject, NSCodingProtocol {
+  namespace MSDataSupplier {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCodingProtocol {
       alloc<R = MSDataSupplier>(): R;
       new: <R = MSDataSupplier>() => R;
     }
   }
 }
 
-declare const MSDataSupplier: cocoa.classes.MSDataSupplier;
+declare const MSDataSupplier: cocoa.MSDataSupplier.CLASS;

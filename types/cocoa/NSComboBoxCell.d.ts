@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSComboBoxCell<T = any> extends NSTextFieldCell {
+  export interface NSComboBoxCell<T0 = void, T1 = void, T2 = void> extends NSTextFieldCell {
     setFormatter<R = void, P0 = unknown>(_setFormatter: P0): R;
     _initWithTypedStreamCoder_NSComboBoxCell<R = unknown, P0 = unknown>(__initWithTypedStreamCoder_NSComboBoxCell: P0): R;
     _old_encodeWithCoder_NSComboBoxCell<R = void, P0 = unknown>(__old_encodeWithCoder_NSComboBoxCell: P0): R;
@@ -97,8 +97,8 @@ declare namespace cocoa {
     hasVerticalScroller<R = boolean>(): R;
     setHasVerticalScroller<R = void, P0 = boolean>(_v: P0): R;
   }
-  namespace classes {
-    export interface NSComboBoxCell<T = any> extends NSTextFieldCell {
+  namespace NSComboBoxCell {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSTextFieldCell {
       alloc<R = NSComboBoxCell>(): R;
       new: <R = NSComboBoxCell>() => R;
       automaticTextCompletionEnabled<R = boolean>(): R;
@@ -106,4 +106,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSComboBoxCell: cocoa.classes.NSComboBoxCell;
+declare const NSComboBoxCell: cocoa.NSComboBoxCell.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSConcretePrintOperation<T = any> extends NSPrintOperation {
+  export interface NSConcretePrintOperation<T0 = void, T1 = void, T2 = void> extends NSPrintOperation {
     currentPage<R = number>(): R;
     pageRange<R = _NSRange>(): R;
     context<R = unknown>(): R;
@@ -51,12 +51,12 @@ declare namespace cocoa {
     _firstPageNumber<R = number>(): R;
     _validatePagination<R = void>(): R;
   }
-  namespace classes {
-    export interface NSConcretePrintOperation<T = any> extends NSPrintOperation {
+  namespace NSConcretePrintOperation {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSPrintOperation {
       alloc<R = NSConcretePrintOperation>(): R;
       new: <R = NSConcretePrintOperation>() => R;
     }
   }
 }
 
-declare const NSConcretePrintOperation: cocoa.classes.NSConcretePrintOperation;
+declare const NSConcretePrintOperation: cocoa.NSConcretePrintOperation.CLASS;

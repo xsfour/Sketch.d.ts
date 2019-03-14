@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSScrollerImpPairDelegate<T = any> {}
-  namespace classes {
-    export interface NSScrollerImpPairDelegate<T = any> {  }
+  export interface NSScrollerImpPairDelegate<T0 = void, T1 = void, T2 = void> {}
+  namespace NSScrollerImpPairDelegate {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const NSScrollerImpPairDelegate: cocoa.classes.NSScrollerImpPairDelegate;
+declare const NSScrollerImpPairDelegate: cocoa.NSScrollerImpPairDelegate.CLASS;

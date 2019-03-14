@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSSVGComposite<T = any> extends MSSVGfeFilterPrimitive {
+  export interface MSSVGComposite<T0 = void, T1 = void, T2 = void> extends MSSVGfeFilterPrimitive {
     in<R = NSString>(): R;
     setIn<R = void, P0 = NSString>(_v: P0): R;
     in2<R = NSString>(): R;
@@ -17,12 +17,12 @@ declare namespace cocoa {
     operator<R = NSString>(): R;
     setOperator<R = void, P0 = NSString>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSSVGComposite<T = any> extends MSSVGfeFilterPrimitive {
+  namespace MSSVGComposite {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSSVGfeFilterPrimitive {
       alloc<R = MSSVGComposite>(): R;
       new: <R = MSSVGComposite>() => R;
     }
   }
 }
 
-declare const MSSVGComposite: cocoa.classes.MSSVGComposite;
+declare const MSSVGComposite: cocoa.MSSVGComposite.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSKeyValueNotifyingMutableArray<T = any> extends NSKeyValueMutableArray {
+  export interface NSKeyValueNotifyingMutableArray<T0 = void, T1 = void, T2 = void> extends NSKeyValueMutableArray {
     replaceObjectsAtIndexes_withObjects<R = void, P0 = unknown, P1 = unknown>(_replaceObjectsAtIndexes: P0, _withObjects: P1): R;
     replaceObjectAtIndex_withObject<R = void, P0 = number, P1 = unknown>(_replaceObjectAtIndex: P0, _withObject: P1): R;
     removeObjectsAtIndexes<R = void, P0 = unknown>(_removeObjectsAtIndexes: P0): R;
@@ -15,9 +15,9 @@ declare namespace cocoa {
     getObjects_range<R = void, P0 = unknown, P1 = _NSRange>(_getObjects: P0, _range: P1): R;
     count<R = number>(): R;
   }
-  namespace classes {
-    export interface NSKeyValueNotifyingMutableArray<T = any> extends NSKeyValueMutableArray {  }
+  namespace NSKeyValueNotifyingMutableArray {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSKeyValueMutableArray {}
   }
 }
 
-declare const NSKeyValueNotifyingMutableArray: cocoa.classes.NSKeyValueNotifyingMutableArray;
+declare const NSKeyValueNotifyingMutableArray: cocoa.NSKeyValueNotifyingMutableArray.CLASS;

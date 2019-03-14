@@ -1,7 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSOpenPanel<T = any> extends NSSavePanel {
+  export interface NSOpenPanel<T0 = void, T1 = void, T2 = void> extends NSSavePanel {
+    _dismissModalForTerminate<R = void>(): R;
     preventsApplicationTerminationWhenModal<R = boolean>(): R;
     accessoryViewDisclosed<R = boolean>(): R;
     setAccessoryViewDisclosed<R = void, P0 = boolean>(_v: P0): R;
@@ -19,8 +20,8 @@ declare namespace cocoa {
     setResolvesAliases<R = void, P0 = boolean>(_v: P0): R;
     URLs<R = NSArray>(): R;
   }
-  namespace classes {
-    export interface NSOpenPanel<T = any> extends NSSavePanel {
+  namespace NSOpenPanel {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSSavePanel {
       alloc<R = NSOpenPanel>(): R;
       new: <R = NSOpenPanel>() => R;
       openPanel<R = unknown>(): R;
@@ -28,4 +29,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSOpenPanel: cocoa.classes.NSOpenPanel;
+declare const NSOpenPanel: cocoa.NSOpenPanel.CLASS;

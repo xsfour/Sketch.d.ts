@@ -1,9 +1,9 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSUnitMass<T = any> extends NSDimension, NSSecureCodingProtocol {}
-  namespace classes {
-    export interface NSUnitMass<T = any> extends NSDimension, NSSecureCodingProtocol {
+  export interface NSUnitMass<T0 = void, T1 = void, T2 = void> extends NSDimension, NSSecureCodingProtocol {}
+  namespace NSUnitMass {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSDimension, NSSecureCodingProtocol {
       alloc<R = NSUnitMass>(): R;
       new: <R = NSUnitMass>() => R;
       slugs<R = unknown>(): R;
@@ -26,4 +26,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSUnitMass: cocoa.classes.NSUnitMass;
+declare const NSUnitMass: cocoa.NSUnitMass.CLASS;

@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCSortable<T = any> {}
-  namespace classes {
-    export interface BCSortable<T = any> {  }
+  export interface BCSortable<T0 = void, T1 = void, T2 = void> {}
+  namespace BCSortable {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }
 
-declare const BCSortable: cocoa.classes.BCSortable;
+declare const BCSortable: cocoa.BCSortable.CLASS;

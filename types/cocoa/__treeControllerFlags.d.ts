@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface __treeControllerFlags<T = any> {}
-  namespace classes {
-    export interface __treeControllerFlags<T = any> {  }
+  export interface __treeControllerFlags<T0 = void, T1 = void, T2 = void> {}
+  namespace __treeControllerFlags {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

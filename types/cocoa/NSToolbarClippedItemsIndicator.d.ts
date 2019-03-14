@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSToolbarClippedItemsIndicator<T = any> extends NSPopUpButton {
+  export interface NSToolbarClippedItemsIndicator<T0 = void, T1 = void, T2 = void> extends NSPopUpButton {
     didSendActionNotification<R = void, P0 = unknown>(_didSendActionNotification: P0): R;
     moveLeft<R = void, P0 = unknown>(_moveLeft: P0): R;
     moveRight<R = void, P0 = unknown>(_moveRight: P0): R;
@@ -18,8 +18,8 @@ declare namespace cocoa {
     hasItemsToDisplayInPopUp<R = boolean>(): R;
     clipIndicatorImage<R = unknown>(): R;
   }
-  namespace classes {
-    export interface NSToolbarClippedItemsIndicator<T = any> extends NSPopUpButton {
+  namespace NSToolbarClippedItemsIndicator {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSPopUpButton {
       alloc<R = NSToolbarClippedItemsIndicator>(): R;
       new: <R = NSToolbarClippedItemsIndicator>() => R;
       willHaveItemsToDisplayForItemViewers<R = boolean, P0 = unknown>(_willHaveItemsToDisplayForItemViewers: P0): R;
@@ -28,4 +28,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSToolbarClippedItemsIndicator: cocoa.classes.NSToolbarClippedItemsIndicator;
+declare const NSToolbarClippedItemsIndicator: cocoa.NSToolbarClippedItemsIndicator.CLASS;

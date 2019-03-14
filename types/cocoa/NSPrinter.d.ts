@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSPrinter<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
+  export interface NSPrinter<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
     _compatibility_initWithUnkeyedCoder<R = unknown, P0 = unknown>(__compatibility_initWithUnkeyedCoder: P0): R;
     description<R = unknown>(): R;
     stringListForKey_inTable<R = unknown, P0 = unknown, P1 = unknown>(_stringListForKey: P0, _inTable: P1): R;
@@ -46,8 +46,8 @@ declare namespace cocoa {
     type<R = NSString>(): R;
     name<R = NSString>(): R;
   }
-  namespace classes {
-    export interface NSPrinter<T = any> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
+  namespace NSPrinter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol, NSCodingProtocol {
       alloc<R = NSPrinter>(): R;
       new: <R = NSPrinter>() => R;
       printerWithType<R = unknown, P0 = unknown>(_printerWithType: P0): R;
@@ -61,4 +61,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSPrinter: cocoa.classes.NSPrinter;
+declare const NSPrinter: cocoa.NSPrinter.CLASS;

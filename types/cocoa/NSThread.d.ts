@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSThread<T = any> extends NSObject {
+  export interface NSThread<T0 = void, T1 = void, T2 = void> extends NSObject {
     _nq<R = void, P0 = unknown>(__nq: P0): R;
     main<R = void>(): R;
     start<R = void>(): R;
@@ -29,8 +29,8 @@ declare namespace cocoa {
     setName<R = void, P0 = NSString>(_v: P0): R;
     threadDictionary<R = NSMutableDictionary>(): R;
   }
-  namespace classes {
-    export interface NSThread<T = any> extends NSObject {
+  namespace NSThread {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = NSThread>(): R;
       new: <R = NSThread>() => R;
       detachNewThreadWithBlock<R = void, P0 = CDUnknownBlockType>(_detachNewThreadWithBlock: P0): R;
@@ -50,4 +50,4 @@ declare namespace cocoa {
   }
 }
 
-declare const NSThread: cocoa.classes.NSThread;
+declare const NSThread: cocoa.NSThread.CLASS;

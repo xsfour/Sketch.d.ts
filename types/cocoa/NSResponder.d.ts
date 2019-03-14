@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSResponder<T = any> extends NSObject, NSTouchBarProviderContainerProtocol, NSUIActivityProviderProtocol, NSTouchBarProviderProtocol, _NSQuickActionItemSourceProtocol, NSCodingProtocol {
+  export interface NSResponder<T0 = void, T1 = void, T2 = void> extends NSObject, NSTouchBarProviderContainerProtocol, NSUIActivityProviderProtocol, NSTouchBarProviderProtocol, _NSQuickActionItemSourceProtocol, NSCodingProtocol {
     _ignoreBadFirstResponders<R = boolean>(): R;
     accessibilityPerformShowMenu<R = boolean>(): R;
     accessibilityPerformShowDefaultUI<R = boolean>(): R;
@@ -415,22 +415,23 @@ declare namespace cocoa {
     description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
-    // + NSResponder(Chocolat):
+    // + NSResponder(Chocolat): 
     followsResponder<R = boolean, P0 = unknown>(_followsResponder: P0): R;
+    // + NSResponder(Chocolat):
     supportsTouchBar<R = boolean>(): R;
   }
-  namespace classes {
-    export interface NSResponder<T = any> extends NSObject, NSTouchBarProviderContainerProtocol, NSUIActivityProviderProtocol, NSTouchBarProviderProtocol, _NSQuickActionItemSourceProtocol, NSCodingProtocol {
+  namespace NSResponder {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSTouchBarProviderContainerProtocol, NSUIActivityProviderProtocol, NSTouchBarProviderProtocol, _NSQuickActionItemSourceProtocol, NSCodingProtocol {
       alloc<R = NSResponder>(): R;
       new: <R = NSResponder>() => R;
       initialize<R = void>(): R;
       restorableStateKeyPaths<R = unknown>(): R;
       automaticallyNotifiesObserversOfTouchBar<R = boolean>(): R;
       automaticallyNotifiesObserversOfServicesRequestor<R = boolean>(): R;
-      // + NSResponder(Chocolat):
+      // + NSResponder(Chocolat): 
       supportsTouchBar<R = boolean>(): R;
     }
   }
 }
 
-declare const NSResponder: cocoa.classes.NSResponder;
+declare const NSResponder: cocoa.NSResponder.CLASS;

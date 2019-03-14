@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSOverrideValue<T = any> extends _MSOverrideValue {
+  export interface MSOverrideValue<T0 = void, T1 = void, T2 = void> extends _MSOverrideValue {
     hash<R = number>(): R;
     addPredecessor<R = void, P0 = unknown>(_addPredecessor: P0): R;
     description<R = unknown>(): R;
@@ -12,12 +12,12 @@ declare namespace cocoa {
     setIsInherited<R = void, P0 = boolean>(_v: P0): R;
     attributeName<R = NSString>(): R;
   }
-  namespace classes {
-    export interface MSOverrideValue<T = any> extends _MSOverrideValue {
+  namespace MSOverrideValue {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSOverrideValue {
       alloc<R = MSOverrideValue>(): R;
       new: <R = MSOverrideValue>() => R;
     }
   }
 }
 
-declare const MSOverrideValue: cocoa.classes.MSOverrideValue;
+declare const MSOverrideValue: cocoa.MSOverrideValue.CLASS;

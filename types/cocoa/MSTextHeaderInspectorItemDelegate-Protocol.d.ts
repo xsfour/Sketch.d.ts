@@ -1,10 +1,10 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSTextHeaderInspectorItemDelegateProtocol<T = any> extends MSInspectorItemDelegateProtocol {
+  export interface MSTextHeaderInspectorItemDelegateProtocol<T0 = void, T1 = void, T2 = void> extends MSInspectorItemDelegateProtocol {
     itemWantsToggleDetailSettings<R = void, P0 = MSTextHeaderInspectorItem>(_itemWantsToggleDetailSettings: P0): R;
   }
-  namespace classes {
-    export interface MSTextHeaderInspectorItemDelegateProtocol<T = any> extends MSInspectorItemDelegateProtocol {  }
+  namespace MSTextHeaderInspectorItemDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSInspectorItemDelegateProtocol {}
   }
 }

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSWorkspaceNotificationCenter<T = any> extends NSNotificationCenter {
+  export interface NSWorkspaceNotificationCenter<T0 = void, T1 = void, T2 = void> extends NSNotificationCenter {
     _menuBarDidChangeAppearance<R = void, P0 = unknown>(__menuBarDidChangeAppearance: P0): R;
     _switchControlStatusDidChange<R = void, P0 = unknown>(__switchControlStatusDidChange: P0): R;
     _voiceOverStatusDidChange<R = void, P0 = unknown>(__voiceOverStatusDidChange: P0): R;
@@ -20,12 +20,12 @@ declare namespace cocoa {
     workspace<R = unknown>(): R;
     initWithWorkspace<R = unknown, P0 = unknown>(_initWithWorkspace: P0): R;
   }
-  namespace classes {
-    export interface NSWorkspaceNotificationCenter<T = any> extends NSNotificationCenter {
+  namespace NSWorkspaceNotificationCenter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSNotificationCenter {
       alloc<R = NSWorkspaceNotificationCenter>(): R;
       new: <R = NSWorkspaceNotificationCenter>() => R;
     }
   }
 }
 
-declare const NSWorkspaceNotificationCenter: cocoa.classes.NSWorkspaceNotificationCenter;
+declare const NSWorkspaceNotificationCenter: cocoa.NSWorkspaceNotificationCenter.CLASS;

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _NSPersonNameComponentsStyleFormatter<T = any> extends NSObject {
+  export interface _NSPersonNameComponentsStyleFormatter<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
     _releaseIvars<R = void>(): R;
     annotatedStringFromPersonNameComponents<R = unknown, P0 = unknown>(_annotatedStringFromPersonNameComponents: P0): R;
@@ -25,8 +25,8 @@ declare namespace cocoa {
     keysOfInterest<R = NSSet>(): R;
     abbreviatedKeys<R = NSSet>(): R;
   }
-  namespace classes {
-    export interface _NSPersonNameComponentsStyleFormatter<T = any> extends NSObject {
+  namespace _NSPersonNameComponentsStyleFormatter {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = _NSPersonNameComponentsStyleFormatter>(): R;
       new: <R = _NSPersonNameComponentsStyleFormatter>() => R;
     }

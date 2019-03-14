@@ -1,8 +1,8 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface _retainCount<T = any> {}
-  namespace classes {
-    export interface _retainCount<T = any> {  }
+  export interface _retainCount<T0 = void, T1 = void, T2 = void> {}
+  namespace _retainCount {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> {}
   }
 }

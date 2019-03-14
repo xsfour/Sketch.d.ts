@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface NSRTFD<T = any> extends NSMutableDictionary {
+  export interface NSRTFD<T0 = void, T1 = void, T2 = void> extends NSMutableDictionary {
     validatePath_ignore<R = number, P0 = unknown, P1 = unknown>(_validatePath: P0, _ignore: P1): R;
     addData_name<R = unknown, P0 = unknown, P1 = unknown>(_addData: P0, _name: P1): R;
     copy<R = unknown>(): R;
@@ -59,11 +59,11 @@ declare namespace cocoa {
     serialize_length<R = unknown, P0 = void, P1 = number>(_serialize: P0, _length: P1): R;
     _isLink<R = boolean, P0 = unknown>(__isLink: P0): R;
   }
-  namespace classes {
-    export interface NSRTFD<T = any> extends NSMutableDictionary {
+  namespace NSRTFD {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSMutableDictionary {
       initialize<R = void>(): R;
     }
   }
 }
 
-declare const NSRTFD: cocoa.classes.NSRTFD;
+declare const NSRTFD: cocoa.NSRTFD.CLASS;

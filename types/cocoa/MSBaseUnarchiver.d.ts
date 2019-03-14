@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSBaseUnarchiver<T = any> extends NSObject {
+  export interface MSBaseUnarchiver<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
     instanciateObject<R = unknown, P0 = unknown>(_instanciateObject: P0): R;
     decodeSizeForKey_withDefault<R = CGSize, P0 = unknown, P1 = CGSize>(_decodeSizeForKey: P0, _withDefault: P1): R;
@@ -30,8 +30,8 @@ declare namespace cocoa {
     currentVersion<R = number>(): R;
     setCurrentVersion<R = void, P0 = number>(_v: P0): R;
   }
-  namespace classes {
-    export interface MSBaseUnarchiver<T = any> extends NSObject {
+  namespace MSBaseUnarchiver {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSBaseUnarchiver>(): R;
       new: <R = MSBaseUnarchiver>() => R;
       unarchiveObjectWithData_asVersion_corruptionDetected_error<R = unknown, P0 = unknown, P1 = number, P2 = string, P3 = unknown>(_unarchiveObjectWithData: P0, _asVersion: P1, _corruptionDetected: P2, _error: P3): R;
@@ -41,4 +41,4 @@ declare namespace cocoa {
   }
 }
 
-declare const MSBaseUnarchiver: cocoa.classes.MSBaseUnarchiver;
+declare const MSBaseUnarchiver: cocoa.MSBaseUnarchiver.CLASS;
