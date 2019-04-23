@@ -6,12 +6,11 @@ declare namespace cocoa {
     firstFourDataImages<R = unknown>(): R;
     firstThreeDataTextItems<R = unknown>(): R;
     centeredThumbFromImage<R = unknown, P0 = unknown>(_centeredThumbFromImage: P0): R;
-    generatePluginTextDataPreview<R = unknown>(): R;
     generateLocalTextDataPreview<R = unknown>(): R;
-    generateTextDataPreview<R = unknown>(): R;
-    generatePluginImageDataPreview<R = unknown>(): R;
+    generatePluginDataPreview<R = unknown>(): R;
     generateLocalImageDataPreview<R = unknown>(): R;
-    generateImageDataPreview<R = unknown>(): R;
+    generateLocalDataPreview<R = unknown>(): R;
+    generateBuiltinDataPreview<R = unknown>(): R;
     generatePreview<R = void>(): R;
     placeHolderImage<R = unknown>(): R;
     preview<R = NSImage>(): R;

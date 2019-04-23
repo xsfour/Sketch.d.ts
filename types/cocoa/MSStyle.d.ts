@@ -43,12 +43,21 @@ declare namespace cocoa {
     description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
+    // + MSStyle(MSPreviewGeneration): 
+    debugQuickLookObject<R = unknown>(): R;
+    generatePreviewWithImageSize_previewSize_colorSpace_backingScale_completionBlock<R = void, P0 = CGSize, P1 = CGSize, P2 = unknown, P3 = number, P4 = CDUnknownBlockType>(_generatePreviewWithImageSize: P0, _previewSize: P1, _colorSpace: P2, _backingScale: P3, _completionBlock: P4): R;
+    prepareForPreviewingWithImageSize_previewSize<R = void, P0 = CGSize, P1 = CGSize>(_prepareForPreviewingWithImageSize: P0, _previewSize: P1): R;
+    shapeForPreviewWithSize<R = unknown, P0 = CGSize>(_shapeForPreviewWithSize: P0): R;
+    // + MSStyle(MaskWithShape): 
+    determineMaskingMode<R = number>(): R;
+    prepareAsMask<R = void>(): R;
   }
   namespace MSStyle {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSStyle, MSSharedObjectInstanceProtocol, NSCopyingProtocol {
       alloc<R = MSStyle>(): R;
       new: <R = MSStyle>() => R;
-    }
+  
+  }
   }
 }
 

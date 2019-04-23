@@ -2,16 +2,18 @@
 
 declare namespace cocoa {
   export interface MSCloudPreferencePane<T0 = void, T1 = void, T2 = void> extends MSPreferencePane {
-    cloudURLDidOpenNotification<R = void, P0 = unknown>(_cloudURLDidOpenNotification: P0): R;
-    applicationDidOpenURL<R = void, P0 = unknown>(_applicationDidOpenURL: P0): R;
     platformDidChangeNotification<R = void, P0 = unknown>(_platformDidChangeNotification: P0): R;
     userDidChangeNotification<R = void, P0 = unknown>(_userDidChangeNotification: P0): R;
+    userDidSignIn<R = void>(): R;
+    signIn<R = void>(): R;
     fixFirstResponder<R = void>(): R;
     updateWindowFrame<R = void>(): R;
     showRootViewController<R = void>(): R;
     showAccountViewController<R = void>(): R;
     showIntroViewController<R = void>(): R;
     showCloudViewControllerOfClass<R = void, P0 = unknown>(_showCloudViewControllerOfClass: P0): R;
+    signinSheet<R = MSCloudSigninWindowController>(): R;
+    setSigninSheet<R = void, P0 = MSCloudSigninWindowController>(_v: P0): R;
     currentViewController<R = MSCloudPreferencesViewController>(): R;
     setCurrentViewController<R = void, P0 = MSCloudPreferencesViewController>(_v: P0): R;
     cloudStoryboard<R = NSStoryboard>(): R;
@@ -21,9 +23,7 @@ declare namespace cocoa {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSPreferencePane {
       alloc<R = MSCloudPreferencePane>(): R;
       new: <R = MSCloudPreferencePane>() => R;
-      cloudLoginOverrideBehavior<R = number>(): R;
-      cloudLoginSwitchPlatformBehavior<R = number>(): R;
-      loginWithURLParameters<R = void, P0 = unknown>(_loginWithURLParameters: P0): R;
+      showAndSignIn<R = void>(): R;
     }
   }
 }

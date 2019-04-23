@@ -3,12 +3,12 @@
 declare namespace cocoa {
   export interface MSShareButtonHandler<T0 = void, T1 = void, T2 = void> extends NSObject, NSSharingServiceDelegateProtocol, NSSharingServicePickerDelegateProtocol {
     cxx_destruct<R = void>(): R;
-    itemsFromSlice<R = unknown, P0 = unknown>(_itemsFromSlice: P0): R;
-    showShareMenuForLayer_sender_canvas<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(_showShareMenuForLayer: P0, _sender: P1, _canvas: P2): R;
+    itemsFromSlices<R = unknown, P0 = unknown>(_itemsFromSlices: P0): R;
+    showShareMenuForLayers_sender_canvas<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(_showShareMenuForLayers: P0, _sender: P1, _canvas: P2): R;
     canvas<R = MSContentDrawView>(): R;
     setCanvas<R = void, P0 = MSContentDrawView>(_v: P0): R;
-    sliceLayer<R = MSLayer>(): R;
-    setSliceLayer<R = void, P0 = MSLayer>(_v: P0): R;
+    sliceLayers<R = NSArray>(): R;
+    setSliceLayers<R = void, P0 = NSArray>(_v: P0): R;
     window<R = NSWindow>(): R;
     setWindow<R = void, P0 = NSWindow>(_v: P0): R;
     debugDescription<R = NSString>(): R;

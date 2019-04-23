@@ -37,6 +37,7 @@ declare namespace cocoa {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = BCSparkleLicensedUpdateChecker>(): R;
       new: <R = BCSparkleLicensedUpdateChecker>() => R;
+      systemVersionString<R = unknown>(): R;
       sparkleCheckerWithLicenseExpirationDate_buildNumber_appcastResults<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_sparkleCheckerWithLicenseExpirationDate: P0, _buildNumber: P1, _appcastResults: P2): R;
     }
   }

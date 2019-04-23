@@ -48,12 +48,47 @@ declare namespace cocoa {
     rect<R = CGRect>(): R;
     rotation<R = number>(): R;
     superclass<R = unknown>(): R;
+    // + MSShapeGroup(Editing): 
+    handlerClass<R = unknown>(): R;
+    handleDoubleClick<R = boolean>(): R;
+    // + MSShapeGroup(Flattening): 
+    canFlatten<R = boolean>(): R;
+    canProbablyFlatten<R = boolean>(): R;
+    hasFlattenablePath<R = boolean>(): R;
+    hasBooleanOperations<R = boolean>(): R;
+    // + MSShapeGroup(Hover): 
+    pathForHoverInBounds<R = unknown>(): R;
+    // + MSShapeGroup(InspectorSections): 
+    inspectorSections<R = unknown>(): R;
+    // + MSShapeGroup(InterfaceImageOwner): 
+    interfaceImageIdentifier<R = unknown>(): R;
+    cacheOwner<R = unknown>(): R;
+    // + MSShapeGroup(Preview): 
+    unselectedPreviewTemplateImage<R = unknown>(): R;
+    selectedPreviewTemplateImage<R = unknown>(): R;
+    // + MSShapeGroup(ShouldDrawSelection): 
+    shouldDrawSelectionStroke<R = boolean>(): R;
+    // + MSShapeGroup(ShouldFlattenAfterRotate): 
+    isStraightTriangle<R = boolean>(): R;
+    shouldFlattenAfterRotate<R = boolean>(): R;
+    // + MSShapeGroup(SmartRotate): 
+    canSmartRotate<R = boolean>(): R;
+    // + MSShapeGroup(StyleForBoolean): 
+    styleForBooleanOperation<R = unknown>(): R;
+    // + MSShapeGroup(UISupport): 
+    supportsInnerOuterBorders<R = boolean>(): R;
+    changeInnerOuterBordersIfHasOpenPaths<R = void>(): R;
+    // + MSShapeGroup(Preview):
+    badgeType<R = number>(): R;
   }
   namespace MSShapeGroup {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSShapeGroup, MSLayerPreviewabilityProtocol, MSShapeGroupProtocol, MSPathLayerProtocol {
       alloc<R = MSShapeGroup>(): R;
       new: <R = MSShapeGroup>() => R;
       shapeWithRect<R = unknown, P0 = CGRect>(_shapeWithRect: P0): R;
+      applyStyleForBooleanOperationFrom_toShapeGroup<R = void, P0 = unknown, P1 = unknown>(_applyStyleForBooleanOperationFrom: P0, _toShapeGroup: P1): R;
+      shapeWithBooleanOperation_onLayers<R = unknown, P0 = number, P1 = unknown>(_shapeWithBooleanOperation: P0, _onLayers: P1): R;
+      // + MSShapeGroup(ShapeWithBoolean): 
       applyStyleForBooleanOperationFrom_toShapeGroup<R = void, P0 = unknown, P1 = unknown>(_applyStyleForBooleanOperationFrom: P0, _toShapeGroup: P1): R;
       shapeWithBooleanOperation_onLayers<R = unknown, P0 = number, P1 = unknown>(_shapeWithBooleanOperation: P0, _onLayers: P1): R;
     }

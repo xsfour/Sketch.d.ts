@@ -4,7 +4,7 @@ declare namespace cocoa {
   export interface MSColorInspectorModePickerAction<T0 = void, T1 = void, T2 = void> extends MSDocumentAction {
     label<R = unknown>(): R;
     colorInspectorMode<R = number>(): R;
-    colorInspector<R = unknown>(): R;
+    colorModePickerController<R = unknown>(): R;
     switchToColorTabAtIndex<R = void, P0 = number>(_switchToColorTabAtIndex: P0): R;
   }
   namespace MSColorInspectorModePickerAction {

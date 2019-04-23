@@ -15,6 +15,8 @@ declare namespace cocoa {
     endDecorationAction<R = void, P0 = unknown>(_endDecorationAction: P0): R;
     startDecorationAction<R = void, P0 = unknown>(_startDecorationAction: P0): R;
     reloadData<R = void>(): R;
+    bordersController<R = MSAutoSelectingArrayController>(): R;
+    setBordersController<R = void, P0 = MSAutoSelectingArrayController>(_v: P0): R;
     endMarkerTypes<R = NSSet>(): R;
     setEndMarkerTypes<R = void, P0 = NSSet>(_v: P0): R;
     startMarkerTypes<R = NSSet>(): R;

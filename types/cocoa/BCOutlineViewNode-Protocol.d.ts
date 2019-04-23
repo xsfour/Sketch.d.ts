@@ -14,6 +14,7 @@ declare namespace cocoa {
     setNodeName<R = void, P0 = NSString>(_v: P0): R;
     filterTypeMask<R = number>(): R;
     displayType<R = number>(): R;
+    outlineViewNodeIdentifier<R = NSString>(): R;
   }
   namespace BCOutlineViewNodeProtocol {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {}

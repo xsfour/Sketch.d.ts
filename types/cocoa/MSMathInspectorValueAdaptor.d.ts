@@ -12,6 +12,10 @@ declare namespace cocoa {
     value<R = unknown>(): R;
     initWithModelsController_floatValueGetter_floatValueSetter_modelKeyPathsToWatch<R = unknown, P0 = unknown, P1 = CDUnknownBlockType, P2 = CDUnknownBlockType, P3 = unknown>(_initWithModelsController: P0, _floatValueGetter: P1, _floatValueSetter: P2, _modelKeyPathsToWatch: P3): R;
     initWithModelsController_modelKeyPath_valueTransformer<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_initWithModelsController: P0, _modelKeyPath: P1, _valueTransformer: P2): R;
+    cachedIntegerNumberFormatter<R = NSNumberFormatter>(): R;
+    setCachedIntegerNumberFormatter<R = void, P0 = NSNumberFormatter>(_v: P0): R;
+    cachedFloatNumberFormatter<R = NSNumberFormatter>(): R;
+    setCachedFloatNumberFormatter<R = void, P0 = NSNumberFormatter>(_v: P0): R;
     forcePrefixMath<R = boolean>(): R;
     setForcePrefixMath<R = void, P0 = boolean>(_v: P0): R;
     operation<R = number>(): R;

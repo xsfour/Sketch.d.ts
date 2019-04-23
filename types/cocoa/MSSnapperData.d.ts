@@ -8,6 +8,7 @@ declare namespace cocoa {
     drawSpacingSnap_zoomScale_coordinateSpace<R = void, P0 = unknown, P1 = number, P2 = unknown>(_drawSpacingSnap: P0, _zoomScale: P1, _coordinateSpace: P2): R;
     drawDimensionSnap_zoomScale<R = void, P0 = unknown, P1 = number>(_drawDimensionSnap: P0, _zoomScale: P1): R;
     drawSnappedDimension_zoomScale<R = void, P0 = unknown, P1 = number>(_drawSnappedDimension: P0, _zoomScale: P1): R;
+    drawEdgeSnap_inCoordinateSpace_zoomScale<R = void, P0 = unknown, P1 = unknown, P2 = number>(_drawEdgeSnap: P0, _inCoordinateSpace: P1, _zoomScale: P2): R;
     drawAccumulator_inLayer_zoomScale<R = void, P0 = unknown, P1 = unknown, P2 = number>(_drawAccumulator: P0, _inLayer: P1, _zoomScale: P2): R;
     drawForGroup_zoomScale<R = void, P0 = unknown, P1 = number>(_drawForGroup: P0, _zoomScale: P1): R;
     addSpacingMeasurementsForEdgeSnaps<R = void>(): R;

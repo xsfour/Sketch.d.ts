@@ -3,7 +3,8 @@
 declare namespace cocoa {
   export interface MSAboutWindowController<T0 = void, T1 = void, T2 = void> extends NSWindowController {
     cxx_destruct<R = void>(): R;
-    fetchRemoteUpdateExpiratonDate<R = void>(): R;
+    unregisterWithPrompt<R = boolean>(): R;
+    fetchRemoteUpdateExpirationDate<R = void>(): R;
     unlinkDevice<R = void, P0 = unknown>(_unlinkDevice: P0): R;
     registerLicense<R = void, P0 = unknown>(_registerLicense: P0): R;
     showRenewLicensePage<R = void, P0 = unknown>(_showRenewLicensePage: P0): R;

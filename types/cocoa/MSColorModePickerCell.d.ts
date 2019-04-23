@@ -6,6 +6,7 @@ declare namespace cocoa {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSButtonCell {
       alloc<R = MSColorModePickerCell>(): R;
       new: <R = MSColorModePickerCell>() => R;
+      inspectorAccentIconColorForCellHighlighted<R = unknown, P0 = boolean>(_inspectorAccentIconColorForCellHighlighted: P0): R;
     }
   }
 }

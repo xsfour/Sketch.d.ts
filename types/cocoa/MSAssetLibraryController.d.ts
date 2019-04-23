@@ -23,11 +23,10 @@ declare namespace cocoa {
     syncNestedSymbolsOf_withMaster_fromLibrary<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(_syncNestedSymbolsOf: P0, _withMaster: P1, _fromLibrary: P2): R;
     symbolIDsMappingFrom_toLibrary<R = unknown, P0 = unknown, P1 = unknown>(_symbolIDsMappingFrom: P0, _toLibrary: P1): R;
     shouldLoadPreviouslySavedLibraries<R = boolean>(): R;
-    loadInternalLibraryRepresentationWithCompletionHandler<R = void, P0 = CDUnknownBlockType>(_loadInternalLibraryRepresentationWithCompletionHandler: P0): R;
+    loadRemoteLibraryRepresentationWithCompletionHandler<R = void, P0 = CDUnknownBlockType>(_loadRemoteLibraryRepresentationWithCompletionHandler: P0): R;
     loadLibrariesWithDispatchGroup<R = void, P0 = unknown>(_loadLibrariesWithDispatchGroup: P0): R;
     setupInitialRemoteLibrariesWithDispatchGroup<R = void, P0 = unknown>(_setupInitialRemoteLibrariesWithDispatchGroup: P0): R;
-    setupInternalLibrariesWithDispatchGroup<R = void, P0 = unknown>(_setupInternalLibrariesWithDispatchGroup: P0): R;
-    initialInternalLibraries<R = unknown>(): R;
+    copyInternalLibraryToApplicationSupport<R = void>(): R;
     initialRemoteLibraryDefinitions<R = unknown>(): R;
     loadLibrariesForKey_dispatchGroup<R = unknown, P0 = unknown, P1 = unknown>(_loadLibrariesForKey: P0, _dispatchGroup: P1): R;
     reloadLibrary<R = void, P0 = unknown>(_reloadLibrary: P0): R;
@@ -45,8 +44,6 @@ declare namespace cocoa {
     remoteLibraries<R = NSArray>(): R;
     setRemoteLibraries<R = void, P0 = NSArray>(_v: P0): R;
     userLibraries<R = NSMutableArray>(): R;
-    internalLibraries<R = NSArray>(): R;
-    setInternalLibraries<R = void, P0 = NSArray>(_v: P0): R;
     libraries<R = NSArray>(): R;
     availableLibraries<R = NSArray>(): R;
     debugDescription<R = NSString>(): R;

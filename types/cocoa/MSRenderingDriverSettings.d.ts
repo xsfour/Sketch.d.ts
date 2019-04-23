@@ -3,6 +3,8 @@
 declare namespace cocoa {
   export interface MSRenderingDriverSettings<T0 = void, T1 = void, T2 = void> extends NSObject {
     dealloc<R = void>(): R;
+    createFlowHotspotImage<R = CGImage, P0 = number>(_createFlowHotspotImage: P0): R;
+    createFlowDotImage<R = CGImage, P0 = number>(_createFlowDotImage: P0): R;
     flowColor<R = CGColor>(): R;
     flowOtherPageImage<R = CGImage>(): R;
     flowBackImage<R = CGImage>(): R;

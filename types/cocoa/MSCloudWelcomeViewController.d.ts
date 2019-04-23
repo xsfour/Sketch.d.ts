@@ -4,14 +4,9 @@ declare namespace cocoa {
   export interface MSCloudWelcomeViewController<T0 = void, T1 = void, T2 = void> extends MSCloudBaseViewController {
     learnMore<R = void, P0 = unknown>(_learnMore: P0): R;
     signIn<R = void, P0 = unknown>(_signIn: P0): R;
-    signUp<R = void, P0 = unknown>(_signUp: P0): R;
     actionView<R = unknown>(): R;
     edgeInsets<R = NSEdgeInsets>(): R;
-    buttonStackView<R = NSStackView>(): R;
-    setButtonStackView<R = void, P0 = NSStackView>(_v: P0): R;
     infoButton<R = MSCursorButton>(): R;
-    signupButton<R = NSButton>(): R;
-    signinButton<R = NSButton>(): R;
   }
   namespace MSCloudWelcomeViewController {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSCloudBaseViewController {

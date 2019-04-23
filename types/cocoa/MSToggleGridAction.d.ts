@@ -4,6 +4,7 @@ declare namespace cocoa {
   export interface MSToggleGridAction<T0 = void, T1 = void, T2 = void> extends MSToggleBaseAction {
     validate<R = boolean>(): R;
     tooltip<R = unknown>(): R;
+    labelForToolbar<R = unknown>(): R;
     label<R = unknown>(): R;
     toggleGrid<R = void, P0 = unknown>(_toggleGrid: P0): R;
   }

@@ -44,6 +44,24 @@ declare namespace cocoa {
     setPreCalculatedHasSelectedLayer<R = void, P0 = number>(_v: P0): R;
     isAutomaticScalingEnabled<R = boolean>(): R;
     layers<R = NSArray>(): R;
+    // + MSLayerGroup(Editing): 
+    handleDoubleClick<R = boolean>(): R;
+    // + MSLayerGroup(Flow): 
+    shouldRefreshOverlayForFlows<R = boolean>(): R;
+    // + MSLayerGroup(Hover): 
+    pathForHoverInBounds<R = unknown>(): R;
+    // + MSLayerGroup(InspectorSections): 
+    inspectorSections<R = unknown>(): R;
+    // + MSLayerGroup(InterfaceImageOwner): 
+    interfaceImageIdentifier<R = unknown>(): R;
+    // + MSLayerGroup(LayerList): 
+    selectedPreviewTemplateImage<R = unknown>(): R;
+    unselectedPreviewTemplateImage<R = unknown>(): R;
+    expandableInLayerList<R = boolean>(): R;
+    // + MSLayerGroup(MaskWithShape): 
+    prepareAsMaskContainer<R = void>(): R;
+    // + MSLayerGroup(StyleForBoolean): 
+    styleForBooleanOperation<R = unknown>(): R;
   }
   namespace MSLayerGroup {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSLayerGroup, MSLayerGroupProtocol {
@@ -53,7 +71,8 @@ declare namespace cocoa {
       groupBoundsForContainer<R = CGRect, P0 = unknown>(_groupBoundsForContainer: P0): R;
       groupWithLayers<R = unknown, P0 = unknown>(_groupWithLayers: P0): R;
       groupWithLayer<R = unknown, P0 = unknown>(_groupWithLayer: P0): R;
-    }
+  
+  }
   }
 }
 

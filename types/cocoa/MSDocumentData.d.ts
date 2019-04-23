@@ -74,13 +74,21 @@ declare namespace cocoa {
     currentPage<R = MSPage>(): R;
     setCurrentPage<R = void, P0 = MSPage>(_v: P0): R;
     pages<R = NSArray>(): R;
+    // + MSDocumentData(ColorConvertibleEnumeration): 
+    enumerateColorConvertiblesIgnoringForeignSymbols<R = void, P0 = CDUnknownBlockType>(_enumerateColorConvertiblesIgnoringForeignSymbols: P0): R;
+    // + MSDocumentData(ColorReplacement): 
+    replaceInstancesOfColor_withColor_ignoreAlphaWhenMatching_replaceAlphaOfOriginalColor<R = void, P0 = unknown, P1 = unknown, P2 = boolean, P3 = boolean>(_replaceInstancesOfColor: P0, _withColor: P1, _ignoreAlphaWhenMatching: P2, _replaceAlphaOfOriginalColor: P3): R;
+    // + MSDocumentData(ColorSpaceChanges): 
+    convertToColorSpace<R = void, P0 = number>(_convertToColorSpace: P0): R;
+    assignColorSpace<R = void, P0 = number>(_assignColorSpace: P0): R;
   }
   namespace MSDocumentData {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSDocumentData, MSLayerContainmentProtocol, MSDocumentDataProtocol {
       alloc<R = MSDocumentData>(): R;
       new: <R = MSDocumentData>() => R;
       initialize<R = void>(): R;
-    }
+  
+  }
   }
 }
 

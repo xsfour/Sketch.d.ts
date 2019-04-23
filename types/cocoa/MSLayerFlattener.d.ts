@@ -10,6 +10,7 @@ declare namespace cocoa {
     trimmedRectFromLayers_immutablePage_immutableDoc<R = CGRect, P0 = unknown, P1 = unknown, P2 = unknown>(_trimmedRectFromLayers: P0, _immutablePage: P1, _immutableDoc: P2): R;
     imageFromLayers_immutablePage_immutableDoc_includeArtboardBackground<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = boolean>(_imageFromLayers: P0, _immutablePage: P1, _immutableDoc: P2, _includeArtboardBackground: P3): R;
     imageFromLayers_immutablePage_immutableDoc<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_imageFromLayers: P0, _immutablePage: P1, _immutableDoc: P2): R;
+    flattenLayer_options<R = void, P0 = unknown, P1 = number>(_flattenLayer: P0, _options: P1): R;
     flattenLayers<R = void, P0 = unknown>(_flattenLayers: P0): R;
   }
   namespace MSLayerFlattener {

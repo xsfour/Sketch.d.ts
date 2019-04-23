@@ -2,6 +2,7 @@
 
 declare namespace cocoa {
   export interface MSTextStoragePool<T0 = void, T1 = void, T2 = void> extends BCObjectPool, MSFirstLineTypesetterDelegateProtocol {
+    removeAllObjects<R = unknown>(): R;
     recycleTextStorage<R = void, P0 = unknown>(_recycleTextStorage: P0): R;
     vendTextStorage<R = unknown>(): R;
     initWithTextLayer<R = unknown, P0 = unknown>(_initWithTextLayer: P0): R;

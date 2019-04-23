@@ -8,6 +8,7 @@ declare namespace cocoa {
     addDistanceMeasurement<R = void, P0 = unknown>(_addDistanceMeasurement: P0): R;
     removeAllDimensionSnaps<R = void>(): R;
     addDimensionMeasurement<R = void, P0 = unknown>(_addDimensionMeasurement: P0): R;
+    addSpacingMeasurementsForEdgeSnapsToOppositeAxis<R = void, P0 = unknown>(_addSpacingMeasurementsForEdgeSnapsToOppositeAxis: P0): R;
     removeAllEdgeSnaps<R = void>(): R;
     addLineRelationship<R = void, P0 = unknown>(_addLineRelationship: P0): R;
     initWithAxis<R = unknown, P0 = number>(_initWithAxis: P0): R;

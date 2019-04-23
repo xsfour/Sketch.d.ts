@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSPluginManager<T0 = void, T1 = void, T2 = void> extends NSObject {
+  export interface MSPluginManager<T0 = void, T1 = void, T2 = void> extends NSObject, COFlowDelegateProtocol {
     cxx_destruct<R = void>(): R;
     removePluginVersionsNotInIdentifiers<R = void, P0 = unknown>(_removePluginVersionsNotInIdentifiers: P0): R;
     addDownloadAndDecompressPluginError<R = void, P0 = unknown>(_addDownloadAndDecompressPluginError: P0): R;
@@ -95,7 +95,7 @@ declare namespace cocoa {
     mainPluginsFolderURL<R = NSURL>(): R;
   }
   namespace MSPluginManager {
-    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, COFlowDelegateProtocol {
       alloc<R = MSPluginManager>(): R;
       new: <R = MSPluginManager>() => R;
       warehousePluginFolderForIdentifier_withVersion<R = unknown, P0 = unknown, P1 = unknown>(_warehousePluginFolderForIdentifier: P0, _withVersion: P1): R;

@@ -5,6 +5,8 @@ declare namespace cocoa {
     isActive<R = boolean>(): R;
     isShowingPixelatedView<R = boolean>(): R;
     tooltip<R = unknown>(): R;
+    hasDynamicTitle<R = boolean>(): R;
+    labelForToolbar<R = unknown>(): R;
     label<R = unknown>(): R;
     togglePixelGrid<R = void, P0 = unknown>(_togglePixelGrid: P0): R;
   }

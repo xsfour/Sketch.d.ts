@@ -2,6 +2,8 @@
 
 declare namespace cocoa {
   export interface MSColorInspectorSectionDelegateProtocol<T0 = void, T1 = void, T2 = void> extends NSObjectProtocol {
+    revertToDefaultFirstResponder<R = void>(): R;
+    libraryAssetsController<R = MSLibraryAssetCollectionsController>(): R;
     touchBar<R = NSTouchBar>(): R;
     didRemoveAssetOfType<R = void, P0 = number>(_didRemoveAssetOfType: P0): R;
     didAddAsset<R = void, P0 = MSAsset>(_didAddAsset: P0): R;

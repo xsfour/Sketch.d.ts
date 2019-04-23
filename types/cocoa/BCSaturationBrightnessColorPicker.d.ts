@@ -3,6 +3,7 @@
 declare namespace cocoa {
   export interface BCSaturationBrightnessColorPicker<T0 = void, T1 = void, T2 = void> extends BCColorPickerBaseView {
     pickerRect<R = CGRect>(): R;
+    activeRect<R = CGRect>(): R;
     groupingUndo<R = boolean>(): R;
     setGroupingUndo<R = void, P0 = boolean>(_v: P0): R;
     handlingHistoryCoalescing<R = boolean>(): R;

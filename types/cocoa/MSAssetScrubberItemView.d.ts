@@ -12,7 +12,7 @@ declare namespace cocoa {
     clipPath<R = unknown>(): R;
     drawingBounds<R = CGRect>(): R;
     shouldDrawBorderForColor<R = boolean, P0 = unknown>(_shouldDrawBorderForColor: P0): R;
-    initWithAssetAtIndex_amongAssets_canvasColorSpace_tailPadding<R = unknown, P0 = number, P1 = unknown, P2 = unknown, P3 = number>(_initWithAssetAtIndex: P0, _amongAssets: P1, _canvasColorSpace: P2, _tailPadding: P3): R;
+    initWithAsset_canvasColorSpace_isFirst_isLast_tailPadding<R = unknown, P0 = unknown, P1 = unknown, P2 = boolean, P3 = boolean, P4 = number>(_initWithAsset: P0, _canvasColorSpace: P1, _isFirst: P2, _isLast: P3, _tailPadding: P4): R;
     cachedPreviewImage<R = NSImage>(): R;
     setCachedPreviewImage<R = void, P0 = NSImage>(_v: P0): R;
     tailPadding<R = number>(): R;

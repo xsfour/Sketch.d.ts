@@ -27,6 +27,7 @@ declare namespace cocoa {
     _renderTilesWithTotalZoom_displayPixels_visibleRect_pixelViewSize_tiles<R = void, P0 = number, P1 = boolean, P2 = CGRect, P3 = CGSize, P4 = unknown>(__renderTilesWithTotalZoom: P0, _displayPixels: P1, _visibleRect: P2, _pixelViewSize: P3, _tiles: P4): R;
     _renderTileLevelWithTotalZoom_displayPixels_visibleRect_tiles_inRegion<R = unknown, P0 = number, P1 = boolean, P2 = CGRect, P3 = unknown, P4 = unknown>(__renderTileLevelWithTotalZoom: P0, _displayPixels: P1, _visibleRect: P2, _tiles: P3, _inRegion: P4): R;
     initWithCompletionHandler<R = unknown, P0 = CDUnknownBlockType>(_initWithCompletionHandler: P0): R;
+    artboardTitleRenderer<R = MSArtboardTitleRenderer>(): R;
     artboardShadow<R = MSGPUArtboardShadow>(): R;
     layerCount<R = number>(): R;
     setLayerCount<R = void, P0 = number>(_v: P0): R;
@@ -38,6 +39,8 @@ declare namespace cocoa {
     setClearOtherLevels<R = void, P0 = boolean>(_v: P0): R;
     rasterisationInProgress<R = boolean>(): R;
     setRasterisationInProgress<R = void, P0 = boolean>(_v: P0): R;
+    flowRenderer<R = MSFlowRenderer>(): R;
+    setFlowRenderer<R = void, P0 = MSFlowRenderer>(_v: P0): R;
     overlayTexture<R = MSGPUTexture>(): R;
     overlayMemory<R = MSMemoryBuffer>(): R;
     setOverlayMemory<R = void, P0 = MSMemoryBuffer>(_v: P0): R;
@@ -64,6 +67,7 @@ declare namespace cocoa {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSTiledRenderer>(): R;
       new: <R = MSTiledRenderer>() => R;
+      preferredAcceleratorClassName<R = unknown>(): R;
     }
   }
 }

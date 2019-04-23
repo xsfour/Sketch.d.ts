@@ -3,17 +3,17 @@
 declare namespace cocoa {
   export interface _TtC17SketchControllers22MSAlignmentEngineCycle<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = CDUnknownBlockType>(): R;
-    addOrthogonalTargetsFor<R = void, P0 = CGPoint>(_addOrthogonalTargetsFor: P0): R;
-    addTargetWithLine<R = unknown, P0 = MSLine>(_addTargetWithLine: P0): R;
-    delegate<R = _TtP17SketchControllers30MSAlignmentEngineCycleDelegate_>(): R;
-    setDelegate<R = void, P0 = _TtP17SketchControllers30MSAlignmentEngineCycleDelegate_>(_v: P0): R;
-    alignmentResult<R = _TtC17SketchControllers17MSAlignmentResult>(): R;
+    finishCycle<R = unknown>(): R;
+    addTargetAtPoint_guideInfo<R = void, P0 = CGPoint, P1 = unknown>(_addTargetAtPoint: P0, _guideInfo: P1): R;
+    addAxisAlignedTargetsWithThrough<R = void, P0 = CGPoint>(_addAxisAlignedTargetsWithThrough: P0): R;
+    addTargetWithLine_guideInfo<R = void, P0 = BCLine, P1 = unknown>(_addTargetWithLine: P0, _guideInfo: P1): R;
+    addTargetWithLine_infoProvider<R = void, P0 = BCLine, P1 = CDUnknownBlockType>(_addTargetWithLine: P0, _infoProvider: P1): R;
+    initWithPoint_snapDistance_constraint<R = unknown, P0 = CGPoint, P1 = number, P2 = BCLine>(_initWithPoint: P0, _snapDistance: P1, _constraint: P2): R;
+    initWithPoint_snapDistance<R = unknown, P0 = CGPoint, P1 = number>(_initWithPoint: P0, _snapDistance: P1): R;
+    snapDistance<R = number>(): R;
     defaultPoint<R = CGPoint>(): R;
     // + _TtC17SketchControllers22MSAlignmentEngineCycle(SketchControllers): 
-    initWithPoint_snapDistance<R = unknown, P0 = CGPoint, P1 = number>(_initWithPoint: P0, _snapDistance: P1): R;
-    initWithPoint_snapDistance_constraint<R = unknown, P0 = CGPoint, P1 = number, P2 = MSLine>(_initWithPoint: P0, _snapDistance: P1, _constraint: P2): R;
-    // + _TtC17SketchControllers22MSAlignmentEngineCycle(SketchControllers):
-    snapDistance<R = number>(): R;
+    debugQuickLookObject<R = unknown>(): R;
   }
   namespace _TtC17SketchControllers22MSAlignmentEngineCycle {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {

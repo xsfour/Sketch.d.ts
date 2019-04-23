@@ -2,6 +2,7 @@
 
 declare namespace cocoa {
   export interface MSFillInspectorViewController<T0 = void, T1 = void, T2 = void> extends MSColorStylePartInspectorViewController, MSColorHexStringTransformerDelegateProtocol {
+    fillPropertiesAction<R = void, P0 = unknown>(_fillPropertiesAction: P0): R;
     hexFieldAction<R = void, P0 = unknown>(_hexFieldAction: P0): R;
     updateFillPropertyPopUp<R = void>(): R;
     hexTransformer<R = MSColorHexStringTransformer>(): R;
@@ -18,8 +19,8 @@ declare namespace cocoa {
     setFills<R = void, P0 = NSArrayController>(_v: P0): R;
     fillPropertiesPopUp<R = NSPopUpButton>(): R;
     setFillPropertiesPopUp<R = void, P0 = NSPopUpButton>(_v: P0): R;
-    opacityField<R = MSUpDownTextField>(): R;
-    setOpacityField<R = void, P0 = MSUpDownTextField>(_v: P0): R;
+    opacityField<R = MSInlineUpDownNanoTextField>(): R;
+    setOpacityField<R = void, P0 = MSInlineUpDownNanoTextField>(_v: P0): R;
     debugDescription<R = NSString>(): R;
     description<R = NSString>(): R;
     hash<R = number>(): R;

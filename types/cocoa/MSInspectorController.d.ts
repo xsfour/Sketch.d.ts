@@ -43,8 +43,6 @@ declare namespace cocoa {
     setSelectedLayers<R = void, P0 = MSLayerArray>(_v: P0): R;
     alignmentBarHidden<R = boolean>(): R;
     setAlignmentBarHidden<R = void, P0 = boolean>(_v: P0): R;
-    globalAssets<R = MSPersistentAssetCollection>(): R;
-    setGlobalAssets<R = void, P0 = MSPersistentAssetCollection>(_v: P0): R;
     document<R = MSDocument>(): R;
     setDocument<R = void, P0 = MSDocument>(_v: P0): R;
     currentController<R = MSInspectorChildController>(): R;

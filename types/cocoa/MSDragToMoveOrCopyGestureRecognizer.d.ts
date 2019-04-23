@@ -14,7 +14,7 @@ declare namespace cocoa {
     setOriginalDraggedItems<R = void, P0 = NSArray>(_v: P0): R;
     draggedItem<R = unknown>(): R;
     setDraggedItem<R = void, P0 = unknown>(_v: P0): R;
-    alignmentAxis<R = number>(): R;
+    alignmentAxis<R = NSNumber>(): R;
     shouldInterpretAlignment<R = boolean>(): R;
     setShouldInterpretAlignment<R = void, P0 = boolean>(_v: P0): R;
     alignModifierMask<R = number>(): R;

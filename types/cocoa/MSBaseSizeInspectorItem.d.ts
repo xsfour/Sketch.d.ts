@@ -2,7 +2,6 @@
 
 declare namespace cocoa {
   export interface MSBaseSizeInspectorItem<T0 = void, T1 = void, T2 = void> extends MSInspectorItem, MSInspectorMathValueAdaptorDelegateProtocol {
-    showSizeAlertForValue<R = void, P0 = number>(_showSizeAlertForValue: P0): R;
     interTextFieldButtonAction<R = void, P0 = unknown>(_interTextFieldButtonAction: P0): R;
     setupAccessoryButton<R = void>(): R;
     updateUI<R = void>(): R;

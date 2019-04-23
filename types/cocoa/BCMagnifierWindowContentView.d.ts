@@ -8,8 +8,8 @@ declare namespace cocoa {
     drawBlackBorder<R = void, P0 = unknown>(_drawBlackBorder: P0): R;
     drawCurrentColorValues<R = void>(): R;
     drawMagnifiedImage<R = void>(): R;
-    currentColor<R = BCFlexibleColor>(): R;
-    setCurrentColor<R = void, P0 = BCFlexibleColor>(_v: P0): R;
+    currentColor<R = MSFlexibleColor>(): R;
+    setCurrentColor<R = void, P0 = MSFlexibleColor>(_v: P0): R;
     screenGrab<R = BCScreenGrab>(): R;
     setScreenGrab<R = void, P0 = BCScreenGrab>(_v: P0): R;
   }

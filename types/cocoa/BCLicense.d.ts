@@ -1,13 +1,12 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface BCLicense<T0 = void, T1 = void, T2 = void> extends NSObject {
+  export interface BCLicense<T0 = void, T1 = void, T2 = void> extends NSObject, BCLicenseProtocol {
     cxx_destruct<R = void>(): R;
     variants<R = unknown>(): R;
     updatesHaveExpired<R = boolean>(): R;
     updateExpirationDate<R = unknown>(): R;
     validateDate<R = void>(): R;
-    log<R = void>(): R;
     status<R = unknown>(): R;
     licenseID<R = unknown>(): R;
     purchaseIsExpiring<R = boolean>(): R;
@@ -23,7 +22,6 @@ declare namespace cocoa {
     isSignatureValid<R = boolean>(): R;
     validateSignature<R = void>(): R;
     payloadHash<R = unknown>(): R;
-    saveToURL_error<R = boolean, P0 = unknown, P1 = unknown>(_saveToURL: P0, _error: P1): R;
     isAboutToExpire<R = boolean>(): R;
     shouldTryToRequestNewTrialLicense<R = boolean>(): R;
     initWithURL_applicationID_publicCertificate<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_initWithURL: P0, _applicationID: P1, _publicCertificate: P2): R;
@@ -48,7 +46,7 @@ declare namespace cocoa {
     systemStartupTime<R = number>(): R;
   }
   namespace BCLicense {
-    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, BCLicenseProtocol {
       alloc<R = BCLicense>(): R;
       new: <R = BCLicense>() => R;
     }

@@ -11,6 +11,8 @@ declare namespace cocoa {
     observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
     stylePartAdaptor<R = MSInspectorValueAdaptor>(): R;
     setStylePartAdaptor<R = void, P0 = MSInspectorValueAdaptor>(_v: P0): R;
+    colorInspector<R = MSColorInspector>(): R;
+    setColorInspector<R = void, P0 = MSColorInspector>(_v: P0): R;
     popover<R = BCPopover>(): R;
     setPopover<R = void, P0 = BCPopover>(_v: P0): R;
     colorButton<R = MSStylePartPreviewButton>(): R;

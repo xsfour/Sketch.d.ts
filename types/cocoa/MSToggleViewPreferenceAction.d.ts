@@ -2,6 +2,7 @@
 
 declare namespace cocoa {
   export interface MSToggleViewPreferenceAction<T0 = void, T1 = void, T2 = void> extends MSDocumentAction {
+    hasDynamicTitle<R = boolean>(): R;
     preferenceKey<R = unknown>(): R;
     isActive<R = boolean>(): R;
     validate<R = boolean>(): R;

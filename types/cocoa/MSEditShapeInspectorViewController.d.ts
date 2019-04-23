@@ -28,10 +28,10 @@ declare namespace cocoa {
     setXAdapter<R = void, P0 = MSMathInspectorValueAdaptor>(_v: P0): R;
     cornerRadiusSlider<R = NSSlider>(): R;
     setCornerRadiusSlider<R = void, P0 = NSSlider>(_v: P0): R;
-    curvePointYField<R = MSUpDownTextField>(): R;
-    setCurvePointYField<R = void, P0 = MSUpDownTextField>(_v: P0): R;
-    curvePointXField<R = MSUpDownTextField>(): R;
-    setCurvePointXField<R = void, P0 = MSUpDownTextField>(_v: P0): R;
+    curvePointYField<R = MSInlineUpDownTextField>(): R;
+    setCurvePointYField<R = void, P0 = MSInlineUpDownTextField>(_v: P0): R;
+    curvePointXField<R = MSInlineUpDownTextField>(): R;
+    setCurvePointXField<R = void, P0 = MSInlineUpDownTextField>(_v: P0): R;
     closePathButton<R = NSButton>(): R;
     setClosePathButton<R = void, P0 = NSButton>(_v: P0): R;
     makeRectSelectionButton<R = NSButton>(): R;

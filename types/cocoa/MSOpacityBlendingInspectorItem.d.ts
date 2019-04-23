@@ -9,8 +9,8 @@ declare namespace cocoa {
     setArrayController<R = void, P0 = NSArrayController>(_v: P0): R;
     blendModePopUp<R = NSPopUpButton>(): R;
     setBlendModePopUp<R = void, P0 = NSPopUpButton>(_v: P0): R;
-    opacityField<R = MSUpDownTextField>(): R;
-    setOpacityField<R = void, P0 = MSUpDownTextField>(_v: P0): R;
+    opacityField<R = MSInlineUpDownNanoTextField>(): R;
+    setOpacityField<R = void, P0 = MSInlineUpDownNanoTextField>(_v: P0): R;
     debugDescription<R = NSString>(): R;
     description<R = NSString>(): R;
     hash<R = number>(): R;

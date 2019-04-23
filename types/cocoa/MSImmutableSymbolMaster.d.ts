@@ -12,12 +12,20 @@ declare namespace cocoa {
     canAddOverridesForMaster_toParent<R = boolean, P0 = unknown, P1 = unknown>(_canAddOverridesForMaster: P0, _toParent: P1): R;
     modifiedMasterCache<R = BCCache>(): R;
     changeIdentifier<R = number>(): R;
+    // + MSImmutableSymbolMaster(MSRenderPreparation): 
+    gatherForRenderPreparation<R = void, P0 = unknown>(_gatherForRenderPreparation: P0): R;
+    // + MSImmutableSymbolMaster(Rendering): 
+    shouldDrawBackgroundInContext<R = boolean, P0 = unknown>(_shouldDrawBackgroundInContext: P0): R;
+    // + MSImmutableSymbolMaster(SVGExport): 
+    svgStyle<R = unknown, P0 = unknown>(_svgStyle: P0): R;
+    addTransformAttributes_exporter<R = void, P0 = unknown, P1 = unknown>(_addTransformAttributes: P0, _exporter: P1): R;
   }
   namespace MSImmutableSymbolMaster {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSImmutableSymbolMaster {
       alloc<R = MSImmutableSymbolMaster>(): R;
       new: <R = MSImmutableSymbolMaster>() => R;
-    }
+  
+  }
   }
 }
 

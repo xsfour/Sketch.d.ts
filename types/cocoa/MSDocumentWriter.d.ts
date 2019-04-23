@@ -21,13 +21,25 @@ declare namespace cocoa {
     description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
+    // + MSDocumentWriter(PreviewGeneration): 
+    findLibraryPreviewArtboardForDocument_outPage<R = unknown, P0 = unknown, P1 = unknown>(_findLibraryPreviewArtboardForDocument: P0, _outPage: P1): R;
+    previewImageForDocument_page_rect<R = unknown, P0 = unknown, P1 = unknown, P2 = CGRect>(_previewImageForDocument: P0, _page: P1, _rect: P2): R;
+    generatePreviewsForDocument<R = unknown, P0 = unknown>(_generatePreviewsForDocument: P0): R;
+    // + MSDocumentWriter(TextPreviews): 
+    createPreviewPDFDataForTextLayers_document<R = unknown, P0 = unknown, P1 = unknown>(_createPreviewPDFDataForTextLayers: P0, _document: P1): R;
+    // + MSDocumentWriter(PreviewGeneration):
+    debugDescription<R = NSString>(): R;
+    description<R = NSString>(): R;
+    hash<R = number>(): R;
+    superclass<R = unknown>(): R;
   }
   namespace MSDocumentWriter {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, MSDocumentPreviewGenerationProtocol {
       alloc<R = MSDocumentWriter>(): R;
       new: <R = MSDocumentWriter>() => R;
       metadataForNewFile<R = unknown>(): R;
-    }
+  
+  }
   }
 }
 

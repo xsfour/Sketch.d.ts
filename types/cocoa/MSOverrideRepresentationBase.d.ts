@@ -17,12 +17,19 @@ declare namespace cocoa {
     setChildren<R = void, P0 = NSArray>(_v: P0): R;
     transformForConvertingToInstance<R = NSAffineTransform>(): R;
     isExpanded<R = boolean>(): R;
+    // + MSOverrideRepresentationBase(LayerList): 
+    selfOrChildrenSelected<R = boolean>(): R;
+    layerListExpandedType<R = boolean>(): R;
+    childrenForLayerList<R = unknown>(): R;
+    // + MSOverrideRepresentationBase(LayerList):
+    isExpanded<R = boolean>(): R;
   }
   namespace MSOverrideRepresentationBase {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSOverrideRepresentationBase>(): R;
       new: <R = MSOverrideRepresentationBase>() => R;
-    }
+  
+  }
   }
 }
 

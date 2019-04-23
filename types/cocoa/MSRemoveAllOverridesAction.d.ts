@@ -3,6 +3,8 @@
 declare namespace cocoa {
   export interface MSRemoveAllOverridesAction<T0 = void, T1 = void, T2 = void> extends MSDocumentAction {
     label<R = unknown>(): R;
+    validate<R = boolean>(): R;
+    affectedOverrideRepresentations<R = unknown>(): R;
     removeAllOverridesFromSelection<R = void, P0 = unknown>(_removeAllOverridesFromSelection: P0): R;
   }
   namespace MSRemoveAllOverridesAction {

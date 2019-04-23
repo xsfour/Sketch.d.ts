@@ -12,7 +12,7 @@ declare namespace cocoa {
     parentForLayer<R = unknown, P0 = unknown>(_parentForLayer: P0): R;
     ancestorsForLayer<R = unknown, P0 = unknown>(_ancestorsForLayer: P0): R;
     radialGradientAttributes_inRect<R = unknown, P0 = unknown, P1 = unknown>(_radialGradientAttributes: P0, _inRect: P1): R;
-    linearGradientAttributes<R = unknown, P0 = unknown>(_linearGradientAttributes: P0): R;
+    linearGradientAttributes_inRect<R = unknown, P0 = unknown, P1 = unknown>(_linearGradientAttributes: P0, _inRect: P1): R;
     stopsForGradient<R = unknown, P0 = unknown>(_stopsForGradient: P0): R;
     gradientElement_inRect<R = unknown, P0 = unknown, P1 = unknown>(_gradientElement: P0, _inRect: P1): R;
     addGradient_inRect<R = void, P0 = unknown, P1 = unknown>(_addGradient: P0, _inRect: P1): R;

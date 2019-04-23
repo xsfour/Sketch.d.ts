@@ -2,7 +2,7 @@
 
 declare namespace cocoa {
   export interface MSMultipleColorStylePartInspectorViewController<T0 = void, T1 = void, T2 = void> extends MSMultipleStylePartInspectorViewController {
-    closeAnyColorPopover<R = void>(): R;
+    closePopoverImmediately<R = void, P0 = boolean>(_closePopoverImmediately: P0): R;
     openPopoverAtIndex<R = void, P0 = number>(_openPopoverAtIndex: P0): R;
     currentPopoverIndex<R = NSNumber>(): R;
     setCurrentPopoverIndex<R = void, P0 = NSNumber>(_v: P0): R;

@@ -182,6 +182,10 @@ declare namespace cocoa {
       _securityScopedURLFromPasteboard<R = unknown, P0 = unknown>(__securityScopedURLFromPasteboard: P0): R;
       _convertedFileReferenceURLDataOrNil<R = unknown, P0 = __CFData>(__convertedFileReferenceURLDataOrNil: P0): R;
       _URLFromPasteboardNSData<R = unknown, P0 = __CFData>(__URLFromPasteboardNSData: P0): R;
+      // + NSURL(Licensing): 
+      websiteAvailableVersionsURLForLicense<R = unknown, P0 = unknown>(_websiteAvailableVersionsURLForLicense: P0): R;
+      websiteRenewalURLForLicenseKey<R = unknown, P0 = unknown>(_websiteRenewalURLForLicenseKey: P0): R;
+      websiteRenewalURLForLicense<R = unknown, P0 = unknown>(_websiteRenewalURLForLicense: P0): R;
     }
   }
 }

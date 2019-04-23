@@ -34,7 +34,7 @@ declare namespace cocoa {
     indexPathOfHandleAtPoint<R = unknown, P0 = CGPoint>(_indexPathOfHandleAtPoint: P0): R;
     overlayDrawingRectForLayer<R = CGRect, P0 = unknown>(_overlayDrawingRectForLayer: P0): R;
     setOverlayNeedsDisplay<R = void>(): R;
-    convertPointToView_fromPathCoordinatesOfShape<R = CGPoint, P0 = CGPoint, P1 = unknown>(_convertPointToView: P0, _fromPathCoordinatesOfShape: P1): R;
+    convertPointToView_fromCoordinateSpace<R = CGPoint, P0 = CGPoint, P1 = unknown>(_convertPointToView: P0, _fromCoordinateSpace: P1): R;
     drawHandles<R = void>(): R;
     drawingRectForInsertionAtPoint<R = CGRect, P0 = CGPoint>(_drawingRectForInsertionAtPoint: P0): R;
     drawInsertionPoint<R = void>(): R;
@@ -44,6 +44,7 @@ declare namespace cocoa {
     drawHairline<R = void>(): R;
     makeWireBezierPathForClosingPath_indexPathForSelectedHandle<R = unknown, P0 = boolean, P1 = unknown>(_makeWireBezierPathForClosingPath: P0, _indexPathForSelectedHandle: P1): R;
     updateWire<R = void>(): R;
+    addGuidesToSnapper<R = void, P0 = unknown>(_addGuidesToSnapper: P0): R;
     addOtherLayersToSnapper<R = void, P0 = unknown>(_addOtherLayersToSnapper: P0): R;
     includePointForSnapping_inPathLayer<R = void, P0 = CGPoint, P1 = unknown>(_includePointForSnapping: P0, _inPathLayer: P1): R;
     addHandlesToSnapperForDragging<R = void, P0 = boolean>(_addHandlesToSnapperForDragging: P0): R;

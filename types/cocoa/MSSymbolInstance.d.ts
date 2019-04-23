@@ -43,12 +43,31 @@ declare namespace cocoa {
     setOverrides<R = void, P0 = NSDictionary>(_v: P0): R;
     availableOverrides<R = NSArray>(): R;
     overridePoints<R = NSArray>(): R;
+    // + MSSymbolInstance(Flow): 
+    shouldRefreshOverlayForFlows<R = boolean>(): R;
+    // + MSSymbolInstance(Hover): 
+    pathForHoverInBounds<R = unknown>(): R;
+    // + MSSymbolInstance(InspectorSections): 
+    inspectorSections<R = unknown>(): R;
+    // + MSSymbolInstance(LayerList): 
+    previewShouldIndicateSharedStyle<R = boolean>(): R;
+    canMoveToLayer_beforeLayer<R = boolean, P0 = unknown, P1 = unknown>(_canMoveToLayer: P0, _beforeLayer: P1): R;
+    // + MSSymbolInstance(LayerSelectionDrawing): 
+    drawOverrideSelectionAt_requiresTransform<R = void, P0 = number, P1 = boolean>(_drawOverrideSelectionAt: P0, _requiresTransform: P1): R;
+    // + MSSymbolInstance(ReplaceWithSymbol): 
+    replaceWithInstanceOfSymbol<R = unknown, P0 = unknown>(_replaceWithInstanceOfSymbol: P0): R;
+    // + MSSymbolInstance(ShareableObject): 
+    sharedMaster<R = MSModelObject>(): R;
+    shareableObjectType<R = number>(): R;
+    // + MSSymbolInstance(StyleForBoolean): 
+    styleForBooleanOperation<R = unknown>(): R;
   }
   namespace MSSymbolInstance {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSSymbolInstance {
       alloc<R = MSSymbolInstance>(): R;
       new: <R = MSSymbolInstance>() => R;
-    }
+  
+  }
   }
 }
 

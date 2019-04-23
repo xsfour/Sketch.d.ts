@@ -84,6 +84,21 @@ declare namespace cocoa {
     superclass<R = unknown>(): R;
     verticalRulerData<R = MSRulerData>(): R;
     setVerticalRulerData<R = void, P0 = MSRulerData>(_v: P0): R;
+    // + MSPage(Hover): 
+    canBeHoveredOnPage<R = boolean, P0 = unknown>(_canBeHoveredOnPage: P0): R;
+    // + MSPage(LayerList): 
+    isExportableViaDragAndDrop<R = boolean>(): R;
+    canCopyToLayer_beforeLayer<R = boolean, P0 = unknown, P1 = unknown>(_canCopyToLayer: P0, _beforeLayer: P1): R;
+    previewImages<R = unknown>(): R;
+    badgeImages<R = unknown>(): R;
+    displayType<R = number>(): R;
+    // + MSPage(Scrolling): 
+    scrollOriginToCenterContentInViewBounds<R = CGPoint, P0 = CGRect>(_scrollOriginToCenterContentInViewBounds: P0): R;
+    adjustRulerDataToTopLeftInViewBounds<R = void>(): R;
+    // + MSPage(ShouldDrawSelection): 
+    shouldDrawSelection<R = boolean>(): R;
+    // + MSPage(UISupport): 
+    displayName<R = unknown>(): R;
   }
   namespace MSPage {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSPage, MSRootLayerProtocol {
@@ -91,7 +106,8 @@ declare namespace cocoa {
       new: <R = MSPage>() => R;
       defaultSymbolsPageName<R = unknown>(): R;
       page<R = unknown>(): R;
-    }
+  
+  }
   }
 }
 

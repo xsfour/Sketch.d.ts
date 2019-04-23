@@ -30,12 +30,25 @@ declare namespace cocoa {
     setCachedModifiedSymbolMaster<R = void, P0 = MSImmutableSymbolMaster>(_v: P0): R;
     masterRefreshCounter<R = number>(): R;
     overrides<R = NSDictionary>(): R;
+    // + MSImmutableSymbolInstance(MSOverrideManagementItem): 
+    previewImageForOverrideManagement<R = unknown>(): R;
+    // + MSImmutableSymbolInstance(MSOverrideRepresentationPreview): 
+    overridePreviewImageInDocument<R = unknown, P0 = unknown>(_overridePreviewImageInDocument: P0): R;
+    // + MSImmutableSymbolInstance(MSRenderPreparation): 
+    prepareForRender<R = void, P0 = unknown>(_prepareForRender: P0): R;
+    // + MSImmutableSymbolInstance(MasterForRendering): 
+    cachedModifiedSymbolForMaster_inContext<R = unknown, P0 = unknown, P1 = unknown>(_cachedModifiedSymbolForMaster: P0, _inContext: P1): R;
+    // + MSImmutableSymbolInstance(OverrideUI): 
+    overrideViewControllerClassForOverridePoint<R = unknown, P0 = unknown>(_overrideViewControllerClassForOverridePoint: P0): R;
+    // + MSImmutableSymbolInstance(SVGExport): 
+    writeSVGToElement_withExporter<R = void, P0 = unknown, P1 = unknown>(_writeSVGToElement: P0, _withExporter: P1): R;
   }
   namespace MSImmutableSymbolInstance {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSImmutableSymbolInstance, MSFlowContainmentCheckProtocol {
       alloc<R = MSImmutableSymbolInstance>(): R;
       new: <R = MSImmutableSymbolInstance>() => R;
-    }
+  
+  }
   }
 }
 

@@ -13,12 +13,15 @@ declare namespace cocoa {
     object<R = MSImmutableModelObject>(): R;
     setObject<R = void, P0 = MSImmutableModelObject>(_v: P0): R;
     webExportableRootLayer<R = MSWebExportableRootLayer>(): R;
+    // + MSSubtreeRoot(WebExporter):
+    webExportableRootLayer<R = MSWebExportableRootLayer>(): R;
   }
   namespace MSSubtreeRoot {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject {
       alloc<R = MSSubtreeRoot>(): R;
       new: <R = MSSubtreeRoot>() => R;
-    }
+  
+  }
   }
 }
 

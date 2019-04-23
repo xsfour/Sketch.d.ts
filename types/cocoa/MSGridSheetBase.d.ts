@@ -5,7 +5,6 @@ declare namespace cocoa {
     lightColorUpdated<R = void, P0 = unknown>(_lightColorUpdated: P0): R;
     darkColorUpdated<R = void, P0 = unknown>(_darkColorUpdated: P0): R;
     prepareColorPickers<R = void>(): R;
-    cancelAction<R = void, P0 = unknown>(_cancelAction: P0): R;
     turnOffForcedDrawing<R = void>(): R;
     gridChanged<R = void, P0 = unknown>(_gridChanged: P0): R;
     refreshCanvas<R = void, P0 = unknown>(_refreshCanvas: P0): R;

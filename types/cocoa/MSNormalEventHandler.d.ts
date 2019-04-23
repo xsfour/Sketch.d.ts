@@ -1,22 +1,19 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSNormalEventHandler<T0 = void, T1 = void, T2 = void> extends MSNormalBaseEventHandler, MSGestureRecognizerDelegateProtocol {
+  export interface MSNormalEventHandler<T0 = void, T1 = void, T2 = void> extends MSNormalBaseEventHandler, MSGestureRecognizerDelegateProtocol, MSDragLayerToolUserInterfaceProtocol {
     layerCanBeSelected<R = boolean, P0 = unknown>(_layerCanBeSelected: P0): R;
     numberOfSelectableLayers<R = number, P0 = unknown>(_numberOfSelectableLayers: P0): R;
     tabInForwardDirection<R = void, P0 = boolean>(_tabInForwardDirection: P0): R;
     deleteNormalLayers<R = void, P0 = unknown>(_deleteNormalLayers: P0): R;
     menu<R = unknown>(): R;
+    menuForCanvas<R = unknown>(): R;
     dragToSelect<R = void, P0 = unknown>(_dragToSelect: P0): R;
     ignoreNextKeyDownEventUntilModifiersChange<R = void>(): R;
-    moveLayer_toOffset_fromPointInAbsoluteCoordinates<R = void, P0 = unknown, P1 = CGPoint, P2 = CGPoint>(_moveLayer: P0, _toOffset: P1, _fromPointInAbsoluteCoordinates: P2): R;
-    endDuplicateDragging<R = void, P0 = boolean>(_endDuplicateDragging: P0): R;
-    beginDuplicateDragging<R = void>(): R;
-    moveDraggedLayersToOffset<R = void, P0 = CGPoint>(_moveDraggedLayersToOffset: P0): R;
     layerDragged<R = void, P0 = unknown>(_layerDragged: P0): R;
     drawOutlineForShapeChild<R = void, P0 = unknown>(_drawOutlineForShapeChild: P0): R;
     drawSelectedShapePathLayers<R = void>(): R;
-    drawMultipleSelection<R = void>(): R;
+    drawMultipleSelection<R = void, P0 = unknown>(_drawMultipleSelection: P0): R;
     shouldDrawSelectionForLayer<R = boolean, P0 = unknown>(_shouldDrawSelectionForLayer: P0): R;
     drawLayerHighlight<R = void, P0 = unknown>(_drawLayerHighlight: P0): R;
     drawLayerSelection<R = void>(): R;
@@ -46,33 +43,38 @@ declare namespace cocoa {
     shouldNotChangeSelectionForFlags<R = boolean, P0 = number>(_shouldNotChangeSelectionForFlags: P0): R;
     selectLayer<R = void, P0 = unknown>(_selectLayer: P0): R;
     layerDoubleClicked<R = void, P0 = unknown>(_layerDoubleClicked: P0): R;
-    enterMultipleResizeModeWithMouse_clickCount_flags_handle_manager<R = void, P0 = CGPoint, P1 = number, P2 = number, P3 = number, P4 = unknown>(_enterMultipleResizeModeWithMouse: P0, _clickCount: P1, _flags: P2, _handle: P3, _manager: P4): R;
-    enterLineResizeModeWithMouse_clickCount_flags_manager<R = void, P0 = CGPoint, P1 = number, P2 = number, P3 = unknown>(_enterLineResizeModeWithMouse: P0, _clickCount: P1, _flags: P2, _manager: P3): R;
-    enterRotateModeWithMouse_clickCount_flags_manager<R = void, P0 = CGPoint, P1 = number, P2 = number, P3 = unknown>(_enterRotateModeWithMouse: P0, _clickCount: P1, _flags: P2, _manager: P3): R;
-    enterResizeModeWithMouse_clickCount_flags_manager<R = void, P0 = CGPoint, P1 = number, P2 = number, P3 = unknown>(_enterResizeModeWithMouse: P0, _clickCount: P1, _flags: P2, _manager: P3): R;
+    enterResizeModeForLayers_handle_mouse_clickCount_flags<R = void, P0 = unknown, P1 = number, P2 = CGPoint, P3 = number, P4 = number>(_enterResizeModeForLayers: P0, _handle: P1, _mouse: P2, _clickCount: P3, _flags: P4): R;
+    enterResizeModeForLine_handle_mouse_clickCount_flags<R = void, P0 = unknown, P1 = number, P2 = CGPoint, P3 = number, P4 = number>(_enterResizeModeForLine: P0, _handle: P1, _mouse: P2, _clickCount: P3, _flags: P4): R;
+    enterRotateModeWithMouse_clickCount_flags<R = void, P0 = CGPoint, P1 = number, P2 = number>(_enterRotateModeWithMouse: P0, _clickCount: P1, _flags: P2): R;
+    selectHitTestResult_extendSelection<R = void, P0 = unknown, P1 = boolean>(_selectHitTestResult: P0, _extendSelection: P1): R;
     activeLayer<R = MSLayer>(): R;
     setActiveLayer<R = void, P0 = MSLayer>(_v: P0): R;
+    dragController<R = MSLayerDragController>(): R;
+    setDragController<R = void, P0 = MSLayerDragController>(_v: P0): R;
     dragGestureRecognizer<R = MSDragToMoveOrCopyGestureRecognizer>(): R;
     selectionGestureRecognizer<R = MSDragToSelectGestureRecognizer>(): R;
     duplicatedObjectIDs<R = NSSet>(): R;
     setDuplicatedObjectIDs<R = void, P0 = NSSet>(_v: P0): R;
     duplicateOffset<R = CGVector>(): R;
     setDuplicateOffset<R = void, P0 = CGVector>(_v: P0): R;
+    mouseDownHitTest<R = MSHitTestResult>(): R;
+    setMouseDownHitTest<R = void, P0 = MSHitTestResult>(_v: P0): R;
     opacityShortcutRecognizer<R = MSOpacityKeyboardShortcutRecognizer>(): R;
-    eventData<R = MSNormalEventData>(): R;
-    setEventData<R = void, P0 = MSNormalEventData>(_v: P0): R;
     menuBuilder<R = MSNormalEventContextualMenuBuilder>(): R;
     setMenuBuilder<R = void, P0 = MSNormalEventContextualMenuBuilder>(_v: P0): R;
     highlightedItem<R = MSHoverableItem>(): R;
     setHighlightedItem<R = void, P0 = MSHoverableItem>(_v: P0): R;
     measurementRenderer<R = MSLayerMeasurementRenderer>(): R;
+    eventData<R = MSNormalEventData>(): R;
+    setEventData<R = void, P0 = MSNormalEventData>(_v: P0): R;
+    menuForLayerList<R = NSMenu>(): R;
     debugDescription<R = NSString>(): R;
     description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
   }
   namespace MSNormalEventHandler {
-    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSNormalBaseEventHandler, MSGestureRecognizerDelegateProtocol {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSNormalBaseEventHandler, MSGestureRecognizerDelegateProtocol, MSDragLayerToolUserInterfaceProtocol {
       alloc<R = MSNormalEventHandler>(): R;
       new: <R = MSNormalEventHandler>() => R;
     }

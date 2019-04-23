@@ -13,7 +13,7 @@ declare namespace cocoa {
     validate<R = boolean>(): R;
     hasSubMenu<R = boolean>(): R;
     zoomPopupButtonWithFrame<R = unknown, P0 = CGRect>(_zoomPopupButtonWithFrame: P0): R;
-    zoomButtonWithAction_imageNamed<R = unknown, P0 = unknown, P1 = unknown>(_zoomButtonWithAction: P0, _imageNamed: P1): R;
+    zoomButtonWithAction_imageNamed_alternateImageName<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_zoomButtonWithAction: P0, _imageNamed: P1, _alternateImageName: P2): R;
   }
   namespace MSZoomAction {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSDocumentAction {

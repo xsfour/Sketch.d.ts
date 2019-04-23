@@ -28,6 +28,10 @@ declare namespace cocoa {
     green<R = number>(): R;
     red<R = number>(): R;
     superclass<R = unknown>(): R;
+    // + MSImmutableColor(Rendering): 
+    NSColorForContext<R = unknown, P0 = unknown>(_NSColorForContext: P0): R;
+    // + MSImmutableColor(Manifest):
+    manifestComponents<R = NSArray>(): R;
   }
   namespace MSImmutableColor {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSImmutableColor, MSColorProtocol {
@@ -46,7 +50,8 @@ declare namespace cocoa {
       colorWithSVGString<R = unknown, P0 = unknown>(_colorWithSVGString: P0): R;
       namedColor<R = unknown, P0 = unknown>(_namedColor: P0): R;
       staticColorDictionary<R = unknown>(): R;
-    }
+  
+  }
   }
 }
 

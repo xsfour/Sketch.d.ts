@@ -24,6 +24,11 @@ declare namespace cocoa {
     copyByGivingNewObjectIDs<R = unknown>(): R;
     layers<R = NSArray>(): R;
     setLayers<R = void, P0 = NSArray>(_v: P0): R;
+    // + MSLayerArray(FlowConnection): 
+    flowConnection<R = unknown>(): R;
+    // + MSLayerArray(Styled): 
+    removeUnusedStylePartsOfType<R = void, P0 = number>(_removeUnusedStylePartsOfType: P0): R;
+    addStylePartsOfType<R = unknown, P0 = number>(_addStylePartsOfType: P0): R;
   }
   namespace MSLayerArray {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, MSLayerContainmentProtocol, NSFastEnumerationProtocol {
@@ -32,7 +37,8 @@ declare namespace cocoa {
       emptyArray<R = unknown>(): R;
       arrayWithLayers<R = unknown, P0 = unknown>(_arrayWithLayers: P0): R;
       arrayWithLayer<R = unknown, P0 = unknown>(_arrayWithLayer: P0): R;
-    }
+  
+  }
   }
 }
 

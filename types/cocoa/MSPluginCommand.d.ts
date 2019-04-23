@@ -35,7 +35,7 @@ declare namespace cocoa {
     tearDownSession<R = void>(): R;
     setUpSessionWithContext<R = void, P0 = unknown>(_setUpSessionWithContext: P0): R;
     newSessionForURL_shouldReload<R = void, P0 = unknown, P1 = boolean>(_newSessionForURL: P0, _shouldReload: P1): R;
-    loadAPISupport<R = void>(): R;
+    loadJSGlobals<R = void>(): R;
     flattenedHandlerIndexWithHandlers<R = unknown, P0 = unknown>(_flattenedHandlerIndexWithHandlers: P0): R;
     dealloc<R = void>(): R;
     initWithScript_identifier_name_handlers_shortcut_scope<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown, P5 = number>(_initWithScript: P0, _identifier: P1, _name: P2, _handlers: P3, _shortcut: P4, _scope: P5): R;

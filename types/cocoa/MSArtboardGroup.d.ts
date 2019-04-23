@@ -13,6 +13,7 @@ declare namespace cocoa {
     setRect<R = void, P0 = CGRect>(_setRect: P0): R;
     parentRoot<R = unknown>(): R;
     parentArtboard<R = unknown>(): R;
+    refreshOverlayWithAbsoluteMargins<R = void, P0 = CGSize>(_refreshOverlayWithAbsoluteMargins: P0): R;
     rulerCoordinateSpace<R = unknown>(): R;
     constrainProportions<R = boolean>(): R;
     isLocked<R = boolean>(): R;
@@ -68,11 +69,37 @@ declare namespace cocoa {
     superclass<R = unknown>(): R;
     verticalRulerData<R = MSRulerData>(): R;
     setVerticalRulerData<R = void, P0 = MSRulerData>(_v: P0): R;
+    // + MSArtboardGroup(AdjustAfterInsert): 
+    adjustAfterInsert<R = void>(): R;
+    // + MSArtboardGroup(CanChangeBooleanOperation): 
+    canChangeBooleanOperation<R = boolean>(): R;
+    // + MSArtboardGroup(Flow): 
+    shouldRefreshOverlayForFlows<R = boolean>(): R;
+    // + MSArtboardGroup(Hiding): 
+    canBeHidden<R = boolean>(): R;
+    // + MSArtboardGroup(InspectorSections): 
+    inspectorSections<R = unknown>(): R;
+    // + MSArtboardGroup(LayerList): 
+    canCopyToLayer_beforeLayer<R = boolean, P0 = unknown, P1 = unknown>(_canCopyToLayer: P0, _beforeLayer: P1): R;
+    contextualMenuPreviewTemplateImage<R = unknown>(): R;
+    unselectedPreviewTemplateImage<R = unknown>(): R;
+    selectedPreviewTemplateImage<R = unknown>(): R;
+    badgeImages<R = unknown>(): R;
+    displayType<R = number>(): R;
+    // + MSArtboardGroup(MSFillAndBorderColorScreenPicker): 
+    applyScreenPickerColor_preferredStyleName<R = void, P0 = unknown, P1 = unknown>(_applyScreenPickerColor: P0, _preferredStyleName: P1): R;
+    // + MSArtboardGroup(OptimalSize): 
+    optimalBoundingBox<R = CGRect>(): R;
+    // + MSArtboardGroup(UISupport): 
+    parentForInsertingLayers<R = unknown>(): R;
+    displayName<R = unknown>(): R;
   }
   namespace MSArtboardGroup {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSArtboardGroup, MSArtboardGroupProtocol, MSRootLayerProtocol, MSLayerWithMutableBackgroundColorProtocol, MSColorConvertibleProtocol {
       alloc<R = MSArtboardGroup>(): R;
       new: <R = MSArtboardGroup>() => R;
+      artboardRectFromLayersInArray<R = CGRect, P0 = unknown>(_artboardRectFromLayersInArray: P0): R;
+      // + MSArtboardGroup(Inspector): 
       artboardRectFromLayersInArray<R = CGRect, P0 = unknown>(_artboardRectFromLayersInArray: P0): R;
     }
   }

@@ -2,7 +2,7 @@
 
 declare namespace cocoa {
   export interface MSDragRectEventHandler<T0 = void, T1 = void, T2 = void> extends MSEventHandler, MSAlignmentEngineDelegateProtocol {
-    addSnapTargetsToEngine<R = void, P0 = unknown>(_addSnapTargetsToEngine: P0): R;
+    addTargetsToEngine_snappingDisabled<R = void, P0 = unknown, P1 = boolean>(_addTargetsToEngine: P0, _snappingDisabled: P1): R;
     snapAndAlignPoint_modifierFlags<R = unknown, P0 = CGPoint, P1 = number>(_snapAndAlignPoint: P0, _modifierFlags: P1): R;
     drawRectPreview<R = void>(): R;
     performActionWithRect_fromLayer_constrainProportions<R = unknown, P0 = CGRect, P1 = unknown, P2 = boolean>(_performActionWithRect: P0, _fromLayer: P1, _constrainProportions: P2): R;

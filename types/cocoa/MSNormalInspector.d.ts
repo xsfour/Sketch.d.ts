@@ -11,6 +11,8 @@ declare namespace cocoa {
     setHasScheduledNextResponderFixing<R = void, P0 = boolean>(_v: P0): R;
     scrollViewBottomConstraint<R = NSLayoutConstraint>(): R;
     setScrollViewBottomConstraint<R = void, P0 = NSLayoutConstraint>(_v: P0): R;
+    scrollViewTopConstraint<R = NSLayoutConstraint>(): R;
+    setScrollViewTopConstraint<R = void, P0 = NSLayoutConstraint>(_v: P0): R;
     storedPreferences<R = NSMutableDictionary>(): R;
     standardInspectors<R = MSStandardInspectorViewControllers>(): R;
     footerView<R = NSStackView>(): R;

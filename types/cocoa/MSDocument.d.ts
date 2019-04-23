@@ -17,7 +17,7 @@ declare namespace cocoa {
     setFileURL<R = void, P0 = unknown>(_setFileURL: P0): R;
     visitSymbolMasterWithID<R = void, P0 = unknown>(_visitSymbolMasterWithID: P0): R;
     openLibrariesForForeignObjects<R = void, P0 = unknown>(_openLibrariesForForeignObjects: P0): R;
-    visitArtboardForInstance<R = void, P0 = unknown>(_visitArtboardForInstance: P0): R;
+    visitSymbolMaster_withReturnInstance<R = void, P0 = unknown, P1 = unknown>(_visitSymbolMaster: P0, _withReturnInstance: P1): R;
     removeViewportForArtboard<R = void, P0 = unknown>(_removeViewportForArtboard: P0): R;
     canRestoreViewportAfterArtboardEdit<R = boolean, P0 = unknown>(_canRestoreViewportAfterArtboardEdit: P0): R;
     restoreViewportAfterArtboardEdit<R = void, P0 = unknown>(_restoreViewportAfterArtboardEdit: P0): R;
@@ -118,15 +118,15 @@ declare namespace cocoa {
     hudDocumentData<R = unknown>(): R;
     hudSetMonitor<R = void, P0 = unknown>(_hudSetMonitor: P0): R;
     hudClientName<R = unknown>(): R;
-    saveDocumentToURL_saveMode_context_callback<R = void, P0 = unknown, P1 = number, P2 = unknown, P3 = unknown>(_saveDocumentToURL: P0, _saveMode: P1, _context: P2, _callback: P3): R;
+    askForUserInput_ofType_initialValue<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_askForUserInput: P0, _ofType: P1, _initialValue: P2): R;
+    askForUserInput_initialValue<R = unknown, P0 = unknown, P1 = unknown>(_askForUserInput: P0, _initialValue: P1): R;
     showMessage<R = void, P0 = unknown>(_showMessage: P0): R;
+    saveDocumentToURL_saveMode_context_callback<R = void, P0 = unknown, P1 = number, P2 = unknown, P3 = unknown>(_saveDocumentToURL: P0, _saveMode: P1, _context: P2, _callback: P3): R;
     dataForRequest_ofType<R = unknown, P0 = unknown, P1 = unknown>(_dataForRequest: P0, _ofType: P1): R;
     saveExportRequest_toFile<R = void, P0 = unknown, P1 = unknown>(_saveExportRequest: P0, _toFile: P1): R;
     exportRequestWithName_rect<R = unknown, P0 = unknown, P1 = CGRect>(_exportRequestWithName: P0, _rect: P1): R;
     exportRequestForArtboardOrSlice<R = unknown, P0 = unknown>(_exportRequestForArtboardOrSlice: P0): R;
     saveArtboardOrSlice_toFile<R = void, P0 = unknown, P1 = unknown>(_saveArtboardOrSlice: P0, _toFile: P1): R;
-    askForUserInput_ofType_initialValue<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_askForUserInput: P0, _ofType: P1, _initialValue: P2): R;
-    askForUserInput_initialValue<R = unknown, P0 = unknown, P1 = unknown>(_askForUserInput: P0, _initialValue: P1): R;
     pluginContext<R = unknown>(): R;
     askToOpenDocumentRepairingMetadata<R = boolean>(): R;
     askToOpenDocumentWithMissingFonts_savingWillChangeFonts<R = boolean, P0 = unknown, P1 = boolean>(_askToOpenDocumentWithMissingFonts: P0, _savingWillChangeFonts: P1): R;
@@ -214,6 +214,7 @@ declare namespace cocoa {
     setPageListCollapsed<R = void, P0 = boolean>(_v: P0): R;
     pageListHeight<R = number>(): R;
     setPageListHeight<R = void, P0 = number>(_v: P0): R;
+    libraryController<R = MSAssetLibraryController>(): R;
     UIMetadata<R = NSDictionary>(): R;
     setUIMetadata<R = void, P0 = NSDictionary>(_v: P0): R;
     exportableLayerSelection<R = NSArray>(): R;

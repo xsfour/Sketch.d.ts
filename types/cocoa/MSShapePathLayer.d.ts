@@ -87,6 +87,36 @@ declare namespace cocoa {
     rect<R = CGRect>(): R;
     rotation<R = number>(): R;
     superclass<R = unknown>(): R;
+    // + MSShapePathLayer(AdjustAfterInsert): 
+    adjustAfterInsert<R = void>(): R;
+    // + MSShapePathLayer(Cursor): 
+    boundsForCursorPreview<R = CGRect>(): R;
+    bezierPathForCursorPreview<R = unknown>(): R;
+    insertionCursor<R = unknown>(): R;
+    // + MSShapePathLayer(Editing): 
+    handlerClass<R = unknown>(): R;
+    handleDoubleClick<R = boolean>(): R;
+    // + MSShapePathLayer(InterfaceImageOwner): 
+    interfaceImageIdentifier<R = unknown>(): R;
+    cacheOwner<R = unknown>(): R;
+    // + MSShapePathLayer(Preview): 
+    unselectedPreviewTemplateImage<R = unknown>(): R;
+    selectedPreviewTemplateImage<R = unknown>(): R;
+    // + MSShapePathLayer(Scissors): 
+    possiblyFixRectangleBorderBeforeCut<R = void>(): R;
+    // + MSShapePathLayer(ShareableObject): 
+    shareableObjectType<R = number>(): R;
+    // + MSShapePathLayer(ShouldDrawSelection): 
+    shouldDrawSelectionStroke<R = boolean>(): R;
+    shouldDrawSelection<R = boolean>(): R;
+    // + MSShapePathLayer(SmartRotate): 
+    canSmartRotate<R = boolean>(): R;
+    // + MSShapePathLayer(StyleForBoolean): 
+    styleForBooleanOperation<R = unknown>(): R;
+    // + MSShapePathLayer(UISupport): 
+    supportsInnerOuterBorders<R = boolean>(): R;
+    // + MSShapePathLayer(Preview):
+    badgeType<R = number>(): R;
   }
   namespace MSShapePathLayer {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSShapePathLayer, MSLayerPreviewabilityProtocol, MSPathLayerProtocol {
@@ -96,7 +126,8 @@ declare namespace cocoa {
       shapeWithRect<R = unknown, P0 = CGRect>(_shapeWithRect: P0): R;
       layerWithShapeGroupSubpath<R = unknown, P0 = unknown>(_layerWithShapeGroupSubpath: P0): R;
       layerWithPath_integralFrame<R = unknown, P0 = unknown, P1 = boolean>(_layerWithPath: P0, _integralFrame: P1): R;
-    }
+  
+  }
   }
 }
 

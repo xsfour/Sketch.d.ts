@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 
 declare namespace cocoa {
-  export interface MSGradientBarView<T0 = void, T1 = void, T2 = void> extends BCColorPickerBaseView {
+  export interface MSGradientBarView<T0 = void, T1 = void, T2 = void> extends BCColorPickerSliderView {
     canDoAdvancedGradientStopModifications<R = boolean>(): R;
     centerStopBetween<R = void>(): R;
     setSelectedStopToPercentage<R = void, P0 = number>(_setSelectedStopToPercentage: P0): R;
@@ -19,11 +19,11 @@ declare namespace cocoa {
     deleteForward<R = void, P0 = unknown>(_deleteForward: P0): R;
     insertBacktab<R = void, P0 = unknown>(_insertBacktab: P0): R;
     insertTab<R = void, P0 = unknown>(_insertTab: P0): R;
-    drawSelectedMarkerInRect_color<R = void, P0 = CGRect, P1 = unknown>(_drawSelectedMarkerInRect: P0, _color: P1): R;
-    stopPositionForEvent<R = number, P0 = unknown>(_stopPositionForEvent: P0): R;
+    drawHighlightedSelectionMarkerAtPosition<R = void, P0 = number>(_drawHighlightedSelectionMarkerAtPosition: P0): R;
+    drawSelectionMarkerAtIndex<R = void, P0 = number>(_drawSelectionMarkerAtIndex: P0): R;
     stopIndexForEvent<R = number, P0 = unknown>(_stopIndexForEvent: P0): R;
-    normaliseRect<R = CGRect, P0 = CGRect>(_normaliseRect: P0): R;
     rectForMarkerAtIndex<R = CGRect, P0 = number>(_rectForMarkerAtIndex: P0): R;
+    positionForIndex<R = number, P0 = number>(_positionForIndex: P0): R;
     awakeFromNib<R = void>(): R;
     canBeKeyView<R = boolean>(): R;
     selectedStopIndex<R = number>(): R;
@@ -34,7 +34,7 @@ declare namespace cocoa {
     setDelegate<R = void, P0 = MSGradientBarViewDelegate>(_v: P0): R;
   }
   namespace MSGradientBarView {
-    export interface CLASS<T0 = void, T1 = void, T2 = void> extends BCColorPickerBaseView {
+    export interface CLASS<T0 = void, T1 = void, T2 = void> extends BCColorPickerSliderView {
       alloc<R = MSGradientBarView>(): R;
       new: <R = MSGradientBarView>() => R;
     }

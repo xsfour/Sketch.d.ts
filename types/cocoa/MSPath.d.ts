@@ -84,6 +84,19 @@ declare namespace cocoa {
     controlPointBounds<R = CGRect>(): R;
     bounds<R = CGRect>(): R;
     safeBounds<R = CGRect>(): R;
+    // + MSPath(Rendering): 
+    shadowPathWithSpread_borderOptions_strokeType_lineWidth_cacheObject_context<R = unknown, P0 = number, P1 = unknown, P2 = number, P3 = number, P4 = unknown, P5 = unknown>(_shadowPathWithSpread: P0, _borderOptions: P1, _strokeType: P2, _lineWidth: P3, _cacheObject: P4, _context: P5): R;
+    shadowPathWithSpread_cacheObject_context<R = unknown, P0 = number, P1 = unknown, P2 = unknown>(_shadowPathWithSpread: P0, _cacheObject: P1, _context: P2): R;
+    shadowPathForStrokeType_lineWidth_cacheObject_context<R = unknown, P0 = number, P1 = number, P2 = unknown, P3 = unknown>(_shadowPathForStrokeType: P0, _lineWidth: P1, _cacheObject: P2, _context: P3): R;
+    outlinePathWithLineWidth_borderOptions<R = unknown, P0 = number, P1 = unknown>(_outlinePathWithLineWidth: P0, _borderOptions: P1): R;
+    pathByGrowingBy<R = unknown, P0 = number>(_pathByGrowingBy: P0): R;
+    insetPathBy_borderOptions<R = unknown, P0 = number, P1 = unknown>(_insetPathBy: P0, _borderOptions: P1): R;
+    insetPathBy<R = unknown, P0 = number>(_insetPathBy: P0): R;
+    pathWithOuterPathOfSize<R = unknown, P0 = number>(_pathWithOuterPathOfSize: P0): R;
+    outerPathWithRect<R = unknown, P0 = CGRect>(_outerPathWithRect: P0): R;
+    pathWithDashPattern<R = unknown, P0 = unknown>(_pathWithDashPattern: P0): R;
+    addClipForWindingRule_context<R = void, P0 = number, P1 = CGContext>(_addClipForWindingRule: P0, _context: P1): R;
+    clipContext_windingRule_inBlock<R = void, P0 = CGContext, P1 = number, P2 = CDUnknownBlockType>(_clipContext: P0, _windingRule: P1, _inBlock: P2): R;
   }
   namespace MSPath {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSObject, NSCopyingProtocol {
@@ -98,7 +111,8 @@ declare namespace cocoa {
       pathWithRect<R = unknown, P0 = CGRect>(_pathWithRect: P0): R;
       pathWithContours<R = unknown, P0 = unknown>(_pathWithContours: P0): R;
       pathWithSubpaths<R = unknown, P0 = unknown>(_pathWithSubpaths: P0): R;
-    }
+  
+  }
   }
 }
 

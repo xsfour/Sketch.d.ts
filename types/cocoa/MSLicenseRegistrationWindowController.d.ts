@@ -7,6 +7,7 @@ declare namespace cocoa {
     renewLicense<R = void, P0 = unknown>(_renewLicense: P0): R;
     downloadPreviousVersion<R = void, P0 = unknown>(_downloadPreviousVersion: P0): R;
     openLicenseRecoveryPage<R = void, P0 = unknown>(_openLicenseRecoveryPage: P0): R;
+    signInToCloud<R = void, P0 = unknown>(_signInToCloud: P0): R;
     visitStore<R = void, P0 = unknown>(_visitStore: P0): R;
     registerLicense<R = void, P0 = unknown>(_registerLicense: P0): R;
     didCloseAllDocuments<R = void, P0 = unknown>(_didCloseAllDocuments: P0): R;
@@ -14,6 +15,7 @@ declare namespace cocoa {
     showContentView<R = void, P0 = unknown>(_showContentView: P0): R;
     renameButtonsToQuit<R = void, P0 = unknown>(_renameButtonsToQuit: P0): R;
     showButtonSet<R = void, P0 = unknown>(_showButtonSet: P0): R;
+    showCompletedRegistration<R = void>(): R;
     showCopyForActiveLicense<R = void>(): R;
     showCopyForTrialExpired<R = void>(): R;
     loadInitialView<R = void>(): R;
@@ -23,6 +25,8 @@ declare namespace cocoa {
     initWithWindowNibName_modal_quitOnClose<R = unknown, P0 = unknown, P1 = boolean, P2 = boolean>(_initWithWindowNibName: P0, _modal: P1, _quitOnClose: P2): R;
     licenseUpdateExpirationDate<R = NSDate>(): R;
     setLicenseUpdateExpirationDate<R = void, P0 = NSDate>(_v: P0): R;
+    cloudButton<R = NSButton>(): R;
+    setCloudButton<R = void, P0 = NSButton>(_v: P0): R;
     registerButton<R = NSButton>(): R;
     setRegisterButton<R = void, P0 = NSButton>(_v: P0): R;
     invalidLicenseButtons<R = NSView>(): R;

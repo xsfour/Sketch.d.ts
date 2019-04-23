@@ -63,6 +63,7 @@ declare namespace cocoa {
     layerDidResizeFromInspector<R = void, P0 = number>(_layerDidResizeFromInspector: P0): R;
     copyStylePropertiesToShape<R = void, P0 = unknown>(_copyStylePropertiesToShape: P0): R;
     copyTextPropertiesToShape<R = void, P0 = unknown>(_copyTextPropertiesToShape: P0): R;
+    enumerateAnchorsForSnappingOnAxes_usingBlock<R = void, P0 = number, P1 = CDUnknownBlockType>(_enumerateAnchorsForSnappingOnAxes: P0, _usingBlock: P1): R;
     snapItemClass<R = unknown>(): R;
     changeTextColorTo<R = void, P0 = unknown>(_changeTextColorTo: P0): R;
     setTextBehaviourSegmentTag<R = void, P0 = number>(_setTextBehaviourSegmentTag: P0): R;
@@ -109,6 +110,47 @@ declare namespace cocoa {
     description<R = NSString>(): R;
     hash<R = number>(): R;
     superclass<R = unknown>(): R;
+    // + MSTextLayer(DotRectType): 
+    cornerRectType<R = number>(): R;
+    // + MSTextLayer(Editing): 
+    handlerClass<R = unknown>(): R;
+    // + MSTextLayer(Hover): 
+    drawHoverWithZoom_color_cache<R = void, P0 = number, P1 = unknown, P2 = unknown>(_drawHoverWithZoom: P0, _color: P1, _cache: P2): R;
+    // + MSTextLayer(InspectorResize): 
+    layerDidResizeFromInspector<R = void, P0 = number>(_layerDidResizeFromInspector: P0): R;
+    // + MSTextLayer(InspectorSections): 
+    inspectorSections<R = unknown>(): R;
+    // + MSTextLayer(LayerList): 
+    unselectedPreviewTemplateImage<R = unknown>(): R;
+    selectedPreviewTemplateImage<R = unknown>(): R;
+    // + MSTextLayer(MSFillAndBorderColorScreenPicker): 
+    applyScreenPickerColor_preferredStyleName<R = void, P0 = unknown, P1 = unknown>(_applyScreenPickerColor: P0, _preferredStyleName: P1): R;
+    // + MSTextLayer(MSSnappable): 
+    enumerateAnchorsForSnappingOnAxes_includingCenter_usingBlock<R = void, P0 = number, P1 = boolean, P2 = CDUnknownBlockType>(_enumerateAnchorsForSnappingOnAxes: P0, _includingCenter: P1, _usingBlock: P2): R;
+    snapItemClass<R = unknown>(): R;
+    // + MSTextLayer(Outlines): 
+    copyStylePropertiesToShape_shapeName<R = void, P0 = unknown, P1 = unknown>(_copyStylePropertiesToShape: P0, _shapeName: P1): R;
+    copyTextPropertiesToShape_color<R = void, P0 = unknown, P1 = unknown>(_copyTextPropertiesToShape: P0, _color: P1): R;
+    canConvertToOutlines<R = boolean>(): R;
+    layersByConvertingToOutlines<R = unknown>(): R;
+    hasMultipleTextColors<R = boolean>(): R;
+    // + MSTextLayer(PDFPreview): 
+    PDFPreview<R = unknown>(): R;
+    shouldStorePDFPreviews<R = boolean>(): R;
+    // + MSTextLayer(ShareableObject): 
+    shareableObjectType<R = number>(): R;
+    // + MSTextLayer(ShouldDrawSelection): 
+    shouldDrawSelectionStroke<R = boolean>(): R;
+    shouldDrawSelection<R = boolean>(): R;
+    // + MSTextLayer(UISupport): 
+    changeTextColorTo<R = void, P0 = unknown>(_changeTextColorTo: P0): R;
+    changeColor<R = void, P0 = unknown>(_changeColor: P0): R;
+    setTextBehaviourSegmentTag<R = void, P0 = number>(_setTextBehaviourSegmentTag: P0): R;
+    textBehaviourLabelString<R = unknown>(): R;
+    textBehaviourSegmentTag<R = number>(): R;
+    supportsInnerOuterBorders<R = boolean>(): R;
+    // + MSTextLayer(UISupport):
+    supportsVerticalAlignment<R = boolean>(): R;
   }
   namespace MSTextLayer {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSTextLayer, MSFirstLineTypesetterDelegateProtocol, MSColorConvertibleProtocol {
@@ -128,6 +170,19 @@ declare namespace cocoa {
       keyPathsForValuesAffectingHasFixedHeight<R = unknown>(): R;
       keyPathsForValuesAffectingCanFixHeight<R = unknown>(): R;
       maintainTextLayerBaselinesForLayers_inBlock<R = void, P0 = unknown, P1 = CDUnknownBlockType>(_maintainTextLayerBaselinesForLayers: P0, _inBlock: P1): R;
+      // + MSTextLayer(TextAlignment): 
+      menuItemStateForTest_forLayers<R = number, P0 = CDUnknownBlockType, P1 = unknown>(_menuItemStateForTest: P0, _forLayers: P1): R;
+      menuItemStateForAlignment_forLayers<R = number, P0 = number, P1 = unknown>(_menuItemStateForAlignment: P0, _forLayers: P1): R;
+      setTextAlignment_forLayers<R = void, P0 = number, P1 = unknown>(_setTextAlignment: P0, _forLayers: P1): R;
+      canSetTextAlignmentForLayers<R = boolean, P0 = unknown>(_canSetTextAlignmentForLayers: P0): R;
+      // + MSTextLayer(UISupport): 
+      keyPathsForValuesAffectingTextBehaviourLabelString<R = unknown>(): R;
+      keyPathsForValuesAffectingTextBehaviourSegmentTag<R = unknown>(): R;
+      keyPathsForValuesAffectingSupportsVerticalAlignment<R = unknown>(): R;
+      // + MSTextLayer(VerticalTextAlignment): 
+      menuItemStateForTextVerticalAlignment_forLayers<R = number, P0 = number, P1 = unknown>(_menuItemStateForTextVerticalAlignment: P0, _forLayers: P1): R;
+      setTextVerticalAlignment_forLayers<R = void, P0 = number, P1 = unknown>(_setTextVerticalAlignment: P0, _forLayers: P1): R;
+      canSetTextVerticalAlignmentForLayers<R = boolean, P0 = unknown>(_canSetTextVerticalAlignmentForLayers: P0): R;
     }
   }
 }

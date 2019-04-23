@@ -56,6 +56,28 @@ declare namespace cocoa {
     rect<R = CGRect>(): R;
     rotation<R = number>(): R;
     superclass<R = unknown>(): R;
+    // + MSStyledLayer(AdjustAfterInsert): 
+    adjustAfterInsert<R = void>(): R;
+    // + MSStyledLayer(LayerList): 
+    previewShouldIndicateSharedStyle<R = boolean>(): R;
+    // + MSStyledLayer(MSFillAndBorderColorScreenPicker): 
+    stylesForColorAdjustingWithPreferredName<R = unknown, P0 = unknown>(_stylesForColorAdjustingWithPreferredName: P0): R;
+    applyScreenPickerColor_preferredStyleName<R = void, P0 = unknown, P1 = unknown>(_applyScreenPickerColor: P0, _preferredStyleName: P1): R;
+    // + MSStyledLayer(MaskWithShape): 
+    prepareAsMask<R = void>(): R;
+    // + MSStyledLayer(Outlines): 
+    outlineShapeFromPath_withBorder<R = unknown, P0 = unknown, P1 = unknown>(_outlineShapeFromPath: P0, _withBorder: P1): R;
+    canConvertToOutlines<R = boolean>(): R;
+    layersByConvertingToOutlines<R = unknown>(): R;
+    // + MSStyledLayer(Scissors): 
+    canCutSegments<R = boolean>(): R;
+    layerWithBezierSegmentCutAtIndex<R = unknown, P0 = number>(_layerWithBezierSegmentCutAtIndex: P0): R;
+    possiblyFixRectangleBorderBeforeCut<R = void>(): R;
+    // + MSStyledLayer(ShareableObject): 
+    sharedMaster<R = MSModelObject>(): R;
+    shareableObjectType<R = number>(): R;
+    // + MSStyledLayer(UISupport): 
+    changeColor<R = void, P0 = unknown>(_changeColor: P0): R;
   }
   namespace MSStyledLayer {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSStyledLayer, MSStyledLayerProtocol {
@@ -70,6 +92,10 @@ declare namespace cocoa {
       pasteStyleFromPasteboard_onLayers_document<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(_pasteStyleFromPasteboard: P0, _onLayers: P1, _document: P2): R;
       pasteStyleFromPasteboardOnLayers_document<R = void, P0 = unknown, P1 = unknown>(_pasteStyleFromPasteboardOnLayers: P0, _document: P1): R;
       supportedPasteboardTypesForStyleCopying<R = unknown>(): R;
+      // + MSStyledLayer(Image): 
+      layerWithImage<R = unknown, P0 = unknown>(_layerWithImage: P0): R;
+      layerWithImageFromFileURL<R = unknown, P0 = unknown>(_layerWithImageFromFileURL: P0): R;
+      layerWithImageFromPasteboard<R = unknown, P0 = unknown>(_layerWithImageFromPasteboard: P0): R;
     }
   }
 }

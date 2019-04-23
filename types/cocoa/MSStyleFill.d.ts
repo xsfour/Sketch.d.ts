@@ -13,11 +13,24 @@ declare namespace cocoa {
     setInterfaceOpacity<R = void, P0 = number>(_v: P0): R;
     image<R = MSImageData>(): R;
     setImage<R = void, P0 = MSImageData>(_v: P0): R;
+    // + MSStyleFill(BlendingView): 
+    wantsColorModePicker<R = boolean>(): R;
+    // + MSStyleFill(EqualAppearance): 
+    hasEqualAppearance<R = boolean, P0 = unknown>(_hasEqualAppearance: P0): R;
+    // + MSStyleFill(Interface): 
+    parentStyle<R = unknown>(): R;
+    // + MSStyleFill(Previewing): 
+    configureFillForPreview<R = void, P0 = unknown>(_configureFillForPreview: P0): R;
+    // + MSStyleFill(Interface):
+    interfaceOpacity<R = number>(): R;
+    setInterfaceOpacity<R = void, P0 = number>(_v: P0): R;
   }
   namespace MSStyleFill {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSStyleFill, MSImageOwnerProtocol {
       alloc<R = MSStyleFill>(): R;
       new: <R = MSStyleFill>() => R;
+      keyPathsForValuesAffectingInterfaceOpacity<R = unknown>(): R;
+      // + MSStyleFill(Interface): 
       keyPathsForValuesAffectingInterfaceOpacity<R = unknown>(): R;
     }
   }

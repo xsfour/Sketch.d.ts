@@ -4,7 +4,7 @@ declare namespace cocoa {
   export interface MSStylePartInspectorViewController<T0 = void, T1 = void, T2 = void> extends NSViewController, MSInspectorSectionProtocol, NSWindowDelegateProtocol {
     cxx_destruct<R = void>(): R;
     updateDisplayedValues<R = void>(): R;
-    closePopover<R = void>(): R;
+    closePopoverImmediately<R = void, P0 = boolean>(_closePopoverImmediately: P0): R;
     didGetAddedToInspector<R = void>(): R;
     hasEnabledStyle<R = boolean>(): R;
     prepare<R = void>(): R;

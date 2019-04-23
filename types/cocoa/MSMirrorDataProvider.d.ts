@@ -12,7 +12,7 @@ declare namespace cocoa {
     updateIfNeeded<R = void>(): R;
     setNeedsUpdateMetadata<R = void>(): R;
     setNeedsUpdate<R = void>(): R;
-    createManifestContent<R = unknown>(): R;
+    createManifestContent<R = unknown, P0 = unknown>(_createManifestContent: P0): R;
     documentDidResignCurrentNotification<R = void, P0 = unknown>(_documentDidResignCurrentNotification: P0): R;
     documentDidBecomeCurrentNotification<R = void, P0 = unknown>(_documentDidBecomeCurrentNotification: P0): R;
     mirrorConnectionsDidChangeNotification<R = void, P0 = unknown>(_mirrorConnectionsDidChangeNotification: P0): R;

@@ -5,11 +5,12 @@ declare namespace cocoa {
     cxx_destruct<R = void>(): R;
     roundPoint<R = CGPoint, P0 = CGPoint>(_roundPoint: P0): R;
     applyDelegateAlignment_snappedAxes<R = CGPoint, P0 = CGPoint, P1 = number>(_applyDelegateAlignment: P0, _snappedAxes: P1): R;
-    extendGuide_toIncludePoint<R = MSLineSegment, P0 = MSLineSegment, P1 = CGPoint>(_extendGuide: P0, _toIncludePoint: P1): R;
+    extendGuide_toIncludePoint<R = BCLineSegment, P0 = BCLineSegment, P1 = CGPoint>(_extendGuide: P0, _toIncludePoint: P1): R;
     makeGuideFromAlignedTarget_point<R = unknown, P0 = unknown, P1 = CGPoint>(_makeGuideFromAlignedTarget: P0, _point: P1): R;
+    addTargetAtPoint<R = void, P0 = CGPoint>(_addTargetAtPoint: P0): R;
     addTargetsForRect_includeCenter<R = void, P0 = CGRect, P1 = boolean>(_addTargetsForRect: P0, _includeCenter: P1): R;
     addOrthogonalTargetsThroughPoint<R = void, P0 = CGPoint>(_addOrthogonalTargetsThroughPoint: P0): R;
-    addTargetWithLineSegment<R = void, P0 = MSLineSegment>(_addTargetWithLineSegment: P0): R;
+    addTargetWithLineSegment<R = void, P0 = BCLineSegment>(_addTargetWithLineSegment: P0): R;
     addTargets<R = void, P0 = unknown>(_addTargets: P0): R;
     addTarget<R = void, P0 = unknown>(_addTarget: P0): R;
     beginCycleWithPoint_constraint<R = unknown, P0 = CGPoint, P1 = unknown>(_beginCycleWithPoint: P0, _constraint: P1): R;

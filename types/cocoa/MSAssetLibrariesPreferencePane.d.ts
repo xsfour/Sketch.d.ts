@@ -27,8 +27,10 @@ declare namespace cocoa {
     toggleLibraryEnabled<R = void, P0 = unknown>(_toggleLibraryEnabled: P0): R;
     hasDisabledLibrariesSelected<R = boolean>(): R;
     draggedURLsFromPasteboard<R = unknown, P0 = unknown>(_draggedURLsFromPasteboard: P0): R;
+    displayCloudAlertSheetForError<R = void, P0 = unknown>(_displayCloudAlertSheetForError: P0): R;
     displayDuplicateAlertSheetForRemoteAssetLibrary<R = void, P0 = unknown>(_displayDuplicateAlertSheetForRemoteAssetLibrary: P0): R;
     displayInstallerAlertSheetForRemoteAssetLibrary<R = void>(): R;
+    displayGenericAlertSheetWithError_completionHandler<R = void, P0 = unknown, P1 = CDUnknownBlockType>(_displayGenericAlertSheetWithError: P0, _completionHandler: P1): R;
     displayAlertSheetWithMessageText_informativeText_buttonTitle_cancelButton_completionHandler<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = CDUnknownBlockType>(_displayAlertSheetWithMessageText: P0, _informativeText: P1, _buttonTitle: P2, _cancelButton: P3, _completionHandler: P4): R;
     tableCellForLibrary<R = unknown, P0 = unknown>(_tableCellForLibrary: P0): R;
     startDownloadForRemoteLibrary<R = void, P0 = unknown>(_startDownloadForRemoteLibrary: P0): R;
@@ -45,9 +47,10 @@ declare namespace cocoa {
     controlTextDidChange<R = void, P0 = unknown>(_controlTextDidChange: P0): R;
     activateSearchField<R = void, P0 = unknown>(_activateSearchField: P0): R;
     syncLibraryItems<R = void>(): R;
-    awakeFromNib<R = void>(): R;
     librariesFilterPredicate<R = NSPredicate>(): R;
     setLibrariesFilterPredicate<R = void, P0 = NSPredicate>(_v: P0): R;
+    genericAlertWindow<R = NSWindow>(): R;
+    setGenericAlertWindow<R = void, P0 = NSWindow>(_v: P0): R;
     chooseLibraryPanelWindow<R = NSWindow>(): R;
     setChooseLibraryPanelWindow<R = void, P0 = NSWindow>(_v: P0): R;
     duplicateLibraryAlertWindow<R = NSWindow>(): R;

@@ -6,7 +6,6 @@ declare namespace cocoa {
     highlightItemInCanvas<R = void, P0 = unknown>(_highlightItemInCanvas: P0): R;
     applyOverrideToSelectedLayers<R = void, P0 = unknown>(_applyOverrideToSelectedLayers: P0): R;
     overrideValueAction<R = void, P0 = unknown>(_overrideValueAction: P0): R;
-    supportedDataProviders<R = number>(): R;
     labelView<R = unknown>(): R;
     valueFromControlView<R = unknown, P0 = unknown>(_valueFromControlView: P0): R;
     controlViewForEditingOverride<R = unknown>(): R;

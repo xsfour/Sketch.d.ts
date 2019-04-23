@@ -4,7 +4,6 @@ declare namespace cocoa {
   export interface MSReplaceWithSymbolAction<T0 = void, T1 = void, T2 = void> extends MSSharedSymbolAction {
     label<R = unknown>(): R;
     removeDocumentCloseObserver<R = void>(): R;
-    validate<R = boolean>(): R;
     preferredMenuAction<R = string>(): R;
     replaceWithSymbol<R = void, P0 = unknown>(_replaceWithSymbol: P0): R;
     documentCloseObserver<R = NSObject>(): R;

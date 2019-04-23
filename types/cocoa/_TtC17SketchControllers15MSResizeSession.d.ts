@@ -12,21 +12,11 @@ declare namespace cocoa {
     initWithSnappingSession<R = unknown, P0 = unknown>(_initWithSnappingSession: P0): R;
     initWithLayers_handle_session<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_initWithLayers: P0, _handle: P1, _session: P2): R;
     initWithLayer_handle_session<R = unknown, P0 = unknown, P1 = number, P2 = unknown>(_initWithLayer: P0, _handle: P1, _session: P2): R;
-    originalCenter<R = CGPoint>(): R;
-    originalLocationOfOppositeHandle<R = CGPoint>(): R;
-    wantsConstrainProportions<R = boolean>(): R;
-    setWantsConstrainProportions<R = void, P0 = boolean>(_v: P0): R;
-    snappingEnabled<R = boolean>(): R;
-    setSnappingEnabled<R = void, P0 = boolean>(_v: P0): R;
-    alwaysRound<R = boolean>(): R;
-    setAlwaysRound<R = void, P0 = boolean>(_v: P0): R;
-    resizesAboutCenter<R = boolean>(): R;
-    setResizesAboutCenter<R = void, P0 = boolean>(_v: P0): R;
     visibleRect<R = CGRect>(): R;
     setVisibleRect<R = void, P0 = CGRect>(_v: P0): R;
     zoomScale<R = number>(): R;
     setZoomScale<R = void, P0 = number>(_v: P0): R;
-    handle<R = number>(): R;
+    resizer<R = _TtC17SketchControllers9MSResizer>(): R;
     layers<R = NSArray>(): R;
   
 }

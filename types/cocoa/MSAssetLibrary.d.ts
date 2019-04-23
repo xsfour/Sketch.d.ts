@@ -12,12 +12,12 @@ declare namespace cocoa {
     loadDocument<R = unknown, P0 = number>(_loadDocument: P0): R;
     initWithName<R = unknown, P0 = unknown>(_initWithName: P0): R;
     initWithDocumentAtURL<R = unknown, P0 = unknown>(_initWithDocumentAtURL: P0): R;
-    libraryID<R = NSString>(): R;
-    setLibraryID<R = void, P0 = NSString>(_v: P0): R;
     propertyListDictionaryRepresentation<R = NSDictionary>(): R;
     libraryType<R = number>(): R;
     delegate<R = MSAssetLibraryDelegate>(): R;
     setDelegate<R = void, P0 = MSAssetLibraryDelegate>(_v: P0): R;
+    libraryID<R = NSString>(): R;
+    setLibraryID<R = void, P0 = NSString>(_v: P0): R;
     name<R = NSString>(): R;
     setName<R = void, P0 = NSString>(_v: P0): R;
     document<R = MSDocumentData>(): R;

@@ -39,6 +39,30 @@ declare namespace cocoa {
     rect<R = CGRect>(): R;
     rotation<R = number>(): R;
     superclass<R = unknown>(): R;
+    // + MSImmutableStyledLayer(BlurEffect): 
+    renderBitmapEffects<R = unknown, P0 = unknown>(_renderBitmapEffects: P0): R;
+    // + MSImmutableStyledLayer(FrequentColors): 
+    trackColorsForBasicFill_enumeratorBlock<R = void, P0 = unknown, P1 = CDUnknownBlockType>(_trackColorsForBasicFill: P0, _enumeratorBlock: P1): R;
+    enumerateColors<R = void, P0 = CDUnknownBlockType>(_enumerateColors: P0): R;
+    // + MSImmutableStyledLayer(OverrideUI): 
+    overrideViewControllerClassForOverridePoint<R = unknown, P0 = unknown>(_overrideViewControllerClassForOverridePoint: P0): R;
+    // + MSImmutableStyledLayer(Preview): 
+    hasSharedStyleInDocumentData<R = boolean, P0 = unknown>(_hasSharedStyleInDocumentData: P0): R;
+    // + MSImmutableStyledLayer(Rendering): 
+    strokeStyleForDecoratedPath<R = unknown>(): R;
+    fillStyleForDecoratedPath<R = unknown>(): R;
+    fillPathWithDecorations<R = unknown, P0 = unknown>(_fillPathWithDecorations: P0): R;
+    shouldSkipDrawingInContext<R = boolean, P0 = unknown>(_shouldSkipDrawingInContext: P0): R;
+    shouldRenderInTransparencyLayer<R = boolean>(): R;
+    prepareDrawingInContext_inBlock<R = void, P0 = unknown, P1 = CDUnknownBlockType>(_prepareDrawingInContext: P0, _inBlock: P1): R;
+    // + MSImmutableStyledLayer(SVGExport): 
+    addPathDefinitionToDocument<R = void, P0 = unknown>(_addPathDefinitionToDocument: P0): R;
+    svgPathAttribute<R = unknown, P0 = unknown>(_svgPathAttribute: P0): R;
+    pathWithExporter_border<R = unknown, P0 = unknown, P1 = unknown>(_pathWithExporter: P0, _border: P1): R;
+    addGroupContentToElement_attributes_exporter<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_addGroupContentToElement: P0, _attributes: P1, _exporter: P2): R;
+    addGradientsToDocument<R = void, P0 = unknown>(_addGradientsToDocument: P0): R;
+    // + MSImmutableStyledLayer(Rendering):
+    shouldRasterize<R = boolean>(): R;
   }
   namespace MSImmutableStyledLayer {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSImmutableStyledLayer, MSImmutableLayerPreviewabilityProtocol, MSStyledLayerProtocol {
@@ -64,7 +88,8 @@ declare namespace cocoa {
       bezierPathForEndDecorationOnPath_strokeWidth_lineCap_decorationType<R = unknown, P0 = unknown, P1 = number, P2 = number, P3 = number>(_bezierPathForEndDecorationOnPath: P0, _strokeWidth: P1, _lineCap: P2, _decorationType: P3): R;
       bezierPathForStartDecorationOnPath_strokeWidth_lineCap_decorationType<R = unknown, P0 = unknown, P1 = number, P2 = number, P3 = number>(_bezierPathForStartDecorationOnPath: P0, _strokeWidth: P1, _lineCap: P2, _decorationType: P3): R;
       scaleForDecoration_stokeWidth<R = CGSize, P0 = number, P1 = number>(_scaleForDecoration: P0, _stokeWidth: P1): R;
-    }
+  
+  }
   }
 }
 

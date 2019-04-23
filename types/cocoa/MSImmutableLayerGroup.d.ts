@@ -20,12 +20,23 @@ declare namespace cocoa {
     mirrorViewPortSize<R = CGSize>(): R;
     mirrorExportScale<R = number>(): R;
     layers<R = NSArray>(): R;
+    // + MSImmutableLayerGroup(MSRenderPreparation): 
+    gatherForRenderPreparation<R = void, P0 = unknown>(_gatherForRenderPreparation: P0): R;
+    // + MSImmutableLayerGroup(SVGGroupStyles): 
+    svgStyle<R = unknown, P0 = unknown>(_svgStyle: P0): R;
+    addChildrenToElement_exporter<R = void, P0 = unknown, P1 = unknown>(_addChildrenToElement: P0, _exporter: P1): R;
+    addContentToElement_attributes_exporter<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_addContentToElement: P0, _attributes: P1, _exporter: P2): R;
+    requiresPathDefinition<R = boolean, P0 = unknown>(_requiresPathDefinition: P0): R;
+    // + MSImmutableLayerGroup(MirrorScaling):
+    mirrorViewPortSize<R = CGSize>(): R;
+    mirrorExportScale<R = number>(): R;
   }
   namespace MSImmutableLayerGroup {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSImmutableLayerGroup, MSFlowContainmentCheckProtocol, MSLayerGroupProtocol {
       alloc<R = MSImmutableLayerGroup>(): R;
       new: <R = MSImmutableLayerGroup>() => R;
-    }
+  
+  }
   }
 }
 

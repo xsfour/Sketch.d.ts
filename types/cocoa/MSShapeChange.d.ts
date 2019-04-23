@@ -13,7 +13,7 @@ declare namespace cocoa {
       deleteHandle<R = unknown>(): R;
       distributeAlongAxis<R = unknown, P0 = number>(_distributeAlongAxis: P0): R;
       alignToKey<R = unknown, P0 = unknown>(_alignToKey: P0): R;
-      guessControlPointsForPointAtIndex_shape<R = void, P0 = number, P1 = unknown>(_guessControlPointsForPointAtIndex: P0, _shape: P1): R;
+      guessControlPointsForPointAtIndex_shape<R = boolean, P0 = number, P1 = unknown>(_guessControlPointsForPointAtIndex: P0, _shape: P1): R;
       changeToCurveMode<R = unknown, P0 = number>(_changeToCurveMode: P0): R;
       nudgeWithKey_distance_flags<R = unknown, P0 = number, P1 = number, P2 = number>(_nudgeWithKey: P0, _distance: P1, _flags: P2): R;
       moveHandle_toLocation_onAxis<R = unknown, P0 = unknown, P1 = number, P2 = number>(_moveHandle: P0, _toLocation: P1, _onAxis: P2): R;

@@ -3,6 +3,8 @@
 declare namespace cocoa {
   export interface MSToggleRulersAction<T0 = void, T1 = void, T2 = void> extends MSToggleVisibilityAction {
     tooltip<R = unknown>(): R;
+    hasDynamicTitle<R = boolean>(): R;
+    labelForToolbar<R = unknown>(): R;
     label<R = unknown>(): R;
     validate<R = boolean>(): R;
     isActive<R = boolean>(): R;

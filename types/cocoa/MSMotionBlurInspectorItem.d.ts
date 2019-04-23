@@ -2,8 +2,8 @@
 
 declare namespace cocoa {
   export interface MSMotionBlurInspectorItem<T0 = void, T1 = void, T2 = void> extends MSBaseBlurInspectorItem {
-    angleTextField<R = MSUpDownTextField>(): R;
-    setAngleTextField<R = void, P0 = MSUpDownTextField>(_v: P0): R;
+    angleTextField<R = MSInlineUpDownTextField>(): R;
+    setAngleTextField<R = void, P0 = MSInlineUpDownTextField>(_v: P0): R;
     angleAdapter<R = MSMathInspectorValueAdaptor>(): R;
     setAngleAdapter<R = void, P0 = MSMathInspectorValueAdaptor>(_v: P0): R;
     angleSlider<R = NSSlider>(): R;

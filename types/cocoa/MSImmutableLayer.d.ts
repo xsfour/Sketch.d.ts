@@ -91,12 +91,61 @@ declare namespace cocoa {
     objectID<R = NSString>(): R;
     rotation<R = number>(): R;
     superclass<R = unknown>(): R;
+    // + MSImmutableLayer(CoreImageEffects): 
+    renderBitmapEffects<R = unknown, P0 = unknown>(_renderBitmapEffects: P0): R;
+    // + MSImmutableLayer(ExportFormatRequestBackground): 
+    configureBackgroundOfRequest<R = void, P0 = unknown>(_configureBackgroundOfRequest: P0): R;
+    // + MSImmutableLayer(MSOverrideManagementItem): 
+    previewImageForOverrideManagementByTintingImageWithName<R = unknown, P0 = unknown>(_previewImageForOverrideManagementByTintingImageWithName: P0): R;
+    // + MSImmutableLayer(MSOverrideRepresentationPreview): 
+    overridePreviewImageInDocument<R = unknown, P0 = unknown>(_overridePreviewImageInDocument: P0): R;
+    // + MSImmutableLayer(MSRenderPreparation): 
+    prepareForRender<R = void, P0 = unknown>(_prepareForRender: P0): R;
+    gatherForRenderPreparation<R = void, P0 = unknown>(_gatherForRenderPreparation: P0): R;
+    // + MSImmutableLayer(OverrideUI): 
+    overrideViewControllerClassForOverridePoint<R = unknown, P0 = unknown>(_overrideViewControllerClassForOverridePoint: P0): R;
+    // + MSImmutableLayer(Preview): 
+    addPreviewWithPath_documentData_forOwner<R = void, P0 = unknown, P1 = unknown, P2 = unknown>(_addPreviewWithPath: P0, _documentData: P1, _forOwner: P2): R;
+    bezierForDrawingPreviewFromPath<R = unknown, P0 = unknown>(_bezierForDrawingPreviewFromPath: P0): R;
+    previewImageWithBezier_documentData_selected<R = unknown, P0 = unknown, P1 = unknown, P2 = boolean>(_previewImageWithBezier: P0, _documentData: P1, _selected: P2): R;
+    hasSharedStyleInDocumentData<R = boolean, P0 = unknown>(_hasSharedStyleInDocumentData: P0): R;
+    drawPreviewInRect_selected_bezier<R = void, P0 = CGRect, P1 = boolean, P2 = unknown>(_drawPreviewInRect: P0, _selected: P1, _bezier: P2): R;
+    refreshPreviewImagesWithDocumentData_forOwner<R = void, P0 = unknown, P1 = unknown>(_refreshPreviewImagesWithDocumentData: P0, _forOwner: P1): R;
+    previewImagesRequireRefreshWithDocumentData_forOwner<R = boolean, P0 = unknown, P1 = unknown>(_previewImagesRequireRefreshWithDocumentData: P0, _forOwner: P1): R;
+    badgeTypeInDocumentData<R = number, P0 = unknown>(_badgeTypeInDocumentData: P0): R;
+    // + MSImmutableLayer(Rendering): 
+    shouldSkipDrawingInContext<R = boolean, P0 = unknown>(_shouldSkipDrawingInContext: P0): R;
+    transparencyLayerUseRectCondition<R = number>(): R;
+    shouldRenderInTransparencyLayer<R = boolean>(): R;
+    // + MSImmutableLayer(SVGExport): 
+    addDefaultFillAttributes_exporter<R = void, P0 = unknown, P1 = unknown>(_addDefaultFillAttributes: P0, _exporter: P1): R;
+    writeSVGToElement_withExporter<R = void, P0 = unknown, P1 = unknown>(_writeSVGToElement: P0, _withExporter: P1): R;
+    addTransformAttributes_exporter<R = void, P0 = unknown, P1 = unknown>(_addTransformAttributes: P0, _exporter: P1): R;
+    appendBaseTranslation_exporter<R = void, P0 = unknown, P1 = unknown>(_appendBaseTranslation: P0, _exporter: P1): R;
+    relativeRectWithExporter<R = CGRect, P0 = unknown>(_relativeRectWithExporter: P0): R;
+    layerOffsetWithExporter<R = CGPoint, P0 = unknown>(_layerOffsetWithExporter: P0): R;
+    addSVGAttributes_exporter<R = void, P0 = unknown, P1 = unknown>(_addSVGAttributes: P0, _exporter: P1): R;
+    svgStyle<R = unknown, P0 = unknown>(_svgStyle: P0): R;
+    addPathDefinitionToDocument<R = void, P0 = unknown>(_addPathDefinitionToDocument: P0): R;
+    simplifyPathElement_exporter_inset<R = void, P0 = unknown, P1 = unknown, P2 = number>(_simplifyPathElement: P0, _exporter: P1, _inset: P2): R;
+    addGradientsToDocument<R = void, P0 = unknown>(_addGradientsToDocument: P0): R;
+    addChildrenToElement_exporter<R = void, P0 = unknown, P1 = unknown>(_addChildrenToElement: P0, _exporter: P1): R;
+    addGroupContentToElement_attributes_exporter<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_addGroupContentToElement: P0, _attributes: P1, _exporter: P2): R;
+    addContentToElement_attributes_exporter<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown>(_addContentToElement: P0, _attributes: P1, _exporter: P2): R;
+    shouldIncludeInSVGExport<R = boolean, P0 = unknown>(_shouldIncludeInSVGExport: P0): R;
+    requiresPathDefinition<R = boolean, P0 = unknown>(_requiresPathDefinition: P0): R;
+    // + MSImmutableLayer(InterfaceImageOwner):
+    cacheOwner<R = unknown>(): R;
+    interfaceImageIdentifier<R = NSString>(): R;
+    // + MSImmutableLayer(MSOverrideManagementItem):
+    previewImageForOverrideManagement<R = NSImage>(): R;
   }
   namespace MSImmutableLayer {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSImmutableLayer, MSInterfaceImageOwnerProtocol, MSImmutableLayerPreviewabilityProtocol, MSLayerContainmentProtocol, MSFlowContainmentCheckProtocol, MSLayerProtocol, MSLayerTraitsProtocol {
       alloc<R = MSImmutableLayer>(): R;
       new: <R = MSImmutableLayer>() => R;
-    }
+  
+  }
   }
 }
 

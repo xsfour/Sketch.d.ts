@@ -39,8 +39,6 @@ declare namespace cocoa {
       prepareTerminationWithHandler<R = void, P0 = CDUnknownBlockType>(_prepareTerminationWithHandler: P0): R;
       shouldPrepareForTermination<R = boolean>(): R;
       actionsToPrepareTermination<R = unknown>(): R;
-      addRemoteLibraryWithURL_parameters<R = void, P0 = unknown, P1 = unknown>(_addRemoteLibraryWithURL: P0, _parameters: P1): R;
-      openCloudUploadURL_parameters<R = void, P0 = unknown, P1 = unknown>(_openCloudUploadURL: P0, _parameters: P1): R;
       cloudEnabled<R = boolean>(): R;
       attemptRecoveryFromCloudError_optionIndex<R = void, P0 = unknown, P1 = number>(_attemptRecoveryFromCloudError: P0, _optionIndex: P1): R;
       cloudError_addingRecoveryOptionsWithAttempter<R = unknown, P0 = unknown, P1 = unknown>(_cloudError: P0, _addingRecoveryOptionsWithAttempter: P1): R;

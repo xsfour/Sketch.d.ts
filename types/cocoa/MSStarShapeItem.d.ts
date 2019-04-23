@@ -6,10 +6,10 @@ declare namespace cocoa {
     setPointsAdaptor<R = void, P0 = MSMathInspectorValueAdaptor>(_v: P0): R;
     radiusAdaptor<R = MSMathInspectorValueAdaptor>(): R;
     setRadiusAdaptor<R = void, P0 = MSMathInspectorValueAdaptor>(_v: P0): R;
-    pointsField<R = MSUpDownTextField>(): R;
-    setPointsField<R = void, P0 = MSUpDownTextField>(_v: P0): R;
-    radiusField<R = MSUpDownTextField>(): R;
-    setRadiusField<R = void, P0 = MSUpDownTextField>(_v: P0): R;
+    pointsField<R = MSInlineUpDownNanoTextField>(): R;
+    setPointsField<R = void, P0 = MSInlineUpDownNanoTextField>(_v: P0): R;
+    radiusField<R = MSInlineUpDownNanoTextField>(): R;
+    setRadiusField<R = void, P0 = MSInlineUpDownNanoTextField>(_v: P0): R;
     layersController<R = NSArrayController>(): R;
     setLayersController<R = void, P0 = NSArrayController>(_v: P0): R;
     debugDescription<R = NSString>(): R;

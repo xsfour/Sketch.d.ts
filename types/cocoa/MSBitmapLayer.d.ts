@@ -18,12 +18,22 @@ declare namespace cocoa {
     targetSizeForReduction<R = CGSize>(): R;
     image<R = MSImageData>(): R;
     setImage<R = void, P0 = MSImageData>(_v: P0): R;
+    // + MSBitmapLayer(CanChangeBooleanOperation): 
+    canChangeBooleanOperation<R = boolean>(): R;
+    // + MSBitmapLayer(Editing): 
+    handlerClass<R = unknown>(): R;
+    // + MSBitmapLayer(InspectorSections): 
+    inspectorSections<R = unknown>(): R;
+    // + MSBitmapLayer(LayerList): 
+    unselectedPreviewTemplateImage<R = unknown>(): R;
+    selectedPreviewTemplateImage<R = unknown>(): R;
   }
   namespace MSBitmapLayer {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSBitmapLayer, MSImageOwnerProtocol {
       alloc<R = MSBitmapLayer>(): R;
       new: <R = MSBitmapLayer>() => R;
-    }
+  
+  }
   }
 }
 

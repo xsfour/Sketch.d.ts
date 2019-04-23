@@ -23,6 +23,8 @@ declare namespace cocoa {
     setUsePageIfMissingArtboard<R = void, P0 = boolean>(_v: P0): R;
     selectiveExport<R = boolean>(): R;
     setSelectiveExport<R = void, P0 = boolean>(_v: P0): R;
+    fileURL<R = NSURL>(): R;
+    setFileURL<R = void, P0 = NSURL>(_v: P0): R;
     name<R = NSString>(): R;
     setName<R = void, P0 = NSString>(_v: P0): R;
     cacheManager<R = MSCacheManager>(): R;

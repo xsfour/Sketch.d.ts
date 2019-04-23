@@ -13,9 +13,6 @@ declare namespace cocoa {
     applyDataAtIndex_datum_dataApplier<R = void, P0 = number, P1 = unknown, P2 = CDUnknownBlockType>(_applyDataAtIndex: P0, _datum: P1, _dataApplier: P2): R;
     applyDataWithCount_data_dataApplier<R = void, P0 = number, P1 = unknown, P2 = CDUnknownBlockType>(_applyDataWithCount: P0, _data: P1, _dataApplier: P2): R;
     initWithDataIdentifier_dataName_dataType<R = unknown, P0 = unknown, P1 = unknown, P2 = number>(_initWithDataIdentifier: P0, _dataName: P1, _dataType: P2): R;
-    inAGroup<R = boolean>(): R;
-    dataNameWithoutGroup<R = unknown>(): R;
-    inGroupWithName<R = boolean, P0 = unknown>(_inGroupWithName: P0): R;
     menuItemImage<R = NSImage>(): R;
     setMenuItemImage<R = void, P0 = NSImage>(_v: P0): R;
     enabled<R = boolean>(): R;
@@ -26,6 +23,9 @@ declare namespace cocoa {
     setDataName<R = void, P0 = NSString>(_v: P0): R;
     delegate<R = MSDataSupplierDelegate>(): R;
     setDelegate<R = void, P0 = MSDataSupplierDelegate>(_v: P0): R;
+    uttDataType<R = NSString>(): R;
+    isUsableDataSupplier<R = boolean>(): R;
+    displayName<R = NSString>(): R;
     valid<R = boolean>(): R;
   }
   namespace MSDataSupplier {

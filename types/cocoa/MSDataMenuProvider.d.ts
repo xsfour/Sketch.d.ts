@@ -7,13 +7,7 @@ declare namespace cocoa {
     pluginNameForIdentifier<R = unknown, P0 = unknown>(_pluginNameForIdentifier: P0): R;
     sortedMenuItems<R = unknown, P0 = unknown>(_sortedMenuItems: P0): R;
     dataSuppliersForDataType<R = unknown, P0 = number>(_dataSuppliersForDataType: P0): R;
-    dataSupplierGroupsForDataSuppliers<R = unknown, P0 = unknown>(_dataSupplierGroupsForDataSuppliers: P0): R;
-    menuItemForDataSupplier_indentationLevel<R = unknown, P0 = unknown, P1 = number>(_menuItemForDataSupplier: P0, _indentationLevel: P1): R;
-    addCheckMarkToMenuItems_dataIdentifier<R = number, P0 = unknown, P1 = unknown>(_addCheckMarkToMenuItems: P0, _dataIdentifier: P1): R;
-    menuItemsInGroup_forDataSuppliers<R = unknown, P0 = unknown, P1 = unknown>(_menuItemsInGroup: P0, _forDataSuppliers: P1): R;
-    menuItemsForDataSuppliers_indentationLevel<R = unknown, P0 = unknown, P1 = number>(_menuItemsForDataSuppliers: P0, _indentationLevel: P1): R;
     menuItemsForDataType_indentationLevel<R = unknown, P0 = number, P1 = number>(_menuItemsForDataType: P0, _indentationLevel: P1): R;
-    menuItemsForPluginDataSuppliers_indentationLevel<R = unknown, P0 = unknown, P1 = number>(_menuItemsForPluginDataSuppliers: P0, _indentationLevel: P1): R;
     menuItemsForGroups_indentationLevel<R = unknown, P0 = unknown, P1 = number>(_menuItemsForGroups: P0, _indentationLevel: P1): R;
     validateMenuItem<R = boolean, P0 = unknown>(_validateMenuItem: P0): R;
     menuItemAction<R = void, P0 = unknown>(_menuItemAction: P0): R;
@@ -21,6 +15,7 @@ declare namespace cocoa {
     addImageToMenuItems<R = unknown, P0 = unknown>(_addImageToMenuItems: P0): R;
     addDataSuppliersForType_toMenu_typeTitle<R = boolean, P0 = number, P1 = unknown, P2 = unknown>(_addDataSuppliersForType: P0, _toMenu: P1, _typeTitle: P2): R;
     updateMenu<R = void, P0 = unknown>(_updateMenu: P0): R;
+    addMenusForMultipleTypesToMenu<R = void, P0 = unknown>(_addMenusForMultipleTypesToMenu: P0): R;
     updateOverridesMenu<R = void, P0 = unknown>(_updateOverridesMenu: P0): R;
     refreshDataMenuItemsWithOverridesMenu_displayKeyboardShortcuts<R = unknown, P0 = boolean, P1 = boolean>(_refreshDataMenuItemsWithOverridesMenu: P0, _displayKeyboardShortcuts: P1): R;
     clearDataMenuItem<R = unknown>(): R;

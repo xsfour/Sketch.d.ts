@@ -695,6 +695,7 @@ declare namespace cocoa {
     drawInspectorButtonImage_centeredInRect_accented<R = void, P0 = unknown, P1 = CGRect, P2 = boolean>(_drawInspectorButtonImage: P0, _centeredInRect: P1, _accented: P2): R;
     drawInspectorButtonImage_centeredInRect<R = void, P0 = unknown, P1 = CGRect>(_drawInspectorButtonImage: P0, _centeredInRect: P1): R;
     currentInspectorAccentColor<R = unknown>(): R;
+    currentInspectorAccentedIconColor<R = unknown>(): R;
     currentInspectorIconColor<R = unknown>(): R;
   }
   namespace NSCell {
@@ -711,6 +712,7 @@ declare namespace cocoa {
       drawBaselineAlignedAttributedTitle_forCell_controlView<R = CGRect, P0 = unknown, P1 = unknown, P2 = unknown>(_drawBaselineAlignedAttributedTitle: P0, _forCell: P1, _controlView: P2): R;
       // + NSCell(Inspector): 
       drawInspectorButtonImage_centeredInRect_withColor<R = void, P0 = unknown, P1 = CGRect, P2 = unknown>(_drawInspectorButtonImage: P0, _centeredInRect: P1, _withColor: P2): R;
+      inspectorAccentIconColorForCellHighlighted<R = unknown, P0 = boolean>(_inspectorAccentIconColorForCellHighlighted: P0): R;
       inspectorAccentColorForCellHighlighted<R = unknown, P0 = boolean>(_inspectorAccentColorForCellHighlighted: P0): R;
       inspectorIconColorForCellEnabled_highlighted<R = unknown, P0 = boolean, P1 = boolean>(_inspectorIconColorForCellEnabled: P0, _highlighted: P1): R;
     }

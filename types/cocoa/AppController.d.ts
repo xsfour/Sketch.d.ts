@@ -48,8 +48,7 @@ declare namespace cocoa {
     observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
     removeObserversForVisualSettings<R = void>(): R;
     addObserversForVisualSettings<R = void>(): R;
-    openCloudUploadURL_parameters<R = void, P0 = unknown, P1 = unknown>(_openCloudUploadURL: P0, _parameters: P1): R;
-    openCloudURL<R = void, P0 = unknown>(_openCloudURL: P0): R;
+    openDocumentAtPath_withParameters<R = void, P0 = unknown, P1 = unknown>(_openDocumentAtPath: P0, _withParameters: P1): R;
     openAddLibraryURL_parameters<R = void, P0 = unknown, P1 = unknown>(_openAddLibraryURL: P0, _parameters: P1): R;
     didOpenURL<R = void, P0 = unknown>(_didOpenURL: P0): R;
     handleURLEvent_withReplyEvent<R = void, P0 = unknown, P1 = unknown>(_handleURLEvent: P0, _withReplyEvent: P1): R;
@@ -94,8 +93,6 @@ declare namespace cocoa {
     setNeedToInformUserPluginsAreDisabled<R = void, P0 = boolean>(_v: P0): R;
     sketchSafeModeOn<R = boolean>(): R;
     setSketchSafeModeOn<R = void, P0 = boolean>(_v: P0): R;
-    globalAssets<R = MSPersistentAssetCollection>(): R;
-    setGlobalAssets<R = void, P0 = MSPersistentAssetCollection>(_v: P0): R;
     launchEndTime<R = number>(): R;
     setLaunchEndTime<R = void, P0 = number>(_v: P0): R;
     launchStartTime<R = number>(): R;
@@ -154,6 +151,7 @@ declare namespace cocoa {
       alloc<R = AppController>(): R;
       new: <R = AppController>() => R;
       sharedInstance<R = unknown>(): R;
+      initialize<R = void>(): R;
     }
   }
 }

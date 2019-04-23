@@ -16,7 +16,7 @@ declare namespace cocoa {
     lockedOnCanvas<R = boolean>(): R;
     containedByHiddenAncestorNode<R = boolean>(): R;
     hiddenOnCanvas<R = boolean>(): R;
-    selectedInLayerList<R = boolean>(): R;
+    isSelectedInLayerList<R = boolean>(): R;
     expandableInLayerList<R = boolean>(): R;
   }
   namespace MSLayerListLayerExtensionsProtocol {

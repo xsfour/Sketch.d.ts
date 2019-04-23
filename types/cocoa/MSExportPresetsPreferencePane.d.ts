@@ -8,7 +8,7 @@ declare namespace cocoa {
     addExportFormat<R = void, P0 = unknown>(_addExportFormat: P0): R;
     commitExportPresetName<R = void, P0 = unknown>(_commitExportPresetName: P0): R;
     uniqueNonEmptyName_forPreset<R = unknown, P0 = unknown, P1 = unknown>(_uniqueNonEmptyName: P0, _forPreset: P1): R;
-    presetWithName<R = unknown, P0 = unknown>(_presetWithName: P0): R;
+    presetWithDisplayName<R = unknown, P0 = unknown>(_presetWithDisplayName: P0): R;
     pickDefaultExportPreset<R = void, P0 = unknown>(_pickDefaultExportPreset: P0): R;
     removeExportPreset<R = void, P0 = unknown>(_removeExportPreset: P0): R;
     addExportPreset<R = void, P0 = unknown>(_addExportPreset: P0): R;

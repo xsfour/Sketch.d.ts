@@ -7,6 +7,7 @@ declare namespace cocoa {
     drawLayoutManager_style_aPoint_context<R = void, P0 = unknown, P1 = unknown, P2 = CGPoint, P3 = unknown>(_drawLayoutManager: P0, _style: P1, _aPoint: P2, _context: P3): R;
     drawTextLayerAsPath_withTextStorage_inBounds_context<R = void, P0 = unknown, P1 = unknown, P2 = CGRect, P3 = unknown>(_drawTextLayerAsPath: P0, _withTextStorage: P1, _inBounds: P2, _context: P3): R;
     drawTextLayerInsideBoundsTransform_context<R = void, P0 = unknown, P1 = unknown>(_drawTextLayerInsideBoundsTransform: P0, _context: P1): R;
+    renderLayerWithUnavailableFonts_context<R = boolean, P0 = unknown, P1 = unknown>(_renderLayerWithUnavailableFonts: P0, _context: P1): R;
   }
   namespace MSTextRendererCG {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSLayerRendererCG {

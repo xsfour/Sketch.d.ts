@@ -59,6 +59,7 @@ declare namespace cocoa {
     setInternalBlendMode<R = void, P0 = number>(_v: P0): R;
     alphaValue<R = number>(): R;
     setAlphaValue<R = void, P0 = number>(_v: P0): R;
+    shouldRenderSymbolsAsDetachedGroups<R = boolean>(): R;
     rotateFlipTransform<R = CGAffineTransform>(): R;
     setRotateFlipTransform<R = void, P0 = CGAffineTransform>(_v: P0): R;
     name<R = NSString>(): R;

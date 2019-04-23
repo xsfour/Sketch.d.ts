@@ -31,8 +31,8 @@ declare namespace cocoa {
     setCurrentX<R = void, P0 = number>(_v: P0): R;
     currentlyTrackingTouch<R = boolean>(): R;
     setCurrentlyTrackingTouch<R = void, P0 = boolean>(_v: P0): R;
-    rotation<R = number>(): R;
-    setRotation<R = void, P0 = number>(_v: P0): R;
+    userVisibleRotation<R = number>(): R;
+    setUserVisibleRotation<R = void, P0 = number>(_v: P0): R;
   }
   namespace MSRotationBar {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends NSControl {

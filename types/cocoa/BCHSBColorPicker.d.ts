@@ -3,16 +3,6 @@
 declare namespace cocoa {
   export interface BCHSBColorPicker<T0 = void, T1 = void, T2 = void> extends NSControl, BCColorPreviewDelegateProtocol, BCMagnifierButtonDelegateProtocol {
     cxx_destruct<R = void>(): R;
-    setFrequentColors<R = void, P0 = unknown>(_setFrequentColors: P0): R;
-    frequentColorPicked<R = void, P0 = unknown>(_frequentColorPicked: P0): R;
-    hexValueFieldChanged<R = void, P0 = unknown>(_hexValueFieldChanged: P0): R;
-    rgbComponentFieldsChanged<R = void, P0 = unknown>(_rgbComponentFieldsChanged: P0): R;
-    hslComponentFieldsChanged<R = void, P0 = unknown>(_hslComponentFieldsChanged: P0): R;
-    lightDisplayValueForColor<R = number, P0 = unknown>(_lightDisplayValueForColor: P0): R;
-    satDisplayValueForColor<R = number, P0 = unknown>(_satDisplayValueForColor: P0): R;
-    hueDisplayValueForColor<R = number, P0 = unknown>(_hueDisplayValueForColor: P0): R;
-    setMultiTextFieldValues<R = void>(): R;
-    setTextFieldValuesWithColor_ignoringFields<R = void, P0 = unknown, P1 = unknown>(_setTextFieldValuesWithColor: P0, _ignoringFields: P1): R;
     setColor_ignoringFields<R = void, P0 = unknown, P1 = unknown>(_setColor: P0, _ignoringFields: P1): R;
     setColor_multipleValues<R = void, P0 = unknown, P1 = boolean>(_setColor: P0, _multipleValues: P1): R;
     flexibleColor<R = unknown>(): R;
@@ -34,18 +24,6 @@ declare namespace cocoa {
     setBc_target<R = void, P0 = unknown>(_v: P0): R;
     displaysMultipleValues<R = boolean>(): R;
     setDisplaysMultipleValues<R = void, P0 = boolean>(_v: P0): R;
-    ligComponentTextField<R = NSTextField>(): R;
-    setLigComponentTextField<R = void, P0 = NSTextField>(_v: P0): R;
-    satComponentTextField<R = NSTextField>(): R;
-    setSatComponentTextField<R = void, P0 = NSTextField>(_v: P0): R;
-    hueComponentTextField<R = NSTextField>(): R;
-    setHueComponentTextField<R = void, P0 = NSTextField>(_v: P0): R;
-    blueComponentTextField<R = NSTextField>(): R;
-    setBlueComponentTextField<R = void, P0 = NSTextField>(_v: P0): R;
-    greenComponentTextField<R = NSTextField>(): R;
-    setGreenComponentTextField<R = void, P0 = NSTextField>(_v: P0): R;
-    redComponentTextField<R = NSTextField>(): R;
-    setRedComponentTextField<R = void, P0 = NSTextField>(_v: P0): R;
     magnifierButton<R = BCMagnifierButton>(): R;
     setMagnifierButton<R = void, P0 = BCMagnifierButton>(_v: P0): R;
     colorPreviewView<R = BCColorPreview>(): R;
@@ -56,16 +34,10 @@ declare namespace cocoa {
     setHPickerView<R = void, P0 = BCHueColorPicker>(_v: P0): R;
     sbPickerView<R = BCSaturationBrightnessColorPicker>(): R;
     setSbPickerView<R = void, P0 = BCSaturationBrightnessColorPicker>(_v: P0): R;
-    separatorView<R = MSColorInspectorSeparatorView>(): R;
-    setSeparatorView<R = void, P0 = MSColorInspectorSeparatorView>(_v: P0): R;
-    alphaComponentTextField<R = NSTextField>(): R;
-    setAlphaComponentTextField<R = void, P0 = NSTextField>(_v: P0): R;
-    hexValueTextField<R = NSTextField>(): R;
-    setHexValueTextField<R = void, P0 = NSTextField>(_v: P0): R;
     delegate<R = BCHSBColorPickerDelegate>(): R;
     setDelegate<R = void, P0 = BCHSBColorPickerDelegate>(_v: P0): R;
-    color<R = MSColor>(): R;
-    setColor<R = void, P0 = MSColor>(_v: P0): R;
+    color<R = MSFlexibleColor>(): R;
+    setColor<R = void, P0 = MSFlexibleColor>(_v: P0): R;
     debugDescription<R = NSString>(): R;
     description<R = NSString>(): R;
     hash<R = number>(): R;

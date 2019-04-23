@@ -10,12 +10,16 @@ declare namespace cocoa {
     setNumberOfColumns<R = void, P0 = number>(_setNumberOfColumns: P0): R;
     determineAppropriateColumnWidth<R = void>(): R;
     observeValueForKeyPath_ofObject_change_context<R = void, P0 = unknown, P1 = unknown, P2 = unknown, P3 = void>(_observeValueForKeyPath: P0, _ofObject: P1, _change: P2, _context: P3): R;
+    // + MSLayoutGrid(Guides): 
+    verticalGuidesForRulerData_inRect<R = unknown, P0 = unknown, P1 = CGRect>(_verticalGuidesForRulerData: P0, _inRect: P1): R;
+    horizontalGuidesForRulerData_inRect<R = unknown, P0 = unknown, P1 = CGRect>(_horizontalGuidesForRulerData: P0, _inRect: P1): R;
   }
   namespace MSLayoutGrid {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends _MSLayoutGrid {
       alloc<R = MSLayoutGrid>(): R;
       new: <R = MSLayoutGrid>() => R;
-    }
+  
+  }
   }
 }
 

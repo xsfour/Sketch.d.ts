@@ -24,8 +24,8 @@ declare namespace cocoa {
     setImmutableDocument<R = void, P0 = MSImmutableDocumentData>(_v: P0): R;
     rootLayer<R = MSImmutableLayer>(): R;
     setRootLayer<R = void, P0 = MSImmutableLayer>(_v: P0): R;
-    backgroundColor<R = MSImmutableColor>(): R;
-    setBackgroundColor<R = void, P0 = MSImmutableColor>(_v: P0): R;
+    exportBackgroundColor<R = MSImmutableColor>(): R;
+    setExportBackgroundColor<R = void, P0 = MSImmutableColor>(_v: P0): R;
     shouldTrim<R = boolean>(): R;
     setShouldTrim<R = void, P0 = boolean>(_v: P0): R;
     scale<R = number>(): R;

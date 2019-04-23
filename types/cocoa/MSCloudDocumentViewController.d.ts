@@ -6,7 +6,7 @@ declare namespace cocoa {
     openPublicURL<R = void, P0 = unknown>(_openPublicURL: P0): R;
     update<R = void, P0 = unknown>(_update: P0): R;
     upload<R = void, P0 = unknown>(_upload: P0): R;
-    userDidChangeNotification<R = void, P0 = unknown>(_userDidChangeNotification: P0): R;
+    documentDidChangeNotification<R = void, P0 = unknown>(_documentDidChangeNotification: P0): R;
     reloadTitleLabel<R = void>(): R;
     scheduledTimeLabelUpdateFired<R = void, P0 = unknown>(_scheduledTimeLabelUpdateFired: P0): R;
     scheduleTimeLabelUpdate<R = void>(): R;

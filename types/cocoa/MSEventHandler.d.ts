@@ -40,7 +40,6 @@ declare namespace cocoa {
     rulerGuidesRectAroundPoint<R = CGRect, P0 = CGPoint>(_rulerGuidesRectAroundPoint: P0): R;
     horizontalRulerGuidesForGridAlign<R = unknown, P0 = CGPoint>(_horizontalRulerGuidesForGridAlign: P0): R;
     verticalRulerGuidesForGridAlign<R = unknown, P0 = CGPoint>(_verticalRulerGuidesForGridAlign: P0): R;
-    alignPointToGrid<R = CGPoint, P0 = CGPoint>(_alignPointToGrid: P0): R;
     currentPageDidChange<R = void>(): R;
     layerRulerOriginChanged<R = void>(): R;
     selectionDidChangeTo<R = void, P0 = unknown>(_selectionDidChangeTo: P0): R;
@@ -52,7 +51,6 @@ declare namespace cocoa {
     replaceArtboardWithLayerGroupInPasteBoardData<R = void, P0 = unknown>(_replaceArtboardWithLayerGroupInPasteBoardData: P0): R;
     imageName<R = unknown>(): R;
     toolbarIdentifier<R = unknown>(): R;
-    selectHitTestResult_extendSelection<R = void, P0 = unknown, P1 = boolean>(_selectHitTestResult: P0, _extendSelection: P1): R;
     selectLayer_extendSelection<R = void, P0 = unknown, P1 = boolean>(_selectLayer: P0, _extendSelection: P1): R;
     selectedLayers<R = unknown>(): R;
     changeColor<R = void, P0 = unknown>(_changeColor: P0): R;

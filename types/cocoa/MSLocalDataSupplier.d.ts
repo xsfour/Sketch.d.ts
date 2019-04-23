@@ -9,20 +9,21 @@ declare namespace cocoa {
     makeImageDataFileSystemMonitor<R = void>(): R;
     makeFolderMonitor<R = void>(): R;
     generateDataForCount_dataApplier<R = void, P0 = number, P1 = CDUnknownBlockType>(_generateDataForCount: P0, _dataApplier: P1): R;
+    setEnabled<R = void, P0 = boolean>(_setEnabled: P0): R;
     valid<R = boolean>(): R;
-    initWithFileSystemURL_isBuiltin<R = unknown, P0 = unknown, P1 = boolean>(_initWithFileSystemURL: P0, _isBuiltin: P1): R;
+    initWithFileSystemURL<R = unknown, P0 = unknown>(_initWithFileSystemURL: P0): R;
     data<R = NSArray>(): R;
     setData<R = void, P0 = NSArray>(_v: P0): R;
     folderMonitor<R = MSFolderMonitor>(): R;
     setFolderMonitor<R = void, P0 = MSFolderMonitor>(_v: P0): R;
     dataSource<R = NSURL>(): R;
-    isBuiltin<R = boolean>(): R;
   }
   namespace MSLocalDataSupplier {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSDataSupplier {
       alloc<R = MSLocalDataSupplier>(): R;
       new: <R = MSLocalDataSupplier>() => R;
       validImageFileUTIs<R = unknown>(): R;
+      identifierForURL<R = unknown, P0 = unknown>(_identifierForURL: P0): R;
       imageFileNamesFromFolderURL<R = unknown, P0 = unknown>(_imageFileNamesFromFolderURL: P0): R;
       textDataFromFileURL<R = unknown, P0 = unknown>(_textDataFromFileURL: P0): R;
     }

@@ -2,6 +2,8 @@
 
 declare namespace cocoa {
   export interface MSPluginDataSupplier<T0 = void, T1 = void, T2 = void> extends MSDataSupplier {
+    splitString<R = unknown>(): R;
+    displayName<R = unknown>(): R;
     valid<R = boolean>(): R;
     initWithPluginIdentifier_commandIdentifier_dataName_dataTypeStringRepresentation_dynamicDataKey<R = unknown, P0 = unknown, P1 = unknown, P2 = unknown, P3 = unknown, P4 = unknown>(_initWithPluginIdentifier: P0, _commandIdentifier: P1, _dataName: P2, _dataTypeStringRepresentation: P3, _dynamicDataKey: P4): R;
     registered<R = boolean>(): R;
@@ -9,6 +11,7 @@ declare namespace cocoa {
     dynamicDataKey<R = NSString>(): R;
     commandIdentifier<R = NSString>(): R;
     pluginIdentifier<R = NSString>(): R;
+    subgroupName<R = NSString>(): R;
   }
   namespace MSPluginDataSupplier {
     export interface CLASS<T0 = void, T1 = void, T2 = void> extends MSDataSupplier {

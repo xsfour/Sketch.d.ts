@@ -3,6 +3,7 @@
 declare namespace cocoa {
   export interface MSNormalEventContextualMenuBuilder<T0 = void, T1 = void, T2 = void> extends NSObject {
     cxx_destruct<R = void>(): R;
+    overrideMenuItems<R = unknown>(): R;
     symbolInstanceOnlyItems<R = unknown>(): R;
     symbolItems<R = unknown>(): R;
     groupOnlyItems<R = unknown>(): R;
@@ -17,14 +18,15 @@ declare namespace cocoa {
     groupRenameItems<R = unknown>(): R;
     pasteCopyStyleItems<R = unknown>(): R;
     moveForwardBackwardItems<R = unknown>(): R;
-    pickLayerItems<R = unknown>(): R;
     cutCopyPasteItems<R = unknown>(): R;
     replaceWithSymbolItems<R = unknown>(): R;
     menuWithItemGroups<R = unknown, P0 = unknown>(_menuWithItemGroups: P0): R;
     dataFeedsItems<R = unknown>(): R;
     standardMenuItemGroups<R = unknown>(): R;
     constructMenus<R = void>(): R;
-    menuForLayers<R = unknown, P0 = unknown>(_menuForLayers: P0): R;
+    menuForLayers_inContext<R = unknown, P0 = unknown, P1 = number>(_menuForLayers: P0, _inContext: P1): R;
+    overidesMenu<R = NSMenu>(): R;
+    setOveridesMenu<R = void, P0 = NSMenu>(_v: P0): R;
     sliceMenu<R = NSMenu>(): R;
     setSliceMenu<R = void, P0 = NSMenu>(_v: P0): R;
     artboardMenu<R = NSMenu>(): R;

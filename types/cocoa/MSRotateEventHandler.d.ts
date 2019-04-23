@@ -23,6 +23,8 @@ declare namespace cocoa {
     rotationItems<R = NSArray>(): R;
     rotationCenterPoint<R = CGPoint>(): R;
     setRotationCenterPoint<R = void, P0 = CGPoint>(_v: P0): R;
+    eventData<R = MSNormalEventData>(): R;
+    setEventData<R = void, P0 = MSNormalEventData>(_v: P0): R;
     disableMoving<R = boolean>(): R;
     setDisableMoving<R = void, P0 = boolean>(_v: P0): R;
     exitOnMouseUp<R = boolean>(): R;

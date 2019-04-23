@@ -21,14 +21,15 @@ declare namespace cocoa {
     alertMessageTextForRemovingDataSuppliers<R = unknown, P0 = unknown>(_alertMessageTextForRemovingDataSuppliers: P0): R;
     removeDataAction<R = void, P0 = unknown>(_removeDataAction: P0): R;
     importLocalData<R = void, P0 = unknown>(_importLocalData: P0): R;
-    displayAddLocalDataErrorWithMessage_info<R = void, P0 = unknown, P1 = unknown>(_displayAddLocalDataErrorWithMessage: P0, _info: P1): R;
-    dataSupplierForURL<R = unknown, P0 = unknown>(_dataSupplierForURL: P0): R;
+    showAddLocalDataErrorWithMessage_info<R = void, P0 = unknown, P1 = unknown>(_showAddLocalDataErrorWithMessage: P0, _info: P1): R;
+    showFailedToAddDataSupplierFromURL<R = void, P0 = unknown>(_showFailedToAddDataSupplierFromURL: P0): R;
+    showDataSupplierGroupAlreadyAddedMessage<R = void, P0 = unknown>(_showDataSupplierGroupAlreadyAddedMessage: P0): R;
+    removeLocalDataSupplierGroupsContainedByURL<R = void, P0 = unknown>(_removeLocalDataSupplierGroupsContainedByURL: P0): R;
     addLocalDataFromURLs<R = void, P0 = unknown>(_addLocalDataFromURLs: P0): R;
     controlTextDidEndEditing<R = void, P0 = unknown>(_controlTextDidEndEditing: P0): R;
     controlTextDidChange<R = void, P0 = unknown>(_controlTextDidChange: P0): R;
     searchString<R = unknown>(): R;
     activateSearchField<R = void, P0 = unknown>(_activateSearchField: P0): R;
-    awakeFromNib<R = void>(): R;
     dataFilterPredicate<R = NSPredicate>(): R;
     setDataFilterPredicate<R = void, P0 = NSPredicate>(_v: P0): R;
     filterTextField<R = NSSearchField>(): R;

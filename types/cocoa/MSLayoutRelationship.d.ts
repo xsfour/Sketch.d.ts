@@ -14,6 +14,7 @@ declare namespace cocoa {
     firstAttribute<R = number>(): R;
     firstItem<R = unknown>(): R;
     firstAnchor<R = MSLayoutAnchor>(): R;
+    firstAnchorPoint<R = CGPoint>(): R;
     rect<R = CGRect>(): R;
   }
   namespace MSLayoutRelationship {
