@@ -542,7 +542,7 @@ declare module "sketch-module-web-view/remote" {
    * @param code
    * @param callback
    */
-  export function sendToWebview<T = unknown>(id: string): Promise<T>;
+  export function sendToWebview<T = unknown>(id: string, code: string): Promise<T>;
 
   /**
    * Evaluates `code` in page.
